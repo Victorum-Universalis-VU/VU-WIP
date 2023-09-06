@@ -1,0 +1,30 @@
+#5768 - Miwok
+
+owner = MWK			#Miwok
+controller = MWK
+add_core = MWK
+is_city = yes
+culture = utian
+religion = totemism 
+capital = "Kasumati" 
+trade_goods = fish
+hre = no 
+base_tax = 1 
+base_production = 1 
+base_manpower = 1 
+native_size = 1
+native_ferocity = 1 
+native_hostileness = 3 
+
+discovered_by = north_american
+
+#1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
+#	owner = MWK			#Miwok
+#	controller = MWK
+#	add_core = MWK
+#	is_city = yes
+#	trade_goods = fish
+#}
+
+1806.1.1 = { discovered_by = SPA } # Not sure who? But apparently discovered?
+#Aqua Fria, later Mariposa, founded 1840

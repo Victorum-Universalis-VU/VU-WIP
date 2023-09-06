@@ -1,0 +1,72 @@
+vu_uneducated_ruler_personality = {
+	ruler_allow = {
+		chance = {
+			modifier = {
+				factor = 1
+				has_country_modifier = ruler_uneducated
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_modifier = ruler_uneducated }
+			}
+		}
+	}
+	global_institution_spread = -0.1
+	technology_cost = 0.5
+	idea_cost = 0.1
+}
+
+vu_scholarly_ruler_personality = {
+	ruler_allow = {
+		chance = {
+			modifier = {
+				factor = 1
+				has_country_modifier = ruler_completed_scholarship
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_modifier = ruler_completed_scholarship }
+			}
+		}
+	}
+	global_institution_spread = 0.1
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+
+vu_bachelorette_ruler_personality = {
+	ruler_allow = {
+		chance = {
+			modifier = {
+				factor = 1
+				has_country_modifier = ruler_completed_degree
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_modifier = ruler_completed_degree }
+			}
+		}
+	}
+	global_institution_spread = 0.1
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+
+vu_doctorate_ruler_personality = {
+	ruler_allow = {
+		chance = {
+			modifier = {
+				factor = 1
+				has_country_modifier = ruler_completed_doctorate
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_country_modifier = ruler_completed_doctorate }
+			}
+		}
+	}
+	global_institution_spread = 0.1
+	technology_cost = -0.1
+	idea_cost = -0.1
+}
+

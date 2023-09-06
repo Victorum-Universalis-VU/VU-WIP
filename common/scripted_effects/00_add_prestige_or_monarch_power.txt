@@ -1,0 +1,51 @@
+## adds prestige until 100 is reached and then adds the rest as a random monarch power
+### add_prestige_or_monarch_power = { amount = <number> }
+#add_prestige_or_monarch_power = {  #Kek vanilla actually took code from ME but changed it
+#	[[amount]
+#		tooltip = {
+#			add_prestige = $amount$
+#		}
+#		custom_tooltip = ME_ADD_PRESTIGE_OR_MONARCHPOWER
+#		hidden_effect = {
+#			for = {
+#				amount = $amount$
+#				effect = "
+#					if = {
+#						limit = {
+#							NOT = { prestige = 100 }
+#						}
+#						add_prestige = 1
+#					}
+#					else = {
+#						add_adm_power = 1
+#						add_dip_power = 1
+#						add_mil_power = 1
+#					}
+#				"
+#			}
+#		}
+#	]
+#	[[value]
+#		tooltip = {
+#			add_prestige = $value$
+#		}
+#		hidden_effect = {
+#			for = {
+#				amount = $value$
+#				effect = "
+#					if = {
+#						limit = {
+#							NOT = { prestige = 100 }
+#						}
+#						add_prestige = 1
+#					}
+#					else = {
+#						add_adm_power = 1
+#						add_dip_power = 1
+##						add_mil_power = 1
+#					}
+##				"
+#			}
+#		}
+#	]
+#}

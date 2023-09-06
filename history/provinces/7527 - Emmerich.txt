@@ -1,0 +1,62 @@
+#6302 - Emmerich
+#Region - Germany
+#Area - North Rhine
+
+latent_trade_goods = {
+	coal
+}
+
+owner = KLE
+controller = KLE
+add_core = KLE
+culture = hessian
+religion = catholic
+trade_goods = iron
+capital = "Emmerich"
+base_tax = 3
+base_production = 2
+base_manpower = 2 
+is_city = yes
+hre = yes
+
+#Documented 700 AD
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+1563.1.1 = { religion = protestant }
+1624.1.1 = { religion = catholic }
+1806.7.12 = { owner = KLE controller = KLE remove_core = FRA hre = no } # The Holy Roman Empire is dissolved. Grand Duchy of Berg
+1808.8.1 = { owner = FRA controller = FRA add_core = FRA } # Murat moves to Naples
+1809.1.1 = { owner = KLE controller = KLE remove_core = FRA } # Grand Duchy of Berg ruled by Napoleon Louis
+1814.4.11 = { owner = PRU controller = PRU add_core = PRU remove_core = KLE } # Treaty of Fontainebleu, Napoleon abdicates unconditionally

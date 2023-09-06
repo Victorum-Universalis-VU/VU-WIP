@@ -1,0 +1,5 @@
+#5941 - Susquehanna_River_pa
+
+discovered_by = north_american
+
+1524.1.1 = { discovered_by = FRA } # Giovanni da Verrazzano

@@ -1,0 +1,22 @@
+#5702 - Sakishima
+
+owner = RYU
+controller = RYU
+culture = kyushuan #Was really Ryukuan
+religion = animism
+capital = "Sakishima"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = RYU
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+1542.1.1 = { discovered_by = POR }
+1624.1.1 = { religion = shinto } # The Amami islands are annexed

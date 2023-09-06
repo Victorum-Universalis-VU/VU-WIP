@@ -1,0 +1,69 @@
+#New Province
+
+owner = QAR
+controller = QAR
+add_core = QAR
+capital = "Nusaybin"
+culture = aramaic		#last lands of strong aramaic culture
+religion = nestorian
+trade_goods = gunpowder			#Turks brought gunpowder and cannons
+hre = no
+base_tax = 4
+base_production = 3 
+base_manpower = 1 
+is_city = yes
+
+
+#discovered_by = east_african
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+#discovered_by = dutch_tech_group
+
+
+1469.2.4 = {
+	owner = AKK
+	controller = AKK
+	add_core = AKK
+	remove_core = QAR
+} # Fall of the Qara Qoyunlu
+
+1501.1.1 = {
+	owner = MAM
+	controller = MAM
+	add_core = MAM
+} # I don't think anyone much cared about this backwater area, but calling it Mamluk owned after the fall of the Aq Qoyunlu
+
+1509.1.1 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+	remove_core = DUL
+	add_core = TUR
+} # Baghdad to Ismail I in 1509.
+
+1517.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # In 1517, Mardin was annexed by the Ottomans under Selim I. During this time, Mardin was administered by a governor directly appointed under the Ottoman Sultan's authority.
+1750.1.1 = { culture = al_suryah_arabic } # aramaic fades to obscurity

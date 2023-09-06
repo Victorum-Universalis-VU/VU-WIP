@@ -1,0 +1,4 @@
+#4321 - Egyptian Desert
+
+#discovered_by = muslim
+#discovered_by = east_african

@@ -1,0 +1,29 @@
+#6796 - Yuanyang
+
+owner = MNG
+controller = MNG
+add_core = MNG
+culture = jianghuai
+religion = confucianism
+capital = "Yuanyang"
+trade_goods = glass
+hre = no
+base_tax = 5
+base_production = 6
+base_manpower = 3
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+
+add_permanent_province_modifier = {
+	name = grand_canal_modifier
+	duration = -1
+}
+
+1519.1.1 = { discovered_by = POR } # Tome Pires
+1645.6.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

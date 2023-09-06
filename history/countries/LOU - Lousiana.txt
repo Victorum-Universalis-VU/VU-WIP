@@ -1,0 +1,10 @@
+government = republic
+#technology_group = western
+technology_group = french_tech_group
+primary_culture = louisianans
+religion = reformed
+capital = 922	# Mobile
+
+1720.1.1 = { capital = 921 } # Biloxi
+
+

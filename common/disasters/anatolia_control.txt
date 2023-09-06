@@ -1,0 +1,197 @@
+RUM_anatolia_control = {
+	potential = {
+		tag = TUR
+		current_age = age_of_discovery
+		hidden_trigger = {
+			NOT = { has_country_flag = RUM_anatolia_control_finished }
+		}
+	}
+	can_start = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = ME_RUM_losing_against_a_beylik
+				anatolia_region = {
+					is_capital = yes
+					owner = {
+						primary_culture = turkish
+						NOT = { tag = TUR }
+						NOT = { tag = AKK }
+						war_score_against = {
+							who = TUR
+							value = 10
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ME_RUM_powerful_beylik
+				anatolia_region = {
+					is_capital = yes
+					owner = {
+						primary_culture = turkish
+						NOT = { tag = TUR }
+						NOT = { tag = AKK }
+						total_development = 300
+						NOT = { war_with = ROOT }
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ME_RUM_less_own_35_provinces_in_anatolia_directly
+			NOT = {
+				calc_true_if = {
+					anatolia_region = {
+						type = all
+						owned_by = ROOT
+					}
+					amount = 35
+				}
+			}
+		}
+	}
+	can_stop = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = RUM_disaster_can_end
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ME_RUM_own_35_provinces_in_anatolia_directly
+				calc_true_if = {
+					anatolia_region = {
+						type = all
+						owned_by = ROOT
+					}
+					amount = 35
+				}
+			}
+		}
+		else = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			custom_trigger_tooltip = {
+				tooltip = RUM_5_years_passed_since_anatolia_revolt
+				had_country_flag = {
+					flag = RUM_disaster_can_end
+					days = 1825
+				}
+			}
+		}
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		modifier = {
+			factor = -2
+			stability = 3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.25
+			unrest = 1
+		}
+		modifier = {
+			factor = 0.5
+			unrest = 0
+		}
+		
+		modifier = {
+			factor = 1
+			always = yes
+		}
+		
+		modifier = {
+			factor = 1
+			war_exhaustion = 1
+		}
+		modifier = {
+			factor = 1.15
+			war_exhaustion = 3
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+	}
+
+	can_end = {
+		#always = no #ended by event
+		custom_trigger_tooltip = {
+			tooltip = ME_RUM_own_35_provinces_in_anatolia_directly
+			calc_true_if = {
+				anatolia_region = {
+					type = all
+					owned_by = ROOT
+				}
+				amount = 35
+			}
+		}
+	}
+	
+	modifier = {
+		#nothing. When this fires ottos look hold over anatolia and get other penalties temporarily.
+	}
+
+	on_start = ME_Rum_Events.1
+	on_end = ME_Rum_Events.29
+	
+	on_monthly = {
+		events = {
+			##############
+			# War Event: Give occupation to a beylik
+			# Usually fires from ME_Rum_Events.1 (Start)
+			# And gives occupation to the strongest beylik
+			
+			ME_Rum_Events.2
+			
+			##############
+		}
+		random_events = {
+			160 = 0
+			##############
+			# War Events: They fire at war
+			# Purpose is to make Ottomans peace out faster if at war.
+			
+			10 = ME_Rum_Events.17 # Add war exhaustion at war
+			10 = ME_Rum_Events.18 # Lose some manpower at war
+			
+			##############
+			
+			##############
+			# Peacetime Ultimatum: Fires at peace quite soon
+			# Purpose is to make Ottomans spit out all beyliks or to fight them
+			# AI will only release beyliks - considered "more fun" 
+			
+			40 = ME_Rum_Events.28 # Ultimatum to the Ottomans:
+			#						Either give up all Anatolia Holdings and release 
+			#						all beyliks
+			#						Or face a huge rebellion + manpower loss.
+			
+			##############
+		}
+	}
+	
+	on_progress_effect = {
+		ME_anatolia_control_on_progress = yes
+	}
+}

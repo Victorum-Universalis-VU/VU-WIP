@@ -1,0 +1,71 @@
+timurids_empire = {
+	rank = {
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		3 = EMPRESS
+	}
+	
+	consort_male  = {
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		3 = EMPRESS_CONSORT
+	}
+
+	heir_male = {
+		3 = HEIR
+	}
+
+	heir_female = {
+		3 = HEIR_fem
+	}
+	
+	government_reform = timurid_empire
+
+	trigger = {
+		has_reform = timurid_empire
+	}
+}
+
+timurids_governor = {
+	rank = {
+		2 = STATE
+	}
+
+	ruler_male = {
+		2 = GOVERNOR
+	}
+
+	ruler_female = {
+		2 = GOVERNESS
+	}
+	
+	consort_male  = {
+		2 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		2 = CONSORT
+	}
+
+	heir_male = {
+		2 = HEIR
+	}
+
+	heir_female = {
+		2 = HEIR_fem
+	}
+	
+	government_reform = timurid_governor
+
+	trigger = {
+		has_reform = timurid_governor
+	}
+}

@@ -1,0 +1,39 @@
+#4353 - Leyte
+
+culture = visayan
+religion = animism
+capital = "Tarakluban"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 50
+native_ferocity = 3
+native_hostileness = 9
+
+discovered_by = chinese
+
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+
+1569.1.1 = {	
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	capital = "Carigara"
+	culture = castillian
+	religion = catholic
+	is_city = yes
+	trade_goods = tropical_wood
+}
+
+1843.1.1 = { #Name change due to Jesuits handover of settlement to the Franciscans
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	capital = "Tacloban"
+	culture = castillian
+	religion = catholic
+	is_city = yes
+	trade_goods = tropical_wood
+}

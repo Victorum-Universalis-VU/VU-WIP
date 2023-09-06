@@ -1,0 +1,277 @@
+country_decisions = {
+
+	form_ayyubids = {
+		major = yes
+		potential = {
+			NOT = { exists = AYY }
+			tag = HSN
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = AYY_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = egypt_region
+				region = mashriq_region
+				area = aleppo_area
+				area = tabuk_area
+				area = medina_area
+				area = mecca_area
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+				area = hadramut_area
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { province_id = 4298 }
+		}
+		allow = {
+			is_at_war = no
+			stability = 1
+			OR = {
+				NOT = { exists = MCC }
+				overlord_of = MCC
+			}
+			egypt_region = {
+				type = all
+				owned_by = ROOT
+			}
+			mashriq_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					province_id = 4298
+				}
+			}
+			tabuk_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			medina_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			mecca_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			asir_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			tihama_al_yemen_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			upper_yemen_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			yemen_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+			hadramut_area = {
+				type = all
+				OR = { 
+					owned_by = ROOT
+					owned_by = MCC
+				}
+			}
+		}
+		effect = {
+			change_tag = AYY
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = AYY_flag
+			set_country_flag = formed_persia_flag
+			set_country_flag = formed_arabia_flag
+			set_country_flag = kurdistan_flag
+			country_event = { id = ME_Ayyubid_Events.17 }
+			country_event = { id = ME_Ayyubid_Events.22 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	AYY_caliphate = {
+		potential = {
+			OR = {
+				tag = AYY
+				tag = HSN
+			}
+			mission_completed = AYY_succeeding_the_abbasids
+			NOT = { ME_is_caliphate_trigger = yes }
+			NOT = { has_country_flag = AYY_oof }
+		}
+		allow = {
+			stability = 1
+			army_size = 40
+			ME_has_abbasid_caliph = yes
+		}
+		effect = {
+			country_event = { id = ME_Ayyubid_Events.14 }
+			tooltip = {
+				ME_become_caliphate_effect = yes
+			}
+			custom_tooltip = ME_Ayyubid_Tooltips.12
+			set_country_flag = AYY_oof
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# AYY_construct_suez_canal = {
+		# major = yes
+		# potential = {
+			# OR = {
+				# ai = no
+				# AND = {
+					# treasury = 10000
+					# owns_or_vassal_of = 4316
+				# }
+			# }
+			# has_country_flag = AYY_may_upgrade_suez
+			# has_discovered = 4316
+			# 4316 = {
+				# range = ROOT
+				# NOT = {
+					# has_great_project = {
+						# type = suez_canal
+					# }
+				# }
+				# NOT = {
+					# has_construction = suez_canal
+				# }
+			# }
+		# }
+		# provinces_to_highlight = {
+			# OR = {
+				# province_id = 4316
+				# province_id = 2315
+			# }
+			# OR = {
+				# NOT = { owned_by = ROOT }
+				# NOT = { owner = { vassal_of = ROOT } }
+			# }
+			# adm_tech = 10
+		# }
+		# allow = {
+			# owns_or_non_sovereign_subject_of = 4316
+			# owns_or_non_sovereign_subject_of = 2315
+			# is_subject = no
+			# adm_tech = 10
+			# treasury = 10000
+		# }
+		# effect = {
+			# 4316 = {	# Sharqiya
+				# add_great_project = { type = suez_canal }
+			# }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+	AYY_madras = {
+		potential = {
+			mission_completed = AYY_restore_cairo
+			any_owned_province = {
+				development = 15
+				NOT = {	has_building = university }
+				NOT = { has_construction = missionary }
+				NOT = { has_construction = culture }
+				NOT = { has_construction = core }
+				NOT = { has_construction = building }
+			}
+		}
+		allow = {
+			treasury = 300
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					development = 15
+					NOT = { has_building = university }
+					NOT = { has_construction = missionary }
+					NOT = { has_construction = culture }
+					NOT = { has_construction = core }
+					NOT = { has_construction = building }
+				}
+				if = {
+					limit = {
+						ROOT = {
+							has_country_flag = AYY_nerf_decision
+						}
+					}
+					add_building_construction = {
+						building = university
+						speed = 1
+						cost = 1
+					}
+				}
+				else = {
+					add_building_construction = {
+						building = university
+						speed = 2
+						cost = 1
+					}
+				}
+				#add_treasury = -300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = { treasury = 500 }
+			}
+		}
+	}
+	
+	AYY_change_national_focus = {
+		potential = {
+			has_country_flag = AYY_decision_to_change_focus
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = { id = missions_expanded_events.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

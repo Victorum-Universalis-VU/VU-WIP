@@ -1,0 +1,10 @@
+capital = 8196 
+
+technology_group = hungarian_tech_group
+unit_type = eastern
+
+government = monarchy
+add_government_reform = feudalism_reform
+
+religion = catholic
+primary_culture = hungarian

@@ -1,0 +1,16 @@
+me_estate_cultural_minorities = {
+	modifier_definition = {
+		type = loyalty
+		key = me_estate_cultural_minorities_loyalty_modifier
+		trigger = {
+			has_estate = me_estate_cultural_minorities
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = me_estate_cultural_minorities_influence_modifier
+		trigger = {
+			has_estate = me_estate_cultural_minorities
+		}
+	}
+}

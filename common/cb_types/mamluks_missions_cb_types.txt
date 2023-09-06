@@ -1,0 +1,37 @@
+cb_mam_cut_down_in_size = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			AND = {
+				has_country_flag = MAM_maghreb_flag
+				FROM = {
+					capital_scope = {
+						region = maghreb_region
+					}
+				}
+			}
+			AND = {
+				has_country_flag = MAM_nubia_flag
+				FROM = {
+					capital_scope = {
+						region = horn_of_africa_region
+					}
+				}
+			}
+		}
+	}
+
+	war_goal = superiority_mam_size
+}
+
+cb_mam_civil_war = {
+	valid_for_subject = no
+	ai_peace_desire = -300
+
+	prerequisites = {
+		always = no
+	}
+
+	war_goal = superiority_mam_civil_war
+}

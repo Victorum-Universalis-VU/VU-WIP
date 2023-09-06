@@ -1,0 +1,5 @@
+#6032 - Piscataqua_River_Estuary
+
+discovered_by = north_american
+
+1524.1.1 = { discovered_by = FRA } # Giovanni da Verrazzano

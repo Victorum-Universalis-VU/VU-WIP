@@ -1,0 +1,11 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = wallonian
+religion = catholic
+technology_group = french_tech_group
+unit_type = western
+capital = 8025
+
+
+#History not yet done

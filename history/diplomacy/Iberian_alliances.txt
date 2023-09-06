@@ -1,0 +1,534 @@
+################################################################
+######################## Aragon (VU) ########################
+################################################################
+
+#############
+# Guarantee #
+#############
+
+guarantee = {
+	first = ARA
+	second = HRZ
+	start_date = 1444.1.1
+	end_date = 1444.11.13 #VictorumUniversalis batch edit shortcut the second shattering begins
+}
+
+guarantee = {
+	first = ARA
+	second = HRZ
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1483.1.1
+}
+
+guarantee = {
+	first = ARA
+	second = AOR
+	start_date = 1444.1.1
+	end_date = 1444.11.13 #VictorumUniversalis batch edit shortcut the second shattering begins
+}
+
+guarantee = {
+	first = ARA
+	second = AOR
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1479.9.4
+}
+
+###################
+# Royal Marriages #
+###################
+
+# Ferdinand II and Isabella of Castille
+royal_marriage = {
+	first = ARA
+	second = CAS
+	start_date = 1469.10.19
+	end_date = 1504.11.26
+}
+
+#############
+# Alliances #
+#############
+
+# Sicily and Aragon - EU4 Vanilla
+alliance = {
+	first = ARA
+	second = SIC
+	start_date = 1392.2.1
+	end_date = 1409.7.25
+}
+
+# Aragon and Austria (League of Venice)
+alliance = {
+	first = ARA
+	second = HAB
+	start_date = 1495.3.31
+	end_date = 1499.1.1
+}	
+
+# Aragon and Milan (League of Venice)
+alliance = {
+	first = ARA
+	second = MLO
+	start_date = 1495.3.31
+	end_date = 1499.1.1
+}	
+
+# Aragon and Venice (League of Venice)
+alliance = {
+	first = ARA
+	second = VEN
+	start_date = 1495.3.31
+	end_date = 1499.1.1
+}
+
+# Aragon and the Pope (League of Venice)
+alliance = {
+	first = ARA
+	second = PAP
+	start_date = 1495.3.31
+	end_date = 1499.1.1
+}
+
+# Aragon and England (Treaty of Westminster)
+alliance = {
+	first = ARA
+	second = ENG
+	start_date = 1511.11.13
+	end_date = 1514.8.7
+}
+
+#########
+# Union #
+#########
+
+# VU addition
+union = {
+	first = ARA
+	second = SIC
+	start_date = 1295.6.20			#Treaty of Anagni gives Sicily to the Pope, who promptly gives it to Charles II of Naples, but the local regent Frederick III of Sicily and populous refuse to acknowledge this and rebel, naming Frederick III of Sicily king and sparking the war again, but putting Sicily back with Aragon's royal family.
+	end_date = 1409.7.25			#Thrones united when  Martin I inherits Sicily from his son
+}
+
+# Sicily and Aragon - EU4 Vanilla
+#union = {
+#	first = ARA
+#	second = SIC
+#	start_date = 1401.5.26
+#	end_date = 1409.7.25
+#}
+
+union = {
+	first = ARA
+	second = SIC
+	start_date = 1409.7.26
+	end_date = 1442.3.3	#Naples temporary annexes Sicily. Actually more complicated, but that is what we're saying for now.
+}
+
+union = {
+	first = ARA
+	second = SAR
+	start_date = 1421.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+union = {
+	first = ARA
+	second = COR
+	start_date = 1421.1.1
+	end_date = 1444.11.13 #VictorumUniversalis batch edit shortcut the second shattering begins
+} #Counts of Cinarca, a personal union under the Crown of Aragon... sort of.
+
+union = {
+	first = ARA
+	second = COR
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1453.1.1			#Bank of Saint George takes posession of the island, and the weak Aragonese influence is broken.
+} #Counts of Cinarca, a personal union under the Crown of Aragon... sort of.
+
+# Aragon and Sicily, Alfons V/Alfonso I
+union = {
+	first = ARA
+	second = NAP
+	start_date = 1442.3.3
+	end_date = 1458.6.27
+}
+
+union = {
+	first = ARA
+	second = SAR
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1516.1.22
+}
+
+# VU Addition
+union = {
+	first = ARA
+	second = SIC
+	start_date = 1458.6.27 #Resplit.
+	end_date = 1516.1.22
+}
+
+# Navarra under John II of Aragon
+union =  {
+	first = ARA
+	second = NAV
+	start_date = 1458.6.29
+	end_date = 1479.1.20
+}
+
+################################################################
+######################## Castile (VU) ########################
+################################################################
+
+#############
+# Guarantee #
+#############
+
+guarantee = {
+	first = CAS
+	second = AOR
+	start_date = 1479.9.5
+	end_date = 1516.1.23
+}
+
+guarantee = {
+	first = BSP
+	second = AOR
+	start_date = 1516.1.24
+	end_date = 1837.1.1
+}
+
+###################
+# Royal Marriages #
+###################
+
+# Henry IV of Castille and Joana of Portugal
+royal_marriage = {
+	first = CAS
+	second = POR
+	start_date = 1455.1.1
+	end_date = 1474.12.12
+}
+
+# Juan, Son of the Catholic Kings, and Margaret of Austria
+royal_marriage = {
+	first = CAS
+	second = HAB
+	start_date = 1497.1.1
+	end_date = 1497.12.31
+}
+
+# Philip II of Spain and Mary I of England
+royal_marriage = {
+	first = BSP
+	second = ENG
+	start_date = 1554.1.1
+	end_date = 1558.1.1
+}
+
+# Philip II of Spain and Elisabeth of Valois
+royal_marriage = {
+	first = BSP
+	second = FRA
+	start_date = 1559.1.1
+	end_date = 1568.10.3
+}
+
+# Felipe II and Anna of Austria
+# Maximilian II ~ Maria (daughter of Emperor Karl V)
+royal_marriage = {
+	first = BSP
+	second = HAB
+	start_date = 1548.1.1
+	end_date = 1580.10.26
+} 
+
+# Felipe III and Margarete of Austria
+royal_marriage = {
+	first = BSP
+	second = HAB
+	start_date = 1599.4.18
+	end_date = 1611.10.3
+} 
+
+# Felipe IV and Maria Anna of Austria
+royal_marriage = {
+	first = BSP
+	second = HAB
+	start_date = 1649.10.7
+	end_date = 1665.9.17
+} 
+
+# Louis of Spain and Louise Elisabeth d'Orléans
+royal_marriage = {
+	first = SPB
+	second = FRA # Was BRF
+	start_date = 1722.1.20
+	end_date = 1724.8.3
+}
+
+#############
+# Alliances #
+#############
+
+# Spain and the Pope
+alliance = {
+	first = BSP
+	second = PAP
+	start_date = 1521.5.29
+	end_date = 1526.1.14
+}
+
+# Spain and England (Treaty of Bruges)
+alliance = {
+	first = BSP
+	second = ENG
+	start_date = 1521.8.25
+	end_date = 1526.1.14
+}
+
+# Spain and England
+alliance = {
+	first = BSP
+	second = ENG
+	start_date = 1543.2.11
+	end_date = 1546.8.1
+}
+
+# Spain-France
+alliance = {
+	first = BSP
+	second = FRA # Was BRF 
+	start_date = 1700.11.1
+	end_date = 1718.12.17
+}
+
+# Spain-France
+alliance = {
+	first = SPB
+	second = FRA # Was BRF
+	start_date = 1733.1.1
+	end_date = 1789.7.14
+}
+
+# Sicily-Spain
+alliance = {
+	first = SPB
+	second = NAP
+	start_date = 1734.6.2
+	end_date = 1789.7.14
+}
+
+# Parma-Spain
+alliance = {
+	first = SPB
+	second = PAR
+	start_date = 1733.1.1
+	end_date = 1735.1.1
+}
+
+# Parma-Spain
+alliance = {
+	first = SPB
+	second = PAR
+	start_date = 1748.1.1
+	end_date = 1789.7.14
+}
+
+# Portugal and Spain
+alliance = {
+	first = CSP
+	second = POR
+	start_date = 1793.4.17
+	end_date = 1795.7.22
+}
+
+##########
+# Vassal #
+##########
+
+# Carlos I, Overlord of the Aztecs
+vassal = {
+	first = BSP
+	second = AZT
+	start_date = 1521.8.13
+	end_date = 1553.12.31
+}
+
+# Spanish vassal
+vassal = {
+	first = SPB
+	second = NAP
+	start_date = 1734.6.2
+	end_date = 1768.5.12
+}
+
+# Spanish vassal
+vassal = {
+	first = CSP
+	second = ETR
+	start_date = 1801.3.21
+	end_date = 1807.12.10
+}
+
+# Spain and Etruria
+alliance = {
+	first = CSP
+	second = ETR
+	start_date = 1801.3.21
+	end_date = 1807.12.10
+}
+
+#########
+# Union #
+#########
+
+# Ferdinand and Isabel
+union = {
+	first = CAS
+	second = ARA
+	start_date = 1479.9.4
+	end_date = 1516.1.23
+}
+
+# Castille-Burgundy Union - Felipe I/Philippe IV
+union = {
+	first = CAS
+	second = BUR
+	start_date = 1504.11.27
+	end_date = 1506.9.25
+}
+
+#Iberian Union
+union = {
+	first = SPB
+	second = POR
+	start_date = 1580.8.26
+	end_date = 1640.12.1
+}
+
+################################################################
+######################## Corsica (VU) ########################
+################################################################
+
+#########
+# Union #
+#########
+
+################################################################
+######################## Navarra (VU) ########################
+################################################################
+
+###################
+# Royal Marriages #
+###################
+
+################################################################
+######################## Sicily (VU) #########################
+################################################################
+
+###################
+# Royal Marriages #
+###################
+
+# Maria I and Martin of Aragon
+royal_marriage = {
+	first = SIC
+	second = ARA
+	start_date = 1392.2.1
+	end_date = 1401.5.26
+}
+
+################################################################
+####################### Portugal (VU) ########################
+################################################################
+
+###################
+# Royal Marriages #
+###################
+
+# Edward and Leonor of Aragon
+royal_marriage = {
+	first = POR
+	second = ARA
+	start_date = 1428.9.22
+	end_date = 1438.9.13
+}
+
+# Afonso V, and Joana ('A Beltrajana'), Infanta of Castille, daughter of Henrique IV of Castille and Joana, Infanta of Portugal
+royal_marriage = {
+	first = POR
+	second = CAS
+	start_date = 1475.5.12
+	end_date = 1481.8.29
+} 
+
+# Afonso, Heir to João, and Isabella of Aragon-Castille
+royal_marriage = {
+	first = POR
+	second = CAS
+	start_date = 1490.11.3
+	end_date = 1491.7.13
+}
+
+# Manuel I and Isabella of Spain
+royal_marriage = {
+	first = POR
+	second = CAS
+	start_date = 1497.12.1
+	end_date = 1498.8.24
+	} 
+
+# Manuel I of Portugal and Maria of Aragon
+royal_marriage = {
+	first = POR
+	second = CAS
+	start_date = 1500.1.1
+	end_date = 1517.1.1
+}
+
+# Manuel I and Leonor of Spain
+# João III and Catarina of Spain
+# Charles V of Spain and Isabella of Portugal
+# King Felipe II of Spain (son of Karl V) ~ Isabel (daughter of King João III of Portugal)
+royal_marriage = {
+	first = POR
+	second = BSP
+	start_date = 1518.11.25
+	end_date = 1599.1.1
+}
+ 
+# Pedro II and Maria Sophia of Neuburg
+royal_marriage = {
+	first = POR
+	second = PAL
+	start_date = 1687.1.1
+	end_date = 1699.8.4
+} 	
+
+# Joao V and Maria Anna of Austria
+royal_marriage = {
+	first = POR
+	second = HAB
+	start_date = 1708.10.27
+	end_date = 1750.7.31
+}
+
+# Philip V of Spain and Elisabeth Farnese of Parma
+# Joseph of Portugal and Marianne Victoria of Borbôn
+# Ferdinand VI of Spain and Maria Magdalena Barbara
+royal_marriage = {
+	first = POR
+	second = SPB
+	start_date = 1714.12.24
+	end_date = 1777.2.24
+}
+	
+# João VI and Carlotta of Spain
+royal_marriage = {
+	first = POR
+	second = CSP
+	start_date = 1790.1.9
+	end_date = 1826.3.10
+}

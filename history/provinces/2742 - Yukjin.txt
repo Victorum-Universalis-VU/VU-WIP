@@ -1,0 +1,37 @@
+#2742 - Kwanbuk
+
+owner = KOR
+controller = KOR
+culture = manchu
+religion = confucianism
+capital = "Rajin" #two small fishing villages in the area, other one is called Sonbong
+trade_goods = lead	# was fur
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 4 # Joseon garrison, north of the villages in the highlands
+is_city = yes
+fort_15th = yes
+add_core = GOG
+add_core = KOR
+add_core = MJZ
+discovered_by = chinese
+discovered_by = japanese
+#discovered_by = dutch_tech_group
+add_local_autonomy = 25
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
+
+ #relevant port even today, but was not developed at the time, so fitting to be just a natural harbor
+
+1542.1.1 = { discovered_by = POR }
+1592.7.18 = { controller = ODA } # Japanese invasion - Battle of Haejungchang
+1593.2.22 = { controller = KOR } # Kato retreats to Seoul
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+1739.1.1 = { discovered_by = RUS } # Martin Spanberg

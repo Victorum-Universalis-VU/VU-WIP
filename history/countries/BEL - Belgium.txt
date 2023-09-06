@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = belgian_kingdom_reform
+government_rank = 2
+technology_group = german_tech_group
+unit_type = western
+primary_culture = ger_brabantian
+add_accepted_culture = ger_flemish
+add_accepted_culture = wallonian
+religion = catholic
+capital = 92	# Brussel

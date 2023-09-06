@@ -1,0 +1,3 @@
+#6056 - Lake_Hemlock
+
+discovered_by = north_american

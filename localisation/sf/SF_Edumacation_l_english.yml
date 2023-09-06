@@ -1,0 +1,134 @@
+﻿l_english:
+ #Ruler
+ edu_1_ruler_scholarship_title:0 "Earn a Scholarship for Monarch"
+ edu_1_ruler_scholarship_desc:0 "Let us educate and improve our monarch's skill points by sending them to one of the finest insitutions in the land so that they may attain Scholarly works."
+ #
+ edu_2_ruler_bachelors_degree_title:0 "Earn a Degree for Monarch"
+ edu_2_ruler_bachelors_degree_desc:0 "Let us educate and improve our monarch's skill points by sending them to one of the finest insitutions in the land so that they may attain a Bachelor's degree."
+ #
+ edu_3_ruler_doctorate_title:0 "Earn a Doctorate for Monarch"
+ edu_3_ruler_doctorate_desc:0 "Now that we have achieved our Bachelors degree, let us further educate and improve our monarch's skill points by sending them off to attain their Doctorate."
+ #
+ ruler_uneducated:0 "Uneducated Monarch"
+ desc_ruler_studying:0 "Monarch is currently uneducated and is thus not only an embarassment to heir and the country but is also incompetently assisting our government in stately affairs beyond their capabilities, to the point that monarch's very existence and position is a detriment not only to our society but the nation as a whole."
+ #
+ ruler_studying:0 "Monarch is studying"
+ desc_ruler_studying:0 "Our monarch is currently indisposed from assisting our government in stately affairs as they are currently studying to improve their $RULER_ADJ$ at one of the most prestigious institutions in the land."
+ #
+ ruler_completed_scholarship:0 "Monarch has completed a Scholarship"
+ desc_ruler_completed_scholarship:0 "Our monarch has finally achieved a Scholarship and can now proceed to higher education."
+ #
+ ruler_completed_degree:0 "Monarch has completed a Degree"
+ desc_ruler_completed_degree:0 "Our monarch has finally achieved their Bachelors Degree and can now proceed to further themselves by achieving a Doctorate."
+ #
+ ruler_completed_doctorate:0 "Monarch has completed a Doctorate"
+ desc_ruler_completed_doctorate:0 "Our monarch has finally achieved their Doctorate and has thus achieved a full education."
+ #
+ scholarship:0 "Both our Monarch & Heir know how to read and write."
+ bachelors:0 "Both our monarch & heir have a degree."
+ doctorate:0 "Both our monarch & heir are already overeducated and very entitled."
+ #
+ desc_scholarship:0 "Both our Monarch & Heir know how to read and write."
+ desc_bachelors:0 "Both our monarch & heir have a degree."
+ desc_doctorate:0 "Both our monarch & heir are already overeducated and very entitled."
+ #
+ #Heir
+ edu_1_heir_scholarship_title:0 "Earn a Scholarship for Heir"
+ edu_1_heir_scholarship_desc:0 "Let us educate and improve our heir's skill points by sending them to one of the finest insitutions in the land so that they may attain Scholarly works."
+ #
+ edu_2_heir_bachelors_degree_title:0 "Earn a Degree for Heir"
+ edu_2_heir_bachelors_degree_desc:0 "Let us educate and improve our heir's skill points by sending them to one of the finest insitutions in the land so that they may attain a Bachelor's degree."
+ #
+ edu_3_heir_doctorate_title:0 "Earn a Doctorate for Heir"
+ edu_3_heir_doctorate_desc:0 "Now that our heir has achieved a Bachelors degree, let us further educate and improve their skill points by sending them off to attain their Doctorate."
+ #
+ heir_uneducated:0 "Uneducated Heir"
+ desc_heir_uneducated:0 "Heir is currently uneducated and is thus not only an embarassment to our monarch and the country but is also incompetently assisting them in stately affairs beyond their capabilities, to a point that heir's very existence and position is a detriment not only to our society but the nation as a whole."
+ #
+ heir_studying:0 "Heir is studying"
+ desc_heir_studying:0 "Our heir is currently indisposed from assisting our monarch in stately affairs as they are currently studying to improve their $HEIR_ADJ$ at one of the most prestigious institutions in the land."
+ #
+ heir_completed_scholarship:0 "Heir has completed a Scholarship"
+ desc_heir_completed_scholarship:0 "Our heir has finally achieved a Scholarship and can now proceed to higher education."
+ #
+ heir_completed_degree:0 "Heir has completed a Degree"
+ desc_heir_completed_degree:0 "Our heir has finally achieved their Bachelors Degree and can now proceed to further themselves by achieving a Doctorate."
+ #
+ heir_completed_doctorate:0 "Heir has completed a Doctorate"
+ desc_heir_completed_doctorate:0 "Our heir has finally achieved their Doctorate and has thus achieved a full education."
+ #
+ #Event
+ edumacation.1.name:0 "Educate Yourself"
+ edumacation.1.desc:0 "Monarch was never well educated during their younger days. Now is the time to educate monarch in order to better their titles."
+ edumacation.1.a:0 "Time to get out those old books."
+ #
+ edumacation.2.name:0 "Educate Your Kid"
+ edumacation.2.desc:0 "Heir is lacking an education and can barely read or write. Now is the time to provide for our heir an education in order to better their titles."
+ edumacation.2.a:0 "Time to some new textbooks."
+ #
+ edumacation.3.name:0 "Educmacation was successful"
+ edumacation.3.desc:0 "Monarch was well educated in $RULER_ADJ$ younger days. Now $RULER_ADJ$ education will give us a better their titles."
+ edumacation.3.a:0 "Fine."
+ #
+ edumacation.4.name:0 "Educmacation was successful"
+ edumacation.4.desc:0 "Monarch was well educated in $RULER_ADJ$ younger days. Now $RULER_ADJ$ education will give us a better their titles."
+ edumacation.4.a:0 "Fine."
+ #
+ edumacation.5.name:0 "Educmacation was successful"
+ edumacation.5.desc:0 "Heir was well educated in $HEIR_ADJ$ younger days. Now $HEIR_ADJ$ education will give us a better their titles."
+ edumacation.5.a:0 "Fine."
+ #
+ edumacation.6.name:0 "Educmacation was successful"
+ edumacation.6.desc:0 "Heir was well educated in $HEIR_ADJ$ younger days. Now $HEIR_ADJ$ education will give us a better their titles."
+ edumacation.6.a:0 "Fine."
+ #
+ edumacation.7.name:0 "Graduated Scholar"
+ edumacation.7.desc:0 "Our monarch was successful in their studies, attaining the qualification of Scholar."
+ edumacation.7.a:0 "Congratulations!"
+ #
+ edumacation.8.name:0 "Graduated Bachelorette"
+ edumacation.8.desc:0 "Our monarch was successful in their studies, attaining the qualification of a Bachelorette."
+ edumacation.8.a:0 "Congratulations!"
+ #
+ edumacation.9.name:0 "Graduated Doctor"
+ edumacation.9.desc:0 "Our monarch was successful in their studies, attaining the qualification of a Doctorate and the rank of Doctor that goes with it."
+ edumacation.9.a:0 "Congratulations!"
+ #
+ edumacation.10.name:0 "Graduated Scholar"
+ edumacation.10.desc:0 "Our heir was successful in their studies, attaining the qualification of Scholar."
+ edumacation.10.a:0 "Congratulations!"
+ #
+ edumacation.11.name:0 "Graduated Bachelorette"
+ edumacation.11.desc:0 "Our heir was successful in their studies, attaining the qualification of a Bachelorette."
+ edumacation.11.a:0 "Congratulations!"
+ #
+ edumacation.12.name:0 "Graduated Doctor"
+ edumacation.12.desc:0 "Our heir was successful in their studies, attaining the qualification of a Doctorate and the rank of Doctor that goes with it."
+ edumacation.12.a:0 "Congratulations!"
+ #
+ #Personalities
+ vu_uneducated_ruler_personality:0 "Uneducated Ruler"
+ desc_vu_uneducated_ruler_personality:0 "Our monarch having little access to state coffers, poor leadership at court and cynical ministers, coupled with their lacklustre desire and disinterest for our monarch to become more learned and competent in their governance has our sovereign doubting themself, thus leading monarch to forgo seeking any education at all."
+ #
+ vu_uneducated_heir_personality:0 "Uneducated Heir"
+ desc_vu_uneducated_heir_personality:0 "Our heir having unsupportive parents with access to state coffers and connections at court, coupled with their narrowmindedness and little desire to see our heir achieve scholarly works and gain an education in the process has led to our heir having no education at all."
+ #
+ vu_scholarly_ruler_personality:0 "Scholarly Ruler"
+ desc_vu_scholarly_ruler_personality:0 "Our monarch having access to state coffers, leadership at court and eagre ministers, coupled with their desire and interest for our monarch to become more learned and competent in their governance has led our sovereign to pursue and achieve a basic form of education in all the land."
+ #
+ vu_scholarly_heir_personality:0 "Scholarly Heir"
+ desc_vu_scholarly_heir_personality:0 "Our heir having eagre parents with access to state coffers and connections at court, coupled with their interest and desire to see our heir achieve scholarly works whilst becoming more educated in the process has led to our pursuing and attaining a basic form of education."
+ #
+ vu_bachelorette_ruler_personality:0 "Bachelorette Holder"
+ desc_vu_bachelorette_ruler_personality:0 "Our monarch having access to state coffers, leadership at court and supportive ministers, coupled with their desire and interest for our monarch to become more learned and competent in their governance has led our sovereign to pursue and achieve a higher form of education in all the land."
+ #
+ vu_bachelorette_heir_personality:0 "Bachelorette Holder"
+ desc_vu_bachelorette_heir_personality:0 "Our heir having supportive parents with access to state coffers and connections at court, coupled with their interest and desire to see our heir achieve scholarly works whilst becoming more educated in the process has led to heir pursuing and attaining a higher form of education."
+ #
+ vu_doctorate_ruler_personality:0 "Doctorate Holder"
+ desc_vu_doctorate_ruler_personality:0 "Our monarch having access to state coffers, leadership at court and supportive ministers, coupled with their desire and interest for our monarch to become more learned and competent in their governance has led sovereign to pursue and achieve the highest form of education in all the land."
+ #
+ vu_doctorate_heir_personality:0 "Doctorate Holder"
+ desc_vu_doctorate_heir_personality:0 "Our heir having very supportive parents with access to state coffers and connections at court, coupled with their interest and desire to see our heir achieve scholarly works whilst becoming more educated in the process has led to our heir pursuing and attaining the highest form of education in all the land."
+ #
+ 

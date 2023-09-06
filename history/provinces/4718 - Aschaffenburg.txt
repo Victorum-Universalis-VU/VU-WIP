@@ -1,0 +1,76 @@
+#4718 - Aschaffenburg
+#Region - Germany
+#Area - Palatinate
+
+capital = "Aschaffenburg"
+culture = franconian
+religion = catholic
+trade_goods = naval_supplies
+owner = MAI
+base_tax = 4 
+base_production = 4 
+base_manpower = 2 
+is_city = yes
+add_core = MAI
+controller = MAI
+hre = yes
+
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+1631.12.22 = { controller = SWE }
+1635.1.1 = {
+	controller = MAI
+}
+1644.1.1 = {
+	controller = FRA
+}
+1648.10.24 = {
+	controller = MAI
+}
+1792.10.1 = { controller = FRA } # Occupied by French troops
+1792.12.3 = { controller = MAI } # Prussian troops take control
+1803.1.1 = {
+	owner = FRN
+	controller = FRN
+	add_core = FRN
+	remove_core = MAI
+} # The Grand Duchy of Frankfurt, established after the Treaty of Schönbrunn
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.1.1 = {
+	owner = BAV
+	controller = BAV
+	add_core = BAV
+	remove_core = FRN
+}

@@ -1,0 +1,66 @@
+#7815 - Anklam
+
+#Default
+owner = DYM
+controller = DYM
+add_core = DYM
+add_core = POM
+culture = polabian_culture
+religion = catholic
+capital = "Treptow"				#or Spantekow. Also Anklam and Demmin are nearby and much more important, though both would cause issues with hsitorical borders. This little corner needs about 40 provinces to be perfectly accurate, so we compromise.
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = lumber		# West Pomerania for long has been a lakeland with dense forests
+is_city = yes
+hre = yes
+
+#Claimants
+
+#Buildings
+
+#Special Modifiers
+
+#Known by Technology groups
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+
+#Histories by docRobert & SF
+1275.1.1 = { culture = pommeranian }
+1295.1.1 = {
+	owner = STE
+	controller = STE
+	add_core = STE
+	remove_core = POM
+}	#Barnim II of Pomerania dies, killed by the husband of a woman he seduced. Pomerania fractures.

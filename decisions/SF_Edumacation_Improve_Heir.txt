@@ -1,0 +1,156 @@
+#SF Edumacation - Improve Heir
+country_decisions = {
+   edu_1_heir_scholarship = {
+      major = yes
+      potential = { 
+         ai = no
+         is_at_war = no
+         has_regency = no
+         government = monarchy
+         has_heir = yes
+         NOT = { is_heir_leader = yes }
+      }
+      allow = {
+         ai = no
+         is_at_war = no
+         adm_power = 30
+         dip_power = 30
+         mil_power = 30
+         treasury = 225
+         NOT = { is_heir_leader = yes }
+         NOT = { technology_group = east_african }
+         NOT = { technology_group = central_african }
+         NOT = { technology_group = nomad_group }
+         NOT = { technology_group = sub_saharan }
+         NOT = { technology_group = north_american }
+         NOT = { technology_group = mesoamerican }
+         NOT = { technology_group = south_american }
+         NOT = { technology_group = andean }
+         NOT = { technology_group = high_american }
+         NOT = { technology_group = aboriginal_tech }
+         NOT = { technology_group = rapanuan_tech_group }
+         NOT = { technology_group = polynesian_tech }
+         NOT = { technology_group = papuan_tech_group }
+		 heir_has_personality = vu_uneducated_ruler_personality
+         NOT = { has_country_modifier = heir_studying }
+		 NOT = { heir_has_personality = vu_scholarly_ruler_personality }
+		 
+      }
+      effect = {
+         add_adm_power = -30
+         add_dip_power = -30
+         add_mil_power = -30
+         add_treasury = -225
+         add_country_modifier = {
+            name = "heir_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.10 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+
+   edu_2_heir_bachelors_degree = {
+      major = yes
+      potential = { 
+         ai = no
+         is_at_war = no
+         has_regency = no
+         government = monarchy
+         has_heir = yes
+         NOT = { is_heir_leader = yes }
+      }
+      allow = {
+        ai = no
+        is_at_war = no
+        adm_power = 35
+        dip_power = 35
+        mil_power = 35
+        treasury = 175
+        NOT = { is_heir_leader = yes }
+        NOT = { technology_group = east_african }
+        NOT = { technology_group = central_african }
+        NOT = { technology_group = nomad_group }
+        NOT = { technology_group = sub_saharan }
+        NOT = { technology_group = north_american }
+        NOT = { technology_group = mesoamerican }
+        NOT = { technology_group = south_american }
+        NOT = { technology_group = andean }
+        NOT = { technology_group = high_american }
+        NOT = { technology_group = aboriginal_tech }
+        NOT = { technology_group = rapanuan_tech_group }
+        NOT = { technology_group = polynesian_tech }
+        NOT = { technology_group = papuan_tech_group }
+		heir_has_personality = vu_scholarly_ruler_personality
+        NOT = { has_country_modifier = heir_studying }
+		NOT = { heir_has_personality  = vu_bachelorette_ruler_personality }
+      }
+      effect = {
+         add_adm_power = -35
+         add_dip_power = -35
+         add_mil_power = -35
+         add_treasury = -175
+         add_country_modifier = {
+            name = "heir_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.11 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+
+   edu_3_heir_doctorate = {
+      major = yes
+      potential = { 
+         ai = no
+         is_at_war = no
+         has_regency = no
+         government = monarchy
+         has_heir = yes
+         NOT = { is_heir_leader = yes }
+      }
+      allow = {
+         ai = no
+         is_at_war = no
+         adm_power = 30
+         dip_power = 30
+         mil_power = 30
+         treasury = 105
+         NOT = { is_heir_leader = yes }
+         NOT = { technology_group = east_african }
+         NOT = { technology_group = central_african }
+         NOT = { technology_group = nomad_group }
+         NOT = { technology_group = sub_saharan }
+         NOT = { technology_group = north_american }
+         NOT = { technology_group = mesoamerican }
+         NOT = { technology_group = south_american }
+         NOT = { technology_group = andean }
+         NOT = { technology_group = high_american }
+         NOT = { technology_group = aboriginal_tech }
+         NOT = { technology_group = rapanuan_tech_group }
+         NOT = { technology_group = polynesian_tech }
+         NOT = { technology_group = papuan_tech_group }
+		 heir_has_personality  = vu_bachelorette_ruler_personality
+         NOT = { has_country_modifier = heir_studying }
+		 NOT = { heir_has_personality = vu_doctorate_ruler_personality }
+      }
+      effect = {
+         add_adm_power = -30
+         add_adm_power = -30
+         add_adm_power = -30
+         add_treasury = -105
+         add_country_modifier = {
+            name = "heir_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.12 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+}

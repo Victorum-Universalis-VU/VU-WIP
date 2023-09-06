@@ -1,0 +1,6 @@
+#6275 - Lake_Maihue
+
+#discovered_by = south_american
+#discovered_by = andean
+1534.1.1 = { discovered_by = SPA }
+

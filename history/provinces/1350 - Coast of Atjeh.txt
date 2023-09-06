@@ -1,0 +1,26 @@
+1444.1.1 = { discovered_by = MLC } 1444.1.1 = { discovered_by = ATJ } 1444.1.1 = { discovered_by = MAJ } 1444.1.1 = { discovered_by = MKS } 1444.1.1 = { discovered_by = BLI } 1444.1.1 = { discovered_by = BAN } 1444.1.1 = { discovered_by = BEI } 1444.1.1 = { discovered_by = BLM } 1444.1.1 = { discovered_by = BTN } 1444.1.1 = { discovered_by = CRB } 1444.1.1 = { discovered_by = DMK } 1444.1.1 = { discovered_by = PGR } 1444.1.1 = { discovered_by = PLB } 1444.1.1 = { discovered_by = PSA } 1444.1.1 = { discovered_by = SAK } 1444.1.1 = { discovered_by = SUN } 1444.1.1 = { discovered_by = KUT } 1444.1.1 = { discovered_by = BNJ } 1444.1.1 = { discovered_by = LFA } 1444.1.1 = { discovered_by = LNO } 1444.1.1 = { discovered_by = LUW } 1444.1.1 = { discovered_by = MGD } 1444.1.1 = { discovered_by = TER } 1444.1.1 = { discovered_by = TID }
+discovered_by = indian
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+
+
+
+
+1405.1.1 = { discovered_by = MNG }
+1509.1.1 = { discovered_by = POR }
+1521.1.1 = { discovered_by = SPA }
+

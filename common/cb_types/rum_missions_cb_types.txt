@@ -1,0 +1,31 @@
+cb_rum_enforce_trading_rights = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_flag = RUM_casus_belli_on_trade_node_flag
+		FROM = {
+			OR = {
+				1308 = {
+					trade_share = {
+						country = PREV
+						share = 10
+					}
+				}
+				1298 = {
+					trade_share = {
+						country = PREV
+						share = 10
+					}
+				}
+				1295 = {
+					trade_share = {
+						country = PREV
+						share = 10
+					}
+				}
+			}
+		}
+	}
+	
+	war_goal = enforce_trading_rights_rum_wargoal_type
+}

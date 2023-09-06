@@ -1,0 +1,1462 @@
+namespace = ME_Qara_Qoyunlu_Events
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.1 #Rebellion of Alvand Mirza
+	title = ME_Qara_Qoyunlu_Events.1.t
+	desc = ME_Qara_Qoyunlu_Events.1.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QAR
+		411 = {
+			owned_by = ROOT
+		}
+		always = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.1.a
+		
+		ai_chance = { factor = 100 }
+		
+		411 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Alvand Mirza"
+				win = yes
+			}
+		}
+		set_country_flag = QAR_alvand_rebelling
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.2 #Flight of Alvand Mirza
+	title = ME_Qara_Qoyunlu_Events.2.t
+	desc = ME_Qara_Qoyunlu_Events.2.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = QAR_alvand_rebelling
+		exists = AKK
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			AKK = {
+				country_event = { id = ME_Qara_Qoyunlu_Events.3 }
+			}
+			clr_country_flag = QAR_alvand_rebelling
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.2.a
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.3 #Alvand Mirza arrives
+	title = ME_Qara_Qoyunlu_Events.3.t
+	desc = ME_Qara_Qoyunlu_Events.3.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.3.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_adm_power = 10
+		add_spy_network_in = {
+			who = QAR
+			value = 10
+		}
+		define_general = {
+			shock = 2
+			fire = 2
+			manuever = 4
+			siege = 1
+			name = "Alvand Mirza"
+		}
+		set_country_flag = QAR_alvand_in_akk
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.4 #anger of Qara
+	title = ME_Qara_Qoyunlu_Events.4.t
+	desc = ME_Qara_Qoyunlu_Events.4.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = QAR_alvand_in_akk
+		is_in_war = {
+			participants = AKK
+			participants = QAR
+		}
+		NOT = {
+			is_in_war = {
+				participants = AKK
+				participants = QAR
+				war_score = -40
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			QAR = {
+				country_event = { id = ME_Qara_Qoyunlu_Events.5 }
+			}
+			if = {
+				limit = {
+					exists = KHO
+				}
+				KHO = {
+					country_event = { id = ME_Qara_Qoyunlu_Events.6 }
+				}
+			}
+			if = {
+				limit = {
+					has_leader = "Alvand Mirza"
+				}
+				kill_leader = { type = "Alvand Mirza" }
+			}
+			clr_country_flag = QAR_alvand_in_akk
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.4.a
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.5 #Alvand Mirza flees once again
+	title = ME_Qara_Qoyunlu_Events.5.t
+	desc = ME_Qara_Qoyunlu_Events.5.d
+	picture = SPY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.5.a
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.6 #Alvand Mirza in Khorasan
+	title = ME_Qara_Qoyunlu_Events.6.t
+	desc = ME_Qara_Qoyunlu_Events.6.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = QAR_alvand_in_khorasan
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.6.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_adm_power = 10
+		define_general = {
+			shock = 2
+			fire = 2
+			manuever = 4
+			siege = 1
+			name = "Alvand Mirza"
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.7
+	title = ME_Qara_Qoyunlu_Events.7.t
+	desc = ME_Qara_Qoyunlu_Events.7.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			define_ruler = {
+				name = "Alvand Mirza"
+				dynasty = "Qara Qoyunlu"
+				adm = 3
+				dip = 2
+				mil = 5
+				age = 25
+				claim = 95
+			}
+			
+			
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.7.a
+		
+		ai_chance = { factor = 75 }
+
+		custom_tooltip = QAR_this_will_lead_to_war_with_qar
+		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+		
+		custom_tooltip = QAR_we_shall_await_jahans_reaction
+		
+		hidden_effect = {
+			QAR = {
+				country_event = { id = ME_Qara_Qoyunlu_Events.12 days = 30 random = 30 }
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.7.b
+		
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = QAR_appeased
+		
+		custom_tooltip = QAR_we_shall_await_jahans_reaction
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.8
+	title = ME_Qara_Qoyunlu_Events.8.t #Death of Shah Rukh and "Independence"
+	desc = ME_Qara_Qoyunlu_Events.8.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = ME_Aq_Qoyunlu_Events.11 days = 180
+			random = 360 }
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.8.a # Defy the Timurid Empire
+		
+		ai_chance = { factor = 90 }
+		
+		add_age_modifier = {
+			name = QAR_rise_of_qara_qoyunlu
+			duration = -1
+			age = age_of_discovery
+		}
+		
+		# TIM = {
+			# add_casus_belli = {
+				# type = cb_punish_qara_qoyunlu
+				# target = ROOT
+				# months = 120
+			# }
+		# }
+	}
+	
+	# option = {
+		# name = ME_Qara_Qoyunlu_Events.8.b # Accept Timurids as overlords
+		
+		# ai_chance = { 
+			# factor = 10
+			# modifier = {
+				# factor = 0
+				# OR = {
+					# anatolia_region = { owner = { ai = no } }
+					# mashriq_region = { owner = { ai = no } }
+					# caucasia_region = { owner = { ai = no } }
+					# egypt_region = { owner = { ai = no } }
+				# }
+			# }
+		# }
+		
+		# TIM = {
+			# country_event = { id = ME_Qara_Qoyunlu_Events.9 }
+		# }
+		
+		# azerbaijan_area = {
+			# add_core = ROOT 
+			# remove_claim = ROOT
+		# }
+		
+		# tooltip = {
+			# TIM = {
+				# create_subject = {
+					# subject_type = ME_TIM_trib_state
+					# subject = ROOT
+				# }
+			# }
+		# }
+		
+		# custom_tooltip = QAR_as_vassals_of_the_timurids_we_may
+	# }
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.9
+	title = ME_Qara_Qoyunlu_Events.9.t # Qara Submits to us?
+	desc = ME_Qara_Qoyunlu_Events.9.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.9.a # Okay...?
+		
+		ai_chance = { factor = 90 }
+		
+		create_subject = {
+			subject_type = ME_TIM_trib_state
+			subject = FROM
+		}
+		
+		custom_tooltip = QAR_ME_TIM_trib_state
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.9.b # Sounds too good to be true.
+		
+		ai_chance = { factor = 0 }
+		
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.10
+	title = ME_Qara_Qoyunlu_Events.10.t #QAR starting event, improve their economy a bit, inform them about Baghdad.
+	desc = ME_Qara_Qoyunlu_Events.10.d 
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = QAR_turbulent_period_qar
+				duration = 7300
+			}
+			# if = {
+				# limit = {
+					# has_ruler = "Jahân Shâh"
+				# }
+				set_ruler_flag = QAR_jahan_shah_rules
+			# }
+		}
+	}
+	trigger = {
+		tag = QAR
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.10.a # Okay.
+		
+		ai_chance = { factor = 90 }
+		
+		add_country_modifier = {
+			name = QAR_turbulent_period_qar
+			duration = 7300
+		}
+		
+		custom_tooltip = QAR_baghdad
+		
+		hidden_effect = {
+			BAG = {
+				if = {
+					limit = { 
+						is_subject_of = ROOT
+					}
+					country_event = { id = ME_Qara_Qoyunlu_Events.11 }
+				}
+			}
+		}
+		
+		every_subject_country = {
+			add_liberty_desire = -10
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.11
+	title = ME_Qara_Qoyunlu_Events.11.t #Baghdad starting event, improve their economy a bit, inform them about Qara Qoyunlu.
+	desc = ME_Qara_Qoyunlu_Events.11.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			# add_ruler_modifier = {
+				# name = QAR_ispend_die_soon_pls
+				# duration = -1
+			# }
+			add_country_modifier = {
+				name = QAR_turbulent_period
+				duration = 7300
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.11.a # Okay.
+		
+		ai_chance = { factor = 90 }
+		
+		add_ruler_modifier = {
+			name = QAR_ispend_die_soon_pls
+			duration = -1
+		}
+		add_country_modifier = {
+			name = QAR_turbulent_period
+			duration = 7300
+		}
+		set_heir_flag = QAR_fulad
+		
+		custom_tooltip = QAR_baghdad_we_are_done_for
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.12
+	title = ME_Qara_Qoyunlu_Events.12.t
+	desc = ME_Qara_Qoyunlu_Events.12.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.12.a # Okay.
+		
+		ai_chance = { factor = 90 }
+		
+		BAG = {
+			grant_independence = yes
+			every_war_enemy_country = {
+				white_peace = PREV
+			}
+			
+			country_event = { id = ME_Qara_Qoyunlu_Events.32 }
+		}
+		
+		declare_war_with_cb = {
+			who = BAG
+			casus_belli = cb_curb_baghdad_qq
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.13
+	title = ME_Qara_Qoyunlu_Events.13.t #fate of armenia
+	desc = ME_Qara_Qoyunlu_Events.13.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = armenian
+					area = armenia_area
+				}
+				set_province_flag = QAR_armenia_flag
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.13.a # Plunder Armenia! - reduce dev, get money
+		
+		ai_chance = { factor = 90 }
+		
+		set_country_flag = QAR_plunder_armenia
+		add_treasury = 200
+		
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+				419 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = etchimiadzin_cathedral
+						tier = 1
+					}
+				}	
+			}
+			419 = {
+				add_great_project_tier = {
+					type = etchimiadzin_cathedral
+					tier = -1
+				}
+				owner = {
+					add_treasury = 150
+				}
+			}
+		}
+		
+		every_owned_province = {
+			limit = {
+				has_province_flag = QAR_armenia_flag
+			}
+			add_base_manpower = -1
+			add_base_tax = -1
+		}
+		
+		custom_tooltip = " "
+		
+		change_estate_land_share = {
+			estate = estate_dhimmi
+			share = -7.5
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.13.b # Settle in the Tribes - raise dev, change culture
+		
+		ai_chance = { factor = 90 }
+		
+		set_country_flag = QAR_settled_armenia
+		every_owned_province = {
+			limit = {
+				has_province_flag = QAR_armenia_flag
+			}
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+		
+		armenia_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_base_tax = 2
+			add_base_manpower = 1
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.13.c # Accept Armenians, culture and dev, gain benefits from cathedral
+		
+		ai_chance = { factor = 90 }
+		
+		set_country_flag = QAR_accepting_armenians
+		add_accepted_culture_or_dip_power = { culture = armenian }
+		
+		custom_tooltip = " "
+		
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+			}
+			custom_tooltip = QAR_unlock_cathedral
+		}
+		else = {
+			add_country_modifier = {
+				name = QAR_armenian_acceptance
+				duration = 9125
+			}
+		}
+		set_country_flag = QAR_unlocked_cathedral
+	}
+	
+	after = {
+		every_owned_province = {
+			clr_province_flag = QAR_armenia_flag
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.14
+	title = ME_Qara_Qoyunlu_Events.14.t # defeat of alvand mirza
+	desc = ME_Qara_Qoyunlu_Events.14.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				region = mashriq_region
+				region = arabia_region
+				region = persia_region
+				region = egypt_region
+				region = anatolia_region
+				region = balkan_region
+				region = khorasan_region
+				region = caucasia_region
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.14.a
+		
+		ai_chance = { factor = 90 }
+		
+		add_age_modifier = {
+			name = QAR_baghdad_is_curbed
+			duration = -1
+			age = age_of_discovery
+		}
+		
+		410 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = QAR_maintenance
+					duration = 9125
+				}
+			}
+		}
+		
+		2209 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = QAR_maintenance
+					duration = 9125
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				has_dlc = "Cradle of Civilization"
+			}
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.15
+	title = ME_Qara_Qoyunlu_Events.15.t # defeat of alvand mirza
+	desc = ME_Qara_Qoyunlu_Events.15.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				region = mashriq_region
+				region = arabia_region
+				region = persia_region
+				region = egypt_region
+				region = anatolia_region
+				region = balkan_region
+				region = khorasan_region
+				region = caucasia_region
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.15.a
+		
+		ai_chance = { factor = 90 }
+		
+		add_yearly_manpower = 1
+		
+		add_age_modifier = {
+			name = QAR_fake_toppled
+			duration = -1
+			age = age_of_discovery
+		}
+		
+		MSY = {
+			every_core_province = {
+				remove_core = MSY
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.16
+	title = ME_Qara_Qoyunlu_Events.16.t #Qara Qoyunlu meddles in Ardalan
+	desc = ME_Qara_Qoyunlu_Events.16.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.16.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+		custom_tooltip = QAR_curb_qara_qoyunlu
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.17
+	title = ME_Qara_Qoyunlu_Events.17.t #
+	desc = ME_Qara_Qoyunlu_Events.17.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = QAR_wrestling_ardalan
+		if = {
+		limit = { has_saved_event_target = qara_qoyunlu_wrestled }
+		ARD = {
+			is_subject_of = event_target:qara_qoyunlu_wrestled
+			}
+		}
+		else = { always = no }
+	}
+	
+	major = yes
+	major_trigger = {
+		if = {
+		limit = { has_saved_event_target = qara_qoyunlu_wrestled }
+		tag = event_target:qara_qoyunlu_wrestled
+		}
+		else = { always = no }
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.17.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+		vassalize = ARD
+		
+	}
+	after = {
+		hidden_effect = {
+			clr_global_flag = QAR_wrestling_ardalan
+			clear_global_event_target = qara_qoyunlu_wrestled
+			clear_global_event_target = qara_qoyunlu_we_are_wrestling
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.18
+	title = ME_Qara_Qoyunlu_Events.18.t #
+	desc = ME_Qara_Qoyunlu_Events.18.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	immediate = {
+		clr_global_flag = QAR_wrestling_ardalan
+		clear_global_event_target = qara_qoyunlu_wrestled
+		clear_global_event_target = qara_qoyunlu_we_are_wrestling
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.18.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.19
+	title = ME_Qara_Qoyunlu_Events.19.t #Matters of Religion
+	desc = ME_Qara_Qoyunlu_Events.19.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.19.a # Stay with the Shiite
+		
+		ai_chance = { factor = 40 }
+		
+		add_age_modifier = {
+			name = QAR_staying_shia
+			duration = -1
+			age = age_of_discovery
+			else = "
+				add_stability_or_adm_power = yes
+			"
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.19.b # Stay with the Shiite
+		
+		trigger = {
+			religion = shiite
+			has_dlc = "Cradle of Civilization"
+		}
+		
+		ai_chance = { factor = 50 }
+		
+		country_event = { id = ME_Qara_Qoyunlu_Events.20 }
+	
+		custom_tooltip = " "
+		
+		add_adm_power = -50
+		add_dip_power = -25
+		
+		custom_tooltip = " "
+		
+		add_age_modifier = {
+			name = QAR_staying_shia
+			duration = -1
+			age = age_of_discovery
+			else = "
+				add_stability_or_adm_power = yes
+			"
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.19.c # Lol no
+		
+		ai_chance = { factor = 10 }
+		
+		change_religion = sunni
+		add_country_modifier = {
+			name = QAR_no_more_shia_sympathy
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.20
+	title = ME_Qara_Qoyunlu_Events.20.t #Matters of Religion
+	desc = ME_Qara_Qoyunlu_Events.20.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.20.a # Zaidi
+		
+		ai_chance = { factor = 40 }
+		
+		set_religious_school = {
+			group = muslim
+			school = zaidi_school
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.20.b # Jafari
+		
+		ai_chance = { factor = 50 }
+		
+		set_religious_school = {
+			group = muslim
+			school = jafari_school
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.21
+	title = ME_Qara_Qoyunlu_Events.21.t #Rise of Jahan Shah
+	desc = ME_Qara_Qoyunlu_Events.21.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.21.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_mil_power = -150
+		#ME_pt_feedback_requested = yes
+		define_ruler_to_general = {
+			fire = 2
+			shock = 5
+			manuever = 3
+			siege = 1
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.21.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_stat_or_monarch_power = { amount = 2 stat = adm }
+		
+		add_stability_or_adm_power = yes
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.22
+	title = ME_Qara_Qoyunlu_Events.22.t #Endowment for Blue Mosque
+	desc = ME_Qara_Qoyunlu_Events.22.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.22.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_country_modifier = {
+			name = QAR_collect_the_extra_tax
+			duration = 3650
+		}
+		
+		add_years_of_income = 0.5
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.22.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_dip_power = 75
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.23
+	title = ME_Qara_Qoyunlu_Events.23.t #Fate of the Aq Qoyunlu tribes
+	desc = ME_Qara_Qoyunlu_Events.23.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				region = mashriq_region
+				region = arabia_region
+				region = persia_region
+				region = egypt_region
+				region = anatolia_region
+				region = balkan_region
+				region = khorasan_region
+				region = caucasia_region
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					NOT = { has_province_flag = QAR_selected }
+					OR = {
+						province_id = 407 #rakka
+						province_id = 418 #diyarbakir 
+						province_id = 4292 #Mardin
+						province_id = 4295 #Hisn Kayfa 
+						province_id = 2306 #Mush
+						province_id = 2308 #urfa
+						province_id = 2305 #erzican
+						province_id = 331 #erzurum
+						is_core = AKK
+					}
+				}
+				set_province_flag = QAR_selected
+				save_event_target_as = Qara_target_1
+			}
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					NOT = { has_province_flag = QAR_selected }
+					OR = {
+						province_id = 407 #rakka
+						province_id = 418 #diyarbakir 
+						province_id = 4292 #Mardin
+						province_id = 4295 #Hisn Kayfa 
+						province_id = 2306 #Mush
+						province_id = 2308 #urfa
+						province_id = 2305 #erzican
+						province_id = 331 #erzurum
+						is_core = AKK
+					}
+				}
+				set_province_flag = QAR_selected
+				save_event_target_as = Qara_target_2
+			}
+			random_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					NOT = { has_province_flag = QAR_selected }
+					OR = {
+						province_id = 407 #rakka
+						province_id = 418 #diyarbakir 
+						province_id = 4292 #Mardin
+						province_id = 4295 #Hisn Kayfa 
+						province_id = 2306 #Mush
+						province_id = 2308 #urfa
+						province_id = 2305 #erzican
+						province_id = 331 #erzurum
+						is_core = AKK
+					}
+				}
+				set_province_flag = QAR_selected
+				save_event_target_as = Qara_target_3
+			}
+			every_province = {
+				clr_province_flag = QAR_selected
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.23.a
+		
+		ai_chance = { factor = 50 }
+		
+		hidden_effect = {
+			add_country_modifier = {
+				name = QAR_turkish_slot
+				duration = -1
+			}
+		}
+		add_accepted_culture_or_dip_power = { culture = turkish }
+		custom_tooltip = QAR_this_culture_will_not_take_up_a_slot
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.23.b
+		
+		ai_chance = { factor = 50 }
+		
+		event_target:Qara_target_3 = {
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+		
+		event_target:Qara_target_2 = {
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+		
+		event_target:Qara_target_1 = {
+			change_culture = ROOT
+			change_religion = ROOT
+		}
+
+	}
+}
+
+province_event = {
+	id = ME_Qara_Qoyunlu_Events.24
+	title = ME_Qara_Qoyunlu_Events.24.t # Shi'ite feel safe
+	desc = ME_Qara_Qoyunlu_Events.24.d 
+	picture = COURT_eventPicture
+
+	trigger = {
+		has_province_flag = QAR_shia_event_viable
+		owner = {
+			religion = shiite
+			OR = {
+				tag = QAR
+				was_tag = QAR
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	immediate = {
+		clr_province_flag = QAR_shia_event_viable
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.24.a
+		
+		ai_chance = { factor = 50 }
+		
+		change_religion = shiite
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 1
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.25
+	title = ME_Qara_Qoyunlu_Events.25.t 
+	desc = ME_Qara_Qoyunlu_Events.25.d 
+	picture = COURT_eventPicture
+
+	trigger = {
+		has_country_flag = QAR_may_vassalize_trebizond
+		total_development = 200
+		TRE = {
+			alliance_with = ROOT
+			NOT = { num_of_cities = 6 }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = Qara_target
+		}
+	}
+	mean_time_to_happen = {
+		months = 30
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.25.a
+		
+		ai_chance = { factor = 50 }
+		
+		TRE = {
+			country_event = { id = ME_Qara_Qoyunlu_Events.26 }
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.25.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_dip_power = 50
+		add_prestige_or_monarch_power = { amount = 20 }
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.26
+	title = ME_Qara_Qoyunlu_Events.26.t 
+	desc = ME_Qara_Qoyunlu_Events.26.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		tag = event_target:Qara_target
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.26.a
+		
+		ai_chance = { factor = 100 }
+		
+		FROM = {
+			vassalize = ROOT
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.26.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.27
+	title = ME_Qara_Qoyunlu_Events.27.t 
+	desc = ME_Qara_Qoyunlu_Events.27.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.27.a
+		
+		ai_chance = { factor = 100 }
+		
+		add_adm_power = 50
+		add_country_modifier = {
+			name = QAR_governor_of_fars
+			duration = 7300
+		}
+	}
+}
+
+province_event = {
+	id = ME_Qara_Qoyunlu_Events.28
+	title = ME_Qara_Qoyunlu_Events.28.t #
+	desc = ME_Qara_Qoyunlu_Events.28.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes 
+	immediate = {
+		clr_global_flag = QAR_wrestling_ardalan
+		clear_global_event_target = qara_qoyunlu_wrestled
+		clear_global_event_target = qara_qoyunlu_we_are_wrestling
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.28.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+	}
+}
+
+province_event = {
+	id = ME_Qara_Qoyunlu_Events.29
+	title = ME_Qara_Qoyunlu_Events.29.t #
+	desc = ME_Qara_Qoyunlu_Events.29.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.29.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+		add_power_projection = {
+			type = QAR_perma_persia_pp
+			amount = 10 
+		}
+		
+		custom_tooltip = MAM_permanent_PP
+		
+		custom_tooltip = " "
+		
+		set_government_rank = 3
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = QAR_conquest_of_persia
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.30
+	title = ME_Qara_Qoyunlu_Events.29.t #
+	desc = ME_Qara_Qoyunlu_Events.29.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		ai = yes #so, don't bother localizing this
+		NOT = { exists = SYR }
+		SYR = {
+			any_core_province = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.29.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+		SYR = {
+			change_religion = ROOT
+			every_core_province = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						ai = yes
+					}
+				}
+				cede_province = SYR
+			}
+		}
+		vassalize = SYR
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.31
+	title = ME_Qara_Qoyunlu_Events.31.t #
+	desc = ME_Qara_Qoyunlu_Events.31.d 
+	picture = COURT_eventPicture
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	fire_only_once = yes 
+	trigger = {
+		tag = BAG
+		war_with = AKK
+		has_ruler_modifier = QAR_ispend_die_soon_pls
+	}
+	
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = QAR
+			war_with = QAR
+			alliance_with = QAR
+			is_subject_of = QAR
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.31.a # ok
+		
+		ai_chance = { factor = 90 }
+		
+		kill_ruler = yes
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.32
+	title = ME_Qara_Qoyunlu_Events.32.t
+	desc = ME_Qara_Qoyunlu_Events.32.d 
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		tag = QAR
+	}
+	
+	option = { #secure help from qoyunlu tribes? or nobles (jalayirids)
+		name = ME_Qara_Qoyunlu_Events.32.a # Okay.
+		
+		ai_chance = { factor = 90 }
+		
+		create_general_with_pips = {
+			tradition = 80
+			add_shock = 2
+			add_fire = 2
+		}
+		
+		custom_tooltip = " "
+		
+		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = QAR_baghdad_help
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = ME_Qara_Qoyunlu_Events.33
+	title = ME_Qara_Qoyunlu_Events.33.t
+	desc = ME_Qara_Qoyunlu_Events.33.d 
+	picture = COURT_eventPicture
+
+	trigger = {
+		tag = BAG
+		is_at_war = no
+		is_subject = no
+	}
+	
+	fire_only_once = yes
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				region = mashriq_region
+				region = arabia_region
+				region = persia_region
+				region = egypt_region
+				region = anatolia_region
+				region = balkan_region
+				region = khorasan_region
+				region = caucasia_region
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.33.a
+		
+		ai_chance = { factor = 75 }
+		
+		change_tag = QIZ
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = QIZ_oust_the_qara_qoyunlu
+			duration = 5475
+		}
+		
+		ME_give_claims = { area = shahrizor_area }
+		ME_give_claims = { area = al_jazira_area }
+		ME_give_claims = { area = tabriz_area }
+	}
+	
+	option = {
+		name = ME_Qara_Qoyunlu_Events.33.b
+		
+		ai_chance = { factor = 25 }
+		
+		change_tag = JAL
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = JAL_legacy_of_ilkhans
+			duration = 9125
+		}
+		
+		ME_give_claims = { area = basra_area }
+		ME_give_claims = { area = khuzestan_area }
+		ME_give_claims = { area = al_jazira_area }
+	}
+}
+

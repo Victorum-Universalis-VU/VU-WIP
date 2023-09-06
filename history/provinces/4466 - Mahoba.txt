@@ -1,0 +1,48 @@
+#559 - Mahoba
+
+owner = BND
+controller = BND
+culture = vindhyan
+religion = hinduism
+capital = "Mahoba"
+trade_goods = rice
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 2 
+is_city = yes
+add_core = BND
+add_core = PAN
+discovered_by = indian
+#discovered_by = muslim 
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = dutch_tech_group
+discovered_by = chinese
+
+
+1442.1.1 = { controller = MLW } # Conquered by Jaunpur
+1443.1.1 = { controller = BND } # Conquered by Malwa
+1576.1.1 = { controller = MUG }
+1577.1.1 = { controller = BND }
+1671.1.1 = {
+	owner = PAN
+	controller = PAN
+	remove_core = BND
+}
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+

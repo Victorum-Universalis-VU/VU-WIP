@@ -1,0 +1,56 @@
+#68 - Memmingen
+#Region - Germany
+#Area - Upper Swabia
+
+owner = MEM
+controller = MEM
+add_core = MEM
+culture = bavarian
+religion = catholic
+hre = yes
+base_tax = 10
+base_production = 10
+trade_goods = books #The Twelve Articles: The Just and Fundamental Articles of All the Peasantry and Tenants of Spiritual and Temporal Powers by Whom They Think Themselves Oppressed was written (probably by Schappeler and Sebastian Lotzer) in early 1525. This was a religious petition borrowing from Luther's ideas to appeal for peasant rights. Within two months of its publication in Memmingen, 25,000 copies of the tract were in circulation around Europe. These are the first known set of human rights documents in the world (if one ignores Magna Carta in England in 1215). By San Felipe
+base_manpower = 6
+capital = "Memmingen" 
+is_city = yes
+
+
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+
+1525.1.1 = { religion = protestant }
+1802.1.1 = { owner = BAV controller = BAV add_core = BAV remove_core = MEM }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

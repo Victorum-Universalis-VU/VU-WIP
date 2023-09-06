@@ -1,0 +1,21 @@
+#6668 - Kisama
+
+owner = KSM
+controller = KSM
+add_core = KSM
+culture = mbundu
+religion = shamanism #Fetishism
+capital = "Muxima"
+trade_goods = cotton
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 3
+is_city = yes
+center_of_trade = 1
+
+#discovered_by = central_african
+#discovered_by = sub_saharan
+
+1488.1.1 = { discovered_by = POR } # Bartolomeu Dias
+1616.1.1 = { discovered_by = NED } # Dirk Hartog

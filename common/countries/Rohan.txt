@@ -1,0 +1,86 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 93  128  6 } 
+
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	plutocracy_ideas
+	spy_ideas
+	economic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Eorl #0" = 1
+	"Éomer #0" = -1
+	"Éowyn #0" = -1
+	"Brego #0" = -1
+	"Calenardhon #0" = -1
+	"Cirion #0" = -1
+	"Aldor #0" = -1
+	"Fréa #0" = -1
+	"Fréawine #0" = -1
+	"Goldwine #0" = -1
+	"Déor #0" = -1
+	"Gram #0" = -1
+	"Helm #0" = -1
+}
+
+leader_names = {
+	"Eorl"
+	"Éomer"
+	"Éowyn"
+	"Brego"
+	"Calenardhon"
+	"Cirion"
+	"Aldor"
+	"Fréa"
+	"Fréawine"
+	"Goldwine"
+	"Déor"
+	"Gram"
+	"Helm"
+}
+
+ship_names = {
+	"Aldburg" 
+	"Edoras"
+	"Eorl"
+	"Éomer"
+	"Éowyn"
+	"Brego"
+	"Calenardhon"
+	"Cirion"
+	"Aldor"
+	"Fréa"
+	"Fréawine"
+	"Goldwine"
+	"Déor"
+	"Gram"
+	"Helm"
+	"Rohirrim"
+	"Rohirric"
+	"Théoden"
+	"Simbelmynë"
+}

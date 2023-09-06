@@ -1,0 +1,6 @@
+government = republic
+#technology_group = western
+technology_group = english_tech_group
+primary_culture = american
+religion = catholic
+capital = 4650

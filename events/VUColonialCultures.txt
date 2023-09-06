@@ -1,0 +1,1 @@
+#Moved all of these into VU_Colonial_Events.txt since they were doing the same cultural dimorphism mechanic, but much slower.

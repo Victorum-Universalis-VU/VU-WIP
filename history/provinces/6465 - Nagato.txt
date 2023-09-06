@@ -1,0 +1,21 @@
+#3316 - Nagato
+
+owner = MRI
+controller = MRI
+culture = japanese
+religion = shinto
+capital = "Shimonoseki"
+trade_goods = fish
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = MRI
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
+
+1542.1.1 = { discovered_by = POR }

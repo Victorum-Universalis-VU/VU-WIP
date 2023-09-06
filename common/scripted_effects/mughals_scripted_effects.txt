@@ -1,0 +1,30 @@
+ME_add_caravan_modifier = {
+	remove_country_modifier = me_tim_the_caravans_0
+	remove_country_modifier = me_tim_the_caravans_1
+	remove_country_modifier = me_tim_the_caravans_2
+	remove_country_modifier = me_tim_the_caravans_3
+	remove_country_modifier = me_tim_the_caravans_4
+	remove_country_modifier = me_tim_the_caravans_5
+	remove_country_modifier = me_tim_the_caravans_6
+	add_country_modifier = {
+		name = me_tim_the_caravans_$level$
+		duration = -1
+	}
+}
+
+ME_tim_add_spoils_of_war = {
+    [[add]
+        add_government_power = { 
+            mechanic_type = conquest_frenzy
+            power_type = conquest_frenzy_power
+            value = $add$
+        }
+    ]
+    [[remove]
+        add_government_power = { 
+            mechanic_type = conquest_frenzy
+            power_type = conquest_frenzy_power
+            value = $remove$
+        }
+    ]
+}

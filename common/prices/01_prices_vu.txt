@@ -1,0 +1,102 @@
+# base_price = X			base price in $. (default is 1.0 if not specified
+# goldtype = yes/no			This resource works like 'gold' if yes, using prices from mine-value in province instead of supply/demand and baseprice. Also creates gold-inflation
+
+
+#VU trade goods
+	#Events change value as follows   2.5 - 3.0 - 3.25
+
+#Note on paper:
+	#Events change value as follows   3.0 - 3.25 - 3.5 - 2.0
+#Note on coal:
+	#Events change value as follows   8.0 - 6.0
+#
+# Processed plant based goods
+cloves = { base_price = 4.5 }
+cinnamon = { base_price = 4 }
+ebony = { base_price = 4 }
+indigo = { base_price = 5 }
+lumber = { base_price = 3 }
+palm_oil = { base_price = 3.5 }
+maple_syrup = {	base_price = 3 }
+opium = { base_price = 5 }
+nutmeg = { base_price = 5 }
+saffron = {	base_price = 8 }
+tar = {	base_price = 3 }
+vanilla = {	base_price = 4 }
+rubber = { base_price = 3 }
+bamboo = { base_price = 2 }
+
+#Animal
+camel = { base_price = 2.5 }
+elephants = { base_price = 5 }
+exotic_animals = { base_price = 4 }
+horses = { base_price = 2.5 }
+llama = { base_price = 3 }
+sea_turtle = { base_price = 4 }
+whaling = {	base_price = 5 }
+silkworm = { base_price = 4.5 }
+
+# Agricultural and aquaculture goods
+apiculture = { base_price = 4 }
+dates = { base_price = 3 }
+citrus = { base_price = 3 }
+fruit = { base_price = 2.5 }
+maize = { base_price = 2.5 }
+olive_oil = { base_price = 3.5 }
+potato = { base_price = 2.5 }
+rice = { base_price = 2.5 }
+seafood = { base_price = 2.5 }
+tomato = { base_price = 2.5 }
+copra = { base_price = 2.5 }
+vegetables = {	base_price = 2 }
+
+# Metals
+bronze = { base_price = 4  }
+lead = { base_price = 3.5 }
+mercury = {	base_price = 3 }
+tin = {	base_price = 3 }
+zinc = { base_price = 3 }
+
+# Precious mined goods
+amber = { base_price = 4 }
+jade = { base_price = 4 }
+marble = { base_price = 4 }
+pearls = { base_price = 4 }
+sulfur = { base_price = 5 }
+silver = { base_price = 0	goldtype = yes}
+
+# Manufactured products and Beverages
+agave = { base_price = 2.5 }
+alpaca_wool = {	base_price = 3.5 }
+beer = { base_price = 3 }
+cider = { base_price = 3.25 }
+bison_hides = {	base_price = 4 }
+carpet = { base_price = 3 }
+champagne = { base_price = 4 }
+cheese = { base_price = 3 }
+rum = {	base_price = 4 }
+vodka = { base_price = 3 }
+marble_sculpture = { base_price = 4 }
+cigars = { base_price = 4.25 }
+sake = { base_price = 3.5 }
+whiskey = { base_price = 4 }
+
+# Refined goods
+books = { base_price = 4.0 }
+brass = { base_price = 5 }
+cannon = { base_price = 8 }
+chocolate = { base_price = 6 }
+canned_goods = { base_price = 9 }
+gunpowder = { base_price = 7 }
+jewellery = { base_price = 8 }
+leather = { base_price = 6 }
+metalworking = { base_price = 6 }
+munitions = { base_price = 8 }
+oil = {	base_price = 5.0}
+optics = { base_price = 8 }
+steam_engine = { base_price = 8 }
+sweet_confectioneries = { base_price = 6 }
+uniforms = { base_price = 8 }
+woodworking = {	base_price = 6 }
+pottery = { base_price = 2.5 }
+lace = { base_price = 3.5 }

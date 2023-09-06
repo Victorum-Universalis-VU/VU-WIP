@@ -1,0 +1,32 @@
+cb_take_caliphate = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_subject = no
+		is_neighbor_of = FROM
+		OR = {
+			AND = {
+				religion = sunni
+				FROM = {
+					OR = {
+						has_reform = ME_caliphate_reform_sunni 
+						has_reform = ME_caliphate_reform_sunni_andalusia 
+						has_reform = ME_caliphate_reform_sunni_arabian
+					}
+				}
+			}
+			AND = {
+				OR = {
+					religion = shiite
+					religion = ibadi
+				}
+				FROM = {
+					religion = ROOT 
+					has_reform = ME_caliphate_reform_shia_ibadi
+				}
+			}
+		}
+	}
+
+	war_goal = take_capital_take_caliphate
+}

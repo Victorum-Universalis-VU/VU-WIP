@@ -1,0 +1,11 @@
+#1409 - Kolepom Bay
+#VU Discovery Bug Fix
+
+# discovered_by = MKS
+# discovered_by = TER
+# discovered_by = TID
+
+# discovered_by = chinese
+
+1511.1.1 = { discovered_by = POR }
+

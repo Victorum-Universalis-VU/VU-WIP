@@ -1,0 +1,54 @@
+SOS_turn_claim_into_perma_claim = {
+	category = covert
+
+	require_acceptance = no
+
+	is_visible = {
+		has_country_flag = ME_diplo_action_to_convert_claim_to_perma_claim_flag 
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			has_country_flag = ME_diplo_action_to_convert_claim_to_perma_claim_flag 
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = SOS_any_owned_province_is_regular_claim_of_root
+				any_owned_province = {
+					is_claim = ROOT
+					NOT = { is_permanent_claim = ROOT }
+				}
+			}
+			has_spy_network_from = {
+				who = ROOT
+				value = 30
+			}
+		}
+		
+		custom_trigger_tooltip = {	
+			tooltip = SOS_window_isnt_open_tt
+			NOT = { has_country_flag = SOS_window_is_open }
+		}
+		
+	}
+	
+	on_accept = {
+		hidden_effect = {
+			FROM = {
+				save_event_target_as = Sus_target_for_claims
+			}
+		}
+		country_event = { id = ME_Sus_Events.7 }
+		
+		FROM = {
+			add_spy_network_from = {
+				who = ROOT 
+				value = -30
+			}
+		}
+	}
+	
+	ai_will_do = {
+		always = yes
+	}
+}

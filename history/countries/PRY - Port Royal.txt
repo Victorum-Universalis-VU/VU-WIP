@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = pirate_republic_reform
+technology_group = english_tech_group
+unit_type = western
+religion = protestant
+primary_culture = english
+capital = 487 # Jamaica
+government_rank = 1

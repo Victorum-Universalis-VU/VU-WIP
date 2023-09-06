@@ -1,0 +1,550 @@
+declarewar = {
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	condition = {
+		tooltip = ME_TIM_STRATOCRACY_CANNOT_DECLARE_WARS
+		potential = {
+			tag = TIM
+		}
+		allow = {
+			OR = {
+				NOT = {
+					has_reform = timurid_stratocracy
+				}
+				mission_completed = ME_tim_by_blood_alone
+				has_country_flag = me_tim_allows_decleration_of_war
+			}
+		}
+	}
+	effect = {
+		###############
+		####VANILLA####
+		###############
+		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				tag = TEU
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+		#################
+		####/ VANILLA####
+		#################
+		if = {
+			limit = {
+				has_reform = timurid_stratocracy
+			}
+			clr_country_flag = me_tim_allows_decleration_of_war
+		}
+
+		if = {
+			limit = {
+				has_reform = timurid_stratocracy
+				NOT = { mission_completed = ME_tim_by_blood_alone }
+			}
+			add_government_power = {
+				mechanic_type = timurid_militarization
+				power_type = timurid_stratocracy_power
+				value = -30
+			}
+		}
+		
+		if = {
+			limit = {
+				mission_completed = sweden_support_the_roman_church
+				FROM = {
+					NOT = { religion = catholic }
+				}
+			}
+			change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = me_hab_von_haugwitz_reforms
+			}
+			remove_country_modifier = me_hab_peacetime_army
+			add_country_modifier = {
+				name = me_hab_wartime_army
+				duration = -1
+				desc = me_as_long_as_we_are_at_war
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = me_hab_hofkriegstrat_flag
+			}
+			add_country_modifier = {
+				name = me_hab_war_council
+				duration = -1
+			}
+		}
+		every_ally = {
+			if = {
+				limit = {
+					has_reform = timurid_governor
+				}
+				add_government_reform = timurid_prince
+			}
+		}
+		if = {
+			limit = {
+				has_reform = timurid_governor
+			}
+			add_government_reform = timurid_prince
+		}
+		if = {
+			limit = {
+				has_country_flag = me_mug_imperialism
+				has_casus_belli = {
+					type = cb_imperial
+					target = FROM
+				}
+			}
+			change_variable = {
+				which = MEImperialismUsage
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_planned_war_with_china
+				war_with = MNG
+			}
+			clr_country_flag = me_tim_planned_war_with_china
+			add_country_modifier = {
+				name = me_tim_modern_siege_engines
+				duration = 7300
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_no_stab_hit_vassal
+				war_with = TIM
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+			clr_country_flag = me_tim_no_stab_hit_vassal
+			add_stability = 3
+		}
+	}
+}
+
+requestpeace = {
+	###VANILLA
+	#######################
+	condition = {
+		tooltip = PIRATE_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_pirates
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_pirates }
+				FROM = { has_government_attribute = is_pirate_republic_reform }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_PIRATE_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_pirates
+			}
+			NOT = { has_government_attribute = is_pirate_republic_reform }
+		}
+		allow = {
+			OR = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = { 
+					OR = {
+						government = republic 
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				government = republic 
+				is_revolutionary = yes
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_MAKE_ALLIANCES
+		potential = {
+			has_government_attribute = cannot_form_alliances
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_form_alliances }
+		}
+	}
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_form_alliances
+			}
+		}
+		allow = {
+			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
+		}
+	}
+	###END OF VANILLA
+	#######################
+
+	#######################
+	###EUROPA EXPANDED
+	condition = {
+		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
+		potential = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_persia_indian_hegemony_coup
+			}
+			OR = {
+				tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				FROM = {
+					tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	###END OF EUROPA EXPANDED
+	#########################
+}
+
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = ANNEXINVALID
+	#	potential = {
+	#		FROM = {
+	#			vassal_of = ROOT
+	#		}
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_vassalage_under = {
+	#				who = ROOT
+	#				years = 10
+	#			}
+	#		}
+	#	}
+	#}
+	condition = {
+		tooltip = CANNOT_ANNEX
+		potential = {
+			FROM = {
+				has_country_modifier = tur_mamlukian_administration
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { has_country_modifier = tur_mamlukian_administration }
+			}
+		}
+	}
+#	condition = { # Vanilla, shouldn't be in ME_diplo action
+#		tooltip = NEEDS_50_CROWNLAND_TT
+#		potential = {
+#			has_government_attribute = need_crownland_to_annex
+#			NOT = { crown_land_share = 50 }
+#		}
+#		allow = {
+#			crown_land_share = 50
+#		}
+#	}
+
+	###EUROPA EXPANDED
+	condition = {
+		tooltip = " "
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+			ai = yes
+			FROM = {
+				OR = {
+					has_country_flag = PRU_ducal
+					has_country_flag = KUR_ducal
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = " "
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+				tag = HED
+			}
+			ai = yes
+			alliance_with = MDA
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = HAS_PRIVILIGE
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			NOT = {
+				has_estate_privilege = ME_estate_nobles_TIM_disloyal_princes
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = ANNEXINVALID
+	#	potential = {
+	#		FROM = {
+	#			vassal_of = ROOT
+	#		}
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_vassalage_under = {
+	#				who = ROOT
+	#				years = 10
+	#			}
+	#		}
+	#	}
+	#}
+}
+
+tributary_state_action = {
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			OR = {
+				NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					ROOT = { capital_scope = { superregion = china_superregion } }
+					NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
+				}
+			}
+			OR = {
+				NOT = { ROOT = { capital_scope = { region = japan_region } } }
+				AND = {
+					ROOT = { capital_scope = { region = japan_region } }
+					NOT = { FROM = { capital_scope = { region = japan_region } } }
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = " "
+		potential = {
+			ai = yes
+			capital_scope = {
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+					region = moluccas_region
+				}
+			}
+			FROM = {
+				capital_scope = {
+					OR = {
+						region = malaya_region
+						region = indonesia_region
+						region = moluccas_region
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+ask_for_tributary_state_action = {
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			OR = {
+				NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					FROM = { capital_scope = { superregion = china_superregion } }
+					NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+				}
+			}
+			OR = {
+				NOT = { FROM = { capital_scope = { region = japan_region } } }
+				AND = {
+					FROM = { capital_scope = { region = japan_region } }
+					NOT = { ROOT = { capital_scope = { region = japan_region } } }
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = " "
+		potential = {
+			ai = yes
+			capital_scope = {
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+					region = moluccas_region
+				}
+			}
+			FROM = {
+				capital_scope = {
+					OR = {
+						region = malaya_region
+						region = indonesia_region
+						region = moluccas_region
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+warningaction = {
+	condition = {
+		tooltip = " "
+		potential = { #this locks AQ out of expansion
+			ai = yes
+			tag = QAR
+			FROM = {
+				tag = AKK
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}

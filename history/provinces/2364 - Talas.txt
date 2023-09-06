@@ -1,0 +1,42 @@
+# 2364 - Talas
+
+owner = CHG
+controller = CHG
+add_core = CHG
+culture = kirgiz
+religion = sunni
+capital = "Talas"
+trade_goods = lead
+hre = no
+base_tax = 4  
+base_production = 4
+base_manpower = 4
+is_city = yes
+#discovered_by = muslim
+discovered_by = indian
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = dutch_tech_group
+1444.1.1 = { discovered_by = CHG } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = KAS } 
+
+1462.1.1 = {
+	owner = KAS
+	controller = KAS
+	add_core = KAS
+}
+1504.1.1 = { owner = BUK controller = BUK add_core = BUK remove_core = KAS } # Muhammad Shaybani
+1622.1.1 = { discovered_by = RUS }
+1709.1.1 = { owner = KOK controller = KOK add_core = KOK } # Independent principality established by Shaybanid Shahrukh

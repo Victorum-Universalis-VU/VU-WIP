@@ -1,0 +1,55 @@
+#1200 - Tanga
+
+owner = MBA
+controller = MBA
+add_core = MBA
+culture = swahili
+religion = shamanism #Fetishism
+capital = "Vumba Kuu"
+is_city = yes
+base_manpower = 4
+add_local_autonomy = 35
+trade_goods = ivory
+hre = no
+base_tax = 4 
+base_production = 4
+
+#discovered_by = east_african
+discovered_by = indian
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = central_african
+
+
+1498.4.1 = { discovered_by = POR } #Vasco Da Gama
+1589.6.1 = {
+	owner = ZAN
+	controller = ZAN
+	add_core = ZAN
+} #Mombasa collapses
+1600.1.1 = { discovered_by = TUR }
+1730.1.1 = {
+	owner = OMA
+	controller = OMA
+	add_core = OMA
+} #Omanis establish direct control of Swahili coast
+1746.1.1 = {
+	owner = MBA
+	controller = MBA
+	remove_core = OMA
+} #Mazrui sultans establish dominance in region
+1762.1.1 = { unrest = 7 } #Kamba migrations in wake of Maasai expansion disturb region

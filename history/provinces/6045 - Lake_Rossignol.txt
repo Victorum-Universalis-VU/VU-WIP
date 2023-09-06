@@ -1,0 +1,3 @@
+#6045 - Lake_Rossignol
+
+discovered_by = north_american

@@ -1,0 +1,42 @@
+#tenerife
+
+capital = "Tenerife"
+trade_goods = unknown
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+native_size = 10
+native_ferocity = 5
+native_hostileness = 10
+religion = animism
+culture = guanche
+
+	discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+
+1479.1.1 = {
+	owner = CAS
+	controller = CAS
+	add_core = CAS
+	is_city = yes
+	trade_goods = slaves
+	culture = portugese
+	religion = catholic
+	trade_goods = sugar
+}
+1516.1.23 = {
+	controller = SPA
+	owner = SPA
+	add_core = SPA
+} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+

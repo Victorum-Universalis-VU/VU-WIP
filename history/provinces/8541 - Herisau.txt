@@ -1,0 +1,60 @@
+#6466 - Herisau
+#Region - Germany
+#Area - Switzerland
+
+add_core = HAB
+owner = HAB
+controller = HAB
+culture = austrian
+religion = catholic
+capital = "Herisau"
+trade_goods = wool
+hre = yes
+base_tax = 2
+base_production = 3
+base_manpower = 1
+is_city = yes
+
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+
+#First mentioned in 837 AD as "Herinisauva"
+1513.7.3 = { unrest = 7 } # Luzern Peasant War
+1515.1.1 = { unrest = 0 }
+1526.1.1 = { religion = reformed }
+1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+1654.1.1 = { unrest = 0 }
+1656.1.1 = { unrest = 7 } # Protestants are expelled from Schwyz which lead to the First War of Villmergen
+1657.1.1 = { unrest = 2 } # An agreement is concluded at Villmergren but tensions remain
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

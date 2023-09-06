@@ -1,0 +1,8 @@
+#1786 - Takla Makan
+
+
+
+
+#discovered_by = dutch_tech_group
+discovered_by = chinese
+

@@ -1,0 +1,20 @@
+#6445 - Hachioji
+
+owner = UES
+controller = UES
+culture = togoku
+religion = shinto
+capital = "Hachioji"
+trade_goods = fish
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = UES
+
+discovered_by = chinese
+discovered_by = japanese
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
+

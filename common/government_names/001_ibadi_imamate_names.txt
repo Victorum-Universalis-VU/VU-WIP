@@ -1,0 +1,48 @@
+ibadi_theocracy_imamate_reform = {
+	rank = {
+		1 = IMAMATE
+		2 = GREAT_IMAMATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = IMAM
+		2 = GREAT_IMAM
+		3 = HIGH_IMAM
+	}
+
+	ruler_female = {
+		1 = IMAM_fem
+		2 = GREAT_IMAM_fem
+		3 = HIGH_IMAM_fem
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		religion = ibadi
+		has_reform = ME_ibadi_community
+	}
+}

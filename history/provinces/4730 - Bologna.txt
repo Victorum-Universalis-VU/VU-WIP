@@ -1,0 +1,96 @@
+#4730 - Bologna
+#Region - Italy
+#Area - Emilia-Romagna
+
+#Default
+owner = BLG
+controller = BLG
+culture = romagnan 
+religion = catholic 
+hre = no 
+base_tax = 11
+base_production = 11
+trade_goods = silk # rather than cloth, silk mills were very widespread, and Bologna was very rich
+base_manpower = 8
+capital = "Bologna" 
+is_city = yes	# Estimated 
+add_core = BLG
+center_of_trade = 3
+extra_cost = 15
+
+#Claimants
+
+#Buildings
+fort_15th = yes
+
+#Special Modifiers
+
+#Known by Technology groups
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+
+#Province history completed by - Nikicaga
+#First Shattering not used
+
+#Second Shattering not used
+
+1506.1.1 = { 
+	owner = PAP 
+	controller = PAP
+	add_core = PAP 
+	remove_core = BLG
+}
+1805.12.26 = {
+	owner = ITL
+	controller = ITL
+	add_core = ITL
+	remove_core = PAP
+} # Treaty of Pressburg
+1814.4.11 = {
+	owner = PAP
+	controller = PAP
+	add_core = PAP
+	remove_core = ITL
+} # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1831.1.1 = {
+	owner = ITL
+	controller = ITL
+	add_core = ITL
+} # Nationalist rebellion
+1832.1.1 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+} # Taken by the Habsburgs, alternative date 1847

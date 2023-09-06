@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = swabian
+religion = catholic
+technology_group = german_tech_group
+unit_type = western
+capital = 7600 #Burgau
+
+1431.1.1 = {
+	monarch = {
+		name = "Anton von Rotenhan"
+		birth_date = 1390.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

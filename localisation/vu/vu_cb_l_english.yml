@@ -1,0 +1,16 @@
+﻿l_english:
+ #New cb text
+ #ALL_BRITISH_PROVS:0 "All Provinces in both German regions, including Alsace area"
+ #BRITISH_UNIFICATION_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ war over German Hegemony"
+ ALL_GERMAN_PROVS:0 "All Provinces in both German regions, including Alsace area"
+ GERMAN_UNIFICATION_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ war over German Hegemony"
+ #lotf
+ cb_manifest_destiny: "Manifest Destiny"
+ cb_manifest_destiny_desc: "This land is rightfully American, and thus should be joined within our borders!"
+ MANIFEST_DESTINY_WAR: "$ORDER$ War for American Unification against $SECOND_NAME$"
+ manifest_destiny_war_goal: "Show Superiority"
+ manifest_destiny_war_goal_desc: "We must defeat our enemies in battle!"
+ CB_ALLOWED_vu_civilwar_full_annex: "Reform the Union"
+ civil_war_wargoal: "Take Capital"
+ civil_war_wargoal_desc: "We shall march on the enemy capital!"
+ CIVIL_WAR_WAR: "American Civil War"

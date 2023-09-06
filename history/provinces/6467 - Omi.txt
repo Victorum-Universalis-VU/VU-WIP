@@ -1,0 +1,24 @@
+#3318 - Omi
+
+owner = KYO
+controller = KYO
+culture = japanese
+religion = shinto
+capital = "Sekigahara"
+trade_goods = chinaware # Otsu was historically noted for Otsu-e, a form of folk drawing, Zeze-yaki and konan-yaki, forms of ceramics produced in the Edo period
+hre = no
+base_tax = 6
+base_production = 8
+base_manpower = 4
+is_city = yes
+add_core = HJO
+add_core = KYO
+fort_15th = yes 
+
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
+
+1542.1.1 = { discovered_by = POR }

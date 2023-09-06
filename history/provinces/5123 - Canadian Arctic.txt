@@ -1,0 +1,4 @@
+#discovered_by = vu_athabaskan_tech
+#discovered_by = vu_inuit_tech
+
+1772.1.1 = { discovered_by = GBR } # Hearne

@@ -1,0 +1,9 @@
+government = monarchy
+
+add_government_reform = feudalism_reform
+
+religion = catholic
+primary_culture = catalan
+technology_group = spanish_tech_group
+unit_type = western
+capital = 220	# Valencia

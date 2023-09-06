@@ -1,0 +1,91 @@
+can_increase_stability = {
+	condition = {
+		tooltip = me_disabled_manual_stability
+		potential = {
+			has_country_flag = ME_cannot_increase_stability
+		}
+		allow = {
+			NOT = {
+				has_country_flag = ME_cannot_increase_stability
+			}
+		}
+	}
+}
+
+can_improve_tax = {
+	condition = {
+		tooltip = me_disabled_manual_developing
+		potential = {
+			owner = {
+				has_country_flag = ME_tim_deny_developing_arabian_provinces
+			}
+			region = arabia_region
+		}
+		allow = {
+			OR = {
+				owner = {
+					NOT = {
+						has_country_flag = ME_tim_deny_developing_arabian_provinces
+					}
+				}
+				NOT = { region = arabia_region }
+			}
+		}
+	}
+}
+
+can_improve_production = {
+	condition = {
+		tooltip = me_disabled_manual_developing
+		potential = {
+			owner = {
+				has_country_flag = ME_tim_deny_developing_arabian_provinces
+			}
+			region = arabia_region
+		}
+		allow = {
+			OR = {
+				owner = {
+					NOT = {
+						has_country_flag = ME_tim_deny_developing_arabian_provinces
+					}
+				}
+				NOT = { region = arabia_region }
+			}
+		}
+	}
+}
+
+can_improve_manpower = {
+	condition = {
+		tooltip = me_disabled_manual_developing
+		potential = {
+			owner = {
+				has_country_flag = ME_tim_deny_developing_arabian_provinces
+			}
+			region = arabia_region
+		}
+		allow = {
+			OR = {
+				owner = {
+					NOT = {
+						has_country_flag = ME_tim_deny_developing_arabian_provinces
+					}
+				}
+				NOT = { region = arabia_region }
+			}
+		}
+	}
+}
+
+#can_colonize_province = { #Moved to vu_scripted_functions because we can only have one can_colonize_province. Leaving it here for reference - Altan
+#	condition = {
+#		tooltip = me_was_razed_by_timurids
+#		potential = {
+#			has_province_flag = me_tim_wasteland
+#		}
+#		allow = {
+#			NOT = { has_province_flag = me_tim_wasteland }
+#		}
+#	}
+#}

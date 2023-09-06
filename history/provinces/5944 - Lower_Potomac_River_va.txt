@@ -1,0 +1,5 @@
+#5944 - Lower_Potomac_River_va
+
+discovered_by = north_american
+
+1524.1.1 = { discovered_by = FRA } # Goivanni da Verrazzano

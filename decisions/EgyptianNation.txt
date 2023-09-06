@@ -1,0 +1,120 @@
+country_decisions = {
+	
+	egyptian_nation = { #Egypt tag is bad, time to reuse it
+		major = yes
+		potential = {
+			always = no
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+		}
+		effect = {
+			#set_country_flag = formed_egypt_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	adopt_mamluk_government = {
+		major = yes
+		potential = {
+			has_reform = iqta
+			NOT = { has_country_flag = formed_mamluks }
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = MAM }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = ABA }
+			NOT = { tag = TUR }
+			NOT = { tag = ARB }
+			NOT = { tag = EGY }
+			OR = {
+				ai = no
+				NOT = { exists = MAM }
+			}
+			any_owned_province = {
+				OR = {
+					region = egypt_region
+					region = arabia_region
+					region = mashriq_region
+					region = maghreb_region
+					region = horn_of_africa_region
+				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 361 	# Cairo
+			361 = { 			# Cairo
+				is_state = yes
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = MAM } #To Show why it might disappear
+			owns_core_province = 361
+		}
+		effect = {
+			361 = { # Cairo
+				move_capital_effect = yes
+			}
+			change_tag = MAM
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			MAM = {
+				if = {
+					limit = {
+						NOT = {
+							government = monarchy
+						}
+					}
+					change_government = monarchy
+				}
+				add_government_reform = mamluk_government
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 7300
+				}
+				if = {
+					limit = {
+						has_custom_ideas = no
+					}
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+				egypt_region = {
+					limit = {
+						NOT = { is_core = MAM }
+						NOT = { is_claim = MAM }
+					}
+					add_permanent_claim = MAM
+				}
+				set_country_flag = formed_mamluks
+				if = {
+					limit = { has_regency = no }
+					kill_ruler = yes
+				}
+				if = {
+					limit = { has_heir = yes }
+					kill_heir = {}
+				} 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				adm_tech = 37
+			}
+		}
+	}
+
+}

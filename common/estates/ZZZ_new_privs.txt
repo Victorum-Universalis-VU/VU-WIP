@@ -1,0 +1,58 @@
+estate_burghers = {
+	privileges = {
+		#EE Privileges:
+		ME_estate_burghers_ORM_heretic
+		ME_estate_burghers_MSY_marsh_development
+		ME_estate_burghers_YEM_coffee
+		ME_estate_burghers_YEM_coffee_boost #ohhh man
+		ME_estate_burghers_arid_development
+		ME_estate_burghers_desert_development
+		ME_estate_burghers_strengthen_hisbah
+		ME_estate_burghers_ORM_improve_relations
+		ME_estate_burghers_QIR_persian_development
+		me_estate_burghers_venetians_in_the_navy 
+		ME_estate_burghers_steppe_development
+		ME_estate_burghers_SWI_peace_in_the_cantons
+	}
+}
+
+estate_church = {
+	privileges = {
+		#EE Privileges:
+		ME_estate_church_tariqa
+		ME_estate_church_NAJ_mutaween
+		ME_estate_church_NAJ_status_quo
+		ME_estate_church_ADU_invite_sufi_orders
+	}
+}
+
+estate_nobles = {
+	privileges = {
+		#EE Privileges:
+		ME_estate_nobles_TIM_influencial_military
+		ME_estate_nobles_TIM_disloyal_princes
+		ME_estate_nobles_TIM_eternal_regency
+		ME_estate_nobles_MAM_oligarchy
+		estate_nobles_recruit_grenzens
+		estate_nobles_conscription_law
+		ME_estate_nobles_bedouin_recruitment
+		ME_estate_maratha_special_privilege
+		ME_estate_nobles_loyal_military
+		ME_estate_nobles_theme_system
+	}
+}
+
+estate_dhimmi = {
+	privileges = {
+		#EE Privileges:
+		ME_estate_dhimmi_MAM_protect_churches
+		ME_estate_dhimmi_MAM_administrators
+		# ME_estate_dhimmi_MAM_to_please_the_muslim_burgher cuts
+		# ME_estate_dhimmi_pact_of_umar cut
+		# ME_estate_dhimmi_recruit_trader
+		ME_estate_dhimmi_janissary_recruitment
+		ME_estate_dhimmi_QAR_support_apostolic_church
+		ME_estate_dhimmi_AKK_armenians
+		ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+}

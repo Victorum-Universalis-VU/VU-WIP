@@ -1,0 +1,25 @@
+#6842 - Suqian
+
+owner = MNG
+controller = MNG
+add_core = MNG
+culture = zhongyuan
+religion = confucianism
+capital = "Suqian"
+trade_goods = seafood
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+
+1601.1.1 = { discovered_by = SPA }
+
+1645.6.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

@@ -1,0 +1,5 @@
+government = monarchy
+#technology_group = western
+technology_group = french_tech_group
+religion = catholic
+primary_culture = frankish

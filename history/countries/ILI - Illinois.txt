@@ -1,0 +1,6 @@
+government = republic
+technology_group = french_tech_group
+unit_type = western
+primary_culture = cosmopolitan_french
+religion = catholic
+capital = 915

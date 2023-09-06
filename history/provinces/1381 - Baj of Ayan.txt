@@ -1,0 +1,12 @@
+#1381 - Baj of Ayan
+#VU Discovery Bug Fix
+
+# discovered_by = ANU
+# discovered_by = HOD
+# discovered_by = CHU
+# discovered_by = CHV
+# discovered_by = KMC
+# discovered_by = MYR
+
+1542.1.1 = { discovered_by = POR }
+1647.1.1 = { discovered_by = RUS }

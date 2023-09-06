@@ -1,0 +1,62 @@
+#2051 - Bhavnagar
+
+owner = PTL
+controller = PTL
+culture = saurashtri
+religion = hinduism
+capital = "Bhavnagar"
+trade_goods = rum
+hre = no
+base_tax = 6
+base_production = 6
+base_manpower = 4
+is_city = yes
+add_core = PTL
+discovered_by = chinese
+discovered_by = indian
+#discovered_by = muslim 
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = dutch_tech_group
+#discovered_by = east_african
+
+1470.1.1 = {
+	owner = GUJ
+	controller = GUJ
+	add_core = GUJ
+}
+1498.1.1 = { discovered_by = POR }
+1540.1.1 = {
+	owner = PTL
+	controller = PTL
+	remove_core = GUJ
+} # Kathiawar independent while Ahmad Shahis are busy with internal conflicts
+1591.1.1 = { controller = MUG } # Conquered by Mughals
+1592.1.1 = {
+	owner = MUG
+	add_core = MUG
+} # Conquered by Mughals
+1725.1.1 = {
+	owner = BDA
+	controller = BDA
+	add_core = BDA
+	remove_core = MUG	
+}
+1802.1.1 = {
+	owner = PTL
+	controller = PTL
+	remove_core = BDA	
+}

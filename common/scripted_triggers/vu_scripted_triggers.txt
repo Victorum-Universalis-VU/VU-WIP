@@ -1,0 +1,2 @@
+#VU addition for 1.35.3 by San Felipe
+#country_has_both_paradox_and_golden_bull_missions = {}

@@ -1,0 +1,272 @@
+namespace = ME_Mzab_Events
+
+# Idea Swap?
+country_event = {
+	id = ME_Mzab_Events.1
+	title = ideagroups.1.t
+	desc = ideagroups.1.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ideagroups.1.a #Yes Please!
+		ai_chance = { factor = 1 }
+		trigger = { has_custom_ideas = no }
+		
+		swap_free_idea_group = yes		#keep progress
+	
+		custom_tooltip = MZB_rustamid_ideas
+	}
+	option = {
+		name = ideagroups.1.b #No, we cannot abandon our roots.
+		#No Effect
+		ai_chance = { factor = 0 }
+	}
+}
+
+# New Ruler for Imamate
+country_event = {
+	id = ME_Mzab_Events.2
+	title =  ME_Mzab_Events.2.t
+	desc =  ME_Mzab_Events.2.d
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_reform = ME_ibadi_community
+		NOT = { has_country_flag = new_imamate_ruler_selection }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = new_imamate_ruler_selection
+			define_exiled_ruler = {
+				exiled_as = imamate_candidate_a_@ROOT #elect weak imam, good at mil
+				min_age = 25 
+				max_age = 50
+				change_adm = -1
+				change_dip = -2
+				change_mil = 3
+				option = 0
+			}
+			
+			define_exiled_ruler = {
+				exiled_as = imamate_candidate_b_@ROOT #elect strong imam, good at diplo and adm, but suck at mil
+				min_age = 35 #typically older
+				max_age = 60 
+				change_adm = 2
+				change_dip = 1
+				change_mil = -3
+				option = 1
+			}
+		}
+	}
+	
+	option = {
+		name =  ME_Mzab_Events.2.a # Elect a weak imam
+
+		ai_chance = { factor = 0.33 }
+
+		set_ruler = imamate_candidate_a_@ROOT
+		
+		add_ruler_modifier = {
+			name = MZB_weak_imam
+			duration = -1
+		}
+	}
+
+	option = {
+		name = ME_Mzab_Events.2.b # Elect regular imam
+
+		ai_chance = { factor = 0.33 }
+
+		set_ruler = imamate_candidate_b_@ROOT
+		
+		add_ruler_modifier = {
+			name = MZB_strong_imam
+			duration = -1
+		}
+	}
+
+	option = {
+		name =  ME_Mzab_Events.2.c # Elect the preferred successor
+
+		ai_chance = { factor = 0.33 }
+
+		trigger = {
+			has_regency = no
+		}
+		
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		
+		add_ruler_modifier = {
+			name = MZB_preferred_successor
+			duration = -1
+		}
+	}
+
+	after = {
+		clr_country_flag = new_imamate_ruler_selection
+		clear_exiled_ruler = imamate_candidate_a_@ROOT
+		clear_exiled_ruler = imamate_candidate_b_@ROOT
+	}
+}
+
+country_event = {
+	id = ME_Mzab_Events.3
+	title = ME_Mzab_Events.3.t
+	desc = ME_Mzab_Events.3.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		religion_group = muslim
+	}
+
+	option = {
+		name = ME_Mzab_Events.3.a
+		ai_chance = { factor = 1 }
+		
+		custom_tooltip = MZB_gain_a_core_on_every_ibadi_province
+		hidden_effect = {
+			maghreb_region = {
+				limit = {
+					religion = ibadi
+				}
+				add_core = ROOT 
+			}
+		}
+		
+		custom_tooltip = " "
+		
+		add_age_modifier = {
+			name = MZB_quest_to_free_the_ibadiyya
+			duration = -1
+			age = age_of_discovery
+			else = "
+				add_stability_or_adm_power = yes
+			"
+		}
+		
+		hidden_effect = {
+			country_event = { id = ME_Mzab_Events.4 days = 30 random = 60 }
+		}
+	}
+}
+
+country_event = {
+	id = ME_Mzab_Events.4
+	title = ME_Mzab_Events.4.t
+	desc = ME_Mzab_Events.4.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		mascat_area = {
+			religion = ibadi
+		}
+		oman_area = {
+			religion = ibadi
+		}
+	}
+
+	option = {
+		name = ME_Mzab_Events.4.a
+		ai_chance = { factor = 1 }
+		
+		add_manpower = 6.283 #this is pi * 2 kekw
+	}
+}
+
+country_event = {
+	id = ME_Mzab_Events.5
+	title = ME_Mzab_Events.5.t
+	desc = ME_Mzab_Events.5.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Mzab_Events.5.a
+		ai_chance = { factor = 1 }
+		
+		2452 = {
+			add_nationalism = -25
+			if = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				change_religion = ibadi
+			}
+			else = {
+				ROOT = {
+					add_yearly_manpower = 0.5
+				}
+			}
+		}
+		354 = {
+			add_nationalism = -25
+			if = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				change_religion = ibadi
+			}
+			else = {
+				ROOT = {
+					add_yearly_manpower = 0.5
+				}
+			}
+		}
+		2451 = {
+			add_nationalism = -25
+			if = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				change_religion = ibadi
+			}
+			else = {
+				ROOT = {
+					add_yearly_manpower = 0.5
+				}
+			}
+		}
+		
+		custom_tooltip = " "
+		
+		add_dip_power = 100
+	}
+}
+
+country_event = {
+	id = ME_Mzab_Events.6
+	title = ME_Mzab_Events.6.t
+	desc = ME_Mzab_Events.6.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		religion_group = muslim
+	}
+
+	option = {
+		name = ME_Mzab_Events.6.a
+		ai_chance = { factor = 1 }
+		
+		add_prestige_or_monarch_power = { amount = 25 }
+		
+		custom_tooltip = " "
+		
+		add_country_modifier = {
+			name = MZB_rustamids
+			duration = 9125
+		}
+	}
+}

@@ -1,0 +1,98 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_advisor_julius_archbishop"
+		texturefile = "gfx//interface//advisors//theologian.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_composer"
+		texturefile = "gfx//interface//advisors//diplomat.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_poet"
+		texturefile = "gfx//interface//advisors//diplomat.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_vu_accountant" 
+		texturefile = "gfx//interface//advisors//diplomat.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_vu_royal_imam"
+		texturefile = "gfx//interface//advisors//theologian.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_vu_city_planner" 
+		texturefile = "gfx//interface//advisors//diplomat.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_vu_cartographer" 
+		texturefile = "gfx//interface//advisors//diplomat.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_vu_spymaster_assassin" 
+		texturefile = "gfx//interface//advisors//vu_spymaster_assassin.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_vu_head_of_patriarchate"
+		texturefile = "gfx//interface//advisors//theologian.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_vu_right_hand_captain_female"
+		texturefile = "gfx//interface//advisors//vu_right_hand_captain.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_vu_legendary_buccaneer_female"
+		texturefile = "gfx//interface//advisors//vu_legendary_buccaneer.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}
+
+

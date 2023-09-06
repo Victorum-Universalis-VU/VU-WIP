@@ -1,0 +1,82 @@
+#128 - Kärnten
+#Region - Germany
+#Area - Inner Austria
+
+owner = HAB
+controller = HAB
+add_core = STY
+add_core = HAB
+culture = slovene #Was austrian but changed by San Felipe on the advice of Morsmessor
+religion = catholic
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = copper
+capital = "Klagenfurt" 
+is_city = yes
+hre = yes
+
+#1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+
+1452.1.1 = {
+	owner = STY
+	controller = STY
+}
+1457.11.24 = {
+	owner = HAB
+	controller = HAB
+	remove_core = STY
+}
+1514.1.1 = {
+	base_tax = 12
+	base_production = 12
+	base_manpower = 8
+	fort_15th = yes
+}	# In 1514, a fire almost completely destroyed the city, and in 1518 Emperor Maximilian I, unable to rebuild it, despite the loud protests of the burgers, ceded Klagenfurt to the Estates, the nobility of the Duchy. 
+# Never before had such a thing happened. The new owners, however, brought about an economic renaissance and the political and cultural ascendancy of Klagenfurt. -Darth Modus note iffy wiki reference, but whatever....
+1539.1.1 = {
+	fort_15th = no
+	fort_16th = yes
+}	# a new city center square, the Neuer Platz, was constructed; and the new fortifications that took half a century to build made Klagenfurt the strongest fortress north of the Alps.
+1564.1.1 = {
+	fort_16th = no
+	fort_17th = yes
+}	# a new city center square, the Neuer Platz, was constructed; and the new fortifications that took half a century to build made Klagenfurt the strongest fortress north of the Alps.
+1525.5.1 = { unrest = 2 } # Farmer insurrections 
+1526.1.1 = { unrest = 0 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+# In 1809, however, the French troops under Napoleon destroyed the city walls

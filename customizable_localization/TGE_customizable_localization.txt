@@ -1,0 +1,121 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+defined_text = {
+    name = GetIfSubjectsTGE
+
+    text = {
+        localisation_key = string_is_subject_tge
+        trigger = {
+            is_subject = yes
+        }
+    }
+    text = {
+        localisation_key = string_is_not_subject_tge
+        trigger = {
+            is_subject = no
+        }
+    }
+}
+
+defined_text = {
+    name = GetGeoName
+
+    text = {
+        localisation_key = string_GeoNameTGE_1
+        trigger = {
+            is_variable_equal = {
+				which = var_name
+				value = 1
+			}
+        }
+    }
+    text = {
+        localisation_key = string_GeoNameTGE_2
+        trigger = {
+            is_variable_equal = {
+				which = var_name
+				value = 2
+			}
+        }
+    }
+	text = {
+        localisation_key = string_GeoNameTGE_3
+        trigger = {
+            is_variable_equal = {
+				which = var_name
+				value = 3
+			}
+        }
+    }
+    text = {
+        localisation_key = string_GeoNameTGE_4
+        trigger = {
+            is_variable_equal = {
+				which = var_name
+				value = 4
+			}
+        }
+    }
+	text = {
+        localisation_key = string_GeoNameTGE_5
+        trigger = {
+            is_variable_equal = {
+				which = var_name
+				value = 5
+			}
+        }
+    }
+}
+
+defined_text = {
+    name = GetGeoName_TWO
+
+    text = {
+        localisation_key = string_GeoNameTGE_1_two
+        trigger = {
+            is_variable_equal = {
+				which = var_name_2
+				value = 1
+			}
+        }
+    }
+    text = {
+        localisation_key = string_GeoNameTGE_2_two
+        trigger = {
+            is_variable_equal = {
+				which = var_name_2
+				value = 2
+			}
+        }
+    }
+	text = {
+        localisation_key = string_GeoNameTGE_3_two
+        trigger = {
+            is_variable_equal = {
+				which = var_name_2
+				value = 3
+			}
+        }
+    }
+    text = {
+        localisation_key = string_GeoNameTGE_4_two
+        trigger = {
+            is_variable_equal = {
+				which = var_name_2
+				value = 4
+			}
+        }
+    }
+	text = {
+        localisation_key = string_GeoNameTGE_5_two
+        trigger = {
+            is_variable_equal = {
+				which = var_name_2
+				value = 5
+			}
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#5587 - Batanes
+
+culture = ilocano
+religion = animism
+capital = "Ivata"
+trade_goods = sea_turtle
+hre = no
+base_tax = 4  
+base_production = 4
+base_manpower = 4
+is_city = yes
+discovered_by = chinese
+owner = IVT
+controller = IVT
+add_core = IVT
+extra_cost = 8
+
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan

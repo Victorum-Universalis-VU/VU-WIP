@@ -1,0 +1,1762 @@
+#VU 1.35 by Quonton
+#Iron Deposits
+country_event = {
+    id = 16428
+    title = "EVTNAME16428"
+    desc = "EVTDESC16428"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        mil_tech = 26
+	owns_core_province = 910
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 360
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16428a"
+        910 = {
+		change_trade_goods = iron
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16428b"
+    }
+}
+
+country_event = {
+    id = 16429
+    title = "EVTNAME16428"
+    desc = "EVTDESC16428"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        mil_tech = 26
+	owns_core_province = 5014
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 360
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16428a"
+        5014 = {
+		change_trade_goods = iron
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16428b"
+    }
+}
+
+
+#Copper Deposits
+country_event = {
+    id = 16430
+    title = "EVTNAME16430"
+    desc = "EVTDESC16430"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 27
+	owns_core_province = 4898
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        4898 = {
+		change_trade_goods = copper
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
+
+country_event = {
+    id = 16431
+    title = "EVTNAME16430"
+    desc = "EVTDESC16430"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 27
+	owns_core_province = 877
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        877 = {
+		change_trade_goods = copper
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
+
+country_event = {
+    id = 16432
+    title = "EVTNAME16430"
+    desc = "EVTDESC16430"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 27
+	owns_core_province = 879
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        879 = {
+		change_trade_goods = copper
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
+
+country_event = {
+    id = 16433
+    title = "EVTNAME16430"
+    desc = "EVTDESC16430"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 27
+	owns_core_province = 5738
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        5738 = {
+		change_trade_goods = copper
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
+
+country_event = {
+    id = 16434
+    title = "EVTNAME16430"
+    desc = "EVTDESC16430"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 27
+	owns_core_province = 5893
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        5893 = {
+		change_trade_goods = copper
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
+
+
+#Zinc Deposits
+country_event = {
+    id = 16435
+    title = "EVTNAME16435"
+    desc = "EVTDESC16435"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 28
+	owns_core_province = 5898
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16435a"
+        5898 = {
+		change_trade_goods = zinc
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16435b"
+    }
+}
+
+country_event = {
+    id = 16436
+    title = "EVTNAME16435"
+    desc = "EVTDESC16435"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 28
+	owns_core_province = 5587
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16435a"
+        5587 = {
+		change_trade_goods = zinc
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16435b"
+    }
+}
+
+country_event = {
+    id = 16437
+    title = "EVTNAME16435"
+    desc = "EVTDESC16435"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 28
+	owns_core_province = 5049
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16435a"
+        5049 = {
+		change_trade_goods = zinc
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16435b"
+    }
+}
+
+
+#Lead Deposits
+country_event = {
+    id = 16438
+    title = "EVTNAME16438"
+    desc = "EVTDESC16438"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 28
+	owns_core_province = 5079
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16438a"
+        5079 = {
+		change_trade_goods = zinc
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16438b"
+    }
+}
+country_event = {
+    id = 16439
+    title = "EVTNAME16438"
+    desc = "EVTDESC16438"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 28
+	owns_core_province = 2571
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16438a"
+        2571 = {
+		change_trade_goods = zinc
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16438b"
+    }
+}
+
+
+#Amber
+country_event = {
+    id = 16440
+    title = "EVTNAME16440"
+    desc = "EVTDESC16440"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 30
+	owns_core_province = 5785
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16440a"
+        5785 = {
+		change_trade_goods = amber
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16440b"
+    }
+}
+
+country_event = {
+    id = 16441
+    title = "EVTNAME16440"
+    desc = "EVTDESC16440"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        dip_tech = 30
+	owns_core_province = 2520
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16440a"
+        2520 = {
+		change_trade_goods = amber
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16440b"
+    }
+}
+
+
+#Mercury Deposits
+country_event = {
+    id = 16442
+    title = "EVTNAME16442"
+    desc = "EVTDESC16442"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5854
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16442a"
+        5854 = {
+		change_trade_goods = mercury
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16442b"
+    }
+}
+
+country_event = {
+    id = 16443
+    title = "EVTNAME16442"
+    desc = "EVTDESC16442"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 4637
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16442a"
+        4637 = {
+		change_trade_goods = mercury
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16442b"
+    }
+}
+
+country_event = {
+    id = 16444
+    title = "EVTNAME16442"
+    desc = "EVTDESC16442"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5016
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16442a"
+        5016 = {
+		change_trade_goods = mercury
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16442b"
+    }
+}
+
+
+#Tin Deposits
+country_event = {
+    id = 16445
+    title = "EVTNAME16445"
+    desc = "EVTDESC16445"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5752
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16445a"
+        5752 = {
+		change_trade_goods = tin
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16445b"
+    }
+}
+
+country_event = {
+    id = 16446
+    title = "EVTNAME16445"
+    desc = "EVTDESC16445"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 949
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16445a"
+        949 = {
+		change_trade_goods = tin
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16445b"
+    }
+}
+
+country_event = {
+    id = 16447
+    title = "EVTNAME16445"
+    desc = "EVTDESC16445"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5837
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16445a"
+        5837 = {
+		change_trade_goods = tin
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16445b"
+    }
+}
+
+
+#Silver Deposits
+country_event = {
+    id = 16448
+    title = "EVTNAME16448"
+    desc = "EVTDESC16448"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5753
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16448a"
+        5753 = {
+		change_trade_goods = silver
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16448b"
+    }
+}
+
+
+#Sulfer Deposits
+country_event = {
+    id = 16449
+    title = "EVTNAME16449"
+    desc = "EVTDESC16449"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5762
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16449a"
+        5762 = {
+		change_trade_goods = sulfur
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16449b"
+    }
+}
+
+country_event = {
+    id = 16450
+    title = "EVTNAME16449"
+    desc = "EVTDESC16449"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5631
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16449a"
+        5631 = {
+		change_trade_goods = sulfur
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16449b"
+    }
+}
+
+
+#Gold Deposits
+country_event = {
+    id = 16451
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5178
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5178 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+
+country_event = {
+    id = 16452
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 1002
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        1002 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16465
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5004
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5004 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16453
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5770
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5770 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16454
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5821
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5821 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16455
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5017
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5017 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16456
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 4953
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        4953 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16457
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 2479
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        2479 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16458
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5765
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5765 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16459
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5768
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5768 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16460
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 5858
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        5858 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16461
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 2581
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        2581 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16462
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 8009
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        8009 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+country_event = {
+    id = 16463
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 8000
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        8000 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+
+country_event = {
+    id = 16466
+    title = "EVTNAME16451"
+    desc = "EVTDESC16451"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 40
+	owns_core_province = 8764
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16451a"
+        8764 = {
+		change_trade_goods = gold
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16451b"
+    }
+}
+
+#Diamond Deposits
+country_event = {
+    id = 16464
+    title = "EVTNAME16464"
+    desc = "EVTDESC16464"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 46
+	owns_core_province = 5071
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	modifier = {
+		factor = 0.8
+		has_building = workshop
+	}
+	modifier = {
+		factor = 0.6
+		has_building = counting_house
+	}
+	modifier = {
+		factor = 0.4
+		has_building = treasury
+	}
+	modifier = {
+		factor = 0.2
+		has_building = factory
+	}
+    }
+#Gain New Good
+    option = {
+        name = "EVTOPTA16464a"
+        5071 = {
+		change_trade_goods = diamonds
+		}
+    }
+#Keep Old Good
+    option = {
+        name = "EVTOPTA16464b"
+    }
+}

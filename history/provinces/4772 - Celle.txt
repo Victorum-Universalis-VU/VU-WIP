@@ -1,0 +1,69 @@
+#4772 - Celle
+
+owner = LUN
+controller = LUN
+add_core = LUN
+culture = lower_saxon
+religion = catholic
+capital = "Celle"
+trade_goods = lumber
+hre = yes
+base_tax = 4
+base_production = 4
+base_manpower = 4
+is_city = yes
+
+
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+
+
+1529.1.1 = { religion = protestant }
+1550.1.1 = { base_tax = 4 base_production = 4 }
+1705.8.28 = {	
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+}
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1807.7.9 = {
+	owner = WES
+	controller = WES
+	add_core = WES
+} # The Second Treaty of Tilsit, the kingdom of Westfalia
+1813.10.13 = {
+	owner = HAN
+	controller = HAN
+	remove_core = WES
+} # Westfalia is dissolved after the Battle of Leipsig

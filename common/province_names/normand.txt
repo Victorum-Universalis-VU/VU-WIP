@@ -1,0 +1,5 @@
+##XXX = { "Province Name" "City Name" } - New addition to EUIV
+
+1879 = { "Alençoun" "Alençoun" }
+
+

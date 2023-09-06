@@ -1,0 +1,26 @@
+#6424 - Tateyama
+
+owner = STM
+controller = STM
+add_core = STM
+culture = togoku
+religion = shinto
+capital = "Asai"
+trade_goods = rice
+hre = no
+base_tax = 4
+base_production = 6
+base_manpower = 4
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+1542.1.1 = { discovered_by = POR }
+1570.1.1 = { add_core = HJO } # The Hojo expands the territory into Shimousa
+1585.1.1 = { owner = HJO controller = HJO add_core = HJO remove_core = CBA } # The Chiba clan became vassal of the Hojo
+# Battle of Konodai
+1590.8.10 = { remove_core = HJO add_core = TKG owner = TKG controller = TKG }
+# Tokugawa shogunate founded

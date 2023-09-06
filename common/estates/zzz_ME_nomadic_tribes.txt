@@ -1,0 +1,8 @@
+estate_nomadic_tribes = {
+	privileges = {
+		ME_estate_nomadic_tribes_horde_unity
+		ME_estate_nomadic_tribes_unify_tribe
+		ME_estate_nomadic_tribes_destruction_of_the_lands
+		ME_estate_nomadic_tribes_raise_warband
+	}
+}

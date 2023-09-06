@@ -1,0 +1,22 @@
+#5641 - Hei
+
+owner = KSA
+controller = KSA
+add_core = KSA
+culture = togoku
+religion = shinto
+capital = "Hei"
+trade_goods = apiculture
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
+
+1542.1.1 = { discovered_by = POR }
+

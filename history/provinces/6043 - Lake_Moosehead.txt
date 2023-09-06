@@ -1,0 +1,3 @@
+#6043 - Lake_Moosehead
+
+discovered_by = north_american

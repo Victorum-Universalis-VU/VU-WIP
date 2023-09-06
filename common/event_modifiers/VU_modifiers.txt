@@ -1,0 +1,195 @@
+jewish_population = {
+	estate_jews_loyalty_modifier = 0.02
+	local_build_cost = -0.05
+	local_prosperity_growth = 0.05
+	local_production_efficiency = 0.05
+	local_tax_modifier = 0.05
+	local_development_cost = -0.05
+	local_missionary_strength = -0.01
+}
+
+jewish_expulsions = {
+	estate_jews_loyalty_modifier = -0.02
+	local_build_cost = 0.05
+	local_prosperity_growth = -0.05
+	local_production_efficiency = -0.05
+	local_tax_modifier = -0.05
+	local_development_cost = 0.05
+	local_missionary_strength = 0.01
+}
+
+nor_silver_tax = {
+	global_tax_income = 50
+}
+nor_silver_efficiency = {
+	local_gold_depletion_chance_modifier = -0.5
+}
+
+ten_years_eng_fra_country_modifier = {
+	global_prosperity_growth = 0.25
+	global_autonomy = -0.20
+	global_monthly_devastation = 0.1
+}
+
+mt_canlaon_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_canlaon_icon"
+}
+
+mt_pinatubo_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_pinatubo_icon"
+}
+
+mt_mayon_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_mayon_icon"
+}
+
+mt_taal_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_taal_icon"
+}
+
+mt_cabalian_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_cabalian_icon"
+}
+
+mt_hilong_hilong_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_hilong_hilong_icon"
+}
+
+mt_matutum_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_matutum_icon"
+}
+
+mt_bulusan_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_bulusan_icon"
+}
+
+mt_hibok_hibok_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_hibok_hibok_icon"
+}
+
+mt_babuyan_claro_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_babuyan_claro_icon"
+}
+
+mt_krakatoa_modifier = {
+	trade_goods_size = 0.1
+	supply_limit = 1.0
+	supply_limit_modifier = 0.3
+	local_development_cost = -0.15
+	tolerance_heathen = 1
+	picture = "mt_krakatoa_icon"
+}
+
+#1.35 by Quonton
+
+vu_amazon_rainforest = {
+	trade_value = 0.5
+	trade_goods_size = 0.5
+	supply_limit_modifier = -0.1
+	picture = "vu_amazon_rainforest"
+}
+
+vu_komodo_island = {
+	trade_value = 0.25
+	prestige = 0.05
+	local_tax_modifier = 0.25
+	picture = "deans_blue_hole_icon"
+}
+
+vu_ha_long_bay = {
+	trade_value = 0.75
+	trade_goods_size = 0.05
+	picture = "waterford_harbour_icon"
+}
+
+vu_iguazu_falls = {
+	trade_value = 1
+	prestige = 0.05
+	local_tax_modifier = 0.1
+	picture = "niagara_falls_icon"
+}
+
+vu_table_mountain = {
+	trade_value = 0.1
+	prestige = 0.05
+	picture = "mt_babuyan_claro_icon"
+}
+
+vu_the_sundarbans = {
+	trade_goods_size = 0.1
+	trade_value = 0.2
+	picture = "laguna_lagoon_icon"
+}
+
+vu_angel_falls = {
+	trade_value = 1
+	local_tax_modifier = 0.1
+	picture = "niagara_falls_icon"
+}
+
+vu_cliffs_of_moher = {
+	trade_goods_size = 0.1
+	local_defensiveness = 0.1
+	picture = "vu_cliffs_moher"
+}
+
+vu_milford_sound = {
+	trade_value = 0.2
+	local_tax_modifier = 0.1
+	transport_cost = -0.1
+	picture = "vu_milford_sound"
+}
+
+vu_olive_oil_production = {
+	trade_goods_size_modifier = 2
+}

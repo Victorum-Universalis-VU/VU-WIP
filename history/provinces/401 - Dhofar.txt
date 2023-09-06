@@ -1,0 +1,59 @@
+#401 - Dhofar
+
+owner = MHR
+controller = MHR
+culture = mahri_culture
+religion = sunni
+capital = "Salalah"
+trade_goods = dates
+hre = no
+base_tax = 6
+base_production = 6
+base_manpower = 4 
+is_city = yes
+add_core = MHR
+center_of_trade = 2
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier_2
+    duration = -1
+}
+
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+discovered_by = indian
+#discovered_by = dutch_tech_group
+#discovered_by = east_african
+
+extra_cost = 15
+
+add_permanent_province_modifier = {
+	name = gulf_of_oman_estuary_modifier
+	duration = -1
+}
+
+1488.1.1 = { discovered_by = POR } # Pêro da Covilhã
+
+#1644.1.1 = {
+#} #Al-Mutawakkil Isma'il conquered Yemen in its entirety, from Asir in the north to Dhofar in the east.
+#But calling MHR a vassal instead of direct territory
+
+1650.1.1 = {
+	owner = OMA
+	controller = OMA
+	add_core = OMA
+} #Boundries of Oman vary greatly after expelling the Portuguese, but at least at times exercised influence over more of less modern borders in the south.

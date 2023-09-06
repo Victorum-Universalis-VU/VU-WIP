@@ -1,0 +1,87 @@
+estate_turkic_tribes = {
+	icon = 5 
+	
+	color = { 79 162 43 }
+
+	trigger = {
+		OR = {
+			tag = QAR
+			tag = AKK 
+			tag = TRK
+			tag = BAG
+			tag = QIZ
+			primary_culture = azerbaijani
+			primary_culture = turkish
+		}
+		OR = {
+			ME_tribal_federation_trigger = yes
+			num_of_estate_privileges = {
+				estate = estate_turkic_tribes
+				value = 1
+			}
+		}
+	}
+
+	country_modifier_happy = {
+		yearly_government_power = 0.5
+		reform_progress_growth = 0.2 
+	}
+	country_modifier_neutral = {
+		reform_progress_growth = 0.1 
+	}
+	country_modifier_angry = {
+		reform_progress_growth = -0.2 
+	}
+	land_ownership_modifier = {
+	}
+
+	province_independence_weight = {
+		factor = 1
+	}
+	
+	# influence_modifier = {
+		# desc = MOR_base
+		# trigger = {
+			# always = yes
+		# }	
+		# influence = 10
+	# }
+	# loyalty_modifier = {
+		# desc = MOR_base
+		# trigger = {
+			# always = yes
+		# }	
+		# loyalty = 10
+	# }
+	
+	influence_from_dev_modifier = 0.25
+	
+	base_influence = 30
+	
+	privileges = {
+		estate_turkic_tribes_guarantee_tribal_autonomy
+		estate_turkic_tribes_land_grants
+		estate_turkic_tribes_recruit_tribes
+		estate_turkic_tribes_integrate_new_tribes
+		estate_turkic_tribes_demand_new_oaths
+		estate_turkic_tribes_tribal_cavalry
+		estate_turkic_tribes_settle_the_tribes
+		estate_turkic_tribes_promote_shia
+		estate_turkic_tribes_recruit_generals
+		estate_turkic_tribes_primacy_of_the_tribes
+		estate_turkic_tribes_QIR_tribal_herding_rights
+		estate_turkic_tribes_QIR_sedentary_tribes
+		estate_turkic_tribes_QIR_exploit_tribal_connections
+		estate_turkic_tribes_QIR_tribal_contribution
+		estate_turkic_tribes_QIR_maintain_tribal_unity
+	}
+
+	agendas = {
+		estate_turkic_tribes_increase_tribal_allegiance
+		estate_turkic_tribes_hire_root_culture_advisor
+		estate_turkic_tribes_develop
+		estate_turkic_tribes_build_manpower_building
+		estate_turkic_tribes_expand_tribal_land
+		estate_turkic_tribes_build_tax_building
+	}
+}

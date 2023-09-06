@@ -1,0 +1,27 @@
+#678 - Kham
+
+owner = KAM
+controller = KAM
+add_core = KAM
+culture = tibetan
+religion = tantra
+capital = "Tachienlu"
+trade_goods = tea
+hre = no
+base_tax = 4  
+base_production = 4
+base_manpower = 4
+is_city = yes
+center_of_trade = 1
+
+discovered_by = chinese
+discovered_by = indian
+#discovered_by = dutch_tech_group
+
+1709.1.1 = { discovered_by = SPA }
+
+1776.1.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

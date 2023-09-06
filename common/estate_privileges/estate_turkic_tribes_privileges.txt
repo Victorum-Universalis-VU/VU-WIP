@@ -1,0 +1,617 @@
+estate_turkic_tribes_guarantee_tribal_autonomy = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_land_grants = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	land_share = 5
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_recruit_tribes = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0
+	influence = 0.1
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		OR = {
+			tag = QAR
+			tag = BAG 
+			tag = TRK
+			tag = AKK
+		}
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = QIR_upgrade_recruit_from_the_tribes_estate_priv_flag
+		}
+		modifier = {
+			manpower_in_own_culture_provinces = 0.5
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = TRK
+					was_tag = AKK
+				}
+				tag = AKK
+			}
+			NOT = { has_country_flag = QIR_upgrade_recruit_from_the_tribes_estate_priv_flag }
+		}
+		modifier = {
+			manpower_in_own_culture_provinces = 0.15
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				AND = {
+					tag = TRK
+					was_tag = QAR
+				}
+				tag = QAR
+			}
+			NOT = { has_country_flag = QIR_upgrade_recruit_from_the_tribes_estate_priv_flag }
+		}
+		modifier = {
+			manpower_in_own_culture_provinces = 0.2
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			tag = BAG
+			NOT = { has_country_flag = QIR_upgrade_recruit_from_the_tribes_estate_priv_flag }
+		}
+		modifier = {
+			manpower_in_own_culture_provinces = 0.3
+		}
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_integrate_new_tribes = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = -0.1
+	influence = -0
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		years_of_nationalism = -5
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_demand_new_oaths = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -10
+	loyalty = -0.1
+	influence = -0
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		has_dlc = "Cradle of Civilization"
+		ME_tribal_federation_trigger = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+		add_government_power = {
+			mechanic_type = tribal_federation_mechanic
+			power_type = tribal_allegiance
+			value = 5
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+		yearly_government_power = 0.5
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_tribal_cavalry = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		cav_to_inf_ratio = 0.15
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_settle_the_tribes = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+		custom_tooltip = estate_turkic_culture_converting_grants_loyalty
+	}
+	penalties = {
+	}
+	benefits = {
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.33
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_promote_shia = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		OR = {
+			tag = QAR
+			AND = {
+				tag = TRK
+				was_tag = QAR
+			}
+		}
+		religion = shiite
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		global_heretic_missionary_strength = 0.01
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_recruit_generals = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = 0
+	loyalty = 0
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		ME_tribal_federation_trigger = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+		ME_legitimacy_or_tribal_allegiance_trigger = {
+			t_amount = 20
+			l_amount = 90
+		}
+	}
+	
+	on_granted = {
+		QIR_give_legitimacy_or_tribal_allegiance = {
+			t_amount = -20
+			l_amount = -20
+		}
+		add_army_tradition_or_mil_power = { amount = 10 }
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_primacy_of_the_tribes = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.15
+	influence = 0.1
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+		change_estate_land_share = {
+			estate = all
+			share = -5
+ 		}
+		change_estate_land_share = {
+			estate = estate_turkic_tribes
+			share = 2
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+	}
+	benefits = {
+		burghers_influence_modifier = -0.05
+		church_influence_modifier = -0.05
+		dhimmi_influence_modifier = -0.05
+		cossacks_influence_modifier = -0.05
+		rajput_influence_modifier = -0.05
+		nobles_influence_modifier = -0.05
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_QIR_tribal_herding_rights = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -15
+	loyalty = 0.15
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		has_country_flag = QIR_tribal_herding_rights_flag
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+		custom_tooltip = estate_turkic_every_wool_province
+		tooltip = {
+			add_province_modifier = {
+				name = QIR_tribal_herding_rights
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = wool
+				}
+				add_province_modifier = {
+					name = QIR_tribal_herding_rights
+					duration = -1
+				}
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	on_revoked = {
+		custom_tooltip = AKK_modifier_will_be_removed
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = QIR_tribal_herding_rights
+			}
+		}
+	}
+	
+	on_invalid = {
+		custom_tooltip = AKK_modifier_will_be_removed
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = QIR_tribal_herding_rights
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_QIR_sedentary_tribes = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -15
+	loyalty = 0.1
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		ME_tribal_federation_trigger = yes
+		has_dlc = "Cradle of Civilization"
+		has_country_flag = QIR_unlock_sedentary_tribes_tt
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = {
+		custom_tooltip = QIR_as_long_as_we_are_above_40_allegiance
+	}
+	
+	penalties = {
+		yearly_government_power = -1
+	}
+	benefits = {
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 40
+			}
+		}
+		modifier = {
+			development_cost = -0.05
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_QIR_exploit_tribal_connections = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -15
+	loyalty = 0.1
+	influence = 0.05
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		ME_tribal_federation_trigger = yes
+		has_dlc = "The Cossacks"
+		has_dlc = "Cradle of Civilization"
+		has_country_flag = QIR_special_priv_for_horde_unity_flag
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	penalties = {
+		yearly_government_power = -1
+	}
+	benefits = {
+		horde_unity = 1
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_QIR_tribal_contribution = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		has_country_flag = QIR_privilege_for_cavalry_related_stuff_flag
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	penalties = {
+		yearly_government_power = -0.5
+	}
+	benefits = {
+		leader_land_shock = 1
+		cavalry_power = 0.05
+	}
+	
+	can_revoke = { 
+	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_turkic_tribes_QIR_maintain_tribal_unity = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	land_share = 0
+	is_valid = {
+		estate_turkic_tribes_is_valid = yes
+		has_country_flag = QIR_privilege_for_expansion_flag
+	}
+	
+	can_select = {
+		estate_turkic_tribes_can_select = yes
+	}
+	
+	on_granted = { 
+		custom_tooltip = QIR_while_we_are_above_45_50_tribal_allegiance
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 45
+			}
+		}
+		modifier = {
+			yearly_government_power = -0.25
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 50
+			}
+		}
+		modifier = {
+			years_of_nationalism = -5
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

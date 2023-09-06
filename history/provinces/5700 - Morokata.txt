@@ -1,0 +1,23 @@
+#5700 - Morokara
+
+owner = ITO
+controller = ITO
+culture = kyushuan
+religion = shinto
+capital = "Morokata"
+trade_goods = fruit
+hre = no
+base_tax = 4
+base_production = 8
+base_manpower = 8
+is_city = yes
+add_core = ITO
+add_core = SMZ
+discovered_by = chinese
+discovered_by = japanese
+
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+1542.1.1 = { discovered_by = POR }

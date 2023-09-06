@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_federation
+government_rank = 1
+primary_culture = dagestani
+add_accepted_culture = circassian
+religion = shiite
+technology_group = muslim
+capital = 6135 #Durdzuketia
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Foundi Easteregkh"
+		adm = 4
+		mil = 2
+		dip = 2
+		dynasty ="Durdzukh"
+		birth_date = 1410.1.1
+	}
+}

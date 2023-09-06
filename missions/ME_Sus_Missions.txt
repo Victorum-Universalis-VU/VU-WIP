@@ -1,0 +1,381 @@
+SOS_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		tag = SOS
+		has_country_flag = SOS_impostor_missions
+	}
+	has_country_shield = yes
+	
+	SOS_emergency_meeting = {
+		icon = catholic_confraternity
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { 
+		}
+		trigger = {
+			employed_advisor = { category = ADM }
+			employed_advisor = { category = DIP }
+			employed_advisor = { category = MIL }
+		}
+		effect = {
+			country_event = { id = ME_Sus_Events.2 } #THE EMERGENCY MEETING
+		}
+	}
+	
+	SOS_assessing_truthfulness = {
+		icon = the_glorious_revolution
+		required_missions = { SOS_emergency_meeting SOS_friends_or_enemies }
+		position = 3
+		provinces_to_highlight = { 
+		}
+		trigger = {
+			NOT = { corruption = 0.05 }
+			NOT = { num_of_loans = 1 }
+			OR = {
+				has_adm_advisor_3 = yes
+				has_dip_advisor_3 = yes
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_no_imposter_among_us
+				duration = 10950
+			}
+			
+			set_country_flag = SOS_no_desires_of_the_flesh
+			custom_tooltip = SOS_no_desires_of_the_flesh_tt
+		}
+	}
+}
+
+SOS_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = SOS
+		has_country_flag = SOS_impostor_missions
+	}
+	has_country_shield = yes
+	
+	SOS_friends_or_enemies = {
+		icon = mission_friends_or_enemies
+		required_missions = { SOS_find_imitator SOS_emergency_meeting }
+		position = 2
+		provinces_to_highlight = {
+			is_capital_of = ROOT 
+		}
+		trigger = {
+			stability = 1
+			OR = {
+				NOT = { is_subject = yes }
+				capital_scope = {
+					development = 15
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_never_trust_anyone
+				duration = -1
+			}
+		}
+	}
+	
+	SOS_mosque = {
+		icon = mission_conquer_sindh_mer
+		required_missions = { SOS_friends_or_enemies }
+		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_tax_building_trigger = yes }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 10
+			}
+			
+			OR = {
+				piety = 0.5
+				NOT = { piety = -0.49 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_the_task_is_to_pray
+				duration = 7300
+			}
+			
+			add_stability_or_adm_power = yes
+			
+			custom_tooltip = " "
+			custom_tooltip = SOS_distribute_10_base_tax
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								has_tax_building_trigger = yes
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+			}
+		}
+	}
+}
+
+SOS_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {	
+		tag = SOS
+		has_country_flag = SOS_impostor_missions
+	}
+	has_country_shield = yes
+	
+	SOS_find_imitator = {
+		icon = mission_levantine_restoration
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			owner = {
+				is_neighbor_of = ROOT
+			}
+		}
+		trigger = {
+			any_neighbor_country = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+			}
+		}
+		effect = {
+			add_age_modifier = {
+				name = SOS_imitator_will_be_found
+				duration = -1
+				age = age_of_discovery
+			}
+			
+			add_dip_power = 75
+			add_mil_power = 75
+		}
+	}
+	
+	SOS_eject_suspects = {
+		icon = mission_eliminate_pretenders
+		required_missions = { SOS_covert_operations
+		SOS_friends_or_enemies }
+		position = 3
+		provinces_to_highlight = { 
+			OR = {
+				is_claim = ROOT
+				is_permanent_claim = ROOT
+				is_core = ROOT
+			}
+		}
+		trigger = {
+			grown_by_development = 200
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_do_the_tasks
+				duration = 10950
+			}
+			
+			ME_give_claims = { region = maghreb_region } 
+		}
+	}
+	
+	SOS_impostor_is_found = {
+		icon = mission_friends_or_enemies
+		required_missions = { SOS_vents SOS_mosque }
+		position = 5
+		provinces_to_highlight = { 
+			region = maghreb_region
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = maghreb_region
+				value = 35
+			}
+		}
+		effect = {
+			custom_tooltip = SOS_forming_andalusia_will_rename_us_to_al_amogulus
+			set_country_flag = SOS_forming_andalusia_will_rename_us_to_al_amogulus_flag
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { region = iberia_region }
+			
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Sus_Events.4 }
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				custom_tooltip = " "
+				custom_tooltip = SOS_get_gov_reform_to_fabricate_claims_on_areas
+				country_event = { id = ME_Sus_Events.6 } 
+			}
+		}
+	}
+}
+
+SOS_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {	
+		tag = SOS
+		has_country_flag = SOS_impostor_missions
+	}
+	has_country_shield = yes
+	
+	SOS_covert_operations = {
+		icon = mission_into_persia_2
+		required_missions = { SOS_rally_the_crewmates SOS_find_imitator }
+		position = 2
+		provinces_to_highlight = { 
+		}
+		trigger = {
+			calc_true_if = {
+				all_neighbor_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50 
+					}
+				}
+				all_rival_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50 
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_spy_network
+				duration = -1
+			}
+		}
+	}
+	
+	SOS_vents = {
+		icon = fortify_malta
+		required_missions = { SOS_covert_operations }
+		position = 4
+		provinces_to_highlight = { 
+			fort_level = 1
+			owner = {
+				war_with = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = SOS_sieged_down_at_least_25_provs
+				check_variable = {
+					which = num_of_sieges_won
+					value = 15
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SOS_through_the_vents
+				duration = -1
+			}
+			
+			custom_tooltip = SOS_events_might_fire_while_sieging
+			set_country_flag = SOS_siege_events
+		}
+	}
+}
+
+SOS_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {	
+		tag = SOS
+		has_country_flag = SOS_impostor_missions
+	}
+	has_country_shield = yes
+	
+	SOS_rally_the_crewmates = {
+		icon = mission_reclaim_morocco
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { 
+		}
+		trigger = {
+			OR = {
+				army_size = 7
+				army_size_percentage = 0.85
+			}
+		}
+		effect = {
+			country_event = { id = ME_Sus_Events.3 } # go do your tasks
+			
+			custom_tooltip = " "
+			
+			GHD_zones_claims = yes
+			
+			custom_tooltip = " "
+			
+			add_yearly_manpower = 0.5
+		}
+	}
+	
+	SOS_when_the_diplomats_are_sus = {
+		icon = immaculate_government
+		required_missions = { SOS_rally_the_crewmates SOS_covert_operations }
+		position = 3
+		provinces_to_highlight = {
+			owner = {
+				alliance_with = ROOT
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150 
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			custom_tooltip = SOS_gain_mana_based_on_how_behind_we_are
+			
+			SUS_give_mana_based_on_tech_diff = yes #200 lines of script.
+			
+			#enable diplo action to convert claims to perma claims
+			custom_tooltip = ME_diplo_action_to_convert_claim_to_perma_claim
+			
+			set_country_flag = ME_diplo_action_to_convert_claim_to_perma_claim_flag
+		}
+	}
+}

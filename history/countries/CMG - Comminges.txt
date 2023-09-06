@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = french_tech_group
+unit_type = western
+government_rank = 1
+religion = catholic
+primary_culture = gascon
+capital = 7919 # Saint-Gaudens
+fixed_capital = 7919 # Cannot move capital away from this province & no power cost to move to it

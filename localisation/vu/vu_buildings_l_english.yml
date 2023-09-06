@@ -1,0 +1,45 @@
+﻿l_english:
+ #VU additions by San Felipe & Only Karlos
+ #Production
+ treasury:0 "Treasury"
+ building_treasury:0 "Treasury"
+ factory:0 "Factory"
+ building_factory:0 "Factory"
+ 
+ #Trade
+ corporative_headquarters:0 "Corporative Headquarters"
+ building_corporative_headquarters:0 "Corporative Headquarters"
+ 
+ #Taxation
+ grand_cathedral:0 "Grand Cathedral"
+ building_grand_cathedral:0 "Grand Cathedral"
+ 
+ #Transportation
+ building_road_system:0 "Roads"
+ building_road_system_desc:0 "A network of narrow and wide paths, compacted with earth and stones, sometimes topped with a layer of tarmac in urban areas. These road networks allow modes of transportation a flat and fairly even surface on which to traverse on, thus avoiding dangerous and unstable routes from point §OA§! to §OB§!.\n\nCan be built §Yanywhere§!."
+ building_canal_system:0 "Canals"
+ building_canal_system_desc:0 "A network of medium birth, yet shallow waterways that allow for the transportation of goods at a slightly faster speed from point §OA§! to §OB§!. Can only be built on §Ycoastal§! and on §Yadjacent§! provinces that already have an existing §TCanals§! system.\n\nCan't be built on §YMountain§!, §YCold Mountain§!, §YDesert Range§!, §YTundra§!, or §YGlacier§! terrain."
+ building_railway_system:0 "Railroads"
+ building_railway_system_desc:0 "A network of narrow steel, held together by wooden or concrete bases that allow for the delivering at high-speed of goods and armies across several provinces from point §OA§! to §OB§!.\n\nCan't be built on §YMountain§!, §YCold Mountain§!, §YDesert Range§!, §YTundra§!, or §YGlacier§! terrain."
+ 
+ #Coastal
+ naval_base:0 "Naval Base"
+ building_naval_base:0 "Naval Base"
+ naval_arsenal:0 "Naval Arsenal"
+ building_naval_arsenal:0 "Naval Arsenal"
+ coastal_artillery:0 "Coastal Artillery"
+ building_coastal_artillery:0 "Coastal Artillery"
+ #Fortification
+ trench:0 "Trench"
+ building_trench:0 "Trench"
+ #Manufactories
+ oil_well:0 "Oil Well"
+ building_oil_well:0 "Oil Well"
+ 
+ #Marcin
+ metalworking_modifier_new: "Metalworking Province Bonus"
+ metalworking_modifier_leader_new: "Metalworking Leader Bonus"
+ indigo_leader_new: "Indigo Leader Bonus"
+ camel_leader_new: "Camels Leader Bonus"
+ ebony_leader_new: "Ebony Leader Bonus"
+ llama_leader_new: "Llama Leader Bonus"

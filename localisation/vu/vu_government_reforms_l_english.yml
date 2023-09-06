@@ -1,0 +1,265 @@
+﻿l_english:
+ #VU Quonton additions
+ romanian_principality:0 "Romanian Principality"
+ romanian_principality_desc:0 "As a historical term designating the pre-Union Principalities of Moldavia and Wallachia, sometimes including the Principality of Transylvania, the term "Romanian Principalities" dates back to the beginnings of modern Romanian history in the mid-19th century."
+ #
+ romanian_united_principality:0 "United Romanian Principalitys"
+ romanian_united_principality_desc:0 "The United Principalities of Moldavia and Wallachia (Romanian: Principatele Unite ale Moldovei si Tarii Romanesti), commonly called United Principalities or as Wallachia and Moldavia, was the personal union of the Principality of Moldavia and the Principality of Wallachia. After many tribulations the principalities have united, and now we have formally united to create the Romanian United Principalities, the core of the Romanian nation state"
+ #End of Quonton additions 
+ sakdina_system_reform:0 "Sakdina System"
+ sakdina_system_reform_desc:0 "Every man must know his place. By assigning numerical ranks to each of our subjects they will know thier standing in relation to one another and, most importantly, to the King."
+ #
+ corvee_reform:0 "Corvée System"
+ corvee_reform_desc:0 "Every peasant is required to serve the state when called upon. This service may take the form of construction work on the King's grand projects, or else in the military."
+ #
+ uparaja_reform:0 "Uparaja Succession"
+ uparaja_reform_desc:0 "We should introduce royal princes to the people and to statecraft before they succeed to the throne by appointing them as viceroys." 
+ #
+ stateless_society:0 "Stateless Society"
+ stateless_society_desc:0 "Our people have consciously chosen not to organize into a state, preferring simple lives free from the oppressive hierarchies prevalent in the lowland realm."
+ #
+ siamese_absolutism:0 "Chakravarti"
+ siamese_absolutism_desc:0 "The monarch is more than a mere man. He is a divine sovereign, the very center of the universe. Only through him can there be peace and harmony in the world."
+ #
+ vu_ayyubid_sultanate_reform:0 "Ayyubid Sultanate"
+ vu_ayyubid_sultanate_reform_desc:0 "The Ayyubid Sultanate, established by the Great Saladin, or An-Nasir Salah ad-Din Yusuf ibn Ayyub, employed hereditary ownership throughout their lands with their Empire divided upon among his kinsmen. Family members presided over semi-autonomous fiefs and principalities. The right of succession wasn't always entirely certain as the sons would fight amongst themselves for the throne, however it ensured that whoever did succeed to the throne was in fact of Ayyubid blood."
+ #
+ restoration_reform:0 "Japanese Government" #VU - Not yet Implemented
+ restoration_reform_desc:0 "not implemented" #VU - Not yet Implemented
+ #
+ imperial_navy:"Imperial Navy" #VU - Not yet Implemented
+ imperial_navy_desc:0 "not implemented" #VU - Not yet Implemented
+ #
+ kongsi_federation:0 "Kongsi Federation"
+ kongsi_federation_desc:1 "A democratic syndicate of mining republics that share its profits with its members. As the Kongsi Republics have become more powerful, they have also taken on the duties of government such as education and agricultural administration."
+ #
+ confucian_bureaucracy:0 "Confucian Bureaucracy"
+ confucian_bureaucracy_desc:0 "A system of government where the monarch appoints educated bureaucrats to administrate the country in accordance with Confucian principles."
+ #
+ examination_system_reform:0 "The Examination System"
+ examination_system_reform_desc:0 "Those wishing to enter the civil service and advance as government officials must take a series of examinations testing their knowledge of Confucian literature and statecraft."
+ #
+ puppet_kingdom_of_ireland_legacy:0 "Subject Viceroyalty"
+ puppet_kingdom_of_ireland_legacy_desc:0 "A Viceroyalty is typically a subordinate government ruled by proxy. A representative of the parent government safeguards the interests of the parent nation, and the transplanted elite from the parent nation often occupy the majority of government offices while the local poulation is often given little representation. Governments of this type are highly unpopular, but few can object to their productivity and tax collection. Well, few outside of those paying those taxes..."
+ #
+ transitional_government_ireland_legacy:0 "Transitional Government"
+ transitional_government_ireland_legacy_desc:0 "A transitional government fulfills administrative duties in a society in transition, often a nation recently independent from a foreign power, or a nation in the throws of a revolution. While this government may be all that stands between the country and pure anarchy, it is rarely much better than anarchy. Warlords and oligarchs vie for positions of power in the new society, patriots and revolutionaries scheme to take the country in a new direction, while loyalists and conservatives try to return the country to its former structure. Thankfully, this chaos most often proves very temporary, as one faction or another usually wins out within a few years and the nation returns to a more stable form of government."
+ #
+ lithuanian_grand_duchy_legacy:0 "Grand Duchy" #Inspired by the EU4 vanilla's Lithuanian grand_duchy_reform localisation
+ lithuanian_grand_duchy_legacy_desc:0 "Our region never had many kings, instead it is our dukes that have united and led the various peoples within our borders to greatness."         #Copied from vanilla Lithuanian grand duchy reform localisation
+ #
+ irish_clann_reform:0 "Clann"
+ irish_clann_reform_desc:0 "Clanns were the primary local political and social unit in Gaelic Ireland. The hereditary system was highly stable, but its power structures were exceptionally weak and decentralized for early modern Europe and its largely rural population was quickly becoming unable to compete in a modernising Europe."
+ #
+ irish_clann_legacy:0 "Clann"
+ irish_clann_legacy_ruler:0 "Rí"
+ irish_clann_legacy_ruler_female:0 "Banríon"
+ irish_clann_legacy_desc:0 "Clanns were the primary political and social unit in Gaelic Ireland. The system was highly stable, but its power structures were exceptionally weak in 15th century Europe and its largely rural population unable to compete in a modernising Europe."
+ #
+ provincial_kingdom_reform:0 "Provincial Kingdom"
+ provincial_kingdom_reform_desc:0 "Ríthe Ruireach, or Overkings (also often call Ríthe Cúige, or Provincial Kings), were influential local kings, exercising their power over one of the ancient 5 provinces of Ireland. Historically second only to the High King, and indeed being the candidates from which most High Kings were chosen, these local kings were some of the most powerful men in Gaelic Ireland. Despite their influence, however, they often lacked the power structures and centralisation of larger European states, though not to the extent of the local Clann chiefs."
+ #
+ provincial_kingdom_legacy:0 "Provincial Kingdom"
+ provincial_kingdom_legacy_ruler:0 "Rí Ruireach"
+ provincial_kingdom_legacy_ruler_female:0 "Banríon Ruireach"
+ provincial_kingdom_legacy_desc:0 "Ríthe Ruireach, or Overkings (also often call Ríthe Cúige, or Provincial Kings), were influential local kings, exercising their power over one of the ancient provinces of Ireland. Historically second only to the High King, and indeed being the candidates from which most High Kings were chosen, these local kings were some of the most powerful men in Gaelic Ireland. Despite their influence, however, they often lacked the power structures and centralisation of larger European states, though not to the extent of the local Clann chiefs."
+ #
+ tanistry_reform:0 "Tanistry" 
+ tanistry_reform_desc:0 "Tanistry is the traditional inheritance system of Ireland and Britain. Under this system, a Tanist is elected by popular vote of the Dearbhfhine, or the decendants of a previous king up to four generations back, from the available Righdamhna, or kingly material, who are Dearbhfhine of the age of majority and without any physical or mental deformity. Unlike most primogeniture succession laws on the continent, it is common for a brother, uncle, or nephew to be first in line to inheirit, and also unlike most elective monarchy laws on the continent, only the direct descendants of previously ruling kings were eligible. This system is highly stable and typically ensures a compentent king is chosen, but it also occasionally causes civil wars between cousins."
+ #
+ norman_lordship_reform:0 "Norman Lordship"
+ norman_lordship_reform_desc:0 "Norman Lordships are positions created by Anglo-Norman powers following the Norman conquest of Ireland in 1172, into which they installed loyal Anglo-Norman lords as a reward for miltary service as well as to ensure continued control over Ireland. Nominally vassals of the English monarch, these lordships quickly became de facto independent, and shared far more with their Gaelic neighbours than their distant English cousins."
+ #
+ norman_lordship_legacy:0 "Norman Lordship"
+ norman_lordship_legacy_ruler:0 "Earl"
+ norman_lordship_legacy_ruler_female:0 "Lady"
+ norman_lordship_legacy_desc:0 "Norman Lordships are positions created by Anglo-Norman powers following the Norman conquest of Ireland in 1172, into which they installed loyal Anglo-Norman lords as a reward for miltary service as well as to ensure continued control over Ireland. Nominally vassals of the English monarch, these lordships were de facto independent by the 15th century, and shared far more with their Gaelic neighbors than their distant English cousins."
+ #
+ welsh_lordship_reform:0 "Cymwd"
+ welsh_lordship_reform_desc:0 "A Commote or Cymwd in older documents is a secular division of land in Medieval Wales. The word derives from the prefix 'cym' or 'together with' and the noun bod 'home' or 'abode'. It is similar in administration to a Principality and or Provincial Kingdom but not at the same equal level."
+ #
+ welsh_lordship_legacy:0 "Cymwd"
+ welsh_lordship_legacy_ruler:0 "Pennaeth"
+ welsh_lordship_legacy_ruler_female:0 "Penaethiaid"
+ welsh_lordship_legacy_desc:0 "A Commote or Cymwd in older documents is a secular division of land in Medieval Wales. The word derives from the prefix 'cym' or 'together with' and the noun bod 'home' or 'abode'. It is similar in administration to a Principality and or Provincial Kingdom but not at the same equal level."
+ #
+ greek_lordship_reform:0 "Despotate"
+ greek_lordship_reform_desc:0 "Despotate, equivalent to Lordships in Western Europe consist of smaller military and administrative divisions headed by Kapetanos, official roles created by the Eastern Romans and is a term meaning either "Army Leader", "Master of Tables", "Roman Governor" and respectively "Military General". During pre-Byzantine times, powerful individuals were usually granted such roles via the casting of votes in the Republic and Imperial senates. This however gave way to pre-selection and direct appointments by the later Imperial administration and more recently through the personal selection of Byzantine Emperors. Individuals charged with this role usually received it as a form of reward or recognition for miltary service as well as to ensure continued control over Roman territorial holdings throughout Greece, parts of Western Anatolia, the Levant, Egypt and North Africa." 
+ #
+ greek_lordship_legacy:0 "Catepanates"
+ greek_lordship_legacy_ruler:0 "Kapetanos"
+ greek_lordship_legacy_ruler_female:0 "Kapetanos"
+ greek_lordship_legacy_desc:0 "Catepanates, equivalent to Lordships in Western Europe consist of smaller military and administrative divisions headed by Kapetanos, official roles created by the Eastern Romans and is a term meaning either "Army Leader", "Master of Tables", "Roman Governor" and respectively "Military General". During pre-Byzantine times, powerful individuals were usually granted such roles via the casting of votes in the Republic and Imperial senates. This however gave way to pre-selection and direct appointments by the later Imperial administration and more recently through the personal selection of Byzantine Emperors. Individuals charged with this role usually received it as a form of reward or recognition for miltary service as well as to ensure continued control over Roman territorial holdings throughout Greece, parts of Western Anatolia, the Levant, Egypt and North Africa." 
+ #
+ marquisiate_reform:0 "Marquisiate"
+ marquisiate_reform_desc:0 "The greater exposure of a border province to military invasion mandated that the margrave be provided with military forces and autonomy of action (political as well as military) greater than those accorded other lords of the realm. As a military governor, the margrave's authority often extended over a territory larger than the province proper, because of border expansion subsequent to royal wars."
+ #
+ norman_duchy_reform:0 "Hiberno-Norman Duchy"
+ norman_duchy_reform_desc:0 "A title granted by the English monarchy empowering the holder to rule one of the ancient provinces of Ireland in their name. Historically a replacement for the native provincial kingdoms, this title came to represent pervasive and aggressive English influence in Ireland, but they were also highly effective at squeezing out every last ducat from their subjects."
+ #
+ norman_duchy_legacy:0 "Hiberno-Norman Duchy"
+ norman_duchy_legacy_ruler:0 "Duke"
+ norman_duchy_legacy_ruler_female:0 "Duchess"
+ norman_duchy_legacy_desc:0 "A title granted by the English monarchy empowering the holder to rule one of the ancient provinces of Ireland in their name. Historically a replacement for the native provincial kingdoms, this title came to represent pervasive and aggressive English influence in Ireland, but they were also highly effective at squeezing out every last ducat from their subjects."
+ #
+ welsh_duchy_reform:0 "Dugiaeth"
+ welsh_duchy_reform_desc:0 "A 'Dugiaeth' is the Welsh equivalent of Duchy or area of land within a Kingdom or Empire that is ruled and presided over by a 'Dugiaeth' or Duke who rules the territory in the sovereign's stead, acting as both governor, judicial arbiter and representative of the monarch."
+ #
+ welsh_duchy_legacy:0 "Dugiaeth"
+ welsh_duchy_legacy_ruler:0 "Iarll"
+ welsh_duchy_legacy_ruler_female:0 "Iarlles"
+ welsh_duchy_legacy_desc:0 "A 'Dugiaeth' is the Welsh equivalent of Duchy or area of land within a Kingdom or Empire that is ruled and presided over by a 'Dugiaeth' or Duke who rules the territory in the sovereign's stead, acting as both governor, judicial arbiter and representative of the monarch."
+ #
+ greek_duchy_reform:0 "Ducate"
+ greek_duchy_reform_desc:0 "A 'Ducate' is a large administrative zone under the governoship of dukes or Doukas. Though not as powerful as Basilias (King) or Emperor, they never the less exercised great power over Themes that made up the later Eastern Roman empire, so much so that they would even eventually surpass the military power and prestige of the Strategos, culminating even in the creation of the title "Megas Doux" or Grand Duke who was second only to the Byzantine Emperors and their power and influence would later pose a threat to the established Basileus or Emperors in Constantinople."
+ #
+ greek_duchy_legacy:0 "Ducates"
+ greek_duchy_legacy_ruler:0 "Doux"
+ greek_duchy_legacy_ruler_female:0 "Doukissa"
+ greek_duchy_legacy_desc:0 "A 'Ducate' is a large administrative zone under the governoship of dukes or Doukas. Though not as powerful as Basilias (King) or Emperor, they never the less exercised great power over Themes that made up the later Eastern Roman empire, so much so that they would even eventually surpass the military power and prestige of the Strategos, culminating even in the creation of the title "Megas Doux" or Grand Duke who was second only to the Byzantine Emperors and their power and influence would later pose a threat to the established Basileus or Emperors in Constantinople."
+ #
+ anglo_irish_monarchy_reform:0 "Anglo-Irish Monarchy"
+ anglo_irish_monarchy_reform_desc:0 "A form of constitutional or representative monarchy based on the English parliamentary tradition of Westminster, with a parliament called regularly by the ruling monarch. It is based on the privileges defined in Magna Carta and adapted to the local economy."
+ #
+ anglo_irish_monarchy_legacy:0 "Anglo-Irish Monarchy"
+ anglo_irish_monarchy_legacy_ruler:0 "King"
+ anglo_irish_monarchy_legacy_ruler_female:0 "Queen"
+ anglo_irish_monarchy_legacy_desc:0 "A form of constitutional or representative monarchy based on the English parliamentary tradition of Westminster, with a parliament called regularly by the ruling monarch. It is based on the privileges defined in Magna Carta and adapted to the local economy."
+ #
+ welsh_monarchy_reform:0 "Teyrnas"
+ welsh_monarchy_reform_desc:0 "A Teyrnas of petty kingdom is a minor kingdom government in Wales that is within the immediate vicinity of larger kingdoms, such as the medieval kingdom of Powys relative to the kingdom of England."
+ #
+ welsh_monarchy_legacy:0 "Teyrnas"
+ welsh_monarchy_legacy_ruler:0 "Brenin"
+ welsh_monarchy_legacy_ruler_female:0 "Brenhines"
+ welsh_monarchy_legacy_desc:0 "A Teyrnas of petty kingdom is a minor kingdom government in Wales that is within the immediate vicinity of larger kingdoms, such as the medieval kingdom of Powys relative to the kingdom of England."
+ #
+ greek_roman_governors_reform:0 "Exarchate"
+ greek_roman_governors_reform_desc:0 "Exarchates are generally under the jurisdiction of Exarchs who rule large political and ecclesiastical regions. Though not as powerful as Basilias (King) or Emperor, they never the less exercised great power within the Themes system that made up the later Eastern Roman empire, so much so that they would even later pose a threat to the established Basileus or Emperors in Constantinople, which had result in Alexios I Komnenos creating the title Megas Doux in a bid to check certain individuals with the title."
+ #
+ greek_roman_governors_legacy:0 "Exarchates"
+ greek_roman_governors_legacy_ruler:0 "Exarch"
+ greek_roman_governors_legacy_ruler_female:0 "Exarch"
+ greek_roman_governors_legacy_desc:0 "Exarchates are generally under the jurisdiction of Exarchs who rule large political and ecclesiastical regions. Though not as powerful as Basilias (King) or Emperor, they never the less exercised great power within the Themes system that made up the later Eastern Roman empire, so much so that they would even later pose a threat to the established Basileus or Emperors in Constantinople, which had result in Alexios I Komnenos creating the title Megas Doux in a bid to check certain individuals with the title."
+ #
+ puppet_kingdom_reform:0 "Viceroyalty"
+ puppet_kingdom_reform_desc:0 "A Viceroyalty is typically a subordinate government ruled by proxy. A representative of the parent government safeguards the interests of the parent nation, and the transplanted elite from the parent nation often occupy the majority of government offices while the local poulation is often given little representation. Governments of this type are highly unpopular, but few can object to their productivity and tax collection. Well, few outside of those paying those taxes..."
+ #
+ transitional_government_reform:0 "Transitional Government"
+ transitional_government_reform_desc:0 "A transitional government fulfills administrative duties in a society in transition, often a nation recently independent from a foreign power, or a nation in the throws of a revolution. While this government may be all that stands between the country and pure anarchy, it is rarely much better than anarchy. Warlords and oligarchs vie for positions of power in the new society, patriots and revolutionaries scheme to take the country in a new direction, while loyalists and conservatives try to return the country to its former structure. Thankfully, this chaos most often proves very temporary, as one faction or another usually wins out within a few years and the nation returns to a more stable form of government."
+ #
+ improved_veche_republic:0 "Reformed Veche Republic"
+ improved_veche_republic_desc:0 "This state is governed by a Veche, a council with the highest legislative and juidicial authority. This Veche council has been reformed and improved to account for more efficient administration of large realm."
+ #
+ crusader_state_vu_reform:0 "Crusader State"
+ crusader_state_vu_reform_desc:0 "Crusader State is remnant of crusade era where western european powers established various catholic states in Greece, Anatolia and Levant. This government is heavily-oriented on religious matters and figting heathens in the region. While crusader state offers bonuses to fighting enemies and diplomacy with western states, it is rather unefficient at managing the internal realm."
+ #
+ welsh_principality:0 "Welsh Principality"
+ welsh_principality_desc:0 "Founded in 1216 at the "Council of Aberdyfi" and later recognised by the 1218 "Treaty of Worcester," the Principality of Wales or "Tywysogaeth Cymru" in the local tongue consists of all territories within the region of Wales west of the River Dee, strecthing as far south to the Brecon Beacons and Black Mountains range. Similarly, this territory is ruled over by either a Prince or Princess, bearing the title "Prince or Princess of Wales," who rule over a Kingdom regardless of the title "Prince." The powers of a Prince may sometimes be gained through hereditary or electoral means. In other words, a Prince or Princess may come to power if he or she is descended from the previous ruler or is elected by court and local nobility."
+ #
+ western_principality:0 "Principality"
+ western_principality_desc:0 "A Principality consists of territory ruled over by a Prince or Princess, vested in the same rites and rituals "equal to a King" ruling over a Princedom. The powers of a Prince may sometimes be gained through hereditary or electoral means. In other words, a Prince or Princess may come to power if he or she is descended from the previous ruler or is elected by court and local nobility."
+ #
+ church_of_england:0 "Archbishop of Canterbury"
+ church_of_england_desc:0 "The Archbishop of Canterbury is the senior bishop and principal leader of the Church in England, and the diocesan bishop of the Diocese of Canterbury. He is also responsible for the crowing of the Kings and Queens of England."
+ #
+ church_of_france:0 "Archbishop of Reims"
+ church_of_france_desc:0 "The Archbishop of Reims is the senior bishop and principal leader of the Church in France, and the diocesan bishop of the Diocese of Reims. He is also responsible for the crowing of the Kings and Queens of France."
+ #
+ belgian_kingdom_reform:0 "Belgian Monarchy"
+ belgian_kingdom_reform_desc:0 "The monarch is titled king or queen of the Belgians and serves as the country's head of state."
+ #
+ french_kingdom_reform:0 "French Monarchy"
+ french_kingdom_reform_desc:0 "The monarch is titled king or queen of the French and serves as the country's head of state."
+ #
+ national_assembly_republic_reform:0 "National Assembly"
+ national_assembly_republic_reform_desc:0 "The ruler is titled president or president of the French and serves as the country's head of state."
+ #
+ directory_republic_reform:0 "Directory"
+ directory_republic_reform_desc:0 "The ruler is titled president or president of the French and serves as the country's head of state."
+ #
+ french_consulate_reform:0 "Consulate"
+ french_consulate_reform_desc:0 "The ruler is titled consul or consul of the French and serves as the country's head of state."
+ #
+ become_french_second_republic_reform:0 "Transitioning to Republic"
+ become_french_second_republic_reform_desc:0 "The country is in a state of transition from Monarchy to Republic."
+ #
+ french_second_republic_reform:0 "French Second Republic"
+ french_second_republic_reform_desc:0 "The ruler is titled president or president of the French and serves as the country's head of state."
+ #
+ become_french_third_republic_reform:0 "Transitioning to Republic"
+ become_french_third_republic_reform_desc:0 "The country is in a state of transition from Monarchy to Republic."
+ #
+ french_third_republic_reform:0 "French Third Republic"
+ french_third_republic_reform_desc:0 "The ruler is titled president or president of the French and serves as the country's head of state."
+ #
+ become_first_french_empire_reform:0 "Transitioning to Monarchy"
+ become_first_french_empire_reform_desc:0 "The country is in a state of transition from Republic to Monarchy."
+ #
+ first_french_empire_reform:0 "First French Empire"
+ first_french_empire_reform_desc:0 "The monarch is titled emperor or empress of the French and serves as the country's head of state."
+ #
+ french_monarchic_restoration_reform:0 "French Bourbon Monarchy"
+ french_monarchic_restoration_reform_desc:0 "The monarch is titled king or queen of the French and serves as the country's head of state."
+ #
+ french_orleanist_restoration_reform:0 "French Orleanist Monarchy"
+ french_orleanist_restoration_reform_desc:0 "The monarch is titled king or queen of the French and serves as the country's head of state."
+ #
+ french_first_empire_restoration_reform:0 "First French Empire"
+ french_first_empire_restoration_reform_desc:0 "The monarch is titled emperor or empress of the French and serves as the country's head of state."
+ #
+ become_second_french_empire_reform:0 "Transitioning to Monarchy"
+ become_second_french_empire_reform_desc:0 "The country is in a state of transition from Republic to Monarchy."
+ #
+ second_french_empire_reform:0 "Second French Empire"
+ second_french_empire_reform_desc:0 "The monarch is titled emperor or empress of the French and serves as the country's head of state."
+ #
+ high_kingship_legacy:0 "High Kingship"
+ high_kingship_legacy_ruler:0 "Ard Rí"
+ high_kingship_legacy_ruler_female:0 "Ard Banríon"
+ high_kingship_legacy_desc:0 "The highest level of kingship in Gaelic Ireland. High Kings were crowned at the Aonach, an assembly of the leading men in Gaelic Irish society, at Teamhair na Rí. Though the exact reach and totality of the High King's authority varied over time, all other kings in Ireland were at the very least nominally subordinate, if not directly subservient, to the High King. The High Kingship also revives the traditional Tanistry system of succession, making it very difficult for a dynasty to lose power or be inherited by another kingdom."
+ #
+ florence_republic_legacy:0 "Florentine Republic"
+ florence_republic_legacy_ruler:0 "Gonfaloniere"
+ florence_republic_legacy_ruler_female:0 "Gonfaloniette"
+ florence_republic_legacy_desc:0 "The form of government of the Republic of Florence under the Medicis. The Medicis held no official post, but were the unquestioned rulers of Florence."
+ #
+ regnum_dei_legacy:0 "Regnum Dei"
+ regnum_dei_legacy_ruler:0 "Pope"
+ regnum_dei_legacy_ruler_female:0 "Popette"
+ regnum_dei_legacy_desc:0 "The Kingdom of God on Earth, ruled directly by the Holy Father."
+ #
+ byzantine_transitional_gov_reform:0 "Transitional Byzantine Government"
+ byzantine_transitional_gov_reform_desc:0 "Byzantine empire has survived the era of greatest turmoil and is slowly reforming itself into functioning state once again. The empire is undergoing a period of reforms and experimentation as the ruling class tries to reestablish its authority."
+ #
+ #VU New San Marino Reforms from Shattered Europa by San Felipe
+ roman_diarchy_reform:0 "Roman Diarchy"
+ roman_diarchy_reform_ruler:0 "Consul"
+ roman_diarchy_reform_desc:0 "A form of government in which two individuals are joint heads of state. Most diarchs hold their position for life, passing the position to their children or other family members."
+ #
+ #VU New Icelandic Reforms by San Felipe
+ althing_elite_reform:0 "Alþingi"
+ althing_elite_reform_desc:0 "Founded in 930AD at Þingvellir "Thing fields" or "Assembly fields", the Alþingi or Althing is the supreme national parliament of the Icelandic peoples and it is one of the oldest surviving parliaments in the world."
+ #
+ #lotf
+ fund_municipalities:"Fund Municipalities"
+ fund_municipalities_desc: ""
+ biyearly_cycles: "Biyearly Cycles"
+ biyearly_cycles_desc: ""
+ state_autonomy: "State Autonomy"
+ state_autonomy_desc: ""
+ three_branches: "Three Branches"
+ three_branches_desc: ""
+ supreme_court: "Supreme Court"
+ supreme_court_desc: ""
+ might_is_right: "Might is Right"
+ might_is_right_desc: ""
+ service_to_vote: "Service to Vote"
+ service_to_vote_desc: ""
+ charitable_donations: "Charitable Donations"
+ charitable_donations_desc: ""
+ cooperate_with_legislators: "Cooperate with Legislators"
+ cooperate_with_legislators_desc: ""
+ american_monarchy: "American Monarchy"
+ reinforced_republic: "Great American Republic"
+ 

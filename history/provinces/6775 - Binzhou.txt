@@ -1,0 +1,28 @@
+#6775 - Binzhou
+
+owner = MNG
+controller = MNG
+add_core = MNG
+add_core = QIC
+culture = shandong_culture
+religion = confucianism
+capital = "Binzhou"
+trade_goods = grain
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+discovered_by = japanese
+
+1519.1.1 = { discovered_by = POR } # Tome Pires
+
+1644.4.1 = { owner = CSH controller = CSH } # The Shun dynasty of Li Zicheng
+1644.11.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

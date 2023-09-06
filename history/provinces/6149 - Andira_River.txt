@@ -1,0 +1,4 @@
+#6149 - Andira_River
+
+#discovered_by = south_american
+1516.1.23 = { discovered_by = SPA }

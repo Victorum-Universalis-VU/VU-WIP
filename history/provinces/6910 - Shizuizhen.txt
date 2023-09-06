@@ -1,0 +1,34 @@
+#6910 - Shizuizhen
+
+owner = MNG
+controller = MNG
+add_core = MNG
+culture = zhuang
+religion = confucianism
+capital = "Shizuizhen"
+trade_goods = gunpowder
+hre = no
+base_tax = 2
+base_production = 4
+base_manpower = 3
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+
+1595.1.1 = { discovered_by = SPA }
+
+1656.2.1 = {
+	owner = QNG
+	controller = QNG
+}
+1662.4.1 = {
+	owner = CZH
+	controller = CZH
+	add_core = CZH
+} # Three Feudatories
+1681.10.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

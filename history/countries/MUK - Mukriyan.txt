@@ -1,0 +1,27 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = kurdish
+religion = sunni
+technology_group = muslim
+capital = 3733 #Mahabad
+fixed_capital = 3733
+religious_school = shafii_school
+
+#Names unknown but dynasty ruled from c. 1400 to c. 1800
+1400.1.1 = {
+	monarch = {
+		dynasty = "Mukriyan"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+1444.1.1 = {
+	monarch = {
+		dynasty = "Mukriyan"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

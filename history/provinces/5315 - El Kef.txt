@@ -1,0 +1,74 @@
+#New Victorum Universalis Province
+
+owner = TUN
+controller = TUN
+add_core = TUN
+culture = tunisian
+religion = sunni
+capital = "El Kef"
+trade_goods = olive_oil
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 2
+is_city = yes
+fort_15th = yes
+center_of_trade = 1
+
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+
+1534.8.16 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} #Barbarossa takes the city.
+1535.6.11 = {
+	owner = TUN
+	controller = TUN
+} #Spain reinstate Hafsids under Charles V
+1569.1.1 = {
+	owner = TUR
+	controller = TUR
+} #Uluj Ali Pasha captures Tunis
+1571.10.7 = {
+	owner = TUN
+	controller = TUN
+} #Spain reinstate Hafsids again
+1574.9.13 = {
+	owner = OTN
+	controller = OTN
+	add_core = OTN
+} #Ottomans establish the semi-autonomous Ottoman Tunis

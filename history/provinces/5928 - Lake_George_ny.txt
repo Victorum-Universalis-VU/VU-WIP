@@ -1,0 +1,5 @@
+#5928 - Lake_George_ny
+
+discovered_by = north_american
+
+1524.1.1 = { discovered_by = FRA } # Giovanni da Verrazzano

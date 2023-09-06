@@ -1,0 +1,6 @@
+#6241 - Lake_Salinas_Grandes
+
+#discovered_by = south_american
+#discovered_by = andean
+1534.1.1 = { discovered_by = SPA }
+

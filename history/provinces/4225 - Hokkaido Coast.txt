@@ -1,0 +1,8 @@
+#4225 - Hokkaido Coast
+#VU Discovery Bug Fix
+
+discovered_by = chinese
+discovered_by = japanese
+
+1542.1.1 = { discovered_by = POR }
+1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin

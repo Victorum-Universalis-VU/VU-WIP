@@ -1,0 +1,33 @@
+namespace = ME_experimental
+
+province_event = {
+	id = ME_experimental.1
+	title = ME_experimental.1.t
+	desc = ME_experimental.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes 
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	hidden = yes
+	
+	trigger = {	
+		province_id = 1
+		NOT = {
+			has_global_flag = ME_age_handler_flag
+		}
+	}
+	immediate = {
+		owner = { set_global_flag = ME_age_handler_flag }
+		add_province_triggered_modifier = ME_age_handler
+	}
+	
+	option = {
+		name = ME_experimental.1.a
+		
+		ai_chance = { factor = 100 }
+		
+	}
+}

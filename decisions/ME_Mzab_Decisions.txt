@@ -1,0 +1,91 @@
+country_decisions = {
+	MZB_form_rustamids = {
+		potential = {
+			OR = {
+			    culture_group = berber_group
+				#culture_group = maghrebi #maghrebi culture group was replace by berber_group. Leaving that here as reminder
+			}
+			religion = ibadi
+			NOT = {
+				tag = RST
+			}
+			NOT = { has_country_flag = formed_rustamids_flag }
+		}
+		major = yes
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 2462
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 2452
+						province_id = 2457
+					}
+					NOT = {
+						ROOT = {
+							OR = {
+								owns_core_province = 2457 #mzab
+								owns_core_province = 2452 #zuwarah
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			num_of_cities = 7
+			owns_core_province = 2462 #tiaret
+			OR = {
+				owns_core_province = 2457 #mzab
+				owns_core_province = 2452 #zuwarah
+			}
+		}
+		effect = {
+			change_tag = RST
+			custom_tooltip = " "
+			
+			swap_non_generic_missions = yes
+			custom_tooltip = " "
+			
+			remove_non_electors_emperors_from_empire_effect = yes
+			
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+				custom_tooltip = " "
+			}
+			
+			set_country_flag = formed_rustamids_flag
+			
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ME_Mzab_Events.1 } #Swap Ideas
+			}
+			
+			2462 = {
+				move_capital_effect = yes
+				
+				custom_tooltip = " "
+				
+				change_province_name = "Tahert" 
+				rename_capital = "Tahert"
+				
+				custom_tooltip = " "
+				
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

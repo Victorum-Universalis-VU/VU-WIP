@@ -1,0 +1,74 @@
+#2100 - Vanni
+
+owner = VNI
+controller = VNI
+culture = tamil
+religion = hinduism
+capital = "Yapapatuna"
+trade_goods = amber	#Pearls moved to Jaffna province
+hre = no
+base_tax = 4  
+base_production = 3	#Reduced dev to compensate for Jaffna
+base_manpower = 2 
+is_city = yes
+add_core = VNI
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+discovered_by = indian
+discovered_by = chinese
+#discovered_by = east_african
+
+
+1411.1.1 = {
+	owner = CEY
+	controller = CEY
+}	#Sangamas expelled by Zheng He
+1432.1.1 = {
+	owner = VNI
+	controller = VNI
+}	#Reconquest by Vijayanagar
+1450.1.1 = {
+	owner = CEY
+	controller = CEY
+} #Conquered by Kotte
+1467.6.1 = {
+	owner = JFN
+	controller = JFN
+	add_core = JFN
+} #Jaffna restored
+1500.1.1 = {
+	owner = VNI
+	controller = VNI
+} #Vanni are back. Some pay tribute to Jaffna, some don't
+1505.1.1 = { discovered_by = POR } # Francisco de Almeida
+1619.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+}
+1658.1.1 = {
+	owner = NED
+	controller = NED
+	add_core = NED
+	remove_core = POR
+} # Dutch control
+1799.8.1 = { controller = GBR } # Occupied by England
+1802.3.25 = {
+	owner = GBR
+	add_core = GBR
+	remove_core = NED
+} # Treaty of Amiens

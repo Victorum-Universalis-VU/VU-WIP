@@ -1,0 +1,105 @@
+﻿l_english:
+#Manuelmax
+#Baltics
+ #VNA:0 "Vironia"
+ #VNA_ADJ:0 "Vironian"
+ #VNA_ADJ2:0 "Vironian"
+ 
+#San Felipe Countries
+#Scandinavia
+ BGR:0 "Bagler"
+ BGR_ADJ:0 "Bagler"
+ BGR_ADJ2:0 "Bagler"
+ 
+ BRK:0 "Birkaland"
+ BRK_ADJ:0 "Birkalander"
+ BRK_ADJ2:0 "Birkalander"
+ 
+ GHL:0 "Helsingia"
+ GHL_ADJ:0 "Helsingian"
+ GHL_ADJ2:0 "Helsingian"
+ 
+ HLL:0 "Halland"
+ HLL_ADJ:0 "Hallander"
+ HLL_ADJ2:0 "Hallander"
+ 
+ JEM:0 "Jemtia"
+ JEM_ADJ:0 "Jemtia"
+ JEM_ADJ2:0 "Jemtian"
+ 
+ TVA:0 "Tavastia"
+ TVA_ADJ:0 "Tavastian"
+ TVA_ADJ2:0 "Tavastian"
+ 
+ VNJ:0 "Vanaja"
+ VNJ_ADJ:0 "Vanajan"
+ VNJ_ADJ2:0 "Vanajan"
+ 
+ WRD:0 "Wermlandia"
+ WRD_ADJ:0 "Wermlandian"
+ WRD_ADJ2:0 "Wermlandian"
+#Quonton Countries
+ LOD:0 "Lodi"
+ LOD_ADJ:0 "Lodi"
+ LOD_ADJ2:0 "Lodi"
+ 
+ WDS:0 "Waldsassen"
+ WDS_ADJ:0 "Waldsassen"
+ WDS_ADJ2:0 "Waldsassen"
+
+ IGR:0 "Ingria"
+ IGR_ADJ:0 "Ingrian"
+ IGR_ADJ2:0 "Ingrian"
+
+ FAR:0 "The Faroes"
+ FAR_ADJ:0 "Faroese"
+ FAR_ADJ2:0 "Faroese"
+
+ GBL:0 "Meer Stadt"
+ GBL_ADJ:0 "Meer Stadte"
+ GBL_ADJ2:0 "Meer Stadte"
+
+ GCR:0 "Krim"
+ GCR_ADJ:0 "Krim"
+ GCR_ADJ2:0 "Krim"
+
+ UBD:0 "Ostseeland"
+ UBD_ADJ:0 "Baltisch"
+ UBD_ADJ2:0 "Baltisch"
+
+ GCU:0 "Kaukasien"
+ GCU_ADJ:0 "Kaukasisch"
+ GCU_ADJ2:0 "Kaukasisch"
+
+ GMK:0 "Russland"
+ GMK_ADJ:0 "Russisch"
+ GMK_ADJ2:0 "Russisch"
+
+ SBR:0 "Sibirien"
+ SBR_ADJ:0 "Sibirisch"
+ SBR_ADJ2:0 "Sibirisch"
+
+ URG:0 "Uralberg"
+ URG_ADJ:0 "Uralisch"
+ URG_ADJ2:0 "Uralisch"
+
+ VLH:0 "Wolhynien"
+ VLH_ADJ:0 "Wolhynisch"
+ VLH_ADJ2:0 "Wolhynisch"
+
+ VOG:0 "Wolgaberg"
+ VOG_ADJ:0 "Wolgisch"
+ VOG_ADJ2:0 "Wolgisch"
+
+ ###########################
+ kadipaten: "Kadipaten"
+ kerajaan: "Kerajaan"
+ panembahan: "Panembahan"
+ adipati: "Adipati"
+ sri_sultan: "Sri Sultan"
+ nyai: "Nyai"
+ indonesia_states: "Indonesian State"
+ usarebel: "United States of America"
+ usarebel_ADJ: "American"
+ usakingdom: "United Kingdoms of America"
+ usakingdom_ADJ: "Imperial American"

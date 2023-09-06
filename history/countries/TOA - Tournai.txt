@@ -1,0 +1,14 @@
+government = republic
+add_government_reform = peasants_republic
+government_rank = 1
+primary_culture = ger_flemish
+add_accepted_culture = picard_culture
+religion = catholic
+technology_group = french_tech_group
+unit_type = western
+capital = 8020
+fixed_capital = 8020
+historical_friend = FRA
+
+
+#History not yet done

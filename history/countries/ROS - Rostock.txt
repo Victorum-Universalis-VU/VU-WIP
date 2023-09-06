@@ -1,0 +1,13 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = pommeranian
+religion = catholic
+technology_group = german_tech_group
+unit_type = western
+capital = 46
+
+
+
+#History, currently empty.

@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = picard_culture
+religion = catholic
+technology_group = french_tech_group
+unit_type = western
+capital = 7973
+
+
+#History not yet done

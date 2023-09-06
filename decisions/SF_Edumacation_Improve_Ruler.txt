@@ -1,0 +1,150 @@
+#SF Edumacation - Improve Ruler
+country_decisions = {
+   edu_1_ruler_scholarship = {
+      major = yes
+      potential = { 
+         ai = no
+         has_regency = no
+         NOT = { is_monarch_leader = yes }
+         #NOT = { has_ruler_modifier = scholarship }
+      }
+      allow = {
+         ai = no
+         adm_power = 45
+         dip_power = 45
+         mil_power = 45
+         treasury = 450
+         NOT = { is_monarch_leader = yes }
+         NOT = { technology_group = east_african }
+         NOT = { technology_group = central_african }
+         NOT = { technology_group = nomad_group }
+         NOT = { technology_group = sub_saharan }
+         NOT = { technology_group = north_american }
+         NOT = { technology_group = mesoamerican }
+         NOT = { technology_group = south_american }
+         NOT = { technology_group = andean }
+         NOT = { technology_group = high_american }
+         NOT = { technology_group = aboriginal_tech }
+         NOT = { technology_group = rapanuan_tech_group }
+         NOT = { technology_group = polynesian_tech }
+         NOT = { technology_group = papuan_tech_group }
+		 ruler_has_personality = vu_uneducated_ruler_personality
+         NOT = { has_country_modifier = ruler_studying }
+		 NOT = { ruler_has_personality = vu_scholarly_ruler_personality }
+      }
+      effect = {
+         remove_country_modifier = ruler_uneducated
+         add_adm_power = -45
+         add_dip_power = -45
+         add_mil_power = -45
+         add_treasury = -450
+         #It took up to six years for students to achieve scholarly work at a medieval church/seminary and nunnery/convent. 
+         add_country_modifier = {
+            name = "ruler_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.7 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+
+   edu_2_ruler_bachelors_degree = {
+      major = yes
+      potential = { 
+         ai = no
+         has_regency = no
+         NOT = { is_monarch_leader = yes }
+         #NOT = { has_ruler_modifier = bachelors }
+      }
+      allow = {
+         ai = no
+         adm_power = 35
+         dip_power = 35
+         mil_power = 35
+         treasury = 350
+         NOT = { is_monarch_leader = yes }
+         NOT = { technology_group = east_african }
+         NOT = { technology_group = central_african }
+         NOT = { technology_group = nomad_group }
+         NOT = { technology_group = sub_saharan }
+         NOT = { technology_group = north_american }
+         NOT = { technology_group = mesoamerican }
+         NOT = { technology_group = south_american }
+         NOT = { technology_group = andean }
+         NOT = { technology_group = high_american }
+         NOT = { technology_group = aboriginal_tech }
+         NOT = { technology_group = rapanuan_tech_group }
+         NOT = { technology_group = polynesian_tech }
+         NOT = { technology_group = papuan_tech_group }
+		 ruler_has_personality = vu_scholarly_ruler_personality 
+         NOT = { has_country_modifier = ruler_studying }
+         NOT = { ruler_has_personality = vu_bachelorette_ruler_personality }
+      }
+      effect = {
+         add_adm_power = -35
+         add_dip_power = -35
+         add_mil_power = -35
+         add_treasury = -350
+         #It took up to six years for students to earn a Bachelors degree at Medieval universities
+         add_country_modifier = {
+            name = "ruler_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.8 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+
+   edu_3_ruler_doctorate = {
+      major = yes
+      potential = { 
+         ai = no
+         has_regency = no
+         NOT = { is_monarch_leader = yes }
+         #NOT = { has_ruler_modifier = doctorate }
+      }
+      allow = {
+         ai = no
+         adm_power = 20
+         dip_power = 20
+         mil_power = 20
+         treasury = 210
+         NOT = { is_monarch_leader = yes }
+         NOT = { technology_group = east_african }
+         NOT = { technology_group = central_african }
+         NOT = { technology_group = nomad_group }
+         NOT = { technology_group = sub_saharan }
+         NOT = { technology_group = north_american }
+         NOT = { technology_group = mesoamerican }
+         NOT = { technology_group = south_american }
+         NOT = { technology_group = andean }
+         NOT = { technology_group = high_american }
+         NOT = { technology_group = aboriginal_tech }
+         NOT = { technology_group = rapanuan_tech_group }
+         NOT = { technology_group = polynesian_tech }
+         NOT = { technology_group = papuan_tech_group }
+		 ruler_has_personality = vu_bachelorette_ruler_personality 
+         NOT = { has_country_modifier = ruler_studying }
+		 NOT = { ruler_has_personality = vu_doctorate_ruler_personality }
+      }
+      effect = {
+         add_adm_power = -20
+         add_dip_power = -20
+         add_mil_power = -20
+         add_treasury = -210
+         #It took up to 12 years for students to earn their doctorates
+         add_country_modifier = {
+            name = "ruler_studying"
+            duration = 10
+         }
+         country_event = { id = edumacation.9 days = 10 }
+      }
+      ai_will_do = {
+			factor = 0
+		}
+   }
+}

@@ -1,0 +1,3 @@
+#3875 - West_Simpson_Desert
+
+discovered_by = aboriginal_tech

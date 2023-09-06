@@ -1,0 +1,16 @@
+estate_turkic_tribes = {
+	modifier_definition = {
+		type = loyalty
+		key = turkic_tribes_loyalty_modifier
+		trigger = {
+			has_estate = estate_turkic_tribes 
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = turkic_tribes_influence_modifier
+		trigger = {
+			has_estate = estate_turkic_tribes 
+		}
+	}
+}

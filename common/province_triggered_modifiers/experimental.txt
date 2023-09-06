@@ -1,0 +1,54 @@
+ME_age_handler = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		had_global_flag = {
+			flag = ME_age_handler_flag
+			days = 366 #little offset
+		}
+	}
+	hidden = yes 
+	
+	#Province scope
+	on_activation = {
+		clr_global_flag = ME_age_handler_flag
+		set_global_flag = ME_age_handler_flag
+		if = {
+			limit = {
+				current_age = age_of_reformation
+				NOT = { has_global_flag = ME_age_of_discovery_ended }
+			}
+			set_global_flag = ME_age_of_discovery_ended
+			ME_on_age_of_reformation_start = yes
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+				NOT = { has_global_flag = ME_age_of_reformation_ended }
+			}
+			set_global_flag = ME_age_of_reformation_ended
+			ME_on_age_of_absolutism_start = yes
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_revolutions
+				NOT = { has_global_flag = ME_age_of_absolutism_ended }
+			}
+			set_global_flag = ME_age_of_absolutism_ended
+			ME_on_age_of_revolutions_start = yes
+		}
+		# else_if = {
+			# limit = {
+				# always = no
+				# NOT = { has_global_flag = ME_age_of_discovery_ended }
+			# }
+			# set_global_flag = ME_age_of_absolutism_ended
+			# ME_on_age_of_reformation_start = yes
+		# }
+		else = { }
+	}
+	
+	on_deactivation = {
+	}
+}

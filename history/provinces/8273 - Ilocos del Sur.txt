@@ -1,0 +1,34 @@
+#8273 - Ilocos
+
+culture = ilocano
+religion = animism
+capital = "Bee Gan"
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 1
+native_size = 40
+native_ferocity = 1
+native_hostileness = 3
+
+discovered_by = chinese
+1444.1.1 = { discovered_by = RYU }
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
+
+1572.6.13 = { #Conquistadore Juan de Salcedo leads an expedition to the river Bigan and founds the settlement "Villa Fernandina de Vigan" or the "Town of Ferdinand".
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	culture = castillian
+	religion = catholic
+	base_tax = 3
+	base_production = 4
+	base_manpower = 2
+	capital = "Villa Fernandina" #Later "Ciudad Fernandina de Vigan".
+	is_city = yes
+	trade_goods = grain 
+}
+
+1807.9.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Basi Revolt
+1807.9.26 = { revolt = {} controller = SPA }

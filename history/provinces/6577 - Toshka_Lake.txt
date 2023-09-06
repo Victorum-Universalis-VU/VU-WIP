@@ -1,0 +1,4 @@
+#6577 - Toshka Lake
+
+#discovered_by = east_african
+#discovered_by = muslim

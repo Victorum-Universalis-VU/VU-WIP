@@ -1,0 +1,4 @@
+#6087 - Milwaukee_Deep
+
+1492.10.24 = { discovered_by = CAS } # Christopher Columbus's arrival
+1516.1.23 = { discovered_by = SPA }

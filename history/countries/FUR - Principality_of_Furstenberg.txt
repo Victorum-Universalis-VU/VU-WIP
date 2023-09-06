@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = swabian
+religion = catholic
+technology_group = german_tech_group
+unit_type = western
+capital = 7690 # Furstenberg
+
+
+1379.1.1 = {
+	monarch = {
+		name = "Willem"
+		dynasty= "van Jülich-Hengebach"
+		birth_date = 1364.3.5
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}

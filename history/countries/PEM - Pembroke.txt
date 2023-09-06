@@ -1,0 +1,10 @@
+capital = 4369 #Pembrokeshire, Pembroke
+
+technology_group = english_tech_group
+unit_type = western
+
+government = monarchy
+add_government_reform = feudalism_reform
+
+religion = catholic
+primary_culture = english

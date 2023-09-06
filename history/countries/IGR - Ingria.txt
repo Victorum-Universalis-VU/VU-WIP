@@ -1,0 +1,7 @@
+government_rank = 1
+government = republic
+add_government_reform = oligarchy_reform#Achtundvierziger 
+technology_group = western
+religion = orthodox
+primary_culture = ingrian
+capital = 33

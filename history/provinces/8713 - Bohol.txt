@@ -1,0 +1,34 @@
+#8713 - Bohol
+
+latent_trade_goods = {
+	coal
+}
+
+owner = CEB
+controller = CEB
+add_core = CEB
+culture = visayan
+religion = hinduism
+capital = "Tagbilaran"
+trade_goods = pearls #Pearls
+hre = no
+base_tax = 4  
+base_production = 4
+base_manpower = 4
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = chocolate_hills_modifier
+	duration = -1
+}
+
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+discovered_by = chinese
+
+1595.1.1 = {	
+	culture = castillian
+	religion = catholic
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+}

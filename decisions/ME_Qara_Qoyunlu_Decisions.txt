@@ -1,0 +1,175 @@
+country_decisions = {
+	QAR_integrate_mesopotamia = {
+		major = yes
+		potential = {
+			is_in_war = {
+				attacker_leader = ROOT
+				defender_leader = BAG
+				casus_belli = cb_curb_baghdad_qq
+			}
+			BAG = {
+				ai = yes #player BAG has it eaiser
+			}
+		}
+		provinces_to_highlight = {
+			is_capital_of = BAG
+		}
+		allow = {
+			BAG = {
+				capital_scope = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+							alliance_with = ROOT
+						}
+					}
+				}
+			}
+			war_score_against = {
+				who = BAG
+				value = 50
+			}
+		}
+		effect = {
+			white_peace = BAG
+			inherit = BAG
+		}
+	}
+	
+	QAR_curb_qar = {
+		major = yes
+		potential = {
+			has_global_flag = QAR_wrestling_ardalan
+			exists = ARD
+			if = {
+			limit = { has_saved_event_target = qara_qoyunlu_we_are_wrestling }
+			NOT = { tag = event_target:qara_qoyunlu_we_are_wrestling }
+			}
+			else = { always = no }
+			ARD = {
+				overlord = { tag = ROOT }
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ARD
+		}
+		allow = {
+			if = {
+			limit = { has_saved_event_target = qara_qoyunlu_we_are_wrestling }
+			army_size = event_target:qara_qoyunlu_we_are_wrestling
+			}
+			else = { always = no }
+		}
+		effect = {
+			event_target:qara_qoyunlu_we_are_wrestling = {
+				country_event = { id = ME_Qara_Qoyunlu_Events.18 }
+			}
+		}
+	}
+	
+	QAR_demote_tribal_chiefs = {
+		major = yes
+		potential = {
+			has_country_flag = QAR_enable_promote_tribal_chiefs
+			has_government_mechanic = tribal_federation_mechanic # fix
+			has_estate = estate_nobles
+		}
+		provinces_to_highlight = {
+		}
+		allow = {
+			estate_territory = {
+				estate = estate_nobles
+				territory = 5
+			}
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 50
+			}
+			
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 45
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = QAR_demote_tribal_chiefs_cooldown_tt
+				OR = {
+					NOT = { has_country_flag = QAR_demote_tribal_chiefs_cooldown }
+					had_country_flag = {
+						flag = QAR_demote_tribal_chiefs_cooldown
+						days = 3650
+					}
+				}
+			}
+		}
+		effect = {
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -5
+			}
+			
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = -15
+			}
+			
+			set_country_flag = QAR_demote_tribal_chiefs_cooldown
+		}
+	}
+	
+	QIR_cossacks = {
+		major = yes
+		potential = {
+			has_country_flag = QIR_cossack_units
+			has_dlc = "The Cossacks"
+		}
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+		}
+		allow = {
+			capital_scope = {
+				controlled_by = ROOT
+				all_neighbor_province = {
+					OR = {
+						controlled_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = QIR_75_units
+				}
+				NOT = { num_of_cossacks = 75 }
+			}
+			else = {
+				NOT = { num_of_cossacks = 10 }
+			}
+			
+			has_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = 5
+			}
+		}
+		effect = {
+			capital_scope = {
+				cossack_cavalry = ROOT
+			}
+			
+			add_government_power = {
+				mechanic_type = tribal_federation_mechanic
+				power_type = tribal_allegiance
+				value = -5
+			}
+		}
+	}
+}

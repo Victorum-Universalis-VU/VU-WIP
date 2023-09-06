@@ -1,0 +1,108 @@
+﻿l_english:
+ #VU Quonton Additions
+ #Romanian Dragon Knights
+ estate_nobles_order_of_dragon:0 "Order of the Dragon"
+ estate_nobles_order_of_dragon_desc:0 "The Order of the Dragon (Latin: Societas Draconistarum, literally "Society of the Dragonists") was a monarchical chivalric order only for selected higher aristocracy and monarchs, founded in 1408 by Sigismund of Luxembourg, who was then King of Hungary and Croatia (r. 1387–1437) and later became Holy Roman Emperor (r. 1433–1437). It was fashioned after the military orders of the Crusades, requiring its initiates to defend the cross and fight the enemies of Christianity, particularly the Ottoman Empire."
+ #Balkan Hadjuks
+ estate_noble_hajduk:0 "Hajduk War Bands"
+ estate_noble_hajduk_desc:0 "A hajduk (Hungarian: hajdúk, plural of hajdú) is a type of irregular infantry found in Central and parts of Southeast Europe from the late 16th to mid 19th centuries. They have reputations ranging from bandits to freedom fighters depending on time, place, and their enemies."
+ #
+ estate_peasant_expand_hajduk:0 "Expanded the Hajduks"
+ estate_peasant_expand_hajduk_desc:0 "We must expand the Hajduk if we wish to save our holy land from heathens and heretics.The Hadjuks are often found in the European lands of the Ottoman Empire, the term hajduk was used to describe bandits and brigands of the Balkans, while in Central Europe for the West Slavs, Hungarians, and Germans, it was used to refer to outlaws who protected Christians against provocative actions by the Ottomans." 
+ #New estate privileges replacing Hegemoniacles
+ #End of Quonton additions
+ estate_nobles_very_strong_duchies:0 "Very Strong Duchies"
+ estate_nobles_very_strong_duchies_trigger_tooltip:0 "§Y[Root.GetName]§! has at least 4 vassals and marches."
+ estate_nobles_very_strong_duchies_desc:0 "[Root.GetUsableNameCap] is a very decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
+ #
+ estate_nobles_extremely_strong_duchies:0 "Extremely Strong Duchies"
+ estate_nobles_extremely_strong_duchies_trigger_tooltip:0 "§Y[Root.GetName]§! has at least 6 vassals and marches."
+ estate_nobles_extremely_strong_duchies_desc:0 "[Root.GetUsableNameCap] is an extremely decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
+ #
+ #British estate adjustments.
+ estate_marchers:0 "Marchers"
+ estate_nobles_british_strong_marches:0 "British Strong Marches"
+ estate_nobles_british_strong_marches_desc:0 "[Root.GetUsableNameCap] is a decentralized nation in which local marcher lords and county palatines have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power in these border regions a significant challenge."
+ # 
+ estate_nobles_command_of_the_military:0 "Command of the Military"
+ estate_nobles_command_of_the_military_desc:0 "The nobility are in control of the military, making us reliant on their favor to exert force."
+ estate_nobles_command_of_the_military_tt:0 "Recruiting §YLeaders§! adds §Y5 Nobility Influence§!"
+ #
+ estate_church_karma_temples:0 "Monastic Temples"
+ estate_church_karma_temples_desc:0 "We should entrust the care of sacred Buddhist temples to monks."
+ estate_church_karma_temples_tt:0 "§Y+3 Karma§! is added upon construction of §YTemple§! buildings.\n§Y-3 Karma§! is added upon destruction of §YTemple§! buildings."
+ #
+ estate_church_influence_temples:0 "Church Sanctuaries"
+ estate_church_influence_temples_desc:0 "We should give the people a place of worship and the Pope a place to see how much devotion our nation has."
+ estate_church_influence_temples_tt:0 "§Y+3 Papal Influence§! is added upon construction of §YChurch§! buildings.\n§Y-3 Papal Influence§! is added upon destruction of §YChurch§! buildings."
+ #
+ estate_burghers_tropical_mod:0 "Tropical City Planning"
+ desc_estate_burghers_tropical_mod:0 "Having millenia of experience, we are quite able to construct vast cities in our homeland despite the difficulties posed by the climate."
+ estate_burghers_tropical_nation:0 "Tropical City Planning"
+ estate_burghers_tropical_nation_desc:0 "Having millenia of experience, we are quite able to construct vast cities in our homeland despite the difficulties posed by the climate."
+ estate_burghers_tropical_effect_tooltip:0 "Every owned province with Tropical climate gains:\nLocal Development Cost: §G-5%§!\nLocal Settler Increase: §G+10%§!"
+ estate_burghers_tropical_revoke_effect_tooltip:0 "Every owned province with Tropical climate loses:\nLocal Development Cost: §G-5%§!\nLocal Settler Increase: §G+10%§!"
+ #
+ estate_church_lao_animism:0 "Tolerance of Folk Religions"
+ estate_church_lao_animism_desc:0 "Though it is not in keeping with our faith, we accept that many in our nation continue to follow ancient folk religions."
+ estate_church_lao_animism_effect_tooltip:0 "Every owned province of the §YAnimist§! faith gains:\nLocal Missionary Strength: §R-100§!\nLocal Religious Unity Contribution: §G-100%§!"
+ estate_church_lao_animism_revoke_effect_tooltip:0 "The modifier §Y'Tolerance of Folk Religions'§! is removed from all owned §YDharmic§! provinces."
+ estate_church_lao_animism_mod:0 "Toleration of Folk Religions"
+ desc_estate_church_lao_animism_mod:0 "Though it is not in keeping with our faith, we accept that many in our nation continue to follow ancient folk religions."
+ #
+ estate_church_brahmins_at_court:0 "Brahmins at Court"
+ estate_church_brahmins_at_court_desc:0 "Although we do not follow the Hindu faith, Brahmins nevertheless enjoy an honored place in society and at court."
+ #
+ estate_burghers_khmer_irrigation:0 "Advanced Irrigation Techniques"
+ estate_burghers_khmer_irrigation_desc:0 "The state provides the infrastructure and tools to utilize some of the world's most advanced irrigation techniques, allowing for rapid population growth due to an abundant food supply."
+ estate_vaisyas_khmer_irrigation:0 "Advanced Irrigation Techniques"
+ estate_vaisyas_khmer_irrigation_desc:0 "The state provides the infrastructure and tools to utilize some of the world's most advanced irrigation techniques, allowing for rapid population growth due to an abundant food supply."
+ estate_burghers_khmer_irrigation_effect_tooltip:0 "Every owned province producing §YGrain§! gains:\nLocal Development Cost: §G-10%§!"
+ estate_burghers_khmer_irrigation_revoke_effect_tooltip:0 "The modifier §YAdvanced Irrigation Techniques§! is removed from all owned provinces."
+ estate_burghers_khmer_irrigation_mod:0 "Advanced Irrigation Techniques"
+ desc_estate_burghers_khmer_irrigation_mod:0 "The state provides the infrastructure and tools to utilize some of the world's most advanced irrigation techniques, allowing for rapid population growth due to an abundant food supply."
+ #
+ #VU Quonton additions
+ estate_razesi:0 "Razesi"
+ razesi_loyalty_modifier:0 "Razesi Loyalty Equilibrium"
+ razesi_influence_modifier:0 "Razesi Influence"
+ estate_razesi_desc:0 "Razesi were the richest and most powerful members of nobility. They were owners of large estates and palaces scattered around Polish country. They held big influence on ruler and other estates, usually with negative outcomes for the nation."
+ #End of Quonton additions
+ estate_magnates:0 "Magnates"
+ magnates_loyalty_modifier:0 "Magnates Loyalty Equilibrium"
+ magnates_influence_modifier:0 "Magnates Influence"
+ estate_magnates_desc:0 "Polish Magnates were the richest and most powerful members of nobility. They were owners of large estates and palaces scattered around Polish country. They held big influence on ruler and other estates, usually with negative outcomes for the nation."
+ #
+ estate_magnates_lower_recruitment:0 "Reduce the Amount of Soldiers"
+ estate_magnates_lower_recruitment_desc:0 "Reduce the Amount of Soldiers in your army."
+ estate_magnates_hire_advisor:0 "Hire Advisor"
+ estate_magnates_hire_advisor_desc:0 "Hire administrative advisor to your court."
+ #
+ estate_magnates_ownership:0 "Magnates Land Ownership"
+ estate_magnates_land_rights:0 "Magnates Land Rights"
+ estate_magnates_land_rights_desc:0 ""
+ estate_magnates_folwarks:0 "Folwarks"
+ estate_magnates_folwarks_desc:0 ""
+ estate_magnates_production_law:0 "Production Law"
+ estate_magnates_production_law_desc:0 ""
+ estate_magnates_supremacy_over_szlachta:0 "Supremacy Over Szlachta"
+ estate_magnates_supremacy_over_szlachta_desc:0 ""
+ estate_magnates_free_printing_rights:0 "Free Printing Rights"
+ estate_magnates_free_printing_rights_desc:0 ""
+ estate_magnates_settle_rus:0 "Grant Free Settlement in Rus"
+ estate_magnates_settle_rus_desc:0 ""
+ estate_magnates_supremacy_over_king:0 "Supremacy Over the Crown"
+ estate_magnates_supremacy_over_king_desc:0 ""
+ estate_magnates_royal_advisors:0 "Royal Advisors"
+ estate_magnates_royal_advisors_desc:0 ""
+ estate_magnates_curtail_cossacks:0 "Curtail Cossacks"
+ estate_magnates_curtail_cossacks_desc:0 ""
+ estate_magnates_priviliges_and_promises:0 "After election privileges for Magnates"
+ estate_magnates_priviliges_and_promises_desc:0 ""
+ estate_magnates_anti_absolutism:0 "Anti-Absolutism Edict"
+ estate_magnates_anti_absolutism_desc:0 ""
+ #
+ magnates_settled_rus:0 "Magnate settlements in Rus"
+ desc_magnates_settled_rus:0 ""
+ #
+ EST_VAL_ELECTIVE_MONARCHY_SUPPORT: "Support for elective monarch"

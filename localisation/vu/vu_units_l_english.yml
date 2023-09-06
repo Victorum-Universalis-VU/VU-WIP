@@ -1,0 +1,38 @@
+﻿l_english:
+ #Quonton
+ hoy:0 "Hoy"
+ hulk:0 "Hulk"
+ knarr:0 "Knarr"
+ #Units missing loc
+ chinese_archer:0 "East Asian Archer"
+ armored_horse:0 "Armored Horse"
+ western_hussar:0 "Western Hussar"
+ western_hussarDESCR:0 "A more modern version of the Hussar class of light cavalry, originating in Central Europe during the 15th and 16th centuries."
+ western_line_infantry:0 "Western Line Infantry"
+ western_line_infantryDESCR:0 "Maurice of Nassau & Gustavus Adolphus are generally credited as the pioneers of the Western Line Infantryman, while Turenne and Montecuccoli are closely associated with post-1648 development of Linear Infantry Tactics. For both battle and parade drill, Western Line Infantry formations consist of two to four ranks of foot soldiers drawn up side by side in rigid alignment, thereby maximizing the formations effectiveness and firepower."
+ western_square:0 "Western Square"
+ western_squareDESCR:0 "The Western Square, also known as a hollow square, is a combat formation in which infantry units are formed in close order, usually when threatened with cavalry attacks. Traditionally, infantry units would form standard lines in order to advance on the battlefield, with the aim of unleashing a powerful volley towards the enemy at the end. Although effective in the latter, this form of maneuver made infantry lines vulnerable to more nimble cavalry, which could sweep around the flanks of the formation and attack from the undefended rear or burst through the line, with much the same effect. By arranging the unit so that there was no undefended rear, a commander could organise an effective defense against a cavalry attack at any given location on the battlefield, thus driving them back or detering any cavalry attacks to begin with."
+ #Japanese infantry units missing locs
+ japanese_spearmen:0 "Japanese Spearmen"
+ japanese_longspear:0 "Japanese Longspear"
+ japanese_foot_samurai:0 "Japanese Foot Samurai"
+ japanese_arquebusier:0 "Japanese Banner"
+ japanese_banner:0 "Japanese Arquebusier"
+ japanese_mass_infantry:0 "Japanese Musketeer"
+ japanese_musketeer:0 "Japanese Rifle Infantry"
+ reformed_japanese_musketeer:0 "Japanese Line Infantry"
+ emperors_guard:0 "Emperors Guard"
+ #Japanese cavalry units missing locs
+ japanese_skrimish_cavalry:0 "Japanese Skirmish Cavalry"
+ japanese_horse_archer:0 "Japanese Horse Archer"
+ japanese_warrior_monk:0 "Japanese Warrior Monk"
+ japanese_warrior_monk_archer:0 "Japanese Warrior Monk Archer"
+ japanese_charge_cavalry:0 "Japanese Charge Cavalry"
+ japanese_banner_cavalry:0 "Japanese Banner Cavalry"
+ japanese_dragoon:0 "Japanese Dragoon"
+ reformed_japanese_cavalry:0 "Reformed Japanese Cavalry"
+ reformed_japanese_rifle:0 "Japanese Rifle Cavalry"
+ #
+ #Mercs
+ merc_lotf_minutemen: "The Minutemen"
+ merc_lotf_green_mountain_boys: "Green Mountain Boys"

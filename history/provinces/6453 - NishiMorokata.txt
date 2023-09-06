@@ -1,0 +1,27 @@
+#5276 - Nishi Morokara
+
+add_core = KHR
+owner = KHR
+controller = KHR
+culture = kyushuan
+religion = shinto
+capital = "Iino"
+trade_goods = tea
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+1542.1.1 = { discovered_by = POR }
+
+1569.10.10 = {
+    add_core = SMZ
+    controller = SMZ
+    owner = SMZ
+}

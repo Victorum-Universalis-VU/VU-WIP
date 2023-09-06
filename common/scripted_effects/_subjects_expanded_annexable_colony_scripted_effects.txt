@@ -1,0 +1,482 @@
+set_disabled_colonial_nation_spawning_for_region = {
+	set_country_flag = no_colonial_nations_in_$colonial_region$
+}
+
+unset_disabled_colonial_nation_spawning_for_region = {
+	custom_tooltip = UNSET_DISABLED_COLONIAL_NATION_SPAWNING_FOR_REGION_TT
+	clr_country_flag = no_colonial_nations_in_$colonial_region$
+}
+
+set_disabled_colonial_nation_spawning_for_region_for_overlord = {
+	if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_alaska
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_alaska
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_canada
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_canada
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_eastern_america
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_eastern_america
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_louisiana
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_louisiana
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_california
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_california
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_mexico
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_mexico
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_colombia
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_colombia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_peru
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_peru
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_la_plata
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_la_plata
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_brazil
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_australia
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_australia
+			}
+		}
+	}
+	# Extended Timeline:
+	else_if = {
+		limit = {
+			has_global_flag = extended_timeline_mod
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_papua
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_papua
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_solomons
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_solomons
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_vanuatu
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_vanuatu
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_new_caledonia
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_new_caledonia
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_fiji
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_fiji
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_polynesia
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_polynesia
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_cape
+				}
+			}
+			overlord = {
+				set_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_cape
+				}
+			}
+		}
+	}
+}
+
+unset_disabled_colonial_nation_spawning_for_region_for_overlord = {
+	if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_alaska
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_alaska
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_canada
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_canada
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_eastern_america
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_eastern_america
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_louisiana
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_louisiana
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_california
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_california
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_mexico
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_mexico
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_colombia
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_colombia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_peru
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_peru
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_la_plata
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_la_plata
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_brazil
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_brazil
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_australia
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_australia
+			}
+		}
+	}
+	# Extended Timeline:
+	else_if = {
+		limit = {
+			has_global_flag = extended_timeline_mod
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_papua
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_papua
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_solomons
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_solomons
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_vanuatu
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_vanuatu
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_new_caledonia
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_new_caledonia
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_fiji
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_fiji
+				}
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_polynesia
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_polynesia
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				capital_scope = {
+					colonial_region = colonial_cape
+				}
+			}
+			overlord = {
+				unset_disabled_colonial_nation_spawning_for_region = {
+					colonial_region = colonial_cape
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+#3937 - Eastern Lybian Desert
+
+1600.1.1 = { discovered_by = TUR }

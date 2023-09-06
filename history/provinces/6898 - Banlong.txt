@@ -1,0 +1,26 @@
+#6898 - Banlong
+
+owner = MNG
+controller = MNG
+add_core = MNG
+add_core = MIN
+culture = chimin
+religion = taoism
+capital = "Banlong"
+trade_goods = tea
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+1444.1.1 = { discovered_by = RYU }
+1514.1.1 = { discovered_by = POR }
+
+1647.4.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

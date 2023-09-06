@@ -1,0 +1,6 @@
+#1403 - Palau Islands
+#VU Discovery Bug Fix
+
+discovered_by = chinese
+
+1512.1.1 = { discovered_by = POR }

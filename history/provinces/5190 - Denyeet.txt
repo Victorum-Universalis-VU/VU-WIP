@@ -1,0 +1,34 @@
+#5190 - Denyeet
+
+owner = YYD			#Gwichen
+controller = YYD
+add_core = YYD
+is_city = yes
+culture = kutchin
+religion = totemism 
+capital = "Ts'aahudaaneekk'onh Denh" 
+trade_goods = fur
+hre = no 
+base_tax = 1 
+base_production = 1 
+base_manpower = 1 
+native_size = 1 
+native_ferocity = 1 
+native_hostileness = 3  
+
+discovered_by = north_american
+#discovered_by = vu_athabaskan_tech
+#discovered_by = vu_inuit_tech
+
+add_permanent_province_modifier = {
+    name = vu_malaria_present
+    duration = -1
+}
+
+1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
+	owner = YYD			#Gwichen
+	controller = YYD
+	add_core = YYD
+	is_city = yes
+	trade_goods = fur
+}

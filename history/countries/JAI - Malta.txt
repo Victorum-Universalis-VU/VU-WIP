@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = maltese
+religion = catholic
+technology_group = italian_tech_group
+unit_type = western
+capital = 126 #Malta
+

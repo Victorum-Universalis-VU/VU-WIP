@@ -1,0 +1,3229 @@
+QIR_missions_2_pick = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		NOT = { has_country_flag = QIR_sedentary }
+		NOT = { has_country_flag = QIR_tribal }
+	}
+	has_country_shield = yes
+
+	QIR_tall = {
+		icon = mission_golden_century #peacefulf lock
+		required_missions = { QIR_fate_of_qir_qoyunlu }
+		position = 11
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = QIR_50_times_developed
+				check_variable = {
+					which = num_of_times_developed
+					value = 50
+				}
+			}
+			#ME_pt_feedback_requested = yes 
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			custom_tooltip = " "
+			set_country_flag = QIR_may_go_sedentary
+			custom_tooltip = QIR_unlock_decision_the_development
+		}
+	}
+}
+
+QIR_missions_3_pick = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		NOT = { has_country_flag = QIR_sedentary }
+		NOT = { has_country_flag = QIR_tribal }
+	}
+	has_country_shield = yes
+
+	QIR_fate_of_qir_qoyunlu = {
+		icon = mission_deccanis
+		required_missions = { }
+		position = 10
+		provinces_to_highlight = {
+		}
+		trigger = {
+			has_adm_advisor_2 = yes
+			has_dip_advisor_2 = yes
+			has_mil_advisor_2 = yes
+		}
+		effect = {
+			add_age_modifier = {
+				name = QIR_major_governmental_changes
+				duration = -1
+				age = age_of_discovery
+				else = "
+					add_adm_power = 100
+					change_government_reform_progress = 20
+				"
+			}
+			
+			set_country_flag = QIR_preview_mode
+		}
+	}
+}
+
+QIR_missions_4_pick = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		NOT = { has_country_flag = QIR_sedentary }
+		NOT = { has_country_flag = QIR_tribal }
+	}
+	has_country_shield = yes
+
+	QIR_wide = {
+		icon = mission_abu_saids_dream #a flock of sheep running into camera
+		required_missions = { QIR_fate_of_qir_qoyunlu }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				is_claim = ROOT
+				is_permanent_claim = ROOT 
+				is_core = ROOT
+			}
+		}
+		trigger = {
+			grown_by_development = 500
+			grown_by_states = 10
+			#ME_pt_feedback_requested = yes
+		}
+		effect = {
+			add_adm_power = 100 
+			custom_tooltip = " "
+			
+			set_country_flag = QIR_may_go_tribal
+			custom_tooltip = QIR_unlock_decision_the_tribal
+			
+			
+		}
+	}
+}
+
+QIR_missions_1_sedentary = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_sedentary
+	}
+	has_country_shield = yes
+
+	QIR_advance_to_the_sea = {
+		icon = mission_ottoman_diplomacy
+		required_missions = { AKK_anatolia QAR_anatolia }
+		position = 11
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = anatolia_region
+				value = 40
+			}
+		}
+		effect = {
+			hidden_effect = {
+				anatolia_region = {
+					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					add_nationalism = -10
+					add_local_autonomy = -10
+				}
+			}
+		
+			custom_tooltip = QIR_every_province_in_anatolia_region
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = thrace_area }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_tribes_of_anatolia
+				duration = 10950
+			}
+		}
+	}
+	
+	QIR_western_capital = {
+		icon = mission_city_of_the_world's_desire
+		required_missions = { QIR_advance_to_the_sea }
+		position = 13
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 151
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					area = thrace_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			151 = {
+				owned_by = ROOT
+			}
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			151 = {
+				if = {
+					limit = {
+						NOT = { culture = ROOT }
+					}
+					change_culture = ROOT
+				} 
+				add_province_modifier = {
+					name = QIR_constantinople
+					duration = -1
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			ME_add_power_projection = { amount = 20 }
+		}
+	}
+	
+	QIR_constantinople = {
+		icon = take_constantinople
+		required_missions = { QIR_western_capital }
+		position = 14
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			151 = {
+				owned_by = ROOT 
+				development = 45
+				has_tax_building_trigger = yes
+				has_manpower_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			country_event = { id = ME_Qir_Qoyunlu_Events.7 }
+			
+			custom_tooltip = " "
+			
+			151 = {
+				add_or_upgrade_tax_building = yes
+				add_or_upgrade_trade_building = yes
+				add_or_upgrade_production_building = yes
+				add_or_upgrade_manpower_building = yes
+			}
+		}
+	}
+	
+	QIR_anatolia_dev = {
+		icon = austria_prospers
+		required_missions = { QIR_constantinople QIR_fertile_crescent }
+		position = 16
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = { province_is_on_an_island = yes }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = MSY_owns_highlighted
+				anatolia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						province_is_on_an_island = yes
+					}
+				}
+			}
+			development_in_provinces = {
+				region = anatolia_region
+				NOT = { province_is_on_an_island = yes }
+				value = 300
+			}
+		}
+		effect = {
+			custom_tooltip = MSY_the_highlighted_area
+			tooltip = {
+				add_province_modifier = {
+					name = QIR_manpower_tribes
+					duration = -1
+				}
+			}
+			
+			hidden_effect = {
+				anatolia_region = {
+					limit = {
+						owned_by = ROOT
+						NOT = { province_is_on_an_island = yes }
+					}	
+					add_province_modifier = {
+						name = QIR_manpower_tribes
+						duration = -1
+					}
+				}
+			}
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					region = anatolia_region
+					NOT = { province_is_on_an_island = yes }
+				}
+				custom_tooltip = QIR_prod_from_highlighted_provinces
+			}
+		}
+	}
+	
+	QIR_persian_capital = {
+		icon = mission_into_persia_1
+		required_missions = { }
+		position = 18
+		provinces_to_highlight = {
+			OR = {
+				province_id = 428 
+				province_id = 429
+				province_id = 2218
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 30 }
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			OR = {
+				428 = {
+					owned_by = ROOT
+					development = 30
+				}
+				429 = {
+					owned_by = ROOT
+					development = 30
+				}
+				2218 = {
+					owned_by = ROOT
+					development = 30
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = QIR_developed_persian_culture_at_least_10_times
+				check_variable = {
+					which = Qir_num_of_times_developed_persian
+					value = 10
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = QIR_unlock_persian_development_privilege
+			set_country_flag = QIR_unlock_persian_development_privilege_flag
+			
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Qir_Qoyunlu_Events.8 }
+		}
+	}
+
+	QIR_persian_rich = {
+		icon = mission_conquer_mewar
+		required_missions = { QIR_persian_capital }
+		position = 20
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				culture = persian
+				culture = azerbaijani
+			}
+			has_terrain = mountain
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = QIR_developed_persian_culture_at_least_50_times
+				check_variable = {
+					which = Qir_num_of_times_developed_persian
+					value = 50
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_persian_land_modifier
+				duration = -1
+			}
+			
+			define_advisor = {
+				type = muscovy_architect
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+			
+			custom_tooltip = " "
+			
+			add_years_of_income = 0.5
+		}
+	}
+}
+
+QIR_missions_2_sedentary = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_sedentary
+	}
+	has_country_shield = yes
+
+	QIR_tribal_navy = {
+		icon = mission_arabian_sea_trade
+		required_missions = { AKK_syria QAR_syria }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = aleppo_area
+			}
+			has_port = yes
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			OR = {
+				num_of_light_ship = 40 
+				navy_size_percentage = 0.5
+			}
+			
+			OR = {
+				syria_area = {
+					owned_by = ROOT
+					has_shipyard_building_trigger = yes
+				}
+				aleppo_area = {
+					owned_by = ROOT
+					has_shipyard_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			ME_give_claims = { id = 321 }
+			
+			custom_tooltip = " "
+			
+			create_admiral = { tradition = 30 }
+			
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Qir_Qoyunlu_Events.3 }
+		}
+	}
+	
+	QIR_seize_cyprus = {
+		icon = kingdom_of_cyprus
+		required_missions = { QIR_tribal_navy QIR_advance_to_the_sea }
+		position = 12
+		provinces_to_highlight = {
+			province_id = 321
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			321 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			321 = {
+				add_nationalism = -30
+				add_unrest = -5
+			}
+			
+			custom_tooltip = " "
+			
+			ME_add_power_projection = { amount = 10 }
+			
+			custom_tooltip = " "
+			
+			add_years_of_income = 1 # conquer cyprus, get income. easy income mission!
+		}
+	}
+	
+	QIR_between_two_rivers = {
+		icon = mission_advance_to_the_dnieper
+		required_missions = { }
+		position = 13
+		provinces_to_highlight = {
+			OR = {
+				area = iraq_arabi_area
+				area = basra_area
+				area = al_jazira_area
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = MSY_owns_highlighted
+				iraq_arabi_area = {
+					type = all
+					owned_by = ROOT
+				}
+				basra_area = {
+					type = all
+					owned_by = ROOT
+				}
+				al_jazira_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+			development_in_provinces = {
+				custom_trigger_tooltip = {
+					tooltip = MSY_highlighted
+					OR = {
+						area = iraq_arabi_area
+						area = basra_area
+						area = al_jazira_area
+					}
+				}
+				value = 170
+			}
+			#ME_pt_feedback_requested = yes
+		}
+		effect = {
+			custom_tooltip = MSY_the_highlighted_area
+			tooltip = {
+				add_province_modifier = {
+					name = QIR_mesopotamia
+					duration = -1
+				}
+			}
+			
+			hidden_effect = {
+				iraq_arabi_area = {
+					add_province_modifier = {
+						name = QIR_mesopotamia
+						duration = -1
+					}
+				}
+				basra_area = {
+					add_province_modifier = {
+						name = QIR_mesopotamia
+						duration = -1
+					}
+				}
+				al_jazira_area = {
+					add_province_modifier = {
+						name = QIR_mesopotamia
+						duration = -1
+					}
+				}
+			}
+			
+			add_stability_or_adm_power = yes
+		}
+	}
+	
+	QIR_fertile_crescent = {
+		icon = anatolian_frontier
+		required_missions = { QIR_between_two_rivers }
+		position = 15
+		provinces_to_highlight = {
+			OR = {
+				area = iraq_arabi_area
+				area = basra_area
+				area = al_jazira_area
+				area = syria_area
+				area = syrian_desert_area
+				area = aleppo_area
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = MSY_owns_highlighted
+				iraq_arabi_area = {
+					type = all
+					owned_by = ROOT
+				}
+				basra_area = {
+					type = all
+					owned_by = ROOT
+				}
+				al_jazira_area = {
+					type = all
+					owned_by = ROOT
+				}
+				syria_area = {
+					type = all
+					owned_by = ROOT
+				}
+				syrian_desert_area = {
+					type = all
+					owned_by = ROOT
+				}
+				aleppo_area = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+			development_in_provinces = {
+				custom_trigger_tooltip = {
+					tooltip = MSY_highlighted
+					OR = {
+						area = iraq_arabi_area
+						area = basra_area
+						area = al_jazira_area
+						area = syria_area
+						area = syrian_desert_area
+						area = aleppo_area
+					}
+				}
+				value = 300
+			}
+			#ME_pt_feedback_requested = yes
+		}
+		effect = {
+			custom_tooltip = MSY_the_highlighted_area
+			tooltip = {
+				add_province_modifier = {
+					name = QIR_fertile_crescent_modifier
+					duration = -1
+				}
+			}
+			
+			hidden_effect = {
+				iraq_arabi_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+				basra_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+				al_jazira_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+				syria_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+				syrian_desert_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+				aleppo_area = {
+					add_province_modifier = {
+						name = QIR_fertile_crescent_modifier
+						duration = -1
+					}
+				}
+			}
+			
+			custom_tooltip = QIR_dev
+			
+			hidden_effect = {
+				for = {
+					amount = 15
+					effect = "
+						random_core_province = {
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_cornucopia
+				duration = 7300
+			}
+		}
+	}
+	
+	QIR_grain = {
+		icon = prosperity_for_all
+		required_missions = { QIR_fertile_crescent }
+		position = 17
+		provinces_to_highlight = {
+			trade_goods = grain
+			owned_by = ROOT 
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			trading_part = {
+				trade_goods = grain 
+				value = 0.5
+			}
+			
+			production_leader = {
+				trade_goods = grain
+			}
+			
+			trade_goods_produced_amount = {
+				trade_goods = grain 
+				amount = 15
+			}
+			
+			#ME_pt_feedback_requested = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_decision_will_distribute
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_upgrade_the_decision
+			
+			add_age_modifier = {
+				name = QIR_population_boost
+				duration = -1
+				age = age_of_reformation
+				else = "
+					add_stability_or_adm_power = yes
+				"
+			}
+			
+			country_event = { id = ME_Qir_Qoyunlu_Events.9 }
+		}
+	}
+	
+	QIR_trading_in_wool = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { QIR_totem_animal }
+		position = 18
+		provinces_to_highlight = {
+			trade_goods = wool 
+			owned_by = ROOT
+		}
+		trigger = {
+			QIR_preview = yes
+			trading_part = {
+				trade_goods = wool 
+				value = 0.35
+			}
+			
+			production_leader = {
+				trade_goods = wool
+			}
+			
+			#ME_pt_feedback_requested = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				custom_tooltip = QIR_buff_wool_privilege
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_buff_wool_privilege_flag
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 20
+				trigger = {
+					trade_goods = wool
+				}
+				custom_tooltip = QIR_prod_from_wool
+			}
+			
+			# custom_tooltip = " "
+			
+			custom_tooltip = QIR_distribute_10_base_prod
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								trade_goods = wool
+							}
+							add_base_production = 1
+						}
+					"
+				}
+			}
+		}
+	}
+	
+	QIR_outer_persia = {
+		icon = mission_dominate_persian_gulf
+		required_missions = { QIR_persian_capital }
+		position = 19
+		provinces_to_highlight = {
+			province_id = 4341
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			4341 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+				OR = {
+					trade_node_value = 25
+					if = {
+						limit = {
+							trade_income_percentage = 0.01
+						}
+						custom_trigger_tooltip = {
+							tooltip = QIR_at_least_60_trade_income
+							variable_arithmetic_trigger = {
+								export_to_variable = {
+									which = current_trade_income
+									value = monthly_income
+								}
+								export_to_variable = {
+									which = trade_income_share
+									value = trigger_value:trade_income_percentage
+								}
+								multiply_variable = { which = current_trade_income which = trade_income_share }
+								check_variable = { which = current_trade_income value = 60 }
+							}
+						}
+					}
+					else = {
+						hidden_trigger = {
+							always = no
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = ME_Qir_Qoyunlu_Events.10 }
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+		}
+	}
+}
+
+QIR_missions_3_sedentary = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_sedentary
+	}
+	has_country_shield = yes
+
+	QIR_develop_azerbaijan = {
+		icon = prosper_in_piedmont
+		required_missions = { AKK_northern_turkomans QAR_ardabil }
+		position = 9
+		provinces_to_highlight = {
+			area = azerbaijan_area
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_owned_provinces_with = {
+				area = azerbaijan_area
+				num_of_times_improved = 5
+				value = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_supporting_the_tribes
+				duration = 10950 
+			}
+			
+			add_stability_or_adm_power = yes
+		}
+	}
+	
+	QIR_aleppo = {
+		icon = anatolian_frontier
+		required_missions = { AKK_syria QAR_syria }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = cukurova_area
+				area = karaman_area
+				area = north_kurdistan_area
+				area = syria_area
+				area = syrian_desert_area
+				area = aleppo_area
+				area = al_jazira_area
+				area = dulkadir_area
+			}
+			province_has_center_of_trade_of_level = 1
+			NOT = { province_id = 321 }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			377 = {
+				has_most_province_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+				all_trade_node_member_province = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						NOT = { province_has_center_of_trade_of_level = 1 }
+						province_id = 321 
+					}
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				377 = {
+					every_trade_node_member_province = {
+						limit = {
+							country_or_non_sovereign_subject_holds = ROOT
+							province_has_center_of_trade_of_level = 1
+							NOT = { province_id = 321 }
+						}
+						add_permanent_province_modifier = {
+							name = QIR_outpost_on_the_border
+							duration = -1
+						}
+					}
+				}
+			}
+			custom_tooltip = QIR_every_center_in_aleppo
+			tooltip = {
+				add_permanent_province_modifier = {
+					name = QIR_outpost_on_the_border
+					duration = -1
+				}
+			}
+			
+			add_mercantilism = 5
+		}
+	}
+	
+	QIR_greater_iran = {
+		icon = mission_into_persia_2
+		required_missions = { QIR_expand_persian_dominion }
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+				area = merv_area
+				area = transoxiana_area
+				area = termez_area
+				province_id = 438
+				province_id = 437
+				province_id = 2349
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = ghor_area
+					area = kabulistan_area
+					area = balkh_area
+					area = merv_area
+					area = transoxiana_area
+					area = termez_area
+					province_id = 438
+					province_id = 437
+					province_id = 2349
+				}
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_greater_iran
+				duration = -1
+			}
+			
+			add_war_exhaustion = -2
+		}
+	}
+	
+	QIR_house_of_wisdom = {
+		icon = mission_university_of_copenhagen
+		required_missions = { QIR_between_two_rivers }
+		position = 14
+		provinces_to_highlight = {
+			province_id = 410
+		}
+		trigger = {
+			QIR_preview = yes
+			410 = {
+				owned_by = ROOT
+				development = 40
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				innovativeness = 40
+				OR = {
+					monthly_adm = 12
+					monthly_dip = 12
+					monthly_mil = 12
+				}
+				
+				is_ahead_of_time_in_tech = { type = any }
+			}
+			else = {
+				OR = {
+					monthly_adm = 14
+					monthly_dip = 14
+					monthly_mil = 14
+				}
+				has_adm_advisor_3 = yes
+				has_dip_advisor_3 = yes
+				has_mil_advisor_3 = yes
+			}
+		}
+		effect = {
+			410 = {
+				add_or_upgrade_university_building = yes
+			}
+			
+			custom_tooltip = " "
+			
+			ME_technology_split_120_power = yes 
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = GRA_astronomer
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}		 
+		}
+	}
+	
+	# QIR_monuments_of_mesopotamia = {
+		# icon = anatolian_frontier
+		# required_missions = { QIR_house_of_wisdom }
+		# position = 15
+		# provinces_to_highlight = {
+		# }
+		# trigger = {
+			# QIR_preview = yes
+		# }
+		# effect = {
+		# }
+	# }
+	
+	QIR_farm_estate = {
+		icon = mission_pol_breadbasket_europe
+		required_missions = { QIR_clan_support }
+		position = 16
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = wine
+			}
+			NOT = { has_building = farm_estate }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_owned_provinces_with = {
+				has_building = farm_estate
+				development = 20 
+				value = 10
+			}
+			
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_manor_culture
+				duration = 10950 
+			}
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = QIR_distribute_10_base_prod
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								trade_goods = wool
+							}
+							add_base_production = 1
+						}
+					"
+				}
+			}
+		}
+	}
+	
+	QIR_totem_animal = {
+		icon = mission_rb_conquer_wales
+		required_missions = { }
+		position = 17
+		provinces_to_highlight = {
+			trade_goods = wool
+			owned_by = ROOT 
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 150
+				trade_goods = wool
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_turkic_tribes
+				}
+				add_mercantilism = 3
+				
+				custom_tooltip = " "
+				
+				custom_tooltip = QIR_enable_new_privilege
+				tooltip = {
+					add_province_modifier = {
+						name = QIR_tribal_herding_rights
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_mercantilism = 5 
+				custom_tooltip = " "
+			}
+			
+			set_country_flag = QIR_tribal_herding_rights_flag
+			
+			custom_tooltip = QIR_developing_wool_provinces
+			set_country_flag = QIR_developing_wool_provinces_flag
+		}
+	}
+	
+	QIR_weaving_new_culture = {
+		icon = mission_gujarati_textiles
+		required_missions = { QIR_totem_animal }
+		position = 19
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = cloth
+			OR = {
+				NOT = { development = 21 }
+				NOT = { has_production_building_trigger = yes }
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_owned_provinces_with = {
+				trade_goods = cloth
+				development = 21 
+				has_production_building_trigger = yes
+				
+				value = 7
+			}
+		}
+		effect = {
+			country_event = { id = ME_Qir_Qoyunlu_Events.1 } #Wool. Better price.
+			
+			tooltip = {
+				change_price = {
+					trade_goods = wool
+					key = QIR_a_new_weaving_culture
+					value = 0.25
+					duration = -1
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = QIR_3_most_developed
+			country_event = { id = ME_Qir_Qoyunlu_Events.2 days = 15 }
+			
+			custom_tooltip = " "
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 20
+				trigger = {
+					trade_goods = cloth
+				}
+				custom_tooltip = QIR_prod_from_cloth
+			}
+		}
+	}
+}
+
+QIR_missions_4_sedentary = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_sedentary
+	}
+	has_country_shield = yes
+	
+	QIR_expand_persian_dominion = {
+		icon = mission_el_badi_palace
+		required_missions = { QAR_persia AKK_persia }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = mogostan_area
+				area = kerman_area
+				area = sistan_area
+				area = birjand_area
+				area = mashhad_area
+				area = herat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = mogostan_area
+					area = kerman_area
+					area = sistan_area
+					area = birjand_area
+					area = mashhad_area
+					area = herat_area
+				}
+				value = 18
+			}
+		}
+		effect = {
+			ME_give_claims = { area = ghor_area }
+			ME_give_claims = { area = kabulistan_area }
+			ME_give_claims = { area = balkh_area }
+			ME_give_claims = { area = merv_area }
+			ME_give_claims = { area = transoxiana_area }
+			ME_give_claims = { area = termez_area }
+			ME_give_claims = { id = 438 }
+			ME_give_claims = { id = 437 }
+			ME_give_claims = { id = 2349 }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_further_our_conquests
+				duration = 9125
+			}
+		}
+	}
+
+	QIR_riches_of_persia = {
+		icon = mission_entrepot_of_india
+		required_missions = { QIR_persian_gulf_trade QIR_greater_iran }
+		position = 13
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = silk
+			NOT = { has_production_building_trigger = yes }
+		}
+		trigger = {
+			QIR_preview = yes
+			monthly_income = 100
+			num_of_owned_provinces_with = {
+				trade_goods = silk
+				has_production_building_trigger = yes
+				value = 10
+			}
+		}
+		effect = {
+			#trade steering buff until the end of age of discovery
+			add_age_modifier = {
+				name = QIR_trade_steering
+				age = age_of_reformation
+				duration = -1
+			}
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 20
+				trigger = {
+					trade_goods = silk
+				}
+				custom_tooltip = QIR_prod_from_silk
+			}
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+		}
+	}
+	
+	QIR_dissolve_tribal_clans = {
+		icon = mission_patronize_art_and_religion
+		required_missions = { }
+		position = 13
+		provinces_to_highlight = {
+			owned_by = ROOT
+			culture = ROOT 
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_turkic_tribes
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes
+					loyalty = 60
+				}
+				
+				OR = {
+					estate_loyalty = {
+						estate = estate_turkic_tribes
+						loyalty = 70
+					}
+					num_of_estate_agendas_completed = {
+						estate = estate_turkic_tribes
+						value = 2
+					}
+				}
+			}
+			else = {
+				stability = 2
+			}
+			
+			OR = {
+				has_dip_advisor_3 = yes
+				custom_trigger_tooltip = {
+					tooltip = QIR_developed_primary_culture
+					check_variable = {
+						which = Qir_num_of_times_developed_primary_culture
+						value = 10
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_turkic_tribes
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_unlock_sedentary_tribes
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_unlock_sedentary_tribes_tt
+			
+			custom_tooltip = QIR_distribute_5_0_5_in_primary_culture
+			
+			hidden_effect = {
+				for = {
+					amount = 5
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = ROOT
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+				for = {
+					amount = 5
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = ROOT
+							}
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+		}
+	}
+	
+	QIR_clan_support = {
+		icon = mission_friends_or_enemies
+		required_missions = { QIR_dissolve_tribal_clans }
+		position = 15
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				NOT = { has_tax_building_trigger = yes }
+				NOT = { has_production_building_trigger = yes }
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			has_adm_advisor_3 = yes
+		
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 15
+			}
+			
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 25
+			}
+		}
+		effect = {
+			custom_tooltip = QIR_10_development_cost_in_primary_culture
+			set_country_flag = QIR_10_development_cost_in_primary_culture_Flag
+			
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = ROOT
+					}
+					add_province_modifier = {
+						name = QIR_primary_culture
+						duration = -1
+					}
+				}
+			}
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_settling
+				duration = -1
+			}
+		}
+	}
+	
+	QIR_settle_new_territories = {
+		icon = mission_conquer_sindh_dlh
+		required_missions = { QIR_clan_support }
+		position = 17
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { 
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = QIR_10_culture_converted_provinces
+				check_variable = {
+					which = num_of_culture_converted_provinces
+					value = 10
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = QIR_culture_conversion_grants_5_tribal_allegiance
+			set_country_flag = QIR_culture_conversion_grants_5_tribal_allegiance_flag
+			
+			custom_tooltip = QIR_distribute_10_5_5_in_primary_culture
+			
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = ROOT
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+				for = {
+					amount = 5
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = ROOT
+							}
+							add_base_production = 1
+						}
+					"
+				}
+				for = {
+					amount = 5
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = ROOT
+							}
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+		}
+	}
+	
+	QIR_standing_army = {
+		icon = mission_levantine_restoration
+		required_missions = { }
+		position = 18
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			OR = {
+				AND = {
+					army_size = 40
+					army_size_percentage = 0.75
+				}
+				army_size_percentage = 0.9
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_gain_3_tribal_allegiance_for_every_manpower_building
+				custom_tooltip = " "
+				
+				hidden_effect = {
+					if = {
+						limit = {
+							num_of_owned_provinces_with = {
+								has_manpower_building_trigger = yes
+								value = 15
+							}
+						}
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 45
+						}
+					}
+					else = {
+						every_owned_province = {
+							limit = {
+								has_manpower_building_trigger = yes
+							}
+							ROOT = {
+								add_government_power = {
+									mechanic_type = tribal_federation_mechanic
+									power_type = tribal_allegiance
+									value = 3
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				add_yearly_manpower = 1
+				custom_tooltip = " "
+			}
+			
+			add_country_modifier = {
+				name = QIR_standing_army_modifier
+				duration = 5475
+			}
+		}
+	}
+	
+	QIR_elite_cossacks = {
+		icon = jageillonian_union
+		required_missions = { QIR_standing_army }
+		position = 19
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_cossacks = 10
+			}
+			
+			else = {
+				army_tradition = 40
+			}
+			is_ahead_of_time_in_specific_tech = { type = mil }
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				add_country_modifier = {
+					name = QIR_elite_cossacks_modifier
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = QIR_elite_cossacks_modifier_no_Dlc
+					duration = 10950
+				}
+			}
+		}	
+	}
+}
+
+QIR_missions_5_sedentary = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_sedentary
+	}
+	has_country_shield = yes
+
+	QIR_muscat = {
+		icon = mission_arabian_ports
+		required_missions = { AKK_into_arabia QAR_expand_into_arabia }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = mascat_area
+				area = oman_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			mascat_area = {	
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oman_area = {	
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+		
+			custom_tooltip = " "
+			
+			ME_add_years_of_trade_income = { years = 2 }
+			
+			custom_tooltip = " "
+			
+			400 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = QIR_oman
+				}
+			}
+		}
+	}
+	
+	QIR_persian_gulf_trade = {
+		icon = mission_bengal_entrepot
+		required_missions = { QIR_expand_persian_dominion QIR_muscat }
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+				area = makran_area
+				area = mogostan_area
+				area = mascat_area
+				area = oman_area
+				area = pirate_coast_area
+				area = persian_gulf_coast
+				area = farsistan_area
+				area = kerman_area
+			}
+			# NOT = { MAM_upgrade_cot_and_trade_building = yes }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			custom_trigger_tooltip = {
+				tooltip = MAM_highlighted_provinces_have_stuff
+				makran_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				mogostan_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				mascat_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				oman_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				pirate_coast_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				persian_gulf_coast = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				farsistan_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+				kerman_area = {
+					type = all
+					MAM_upgrade_cot_and_trade_building = yes
+				}
+			}
+		}
+		effect = {
+			#highest trade power COT gets a buff
+			
+			custom_tooltip = QIR_most_developed_COT
+			tooltip = {
+				add_permanent_province_modifier = {
+					name = QIR_gates_of_mesopotamia
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				pick_best_provinces = {
+					1 = yes
+					global_trigger = "
+						OR = {
+							area = makran_area
+							area = mogostan_area
+							area = mascat_area
+							area = oman_area
+							area = pirate_coast_area
+							area = persian_gulf_coast
+							area = farsistan_area
+							area = kerman_area
+						}
+					"
+					scope = every_province
+					scale = higher_development_than
+					event_target_name = Qir_Target
+				}
+				event_target:Qir_Target_1 = {
+					add_permanent_province_modifier = {
+						name = QIR_gates_of_mesopotamia
+						duration = -1
+					}
+				}
+			}
+			
+			#all provinces in the highlighted get 10% goods produced for 20 years cuz why not
+			custom_tooltip = QIR_every_province_in_highlighted_area
+			tooltip = {
+				add_province_modifier = {
+					name = QIR_gems_and_dates
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = makran_area
+							area = mogostan_area
+							area = mascat_area
+							area = oman_area
+							area = pirate_coast_area
+							area = persian_gulf_coast
+							area = farsistan_area
+							area = kerman_area
+						}
+						province_has_center_of_trade_of_level = 1
+					}
+					add_province_modifier = {
+						name = QIR_gems_and_dates
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+
+	
+	# QIR_development_cost = {
+		# icon = anatolian_frontier
+		# required_missions = { QIR_dissolve_tribal_clans }
+		# position = 15
+		# provinces_to_highlight = {
+		# }
+		# trigger = {
+			# QIR_preview = yes
+		# }
+		# effect = {
+		# }
+	# }
+	
+	QIR_new_government_reform = {
+		icon = mission_deccanis
+		required_missions = { QIR_clan_support }
+		position = 16
+		provinces_to_highlight = {
+			owned_by = ROOT
+			local_autonomy_above_min = 10
+		}
+		trigger = {
+			QIR_preview = yes
+			reform_level = 5
+			has_adm_advisor_3 = yes
+			num_accepted_cultures = 3
+			NOT = { average_autonomy_above_min = 10 }
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_unlock_stability_cost_decision
+				
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_stability_decision_flag
+			
+			add_country_modifier = {
+				name = QIR_new_cabinet
+				duration = 10950
+			}
+			
+			add_adm_power = 100
+		}
+	}
+	
+	QIR_urbanization = {
+		icon = mission_guilds_of_barcelona
+		required_missions = { QIR_new_government_reform QIR_settle_new_territories }
+		position = 18
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_owned_provinces_with = {
+				development = 30
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				value = 7
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_urbanization_decision
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_urbanization_decision_flag
+			
+			add_country_modifier = {
+				name = QIR_power_in_the_cities
+				duration = -1
+			}
+			
+			set_country_flag = AYY_peace_flag
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				custom_tooltip = AYY_peace
+			}
+		}
+	}
+	
+	QIR_artillery = {
+		icon = mission_gunpowder_warfare
+		required_missions = { QIR_standing_army }
+		position = 19
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			is_ahead_of_time_in_specific_tech = { type = mil }
+			
+			num_of_artillery = 25
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_cool_artillery
+				duration = 9125
+			}
+			
+			create_general_with_pips = {
+				add_fire = 1
+				add_siege = 2 
+				tradition = 60
+			}
+		}
+	}
+	
+	QIR_expand_military = {
+		icon = mission_abu_saids_dream
+		required_missions = { QIR_artillery QIR_elite_cossacks }
+		position = 20
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+			}
+			
+			army_size = 160
+			army_tradition = 60
+			
+			is_ahead_of_time_in_specific_tech = { type = mil }
+			
+			has_mil_advisor_3 = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				custom_tooltip = QIR_gain_5_tribal_allegiance_for_every_forcelimit_building
+				custom_tooltip = " "
+				
+				hidden_effect = {
+					if = {
+						limit = {
+							num_of_owned_provinces_with = {
+								has_forcelimit_building_trigger = yes
+								value = 15
+							}
+						}
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 75
+						}
+					}
+					else = {
+						every_owned_province = {
+							limit = {
+								has_forcelimit_building_trigger = yes
+							}
+							ROOT = {
+								add_government_power = {
+									mechanic_type = tribal_federation_mechanic
+									power_type = tribal_allegiance
+									value = 5
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				add_yearly_manpower = 1
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				add_country_modifier = {
+					name = QIR_cossacks
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = QIR_small_yet_substantial_mil_buff
+					duration = -1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_army_professionalism = 0.2
+			}
+			else = {
+				define_advisor = {
+					type = commandant
+					skill = 3
+					cost_multiplier = 0.2
+				}
+			}
+		}
+	}
+}
+
+QIR_missions_1_tribal = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_tribal
+	}
+	has_country_shield = yes
+
+	QIR_reach_the_white_sea = {
+		icon = mission_retake_ceuta
+		required_missions = { }
+		required_missions = { AKK_anatolia QAR_anatolia }
+		position = 11
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = anatolia_region
+				value = 30
+			}
+			aydin_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_port = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_blow_to_the_ottoman_empire
+				duration = 10950
+			}
+			
+			ME_add_power_projection = { amount = 10 }
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = thrace_area }
+			
+		}
+	}
+	
+	QIR_plunder_constantinople = {
+		icon = mission_city_of_the_world's_desire
+		required_missions = { QIR_reach_the_white_sea }
+		position = 13
+		provinces_to_highlight = {
+			province_id = 151
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			151 = { owned_by = ROOT }
+		}
+		effect = {
+			country_event = { id = ME_Qir_Qoyunlu_Events.11 } #fate of constantinople
+		}
+	}
+	
+	QIR_raze = {
+		icon = mission_fire_of_london
+		required_missions = { QIR_wind_of_change }
+		position = 15
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_battles_won = { amount = 100 }
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_provinces_razed = { amount = 20 }
+			}
+		}
+		effect = {
+			# sacking cities gives PP now
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = QIR_exploiting_dev_now_will_give_2.5_tribal_allegiance
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_exploit_dev
+			
+			add_country_modifier = {
+				name = QIR_amount_of_loot
+				duration = -1
+			}
+		}
+	}
+	
+	QIR_raze_2 = {
+		icon = mission_steppe_warriors
+		required_missions = { QIR_raze }
+		position = 17
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_battles_won = { amount = 300 }
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_provinces_razed = { amount = 100 }
+			}
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = QIR_amount_of_loot_2
+					duration = -1
+				}
+				remove_country_modifier = QIR_amount_of_loot
+			}
+			
+			custom_tooltip = QIR_modify_rhyton
+			
+			custom_tooltip = " "
+				
+			add_years_of_income = 2
+			
+			custom_tooltip = " "
+			
+			ME_add_power_projection = { amount = 10 }
+		}
+	}
+}
+
+QIR_missions_2_tribal = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_tribal
+	}
+	has_country_shield = yes
+
+	QIR_pierce_into_egypt = {
+		icon = mission_claim_hispaniola
+		required_missions = { AKK_syria QAR_syria }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = palestine_area
+				area = trans_jordan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = palestine_area
+					area = trans_jordan_area
+				}
+				value = 5
+			}
+		}
+		effect = {
+			ME_give_claims = { region = egypt_region }
+			ME_give_claims = { area = tabuk_area }
+			ME_give_claims = { area = medina_area }
+			ME_give_claims = { area = mecca_area }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_ferocious_push_south
+				duration = 7300
+			}
+		}
+	}
+	
+	QIR_conquer_egypt = {
+		icon = mission_egyptian_mamluk_soldier
+		required_missions = { QIR_pierce_into_egypt }
+		position = 11
+		provinces_to_highlight = {
+			region = egypt_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = egypt_region
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_egypt_conquest
+				duration = -1
+			}
+			
+			custom_tooltip = " "
+			
+			add_army_tradition_or_mil_power = { amount = 10 }
+		}
+	}
+	
+	QIR_extract_balkan_tribute = {
+		icon = tame_the_magnates
+		required_missions = { QIR_reach_the_white_sea }
+		position = 12 
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			OR = {
+				num_of_owned_provinces_with = {
+					region = balkan_region
+					has_province_modifier = province_razed 
+					value = 5
+				}
+				any_ally = {
+					capital_scope = {
+						region = balkan_region
+					}
+				}
+				any_subject_country = {
+					capital_scope = {
+						region = balkan_region
+					}
+				}
+				num_of_owned_provinces_with = {
+					region = balkan_region
+					value = 30
+				}
+			}
+		}
+		effect = {
+			#if done via razing, diff reward
+			#if done by war, diff reward
+			#if done by alliances/subjugation diff reward
+			custom_tooltip = QIR_reward_if_done_via_razing
+			tooltip = {
+				add_mil_power = 100
+				custom_tooltip = QIR_get_6_months_of_income
+			}
+			custom_tooltip = QIR_reward_if_done_via_alliance_or_subject
+			tooltip = {
+				add_dip_power = 100
+				custom_tooltip = QIR_get_3_months_of_income_per_ally
+			}
+			custom_tooltip = QIR_reward_if_done_via_conquest
+			tooltip = {
+				add_adm_power = 100
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 35
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							region = balkan_region
+							has_province_modifier = province_razed 
+							value = 5
+						}
+					}
+					add_years_of_income = 0.5
+				}
+				else_if = {
+					limit = {
+						OR = {
+							any_ally = {
+								capital_scope = {
+									region = balkan_region
+								}
+							}
+							any_subject_country = {
+								capital_scope = {
+									region = balkan_region
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							calc_true_if = {
+								all_ally = {
+									capital_scope = {
+										region = balkan_region
+									}
+								}
+								all_subject_country = {
+									capital_scope = {
+										region = balkan_region
+									}
+								}
+								amount = 4
+							}
+						}
+						add_years_of_income = 1
+					}
+					else = {
+						every_ally = {
+							limit = {
+								capital_scope = { region = balkan_region }
+							}
+							ROOT = { add_years_of_income = 0.25 }
+						}
+						every_subject_country = {
+							limit = {
+								capital_scope = { region = balkan_region }
+							}
+							ROOT = { add_years_of_income = 0.25 }
+						}
+					}
+				}
+				else = {
+					add_adm_power = 100
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 35
+					}
+				}
+			}
+		}
+	}
+	
+	QIR_wind_of_change = {
+		icon = mission_conquer_air
+		required_missions = { }
+		position = 14
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			if = {
+				limit = {
+					has_reform = ME_tribal_federation_steppe_horde
+					has_dlc = "The Cossacks"
+				}
+				horde_unity = 60
+			}
+			else = {
+				legitimacy_equivalent = 60
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = QIR_special_priv_for_horde_unity
+				
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_special_priv_for_horde_unity_flag
+			
+			change_government_reform_progress = 100
+		}
+	}
+	
+	QIR_demand_oaths_of_loyalty = {
+		icon = mission_abu_saids_dream
+		required_missions = { QIR_wind_of_change QIR_raze }
+		position = 16
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			if = {
+				limit = {
+					has_reform = ME_tribal_federation_steppe_horde
+					has_dlc = "The Cossacks"
+				}
+				horde_unity = 90
+			}
+			else = {
+				legitimacy_equivalent = 95
+			}
+			
+			if = {
+				limit = {
+					ME_tribal_federation_trigger = yes 
+				}
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 90
+				}
+			}
+			
+			if = {
+				limit = {
+					has_estate = estate_turkic_tribes
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes
+					loyalty = 75
+				}
+			}
+			else_if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 75
+				}
+			}
+			else = { }
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_loyal_tribes
+				duration = -1
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = QIR_privilege_for_cavalry_related_stuff
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_privilege_for_cavalry_related_stuff_flag
+			add_mil_power = 75
+		}
+	}
+	
+	QIR_horde = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { QIR_demand_oaths_of_loyalty QIR_raze_2 }
+		position = 18 
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_battles_won = { amount = 500 }
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_provinces_razed = { amount = 300 }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = QIR_privilege_for_expansion
+				custom_tooltip = " "
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 25
+				}
+				custom_tooltip = " "
+			}
+			set_country_flag = QIR_privilege_for_expansion_flag
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				custom_tooltip = RUM_conqueror_personality
+		
+				custom_tooltip = " "
+			}
+			set_country_flag = RUM_conqueror_personality_flag
+			
+			create_general_with_pips = {
+				add_shock = 3
+				tradition = 80
+			}
+			
+			custom_tooltip = " "
+			
+			add_army_tradition_or_mil_power = { amount = 20 }
+		}
+	}
+}
+
+QIR_missions_3_tribal = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_tribal
+	}
+	has_country_shield = yes
+
+	QIR_caucasus = {
+		icon = alpine_fortifications
+		required_missions = { AKK_northern_turkomans QAR_ardabil }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = caucasia_region
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					OR = {
+						province_id = 422
+						province_id = 4306
+					}
+					NOT = { fort_level = 2 }
+				}
+			}
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			caucasia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			422 = {
+				fort_level = 2
+			}
+			
+			4306 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_masters_of_the_mountains
+				duration = -1
+			}
+			
+			422 = {
+				add_or_upgrade_fort_building = yes
+			}
+			
+			4306 = {
+				add_or_upgrade_fort_building = yes
+			}
+		}
+	}
+	
+	QIR_holy_cities = {
+		icon = mission_into_arabia
+		required_missions = { QIR_pierce_into_egypt }
+		position = 11  
+		provinces_to_highlight = {
+			OR = {
+				area = tabuk_area
+				area = medina_area
+				area = mecca_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = tabuk_area
+					area = medina_area
+					area = mecca_area
+				}
+				value = 6
+			}
+		}
+		effect = {
+			country_event = { id = ME_Qir_Qoyunlu_Events.12 }
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 20
+				}
+			}
+			else = {
+				add_adm_power = 75
+			}
+		}
+	}
+	
+	QIR_turkic_khaganate = {
+		icon = mission_subdue_rajputana
+		required_missions = { QIR_greater_iran_tribal }
+		position = 13
+		provinces_to_highlight = {
+			region = central_asia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = central_asia_region
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_khaganate
+				duration = -1
+			}
+			
+			QIR_give_legitimacy_or_tribal_allegiance = {
+				t_amount = 30
+				l_amount = 15
+			}
+		}
+	}
+	
+	QIR_soldier_households = {
+		icon = mission_bijapur_karnatak
+		required_missions = { QIR_recruit_from_the_tribes }
+		position = 16
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = soldier_households }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			soldier_households = 5
+		}
+		effect = {
+			custom_tooltip = QIR_5_most_developed_provinces_with_soldiers
+			tooltip = {
+				add_province_modifier = {
+					name = QIR_no_slot
+					duration = -1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				custom_tooltip = QIR_if_they_have_defensive_edict
+				tooltip = {
+					add_province_modifier = {
+						name = QIR_free_fort
+						duration = 36500
+					}
+				}
+			}
+			
+			hidden_effect = {
+				pick_best_provinces = {
+					5 = yes
+					scope = every_owned_province
+					scale = higher_development_than
+					global_trigger = "
+						has_building = soldier_households
+					"
+					event_target_name = "Qir_Target"
+				}
+				event_target:Qir_Target_1 = {
+					add_province_modifier = {
+						name = QIR_no_slot
+						duration = -1
+					}
+					if = {
+						limit = {
+							has_state_edict = edict_defensive_edict
+						}
+						add_province_modifier = {
+							name = QIR_free_fort
+							duration = 36500
+						}
+					}
+				}
+				
+				event_target:Qir_Target_2 = {
+					add_province_modifier = {
+						name = QIR_no_slot
+						duration = -1
+					}
+					if = {
+						limit = {
+							has_state_edict = edict_defensive_edict
+						}
+						add_province_modifier = {
+							name = QIR_free_fort
+							duration = 36500
+						}
+					}
+				}
+				
+				event_target:Qir_Target_3 = {
+					add_province_modifier = {
+						name = QIR_no_slot
+						duration = -1
+					}
+					if = {
+						limit = {
+							has_state_edict = edict_defensive_edict
+						}
+						add_province_modifier = {
+							name = QIR_free_fort
+							duration = 36500
+						}
+					}
+				}
+				
+				event_target:Qir_Target_4 = {
+					add_province_modifier = {
+						name = QIR_no_slot
+						duration = -1
+					}
+					if = {
+						limit = {
+							has_state_edict = edict_defensive_edict
+						}
+						add_province_modifier = {
+							name = QIR_free_fort
+							duration = 36500
+						}
+					}
+				}
+				
+				event_target:Qir_Target_5 = {
+					add_province_modifier = {
+						name = QIR_no_slot
+						duration = -1
+					}
+					if = {
+						limit = {
+							has_state_edict = edict_defensive_edict
+						}
+						add_province_modifier = {
+							name = QIR_free_fort
+							duration = 36500
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+QIR_missions_4_tribal = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_tribal
+	}
+	has_country_shield = yes
+
+	QIR_masshad = {
+		icon = mission_into_persia_2
+		required_missions = { QAR_persia AKK_persia }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = mogostan_area
+				area = kerman_area
+				area = sistan_area
+				area = birjand_area
+				area = mashhad_area
+				area = herat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = mogostan_area
+					area = kerman_area
+					area = sistan_area
+					area = birjand_area
+					area = mashhad_area
+					area = herat_area
+				}
+				value = 18
+			}
+		}
+		effect = {
+			ME_give_claims = { area = ghor_area }
+			ME_give_claims = { area = kabulistan_area }
+			ME_give_claims = { area = balkh_area }
+			ME_give_claims = { area = merv_area }
+			ME_give_claims = { area = transoxiana_area }
+			ME_give_claims = { area = termez_area }
+			ME_give_claims = { id = 438 }
+			ME_give_claims = { id = 437 }
+			ME_give_claims = { id = 2349 }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_expansion_into_eastern_persia
+				duration = 10950
+			}
+		}
+	}
+	
+	QIR_greater_iran_tribal = {
+		icon = mission_dominate_persian_gulf
+		required_missions = { QIR_masshad }
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+				area = merv_area
+				area = transoxiana_area
+				area = termez_area
+				province_id = 438
+				province_id = 437
+				province_id = 2349
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = ghor_area
+					area = kabulistan_area
+					area = balkh_area
+					area = merv_area
+					area = transoxiana_area
+					area = termez_area
+					province_id = 438
+					province_id = 437
+					province_id = 2349
+				}
+				value = 20
+			}
+		}
+		effect = {
+			create_general_with_pips = {
+				add_siege = 1
+				tradition = 50
+			}
+			
+			custom_tooltip = " "
+			
+			add_army_tradition_or_mil_power = { amount = 15 }
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { region = central_asia_region }
+			ME_give_claims = { area = sind_sagar_area }
+			ME_give_claims = { area = lahore_area }
+			ME_give_claims = { area = multan_area }
+			ME_give_claims = { area = sindh_area }
+			ME_give_claims = { area = northern_sindh_area }
+			ME_give_claims = { area = kalat_area }
+			ME_give_claims = { area = makran_area }
+		}
+	}
+	
+	QIR_plunder_india = {
+		icon = mission_crush_delhi
+		required_missions = { QIR_greater_iran_tribal }
+		position = 14
+		provinces_to_highlight = {
+			OR = {
+				area = sind_sagar_area
+				area = lahore_area
+				area = multan_area
+				area = sindh_area
+				area = northern_sindh_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = sind_sagar_area
+					area = lahore_area
+					area = multan_area
+					area = sindh_area
+					area = northern_sindh_area
+				}
+				value = 15
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			
+			custom_tooltip = " "
+			
+			ME_add_power_projection = { amount = 20 }
+		}
+	}
+	
+	QIR_recruit_from_the_tribes = {
+		icon = mission_conquer_sindh_mer
+		required_missions = { }
+		position = 15
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			OR = {
+				manpower_percentage = 0.5
+				manpower = 100
+			}
+			
+			if = {
+				limit = {
+					has_estate = estate_turkic_tribes
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes
+					loyalty = 65
+				}
+			}
+			
+			num_of_owned_provinces_with = {
+				culture = ROOT
+				has_manpower_building_trigger = yes
+				value = 8
+			}
+		}
+		effect = {
+			custom_tooltip = QIR_upgrade_recruit_from_the_tribes_estate_priv
+			set_country_flag = QIR_upgrade_recruit_from_the_tribes_estate_priv_flag
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = QIR_if_i_have_recruitmaster
+			tooltip = {
+				add_country_modifier = {
+					name = QIR_dynamic_recruitment
+					duration = 5475
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						recruitmaster = 1
+					}
+					add_country_modifier = {
+						name = QIR_dynamic_recruitment
+						duration = 5475
+					}
+				}
+			}
+		}
+	}
+	
+	QIR_selective_horsebreeding = {
+		icon = mission_abu_saids_dream
+		required_missions = { QIR_recruit_from_the_tribes }
+		position = 17 
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			num_of_cavalry = 60
+			
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_yet_another_cavalry_buff
+				duration = -1
+			}
+			
+			add_army_tradition_or_mil_power = { amount = 20 }
+		}
+	}
+}
+
+QIR_missions_5_tribal = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {	
+		tag = TRK
+		has_country_flag = QIR_tribal
+	}
+	has_country_shield = yes
+
+	QIR_subdue_inner_tribes = {
+		icon = mission_arabian_fort
+		required_missions = { AKK_into_arabia QAR_expand_into_arabia }
+		position = 12 
+		provinces_to_highlight = {
+			OR = {
+				area = yamamah_area
+				area = nafud_area
+				area = qasim_area
+				area = mascat_area
+				area = oman_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = yamamah_area
+					area = nafud_area
+					area = qasim_area
+					area = mascat_area
+					area = oman_area
+				}
+				value = 15
+			}
+		}
+		effect = {
+			QIR_give_legitimacy_or_tribal_allegiance = {
+				t_amount = 25
+				l_amount = 20
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_tribute_from_arabia
+				duration = 5475
+			}
+		}
+	}
+	
+	QIR_baluchistan = {
+		icon = mission_conquer_timbuktu
+		required_missions = { QIR_greater_iran_tribal }
+		position = 13 
+		provinces_to_highlight = {
+			OR = {
+				area = makran_area
+				area = kalat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			makran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QIR_baluchistan_modifier
+				duration = 9125
+			}
+			
+			makran_area = {
+				add_nationalism = -15
+			}
+			kalat_area = {
+				add_nationalism = -15
+			}
+		}
+	}
+	
+	QIR_tribal_register = {
+		icon = mission_conquer_maharashtra
+		required_missions = { QIR_recruit_from_the_tribes }
+		position = 16 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { base_manpower = 7 }
+		}
+		trigger = {
+			QIR_preview = yes
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_cossacks = 10
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					base_manpower = 7
+					value = 10
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				custom_tooltip = QIR_upgrade_the_decision_to_have_75_units
+				set_country_flag = QIR_75_units
+				
+				custom_tooltip = " "
+				
+				add_mil_power = 100
+			}
+			else = {
+				add_country_modifier = {
+					name = QIR_tribal_register_modifier
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	QIR_military_mission = {
+		icon = mission_new_army
+		required_missions = { QIR_selective_horsebreeding QIR_tribal_register }
+		position = 18 
+		provinces_to_highlight = {
+		}
+		trigger = {
+			QIR_preview = yes
+			
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_cossacks = 10
+			}
+			else = {
+				num_of_cavalry = 150
+			}
+			
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+			}
+			
+			army_size = 300
+			total_development = 1500
+			
+			is_ahead_of_time_in_specific_tech = { type = mil }
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				add_country_modifier = {
+					name = QIR_resilience
+					duration = -1
+				}
+			}
+			
+			add_age_modifier = {
+				name = QIR_power
+				duration = -1
+				age = age_of_reformation #short if you can manage it
+			}
+			
+			custom_tooltip = QIR_if_we_have_turkic_tribes_loyalty
+			tooltip = {
+				if = {
+					limit = {
+						has_dlc = "Cradle of Civilization"
+					}
+					add_army_professionalism = 0.05
+				}
+				else = {
+					add_yearly_manpower = 0.5
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						has_estate = estate_turkic_tribes
+						estate_loyalty = {
+							estate = estate_turkic_tribes
+							loyalty = 70
+						}
+					}
+					if = {
+						limit = {
+							has_dlc = "Cradle of Civilization"
+						}
+						add_army_professionalism = 0.05
+					}
+					else = {
+						add_yearly_manpower = 0.5
+					}
+				}
+			}
+		}
+	}
+}

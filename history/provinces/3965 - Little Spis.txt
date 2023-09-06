@@ -1,0 +1,99 @@
+#3965 - Little Spis - Starostwo Spiskie
+
+
+owner = HUN
+controller = HUN  
+culture = slovak	#60% slovak and polish, 35% german, 5% rusyn and other
+religion = catholic
+capital = "Stara Lubovna"
+trade_goods = wool	#Literally few mountainous villages
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1 
+is_city = yes
+add_core = HUN
+add_core = UHU
+add_core = SLO
+
+#1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+
+1412.11.8 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+} #Pact of Zagreb - province becomes part of Poland as part of loan agreement
+1489.1.1 = {
+	remove_core = HUN
+} #Papal decree to keep the land in Poland for indefined time
+1569.7.1 = {
+	owner = PLC
+	controller = PLC
+	remove_core = POL
+	add_core = PLC
+} # Union of Lublin
+1588.1.1 = { revolt = { type = revolutionary_rebels size = 3 } controller = REB } # Civil war, Polish succession
+1589.1.1 = { revolt = {} controller = PLC } # Coronation of Sigismund III
+1733.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The war of Polish succession
+1735.1.1 = { revolt = {} controller = PLC }
+1769.6.1 = {
+	unrest = 5
+	controller = HAB
+	add_core = HAB
+} #Locals ask Austria for help defending against Bar confederation, Austrians occupy region instead
+1772.8.5 = { 
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	add_core = HUN
+	unrest = 0
+} #First partition
+1773.9.18 = {
+	remove_core = PLC
+} # Sejm renounces claims to lost lands
+1867.3.30 = {
+	owner = AHE
+	controller = AHE
+	add_core = AHE
+	remove_core = AHE
+} # Austria-Hungary is formed
+1914.8.15 = {
+	controller = RUS
+} #WW1
+1915.6.1 = {
+	controller = AHE
+}

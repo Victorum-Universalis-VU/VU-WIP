@@ -1,0 +1,1381 @@
+AKK_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = AKK
+			AND = {
+				was_tag = AKK
+				tag = TRK
+			}
+		}
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+
+	AKK_patron_of_poets = {
+		icon = mission_vedic_education
+		required_missions = { AKK_diwan_of_aq_qoyunlu }
+		position = 2
+		provinces_to_highlight = {
+		}
+		trigger = {
+			calc_true_if = {
+				AND = {
+					artist = 2
+					has_estate_privilege = estate_burghers_patronage_of_the_arts
+					philosopher = 2
+					prestige = 60
+				}
+				amount = 2
+			}
+		}
+		effect = {
+			custom_tooltip = AKK_patronage_of_arts_buff
+			set_country_flag = AKK_patronage_of_arts_buff_flag
+		
+			define_advisor = {
+				type = artist
+				name = "Ahli Shirazi"
+				skill = 2
+				culture = persian
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+		}
+	}
+	
+	AKK_raise_monuments = {
+		icon = mission_golden_century
+		required_missions = { AKK_patron_of_poets AKK_compiling_history_of_aq }
+		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_dlc = "Leviathan"
+			has_great_project = { type = any tier = 0 }
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				any_owned_province = {
+					has_great_project = { type = any tier = 2 }
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					num_of_buildings_in_province = 3
+					value = 8
+				}
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 25 }
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				add_age_modifier = {
+					name = AKK_builder_of_monuments
+					duration = -1
+					age = age_of_reformation
+					else = "
+						add_stability_or_adm_power = yes
+					"
+				}
+			}
+			else = {
+				add_age_modifier = {
+					name = AKK_builder_of_monuments_no_dlc
+					duration = -1
+					age = age_of_discovery
+					else = "
+						add_stability_or_adm_power = yes
+					"
+				}
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				add_splendor = 250
+			}
+		}
+	}
+	
+	AKK_defeat_dulkadir = {
+		icon = mission_found_havana
+		required_missions = { AKK_deal_with_the_unrest }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4298
+				area = dulkadir_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dulkadir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4298 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			ME_add_power_projection = { amount = 15 }
+			
+			custom_tooltip = " " 
+			
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 20
+				}
+				custom_tooltip = " "
+			}
+			
+			add_country_modifier = {
+				name = AKK_subduing_the_tribes_of_dulkadir
+				duration = 9125
+			}
+			
+			ME_give_claims = { area = rum_area }
+			ME_give_claims = { area = karaman_area }
+			ME_give_claims = { area = cukurova_area }
+			ME_give_claims = { id = 2304 }
+		}
+	}
+	
+	AKK_ottoman_campaign = {
+		icon = mission_ottoman_diplomacy
+		required_missions = { AKK_defeat_dulkadir }
+		position = 8 
+		provinces_to_highlight = {
+			owned_by = TUR
+		}
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = TUR
+					value = 50
+				}
+				TUR = { has_been_insulted_by_root = yes }
+				war_with = TUR
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				custom_tooltip = AKK_unlock_improve_inland_routes_for_turkish_nodes
+				custom_tooltip = " "
+			}
+			set_country_flag = AKK_unlock_improve_inland_routes_for_turkish_nodes_flag
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = AKK_war_is_imminent
+				duration = 10950
+			}
+		}
+	}
+	
+	AKK_anatolia = {
+		icon = anatolian_frontier
+		required_missions = { AKK_ottoman_campaign }
+		position = 10
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = anatolia_region
+				value = 12
+			}
+		}
+		effect = {
+			ME_give_claims = { region = anatolia_region }
+			
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Aq_Qoyunlu_Events.6 }
+			
+			QIR_complete_anatolia_missions = yes
+		}
+	}
+}
+
+AKK_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = AKK
+			AND = {
+				was_tag = AKK
+				tag = TRK
+			}
+		}
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+
+	AKK_diwan_of_aq_qoyunlu = {
+		icon = mission_war_chest
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+		}
+		trigger = {
+			share_of_starting_income = 1.5
+			#ME_pt_feedback_requested = yes
+			
+			OR = {
+				capital_scope = {
+					development = 12
+				}
+				custom_trigger_tooltip = {
+					tooltip = AKK_developed_tax_at_least_3_times
+					check_variable = {
+						which = num_of_adm_clicks
+						value = 3
+					}
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 1.5
+		
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = treasurer
+				name = "Mahmud Jan Daylami"
+				skill = 2
+				cost_multiplier = 0.33
+			}
+		}
+	}
+	
+	AKK_compiling_history_of_aq = {
+		icon = mission_court_education
+		required_missions = { AKK_diwan_of_aq_qoyunlu }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				has_adm_advisor_3 = yes
+				ME_historian = 1
+			}
+		}
+		effect = {
+			add_age_modifier = { 
+				name = AKK_kitab_i_diyarbakriyya
+				duration = -1
+				age = age_of_reformation
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				add_splendor = 200
+			}
+		}
+	}
+	
+	AKK_deal_with_the_unrest = {
+		icon = mission_eliminate_pretenders
+		required_missions = { }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			unrest = 0
+		}
+		trigger = {
+			all_owned_province = {
+				NOT = { unrest = 0 }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = AKK_loyalist_court
+				duration = 7300
+			}
+			
+			add_stability_or_adm_power = yes
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = dulkadir_area }
+			ME_give_claims = { area = aleppo_area }
+			ME_give_claims = { id = 4295 }	
+		}
+	}
+	
+	AKK_into_syria = {
+		icon = mission_levantine_restoration
+		required_missions = { AKK_deal_with_the_unrest AKK_defeat_dulkadir }
+		position = 7
+		provinces_to_highlight = {
+			area = aleppo_area
+			NOT = {
+				OR = {
+					controller = { 
+						OR = {
+							tag = ROOT
+							alliance_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			aleppo_area = {
+				type = all
+				OR = {
+					controller = { 
+						OR = {
+							tag = ROOT
+							alliance_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = ME_Aq_Qoyunlu_Events.4 } #Destabilizing syria, gives us manpower, lower pwsc
+			
+			custom_tooltip = " "
+			
+			tooltip = { add_yearly_manpower = 1 }
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = AKK_reduced_pwsc_of_syria
+			tooltip = {
+				add_province_modifier = {
+					name = AKK_pwsc_syria
+					duration = 5475
+				}
+			}
+			
+			custom_tooltip = AKK_if_syria_is_our_vassal
+			tooltip = {
+				SYR = {
+					add_country_modifier = {
+						name = AKK_reconquest_of_syria
+						duration = 5475
+					}
+					capital_scope = {
+						infantry = SYR
+						infantry = SYR
+						infantry = SYR
+						infantry = SYR
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						SYR = {
+							is_subject_of = ROOT
+						}
+					}
+					SYR = {
+						add_country_modifier = {
+							name = AKK_reconquest_of_syria
+							duration = 5475
+						}
+						capital_scope = {
+							infantry = SYR
+							infantry = SYR
+							infantry = SYR
+							infantry = SYR
+						}
+					}
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = syria_area }
+			ME_give_claims = { area = syrian_desert_area }
+		}
+	}
+	
+	AKK_syria = {
+		icon = mission_pacify_the_berbers
+		required_missions = { AKK_into_syria }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = syrian_desert_area
+				area = aleppo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = syria_area
+					area = syrian_desert_area
+					area = aleppo_area
+				}
+				value = 7
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = QAR_advance_against_mamluks
+				duration = 10950
+			}
+			
+			custom_tooltip = QAR_directly_owned_provinces_in_syria_get
+			hidden_effect = {
+				syria_area = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_local_autonomy = -25
+				}
+				syrian_desert_area = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_local_autonomy = -25
+				}
+				aleppo_area = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_local_autonomy = -25
+				}
+			}	
+		
+			custom_tooltip = QAR_if_we_have_syria_subject
+			hidden_effect = {
+				if = {
+					limit = {
+						SYR = { 
+							is_subject_of = ROOT
+						}
+					}
+					SYR = {
+						add_mil_tech = 1
+					}
+				}
+			}
+		
+			QIR_complete_syria_missions = yes
+		}
+	}
+}
+
+AKK_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = AKK
+			AND = {
+				was_tag = AKK
+				tag = TRK
+			}
+		}
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+
+	AKK_uzun_hasan = {
+		icon = mission_friends_or_enemies
+		required_missions = {  }
+		position = 2
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				is_year = 1457 #when Uzun Hasan became leader irl
+				has_ruler = "Uzun Hasan"
+				#is_heir_leader = yes
+				stability = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = AKK_raids_on_qq_begin
+				duration = 7300
+			}
+			
+			QIR_add_turkic_tribes_loyalty = { amount = 15 }
+		}
+	}
+	
+	AKK_ties_with_trebizond = {
+		icon = mission_into_persia_2
+		required_missions = { AKK_uzun_hasan }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				owned_by = TRE
+				province_id = 330
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			OR = {
+				TRE = {
+					alliance_with = ROOT
+				}
+				TRE = {
+					is_subject_of = ROOT
+				}
+				330 = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			custom_tooltip = QAR_trebizond_conquest
+			tooltip = {
+				if = {
+					limit = {
+						has_dlc = "Cradle of Civilization"
+					}
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 15
+					}
+					custom_tooltip = " "
+				}
+				
+				add_adm_power = 50
+				
+				custom_tooltip = " "
+				
+				330 = { 
+					add_local_autonomy = -25
+					add_nationalism = -10
+				}
+			}
+			custom_tooltip = QAR_trebizond_marriage
+			tooltip = {
+				custom_tooltip = QAR_if_trebizond_grows_no_larger
+				custom_tooltip = " "
+				
+				add_dip_power = 75
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						TRE = {
+							is_subject_of = ROOT
+						}
+					}
+					if = {
+						limit = {
+							has_dlc = "Cradle of Civilization"
+						}
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 15
+						}
+						custom_tooltip = " "
+					}
+					
+					add_adm_power = 50
+					
+					custom_tooltip = " "
+					
+					330 = { 
+						add_local_autonomy = -25
+						add_nationalism = -10
+					}
+				}
+				else_if = {
+					limit = {
+						alliance_with = TRE
+					}
+					
+					custom_tooltip = QAR_if_trebizond_grows_no_larger
+					custom_tooltip = " "
+					set_country_flag = QAR_may_vassalize_trebizond
+					add_dip_power = 75
+				}
+				else = {
+					if = {
+						limit = {
+							has_dlc = "Cradle of Civilization"
+						}
+						add_government_power = {
+							mechanic_type = tribal_federation_mechanic
+							power_type = tribal_allegiance
+							value = 15
+						}
+						custom_tooltip = " "
+					}
+					
+					add_adm_power = 50
+					
+					custom_tooltip = " "
+					
+					330 = { 
+						add_local_autonomy = -25
+						add_nationalism = -10
+					}
+				}
+			}
+		}
+	}
+	
+	AKK_ponts = {
+		icon = mission_retake_ceuta
+		required_missions = { AKK_ties_with_trebizond }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 330
+		}
+		trigger = {
+			330 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = AKK_ponts_company_tt
+			set_country_flag = AKK_ponts_company
+			
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Aq_Qoyunlu_Events.7 } #get accepted pontic or naa
+		}
+	}
+	
+	AKK_ayyubid_remnant = {
+		icon = mission_patronize_art_and_religion
+		required_missions = { AKK_deal_with_the_unrest }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 4295
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			4295 = { owned_by = ROOT }
+		}
+		effect = {
+			country_event = { id = ME_Aq_Qoyunlu_Events.2 }
+			
+			tooltip = {
+				add_country_modifier = {
+					name = AKK_defeated_the_last_remnant
+					duration = 5475
+				}
+			
+				if = {
+					limit = {
+						has_dlc = "Cradle of Civilization"
+					}
+					add_government_power = {
+						mechanic_type = tribal_federation_mechanic
+						power_type = tribal_allegiance
+						value = 25
+					}
+					custom_tooltip = " "
+				}
+				
+				add_prestige_or_monarch_power = { amount = 10 }
+			}
+		}
+	}
+	
+	AKK_georgia = {
+		icon = mission_crusade_for_varna
+		required_missions = { AKK_armenia }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = imereti_area
+				area = samtskhe_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = imereti_area
+					area = samtskhe_area
+				}
+				value = 7
+			}
+		}
+		effect = {
+			ME_add_power_projection = { amount = 10 }
+			
+			custom_tooltip = " "
+			
+			QIR_give_legitimacy_or_tribal_allegiance = {
+				t_amount = 20
+				l_amount = 15
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = AKK_georgian_dissent
+				duration = 9125
+			}
+		}
+	}
+	
+	AKK_northern_turkomans = {
+		icon = mission_into_persia_1
+		required_missions = { AKK_tabriz }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = shirvan_area
+				area = azerbaijan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {	
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = azerbaijan_area
+					area = shirvan_area
+				}
+				value = 7 # 9
+			}
+		}
+		effect = {
+			hidden_effect = {
+				add_country_modifier = {
+					name = AKK_azerbaijani_slot
+					duration = -1
+				}
+			}
+			
+			add_accepted_culture = azerbaijani
+			
+			custom_tooltip = AKK_this_culture_will_not_take_up_a_slot
+			
+			custom_tooltip = " "
+			
+			QIR_give_legitimacy_or_tribal_allegiance = {
+				t_amount = 25
+				l_amount = 10
+			}
+			
+			custom_tooltip = " "
+			
+			add_dip_power = 50 
+			
+			AKK_complete_QAR_ardabil_missions = yes
+		}
+	}
+}
+
+AKK_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = AKK
+			AND = {
+				was_tag = AKK
+				tag = TRK
+			}
+		}
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+
+
+	AKK_horselords = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { AKK_unite_the_tribes }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 418
+		}
+		trigger = {
+			OR = {
+				num_of_cavalry = 30
+				AND = {
+					num_of_cavalry = 10
+					cavalry_fraction = 0.2
+				}
+			}
+			418 = { owned_by = ROOT }
+		}
+		effect = {
+			custom_tooltip = AKK_cavalry_fraction_trig_mod
+			
+			custom_tooltip = " "
+			
+			418 = { add_province_triggered_modifier = AKK_grazing_grounds }
+			set_country_flag = AKK_grazing_grounds_flag
+			
+			custom_tooltip = " "
+			
+			create_general_with_pips = { tradition = 60 add_shock = 1 add_manuever = 2 }
+		}
+	}
+	
+	AKK_oghuz_khan = {
+		icon = mission_abu_saids_dream
+		required_missions = { AKK_horselords AKK_uzun_hasan }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = QAR_has_won_at_least_100_battles
+				check_variable = {
+					which = num_of_battles_won_var
+					value = 100
+				}
+			}
+			#ME_pt_feedback_requested = yes
+			army_tradition = 85
+			if = {
+				limit = {
+					has_government_mechanic = tribal_federation_mechanic
+				}
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 50
+				}
+			}
+		
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				NOT = { great_power_rank = 7 }
+			}
+			else = {
+				total_development = 250
+			}
+		}
+		effect = {
+			custom_tooltip = QAR_distribute_15_manpower_among_our_core_provinces
+			hidden_effect = {
+				for = {
+					amount = 15
+					effect = "
+						random_core_province = {
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = AKK_heirs_of_oghuz_khan
+				duration = -1
+			}
+			
+			add_yearly_manpower = 1
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = QAR_our_tribal_population_will_have_more_respect
+			set_country_flag = QAR_respect_towards_dynasty
+		}
+	}
+	
+	AKK_armenia = {
+		icon = mission_autocephalous_archbishopric
+		required_missions = { AKK_quell_jahan_shah }
+		position = 6
+		provinces_to_highlight = {
+			area = armenia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				area = armenia_area
+				value = 3
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_dhimmi
+				}
+				custom_tooltip = AKK_empower_the_tolerating_armenians_privilege
+				custom_tooltip = " "
+			}
+			else = {
+				add_country_modifier = {
+					name = AKK_conquest_of_armenia_yay
+					duration = 5475
+				}
+			}
+			set_country_flag = AKK_empower_the_tolerating_armenians_privilege_flag
+			hidden_effect = {
+				if = {
+					limit = {
+						has_estate_privilege = ME_estate_dhimmi_AKK_armenians
+					}
+					every_owned_province = {
+						limit = {
+							culture = armenian
+						}
+						add_province_modifier = {
+							name = AKK_upgraded_armenia
+							duration = -1
+						}
+						remove_province_modifier = AKK_non_upgraded_armenia
+					}
+				}
+			}
+			
+			add_country_modifier = {
+				name = AKK_seizing_qara_qoyunlu_north
+				duration = -1
+			}
+			
+			ME_give_claims = { area = imereti_area }
+			ME_give_claims = { area = tabriz_area }
+			ME_give_claims = { area = shirvan_area } 
+		}
+	}
+	
+	AKK_tabriz = {
+		icon = mission_central_asian_city
+		required_missions = { AKK_armenia AKK_advance_into_QQ }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 416
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					area = tabriz_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		trigger = {
+			416 = {
+				owned_by = ROOT
+			}
+			tabriz_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			country_event = { id = ME_Aq_Qoyunlu_Events.5 }
+			
+			hidden_effect = {			
+				country_event = { id = ME_Aq_Qoyunlu_Events.9 days = 30 }
+			}
+			custom_tooltip = " "
+			
+			custom_tooltip = AKK_upgrade_AKK_seizing_qara_qoyunlu_north
+			hidden_effect = {
+				remove_country_modifier = AKK_seizing_qara_qoyunlu_north
+				add_country_modifier = {
+					name = AKK_seizing_qara_qoyunlu_north_2
+					duration = -1
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = azerbaijan_area }
+			ME_give_claims = { area = tabarestan_area }
+		}
+	}
+	
+	AKK_persia = {
+		icon = mission_into_persia_2
+		required_missions = { AKK_tabriz AKK_conquest_of_mesopotamia }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = isfahan_area
+				area = farsistan_area
+				area = persian_gulf_coast
+				area = iraq_e_ajam_area
+				area = luristan_area
+				area = azerbaijan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = isfahan_area
+					area = farsistan_area
+					area = persian_gulf_coast
+					area = iraq_e_ajam_area
+					area = luristan_area
+					area = azerbaijan_area
+				}
+				value = 19
+			}
+		}
+		effect = {
+			country_event = { id = ME_Aq_Qoyunlu_Events.10 } 
+			
+			custom_tooltip = " "
+			
+			hidden_effect = {
+				set_country_flag = Fazlallah_Mission_Reward
+				country_event = { id = ME_Aq_Qoyunlu_Events.13 days = 365 random = 730 }
+			}
+			tooltip = {
+				add_power_projection = {
+					type = QAR_perma_persia_pp
+					amount = 10 
+				}
+				
+				custom_tooltip = MAM_permanent_PP
+				
+				custom_tooltip = " "
+				
+				set_government_rank = 3
+				
+				custom_tooltip = " "
+				
+				custom_tooltip = AKK_modifier_upgrade_last
+				hidden_effect = {
+					remove_country_modifier = AKK_seizing_qara_qoyunlu_north_2
+					remove_country_modifier = AKK_seizing_qara_qoyunlu_lands_2
+					add_country_modifier = {
+						name = AKK_seizing_qara_qoyunlu
+						duration = -1
+					}
+				}
+			}
+				
+			QIR_complete_persian_missions = yes
+		}
+	}
+}
+
+AKK_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {	
+		OR = {
+			tag = AKK
+			AND = {
+				was_tag = AKK
+				tag = TRK
+			}
+		}
+		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+	}
+	has_country_shield = yes
+	
+	AKK_unite_the_tribes = {
+		icon = mission_conquer_tunisia
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					ME_tribal_federation_trigger = yes
+				}
+				has_government_power = {
+					mechanic_type = tribal_federation_mechanic
+					power_type = tribal_allegiance
+					value = 20
+				}
+			}
+			else = {
+				legitimacy = 90
+			}
+			
+			stability = 1
+		}
+		effect = {
+			add_yearly_manpower = 1
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = AKK_tribal_cohesion
+				duration = 7300
+			}
+		}
+	}
+
+	AKK_true_turkomans = {
+		icon = mission_lit_harness_steppes
+		required_missions = { AKK_unite_the_tribes }
+		position = 3
+		provinces_to_highlight = {
+			trade_goods = livestock
+			owned_by = ROOT
+			NOT = { has_manpower_building_trigger = yes }
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					ME_tribal_federation_trigger = yes
+				}
+				has_country_modifier = train_horsemanship_modifier
+				
+				#custom TT?
+			}
+			
+			num_of_owned_provinces_with = {
+				trade_goods = livestock
+				has_manpower_building_trigger = yes
+				value = 3
+			}
+			
+			OR = {
+				has_global_modifier_value = {
+					which = cavalry_power			
+					value = 0.4
+				}
+				num_of_cavalry = 50
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				custom_tooltip = QIR_unlock_decision_to_have_up_to_5_cossacks
+			}
+			set_country_flag = QIR_cossack_units
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = QIR_true_turkoman
+				duration = -1
+			}
+		}
+	}
+	
+	AKK_quell_jahan_shah = {
+		icon = mission_reclaim_morocco
+		required_missions = { }
+		position = 5
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				army_size = 10
+				army_size_percentage = 0.85
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = AKK_tribal_feuds
+				duration = 10950
+			}
+			
+			add_casus_belli = {
+				target = QAR
+				type = cb_aq_ambition
+				months = 1200
+			}
+			
+			custom_tooltip = " "
+		
+			ME_give_claims = { area = armenia_area }
+			ME_give_claims = { area = samtskhe_area }
+			ME_give_claims = { area = north_kurdistan_area }
+			ME_give_claims = { area = al_jazira_area }
+			ME_give_claims = { area = iraq_arabi_area }
+			ME_give_claims = { area = shahrizor_area }
+		}
+	}
+	
+	AKK_advance_into_QQ = {
+		icon = mission_claim_hispaniola
+		required_missions = { AKK_quell_jahan_shah }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = al_jazira_area
+				area = iraq_arabi_area
+				area = shahrizor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = al_jazira_area
+					area = iraq_arabi_area
+					area = shahrizor_area
+				}
+				value = 7
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = AKK_seizing_qara_qoyunlu_lands
+				duration = -1
+			}
+		
+			custom_tooltip = " "
+			
+			country_event = { id = ME_Aq_Qoyunlu_Events.8 }
+		
+			custom_tooltip = " "
+			
+			hidden_effect = {
+				country_event = { id = ME_Aq_Qoyunlu_Events.12 days = 180 random = 360 }
+			}
+			
+			ME_give_claims = { area = basra_area }
+			ME_give_claims = { area = luristan_area }
+			ME_give_claims = { area = khuzestan_area }
+			ME_give_claims = { area = tabriz_area }
+		}
+	}
+	
+	AKK_conquest_of_mesopotamia = {
+		icon = mission_conquer_algiers
+		required_missions = { AKK_advance_into_QQ }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = al_jazira_area
+				area = iraq_arabi_area
+				area = shahrizor_area
+				area = basra_area
+				area = luristan_area
+				area = khuzestan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = al_jazira_area
+					area = iraq_arabi_area
+					area = shahrizor_area
+					area = basra_area
+					area = luristan_area
+					area = khuzestan_area
+				}
+				value = 18
+			}
+		}
+		effect = {
+			custom_tooltip = AKK_upgrade_AKK_seizing_qara_qoyunlu_lands
+			hidden_effect = {
+				add_country_modifier = {
+					name = AKK_seizing_qara_qoyunlu_lands_2
+					duration = -1
+				}
+				remove_country_modifier = AKK_seizing_qara_qoyunlu_lands
+			}
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = AKK_distribute_10_base_tax_5_manpower
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								is_core = ROOT
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+				for = {
+					amount = 5
+					effect = "
+						random_owned_province = {
+							limit = {
+								is_core = ROOT
+							}
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+			
+			custom_tooltip = " "
+		
+			ME_give_claims = { area = pirate_coast_area }
+			ME_give_claims = { area = bahrain_area }
+			ME_give_claims = { area = persian_gulf_coast }
+			ME_give_claims = { area = farsistan_area }
+			ME_give_claims = { area = isfahan_area }
+			ME_give_claims = { area = iraq_e_ajam_area }	
+		}
+	}
+	
+	AKK_into_arabia = {
+		icon = mission_arabian_fort
+		required_missions = { AKK_conquest_of_mesopotamia }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = bahrain_area
+				area = pirate_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = bahrain_area
+					area = pirate_coast_area
+				}
+				value = 8
+			}
+		}
+		effect = {
+			QIR_complete_into_arabia_missions = yes
+			
+			ME_add_years_of_trade_income = { years = 4 }
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = oman_area }
+			ME_give_claims = { area = mascat_area }
+		}
+	}
+}

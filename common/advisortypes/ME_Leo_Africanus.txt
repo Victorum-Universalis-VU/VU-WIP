@@ -1,0 +1,47 @@
+Leo_Africanus_Diplomat = {
+	monarch_power = DIP
+	
+	# Bonus
+	improve_relation_modifier = 0.2 #diplomat for Moroccans
+	
+	skill_scaled_modifier = {
+		trigger = { 
+			always = yes
+		}
+		modifier = {
+			improve_relation_modifier = 0.05
+		}
+	}
+	
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+Leo_Africanus_Geographer = {
+	monarch_power = ADM
+	
+	# Bonus
+	country_military_power = 1 #he was important for military intelligence
+	
+	skill_scaled_modifier = {
+		trigger = { 
+			always = yes
+		}
+		modifier = {
+			prestige = 0.2
+		}
+	}
+	
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1000
+	}
+}

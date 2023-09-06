@@ -1,0 +1,2 @@
+# Removed since it was causing a game-breaking bug where every province was triggering the 'Hard to Colonise' event.
+# To account for removing this file, vu_latent_colonisation was reworked by OnlyKarlos.

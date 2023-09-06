@@ -1,0 +1,20 @@
+#5373 - Cwebeni
+
+owner = ZUL
+controller = ZUL
+add_core = ZUL
+culture = zulu
+religion = shamanism
+capital = "Cwebeni"
+is_city = yes
+base_manpower = 1 
+trade_goods = gold
+hre = no
+base_tax = 1
+base_production = 1
+ 
+##discovered_by = east_african
+#discovered_by = central_african
+
+1497.1.1 = { discovered_by = POR } # Vasco da Gama
+1616.1.1 = { discovered_by = NED } # Dirk Hartog

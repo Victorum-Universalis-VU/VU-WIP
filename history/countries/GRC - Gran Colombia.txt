@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = oligarchy_reform
+primary_culture = castillian 
+religion = catholic
+#technology_group = western
+technology_group = spanish_tech_group
+capital = 4603 # No one will form them anyways

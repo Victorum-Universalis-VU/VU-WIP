@@ -1,0 +1,17 @@
+#Cotabato del Sur
+
+culture = danao
+religion = animism
+capital = "Dadiangas"
+trade_goods = unknown
+hre = no
+base_tax = 4 
+base_production = 3
+base_manpower = 2 
+native_size = 55
+native_ferocity = 2
+native_hostileness = 9
+discovered_by = chinese
+
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
+

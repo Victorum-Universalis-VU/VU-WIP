@@ -1,0 +1,8 @@
+#1462 - Coast_of_Angola
+
+#discovered_by = central_african
+#discovered_by = sub_saharan
+
+1481.1.1 = { discovered_by = POR }
+1529.6.1 = { discovered_by = FRA } # Parmentier Brothers
+

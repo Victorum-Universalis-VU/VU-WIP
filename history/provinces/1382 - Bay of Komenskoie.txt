@@ -1,0 +1,11 @@
+#1382 - Bay of Komenskoie
+#VU Discovery Bug Fix
+
+# discovered_by = ANU
+# discovered_by = HOD
+# discovered_by = CHU
+# discovered_by = CHV
+# discovered_by = KMC
+
+1542.1.1 = { discovered_by = POR }
+1647.1.1 = { discovered_by = RUS }

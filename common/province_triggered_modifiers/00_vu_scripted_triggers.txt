@@ -1,0 +1,96 @@
+
+##########################################################
+# Victorum Universalis Core Triggered Province Modifiers #
+##########################################################
+
+vu_conquest_of_the_great_fire = {
+	potential = { religion_group = zoroastrian_group }
+	trigger = { religion_group = zoroastrian_group }
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	on_activation = { }
+	on_deactivation = { }
+}
+
+vu_guelph_province_in_guelph_state = {
+	potential = { 
+		owner = { 
+			has_country_modifier = vu_guelph_nation 
+		} 
+	}
+	trigger = { 
+		owner = { 
+			has_country_modifier = vu_guelph_nation 
+		} 
+	}
+
+	local_unrest = -3
+	local_manpower_modifier = 0.10
+	regiment_recruit_speed = -0.05
+
+	on_activation = { }
+	on_deactivation = { }
+}
+
+vu_guelph_province_in_ghibelline_state = {
+	potential = { 
+		owner = {
+			has_country_modifier = vu_guelph_nation 
+		}
+	}
+	trigger = { 
+		owner = {
+			has_country_modifier = vu_guelph_nation 
+		}
+	}
+
+	local_unrest = 5
+	local_manpower_modifier = -0.20
+	regiment_recruit_speed = 0.10
+
+	on_activation = { }
+	on_deactivation = { }
+}
+
+vu_ghibelline_province_in_ghibelline_state = {
+	potential = { 
+		owner = {
+			has_country_modifier = vu_ghibelline_nation 
+		}
+	}
+	trigger = { 
+		owner = {
+			has_country_modifier = vu_ghibelline_nation 
+		}
+	}
+
+	local_unrest = -3
+	local_manpower_modifier = 0.10
+	regiment_recruit_speed = -0.05
+
+	on_activation = { }
+	on_deactivation = { }
+}
+
+vu_ghibelline_province_in_guelph_state = {
+	potential = { 
+		owner = {
+		has_country_modifier = vu_ghibelline_nation 
+		}
+	}
+	trigger = { 
+		owner = {
+			has_country_modifier = vu_ghibelline_nation 
+		}
+	}
+
+	local_unrest = 5
+	local_manpower_modifier = -0.20
+	regiment_recruit_speed = 0.10
+
+	on_activation = { }
+	on_deactivation = { }
+}

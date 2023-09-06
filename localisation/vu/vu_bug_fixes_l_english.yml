@@ -1,0 +1,30 @@
+﻿l_english:
+ #Various Fixes to missing vanilla localisations
+ ALLREADY_IN_WAR_WITH:0 "Already at war with the target"
+ #
+ #Temp bugfix, no need to translate
+ reevaluate_priorities_title:0 "Reevaluate Goals"
+ reevaluate_priorities_desc:0 "For a long time, our ambitions were limited but short sightedness and the laziness of our advisors. Now, we can transcend their petty oversights and realize our true potential!"
+ #
+ vu_pomeranian_nation_title:0 "Unite the Duchy of Pomerania"
+ vu_pomeranian_nation_desc:0 "Through our strong military and our influential diplomacy, we have united the fragmented duchy of Pomerania under our control. Our ancestors divided our lands upon succession, creating a myriad of realms, but no longer will our dynasty fracture our lands. We control territory with such opportunity, harbouring numerous Hanseatic Towns, and vital access to the Baltic Sea that all of Germany envies."         #Credit to JP
+ #
+ #lotf
+ lotf_royal_ties: "American Royal Ties"
+ #New Additions by San Felipe
+ #unify_british_isles: "Anglo-Scottish Wars"
+ #unify_british_isles_desc: "Scotland, my land. The French, will grovel to anyone with strength, but how will they believe our strength when we cannot rule the whole of our own island!"
+ #vu_engsco_full_annex_desc: "@[Root.GetTag] §Y[Root.GetName]§! fully annexes @[From.GetTag] §Y[From.GetName]§!."
+ #PEACE_vu_engsco_full_annex: "Unify the Isles"
+ #CB_ALLOWED_vu_engsco_full_annex: "Unify the Isles"
+ #unify_british_isles_wargoal: "Take Capital"
+ #unify_british_isles_wargoal_desc: "We shall march on the enemy capital!"
+ #UNIFY_BRITISH_ISLES_WAR: "Anglo-Scottish Wars"
+ #mechanic_has_unify_british_isles_cb_yes:0 "Has access to the Unify British Isles casus belli"
+ mechanic_has_unify_germany_cb_yes:0 "Has access to the Unify Germany casus belli"
+ #mechanic_has_unify_italy_cb_yes:0 "Has access to the Unify Italy casus belli"
+ #mechanic_has_unify_greece_cb_yes:0 "Has access to the Unify Greece casus belli"
+ #mechanic_has_unify_russia_cb_yes:0 "Has access to the Unify Russia casus belli"
+ 
+
+ 

@@ -1,0 +1,25 @@
+#6839 - Xiaodun
+
+owner = MNG
+controller = MNG
+add_core = MNG
+culture = jianghuai
+religion = confucianism
+capital = "Xiaodun"
+trade_goods = fish
+hre = no
+base_tax = 7
+base_production = 5
+base_manpower = 5
+is_city = yes
+
+discovered_by = chinese
+#discovered_by = dutch_tech_group
+discovered_by = japanese
+
+1519.1.1 = { discovered_by = POR } # Tome Pires
+1645.6.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+}

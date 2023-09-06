@@ -1,0 +1,20 @@
+#3763 - Southern_Highlands
+
+owner = HLO
+controller = HLO
+add_core = HLO
+culture = papuan
+religion = animism
+hre = no
+capital = "Mendi"
+is_city = yes
+trade_goods = exotic_animals
+base_tax = 2 
+base_production = 3
+base_manpower = 1
+
+#discovered_by = papuan_tech_group#
+1440.1.1 = { 
+    discovered_by = HLO 
+}
+1525.1.1 = { discovered_by = POR } # Don Jorge de Mneses

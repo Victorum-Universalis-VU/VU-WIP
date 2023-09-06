@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = lorraine_culture
+religion = catholic
+technology_group = french_tech_group
+unit_type = western
+capital = 8448 #Vaudemont
+
+
+1390.1.1 = {
+	monarch = {
+		name = "Charles II"
+		dynasty = "de Metz"
+		birth_date = 1364.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}

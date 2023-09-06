@@ -1,0 +1,97 @@
+#2954 - Djerba
+
+owner = TUN
+controller = TUN 
+culture = libyan_berber_culture
+religion = ibadi
+capital = "Djerba"			#Good enough.
+trade_goods = dyes			#I get the feeling the old murex dye trade wasn't what it used to be, but I'm not feeling too creative right now
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = TUN
+add_core = TRP
+center_of_trade = 1
+discovered_by = western
+#discovered_by = dutch_tech_group
+#discovered_by = english_tech_group
+#discovered_by = french_tech_group
+#discovered_by = german_tech_group
+#discovered_by = italian_tech_group
+#discovered_by = portuguese_tech_group
+#discovered_by = roman_tech_group
+#discovered_by = scandinavian_tech_group
+#discovered_by = spanish_tech_group
+#discovered_by = swiss_tech_group
+#discovered_by = muslim
+#discovered_by = ottoman
+discovered_by = TUR
+discovered_by = MAM
+discovered_by = TUN
+discovered_by = TLC
+discovered_by = MOR
+discovered_by = TFL
+discovered_by = SOS
+discovered_by = MRK
+discovered_by = BSM
+discovered_by = GDM
+discovered_by = GHD
+discovered_by = ZAB
+discovered_by = LGH
+discovered_by = GRA
+#discovered_by = eastern
+#discovered_by = bohemian_tech_group
+#discovered_by = byzantine_tech_group
+#discovered_by = hungarian_tech_group
+#discovered_by = polish_tech_group
+discovered_by = russian_tech_group
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
+
+add_permanent_province_modifier = {
+	name = gulf_of_gabes_estuary_modifier
+	duration = -1
+}
+
+1489.1.1 = { unrest = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
+1490.1.1 = { unrest = 0 } # Abu Yahya recaptures the power
+1503.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	base_tax = 4
+	base_production = 4
+} #Oruc Reis captures Djerba and uses it as his base
+1521.1.1 = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+} #Occupied by Spain
+1524.1.1 = {
+	owner = TUR
+	controller = TUR
+} #Captured by Khayr ad-Din Barbarossa
+1551.1.1 = {
+	owner = SPA
+	controller = SPA
+} #Captured by Spain
+1560.5.14 = {
+	owner = TUN
+	controller = TUN
+} #Battle of Djerba
+1574.9.13 = {
+	owner = OTN
+	controller = OTN
+	add_core = OTN
+} #Ottomans establish the semi-autonomous Ottoman Tunis
+1591.1.1 = { unrest = 6 } # Janissary revolt
+1592.1.1 = { unrest = 0 }
+1702.1.1 = { unrest = 4 } # Military coup in Tunisia
+1703.1.1 = { unrest = 0 }
+1735.1.1 = { unrest = 6 } # Coup with Algerian support
+1756.1.1 = { unrest = 0 } # The Husaynid Dynasty is restored 

@@ -1,0 +1,21 @@
+#3309 - Senboku
+
+owner = KSA
+controller = KSA
+culture = togoku
+religion = shinto
+capital = "Masaka"
+trade_goods = whaling
+hre = no
+base_tax = 3
+base_manpower = 3
+base_production = 3
+is_city = yes
+add_core = KSA
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
+
+1542.1.1 = { discovered_by = POR }

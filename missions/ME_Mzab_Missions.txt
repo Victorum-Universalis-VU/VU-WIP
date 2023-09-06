@@ -1,0 +1,731 @@
+MZB_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MZB
+			tag = RST
+		}
+	}
+	has_country_shield = yes
+	
+	MZB_unify_the_oases = {
+		icon = mission_conquer_timbuktu
+		required_missions = { MZB_expansionist_intent }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = ouled_nail_area
+				area = north_saharan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = ouled_nail_area
+					area = north_saharan_area
+				}
+				value = 6
+			}
+		}
+		effect = {
+			ouled_nail_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_local_autonomy = -25
+				add_nationalism = -20
+				add_province_modifier = {
+					name = MZB_convert_the_oases
+					duration = -1
+				}
+			}
+			
+			north_saharan_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_local_autonomy = -25
+				add_nationalism = -20
+				add_province_modifier = {
+					name = MZB_convert_the_oases
+					duration = -1
+				}
+			}
+			
+			add_adm_power = 100
+			
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = djerba_area }
+			ME_give_claims = { area = tripolitania_area }
+			ME_give_claims = { area = fezzan_area }
+			ME_give_claims = { area = tunisia_area }
+		}
+	}
+	
+	MZB_free_the_ibadi = {
+		icon = mission_cope_with_refugees
+		required_missions = { MZB_unify_the_oases }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2452
+				province_id = 2451
+				province_id = 354
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			2452 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			354 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2451 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = ME_Mzab_Events.5 }
+		}
+	}
+	
+	MZB_rustamid_glory = {
+		icon = mission_fatimid_caliphate
+		required_missions = { MZB_rustamid_ambition MZB_free_the_ibadi }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = fezzan_area
+				area = djerba_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = tripolitania_area
+					area = fezzan_area
+					area = djerba_area
+				}
+				value = 9
+			}
+			total_development = 100 
+		}
+		effect = {
+			add_age_modifier = {
+				name = MZB_rustamid_glory_modifier
+				duration = -1
+				age = age_of_discovery
+			}
+			
+			custom_tooltip = " "
+			
+			ME_add_power_projection = { amount = 40 }
+		}
+	}
+}
+
+MZB_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MZB
+			tag = RST
+		}
+	}
+	has_country_shield = yes
+	
+	MZB_expansionist_intent = {
+		icon = mission_levantine_restoration
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				army_size = 6
+				army_size_percentage = 1
+			}
+			num_of_generals = 1
+		}
+		effect = {
+			2472 = { add_core = ROOT }
+			ME_give_claims = { area = north_saharan_area }
+			ME_give_claims = { area = ouled_nail_area }
+			ME_give_claims = { area = hautes_plaines_area }
+			ME_give_claims = { area = barbary_coast_area }
+			ME_give_claims = { area = northern_morocco_area }
+			ME_give_claims = { id = 349 }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MZB_expansionist_help
+				duration = 10950
+			}
+		}
+	}
+	
+	MZB_rustamid_ambition = {
+		icon = mission_golden_century
+		required_missions = { MZB_expansionist_intent }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = ouled_nail_area
+				area = hautes_plaines_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					religion = ibadi
+				}
+				tag = RST
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					OR = {
+						area = ouled_nail_area
+						area = hautes_plaines_area
+					}
+					value = 5
+				}
+			}
+		}
+		effect = {
+			country_event = { id = ME_Mzab_Events.6 }
+		
+			custom_tooltip = " "
+			
+			ME_give_claims = { area = kabylia_area }
+			ME_give_claims = { area = northern_morocco_area }
+			ME_give_claims = { area = western_morocco_area }
+			ME_give_claims = { area = marrekesh_area }
+		}
+	}
+	
+	MZB_greater_root = {
+		icon = mission_empire
+		required_missions = { MZB_rustamid_ambition }
+		position = 6
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			OR = {
+				is_claim = ROOT 
+				is_permanent_claim = ROOT
+				is_core = ROOT
+			}
+		}
+		trigger = {
+			total_development = 250
+			#ME_pt_feedback_requested = yes 
+		}
+		effect = {
+			ME_give_claims = { area = lower_andalucia_area }
+			ME_give_claims = { area = upper_andalucia_area }
+			ME_give_claims = { area = maghreb_region }
+			
+			custom_tooltip = " "
+			
+			TUN_enable_colonize_djado_decision = yes
+			TUN_enable_colonize_tuat_decision = yes
+			
+			custom_tooltip = " "
+			
+			add_prestige = 5 #it's a joke
+		}
+	}
+}
+
+MZB_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MZB
+			tag = RST
+		}
+	}
+	has_country_shield = yes
+
+	MZB_convert_laghouat = {
+		icon = mission_expel_the_moriscos
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 350
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { religion = ROOT }
+			}
+		}
+		trigger = {
+			350 = {
+				owned_by = ROOT
+				religion = ROOT
+			}
+		}
+		effect = {
+			350 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				
+				add_province_modifier = {
+					name = MZB_conversion_of_laghouat
+					duration = 9125
+				}
+				
+				change_culture = mozabite
+				
+				set_local_autonomy = 0
+			}
+		}
+	}
+	
+	MZB_ouargla_community = {
+		icon = mission_imperial_cities
+		required_missions = { MZB_convert_laghouat MZB_expansionist_intent MZB_lone_imamate }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 2472
+		}
+		trigger = {
+			2472 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2472 = {
+				if = {
+					limit = {
+						NOT = { religion = ROOT }
+					}
+					change_religion = ROOT
+				}
+				
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				
+				add_province_modifier = {
+					name = MZB_conversion_of_ouargla
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	MZB_convert_maghreb = {
+		icon = mission_friends_or_enemies
+		required_missions = { MZB_ouargla_community MZB_religious_declaration }
+		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+			region = maghreb_region
+			NOT = { religion = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = maghreb_region
+				religion = ROOT 
+				value = 20
+			}
+		}
+		effect = {
+			add_corruption = -2
+		
+			custom_tooltip = " "
+			add_stability_or_adm_power = yes
+			custom_tooltip = " "
+		
+			custom_tooltip = MZB_if_we_are_ibadi
+			tooltip = {
+				add_country_modifier = {
+					name = MZB_stronghold_of_the_ibadiyya_sect
+					duration = -1
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = ibadi
+					}
+					add_country_modifier = {
+						name = MZB_stronghold_of_the_ibadiyya_sect
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	MZB_develop_tahert = {
+		icon = mission_into_persia_2
+		required_missions = { MZB_rustamid_ambition }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 2462 
+		}
+		trigger = {
+			2462 = {
+				owned_by = ROOT
+				development = 25
+				num_of_buildings_in_province = 2
+			}
+		}
+		effect = {
+			custom_tooltip = MZB_distribute_15_base_tax
+			
+			hidden_effect = {
+				for = {
+					amount = 15
+					effect = "
+						random_owned_province = {
+							limit = {
+								has_terrain = desert
+							}
+							add_base_tax = 1 
+						}
+					"
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			2462 = {
+				add_province_modifier = {
+					name = MZB_restored_tahert
+					duration = -1
+				}
+				create_or_add_center_of_trade_level = { level = 1 }
+			}
+		}
+	}
+}
+
+MZB_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MZB
+			tag = RST
+		}
+	}
+	has_country_shield = yes
+	
+	MZB_lone_imamate = {
+		icon = mission_traverse_the_sahara
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 2457
+		}
+		trigger = {
+			2457 = {
+				owned_by = ROOT
+			}
+			employed_advisor = {
+			}
+			
+			OR = {
+				2457 = {
+					num_of_times_improved = 2
+				}
+				num_of_estate_agendas_completed = { 
+					estate = estate_church
+					value = 1
+				}
+			}
+		}
+		effect = {
+			2457 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			
+			custom_tooltip = " "
+			
+			350 = {
+				if = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_province_modifier = {
+						name = MZB_mzab_valley
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	MZB_religious_declaration = {
+		icon = me_mission_muslim_priest
+		required_missions = { MZB_lone_imamate }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				has_adm_advisor_2 = yes
+				theologian = 1
+				inquisitor = 1
+				sufi_scholar_advisor = 1
+			}
+			
+			total_development = 25 #the berber tribes
+		}
+		effect = {
+			tooltip = {
+				custom_tooltip = MZB_gain_a_core_on_every_ibadi_province
+				hidden_effect = {
+					maghreb_region = {
+						limit = {
+							religion = ibadi
+						}
+						add_core = ROOT 
+					}
+				}
+				
+				custom_tooltip = " "
+				
+				add_age_modifier = {
+					name = MZB_quest_to_free_the_ibadiyya
+					duration = -1
+					age = age_of_discovery
+				}
+			}
+			
+			country_event = { id = ME_Mzab_Events.3 }
+		}
+	}
+	
+	MZB_berber_support = {
+		icon = mission_control_surat
+		required_missions = { }
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_berbers
+				}
+				estate_loyalty = {
+					estate = estate_berbers
+					loyalty = 60
+				}
+				# has_mil_advisor = yes
+			}
+			else = {
+				has_mil_advisor_2 = yes
+			}
+		}
+		effect = {
+			custom_tooltip = MOR_get_manpower_for_every_province_with_berber_culture_empowered
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = mozabite
+							has_province_modifier = estate_berbers_settlement
+						}
+					}
+					ROOT = {
+						add_manpower = 0.8
+					}
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = commandant
+				skill = 1
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	
+	MZB_berber_converts = {
+		icon = mission_protect_granada
+		required_missions = { MZB_berber_support }
+		position = 6 
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_berbers
+				}
+				num_of_estate_agendas_completed = {
+					estate = estate_berbers
+					value = 3
+				}
+			}
+			else = {
+				stability = 3
+				any_owned_province = {
+					religion = ROOT
+					culture = mozabite
+					NOT = { is_capital_of = ROOT }
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = MZB_unlock_the_berber_privilege
+			set_country_flag = MZB_unlock_the_berber_privilege_flag
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = MZB_gain_20_mil_power
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							culture = mozabite
+							religion = ROOT
+							value = 5
+						}
+					}
+					add_mil_power = 100
+				}
+				else = {
+					every_owned_province = {
+						limit = {
+							culture = mozabite
+							religion = ROOT
+						}
+						ROOT = {
+							add_mil_power = 20
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+MZB_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MZB
+			tag = RST
+		}
+	}
+	has_country_shield = yes
+	
+	MZB_five_qsar = {
+		icon = mission_pacify_the_berbers
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 2457
+		}
+		trigger = {
+			2457 = {
+				owned_by = ROOT
+				#num_of_buildings_in_province = 1
+				development = 12
+			}
+		}
+		effect = {
+			2457 = {
+				add_province_modifier = {
+					name = MZB_five_qsar_of_the_valley
+					duration = -1
+				}
+			}
+			
+			add_stability_or_adm_power = yes 
+		}
+	}
+	
+	MZB_pentapolis = {
+		icon = mission_patronize_art_and_religion
+		required_missions = { MZB_five_qsar MZB_lone_imamate }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 2457
+		}
+		trigger = {
+			2457 = {
+				owned_by = ROOT
+				has_tax_building_trigger = yes
+				development = 25
+			}
+		}
+		effect = {
+			2457 = {
+				custom_tooltip = MZB_modify_the_five_towns
+				
+				custom_tooltip = " "
+				
+				hidden_effect = {
+					remove_province_modifier = MZB_five_qsar_of_the_valley
+					add_province_modifier = {
+						name = MZB_five_qsar_of_the_valley_2
+						duration = -1
+					}
+				}
+				
+				add_or_upgrade_tax_building = yes
+			}
+			
+			custom_tooltip = " "
+			
+			add_age_modifier = {
+				name = MZB_prosperity_in_the_desert
+				duration = -1
+				age = age_of_discovery
+			}
+		}
+	}
+	
+	MZB_ibadiyya_scholars = {
+		icon = mission_restore_trade_superiority
+		required_missions = { MZB_religious_declaration }
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			ME_has_religious_scholars_trigger = yes
+			
+			religious_unity = 0.8
+			
+			has_adm_advisor_2 = yes
+		}
+		effect = {
+			custom_tooltip = MZB_piety_events_will_give_double_the_piety
+			set_country_flag = ME_piety_events_double
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MZB_religious_scholars
+				duration = 9125
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+#Quezon
+
+owner = MNA
+controller = MNA
+add_core = MNA
+culture = filipino
+religion = animism
+capital = "Lucena"
+trade_goods = rice
+hre = no
+base_tax = 6
+base_production = 6
+base_manpower = 2 
+is_city = yes
+discovered_by = chinese
+
+1521.1.1 = { discovered_by = SPA }

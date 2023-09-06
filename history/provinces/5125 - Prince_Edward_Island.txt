@@ -1,0 +1,13 @@
+#5125 - Prince Edward Island
+
+capital = "Marion"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0
+
+1772.1.24 = { discovered_by = FRA }			#Marc-Joseph Marion du Fresne

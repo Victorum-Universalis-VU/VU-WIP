@@ -1,0 +1,31 @@
+#6941 - Yenangyaung
+
+owner = AVA
+controller = AVA
+add_core = AVA
+culture = burmese
+religion = buddhism
+capital = "Yenangyaung"
+trade_goods = elephants
+hre = no
+base_tax = 3
+base_production = 2
+base_manpower = 2
+is_city = yes
+
+discovered_by = chinese
+discovered_by = indian
+
+1527.1.1 = {
+	owner = SST
+	controller = SST
+	add_core = SST
+	remove_core = AVA
+}
+1535.1.1 = { discovered_by = POR }
+1554.1.1 = { add_core = TAU }
+1555.1.22 = { controller = TAU }
+1563.4.1 = {	
+	owner = TAU
+	remove_core = SST
+}

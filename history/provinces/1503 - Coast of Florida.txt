@@ -1,0 +1,10 @@
+#1502 - Coast of Florida
+#VU Discovery Bug Fix
+
+#discovered_by = CRE
+discovered_by = north_american
+
+1492.12.5 = { discovered_by = CAS }
+1516.1.23 = { discovered_by = SPA }
+
+

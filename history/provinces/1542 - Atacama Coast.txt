@@ -1,0 +1,6 @@
+#1542 - Atacama Coast
+
+#discovered_by = south_american
+#discovered_by = andean
+1520.1.1 = { discovered_by = SPA }
+

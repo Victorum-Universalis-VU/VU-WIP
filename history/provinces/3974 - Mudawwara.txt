@@ -1,0 +1,30 @@
+#3974 - Mudawwara
+
+culture = bedouin_arabic
+religion = sunni
+capital = "Mudawwara"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = no
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+
+#discovered_by = muslim
+#discovered_by = indian
+#discovered_by = dutch_tech_group
+##discovered_by = east_african
+
+1725.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	is_city = yes
+	trade_goods = camel
+}	#Ottoman Empire expands its claims, no particular reason for this exact date
+1750.1.1 = {
+	fort_15th = yes
+} #Ottomans build fort to protet pilgrims

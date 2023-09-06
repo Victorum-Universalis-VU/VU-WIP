@@ -1,0 +1,17 @@
+namespace = vu_debug
+
+# Use "event vu_debug.1" in console to fire whatever you want to test in the option.
+
+country_event = {
+	id = vu_debug.1
+	title = "vu_debug.1.t" 
+	desc = "vu_debug.1.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "vu_debug.1.a"
+		add_treasury = 1000 # Replace with whatever you want to test.
+	}
+}

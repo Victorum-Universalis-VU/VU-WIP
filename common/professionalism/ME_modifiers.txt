@@ -1,0 +1,13 @@
+refill_garrison_modifier = {
+	army_professionalism = 0.4
+	
+	marker_sprite = GFX_pa_rank_2
+	unit_sprite_start = "GFX_ap3_"
+
+	trigger = {
+		mission_completed = ME_tim_army_professionalism
+	}
+	
+	drill_gain_modifier = 0.2
+	land_attrition = -0.1
+}

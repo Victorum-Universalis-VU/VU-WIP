@@ -1,0 +1,21 @@
+#5263 - Satsuma
+
+owner = SMZ
+controller = SMZ
+culture = kyushuan
+religion = shinto
+capital = "Sendai"
+trade_goods = rice
+hre = no
+base_tax = 4
+base_manpower = 6
+base_production = 5
+is_city = yes
+add_core = SMZ
+discovered_by = chinese
+discovered_by = japanese
+
+
+1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+1542.1.1 = { discovered_by = POR }

@@ -1,0 +1,3 @@
+discovered_by = north_american
+#discovered_by = vu_athabaskan_tech
+#discovered_by = vu_inuit_tech

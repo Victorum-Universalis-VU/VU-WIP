@@ -1,0 +1,9 @@
+#6070 - Northumberland_Strait
+
+discovered_by = north_american
+
+1534.1.1 = { discovered_by = FRA } # Jacques Cartier
+
+
+
+

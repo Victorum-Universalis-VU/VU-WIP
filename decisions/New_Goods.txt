@@ -1,0 +1,1495 @@
+country_decisions = {
+
+	new_goods = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = tradegood_marcin }	
+		}
+		
+		allow = {
+			always = yes
+		}
+		effect = {
+				1 = {
+					province_event = { id = New_TradeGood_Events.3 }
+				}
+				#if = {	#Beer already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Beer }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 3221
+				#					province_id = 7264
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = beer
+				#			
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Beer
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Beer_NO
+				#
+				#}
+				
+				if = {	#Replaces some fruit in England with Cider
+					limit = {
+						NOT = { has_global_flag = No_Cider }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {
+									province_id = 4130
+									province_id = 7420
+									province_id = 8124
+									province_id = 8129
+									province_id = 3145
+								}
+							}
+							
+							change_trade_goods = cider
+							
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Cider
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Cider_NO
+				
+				}
+				
+				
+				#if = {	#Apiculture/beekeeping already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Apiculture }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 8224
+				#					province_id = 4176
+				#					
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = apiculture
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Apiculture
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Apiculture_NO
+				#
+				#}
+				
+				#if = {	#Whaling already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Whaling }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 8161
+				#					province_id = 3068
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = whaling
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Whaling
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Whaling_NO
+				#
+				#}
+				
+				#if = {	#Lumber already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Lumber }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 8233
+				#					province_id = 7831
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = lumber
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Lumber
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Lumber_NO
+				#
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Palm_oil }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {
+									province_id = 7365
+									province_id = 2253
+									province_id = 2266
+									province_id = 1150
+									province_id = 7373
+									province_id = 7369
+									province_id = 2292
+									province_id = 6541
+								}
+							}
+							
+							change_trade_goods = palm_oil
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Palm_oil
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Palm_oil_NO
+				
+				}
+				
+				#if = {	#Cinnamon already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Cinnamon }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = { 
+				#					province_id = 4409
+				#					province_id = 572
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = cinnamon
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Cinnamon
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Cinnamon_NO
+				#
+				#}
+				
+				
+				#if = {	#Saffron already exists at the start
+				#	limit = {
+				#		NOT = { has_global_flag = No_Saffron }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 4427
+				#					province_id = 534
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = saffron
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Saffron
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Saffron_NO
+				#
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Rice }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 4475
+				#					province_id = 2049
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = rice
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Rice
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Rice_NO
+				#
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Opium }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 4463
+				#					province_id = 513
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = opium
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Opium
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Opium_NO
+				#
+				#}
+				
+				#if = {
+				#	limit = {
+				#		NOT = { has_global_flag = No_Rum }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 2233
+				#					province_id = 4416
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = rum
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Rum
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Rum_NO
+				#
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Horses }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 7266
+				#					province_id = 6637
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = horses
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Horses
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Horses_NO
+				#
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_OliveOil }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 7110
+				#					province_id = 7136
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = olive_oil
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_OliveOil
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_OliveOil_NO
+				#
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Amber }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 7818
+				#					province_id = 2995
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = amber
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Amber
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Amber_NO
+				#
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Jade }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 710
+				#					province_id = 2224 
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = jade
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Jade
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Jade_NO
+				#
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Marble }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {
+				#					province_id = 3295
+				#					province_id = 4751
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = marble
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Marble
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Marble_NO
+				#
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Lead }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 5326
+				#					province_id = 5325
+				#				}
+				#			}
+				#			change_trade_goods = lead
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Lead
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Lead_NO
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Cloves }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {				
+									province_id = 5440
+									province_id = 4795
+									province_id = 649
+								}
+							}
+							
+							change_trade_goods = cloves
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Cloves
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Cloves_NO
+				}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Mercury }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 7761
+				#					province_id = 117
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = mercury
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Mercury
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Mercury_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Camel }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 5274
+				#					province_id = 2326
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = camel
+				#		}
+				#		
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Camel
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Camel_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Gunpowder }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 7025
+				#					province_id = 112
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = gunpowder
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Gunpowder
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Gunpowder_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Elephants }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 5313
+				#					province_id = 5317
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = elephants
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Elephants
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Elephants_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Tin }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 169 
+				#					province_id = 7997
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = tin
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Tin
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Tin_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Dates }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 6585
+				#					province_id = 357
+				#					
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = dates
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Dates
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Dates_NO
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Cheese }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 3297
+				#					province_id = 162
+				#					
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = cheese
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Cheese
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Cheese_NO
+				#}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Citrus }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 122
+				#					province_id = 3995
+				#					
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = citrus
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Citrus
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Citrus_NO
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Seafood }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 126
+				#					province_id = 7003
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = seafood
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Seafood
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Seafood_NO
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Carpet }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 323
+				#					province_id = 5561
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = carpet
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Carpet
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Carpet_NO
+				#}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Nutmeg }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {
+									province_id = 7182
+									province_id = 650
+									province_id = 8612
+									province_id = 652
+									province_id = 5439
+									province_id = 2688
+								}
+							}
+							
+							change_trade_goods = nutmeg
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Nutmeg
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Nutmeg_NO
+				}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Maize }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 4570
+				#					province_id = 852
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = maize
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Maize
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Maize_NO
+				#}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Pearls }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 6551
+				#					province_id = 2647
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = pearls
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Pearls
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Pearls_NO
+				#}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Metalworking }
+					}
+					hidden_effect = {
+						every_province = {	
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Metalworking
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Metalworking_NO
+				}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Silver }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {				
+				#					province_id = 2970
+				#					province_id = 8260
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = silver
+				#		}
+				#	}
+				#
+				#	custom_tooltip = GOODS_Marcin_Silver
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Silver_NO
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Exotic_animals }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {
+									province_id = 4021
+									province_id = 4025
+									province_id = 4619
+									province_id = 2641
+									province_id = 4818
+									province_id = 626
+								}
+							}
+							
+							change_trade_goods = exotic_animals
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Exotic_animals
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Exotic_animals_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Vanilla }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {
+									province_id = 2648
+									province_id = 848
+									province_id = 4023
+									province_id = 631
+									province_id = 1193
+									province_id = 4024
+									province_id = 8557
+									province_id = 642
+									province_id = 624
+								}
+							}
+							
+							change_trade_goods = vanilla
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Vanilla
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Vanilla_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Munitions }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+																
+								}
+							}
+							
+							change_trade_goods = munitions
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Munitions
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Munitions_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Woodworking }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = woodworking
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Woodworking
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Woodworking_NO
+				}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Ebony }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {	
+				#					province_id = 547
+				#					province_id = 4086
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = ebony
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Ebony
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Ebony_NO
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Tar }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 9 
+									province_id = 7804 
+									province_id = 7865 
+									province_id = 1955
+									province_id = 7802
+									province_id = 4114
+									province_id = 32
+									province_id = 4258
+									province_id = 7877
+									province_id = 7868
+									province_id = 7851								
+								}
+							}
+							
+							change_trade_goods = tar
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Tar
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Tar_NO
+				}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Sulfur }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {	
+				#					province_id = 627
+				#					province_id = 259
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = sulfur
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Sulfur
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Sulfur_NO
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Leather }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = leather
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Leather
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Leather_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Jewellery }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+	
+								}
+							}
+							
+							change_trade_goods = jewellery
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Jewellery
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Jewellery_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Maple_syrup }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = maple_syrup
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Maple_syrup
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Maple_syrup_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Potato }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 807
+									province_id = 2831
+								}
+							}
+							
+							change_trade_goods = potato
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Potato
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Potato_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Steam_engine }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = steam_engine
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Steam_engine
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Steam_engine_NO
+				}
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Zinc }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {	
+				#					province_id = 7677
+				#					province_id = 3984
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = zinc
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Zinc
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Zinc_NO
+				#}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Optics }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = optics
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Optics
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Optics_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Brass }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = brass
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Brass
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Brass_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Cannon }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+								}
+							}
+							
+							change_trade_goods = cannon
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Cannon
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Cannon_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Mine }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Mine
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Mine_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Tomato }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 4575
+									province_id = 4642
+								}
+							}
+							
+							change_trade_goods = tomato
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Tomato
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Tomato_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Champagne }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 186
+									province_id = 4390
+									province_id = 7958
+									province_id = 192
+									province_id = 8089
+									province_id = 197
+									province_id = 109
+									province_id = 2981
+									province_id = 134
+								}
+							}
+							
+							change_trade_goods = champagne
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Champagne
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Champagne_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Llama }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 2943
+									province_id = 817
+									province_id = 814
+									province_id = 811
+									province_id = 804
+									province_id = 2942
+									province_id = 2838
+									province_id = 794
+									province_id = 2837
+									province_id = 2824
+								}
+							}
+							
+							change_trade_goods = llama
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Llama
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Llama_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Indigo }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									province_id = 243
+									province_id = 1760
+									province_id = 63
+									province_id = 205
+									province_id = 4111
+									province_id = 7994
+									province_id = 7589
+									province_id = 7517
+									province_id = 4695
+									province_id = 7907
+									province_id = 60
+									province_id = 4439
+									province_id = 8839
+									province_id = 525
+									province_id = 4465
+									province_id = 2063
+									province_id = 516
+									province_id = 521
+									province_id = 2047
+									province_id = 526
+									province_id = 7320
+									province_id = 7509
+									province_id = 7512
+									province_id = 5218
+									province_id = 3629
+									province_id = 3627
+								}
+							}
+							
+							if = { 
+								limit = { continent = europe }
+								add_permanent_province_modifier = { 
+									name = woad_type
+									duration = -1  
+									desc = woad_type_tooltip
+								}
+							}
+							
+							change_trade_goods = indigo
+						}
+						
+					}
+					
+					custom_tooltip = GOODS_Marcin_Indigo
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Indigo_NO
+				}
+				
+				
+				#if = {	#Obsolete
+				#	limit = {
+				#		NOT = { has_global_flag = No_Sea_turtle }
+				#	}
+				#	hidden_effect = {
+				#		every_province = {
+				#			limit = {
+				#				OR = {	
+				#					province_id = 3994
+				#					province_id = 8681
+				#				}
+				#			}
+				#			
+				#			change_trade_goods = sea_turtle
+				#		}
+				#	}
+				#	
+				#	custom_tooltip = GOODS_Marcin_Sea_turtle
+				#}
+				#else = {
+				#	custom_tooltip = GOODS_Marcin_Sea_turtle_NO
+				#}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Uniforms }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+								}
+							}
+							
+							change_trade_goods = uniforms
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Uniforms
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Uniforms_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Marble_sculpture }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+								}
+							}
+							
+							change_trade_goods = marble_sculpture
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Marble_sculpture
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Marble_sculpture_NO
+				}
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Cigars }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+								}
+							}
+							
+							change_trade_goods = cigars
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Cigars
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Cigars_NO
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Chocolate }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+								}
+							}
+							
+							change_trade_goods = chocolate
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Chocolate
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Chocolate_NO
+				}
+				
+				
+				hidden_effect = {
+					220 = { change_trade_goods = silk }
+					2386 = { change_trade_goods = sugar } 
+					203 = { change_trade_goods = silk } 
+					116 = { change_trade_goods = silk }
+					101 = { change_trade_goods = silk } 
+					4729 = { change_trade_goods = silk }
+					4559 = { change_trade_goods = dyes } 
+					163 = { change_trade_goods = dyes } 
+					2983 = { change_trade_goods = paper }
+				}
+				1 = {
+					province_event = { id = prices_marcin.13 days = 365 }
+				}
+
+			set_global_flag = tradegood_marcin
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

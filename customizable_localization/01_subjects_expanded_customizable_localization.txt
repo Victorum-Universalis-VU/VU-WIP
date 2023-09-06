@@ -1,0 +1,5424 @@
+defined_text = {
+    name = GetIfCancelProtectorateGivesStabHit
+	random = no
+
+	text = {
+        localisation_key = string_cancel_protectorate_no_stab_hit
+        trigger = {
+			full_idea_group = diplomatic_ideas
+        }
+    }
+	text = {
+        localisation_key = string_cancel_protectorate_stab_hit
+        trigger = {
+			NOT = { full_idea_group = diplomatic_ideas }
+        }
+    }
+}
+
+defined_text = {
+    name = GetIncreaseColonialAutonomyDesc
+	random = no
+
+	text = {
+        localisation_key = string_increase_colonial_autonomy_colony
+        trigger = {
+			is_colonial_subject_type = yes
+        }
+    }
+	text = {
+        localisation_key = string_increase_colonial_autonomy_dominion
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetDecreaseColonialAutonomyDesc
+	random = no
+
+	text = {
+        localisation_key = string_decrease_colonial_autonomy_dominion
+        trigger = {
+			is_dominion_or_similar_subject = yes
+        }
+    }
+	text = {
+        localisation_key = string_decrease_colonial_autonomy_autonomous_dominion
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetIfEstablishCrusaderStateCostsPapalInfluence
+	random = no
+
+	text = {
+        localisation_key = string_establish_crusader_state_costs_papal_influence
+        trigger = {
+			NOT = { tag = PAP }
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			tag = PAP
+        }
+    }
+}
+
+defined_text = {
+    name = GetIfEstablishVoivodeshipReducesStabilityAndPrestige
+	random = no
+
+	text = {
+        localisation_key = string_establish_voivodeship_reduces_stability_and_prestige
+        trigger = {
+			NOT = {
+				OR = {
+					culture_group = FROM
+					accepted_culture = FROM
+					FROM = {
+						accepted_culture = ROOT
+					}
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetIfDemoteToVassalGivesStabHit
+	random = no
+
+	text = {
+        localisation_key = string_demote_to_vassal_stab_hit
+        trigger = {
+			NOT = { full_idea_group = diplomatic_ideas }
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameIndia
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_india_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DI1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DI2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DI3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DI4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			NOT = { exists = DI5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_6
+        trigger = {
+			religion_group = muslim
+			NOT = { exists = DI6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_7
+        trigger = {
+			NOT = { exists = DI7 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_india_8
+        trigger = {
+			NOT = { exists = DI8 }
+        }
+    }
+
+	text = {
+        localisation_key = string_created_ad_name_india_9
+        trigger = {
+			NOT = { exists = DI9 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameWestAfrica
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_west_africa_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DW1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DW2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DW3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DW4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			NOT = { exists = DW5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_6
+        trigger = {
+			religion_group = muslim
+			NOT = { exists = DW6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_west_africa_7
+        trigger = {
+			NOT = { exists = DW7 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameSouthAfrica
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_south_africa_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DS1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DS2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DS3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DS4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			NOT = { exists = DS5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_6
+        trigger = {
+			religion_group = muslim
+			NOT = { exists = DS6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_south_africa_7
+        trigger = {
+			NOT = { exists = DS7 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameEastAfrica
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_east_africa_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DA1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DA2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DA3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DA4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			NOT = { exists = DA5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_6
+        trigger = {
+			religion_group = muslim
+			NOT = { exists = DA6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_africa_7
+        trigger = {
+			NOT = { exists = DA7 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameIndochina
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_indochina_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DC1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DC2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DC3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DC4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			NOT = { exists = DC5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_6
+        trigger = {
+			religion_group = muslim
+			NOT = { exists = DC6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_indochina_7
+        trigger = {
+			NOT = { exists = DC7 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNameEastIndies
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_east_indies_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DE1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			OR = {
+				AND = {
+					NOT = { tag = NED }
+					NOT = { tag = HOL }
+					NOT = { primary_culture = dutch }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			NOT = { exists = DE3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DE4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			OR = {
+				AND = {
+					NOT = { tag = NED }
+					NOT = { tag = HOL }
+					NOT = { primary_culture = dutch }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_6
+        trigger = {
+			religion_group = muslim
+			OR = {
+				AND = {
+					NOT = { tag = NED }
+					NOT = { tag = HOL }
+					NOT = { primary_culture = dutch }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_7
+        trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+			NOT = { exists = DE7 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_east_indies_8
+        trigger = {
+			NOT = { exists = DE8 }
+        }
+    }
+
+	text = {
+        localisation_key = string_created_ad_name_east_indies_9
+        trigger = {
+			NOT = { exists = DE9 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetCreatedADNamePhilippines
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_philippines_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = UNK
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DE1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DE2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				tag = POR
+				tag = ARA
+			}
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { tag = BSP }
+					NOT = { tag = SPB }
+					NOT = { tag = BBS }
+					NOT = { tag = CSP }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DE4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { tag = BSP }
+					NOT = { tag = SPB }
+					NOT = { tag = BBS }
+					NOT = { tag = CSP }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_6
+        trigger = {
+			religion_group = muslim
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { tag = BSP }
+					NOT = { tag = SPB }
+					NOT = { tag = BBS }
+					NOT = { tag = CSP }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_7
+        trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+				primary_culture = castillian
+			}
+			NOT = { exists = DE7 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_8
+        trigger = {
+			NOT = { exists = DE8 }
+        }
+    }
+
+	text = {
+        localisation_key = string_created_ad_name_philippines_9
+        trigger = {
+			NOT = { exists = DE9 }
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstEastIndiesTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_moluccas_trade_company_region
+        trigger = {
+			trade_company_moluccas = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_moluccas_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstEastIndiesTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_indonesia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondEastIndiesTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_indonesian_trade_company_region
+        trigger = {
+			trade_company_indonesia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_indonesian_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEastIndiesTradeCompanyRegionsSgPl
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_region_pl
+        trigger = {
+			trade_company_moluccas = {
+				owned_by = ROOT
+			}
+			trade_company_indonesia = {
+				owned_by = ROOT
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_region_sg
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstIndochinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_indochina_trade_company_region
+        trigger = {
+			trade_company_indochina = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_indochina_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstIndochinaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+				trade_company_burma = {
+					owned_by = PREV
+					NOT = { superregion = india_superregion }
+				}
+				trade_company_east_india = {
+					owned_by = PREV
+					NOT = { superregion = india_superregion }
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondIndochinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_burma_trade_company_region
+        trigger = {
+			trade_company_burma = {
+				owned_by = PREV
+				NOT = { superregion = india_superregion }
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_burma_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondIndochinaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_east_india = {
+				owned_by = PREV
+				NOT = { superregion = india_superregion }
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirdIndochinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_east_india_trade_company_region
+        trigger = {
+			trade_company_east_india = {
+				owned_by = PREV
+				NOT = { superregion = india_superregion }
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_east_india_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetIndochinaTradeCompanyRegionsSgPl
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_region_pl
+        trigger = {
+			trade_company_indochina = {
+				owned_by = ROOT
+			}
+			trade_company_burma = {
+				owned_by = ROOT
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_region_sg
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+#defined_text = {
+#    name = GetFirstWestAfricanTradeCompanyRegionWeCede
+#	random = no
+#
+#	text = {
+#        localisation_key = string_west_africa_trade_company_region
+#        trigger = {
+#			trade_company_west_africa = {
+#				owned_by = PREV
+#			}
+#        }
+#    }
+#	text = {
+#        localisation_key = string_no_west_africa_trade_company_region
+#        trigger = {
+#			always = yes
+#        }
+#    }
+#}
+
+#The rule here is that the first entry is only written once whilst every other entry is repeated twice. By San Felipe
+#For West Africa
+defined_text = {
+    name = GetFirstAngolaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_angola_trade_company_region
+        trigger = {
+			trade_company_angola = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_angola_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstAngolaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+			    trade_company_benin = {
+					owned_by = PREV
+				}
+				trade_company_bissau = {
+					owned_by = PREV
+				}
+				trade_company_burkina = {
+					owned_by = PREV
+				}
+				trade_company_cameroon = {
+					owned_by = PREV
+				}
+				trade_company_central_africa = {
+					owned_by = PREV
+				}
+				trade_company_chad = {
+					owned_by = PREV
+				}
+				trade_company_gabon = {
+					owned_by = PREV
+				}
+				trade_company_gambia = {
+					owned_by = PREV
+				}
+				trade_company_ghana = {
+					owned_by = PREV
+				}
+				trade_company_guinea = {
+					owned_by = PREV
+				}
+				trade_company_kongo = {
+					owned_by = PREV
+				}
+				trade_company_ivory_coast = {
+					owned_by = PREV
+				}
+				trade_company_liberia = {
+					owned_by = PREV
+				}
+				trade_company_mali = {
+					owned_by = PREV
+				}
+				trade_company_mauritania = {
+					owned_by = PREV
+				}
+				trade_company_namibia = {
+					owned_by = PREV
+				}
+				trade_company_niger = {
+					owned_by = PREV
+				}
+				trade_company_nigeria = {
+					owned_by = PREV
+				}
+				trade_company_senegal = {
+					owned_by = PREV
+				}
+				trade_company_sierra_leone = {
+					owned_by = PREV
+				}
+				trade_company_togo = {
+					owned_by = PREV
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondBeninTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_benin_trade_company_region
+        trigger = {
+			trade_company_benin = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_benin_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondBeninTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+				trade_company_bissau = {
+					owned_by = PREV
+				}
+				trade_company_burkina = {
+					owned_by = PREV
+				}
+				trade_company_cameroon = {
+					owned_by = PREV
+				}
+				trade_company_central_africa = {
+					owned_by = PREV
+				}
+				trade_company_chad = {
+					owned_by = PREV
+				}
+				trade_company_gabon = {
+					owned_by = PREV
+				}
+				trade_company_gambia = {
+					owned_by = PREV
+				}
+				trade_company_ghana = {
+					owned_by = PREV
+				}
+				trade_company_guinea = {
+					owned_by = PREV
+				}
+				trade_company_kongo = {
+					owned_by = PREV
+				}
+				trade_company_ivory_coast = {
+					owned_by = PREV
+				}
+				trade_company_liberia = {
+					owned_by = PREV
+				}
+				trade_company_mali = {
+					owned_by = PREV
+				}
+				trade_company_mauritania = {
+					owned_by = PREV
+				}
+				trade_company_namibia = {
+					owned_by = PREV
+				}
+				trade_company_niger = {
+					owned_by = PREV
+				}
+				trade_company_nigeria = {
+					owned_by = PREV
+				}
+				trade_company_senegal = {
+					owned_by = PREV
+				}
+				trade_company_sierra_leone = {
+					owned_by = PREV
+				}
+				trade_company_togo = {
+					owned_by = PREV
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirdBissauTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_bissau_trade_company_region
+        trigger = {
+			trade_company_bissau = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_bissau_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirdBissauTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_burkina = {
+				owned_by = PREV
+			}
+			trade_company_cameroon = {
+				owned_by = PREV
+			}
+			trade_company_central_africa = {
+				owned_by = PREV
+			}
+			trade_company_chad = {
+				owned_by = PREV
+			}
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourthBurkinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_burkina_trade_company_region
+        trigger = {
+			trade_company_burkina = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_burkina_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourthBurkinaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_cameroon = {
+				owned_by = PREV
+			}
+			trade_company_central_africa = {
+				owned_by = PREV
+			}
+			trade_company_chad = {
+				owned_by = PREV
+			}
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifthCameroonTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_cameroon_trade_company_region
+        trigger = {
+			trade_company_cameroon = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_cameroon_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifthCameroonTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_central_africa = {
+				owned_by = PREV
+			}
+			trade_company_chad = {
+				owned_by = PREV
+			}
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixthCentralAfricaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_central_africa_trade_company_region
+        trigger = {
+			trade_company_central_africa = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_central_africa_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixthCentralAfricaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_chad = {
+				owned_by = PREV
+			}
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventhChadTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_chad_trade_company_region
+        trigger = {
+			trade_company_chad = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_chad_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventhChadTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighthGabonTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_gabon_trade_company_region
+        trigger = {
+			trade_company_gabon = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_gabon_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighthGabonTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNinthGambiaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_gambia_trade_company_region
+        trigger = {
+			trade_company_gambia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_gambia_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNinthGambiaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTenthGhanaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_ghana_trade_company_region
+        trigger = {
+			trade_company_ghana = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_ghana_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTenthGhanaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEleventhGuineaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_guinea_trade_company_region
+        trigger = {
+			trade_company_guinea = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_guinea_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEleventhGuineaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwelfthKongoTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_kongo_trade_company_region
+        trigger = {
+			trade_company_kongo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_kongo_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwelfthKongoTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirteenthIvoryCoastTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_ivory_coast_trade_company_region
+        trigger = {
+			trade_company_ivory_coast = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_ivory_coast_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirteenthIvoryCoastTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourteenthLiberiaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_liberia_trade_company_region
+        trigger = {
+			trade_company_liberia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_liberia_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourteenthLiberiaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_mali = {
+				owned_by = PREV
+			}
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifteenthMaliTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_mali_trade_company_region
+        trigger = {
+			trade_company_mali = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_mali_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifteenthMaliTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixteenthMauritaniaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_mauritania_trade_company_region
+        trigger = {
+			trade_company_mauritania = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_mauritania_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixteenthMauritaniaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+		    trade_company_namibia = {
+				owned_by = PREV
+			}
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventeenthNamibiaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_namibia_trade_company_region
+        trigger = {
+			trade_company_namibia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_namibia_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventeenthNamibiaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_niger = {
+				owned_by = PREV
+			}
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighteenthNigerTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_niger_trade_company_region
+        trigger = {
+			trade_company_niger = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_niger_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighteenthNigerTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNineteenthNigeriaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_nigeria_trade_company_region
+        trigger = {
+			trade_company_nigeria = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_nigeria_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNineteenthNigeriaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwentiethSenegalTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_senegal_trade_company_region
+        trigger = {
+			trade_company_senegal = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_senegal_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwentiethSenegalTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwentyFirstSierraLeoneTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_sierra_leone_trade_company_region
+        trigger = {
+			trade_company_sierra_leone = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_sierra_leone_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwentyFirstSierraLeoneTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetTwentySecondTogoTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_togo_trade_company_region
+        trigger = {
+			trade_company_togo = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_togo_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetWestAfricanTradeCompanyRegionsSgPl
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_region_sg
+        trigger = {
+			OR = {
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+					}
+					trade_company_togo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+				}
+				AND = {
+					trade_company_angola = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_benin = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_bissau = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_burkina = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_cameroon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_central_africa = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_chad = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gabon = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_gambia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ghana = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_guinea = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kongo = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ivory_coast = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_liberia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mali = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mauritania = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_namibia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_niger = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_nigeria = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_senegal = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sierra_leone = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_togo = {
+						type = all
+					}
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_region_pl
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+#East Africa
+defined_text = {
+    name = GetFirstBugandaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_buganda_trade_company_region
+        trigger = {
+			trade_company_buganda = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_buganda_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstBugandaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+				trade_company_ethiopia = {
+					owned_by = PREV
+				}
+				trade_company_kenya = {
+					owned_by = PREV
+				}
+				trade_company_mozambique = {
+					owned_by = PREV
+				}
+				trade_company_madagascar = {
+					owned_by = PREV
+				}
+				trade_company_somalia = {
+					owned_by = PREV
+				}
+				trade_company_sudan = {
+					owned_by = PREV
+				}
+				trade_company_zambezi = {
+					owned_by = PREV
+				}
+				trade_company_tanganyika = {
+					owned_by = PREV
+				}
+				#trade_company_hormuz = {
+				#	continent = africa
+				#	owned_by = PREV
+				#}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondEthiopiaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_ethiopia_trade_company_region
+        trigger = {
+			trade_company_ethiopia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_ethiopia_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondEthiopiaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+				trade_company_kenya = {
+					owned_by = PREV
+				}
+				trade_company_mozambique = {
+					owned_by = PREV
+				}
+				trade_company_madagascar = {
+					owned_by = PREV
+				}
+				trade_company_somalia = {
+					owned_by = PREV
+				}
+				trade_company_sudan = {
+					owned_by = PREV
+				}
+				trade_company_zambezi = {
+					owned_by = PREV
+				}
+				trade_company_tanganyika = {
+					owned_by = PREV
+				}
+				#trade_company_hormuz = {
+				#	continent = africa
+				#	owned_by = PREV
+				#}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirdKenyaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_kenya_trade_company_region
+        trigger = {
+			trade_company_kenya = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_kenya_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetThirdKenyaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			OR = {
+				trade_company_mozambique = {
+					owned_by = PREV
+				}
+				trade_company_madagascar = {
+					owned_by = PREV
+				}
+				trade_company_somalia = {
+					owned_by = PREV
+				}
+				trade_company_sudan = {
+					owned_by = PREV
+				}
+				trade_company_zambezi = {
+					owned_by = PREV
+				}
+				trade_company_tanganyika = {
+					owned_by = PREV
+				}
+				#trade_company_hormuz = {
+				#	continent = africa
+				#	owned_by = PREV
+				#}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourthMozambiqueTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_mozambique_trade_company_region
+        trigger = {
+			trade_company_mozambique = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_mozambique_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFourthMozambiqueTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_madagascar = {
+				owned_by = PREV
+			}
+			trade_company_somalia = {
+				owned_by = PREV
+			}
+			trade_company_sudan = {
+				owned_by = PREV
+			}
+			trade_company_zambezi = {
+				owned_by = PREV
+			}
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifthMadagascarTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_madagascar_trade_company_region
+        trigger = {
+			trade_company_madagascar = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_madagascar_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFifthMadagascarTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_somalia = {
+				owned_by = PREV
+			}
+			trade_company_sudan = {
+				owned_by = PREV
+			}
+			trade_company_zambezi = {
+				owned_by = PREV
+			}
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixthSomaliaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_somalia_trade_company_region
+        trigger = {
+			trade_company_somalia = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_somalia_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSixthSomaliaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_sudan = {
+				owned_by = PREV
+			}
+			trade_company_zambezi = {
+				owned_by = PREV
+			}
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventhSudanTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_sudan_trade_company_region
+        trigger = {
+			trade_company_sudan = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_sudan_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSeventhSudanTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_zambezi = {
+				owned_by = PREV
+			}
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighthZambeziTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_zambezi_trade_company_region
+        trigger = {
+			trade_company_zambezi = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_zambezi_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetEighthZambeziTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNinethTanganyikaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_tanganyika_trade_company_region
+        trigger = {
+			trade_company_tanganyika = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_tanganyika_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetNinethTanganyikaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_gulf_of_aden_trade_company_list_comma
+        trigger = {
+			#trade_company_hormuz = {
+			#	continent = africa
+			#	owned_by = PREV
+			#}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+#defined_text = {
+#    name = GetTenthGulfOfAdenTradeCompanyRegionWeCede
+#	random = no
+#
+#	text = {
+#        localisation_key = string_gulf_of_aden_trade_company_region
+#        trigger = {
+#			#trade_company_hormuz = {
+#			#	continent = africa
+#			#	owned_by = PREV
+#			#}
+#        }
+#    }
+#	text = {
+#        localisation_key = string_no_gulf_of_aden_trade_company_region
+#        trigger = {
+#			always = yes
+#        }
+#    }
+#}
+
+defined_text = {
+    name = GetEastAfricanTradeCompanyRegionsSgPl
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_region_sg
+        trigger = {
+			OR = {
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_tanganyika = {
+						type = all
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#	OR = {
+					#		NOT = { owned_by = ROOT }
+					#		NOT = { continent = africa }
+					#	}
+					#}
+				}
+				AND = {
+					trade_company_buganda = {
+						owned_by = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_ethiopia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_kenya = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_mozambique = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_madagascar = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_somalia = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_sudan = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					trade_company_zambezi = {
+						type = all
+					}
+					trade_company_tanganyika = {
+						type = all
+						NOT = { owned_by = ROOT }
+					}
+					#trade_company_hormuz = {
+					#	type = all
+					#}
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_region_pl
+        trigger = {
+			always = yes
+        }
+    }
+}

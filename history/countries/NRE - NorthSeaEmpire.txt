@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = norwegian
+religion = catholic
+technology_group = scandinavian_tech_group
+unit_type = western
+historical_friend = DAN
+capital = 17 #Akershus

@@ -1,0 +1,449 @@
+namespace = edumacation
+
+#Fires when you start game and gives you both the ruler uneducated country modifier and personality.
+#On Startup - Ruler
+country_event = {
+	id = edumacation.1
+	title = "edumacation.1.name"
+	desc = "edumacation.1.desc"
+	picture = REFORM_eventPicture
+	
+    fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_game_started = yes
+		has_regency = no
+		ROOT = { ai = no }
+		NOT = { technology_group = east_african }
+        NOT = { technology_group = central_african }
+        NOT = { technology_group = nomad_group }
+        NOT = { technology_group = sub_saharan }
+        NOT = { technology_group = north_american }
+        NOT = { technology_group = mesoamerican }
+        NOT = { technology_group = south_american }
+        NOT = { technology_group = andean }
+        NOT = { technology_group = high_american }
+        NOT = { technology_group = aboriginal_tech }
+        NOT = { technology_group = rapanuan_tech_group }
+        NOT = { technology_group = polynesian_tech }
+        NOT = { technology_group = papuan_tech_group }
+	}
+	
+	option = {
+		name = "edumacation.1.a"
+		add_ruler_personality = vu_uneducated_ruler_personality
+		add_country_modifier = { 
+			name = "ruler_uneducated" 
+			duration = 360            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		}
+        #if = {
+        #    limit = { 
+		#	    has_new_dynasty = yes 
+		#	}
+		#	add_ruler_personality = vu_uneducated_ruler_personality
+		#	add_country_modifier = { 
+		#	    name = "ruler_uneducated" 
+		#	    duration = 360            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+        #}
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = no 
+		#		has_regency = no 
+		#	}
+		#	add_ruler_personality = vu_uneducated_ruler_personality
+		#	add_country_modifier = { 
+		#	    name = "ruler_uneducated" 
+		#	    duration = 360            #This removes itself based on the premise that the the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+        #}
+	}
+}
+
+#On Startup - Heir
+country_event = {
+	id = edumacation.2
+	title = "edumacation.2.name"
+	desc = "edumacation.2.desc"
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_game_started = yes
+		has_regency = no
+		has_heir = yes
+		ROOT = { ai = no }
+		NOT = { technology_group = east_african }
+        NOT = { technology_group = central_african }
+        NOT = { technology_group = nomad_group }
+        NOT = { technology_group = sub_saharan }
+        NOT = { technology_group = north_american }
+        NOT = { technology_group = mesoamerican }
+        NOT = { technology_group = south_american }
+        NOT = { technology_group = andean }
+        NOT = { technology_group = high_american }
+        NOT = { technology_group = aboriginal_tech }
+        NOT = { technology_group = rapanuan_tech_group }
+        NOT = { technology_group = polynesian_tech }
+        NOT = { technology_group = papuan_tech_group }
+	}
+	
+	option = {
+		name = "edumacation.2.a"
+		add_heir_personality = vu_uneducated_ruler_personality
+		add_country_modifier = { 
+			name = "heir_uneducated" 
+			duration = -1
+		}
+        #if = {
+        #    limit = { 
+		#	    has_new_dynasty = yes 
+		#	}
+		#	add_heir_personality = vu_uneducated_heir_personality
+		#	add_country_modifier = { 
+		#    	name = "heir_uneducated" 
+		#    	duration = -1
+		#    }
+        #}
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = no 
+		#		has_regency = no 
+		#	}
+		#	add_heir_personality = vu_uneducated_heir_personality
+		#	add_country_modifier = { 
+		#    	name = "heir_uneducated" 
+		#    	duration = -1
+		#    }
+        #}
+	}
+}
+
+#On New Monarch
+country_event = {
+	id = edumacation.3
+	title = "edumacation.3.name"
+	desc = "edumacation.3.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = "edumacation.3.a"
+		#Removes all qualifications attained by the heir whilst the ruler was alive.
+		remove_heir_personality = vu_scholarly_ruler_personality
+		remove_heir_personality = vu_bachelorette_ruler_personality
+		remove_heir_personality = vu_doctorate_ruler_personality
+		add_ruler_personality = vu_uneducated_ruler_personality
+		add_country_modifier = { 
+			name = "ruler_uneducated" 
+			duration = -1            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		}
+		#Hashed out as it doesn't seem logical that a ruler would be studying straight after being born. Left here anyway for future reference.
+		#add_country_modifier = { 
+		#	name = "ruler_studying" 
+		#	duration = 2160           #This is active at the same time as the above due to the fact that whilst the ruler is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
+		#}
+        #if = {
+        #    limit = { 
+		#	    has_new_dynasty = yes 
+		#	}
+		#	add_ruler_personality = vu_uneducated_ruler_personality
+		#	add_country_modifier = { 
+		#	    name = "ruler_uneducated" 
+		#	    duration = -1            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+        #}
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = no 
+		#		has_regency = no 
+		#	}
+		#	add_ruler_personality = vu_uneducated_ruler_personality
+		#	add_country_modifier = { 
+		#	    name = "ruler_uneducated" 
+		#	    duration = -1            #This removes itself based on the premise that the the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+		#	#Hashed out as it doesn't seem logical that a ruler would be studying straight after being born. Left here anyway for future reference.
+		#    #add_country_modifier = { 
+		#	#	name = "ruler_studying" 
+		#	#	duration = 2160 
+		#	#}
+        #}
+	}
+}
+
+#On Monarch Death
+country_event = {
+	id = edumacation.4
+	title = "edumacation.4.name"
+	desc = "edumacation.4.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.4.a"
+		#Removes all qualifications attained by the heir whilst the ruler was alive.
+		remove_heir_personality = vu_scholarly_ruler_personality
+		remove_heir_personality = vu_bachelorette_ruler_personality
+		remove_heir_personality = vu_doctorate_ruler_personality
+		#Removes all qualifications attained by the ruler whilst he was alive.
+		remove_country_modifier = ruler_completed_scholarship
+		remove_country_modifier = ruler_completed_degree
+		remove_country_modifier = ruler_completed_doctorate
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = yes 
+		#	}
+		#	#Removes all qualifications attained by the ruler whilst he was alive.
+		#    remove_country_modifier = ruler_completed_scholarship
+		#	remove_country_modifier = ruler_completed_degree
+		#	remove_country_modifier = ruler_completed_doctorate
+        #}
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = no 
+		#		has_regency = no  
+		#	}
+		#	#Removes all qualifications attained by the ruler whilst he was alive.
+		#    remove_country_modifier = ruler_completed_scholarship
+		#	remove_country_modifier = ruler_completed_degree
+		#	remove_country_modifier = ruler_completed_doctorate
+        #}
+	}
+}
+
+#On New Heir
+country_event = {
+	id = edumacation.5
+	title = "edumacation.5.name"
+	desc = "edumacation.5.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = "edumacation.5.a"
+		add_heir_personality = vu_uneducated_ruler_personality
+		add_country_modifier = { 
+			name = "heir_uneducated" 
+			duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		}
+		#Hashed out as it doesn't seem logical that an heir would be studying straight after being born. Left here anyway for future reference.
+		#add_country_modifier = { 
+		#	name = "heir_studying" 
+		#	duration = 2160           #This is active at the same time as the above due to the fact that whilst the heir is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
+		#}
+        #if = {
+        #    limit = { 
+		#	    has_new_dynasty = yes 
+		#	}
+		#	add_heir_personality = vu_uneducated_heir_personality
+		#    add_country_modifier = { 
+		#    	name = "heir_uneducated" 
+		#    	duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+        #}
+        #if = {
+        #    limit = { 
+		#	    has_new_dynasty = no 
+		#		has_regency = no  
+		#	}
+		#	add_heir_personality = vu_uneducated_heir_personality
+		#    add_country_modifier = { 
+		#    	name = "heir_uneducated" 
+		#    	duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		#    }
+		#	#Hashed out as it doesn't seem logical that an heir would be studying straight after being born. Left here anyway for future reference.
+		#	#add_country_modifier = { 
+		#    #	name = "heir_studying" 
+		#    #	duration = 2160           #This is active at the same time as the above due to the fact that whilst the heir is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
+		#    #}
+        #}
+	}
+}
+
+#On Heir Death
+country_event = {
+	id = edumacation.6
+	title = "edumacation.6.name"
+	desc = "edumacation.6.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.6.a"
+		#Removes all qualifications attained by the heir whilst he was alive.
+		remove_country_modifier = heir_completed_scholarship
+		remove_country_modifier = heir_completed_degree
+		remove_country_modifier = heir_completed_doctorate
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = yes 
+		#	}
+		#	#Removes all qualifications attained by the heir whilst he was alive.
+		#    remove_country_modifier = heir_completed_scholarship
+		#	remove_country_modifier = heir_completed_degree
+		#	remove_country_modifier = heir_completed_doctorate
+        #}
+        #if = {
+        #    limit = { 
+		#		has_new_dynasty = no 
+		#		has_regency = no 
+		#	}
+		#	#Removes all qualifications attained by the heir whilst he was alive.
+		#    remove_country_modifier = heir_completed_scholarship
+		#	remove_country_modifier = heir_completed_degree
+		#	remove_country_modifier = heir_completed_doctorate
+        #}
+	}
+}
+
+#Triggered Only events
+#Ruler Completed Scholarship
+country_event = {
+	id = edumacation.7
+	title = "edumacation.7.name"
+	desc = "edumacation.7.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.7.a"
+		add_country_modifier = {
+            name = "ruler_completed_scholarship"
+	        duration = -1
+        }
+		add_ruler_personality = vu_scholarly_ruler_personality
+		change_adm = 1
+        change_dip = 1
+        change_mil = 1
+	}
+}
+
+#Ruler Completed Bachelors Degree
+country_event = {
+	id = edumacation.8
+	title = "edumacation.8.name"
+	desc = "edumacation.8.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.8.a"
+		add_country_modifier = {
+            name = "ruler_completed_degree"
+	        duration = -1
+        }
+		add_ruler_personality = vu_bachelorette_ruler_personality
+		change_adm = 2
+        change_dip = 2
+        change_mil = 2
+	}
+}
+
+#Ruler Completed Doctorate
+country_event = {
+	id = edumacation.9
+	title = "edumacation.9.name"
+	desc = "edumacation.9.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.9.a"
+		add_country_modifier = {
+            name = "ruler_completed_doctorate"
+	        duration = -1
+        }
+		add_ruler_personality = vu_doctorate_ruler_personality
+		change_adm = 3
+        change_dip = 3
+        change_mil = 3
+	}
+}
+
+
+#Heir Completed Scholarship
+country_event = {
+	id = edumacation.10
+	title = "edumacation.10.name"
+	desc = "edumacation.10.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.10.a"
+		add_country_modifier = {
+            name = "heir_completed_scholarship"
+	        duration = -1
+        }
+		add_heir_personality = vu_scholarly_ruler_personality
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir Completed Bachelors Degree
+country_event = {
+	id = edumacation.11
+	title = "edumacation.11.name"
+	desc = "edumacation.11.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.11.a"
+		add_country_modifier = {
+            name = "heir_completed_degree"
+	        duration = -1
+        }
+		add_heir_personality = vu_bachelorette_ruler_personality
+		change_heir_adm = 2
+        change_heir_dip = 2
+        change_heir_mil = 2
+	}
+}
+
+#Heir Completed Doctorate
+country_event = {
+	id = edumacation.12
+	title = "edumacation.12.name"
+	desc = "edumacation.12.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = "edumacation.12.a"
+		add_country_modifier = {
+            name = "heir_completed_doctorate"
+	        duration = -1
+        }
+		add_heir_personality = vu_doctorate_ruler_personality
+		change_heir_adm = 3
+        change_heir_dip = 3
+        change_heir_mil = 3
+	}
+}

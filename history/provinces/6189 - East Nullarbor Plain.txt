@@ -1,0 +1,3 @@
+#6189 - East Nullarbor Plain
+
+discovered_by = aboriginal_tech

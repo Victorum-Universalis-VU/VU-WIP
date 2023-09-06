@@ -1,0 +1,84 @@
+#5591 - Jan Mayen
+#Region - Scandinavia
+#Area - Northern Isles
+
+capital = "Isabella"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0 
+
+add_permanent_province_modifier = {
+    name = aurora_borealis
+    duration = -1
+}
+
+1614.1.1 = {
+	discovered_by = ENG
+	discovered_by = NED
+}	#Bunch of people at the same time... Note it was almost certainly known to both the Irish and Vikings earlier, but forgotten by both by our period
+
+1615.1.1 = {
+	owner = NED
+	controller = NED
+	add_core = NED
+	capital = "Mauritsburg"
+	is_city = yes
+	trade_goods = ivory			#Whaling
+} #More... anchorage point than settlement, but whatever
+
+#1620.1.1 = { 
+#    discovered_by = western 
+#	#discovered_by = dutch_tech_group 
+#	#discovered_by = english_tech_group 
+#	#discovered_by = french_tech_group 
+#	#discovered_by = german_tech_group 
+#	#discovered_by = italian_tech_group 
+#	#discovered_by = portuguese_tech_group 
+#	#discovered_by = scandinavian_tech_group 
+#	#discovered_by = spanish_tech_group 
+#	#discovered_by = swiss_tech_group 
+#}
+
+1640.1.1 = {
+	owner = XXX
+	controller = XXX
+	trade_goods = unknown
+	culture = norwegian
+	religion = protestant
+	capital = "Jan Mayen"
+	is_city = no
+	remove_core = NED
+} #Whales hunted to extinction, Dutch leaves and no one cares to come back until the Austrians in the 1880s and the Norwegians in the 1900s
+
+1882.1.1 = {
+	owner = AHE
+	controller = AHE
+	add_core = AHE
+	religion = catholic
+	culture = austrian
+	trade_goods = ivory			#In reality, no trade goods since it was science expedition
+	is_city = yes
+}
+
+1885.1.1 = {					#Austria-Hungary's expedition leaves
+	owner = XXX
+	controller = XXX
+	trade_goods = unknown
+	culture = norwegian
+	religion = protestant
+	is_city = no
+	remove_core = AHE
+}
+
+1900.1.1 = {					#Norwegians land
+	owner = NOR
+	controller = NOR
+	trade_goods = ivory
+	add_core = NOR
+	is_city = yes
+}

@@ -1,0 +1,42 @@
+ADU_send_religious_mission = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		has_country_flag = GRA_religious_mission_flag
+		FROM = {
+			is_primitive = yes
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			has_country_flag = GRA_religious_mission_flag
+			FROM = {
+				is_primitive = yes
+			}
+		}
+		FROM = {
+			NOT = { religion_group = muslim }
+		#	custom_trigger_tooltip = { #missing a tooltip : TODO
+				NOT = { has_country_flag = GRA_religious_mission_sent_here }
+		#	}
+		}
+		
+	}
+	
+	on_accept = {
+		add_dip_power = -50
+		FROM = {
+			save_event_target_as = Granada_that_target
+			set_country_flag = GRA_religious_mission_sent_here
+		}
+		set_country_flag = GRA_running_a_religious_mission
+		country_event = { id = ME_Granada_Events.48 }
+	}
+	
+	ai_will_do = {
+		NOT = { has_country_flag = GRA_running_a_religious_mission }
+	}
+}

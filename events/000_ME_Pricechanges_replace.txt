@@ -1,0 +1,23 @@
+# Decline of Mocha
+# country_event = {
+	# id = prices.32
+	# title = prices.32.t
+	# desc = prices.32.d
+	# picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	# goto = 387
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = prices.32.a
+		# 387 = {
+			# remove_province_modifier = coffea_arabica_modifier
+		# }
+		# FROM = { 
+			# add_opinion = {
+				# who = ROOT
+				# modifier = coffee_plant_spread #We will both dislike eachother
+			# }
+		# }
+	# }
+# }

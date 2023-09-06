@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = french_tech_group
+unit_type = western
+religion = catholic
+primary_culture = wallonian
+capital = 181 # Rethel
+fixed_capital = 181 # Cannot move capital away from this province & no power cost to move to it

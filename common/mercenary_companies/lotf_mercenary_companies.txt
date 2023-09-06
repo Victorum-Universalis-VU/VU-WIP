@@ -1,0 +1,33 @@
+merc_lotf_minutemen = {
+    regiments_per_development = 0.06
+	cavalry_weight = 0.1
+	artillery_weight = 0.15
+	cavalry_cap = 2
+	sprites = { dlc005_usa_sprite_pack westerngfx_sprite_pack }
+	cost_modifier = 0.4
+	home_province = 956
+	trigger = {
+		NOT = { mil_tech = 34 }
+		OR = {
+			tag = USA
+			AND = {
+				is_subject = no
+				NOT = { exists = USA }
+				capital_scope = {
+					colonial_region = colonial_eastern_america
+				}
+				colonial_parent = {
+					OR = {
+				       tag = GBR
+					   tag = UNK
+					}
+				}
+			}	
+		}
+	}
+	modifier = { 
+		recover_army_morale_speed = 0.05
+		reinforce_speed = 0.1
+		land_attrition = -0.1
+	}
+}

@@ -1,0 +1,5 @@
+#5985 - Lower_Connecticut_River_ct
+
+discovered_by = north_american
+
+1524.1.1 = { discovered_by = FRA } # Giovanni da Verrazzano

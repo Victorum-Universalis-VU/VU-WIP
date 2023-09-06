@@ -1,0 +1,21 @@
+#8278 - Zambales
+
+owner = TDO
+controller = TDO
+add_core = TDO
+culture = filipino
+religion = animism
+capital = "Iba"
+trade_goods = cinnamon
+hre = no
+base_tax = 10
+base_production = 10
+base_manpower = 4
+is_city = yes
+
+add_permanent_province_modifier = {
+	name = mt_pinatubo_modifier
+	duration = -1
+}
+
+discovered_by = chinese

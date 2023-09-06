@@ -1,0 +1,10 @@
+#6324 - Lake_Tuosu
+
+discovered_by = chinese
+discovered_by = indian
+#discovered_by = dutch_tech_group
+
+
+
+ #Ferdinand Verbiest
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest

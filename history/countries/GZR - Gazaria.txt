@@ -1,0 +1,16 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+technology_group = italian_tech_group
+unit_type = western
+primary_culture = ligurian
+add_accepted_culture = pontic_greek
+religion = catholic
+capital = 285 #Kaffa
+
+mercantilism = 25
+
+historical_friend = GEN
+
+
+#History, currently empty.
