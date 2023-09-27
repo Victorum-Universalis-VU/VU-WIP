@@ -421,6 +421,7 @@ vu_extra_slot_missions = {
 			num_of_owned_provinces_with = {
 				value = 10
 				OR = {
+					has_building = cannery_workshop
 					has_building = cannon_foundry
 					has_building = metalworking_workshop
 					has_building = munition_factory
@@ -433,6 +434,7 @@ vu_extra_slot_missions = {
 					has_building = spectacle_factory
 					has_building = cigars_factory
 					has_building = chocolate_factory
+					has_building = bakery
 				}
 				num_of_times_improved_by_owner = 5
 				development = 15

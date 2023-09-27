@@ -965,6 +965,16 @@ defined_text = {
 					}
 				}
 			}
+			zeeland_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						is_part_of_hre = yes
+						is_subject = no
+					}
+				}
+			}
 			north_brabant_area = {
 				type = all
 				OR = {

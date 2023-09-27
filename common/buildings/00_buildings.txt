@@ -6325,6 +6325,7 @@ tradecompany = {
 		slaves
 		spices
 		beer
+		canned_goods
 		cider
 		carpet
 		cheese
@@ -6343,6 +6344,7 @@ tradecompany = {
 		rum
 		sea_turtle
 		sulfur
+		sweet_confectioneries
 		whaling
 		woodworking
 	}
@@ -6385,6 +6387,7 @@ tradecompany = {
 	keep_trigger = {
 		OR = {
 			trade_goods = beer
+			trade_goods = canned_goods
 			trade_goods = cider
 			trade_goods = carpet
 			trade_goods = cheese
@@ -6406,6 +6409,7 @@ tradecompany = {
 			trade_goods = slaves
 			trade_goods = spices
 			trade_goods = sulfur
+			trade_goods = sweet_confectioneries
 			trade_goods = whaling
 			trade_goods = woodworking
 		}

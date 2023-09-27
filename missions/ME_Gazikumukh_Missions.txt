@@ -57,7 +57,7 @@ gazikumukh_missions_2 = {
 		NOT = { has_country_flag = formed_dagestan }
 	}
 	has_country_shield = yes
-	
+
 	GAZ_heir = {
 		icon = mission_noble_council
 		required_missions = { }
@@ -107,7 +107,7 @@ gazikumukh_missions_2 = {
 			}
 		}
 	}
-	
+
 	GAZ_worth = {
 		icon = mission_persian_soldiers
 		required_missions = { GAZ_heir }
@@ -129,7 +129,7 @@ gazikumukh_missions_2 = {
 			}
 		}
 	}
-	
+
 	GAZ_whole = {
 		icon = mission_unite_home_region
 		required_missions = { GAZ_giant GAZ_worth GAZ_unity }
@@ -163,7 +163,7 @@ gazikumukh_missions_3 = {
 		NOT = { has_country_flag = formed_dagestan }
 	}
 	has_country_shield = yes
-	
+
 	GAZ_benign = {
 		icon = mission_great_wall
 		required_missions = { }
@@ -201,7 +201,7 @@ gazikumukh_missions_3 = {
 			}
 		}
 	}
-	
+
 	GAZ_unity = {
 		icon = mission_pf_map_table
 		required_missions = { GAZ_heir }
@@ -215,7 +215,7 @@ gazikumukh_missions_3 = {
 					type = all
 					OR = {
 						culture = ROOT
-						accepted_culture = ROOT
+						has_owner_accepted_culture = yes
 						AND = {
 							culture_group = ROOT
 							ROOT = {
@@ -230,7 +230,7 @@ gazikumukh_missions_3 = {
 					type = all
 					OR = {
 						culture = ROOT
-						accepted_culture = ROOT
+						has_owner_accepted_culture = yes
 						AND = {
 							culture_group = ROOT
 							ROOT = {

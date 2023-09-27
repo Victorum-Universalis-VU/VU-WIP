@@ -1,16 +1,12 @@
+
 country_decisions = {
 	create_dominion_in_india = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -34,6 +30,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DI2 }
@@ -1107,16 +1104,11 @@ country_decisions = {
 
 	create_dominion_in_east_indies = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -1140,6 +1132,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					OR = {
@@ -2265,16 +2258,11 @@ country_decisions = {
 
 	create_dominion_in_indochina = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -2298,6 +2286,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DC2 }
@@ -3247,16 +3236,11 @@ country_decisions = {
 
 	create_dominion_in_philippines = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -3280,6 +3264,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DP2 }
@@ -4236,17 +4221,11 @@ country_decisions = {
 
 	create_dominion_in_west_africa = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			NOT = { has_global_flag = extended_timeline_mod }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -4270,6 +4249,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DW2 }
@@ -7490,17 +7470,11 @@ country_decisions = {
 
 	create_dominion_in_south_africa = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			NOT = { has_global_flag = extended_timeline_mod }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -7524,7 +7498,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
-						tag = UNK
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DS2 }
@@ -8170,17 +8144,11 @@ country_decisions = {
 
 	create_dominion_in_east_africa = {
 		potential = {
+			ai = no
 			NOT = { has_global_flag = se_dominions_disabled }
-			NOT = { has_global_flag = extended_timeline_mod }
-			OR = {
-				AND = {
-					NOT = { has_dlc = "Wealth of Nations" }
-					NOT = { has_dlc = "Dharma" }
-				}
-				ai = no
-			}
 			is_subject = no
 			can_be_overlord = dominion_tc
+			num_of_ports = 40
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				NOT = { superregion = india_superregion }
@@ -8204,6 +8172,7 @@ country_decisions = {
 					OR = {
 						culture_group = germanic
 						tag = GER
+						tag = GEM
 						tag = PRU
 					}
 					NOT = { exists = DA2 }

@@ -1,49 +1,18 @@
+#Re-Edited by San Felipe 16/08/2023
+#DonBrom was here...
 #SF Edumacation - Is only reserved for chinese, eastern, indian, islamic and western tags as these would have most likely had the educational insitutions available. 
 #country - should apply to all tags belonging in the chinese, eastern, indian, islamic, japanese and western technology groups.
 #Ruler
 on_new_monarch = {
 	if = {
 		limit = {
-			NOT = { technology_group = east_african }
-            NOT = { technology_group = central_african }
-            NOT = { technology_group = nomad_group }
-            NOT = { technology_group = sub_saharan }
-            NOT = { technology_group = north_american }
-            NOT = { technology_group = mesoamerican }
-            NOT = { technology_group = south_american }
-            NOT = { technology_group = andean }
-            NOT = { technology_group = high_american }
-            NOT = { technology_group = aboriginal_tech }
-            NOT = { technology_group = rapanuan_tech_group }
-            NOT = { technology_group = polynesian_tech }
-            NOT = { technology_group = papuan_tech_group }
+            ai = no
+            is_subject = no
+			has_institution = feudalism
 		}
 	}
 	events = {
-		edumacation.3
-	}
-}
-
-on_monarch_death = {
-	if = {
-		limit = {
-			NOT = { technology_group = east_african }
-            NOT = { technology_group = central_african }
-            NOT = { technology_group = nomad_group }
-            NOT = { technology_group = sub_saharan }
-            NOT = { technology_group = north_american }
-            NOT = { technology_group = mesoamerican }
-            NOT = { technology_group = south_american }
-            NOT = { technology_group = andean }
-            NOT = { technology_group = high_american }
-            NOT = { technology_group = aboriginal_tech }
-            NOT = { technology_group = rapanuan_tech_group }
-            NOT = { technology_group = polynesian_tech }
-            NOT = { technology_group = papuan_tech_group }
-		}
-	}
-	events = {
-		edumacation.4
+		SF_Edumacation_Events.3
 	}
 }
 
@@ -51,45 +20,13 @@ on_monarch_death = {
 on_new_heir = {
 	if = {
 		limit = {
-			NOT = { technology_group = east_african }
-            NOT = { technology_group = central_african }
-            NOT = { technology_group = nomad_group }
-            NOT = { technology_group = sub_saharan }
-            NOT = { technology_group = north_american }
-            NOT = { technology_group = mesoamerican }
-            NOT = { technology_group = south_american }
-            NOT = { technology_group = andean }
-            NOT = { technology_group = high_american }
-            NOT = { technology_group = aboriginal_tech }
-            NOT = { technology_group = rapanuan_tech_group }
-            NOT = { technology_group = polynesian_tech }
-            NOT = { technology_group = papuan_tech_group }
+            ai = no
+            is_subject = no
+			has_institution = feudalism
 		}
 	}
 	events = {
-		edumacation.5
+		SF_Edumacation_Events.5
 	}
 }
 
-on_heir_death = {
-	if = {
-		limit = {
-			NOT = { technology_group = east_african }
-            NOT = { technology_group = central_african }
-            NOT = { technology_group = nomad_group }
-            NOT = { technology_group = sub_saharan }
-            NOT = { technology_group = north_american }
-            NOT = { technology_group = mesoamerican }
-            NOT = { technology_group = south_american }
-            NOT = { technology_group = andean }
-            NOT = { technology_group = high_american }
-            NOT = { technology_group = aboriginal_tech }
-            NOT = { technology_group = rapanuan_tech_group }
-            NOT = { technology_group = polynesian_tech }
-            NOT = { technology_group = papuan_tech_group }
-		}
-	}
-	events = {
-		edumacation.6
-	}
-}

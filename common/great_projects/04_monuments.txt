@@ -1312,7 +1312,7 @@ arunachalesvara_temple = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -1336,7 +1336,7 @@ arunachalesvara_temple = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -1350,7 +1350,7 @@ arunachalesvara_temple = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -2267,7 +2267,7 @@ fort_canning_hill = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -2291,7 +2291,7 @@ fort_canning_hill = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -2306,7 +2306,7 @@ fort_canning_hill = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -3260,9 +3260,12 @@ great_sphinx = {
 				has_owner_religion = yes
 			}
 			AND = {
-				culture = al_misr_arabic
-				has_owner_culture = yes
+				OR = {
+				culture_group = turko_semitic
+				culture_group = egyptian_group 
 				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -3284,9 +3287,12 @@ great_sphinx = {
 				has_owner_religion = yes
 			}
 			AND = {
-				culture = al_misr_arabic
-				has_owner_culture = yes
+				OR = {
+				    culture_group = turko_semitic
+				    culture_group = egyptian_group 
 				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -3298,9 +3304,12 @@ great_sphinx = {
 				has_owner_religion = yes
 			}
 			AND = {
-				culture = al_misr_arabic
-				has_owner_culture = yes
+				OR = {
+				    culture_group = turko_semitic
+				    culture_group = egyptian_group 
 				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -3486,7 +3495,7 @@ hagatna = {
 				religion = animism
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = dreamtime
 				has_owner_religion = yes
 			}
@@ -3518,7 +3527,7 @@ hagatna = {
 				religion = animism
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = dreamtime
 				has_owner_religion = yes
 			}
@@ -3537,7 +3546,7 @@ hagatna = {
 				religion = animism
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = dreamtime
 				has_owner_religion = yes
 			}
@@ -5117,56 +5126,56 @@ palenque = {
 		on_upgraded = {}
 	}
 }
-
-port_royal = {
-	start = 487
-	date = 1494.01.01 #1494.01.01
-	time = { months = 0 }
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 1
-	starting_tier = 0
-	type = monument
-	build_trigger = { is_year = 1494 vu_christian_cities_trigger = yes }
-	on_built = {}
-	on_destroyed = {}
-	can_use_modifiers_trigger = { is_year = 1494 vu_christian_cities_trigger = yes }
-	can_upgrade_trigger = {	is_year = 1494 vu_christian_cities_trigger = yes }
-	keep_trigger = { vu_christian_cities_trigger = yes }
-
-	tier_0 = {
-		upgrade_time = { months = 0 }
-		cost_to_upgrade = {	factor = 0 }
-		province_modifiers = {}
-		area_modifier = {}
-		country_modifiers = {}
-		on_upgraded = {}
-	}
-	tier_1 = {
-		upgrade_time = { months = 120 }
-		cost_to_upgrade = {	factor = 1500 }
-		province_modifiers = { local_sailors = 1500 }
-		area_modifier = { local_ship_cost = -0.15 }
-		country_modifiers = { flagship_cost = -0.15 capture_ship_chance = 0.1 privateer_efficiency = 0.2 }
-		on_upgraded = {}
-	}
-	tier_2 = {
-		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 3500 }
-		province_modifiers = { local_sailors = 2500 local_ship_repair = 0.35 }
-		area_modifier = { local_ship_cost = -0.25 }
-		country_modifiers = { flagship_cost = -0.25 capture_ship_chance = 0.15 privateer_efficiency = 0.25 naval_forcelimit_modifier = 0.15	}
-		on_upgraded = {}
-	}
-	tier_3 = {
-		upgrade_time = { months = 480 }
-		cost_to_upgrade = { factor = 6000 }
-		province_modifiers = { local_sailors = 5000 local_ship_repair = 0.45 }
-		area_modifier = { local_ship_cost = -0.35 ship_recruit_speed = -0.45 }
-		country_modifiers = { flagship_cost = -0.45 capture_ship_chance = 0.25 privateer_efficiency = 0.35 naval_forcelimit_modifier = 0.25 privateering_efficiency_in_fleet_modifier = 0.15 }
-		on_upgraded = {}
-	}
-}
+#Hashed out by San Felipe since VU already has its own version
+#port_royal = {
+#	start = 487
+#	date = 1494.01.01 #1494.01.01
+#	time = { months = 0 }
+#	build_cost = 0
+#	can_be_moved = no
+#	move_days_per_unit_distance = 1
+#	starting_tier = 0
+#	type = monument
+#	build_trigger = { is_year = 1494 vu_christian_cities_trigger = yes }
+#	on_built = {}
+#	on_destroyed = {}
+#	can_use_modifiers_trigger = { is_year = 1494 vu_christian_cities_trigger = yes }
+#	can_upgrade_trigger = {	is_year = 1494 vu_christian_cities_trigger = yes }
+#	keep_trigger = { vu_christian_cities_trigger = yes }
+#
+#	tier_0 = {
+#		upgrade_time = { months = 0 }
+#		cost_to_upgrade = {	factor = 0 }
+#		province_modifiers = {}
+#		area_modifier = {}
+#		country_modifiers = {}
+#		on_upgraded = {}
+#	}
+#	tier_1 = {
+#		upgrade_time = { months = 120 }
+#		cost_to_upgrade = {	factor = 1500 }
+#		province_modifiers = { local_sailors = 1500 }
+#		area_modifier = { local_ship_cost = -0.15 }
+#		country_modifiers = { flagship_cost = -0.15 capture_ship_chance = 0.1 privateer_efficiency = 0.2 }
+#		on_upgraded = {}
+#	}
+#	tier_2 = {
+#		upgrade_time = { months = 240 }
+#		cost_to_upgrade = { factor = 3500 }
+#		province_modifiers = { local_sailors = 2500 local_ship_repair = 0.35 }
+#		area_modifier = { local_ship_cost = -0.25 }
+#		country_modifiers = { flagship_cost = -0.25 capture_ship_chance = 0.15 privateer_efficiency = 0.25 naval_forcelimit_modifier = 0.15	}
+#		on_upgraded = {}
+#	}
+#	tier_3 = {
+#		upgrade_time = { months = 480 }
+#		cost_to_upgrade = { factor = 6000 }
+#		province_modifiers = { local_sailors = 5000 local_ship_repair = 0.45 }
+#		area_modifier = { local_ship_cost = -0.35 ship_recruit_speed = -0.45 }
+#		country_modifiers = { flagship_cost = -0.45 capture_ship_chance = 0.25 privateer_efficiency = 0.35 naval_forcelimit_modifier = 0.25 privateering_efficiency_in_fleet_modifier = 0.15 }
+#		on_upgraded = {}
+#	}
+#}
 
 puma_punku = {
 	start = 2831
@@ -5627,7 +5636,7 @@ sigiriya = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -5651,11 +5660,11 @@ sigiriya = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = theravada
 				has_owner_religion = yes
 			}
@@ -5669,11 +5678,11 @@ sigiriya = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = theravada
 				has_owner_religion = yes
 			}
@@ -7179,7 +7188,7 @@ atlasov_island = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = shinto
 				has_owner_religion = yes
 			}
@@ -8539,7 +8548,7 @@ masrur_temples = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8567,7 +8576,7 @@ masrur_temples = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8585,7 +8594,7 @@ masrur_temples = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8762,7 +8771,7 @@ krishna_mandapam = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8786,7 +8795,7 @@ krishna_mandapam = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8800,7 +8809,7 @@ krishna_mandapam = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -8984,7 +8993,7 @@ iron_pillar_of_delhi = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -9012,7 +9021,7 @@ iron_pillar_of_delhi = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
@@ -9030,7 +9039,7 @@ iron_pillar_of_delhi = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = mahayana
 				has_owner_religion = yes
 			}
@@ -9038,7 +9047,7 @@ iron_pillar_of_delhi = {
 				religion = bon
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = hinduism
 				has_owner_religion = yes
 			}

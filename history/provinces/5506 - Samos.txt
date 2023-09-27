@@ -332,7 +332,7 @@ discovered_by = SZE
 
 #Histories by SF
 1215.6.15 = { owner = LTE controller = LTE add_core = LTE } # Latin territorial lands - By San Felipe
-1444.11.11 = { owner = GEN controller = GEN add_core = GEN } # Genoan territorial lands - By San Felipe
+1444.11.11 = { owner = GEN controller = GEN add_core = GEN add_core = BYZ } # Genoan territorial lands - By San Felipe
 1475.1.1 = { add_core = TUR } #Siezed by Ottomans but island was basicaly abandoned
 1479.1.1 = { remove_core = TUR }
 1566.1.1 = {

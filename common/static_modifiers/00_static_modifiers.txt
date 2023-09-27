@@ -674,7 +674,7 @@ stability = {
 	global_trade_power = 0.01				#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 positive_stability = {
@@ -953,7 +953,7 @@ positive_piety = { #As of 1.23 Legalism
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.2
+	#monthly_caliphal_legitimacy = 0.2
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -965,7 +965,7 @@ negative_piety = { #As of 1.23 Mysticism
 	church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.2
+	#monthly_caliphal_legitimacy = 0.2
 }
 
 defender_of_faith = {
@@ -980,13 +980,13 @@ defender_of_faith = {
 	missionaries = 1
 	devotion = 0.5
 	#EE
-	monthly_caliphal_legitimacy = 0.1
+	#monthly_caliphal_legitimacy = 0.1
 }
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
 	#EE
-	monthly_caliphal_legitimacy = -0.15
+	#monthly_caliphal_legitimacy = -0.15
 }
 
 emperor = {
@@ -1153,7 +1153,7 @@ corruption = {
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
 	#EE
-	monthly_caliphal_legitimacy = -10
+	#monthly_caliphal_legitimacy = -10
 }
 
 root_out_corruption = {
@@ -1297,7 +1297,7 @@ religious_unity = {
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
 	#EE
-	monthly_caliphal_legitimacy = 0.15
+	#monthly_caliphal_legitimacy = 0.15
 }
 
 inverse_religious_unity = {
@@ -1739,7 +1739,7 @@ discontent_sowed = {
 reputation_sabotaged = {
 	diplomatic_reputation = -3
 	#EE
-	monthly_caliphal_legitimacy = -0.05
+	#monthly_caliphal_legitimacy = -0.05
 }
 
 corrupt_officials = {
@@ -2047,7 +2047,7 @@ hanafi_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	adm_tech_cost_modifier = -0.05
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 hanbali_scholar_modifier = {
@@ -2057,7 +2057,7 @@ hanbali_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	ae_impact = -0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 maliki_scholar_modifier = {
@@ -2067,7 +2067,7 @@ maliki_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	development_cost = -0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 shafii_scholar_modifier = {
@@ -2077,7 +2077,7 @@ shafii_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	merchants = 1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 ismaili_scholar_modifier = {
@@ -2090,7 +2090,7 @@ ismaili_scholar_modifier = {
 	republican_tradition = 0.5
 	devotion = 1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 jafari_scholar_modifier = {
@@ -2100,7 +2100,7 @@ jafari_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage = 0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 zaidi_scholar_modifier = {
@@ -2110,7 +2110,7 @@ zaidi_scholar_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage_received = -0.1
 	#EE
-	monthly_caliphal_legitimacy = 0.05
+	#monthly_caliphal_legitimacy = 0.05
 }
 
 ########################################
@@ -2342,7 +2342,7 @@ diplomatic_reputation = {
 
 tolerance_own = {
 	#EE
-	monthly_caliphal_legitimacy = 0.02
+	#monthly_caliphal_legitimacy = 0.02
 }
 
 tolerance_heretic = {

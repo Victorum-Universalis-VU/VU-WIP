@@ -62,10 +62,6 @@ add_country_modifier = {
 	}
 }
 
-1444.1.1 = {
-	add_mil_tech = 1
-}
-
 # Personal Union with Habsburg under Ladislaus Postumus 1453-1457
 
 1444.10.1 = {

@@ -23,20 +23,16 @@ francia_missions_1 = {
 		effect = {
 			every_owned_province = {
 				limit = {
-					OR = {
-						province_has_center_of_trade_of_level = 1
-						development = 30
-					}
+					culture_group = french
 					is_state_core = ROOT
 				}
-				change_culture = frankish
+				change_culture = french_german
 			}
 			custom_tooltip = only_cores_change.tooltip
 			add_country_modifier = {
 				name = "frankish_literature"
 				duration = 9125
 			}
-			change_primary_culture = frankish
 		}
 	}
 	
@@ -1367,11 +1363,18 @@ francia_missions_5 = {
 		required_missions = { }
 		position = 6
 		provinces_to_highlight = {
-			area = holland_area
+			OR = {
+			    area = holland_area
+				area = zeeland_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeeland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

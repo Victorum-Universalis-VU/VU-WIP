@@ -170,7 +170,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "listboxTrackButton"
 				quadTextureSprite = "GFX_scroll_track"
-				position = { x=12 y =12}		
+				position = { x =12 y =12}		
 
 			}	
 

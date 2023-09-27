@@ -2361,7 +2361,7 @@ POL_Missions_4_2 = {
 		}
 		trigger = {
 			280 = {
-				fort_level = 4
+				fort_level = 2
 				base_manpower = 7
 			}
 		}

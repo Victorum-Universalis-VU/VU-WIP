@@ -2071,27 +2071,18 @@ alpaca_wool = {
 			}
 			NOT = { region = peru_region }
 			NOT = { region = upper_peru_region }
+			NOT = { region = la_plata_region }
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				region = brazil_region
 				region = colombia_region
-				region = la_plata_region
 				continent = north_america
 				continent = africa
 				continent = europe
 				continent = asia
 				continent = oceania
-			}
-			NOT = { has_terrain = mountain }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				continent = africa
-				continent = europe
-				continent = asia
 			}
 		}
 		modifier = {
@@ -2101,7 +2092,9 @@ alpaca_wool = {
 				has_terrain = hills
 				has_terrain = forest
 				has_terrain = woods
+				region = la_plata_region
 			}
+			NOT = { has_terrain = mountain }
 		}
 		modifier = {
 			factor = 1.25
@@ -2115,9 +2108,9 @@ alpaca_wool = {
 		}
 		modifier = {
 			factor = 2.5
-			OR ={
+			OR = {
 			    region = peru_region
-				region = upper_peru_region
+			    region = upper_peru_region
 			}
 		}
 	}
@@ -2406,43 +2399,25 @@ llama = {
 				has_terrain = farmlands
 				has_terrain = forest
 				has_terrain = woods
+				has_terrain = impassable_mountains
 				has_climate = tropical
 				has_climate = arctic
 				has_winter = severe_winter
 			}
 			NOT = { region = peru_region }
 			NOT = { region = upper_peru_region }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				region = colombia_region
-				region = la_plata_region
-				continent = north_america
-				continent = africa
-				continent = europe
-				continent = asia
-				continent = oceania
-			}
-			NOT = { has_terrain = mountain }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				continent = africa
-				continent = europe
-				continent = asia
-				continent = oceania
-			}
+			NOT = { region = la_plata_region }
 		}
 		modifier = {
 			factor = 0
 			OR = {
 				region = brazil_region
-				region = amazon_region
-				region = mato_grosso_region
-				region = maranhao_region
-				region = rio_grande_do_sul_region
+				region = colombia_region
+				continent = north_america
+				continent = africa
+				continent = europe
+				continent = asia
+				continent = oceania
 			}
 		}
 		modifier = {
@@ -2452,7 +2427,9 @@ llama = {
 				has_terrain = hills
 				has_terrain = forest
 				has_terrain = woods
+				region = la_plata_region
 			}
+			NOT = { has_terrain = mountain }
 		}
 		modifier = {
 			factor = 1.25
@@ -2466,9 +2443,9 @@ llama = {
 		}
 		modifier = {
 			factor = 2.5
-			OR ={
-				region = peru_region
-				region = upper_peru_region
+			OR = {
+			    region = peru_region
+			    region = upper_peru_region
 			}
 		}
 	}
@@ -2488,10 +2465,10 @@ agave = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = desert
+				has_province_modifier = vu_amazon_rainforest
+				has_province_modifier = vu_amazon_rainforest_thick
 				has_terrain = glacier
 				has_terrain = coastline
-				has_terrain = jungle
 				has_climate = arctic
 				NOT = {
 					OR = {
@@ -2504,17 +2481,29 @@ agave = {
 		}
 		modifier = {
 			factor = 0
-			has_climate = arctic
+			has_winter = severe_winter 
 		}
 		modifier = {
 			factor = 0
-			has_winter = severe_winter
+			NOT = {
+				OR = {
+					superregion = central_america_superregion
+					region = colombia_region
+					region = rio_grande_region
+					region = california_region
+					area = florida_area
+					area = mississippi_area
+					area = american_georgia_area
+					area = lower_louisiana_area
+					area = alabama_area
+					area = south_carolina_area
+				}
+			}
 		}
 		modifier = {
 			factor = 0.15
 			OR = {
 				has_terrain = mountain
-				has_terrain = coastal_desert
 				has_terrain = forest
 				has_terrain = woods
 				has_terrain = hills
@@ -2525,16 +2514,9 @@ agave = {
 			has_winter = normal_winter
 		}
 		modifier = {
-			factor = 1.5
-			has_winter = severe_winter
-			NOT = { has_terrain = glacier }
-		}
-		modifier = {
 			factor = 0.25
 			OR = {
 				has_terrain = highlands
-				has_terrain = marsh
-				has_climate = tropical
 			}
 		}
 		modifier = {
@@ -2547,8 +2529,9 @@ agave = {
 		}
 
 		modifier = {
-			factor = 1.5
+			factor = 0.5
 			has_terrain = farmlands
+			has_climate = tropical
 		}
 		modifier = {
 			factor = 2

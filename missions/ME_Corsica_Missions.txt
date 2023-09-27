@@ -295,6 +295,13 @@ corsica_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			sardinia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -303,11 +310,18 @@ corsica_missions_3 = {
 		position = 4
 		required_missions = { cor_independent_corsica }
 		provinces_to_highlight = {
-			area = corsica_sardinia_area
+			OR = {
+				area = corsica_sardinia_area
+				area = sardinia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sardinia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

@@ -4007,6 +4007,17 @@ has_rural_goods = {
 		trade_goods = maple_syrup
 		trade_goods = potato
 		trade_goods = tomato
+		trade_goods = fruit
+		trade_goods = silkworm
+		trade_goods = whiskey
+		trade_goods = bamboo
+		trade_goods = vodka
+		trade_goods = vegetables
+		trade_goods = agave
+		trade_goods = llama
+		trade_goods = bison_hides
+		trade_goods = sea_turtle
+		trade_goods = alpaca_wool
 	}
 }
 has_urban_goods = {
@@ -4030,6 +4041,21 @@ has_urban_goods = {
 		trade_goods = jewellery
 		trade_goods = steam_engine
 		trade_goods = optics
+		trade_goods = books
+		trade_goods = cannon
+		trade_goods = cider
+		trade_goods = bronze
+		trade_goods = sake
+		trade_goods = lace
+		trade_goods = pottery
+		trade_goods = canned_goods
+		trade_goods = sweet_confectioneries
+		trade_goods = chocolate
+		trade_goods = cigars
+		trade_goods = marble_sculpture
+		trade_goods = uniforms
+		trade_goods = indigo
+		trade_goods = champagne
 	}
 }
 has_mining_goods = {
@@ -4052,8 +4078,8 @@ has_mining_goods = {
 		trade_goods = sulfur
 		trade_goods = zinc
 		trade_goods = brass
-		trade_goods = cannon
 		trade_goods = copper
+		trade_goods = oil
 	}
 }
 has_plantage_goods = {
@@ -4077,6 +4103,7 @@ has_plantage_goods = {
 		trade_goods = cloves
 		trade_goods = exotic_animals
 		trade_goods = vanilla
+		trade_goods = rubber
 	}
 }
 

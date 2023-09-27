@@ -17,7 +17,7 @@ is_city = yes
 #Claimants
 
 #Buildings
-fort_15th = yes
+#fort_15th = yes
 
 #Special Modifiers
 

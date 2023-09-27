@@ -3698,6 +3698,12 @@ fra_gave_up_on_maine = {
 	opinion = -75
 	yearly_decay = 3
 }
+
+fra_gave_up_on_calais = {
+	opinion = -75
+	yearly_decay = 3
+}
+
 is_tributary = {
 	opinion = 15
 }

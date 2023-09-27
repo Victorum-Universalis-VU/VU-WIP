@@ -61,6 +61,7 @@ country_event = {
 			update_goods_subjects_monthly = { GOODS = glass }
 			update_goods_subjects_monthly = { GOODS = tobacco }
 			update_goods_subjects_monthly = { GOODS = cocoa }
+			update_goods_subjects_monthly = { GOODS = grain }
 		}
 		
 		if = {
@@ -140,6 +141,7 @@ country_event = {
 		update_goods = { GOODS = glass }
 		update_goods = { GOODS = tobacco }
 		update_goods = { GOODS = cocoa }
+		update_goods = { GOODS = grain }
 		
 		
 		
@@ -679,6 +681,78 @@ country_event = {
 				}	
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					AND = {
+						check_variable = {
+							which = grain_total 
+							which = grain_used
+						}	
+					}
+				}
+			}
+			set_variable = {
+				which = var8
+				value = 0
+			}
+			
+			while = {
+				limit = {
+					NOT = {
+						is_variable_equal = {
+							which = var8
+							which = bakery_amount
+						}
+					}
+				}
+				random_owned_province = { 	
+					limit = { 
+						has_building = bakery
+					}
+					add_building = off_8
+					owner = {
+						change_variable = {            
+							which = grain
+							value = 0.6
+						}
+						subtract_variable = {            
+							which = grain_used
+							value = 0.6
+						}
+					}
+					
+					if = {
+						limit = {
+							owner = { ai = yes }
+						}
+						remove_building = off_8
+						remove_building = bakery
+						clr_province_flag = has_sweet_confectioneries
+						clr_province_flag = has_latent_good
+						clr_province_flag = back_to_off_8
+				        goods_back = yes	
+						
+						owner = {
+							subtract_variable = {            
+								which = bakery_amount
+								value = 1
+							}
+					
+							country_event = { 
+								id = New_TradeGood_Events.11
+								days = 2
+							}
+						}
+					}
+				}
+				change_variable = {            
+					which = var8
+					value = 1 
+				}	
+			}
+		}
 	}
 }
 
@@ -742,6 +816,11 @@ province_event = {
 					which = cocoa_used
 					value = 0
 				}
+
+				set_variable = {
+					which = grain_used
+					value = 0
+				}
 				
 				set_variable = {
 					which = cannon_foundry_amount
@@ -775,6 +854,11 @@ province_event = {
 				
 				set_variable = {
 					which = chocolate_factory_amount
+					value = 0
+				}
+
+				set_variable = {
+					which = bakery_amount
 					value = 0
 				}
 				
@@ -818,6 +902,11 @@ province_event = {
 					which = from_subjects_cocoa
 					value = 0
 				}
+
+				set_variable = {
+					which = from_subjects_grain
+					value = 0
+				}
 				##
 				
 				country_event = { id = New_TradeGood_Events.2 days = 1 }
@@ -836,6 +925,7 @@ province_event = {
 					glass = 1
 					tobacco = 1
 					cocoa = 1
+					grain = 1
 				}
 			}
 			if = {
@@ -1080,7 +1170,37 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = New_TradeGood_Events.11
+	title = New_TradeGood_Events.11.t
+	desc = New_TradeGood_Events.11.d
+	picture = TRADEGOODS_eventPicture
 
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = New_TradeGood_Events.11.a
+		ai_chance = { factor = 100 }	
+	}
+	immediate = {
+		update_goods = { GOODS = grain }
+		
+		if = {
+			limit = {
+				any_owned_province = { 
+					has_province_flag = back_to_off_8
+				}
+			}
+			every_owned_province = { 
+				limit = {
+					has_province_flag = back_to_off_8
+				}
+				add_building = off_8
+			}
+		}
+	}
+}
 
 
 country_event = {

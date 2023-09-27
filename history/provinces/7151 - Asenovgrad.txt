@@ -75,7 +75,7 @@ discovered_by = western
 
 #2nd Shattering unused
 #2nd Performance Start Unused
-
+1444.11.11 = { add_core = BYZ }
 1500.1.1 = {
 	base_tax = 3
 	base_production = 3

@@ -49,7 +49,7 @@ discovered_by = GRA
 #discovered_by = dutch_tech_group
 
 #History completed by docRobert
-
+1444.11.11 = { add_core = BYZ }
 1475.6.6 = {
 	owner = TUR
 	controller = TUR

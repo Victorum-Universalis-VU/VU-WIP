@@ -4712,11 +4712,11 @@ the_grand_palace = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = mahayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -4743,11 +4743,11 @@ the_grand_palace = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = mahayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -4765,11 +4765,11 @@ the_grand_palace = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = mahayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -6311,11 +6311,11 @@ murud_janjira = {
 				religion = vajrayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion = mahayana
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -6869,7 +6869,10 @@ pyramid_of_cheops = {
 							
 			}
 			AND = {
-				culture_group = turko_semitic
+				OR = {
+				    culture_group = turko_semitic
+				    culture_group = egyptian_group 
+				}
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -6893,7 +6896,10 @@ pyramid_of_cheops = {
 							
 			}
 			AND = {
-				culture_group = turko_semitic
+				OR = {
+				    culture_group = turko_semitic
+				    culture_group = egyptian_group 
+				}
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -6907,7 +6913,10 @@ pyramid_of_cheops = {
 							
 			}
 			AND = {
-				culture_group = turko_semitic
+				OR = {
+				    culture_group = turko_semitic
+				    culture_group = egyptian_group 
+				}
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -11985,7 +11994,7 @@ duomo_milano = {
 }
 
 dutch_polders = {
-	start = 97 #Amsterdam
+	start = 6951 #Hoorn
 	date = 1100.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -12061,6 +12070,7 @@ dutch_polders = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 			local_defensiveness = 0.1
@@ -12081,6 +12091,7 @@ dutch_polders = {
 			factor = 2500
 		}
 		province_modifiers = {
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 			local_defensiveness = 0.15
@@ -12106,6 +12117,7 @@ dutch_polders = {
 		area_modifier = {
 			local_defensiveness = 0.25
 			local_monthly_devastation = -1
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1
@@ -12132,7 +12144,7 @@ ellora_caves = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -12158,7 +12170,7 @@ ellora_caves = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -12185,7 +12197,7 @@ ellora_caves = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -12310,7 +12322,7 @@ erdene_zuu = {
 				religion = nestorian
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = pagan
 				has_owner_religion = yes
 			}
@@ -12347,7 +12359,7 @@ erdene_zuu = {
 				religion = nestorian
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = pagan
 				has_owner_religion = yes
 			}
@@ -12378,7 +12390,7 @@ erdene_zuu = {
 				religion = nestorian
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = pagan
 				has_owner_religion = yes
 			}
@@ -13196,7 +13208,7 @@ hampi = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -13236,7 +13248,7 @@ hampi = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}
@@ -13270,7 +13282,7 @@ hampi = {
 				religion_group = buddhist_group
 				has_owner_religion = yes
 			}
-			AND= {
+			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
 			}

@@ -74,6 +74,7 @@ discovered_by = western
 	add_core = TUR
 	remove_core = VEN
 } # To the Ottoman Empire
+1444.11.11 = { add_core = BYZ }
 1502.1.1 = { remove_core = BYZ }
 1519.1.1 = { base_manpower = 2 }
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance

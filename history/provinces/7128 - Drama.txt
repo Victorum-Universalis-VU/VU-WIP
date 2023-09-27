@@ -63,4 +63,4 @@ discovered_by = western
 
 #History completed by docRobert
 1215.6.15 = { owner = THE controller = THE add_core = THE } # Thessalonican territorial lands - By San Felipe
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe

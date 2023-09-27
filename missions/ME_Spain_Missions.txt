@@ -2281,6 +2281,13 @@ SPA_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			north_brabant_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -2353,6 +2360,7 @@ SPA_missions_4 = {
 			OR = {
 				area = flanders_area
 				area = holland_area
+				area = zeeland_area
 				area = north_brabant_area
 				province_id = 100
 				province_id = 4382
@@ -2369,6 +2377,10 @@ SPA_missions_4 = {
 				owned_by = ROOT
 			}
 			holland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			zeeland_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -2391,6 +2403,7 @@ SPA_missions_4 = {
 					OR = {
 						area = flanders_area
 						area = holland_area
+						area = zeeland_area
 						area = north_brabant_area
 						province_id = 100
 						province_id = 4382

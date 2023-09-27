@@ -24,6 +24,41 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "vu_arctic_bad"
+		texturefile = "gfx//interface//ideas_EU4//vu_arctic_bad.dds"
+	}
+
+	spriteType = {
+		name = "vu_arctic_very_bad"
+		texturefile = "gfx//interface//ideas_EU4//vu_arctic_very_bad.dds"
+	}
+
+	spriteType = {
+		name = "vu_greenland_eastern_glacer"
+		texturefile = "gfx//interface//ideas_EU4//vu_greenland_eastern_glacer.dds"
+	}
+	
+	spriteType = {
+		name = "vu_patagonian_desert"
+		texturefile = "gfx//interface//ideas_EU4//vu_patagonian_desert.dds"
+	}
+
+	spriteType = {
+		name = "vu_patagonian_rainforest"
+		texturefile = "gfx//interface//ideas_EU4//vu_patagonian_rainforest.dds"
+	}
+
+	spriteType = {
+		name = "vu_outback_bush"
+		texturefile = "gfx//interface//ideas_EU4//vu_outback_bush.dds"
+	}
+
+	spriteType = {
+		name = "vu_outback_desert"
+		texturefile = "gfx//interface//ideas_EU4//vu_outback_desert.dds"
+	}
+
+	spriteType = {
 		name = "vu_amazon_rainforest"
 		texturefile = "gfx//interface//ideas_EU4//vu_amazon_rainforest.dds"
 	}

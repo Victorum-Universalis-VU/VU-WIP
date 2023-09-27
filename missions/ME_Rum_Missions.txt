@@ -228,14 +228,17 @@ beylik_missions_2 = {
 		}
 		trigger = {
 			326 = { controlled_by = ROOT }
-			calc_true_if = {
-				TUR = {
-					all_owned_province = {
-						fort_level = 2
-						controlled_by = ROOT
+			OR = {
+				NOT = { exists = TUR }
+				calc_true_if = {
+					TUR = {
+						all_owned_province = {
+							fort_level = 1
+							controlled_by = ROOT
+						}
 					}
+					amount = 2
 				}
-				amount = 2
 			}
 		}
 		effect = {

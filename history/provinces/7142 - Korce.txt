@@ -61,7 +61,7 @@ discovered_by = western
 
 #Histories by docRobert & SF
 1215.6.15 = { owner = EPI controller = EPI add_core = EPI } # Epirus territorial lands - By San Felipe
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe
 1485.1.1 = { temple = yes } #Mosque built
 1500.1.1 = { base_tax = 2 }
 1750.1.1 = { add_core = GRE }

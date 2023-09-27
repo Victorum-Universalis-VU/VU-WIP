@@ -813,6 +813,7 @@ technology = { #Factories
 
 	#Factory Building
 	factory = yes
+	cannery_workshop = yes
 	
 	#Revolutionary Ideals
 	revolutionary_republic = yes

@@ -364,6 +364,7 @@ emp_burgundy_2 = {
 						area = brabant_area
 						area = north_brabant_area
 						area = holland_area
+						area = zeeland_area
 					}
 					NOT = { owned_by = ROOT }
 					NOT = {
@@ -375,6 +376,7 @@ emp_burgundy_2 = {
 									area = brabant_area
 									area = north_brabant_area
 									area = holland_area
+									area = zeeland_area
 								}
 							}
 						}
@@ -393,6 +395,7 @@ emp_burgundy_2 = {
 					area = brabant_area
 					area = north_brabant_area
 					area = holland_area
+					area = zeeland_area
 				}
 			}
 		}
@@ -1934,6 +1937,7 @@ emp_burgundy_5 = {
 						area = brabant_area
 						area = north_brabant_area
 						area = holland_area
+						area = zeeland_area
 						area = frisia_area
 					}
 					NOT = {
@@ -1950,6 +1954,7 @@ emp_burgundy_5 = {
 									area = brabant_area
 									area = north_brabant_area
 									area = holland_area
+									area = zeeland_area
 									area = frisia_area
 								}
 							}
@@ -1981,6 +1986,7 @@ emp_burgundy_5 = {
 					area = brabant_area
 					area = north_brabant_area
 					area = holland_area
+					area = zeeland_area
 					area = frisia_area
 				}
 			}

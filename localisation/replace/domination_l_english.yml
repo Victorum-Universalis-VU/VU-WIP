@@ -620,11 +620,11 @@
  war_empire_cb_wgt:0 "War on the Empire"
  war_empire_cb_wgt_desc:0 "We must eradicate this archaic institution."
 
- vu_papal_puppetmaster_personality:0 "Papal Puppeteer"
- vu_papal_puppetmaster_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] granted us access to incredible amounts of influence behind the seat of the Holy See."
- ancestor_vu_papal_puppetmaster_personality:0 "Papal Puppeteer"
- desc_ancestor_vu_papal_puppetmaster_personality:0 ""
- ancestor_vu_papal_puppetmaster_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] granted us access to incredible amounts of influence behind the seat of the Holy See."
+ fu_papal_puppetmaster_personality:0 "Papal Puppeteer"
+ fu_papal_puppetmaster_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] granted us access to incredible amounts of influence behind the seat of the Holy See."
+ ancestor_fu_papal_puppetmaster_personality:0 "Papal Puppeteer"
+ desc_ancestor_fu_papal_puppetmaster_personality:0 ""
+ ancestor_fu_papal_puppetmaster_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] granted us access to incredible amounts of influence behind the seat of the Holy See."
 
  #Name Change
  FU7:0 "Angevin Government of Genoa"
@@ -7083,7 +7083,7 @@
  pru_200_dev_unlock_Ability_x_tt:0 "£no£ We will gain access to the '§YPolish Crown§!' splendor ability during the §YAge of Reformation§! if we complete the mission while directly or indirectly holding at least §Y200§! Development in the §YPolish§! region"
  pru_200_dev_unlock_Ability_tt:0 "£yes£ We will gain access to the '§YPolish Crown§!' splendor ability during the §YAge of Reformation§! if we complete the mission while directly or indirectly holding at least §Y200§! Development in the §YPolish§! region"
  pru_adding_provinces_to_trade_c_merc_prod_tt:1 "\nAdding our provinces to a §YTrade Company§! will grant them §G1§! £dip£ Development for them as well as §G1§! Mercantilism for us"
- pru_dev_saxon_lands_tt:1 "\nDeveloping provinces with the §YSaxon§! or §YLower Saxon§! cultures will yield the following benefits to them for the next §Y20§! years:\n Local Years of Separatism: §G-3§!\nLocal Autonomy Reduction: §G-5%§!\nLocal Prosperity Growth: §G+1§!\n"
+ pru_dev_saxon_lands_tt:1 "\nDeveloping provinces with the §YLower Saxon§! culture will yield the following benefits to them for the next §Y20§! years:\n Local Years of Separatism: §G-3§!\nLocal Autonomy Reduction: §G-5%§!\nLocal Prosperity Growth: §G+1§!\n"
  pru_unifying_germany_bb_gate_magnificent_tier_tt:0 "\nThe '§YMagnificent§!' tier of the §YBrandenburg Gate§! will further grant the following rewards:\nCulture Group Manpower Modifier: §G+10%§!\nMax Effective Absolutism: §G+10%§!"
  pru_spread_5_dev_tt:1 "§G5§! random £adm£ £dip£ & £mil£ development will be distributed in provinces we or a subject owns in the following areas:\n- §YBraunschweig§!\n- §YNorth Westphalia§!\n- §YSouth Westphalia§!"
  enable_this_ability_tt:0 "Gained access to this ability as a reward"

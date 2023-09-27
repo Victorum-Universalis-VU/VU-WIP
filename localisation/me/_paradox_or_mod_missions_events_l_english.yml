@@ -1,5 +1,5 @@
 ﻿l_english:
- paradox_or_mod_missions_events.EVTNAME2: "Select [Root.GetAdjective] missions"
+ paradox_or_mod_missions_events.EVTNAME2: "Select [Root.GetAdjective] Missions"
  paradox_or_mod_missions_events.EVTDESC2: "@[Root.GetTag] [Root.GetName] can use vanilla missions or missions created by a mod you are using. Which missions do you want to play? You cannot change your choice afterwards for the current tag."
  paradox_or_mod_missions_events2.EVTOPT1: "Select §YMission Expanded§! missions."
  paradox_or_mod_missions_events2.EVTOPT2: "Select §Y1356 - A Timeline Extension§! missions."

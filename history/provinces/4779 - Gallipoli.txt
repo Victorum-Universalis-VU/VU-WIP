@@ -93,6 +93,7 @@ discovered_by = western
 1444.11.1 = {
 	owner = TUR
 	controller = TUR
+	add_core = BYZ
 	culture = turkish
 	religion = sunni
 	base_tax = 4            #City had recovered and improved somewhat

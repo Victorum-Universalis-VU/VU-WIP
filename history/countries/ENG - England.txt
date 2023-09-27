@@ -25,10 +25,15 @@ change_estate_land_share = {
 	share = -10
 }
 
-#add_country_modifier = {
-#    name = "mercenary_upkeep_XXX"
-#    duration = -1
-#}
+add_country_modifier = {
+    name = "mercenary_upkeep_II"
+    duration = -1
+}
+
+add_country_modifier = {
+    name = "mercenary_upkeep_XV"
+    duration = -1
+}
 
 add_country_modifier = {
     name = "ship_upkeep_X"

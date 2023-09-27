@@ -334,7 +334,7 @@ discovered_by = ANR
 1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Süleyman's Faction" leader = "Süleyman Osmanoglu" } controller = REB } # Interregnum
 1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Mûsa's Faction" leader = "Mûsa Osmanoglu" } controller = REB }
 1413.1.1 = { revolt = {} controller = TUR }
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe
 1459.1.1 = {
 	base_tax = 5
 	base_production = 5

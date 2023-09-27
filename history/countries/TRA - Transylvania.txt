@@ -6,6 +6,7 @@ primary_culture = romanian	#switched from transylvanian
 add_accepted_culture = hungarian
 add_accepted_culture = szekely
 religion = orthodox
+unit_type = eastern
 capital = 1951	# Alba Iulia
 
 

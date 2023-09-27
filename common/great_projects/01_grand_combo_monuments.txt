@@ -3888,7 +3888,7 @@ hofbrauhaus = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 12
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3920,7 +3920,7 @@ hofbrauhaus = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 240
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3952,7 +3952,7 @@ hofbrauhaus = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 480
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -11405,6 +11405,7 @@ citadel_of_qaitbay = {
 	type = monument
 
 	build_trigger = {
+		religion_group = muslim
 	}
 
 	can_use_modifiers_trigger = {
@@ -11415,6 +11416,7 @@ citadel_of_qaitbay = {
 	}
 
 	keep_trigger = {
+		religion_group = muslim
 	}
 
 	#tier data
@@ -11426,17 +11428,17 @@ citadel_of_qaitbay = {
 			months = 0
 		}
 
-	province_modifiers = {
-		}
-
-	area_modifier = {
-		}
-
-	country_modifiers = {
-		}
-
-	on_upgraded = {
-		}
+	    province_modifiers = {
+	    }
+    
+	    area_modifier = {
+	    }
+    
+	    country_modifiers = {
+	    }
+    
+	    on_upgraded = {
+	    }
 
 	}
 
@@ -12792,7 +12794,7 @@ krantor = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -12823,7 +12825,7 @@ krantor = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 240
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -12857,7 +12859,7 @@ krantor = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 48
+			months = 480
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13008,7 +13010,7 @@ artushof = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13038,7 +13040,7 @@ artushof = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 240
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13069,7 +13071,7 @@ artushof = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 48
+			months = 480
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13194,7 +13196,7 @@ gateofdawn = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13225,7 +13227,7 @@ gateofdawn = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 24
+			months = 240
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -13256,7 +13258,7 @@ gateofdawn = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 48
+			months = 480
 		}
 
 		#cost to upgrade to this level (0 for tier 0)

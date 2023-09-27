@@ -21,6 +21,7 @@ add_core = AMD
 add_core = FEZ
 
 #Buildings
+fort_15th = yes
 
 #Special Modifiers
 add_permanent_province_modifier = {

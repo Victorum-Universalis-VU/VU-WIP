@@ -16,6 +16,8 @@
  building_off_6_desc: "Because of lack of resources you cannot produce cigars\n\nTo Resume the production make sure you have enough of Resources and §RDestroy§! this building"
  building_off_7: "No Resources"
  building_off_7_desc: "Because of lack of resources you cannot produce chocolate\n\nTo Resume the production make sure you have enough of Resources and §RDestroy§! this building"
+ building_off_8: "No Resources"
+ building_off_8_desc: "Because of lack of resources you cannot produce sweet confectioneries\n\nTo Resume the production make sure you have enough of Resources and §RDestroy§! this building"
  
  building_import_from_subjects: "Import Subject Resources"
  building_import_from_subjects_desc: "§TProvince Requirements:§!\n-Owned by your subject\n-Produces special resource\n\n§TEffects:§!\n-Resources will be transferred to your Resource Pool\n\n§TEffects Subject:§!" 
@@ -71,7 +73,7 @@
  LATENT_WOOD_TECH: " £Administrative_technology_TGE£27"
  LATENT_JEV: "§WJewellery   5.00¤\nAdministrative Efficiency:§! §G+2.5%§!"
  LATENT_JEV_TECH: " £Diplomatic_technology_TGE£28"
- LATENT_STEAM: "§WSteam Engine   5.00¤\nTechnology Cost:§! §G-2.5%§!"
+ LATENT_STEAM: "§WSteam Engine   8.00¤\nTechnology Cost:§! §G-2.5%§!"
  LATENT_STEAM_TECH: " £Administrative_technology_TGE£41"
  LATENT_CANNON: "§WCannon   4.25¤\nArtillery Combat Ability:§! §G+10%§!"
  LATENT_CANNON_TECH: " £Military_technology_TGE£24"
@@ -85,6 +87,12 @@
  LATENT_CIGARS_TECH: " £Diplomatic_technology_TGE£29"
  LATENT_CHOCOLATE: "§WChocolate   4.00¤\nSubject Army Morale at War:§! §G+10%§!"
  LATENT_CHOCOLATE_TECH: " £Diplomatic_technology_TGE£29"
+ #VU additions by San Felipe
+ LATENT_CANNED_GOODS: "§WCanned Goods   9.00¤\nSubject Army Morale at War:§! §G+10%§!"
+ LATENT_CANNED_GOODS_TECH: " £Administrative_technology_TGE£47"
+ #
+ LATENT_SWEET_CONFECTIONERIES: "§WSweet Confectionaries   6.00¤\nSubject Army Morale at War:§! §G+10%§!"
+ LATENT_SWEET_CONFECTIONERIES_TECH: " £Diplomatic_technology_TGE£23"
  
  prices_marcin.1.t: "Reinheitsgebot"
  prices_marcin.1.d: "The Reinheitsgebot was adopted, perhaps the oldest food regulation. The Gebot ordered that the ingredients of beer be restricted to water, barley, and hops. Food regulation law was applied throughout Germany And made beer making more restricted."
@@ -147,7 +155,7 @@
  mine_local: "Local Mining Industry\n\n§W---------------\nLocals are providing just enough resources to sustain local industry in the province§!"
   
  mod_goods_title: "£trade_icon_le£ Strategic Resources"
- mod_goods_desc: "§OResource§! | §GAvailable§! | §M[Root.GetIfSubjectsTGE]§! | §YUsed§!  | §TTotal§! |\nCopper: §G[Root.copper.GetValue]§!,    §M[Root.from_subjects_copper.GetValue]§!,    §Y[Root.copper_used.GetValue]§!,    §T[Root.copper_total.GetValue]§!\nTin: §G[Root.tin.GetValue]§!,    §M[Root.from_subjects_tin.GetValue]§!,    §Y[Root.tin_used.GetValue]§!,    §T[Root.tin_total.GetValue]§!\nIron: §G[Root.iron.GetValue]§!,    §M[Root.from_subjects_iron.GetValue]§!,    §Y[Root.iron_used.GetValue]§!,    §T[Root.iron_total.GetValue]§!\nLead: §G[Root.lead.GetValue]§!,    §M[Root.from_subjects_lead.GetValue]§!,    §Y[Root.lead_used.GetValue]§!,    §T[Root.lead_total.GetValue]§!\nZinc: §G[Root.zinc.GetValue]§!,    §M[Root.from_subjects_zinc.GetValue]§!,    §Y[Root.zinc_used.GetValue]§!,    §T[Root.zinc_total.GetValue]§!\nGlass: §G[Root.glass.GetValue]§!,    §M[Root.from_subjects_glass.GetValue]§!,    §Y[Root.glass_used.GetValue]§!,    §T[Root.glass_total.GetValue]§!\nTobacco: §G[Root.tobacco.GetValue]§!,    §M[Root.from_subjects_tobacco.GetValue]§!,    §Y[Root.tobacco_used.GetValue]§!,    §T[Root.tobacco_total.GetValue]§!\nCocoa: §G[Root.cocoa.GetValue]§!,    §M[Root.from_subjects_cocoa.GetValue]§!,    §Y[Root.cocoa_used.GetValue]§!,    §T[Root.cocoa_total.GetValue]§!"
+ mod_goods_desc: "§OResource§! | §GAvailable§! | §M[Root.GetIfSubjectsTGE]§! | §YUsed§!  | §TTotal§! |\nCopper: §G[Root.copper.GetValue]§!,    §M[Root.from_subjects_copper.GetValue]§!,    §Y[Root.copper_used.GetValue]§!,    §T[Root.copper_total.GetValue]§!\nTin: §G[Root.tin.GetValue]§!,    §M[Root.from_subjects_tin.GetValue]§!,    §Y[Root.tin_used.GetValue]§!,    §T[Root.tin_total.GetValue]§!\nIron: §G[Root.iron.GetValue]§!,    §M[Root.from_subjects_iron.GetValue]§!,    §Y[Root.iron_used.GetValue]§!,    §T[Root.iron_total.GetValue]§!\nLead: §G[Root.lead.GetValue]§!,    §M[Root.from_subjects_lead.GetValue]§!,    §Y[Root.lead_used.GetValue]§!,    §T[Root.lead_total.GetValue]§!\nZinc: §G[Root.zinc.GetValue]§!,    §M[Root.from_subjects_zinc.GetValue]§!,    §Y[Root.zinc_used.GetValue]§!,    §T[Root.zinc_total.GetValue]§!\nGlass: §G[Root.glass.GetValue]§!,    §M[Root.from_subjects_glass.GetValue]§!,    §Y[Root.glass_used.GetValue]§!,    §T[Root.glass_total.GetValue]§!\nTobacco: §G[Root.tobacco.GetValue]§!,    §M[Root.from_subjects_tobacco.GetValue]§!,    §Y[Root.tobacco_used.GetValue]§!,    §T[Root.tobacco_total.GetValue]§!\nCocoa: §G[Root.cocoa.GetValue]§!,    §M[Root.from_subjects_cocoa.GetValue]§!,    §Y[Root.cocoa_used.GetValue]§!,    §T[Root.cocoa_total.GetValue]§!\Grain: §G[Root.grain.GetValue]§!,    §M[Root.from_subjects_grain.GetValue]§!,    §Y[Root.grain_used.GetValue]§!,    §T[Root.grain_total.GetValue]§!"
  New_TradeGood_Events.2.a: "Update"
  
  copper_del: "Stora Kopparberget"
@@ -156,3 +164,9 @@
  prices_marcin.16.d: "After the discovery of better trade routes to India, which allowed importers avoid the heavy duties imposed by the Persians. The importation and use of indigo in Europe rose significantly. However, the local woad industry could not compete with the natural indigo produced in India, resulting in the industry slowly collapsing and becoming less sought out."
  prices_marcin.16.a: "Oke"
  my_tooltip_woad: "Indigo Dye originating from woad will further decrease by:\nTrade Value:§R-0.5%§! \nIndigo Dye in India will gain:\nLocal Goods Produced Modifier:§G+10%§!"
+
+ #VU by San Felipe
+ building_cannery_workshop: "Cannery"
+ building_cannery_workshop_desc: "§TProvince"
+ building_bakery: "Bakery"
+ building_bakery_desc: "§TProvince"

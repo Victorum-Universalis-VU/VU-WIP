@@ -30,7 +30,7 @@
 332 = "Mar'ash"
 333 = "Mayurqa"
 336 = "Tilvalenciaimsan"
-338 = "Mitija"
+338 = "Al-Djazair"
 340 = "Qusantinah"
 352 = "Qafsah"
 356 = "Bangazi"

@@ -1915,14 +1915,14 @@ country_event = {
 			OR = {
 				AND = {
 					any_province_in_state = {
-						fort_level = 2
+						fort_level = 1
 						}
 					NOT = { has_province_modifier = "Administrative_Forts" }
 				}
 				AND = {
 					NOT = {
 						any_province_in_state = {
-							fort_level = 2
+							fort_level = 1
 						}
 					}
 					has_province_modifier = Administrative_Forts
@@ -1939,7 +1939,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				any_province_in_state = {
-					fort_level = 2
+					fort_level = 1
 					}
 				NOT = { has_province_modifier = "Administrative_Forts" }
             }
@@ -1953,7 +1953,7 @@ country_event = {
 			limit = {
 				NOT = {
 					any_province_in_state = {
-						fort_level = 2
+						fort_level = 1
 					}
 				}
 				has_province_modifier = Administrative_Forts
@@ -2982,11 +2982,11 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				AND = {
-					fort_level = 2
+					fort_level = 1
 					NOT = { has_province_modifier = Device_Forts }
 				}
 				AND = {
-					NOT = { fort_level = 2}
+					NOT = { fort_level = 1}
 					has_province_modifier = Device_Forts
 				}
 			}
@@ -3000,7 +3000,7 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				fort_level = 2
+				fort_level = 1
 				NOT = {	has_province_modifier = Device_Forts}
             }
 			add_province_modifier = {
@@ -3011,7 +3011,7 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				NOT = { fort_level = 2}
+				NOT = { fort_level = 1}
 				has_province_modifier = Device_Forts
             }
 			remove_province_modifier = Device_Forts
@@ -3391,7 +3391,7 @@ country_event = {
 		has_government_attribute = enables_morisca_band
 		OR = {
 			any_owned_province = {
-				fort_level = 2
+				fort_level = 1
 				any_neighbor_province = {
 					religion_group = christian
 					has_owner_religion = yes
@@ -3401,7 +3401,7 @@ country_event = {
 			AND = {
 				any_owned_province = {
 					OR = {
-						NOT = { fort_level = 2 }
+						NOT = { fort_level = 1 }
 						NOT = {
 							any_neighbor_province = {
 								religion_group = christian
@@ -3422,7 +3422,7 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				fort_level = 2
+				fort_level = 1
 				any_neighbor_province = {
 					religion_group = christian
 					has_owner_religion = yes
@@ -3438,7 +3438,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					NOT = { fort_level = 2 }
+					NOT = { fort_level = 1 }
 					NOT = {
 						any_neighbor_province = {
 							religion_group = christian
@@ -9304,13 +9304,13 @@ country_event = {
 					OR = {
 						AND = {
 							#center_of_trade = 1
-							fort_level = 2
+							fort_level = 1
 							NOT = { has_province_modifier = GE_Caravanserai }
 						}
 						AND = {
 							NOT = { 
 								#center_of_trade = 1
-								fort_level = 2 
+								fort_level = 1 
 							}
 							has_province_modifier = GE_Caravanserai
 						}
@@ -9336,7 +9336,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				#province_has_center_of_trade_of_level = 1
-				fort_level = 2
+				fort_level = 1
 				NOT = { has_province_modifier = GE_Caravanserai }
 			}
 			add_province_modifier = {
@@ -9349,7 +9349,7 @@ country_event = {
 			limit = {
 				NOT = { 
 					#province_has_center_of_trade_of_level = 1
-					fort_level = 2
+					fort_level = 1
 				}
 				has_province_modifier = GE_Caravanserai
 			}
@@ -10194,14 +10194,14 @@ country_event = {
 			OR = {
 				AND = {
 					any_province_in_state = {
-						fort_level = 2
+						fort_level = 1
 						}
 					NOT = { has_province_modifier = "GE_Fortified_Settlement" }
 				}
 				AND = {
 					NOT = {
 						any_province_in_state = {
-							fort_level = 2
+							fort_level = 1
 						}
 					}
 					has_province_modifier = GE_Fortified_Settlement
@@ -10218,7 +10218,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				any_province_in_state = {
-					fort_level = 2
+					fort_level = 1
 					}
 				NOT = { has_province_modifier = "GE_Fortified_Settlement" }
             }
@@ -10231,7 +10231,7 @@ country_event = {
 			limit = {
 				NOT = {
 					any_province_in_state = {
-						fort_level = 2
+						fort_level = 1
 					}
 				}
 				has_province_modifier = GE_Fortified_Settlement
@@ -11898,11 +11898,25 @@ country_event = {
 		has_government_attribute = enables_royal_mining_monopoly
 		any_owned_province = {
 			OR = {
+				trade_goods = bronze
 				trade_goods = iron
-				trade_goods = copper
 				trade_goods = gold
-				trade_goods = coal
 				trade_goods = salt
+				trade_goods = coal
+				trade_goods = gems
+				trade_goods = diamonds
+				trade_goods = amber
+				trade_goods = jade
+				trade_goods = marble
+				trade_goods = lead
+				trade_goods = mercury
+				trade_goods = tin
+				trade_goods = tar
+				trade_goods = sulfur
+				trade_goods = zinc
+				trade_goods = brass
+				trade_goods = copper
+				trade_goods = oil
 			}
 			NOT = { 
 				has_province_modifier = GE_Mining_Monopoly
@@ -11918,11 +11932,25 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
+					trade_goods = bronze
 					trade_goods = iron
-					trade_goods = copper
 					trade_goods = gold
-					trade_goods = coal
 					trade_goods = salt
+					trade_goods = coal
+					trade_goods = gems
+					trade_goods = diamonds
+					trade_goods = amber
+					trade_goods = jade
+					trade_goods = marble
+					trade_goods = lead
+					trade_goods = mercury
+					trade_goods = tin
+					trade_goods = tar
+					trade_goods = sulfur
+					trade_goods = zinc
+					trade_goods = brass
+					trade_goods = copper
+					trade_goods = oil
 				}
 				NOT = { 
 					has_province_modifier = GE_Mining_Monopoly
@@ -11952,7 +11980,7 @@ country_event = {
 	trigger = {
 		has_government_attribute = enables_military_governors
 		any_owned_province = {
-			fort_level = 2
+			fort_level = 1
 			NOT = { 
 				has_province_modifier = GE_military_governors
 			}
@@ -11966,7 +11994,7 @@ country_event = {
 	immediate = {
 		every_owned_province = {
 			limit = {
-				fort_level = 2
+				fort_level = 1
 				NOT = { 
 					has_province_modifier = GE_military_governors
 				}

@@ -102,6 +102,7 @@ low_countries_region = {
 		wallonia_area
 		flanders_area
 		holland_area			#New in 1.25, but not yet used in VU. Will almost certainly use it later.
+		zeeland_area
 		brabant_area
 		#netherlands_area		#Cut in 1.30.
 		frisia_area

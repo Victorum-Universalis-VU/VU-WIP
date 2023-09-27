@@ -2,11 +2,10 @@
 #Region - France
 #Area - Seine
 
+#Default
 owner = LIE
 controller = LIE
 add_core = LIE
-add_core = BUR
-add_core = FRA
 capital = "Givet"
 is_city = yes
 culture = wallonian
@@ -16,8 +15,16 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = cloth 
+
+#Claimants
+add_core = BUR
+
+#Buildings
 fort_15th = yes
 
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

@@ -16,7 +16,8 @@ l_english:
  
  # loc for decision to update missions
  the_fix_title: "§YUpdate Missions§!"
- the_fix_desc: "If your mission tree is missing a lot or its empty, click this button. If it doesn't work, then blame the LordVarangian for it. Blame his new generic missions as well."
+ the_fix_desc: "Click to reset your mission tree and to choose again between ME or VU/PDX missions. You can only click this once."
+ the_fix_only_once: "You caan only click this once"
  me_rename_title: "Restore Original Name"
  me_rename_desc: "If you wish to restore the original name of the country you are playing, click this button."
 

@@ -133,7 +133,7 @@ country_event = {
 			#define_consort = {
 		    #    name = "Fernando"
 			#    age = 17
-			#    dynasty = "de Trast√°mara"
+			#    dynasty = "de Trast·mara"
 			#    culture = aragonese
 			#    dip = 3
 			#    adm = 3
@@ -259,7 +259,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTA3150"
 		define_advisor = {
 			type = inquisitor
-			name = "Tom√°s de Torquemada"
+			name = "Tom·s de Torquemada"
 			location = 215 # Castilla La Vieja 
 			discount = yes
 			skill = 1
@@ -666,7 +666,7 @@ country_event = {
 }
 
 
-# Casa de Contrataci√≥n
+# Casa de ContrataciÛn
 country_event = {
 	id = flavor_spa.1003
 	title = "flavor_spa.EVTNAME1003"
@@ -1476,7 +1476,7 @@ country_event = {
 	}
 }
 
-# Jos√© Mo√±ino
+# JosÈ MoÒino
 country_event = {
 	id = flavor_spa.3094
 	title = "flavor_spa.EVTNAME3094"
@@ -1513,7 +1513,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = statesman
-			name = "Jos√© Mo√±ino"
+			name = "JosÈ MoÒino"
 			#culture = andalusi_culture
 			culture = andalucian
 			discount = yes
@@ -1601,7 +1601,7 @@ country_event = {
 	}
 }
 
-# Tom√°s Luis de Victoria
+# Tom·s Luis de Victoria
 country_event = {
 	id = flavor_spa.1101
 	title = "flavor_spa.EVTNAME1101"
@@ -1883,7 +1883,7 @@ country_event = {
 	
 	
 
-	option = {		# Allow Sep√∫lveda's arguments to shape our policies
+	option = {		# Allow Sepulveda's arguments to shape our policies
 		name = "flavor_spa.2.a"
 		ai_chance = {
 			factor = 15
@@ -2358,7 +2358,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Ab√©n Umayyad"
+				leader = "AbÈn Umayyad"
 				friend = GRA
 				size = 2
 				win = yes
@@ -2437,8 +2437,8 @@ country_event = {
 			factor = 1
 		}
 		set_country_flag = end_of_granada
-		add_papal_influence = 25
-		add_stability = -2
+		add_papal_influence = 50
+		add_unrest = -1 #was add_stability = -2 but changed to unrest because it didn't make any sense that your country would suffer a stab loss if you expelled the people causing said stab loss 
 		every_owned_province = {
 			limit = {
 				is_core = GRA

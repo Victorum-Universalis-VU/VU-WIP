@@ -49,7 +49,7 @@
 
 332 = "Mar'ash"
 336 = "Tilimsan"
-338 = "Mitija"
+338 = "Al-Djazair"
 340 = "Qusantinah"
 352 = "Qafsah"
 356 = "Bangazi"

@@ -77,7 +77,7 @@ discovered_by = western
 
 #Histories by SF
 1215.6.15 = { owner = RHO controller = RHO add_core = RHO } # Rhodian (Leo Gabalas) territorial lands - By San Felipe
-1444.11.11 = { owner = KNI controller = KNI add_core = KNI } # Knights of St.John the Apostle territorial lands - By San Felipe
+1444.11.11 = { owner = KNI controller = KNI add_core = KNI add_core = BYZ } # Knights of St.John the Apostle territorial lands - By San Felipe
 1522.12.21 = {	owner = TUR
 	controller = TUR
 	add_core = TUR

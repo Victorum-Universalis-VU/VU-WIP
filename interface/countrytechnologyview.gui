@@ -2070,7 +2070,7 @@ guiTypes = {
 		{
 			name ="item_button"
 			spriteType = "GFX_icon_maneuver"
-			position = { x= -5 y = 0 }
+			position = { x= -14 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 	}

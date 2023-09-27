@@ -787,7 +787,7 @@ genoa_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			syria_area = {
+			tripoli_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -831,9 +831,9 @@ genoa_missions_2 = {
 					}
 				}
 				AND = {
-					area = syria_area
+					area = tripoli_area
 					NOT = {
-						syria_area = {
+						tripoli_area = {
 							has_port = yes
 							owned_by = ROOT
 						}
@@ -852,7 +852,7 @@ genoa_missions_2 = {
 				has_port = yes
 				owned_by = ROOT
 			}
-			syria_area = {
+			tripoli_area = {
 				has_port = yes
 				owned_by = ROOT
 			}

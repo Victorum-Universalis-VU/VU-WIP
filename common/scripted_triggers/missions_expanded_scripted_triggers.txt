@@ -363,8 +363,6 @@ country_has_both_paradox_and_me_missions = {
 		#Caucasus
 		tag = CIR
 		tag = GAZ
-		#Iceland
-		tag = ICE
 		#Iberia
 		tag = BSP
 		tag = SPB

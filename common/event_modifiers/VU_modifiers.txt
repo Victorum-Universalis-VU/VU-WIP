@@ -132,10 +132,94 @@ mt_krakatoa_modifier = {
 
 #1.35 by Quonton
 
-vu_amazon_rainforest = {
-	trade_value = 0.5
-	trade_goods_size = 0.5
+vu_greenland_eastern_glacer = {
+	supply_limit_modifier = -0.45
+	local_colony_cost_modifier = 3.75
+	local_colonial_growth = -45
+	local_development_cost = 0.1
+	trade_value = 0.25
+	trade_goods_size = 0.1
+	picture = "vu_greenland_eastern_glacer"
+}
+
+vu_arctic_bad = {
+	supply_limit_modifier = -0.2
+	local_colony_cost_modifier = 2.0
+	local_colonial_growth = -40
+	local_development_cost = 0.1
+	trade_value = 0.05
+	picture = "vu_arctic_bad"
+}
+
+vu_arctic_very_bad = {
+	supply_limit_modifier = -0.45
+	local_colony_cost_modifier = 4.0
+	local_colonial_growth = -70
+	local_development_cost = 0.2
+	trade_value = 0.01
+	picture = "vu_arctic_very_bad"
+}
+
+vu_patagonian_desert = {
+	supply_limit_modifier = -0.15
+	local_colony_cost_modifier = 1.75
+	local_colonial_growth = -30
+	local_development_cost = -0.1
+	trade_value = 0.25
+	trade_goods_size = 0.25
+	picture = "vu_patagonian_desert"
+}
+
+vu_patagonian_rainforest = {
+	local_colony_cost_modifier = 1.0
+	local_colonial_growth = -25
+	trade_value = 0.50
+	trade_goods_size = 0.50
+	picture = "vu_patagonian_rainforest"
+}
+
+vu_outback_desert = {
+	supply_limit_modifier = -0.35
+	local_colony_cost_modifier = 2.75
+	local_colonial_growth = -60
+	local_development_cost = 0.1
+	trade_value = 0.05
+	picture = "vu_outback_desert"
+}
+
+vu_outback_bush = {
 	supply_limit_modifier = -0.1
+	local_colony_cost_modifier = 1.75
+	local_colonial_growth = -20
+	trade_value = 0.05
+	trade_goods_size = 0.05
+	picture = "vu_outback_bush"
+}
+
+vu_canberra_plain = {
+	local_development_cost = -0.3
+	local_build_cost = -0.15
+	local_build_time = -0.4
+	local_production_efficiency = 0.025
+}
+
+vu_amazon_rainforest = {
+	trade_value = 0.75
+	trade_goods_size = 0.75
+	supply_limit_modifier = -0.2
+	local_colony_cost_modifier = 0.75
+	local_colonial_growth = -10
+	local_development_cost = 0.1
+	picture = "vu_amazon_rainforest"
+}
+
+vu_amazon_rainforest_thick = {
+	trade_value = 1.25
+	trade_goods_size = 1.25
+	supply_limit_modifier = -0.5
+	local_colony_cost_modifier = 2.75
+	local_colonial_growth = -30
+	local_development_cost = 0.2
 	picture = "vu_amazon_rainforest"
 }
 

@@ -1,5 +1,6 @@
 #8028 - Autun
 
+#Default
 owner = BUR
 controller = BUR
 add_core = BUR
@@ -13,6 +14,18 @@ trade_goods = mercury
 is_city = yes
 hre = no
 
+#Claimants
+add_core = FRA
+
+#Buildings
+
+#Commerce
+
+#Expenditures
+
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

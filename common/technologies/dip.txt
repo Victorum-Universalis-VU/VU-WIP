@@ -31,7 +31,8 @@ technology = { #Early Ships
 	off_4 = yes
 	off_5 = yes
 	off_6 = yes
-	off_7 = yes	
+	off_7 = yes
+	off_8 = yes		
 }
 
 technology = { #Merchants & Trade
@@ -341,7 +342,8 @@ technology = { #Shipyards
 	may_steal_maps = yes
 	
 	#Dock Building
-	dock = yes	
+	dock = yes
+    bakery = yes	
 }
 
 technology = { #Naval Ambitions

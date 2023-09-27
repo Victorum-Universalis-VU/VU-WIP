@@ -59,7 +59,7 @@ discovered_by = western
 
 #Histories by SF
 1215.6.15 = { owner = EPI controller = EPI add_core = EPI } # Epirian territorial lands - By San Felipe
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe
 1480.1.1 = {
 	workshop = yes
 	temple = yes

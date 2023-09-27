@@ -5,6 +5,9 @@ religion = catholic
 add_accepted_culture = dalmatian
 technology_group = hungarian_tech_group
 capital = 131	# Zagreb
+unit_type = eastern
+historical_friend = RAG
+historical_rival = VEN
 
 
 1446.1.1 = {

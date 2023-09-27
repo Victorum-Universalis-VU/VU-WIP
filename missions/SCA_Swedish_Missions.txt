@@ -4643,6 +4643,13 @@ swe_sca_hre_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
+				zeeland_area = {
+			    	limit = {
+			    		NOT = { is_core = ROOT }
+			    		NOT = { is_permanent_claim = ROOT }
+			    	}
+			    	add_permanent_claim = ROOT
+			    }
 				north_brabant_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -4664,6 +4671,7 @@ swe_sca_hre_slot = {
 			OR = {
 				area = frisia_area
 				area = holland_area
+				area = zeeland_area
 				area = north_brabant_area
 			}
 			OR = {
@@ -4693,6 +4701,7 @@ swe_sca_hre_slot = {
 						OR = {
 							area = frisia_area
 							area = holland_area
+							area = zeeland_area
 							area = north_brabant_area
 						}
 						value = 8
@@ -4705,6 +4714,7 @@ swe_sca_hre_slot = {
 								OR = {
 									area = frisia_area
 									area = holland_area
+									area = zeeland_area
 									area = north_brabant_area
 								}
 								OR = {
@@ -4728,6 +4738,7 @@ swe_sca_hre_slot = {
 					OR = {
 						area = frisia_area
 						area = holland_area
+						area = zeeland_area
 						area = north_brabant_area
 					}
 					value = 8
@@ -4743,6 +4754,7 @@ swe_sca_hre_slot = {
 							OR = {
 								area = frisia_area
 								area = holland_area
+								area = zeeland_area
 								area = north_brabant_area
 							}
 							OR = {
@@ -4771,6 +4783,7 @@ swe_sca_hre_slot = {
 						OR = {
 							area = frisia_area
 							area = holland_area
+							area = zeeland_area
 							area = north_brabant_area
 						}
 						value = 8

@@ -1,5 +1,6 @@
 #7996 - Ploermel
 
+#Default
 owner = BRI
 controller = BRI
 add_core = BRI
@@ -13,6 +14,16 @@ trade_goods = apiculture
 is_city = yes
 hre = no
 
+#Claimants
+add_core = FRA
+
+#Buildings
+
+#Commerce
+
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

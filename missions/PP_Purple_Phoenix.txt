@@ -1514,6 +1514,13 @@ byz_pp_italian = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			north_brabant_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1563,6 +1570,7 @@ byz_pp_italian = {
 			    area = east_frisia_area
 				area = frisia_area
 				area = holland_area
+				area = zeeland_area
 				area = north_brabant_area
 				area = north_westphalia_area
 				area = oldenburg_area
@@ -1581,6 +1589,10 @@ byz_pp_italian = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeeland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

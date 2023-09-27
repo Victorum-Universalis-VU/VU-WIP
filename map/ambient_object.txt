@@ -1409,16 +1409,6 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
-			3506.000 6.550 1572.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="Seagulls_english_channel"
-		hidden_on_start=no
-		position={
 			1569.000 9.300 274.000 
 		}
 		rotation={
@@ -1510,6 +1500,16 @@ type={
 		hidden_on_start=no
 		position={
 			2774.000 9.850 1530.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			3506.000 6.550 1572.000 
 		}
 		rotation={
 			0.000 45.000 0.000 
@@ -2494,7 +2494,7 @@ type={
 type={
 	type="suez_canal"
 	use_animation=yes
-	scale=0.300000
+	scale=0.280000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
@@ -2522,10 +2522,20 @@ type={
 type={
 	type="panama_canal"
 	use_animation=yes
-	scale=0.650000
+	scale=0.500000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
+	object={
+		name="Djerid Canal"
+		hidden_on_start=yes
+		position={
+			2792.000 0.100 1555.200 
+		}
+		rotation={
+			0.000 -80.000 0.000 
+		}
+	}
 	object={
 		name="panama_canal"
 		hidden_on_start=yes
@@ -2941,7 +2951,7 @@ type={
 type={
 	type="kiel_canal"
 	use_animation=yes
-	scale=0.600000
+	scale=0.350000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes

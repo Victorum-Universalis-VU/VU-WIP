@@ -10655,7 +10655,7 @@ SHN_ideas = {
 	}
 	free = yes
 	
-	shn_vice_minister_of_dazaifu = {
+	shn_vice_minister_of_dazaivu = {
 		diplomatic_reputation = 1
 	}
 	

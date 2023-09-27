@@ -449,7 +449,36 @@
  pru_conquer_silesia_claims:0 "Grants permanent claims on the provinces required for the mission §YConquer Silesia§!"
  prussia_partitions_poland_claims:0 "Grants permanent claims on the provinces required for the mission §YConquest of Greater Poland§!"
  pru_duchy_of_cleves_claims:0 "Grants permanent claims on the provinces required for the mission §YThe Duchy of Cleves§!"
- #
+ 
+ emp_brapru_saxony_title:0 "Deal with Saxony"
+ emp_brapru_saxony_desc:0 "With both Pommerania and East Prussia under out control, it is now time to expand south and finally finish off Saxony."
+ 
+ pru_dev_saxony_lands_tt:1 "\nDeveloping provinces with the §YSaxon§! culture will yield the following benefits to them for the next §Y20§! years:\n Local Years of Separatism: §G-3§!\nLocal Autonomy Reduction: §G-5%§!\nLocal Prosperity Growth: §G+1§!\n"
+ 
+ emp_brapru_mecklenburg_title:0 "Conquer Mecklenburg"
+ emp_brapru_mecklenburg_desc:0 "For years the state of Mecklenburg has stood in the way of our conquest of Danish held Slesvig-Holstein. Hence, we must take out this pesky little German in order to clear a path towards our ultimate goal of finally snuffing out the Danes and taking control of the Western Baltic."
+ emp_brapru_north_german_confederation_title:0 "North German Confederation"
+ emp_brapru_north_german_confederation_desc:0 "With Northern Germany under our firm control and influence, it is now time to consolidate our realm and form the North German Confederation."
+ emp_brapru_south_german_confederation_title:0 "South German Confederation"
+ emp_brapru_south_german_confederation_desc:0 "With Southern Germany under our firm control and influence, it is now time to consolidate our realm and form the North German Confederation."
+ emp_brapru_elsas_lothringen_title:0 "Alsace Lorraine"
+ emp_brapru_elsas_lothringen_desc:0 "What other way is there to prove our legitimacy and showcase our newly acquired power than to defeat the French and take for ourselves the rightful german region of Alsace Lorraine."
+ #France
+ vu_fra_conquest_of_algeria_title:0 "Conquest of Algeria"
+ vu_fra_conquest_of_algeria_desc:0 "The New World may be a beacon of freedom, hope and prosperity for our Anglo and Iberian neighbours but I say all that lies across the Mediterranean sea, in North Africa and especially Algeria where we should start focusing our efforts of conquest."
+ vu_fra_conquest_of_tunisia_and_morocco_title:0 "Algeria's Neighbours"
+ vu_fra_conquest_of_tunisia_and_morocco_desc:0 "With our takeover of the Algerian coastline complete, France must now look at the neighbours of our vanquished enemy, conquering primarily those backward and savage heathens of Tunisia and Morocco before the Italians, Spaniards and Portuguese can begin their conquests of the African mainland."
+ vu_fra_conquest_of_morocco_2_title:0 "The Ravaging of Morocco"
+ vu_fra_conquest_of_morocco_2_desc:0 "Let us further our conquests in Morocco by penetrating her even more so that we may cement France's claims and deny those of our Iberian rivals. The fruits of her loans after all are ours for the taking."
+ vu_fra_finish_morocco_title:0 "Finish Morocco"
+ vu_fra_finish_morocco_desc:0 "Morocco after having been ravaged and penetrated is finally on her knees begging us that we show mercy. I say, let us finish her once and for all by taking from her all that she holds dear and finally snuffing out the lights of this former Sultanate and road block to our conquest of North Africa and beyond."
+ vu_fra_conquest_of_indochina_title:0 "Miss Saigon"
+ vu_fra_conquest_of_indochina_desc:0 "With our place in India secure, let us now head east towards a land rich in wealth and traditions. Let us take the land that skirts along the old and ancient Vientiane coastline, rename it Indochina and reap the benefits that come with oppressing such simple peoples whilst making little Miss Saigon's out of their beautiful women."
+ vu_fra_conquest_of_west_africa_title:0 "The Gold Coast"
+ vu_fra_conquest_of_west_africa_desc:0 "News and rumours of a lush and rich land inhabitted by savage dark skinned tribes located south east of Cape Verde has certainly stirred and earned the intrigues of the powers that be to a point that our administration has deemed it worthwile for our fleets and armies to explore and if possible deliver back any riches that maybe be found there. Furthermore, the church has not only deemed it necessary but has tasked and obligated us with escorting missionaries their for the sole purpose that they may convert the heathens and gather their souls for holy mother church and the Pontif back in Rome."
+ vu_fra_conquest_of_sub_saharan_and_central_africa_title:0 "Into the Africa"
+ vu_fra_conquest_of_sub_saharan_and_central_africa_desc:0 "With the West African coastline secured and garrisoned by our mighty forts and armies, middle Africa now awaits us and beyond that deserts that span for miles. What awaits us there? More savages and wild beasts or perhaps we will find precious minerals or liquid substances lurking beneath these deep jungles, open savannahs and desert dunes? Only time will tell and only through our complete conquest of the region can we truly find out what riches are yet to be found."
+ # 
  #Lithuania
  defeat_the_livonian_order_claims:0 "Grants permanent claims on the provinces required for the mission §YConquer Livonia§!"
  #

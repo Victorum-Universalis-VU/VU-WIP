@@ -1,7 +1,8 @@
 #Langres
 #Region - France
-#Area - Seine
+#Area - Burgundy
 
+#Default
 owner = BUR
 controller = BUR
 add_core = BUR
@@ -15,13 +16,22 @@ base_production = 3
 trade_goods = grain
 base_manpower = 2
 
-#Special Modifiers
+#Claimants
+add_core = FRA
 
+#Buildings
+
+#Commerce
+
+#Expenditures
+
+#Special Modifiers
 add_permanent_province_modifier = {
     name = rich_black_soil
     duration = -1
 }
 
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

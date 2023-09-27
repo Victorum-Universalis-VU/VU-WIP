@@ -4,6 +4,7 @@ primary_culture = bosnian
 religion = orthodox
 technology_group = hungarian_tech_group
 government_rank = 1
+unit_type = eastern
 capital = 1831
 
 

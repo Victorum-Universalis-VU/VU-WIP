@@ -25,14 +25,6 @@ grain = {
 				province_id = 5304	#North African Oasis with famous dates
 			}
 		}
-		modifier = { #No grain in america until 1492
-            factor = 0.0
-            OR = {
-                continent = north_america
-                continent = south_america
-            }
-            NOT = { is_year = 1492 }
-        }
 		modifier = {
 			factor = 0.15
 			OR = {
@@ -2417,6 +2409,13 @@ livestock = {
 		modifier = {
 			factor = 1.5
 			region = central_africa_region
+		}
+		modifier = {
+			factor = 1.5
+			area = nehuenken_area
+			area = patagonian_andes
+			area = patagonia_area
+			area = bahia_blanca_area
 		}
 	}
 }

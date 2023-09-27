@@ -69,7 +69,7 @@ discovered_by = GRA
 
 #Histories by docRobert & SF
 1215.6.15 = { owner = LTE controller = LTE add_core = LTE } # Latin territorial lands - By San Felipe
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
 1509.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war

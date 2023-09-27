@@ -97,7 +97,7 @@ vu_santiago_de_cuba_caribbean = {
 		on_upgraded = {}
 	}
 }
-
+#Keeping this as our default version - by San Felipe
 vu_port_royal_caribbean = {
     start = 487
     date = 1509.01.01

@@ -15,8 +15,11 @@ is_city = yes
 hre = no
 
 #Claimants
+add_core = FRA
 
 #Buildings
+
+#Commerce
 
 #Special Modifiers
 
