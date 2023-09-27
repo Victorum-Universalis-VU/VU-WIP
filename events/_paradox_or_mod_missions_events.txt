@@ -135,3 +135,86 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = paradox_or_mod_missions_events.3
+	title = paradox_or_mod_missions_events.EVTNAME2
+	desc = paradox_or_mod_missions_events.EVTDESC2
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = use_paradox_missions
+			clr_country_flag = use_missions_expanded_missions_instead_of_paradox
+			#clr_country_flag = use_golden_bull_missions_instead_of_paradox
+		}
+	}
+
+	option = { # Choose ME missions
+		name = paradox_or_mod_missions_events2.EVTOPT1
+
+		trigger = {
+			has_global_flag = missions_expanded_mod_active
+		}
+
+		ai_chance = {
+			factor = 0.5
+		}
+
+		custom_tooltip = CHOOSE_ME_MISSIONS
+		hidden_effect = {
+			clr_country_flag = use_paradox_missions
+			#clr_country_flag = use_golden_bull_missions_instead_of_paradox
+			set_country_flag = use_missions_expanded_missions_instead_of_paradox
+			swap_non_generic_missions = yes
+		}
+	}
+
+#	option = { # Choose Golden Bull missions
+#		name = paradox_or_mod_missions_events2.EVTOPT2
+#
+#		trigger = {
+#			has_global_flag = golden_bull_mod_active
+#		}
+#
+#		ai_chance = {
+#			factor = 0.5
+#		}
+#
+#		custom_tooltip = CHOOSE_GOLDEN_BULL_MISSIONS
+#		hidden_effect = {
+#			clr_country_flag = use_paradox_missions
+#			clr_country_flag = use_missions_expanded_missions_instead_of_paradox
+#			set_country_flag = use_golden_bull_missions_instead_of_paradox
+#			swap_non_generic_missions = yes
+#		}
+#	}
+
+	option = { # Choose paradox' missions
+		name = paradox_or_mod_missions_events2.EVTOPT3
+
+		ai_chance = {
+			factor = 0
+		}
+
+		custom_tooltip = CHOOSE_PARADOX_MISSIONS
+		hidden_effect = {
+			clr_country_flag = use_missions_expanded_missions_instead_of_paradox
+			#clr_country_flag = use_golden_bull_missions_instead_of_paradox
+			set_country_flag = use_paradox_missions
+			swap_non_generic_missions = yes
+		}
+	}
+
+	after = {
+		# You can't swap missions again for the same country, but you may want to do it, if you changed tag to another country that has the choice:
+		if = {
+			limit = {
+				NOT = { has_country_flag = has_selected_missions_@ROOT }
+			}
+			set_country_flag = has_selected_missions_@ROOT
+		}
+	}
+}

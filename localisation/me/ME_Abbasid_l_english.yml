@@ -292,7 +292,7 @@
  ability_caliphal_authority_mechanic: "£abbasid_caliph_text_icon£ §YCaliphal Authority§!"
  caliphal_legitimacy_desc: "£abbasid_caliph_text_icon£ §YCaliphal Authority§! is a measure of how legitimately is the rule of our Caliph viewed as. It can be changed by:\n\nReligious Unity: §G+0.15§! Monthly at 100.0%\nHaving a Muslim Scholar: §G+0.05§! Monthly\nMysticism and Legalism: §G+0.20§! Monthly at either end.\nBeing Defender of Faith: §G+0.10§! Monthly\nStability: §G+0.10§! Monthly per one Stability\nTolerance of True Faith: §G+0.02§! Monthly per one Tolerance\nSabotaged Reputation: §R-0.05§! Monthly\nRefused Defender of Faith Call to Arms: §R-0.15§! Monthly\nCorruption: §R-0.10§! Monthly per 1 Corruption\nVarious Events, Diplomatic Actions and Missions.\n\n"
  caliphal_legitimacy: "Caliphal Authority"
- monthly_caliphal_legitimacy: "Monthly Caliphal Authority"
+ #monthly_caliphal_legitimacy: "Monthly Caliphal Authority"
  
  caliphal_proclaim_divine_guidance: "Proclaim Divine Guidance"
  caliphal_proclaim_divine_guidance_desc: "Let us announce to the world that [Root.Monarch.GetTitle] rules on behalf of Allah and that his rule is infallible."

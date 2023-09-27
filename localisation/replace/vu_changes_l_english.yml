@@ -2475,11 +2475,11 @@
  construct_old_london_bridge_title: "Renovate the Old London Bridge"
  construct_old_london_bridge_desc: "Although Old London Bridge has been around since Roman times. It wasn't until 1163, nearly a 100 years after the Norman conquests when Peter of Colechurch, chaplain and warden of the bridge and its brethren supervised the bridge's last rebuilding in timber; Costs 3500."
  #
- great_project_port_royal: "Port Royal"
- port_royal: "Port Royal"
- port_royal_title: "Establish Port Royal"
- construct_port_royal_title: "Establish Port Royal"
- construct_port_royal_desc: "Port Royal is an established, thriving and bustling New World city; Costs 4000."
+ #great_project_port_royal: "Port Royal"
+ #port_royal: "Port Royal"
+ #port_royal_title: "Establish Port Royal"
+ #construct_port_royal_title: "Establish Port Royal"
+ #construct_port_royal_desc: "Port Royal is an established, thriving and #bustling New World city; Costs 4000."
  #
  great_project_havana: "Havana"
  havana: "Havana"

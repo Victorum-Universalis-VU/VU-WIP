@@ -379,47 +379,41 @@ vu_kinkaku_ji = {
 
 	#can we build it?
 	build_trigger = {
-		owner = { 
-			OR = {
-				AND = {
-					has_owner_religion = yes
-					religion = shinto
-				}
-				AND = {
-					has_owner_religion = yes
-					religion = confucianism
-				}
+		OR = {
+			AND = {
+				has_owner_religion = yes
+				religion = shinto
+			}
+			AND = {
+				has_owner_religion = yes
+				religion = confucianism
 			}
 		}
 	}
 	
 	can_use_modifiers_trigger = {
-		owner = { 
-			OR = {
-				AND = {
-					has_owner_religion = yes
-					religion = shinto
-				}
-				AND = {
-					has_owner_religion = yes
-					religion = confucianism
-				}
+		OR = {
+			AND = {
+				has_owner_religion = yes
+				religion = shinto
+			}
+			AND = {
+				has_owner_religion = yes
+				religion = confucianism
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		owner = { 
-			OR = {
-				AND = {
-					has_owner_religion = yes
-					religion = shinto
-				}
-				AND = {
-					has_owner_religion = yes
-					religion = confucianism
-				}
+		OR = {
+			AND = {
+				has_owner_religion = yes
+				religion = shinto
+			}
+			AND = {
+				has_owner_religion = yes
+				religion = confucianism
 			}
 		}
 	}

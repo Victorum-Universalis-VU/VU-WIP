@@ -4365,3 +4365,166 @@ country_event = {
         }
     }
 }
+
+# NEW VU stuff for France by San Felipe
+# The Surrender of Calais
+country_event = {
+	id = flavor_fra.9522
+	title = "flavor_fra.9522.t"
+	desc = "flavor_fra.9522.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		is_subject = no
+		exists = FRA
+		NOT = { alliance_with = FRA }
+		NOT = { war_with = FRA }
+		NOT = { is_year = 1560 }
+		NOT = { truce_with = FRA }
+		87 = {
+			OR = {
+				owned_by = ENG
+				owner = {
+					is_subject_of = ENG
+				}
+			}
+		}
+		FRA = {
+			is_subject = no
+		}
+		is_year = 1558
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "flavor_fra.9522.a"
+		ai_chance = {
+			factor = 25
+		}
+		tooltip = {
+			87 = {
+				cede_province = FRA
+			}
+			add_truce_with = FRA
+		}
+		FRA = { country_event = { id = flavor_fra.9524 } }
+		add_prestige = -100
+		add_stability = -2
+		add_unrest = -4
+		set_country_flag = rb_gave_up_calais
+	}
+	option = {
+		name = "flavor_fra.9522.b"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}
+		custom_tooltip = flavor_fra.9522.a.tt
+		FRA = { country_event = { id = flavor_fra.9523 } }
+	}
+}
+
+# The Surrender of Calais
+country_event = {
+	id = flavor_fra.9523
+	title = "flavor_fra.9523.t"
+	desc = "flavor_fra.9523.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = "flavor_fra.9523.a" #'teach them how to war' /Reversed Henry V
+		ai_chance = {
+			factor = 100 #Shouldn't take this from them really.
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}
+		ENG = {
+			declare_war_with_cb = {
+				who = FRA
+				casus_belli = cb_core
+			}
+		}
+		87 = {
+			change_controller = FRA
+		}
+	}
+	option = {
+		name = "flavor_fra.9523.b" #Unpopular but preserves the peace?
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = -10
+		FROM = {
+			add_truce_with = ROOT
+		}
+		add_truce_with = FROM
+		if = {
+			limit = { exists = PRO }
+			PRO = {
+				add_opinion = {
+					who = ROOT
+					modifier = fra_gave_up_on_calais
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+	}
+}
+
+# The Surrender of Calais
+country_event = {
+	id = flavor_fra.9524
+	title = "flavor_fra.9524.t"
+	desc = "flavor_fra.9524.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = "flavor_fra.9524.a" #
+		add_prestige = 10
+		hidden_effect = {
+			FROM = {
+				add_truce_with = ROOT
+			}
+		}
+		add_truce_with = FROM
+		87 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -50 }
+		}
+	}
+}

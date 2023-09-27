@@ -834,7 +834,7 @@
  #urban_belem:0 "Belem"
  #urban_manaus:0 "Manaus"
  #urban_paramaribo:0 "Paramaribo"
- #urban_valencia_vz:0 "Valencia"
+ #urban_valencia_vz:0 "Valencia"*
  urban_george:0 "George"
  urban_east_london:0 "East London"
  urban_maseru:0 "Maseru"
@@ -1226,5 +1226,5 @@
  urban_barbastro:0 "Barbastro"
  urban_tortosa:0 "Tortosa"
  urban_mora:0 "Mora"
- urban_portland_me:0 "Portland"
+ #urban_portland_me:0 "Portland"
  

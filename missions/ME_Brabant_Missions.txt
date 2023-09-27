@@ -36,6 +36,13 @@ BRB_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -43,11 +50,18 @@ BRB_missions_1 = {
 		icon = mission_conquer_50_development
 		required_missions = { brabant_independence }
 		provinces_to_highlight = {
-			area = holland_area
+			OR = {
+			    area = holland_area
+				area = zeeland_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zeeland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

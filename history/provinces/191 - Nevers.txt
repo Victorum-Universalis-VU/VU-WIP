@@ -2,8 +2,10 @@
 #Region - France
 #Area - Burgundy
 
+#Default
 owner = NEV
-controller = NEV 
+controller = NEV
+add_core = NEV
 capital = "Nevers"
 is_city = yes
 culture = burgundian
@@ -13,10 +15,19 @@ base_tax = 4
 base_production = 4
 trade_goods = naval_supplies
 base_manpower = 2
-add_core = NEV
+
+#Claimants
+add_core = FRA
+
+#Buildings
 fort_15th = yes
+
+#Commerce
 center_of_trade = 1
 
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

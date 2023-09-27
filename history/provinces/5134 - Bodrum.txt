@@ -335,7 +335,7 @@ discovered_by = GRA
 
 #Histories by docRobert & SF
 1215.6.15 = { owner = NIC controller = NIC add_core = NIC } # Nicean territorial lands - By San Felipe
-1444.11.11 = { owner = KNI controller = KNI add_core = KNI } # Knights of St John territorial lands - By San Felipe
+1444.11.11 = { owner = KNI controller = KNI add_core = KNI add_core = BYZ } # Knights of St John territorial lands - By San Felipe
 1522.12.21 = {
 	owner = TUR
 	controller = TUR

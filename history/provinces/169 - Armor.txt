@@ -2,8 +2,10 @@
 #Region - France
 #Area - Brittany
 
+#Default
 owner = BRI
 controller = BRI
+add_core = BRI
 capital = "St. Brieuc"
 is_city = yes
 culture = breton
@@ -13,8 +15,17 @@ base_tax = 4
 base_production = 4 
 trade_goods = tin		#Tin mines in Brittany were major source of tin for Europe since Roman Empire. Precious tin was far more important than seafood.
 base_manpower = 2 
-add_core = BRI
 
+#Claimants
+add_core = FRA
+
+#Buildings
+
+#Commerce
+
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

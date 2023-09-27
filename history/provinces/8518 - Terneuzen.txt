@@ -2,11 +2,10 @@
 #Region - Low Countries
 #Area - Flanders
 
+#Default
 owner = FLA
 controller = FLA
 add_core = FLA
-add_core = FRA
-add_core = ZEE
 is_city = yes
 capital = "Terneuzen"
 culture = ger_zeelandic
@@ -17,13 +16,18 @@ base_production = 12
 trade_goods = gunpowder #was cloth
 base_manpower = 6
 
-#Special Modifiers
+#Claimants
+add_core = ZEE
 
+#Buildings
+
+#Special Modifiers
 add_permanent_province_modifier = {
     name = rich_black_soil
     duration = -1
 }
 
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

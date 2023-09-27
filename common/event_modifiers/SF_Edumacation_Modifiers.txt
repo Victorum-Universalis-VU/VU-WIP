@@ -1,6 +1,7 @@
-#############################################################################################################
-# Edumacation mod by San Felipe - Please note, modifiers below are a work in progress and subject to change #
-#############################################################################################################
+#Re-Edited by San Felipe 16/08/2023
+################################################################################################################
+# SF Edumacation mod by San Felipe - Please note, modifiers below are a work in progress and subject to change #
+################################################################################################################
 
 #Country Modifiers
 ruler_studying = {

@@ -4,6 +4,7 @@ add_government_reform = feudalism_reform
 technology_group = hungarian_tech_group
 primary_culture = bulgarian
 religion = orthodox
+unit_type = eastern
 capital = 4704	# Tarnovo
 historical_rival = BYZ
 

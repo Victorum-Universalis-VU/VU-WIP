@@ -1,150 +1,200 @@
+#DonBrom was here on 24-9-2024
+#Re-Edited by San Felipe 16/08/2023
+#DonBrom was here...
 #SF Edumacation - Improve Ruler
 country_decisions = {
-   edu_1_ruler_scholarship = {
-      major = yes
-      potential = { 
-         ai = no
-         has_regency = no
-         NOT = { is_monarch_leader = yes }
-         #NOT = { has_ruler_modifier = scholarship }
-      }
-      allow = {
-         ai = no
-         adm_power = 45
-         dip_power = 45
-         mil_power = 45
-         treasury = 450
-         NOT = { is_monarch_leader = yes }
-         NOT = { technology_group = east_african }
-         NOT = { technology_group = central_african }
-         NOT = { technology_group = nomad_group }
-         NOT = { technology_group = sub_saharan }
-         NOT = { technology_group = north_american }
-         NOT = { technology_group = mesoamerican }
-         NOT = { technology_group = south_american }
-         NOT = { technology_group = andean }
-         NOT = { technology_group = high_american }
-         NOT = { technology_group = aboriginal_tech }
-         NOT = { technology_group = rapanuan_tech_group }
-         NOT = { technology_group = polynesian_tech }
-         NOT = { technology_group = papuan_tech_group }
-		 ruler_has_personality = vu_uneducated_ruler_personality
-         NOT = { has_country_modifier = ruler_studying }
-		 NOT = { ruler_has_personality = vu_scholarly_ruler_personality }
-      }
-      effect = {
-         remove_country_modifier = ruler_uneducated
-         add_adm_power = -45
-         add_dip_power = -45
-         add_mil_power = -45
-         add_treasury = -450
-         #It took up to six years for students to achieve scholarly work at a medieval church/seminary and nunnery/convent. 
-         add_country_modifier = {
-            name = "ruler_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.7 days = 10 }
-      }
-      ai_will_do = {
+	edu_1_ruler_scholarship = {
+		major = yes
+		potential = { 
+			ai = no
+			has_regency = no
+			is_lesser_in_union = no
+			is_subject = no
+			ruler_has_personality = vu_uneducated_personality
+			NOT = { ruler_has_personality = vu_scholarly_personality }	
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 150
+			is_at_war = no
+			has_institution = feudalism
+			NOT = { has_country_modifier = ruler_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -150
+			#It took up to six years for students to achieve scholarly work at a medieval church/seminary and nunnery/convent. 
+			add_country_modifier = {
+				name = "ruler_studying"
+				duration = 2190
+			}
+			country_event = { id = SF_Edumacation_Events.7 days = 2190 }
+		}
+		ai_will_do = {
+				factor = 0
+		}
+	}
+	
+	edu_2_ruler_bachelors_degree = {
+		major = yes
+		potential = { 
+			ai = no
+			has_regency = no
+			is_lesser_in_union = no
+			is_subject = no
+			NOT = { ruler_has_personality = vu_bachelorette_personality }
+			ruler_has_personality = vu_scholarly_personality 
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 300
+			is_at_war = no
+			has_institution = renaissance
+			NOT = { has_country_modifier = ruler_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -300
+			#It took up to six years for students to earn a Bachelors degree at Medieval universities
+			add_country_modifier = {
+				name = "ruler_studying"
+				duration = 1825
+			}
+			country_event = { id = SF_Edumacation_Events.8 days = 1825 }
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
-
-   edu_2_ruler_bachelors_degree = {
-      major = yes
-      potential = { 
-         ai = no
-         has_regency = no
-         NOT = { is_monarch_leader = yes }
-         #NOT = { has_ruler_modifier = bachelors }
-      }
-      allow = {
-         ai = no
-         adm_power = 35
-         dip_power = 35
-         mil_power = 35
-         treasury = 350
-         NOT = { is_monarch_leader = yes }
-         NOT = { technology_group = east_african }
-         NOT = { technology_group = central_african }
-         NOT = { technology_group = nomad_group }
-         NOT = { technology_group = sub_saharan }
-         NOT = { technology_group = north_american }
-         NOT = { technology_group = mesoamerican }
-         NOT = { technology_group = south_american }
-         NOT = { technology_group = andean }
-         NOT = { technology_group = high_american }
-         NOT = { technology_group = aboriginal_tech }
-         NOT = { technology_group = rapanuan_tech_group }
-         NOT = { technology_group = polynesian_tech }
-         NOT = { technology_group = papuan_tech_group }
-		 ruler_has_personality = vu_scholarly_ruler_personality 
-         NOT = { has_country_modifier = ruler_studying }
-         NOT = { ruler_has_personality = vu_bachelorette_ruler_personality }
-      }
-      effect = {
-         add_adm_power = -35
-         add_dip_power = -35
-         add_mil_power = -35
-         add_treasury = -350
-         #It took up to six years for students to earn a Bachelors degree at Medieval universities
-         add_country_modifier = {
-            name = "ruler_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.8 days = 10 }
-      }
-      ai_will_do = {
+	}
+	
+	edu_3_ruler_masters = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			NOT = { ruler_has_personality = vu_masters_personality }
+			ruler_has_personality = vu_bachelorette_personality 
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 500
+			is_at_war = no
+			has_institution = printing_press
+			NOT = { has_country_modifier = ruler_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -500
+			add_country_modifier = {
+				name = "ruler_studying"
+				duration = 730
+			}
+			country_event = { id = SF_Edumacation_Events.9 days = 730 }
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
-
-   edu_3_ruler_doctorate = {
-      major = yes
-      potential = { 
-         ai = no
-         has_regency = no
-         NOT = { is_monarch_leader = yes }
-         #NOT = { has_ruler_modifier = doctorate }
-      }
-      allow = {
-         ai = no
-         adm_power = 20
-         dip_power = 20
-         mil_power = 20
-         treasury = 210
-         NOT = { is_monarch_leader = yes }
-         NOT = { technology_group = east_african }
-         NOT = { technology_group = central_african }
-         NOT = { technology_group = nomad_group }
-         NOT = { technology_group = sub_saharan }
-         NOT = { technology_group = north_american }
-         NOT = { technology_group = mesoamerican }
-         NOT = { technology_group = south_american }
-         NOT = { technology_group = andean }
-         NOT = { technology_group = high_american }
-         NOT = { technology_group = aboriginal_tech }
-         NOT = { technology_group = rapanuan_tech_group }
-         NOT = { technology_group = polynesian_tech }
-         NOT = { technology_group = papuan_tech_group }
-		 ruler_has_personality = vu_bachelorette_ruler_personality 
-         NOT = { has_country_modifier = ruler_studying }
-		 NOT = { ruler_has_personality = vu_doctorate_ruler_personality }
-      }
-      effect = {
-         add_adm_power = -20
-         add_dip_power = -20
-         add_mil_power = -20
-         add_treasury = -210
-         #It took up to 12 years for students to earn their doctorates
-         add_country_modifier = {
-            name = "ruler_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.9 days = 10 }
-      }
-      ai_will_do = {
+	}
+	
+	edu_4_ruler_doctorate = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			NOT = { 
+				ruler_has_personality = vu_doctor_of_architecture 
+				ruler_has_personality = vu_doctor_of_arts
+				ruler_has_personality = vu_doctor_of_philosophy
+				ruler_has_personality = vu_doctor_of_science
+				ruler_has_personality = vu_doctor_of_law
+				ruler_has_personality = vu_doctor_of_engineering
+				ruler_has_personality = vu_doctor_of_war
+				ruler_has_personality = vu_doctor_of_diplomacy
+				ruler_has_personality = vu_doctor_of_medicine
+				ruler_has_personality = vu_doctor_of_culinary
+				ruler_has_personality = vu_doctor_of_finance
+				ruler_has_personality = vu_doctor_of_theology
+			}
+			ruler_has_personality = vu_masters_personality 
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 500
+			is_at_war = no
+			has_institution = enlightenment
+			has_country_modifier = ruler_studying 
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -500
+			country_event = { id = SF_Edumacation_Events.13}
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
+	}
+	
+	edu_5_ruler_reeducation = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			OR = { 
+				ruler_has_personality = vu_doctor_of_architecture 
+				ruler_has_personality = vu_doctor_of_arts
+				ruler_has_personality = vu_doctor_of_philosophy
+				ruler_has_personality = vu_doctor_of_science
+				ruler_has_personality = vu_doctor_of_law
+				ruler_has_personality = vu_doctor_of_engineering
+				ruler_has_personality = vu_doctor_of_war
+				ruler_has_personality = vu_doctor_of_diplomacy
+				ruler_has_personality = vu_doctor_of_medicine
+				ruler_has_personality = vu_doctor_of_culinary
+				ruler_has_personality = vu_doctor_of_finance
+				ruler_has_personality = vu_doctor_of_theology
+			}
+			NOT = {ruler_has_personality = vu_masters_personality}
+		}
+		allow = {
+			is_at_war = no
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 100
+			#has_institution = enlightenment
+			NOT = { has_country_modifier = ruler_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -100
+			country_event = { id = SF_Edumacation_Events.13}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

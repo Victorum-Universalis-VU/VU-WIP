@@ -916,7 +916,50 @@ country_decisions = {
 					custom_tooltip = GOODS_Marcin_Woodworking_NO
 				}
 				
-				
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Canned_Goods }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = canned_goods
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Canned_Goods #was GOODS_Marcin_Woodworking
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Canned_Goods_NO #was GOODS_Marcin_Woodworking_NO
+				}
+
+				if = {
+					limit = {
+						NOT = { has_global_flag = No_Sweet_Confectioneries }
+					}
+					hidden_effect = {
+						every_province = {
+							limit = {
+								OR = {	
+									
+								}
+							}
+							
+							change_trade_goods = sweet_confectioneries
+						}
+					}
+					
+					custom_tooltip = GOODS_Marcin_Sweet_Confectioneries #was GOODS_Marcin_Woodworking
+				}
+				else = {
+					custom_tooltip = GOODS_Marcin_Sweet_Confectioneries_NO #was GOODS_Marcin_Woodworking_NO
+				}
+
 				#if = {	#Obsolete
 				#	limit = {
 				#		NOT = { has_global_flag = No_Ebony }

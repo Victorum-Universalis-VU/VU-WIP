@@ -329,4 +329,4 @@ discovered_by = ANR
 
 #Histories by SF
 1215.6.15 = { owner = ABN controller = ABN add_core = ABN } # Arbanon territorial lands - By San Felipe
-1444.11.11 = { owner = ALB controller = ALB add_core = ALB } # Albanian territorial lands - By San Felipe
+1444.11.11 = { owner = ALB controller = ALB add_core = ALB add_core = BYZ } # Albanian territorial lands - By San Felipe

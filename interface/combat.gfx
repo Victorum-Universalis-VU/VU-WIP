@@ -3096,1138 +3096,898 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_anse_royale"
         texturefile = "gfx/interface/anse_royale.dds"
     }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_halifax"
-        texturefile = "gfx/interface/halifax.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_quebec"
-        texturefile = "gfx/interface/quebec.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_montreal"
-        texturefile = "gfx/interface/montreal.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_ottawa"
-        texturefile = "gfx/interface/ottawa.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_toronto"
-        texturefile = "gfx/interface/toronto.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_hamilton"
-        texturefile = "gfx/interface/hamilton.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_mississauga"
-        texturefile = "gfx/interface/mississauga.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_winnipeg"
-        texturefile = "gfx/interface/winnipeg.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_calgary"
-        texturefile = "gfx/interface/calgary.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_vancouver"
-        texturefile = "gfx/interface/vancouver.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_boston"
-        texturefile = "gfx/interface/boston.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_new_york"
-        texturefile = "gfx/interface/new_york.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_philadelphia"
-        texturefile = "gfx/interface/philadelphia.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_baltimore"
-        texturefile = "gfx/interface/baltimore.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_pittsburgh"
-        texturefile = "gfx/interface/pittsburgh.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_washington"
-        texturefile = "gfx/interface/washington.dds"
-    }
-	spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_norfolk_va"
-        texturefile = "gfx/interface/norfolk_va.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_charlotte"
-        texturefile = "gfx/interface/charlotte.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_charleston"
-        texturefile = "gfx/interface/charleston.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_atlanta"
-        texturefile = "gfx/interface/atlanta.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_st_augustine"
-        texturefile = "gfx/interface/st_augustine.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_miami"
-        texturefile = "gfx/interface/miami.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_tortuga"
-        texturefile = "gfx/interface/tortuga.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_guantanamo"
-        texturefile = "gfx/interface/guantanamo.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_port_royal"
-        texturefile = "gfx/interface/port_royal.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_tampa"
-        texturefile = "gfx/interface/tampa.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_orlando"
-        texturefile = "gfx/interface/orlando.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_jacksonville"
-        texturefile = "gfx/interface/jacksonville.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_new_orleans"
-        texturefile = "gfx/interface/new_orleans.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_houston"
-        texturefile = "gfx/interface/houston.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_austin"
-        texturefile = "gfx/interface/austin.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_antonio"
-        texturefile = "gfx/interface/san_antonio.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_dallas"
-        texturefile = "gfx/interface/dallas.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_oklahoma"
-        texturefile = "gfx/interface/oklahoma.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_st_louis"
-        texturefile = "gfx/interface/st_louis.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_kansas_city"
-        texturefile = "gfx/interface/kansas_city.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_chicago"
-        texturefile = "gfx/interface/chicago.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_detroit"
-        texturefile = "gfx/interface/detroit.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_milwaukee"
-        texturefile = "gfx/interface/milwaukee.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_minneapolis"
-        texturefile = "gfx/interface/minneapolis.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_seattle"
-        texturefile = "gfx/interface/seattle.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_portland"
-        texturefile = "gfx/interface/portland.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_sacramento"
-        texturefile = "gfx/interface/sacramento.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_francisco"
-        texturefile = "gfx/interface/san_francisco.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_jose"
-        texturefile = "gfx/interface/san_jose.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_los_angeles"
-        texturefile = "gfx/interface/los_angeles.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_diego"
-        texturefile = "gfx/interface/san_diego.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_phoenix"
-        texturefile = "gfx/interface/phoenix.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_tucson"
-        texturefile = "gfx/interface/tucson.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_las_vegas"
-        texturefile = "gfx/interface/las_vegas.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_salt_lake_city"
-        texturefile = "gfx/interface/salt_lake_city.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_albuquerque"
-        texturefile = "gfx/interface/albuquerque.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_el_paso"
-        texturefile = "gfx/interface/el_paso.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_denver"
-        texturefile = "gfx/interface/denver.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_fort_worth"
-        texturefile = "gfx/interface/fort_worth.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_anchorage"
-        texturefile = "gfx/interface/anchorage.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_juneau"
-        texturefile = "gfx/interface/juneau.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_nome"
-        texturefile = "gfx/interface/nome.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_mexico_city"
-        texturefile = "gfx/interface/mexico_city.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_monterrey"
-        texturefile = "gfx/interface/monterrey.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_merida"
-        texturefile = "gfx/interface/merida.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_cancun"
-        texturefile = "gfx/interface/cancun.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_guadalajara"
-        texturefile = "gfx/interface/guadalajara.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_acapulco"
-        texturefile = "gfx/interface/acapulco.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_tijuana"
-        texturefile = "gfx/interface/tijuana.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_veracruz"
-        texturefile = "gfx/interface/veracruz.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_guatemala"
-        texturefile = "gfx/interface/guatemala.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_miguel"
-        texturefile = "gfx/interface/san_miguel.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_managua"
-        texturefile = "gfx/interface/managua.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_tegucigalpa"
-        texturefile = "gfx/interface/tegucigalpa.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_belize"
-        texturefile = "gfx/interface/belize.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_panama"
-        texturefile = "gfx/interface/panama.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_portobello"
-        texturefile = "gfx/interface/portobello.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_nombre_de_dios"
-        texturefile = "gfx/interface/nombre_de_dios.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_la_habana"
-        texturefile = "gfx/interface/la_habana.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_santiago_de_cuba"
-        texturefile = "gfx/interface/santiago_de_cuba.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_guantanamo_bay"
-        texturefile = "gfx/interface/guantanamo_bay.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_port_au_prince"
-        texturefile = "gfx/interface/port_au_prince.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_santo_domingo"
-        texturefile = "gfx/interface/santo_domingo.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_la_isabela"
-        texturefile = "gfx/interface/la_isabela.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_la_navidad"
-        texturefile = "gfx/interface/la_navidad.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_santiago_de_los_caballeros"
-        texturefile = "gfx/interface/santiago_de_los_caballeros.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_roseau"
-        texturefile = "gfx/interface/roseau.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_castries"
-        texturefile = "gfx/interface/castries.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_bridgetown"
-        texturefile = "gfx/interface/bridgetown.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_port_of_spain"
-        texturefile = "gfx/interface/port_of_spain.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_st_georges"
-        texturefile = "gfx/interface/st_georges.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_saint_vincent"
-        texturefile = "gfx/interface/saint_vincent.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_basse_terre"
-        texturefile = "gfx/interface/basse_terre.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_fort_de_france"
-        texturefile = "gfx/interface/fort_de_france.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_gustavia"
-        texturefile = "gfx/interface/gustavia.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_philipsburg"
-        texturefile = "gfx/interface/philipsburg.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_kralendijk"
-        texturefile = "gfx/interface/kralendijk.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_kingstown"
-        texturefile = "gfx/interface/kingstown.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_les_trois_ilets"
-        texturefile = "gfx/interface/les_trois_ilets.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_monserrat"
-        texturefile = "gfx/interface/monserrat.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_codrington"
-        texturefile = "gfx/interface/codrington.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_basseterre"
-        texturefile = "gfx/interface/basseterre.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_hamilton"
-        texturefile = "gfx/interface/hamilton.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_kingston"
-        texturefile = "gfx/interface/kingston.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_san_juan"
-        texturefile = "gfx/interface/san_juan.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_nassau"
-        texturefile = "gfx/interface/nassau.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_curacao"
-        texturefile = "gfx/interface/curacao.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_oranjestad"
-        texturefile = "gfx/interface/oranjestad.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_bogota"
-        texturefile = "gfx/interface/bogota.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_cartagena"
-        texturefile = "gfx/interface/cartagena.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_cali"
-        texturefile = "gfx/interface/cali.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_medellin"
-        texturefile = "gfx/interface/medellin.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_maracaibo"
-        texturefile = "gfx/interface/maracaibo.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_quito"
-        texturefile = "gfx/interface/quito.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_guayaquil"
-        texturefile = "gfx/interface/guayaquil.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_lima"
-        texturefile = "gfx/interface/lima.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_cusco"
-        texturefile = "gfx/interface/cusco.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_arequipa"
-        texturefile = "gfx/interface/arequipa.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_cajamarca"
-        texturefile = "gfx/interface/cajamarca.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_macapa"
-        texturefile = "gfx/interface/macapa.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_belem"
-        texturefile = "gfx/interface/belem.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_sao_luis"
-        texturefile = "gfx/interface/sao_luis.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_fortaleza"
-        texturefile = "gfx/interface/fortaleza.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_recife"
-        texturefile = "gfx/interface/recife.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_salvador"
-        texturefile = "gfx/interface/salvador.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_rio_de_janeiro"
-        texturefile = "gfx/interface/rio_de_janeiro.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_sao_paulo"
-        texturefile = "gfx/interface/sao_paulo.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_curitiba"
-        texturefile = "gfx/interface/curitiba.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_porto_alegre"
-        texturefile = "gfx/interface/porto_alegre.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_sucre"
-        texturefile = "gfx/interface/sucre.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_asuncion"
-        texturefile = "gfx/interface/asuncion.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_santiago"
-        texturefile = "gfx/interface/santiago.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_antofagasta"
-        texturefile = "gfx/interface/antofagasta.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_concepcion"
-        texturefile = "gfx/interface/concepcion.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_punta_arenas"
-        texturefile = "gfx/interface/punta_arenas.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_buenos_aires"
-        texturefile = "gfx/interface/buenos_aires.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_rosario"
-        texturefile = "gfx/interface/rosario.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_mar_del_plata"
-        texturefile = "gfx/interface/mar_del_plata.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_bahia_blanca"
-        texturefile = "gfx/interface/bahia_blanca.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_comodoro_rivadavia"
-        texturefile = "gfx/interface/comodoro_rivadavia.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_georgetown"
-        texturefile = "gfx/interface/georgetown.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_paramaribo"
-        texturefile = "gfx/interface/paramaribo.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_montevideo"
-        texturefile = "gfx/interface/montevideo.dds"
-    }
-    spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_port_stanley"
-        texturefile = "gfx/interface/port_stanley.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_tacoma"
-        texturefile = "gfx/interface/tacoma.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_victoria"
-        texturefile = "gfx/interface/victoria.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_spokane"
-        texturefile = "gfx/interface/spokane.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_eugene"
-        texturefile = "gfx/interface/eugene.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_sacramento"
-        texturefile = "gfx/interface/sacramento.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_redding"
-        texturefile = "gfx/interface/redding.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_fresno"
-        texturefile = "gfx/interface/fresno.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_bakersfield"
-        texturefile = "gfx/interface/bakersfield.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_anaheim"
-        texturefile = "gfx/interface/anaheim.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_tijuana"
-        texturefile = "gfx/interface/tijuana.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_mexicali"
-        texturefile = "gfx/interface/mexicali.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_la_paz"
-        texturefile = "gfx/interface/la_paz.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_phoenix"
-        texturefile = "gfx/interface/phoenix.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_tucson"
-        texturefile = "gfx/interface/tucson.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_salt_lake_city"
-        texturefile = "gfx/interface/salt_lake_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_boise"
-        texturefile = "gfx/interface/boise.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_billings"
-        texturefile = "gfx/interface/billings.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_edmonton"
-        texturefile = "gfx/interface/edmonton.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_anchorage"
-        texturefile = "gfx/interface/anchorage.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_juneau"
-        texturefile = "gfx/interface/juneau.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_saskatoon"
-        texturefile = "gfx/interface/saskatoon.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_regina"
-        texturefile = "gfx/interface/regina.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_sudbury"
-        texturefile = "gfx/interface/sudbury.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_saint_john"
-        texturefile = "gfx/interface/saint_john.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_st_johns"
-        texturefile = "gfx/interface/st_johns.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_manchester_nh"
-        texturefile = "gfx/interface/manchester_nh.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_burlington"
-        texturefile = "gfx/interface/burlington.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_providence"
-        texturefile = "gfx/interface/providence.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_hartford"
-        texturefile = "gfx/interface/hartford.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_new_haven"
-        texturefile = "gfx/interface/new_haven.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_albany"
-        texturefile = "gfx/interface/albany.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_syracuse"
-        texturefile = "gfx/interface/syracuse.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_rochester_ny"
-        texturefile = "gfx/interface/rochester_ny.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_buffalo"
-        texturefile = "gfx/interface/buffalo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_newark"
-        texturefile = "gfx/interface/newark.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_wilmington"
-        texturefile = "gfx/interface/wilmington.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_washington_dc"
-        texturefile = "gfx/interface/washington_dc.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_alexandria_va"
-        texturefile = "gfx/interface/alexandria_va.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_richmond"
-        texturefile = "gfx/interface/richmond.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_charlotte"
-        texturefile = "gfx/interface/charlotte.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_savannah"
-        texturefile = "gfx/interface/savannah.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_jacksonville"
-        texturefile = "gfx/interface/jacksonville.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_montgomery"
-        texturefile = "gfx/interface/montgomery.dds"
-    }
-	spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_birmingham_al"
-        texturefile = "gfx/interface/birmingham_al.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_jackson"
-        texturefile = "gfx/interface/jackson.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_little_rock"
-        texturefile = "gfx/interface/little_rock.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_oklahoma_city"
-        texturefile = "gfx/interface/oklahoma_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_dallas"
-        texturefile = "gfx/interface/dallas.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_austin"
-        texturefile = "gfx/interface/austin.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_san_antonio"
-        texturefile = "gfx/interface/san_antonio.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_el_paso"
-        texturefile = "gfx/interface/el_paso.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_albuquerque"
-        texturefile = "gfx/interface/albuquerque.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_santa_fe"
-        texturefile = "gfx/interface/santa_fe.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_denver"
-        texturefile = "gfx/interface/denver.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_kansas_city_ks"
-        texturefile = "gfx/interface/kansas_city_ks.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_kansas_city_mo"
-        texturefile = "gfx/interface/kansas_city_mo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_omaha"
-        texturefile = "gfx/interface/omaha.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_sioux_falls"
-        texturefile = "gfx/interface/sioux_falls.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_rapid_city"
-        texturefile = "gfx/interface/rapid_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_bismarck"
-        texturefile = "gfx/interface/bismarck.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_fargo"
-        texturefile = "gfx/interface/fargo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_minneapolis"
-        texturefile = "gfx/interface/minneapolis.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_milwaukee"
-        texturefile = "gfx/interface/milwaukee.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cedar_rapids"
-        texturefile = "gfx/interface/cedar_rapids.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_indianapolis"
-        texturefile = "gfx/interface/indianapolis.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cleveland"
-        texturefile = "gfx/interface/cleveland.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_columbus"
-        texturefile = "gfx/interface/columbus.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cincinnati"
-        texturefile = "gfx/interface/cincinnati.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_louisville"
-        texturefile = "gfx/interface/louisville.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_nashville"
-        texturefile = "gfx/interface/nashville.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_memphis"
-        texturefile = "gfx/interface/memphis.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_ciudad_juarez"
-        texturefile = "gfx/interface/ciudad_juarez.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_monterrey"
-        texturefile = "gfx/interface/monterrey.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_hermosillo"
-        texturefile = "gfx/interface/hermosillo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_guadalajara"
-        texturefile = "gfx/interface/guadalajara.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_mexico_city"
-        texturefile = "gfx/interface/mexico_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_texcoco"
-        texturefile = "gfx/interface/texcoco.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_tlacopan"
-        texturefile = "gfx/interface/tlacopan.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_tampico"
-        texturefile = "gfx/interface/tampico.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_las_mochis"
-        texturefile = "gfx/interface/las_mochis.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_puerto_vallarta"
-        texturefile = "gfx/interface/puerto_vallarta.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_colima"
-        texturefile = "gfx/interface/colima.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_puebla"
-        texturefile = "gfx/interface/puebla.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_oaxaca"
-        texturefile = "gfx/interface/oaxaca.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_heroica_veracruz"
-        texturefile = "gfx/interface/heroica_veracruz.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_coatzacoalcos"
-        texturefile = "gfx/interface/coatzacoalcos.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_villahermosa"
-        texturefile = "gfx/interface/villahermosa.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_campeche"
-        texturefile = "gfx/interface/campeche.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_merida"
-        texturefile = "gfx/interface/merida.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cancun"
-        texturefile = "gfx/interface/cancun.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_belize_city"
-        texturefile = "gfx/interface/belize_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_guatemala"
-        texturefile = "gfx/interface/guatemala.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_san_pedro_sula"
-        texturefile = "gfx/interface/san_pedro_sula.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_san_salvador"
-        texturefile = "gfx/interface/san_salvador.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_managua"
-        texturefile = "gfx/interface/managua.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_panama_city"
-        texturefile = "gfx/interface/panama_city.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_nassau"
-        texturefile = "gfx/interface/nassau.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_havana"
-        texturefile = "gfx/interface/havana.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_kingston"
-        texturefile = "gfx/interface/kingston.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_port_au_prince"
-        texturefile = "gfx/interface/port_au_prince.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_santiago_de_los_caballeros"
-        texturefile = "gfx/interface/santiago_de_los_caballeros.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_santo_domingo"
-        texturefile = "gfx/interface/santo_domingo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_san_juan"
-        texturefile = "gfx/interface/san_juan.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_basse_terre"
-        texturefile = "gfx/interface/basse_terre.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_fort_de_france"
-        texturefile = "gfx/interface/fort_de_france.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_bridgetown"
-        texturefile = "gfx/interface/bridgetown.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_maracaibo"
-        texturefile = "gfx/interface/maracaibo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_barranquilla"
-        texturefile = "gfx/interface/barranquilla.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_barquisimeto"
-        texturefile = "gfx/interface/barquisimeto.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_caracas"
-        texturefile = "gfx/interface/caracas.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_port_of_spain"
-        texturefile = "gfx/interface/port_of_spain.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_bogota"
-        texturefile = "gfx/interface/bogota.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cali"
-        texturefile = "gfx/interface/cali.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_quito"
-        texturefile = "gfx/interface/quito.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_guayaquil"
-        texturefile = "gfx/interface/guayaquil.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_lima"
-        texturefile = "gfx/interface/lima.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cuzco"
-        texturefile = "gfx/interface/cuzco.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_machu_picchu"
-        texturefile = "gfx/interface/machu_picchu.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_la_paz_bo"
-        texturefile = "gfx/interface/la_paz_bo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_santa_cruz_de_la_sierra"
-        texturefile = "gfx/interface/santa_cruz_de_la_sierra.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cochabamba"
-        texturefile = "gfx/interface/cochabamba.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_santiago"
-        texturefile = "gfx/interface/santiago.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_buenos_aires"
-        texturefile = "gfx/interface/buenos_aires.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_montevideo"
-        texturefile = "gfx/interface/montevideo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_rosario"
-        texturefile = "gfx/interface/rosario.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_cordoba_ar"
-        texturefile = "gfx/interface/cordoba_ar.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_porto_alegre"
-        texturefile = "gfx/interface/porto_alegre.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_asuncion"
-        texturefile = "gfx/interface/asuncion.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_curitiba"
-        texturefile = "gfx/interface/curitiba.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_sao_paulo"
-        texturefile = "gfx/interface/sao_paulo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_rio_de_janeiro"
-        texturefile = "gfx/interface/rio_de_janeiro.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_belo_horizonte"
-        texturefile = "gfx/interface/belo_horizonte.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_goiania"
-        texturefile = "gfx/interface/goiania.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_brasilia"
-        texturefile = "gfx/interface/brasilia.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_salvador"
-        texturefile = "gfx/interface/salvador.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_recife"
-        texturefile = "gfx/interface/recife.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_natal"
-        texturefile = "gfx/interface/natal.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_fortaleza"
-        texturefile = "gfx/interface/fortaleza.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_sao_luis"
-        texturefile = "gfx/interface/sao_luis.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_belem"
-        texturefile = "gfx/interface/belem.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_manaus"
-        texturefile = "gfx/interface/manaus.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_paramaribo"
-        texturefile = "gfx/interface/paramaribo.dds"
-    }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_valencia_vz"
-        texturefile = "gfx/interface/valencia_vz.dds"
-    }
+	#spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_halifax"
+    #    texturefile = "gfx/interface/halifax.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_quebec"
+    #    texturefile = "gfx/interface/quebec.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_montreal"
+    #    texturefile = "gfx/interface/montreal.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_ottawa"
+    #    texturefile = "gfx/interface/ottawa.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_toronto"
+    #    texturefile = "gfx/interface/toronto.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_mississauga" !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/mississauga.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_winnipeg"
+    #    texturefile = "gfx/interface/winnipeg.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_calgary"
+    #    texturefile = "gfx/interface/calgary.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_vancouver"
+    #    texturefile = "gfx/interface/vancouver.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_boston"
+    #    texturefile = "gfx/interface/boston.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_new_york"
+    #    texturefile = "gfx/interface/new_york.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_philadelphia"
+    #    texturefile = "gfx/interface/philadelphia.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_baltimore"
+    #    texturefile = "gfx/interface/baltimore.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_pittsburgh"
+    #    texturefile = "gfx/interface/pittsburgh.dds"
+    #}
+	#spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_washington"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/washington.dds"
+    #}
+	#spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_norfolk_va"
+    #    texturefile = "gfx/interface/norfolk_va.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_charlotte"
+    #    texturefile = "gfx/interface/charlotte.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_charleston"
+    #    texturefile = "gfx/interface/charleston.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_atlanta"
+    #    texturefile = "gfx/interface/atlanta.dds"
+    #}
+	#spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_st_augustine"
+    #    texturefile = "gfx/interface/st_augustine.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_miami"
+    #    texturefile = "gfx/interface/miami.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_tortuga"
+    #    texturefile = "gfx/interface/tortuga.dds"
+    #}
+	#spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_port_royal"
+    #    texturefile = "gfx/interface/port_royal.dds"
+    #}
+	#spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_tampa"
+    #    texturefile = "gfx/interface/tampa.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_orlando"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/orlando.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_jacksonville"
+    #    texturefile = "gfx/interface/jacksonville.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_new_orleans"
+    #    texturefile = "gfx/interface/new_orleans.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_houston"
+    #    texturefile = "gfx/interface/houston.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_austin"
+    #    texturefile = "gfx/interface/austin.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_antonio"
+    #    texturefile = "gfx/interface/san_antonio.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_dallas"
+    #    texturefile = "gfx/interface/dallas.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_oklahoma"
+    #    texturefile = "gfx/interface/oklahoma.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_st_louis"
+    #    texturefile = "gfx/interface/st_louis.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_kansas_city"    !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/kansas_city.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_chicago"
+    #    texturefile = "gfx/interface/chicago.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_detroit"
+    #    texturefile = "gfx/interface/detroit.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_milwaukee"
+    #    texturefile = "gfx/interface/milwaukee.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_minneapolis"
+    #    texturefile = "gfx/interface/minneapolis.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_seattle"
+    #    texturefile = "gfx/interface/seattle.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_portland"
+    #    texturefile = "gfx/interface/portland.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_sacramento"
+    #    texturefile = "gfx/interface/sacramento.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_francisco"
+    #    texturefile = "gfx/interface/san_francisco.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_jose"
+    #    texturefile = "gfx/interface/san_jose.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_los_angeles"
+    #    texturefile = "gfx/interface/los_angeles.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_diego"
+    #    texturefile = "gfx/interface/san_diego.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_phoenix"
+    #    texturefile = "gfx/interface/phoenix.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_tucson"
+    #    texturefile = "gfx/interface/tucson.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_las_vegas"       !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/las_vegas.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_salt_lake_city"
+    #    texturefile = "gfx/interface/salt_lake_city.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_albuquerque"
+    #    texturefile = "gfx/interface/albuquerque.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_el_paso"
+    #    texturefile = "gfx/interface/el_paso.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_denver"
+    #    texturefile = "gfx/interface/denver.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_fort_worth"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/fort_worth.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_anchorage"
+    #    texturefile = "gfx/interface/anchorage.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_juneau"
+    #    texturefile = "gfx/interface/juneau.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_nome"         !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/nome.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_mexico_city"
+    #    texturefile = "gfx/interface/mexico_city.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_monterrey"
+    #    texturefile = "gfx/interface/monterrey.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_merida"
+    #    texturefile = "gfx/interface/merida.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_cancun"
+    #    texturefile = "gfx/interface/cancun.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_guadalajara"
+    #    texturefile = "gfx/interface/guadalajara.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_acapulco"    !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/acapulco.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_tijuana"
+    #    texturefile = "gfx/interface/tijuana.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_veracruz"    !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/veracruz.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_guatemala"
+    #    texturefile = "gfx/interface/guatemala.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_miguel"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/san_miguel.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_managua"
+    #    texturefile = "gfx/interface/managua.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_tegucigalpa"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/tegucigalpa.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_belize"
+    #    texturefile = "gfx/interface/belize.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_panama"
+    #    texturefile = "gfx/interface/panama.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_portobello"    !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/portobello.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_nombre_de_dios"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/nombre_de_dios.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_la_habana"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/la_habana.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_santiago_de_cuba"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/santiago_de_cuba.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_guantanamo_bay"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/guantanamo_bay.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_port_au_prince"
+    #    texturefile = "gfx/interface/port_au_prince.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_santo_domingo"
+    #    texturefile = "gfx/interface/santo_domingo.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_la_isabela"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/la_isabela.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_la_navidad"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/la_navidad.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_santiago_de_los_caballeros"
+    #    texturefile = "gfx/interface/santiago_de_los_caballeros.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_roseau"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/roseau.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_castries"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/castries.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_bridgetown"
+    #    texturefile = "gfx/interface/bridgetown.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_port_of_spain"
+    #    texturefile = "gfx/interface/port_of_spain.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_st_georges"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/st_georges.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_saint_vincent"
+    #    texturefile = "gfx/interface/saint_vincent.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_basse_terre"
+    #    texturefile = "gfx/interface/basse_terre.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_fort_de_france"
+    #    texturefile = "gfx/interface/fort_de_france.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_gustavia"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/gustavia.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_philipsburg"
+    #    texturefile = "gfx/interface/philipsburg.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_kralendijk"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/kralendijk.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_kingstown"   !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/kingstown.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_les_trois_ilets"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/les_trois_ilets.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_monserrat"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/monserrat.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_codrington"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/codrington.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_basseterre"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/basseterre.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_hamilton"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/hamilton.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_kingston"
+    #    texturefile = "gfx/interface/kingston.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_san_juan"
+    #    texturefile = "gfx/interface/san_juan.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_nassau"
+    #    texturefile = "gfx/interface/nassau.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_curacao"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/curacao.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_oranjestad"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/oranjestad.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_bogota"  !!!NO_ENTRY_IN_VU_URBAN_PLACEHOLDERS_AND_CITIES or TERRAIN.txt!!!
+    #    texturefile = "gfx/interface/bogota.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_cali"
+    #    texturefile = "gfx/interface/cali.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_medellin"
+    #    texturefile = "gfx/interface/medellin.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_maracaibo"
+    #    texturefile = "gfx/interface/maracaibo.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_quito"
+    #    texturefile = "gfx/interface/quito.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_lima"
+    #    texturefile = "gfx/interface/lima.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_cusco"
+    #    texturefile = "gfx/interface/cusco.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_arequipa"
+    #    texturefile = "gfx/interface/arequipa.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_cajamarca"
+    #    texturefile = "gfx/interface/cajamarca.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_macapa"
+    #    texturefile = "gfx/interface/macapa.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_belem"
+    #    texturefile = "gfx/interface/belem.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_sao_luis"
+    #    texturefile = "gfx/interface/sao_luis.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_fortaleza"
+    #    texturefile = "gfx/interface/fortaleza.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_recife"
+    #    texturefile = "gfx/interface/recife.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_salvador"
+    #    texturefile = "gfx/interface/salvador.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_rio_de_janeiro"
+    #    texturefile = "gfx/interface/rio_de_janeiro.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_sao_paulo"
+    #    texturefile = "gfx/interface/sao_paulo.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_curitiba"
+    #    texturefile = "gfx/interface/curitiba.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_sucre"
+    #    texturefile = "gfx/interface/sucre.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_asuncion"
+    #    texturefile = "gfx/interface/asuncion.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_santiago"
+    #    texturefile = "gfx/interface/santiago.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_antofagasta"
+    #    texturefile = "gfx/interface/antofagasta.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_concepcion"
+    #    texturefile = "gfx/interface/concepcion.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_punta_arenas"
+    #    texturefile = "gfx/interface/punta_arenas.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_rosario"
+    #    texturefile = "gfx/interface/rosario.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_mar_del_plata"
+    #    texturefile = "gfx/interface/mar_del_plata.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_bahia_blanca"
+    #    texturefile = "gfx/interface/bahia_blanca.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_comodoro_rivadavia"
+    #    texturefile = "gfx/interface/comodoro_rivadavia.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_georgetown"
+    #    texturefile = "gfx/interface/georgetown.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_paramaribo"
+    #    texturefile = "gfx/interface/paramaribo.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_montevideo"
+    #    texturefile = "gfx/interface/montevideo.dds"
+    #}
+    #spriteType = {                                                        
+    #    name = "GFX_combat_terrain_urban_port_stanley"
+    #    texturefile = "gfx/interface/port_stanley.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_tacoma"
+    #    texturefile = "gfx/interface/tacoma.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_victoria"
+    #    texturefile = "gfx/interface/victoria.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_spokane"
+    #    texturefile = "gfx/interface/spokane.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_eugene"
+    #    texturefile = "gfx/interface/eugene.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_redding"
+    #    texturefile = "gfx/interface/redding.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_fresno"
+    #    texturefile = "gfx/interface/fresno.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_bakersfield"
+    #    texturefile = "gfx/interface/bakersfield.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_anaheim"
+    #    texturefile = "gfx/interface/anaheim.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_mexicali"
+    #    texturefile = "gfx/interface/mexicali.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_boise"
+    #    texturefile = "gfx/interface/boise.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_billings"
+    #    texturefile = "gfx/interface/billings.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_edmonton"
+    #    texturefile = "gfx/interface/edmonton.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_saskatoon"
+    #    texturefile = "gfx/interface/saskatoon.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_regina"
+    #    texturefile = "gfx/interface/regina.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_sudbury"
+    #    texturefile = "gfx/interface/sudbury.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_saint_john"
+    #    texturefile = "gfx/interface/saint_john.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_st_johns"
+    #    texturefile = "gfx/interface/st_johns.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_manchester_nh"
+    #    texturefile = "gfx/interface/manchester_nh.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_burlington"
+    #    texturefile = "gfx/interface/burlington.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_providence"
+    #    texturefile = "gfx/interface/providence.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_hartford"
+    #    texturefile = "gfx/interface/hartford.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_new_haven"
+    #    texturefile = "gfx/interface/new_haven.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_albany"
+    #    texturefile = "gfx/interface/albany.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_syracuse"
+    #    texturefile = "gfx/interface/syracuse.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_rochester_ny"
+    #    texturefile = "gfx/interface/rochester_ny.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_buffalo"
+    #    texturefile = "gfx/interface/buffalo.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_newark"
+    #    texturefile = "gfx/interface/newark.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_wilmington"
+    #    texturefile = "gfx/interface/wilmington.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_washington_dc"
+    #    texturefile = "gfx/interface/washington_dc.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_alexandria_va"
+    #    texturefile = "gfx/interface/alexandria_va.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_richmond"
+    #    texturefile = "gfx/interface/richmond.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_savannah"
+    #    texturefile = "gfx/interface/savannah.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_montgomery"
+    #    texturefile = "gfx/interface/montgomery.dds"
+    #}
+	#spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_birmingham_al"
+    #    texturefile = "gfx/interface/birmingham_al.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_little_rock"
+    #    texturefile = "gfx/interface/little_rock.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_oklahoma_city"
+    #    texturefile = "gfx/interface/oklahoma_city.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_santa_fe"
+    #    texturefile = "gfx/interface/santa_fe.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_kansas_city_ks"
+    #    texturefile = "gfx/interface/kansas_city_ks.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_kansas_city_mo"
+    #    texturefile = "gfx/interface/kansas_city_mo.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_omaha"
+    #    texturefile = "gfx/interface/omaha.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_sioux_falls"
+    #    texturefile = "gfx/interface/sioux_falls.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_rapid_city"
+    #    texturefile = "gfx/interface/rapid_city.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_bismarck"
+    #    texturefile = "gfx/interface/bismarck.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_fargo"
+    #    texturefile = "gfx/interface/fargo.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cedar_rapids"
+    #    texturefile = "gfx/interface/cedar_rapids.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_indianapolis"
+    #    texturefile = "gfx/interface/indianapolis.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cleveland"
+    #    texturefile = "gfx/interface/cleveland.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_columbus"
+    #    texturefile = "gfx/interface/columbus.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cincinnati"
+    #    texturefile = "gfx/interface/cincinnati.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_louisville"
+    #    texturefile = "gfx/interface/louisville.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_nashville"
+    #    texturefile = "gfx/interface/nashville.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_memphis"
+    #    texturefile = "gfx/interface/memphis.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_ciudad_juarez"
+    #    texturefile = "gfx/interface/ciudad_juarez.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_hermosillo"
+    #    texturefile = "gfx/interface/hermosillo.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_texcoco"
+    #    texturefile = "gfx/interface/texcoco.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_tlacopan"
+    #    texturefile = "gfx/interface/tlacopan.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_tampico"
+    #    texturefile = "gfx/interface/tampico.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_las_mochis"
+    #    texturefile = "gfx/interface/las_mochis.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_puerto_vallarta"
+    #    texturefile = "gfx/interface/puerto_vallarta.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_colima"
+    #    texturefile = "gfx/interface/colima.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_puebla"
+    #    texturefile = "gfx/interface/puebla.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_oaxaca"
+    #    texturefile = "gfx/interface/oaxaca.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_heroica_veracruz"
+    #    texturefile = "gfx/interface/heroica_veracruz.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_coatzacoalcos"
+    #    texturefile = "gfx/interface/coatzacoalcos.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_villahermosa"
+    #    texturefile = "gfx/interface/villahermosa.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_campeche"
+    #    texturefile = "gfx/interface/campeche.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_belize_city"
+    #    texturefile = "gfx/interface/belize_city.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_san_pedro_sula"
+    #    texturefile = "gfx/interface/san_pedro_sula.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_san_salvador"
+    #    texturefile = "gfx/interface/san_salvador.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_panama_city"
+    #    texturefile = "gfx/interface/panama_city.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_havana"
+    #    texturefile = "gfx/interface/havana.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_barranquilla"
+    #    texturefile = "gfx/interface/barranquilla.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_barquisimeto"
+    #    texturefile = "gfx/interface/barquisimeto.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_caracas"
+    #    texturefile = "gfx/interface/caracas.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_guayaquil"
+    #    texturefile = "gfx/interface/guayaquil.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cuzco"
+    #    texturefile = "gfx/interface/cuzco.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_machu_picchu"
+    #    texturefile = "gfx/interface/machu_picchu.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_la_paz_bo"
+    #    texturefile = "gfx/interface/la_paz_bo.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_santa_cruz_de_la_sierra"
+    #    texturefile = "gfx/interface/santa_cruz_de_la_sierra.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cochabamba"
+    #    texturefile = "gfx/interface/cochabamba.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_buenos_aires"
+    #    texturefile = "gfx/interface/buenos_aires.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_cordoba_ar"
+    #    texturefile = "gfx/interface/cordoba_ar.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_porto_alegre"
+    #    texturefile = "gfx/interface/porto_alegre.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_belo_horizonte"
+    #    texturefile = "gfx/interface/belo_horizonte.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_goiania"
+    #    texturefile = "gfx/interface/goiania.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_brasilia"
+    #    texturefile = "gfx/interface/brasilia.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_natal"
+    #    texturefile = "gfx/interface/natal.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_manaus"
+    #    texturefile = "gfx/interface/manaus.dds"
+    #}
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_valencia_vz"
+    #    texturefile = "gfx/interface/valencia_vz.dds"
+    #}
     spriteType = {                                                       
         name = "GFX_combat_terrain_urban_george"
         texturefile = "gfx/interface/george.dds"
@@ -5720,10 +5480,10 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_mora"
         texturefile = "gfx/interface/mora.dds"
     }
-    spriteType = {                                                       
-        name = "GFX_combat_terrain_urban_portland_me"
-        texturefile = "gfx/interface/portland_me.dds"
-    }
+    #spriteType = {                                                       
+    #    name = "GFX_combat_terrain_urban_portland_me"
+    #    texturefile = "gfx/interface/portland_me.dds"
+    #}
 	spriteType = {                                                       
         name = "GFX_combat_terrain_urban_kohlm"
         texturefile = "gfx/interface/kohlm.dds"

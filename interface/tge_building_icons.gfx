@@ -53,6 +53,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//TGE//buildings//off_7.tga"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_off_8"
+		texturefile = "gfx//interface//TGE//buildings//off_8.tga"
+		loadType = "INGAME"
+	}
 	
 	spriteType = {
 		name = "GFX_import_from_subjects"
@@ -147,6 +153,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_wood_workshop"
 		texturefile = "gfx//interface//TGE//buildings//wood_workshop.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_cannery_workshop"
+		texturefile = "gfx//interface//TGE//buildings//cannery_workshop.tga"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_bakery"
+		texturefile = "gfx//interface//TGE//buildings//bakery.tga"
 		loadType = "INGAME"
 	}
 
@@ -361,6 +379,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_latent_choc"
 		texturefile = "gfx//interface//TGE//latent_stuff//latent_choc.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_latent_can"
+		texturefile = "gfx//interface//TGE//latent_stuff//latent_can.dds"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_latent_bak"
+		texturefile = "gfx//interface//TGE//latent_stuff//latent_bak.dds"
 		loadType = "INGAME"
 	}
 	

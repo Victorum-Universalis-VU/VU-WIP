@@ -71,6 +71,7 @@ discovered_by = western
 	controller = TUR
 	add_core = TUR
 	remove_core = VEN
+	add_core = BYZ
 } # To the Ottoman Empire
 1470.1.1 = { barracks = yes } #Ottoman military base
 1502.1.1 = { remove_core = BYZ }

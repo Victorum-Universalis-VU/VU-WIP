@@ -15566,6 +15566,7 @@ afghan_lapis_lazuli = {
 vu_malaria_present = {		#ADD THIS MODIFIER TO PROVINCE, TO PREVENT EARLY COLONIZATION (LIKE INLAND AFRICA)
 	picture = "vu_malaria_icon"
 	local_colonial_growth = -100
+	trade_value_modifier = 0.001
 }
 
 ##################################
@@ -17687,6 +17688,7 @@ GE_Roman_Empire_Drill = {
 }
 GE_Fortified_Settlement = {
 	local_development_cost = -0.10
+	local_production_efficiency = 0.05
 }
 Jurisprudence_1 = {
 	idea_cost = -0.10

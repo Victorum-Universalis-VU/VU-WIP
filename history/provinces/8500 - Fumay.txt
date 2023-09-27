@@ -1,10 +1,9 @@
 #6419 - Oberstein
 
+#Default
 owner = LIE
 controller = LIE
 add_core = LIE
-add_core = BUR
-add_core = FRA
 culture = wallonian
 religion = catholic
 trade_goods = lumber
@@ -15,6 +14,14 @@ is_city = yes
 base_manpower = 2
 hre = yes
 
+#Claimants
+add_core = BUR
+
+#Buildings
+
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

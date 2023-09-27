@@ -354,6 +354,7 @@ discovered_by = SZE
 }	#Battle of Rovine, Dejanovic dies and Velbazhd falls to Turkey, loses wealth
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1413.1.1 = { revolt = {} controller = TUR }
+1444.11.11 = { add_core = BYZ }
 1500.1.1 = {
 	base_tax = 3
 	base_production = 3

@@ -65,6 +65,8 @@ add_country_modifier = {
 	add_ruler_personality = conqueror_personality
 	#add_ruler_personality = lawgiver_personality
 	add_piety = -0.2
+	add_adm_tech = 3
+	add_mil_tech = 3
 }
 
 1444.10.1 = {

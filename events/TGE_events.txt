@@ -761,6 +761,32 @@ country_event = {
 		trigger = { has_global_flag = No_Cider } 
 		country_event = { id = marcin_events.60 }
 	}
+
+	option = {
+		name = marcin_events.1.a.61
+		trigger = { NOT = { has_global_flag = No_Canned_Goods } }
+		country_event = { id = marcin_events.61 }
+	}
+	
+	
+	option = {
+		name = marcin_events.1.b.61
+		trigger = { has_global_flag = No_Canned_Goods } 
+		country_event = { id = marcin_events.61 }
+	}
+
+	option = {
+		name = marcin_events.1.a.61
+		trigger = { NOT = { has_global_flag = No_Sweet_Confectioneries } }
+		country_event = { id = marcin_events.62 }
+	}
+	
+	
+	option = {
+		name = marcin_events.1.b.61
+		trigger = { has_global_flag = No_Sweet_Confectioneries } 
+		country_event = { id = marcin_events.62 }
+	}
 	
 	
 	option = {
@@ -2545,6 +2571,66 @@ country_event = {
 	option = {
 		name = marcin_events.2.b
 		set_global_flag = No_Cider
+		country_event = { id = marcin_events.1 }
+	}
+}
+
+country_event = {
+	id = marcin_events.61
+	title = marcin_events.61.t
+	desc = marcin_events.2.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = marcin_events.2.a
+		clr_global_flag = No_Canned_Goods
+		country_event = { id = marcin_events.1 }
+	}
+	
+	option = {
+		name = marcin_events.2.b
+		set_global_flag = No_Canned_Goods
+		country_event = { id = marcin_events.1 }
+	}
+}
+
+country_event = {
+	id = marcin_events.62
+	title = marcin_events.62.t
+	desc = marcin_events.2.d
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	option = {
+		name = marcin_events.2.a
+		clr_global_flag = No_Sweet_Confectioneries
+		country_event = { id = marcin_events.1 }
+	}
+	
+	option = {
+		name = marcin_events.2.b
+		set_global_flag = No_Sweet_Confectioneries
 		country_event = { id = marcin_events.1 }
 	}
 }

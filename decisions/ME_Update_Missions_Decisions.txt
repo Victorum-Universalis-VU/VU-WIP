@@ -2,12 +2,21 @@ country_decisions = {
 	the_fix = {
 		potential = {
 			ai = no
+			has_global_flag = paradox_or_mod_missions_events_flag
+			NOT = { is_year = 1445 }
+			NOT = { has_country_flag = me_or_vu_missions } 
 		}
+
 		allow = {
 			always = yes
 		}
+
 		effect = {
-			swap_non_generic_missions = yes
+			set_country_flag = me_or_vu_missions
+			custom_tooltip = the_fix_only_once
+			country_event = { 
+   				id = paradox_or_mod_missions_events.3
+			}
 		}
 	}
 }

@@ -216,6 +216,13 @@ FLA_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			brabant_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -238,7 +245,10 @@ FLA_missions_3 = {
 		required_missions = { fla_gain_independence }
 		position = 2
 		provinces_to_highlight = {
-			area = holland_area
+			OR = {
+				area = holland_area
+				area = zeeland_area
+			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -246,6 +256,11 @@ FLA_missions_3 = {
 		}
 		trigger = {
 			holland_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			zeeland_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT

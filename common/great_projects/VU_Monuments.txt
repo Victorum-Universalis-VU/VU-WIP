@@ -560,11 +560,11 @@ vu_temple_of_awwam = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
+	build_trigger = { owner = { culture_group = turko_semitic NOT = { religion_group = muslim } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
-	can_upgrade_trigger =  { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
+	can_use_modifiers_trigger = { owner = { culture_group = turko_semitic NOT = { religion_group = muslim } } }
+	can_upgrade_trigger =  { owner = { culture_group = turko_semitic NOT = { religion_group = muslim } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -610,11 +610,11 @@ vu_barran_temple = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
+	build_trigger = { owner = { culture_group = turko_semitic NOT = { religion_group = muslim } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
-	can_upgrade_trigger =  { owner = { culture_group = turko_semitic NOT = {religion_group = muslim} } }
+	can_use_modifiers_trigger = { owner = { culture_group = turko_semitic NOT = {religion_group = muslim } } }
+	can_upgrade_trigger =  { owner = { culture_group = turko_semitic NOT = {religion_group = muslim } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -661,11 +661,11 @@ vu_nuri = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = {religion_group = muslim} } }
+	build_trigger = { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = { religion_group = muslim } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = {religion_group = muslim} } }
-	can_upgrade_trigger =  {owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = {religion_group = muslim} } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = { religion_group = muslim } } }
+	can_upgrade_trigger =  { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } NOT = { religion_group = muslim } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -715,7 +715,7 @@ vu_musawwarat_es_sufra = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } religion_group = christian } }
-	can_upgrade_trigger =  {owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } religion_group = christian } }
+	can_upgrade_trigger =  { owner = { OR = { primary_culture = coptic_culture primary_culture = nubian } religion_group = christian } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -761,11 +761,11 @@ vu_abu_mena = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { owner = {religion_group = christian } }
+	build_trigger = { owner = { religion_group = christian } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {religion_group = christian } }
-	can_upgrade_trigger =  {owner = { religion_group = christian } }
+	can_use_modifiers_trigger = { owner = { religion_group = christian } }
+	can_upgrade_trigger = { owner = { religion_group = christian } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -3038,11 +3038,11 @@ vu_khans_palacee = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { owner = {culture_group = tartar} }
+	build_trigger = { owner = { culture_group = tartar } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {  culture_group = tartar} }
-	can_upgrade_trigger = { owner = { culture_group = tartar} }
+	can_use_modifiers_trigger = { owner = { culture_group = tartar } }
+	can_upgrade_trigger = { owner = { culture_group = tartar } }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0	}
@@ -3103,11 +3103,11 @@ vu_white_mosque_of_bolgar = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { owner = {culture_group = tartar} }
+	build_trigger = { owner = { culture_group = tartar } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {  culture_group = tartar} }
-	can_upgrade_trigger = { owner = { culture_group = tartar} }
+	can_use_modifiers_trigger = { owner = { culture_group = tartar } }
+	can_upgrade_trigger = { owner = { culture_group = tartar } }
 	keep_trigger = { }
 		tier_0 = {
 		upgrade_time = { months = 0	}
@@ -4354,7 +4354,7 @@ vu_otanahaortress = {
 
 	#can we build it?
 	build_trigger = {	
-    is_year = 1522
+   	is_year = 1522
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = iberian	
@@ -4378,7 +4378,7 @@ vu_otanahaortress = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {	
-    is_year = 1522
+    	is_year = 1522
 	    OR = {
 	    culture_group = low_franconian
 	        culture_group = iberian	
@@ -4552,11 +4552,11 @@ vu_tamaudun = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1500 owner = { religion_group = state_shinto   } }
+	build_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { is_year = 1500 owner = { religion_group = state_shinto   } }
-	can_upgrade_trigger = { is_year = 1500 owner = { religion_group = state_shinto   } }
+	can_use_modifiers_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
+	can_upgrade_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4602,11 +4602,11 @@ vu_nijo_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1600 owner = { religion_group = state_shinto   } }
+	build_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { is_year = 1600 owner = { religion_group = state_shinto   } }
-	can_upgrade_trigger = { is_year = 1600 owner = { religion_group = state_shinto   } }
+	can_use_modifiers_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
+	can_upgrade_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4652,11 +4652,11 @@ vu_heijo_palace = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { religion_group = state_shinto   } }
+	build_trigger = { owner = { religion_group = state_shinto } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { religion_group = state_shinto   } }
-	can_upgrade_trigger = {  owner = { religion_group = state_shinto   } }
+	can_use_modifiers_trigger = { owner = { religion_group = state_shinto } }
+	can_upgrade_trigger = {  owner = { religion_group = state_shinto } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4702,11 +4702,11 @@ vu_itsukushima_ahrine = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { religion_group = state_shinto   } }
+	build_trigger = { owner = { religion_group = state_shinto } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { religion_group = state_shinto   } }
-	can_upgrade_trigger = {  owner = { religion_group = state_shinto   } }
+	can_use_modifiers_trigger = { owner = { religion_group = state_shinto } }
+	can_upgrade_trigger = {  owner = { religion_group = state_shinto } }
 	keep_trigger = {}
 
 	tier_0 = {

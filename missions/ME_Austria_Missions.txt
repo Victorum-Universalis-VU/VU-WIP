@@ -1901,6 +1901,7 @@ me_hab_2_1 = {
 				area = wallonia_area
 				area = brabant_area
 				area = holland_area
+				area = zeeland_area
 				area = north_brabant_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1948,6 +1949,16 @@ me_hab_2_1 = {
 							}
 						}
 					}
+					zeeland_area = {
+						type = all
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							owner = {
+								is_part_of_hre = yes
+								is_subject = no
+							}
+						}
+					}
 					north_brabant_area = {
 						type = all
 						OR = {
@@ -1986,6 +1997,10 @@ me_hab_2_1 = {
 					add_local_autonomy = -100
 					add_nationalism = -10
 				}
+				zeeland_area = {
+					add_local_autonomy = -100
+					add_nationalism = -10
+				}
 				wallonia_area = {
 					add_local_autonomy = -100
 					add_nationalism = -10
@@ -2017,6 +2032,10 @@ me_hab_2_1 = {
 						add_local_autonomy = -100
 						add_nationalism = -10
 					}
+					zeeland_area = {
+				    	add_local_autonomy = -100
+				    	add_nationalism = -10
+				    }
 					wallonia_area = {
 						add_local_autonomy = -100
 						add_nationalism = -10

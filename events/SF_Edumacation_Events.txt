@@ -1,331 +1,242 @@
-namespace = edumacation
-
+namespace = SF_Edumacation_Events
+#Revisted broken file and fixed on 25 Sept 2023 by San Felipe
+#DonBrom was here on 24-9-2024
 #Fires when you start game and gives you both the ruler uneducated country modifier and personality.
 #On Startup - Ruler
 country_event = {
-	id = edumacation.1
-	title = "edumacation.1.name"
-	desc = "edumacation.1.desc"
+	id = SF_Edumacation_Events.1
+	title = "SF_Edumacation_Events.1.name"
+	desc = "SF_Edumacation_Events.1.desc"
 	picture = REFORM_eventPicture
 	
     fire_only_once = yes
-	hidden = yes
+	
 	
 	trigger = {
 		has_game_started = yes
 		has_regency = no
-		ROOT = { ai = no }
-		NOT = { technology_group = east_african }
-        NOT = { technology_group = central_african }
-        NOT = { technology_group = nomad_group }
-        NOT = { technology_group = sub_saharan }
-        NOT = { technology_group = north_american }
-        NOT = { technology_group = mesoamerican }
-        NOT = { technology_group = south_american }
-        NOT = { technology_group = andean }
-        NOT = { technology_group = high_american }
-        NOT = { technology_group = aboriginal_tech }
-        NOT = { technology_group = rapanuan_tech_group }
-        NOT = { technology_group = polynesian_tech }
-        NOT = { technology_group = papuan_tech_group }
+		ai = no
+		is_subject = no
+		has_institution = feudalism
+	}
+	
+	immediate = {
+		hidden_effect = {
+			remove_ruler_personality = just_personality
+			remove_ruler_personality = righteous_personality
+			remove_ruler_personality = tolerant_personality
+			remove_ruler_personality = kind_hearted_personality
+			remove_ruler_personality = free_thinker_personality
+			remove_ruler_personality = well_connected_personality
+			remove_ruler_personality = calm_personality
+			remove_ruler_personality = careful_personality
+			remove_ruler_personality = secretive_personality
+			remove_ruler_personality = intricate_web_weaver_personality
+			remove_ruler_personality = fertile_personality
+			remove_ruler_personality = well_advised_personality
+			remove_ruler_personality = benevolent_personality
+			remove_ruler_personality = zealot_personality 
+			remove_ruler_personality = pious_personality
+			remove_ruler_personality = lawgiver_personality
+			remove_ruler_personality = midas_touched_personality
+			remove_ruler_personality = incorruptible_personality
+			remove_ruler_personality = architectural_visionary_personality
+			remove_ruler_personality = scholar_personality
+			remove_ruler_personality = entrepreneur_personality
+			remove_ruler_personality = industrious_personality
+			remove_ruler_personality = expansionist_personality
+			remove_ruler_personality = charismatic_negotiator_personality
+			remove_ruler_personality = silver_tongue_personality
+			remove_ruler_personality = conqueror_personality
+			remove_ruler_personality = tactical_genius_personality
+			remove_ruler_personality = bold_fighter_personality
+			remove_ruler_personality = strict_personality
+			remove_ruler_personality = inspiring_leader_personality
+			remove_ruler_personality = martial_educator_personality
+			remove_ruler_personality = navigator_personality
+			remove_ruler_personality = fierce_negotiator_personality
+			remove_ruler_personality = babbling_buffoon_personality
+			remove_ruler_personality = embezzler_personality
+			remove_ruler_personality = infertile_personality
+			remove_ruler_personality = drunkard_personality
+			remove_ruler_personality = sinner_personality
+			remove_ruler_personality = greedy_personality
+			remove_ruler_personality = cruel_personality
+			remove_ruler_personality = naive_personality
+			remove_ruler_personality = craven_personality
+			remove_ruler_personality = loose_lips_personality
+			remove_ruler_personality = obsessive_perfectionist_personality
+			remove_ruler_personality = malevolent_personality
+			remove_ruler_personality = immortal_personality
+			remove_ruler_personality = reformist_personality
+			remove_ruler_personality = legendary_pirate_personality
+		}
 	}
 	
 	option = {
-		name = "edumacation.1.a"
-		add_ruler_personality = vu_uneducated_ruler_personality
-		add_country_modifier = { 
-			name = "ruler_uneducated" 
-			duration = 360            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		}
-        #if = {
-        #    limit = { 
-		#	    has_new_dynasty = yes 
-		#	}
-		#	add_ruler_personality = vu_uneducated_ruler_personality
-		#	add_country_modifier = { 
-		#	    name = "ruler_uneducated" 
-		#	    duration = 360            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-        #}
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = no 
-		#		has_regency = no 
-		#	}
-		#	add_ruler_personality = vu_uneducated_ruler_personality
-		#	add_country_modifier = { 
-		#	    name = "ruler_uneducated" 
-		#	    duration = 360            #This removes itself based on the premise that the the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-        #}
+		name = "SF_Edumacation_Events.1.a"
+		highlight = yes
+		add_ruler_personality = vu_uneducated_personality
 	}
+	
 }
 
 #On Startup - Heir
 country_event = {
-	id = edumacation.2
-	title = "edumacation.2.name"
-	desc = "edumacation.2.desc"
+	id = SF_Edumacation_Events.2
+	title = "SF_Edumacation_Events.2.name"
+	desc = "SF_Edumacation_Events.2.desc"
 	picture = REFORM_eventPicture
 
 	fire_only_once = yes
-	hidden = yes
+	
 	
 	trigger = {
 		has_game_started = yes
 		has_regency = no
 		has_heir = yes
-		ROOT = { ai = no }
-		NOT = { technology_group = east_african }
-        NOT = { technology_group = central_african }
-        NOT = { technology_group = nomad_group }
-        NOT = { technology_group = sub_saharan }
-        NOT = { technology_group = north_american }
-        NOT = { technology_group = mesoamerican }
-        NOT = { technology_group = south_american }
-        NOT = { technology_group = andean }
-        NOT = { technology_group = high_american }
-        NOT = { technology_group = aboriginal_tech }
-        NOT = { technology_group = rapanuan_tech_group }
-        NOT = { technology_group = polynesian_tech }
-        NOT = { technology_group = papuan_tech_group }
+		ai = no
+		is_subject = no
+		has_institution = feudalism
+	}
+	
+		immediate = {
+		hidden_effect = {
+			remove_heir_personality = just_personality
+			remove_heir_personality = righteous_personality
+			remove_heir_personality = tolerant_personality
+			remove_heir_personality = kind_hearted_personality
+			remove_heir_personality = free_thinker_personality
+			remove_heir_personality = well_connected_personality
+			remove_heir_personality = calm_personality
+			remove_heir_personality = careful_personality
+			remove_heir_personality = secretive_personality
+			remove_heir_personality = intricate_web_weaver_personality
+			remove_heir_personality = fertile_personality
+			remove_heir_personality = well_advised_personality
+			remove_heir_personality = benevolent_personality
+			remove_heir_personality = zealot_personality 
+			remove_heir_personality = pious_personality
+			remove_heir_personality = lawgiver_personality
+			remove_heir_personality = midas_touched_personality
+			remove_heir_personality = incorruptible_personality
+			remove_heir_personality = architectural_visionary_personality
+			remove_heir_personality = scholar_personality
+			remove_heir_personality = entrepreneur_personality
+			remove_heir_personality = industrious_personality
+			remove_heir_personality = expansionist_personality
+			remove_heir_personality = charismatic_negotiator_personality
+			remove_heir_personality = silver_tongue_personality
+			remove_heir_personality = conqueror_personality
+			remove_heir_personality = tactical_genius_personality
+			remove_heir_personality = bold_fighter_personality
+			remove_heir_personality = strict_personality
+			remove_heir_personality = inspiring_leader_personality
+			remove_heir_personality = martial_educator_personality
+			remove_heir_personality = navigator_personality
+			remove_heir_personality = fierce_negotiator_personality
+			remove_heir_personality = babbling_buffoon_personality
+			remove_heir_personality = embezzler_personality
+			remove_heir_personality = infertile_personality
+			remove_heir_personality = drunkard_personality
+			remove_heir_personality = sinner_personality
+			remove_heir_personality = greedy_personality
+			remove_heir_personality = cruel_personality
+			remove_heir_personality = naive_personality
+			remove_heir_personality = craven_personality
+			remove_heir_personality = loose_lips_personality
+			remove_heir_personality = obsessive_perfectionist_personality
+			remove_heir_personality = malevolent_personality
+			remove_heir_personality = immortal_personality
+			remove_heir_personality = reformist_personality
+			remove_heir_personality = legendary_pirate_personality
+		}
 	}
 	
 	option = {
-		name = "edumacation.2.a"
-		add_heir_personality = vu_uneducated_ruler_personality
-		add_country_modifier = { 
-			name = "heir_uneducated" 
-			duration = -1
-		}
-        #if = {
-        #    limit = { 
-		#	    has_new_dynasty = yes 
-		#	}
-		#	add_heir_personality = vu_uneducated_heir_personality
-		#	add_country_modifier = { 
-		#    	name = "heir_uneducated" 
-		#    	duration = -1
-		#    }
-        #}
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = no 
-		#		has_regency = no 
-		#	}
-		#	add_heir_personality = vu_uneducated_heir_personality
-		#	add_country_modifier = { 
-		#    	name = "heir_uneducated" 
-		#    	duration = -1
-		#    }
-        #}
+		name = "SF_Edumacation_Events.2.a"
+		highlight = yes
+		add_heir_personality = vu_uneducated_personality
 	}
 }
 
 #On New Monarch
 country_event = {
-	id = edumacation.3
-	title = "edumacation.3.name"
-	desc = "edumacation.3.desc"
+	id = SF_Edumacation_Events.3
+	title = "SF_Edumacation_Events.3.name"
+	desc = "SF_Edumacation_Events.3.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
+	
+	trigger = {
+		has_game_started = yes
+		has_regency = no
+		ai = no
+		is_subject = no
+		has_institution = feudalism
+	}
 	
 	option = {
-		name = "edumacation.3.a"
+		name = "SF_Edumacation_Events.3.a"
+		highlight = yes
 		#Removes all qualifications attained by the heir whilst the ruler was alive.
-		remove_heir_personality = vu_scholarly_ruler_personality
-		remove_heir_personality = vu_bachelorette_ruler_personality
-		remove_heir_personality = vu_doctorate_ruler_personality
-		add_ruler_personality = vu_uneducated_ruler_personality
-		add_country_modifier = { 
-			name = "ruler_uneducated" 
-			duration = -1            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
+		if = {
+			limit = {
+				NOT = {
+					ruler_has_personality = vu_scholarly_personality
+					ruler_has_personality = vu_bachelorette_personality
+					ruler_has_personality = vu_masters_personality
+				}
+			}
+			add_ruler_personality = vu_uneducated_personality
 		}
-		#Hashed out as it doesn't seem logical that a ruler would be studying straight after being born. Left here anyway for future reference.
-		#add_country_modifier = { 
-		#	name = "ruler_studying" 
-		#	duration = 2160           #This is active at the same time as the above due to the fact that whilst the ruler is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
-		#}
-        #if = {
-        #    limit = { 
-		#	    has_new_dynasty = yes 
-		#	}
-		#	add_ruler_personality = vu_uneducated_ruler_personality
-		#	add_country_modifier = { 
-		#	    name = "ruler_uneducated" 
-		#	    duration = -1            #This removes itself based on the premise that the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-        #}
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = no 
-		#		has_regency = no 
-		#	}
-		#	add_ruler_personality = vu_uneducated_ruler_personality
-		#	add_country_modifier = { 
-		#	    name = "ruler_uneducated" 
-		#	    duration = -1            #This removes itself based on the premise that the the ruler would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-		#	#Hashed out as it doesn't seem logical that a ruler would be studying straight after being born. Left here anyway for future reference.
-		#    #add_country_modifier = { 
-		#	#	name = "ruler_studying" 
-		#	#	duration = 2160 
-		#	#}
-        #}
-	}
-}
-
-#On Monarch Death
-country_event = {
-	id = edumacation.4
-	title = "edumacation.4.name"
-	desc = "edumacation.4.desc"
-	picture = REFORM_eventPicture
-
-	is_triggered_only = yes
-	hidden = yes
-
-	option = {
-		name = "edumacation.4.a"
-		#Removes all qualifications attained by the heir whilst the ruler was alive.
-		remove_heir_personality = vu_scholarly_ruler_personality
-		remove_heir_personality = vu_bachelorette_ruler_personality
-		remove_heir_personality = vu_doctorate_ruler_personality
-		#Removes all qualifications attained by the ruler whilst he was alive.
-		remove_country_modifier = ruler_completed_scholarship
-		remove_country_modifier = ruler_completed_degree
-		remove_country_modifier = ruler_completed_doctorate
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = yes 
-		#	}
-		#	#Removes all qualifications attained by the ruler whilst he was alive.
-		#    remove_country_modifier = ruler_completed_scholarship
-		#	remove_country_modifier = ruler_completed_degree
-		#	remove_country_modifier = ruler_completed_doctorate
-        #}
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = no 
-		#		has_regency = no  
-		#	}
-		#	#Removes all qualifications attained by the ruler whilst he was alive.
-		#    remove_country_modifier = ruler_completed_scholarship
-		#	remove_country_modifier = ruler_completed_degree
-		#	remove_country_modifier = ruler_completed_doctorate
-        #}
 	}
 }
 
 #On New Heir
 country_event = {
-	id = edumacation.5
-	title = "edumacation.5.name"
-	desc = "edumacation.5.desc"
+	id = SF_Edumacation_Events.5
+	title = "SF_Edumacation_Events.5.name"
+	desc = "SF_Edumacation_Events.5.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
+	
+	trigger = {
+		has_game_started = yes
+		has_regency = no
+		has_heir = yes
+		ai = no
+		is_subject = no
+		has_institution = feudalism
+	}
 	
 	option = {
-		name = "edumacation.5.a"
-		add_heir_personality = vu_uneducated_ruler_personality
-		add_country_modifier = { 
-			name = "heir_uneducated" 
-			duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		}
-		#Hashed out as it doesn't seem logical that an heir would be studying straight after being born. Left here anyway for future reference.
-		#add_country_modifier = { 
-		#	name = "heir_studying" 
-		#	duration = 2160           #This is active at the same time as the above due to the fact that whilst the heir is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
-		#}
-        #if = {
-        #    limit = { 
-		#	    has_new_dynasty = yes 
-		#	}
-		#	add_heir_personality = vu_uneducated_heir_personality
-		#    add_country_modifier = { 
-		#    	name = "heir_uneducated" 
-		#    	duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-        #}
-        #if = {
-        #    limit = { 
-		#	    has_new_dynasty = no 
-		#		has_regency = no  
-		#	}
-		#	add_heir_personality = vu_uneducated_heir_personality
-		#    add_country_modifier = { 
-		#    	name = "heir_uneducated" 
-		#    	duration = -1           #This removes itself based on the premise that the heir would have at least some education after one year, even though they have yet to attain an official certificate of achievement.
-		#    }
-		#	#Hashed out as it doesn't seem logical that an heir would be studying straight after being born. Left here anyway for future reference.
-		#	#add_country_modifier = { 
-		#    #	name = "heir_studying" 
-		#    #	duration = 2160           #This is active at the same time as the above due to the fact that whilst the heir is indeed uneducated, that they are at the same time studying. Hence, it makes sense to have both.
-		#    #}
-        #}
-	}
-}
-
-#On Heir Death
-country_event = {
-	id = edumacation.6
-	title = "edumacation.6.name"
-	desc = "edumacation.6.desc"
-	picture = REFORM_eventPicture
-
-	is_triggered_only = yes
-	hidden = yes
-
-	option = {
-		name = "edumacation.6.a"
-		#Removes all qualifications attained by the heir whilst he was alive.
-		remove_country_modifier = heir_completed_scholarship
-		remove_country_modifier = heir_completed_degree
-		remove_country_modifier = heir_completed_doctorate
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = yes 
-		#	}
-		#	#Removes all qualifications attained by the heir whilst he was alive.
-		#    remove_country_modifier = heir_completed_scholarship
-		#	remove_country_modifier = heir_completed_degree
-		#	remove_country_modifier = heir_completed_doctorate
-        #}
-        #if = {
-        #    limit = { 
-		#		has_new_dynasty = no 
-		#		has_regency = no 
-		#	}
-		#	#Removes all qualifications attained by the heir whilst he was alive.
-		#    remove_country_modifier = heir_completed_scholarship
-		#	remove_country_modifier = heir_completed_degree
-		#	remove_country_modifier = heir_completed_doctorate
-        #}
+		name = "SF_Edumacation_Events.5.a"
+		highlight = yes
+		add_heir_personality = vu_uneducated_personality
 	}
 }
 
 #Triggered Only events
 #Ruler Completed Scholarship
 country_event = {
-	id = edumacation.7
-	title = "edumacation.7.name"
-	desc = "edumacation.7.desc"
+	id = SF_Edumacation_Events.7
+	title = "SF_Edumacation_Events.7.name"
+	desc = "SF_Edumacation_Events.7.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.7.a"
-		add_country_modifier = {
-            name = "ruler_completed_scholarship"
-	        duration = -1
-        }
-		add_ruler_personality = vu_scholarly_ruler_personality
+		name = "SF_Edumacation_Events.7.a"
+		highlight = yes
+		remove_ruler_personality = vu_uneducated_personality
+		add_ruler_personality = vu_scholarly_personality
 		change_adm = 1
         change_dip = 1
         change_mil = 1
@@ -334,68 +245,62 @@ country_event = {
 
 #Ruler Completed Bachelors Degree
 country_event = {
-	id = edumacation.8
-	title = "edumacation.8.name"
-	desc = "edumacation.8.desc"
+	id = SF_Edumacation_Events.8
+	title = "SF_Edumacation_Events.8.name"
+	desc = "SF_Edumacation_Events.8.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.8.a"
-		add_country_modifier = {
-            name = "ruler_completed_degree"
-	        duration = -1
-        }
-		add_ruler_personality = vu_bachelorette_ruler_personality
-		change_adm = 2
-        change_dip = 2
-        change_mil = 2
+		name = "SF_Edumacation_Events.8.a"
+		highlight = yes
+		remove_ruler_personality = vu_scholarly_personality
+		add_ruler_personality = vu_bachelorette_personality
+		change_adm = 1
+        change_dip = 1
+        change_mil = 1
 	}
 }
 
-#Ruler Completed Doctorate
+#Ruler Completed Masters
 country_event = {
-	id = edumacation.9
-	title = "edumacation.9.name"
-	desc = "edumacation.9.desc"
+	id = SF_Edumacation_Events.9
+	title = "SF_Edumacation_Events.9.name"
+	desc = "SF_Edumacation_Events.9.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.9.a"
-		add_country_modifier = {
-            name = "ruler_completed_doctorate"
-	        duration = -1
-        }
-		add_ruler_personality = vu_doctorate_ruler_personality
-		change_adm = 3
-        change_dip = 3
-        change_mil = 3
+		name = "SF_Edumacation_Events.9.a"
+		highlight = yes
+		remove_ruler_personality = vu_bachelorette_personality
+		add_ruler_personality = vu_masters_personality
+		change_adm = 1
+        change_dip = 1
+        change_mil = 1
 	}
 }
 
 
 #Heir Completed Scholarship
 country_event = {
-	id = edumacation.10
-	title = "edumacation.10.name"
-	desc = "edumacation.10.desc"
+	id = SF_Edumacation_Events.10
+	title = "SF_Edumacation_Events.10.name"
+	desc = "SF_Edumacation_Events.10.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.10.a"
-		add_country_modifier = {
-            name = "heir_completed_scholarship"
-	        duration = -1
-        }
-		add_heir_personality = vu_scholarly_ruler_personality
+		name = "SF_Edumacation_Events.10.a"
+		highlight = yes
+		remove_heir_personality = vu_uneducated_personality
+		add_heir_personality = vu_scholarly_personality
 		change_heir_adm = 1
         change_heir_dip = 1
         change_heir_mil = 1
@@ -404,46 +309,934 @@ country_event = {
 
 #Heir Completed Bachelors Degree
 country_event = {
-	id = edumacation.11
-	title = "edumacation.11.name"
-	desc = "edumacation.11.desc"
+	id = SF_Edumacation_Events.11
+	title = "SF_Edumacation_Events.11.name"
+	desc = "SF_Edumacation_Events.11.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.11.a"
-		add_country_modifier = {
-            name = "heir_completed_degree"
-	        duration = -1
-        }
-		add_heir_personality = vu_bachelorette_ruler_personality
-		change_heir_adm = 2
-        change_heir_dip = 2
-        change_heir_mil = 2
+		name = "SF_Edumacation_Events.11.a"
+		highlight = yes
+		remove_heir_personality = vu_scholarly_personality
+		add_heir_personality = vu_bachelorette_personality
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
 	}
 }
 
 #Heir Completed Doctorate
 country_event = {
-	id = edumacation.12
-	title = "edumacation.12.name"
-	desc = "edumacation.12.desc"
+	id = SF_Edumacation_Events.12
+	title = "SF_Edumacation_Events.12.name"
+	desc = "SF_Edumacation_Events.12.desc"
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
-	hidden = yes
+	
 
 	option = {
-		name = "edumacation.12.a"
+		name = "SF_Edumacation_Events.12.a"
+		highlight = yes
+		remove_heir_personality = vu_bachelorette_personality
+		add_heir_personality = vu_masters_personality
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Ruler Doctorate by DonBrom
+country_event = {
+	id = SF_Edumacation_Events.13
+	title = "SF_Edumacation_Events.13.name"
+	desc = "SF_Edumacation_Events.13.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_ruler_personality = vu_doctor_of_architecture 
+			remove_ruler_personality = vu_doctor_of_arts
+			remove_ruler_personality = vu_doctor_of_philosophy
+			remove_ruler_personality = vu_doctor_of_science
+			remove_ruler_personality = vu_doctor_of_law
+			remove_ruler_personality = vu_doctor_of_engineering
+			remove_ruler_personality = vu_doctor_of_war
+			remove_ruler_personality = vu_doctor_of_diplomacy
+			remove_ruler_personality = vu_doctor_of_medicine
+			remove_ruler_personality = vu_doctor_of_culinary
+			remove_ruler_personality = vu_doctor_of_finance
+			remove_ruler_personality = vu_doctor_of_theology
+		}
+	}
+	
+	#philosophy
+	option = {
+		name = "SF_Edumacation_Events.13.a"
+		highlight = yes 
+		trigger = {
+			philosopher = 1
+		}
+		
 		add_country_modifier = {
-            name = "heir_completed_doctorate"
-	        duration = -1
-        }
-		add_heir_personality = vu_doctorate_ruler_personality
-		change_heir_adm = 3
-        change_heir_dip = 3
-        change_heir_mil = 3
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.25 days = 365 }
+	}
+	#science
+	option = {
+		name = "SF_Edumacation_Events.11.b"
+		highlight = yes 
+		trigger = {
+			natural_scientist = 1
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365
+		}
+		
+		country_event = { id = SF_Edumacation_Events.26 days = 365 }
+	}
+	#law 
+	option = {
+		name = "SF_Edumacation_Events.13.c"
+		highlight = yes 		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.27 days = 365 }
+	}
+	#tf2 engineer
+	option = {
+		name = "SF_Edumacation_Events.11.d"
+		highlight = yes 
+		trigger = {
+			OR = {
+				civil_engineer = 1
+				combat_engineer = 1
+			}
+		}
+				
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365
+		}
+		
+		country_event = { id = SF_Edumacation_Events.28 days = 365}
+	}
+	#warlord
+	option = {
+		name = "SF_Edumacation_Events.13.e"
+		highlight = yes 		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.29 days = 365 }
+	}
+	#diplomat
+	option = {
+		name = "SF_Edumacation_Events.13.f"
+		highlight = yes 
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.30 days = 365 }
+	}
+	#tf2 medic
+	option = {
+		name = "SF_Edumacation_Events.13.g"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.31 days = 365 }
+	}
+	#cook-cook
+	option = {
+		name = "SF_Edumacation_Events.13.h"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.32 days = 365 }
+	}
+	#jew
+	option = {
+		name = "SF_Edumacation_Events.13.i"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+			OR = {
+				master_of_mint = 1
+				treasurer = 1
+			}
+		}
+		
+		add_country_modifier = { 
+			name = "ruler_studying"
+			duration = 365  
+		}
+		
+		country_event = { id = SF_Edumacation_Events.33 days = 365 }
+	}
+	#likes them young
+	option = {
+		name = "SF_Edumacation_Events.13.j"
+		highlight = yes 
+		trigger = {
+			OR = {
+				NOT = {
+					current_age = age_of_discovery
+				}
+				
+				full_idea_group = religious_ideas
+			}
+			OR = {
+				inquisitor = 1
+				theologian = 1
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365  
+		}
+		
+		country_event = { id = SF_Edumacation_Events.34 days = 365 }
+	}
+}
+
+#Heir Doctorate by DonBrom
+country_event = {
+	id = SF_Edumacation_Events.14
+	title = "SF_Edumacation_Events.14.name"
+	desc = "SF_Edumacation_Events.14.desc"
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_ruler_personality = vu_doctor_of_architecture 
+			remove_ruler_personality = vu_doctor_of_arts
+			remove_ruler_personality = vu_doctor_of_philosophy
+			remove_ruler_personality = vu_doctor_of_science
+			remove_ruler_personality = vu_doctor_of_law
+			remove_ruler_personality = vu_doctor_of_engineering
+			remove_ruler_personality = vu_doctor_of_war
+			remove_ruler_personality = vu_doctor_of_diplomacy
+			remove_ruler_personality = vu_doctor_of_medicine
+			remove_ruler_personality = vu_doctor_of_culinary
+			remove_ruler_personality = vu_doctor_of_finance
+			remove_ruler_personality = vu_doctor_of_theology
+		}
+	}
+	
+	#philosophy
+	option = {
+		name = "SF_Edumacation_Events.14.a"
+		highlight = yes 
+		trigger = {
+			philosopher = 1
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365
+		}
+		
+		country_event = { id = SF_Edumacation_Events.15 days = 365 }
+	}
+	#science
+	option = {
+		name = "SF_Edumacation_Events.14.b"
+		highlight = yes 
+		trigger = {
+			natural_scientist = 1
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.16 days = 365 }
+	}
+	#law 
+	option = {
+		name = "SF_Edumacation_Events.14.c"
+		highlight = yes 		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365  
+		}
+		
+		country_event = { id = SF_Edumacation_Events.17 days = 365 }
+	}
+	#tf2 engineer
+	option = {
+		name = "SF_Edumacation_Events.14.d"
+		highlight = yes 
+		trigger = {
+			OR = {
+				civil_engineer = 1
+				combat_engineer = 1
+			}
+		}
+				
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365  
+		}
+		
+		country_event = { id = SF_Edumacation_Events.18 days = 365 }
+	}
+	#warlord
+	option = {
+		name = "SF_Edumacation_Events.14.e"
+		highlight = yes 		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.19 days = 365 }
+	}
+	#diplomat
+	option = {
+		name = "SF_Edumacation_Events.14.f"
+		highlight = yes 
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365  
+		}
+		
+		country_event = { id = SF_Edumacation_Events.20 days = 365 }
+	}
+	#tf2 medic
+	option = {
+		name = "SF_Edumacation_Events.14.g"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.21 days = 365 }
+	}
+	#cook-cook
+	option = {
+		name = "SF_Edumacation_Events.14.h"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.22 days = 365 }
+	}
+	#jew
+	option = {
+		name = "SF_Edumacation_Events.14.i"
+		highlight = yes 
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+			OR = {
+				master_of_mint = 1
+				treasurer = 1
+			}
+		}
+		
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.23 days = 365 }
+	}
+	#likes them young
+	option = {
+		name = "SF_Edumacation_Events.14.j"
+		highlight = yes 
+		trigger = {
+			OR = {
+				NOT = {
+					current_age = age_of_discovery
+				}
+				
+				full_idea_group = religious_ideas
+			}
+			OR = {
+				inquisitor = 1
+				theologian = 1
+			}
+		}
+
+		add_country_modifier = {
+			name = "ruler_studying"
+			duration = 365 
+		}
+		
+		country_event = { id = SF_Edumacation_Events.24 days = 365 }
+	}
+}
+
+#Heir got philosophy
+country_event = {
+	id = SF_Edumacation_Events.15
+	title = "SF_Edumacation_Events.15.name"
+	desc = "SF_Edumacation_Events.15.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.15.a"
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_philosophy 
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got science
+country_event = {
+	id = SF_Edumacation_Events.16
+	title = "SF_Edumacation_Events.16.name"
+	desc = "SF_Edumacation_Events.16.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.16.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_science
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got law
+country_event = {
+	id = SF_Edumacation_Events.17
+	title = "SF_Edumacation_Events.17.name"
+	desc = "SF_Edumacation_Events.17.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.17.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_law
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got engines
+country_event = {
+	id = SF_Edumacation_Events.18
+	title = "SF_Edumacation_Events.18.name"
+	desc = "SF_Edumacation_Events.18.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.18.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_engineering 
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got blood-thirst
+country_event = {
+	id = SF_Edumacation_Events.19
+	title = "SF_Edumacation_Events.19.name"
+	desc = "SF_Edumacation_Events.19.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.19.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_war 
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got bitches
+country_event = {
+	id = SF_Edumacation_Events.20
+	title = "SF_Edumacation_Events.20.name"
+	desc = "SF_Edumacation_Events.20.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.20.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_diplomacy
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got healing
+country_event = {
+	id = SF_Edumacation_Events.21
+	title = "SF_Edumacation_Events.21.name"
+	desc = "SF_Edumacation_Events.21.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.21.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_medicine
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got food
+country_event = {
+	id = SF_Edumacation_Events.22
+	title = "SF_Edumacation_Events.22.name"
+	desc = "SF_Edumacation_Events.22.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.22.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_culinary
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got cash 
+country_event = {
+	id = SF_Edumacation_Events.23
+	title = "SF_Edumacation_Events.23.name"
+	desc = "SF_Edumacation_Events.23.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.23.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_finance 
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Heir got The Book
+country_event = {
+	id = SF_Edumacation_Events.24
+	title = "SF_Edumacation_Events.24.name"
+	desc = "SF_Edumacation_Events.24.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.24.a"
+		highlight = yes
+		remove_heir_personality = vu_masters_personality
+		add_heir_personality = vu_doctor_of_theology 
+		change_heir_adm = 1
+        change_heir_dip = 1
+        change_heir_mil = 1
+	}
+}
+
+#Ruler got philosophy
+country_event = {
+	id = SF_Edumacation_Events.25
+	title = "SF_Edumacation_Events.25.name"
+	desc = "SF_Edumacation_Events.25.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.25.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_philosophy 
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got science
+country_event = {
+	id = SF_Edumacation_Events.26
+	title = "SF_Edumacation_Events.26.name"
+	desc = "SF_Edumacation_Events.26.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.26.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_science
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got law
+country_event = {
+	id = SF_Edumacation_Events.27
+	title = "SF_Edumacation_Events.27.name"
+	desc = "SF_Edumacation_Events.27.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.27.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_law
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got engines
+country_event = {
+	id = SF_Edumacation_Events.28
+	title = "SF_Edumacation_Events.28.name"
+	desc = "SF_Edumacation_Events.28.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.28.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_engineering 
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got blood-thirst
+country_event = {
+	id = SF_Edumacation_Events.29
+	title = "SF_Edumacation_Events.29.name"
+	desc = "SF_Edumacation_Events.29.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.29.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_war 
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got bitches
+country_event = {
+	id = SF_Edumacation_Events.30
+	title = "SF_Edumacation_Events.30.name"
+	desc = "SF_Edumacation_Events.30.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.30.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_diplomacy
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got healing
+country_event = {
+	id = SF_Edumacation_Events.31
+	title = "SF_Edumacation_Events.31.name"
+	desc = "SF_Edumacation_Events.31.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.31.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_medicine
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got food (fat fucking bastard)
+country_event = {
+	id = SF_Edumacation_Events.32
+	title = "SF_Edumacation_Events.32.name"
+	desc = "SF_Edumacation_Events.32.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.32.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_culinary
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got fat stacks
+country_event = {
+	id = SF_Edumacation_Events.33
+	title = "SF_Edumacation_Events.33.name"
+	desc = "SF_Edumacation_Events.33.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.33.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_finance 
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
+	}
+}
+
+#Ruler got The Book
+country_event = {
+	id = SF_Edumacation_Events.34
+	title = "SF_Edumacation_Events.34.name"
+	desc = "SF_Edumacation_Events.34.desc"
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "SF_Edumacation_Events.34.a"
+		highlight = yes
+		remove_ruler_personality = vu_masters_personality
+		add_ruler_personality = vu_doctor_of_theology 
+		change_ruler_stat = {
+			stat = adm
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = dip
+			amount = 1
+		}
+		change_ruler_stat = {
+			stat = mil
+			amount = 1
+		}
 	}
 }

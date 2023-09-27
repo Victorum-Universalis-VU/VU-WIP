@@ -136,6 +136,13 @@ fla_reconquest_group = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			frisia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -161,6 +168,7 @@ fla_reconquest_group = {
 		provinces_to_highlight = {
 			OR = {
 				area = holland_area
+				area = zeeland_area
 				area = frisia_area
 			}
 			NOT = { owned_by = ROOT }
@@ -168,6 +176,10 @@ fla_reconquest_group = {
 		
 		trigger = {
 			holland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			zeeland_area = {
 				type = all
 				owned_by = ROOT
 			}

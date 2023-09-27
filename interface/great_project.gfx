@@ -150,10 +150,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_old_london_bridge.dds"
 	}
 
-	spriteType = {
-		name = "GFX_great_project_port_royal"
-		texturefile = "gfx//interface//great_projects//great_project_port_royal.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_great_project_port_royal"
+	#	texturefile = "gfx//interface//great_projects//great_project_port_royal.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_great_project_havana"

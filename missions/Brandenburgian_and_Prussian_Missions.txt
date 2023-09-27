@@ -15,7 +15,11 @@ prussian_missions_main_slot = {
 					NOT = { has_dlc = "Lions of the North" }
 					NOT = { was_tag = TEU }
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 		has_country_flag = use_paradox_missions
@@ -268,7 +272,11 @@ prussian_missions_slot_2 = {
 					NOT = { has_dlc = "Lions of the North" }
 					NOT = { was_tag = TEU }
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 		has_country_flag = use_paradox_missions

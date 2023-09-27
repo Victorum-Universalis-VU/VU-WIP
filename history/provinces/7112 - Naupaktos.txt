@@ -16,7 +16,7 @@ hre = no
 center_of_trade = 1
 
 #Claimants
-add_core = BYZ
+add_core = ATH
 
 #Buildings
 fort_15th = yes
@@ -72,7 +72,7 @@ discovered_by = western
 
 #Histories by SF
 1215.6.15 = { owner = EPI controller = EPI add_core = EPI } # Epirian territorial lands - By San Felipe
-1444.11.11 = { owner = VEN controller = VEN add_core = VEN } # Venetian territorial lands - By San Felipe
+1444.11.11 = { owner = VEN controller = VEN add_core = VEN add_core = ATH  } # Venetian territorial lands - By San Felipe
 1499.6.1 = { controller = TUR } #Captured by Ottomans
 1503.1.1 = {
 	owner = TUR

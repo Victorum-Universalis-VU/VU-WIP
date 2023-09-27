@@ -13,10 +13,14 @@ base_tax = 3
 base_production = 3
 trade_goods = salt
 base_manpower = 2 
-center_of_trade = 1
 
 #Claimants
 add_core = AUV
+
+#Buildings
+
+#Commerce
+center_of_trade = 1
 
 #Special Modifiers
 
@@ -58,7 +62,7 @@ discovered_by = russian_tech_group
 #Histories
 1215.6.15 = { owner = FRA controller = FRA add_core = FRA } # Part of the Royal French Domain - By San Felipe
 
-1444.11.11 = { owner = BOU controller = BOU add_core = BOU } # Duchy of Bourbonnais - By San Felipe
+1444.11.11 = { owner = BOU controller = BOU add_core = BOU remove_core = FRA } # Duchy of Bourbonnais - By San Felipe
 
 1537.1.1 = { owner = FRA controller = FRA } # Charles IV of Bourbon dies, Bourbon added to France
 1573.9.1 = { unrest = 5 } # Saint Barthelew's Day Massacre: the consequences in the land

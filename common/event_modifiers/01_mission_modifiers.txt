@@ -5500,6 +5500,58 @@ empowered_junkers = {
 	army_tradition_decay = -0.01
 }
 
+#New VU by San Felipe - Modifiers are a work in progress
+
+pru_victory_saxony_modifier = {
+	#country modifier goes here = 0.00
+}
+
+pru_victory_mecklenburg_modifier = {
+	#country modifier goes here = 0.00
+}
+
+pru_north_german_confederation = {
+	#country modifier goes here = 0.00
+}
+
+pru_south_german_confederation = {
+	#country modifier goes here = 0.00
+}
+
+pru_victory_over_france = {
+	#country modifier goes here = 0.00
+}
+
+fra_conquest_of_algeria = {
+	#country modifier goes here = 0.00
+}
+
+fra_victory_over_tunis_and_morocco = {
+	#country modifier goes here = 0.00
+}
+
+fra_victory_over_tunis_and_morocco_2 = {
+	#country modifier goes here = 0.00
+}
+
+fra_conquest_of_north_africa = {
+	#country modifier goes here = 0.00
+}
+
+fra_victory_over_indochina = {
+	#country modifier goes here = 0.00
+}
+
+fra_conquest_of_west_africa = {
+	#country modifier goes here = 0.00
+}
+
+fra_conquest_of_sub_saharan_and_central_africa = {
+	#country modifier goes here = 0.00
+}
+
+#End
+
 # New French missions
 fra_master_of_india = {
 	trade_company_investment_cost = -0.2
@@ -10243,7 +10295,7 @@ eng_rb_take_emirates = {
 
 eng_conquest_of_hanover = {
 	prestige = 1
-	local_unrest = -2
+	global_unrest = -2
 	trade_steering = 0.1
 	governing_capacity = 20
 }

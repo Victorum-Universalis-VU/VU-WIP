@@ -340,6 +340,13 @@ ENG_UKS_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			flanders_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -383,6 +390,7 @@ ENG_UKS_missions_2 = {
 			OR = {
 				area = flanders_area
 				area = holland_area
+				area = zeeland_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -392,6 +400,10 @@ ENG_UKS_missions_2 = {
 				owned_by = ROOT
 			}
 			holland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			zeeland_area = {
 				type = all
 				owned_by = ROOT
 			}

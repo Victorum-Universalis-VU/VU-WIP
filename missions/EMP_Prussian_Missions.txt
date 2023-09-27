@@ -26,7 +26,11 @@ emp_bra_pru_1 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 	}
@@ -129,6 +133,20 @@ emp_bra_pru_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			masuria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nadruvia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			mittelmark_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -150,6 +168,7 @@ emp_bra_pru_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_permanent_claim = 1859
 			
 			if = { 
 				limit = { 
@@ -181,7 +200,10 @@ emp_bra_pru_1 = {
 			OR = {
 				area = west_prussia_area
 				area = east_prussia_area
+				area = nadruvia_area
+				area = masuria_area
 				area = mittelmark_area
+				province_id = 1859
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -196,10 +218,19 @@ emp_bra_pru_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			nadruvia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			masuria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			mittelmark_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			owns_core_province = 1859
 		}
 		effect = {
 			if = { 
@@ -221,7 +252,22 @@ emp_bra_pru_1 = {
 							1 = { add_base_manpower = 1 } 
 						}
 					}
+					nadruvia_area = {
+						random_list = { 
+							1 = { add_base_tax = 1 } 
+							1 = { add_base_production = 1 } 
+							1 = { add_base_manpower = 1 } 
+						}
+					}
+					masuria_area = {
+						random_list = { 
+							1 = { add_base_tax = 1 } 
+							1 = { add_base_production = 1 } 
+							1 = { add_base_manpower = 1 } 
+						}
+					}
 				}
+				#Danzig
 				43 = { 
 					add_trade_modifier = {
 						who = ROOT
@@ -239,13 +285,6 @@ emp_bra_pru_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			opole_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			lusatia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -253,6 +292,13 @@ emp_bra_pru_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			add_permanent_claim = 263
+			add_permanent_claim = 4723
+			add_permanent_claim = 7677
+			add_permanent_claim = 8240
+			add_permanent_claim = 8241
+			add_permanent_claim = 8251
+			add_permanent_claim = 7678	
 		}
 		ai_weight = {
 			factor = 500
@@ -302,6 +348,7 @@ emp_bra_pru_1 = {
 	emp_brapru_renovate_berlin = {
 		icon = renovate_berlin
 		required_missions = { }
+		position = 6
 		provinces_to_highlight = {
 			province_id = 50
 			OR = {
@@ -338,6 +385,7 @@ emp_bra_pru_1 = {
 	emp_brapru_army_reforms_1 = {
 		icon = professional_army
 		required_missions = { emp_brapru_renovate_berlin }
+		position = 7
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -383,7 +431,12 @@ emp_bra_pru_1_b = {
 					NOT = { was_tag = DNZ }
 				}
 			}
-			tag = PRU
+			OR = {
+			    tag = PRU
+			    tag = NGC
+				tag = GEM
+			}
+
 		}
 	}
 	has_country_shield = yes
@@ -498,7 +551,11 @@ emp_bra_pru_2 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 	}
@@ -584,8 +641,14 @@ emp_bra_pru_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = silesia_area
-				area = opole_area
 				area = lusatia_area
+				province_id = 263 
+				province_id = 4723 
+				province_id = 7677 
+				province_id = 8240 
+				province_id = 8241 
+				province_id = 8251 
+				province_id = 7678
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -596,23 +659,35 @@ emp_bra_pru_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			opole_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			lusatia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			OR = {
+			    263 = { country_or_non_sovereign_subject_holds = ROOT }
+				4723 = { country_or_non_sovereign_subject_holds = ROOT }
+				7677 = { country_or_non_sovereign_subject_holds = ROOT }
+				8240 = { country_or_non_sovereign_subject_holds = ROOT }
+				8241 = { country_or_non_sovereign_subject_holds = ROOT }
+				8251 = { country_or_non_sovereign_subject_holds = ROOT }
+				7678 = { country_or_non_sovereign_subject_holds = ROOT }
+			}
 		}
 		effect = {
+			add_accepted_culture = silesian_german
 			if = { 
 				limit = { has_dlc = "Domination" }
 				custom_tooltip = pru_accepting_cultures_reduces_3_AE_tt
 				set_country_flag = reduce_ae_from_prom_cultures_flag 
 				silesia_area = { add_local_autonomy = -10 }
-				opole_area = { add_local_autonomy = -10 } 
 				lusatia_area = { add_local_autonomy = -10 } 
+				263 = { add_local_autonomy = -10 }
+				4723 = { add_local_autonomy = -10 }
+				7677 = { add_local_autonomy = -10 }
+				8240 = { add_local_autonomy = -10 }
+				8241 = { add_local_autonomy = -10 }
+				8251 = { add_local_autonomy = -10 }
+				7678 = { add_local_autonomy = -10 }
 			}
 			else = { 
 				add_country_modifier = {
@@ -735,6 +810,7 @@ emp_bra_pru_2 = {
 	emp_brapru_empower_the_junkers = {
 		icon = empower_the_junkers
 		required_missions = { emp_brapru_renovate_berlin }
+		position = 7
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -772,7 +848,7 @@ emp_bra_pru_2 = {
 	emp_brapru_reform_the_state = {
 		icon = reform_the_state
 		required_missions = { emp_brapru_army_reforms_1 }
-		position = 7
+		position = 8
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -786,6 +862,7 @@ emp_bra_pru_2 = {
 	emp_brapru_enlightened_absolutism = {
 		icon = enlightened_absolutism
 		required_missions = { emp_brapru_reform_the_state }
+		position = 9
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -835,7 +912,11 @@ emp_bra_pru_3 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 	}
@@ -843,7 +924,8 @@ emp_bra_pru_3 = {
 	
 	emp_brapru_show_of_strength = {
 		icon = a_show_of_strength
-		required_missions = {  }
+		required_missions = {}
+		position = 1
 		provinces_to_highlight = {
 			region = north_german_region
 			NOT = { owned_by = ROOT }
@@ -855,21 +937,7 @@ emp_bra_pru_3 = {
 			}
 		}
 		effect = {
-			saxony_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_saxony_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			weser_area = {
+			altmark_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -883,30 +951,19 @@ emp_bra_pru_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			braunschweig_area = {
+			saxony_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			oldenburg_area = {
+			thuringia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			1931 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 			
 			if = { 
@@ -928,70 +985,47 @@ emp_bra_pru_3 = {
 			}
 		}
 	}
-	emp_brapru_lower_saxony = {
-		icon = conquer_lower_saxony
+	emp_brapru_saxony = {
+		icon = conquer_saxony
 		required_missions = { emp_brapru_show_of_strength }
+		position = 2
 		provinces_to_highlight = {
 			OR = {
+				area = altmark_area
+				area = anhalt_area
 				area = saxony_area
-				area = lower_saxony_area
-				area = weser_area
-				province_id = 1931
-				province_id = 53
-				province_id = 52
+				area = thuringia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10
-				OR = {
-					area = saxony_area
-					area = lower_saxony_area
-					area = weser_area
-				}
-			}			
-			1931 = {
+			altmark_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			53 = {
+			anhalt_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			52 = {
+			saxony_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			thuringia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}	
 		}
 		effect = {
 			if = { 
 				limit = { has_dlc = "Domination" }
 				add_country_modifier = {
-					name = pru_victory_lower_saxony_modifier
+					name = pru_victory_saxony_modifier
 					duration = -1
 				}
-				custom_tooltip = pru_dev_saxon_lands_tt
-			}
-			braunschweig_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+				custom_tooltip = pru_dev_saxony_lands_tt
 			}
 			mecklenburg_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			north_westphalia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			westphalia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1003,9 +1037,38 @@ emp_bra_pru_3 = {
 			factor = 500
 		}
 	}
+	emp_brapru_mecklenburg = {
+	icon = conquer_mecklenburg
+		required_missions = { emp_brapru_saxony }
+		position = 3
+		provinces_to_highlight = {
+			area = mecklenburg_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mecklenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+		}
+		effect = {
+			if = { 
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = pru_victory_mecklenburg_modifier
+					duration = -1
+				}
+			}
+			add_permanent_claim = 1931
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
 	emp_brapru_emden_company = {
 		icon = the_emden_company
-		required_missions = { emp_brapru_lower_saxony }
+		required_missions = { emp_brapru_mecklenburg }
+		position = 4
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -1024,7 +1087,6 @@ emp_bra_pru_3 = {
 				}
 			}
 		}
-		position = 4
 		trigger = {
 			1931 = {
 				has_shipyard_building_trigger = yes
@@ -1103,6 +1165,7 @@ emp_bra_pru_3 = {
 	emp_brapru_kiel_canal = {
 		icon = construct_the_kiel_canal
 		required_missions = { emp_brapru_emden_company }
+		position = 5
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -1187,6 +1250,110 @@ emp_bra_pru_3 = {
 					add_construction_progress = 0.25
 				}
 			}
+			braunschweig_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_frisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oldenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	emp_brapru_lower_saxony = {
+		icon = conquer_lower_saxony
+		required_missions = { emp_brapru_kiel_canal }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = braunschweig_area
+				area = east_frisia_area
+				area = lower_saxony_area
+				area = north_westphalia_area
+				area = oldenburg_area
+				area = weser_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			braunschweig_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_frisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_westphalia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oldenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			weser_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = { 
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = pru_victory_lower_saxony_modifier
+					duration = -1
+				}
+				custom_tooltip = pru_dev_saxon_lands_tt
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	emp_brapru_edict_of_potsdam = {
@@ -1237,7 +1404,11 @@ emp_bra_pru_4 = {
 						NOT = { was_tag = DNZ }
 					}
 				}
-				tag = PRU
+				OR = {
+				    tag = PRU
+				    tag = NGC
+					tag = GEM
+				}
 			}
 		}
 	}
@@ -1275,23 +1446,15 @@ emp_bra_pru_4 = {
 	emp_brapru_westphalian_conquest = {
 		icon = westphalian_conquest
 		required_missions = { emp_brapru_lower_saxony }
-		position = 3
+		position = 7
 		provinces_to_highlight = {
-			OR = {
-				area = braunschweig_area
-				area = north_westphalia_area
-				area = westphalia_area
-			}
+			area = westphalia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8
-				OR = {
-					area = braunschweig_area
-					area = north_westphalia_area
-					area = westphalia_area
-				}
+			westphalia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1313,55 +1476,35 @@ emp_bra_pru_4 = {
 					random_province = {
 						limit = { 
 							country_or_non_sovereign_subject_holds = ROOT 
-							OR = { 
-								area = braunschweig_area
-								area = north_westphalia_area
-								area = westphalia_area
-							}
+							area = westphalia_area
 						}
 						add_base_tax = 1 
 					}
 					random_province = {
 						limit = { 
 							country_or_non_sovereign_subject_holds = ROOT 
-							OR = { 
-								area = braunschweig_area
-								area = north_westphalia_area
-								area = westphalia_area
-							}
+							area = westphalia_area
 						}
 						add_base_manpower = 1 
 					}
 					random_province = {
 						limit = { 
 							country_or_non_sovereign_subject_holds = ROOT 
-							OR = { 
-								area = braunschweig_area
-								area = north_westphalia_area
-								area = westphalia_area
-							}
+							area = westphalia_area
 						}
 						add_base_manpower = 1 
 					}
 					random_province = {
 						limit = { 
 							country_or_non_sovereign_subject_holds = ROOT 
-							OR = { 
-								area = braunschweig_area
-								area = north_westphalia_area
-								area = westphalia_area
-							}
+							area = westphalia_area
 						}
 						add_base_production = 1 
 					}
 					random_province = {
 						limit = { 
 							country_or_non_sovereign_subject_holds = ROOT 
-							OR = { 
-								area = braunschweig_area
-								area = north_westphalia_area
-								area = westphalia_area
-							}
+							area = westphalia_area
 						}
 						add_base_production = 1 
 					}
@@ -1376,6 +1519,7 @@ emp_bra_pru_4 = {
 	emp_brapru_duchy_of_cleves = {
 		icon = mission_cannons_firing
 		required_missions = { emp_brapru_westphalian_conquest }
+		position = 8
 		provinces_to_highlight = {
 			area = north_rhine_area
 			NOT = {
@@ -1410,7 +1554,6 @@ emp_bra_pru_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			
 			if = { 
 				limit = { 
 					has_dlc = "Domination" 
@@ -1438,6 +1581,7 @@ emp_bra_pru_4 = {
 	emp_brapru_rhineland_conquest = {
 		icon = rhineland_conquest
 		required_missions = { emp_brapru_duchy_of_cleves }
+		position = 9
 		provinces_to_highlight = {
 			OR = {
 				area = lower_rhineland_area
@@ -1480,9 +1624,82 @@ emp_bra_pru_4 = {
 			factor = 75
 		}
 	}
+	emp_brapru_north_german_confederation = {
+		icon = north_german_confederation
+		required_missions = { emp_brapru_rhineland_conquest }
+		position = 10
+		provinces_to_highlight = {
+			region = north_german_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 100
+				region = north_german_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "pru_north_german_confederation"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	emp_brapru_south_german_confederation = {
+		icon = south_german_confederation
+		required_missions = { emp_brapru_north_german_confederation }
+		position = 11
+		provinces_to_highlight = {
+			region = south_german_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 60
+				region = south_german_region
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "pru_south_german_confederation"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	emp_brapru_elsas_lothringen = {
+		icon = conquer_elsas_lothringen
+		required_missions = { emp_brapru_south_german_confederation }
+		position = 12
+		provinces_to_highlight = {
+			area = alsace_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			alsace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "pru_victory_over_france"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
 	emp_brapru_german_empire = {
 		icon = ger_kaiserreich
-		required_missions = { emp_brapru_rhineland_conquest }
+		required_missions = { emp_brapru_elsas_lothringen }
+		position = 13
 		provinces_to_highlight = {
 			OR = {
 				region = north_german_region

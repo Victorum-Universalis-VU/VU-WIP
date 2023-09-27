@@ -28,7 +28,7 @@ CYP_slot_1 = {
 			add_sailors = 500
 			add_country_modifier = {
 				name = cyp_wooden_wall
-				duration = 7120
+				duration = 18250
 			}
 		}
 	}

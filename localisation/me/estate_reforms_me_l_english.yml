@@ -1065,7 +1065,7 @@
  one_on_high_reform_desc: "Though our land is vast and open, it is not without its people who are closed off to outsiders, suspicious of how they act and what they might do. In an effort to help open up Evenk society and to encourage acceptance on both sides, we should encourage the view of these lands of ours being a family home of sorts. Welcoming others into it and meeting them halfway in the form of accommodations and spaces to live (since we have so much of it) can be the start of things; helping educate Evenk people on just who exactly is in the Evenk state can be the start of the other side of things."
 
  #1.18
- wacht_am_rhein_reform: "Die wacht am rhein"
+ wacht_am_rhein_reform: "Die Wacht am Rhein"
  wacht_am_rhein_reform_desc: "Our nation is the only thing that stands between the German heartlands and the french in the west. It is our pride and patriotic duty to safeguard all German lands against the French armies, ensuring peace for all. For that, we must keep a strong, dedicated army, forged for war."
  klever_union_reform: "The Klever Union"
  klever_union_reform_desc: "Following the 1510 Union of Julich-Berg and Kleves, the so called Klever Union was in an unique position. It was the largest and most powerful princedom in the west, and its many courts and courtly procedures allowed for the monarch to administer his lands well. With an army of courtiers from each of his duchies to inform him of the good and the bad of his subjects."
@@ -1206,7 +1206,7 @@
  mechanic_enables_rajput_law_yes: "Rajput Law: §G-2§! Unrest and §G+10%§! Manpower in every province owned by the Rajput Estate."
  mechanic_enables_marcher_lords_yes: "Marcher Lord Privileges: Your non-colonial subjects get §G+25%§! Land Force Limit Modifier and §G+25%§! National Manpower Modifier."
  mechanic_enables_unite_the_malay_yes: "Unite the Malay: §G+5%§! Naval Force Limit and Sailors for each Accepted Malay Culture. Up to a maximum of §G40%§! Naval Force Limit and Sailors."
- mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost in states with forts."
+ mechanic_enables_fortified_settlements_yes: "Fortified Settlements: §G-10%§! Development Cost and §G+5%§! Production Efficiency in states with forts."
  mechanic_enables_jurisprudence_yes: "Jurisprudence: Up to §G-10%§! Idea cost and §G-20%§! Admin Technology Cost depending on your average Autonomy."
  mechanic_enables_varangian_guard_yes: "Varangian Guard: §G+5%§! Shock Damage if you have a Scandinavian ally or subject."
  mechanic_enables_peace_development_reduction_yes: "Hermit Kingdom: For every 5 years of being at peace beginning at 10, you get §G-5%§! Development Cost up to a maximum of §G-15%§!"

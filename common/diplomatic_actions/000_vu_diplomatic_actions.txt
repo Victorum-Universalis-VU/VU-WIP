@@ -1,3 +1,4 @@
+#000_vu_diplomatic_actions
 #Modified and merged by San Felipe
 declarewar = {
     condition = { #Chewys entry
@@ -660,6 +661,1770 @@ requestpeace = {
 	condition = {
 		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
 		potential = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_persia_indian_hegemony_coup
+			}
+			OR = {
+				tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				FROM = {
+					tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+#000_ME_diplomatic_actions
+declarewar = {
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	condition = {
+		tooltip = ME_TIM_STRATOCRACY_CANNOT_DECLARE_WARS
+		potential = {
+			tag = TIM
+		}
+		allow = {
+			OR = {
+				NOT = {
+					has_reform = timurid_stratocracy
+				}
+				mission_completed = ME_tim_by_blood_alone
+				has_country_flag = me_tim_allows_decleration_of_war
+			}
+		}
+	}
+	effect = {
+		###############
+		####VANILLA####
+		###############
+		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				tag = TEU
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+		#################
+		####/ VANILLA####
+		#################
+		if = {
+			limit = {
+				has_reform = timurid_stratocracy
+			}
+			clr_country_flag = me_tim_allows_decleration_of_war
+		}
+
+		if = {
+			limit = {
+				has_reform = timurid_stratocracy
+				NOT = { mission_completed = ME_tim_by_blood_alone }
+			}
+			add_government_power = {
+				mechanic_type = timurid_militarization
+				power_type = timurid_stratocracy_power
+				value = -30
+			}
+		}
+		
+		if = {
+			limit = {
+				mission_completed = sweden_support_the_roman_church
+				FROM = {
+					NOT = { religion = catholic }
+				}
+			}
+			change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = me_hab_von_haugwitz_reforms
+			}
+			remove_country_modifier = me_hab_peacetime_army
+			add_country_modifier = {
+				name = me_hab_wartime_army
+				duration = -1
+				desc = me_as_long_as_we_are_at_war
+			}
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = me_hab_hofkriegstrat_flag
+			}
+			add_country_modifier = {
+				name = me_hab_war_council
+				duration = -1
+			}
+		}
+		every_ally = {
+			if = {
+				limit = {
+					has_reform = timurid_governor
+				}
+				add_government_reform = timurid_prince
+			}
+		}
+		if = {
+			limit = {
+				has_reform = timurid_governor
+			}
+			add_government_reform = timurid_prince
+		}
+		if = {
+			limit = {
+				has_country_flag = me_mug_imperialism
+				has_casus_belli = {
+					type = cb_imperial
+					target = FROM
+				}
+			}
+			change_variable = {
+				which = MEImperialismUsage
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_planned_war_with_china
+				war_with = MNG
+			}
+			clr_country_flag = me_tim_planned_war_with_china
+			add_country_modifier = {
+				name = me_tim_modern_siege_engines
+				duration = 7300
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = me_tim_no_stab_hit_vassal
+				war_with = TIM
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+			clr_country_flag = me_tim_no_stab_hit_vassal
+			add_stability = 3
+		}
+	}
+}
+
+requestpeace = {
+	###VANILLA
+	#######################
+	condition = {
+		tooltip = PIRATE_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_pirates
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_pirates }
+				FROM = { has_government_attribute = is_pirate_republic_reform }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_PIRATE_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_pirates
+			}
+			NOT = { has_government_attribute = is_pirate_republic_reform }
+		}
+		allow = {
+			OR = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = { 
+					OR = {
+						government = republic 
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				government = republic 
+				is_revolutionary = yes
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_MAKE_ALLIANCES
+		potential = {
+			has_government_attribute = cannot_form_alliances
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_form_alliances }
+		}
+	}
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_form_alliances
+			}
+		}
+		allow = {
+			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
+		}
+	}
+	###END OF VANILLA
+	#######################
+
+	#######################
+	###EUROPA EXPANDED
+	condition = {
+		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
+		potential = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_persia_indian_hegemony_coup
+			}
+			OR = {
+				tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				FROM = {
+					tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	###END OF EUROPA EXPANDED
+	#########################
+}
+
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = ANNEXINVALID
+	#	potential = {
+	#		FROM = {
+	#			vassal_of = ROOT
+	#		}
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_vassalage_under = {
+	#				who = ROOT
+	#				years = 10
+	#			}
+	#		}
+	#	}
+	#}
+	condition = {
+		tooltip = CANNOT_ANNEX
+		potential = {
+			FROM = {
+				has_country_modifier = tur_mamlukian_administration
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { has_country_modifier = tur_mamlukian_administration }
+			}
+		}
+	}
+#	condition = { # Vanilla, shouldn't be in ME_diplo action
+#		tooltip = NEEDS_50_CROWNLAND_TT
+#		potential = {
+#			has_government_attribute = need_crownland_to_annex
+#			NOT = { crown_land_share = 50 }
+#		}
+#		allow = {
+#			crown_land_share = 50
+#		}
+#	}
+
+	###EUROPA EXPANDED
+	condition = {
+		tooltip = " "
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+			ai = yes
+			FROM = {
+				OR = {
+					has_country_flag = PRU_ducal
+					has_country_flag = KUR_ducal
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = " "
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+				tag = HED
+			}
+			ai = yes
+			alliance_with = MDA
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = HAS_PRIVILIGE
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			NOT = {
+				has_estate_privilege = ME_estate_nobles_TIM_disloyal_princes
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = ANNEXINVALID
+	#	potential = {
+	#		FROM = {
+	#			vassal_of = ROOT
+	#		}
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_vassalage_under = {
+	#				who = ROOT
+	#				years = 10
+	#			}
+	#		}
+	#	}
+	#}
+}
+
+tributary_state_action = {
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			OR = {
+				NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					ROOT = { capital_scope = { superregion = china_superregion } }
+					NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
+				}
+			}
+			OR = {
+				NOT = { ROOT = { capital_scope = { region = japan_region } } }
+				AND = {
+					ROOT = { capital_scope = { region = japan_region } }
+					NOT = { FROM = { capital_scope = { region = japan_region } } }
+				}
+			}
+		}
+	}
+	
+	condition = {
+		tooltip = " "
+		potential = {
+			ai = yes
+			capital_scope = {
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+					region = moluccas_region
+				}
+			}
+			FROM = {
+				capital_scope = {
+					OR = {
+						region = malaya_region
+						region = indonesia_region
+						region = moluccas_region
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+ask_for_tributary_state_action = {
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			OR = {
+				NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					FROM = { capital_scope = { superregion = china_superregion } }
+					NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+				}
+			}
+			OR = {
+				NOT = { FROM = { capital_scope = { region = japan_region } } }
+				AND = {
+					FROM = { capital_scope = { region = japan_region } }
+					NOT = { ROOT = { capital_scope = { region = japan_region } } }
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = " "
+		potential = {
+			ai = yes
+			capital_scope = {
+				OR = {
+					region = malaya_region
+					region = indonesia_region
+					region = moluccas_region
+				}
+			}
+			FROM = {
+				capital_scope = {
+					OR = {
+						region = malaya_region
+						region = indonesia_region
+						region = moluccas_region
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+warningaction = {
+	condition = {
+		tooltip = " "
+		potential = { #this locks AQ out of expansion
+			ai = yes
+			tag = QAR
+			FROM = {
+				tag = AKK
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+#declarewar = {
+    condition = {
+        tooltip = no_attack_gb
+        potential = {
+            is_colonial_nation = yes
+            capital_scope = {
+                colonial_region = colonial_eastern_america
+            }
+            overlord = {
+				OR = { 
+				   tag = GBR
+				   tag = UNK
+				   tag = ENG 
+				}
+            }
+		}
+        allow = {
+            NOT = { is_subject_of = FROM }
+        }
+    }
+}
+
+#swiss_diplomatic_actions
+request_canton = {
+	category = influence
+
+	alert_index = 6
+	alert_tooltip = request_canton_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+
+	is_visible = {
+		can_be_overlord = canton
+		FROM = { 
+			NOT = { is_subject = yes } 
+		}
+		FROM = { NOT = { is_subject_of = ROOT } }
+	}
+	is_allowed = {
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
+			alliance_with = ROOT
+			NOT = { is_at_war = yes }
+			is_subject = no 
+			NOT = { total_development = 25 }
+			OR = {
+				technology_group = western
+				technology_group = french_tech_group
+				technology_group = german_tech_group
+				technology_group = italian_tech_group
+				technology_group = swiss_tech_group
+			}
+		}
+		
+	}
+	on_accept = {
+		add_trust = {
+			who = FROM
+			value = 20
+			mutual = yes
+		}
+		create_subject = {
+			subject_type = canton
+			subject = FROM
+		}
+	}
+	on_decline = {
+		add_trust = {
+			who = FROM
+			value = -100
+			mutual = no
+		}
+	}
+
+	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
+		#Size of Trade League
+		add_entry = {
+			name = SIZE_CANTON
+			limit = {
+				canton = 4
+			}
+			export_to_variable = { #needs testing
+				which = ai_value
+				value = -1000
+			}
+		}
+		
+		#Attitude towards proposer
+		add_entry = {
+			name = ATTITUDE_CANTON
+			limit = {
+				FROM = {
+					OR = {
+						ai_attitude = { who = ROOT attitude = attitude_friendly }
+						ai_attitude = { who = ROOT attitude = attitude_allied }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = ATTITUDE_CANTON
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_threatened }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = ATTITUDE_CANTON
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_neutral }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -20
+			}
+		}
+		add_entry = {
+			name = ATTITUDE_CANTON
+			limit = {
+				FROM = {
+					OR = {
+						ai_attitude = { who = ROOT attitude = attitude_hostile }
+						ai_attitude = { who = ROOT attitude = attitude_outraged }
+						ai_attitude = { who = ROOT attitude = attitude_rivalry }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+		
+		#We have a royal marriage
+		add_entry = {
+			name = MARRIAGE_CANTON
+			limit = {
+				marriage_with = FROM
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		
+		#Proposer's diplomatic reputation 
+		add_entry = {
+			name = REPUTATION_CANTON
+			export_to_variable = {
+				which = ai_value
+				value = modifier:diplomatic_reputation
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		
+		#Target's opinion of Proposer
+		add_entry = {
+			name = OPINION_CANTON
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = {
+				which = ai_value
+				value = 4
+			}
+		}
+		
+		#Nation has a religion not in the same religious group
+		add_entry = {
+			name = RELIGION_CANTON
+			limit = {
+				NOT = { religion_group = FROM }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -20
+			}
+		}
+		
+		#Nation has a different religion within the same religious group
+		add_entry = {
+			name = SAME_GROUP_DIFFERENT_RELIGION_CANTON
+			limit = {
+				NOT = { religion = FROM }
+				religion_group = FROM
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -10
+			}
+		}
+		
+		
+		#Proposer army strength power compared to target nation
+		add_entry = {
+			name = ARMY_CANTON
+			limit = {
+				NOT = {
+					army_strength = {
+						who = FROM
+						value = 0.25
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -20
+			}
+		}
+		add_entry = {
+			name = ARMY_CANTON
+			limit = {
+				army_strength = {
+					who = FROM
+					value = 0.25
+				}
+				NOT = {
+					army_strength = {
+						who = FROM
+						value = 1
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:army_size
+			}
+			export_to_variable = {
+				which = army_from
+				value = trigger_value:army_size
+				who = FROM
+			}
+			divide_variable = {
+				which = ai_value
+				which = army_from
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 1
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 80
+			}
+			divide_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+		add_entry = {
+			name = ARMY_CANTON
+			limit = {
+				army_strength = {
+					who = FROM
+					value = 1
+				}
+				NOT = {
+					army_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:army_size
+			}
+			export_to_variable = {
+				which = army_from
+				value = trigger_value:army_size
+				who = FROM
+			}
+			divide_variable = {
+				which = ai_value
+				which = army_from
+			}
+			subtract_variable = {
+				which = ai_value
+				value = 1
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 20
+			}
+			divide_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+		add_entry = {
+			name = ARMY_CANTON
+			limit = {
+				army_strength = {
+					who = FROM
+					value = 4
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+		}
+	}
+
+	ai_will_do = { # this is a trigger
+		always = yes
+	}
+}
+
+cancel_canton =  {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			is_subject_of_type = canton
+		}
+	}
+	is_allowed = {
+		FROM = { prestige = 0 }
+	}
+	on_accept = {
+		add_trust = {
+			who = FROM
+			value = -25
+			mutual = yes
+		}
+		FROM = {
+			grant_independence = yes
+			add_prestige = -25
+		}
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+#03_diplo_vassalization
+vassalaction = {
+	condition = {
+		tooltip = VASSALINVALID
+		
+		potential = {
+			OR = {
+				alliance_with = FROM
+				FROM = {
+					guaranteed_by = ROOT
+				}
+			}
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+		
+		allow = {
+			OR = {
+				alliance_with = FROM
+				FROM = {
+					guaranteed_by = ROOT
+				}
+			}
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+	}
+}
+
+#07_allianceaction
+allianceaction = {
+
+	condition = {
+		tooltip = FREECITY
+		potential = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+		allow = {
+			has_reform = free_city
+		}
+	}
+
+	condition = {
+		tooltip = FREECITY
+		potential = {
+			has_reform = free_city
+		}
+		allow = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+	}
+}
+
+#0000_subjects_expanded_diplomatic_actions
+declarewar = {
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY
+		potential = {
+			OR = {
+				is_subject_of_type = protectorate
+				is_subject_of_type = sister_republic
+			}
+		}
+		allow = {
+			overlord = {
+				NOT = { alliance_with = FROM }
+				NOT = { has_guaranteed = FROM }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_SISTER_REPUBLIC_ALLY
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = sister_republic
+				OR = {
+					alliance_with = FROM
+					has_guaranteed = FROM
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM
+		potential = {
+			FROM = {
+				is_subject_of_type = puppet_state
+				is_neighbor_of = ROOT
+				overlord = {
+					NOT = { is_neighbor_of = ROOT }
+					is_neighbor_of = FROM
+					OR = {
+						is_rival = ROOT
+						is_enemy = ROOT
+					}
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				any_owned_province = {
+					is_core = ROOT
+					any_neighbor_province = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE
+		potential = {
+			is_subject_of_type = integrated_tribe_subject
+			NOT = { is_subject_of = FROM }
+		}
+		allow = {
+			is_neighbor_of = FROM
+			FROM = {
+				OR = {
+					AND = {
+						NOT = { is_subject_of_type = integrated_tribe_subject }
+						primitives = yes
+					}
+					AND = {
+						is_subject_of_type = integrated_tribe_subject
+						overlord = {
+							NOT = { overlord_of = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_DUTCH_PROVINCE_OF_SAME_OVERLORD
+		potential = {
+			is_subject_of_type = dutch_province_subject
+			has_global_flag = dutch_province_subject_no_internal_war
+		}
+		allow = {
+			FROM = {
+				OR = {
+					NOT = { is_subject_of_type = dutch_province_subject }
+					overlord = {
+						NOT = { overlord_of = ROOT }
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_WITHOUT_SCUTAGE_WHEN_DUTCH_PROVINCES_EXTERNAL_WAR_WAS_DISALLOWED
+		potential = {
+			is_subject_of_type = dutch_province_subject
+		}
+		allow = {
+			OR = {
+				NOT = { has_global_flag = dutch_province_subject_no_external_war }
+				AND = {
+					has_global_flag = dutch_province_subject_no_external_war
+					has_scutage = yes
+				}
+				is_subject_of = FROM
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM
+		potential = {
+			is_subject_of_type = dutch_province_subject
+			is_subject_of = FROM
+		}
+		allow = {
+			has_global_flag = dutch_province_subject_no_leader_election
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = brother_kingdom
+				war_with = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_MEDIEVAL_VASSAL_OVERLORD_DISALLOWED
+		potential = {
+			is_subject_of_type = medieval_vassal
+		}
+		allow = {
+			NOT = { has_country_flag = medieval_vassal_disallowed_war }
+		}
+	}
+	effect = {
+		# Vanilla:
+		if = {
+			limit = {
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+
+		# For SE:
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = protectorate
+					overlord = {
+						NOT = {
+							is_in_war = {
+								participants = ROOT
+								participants = THIS
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				country_event = { id = subjects_expanded_protectorate_events.3 days = 70 }
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = imperial_feud_subject
+					overlord = {
+						NOT = {
+							is_in_war = {
+								participants = ROOT
+								participants = THIS
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				country_event = { id = subjects_expanded_imperial_feud_subject_events.6 days = 70 }
+			}
+		}
+		if = {
+			limit = {
+				is_subject_of_type = brother_kingdom
+				overlord = {
+					OR = {
+						alliance_with = FROM
+						guaranteed_by = FROM
+					}
+				}
+			}
+			overlord = {
+				country_event = { id = subjects_expanded_brother_kingdom_events.3 days = 70 }
+			}
+		}
+
+		# Needed for Extended Timeline
+	#	if = { #We don't care about Extended timeline
+	#		limit = {
+	#			has_global_flag = extended_timeline_mod
+	#			OR = {
+	#				has_casus_belli = { type = cb_spread_communism target = FROM }
+	#				has_casus_belli = { type = cb_spread_fascism target = FROM }
+	#				has_casus_belli = { type = cb_spread_democracy target = FROM }
+	#			}
+	#		}
+	#		set_country_flag = forcing_government
+	#	}
+	}
+}
+
+allianceaction = {
+	# Vanilla:
+	condition = {
+		tooltip = PIRATE_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_pirates
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_pirates }
+				FROM = { has_government_attribute = is_pirate_republic_reform }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_PIRATE_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_pirates
+			}
+			NOT = { has_government_attribute = is_pirate_republic_reform }
+		}
+		allow = {
+			OR = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = {
+					OR = {
+						government = republic
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				OR = {
+					government = republic
+					is_revolutionary = yes
+				}
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+
+	# For SE:
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_RIVAL
+		potential = {
+			is_subject_of_type = sister_republic
+			overlord = {
+				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_AS_OVERLORD_RIVAL
+		potential = {
+			FROM = {
+				is_subject_of_type = sister_republic
+				overlord = {
+					is_rival = ROOT
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_RIVAL
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = sister_republic
+				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_OF_SISTER_REPUBLIC_AS_RIVAL
+		potential = {
+			FROM = {
+				any_subject_country = {
+					is_subject_of_type = sister_republic
+					is_rival = ROOT
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_RECENTLY_DISSOLVED_ALLIANCE_MEDIEVAL_VASSAL
+		potential = {
+			is_subject_of_type = medieval_vassal
+			has_country_flag = forced_medieval_vassal_to_annul_alliances_with_@FROM
+			NOT = { had_country_flag = { flag = forced_medieval_vassal_to_annul_alliances_with_@FROM days = 1825 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+callaction = {
+	condition = {
+		tooltip = CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD
+		potential = {
+			FROM = {
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+		allow = {
+			FROM = {
+				overlord = {
+					NOT = { war_with = ROOT }
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_CALL_PERSIAN_SATRAPY_INTO_OFFENSIVE_WAR
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = persian_satrapy
+			}
+			NOT = {
+				is_in_war = {
+					defender_leader = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = {
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD
+		potential = {
+			FROM = {
+				religion = catholic
+				is_subject_of_type = papal_sanctuary_subject
+				overlord = {
+					religion = catholic
+					is_papal_controller = yes
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				overlord = {
+					NOT = { war_with = ROOT }
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_CALL_DEFENSIVE_MARCH_INTO_OFFENSIVE_WAR
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = defensive_march
+				NOT = { has_country_flag = call_defensive_march_to_offensive_war }
+			}
+			NOT = {
+				is_in_war = {
+					defender_leader = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = {
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+	}
+}
+
+annexationaction = {
+	# Vanilla:
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+
+	# For SE:
+	condition = {
+		tooltip = ANNEX_TOO_LOW_NOT_VASSAL
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { vassal_of = ROOT }
+				NOT = { is_subject_of_type = annexable_colony }
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = ANNEX_TOO_LOW_ANNEXABLE_COLONY
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = annexable_colony
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_IF_NOT_PREPARED_ANNEXATION
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				has_country_modifier = iqta_vassal_allow_annex_modifier
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				religion = ROOT
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_WITH_LOW_RELIGIOUS_UNITY
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				religious_unity = 0.25
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_FIEF_SUBJECT_BEFORE_25_YEARS
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = fief_subject
+			}
+		}
+		allow = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 25
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
+		potential = {
+			is_subject = yes
+		}
+		allow = {
+			NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_ANNEXABLE_COLONY_BEFORE_25_YEARS
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = annexable_colony
+			}
+		}
+		allow = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 25
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_DOMINION_BEFORE_30_YEARS
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = dominion_tc
+			}
+		}
+		allow = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 30
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			if = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = iqta_vassal
+				}
+				add_country_modifier = {
+					name = iqta_vassal_is_getting_annexed_modifier
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+}
+
+integrationaction = {
+	# Vanilla:
+	condition = {
+		tooltip = INTEGRATETOOLOWDESC
+		potential = {
+			senior_union_with = FROM
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = PUINTEGRATIONIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_integrate_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_integrate_personal_unions }
+		}
+	}
+
+	# For SE:
+	condition = {
+		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
+		potential = {
+			is_subject = yes
+		}
+		allow = {
+			NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+		}
+	}
+}
+
+requestpeace = {
+	condition = {
+		tooltip = CANNOT_SEPARATE_PEACE_OVERLORD_OF_WAR_LEADER
+		potential = {
+			OR = {
+				AND = {
+					is_in_war = {
+						attacker_leader = ROOT
+						defenders = FROM
+					}
+					FROM = {
+						any_subject_country = {
+							NOT = {
+								OR = {
+									is_subject_of_type = vassal
+									is_subject_of_type = march
+									is_subject_of_type = daimyo_vassal
+									is_subject_of_type = personal_union
+									is_subject_of_type = client_vassal
+									is_subject_of_type = client_march
+									is_subject_of_type = tributary_state
+									is_subject_of_type = colony
+									is_subject_of_type = crown_colony
+									is_subject_of_type = private_enterprise
+									is_subject_of_type = self_governing_colony
+								}
+							}
+							is_in_war = {
+								attacker_leader = ROOT
+								defenders = FROM
+								defender_leader = THIS
+							}
+						}
+					}
+				}
+				AND = {
+					is_in_war = {
+						defender_leader = ROOT
+						attackers = FROM
+					}
+					FROM = {
+						any_subject_country = {
+							NOT = {
+								OR = {
+									is_subject_of_type = vassal
+									is_subject_of_type = march
+									is_subject_of_type = daimyo_vassal
+									is_subject_of_type = personal_union
+									is_subject_of_type = client_vassal
+									is_subject_of_type = client_march
+									is_subject_of_type = tributary_state
+									is_subject_of_type = colony
+									is_subject_of_type = crown_colony
+									is_subject_of_type = private_enterprise
+									is_subject_of_type = self_governing_colony
+								}
+							}
+							is_in_war = {
+								defender_leader = ROOT
+								attackers = FROM
+								attacker_leader = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+
+	# Compatibility with ME:
+	condition = {
+		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
+		potential = {
+			is_expanded_mod_active = { mod = missions }
 			is_in_war = {
 				participants = ROOT
 				participants = FROM

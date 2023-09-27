@@ -62,6 +62,7 @@ discovered_by = GRA
    controller = GZR
    add_core = GZR
    add_core CND
+   add_core = BYZ
 } # Turkish territorial lands - By San Felipe
 1461.1.2 = {
 	owner = TUR

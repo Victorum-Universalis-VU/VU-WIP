@@ -5,3 +5,4 @@ technology_group = polish_tech_group
 religion = orthodox
 primary_culture = ruthenian
 capital = 1943 #Bratslav
+unit_type = eastern

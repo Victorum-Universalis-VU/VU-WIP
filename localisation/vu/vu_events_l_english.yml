@@ -1821,4 +1821,16 @@
  VU_COL_Events.03.d: "You shouldn't be able to see this lol\n\nAre you using console commands? If not, you might want to report this as a bug."
  VU_COL_Events.03.a: "Huh?"
  #
- 
+ #NEW VU events for France by San Felipe
+ flavor_fra.9522.t:0 "The Surrender of Calais"
+ flavor_fra.9522.d:0 "The victory of Louis XI of France over Charles the Bold in 1477 and the annexation of Picardy to the French royal domain marked the end of a status quo over the possession of Calais. No English governor wants to be remembered as the one to surrender Calais and in [Root.Capital.GetCapitalName] prominent nobles are claiming that Calais is English and should remain so. However, French forces have began to amass in great numbers and their emissaries have repeatedly been reminding us now on a daily basis that should we not acquesc to the demands of their sovereign [FRA.Monarch.GetName] and \nUnless we surrender Calais to them immediately that France will officially declare a state of war on our nation."
+ flavor_fra.9522.a:1 "We must accept this or else we are doomed."
+ flavor_fra.9522.a.tt:1 "France will likely go to war over our indignation towards them and we will be considered the aggressor in such a war since Calais is a dejure part of the French domaine."
+ flavor_fra.9522.b:1 "We will not surrender an inch of territory to the French!"
+ flavor_fra.9523.t:0 "The Surrender of Calais"
+ flavor_fra.9523.d:0 "The victory of Louis XI of France over Charles the Bold in 1477 and the annexation of Picardy to the French royal domain marked the end of a status quo over the possession of Calais. However, the English have repeatedly evaded the question and it is becoming increasingly clear that many in the English camp are arguing that Calais will not be surrendered to the French. In one last attempt to force the question [Root.Monarch.GetName] has approached Calais himself and demanded the governor to surrender the city as all formerly held English forts surrounding it have been destroyed.\nThe governor, however, shows no signs of intending to surrender the city, despite not having a force strong enough to withstand the impending attack from French forces that surround the city."
+ flavor_fra.9523.a:0 "Time to teach them how to war."
+ flavor_fra.9523.b:0 "Let us back down."
+ flavor_fra.9524.t:0 "The Surrender of Calais"
+ flavor_fra.9524.d:0 "The victory of Louis XI of France over Charles the Bold in 1477 and the annexation of Picardy to the French royal domain marked the end of a status quo over the possession of Calais. In practice, however, this has taken quite some time to materialize. The arrival of [Root.Monarch.GetName] [Root.Monarch.GetHerselfHimself] together with their armies on the scene seems to have made remied any delays resulting in the return of Calais to our Kingdom."
+ flavor_fra.9524.a:0 "This is a great and joyous day to be remembered."

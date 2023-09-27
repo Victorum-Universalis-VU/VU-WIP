@@ -3,7 +3,11 @@ PRU_generic_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = {
 			OR = {
@@ -82,7 +86,11 @@ PRU_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -151,7 +159,11 @@ PRU_missions_1_vassal = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_modifier = PRU_vassal_play
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -205,7 +217,11 @@ PRU_missions_1_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -354,7 +370,11 @@ PRU_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -412,7 +432,11 @@ PRU_missions_2_vassal = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_modifier = PRU_vassal_play
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -476,7 +500,11 @@ PRU_missions_2_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -934,7 +962,11 @@ PRU_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -1557,7 +1589,11 @@ PRU_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}
@@ -2370,7 +2406,11 @@ PRU_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = PRU
+		OR = {
+		    tag = PRU
+		    tag = NGC
+			tag = GEM
+		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		NOT = { has_country_flag = PRU_ducal }
 	}

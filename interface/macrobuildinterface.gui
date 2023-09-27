@@ -466,7 +466,7 @@ guiTypes = {
 		name = "new_buildings_entry"
 		backGround=""
 		position = { x = 0 y = 0 }	
-		size = { x = 400 y = 1550 }
+		size = { x = 400 y = 1700 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -2204,6 +2204,118 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_CHOCOLATE_TECH"
+		}
+		
+		checkboxType = {
+			name = "build_cannery_workshop"
+			position = { x = 9 y = 1532 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "cannery_workshop_cost"
+			position = {x = 9 y = 1582 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		
+		iconType = {
+			name = "latent_arrow_canned_goods"
+			position = { x = 60 y = 1547 }
+			spriteType = "GFX_arrow_lat_str"
+		}
+			
+		iconType = {
+			name = "frame_canned_goods"
+			position = { x = 90 y = 1528 }
+			spriteType = "GFX_good_frame"
+		}
+			
+		iconType = {
+			name = "latent_canned_goods"
+			position = { x = 92 y = 1532 }
+			spriteType = "GFX_latent_can"
+			scale = 0.8
+		}
+		
+		instantTextBoxType={
+			name = "title_latent_canned_goods"
+			position = {x = 145 y = 1532 }
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 180
+			maxHeight = 18
+			text = "LATENT_CANNED_GOODS"
+		}
+		
+		instantTextBoxType={
+			name = "title_latent_canned_goods_Tech"
+			position = {x = 335 y = 1547 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 180
+			maxHeight = 18
+			text = "LATENT_CANNED_GOODS_TECH"
+		}
+		
+		checkboxType = {
+			name = "build_bakery"
+			position = { x = 9 y = 1599 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "bakery_cost"
+			position = {x = 9 y = 1649 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		
+		iconType = {
+			name = "latent_arrow_sweet_confectioneries"
+			position = { x = 60 y = 1614 }
+			spriteType = "GFX_arrow_lat_str"
+		}
+			
+		iconType = {
+			name = "frame_sweet_confectioneries"
+			position = { x = 90 y = 1595 }
+			spriteType = "GFX_good_frame"
+		}
+			
+		iconType = {
+			name = "latent_sweet_confectioneries"
+			position = { x = 92 y = 1599 }
+			spriteType = "GFX_latent_bak"
+			scale = 0.8
+		}
+		
+		instantTextBoxType={
+			name = "title_latent_sweet_confectioneries"
+			position = {x = 145 y = 1599 }
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 180
+			maxHeight = 18
+			text = "LATENT_SWEET_CONFECTIONERIES"
+		}
+		
+		instantTextBoxType={
+			name = "title_latent_sweet_confectioneries_Tech"
+			position = {x = 335 y = 1614 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 180
+			maxHeight = 18
+			text = "LATENT_SWEET_CONFECTIONERIES_TECH"
 		}
 
 		iconType = {

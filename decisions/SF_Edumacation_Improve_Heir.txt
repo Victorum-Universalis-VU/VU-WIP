@@ -1,156 +1,203 @@
+#DonBrom was here on 24-9-2024
+#Re-Edited by San Felipe 16/08/2023
+#DonBrom was here...
 #SF Edumacation - Improve Heir
 country_decisions = {
-   edu_1_heir_scholarship = {
-      major = yes
-      potential = { 
-         ai = no
-         is_at_war = no
-         has_regency = no
-         government = monarchy
-         has_heir = yes
-         NOT = { is_heir_leader = yes }
-      }
-      allow = {
-         ai = no
-         is_at_war = no
-         adm_power = 30
-         dip_power = 30
-         mil_power = 30
-         treasury = 225
-         NOT = { is_heir_leader = yes }
-         NOT = { technology_group = east_african }
-         NOT = { technology_group = central_african }
-         NOT = { technology_group = nomad_group }
-         NOT = { technology_group = sub_saharan }
-         NOT = { technology_group = north_american }
-         NOT = { technology_group = mesoamerican }
-         NOT = { technology_group = south_american }
-         NOT = { technology_group = andean }
-         NOT = { technology_group = high_american }
-         NOT = { technology_group = aboriginal_tech }
-         NOT = { technology_group = rapanuan_tech_group }
-         NOT = { technology_group = polynesian_tech }
-         NOT = { technology_group = papuan_tech_group }
-		 heir_has_personality = vu_uneducated_ruler_personality
-         NOT = { has_country_modifier = heir_studying }
-		 NOT = { heir_has_personality = vu_scholarly_ruler_personality }
-		 
-      }
-      effect = {
-         add_adm_power = -30
-         add_dip_power = -30
-         add_mil_power = -30
-         add_treasury = -225
-         add_country_modifier = {
-            name = "heir_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.10 days = 10 }
-      }
-      ai_will_do = {
+	edu_1_heir_scholarship = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			government = monarchy
+			has_heir = yes
+			has_institution = feudalism
+			heir_has_personality = vu_uneducated_personality
+			NOT = { heir_has_personality = vu_scholarly_personality } 
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 100
+			is_at_war = no
+			NOT = { is_heir_leader = yes }
+			NOT = { has_country_modifier = heir_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -100
+			add_country_modifier = {
+				name = "heir_studying"
+				duration = 2190
+			}
+			country_event = { id = SF_Edumacation_Events.10 days = 2190 }
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
-
-   edu_2_heir_bachelors_degree = {
-      major = yes
-      potential = { 
-         ai = no
-         is_at_war = no
-         has_regency = no
-         government = monarchy
-         has_heir = yes
-         NOT = { is_heir_leader = yes }
-      }
-      allow = {
-        ai = no
-        is_at_war = no
-        adm_power = 35
-        dip_power = 35
-        mil_power = 35
-        treasury = 175
-        NOT = { is_heir_leader = yes }
-        NOT = { technology_group = east_african }
-        NOT = { technology_group = central_african }
-        NOT = { technology_group = nomad_group }
-        NOT = { technology_group = sub_saharan }
-        NOT = { technology_group = north_american }
-        NOT = { technology_group = mesoamerican }
-        NOT = { technology_group = south_american }
-        NOT = { technology_group = andean }
-        NOT = { technology_group = high_american }
-        NOT = { technology_group = aboriginal_tech }
-        NOT = { technology_group = rapanuan_tech_group }
-        NOT = { technology_group = polynesian_tech }
-        NOT = { technology_group = papuan_tech_group }
-		heir_has_personality = vu_scholarly_ruler_personality
-        NOT = { has_country_modifier = heir_studying }
-		NOT = { heir_has_personality  = vu_bachelorette_ruler_personality }
-      }
-      effect = {
-         add_adm_power = -35
-         add_dip_power = -35
-         add_mil_power = -35
-         add_treasury = -175
-         add_country_modifier = {
-            name = "heir_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.11 days = 10 }
-      }
-      ai_will_do = {
+	}
+	
+	edu_2_heir_bachelors_degree = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			government = monarchy
+			has_heir = yes
+			heir_has_personality = vu_scholarly_personality
+			NOT = { heir_has_personality  = vu_bachelorette_personality }
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 200
+			is_at_war = no
+			has_institution = renaissance
+			NOT = { has_country_modifier = heir_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -200
+			add_country_modifier = {
+				name = "heir_studying"
+				duration = 1825
+			}
+			country_event = { id = SF_Edumacation_Events.11 days = 1825 }
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
-
-   edu_3_heir_doctorate = {
-      major = yes
-      potential = { 
-         ai = no
-         is_at_war = no
-         has_regency = no
-         government = monarchy
-         has_heir = yes
-         NOT = { is_heir_leader = yes }
-      }
-      allow = {
-         ai = no
-         is_at_war = no
-         adm_power = 30
-         dip_power = 30
-         mil_power = 30
-         treasury = 105
-         NOT = { is_heir_leader = yes }
-         NOT = { technology_group = east_african }
-         NOT = { technology_group = central_african }
-         NOT = { technology_group = nomad_group }
-         NOT = { technology_group = sub_saharan }
-         NOT = { technology_group = north_american }
-         NOT = { technology_group = mesoamerican }
-         NOT = { technology_group = south_american }
-         NOT = { technology_group = andean }
-         NOT = { technology_group = high_american }
-         NOT = { technology_group = aboriginal_tech }
-         NOT = { technology_group = rapanuan_tech_group }
-         NOT = { technology_group = polynesian_tech }
-         NOT = { technology_group = papuan_tech_group }
-		 heir_has_personality  = vu_bachelorette_ruler_personality
-         NOT = { has_country_modifier = heir_studying }
-		 NOT = { heir_has_personality = vu_doctorate_ruler_personality }
-      }
-      effect = {
-         add_adm_power = -30
-         add_adm_power = -30
-         add_adm_power = -30
-         add_treasury = -105
-         add_country_modifier = {
-            name = "heir_studying"
-            duration = 10
-         }
-         country_event = { id = edumacation.12 days = 10 }
-      }
-      ai_will_do = {
+	}
+	
+	edu_3_heir_masters = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			government = monarchy
+			has_heir = yes
+			NOT = { heir_has_personality = vu_masters_personality }
+			heir_has_personality  = vu_bachelorette_personality
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 300
+			is_at_war = no
+			has_institution = printing_press
+			NOT = { has_country_modifier = heir_studying }
+		}
+		effect = {
+			add_adm_power = -50
+			add_adm_power = -50
+			add_adm_power = -50
+			add_treasury = -300
+			add_country_modifier = {
+				name = "heir_studying"
+				duration = 730
+			}
+			country_event = { id = SF_Edumacation_Events.12 days = 712 }
+		}
+		ai_will_do = {
 			factor = 0
 		}
-   }
+	}
+	
+	edu_4_heir_doctorate = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			NOT = { 
+				heir_has_personality = vu_doctor_of_architecture 
+				heir_has_personality = vu_doctor_of_arts
+				heir_has_personality = vu_doctor_of_philosophy
+				heir_has_personality = vu_doctor_of_science
+				heir_has_personality = vu_doctor_of_law
+				heir_has_personality = vu_doctor_of_engineering
+				heir_has_personality = vu_doctor_of_war
+				heir_has_personality = vu_doctor_of_diplomacy
+				heir_has_personality = vu_doctor_of_medicine
+				heir_has_personality = vu_doctor_of_culinary
+				heir_has_personality = vu_doctor_of_finance
+				heir_has_personality = vu_doctor_of_theology
+			}
+			heir_has_personality = vu_masters_personality 
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 500
+			is_at_war = no
+			has_institution = enlightenment
+			has_country_modifier = heir_studying 
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -500
+			country_event = { id = SF_Edumacation_Events.14}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	edu_5_heir_reeducation = {
+		major = yes
+		potential = { 
+			ai = no
+			is_lesser_in_union = no
+			is_subject = no
+			has_regency = no
+			OR = { 
+				heir_has_personality = vu_doctor_of_architecture 
+				heir_has_personality = vu_doctor_of_arts
+				heir_has_personality = vu_doctor_of_philosophy
+				heir_has_personality = vu_doctor_of_science
+				heir_has_personality = vu_doctor_of_law
+				heir_has_personality = vu_doctor_of_engineering
+				heir_has_personality = vu_doctor_of_war
+				heir_has_personality = vu_doctor_of_diplomacy
+				heir_has_personality = vu_doctor_of_medicine
+				heir_has_personality = vu_doctor_of_culinary
+				heir_has_personality = vu_doctor_of_finance
+				heir_has_personality = vu_doctor_of_theology
+			}
+			NOT = { heir_has_personality = vu_masters_personality }
+		}
+		allow = {
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+			treasury = 100
+			is_at_war = no
+			has_institution = enlightenment
+			has_country_modifier = heir_studying 
+		}
+		effect = {
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = -50
+			add_treasury = -100
+			country_event = { id = SF_Edumacation_Events.14}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

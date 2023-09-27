@@ -1,5 +1,6 @@
 #192 - Bourgogne
 
+#Default
 owner = BUR
 controller = BUR
 add_core = BUR
@@ -12,10 +13,23 @@ base_tax = 7
 base_production = 7
 trade_goods = lumber
 base_manpower = 4
+
+#Claimants
+add_core = FRA
+add_core = FCM
+
+#Buildings
 fort_15th = yes
+
+#Commerce
 center_of_trade = 2
+
+#Expenditures
 extra_cost = 10
 
+#Special Modifiers
+
+#Known by Technology groups
 #discovered_by = eastern
 #discovered_by = bohemian_tech_group
 #discovered_by = byzantine_tech_group

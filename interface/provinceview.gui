@@ -2853,8 +2853,8 @@ guiTypes = {
 			windowType = {
 				name = "great_projects_window"
 				backGround=""
-				position = { x = 15 y = -105 }
-				size = { x = 475 y = 210 }
+				position = { x = 15 y = -160 }
+				size = { x = 475 y = 233 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -2883,9 +2883,9 @@ guiTypes = {
 				
 				smoothListboxType = {
 					name = "great_projects_list"
-					position = { x = 7 y = 55 }
+					position = { x = 7 y = 56 }
 					backGround=""
-					size = { x = 300 y = 180 }
+					size = { x = 297 y = 188 }
 					spacing = 2
 					scrollbartype = "standardlistbox_slider"
 					borderSize = { x = 0 y = 0 }
@@ -3789,8 +3789,8 @@ guiTypes = {
 
 			listboxType = {
 				name = "institutions"
-				position = { x = 26 y = 178 }
-				size = { x = 256 y = 480 }
+				position = { x = 50 y = 178 }
+				size = { x = 256 y = 430 }
 				Orientation = "UPPER_LEFT"
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"

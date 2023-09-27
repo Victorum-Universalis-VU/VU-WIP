@@ -20,7 +20,10 @@ native_hostileness = 9
 1440.1.1 = { 
     discovered_by = MPC 
 }
-
+add_permanent_province_modifier = {
+    name = vu_patagonian_rainforest
+    duration = -1
+}
 #1520.1.1 = { discovered_by = SPA } # Discovered by Ferdinand Magellan
 
 1558.1.1 = {

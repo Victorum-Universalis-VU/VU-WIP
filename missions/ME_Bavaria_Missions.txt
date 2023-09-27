@@ -2789,6 +2789,13 @@ me_bavaria_missions_wittelsbach_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			wallonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -2901,6 +2908,7 @@ me_bavaria_missions_wittelsbach_2 = {
 				area = north_brabant_area
 				area = brabant_area
 				area = holland_area
+				area = zeeland_area
 				area = wallonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -2912,6 +2920,7 @@ me_bavaria_missions_wittelsbach_2 = {
 							area = north_brabant_area
 							area = brabant_area
 							area = holland_area
+							area = zeeland_area
 							area = wallonia_area
 						}
 					}
@@ -2925,6 +2934,7 @@ me_bavaria_missions_wittelsbach_2 = {
 					area = north_brabant_area
 					area = brabant_area
 					area = holland_area
+					area = zeeland_area
 					area = wallonia_area
 				}
 			}

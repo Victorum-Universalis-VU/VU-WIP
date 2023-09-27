@@ -1210,7 +1210,9 @@
  PROV4163:0 "Älvsborg"                 #1.19 Scandinavia overhaul
  PROV4165:0 "Åhus"
  PROV4166:0 "Kronoberg"                 #1.19 Scandinavia overhaul
- PROV4168:0 "Middle Atlas"
+ PROV4167:0 "Middle Atlas"
+ PROV4168:0 "Rif"
+ PROV4169:0 "Tell Atlas"
  PROV4173:0 "Subotica"         #Formerly 3189
  PROV4174:0 "Durazzo"         #Formerly 3181
  PROV4175:0 "Alessio"         #Formerly 3182

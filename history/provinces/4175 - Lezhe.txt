@@ -330,7 +330,7 @@ discovered_by = ANR
 
 #Histories by docRobert & SF
 1215.6.15 = { owner = ABN controller = ABN add_core = ABN } # Arbanon territorial lands - By San Felipe
-1444.1.1 = { owner = ALB controller = ALB add_core = ALB } # Albanian territorial lands - By Quonton
+1444.1.1 = { owner = ALB controller = ALB add_core = ALB add_core = BYZ } # Albanian territorial lands - By Quonton
 1478.6.16 = { owner = TUR controller = TUR add_core = TUR }
 1520.1.1 = { religion = sunni } # Predominant religion under Turkish rule
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance

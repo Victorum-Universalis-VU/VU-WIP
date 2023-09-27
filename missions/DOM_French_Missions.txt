@@ -37,7 +37,7 @@ french_missions_1 = {
 					share = -5
 				}
 			} 
-			brittany_area = { 
+			lower_brittany_area = { 
 				limit = { 	
 					NOT = { is_core = ROOT } 
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -45,15 +45,7 @@ french_missions_1 = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			bourgogne_area = {
-				limit = { 	
-					NOT = { is_core = ROOT } 
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					NOT = { owned_by = ROOT } 
-				}
-				add_permanent_claim = ROOT 
-			}
-			west_burgundy_area = { 
+			bourgogne_area = { 
 				limit = { 	
 					NOT = { is_core = ROOT } 
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -70,7 +62,8 @@ french_missions_1 = {
 		position = 2 
 		provinces_to_highlight = { 
 			OR = { 
-				area = west_burgundy_area 
+				area = west_burgundy_area
+				area = bourgogne_area
 				province_id = 88
 				province_id = 89
 				province_id = 1743
@@ -86,6 +79,10 @@ french_missions_1 = {
 							province_id = 87 
 							country_or_non_sovereign_subject_holds = ROOT 
 						}
+					}
+					bourgogne_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
 					}
 					west_burgundy_area = { 
 						type = all 
@@ -347,11 +344,18 @@ french_missions_1 = {
 		required_missions = { fra_burg_succession fra_unite_france } 
 		position = 4 
 		provinces_to_highlight = { 
-			area = bourgogne_area 
+			OR = {
+				area = bourgogne_area
+				area = west_burgundy_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
 			bourgogne_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			west_burgundy_area = { 
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
@@ -917,6 +921,46 @@ french_missions_1_Continuation_a = {
 				name = fra_masters_of_india_modifier
 				duration = -1 
 			}
+			cambodia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			mekong_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			champa_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			vietnam_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			red_river_delta_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
 			if = { 
 				limit = { has_dlc = "Dharma" }
 				custom_tooltip = fra_coastal_cot_level_3_marketplace_estuary_tt
@@ -941,6 +985,81 @@ french_missions_1_Continuation_a = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	vu_fra_conquest_of_indochina = {
+	    icon = vu_conquest_of_indochina
+		required_missions = { dom_fra_indian_dominance } 
+		position = 13
+		provinces_to_highlight = {
+			OR = {
+			    area = cambodia_area
+				area = mekong_area
+				area = champa_area
+				area = vietnam_area
+				area = red_river_delta_area
+			}
+		}
+		trigger = {
+			cambodia_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			mekong_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			champa_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			vietnam_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			red_river_delta_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_victory_over_indochina"
+				duration = -1
+			}
+			degar_highlands_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			south_laos_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			north_laos_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			thai_cantons_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
 			}
 		}
 	}
@@ -1453,7 +1572,10 @@ french_missions_2 = {
 		required_missions = { fra_chateux_loire_valley fra_liberate_norm }
 		position = 2 
 		provinces_to_highlight = { 
-			area = brittany_area 
+			OR = {
+			    area = brittany_area
+				area = lower_brittany_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
@@ -1462,7 +1584,12 @@ french_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 				NOT = { devastation = 1 } 
 			}
-			169 = { num_of_times_improved = 4 } 
+			lower_brittany_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				NOT = { devastation = 1 } 
+			}
+			7995 = { num_of_times_improved = 4 } 
 		}
 		effect = { 
 			country_event = { id = flavor_fra.104 }
@@ -3874,7 +4001,7 @@ french_missions_4_italian = {
 						hidden = yes 
 					}
 					set_country_flag = general_flag_for_FU_Rome_flag
-					add_ruler_personality = vu_papal_puppetmaster_personality
+					add_ruler_personality = fu_papal_puppetmaster_personality
 				}
 			}
 		}
@@ -4988,13 +5115,17 @@ french_missions_5_normal = {
 		required_missions = { fra_provencal_question }
 		position = 2 
 		provinces_to_highlight = { 
-			province_id = 202 
+			OR = {
+			    province_id = 202
+				province_id = 7897 
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
 			OR = {
 				AND = { 
 					202 = { country_or_non_sovereign_subject_holds = ROOT }
+					7897 = { country_or_non_sovereign_subject_holds = ROOT }
 					PAP = { 
 						OR = { 
 							has_opinion_modifier = {
@@ -5117,7 +5248,10 @@ french_missions_5_normal = {
 			hidden_effect = { 
 				if = { 
 					limit = { 
-						202 = { country_or_non_sovereign_subject_holds = ROOT } 
+						OR = {
+						    202 = { country_or_non_sovereign_subject_holds = ROOT }
+							7897 = { country_or_non_sovereign_subject_holds = ROOT } 
+						}
 						PAP = {
 							OR = { 
 								has_opinion_modifier = {
@@ -6077,6 +6211,22 @@ fra_missions_5_continuation = {
 					}
 				}
 			}
+			barbary_coast_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			kabylia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
 			hidden_effect = {
 				if = { 
 					limit = { 
@@ -6275,6 +6425,722 @@ french_rev_missions_5 = {
 			add_country_modifier = {
 				name = fra_trade_hegemony_modifier
 				duration = -1 
+			}
+		}
+	}
+}
+
+french_missions_6_normal = {
+	slot = 6
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = FRA
+		NOT = { map_setup = map_setup_random }
+		has_dlc = "Domination"
+		has_country_flag = use_paradox_missions
+	}
+	has_country_shield = yes
+
+	vu_fra_conquest_of_algeria = {
+		icon = vu_conquest_of_algeria
+		required_missions = { fra_navy_mission_calais } 
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = barbary_coast_area
+				area = kabylia_area
+			}
+		}
+		trigger = {
+			barbary_coast_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			kabylia_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_conquest_of_algeria"
+				duration = -1
+			}
+			ouled_nail_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			north_saharan_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			hautes_plaines_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			southern_morocco_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			tunisia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			northern_morocco_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	vu_fra_conquest_of_tunisia_and_morocco = {
+	    icon = vu_conquest_of_tunisia_and_morocco
+		required_missions = { vu_fra_conquest_of_algeria } 
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+			    area = southern_morocco_area
+				area = tunisia_area
+				area = northern_morocco_area
+			}
+		}
+		trigger = {
+			southern_morocco_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			tunisia_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			northern_morocco_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_victory_over_tunis_and_morocco"
+				duration = -1
+			}
+			djerba_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			western_morocco_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			tafilalt_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	vu_fra_conquest_of_morocco_2 = {
+	    icon = vu_conquest_of_morocco_2
+		required_missions = { vu_fra_conquest_of_tunisia_and_morocco } 
+		position = 13
+		provinces_to_highlight = {
+			OR = {
+			    area = western_morocco_area
+				area = tafilalt_area
+			}
+		}
+		trigger = {
+			western_morocco_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			tafilalt_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_victory_over_tunis_and_morocco_2"
+				duration = -1
+			}
+			sus_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			northwest_sahara_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+	vu_fra_finish_morocco = {
+	    icon = vu_finish_morocco
+		required_missions = { vu_fra_conquest_of_morocco_2 } 
+		position = 14
+		provinces_to_highlight = {
+			OR = {
+			    area = northwest_sahara_area
+				area = sus_area
+			}
+		}
+		trigger = {
+			northwest_sahara_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			sus_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_conquest_of_north_africa"
+				duration = -1
+			}
+			6964 = { add_permanent_claim = ROOT }
+			1111 = { add_permanent_claim = ROOT }
+			6962 = { add_permanent_claim = ROOT }
+			6963 = { add_permanent_claim = ROOT }
+			2244 = { add_permanent_claim = ROOT }
+			1112 = { add_permanent_claim = ROOT }
+			3047 = { add_permanent_claim = ROOT }
+			5430 = { add_permanent_claim = ROOT }
+			7359 = { add_permanent_claim = ROOT }
+			7357 = { add_permanent_claim = ROOT }
+			7358 = { add_permanent_claim = ROOT }
+			7360 = { add_permanent_claim = ROOT }
+			1116 = { add_permanent_claim = ROOT }
+			7361 = { add_permanent_claim = ROOT }
+			5432 = { add_permanent_claim = ROOT }
+			7362 = { add_permanent_claim = ROOT }
+			2239 = { add_permanent_claim = ROOT }
+			7365 = { add_permanent_claim = ROOT }
+			7364 = { add_permanent_claim = ROOT }
+			2238 = { add_permanent_claim = ROOT }
+			7367 = { add_permanent_claim = ROOT }
+			guinea_coast_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			grain_coast_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			7471 = { add_permanent_claim = ROOT }
+			1126 = { add_permanent_claim = ROOT }
+			gold_coast_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			2290 = { add_permanent_claim = ROOT }
+			1147 = { add_permanent_claim = ROOT }
+			2294 = { add_permanent_claim = ROOT }
+			1151 = { add_permanent_claim = ROOT }
+			gulf_of_guinea_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			7480 = { add_permanent_claim = ROOT }
+			7484 = { add_permanent_claim = ROOT }
+			4078 = { add_permanent_claim = ROOT }
+			7495 = { add_permanent_claim = ROOT }
+			1166 = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	vu_fra_conquest_of_west_africa = {
+	    icon = vu_conquest_of_west_africa
+		required_missions = { vu_fra_finish_morocco } 
+		position = 15
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6964
+				province_id = 1111
+				province_id = 6962
+				province_id = 6963
+				province_id = 2244
+				province_id = 1112
+				province_id = 3047
+				province_id = 5430
+				province_id = 7359
+				province_id = 7357
+				province_id = 7358
+				province_id = 7360
+				province_id = 1116
+				province_id = 7361
+				province_id = 5432
+				province_id = 7362
+				province_id = 2239
+				province_id = 7365
+				province_id = 7364
+				province_id = 2238
+				province_id = 7367
+				area = guinea_coast_area
+				area = grain_coast_area
+				province_id = 7471
+				province_id = 1126
+				area = gold_coast_area
+				province_id = 2290
+				province_id = 1147
+				province_id = 2294
+				province_id = 1151
+				area = gulf_of_guinea_area
+				province_id = 7480
+				province_id = 7484
+				province_id = 4078
+				province_id = 7495
+				province_id = 1166
+			}
+		}
+		trigger = {
+			6964 = { country_or_non_sovereign_subject_holds = ROOT }
+			1111 = { country_or_non_sovereign_subject_holds = ROOT }
+			6962 = { country_or_non_sovereign_subject_holds = ROOT }
+			6963 = { country_or_non_sovereign_subject_holds = ROOT }
+			2244 = { country_or_non_sovereign_subject_holds = ROOT }
+			1112 = { country_or_non_sovereign_subject_holds = ROOT }
+			3047 = { country_or_non_sovereign_subject_holds = ROOT }
+			5430 = { country_or_non_sovereign_subject_holds = ROOT }
+			7359 = { country_or_non_sovereign_subject_holds = ROOT }
+			7357 = { country_or_non_sovereign_subject_holds = ROOT }
+			7358 = { country_or_non_sovereign_subject_holds = ROOT }
+			7360 = { country_or_non_sovereign_subject_holds = ROOT }
+			1116 = { country_or_non_sovereign_subject_holds = ROOT }
+			7361 = { country_or_non_sovereign_subject_holds = ROOT }
+			5432 = { country_or_non_sovereign_subject_holds = ROOT }
+			7362 = { country_or_non_sovereign_subject_holds = ROOT }
+			2239 = { country_or_non_sovereign_subject_holds = ROOT }
+			7365 = { country_or_non_sovereign_subject_holds = ROOT }
+			7364 = { country_or_non_sovereign_subject_holds = ROOT }
+			2238 = { country_or_non_sovereign_subject_holds = ROOT }
+			7367 = { country_or_non_sovereign_subject_holds = ROOT }
+			guinea_coast_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			grain_coast_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			7471 = { country_or_non_sovereign_subject_holds = ROOT }
+			1126 = { country_or_non_sovereign_subject_holds = ROOT }
+			gold_coast_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			2290 = { country_or_non_sovereign_subject_holds = ROOT }
+			1147 = { country_or_non_sovereign_subject_holds = ROOT }
+			2294 = { country_or_non_sovereign_subject_holds = ROOT }
+			1151 = { country_or_non_sovereign_subject_holds = ROOT }
+			gulf_of_guinea_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			7480 = { country_or_non_sovereign_subject_holds = ROOT }
+			7484 = { country_or_non_sovereign_subject_holds = ROOT }
+			4078 = { country_or_non_sovereign_subject_holds = ROOT }
+			7495 = { country_or_non_sovereign_subject_holds = ROOT }
+			1166 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_conquest_of_west_africa"
+				duration = -1
+			}
+			6965 = { add_permanent_claim = ROOT }
+			6968 = { add_permanent_claim = ROOT }
+			6969 = { add_permanent_claim = ROOT }
+			3957 = { add_permanent_claim = ROOT }
+			3032 = { add_permanent_claim = ROOT }
+			3038 = { add_permanent_claim = ROOT }
+			1113 = { add_permanent_claim = ROOT }
+			2240 = { add_permanent_claim = ROOT }
+			7363 = { add_permanent_claim = ROOT }
+			7366 = { add_permanent_claim = ROOT }
+			7742 = { add_permanent_claim = ROOT }
+			futa_jallon_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			7247 = { add_permanent_claim = ROOT }
+			7260 = { add_permanent_claim = ROOT }
+			7261 = { add_permanent_claim = ROOT }
+			7265 = { add_permanent_claim = ROOT }
+			5339 = { add_permanent_claim = ROOT }
+			2251 = { add_permanent_claim = ROOT }
+			lower_volta_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			atacora_oueme_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			lower_niger_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			2289 = { add_permanent_claim = ROOT }
+			1152 = { add_permanent_claim = ROOT }
+			1162 = { add_permanent_claim = ROOT }
+			2286 = { add_permanent_claim = ROOT }
+			7475 = { add_permanent_claim = ROOT }
+			7485 = { add_permanent_claim = ROOT }
+			7486 = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	vu_fra_conquest_of_sub_saharan_and_central_africa = {
+	    icon = vu_conquest_of_sub_saharan_and_central_africa
+		required_missions = { vu_fra_conquest_of_west_africa } 
+		position = 16
+		provinces_to_highlight = {
+			OR = {
+				province_id = 6965
+				province_id = 6968
+				province_id = 6969
+				province_id = 3957
+				province_id = 3032
+				province_id = 3038
+				province_id = 1113
+				province_id = 2240
+				province_id = 7363
+				province_id = 7366
+				province_id = 7742
+				area = futa_jallon_area
+				province_id = 7247
+				province_id = 7260
+				province_id = 7261
+				province_id = 7265
+				province_id = 5339
+				province_id = 2251
+				area = lower_volta_area
+				area = atacora_oueme_area
+				area = lower_niger_area
+				province_id = 2289
+				province_id = 1152
+				province_id = 1162
+				province_id = 2286
+				province_id = 7475
+				province_id = 7485
+				province_id = 7486
+			}
+		}
+		trigger = {
+			6965 = { country_or_non_sovereign_subject_holds = ROOT }
+			6968 = { country_or_non_sovereign_subject_holds = ROOT }
+			6969 = { country_or_non_sovereign_subject_holds = ROOT }
+			3957 = { country_or_non_sovereign_subject_holds = ROOT }
+			3032 = { country_or_non_sovereign_subject_holds = ROOT }
+			3038 = { country_or_non_sovereign_subject_holds = ROOT }
+			1113 = { country_or_non_sovereign_subject_holds = ROOT }
+			2240 = { country_or_non_sovereign_subject_holds = ROOT }
+			7363 = { country_or_non_sovereign_subject_holds = ROOT }
+			7366 = { country_or_non_sovereign_subject_holds = ROOT }
+			7742 = { country_or_non_sovereign_subject_holds = ROOT }
+			futa_jallon_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			7247 = { country_or_non_sovereign_subject_holds = ROOT }
+			7260 = { country_or_non_sovereign_subject_holds = ROOT }
+			7261 = { country_or_non_sovereign_subject_holds = ROOT }
+			7265 = { country_or_non_sovereign_subject_holds = ROOT }
+			5339 = { country_or_non_sovereign_subject_holds = ROOT }
+			2251 = { country_or_non_sovereign_subject_holds = ROOT }
+			lower_volta_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			atacora_oueme_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			lower_niger_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			2289 = { country_or_non_sovereign_subject_holds = ROOT }
+			1152 = { country_or_non_sovereign_subject_holds = ROOT }
+			1162 = { country_or_non_sovereign_subject_holds = ROOT }
+			2286 = { country_or_non_sovereign_subject_holds = ROOT }
+			7475 = { country_or_non_sovereign_subject_holds = ROOT }
+			7485 = { country_or_non_sovereign_subject_holds = ROOT }
+			7486 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "fra_conquest_of_sub_saharan_and_central_africa"
+				duration = -1
+			}
+			3959 = { add_permanent_claim = ROOT }
+			3958 = { add_permanent_claim = ROOT }
+			6967 = { add_permanent_claim = ROOT }
+			6966 = { add_permanent_claim = ROOT }
+			6961 = { add_permanent_claim = ROOT }
+			3041 = { add_permanent_claim = ROOT }
+			2246 = { add_permanent_claim = ROOT }
+			6953 = { add_permanent_claim = ROOT }
+			manding_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			kong_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			massina_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			upper_volta_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			dendi_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			zazzau_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			1145 = { add_permanent_claim = ROOT }
+			1153 = { add_permanent_claim = ROOT }
+			adamawa_plateau_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			7474 = { add_permanent_claim = ROOT }
+			7476 = { add_permanent_claim = ROOT }
+			7473 = { add_permanent_claim = ROOT }
+			2287 = { add_permanent_claim = ROOT }
+			7483 = { add_permanent_claim = ROOT }
+			7487 = { add_permanent_claim = ROOT }
+			7488 = { add_permanent_claim = ROOT }
+			7490 = { add_permanent_claim = ROOT }
+			7493 = { add_permanent_claim = ROOT }
+			7492 = { add_permanent_claim = ROOT }
+			7491 = { add_permanent_claim = ROOT }
+			7489 = { add_permanent_claim = ROOT }
+			7481 = { add_permanent_claim = ROOT }
+			7482 = { add_permanent_claim = ROOT }
+			central_africa_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			bagirmi_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			bahr_salamat_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			said_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			kanem_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			bornu_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			hausa_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			katsina_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			azbin_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			east_azbin_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			niger_bend_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			ahaggar_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			tanezrouft_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			jenne_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
 			}
 		}
 	}

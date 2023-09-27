@@ -2,10 +2,10 @@
 #Region - Low Countries
 #Area - Brabant
 
+#Default
 owner = BRB
 controller = BRB
 add_core = BRB
-add_core = FRA
 is_city = yes
 capital = "Mechelen"
 culture = ger_brabantian
@@ -16,6 +16,13 @@ base_production = 4
 base_manpower = 2
 trade_goods = wool
 
+#Claimants
+
+#Buildings
+
+#Special Modifiers
+
+#Known by Technology groups
 discovered_by = western
 #discovered_by = dutch_tech_group
 #discovered_by = english_tech_group

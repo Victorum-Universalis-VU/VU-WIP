@@ -17,6 +17,9 @@ trade_goods = beer
 base_manpower = 4
 
 #Claimants
+add_core = FRA
+
+#Buildings
 
 #Special Modifiers
 add_permanent_province_modifier = {

@@ -197,6 +197,8 @@
  marcin_events.58.t: "Cigars"
  marcin_events.59.t: "Chocolate"
  marcin_events.60.t: "Cider"
+ marcin_events.61.t: "Canned Goods"
+marcin_events.62.t: "Sweet Confectioneries"
  
  
  marcin_events.1.a: "Beer = §GYES§!"

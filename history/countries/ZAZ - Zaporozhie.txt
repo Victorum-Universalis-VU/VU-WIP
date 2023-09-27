@@ -5,6 +5,7 @@ religion = orthodox
 primary_culture = cossack
 add_accepted_culture = ruthenian
 add_accepted_culture = romanian
+unit_type = eastern
 capital = 2411	# Zaporozhia
 
 

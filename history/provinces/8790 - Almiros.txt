@@ -327,7 +327,7 @@ discovered_by = ANR
 
 #Histories by SF
 1215.6.15 = { owner = ATH controller = ATH add_core = ATH } # Athenian territorial lands - By San Felipe
-1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
+1444.11.11 = { owner = TUR controller = TUR add_core = TUR remove_core = ATH } # Turkish territorial lands - By San Felipe
 1480.1.1 = { fort_15th = yes } #Ottomans fortify the city against Venetian attacks
 1500.1.1 = { marketplace = yes }
 1525.1.1 = { 

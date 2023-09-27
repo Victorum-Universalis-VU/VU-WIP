@@ -1945,6 +1945,13 @@ got_pirate_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			zeeland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			south_east_area = {
 				limit = {
 					NOT = { is_core = ROOT }

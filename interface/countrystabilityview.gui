@@ -278,7 +278,6 @@ guiTypes = {
 			format = left
 		}
 
-
 		iconType =
 		{
 			name ="disaster_icon"

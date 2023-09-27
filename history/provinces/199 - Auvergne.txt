@@ -4,7 +4,6 @@
 owner = AUV
 controller = AUV
 add_core = AUV
-add_core = FRA
 capital = "Clermont"
 is_city = yes
 culture = auvergnat_culture
@@ -16,9 +15,10 @@ trade_goods = silver
 base_manpower = 3
 
 #Claimants
-add_core = AUV
 
 #Buildings
+
+#Commerce
 
 #Special Modifiers
 

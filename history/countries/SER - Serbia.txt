@@ -5,6 +5,7 @@ religion = orthodox
 technology_group = hungarian_tech_group
 capital = 4176	# Krusevac
 historical_friend = BOS
+unit_type = eastern
 
 1389.1.1 = {
 	government_rank = 1

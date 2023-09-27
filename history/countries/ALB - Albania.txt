@@ -5,6 +5,7 @@ primary_culture = albanian
 religion = catholic
 technology_group = hungarian_tech_group
 capital = 4175 # Lezhe
+unit_type = eastern
 
 # The League of Lezhe
 1443.3.4 = {
