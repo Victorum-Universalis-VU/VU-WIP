@@ -214,6 +214,12 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
+		name = "GFX_icon_institution_civil_service"
+		texturefile = "gfx//interface//institutions//civil_service.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
 		name = "GFX_icon_institution_renaissance"
 		texturefile = "gfx//interface//institutions//renaissance.dds"
 		loadType = "INGAME"
@@ -334,6 +340,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_institution_tab_medicine"
 		texturefile = "gfx/interface/institutions//institution_tab_medicine.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_institution_tab_civil_service"
+		texturefile = "gfx/interface/institutions//institution_tab_civil_service.dds"
 		noOfFrames = 2
 		transparencecheck = yes
 	}
@@ -493,4 +506,10 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	spriteType = {
+		name = "GFX_tech_institution_civil_service"
+		texturefile = "gfx/interface/institutions/tech_institution_civil_service.dds"
+		noOfFrames = 5
+		transparencecheck = yes
+	}
 }
