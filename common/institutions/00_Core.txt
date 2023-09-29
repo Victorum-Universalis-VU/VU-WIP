@@ -2152,6 +2152,717 @@ medicine = {
 }
 
 #######################################
+# Civil Service
+#
+# Starts in high-medieval era in China and Western Europe
+#######################################
+
+civil_service = {
+	
+	bonus = {
+		state_governing_cost = -0.05
+		vassal_manpower_bonus = 0.1
+		advisor_pool = 1
+	}
+
+	historical_start_date = 1200.1.1
+	historical_start_province = 1816 #Beijing, Chinese bureaucracy, imperial stuff, etc.
+	
+	history = {
+		is_year = 1200
+		OR = {
+			AND = { #If this is changed costs for Nation Designer may also need to be changed.
+				OR = {
+					continent = new_world
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+				owner = {
+					is_playing_custom_nation = yes
+					OR = {
+						technology_group = western
+					    technology_group = english_tech_group
+					    technology_group = french_tech_group
+					    technology_group = dutch_tech_group
+					    technology_group = german_tech_group
+					    technology_group = italian_tech_group
+						technology_group = portuguese_tech_group
+					    technology_group = scandinavian_tech_group
+					    technology_group = spanish_tech_group
+						technology_group = swiss_tech_group
+						technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = eastern
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = ottoman
+						technology_group = muslim
+						technology_group = indian
+						technology_group = chinese
+						technology_group = japanese
+						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.
+					}
+				}
+			}
+			AND = {
+				owner = { is_playing_custom_nation = no }
+				is_year = 1200
+				OR = {
+					superregion = china_superregion
+					region = france_region
+					region = low_countries_region
+				}
+				development = 30
+			}
+			AND = {
+				is_year = 1215
+				OR = {
+					region = north_china_region
+					region = south_china_region
+				}
+				development = 20
+			}
+			AND = {
+				is_year = 1215
+				OR = {
+					region = france_region
+					region = low_countries_region
+				}
+				development = 20
+			}
+			AND = {
+				is_year = 1215
+				development = 10
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+				OR = {
+					development = 30
+					owner = {
+						government = monarchy
+						has_reform = feudalism_reform
+						has_institution = feudalism
+					}
+				}
+			}
+			AND = {
+				is_year = 1215
+				OR = {
+					region = japan_region
+					region = korea_region
+				}
+				development = 20
+				owner = {
+					government = monarchy
+					num_of_provinces_in_states = 2
+				}
+			}
+			AND = {
+				is_year = 1215
+				OR = {
+					region = italy_region
+				}
+				owner = {
+					government = monarchy
+					has_reform = feudalism_reform
+					has_institution = feudalism
+				}
+				development = 20
+			}
+			AND = {
+				is_year = 1215
+				OR = {
+					province_id = 151
+					province_id = 1854
+					province_id = 379
+					province_id = 146
+					province_id = 126
+					AND = {
+						culture_group = byzantine
+						development = 20
+					}
+					AND = {
+						region = iberia_region
+						development = 15
+					}
+					owner = {
+						has_reform = crusader_state_vu_reform
+					}
+				}
+			}
+			AND = {
+				is_year = 1250
+				OR = {
+					region = north_china_region
+					region = south_china_region
+				}
+			}
+			AND = {
+				is_year = 1250
+				superregion = europe_superregion
+				development = 25
+			}
+			AND = {
+				is_year = 1250
+				continent = europe
+				owner = {
+					has_institution = feudalism
+					OR = {
+						has_reform = austrian_dual_monarchy
+						has_reform = austrian_archduchy_reform
+						has_reform = appanage_reform
+						has_reform = byzantine_autocracy_reform
+						has_reform = byzantine_transitional_gov_reform
+						has_reform = margraviate_reform
+						has_reform = roman_empire_reform
+						has_reform = portuguese_monarchy_reform
+						has_reform = burgundian_state_reform
+						has_reform = courts_of_navarra
+						has_reform = sisterhood_of_jeanne_darc_reform
+						has_reform = norman_lordship_reform
+						has_reform = norman_duchy_reform
+						kingdom_of_portugal_and_azures
+						has_reform = portuguese_empire_reform
+						has_reform = crown_of_aragon
+						has_reform = kingdom_of_castille_and_leon
+						has_reform = crown_of_castille
+						has_reform = hispanic_kingdom
+						has_reform = austrian_empire_reform
+						has_reform = hessian_militarized_monarchy_reform
+						has_reform = monastic_order_reform
+						has_reform = crusading_kingdom_reform
+					}
+				}
+			}
+			AND = {
+				is_year = 1275
+				OR = {
+					province_id = 358
+					province_id = 266
+					region = austria_region
+					region = france_region
+					region = low_countries_region
+					AND = {
+						region = japan_region
+						owner = {
+							OR = {
+								has_reform = daimyo
+								has_reform = indep_daimyo
+								has_reform = shogunate
+							}
+						}
+					}
+					AND = {
+						superregion = india_superregion
+						development = 30
+						owner = {
+							NOT = { government = tribal }
+							has_institution = feudalism
+						}
+					}
+					AND = {
+						superregion = near_east_superregion
+						development = 20
+						owner = {
+							NOT = { government = tribal }
+							has_institution = feudalism
+						}
+					}
+				}
+			}
+			AND = {
+				is_year = 1300
+				superregion = china_superregion
+				owner = {
+					has_institution = feudalism
+					government = monarchy
+				}
+			}
+			AND = {
+				is_year = 1300
+				superregion = china_superregion
+				development = 11
+			}
+			AND = {
+				is_year = 1300
+				region = korea_region
+				owner = { has_institution = feudalism }
+			}
+			AND = {
+				is_year = 1300
+				region = indo_china_region
+				has_port = yes
+				owner = {
+					government = monarchy
+					has_institution = feudalism
+				}
+			}
+			AND = {
+				is_year = 1300
+				superregion = europe_superregion
+				owner = { has_institution = feudalism }
+				development = 15
+			}
+			AND = {
+				is_year = 1300
+				superregion = eastern_europe_superregion
+				owner = {
+					has_institution = feudalism
+					government = monarchy
+				}
+				development = 20
+			}
+			AND = {
+				is_year = 1300
+				superregion = persia_superregion
+				owner = {
+					has_institution = feudalism
+					NOT = { government = tribal }
+				}
+				development = 20
+			}
+			AND = {
+				is_year = 1300
+				superregion = india_superregion
+				owner = {
+					has_institution = feudalism
+					NOT = { government = tribal }
+				}
+				development = 25
+			}
+			AND = {
+				is_year = 1350
+				OR = {
+					superregion = europe_superregion
+					province_id = 586
+					province_id = 584
+					province_id = 596
+					province_id = 618
+					province_id = 2673
+					province_id = 8708
+					province_id = 629
+					province_id = 630
+					province_id = 454
+					province_id = 1224
+					province_id = 341
+					province_id = 343
+					province_id = 334
+					province_id = 361
+					AND = {
+						superregion = india_superregion
+						development = 20
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						superregion = eastern_europe_superregion
+						development = 11
+						owner = {
+							has_institution = feudalism
+							NOT = { government = tribal }
+						}
+					}
+					AND = {
+						development = 7
+						owner = {
+							OR = {
+								tag = KNI
+								tag = BUL
+								tag = HUN
+								tag = CRO
+								tag = EPI
+								tag = CDA
+								tag = SZE
+								tag = MOL
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				is_year = 1400
+				OR = {
+					AND = {
+						region = baltic_region
+						development = 5
+					}
+					AND = {
+						region = poland_region
+						development = 5
+					}
+					AND = {
+						region = ruthenia_region
+						development = 10
+					}
+					AND = {
+						region = horn_of_africa_region
+						development = 15
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						region = maghreb_region
+						development = 10
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						region = egypt_region
+						development = 10
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						region = maghreb_region
+						development = 10
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						region = libya_region
+						development = 10
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						continent = europe
+						is_capital = yes
+						owner = {
+							is_subject = yes
+							overlord = { has_institution = civil_service }
+						}
+					}
+				}
+			}
+			AND = {		#Normal start date
+				is_year = 1444
+				OR = {
+					AND = {
+						continent = europe
+						development = 11
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						superregion = persia_superregion
+						development = 12
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						superregion = india_superregion
+						development = 12
+						owner = { NOT = { government = tribal } }
+					}
+					AND = {
+						superregion = near_east_superregion
+						development = 10
+						owner = { NOT = { government = tribal } }
+					}
+					province_id = 1196
+					province_id = 2111
+					province_id = 726
+					province_id = 702
+					province_id = 442
+					province_id = 1132
+					province_id = 1133
+					province_id = 1124
+					province_id = 4678
+				}
+			}
+			owner = { technology_group = high_american }
+			AND = {
+				is_year = 1475
+				OR = {
+					continent = europe
+					development = 8
+					owner = { NOT = { government = tribal } }
+				}
+			}
+			AND = {
+				is_year = 1500
+				OR = {
+					continent = europe
+					region = sahel_region
+					region = horn_of_africa_region
+					region = maghreb_region
+					region = indo_china_region
+					region = manchuria_region
+					region = japan_region
+					superregion = persia_superregion
+					superregion = india_superregion
+					superregion = near_east_superregion
+					owner = { NOT = { government = tribal } }
+				}
+			}
+			AND = {
+				is_year = 1550
+				owner = {
+					OR = {
+						technology_group = western
+					    technology_group = english_tech_group
+					    technology_group = french_tech_group
+					    technology_group = dutch_tech_group
+					    technology_group = german_tech_group
+					    technology_group = italian_tech_group
+						technology_group = portuguese_tech_group
+					    technology_group = scandinavian_tech_group
+					    technology_group = spanish_tech_group
+						technology_group = swiss_tech_group
+						technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = eastern
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = ottoman
+						technology_group = muslim
+						technology_group = indian
+						technology_group = chinese
+						technology_group = japanese
+						technology_group = east_african
+						technology_group = sub_saharan
+					}
+				}
+			}
+			AND = {
+				is_year = 1600
+				owner = {
+					technology_group = central_african
+				}
+			}
+			AND = {
+				is_year = 1650
+				owner = { has_institution = feudalism }
+			}
+			AND = {
+				is_year = 1700
+				owner = {
+					NOT = {
+						OR = {
+							has_reform = siberian_tribe
+							government = native
+						}
+					}
+				}
+			}
+			is_year = 1750	#Until this time, everyone should have basic knowledge
+		}
+	}
+
+	#no need for events, as its there from the start.
+	#can_start = { is_year = 1100 }
+	#start_chance = 100
+	#on_start = institution_events.1
+
+	can_embrace = {
+		always = yes
+	}
+
+	embracement_speed = {
+		modifier = {		#Nearby friendly prov has it	
+			factor = 0.5
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_CIVIL_SERVICE
+				any_friendly_coast_border_province = {
+					civil_service = 100
+				}
+			}
+		}
+		modifier = {		#Nearby friendly prov has it + competent ruler
+			factor = 0.5
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_CIVIL_SERVICE_AND_RULER_GOOD
+				owner = {
+					adm = 4
+					dip = 4
+					mil = 4
+				}
+				any_friendly_coast_border_province = {
+					civil_service = 100
+				}
+			}
+		}
+		
+		modifier = {		#Has feudalism, monarch has 5 5 5
+			factor = 0.25
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = HAS_FEUDALISM_AND_MONARCH_5
+				
+				owner = {
+					has_institution = feudalism
+					adm = 5
+					dip = 5
+					mil = 5
+				}
+			}
+		}
+		
+		modifier = {		#Has feudalism, monarch has 4 4 4
+			factor = 0.1
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = HAS_FEUDALISM_AND_MONARCH_4
+				
+				owner = {
+					has_institution = feudalism
+					adm = 4
+					dip = 4
+					mil = 4
+				}
+			}
+		}
+		
+		modifier = {		#Province has feudalism, is fort and government is monarchy or theocracy
+			factor = 0.15
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = HAS_FEUDALISM_FORT_AND_MONARCHY_OR_THEOCRACY_GOV
+				
+				feudalism = 100
+				fort_level = 1
+				owner = {
+					OR = {
+						government = monarchy
+						government = theocracy
+					}
+				}
+			}
+		}
+		
+		modifier = {		#Has at least 4 subjects, is monarchy, has all advisors
+			factor = 0.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = HAS_SUBJECTS_IS_MONARCHY_ALL_ADVISORS
+				
+				owner = {
+					num_of_subjects = 4
+					government = monarchy
+					employed_advisor = { category = ADM }
+					employed_advisor = { category = DIP }
+					employed_advisor = { category = MIL }
+				}
+			}
+		}
+		
+		modifier = {		#Is colonial nation and overlord has it
+			factor = 0.6
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = PORT_OR_CAPITAL_IN_COLONY_CIVIL_SERVICE
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = civil_service }
+				}
+			}
+		}
+		modifier = {		#Embraced institution, extra spread in capital area
+			factor = 0.6
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = { has_institution = civil_service }
+				is_in_capital_area = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_civil_service_embraced
+				owner = { has_institution = civil_service }
+				is_in_capital_area = yes
+			}
+		}
+		modifier = {		#Embraced institution, slow spread to prov outside capital area
+			factor = 0.2
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = { has_institution = civil_service }
+                is_in_capital_area = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_civil_service_embraced
+				
+				owner = { has_institution = civil_service }
+				is_in_capital_area = no
+			}
+		}
+		modifier = {		#Embraced institution, extra spread in forts
+			factor = 0.4
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = { has_institution = civil_service }
+                is_in_capital_area = no
+				fort_level = 1
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_civil_service_embraced_has_fort
+				
+				owner = { has_institution = civil_service }
+				is_in_capital_area = no
+				fort_level = 1
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 12			#VU AddOn changed from 24. Logic in notes at the top of the file.
+
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5			#VU AddOn changed from 2.0. If a country is behind in tech, it wants to catch up, sure. But vanilla authorises AI to spend 4 years' income on embracement... uh uh. If a tag is that far behind, it will need its cash too.
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 1.5			#VU AddOn changed from 2.0. If a country is behind in tech, it wants to catch up, sure. But vanilla authorises AI to spend 8 years' income on embracement... uh uh. If a tag is that far behind, it will need its cash too.
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 1.5			#VU AddOn changed from 2.0. If a country is behind in tech, it wants to catch up, sure. But vanilla authorises AI to spend 16 years' income on embracement... uh uh. If a tag is that far behind, it will need its cash too.
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 1.5			#VU AddOn changed from 2.0. If a country is behind in tech, it wants to catch up, sure. But vanilla authorises AI to spend 32 years' income on embracement... uh uh. If a tag is that far behind, it will need its cash too.
+			neighbors_tech_discount = 0.4
+		}
+		modifier = {
+			factor = 2.0
+			overseas_provinces_percentage = 0.5
+		}			#VU AddOn new. This modifer is for a highly unusual (and unprecedented historically) thassalocracy. In this rare case, the lower factor above may cause a micro state in a rich area but with many colonies in poor areas to never reach the threshold for embracing.
+		modifier = {
+			factor = 2.0
+			OR = {
+				tag = GEN
+				tag = VEN
+			}
+		}			#VU AddOn new. These tags both have the disadvantage of having distant colonies, contrasted with the reality of both being some of the most cutting edge countries in the world at the time. Increasing this here for historical balance.
+		modifier = {
+			factor = 1.5
+			years_of_income = 10.0
+		}			#VU AddOn new. If a country is swimming in gold, they can fork out some extra. This will likely keep a few small rich states like Venice slightly ahead in tech and/or with a few extra MP for dev building, but this isn't such a bad thing
+		modifier = {
+			factor = 0.25
+			has_any_disaster = yes
+		}			#VU AddOn new. Same logic as vanilla's is at war check
+		modifier = {
+			factor = 1.5
+			is_great_power = yes
+		}			#VU AddOn new. Great Powers want to stay great powers, and can probably better afford it anyway. Note this may reintroduce my issue with some countries embracing with only one province, but at least here there is a reason =p
+	}
+}
+
+#######################################
 # Renaissance
 #
 # Flows from italy

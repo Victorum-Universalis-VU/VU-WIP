@@ -19,7 +19,7 @@ NGame = {
 	MAX_CUSTOM_COUNTRIES = 75,				-- Max is 100
 	MAX_OBSERVERS = 10,						-- Max is 100
 
-	SIZE_LIMIT_FOR_ISLANDS = 100000,			-- Threshold in pixels to define what is an island and what is a continent
+	SIZE_LIMIT_FOR_ISLANDS = 100000,		-- Threshold in pixels to define what is an island and what is a continent
 
 	DAYS_BEHIND_PAUSE = 28,					-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will pause
 	DAYS_BEHIND_LOWER_SPEED = 12,			-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will slow down
@@ -225,7 +225,7 @@ NDiplomacy = {
 	AE_INFIDEL_CONQUEST = 0.25, 			-- different religion group conquered same religion province
 	AE_SAME_RELIGION = 0.5,
 	AE_SAME_RELIGION_GROUP = 0.0,
-	AE_DIFFERENT_RELIGION = -100, 			-- BUBU
+	AE_DIFFERENT_RELIGION = -0.75, 			-- -75% reduction (originally -0.5)
 	AE_HRE_INTERNAL = 0.5,
 	AE_ATTACKER_DEVELOPMENT = 0.004,		-- +50% cap (at 1000 development)
 	AE_DEFENDER_DEVELOPMENT = 0.004,		-- -50% cap (at 1000 development)
@@ -237,7 +237,7 @@ NDiplomacy = {
 
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
 	PO_DEMAND_PROVINCES_AE = 0.3, 					-- Decreased this to 0.3 from 0.4 _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
-	PO_RETURN_CORES_AE = 0, 						-- Decreased this to 0.2 from 0.25 (Per core, only applied if returning cores to vassals of winner)
+	PO_RETURN_CORES_AE = 0.1, 						-- Decreased this to 0.1 from 0.25 (Per core, only applied if returning cores to vassals of winner)
 	PO_FORM_PU_AE = 0.03, 							-- Decreased this to 0..3 from 0.05 _DDEF_PO_FORM_PU_AE = 10, (Per development)
 	PO_CONCEDE_COLONIAL_AE = 0.1,
 	PO_BECOME_VASSAL_AE = 0.25, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
@@ -603,10 +603,10 @@ NCountry = {
 	HRE_MAX_RANK = 1,							-- for members
 	HRE_MAX_RANK_ELECTOR = 2,					-- for electors
 	HRE_INCIDENT_DAYS_ACTIVE = 365,				-- Number of days HRE incidents will be active
-	HRE_INCIDENT_ELECTOR_SUPPORT_IA = 2,	-- How much worth an elector support is in an incident
-	HRE_INCIDENT_MEMBER_SUPPORT_IA = 0.2,	-- How much worth an elector support is in an incident
-	HRE_INCIDENT_AI_EMPEROR_OPINION = 0.02,	-- How much opinion wit emperor is worh for AI to side with him
-	HRE_INCIDENT_AI_RANDOM_FACTOR = 10,		-- A little random spice to AI for deciding what option to pick as a member, will be -10 to 10
+	HRE_INCIDENT_ELECTOR_SUPPORT_IA = 2,		-- How much worth an elector support is in an incident
+	HRE_INCIDENT_MEMBER_SUPPORT_IA = 0.3,		-- How much worth an elector support is in an incident (original 0.4)
+	HRE_INCIDENT_AI_EMPEROR_OPINION = 0.02,		-- How much opinion wit emperor is worh for AI to side with him
+	HRE_INCIDENT_AI_RANDOM_FACTOR = 10,			-- A little random spice to AI for deciding what option to pick as a member, will be -10 to 10
 
 	PRESTIGE_GAIN_FOR_GOV_RANK_2 = 10,			-- Prestige gained on upgrading to government rank 2
 	PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25,			-- Prestige gained on upgrading to government rank 3
@@ -641,7 +641,7 @@ NCountry = {
 	DEVELOPMENT_ON_CONTINENT_FOR_NEW_CAPITAL = 0.0,	-- How many percent of your development needs to be on the other continent to move your capital there
 
 
-	EXPLORE_COAST_EVENT_CHANCE = 2,			-- Chance (in %) of getting an event when exploring coasts
+	EXPLORE_COAST_EVENT_CHANCE = 2,				-- Chance (in %) of getting an event when exploring coasts
 	MIN_TECH_FOR_CIRCUMNAVIGATE = 26,			-- Must have this level of dip tech to circumnavigate the globe
 	CIRCUMNAVIGATION_PROVINCE_1 = 1468,			-- Provinces for circumnavigation (coast of gambia)
 	CIRCUMNAVIGATION_PROVINCE_2 = 1539,			-- Provinces for circumnavigation (magellan strait)
@@ -650,7 +650,7 @@ NCountry = {
 	CIRCUMNAVIGATION_PROVINCE_5 = 1446,			-- Provinces for circumnavigation (hawaii sea)
 	CIRCUMNAVIGATION_PROVINCE_6 = 1460,			-- Provinces for circumnavigation (cape of good hope)
 
-	MIN_DEV_FOR_OLD_GREAT_POWER = 300,					-- Countries with less development than this cannot be considered Great Powers
+	MIN_DEV_FOR_OLD_GREAT_POWER = 300,				-- Countries with less development than this cannot be considered Great Powers
 
 	SUPPORT_OWN_HEIR_PRESTIGE_COST = 10,
 	SUPPORT_OWN_HEIR_SUPPORT_BONUS = 5,
@@ -718,38 +718,38 @@ NCountry = {
 	NAT_FOCUS_INCREASE = 2,							-- extra power given to national focus power
 	NAT_FOCUS_YEARS = 25,							-- years before you can change focus again
 	NAT_FOCUS_YEARS_RANK = 5,						-- how many years are removed from nat focus cooldown per gov rank above 1
-	POWER_MAX = 10000,								-- how much power can be stored at maximum.
+	POWER_MAX = 1000,								-- how much power can be stored at maximum. (minimum value, will increase with missing techs, etc.)
 	DISMANTLE_HRE_PRESTIGE = 100,					-- Prestige gain on dismantling HRE
 	CROWN_LANDS_ALERT_THRESHOLD = 30,
 	FREE_IDEA_GROUP_COST  = 3,						-- modifier on cheapness of "free" idea group
 	CONVERSION_COOLDOWN = 120,						-- months before you can convert again.
 	CONVERSION_COOLDOWN_SECONDARY = 120,			-- months before you can convert secondary religion again.
 
-	IDEA_TO_TECH = -0.05,			-- percentage on tech reduction per idea.
+	IDEA_TO_TECH = -0.02,			-- percentage on tech reduction per idea. (each idea tier gives -2% permanent tech cost -> -14% per idea group total)
 	TECH_TIME_COST = 0.3,			-- tech grow with 20% cost over time.
 	TECH_AHEAD_OF_TIME = 0.1,		-- per year ahead.
 
 
-	PS_BUY_IDEA = 150,
+	PS_BUY_IDEA = 250,				-- decreased to 250 from vanilla 400 due to 12 idea slots
 	PS_BUY_NATIVE_ADVANCEMENT = 500,
 	PS_BUY_RELIGIOUS_REFORM = 0,
 	PS_ADVANCE_TECH = 600,
-	PS_BOOST_STABILITY = 75,
-	PS_BUY_GENERAL = 25,
-	PS_BUY_ADMIRAL = 25,
-	PS_BUY_CONQUISTADOR = 30,
-	PS_BUY_EXPLORER = 30,
+	PS_BOOST_STABILITY = 100,		-- base adm cost to boost stability from 0 to 1
+	PS_BUY_GENERAL = 50,
+	PS_BUY_ADMIRAL = 50,
+	PS_BUY_CONQUISTADOR = 50,
+	PS_BUY_EXPLORER = 50,
 	PS_ASSAULT = 10,
-	PS_ARTILLERY_BARRAGE = 10,
-	PS_NAVAL_BARRAGE = 10,
+	PS_ARTILLERY_BARRAGE = 30,		-- 30 mil points to barrage fort with arty (keep in mind all the ingame discout modifiers)
+	PS_NAVAL_BARRAGE = 25,			-- 25 mil points to barrage fort with boats (keep in mind all the ingame discount modifiers)
 	PS_ADD_TRIBAL_LAND = 100,
 	PS_ADD_TRIBAL_LAND_EXTRA_COST_PER_PROVINCE = 10,
-	PS_FORCE_MARCH = 0.1,
+	PS_FORCE_MARCH = 1,				-- lowered to 1 from vanilla 2
 	PS_DEMAND_NON_WARGOAL_PROVINCE = 20,
 	PS_DEMAND_NON_WARGOAL_PEACE = 3,
 	PS_DEMAND_NON_WARGOAL_PEACE_PRIMITIVES = 2,
-	PS_MAKE_PROVINCE_CORE = 3.5, 						-- Decreased this to 3.5 from 5
-	PS_REDUCE_INFLATION = 40,
+	PS_MAKE_PROVINCE_CORE = 3.5, 					-- Decreased this to 3.5 from 5 (vanilla is 10)
+	PS_REDUCE_INFLATION = 75,
 	PS_PROMOTE_MERCANTILISM = 50,
 	PS_MOVE_CAPITAL = 50,
 	PS_MOVE_CAPITAL_EXTRA = 50,						-- Per 100 country development.
@@ -757,22 +757,22 @@ NCountry = {
 	PS_MOVE_CAPITAL_DISTANCE_CAP = 200,				-- How much this penalty is allowed to cost in Adm.
 	PS_MOVE_TRADE_PORT = 100,
 	PS_REPLACE_RIVAL = 100,
-	PS_SEIZE_COLONY = 50,
-	PS_BURN_COLONY = 50,
-	PS_ATTACK_NATIVES = 10,
+	PS_SEIZE_COLONY = 50,			-- base 50 mil power to steal someone's colony (vanilla 25)
+	PS_BURN_COLONY = 10,			-- base 10 mil power to erase someone's colony (vanilla 5 )
+	PS_ATTACK_NATIVES = 10,			-- base 10 mil power to attack natives (vanilla 5, SCALES WTIH NATIVES' STRENGTH!)
 	PS_SCORCH_EARTH = 5,
 	PS_CHANGE_GOVERNMENT = 100,
 	PS_CHANGE_CULTURE = 5,
 	PS_CHANGE_CULTURE_OVERSEAS_RELIGION_MOD = -0.25,	-- Modifier how much cheaper it is to change culture in overseas province if same religion
-	PS_HARSH_TREATMENT_COST = 25,						-- Max cost for harsh treatment (scales to revolt size)
+	PS_HARSH_TREATMENT_COST = 50,						-- Max cost for harsh treatment (scales to revolt size)
 	PS_HARSH_TREATMENT_REDUCE = 50,
-	PS_GARRISON_SORTIES = 5,
-	PS_REDUCE_WAREXHAUSTION = 50,
+	PS_GARRISON_SORTIES = 5,		-- 10 mil power to do sortie (vanila 10)
+	PS_REDUCE_WAREXHAUSTION = 75,
 	PS_FACTION_BOOST = 10,
-	PS_RAISE_TARIFFS = 25,
-	PS_LOWER_TARIFFS = 1,
-	PS_RAISE_WAR_TAXES = 2,	-- Monthly Cost
-	PS_WAR_TAXES_LIMIT_MIN = 0,	-- Minimum value for the cost of war taxes
+	PS_RAISE_TARIFFS = 40,			-- sanctioning tarrifs on colony requires legislative cost
+	PS_LOWER_TARIFFS = 5,			-- freeing colony from extra tarrifs shall be dirt-cheap
+	PS_RAISE_WAR_TAXES = 2,			-- Monthly Cost
+	PS_WAR_TAXES_LIMIT_MIN = 0,		-- Minimum value for the cost of war taxes
 	PS_CREATE_TRADE_POST = 50,
 	PS_IMPROVE_PROVINCE_BASE = 25,
 	PS_IMPROVE_PROVINCE_MUL = 0,
@@ -781,7 +781,7 @@ NCountry = {
 	PS_ADD_ACCEPTED_CULTURE = 100,
 	PS_REMOVE_ACCEPTED_CULTURE = 10,
 	PS_REMOVE_ACCEPTED_CULTURE_UNREST_DURATION = 5,
-	PS_STRENGTHEN_GOVERNMENT = 50,
+	PS_STRENGTHEN_GOVERNMENT = 75,	-- decreased from vailla 100
 							  
 	PS_ESTABLISH_SIBERIAN_FRONTIER = 20,
 
@@ -882,9 +882,9 @@ NCountry = {
 	REBEL_BREAK_EXHAUSTION_SET = 0, 				-- Exhaustion will be set to this value when rebels break country.
 	--Revolts changed by DonBrom, don't touch it, if there needs to be more rebalancing LMK
 	REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.1,		-- Multiplied with the province's development
-	REVOLT_SIZE_BASE = 0.25,
-	REVOLT_TECH_IMPACT = 0.005, 					-- % each tech increases size of rebels by this percent.
-	REVOLT_TECH_MORALE = 0.005,						-- 1% per tech level
+	REVOLT_SIZE_BASE = 1,							-- lowered from vanilla 4
+	REVOLT_TECH_IMPACT = 0.01, 						-- % each tech increases size of rebels by this percent (+1%).
+	REVOLT_TECH_MORALE = 0.005,						-- 0,5% per tech level
 
 	REBEL_ARTILLERY_INCREASE_LEVEL_1_TECH = 28,		-- Tech level at which REBEL_ARTILLERY_INCREASE_LEVEL_1_SIZE is applied
 	REBEL_ARTILLERY_INCREASE_LEVEL_1_SIZE = 0.1,	-- The increase in artillery as fraction of total troops given to rebels
@@ -1156,20 +1156,20 @@ NEconomy = {
 	GOLD_INFLATION_THRESHOLD = 0.0,					-- _EDEF_GOLD_INFLATION_THRESHOLD_
 	GOLD_INFLATION = 0.5,							-- _EDEF_GOLD_INFLATION_
 	TREASURE_FLEET_INFLATION = 0.5,
-	BASE_YEARLY_INFLATION = 0,					-- yearly inflation increase
+	BASE_YEARLY_INFLATION = 0,						-- yearly inflation increase
 	INFLATION_FROM_LOAN = 0.1,						-- increase per loan
 	INFLATION_FROM_PEACE_GOLD = 0.01,				-- inflation per month of income taken in peace (also applied to province sales)
-	INFLATION_ACTION_REDUCTION = 3,					-- amount per action
+	INFLATION_ACTION_REDUCTION = 2.5,				-- amount per action
 	BANKRUPTCY_DURATION = 5,						-- _EDEF_BANKRUPTCY_DURATION_
-	BANKRUPTCY_BUILDING_DESTRUCTION_THRESHOLD = 0,	-- Bankruptcy will destroy building that have been build in the latest X amount of years. Set to zero to disable the destruction mechanic.
+	BANKRUPTCY_BUILDING_DESTRUCTION_THRESHOLD = 2,	-- Bankruptcy will destroy building that have been build in the latest X amount of years. Set to zero to disable the destruction mechanic.
 	BANKRUPTCY_PROVINCE_DEVASTATION_GAIN = 10,		-- Devastation gained in country provinces after declaring bankrutcy.
 	WARTAXES_DURATION = 2,							-- _EDEF_WARTAXES_DURATION_
 	MINIMUM_INTERESTS = 0.1,						-- _EDEF_MINIMUM_INTERESTS_
-	BASE_INTERESTS = 2.0,							-- Base interests
+	BASE_INTERESTS = 4.0,							-- Base interest of 4% for default loans
 	LAND_MAINTENANCE_FACTOR = 0.35,					-- _EDEF_LAND_MAINTENANCE_FACTOR
-	HEAVY_SHIP_MAINT_FACTOR = 0.135,					-- _EDEF_HEAVY_SHIP_MAINT_FACTOR_
-	LIGHT_SHIP_MAINT_FACTOR = 0.0325,					-- _EDEF_LIGHT_SHIP_MAINT_FACTOR_
-	GALLEY_MAINT_FACTOR = 0.055,						-- _EDEF_GALLEY_MAINT_FACTOR_
+	HEAVY_SHIP_MAINT_FACTOR = 0.135,				-- _EDEF_HEAVY_SHIP_MAINT_FACTOR_
+	LIGHT_SHIP_MAINT_FACTOR = 0.0325,				-- _EDEF_LIGHT_SHIP_MAINT_FACTOR_
+	GALLEY_MAINT_FACTOR = 0.055,					-- _EDEF_GALLEY_MAINT_FACTOR_
 	TRANSPORT_MAINT_FACTOR = 0.045,					-- _EDEF_TRANSPORT_MAINT_FACTOR_
 	COLONIAL_MAINTENANCE_FACTOR = 4.0,				-- _EDEF_COLONIAL_MAINTENANCE_FACTOR_
 	MISSIONARY_MAINTENANCE_FACTOR = 0.0,				-- How much a missionary costs in itself
@@ -1247,7 +1247,7 @@ NMilitary = {
 	ARMY_DRILL_SKILL_MONTHS = 120,					-- The average number of months until you get a skill increase if drilling 100% of forcelimit. Set to 0 to disable.
 
 	MAX_SAILOR_LACK_ATTRITION = 1,
-	SAILOR_MAINTAINANCE = 0.02,		-- of build cost.
+	SAILOR_MAINTAINANCE = 0.02,						-- of build cost.
 	BANNER_AGE_MULTIPLIER = 0.50,
 	BANNER_STARTING_STRENGTH = 1.0,					-- Starting strength of a banner regiment, 1.0 being full strength
 	CAWA_STARTING_STRENGTH = 0.1,					-- Starting strength of a cawa regiment, 1.0 being full strength
@@ -1316,8 +1316,8 @@ NMilitary = {
 
 	-- Breakthrough: An experimental feature that when you defeat an enemy regiment with artillery behind it,
 	-- there's a chance that you pull their artillery into the front row.
-	INFANTRY_BREAKTHROUGH = 0.0,					-- Between 0 and 1
-	CAVALRY_BREAKTHROUGH = 0.0,						-- Between 0 and 1
+	INFANTRY_BREAKTHROUGH = 0.05,					-- Between 0 and 1
+	CAVALRY_BREAKTHROUGH = 0.02,					-- Between 0 and 1
 
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
 	CAVALRY_SPEED = 0.7, 							-- _MDEF_CAVALRY_SPEED = 10,
@@ -1378,7 +1378,7 @@ NMilitary = {
 	DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.4,		-- Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
 	WARGOAL_MAX_BONUS = 25,
 	DEFAULT_WARGOAL_WARSCORE_BONUS	= 5,			-- Warscore bonus
-	DEFAULT_WARGOAL_BATTLESCORE_BONUS = 3,		-- Battle score bonus from winning battles
+	DEFAULT_WARGOAL_BATTLESCORE_BONUS = 3,			-- Battle score bonus from winning battles
 	SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD	= 10,	-- Needed battle score for getting ticking war score for war goal superiority
 	WARSCORE_MAX_FROM_BATTLES = 40,					-- maximum amount to get from a battles .
 	WAR_ENTHUSIASM_HIGH_THRESHOLD = -20,			-- desire for peace must be less than this for high war enthuasiasm
@@ -1414,7 +1414,7 @@ NMilitary = {
 	-- Suppression values are multiplied by the static modifier friendly_regiments
 	MAX_REBEL_SUPPRESSION = 5.0;				-- Maximum amount of rebel suppression by troops in a province
 	INF_SUPPRESSION = 0.5,						-- Increased this to 0.5 from 0.25 The amount of reduction to unrest for each friendly infantry regiment in a province
-	CAV_SUPPRESSION = 0.5,						-- Increased this to 0.5 from 0.25 The amount of reduction to unrest for each friendly cavalry regiment in a province
+	CAV_SUPPRESSION = 0.75,						-- Increased this to 0.75 from 0.25 The amount of reduction to unrest for each friendly cavalry regiment in a province
 	ART_SUPPRESSION = 0.5,						-- Increased this to 0.5 from 0.25 The amount of reduction to unrest for each friendly artillery regiment in a province
 
 	FORT_FLIPPING_TIME = 60,					-- Number of days it takes an influencing fort to revert the control of a province if left unhindered.
