@@ -497,7 +497,6 @@ WES_Generic_Missions_3_1 = {
 			tag = SOE
 			AND = {
 				OR = {
-					tag = MUN
 					tag = OLD
 					tag = WES
 				}
