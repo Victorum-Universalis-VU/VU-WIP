@@ -4440,7 +4440,7 @@ me_hab_3_branching_modern_state = {
 			me_hab_general_staff
 			me_hab_branching20
 		}
-		position = 20
+		position = 21
 		provinces_to_highlight = {
 		
 		}
