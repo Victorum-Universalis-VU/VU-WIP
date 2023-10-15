@@ -1,3 +1,4 @@
+#Disabling, whatever is here is already in static modifiers
 maintained_forts = {
 	army_tradition = 1
 	fort_bonus_check_influence = 1
@@ -12,7 +13,7 @@ peace = {
 	pr_smugglers_influence = 0.1
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
-	#monthly_conquest_frenzy_power = -0.5
+	monthly_conquest_frenzy_power = -0.5
 }
 
 religious_unity = {
@@ -21,12 +22,12 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
-	#monthly_caliphal_legitimacy = 0.15
+	monthly_caliphal_legitimacy = 0.15
 }
 
 reputation_sabotaged = {
 	diplomatic_reputation = -3
-	#monthly_caliphal_legitimacy = -0.05
+	monthly_caliphal_legitimacy = -0.05
 }
 
 hanafi_scholar_modifier = {
@@ -35,7 +36,7 @@ hanafi_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	adm_tech_cost_modifier = -0.05
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 hanbali_scholar_modifier = {
@@ -44,7 +45,7 @@ hanbali_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	ae_impact = -0.1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 maliki_scholar_modifier = {
@@ -53,7 +54,7 @@ maliki_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	development_cost = -0.1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 shafii_scholar_modifier = {
@@ -62,7 +63,7 @@ shafii_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	merchants = 1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 ismaili_scholar_modifier = {
@@ -74,7 +75,7 @@ ismaili_scholar_modifier = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	devotion = 1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 jafari_scholar_modifier = {
@@ -83,7 +84,7 @@ jafari_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage = 0.1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 zaidi_scholar_modifier = {
@@ -92,18 +93,18 @@ zaidi_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage_received = -0.1
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
-#tolerance_own = {
-#	monthly_caliphal_legitimacy = 0.02
-#}
+tolerance_own = {
+	monthly_caliphal_legitimacy = 0.02
+}
 
 
 stability = {
 	global_trade_power = 0.01			#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
-	#monthly_caliphal_legitimacy = 0.05
+	monthly_caliphal_legitimacy = 0.05
 }
 
 positive_piety = { #As of 1.23 Legalism
@@ -113,7 +114,7 @@ positive_piety = { #As of 1.23 Legalism
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
-	#monthly_caliphal_legitimacy = 0.2
+	monthly_caliphal_legitimacy = 0.2
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -124,7 +125,7 @@ negative_piety = { #As of 1.23 Mysticism
 	brahmins_muslim_loyalty_modifier = 0.1
 	church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
-	#monthly_caliphal_legitimacy = 0.2
+	monthly_caliphal_legitimacy = 0.2
 }
 
 defender_of_faith = {
@@ -138,13 +139,13 @@ defender_of_faith = {
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
 	devotion = 0.5
-	#monthly_caliphal_legitimacy = 0.1
+	monthly_caliphal_legitimacy = 0.1
 	
 }
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
-	#monthly_caliphal_legitimacy = -0.15
+	monthly_caliphal_legitimacy = -0.15
 }
 
 corruption = {
@@ -172,5 +173,5 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
-	#monthly_caliphal_legitimacy = -10
+	monthly_caliphal_legitimacy = -10
 }
