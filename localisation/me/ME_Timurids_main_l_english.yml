@@ -243,7 +243,6 @@
  me_tim_if_completed_with_occupation: "If we completed the mission by §MOccupying§! §Y[698.GetName]§!:"
  me_tim_access_to_great_wall: "We will gain access to the §YGreat Wall§! monument"
  me_tim_this_option_will_influence_eoc: "This option will influence the §YMandate of Heaven§! mission"
- me_tim_gain_access_to_all_chinese_monuments: "Gains access to all §YChinese§! monuments"
  me_tim_mandate_interactions: "Unlocks the §YKowtow§! mechanic"
  me_tim_unlock_desert_steppe_development_priv: "Unlocks the §YSteppe Development§! privilege"
  me_tim_3_random_provinces: "§Y3§! random provinces in the required §YAreas§! that produce §YLivestock§!:"
@@ -773,7 +772,6 @@
  me_tim_invasion_of_india: "Invasion of India"
  me_tim_above_the_caliph: "Above the Caliph"
  me_tim_honoring_timur: "Honoring Timur"
- me_tim_scientific_innovations: "Scientific Innovations"
  me_tim_persian_empire: "Persian Empire"
  me_tim_seat_of_power: "Seat of Power"
  me_tim_persian_tolerance: "Tolerance of the Persians"
@@ -807,7 +805,6 @@
  me_tim_art_of_offense: "Art of Offense"
  me_tim_masters_of_the_offense: "Masters of Offense"
  me_tim_art_of_defence: "Art of Defence"
- me_tim_in_honor_of_timur: "In Timur's Footsteps"
  me_tim_massing_artillery: "Massing Artillery"
  me_tim_concentrated_fire: "Percise Firepower"
  me_tim_armies_of_the_emperor: "Armies of the Emperor"
@@ -914,12 +911,12 @@
  
  # Diplomatic Actions:
  timurids_establish_field_marshal_title: "Establish Field Marshal"
- timurids_establish_field_marshal_desc: "Do you to make [From.GetName] into a field marshal? It will give them §G+5.00%§! Discipline and §G+1.00§! Yearly Army Tradition, and they will lose §G30.0%§! Liberty Desire"
+ timurids_establish_field_marshal_desc: "Do you want to make [From.GetName] into a field marshal? It will give them §G+5.00%§! Discipline and §G+1.00§! Yearly Army Tradition, and they will lose §G30.0%§! Liberty Desire"
  timurids_establish_field_marshal_tooltip: "Make this country into the Field Marshal"
  
- timurids_establish_field_marshal_title: "Revoke Field Marshal"
- timurids_establish_field_marshal_desc: "Do you to revoke marshalship from [From.GetName]? It will give them §G+5.00%§! It will make them gain §R30.0%§! Liberty Desire"
- timurids_establish_field_marshal_tooltip: "Revoke marshalship from this country"
+ timurids_revoke_field_marshal_title: "Revoke Field Marshal"
+ timurids_revoke_field_marshal_desc: "Do you want to revoke marshalship from [From.GetName]? It will give them §G+5.00%§! It will make them gain §R30.0%§! Liberty Desire"
+ timurids_revoke_field_marshal_tooltip: "Revoke marshalship from this country"
  
  timurids_ask_support_title: "Ask for Legitimacy Support"
  timurids_ask_support_desc: "Do you wish to [From.GetName] to give you §G10.0§! Timurid Legitimacy?"
