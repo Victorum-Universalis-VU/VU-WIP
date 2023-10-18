@@ -211,6 +211,13 @@ on_startup = {
 		}
 		ZAZ = { restore_country_name = yes }
 	}
+	if = { #If started before 1445, makes that all tags start with clear set of NI-s instead of being forced to have whatever ideas were set in countries folder
+		limit = {
+			NOT = { is_year = 1445 }
+			NOT = { started_in = 1445.1.1 }
+		}
+		reset_all_national_ideas_effect = yes
+	}
 	#if = {
 	#	limit = {
 	#		NOT = { has_country_flag = setup_complete_on_startup }

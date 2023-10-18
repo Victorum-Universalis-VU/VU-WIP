@@ -4,6 +4,7 @@
  gunpowder_warfare_date:0 "1100"
  medicine_date:0 "1150"
  civil_service_date:0 "1200"
+ market_production_date:0 "1250"
  renaissance_date:0 "1450"
  new_world_i_date:0 "1500"
  printing_press_date:0 "1550"
@@ -15,6 +16,7 @@
  gunpowder_warfare:0 "Gunpowder Warfare"
  medicine:0 "Medicine"
  civil_service:0 "Civil Service"
+ market_production:0 "Early Market Economics"
  feudalism:0 "Feudalism"
  renaissance:0 "Renaissance"
  new_world_i:0 "Colonialism"
@@ -34,6 +36,7 @@
  desc_gunpowder_warfare:0 "Ever since its invention in China, in 9th century, gunpowder has been gradually adopted into military tactics of countries who could afford it. Utilizing its immense power and potential was a true game-changer on a battle field, especially against those who didn't have it. Its use was originally not much sophisticated, limited to stationary explosives only, but later in the medieval era would see its first experimentation with bombards and small arms. The explosive power of gunpowder would first be mastered during sieges where the stationary nature of the situation would allow for successfull experimentation. In the later middle ages, the progress in engineering and metallurgy would gradually reduce the size and bulkness of gunpowder weapons making them not only more versatile in use but much more deadly and effective. At last, the gunpowder would spread west from China towards Europe mostly due to Mongol conquests. It would be the Europe which would then carry on the art of mastering those weapons."
  desc_medicine:0 "Islamic Golden Age, Great House of Wisdom, development of herbalism and alchemy, progress in biology and increase in public awareness has lead to the development of first cataloqued medicine and medical practise. Different works on medicine were created independently in many regions of the world but most revolutionary advancements for the treatment in the middle ages can be pointed to knowledge gathered by Muslim scholars during Islamic Golden Age. From now on, systematical medical practise, gradually spread across Europe and Asia when it wa further improved and developed over time to serve as a base for another revolution during enlightment. Ultimately, foundations for the true modern medicine were created in the coming centuries."
  desc_civil_service:0 "Civil Service, also including Chivalry in Western Europe. Add description later."
+ desc_market_production:0 "Market Production and merchant class emerging as the development of trade routes, artisans, towns, workshops, trade leagues and organized exchange emerges in developed parts of the world. \nBasically, whatever the Hanseatic League and its merchants were doing. \nAdd more decsription later."
  desc_renaissance:0 "Since the 14th century the wealthy and powerful in the Italian City states have been patronizing artists and scholars willing to explore the old Roman and Greek societies of their forefathers. As a cultural movement the Renaissance already encompasses most of the region and has had a profound impact on literature, art, philosophy and music. Humanist scholars are also analyzing the society in which they live, comparing it to the ideals of the Classical philosophers. Renaissance Humanism has grown into a more mature movement, ready to permeate all aspects of society. A new ideal for rulers as well as those who are ruled is spreading as quickly as the early Printers can distribute copies of these new ideas. A true Renaissance Humanist is an expert on everything from Politics and Philosophy to art, textual analysis, music and architecture. The Renaissance is now ready to reshape the world to better fit its classical ideals."
  desc_new_world_i:0 "The discovery of the New World has heralded a new era not only for the colonizers and the colonized, it has led to a spread of materials and techniques as well as a realization of the vast size of the globe. As animals, crop types, silver and diseases spread across the Atlantic the first steps have been taken towards a truly global economy and as foreign lands and people are mapped and documented ideas as well as religious and philosophical debate has become more and more colored by what we have found in overseas societies. Great minds feel the need to question what was once truth and from Valladolid to Fatehpur Sikri the nature of the world is now up for debate."
  desc_printing_press:0 "The ability to mass-produce the written word would revolutionize the spread of information and in many ways the early modern society as a whole. Pioneered by Renaissance men such as Venetian Printer Aldus Manutius, the new art helped fuel the Renaissance by making the translated classics more widely available. Later the Reformation benefitted greatly from the ability to spread critical publications and translations of the Holy Scriptures.\nNow that Printing has matured as a technique and spread throughout Europe editions have grown and hundreds of thousands of copies of everything from Religious and Political pamphlets to instructions in how to behave or scientific treatises are circulating the continent. With Print Shops growing evermore commonplace rulers have found it hard to contain the new technique as the comparatively easy means of production means censorship can be sidestepped by moving business across a border or even just changing the name on a title page."
@@ -279,6 +282,25 @@
  PORT_OR_CAPITAL_IN_COLONY_CIVIL_SERVICE:0 "Port/Capital - Colonial Overlord has §YCivil Service§!"
  tooltip_civil_service_embraced:0 "Owner has embraced §YCivil Service§!"
  tooltip_civil_service_embraced_has_fort:0 "Owner has embraced §YCivil Service§! and province has §Yfort level§!"
+ 
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_MARKET_PRODUCTION:0 "Nearby friendly province with §YEarly Market Economics§!"
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_MARKET_PRODUCTION_AND_RULER_GOOD:0 "Nearby friendly province with §YEarly Market Economics§! and ruler has at least §M3, 5, 3§! in skills"
+ HAS_FEUDALISM_AND_MONARCH_6_PLUS_COT:0 "§YFeudalism§! embraced, ruler has diplomatic skill of §M6§! and province is §Mlvl 2§! Center of Trade"
+ HAS_FEUDALISM_AND_MONARCH_4_PROV_PORT_AND_COT:0 "§YFeudalism§! embraced, ruler has skill of at least §M4, 4, 4§! and province is port with Center of Trade"
+ HAS_FEUDALISM_PORT_AND_REPUBLIC_WITH_MERCANTILISM:0 "§YFeudalism§! present, province has port and owner is a §Mrepublic§! with over §G40§! §MMercantilism§!"
+ HAS_MERCANTILISM_NOT_TRIBAL_ALL_ADVISORS:0 "Owner has at least §G40§! §MMercantilism§!, §Ois not§! §Ytribal§! government and is employing every category of advisors"
+ PORT_OR_CAPITAL_IN_COLONY_MARKET_PRODUCTION:0 "Port/Capital - Colonial Overlord has §YEarly Market Economics§!"
+ tooltip_market_production_embraced:0 "Owner has embraced §YEarly Market Economics§!"
+ tooltip_market_production_embraced_has_cot:0 "Owner has embraced §YEarly Market Economics§! and province has §YCenter of Trade§!"
+ 
+ birthplace_of_market_production_modifier:0 "Birthplace of Early Market Economics"
+ desc_birthplace_of_market_production_modifier:0 "This province gave rise to Early Market Economics"
+ 
+ institution_events.100.t:0 "Early Market Economics!"
+ institution_events.100.d:0 "WIP"
+ institution_events.100.a:0 "This changes everything..."
+ institution_events.100.a.tt:1 "§YEmbracing§! the §Early Market Economics§! Institution will be vital for future advancements in §YTechnology§!."
+ institution_events.1003.d:0 "Travelers from far away lands speak of a great storm coming our way. A storm that will come in many shapes and forms, disguised as flattery, bribary and in the worse case scenario blatant and obvious. It is hard to treat such rumors seriously since we have lived in peace for many decades, without a care in the world to meddle in affairs that are no concern of to our people. However, we must not take these rumours forgranted, nor should we ignore them incase they turn out to be true. In that instance, then may the Gods help us and grant us strength, fortitude and courage to bear against this so-called 'Early Market Economics' once it arrives on our shores.""
  
  
  #VU - Institutions by San Felipe
