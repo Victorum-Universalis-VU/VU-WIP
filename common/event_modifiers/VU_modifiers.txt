@@ -277,3 +277,8 @@ vu_milford_sound = {
 vu_olive_oil_production = {
 	trade_goods_size_modifier = 2
 }
+
+birthplace_of_market_production_modifier = {
+	trade_value = 2
+	local_production_efficiency = 0.2
+}

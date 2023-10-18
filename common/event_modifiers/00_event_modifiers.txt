@@ -18931,13 +18931,3 @@ ME_HOL_Early_Netherlandish_Painting = {
 	prestige = 0.5
 	idea_cost = -0.05
 }
-
-
-
-
-
-
-
-
-
-
