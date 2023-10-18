@@ -132,8 +132,13 @@ country_event = {
 		    #Anatolia & Middle East
 		    KAR = { inherit = ALI }
 		    BTL = { inherit = BHT }
-		    QAR = { inherit = SIN }
+		    QAR = {
+				inherit = SIN
+				inherit = ART
+			}
 		    HAK = { inherit = SRN }
+			GEO = { inherit = HMM }
+			KRY = { inherit = BDP }
 		    #Baltic
 		    LIV = {
 		    	inherit = OSL
@@ -651,6 +656,13 @@ country_event = {
 				        		tag = TOB
 				        		tag = WCH
 				        		tag = YAG
+								#Papua
+								tag = HLO
+								tag = CMU
+								tag = HUL
+								tag = ORR
+								tag = SPE
+								tag = BNI
 				        	}
 				        }
 						country_event = { id = vu_remove_country.1 }
@@ -1023,8 +1035,13 @@ country_event = {
 		    #Anatolia & Middle East
 		    KAR = { inherit = ALI }
 		    BTL = { inherit = BHT }
-		    QAR = { inherit = SIN }
+		    QAR = {
+				inherit = SIN
+				inherit = ART
+			}
 		    HAK = { inherit = SRN }
+			GEO = { inherit = HMM }
+			KRY = { inherit = BDP }
 		    #Baltic
 		    LIV = {
 		    	inherit = OSL
@@ -1571,6 +1588,13 @@ country_event = {
 						tag = TOB
 						tag = WCH
 						tag = YAG
+						#Papua
+						tag = HLO
+						tag = CMU
+						tag = HUL
+						tag = ORR
+						tag = SPE
+						tag = BNI
 					}
 				}
 				country_event = { id = vu_remove_country.1 }
