@@ -497,7 +497,6 @@ WES_Generic_Missions_3_1 = {
 			tag = SOE
 			AND = {
 				OR = {
-					tag = MUN
 					tag = OLD
 					tag = WES
 				}
@@ -741,7 +740,6 @@ WES_Generic_Missions_3_2 = {
 			tag = PAD
 			AND = {
 				OR = {
-					tag = MUN
 					tag = RVA
 					tag = LPP
 					tag = OLD
@@ -944,7 +942,7 @@ WES_Generic_Missions_3_2 = {
 	}
 }
 
-MUN_Missions_3 = { #Doesn't actually overlap with WES_Generic_Missions_3_2
+MUN_Missions_3 = {
 	slot = 3
 	generic = no
 	ai = yes

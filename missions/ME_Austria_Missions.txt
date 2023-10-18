@@ -558,10 +558,10 @@ me_hab_1_1 = {
 				}
 				266 = {
 					change_religion = ROOT
-				}
-				add_great_project_tier = {
-					type = prague 
-					tier = 1
+					add_great_project_tier = {
+						type = prague 
+						tier = 1
+					}
 				}
 			}
 		}
@@ -906,10 +906,10 @@ me_hab_2_branching_germany = {
 			ME_distribute_development = { 
 				type = production
 				amount = 10
-				limit = " 
-					area = bavaria_area
-					trade_goods = salt
-				"
+				#limit = " 
+				#	area = bavaria_area
+				#	trade_goods = salt
+				#"
 			}
 			custom_tooltip = " "
 			custom_tooltip = me_hab_hre_branch
@@ -1156,10 +1156,10 @@ me_hab_2_german = {
 			ME_distribute_development = { 
 				type = production
 				amount = 10
-				limit = " 
-					area = bavaria_area
-					trade_goods = salt
-				"
+				#limit = " 
+				#	area = bavaria_area
+				#	trade_goods = salt
+				#"
 			}
 		}
 	}
@@ -2347,7 +2347,7 @@ me_hab_2_1 = {
 				OR = {
 					custom_trigger_tooltip = {
 						tooltip = me_hab_raabisation_complete
-						has_country_flag = me_hab_raabisation_complete_flag
+					#	has_country_flag = me_hab_raabisation_complete_flag #flag set nowhere ?
 					}
 					NOT = {
 						estate_influence = {
@@ -2616,7 +2616,10 @@ me_hab_3_branching_germany = {
 	me_hab_branching8 = {
 		icon = mission_unknown_mission
 		required_missions = {
-			me_hab_branching7 me_hab_branching5 me_hab_branching2 me_hab_branching3
+			#me_hab_branching7 
+			me_hab_branching5 
+			me_hab_branching2 
+			me_hab_branching3
 		}
 		position = 4
 		trigger = {
@@ -2688,21 +2691,21 @@ me_hab_3_branching_germany = {
 			}
 			set_country_flag = me_hab_easier_german_formation
 			custom_tooltip = me_hab_easier_german_formation
-			ME_distribute_development = { 
-				type = production
-				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
-			}
-			ME_distribute_development = { 
-				type = manpower
-				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
-			}
-			ME_distribute_development = { 
-				type = tax
-				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
-			}
+			#ME_distribute_development = { 
+			#	type = production
+			#	amount = 5
+			#	limit = " OR = { region = north_german_region region = south_german_region } "
+			#}
+			#ME_distribute_development = { 
+			#	type = manpower
+			#	amount = 5
+			#	limit = " OR = { region = north_german_region region = south_german_region } "
+			#}
+			#ME_distribute_development = { 
+			#	type = tax
+			#	amount = 5
+			#	limit = " OR = { region = north_german_region region = south_german_region } "
+			#}
 			custom_tooltip = " "
 			custom_tooltip = me_hab_hre_branch
 			if = {
@@ -3135,17 +3138,17 @@ me_hab_3_germany = {
 			ME_distribute_development = { 
 				type = production
 				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
+				#limit = " OR = { region = north_german_region region = south_german_region } "
 			}
 			ME_distribute_development = { 
 				type = manpower
 				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
+				#limit = " OR = { region = north_german_region region = south_german_region } "
 			}
 			ME_distribute_development = { 
 				type = tax
 				amount = 5
-				limit = " OR = { region = north_german_region region = south_german_region } "
+				#limit = " OR = { region = north_german_region region = south_german_region } "
 			}
 		}
 	}
@@ -4103,7 +4106,7 @@ me_hab_3_2 = {
 			ME_distribute_development = {
 				type = manpower
 				amount = 5
-				limit = " OR = { area = croatia_area area = slavonia_area } "
+				#limit = " OR = { area = croatia_area area = slavonia_area } "
 			}
 		}
 	}
@@ -4637,7 +4640,7 @@ me_hab_3_enlightenment = {
 					value = 2
 				}
 				num_of_estate_privileges = {
-					estate = estate_merchant
+					estate = estate_burghers
 					value = 2
 				}
 			}
@@ -4907,7 +4910,8 @@ me_hab_4_1 = {
 					}
 				}
 				transylvania_area = {
-					remove_province_modifier = autonomy_decreased
+					add_unrest = -10
+					#remove_province_modifier = autonomy_decreased
 				}
 			}
 			else = {
@@ -4925,7 +4929,8 @@ me_hab_4_1 = {
 					}
 				}
 				southern_transylvania_area = {
-					remove_province_modifier = autonomy_decreased
+					add_unrest = -10
+					#remove_province_modifier = autonomy_decreased
 				}
 			}
 			else = {
@@ -4945,9 +4950,11 @@ me_hab_4_1 = {
 						province_is_or_accepts_culture = yes
 					}
 				}
-				add_great_project_tier = {
-					type = bran_castle 
-					tier = 1
+				4128 = {
+					add_great_project_tier = {
+						type = bran_castle 
+						tier = 1
+					}
 				}
 			}
 		}
@@ -5078,10 +5085,10 @@ me_hab_4_navy = {
 		effect = {
 			custom_tooltip = me_hab_venetian_branch
 			custom_tooltip = me_hab_every_province_with_a_shipyard
-			add_province_modifier = {
-				name = me_hab_prepare_the_sailors
-				duration = 7300
-			}
+		#	add_province_modifier = {
+		#		name = me_hab_prepare_the_sailors
+		#		duration = 7300
+		#	}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -5134,7 +5141,7 @@ me_hab_4_navy = {
 				}
 				112 = {
 					has_great_project = {
-						type = vu_venetian_arsenal
+						type = venetian_arsenal
 						tier = 2
 					}
 				}
@@ -5172,15 +5179,17 @@ me_hab_4_navy = {
 				}
 			}
 			else = {
-				add_province_modifier = {
-					name = me_hab_venetian_arsenal_in_our_control_no_dlc
-					duration = -1
+				112 = {
+					add_province_modifier = {
+						name = me_hab_venetian_arsenal_in_our_control_no_dlc
+						duration = -1
+					}
 				}
 			}
 			custom_tooltip = " "
 			custom_tooltip = me_hab_modern_navy_branch
 			custom_tooltip = me_hab_every_province_with_a_dock
-			add_base_production = 1
+		#	add_base_production = 1
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -5304,10 +5313,10 @@ me_hab_4_venetian_module = {
 		}
 		effect = {
 			custom_tooltip = me_hab_every_province_with_a_shipyard
-			add_province_modifier = {
-				name = me_hab_prepare_the_sailors
-				duration = 7300
-			}
+		#	add_province_modifier = {
+		#		name = me_hab_prepare_the_sailors
+		#		duration = 7300
+		#	}
 			set_country_flag = lan_allow_access_to_venetian_arsenal_flag
 			if = {
 				limit = {
@@ -5346,7 +5355,7 @@ me_hab_4_venetian_module = {
 				}
 				112 = {
 					has_great_project = {
-						type = vu_venetian_arsenal
+						type = venetian_arsenal
 						tier = 2
 					}
 				}
@@ -5454,7 +5463,7 @@ me_hab_4_modern_navy = {
 		}
 		effect = {
 			custom_tooltip = me_hab_every_province_with_a_dock
-			add_base_production = 1
+		#	add_base_production = 1
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -5565,12 +5574,12 @@ me_hab_4_2 = {
 				ME_distribute_development = { 
 					type = production
 					amount = 10
-					limit = " area = silesia_area "
+					#limit = " area = silesia_area "
 				}
 				ME_distribute_development = { 
 					type = manpower
 					amount = 10
-					limit = " area = silesia_area "
+					#limit = " area = silesia_area "
 				}
 			}
 			hidden_effect = {
@@ -5583,12 +5592,12 @@ me_hab_4_2 = {
 					ME_distribute_development = { 
 						type = production
 						amount = 10
-						limit = " area = silesia_area "
+						#limit = " area = silesia_area "
 					}
 					ME_distribute_development = { 
 						type = manpower
 						amount = 10
-						limit = " area = silesia_area "
+						#limit = " area = silesia_area "
 					}
 				}
 				else = {
@@ -6122,10 +6131,10 @@ me_hab_4_internal_development = {
 			custom_tooltip = " "
 			custom_tooltip = me_hab_minorities_branch
 			custom_tooltip = me_hab_required_areas
-			add_province_modifier = {
-				name = me_hab_expanding_the_lands
-				duration = -1
-			}
+		#	add_province_modifier = {
+		#		name = me_hab_expanding_the_lands
+		#		duration = -1
+		#	}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -6232,6 +6241,9 @@ me_hab_4_mainland_focus = {
 				}
 			}
 			custom_tooltip = me_hab_bonus_depending_on_dip_every_ruler
+			hidden_effect = {
+				set_country_flag = me_hab_aulic_council
+			}
 		}
 	}
 	
@@ -6354,10 +6366,10 @@ me_hab_4_minorities_focus = {
 		}
 		effect = {
 			custom_tooltip = me_hab_all_required_areas
-			add_province_modifier = {
-				name = me_hab_expanding_the_lands
-				duration = -1
-			}
+		#	add_province_modifier = {
+		#		name = me_hab_expanding_the_lands
+		#		duration = -1
+		#	}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -6557,7 +6569,7 @@ me_hab_5 = {
 						HUN = {
 							OR = {
 								has_country_flag = hun_ladislaus_postumus_heir
-								has_country_flag = hun_ladislaus_postumus_ruler
+								has_country_flag = hun_ladislaus_postumus_king
 							}
 						}
 					}
@@ -6782,7 +6794,8 @@ me_hab_5 = {
 						}
 					}
 					slavonia_area = {
-						remove_province_modifier = autonomy_decreased
+						add_unrest = -10
+						#remove_province_modifier = autonomy_decreased
 					}
 				}
 				else = {
@@ -6800,7 +6813,8 @@ me_hab_5 = {
 						}
 					}
 					4752 = {
-						remove_province_modifier = autonomy_decreased
+						add_unrest = -10
+						#remove_province_modifier = autonomy_decreased
 					}
 				}
 				else = {
@@ -6818,7 +6832,8 @@ me_hab_5 = {
 						}
 					}
 					131 = {
-						remove_province_modifier = autonomy_decreased
+						add_unrest = -10
+						#remove_province_modifier = autonomy_decreased
 					}
 				}
 				else = {

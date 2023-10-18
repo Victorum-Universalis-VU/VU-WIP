@@ -1231,7 +1231,7 @@ warningaction = {
 	}
 }
 
-#declarewar = {
+declarewar = { #Not sure if you meant to turn that off.. Only the 1st line was commented out
     condition = {
         tooltip = no_attack_gb
         potential = {

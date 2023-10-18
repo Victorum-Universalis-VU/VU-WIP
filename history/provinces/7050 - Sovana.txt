@@ -58,7 +58,7 @@ discovered_by = russian_tech_group
 
 #Histories by SF
 1215.6.15 = { owner = SIE controller = SIE add_core = SIE } # Sienan territorial lands - By San Felipe
-} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+#Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1444.11.18 = { #VictorumUniversalis batch edit shortcut second performance start ends
 	owner = SVN
 	controller = SVN

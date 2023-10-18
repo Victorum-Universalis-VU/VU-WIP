@@ -530,7 +530,7 @@
 5976 = { "Warwick" "Warwick" }
 5977 = { "Newport" "Newport" }
 5978 = { "Washington" "Providence" }
-5979 = { "Bridgeport" "Bridgeport }"
+5979 = { "Bridgeport" "Bridgeport" }
 5980 = { "Saybrook" "Fort Saybrook" }
 5981 = { "New London" "New London" }
 5982 = { "Waterbury" "Waterbury" }
