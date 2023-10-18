@@ -1,7 +1,7 @@
 lotf_republic_vassals = {
 	ROOT = { vassalize = PREV }
 	change_religion = ROOT
-	change_government = republican_tradition
+	change_government = republic
 	add_prestige = 200
 	add_republican_tradition = 100
 	add_stability = 3
