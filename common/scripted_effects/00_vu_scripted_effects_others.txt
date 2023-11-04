@@ -14,6 +14,7 @@
 #		example_effect = yes
 #	}
 
+# Note by Altan : value = base_production (or any other dev type isn't a thing). Use value = trigger_value:base_production (or other dev type)
 #############################################################
 #############################################################
 #############################################################
@@ -60,7 +61,7 @@ create_interregnum_effect = {
         adm = 0
         dip = 0
         mil = 0
-        has_regency = yes
+        has_regency = yes #Not sure that interregnum effect is going to work
     }
 }
 
@@ -1085,7 +1086,7 @@ add_import_effect = {
 				}
 			}
 			remove_country_modifier = GE_plantation_trade_deal_imports_4
-			remove_country_modifier = GE_plantation_trade_deal_imports_6
+			remove_country_modifier = GE_plantation_trade_deal_imports_6 #cwtools complains about that modifier, to check
 			add_country_modifier = {
 				name = GE_plantation_trade_deal_imports_5
 				duration = -1
@@ -1104,7 +1105,7 @@ GE_calculate_goods_produced_effect = {
 			every_owned_province = {
 				export_to_variable = {
 					variable_name = GE_total_goods_counter
-					value = base_production
+					value = trigger_value:base_production
 				}
 				while = {
 					limit = {
@@ -1135,7 +1136,7 @@ GE_calculate_goods_produced_effect = {
 				}
 				export_to_variable = {
 					variable_name = GE_rural_goods_counter
-					value = base_production
+					value = trigger_value:base_production
 				}
 				while = {
 					limit = {
@@ -1176,7 +1177,7 @@ GE_calculate_goods_produced_effect = {
 				}
 				export_to_variable = {
 					variable_name = GE_urban_goods_counter
-					value = base_production
+					value = trigger_value:base_production
 				}
 				while = {
 					limit = {
@@ -1217,7 +1218,7 @@ GE_calculate_goods_produced_effect = {
 				}
 				export_to_variable = {
 					variable_name = GE_mining_goods_counter
-					value = base_production
+					value = trigger_value:base_production
 				}
 				while = {
 					limit = {
@@ -1258,7 +1259,7 @@ GE_calculate_goods_produced_effect = {
 				}
 				export_to_variable = {
 					variable_name = GE_plantation_goods_counter
-					value = base_production
+					value = trigger_value:base_production
 				}
 				while = {
 					limit = {
