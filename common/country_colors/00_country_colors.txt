@@ -138,12 +138,12 @@ DTT = {
     color3= { 19 57 121 }
 }
 
-# East Frisia
-EFR = {
-    color1= { 79 75 72}
-    color2= { 224 156 11  }
-    color3= { 25 25 25  }
-}
+## East Frisia
+#EFR = {
+#    color1= { 79 75 72}
+#    color2= { 224 156 11  }
+#    color3= { 25 25 25  }
+#}
 
 #Friesland
 FRI = {
