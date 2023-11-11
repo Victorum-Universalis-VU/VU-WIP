@@ -25,6 +25,7 @@ military_hegemon = {
 		}
 		else = { army_size = 500 }
 		is_great_power = yes
+		is_year = 1600
 		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }
 	}
