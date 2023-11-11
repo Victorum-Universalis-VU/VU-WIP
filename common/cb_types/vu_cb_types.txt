@@ -59,41 +59,41 @@
 #	war_goal = unify_british_isles_wargoal
 #}
 
-unify_germany = {
-	valid_for_subject = no
-
-	prerequisites = {
-		is_free_or_tributary_trigger = yes
-		is_emperor = no
-		culture_group = germanic
-		OR = {
-			tag = BRA
-			tag = PRU
-		}
-		has_government_attribute = has_unify_germany_cb #Is it set anywhere ? cwtools seems to think it isn't
-		
-		FROM = { #Applies against other powers in Germany
-			NOT = { is_subject_of = ROOT }
-			culture_group = germanic
-			any_owned_province = {
-				OR = {
-					region = north_german_region
-					region = south_german_region
-					area = alsace_area
-				}
-			}
-			is_emperor = no
-		}
-		is_neighbor_of = FROM
-	}
-
-	attacker_disabled_po = {
-		po_become_tributary_state
-		po_subjugate_tributary_state
-	}
-
-	war_goal = unify_germany_war_goal
-}
+#unify_germany = {
+#	valid_for_subject = no
+#
+#	prerequisites = {
+#		is_free_or_tributary_trigger = yes
+#		is_emperor = no
+#		culture_group = germanic
+#		OR = {
+#			tag = BRA
+#			tag = PRU
+#		}
+#		has_government_attribute = has_unify_germany_cb #Is it set anywhere ? cwtools seems to think it isn't
+#		
+#		FROM = { #Applies against other powers in Germany
+#			NOT = { is_subject_of = ROOT }
+#			culture_group = germanic
+#			any_owned_province = {
+#				OR = {
+#					region = north_german_region
+#					region = south_german_region
+#					area = alsace_area
+#				}
+#			}
+#			is_emperor = no
+#		}
+#		is_neighbor_of = FROM
+#	}
+#
+#	attacker_disabled_po = {
+#		po_become_tributary_state
+#		po_subjugate_tributary_state
+#	}
+#
+#	war_goal = unify_germany_war_goal
+#}
 
 #New Additions from Subjects Expanded by San Felipe
 cb_force_imperial_tributary_state = {
@@ -573,7 +573,19 @@ cb_abolishment = {
 	prerequisites = {
 		has_country_flag = BRZ_a_lei
 		FROM = {
-			technology_group = western
+			OR = {
+				technology_group = western
+				technology_group = dutch_tech_group
+				technology_group = english_tech_group
+				technology_group = french_tech_group
+				technology_group = german_tech_group
+				technology_group = italian_tech_group
+				technology_group = portuguese_tech_group
+				technology_group = roman_tech_group
+				technology_group = scandinavian_tech_group
+				technology_group = spanish_tech_group
+				technology_group = swiss_tech_group
+			}
 			slaves = 1
 		}
 	}
@@ -817,10 +829,10 @@ cb_italy_humiliation_rivals = {
 
 #lithuania_missions_cb_types
 cb_livonian_wars = {
-	valid_for_subject = yes
+	valid_for_subject = no
 
 	is_triggered_only = yes
-	months = 9999999
+	months = -1
 
 	prerequisites = {
 		always = yes
@@ -1120,8 +1132,10 @@ cb_conquest_of_india = {
 	prerequisites = {
 		has_country_flag = me_mug_conquest_of_hindustan
 		NOT = {
-			has_country_flag = me_mug_india_less_ae
-			has_country_flag = me_mug_india_less_prov
+			OR = {
+				has_country_flag = me_mug_india_less_ae
+				has_country_flag = me_mug_india_less_prov
+			}
 		}
 		tag = MUG
 		FROM = {
@@ -1973,3 +1987,24 @@ cb_take_caliphate = {
 
 	war_goal = take_capital_take_caliphate
 }
+
+#cb_salic_reunification = {
+#	valid_for_subject = no
+#
+#	is_triggered_only = yes
+#	months = 600
+#	
+#	prerequisites_self = {
+#		has_reform = salic_reform
+#		is_subject = no
+#	}
+#
+#	prerequisites = {
+#		FROM = {
+#			has_reform = salic_reform
+#			is_subject = no
+#		}
+#	}
+#
+#	war_goal = take_capital_salic
+#}
