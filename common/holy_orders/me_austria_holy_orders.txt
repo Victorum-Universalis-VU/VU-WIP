@@ -8,6 +8,7 @@ me_hab_germanize = {
 		}
     }
 	
+    color = { 49 62 80 }
     cost = 200
     cost_type = adm_power
 	
@@ -34,6 +35,7 @@ me_hab_germanize = {
     ai_priority = {
         factor = 0 #Let us not ruin cultures now
     }
+    localization = holy_order
 }
 
 me_hab_maintain_culture = {
@@ -45,6 +47,7 @@ me_hab_maintain_culture = {
 			had_country_flag = { flag = me_hab_germanized_province days = 7300 }
 		}
     }
+    color = { 255 255 246 }
     cost = 200
     cost_type = adm_power
     per_province_effect = {
@@ -68,4 +71,5 @@ me_hab_maintain_culture = {
     ai_priority = {
         factor = 0
     }
+    localization = holy_order
 }

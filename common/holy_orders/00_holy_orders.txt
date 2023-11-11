@@ -505,6 +505,7 @@ shadhili_order = {
 		}
         religion_group = muslim
     }
+    color = { 62 188 10 }
     cost = 50
     cost_type = adm_power
     per_province_effect = {
@@ -540,6 +541,7 @@ shadhili_order = {
             NOT = { is_year = 1600 }
         }
     }
+    localization = holy_order
 }
 
 qadiri_order = {
@@ -552,6 +554,7 @@ qadiri_order = {
 		}
         religion_group = muslim
     }
+    color = { 254 49 44 }
     cost = 50
     cost_type = dip_power
     per_province_effect = {
@@ -586,6 +589,7 @@ qadiri_order = {
             NOT = { culture = ROOT }
         }
     }
+    localization = holy_order
 }
 
 aissawa_order = {
@@ -598,6 +602,7 @@ aissawa_order = {
 		}
         religion_group = muslim
     }
+    color = { 106 113 15 }
     cost = 50
     cost_type = mil_power
     per_province_effect = {
@@ -637,6 +642,7 @@ aissawa_order = {
             has_fort_building_trigger = yes
         }
     }
+    localization = holy_order
 }
 
 #####1.35 Content##### 

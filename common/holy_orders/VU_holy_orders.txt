@@ -72,6 +72,7 @@ byzantine_themes = {
     trigger = {
         has_country_flag = byz_enable_byzantine_themes_flag  
     }
+    color = { 71 3 89 }
     cost = 50	
     cost_type = adm_power
     per_province_effect = {
@@ -87,4 +88,5 @@ byzantine_themes = {
     ai_priority = {
         factor = 1
     }
+    localization = holy_order
 }
