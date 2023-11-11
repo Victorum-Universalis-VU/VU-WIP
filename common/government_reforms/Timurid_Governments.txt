@@ -110,24 +110,24 @@ timurid_governor_upgraded = {
 	}
 	
 	removed_effect = {
-		if = {
-			limit = {
-				has_country_modifier = me_tim_field_marshal
-			}
-			remove_country_modifier = me_tim_field_marshal
-		}
-		if = {
-			limit = {
-				has_country_modifier = me_tim_armies_of_emperor
-			}
-			remove_country_modifier = me_tim_armies_of_emperor
-		}
-		if = {
-			limit = {
-				has_country_modifier = me_tim_armies_of_emperor_2
-			}
-			remove_country_modifier = me_tim_armies_of_emperor_2
-		}
+#		if = {
+#			limit = {
+#				has_country_modifier = me_tim_field_marshal
+#			}
+#			remove_country_modifier = me_tim_field_marshal
+#		}
+#		if = {
+#			limit = {
+#				has_country_modifier = me_tim_armies_of_emperor
+#			}
+#			remove_country_modifier = me_tim_armies_of_emperor
+#		}
+#		if = {
+#			limit = {
+#				has_country_modifier = me_tim_armies_of_emperor_2
+#			}
+#			remove_country_modifier = me_tim_armies_of_emperor_2
+#		}
 	}
 }
 

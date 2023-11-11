@@ -582,3 +582,23 @@ ada_adalan_empire = {
 		discipline = 0.05
 	}
 }
+
+#salic_reform = {
+#	icon = "castle"
+#	allow_normal_conversion = no
+#	potential = {
+#		has_reform = salic_reform
+#	}
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 0
+#	lock_level_when_selected = yes
+#	modifiers = {
+#		global_manpower_modifier = 0.1	
+#		vassal_income = 0.25
+#		vassal_forcelimit_bonus = 0.33
+#		global_autonomy = -0.02
+#	}
+#	ai = {
+#		factor = 0.5 #generic
+#	}
+#}

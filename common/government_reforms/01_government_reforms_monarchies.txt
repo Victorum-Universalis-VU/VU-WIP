@@ -5,7 +5,7 @@
 #Furthermore, this file contains new entries throughout various sections. The majority of reforms though are at the bottom.
 #Many thanks to you all - San Felipe.
 
-
+#This is a gov reform and not a mechanic! Thanks PDX for confusing a whole bunch of us. 
 monarchy_mechanic = {
 	monarchy = yes
 	heir = yes
@@ -444,7 +444,19 @@ absolutist_france_reform = {
 	nation_designer_cost = 50
 	nation_designer_trigger = {
 		culture_group = french
-		technology_group = french_tech_group
+		OR = {
+			technology_group = western
+			technology_group = dutch_tech_group
+			technology_group = english_tech_group
+			technology_group = french_tech_group
+			technology_group = german_tech_group
+			technology_group = italian_tech_group
+			technology_group = portuguese_tech_group
+			technology_group = roman_tech_group
+			technology_group = scandinavian_tech_group
+			technology_group = spanish_tech_group
+			technology_group = swiss_tech_group
+		}
 		capital_scope = { region = france_region }
 	}
 	lock_level_when_selected = yes
@@ -7557,15 +7569,15 @@ crusader_state_vu_reform = {
 			tag = PLS
 			AND = {
 				OR = {
-				    technology_group = western
-					technology_group = english_tech_group 
-					technology_group = french_tech_group 
-					technology_group = dutch_tech_group 
-					technology_group = german_tech_group 
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
 					technology_group = italian_tech_group
 					technology_group = portuguese_tech_group
 					technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group 
+					technology_group = scandinavian_tech_group
 					technology_group = spanish_tech_group
 					technology_group = swiss_tech_group
 				}
@@ -7600,18 +7612,18 @@ crusader_state_vu_reform = {
 			tag = PLS
 			AND = {
 				OR = {
-				    technology_group = western
-					technology_group = english_tech_group 
-					technology_group = french_tech_group 
-					technology_group = dutch_tech_group 
-					technology_group = german_tech_group 
-					technology_group = italian_tech_group
-					technology_group = portuguese_tech_group
-					technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group
-					technology_group = spanish_tech_group
-					technology_group = swiss_tech_group
-				}
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 				NOT = { government_rank = 3 }
 				capital_scope = {
 					OR = {
