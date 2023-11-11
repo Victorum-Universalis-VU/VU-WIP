@@ -6,26 +6,25 @@ estate_jews = {
 	trigger = {
 		OR = {
 			AND = {
-			NOT = { religion = jewish }
-			any_owned_province = { has_province_modifier = jewish_population }
+			    NOT = { religion = jewish }
+			    any_owned_province = { has_province_modifier = jewish_population }
 			}
-			has_government_attribute = enables_jewish_estate
 			has_country_flag = country_has_jews_yes
 			AND = {
-			NOT = { religion = jewish }
-			capital_scope = {
-				OR = {
-					continent = europe
-					region = mesopotamia_region 
-					region = libya_region 
-					region = maghreb_region
-					region = anatolia_region
-					region = egypt_region
-					region = persia_region
-					region = mashriq_region
-					region = arabia_region
-					}
-				}
+			    NOT = { religion = jewish }
+			    capital_scope = {
+			    	OR = {
+			    		continent = europe
+			    		region = mesopotamia_region 
+			    		region = libya_region 
+			    		region = maghreb_region
+			    		region = anatolia_region
+			    		region = egypt_region
+			    		region = persia_region
+			    		region = mashriq_region
+			    		region = arabia_region
+			    	}
+			    }
 			}
 		}
 	}
@@ -92,6 +91,7 @@ estate_jews = {
 		estate_jews_foster_jews_banking 
 		estate_jews_foster_jews_homes 
 		estate_jews_land_privileges 
+		estate_jews_jewish_independence
 		estate_jews_suck 
 		estate_jews_suck_2 
 	}
@@ -225,8 +225,7 @@ trade_outpost_release_estate = {
 }
 
 #GE_08_peasants
-estate_peasants =
-{
+estate_peasants = {
 	icon = 12
 
 	trigger = {
@@ -329,9 +328,7 @@ estate_junkers = {
 
 	# If true, country will get estate
 	trigger = {
-		OR = {
-			has_government_attribute = enables_junker_estate
-		}
+		has_government_attribute = enables_junker_estate
 	}
 
 	country_modifier_happy = {
@@ -376,12 +373,12 @@ estate_junkers = {
 		desc = EST_VAL_EASTERN_TECH
 		trigger = {
 			OR = {
-			    technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
 			}
 		}	
 		influence = 5
@@ -512,7 +509,7 @@ estate_ghulams = {
 	agendas = {
 		estate_ghulams_develop_x
 		estate_ghulams_reduce_autonomy
-		estate_ghulams_increase_absolutism
+		#estate_ghulams_increase_absolutism
 		estate_ghulams_build_courthouse
 		estate_ghulams_diversify_court
 		estate_ghulams_expand_artillery
@@ -2589,11 +2586,7 @@ estate_magnates = {
 		}
 		loyalty = -20
 	}
-	color = {
-		170
-		40
-		195
-	}
+	color = { 170 40 195 }
 	privileges = {
 		estate_magnates_land_rights
 		estate_magnates_folwarks

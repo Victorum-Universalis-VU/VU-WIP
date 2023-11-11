@@ -125,12 +125,12 @@ estate_nobles = {
 		desc = EST_VAL_EASTERN_TECH
 		trigger = {
 			OR = {
-			    technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
 			}
 		}	
 		influence = 5
