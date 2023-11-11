@@ -188,3 +188,8 @@ mongolia_our_heathen_subjects = {
 kha_broke_the_shackles = {
 	province_warscore_cost = -0.1
 }
+
+province_razed_I = {
+	local_unrest = 2
+	picture = "province_razed"
+}
