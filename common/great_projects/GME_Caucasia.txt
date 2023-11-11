@@ -12,11 +12,22 @@ gme_alaverdi_monastery = {
 	can_use_modifiers_trigger = {
 		religion = orthodox
 		has_owner_religion = yes
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -24,11 +35,22 @@ gme_alaverdi_monastery = {
 	can_upgrade_trigger = {
 		religion = orthodox
 		has_owner_religion = yes
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -87,7 +109,7 @@ gme_alaverdi_monastery = {
 	}
 }
 gme_derbent_fortifications = {
-	start = 425
+	start = 3261
 	date = 1.01.01
 	time = { months = 120 }
 	build_cost = 1000
@@ -98,21 +120,43 @@ gme_derbent_fortifications = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
 				has_cultural_union = yes
 			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
+				has_cultural_union = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -177,11 +221,22 @@ gme_gelati_monastery = {
 	can_use_modifiers_trigger = {
 		religion_group = christian
 		has_owner_religion = yes
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -189,11 +244,22 @@ gme_gelati_monastery = {
 	can_upgrade_trigger = {
 		religion_group = christian
 		has_owner_religion = yes
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -263,21 +329,43 @@ gme_narikala = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
 				has_cultural_union = yes
 			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
+				has_cultural_union = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -348,7 +436,32 @@ gme_noah_mausoleum = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		OR = {
+			has_owner_religion = yes
+			has_owner_culture = yes
+			owner = {
+				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
+				has_cultural_union = yes
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		OR = {
 			culture_group = caucasian
+			culture_group = nakh_daghestani
+			culture_group = kartvelian
+			culture_group = armenic
 			religion = coptic
 		}
 		OR = {
@@ -358,18 +471,16 @@ gme_noah_mausoleum = {
 				culture_group = caucasian
 				has_cultural_union = yes
 			}
-		}
-	}
-	can_upgrade_trigger = {
-		OR = {
-			culture_group = caucasian
-			religion = coptic
-		}
-		OR = {
-			has_owner_religion = yes
-			has_owner_culture = yes
 			owner = {
-				culture_group = caucasian
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}
@@ -442,21 +553,43 @@ gme_vardzia = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
 				has_cultural_union = yes
 			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
+				has_cultural_union = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = caucasian
 		OR = {
 			has_owner_culture = yes
 			owner = {
 				culture_group = caucasian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = nakh_daghestani
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = kartvelian
+				has_cultural_union = yes
+			}
+			owner = {
+				culture_group = armenic
 				has_cultural_union = yes
 			}
 		}

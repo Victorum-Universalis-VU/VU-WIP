@@ -11,17 +11,56 @@ vu_black_hills = {
 	build_trigger = {}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	can_upgrade_trigger = {	always = no}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
 		upgrade_time = { months = 0 }
 		cost_to_upgrade = { factor = 0 }
-		province_modifiers = { local_development_cost = -0.1 local_defensiveness = 0.2 local_religious_unity_contribution = 0.1 } #local_missionary_strength = -0.2 local_culture_conversion_cost = 2 local_culture_conversion_time = 2 local_years_of_nationalism = 25
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			local_defensiveness = 0.2 
+			local_religious_unity_contribution = 0.1 
+		} #local_missionary_strength = -0.2 local_culture_conversion_cost = 2 local_culture_conversion_time = 2 local_years_of_nationalism = 25
 		area_modifier = {  }
-		country_modifiers = { tolerance_own = 1 core_creation = -0.1 governing_cost = -0.1 legitimacy = 0.5 relation_with_same_culture = 50 relation_with_same_culture_group = 25 diplomatic_reputation = 1}
+		country_modifiers = { 
+			tolerance_own = 1 
+			core_creation = -0.1 
+			governing_cost = -0.1 
+			legitimacy = 0.5 
+			relation_with_same_culture = 50 
+			relation_with_same_culture_group = 25 
+			diplomatic_reputation = 1 
+		}
 		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_2 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_3 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
 	}
 }
 
@@ -35,11 +74,21 @@ vu_montezuma_castle = {
 	move_days_per_unit_distance = 1
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1444 religion = totemism has_owner_religion = yes }
+	build_trigger = { 
+		is_year = 1444 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
-	can_upgrade_trigger = {	religion = totemism has_owner_religion = yes	}
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
+	can_upgrade_trigger = {	
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
@@ -53,26 +102,58 @@ vu_montezuma_castle = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = { local_development_cost = -0.05 local_defensiveness = 0.1}
-		area_modifier = { local_manpower_modifier = 0.10}
-		country_modifiers = { defensiveness = 0.05}
-		on_upgraded = {add_base_tax = 1}
+		province_modifiers = { 
+			local_development_cost = -0.05 
+			local_defensiveness = 0.1 
+		}
+		area_modifier = { 
+			local_manpower_modifier = 0.10 
+		}
+		country_modifiers = { 
+			defensiveness = 0.05 
+		}
+		on_upgraded = { 
+			add_base_tax = 1 
+		}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 2000 }
-		province_modifiers = { local_development_cost = -0.1 	fort_level = 1 local_defensiveness = 0.15}
-		area_modifier = { local_manpower_modifier = 0.15}
-		country_modifiers = { defensiveness = 0.10}
-		on_upgraded = {add_base_tax = 1}
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			fort_level = 1 
+			local_defensiveness = 0.15 
+		}
+		area_modifier = { 
+			local_manpower_modifier = 0.15 
+		}
+		country_modifiers = { 
+			defensiveness = 0.10 
+		}
+		on_upgraded = {
+			add_base_tax = 1 
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 4000 }
-		province_modifiers = { local_development_cost = -0.2 	fort_level = 1 local_defender_dice_roll_bonus = 1 local_defensiveness = 0.25}
-		area_modifier = { local_manpower_modifier = 0.20}
-		country_modifiers = {defensiveness = 0.15 garrison_size = 0.10}
-		on_upgraded = {add_base_tax = 1 add_base_manpower = 1}
+		province_modifiers = { 
+			local_development_cost = -0.2 
+			fort_level = 1 
+			local_defender_dice_roll_bonus = 1 
+			local_defensiveness = 0.25 
+		}
+		area_modifier = { 
+			local_manpower_modifier = 0.20 
+		}
+		country_modifiers = { 
+			defensiveness = 0.15 
+			garrison_size = 0.10 
+		}
+		on_upgraded = { 
+			add_base_tax = 1 
+			add_base_manpower = 1 
+		}
 	}
 }
 
@@ -88,17 +169,53 @@ vu_pipestone = {
 	build_trigger = {}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	can_upgrade_trigger = {	always = no}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
 		upgrade_time = { months = 0 }
 		cost_to_upgrade = { factor = 0 }
-		province_modifiers = { local_development_cost = -0.1 	tax_income = 12 }
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			tax_income = 12 
+		}
 		area_modifier = {  }
-		country_modifiers = { caravan_power = 0.25 trade_steering = 0.2 relation_with_same_culture = 50 relation_with_same_culture_group = 25 diplomatic_reputation = 1}
+		country_modifiers = { 
+			caravan_power = 0.25 
+			trade_steering = 0.2 
+			relation_with_same_culture = 50 
+			relation_with_same_culture_group = 25 
+			diplomatic_reputation = 1 
+		}
 		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_2 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_3 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
 	}
 }
 
@@ -114,7 +231,10 @@ vu_devil_tower = {
 	build_trigger = {}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	can_upgrade_trigger = {	always = no	}
 	keep_trigger = { always = yes }
 
@@ -123,8 +243,36 @@ vu_devil_tower = {
 		cost_to_upgrade = { factor = 0 }
 		province_modifiers = { }
 		area_modifier = {  }
-		country_modifiers = { cav_to_inf_ratio = 0.10 war_exhaustion = -0.2 cavalry_power = 0.2}
+		country_modifiers = { 
+			cav_to_inf_ratio = 0.10 
+			war_exhaustion = -0.2 
+			cavalry_power = 0.2
+		}
 		on_upgraded = { }
+	}
+	tier_1 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_2 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
+	}
+	tier_3 = {
+		upgrade_time = { months = 0 }
+		cost_to_upgrade = { factor = 0 }
+		province_modifiers = {}
+		area_modifier = {}
+		country_modifiers = {}
+		on_upgraded = {}
 	}
 }
 
@@ -137,11 +285,21 @@ vu_serpent_mound = {
 	move_days_per_unit_distance = 1
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1444 religion = totemism has_owner_religion = yes }
+	build_trigger = { 
+		is_year = 1444 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
-	can_upgrade_trigger = {	religion = totemism has_owner_religion = yes	}
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
+	can_upgrade_trigger = {	
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
@@ -155,7 +313,12 @@ vu_serpent_mound = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = { local_development_cost = -0.05 add_tribal_land_cost = -0.25 settle_cost = 0.2 	tribal_development_growth = 0.04 }
+		province_modifiers = { 
+			local_development_cost = -0.05 
+			add_tribal_land_cost = -0.25 
+			settle_cost = 0.2 
+			tribal_development_growth = 0.04 
+		}
 		area_modifier = { }
 		country_modifiers = { }
 		on_upgraded = {}
@@ -163,17 +326,32 @@ vu_serpent_mound = {
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 2000 }
-		province_modifiers = { local_development_cost = -0.1 	add_tribal_land_cost = -0.25 settle_cost = 0.2 	tribal_development_growth = 0.04	}
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			add_tribal_land_cost = -0.25 
+			settle_cost = 0.2 
+			tribal_development_growth = 0.04 
+		}
 		area_modifier = { }
-		country_modifiers = { diplomatic_reputation = 0.5}
+		country_modifiers = { 
+			diplomatic_reputation = 0.5
+		}
 		on_upgraded = {}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 3000 }
-		province_modifiers = { local_development_cost = -0.15 	add_tribal_land_cost = -0.25 settle_cost = 0.2 	tribal_development_growth = 0.04}
+		province_modifiers = { 
+			local_development_cost = -0.15 
+			add_tribal_land_cost = -0.25 
+			settle_cost = 0.2 
+			tribal_development_growth = 0.04
+		}
 		area_modifier = { }
-		country_modifiers = { diplomatic_reputation = 1 embracement_cost = -0.1}
+		country_modifiers = { 
+			diplomatic_reputation = 1 
+			embracement_cost = -0.1 
+		}
 		on_upgraded = {}
 	}
 }
@@ -187,11 +365,21 @@ vu_ocmulgee_mound = {
 	move_days_per_unit_distance = 1
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1444 religion = totemism has_owner_religion = yes}
+	build_trigger = { 
+		is_year = 1444 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
-	can_upgrade_trigger = {	religion = totemism has_owner_religion = yes	}
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
+	can_upgrade_trigger = {	
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
@@ -205,25 +393,47 @@ vu_ocmulgee_mound = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = { local_development_cost = -0.1 	local_tax_modifier = 0.05 }
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			local_tax_modifier = 0.05 
+		}
 		area_modifier = { }
-		country_modifiers = { 		tolerance_own = 0.5}
+		country_modifiers = { 
+			tolerance_own = 0.5 
+		}
 		on_upgraded = {}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 2000 }
-		province_modifiers = { local_development_cost = -0.2 	local_tax_modifier = 0.10	}
+		province_modifiers = { 
+			local_development_cost = -0.2 
+			local_tax_modifier = 0.10 
+		}
 		area_modifier = { }
-		country_modifiers = { 	tolerance_own = 1 global_unrest = -1 years_of_nationalism = -5 global_missionary_strength = 0.01	}
+		country_modifiers = { 
+			tolerance_own = 1 
+			global_unrest = -1 
+			years_of_nationalism = -5 
+			global_missionary_strength = 0.01 
+		}
 		on_upgraded = {}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 4000 }
-		province_modifiers = { local_development_cost = -0.25 	local_tax_modifier = 0.20 }
+		province_modifiers = { 
+			local_development_cost = -0.25 
+			local_tax_modifier = 0.20 
+		}
 		area_modifier = { }
-		country_modifiers = { missionaries = 1 	tolerance_own = 2 global_unrest = -2 years_of_nationalism = -10 global_missionary_strength = 0.02 }
+		country_modifiers = { 
+			missionaries = 1 
+			tolerance_own = 2 
+			global_unrest = -2 
+			years_of_nationalism = -10 
+			global_missionary_strength = 0.02 
+		}
 		on_upgraded = {}
 	}
 }
@@ -237,11 +447,21 @@ vu_chaco_complex = {
 	move_days_per_unit_distance = 1
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1444 religion = totemism has_owner_religion = yes }
+	build_trigger = { 
+		is_year = 1444 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
-	can_upgrade_trigger = {	religion = totemism has_owner_religion = yes	}
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
+	can_upgrade_trigger = {	
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
@@ -255,25 +475,51 @@ vu_chaco_complex = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = { local_development_cost = -0.1 local_production_efficiency = 0.05	province_trade_power_value = 0.5}
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			local_production_efficiency = 0.05 
+			province_trade_power_value = 0.5 
+		}
 		area_modifier = { }
-		country_modifiers = {caravan_power = 0.05 }
+		country_modifiers = { 
+			caravan_power = 0.05 
+		}
 		on_upgraded = {}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 2000 }
-		province_modifiers = { local_development_cost = -0.25 local_production_efficiency = 0.1	province_trade_power_value = 1 }
+		province_modifiers = { 
+			local_development_cost = -0.25 
+			local_production_efficiency = 0.1 
+			province_trade_power_value = 1 
+		}
 		area_modifier = { }
-		country_modifiers = { caravan_power = 0.1 trade_efficiency = 0.05	} 
-		on_upgraded = { 878 = { center_of_trade = 1} }
+		country_modifiers = { 
+			caravan_power = 0.1 
+			trade_efficiency = 0.05	
+		} 
+		on_upgraded = { 
+			878 = { 
+				center_of_trade = 1 
+			} 
+		}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 4000 }
-		province_modifiers = { local_development_cost = -0.45 	local_production_efficiency = 0.2 province_trade_power_value = 1.5 trade_value_modifier = 0.1}
+		province_modifiers = { 
+			local_development_cost = -0.45 
+			local_production_efficiency = 0.2 
+			province_trade_power_value = 1.5 
+			trade_value_modifier = 0.1 
+		}
 		area_modifier = { }
-		country_modifiers = { caravan_power = 0.2 merchants = 1	trade_efficiency = 0.1}
+		country_modifiers = { 
+			caravan_power = 0.2 
+			merchants = 1 
+			trade_efficiency = 0.1 
+		}
 		on_upgraded = {}
 	}
 }
@@ -287,11 +533,20 @@ vu_poverty_point = {
 	move_days_per_unit_distance = 1
 	starting_tier = 0
 	type = monument
-	build_trigger = { religion = totemism has_owner_religion = yes }
+	build_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { religion = totemism has_owner_religion = yes }
-	can_upgrade_trigger = {	religion = totemism has_owner_religion = yes	}
+	can_use_modifiers_trigger = { 
+		religion = totemism 
+		has_owner_religion = yes 
+	}
+	can_upgrade_trigger = {	
+		religion = totemism 
+		has_owner_religion = yes 
+	}
 	keep_trigger = { always = yes }
 
 	tier_0 = {
@@ -305,25 +560,43 @@ vu_poverty_point = {
 	tier_1 = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1500 }
-		province_modifiers = { local_development_cost = -0.1 	local_tax_modifier = 0.05 }
+		province_modifiers = { 
+			local_development_cost = -0.1 
+			local_tax_modifier = 0.05 
+		}
 		area_modifier = { }
-		country_modifiers = { 	global_tax_modifier = 0.05}
+		country_modifiers = { 
+			global_tax_modifier = 0.05 
+		}
 		on_upgraded = {}
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 2000 }
-		province_modifiers = { local_development_cost = -0.2 	local_tax_modifier = 0.10	}
+		province_modifiers = { 
+			local_development_cost = -0.2 
+			local_tax_modifier = 0.10 
+		}
 		area_modifier = { }
-		country_modifiers = { 	administrative_efficiency = 0.05 global_tax_modifier = 0.1}
+		country_modifiers = { 
+			administrative_efficiency = 0.05 
+			global_tax_modifier = 0.1 
+		}
 		on_upgraded = {}
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 4000 }
-		province_modifiers = { local_development_cost = -0.25 	local_tax_modifier = 0.25 }
+		province_modifiers = { 
+			local_development_cost = -0.25 
+			local_tax_modifier = 0.25 
+		}
 		area_modifier = { }
-		country_modifiers = { all_power_cost = -0.05 	administrative_efficiency = 0.1 global_tax_modifier = 0.2}
+		country_modifiers = { 
+			all_power_cost = -0.05 
+			administrative_efficiency = 0.1 
+			global_tax_modifier = 0.2 
+		}
 		on_upgraded = {}
 	}
 }
