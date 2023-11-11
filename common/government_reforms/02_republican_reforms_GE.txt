@@ -1262,9 +1262,9 @@ hansa_representatives_reform = {
 			value = -1
 		}
 	}
-	# custom_attributes = {
-		# enables_return_to_sender = yes #25% Trade Value in coastal burgher provinces
-	# }#fixdis
+	custom_attributes = {
+		enables_return_to_sender = yes 
+	}#25% Trade Value in coastal burgher provinces fixdis
 	ai = {
 		factor = 100
 	}
@@ -1363,7 +1363,13 @@ confederation_of_states_reform = {
 hansa_domination_reform = {
 	icon = peasant_republic
 	allow_normal_conversion = yes
-	can_use_trade_post = yes
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		}
+		can_use_trade_post = yes
+	}
 	potential = {
 		OR = {
 			has_reform = hansa_domination_reform

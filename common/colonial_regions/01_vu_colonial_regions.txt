@@ -102,11 +102,9 @@ colonial_cascadia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_CASCADIA_GER"
 	}
@@ -342,11 +340,9 @@ colonial_northwest_territories = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_NWT_GER"
 	}
@@ -594,11 +590,9 @@ colonial_hudson_bay = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_HUDSON_BAY_GER"
 	}
@@ -827,11 +821,9 @@ colonial_newfoundland = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_NEWFOUNDLAND_GER"
 	}
@@ -1062,11 +1054,9 @@ colonial_acadia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_ACADIA_GER"
 	}
@@ -1295,11 +1285,9 @@ colonial_cuba = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_CUBA_GER"
 	}
@@ -1528,11 +1516,9 @@ colonial_hispaniola = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_HISPANIOLA_GER"
 	}
@@ -1761,11 +1747,9 @@ colonial_polynesia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_POLYNESIA_GER"
 	}
@@ -1967,11 +1951,9 @@ colonial_cape = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_CAPE_COLONY_GER"
 	}
@@ -2199,11 +2181,9 @@ colonial_greenland = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_GREENLAND_GER"
 	}
@@ -2449,11 +2429,9 @@ colonial_great_lakes = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_GREAT_LAKES_GER"
 	}
@@ -2689,11 +2667,9 @@ colonial_florida = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_FLORIDA_GER"
 	}
@@ -2929,11 +2905,9 @@ colonial_mississippi = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_MISSISSIPPI_GER"
 	}
@@ -3162,11 +3136,9 @@ colonial_papua = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_PAPUA_GER"
 	}
@@ -3368,11 +3340,9 @@ colonial_solomons = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_SOLOMONS_GER"
 	}
@@ -3574,11 +3544,9 @@ colonial_vanuatu = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_VANUATU_GER"
 	}
@@ -3780,11 +3748,9 @@ colonial_new_caledonia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_NEW_CALEDONIA_GER"
 	}
@@ -3986,11 +3952,9 @@ colonial_fiji = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_FIJI_GER"
 	}
@@ -4195,11 +4159,9 @@ colonial_guyana = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_GUYANA_GER"
 	}
@@ -4407,11 +4369,9 @@ colonial_ecuador = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_ECUADOR_GER"
 	}
@@ -4643,11 +4603,9 @@ colonial_venezuela = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_VENEZUELA_GER"
 	}
@@ -4880,11 +4838,9 @@ colonial_bolivia = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_BOLIVIA_GER"
 	}
@@ -5119,11 +5075,9 @@ colonial_chile = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_CHILE_GER"
 	}
@@ -5356,11 +5310,9 @@ colonial_texas = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_TEXAS_GER"
 	}
@@ -5595,11 +5547,9 @@ colonial_central_america = {
 	names = {
 		trigger = {
 			culture_group = germanic
-			NOT = {
-				primary_culture = dutch
-				tag = NED
-				tag = HOL
-			}
+			NOT = {	primary_culture = dutch	}
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
 		}
 		name = "COLONIAL_CENTRAL_AMERICA_GER"
 	}

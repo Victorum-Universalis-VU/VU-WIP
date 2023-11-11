@@ -107,7 +107,8 @@ estate_peasants = {
 			always = yes
 		}
 	}
-	modifier_definition = { #VU - Comented out for now by San Felipe
+	#VU - Comented out for now by San Felipe
+	modifier_definition = { 
 		key = trade_deals_slots
 		trigger = {
 			always = yes

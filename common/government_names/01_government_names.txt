@@ -654,6 +654,7 @@ hre_county = {
 		3 = HEIR_fem
 	}
 
+	#This is a gov reform and not a mechanic! Thanks PDX for confusing a whole bunch of us. 
 	government_reform = monarchy_mechanic
 
 	trigger = {

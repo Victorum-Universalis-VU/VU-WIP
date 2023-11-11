@@ -3,6 +3,7 @@ MSY_mushasha_order = { #Missing description
     trigger = {
 		has_country_flag = MSY_mushasha
     }
+    color = { 73 116 92 }
     cost = 60
     cost_type = dip_power
     per_province_effect = {
@@ -29,4 +30,5 @@ MSY_mushasha_order = { #Missing description
     ai_priority = {
         factor = 1
     }
+    localization = holy_order
 }

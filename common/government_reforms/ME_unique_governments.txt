@@ -39,34 +39,34 @@ greek_league = {
 	}
 }
 
-greek_league_reform = {
-	icon = "politician"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = greek_league_reform
-	}
-	duration = 5
-	#factions = {
-	#	gl_aristocrats
-	#	gl_democrats
-	#	gl_oligarchs
-	#}
-	legacy_equivalent = greek_league
-	valid_for_nation_designer = yes
-	nation_designer_cost = 30
-	modifiers = {
-		global_tax_modifier = 0.05
-		shock_damage_received = -0.1
-		global_unrest = -0.5
-		liberty_desire = -5
-		max_absolutism = -50
-	}
-
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-}
+#greek_league_reform = {
+#	icon = "politician"
+#	allow_normal_conversion = no
+#	potential = {
+#		has_reform = greek_league_reform
+#	}
+#	duration = 5
+#	#factions = {
+#	#	gl_aristocrats
+#	#	gl_democrats
+#	#	gl_oligarchs
+#	#}
+#	legacy_equivalent = greek_league
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 30
+#	modifiers = {
+#		global_tax_modifier = 0.05
+#		shock_damage_received = -0.1
+#		global_unrest = -0.5
+#		liberty_desire = -5
+#		max_absolutism = -50
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#}
 
 ############
 #Made by claivin for Missions Expanded

@@ -480,15 +480,12 @@ age_of_discovery = {
 		obj_100_development = {
 			allow = {
 				capital_scope = {
-					NOT = {
-						continent = europe
-						continent = asia
-						continent = africa
-					}
+					NOT = {	continent = asia }
+					NOT = {	continent = africa }
+					NOT = {	continent = europe }
 				}
 			}
 			total_development = 100
-
 		}
 		obj_5_centers_of_trade = {
 			calc_true_if = {
@@ -1246,7 +1243,8 @@ age_of_change = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -3
+		manual_seat_in_parliament = -3
 		war_exhaustion = -1
 	}
 	
@@ -1375,11 +1373,9 @@ age_of_change = {
 
 		ab_resettlement_policies = {
 			modifier = {
-				ignore_coring_distance = yes
-			}
-			modifier = {
 				colonists = 2
 				global_colonial_growth = 25
+				ignore_coring_distance = yes
 			}
 			ai_will_do = {
 				factor = 10
@@ -1388,10 +1384,8 @@ age_of_change = {
 
 		ab_standing_armies = {
 			modifier = {
-				force_march_free = yes
-			}
-			modifier = {
 				discipline = 0.05
+				force_march_free = yes
 				artillery_levels_available_vs_fort = 2
 				backrow_artillery_damage = 0.1
 				land_maintenance_modifier = -0.10

@@ -10321,8 +10321,23 @@ eng_conquer_abyssinia = {
 	governing_capacity = 20
 }
 
+eng_english_scarlet = {
+	land_morale = 0.15
+	infantry_cost = -0.10
+}
+
+eng_english_superiority = {
+	infantry_shock = 1
+	infantry_fire = 1
+}
+
+eng_hammer_of_the_scots = {
+	discipline = 0.06
+	infantry_power = 0.10
+}
+
 eng_rb_the_kings_bodyguards = {
-  discipline = 0.06
+    discipline = 0.06
 	land_morale = 0.15
 	recover_army_morale_speed = 0.15
 	prestige = 1

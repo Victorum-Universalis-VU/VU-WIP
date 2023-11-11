@@ -5664,10 +5664,6 @@ sigiriya = {
 				religion = hinduism
 				has_owner_religion = yes
 			}
-			AND = {
-				religion = theravada
-				has_owner_religion = yes
-			}
 		}
 	}
 
@@ -5680,10 +5676,6 @@ sigiriya = {
 			}
 			AND = {
 				religion = hinduism
-				has_owner_religion = yes
-			}
-			AND = {
-				religion = theravada
 				has_owner_religion = yes
 			}
 		}

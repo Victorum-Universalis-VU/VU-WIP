@@ -380,9 +380,9 @@ cb_humiliate = {
 	}
 
 	prerequisites = {
+		NOT = { truce_with = FROM }
+		NOT = { num_of_cities = 2 }
 		NOT = {
-			truce_with = FROM
-			num_of_cities = 2
 			FROM = {
 				num_of_cities = 2
 			}
@@ -595,10 +595,8 @@ cb_independent_daimyo_annex = {
 	}
 
 	prerequisites = {
-		NOT = {
-			vassal_of = FROM
-			junior_union_with = FROM
-		}
+		NOT = { vassal_of = FROM }
+		NOT = { junior_union_with = FROM }
 		OR = {
 			has_reform = indep_daimyo
 			AND = {
@@ -684,33 +682,36 @@ cb_revolutionary = {
 		cb_on_government_enemies = yes
 		is_revolutionary = no
 		NOT = {
-			has_reform = papacy_reform
-			has_reform = steppe_horde
-			has_government_attribute = has_dutch_election
-			has_reform = celestial_empire
-			has_reform = iqta
-			has_reform = mamluk_government
-			has_reform = daimyo
-			has_reform = shogunate
-			has_reform = colonial_government
-			government = native
+			OR = {
+				has_reform = papacy_reform
+			    has_reform = steppe_horde
+			    has_reform = celestial_empire
+			    has_reform = iqta
+			    has_reform = mamluk_government
+			    has_reform = daimyo
+			    has_reform = shogunate
+			    has_reform = colonial_government
+			}
 		}
+		NOT = { government = native }
 	}
 
 	prerequisites = {
 		is_neighbor_of = FROM
 		FROM = {
+			NOT = { has_government_attribute = has_dutch_election }
+			NOT = { government = native }
 			NOT = {
-				has_reform = papacy_reform
-				has_reform = steppe_horde
-				has_government_attribute = has_dutch_election
-				has_reform = celestial_empire
-				has_reform = iqta
-				has_reform = mamluk_government
-				has_reform = daimyo
-				has_reform = shogunate
-				has_reform = colonial_government
-				government = native
+				OR = {
+					has_reform = papacy_reform
+				    has_reform = steppe_horde
+				    has_reform = celestial_empire
+				    has_reform = iqta
+				    has_reform = mamluk_government
+				    has_reform = daimyo
+				    has_reform = shogunate
+				    has_reform = colonial_government
+				}
 			}
 		}
 		OR = {

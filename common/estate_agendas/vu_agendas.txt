@@ -2140,7 +2140,7 @@ estate_peasants_expand_lebensraum = {
 		}
 	}
 	selection_weight = {
-		factor = 0.5
+		factor = 1
 		modifier = {
 			factor = 2
 			army_size_percentage = 0.75
@@ -2675,56 +2675,56 @@ estate_ghulams_reduce_autonomy = {
     }
 }
 
-estate_ghulams_increase_absolutism = {
-	selection_weight = {
-		factor = 5
-	}
-	can_select = {
-		absolutism = 1
-		NOT = { absolutism = 75 }
-	}
-	pre_effect = {
-		export_to_variable = {
-			which = max_absolutism_var
-			value = trigger_value:absolutism
-		}
-		change_variable = {
-			which = max_absolutism_var
-			value = 10
-		}
-	}
-	provinces_to_highlight = {
-	}
-	fail_if = {
-	}
-    task_requirements = {
-		absolutism = max_absolutism_var
-    }
-    task_completed_effect = {
-		add_estate_loyalty = {
-			estate = estate_ghulams
-			loyalty = 10
-		}
-		add_stability = 1
-    }
-    failing_effect = {
-		event_target:agenda_province = {
-			if = {
-				limit = { owned_by = root }
-				add_named_unrest = {
-					name = local_clergy_displeased
-					value = 5
-				}
-			}
-		}
-        add_estate_loyalty_modifier = {
-            estate = estate_ghulams
-			desc = EST_VAL_AGENDA_DENIED
-			loyalty = -5
-			duration = 7300
-        }
-    }
-}
+#estate_ghulams_increase_absolutism = {
+#	selection_weight = {
+#		factor = 5
+#	}
+#	can_select = {
+#		absolutism = 1
+#		NOT = { absolutism = 75 }
+#	}
+#	pre_effect = {
+#		export_to_variable = {
+#			which = max_absolutism_var
+#			value = trigger_value:absolutism
+#		}
+#		change_variable = {
+#			which = max_absolutism_var
+#			value = 10
+#		}
+#	}
+#	provinces_to_highlight = {
+#	}
+#	fail_if = {
+#	}
+#    task_requirements = {
+#		absolutism = max_absolutism_var
+#    }
+#    task_completed_effect = {
+#		add_estate_loyalty = {
+#			estate = estate_ghulams
+#			loyalty = 10
+#		}
+#		add_stability = 1
+#    }
+#    failing_effect = {
+#		event_target:agenda_province = {
+#			if = {
+#				limit = { owned_by = root }
+#				add_named_unrest = {
+#					name = local_clergy_displeased
+#					value = 5
+#				}
+#			}
+#		}
+#        add_estate_loyalty_modifier = {
+#            estate = estate_ghulams
+#			desc = EST_VAL_AGENDA_DENIED
+#			loyalty = -5
+#			duration = 7300
+#        }
+#    }
+#}
 
 estate_ghulams_build_courthouse = {
 	selection_weight = {
@@ -6117,19 +6117,21 @@ estate_berbers_build_tax_building = { #"errors culture_group =" are false positi
 estate_berbers_accept_culture = {
 	can_select = {
 		NOT = { 
-			accepted_culture = tuareg
-            accepted_culture = shilha
-            accepted_culture = zayane
-			accepted_culture = riffian
-			accepted_culture = ait_atta
-			accepted_culture = guanche
-			accepted_culture = kabylian
-			accepted_culture = shawiya
-			accepted_culture = shenwa
-			accepted_culture = mozabite
-			accepted_culture = lamtuna
-			accepted_culture = libyan_berber_culture
-			accepted_culture = siwa_culture
+			OR = { 
+				accepted_culture = tuareg
+                accepted_culture = shilha
+                accepted_culture = zayane
+		    	accepted_culture = riffian
+		    	accepted_culture = ait_atta
+		    	accepted_culture = guanche
+		    	accepted_culture = kabylian
+		    	accepted_culture = shawiya
+		    	accepted_culture = shenwa
+		    	accepted_culture = mozabite
+		    	accepted_culture = lamtuna
+		    	accepted_culture = libyan_berber_culture
+		    	accepted_culture = siwa_culture
+		    }
 		}
 		development_in_provinces = {
 			is_state_core = root
@@ -6714,7 +6716,7 @@ estate_berbers_increase_autonomy = {
 		}
 	}
 	selection_weight = {
-		factor = 0.25
+		factor = 1
 	}
 	pre_effect = {
 		set_country_flag = estate_berbers_recent_agenda

@@ -107,49 +107,53 @@ parliamentary_reform = {
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 		}
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 			NOT = {
 				any_neighbor_country = {
 					OR = {
-					    technology_group = western
-						technology_group = english_tech_group
-						technology_group = french_tech_group
-						technology_group = dutch_tech_group
-						technology_group = german_tech_group
-						technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-						technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-						technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-					}
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            }
 				}
 			}
 		}

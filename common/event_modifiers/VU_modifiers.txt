@@ -1,3 +1,69 @@
+rom_great_mod2 = {
+	development_cost = -0.25
+	num_accepted_cultures = 2
+	has_tercio = yes
+	allowed_tercio_fraction = 0.1
+	production_efficiency = 0.5
+	yearly_patriarch_authority = 0.005
+	merc_maintenance_modifier = -0.80
+	global_tax_modifier = 0.2
+	land_forcelimit_modifier = 0.90 
+	army_tradition = 1
+	cavalry_power = 0.20
+	discipline = 0.15
+	diplomatic_reputation = 1
+	legitimacy = 0.5
+	infantry_power = 0.20
+	merchants = 1
+	trade_efficiency = 0.6
+	global_unrest = -2
+	stability_cost_modifier = -0.1
+	production_efficiency = 0.05
+	same_culture_advisor_cost = -0.2
+	promote_culture_cost = -0.20
+	culture_conversion_time = -0.1
+	relation_with_accepted_culture = 25
+	relation_with_same_culture_group = 25
+	picture = "vu_united_rome_principalities"
+}
+
+rmn_sound_of_latin = {
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+	development_cost = -0.05
+	same_culture_advisor_cost = -0.2
+	num_accepted_cultures = 1
+}
+
+rmn_is_latin = {
+	local_tax_modifier = 0.1
+	local_production_efficiency = 0.05
+}
+
+rmn_hispania_tercio = {
+	has_tercio = yes
+	allowed_tercio_fraction = 0.1
+}
+
+rmn_latin_brothers = {
+	promote_culture_cost = -0.20
+	culture_conversion_time = -0.1
+	relation_with_accepted_culture = 25
+	relation_with_same_culture_group = 25
+}
+
+rmn_romanian_dev = {
+	development_cost = -0.1
+	num_accepted_cultures = 1
+}
+
+vu_roman_cultural_restoration_complete = {
+	development_cost_in_primary_culture = -0.1
+	culture_conversion_cost = -0.5
+	culture_conversion_time = -0.25
+	global_autonomy = -0.075
+}
+
 jewish_population = {
 	estate_jews_loyalty_modifier = 0.02
 	local_build_cost = -0.05
@@ -278,6 +344,7 @@ vu_olive_oil_production = {
 	trade_goods_size_modifier = 2
 }
 
+#Rob's additions
 birthplace_of_market_production_modifier = {
 	trade_value = 2
 	local_production_efficiency = 0.2

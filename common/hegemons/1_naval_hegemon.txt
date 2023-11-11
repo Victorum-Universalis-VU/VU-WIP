@@ -2,6 +2,7 @@
 naval_hegemon = {
 	allow = {
 		is_great_power = yes
+		is_year = 1600
 		if = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }

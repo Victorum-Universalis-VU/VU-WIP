@@ -72,7 +72,7 @@ uneducated = {
 	land_morale = -0.03125
 	discipline = -0.00375
 	ae_impact = 0.0375
-	allow_mercenaries_to_split = no
+	allow_mercenaries_to_split = yes
 }
 
 #Your ruler will benefit with these modifiers once you start educating them.

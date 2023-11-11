@@ -699,7 +699,7 @@ tribe_becomes_monarchy_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
@@ -800,7 +800,7 @@ tribe_becomes_republic_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
@@ -927,7 +927,7 @@ tribe_becomes_theocracy_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
