@@ -4614,10 +4614,7 @@ GEO_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = GEO
-			tag = IME
-		}
+	    tag = GEO 
 	}
 	free = yes
 	
@@ -10300,6 +10297,7 @@ DTT_ideas = {
 	}
 	dtt_trade_missions = {
 		merchants = 1
+		trade_efficiency = 0.1
 	}
 	dtt_expert_wreckers = {
 		capture_ship_chance = 0.1
@@ -10313,6 +10311,7 @@ DTT_ideas = {
 	}
 	dtt_free_farmers = {
 		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.05
 	}
 }
 
@@ -13763,8 +13762,10 @@ irish_ideas = {
 			AND = { #VU
 				primary_culture = irish
 				NOT = {
-					tag = CEL
-					tag = TNA
+					OR = {
+						tag = CEL
+						tag = TNA
+					}
 				}
 			}
 		}
