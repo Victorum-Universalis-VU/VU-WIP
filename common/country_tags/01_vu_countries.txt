@@ -56,6 +56,22 @@ RED = "countries/SussyPirates.txt"
 # Europe #
 ##########
 
+#Caucasia changes by @Quonton
+ABZ = "countries/Abazinia.txt"
+AKN = "countries/Akhtyn.txt"
+AKZ = "countries/Abkhazia.txt"
+DER = "countries/Derbent.txt"
+IGS = "countries/Ingushetia.txt"
+KTG = "countries/Kaitag.txt"
+LAZ = "countries/Lazistan.txt"
+MGL = "countries/Mingrelia.txt"
+RUT = "countries/Rutul.txt"
+SVT = "countries/Svaneti.txt"
+T4R = "countries/Tarki.txt"
+TLY = "countries/Talysh.txt"
+UBY = "countries/Ubykh.txt"
+LEK = "countries/Lezgia.txt"
+
 #German Diaspora
 VOG = "countries/Wolgadeutche.txt"
 GCU = "countries/Kaukasusdeutche.txt"
