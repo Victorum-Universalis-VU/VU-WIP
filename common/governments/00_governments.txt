@@ -883,7 +883,6 @@ monarchy = {
 		khaganate_legacy
 		athenian_monarchy_legacy
 		german_kaiserreich_legacy
-		#caliphate_sunni_legacy ##doesnt exist
 		west_slavic_legacy
 		#VU
 		scottish_monarchy_legacy
@@ -902,8 +901,8 @@ monarchy = {
 		norman_duchy_legacy
 		high_kingship_legacy
 		anglo_irish_monarchy_legacy
-		florence_republic_legacy
-		lithuanian_grand_duchy_legacy
+		#florence_republic_legacy
+		#lithuanian_grand_duchy_legacy
 		welsh_principality_legacy
 		western_principality_legacy
 		belgian_kingdom_legacy
@@ -1093,17 +1092,15 @@ republic = {
 		greek_league
 		athenian_republic_legacy
 		#VU
-		puppet_kingdom_of_ireland
+		puppet_kingdom_of_ireland_legacy
 		transitional_government_ireland_legacy
 		national_assembly_republic_legacy
 		directory_republic_legacy
 		french_second_republic_legacy
 		french_third_republic_legacy
-		prussian_republic_reform
+		#prussian_republic_reform
 		roman_diarchy
 		althing_republic
-		#ME
-		#caliphate_sunni_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -1149,7 +1146,7 @@ republic = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				# ME Reforms:
-				greek_league_reform
+				#greek_league_reform
 				athenian_republic
 				constitutional_republic_reform
 				timurid_stratocracy
@@ -1629,8 +1626,8 @@ republic = {
 		prussian_republic_reform
 		military_dictatorship_reform
 		#VU
-		puppet_kingdom_reform
-		transitional_government_reform
+		#puppet_kingdom_reform
+		#transitional_government_reform
 	}
 	exclusive_reforms = {
 		free_city
@@ -2302,7 +2299,7 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = oligarchic_republic
 	}
-	directory_republic = {
+	directory_republic_reform = {
 		government = republic
 		legacy_government = directory_republic_legacy
 	}
@@ -2546,60 +2543,60 @@ pre_dharma_mapping = {
 	#	government = monarchy
 	#	legacy_government = crusader_kingdom_legacy
 	#}
-	caliphate_reform_sunni = { #added for religious missions (sunni)
-		government = republic
-		legacy_government = caliphate_sunni_legacy
-	}
+	#ME_caliphate_reform_sunni = { #added for religious missions (sunni)
+	#	government = republic
+	#	legacy_government = caliphate_sunni_legacy
+	#}
 	#khaganate = { #added for tartarstan
 	#	government = monarchy
 	#	legacy_government = khaganate_legacy
 	#}
 	#Added by Victorum Universalis
-	irish_clann = {
+	irish_clann_reform = {
 		government = monarchy
 		legacy_government = irish_clann_legacy
 	}
-	norman_lordship = {
+	norman_lordship_reform = {
 		government = monarchy
 		legacy_government = norman_lordship_legacy
 	}
 	#GE
-	provincial_kingdom = {
+	provincial_kingdom_reform = {
 		government = monarchy
 		legacy_government = provincial_kingdom_legacy
 	}
-	norman_duchy = {
+	norman_duchy_reform = {
 		government = monarchy
 		legacy_government = norman_duchy_legacy
 	}
-	high_kingship = {
+	tanistry_reform = {
 		government = monarchy
 		legacy_government = high_kingship_legacy
 	}
-	anglo_irish_monarchy = {
+	anglo_irish_monarchy_reform = {
 		government = monarchy
 		legacy_government = anglo_irish_monarchy_legacy
 	}
-	florence_republic = {
-		government = monarchy
-		legacy_government = florence_republic_legacy
-	}
-	regnum_dei = {
-		government = theocracy
-		legacy_government = regnum_dei_legacy
-	}
-	puppet_kingdom_of_ireland = {
+	#florence_republic = {
+	#	government = monarchy
+	#	legacy_government = florence_republic_legacy
+	#}
+	#regnum_dei = {
+	#	government = theocracy
+	#	legacy_government = regnum_dei_legacy
+	#}
+	puppet_kingdom_reform = {
 		government = republic
 		legacy_government = puppet_kingdom_of_ireland_legacy
 	}
-	transitional_government_ireland = {
+	transitional_government_reform = {
 		government = republic
 		legacy_government = transitional_government_ireland_legacy
 	}
-	lithuanian_grand_duchy = {
-		government = monarchy
-		legacy_government = lithuanian_grand_duchy_legacy
-	}
+	#lithuanian_grand_duchy = {
+	#	government = monarchy
+	#	legacy_government = lithuanian_grand_duchy_legacy
+	#}
 	#VU additions by San Felipe
 	welsh_principality = {
 		government = monarchy
@@ -2625,27 +2622,27 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = western_principality_legacy
 	}
-	greek_lordship = {
+	greek_lordship_reform = {
 		government = monarchy
 		legacy_government = greek_lordship_legacy
 	}
-	welsh_lordship = {
+	welsh_lordship_reform = {
 		government = monarchy
 		legacy_government = welsh_lordship_legacy
 	}
-	greek_duchy = {
+	greek_duchy_reform = {
 		government = monarchy
 		legacy_government = greek_duchy_legacy
 	}
-	welsh_duchy = {
+	welsh_duchy_reform = {
 		government = monarchy
 		legacy_government = welsh_duchy_legacy
 	}
-	greek_roman_governors = {
+	greek_roman_governors_reform = {
 		government = monarchy
 		legacy_government = greek_roman_governors_legacy
 	}
-	welsh_monarchy = {
+	welsh_monarchy_reform = {
 		government = monarchy
 		legacy_government = welsh_monarchy_legacy
 	}
