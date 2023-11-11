@@ -27,7 +27,7 @@ timurids_empire = {
 		3 = HEIR_fem
 	}
 	
-	government_reform = timurid_empire
+	#government_reform = timurid_empire
 
 	trigger = {
 		has_reform = timurid_empire
@@ -63,7 +63,7 @@ timurids_governor = {
 		2 = HEIR_fem
 	}
 	
-	government_reform = timurid_governor
+	#government_reform = timurid_governor
 
 	trigger = {
 		has_reform = timurid_governor
