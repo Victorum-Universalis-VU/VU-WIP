@@ -350,7 +350,6 @@ estate_rajput_advisor = {
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
-	loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}

@@ -553,6 +553,8 @@ estate_nobles_french_strong_duchies = {
 				is_subject_of_type = naval_march
 				is_subject_of_type = defensive_march 
 				is_subject_of_type = march
+				is_subject_of_type = viceroyalty_vu
+				is_subject_of_type = religious_march
 				is_subject_of_type = agricultural_march 
 				is_subject_of_type = medieval_vassal 
 				#is_subject_of_type = silesian_duke  
@@ -577,9 +579,11 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = naval_march
 						is_subject_of_type = defensive_march 
 						is_subject_of_type = march
+						is_subject_of_type = viceroyalty_vu
+						is_subject_of_type = religious_march
 						is_subject_of_type = agricultural_march 
 						is_subject_of_type = medieval_vassal 
-						#is_subject_of_type = silesian_duke  
+						#is_subject_of_type = silesian_duke
 					}
 				}
 			}
@@ -1084,6 +1088,7 @@ estate_nobles_strong_duchies = {
 	is_valid = {
 		any_subject_country = {
 			OR = {
+				is_subject_of_type = appanage
 				is_subject_of_type = vassal
 				is_subject_of_type = client_vassal
 				is_subject_of_type = march
@@ -1092,9 +1097,11 @@ estate_nobles_strong_duchies = {
 				is_subject_of_type = naval_march
 				is_subject_of_type = defensive_march 
 				is_subject_of_type = march
+				is_subject_of_type = viceroyalty_vu
+				is_subject_of_type = religious_march
 				is_subject_of_type = agricultural_march 
 				is_subject_of_type = medieval_vassal 
-				#is_subject_of_type = silesian_duke  
+				#is_subject_of_type = silesian_duke
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1121,6 +1128,7 @@ estate_nobles_strong_duchies = {
 				amount = 2
 				all_subject_country = {
 					OR = {
+						is_subject_of_type = appanage
 						is_subject_of_type = vassal
 						is_subject_of_type = client_vassal
 						is_subject_of_type = march
@@ -1129,9 +1137,11 @@ estate_nobles_strong_duchies = {
 						is_subject_of_type = naval_march
 						is_subject_of_type = defensive_march 
 						is_subject_of_type = march
+						is_subject_of_type = viceroyalty_vu
+						is_subject_of_type = religious_march
 						is_subject_of_type = agricultural_march 
 						is_subject_of_type = medieval_vassal 
-						#is_subject_of_type = silesian_duke  
+						#is_subject_of_type = silesian_duke
 					}
 				}
 			}
