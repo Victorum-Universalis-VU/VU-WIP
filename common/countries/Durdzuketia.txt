@@ -4,7 +4,7 @@ graphical_culture = turkishgfx #muslimgfx
 
 color = { 217 183 159 }
 
-revolutionary_colors = { 137 87 54 }
+revolutionary_colors = { 13 7 5 }
 
 historical_idea_groups = { 
 	defensive_ideas

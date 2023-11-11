@@ -3,7 +3,7 @@
 graphical_culture = persiangfx #muslimgfx
 
 color = { 157 209 65 }
-revolutionary_colors = { 16 21 7 }
+revolutionary_colors = { 16 1 7 }
 
 historical_idea_groups = {
 	defensive_ideas
