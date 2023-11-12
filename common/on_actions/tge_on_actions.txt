@@ -559,7 +559,20 @@ on_province_owner_change = {
 		limit = {
 			AND = {
 				ROOT = { has_building = cannon_foundry NOT = { has_building = off } }	
-				owner = { NOT = { check_variable = { which = copper value = 0.4 } check_variable = { which = tin value = 0.3 } } }
+				owner = { 
+					NOT = { 
+						check_variable = { 
+							which = copper 
+							value = 0.4 
+						}
+					}
+					NOT = { 
+						check_variable = { 
+							which = tin 
+							value = 0.3 
+						}
+					}
+				}
 			}
 		}
 		owner = {
@@ -917,7 +930,20 @@ on_province_owner_change = {
 		limit = {
 			AND = {
 				ROOT = { has_building = steam_engine_manu NOT = { has_building = off_4 } }	
-				owner = { NOT = { check_variable = { which = copper value = 0.4 } check_variable = { which = zinc value = 0.3 } } }
+				owner = { 
+					NOT = { 
+						check_variable = { 
+							which = copper 
+							value = 0.4 
+						}
+					}
+					NOT = {
+						check_variable = { 
+							which = zinc 
+							value = 0.3 
+						}
+					} 
+				}
 			}
 		}
 		owner = {

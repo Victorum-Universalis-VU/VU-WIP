@@ -10,6 +10,7 @@ on_new_monarch = {
             is_subject = no
 			has_institution = feudalism
 		}
+		add_legitimacy = 10
 	}
 	events = {
 		SF_Edumacation_Events.3
@@ -24,6 +25,7 @@ on_new_heir = {
             is_subject = no
 			has_institution = feudalism
 		}
+		add_legitimacy = 5
 	}
 	events = {
 		SF_Edumacation_Events.5
