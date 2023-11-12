@@ -663,7 +663,7 @@ sabotage_reputation = {
 aggressive_expansion = {
 	opinion = -1
 	months = 0
-	yearly_decay = 4
+	yearly_decay = 3
 	min = -1000
 }
 
