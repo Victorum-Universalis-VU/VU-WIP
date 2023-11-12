@@ -458,14 +458,38 @@ establish_protectorate = {
 				value = trigger_value:army_size
 				who = FROM
 			}
-			divide_variable = { which = our_army_size value = 10 }
-			divide_variable = { which = their_army_size value = -10 }
-			change_variable = { which = our_army_size which = their_army_size }
-			multiply_variable = { which = their_mil_tech value = -1 }
-			change_variable = { which = our_mil_tech which = their_mil_tech }
-			multiply_variable = { which = our_mil_tech value = 3 }
-			change_variable = { which = ai_value which = our_army_size }
-			change_variable = { which = ai_value which = our_mil_tech }
+			divide_variable = { 
+				which = our_army_size 
+				value = 10 
+			}
+			divide_variable = { 
+				which = their_army_size 
+				value = -10 
+			}
+			change_variable = { 
+				which = our_army_size 
+				which = their_army_size 
+			}
+			multiply_variable = { 
+				which = their_mil_tech 
+				value = -1 
+			}
+			change_variable = { 
+				which = our_mil_tech 
+				which = their_mil_tech 
+			}
+			multiply_variable = { 
+				which = our_mil_tech 
+				value = 3 
+			}
+			change_variable = { 
+				which = ai_value 
+				which = our_army_size 
+			}
+			change_variable = { 
+				which = ai_value 
+				which = our_mil_tech 
+			}
 		}
 		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
@@ -1001,14 +1025,38 @@ ask_to_become_protectorate = {
 				value = trigger_value:army_size
 				who = FROM
 			}
-			divide_variable = { which = our_army_size value = 10 }
-			divide_variable = { which = their_army_size value = -10 }
-			change_variable = { which = our_army_size which = their_army_size }
-			multiply_variable = { which = their_mil_tech value = -1 }
-			change_variable = { which = our_mil_tech which = their_mil_tech }
-			multiply_variable = { which = our_mil_tech value = 3 }
-			change_variable = { which = ai_value which = our_army_size }
-			change_variable = { which = ai_value which = our_mil_tech }
+			divide_variable = { 
+				which = our_army_size 
+				value = 10 
+			}
+			divide_variable = { 
+				which = their_army_size 
+				value = -10 
+			}
+			change_variable = { 
+				which = our_army_size 
+				which = their_army_size 
+			}
+			multiply_variable = { 
+				which = their_mil_tech 
+				value = -1 
+			}
+			change_variable = { 
+				which = our_mil_tech 
+				which = their_mil_tech 
+			}
+			multiply_variable = { 
+				which = our_mil_tech 
+				value = 3 
+			}
+			change_variable = { 
+				which = ai_value 
+				which = our_army_size 
+			}
+			change_variable = { 
+				which = ai_value 
+				which = our_mil_tech 
+			}
 		}
 		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
@@ -1091,10 +1139,22 @@ ask_to_become_protectorate = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			multiply_variable = { which = their_total_development which = their_total_development }
-			divide_variable = { which = our_total_development which = their_total_development }
-			multiply_variable = { which = ai_value which = our_total_development }
-			change_variable = { which = ai_value value = -90 }
+			multiply_variable = { 
+				which = their_total_development 
+				which = their_total_development 
+			}
+			divide_variable = { 
+				which = our_total_development 
+				which = their_total_development 
+			}
+			multiply_variable = { 
+				which = ai_value 
+				which = our_total_development 
+			}
+			change_variable = { 
+				which = ai_value 
+				value = -90 
+			}
 		}
 		add_entry = {
 			name = ROOT_FROM_ECONOMIC_POWER_COMPARED

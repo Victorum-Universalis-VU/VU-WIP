@@ -62,10 +62,10 @@ timurids_ask_support = {
 	}
 
 	on_accept = {
-		change_variable = {
-			which = timurid_legitimacy_value
-			value = 10
-		}
+		#change_variable = {
+		#	which = timurid_legitimacy_value
+		#	value = 10
+		#}
 		set_country_flag = me_tim_support_cooldown
 	}
 
@@ -238,38 +238,38 @@ timurids_establish_governor = {
 	}
 }
 
-timurids_establish_field_marshal = {
-	category = influence
-
-	require_acceptance = no
-
-	is_visible = {
-		FROM = { has_reform = timurid_governor_upgraded }
-		mission_completed = TIM_field_marshal
-	}
-
-	is_allowed = {
-		NOT = {
-			any_country = {
-				has_country_modifier = me_tim_field_marshal
-			}
-		}
-	}
-
-	on_accept = {
-		FROM = {
-			add_liberty_desire = -30
-			add_country_modifier = {
-				name = me_tim_field_marshal
-				duration = -1
-			}
-		}
-	}
-
-	ai_will_do = {
-		always = yes
-	}
-}
+#timurids_establish_field_marshal = {
+#	category = influence
+#
+#	require_acceptance = no
+#
+#	is_visible = {
+#		FROM = { has_reform = timurid_governor_upgraded }
+#		mission_completed = TIM_field_marshal
+#	}
+#
+#	is_allowed = {
+#		NOT = {
+#			any_country = {
+#				has_country_modifier = me_tim_field_marshal
+#			}
+#		}
+#	}
+#
+#	on_accept = {
+#		FROM = {
+#			add_liberty_desire = -30
+#			add_country_modifier = {
+#				name = me_tim_field_marshal
+#				duration = -1
+#			}
+#		}
+#	}
+#
+#	ai_will_do = {
+#		always = yes
+#	}
+#}
 
 timurids_revoke_field_marshal = {
 	category = influence
