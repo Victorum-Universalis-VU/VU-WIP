@@ -1925,10 +1925,10 @@
 			nobles_influence_modifier = 0.10
 			noble_privilege_slots = 0.01
 		}
-		custom_attributes = {
-			enables_junker_estate = yes
-			enables_disable_noble_estate = yes
-		}
+		# custom_attributes = {
+			# enables_junker_estate = yes
+			# enables_disable_noble_estate = yes
+		# }
 		ai = {
 			factor = 100
 		}
@@ -6270,9 +6270,9 @@
 			free_leader_pool = 1
 			army_tradition_decay = -0.005
 		}
-		custom_attributes = {
-			enables_junker_estate = yes
-		}
+		# custom_attributes = {
+			# enables_junker_estate = yes
+		# }
 		ai = {
 			factor = 0
 		}
@@ -6669,6 +6669,7 @@
 	freie_landtage_reform = {
 		icon = king
 		allow_normal_conversion = yes
+		#has_parliament = yes
 		effect = {
 			change_variable = {
 				which = Burgher_Influence
