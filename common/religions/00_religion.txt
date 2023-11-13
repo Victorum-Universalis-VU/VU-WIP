@@ -922,10 +922,6 @@ christian = {
 		}
 	}
 	
-	harmonized_modifier = harmonized_christian
-	
-	crusade_name = CRUSADE
-	
 	##########################################
 	### NEW RELIGIONS IN CATHOLIC GROUP    ###
 	##########################################
@@ -987,10 +983,7 @@ christian = {
 			vu_nestorian_monasteries
 			vu_nestorian_king_glory
 			vu_isolated_nestorian_christianity
-		}
-		
-		harmonized_modifier = harmonized_christian
-		
+		}		
 	}
 	
 	#Bogomilist NEW
@@ -1048,7 +1041,7 @@ christian = {
 
 		personal_deity = yes
 		heretic = { OLD_BELIEVER MOLOKAN ICONOCLAST }
-		misguided_heretic = no			# Bogomilists were rather hated, especially by orthodox church
+		misguided_heretic = yes			# Bogomilists were rather hated, especially by orthodox church
 	}
 	
 	#Miaphysite religion
@@ -1097,7 +1090,7 @@ christian = {
 	mormon = {
 		color = { 223 148 255 }
 		icon = 38
-		center_of_religion = 2490
+		#center_of_religion = 2490
 		allowed_conversion = {
 		}
 		country = {
@@ -1122,7 +1115,9 @@ christian = {
 				duration = 3650
 			}
 		}
-		crusade_name = HOLY_WAR
+		
+		heretic = { LATTER-DAY SAINT CONGREGATIONALIST }
+
 	}
 	
 	#Lollard religion
@@ -1249,6 +1244,11 @@ christian = {
 				allow = {
 					always = yes
 				}
+
+				visible = {
+					always = yes
+				}
+
 				ai_will_do = {
 					factor = 1
 					modifier = {
@@ -1269,6 +1269,11 @@ christian = {
 				allow = {
 					always = yes
 				}
+
+				visible = {
+					always = yes
+				}
+
 				ai_will_do = {
 					factor = 1
 					modifier = {
@@ -1301,6 +1306,11 @@ christian = {
 				allow = {
 					always = yes
 				}
+
+				visible = {
+					always = yes
+				}
+
 				ai_will_do = {
 					factor = 0
 				}
@@ -1312,6 +1322,11 @@ christian = {
 				allow = {
 					always = yes
 				}
+
+				visible = {
+					always = yes
+				}
+
 				ai_will_do = {
 					factor = 0.5
 				}
@@ -1323,6 +1338,11 @@ christian = {
 				allow = {
 					always = yes
 				}
+
+				visible = {
+					always = yes
+				}
+
 				ai_will_do = {
 					factor = 0.8
 					modifier = {
@@ -3950,7 +3970,7 @@ slavic_group = {
 }
 
 asian_pagan_group = {
-	defender_of_faith = no
+	defender_of_faith = yes
 	center_of_religion = 677 #Lhasa
 	
 	bon = {
