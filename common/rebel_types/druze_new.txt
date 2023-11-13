@@ -87,7 +87,7 @@ druze_new_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = druze
+			religion = druze_new
 			owner = { religion = druze_new }
 		}
 		modifier = {
@@ -229,7 +229,7 @@ druze_new_rebels = {
 				NOT = { dominant_religion = druze_new }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = muslim }
+				religion_group = muslim
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"
