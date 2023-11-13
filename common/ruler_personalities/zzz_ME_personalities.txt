@@ -228,9 +228,6 @@ tolerant_personality = {
 			factor = 1
 			has_idea_group = humanist_ideas
 		}
-	}
-	
-	chance = {
 		modifier = {
 			factor = 2
 			has_country_flag = AYY_increase_chance_of_good_traits_flag
@@ -479,8 +476,6 @@ industrious_personality = {
 				factor = 1
 				DIP = 6
 			}
-		}
-		chance = {
 			modifier = {
 				factor = 2
 				has_country_flag = me_Mug_industrious_double_chances
