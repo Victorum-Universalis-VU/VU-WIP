@@ -129,89 +129,89 @@ ARB_is_in_extended_pilgrim_route = {
 	}
 }
 
-ARB_pilgrim_route_trigger = {
-	385 = {
-		$trigger$
-	}
-	384 = {
-		$trigger$
-	}
-	2331 = {
-		$trigger$
-	}
-	4278 = {
-		$trigger$
-	}
-	2329 = {
-		$trigger$
-	}
-	2328 = {
-		$trigger$
-	}
-	383 = {
-		$trigger$
-	}
-	4268 = {
-		$trigger$
-	}
-}
+#ARB_pilgrim_route_trigger = {
+#	385 = {
+#		$trigger$
+#	}
+#	384 = {
+#		$trigger$
+#	}
+#	2331 = {
+#		$trigger$
+#	}
+#	4278 = {
+#		$trigger$
+#	}
+#	2329 = {
+#		$trigger$
+#	}
+#	2328 = {
+#		$trigger$
+#	}
+#	383 = {
+#		$trigger$
+#	}
+#	4268 = {
+#		$trigger$
+#	}
+#}
 
-ARB_pilgrim_route_extended_trigger = {
-	385 = {
-		$trigger$
-	}
-	384 = {
-		$trigger$
-	}
-	2331 = {
-		$trigger$
-	}
-	4278 = {
-		$trigger$
-	}
-	2329 = {
-		$trigger$
-	}
-	2328 = {
-		$trigger$
-	}
-	383 = {
-		$trigger$
-	}
-	4268 = {
-		$trigger$
-	}
-	379  = {
-		$trigger$
-	}
-	1854  = {
-		$trigger$
-	}
-	1855  = {
-		$trigger$
-	}
-	382  = {
-		$trigger$
-	}
-	364  = {
-		$trigger$
-	}
-	4316  = {
-		$trigger$
-	}
-	361  = {
-		$trigger$
-	}
-	2316  = {
-		$trigger$
-	}
-	362  = {
-		$trigger$
-	}
-	358  = {
-		$trigger$
-	}
-}
+#ARB_pilgrim_route_extended_trigger = {
+#	385 = {
+#		$trigger$
+#	}
+#	384 = {
+#		$trigger$
+#	}
+#	2331 = {
+#		$trigger$
+#	}
+#	4278 = {
+#		$trigger$
+#	}
+#	2329 = {
+#		$trigger$
+#	}
+#	2328 = {
+#		$trigger$
+#	}
+#	383 = {
+#		$trigger$
+#	}
+#	4268 = {
+#		$trigger$
+#	}
+#	379  = {
+#		$trigger$
+#	}
+#	1854  = {
+#		$trigger$
+#	}
+#	1855  = {
+#		$trigger$
+#	}
+#	382  = {
+#		$trigger$
+#	}
+#	364  = {
+#		$trigger$
+#	}
+#	4316  = {
+#		$trigger$
+#	}
+#	361  = {
+#		$trigger$
+#	}
+#	2316  = {
+#		$trigger$
+#	}
+#	362  = {
+#		$trigger$
+#	}
+#	358  = {
+#		$trigger$
+#	}
+#}
 
 MAM_has_bad_goods = {
 	#else doesn't work

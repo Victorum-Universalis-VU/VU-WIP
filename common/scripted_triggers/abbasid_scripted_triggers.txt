@@ -1,5 +1,12 @@
 ME_caliph_tag_trigger = {
-  if = { limit = { NOT = { has_saved_event_target = Caliph_province } } log = "NO, DUH IT'S HERE" }
+    if = { 
+	    limit = { 
+	    	NOT = { 
+	    		has_saved_event_target = Caliph_province 
+	    	} 
+	    } 
+	    #log = "NO, DUH IT'S HERE" 
+	}
 	event_target:Caliph_province = {
 		owner = {
 			$trigger$
@@ -117,7 +124,8 @@ ME_captured_caliph = {
 # whether a caliphate government can be given to them
 #
 ########
-ME_can_become_caliphate_gov = {
+
+ME_can_become_caliphate_gov = {
 	hidden_trigger = {
 		always = yes
 	}
