@@ -357,6 +357,10 @@ province_event = {
 			factor = 0.5
 			is_year = 1800
 		}
+		modifier = { #Dith Reward 
+			factor = 0.1  
+			has_country_flag = dtt_unite_masses_flag
+		}
 	}
 	fire_only_once = yes
 
@@ -376,7 +380,20 @@ province_event = {
 		spawn_center_of_revolution = root
 		set_province_flag = first_revolution_center
 		set_global_flag = first_revolution_center_spawned #to check time since spawn for backup center
-		
+		if = {
+			limit = { 
+				has_country_flag = dtt_unite_masses_flag
+			}
+			add_country_modifier = {
+				name = dtt_class_consciousness_modifier
+				duration = -1 
+			}
+			add_country_modifier = {
+				name = dtt_guards_of_the_workers_revolution_modifier
+				duration = -1 
+			}
+			clr_country_flag = dtt_unite_masses_flag
+		}
 		log = "Center of Revolution spawned in [Root.GetName] (owner: [Root.Owner.GetName]) in [GetYear]"
 	}
 }
