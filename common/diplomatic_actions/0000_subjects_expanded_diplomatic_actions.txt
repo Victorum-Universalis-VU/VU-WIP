@@ -1,21 +1,5 @@
-#Modified and merged by San Felipe
 declarewar = {
-    condition = { #Chewys entry
-        tooltip = no_attack_gb
-        potential = {
-            is_colonial_nation = yes
-            capital_scope = {
-                colonial_region = colonial_eastern_america
-            }
-            overlord = {
-				OR = { tag = GBR tag = ENG }
-            }
-		}
-        allow = {
-            NOT = { is_subject_of = FROM }
-        }
-    }
-	condition = { #Limonens entry
+	condition = {
 		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY
 		potential = {
 			OR = {
@@ -77,6 +61,7 @@ declarewar = {
 		tooltip = CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE
 		potential = {
 			is_subject_of_type = integrated_tribe_subject
+			NOT = { is_subject_of = FROM }
 		}
 		allow = {
 			is_neighbor_of = FROM
@@ -151,7 +136,41 @@ declarewar = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_MEDIEVAL_VASSAL_OVERLORD_DISALLOWED
+		potential = {
+			is_subject_of_type = medieval_vassal
+		}
+		allow = {
+			NOT = { has_country_flag = medieval_vassal_disallowed_war }
+		}
+	}
 	effect = {
+		# Vanilla:
+		if = {
+			limit = {
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+
+		# For SE:
 		if = {
 			limit = {
 				FROM = {
@@ -203,25 +222,115 @@ declarewar = {
 			}
 		}
 
-		# Needed for Missions Expanded
-		if = {
-			limit = {
-				is_expanded_mod_active = { mod = missions }
-			}
-			if = {
-				limit = {
-					mission_completed = sweden_support_the_roman_church
-					FROM = {
-						NOT = { religion = catholic }
-					}
-				}
-				change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
-			}
-		}
+		# Needed for Extended Timeline
+	#	if = { #We don't care about Extended timeline
+	#		limit = {
+	#			has_global_flag = extended_timeline_mod
+	#			OR = {
+	#				has_casus_belli = { type = cb_spread_communism target = FROM }
+	#				has_casus_belli = { type = cb_spread_fascism target = FROM }
+	#				has_casus_belli = { type = cb_spread_democracy target = FROM }
+	#			}
+	#		}
+	#		set_country_flag = forcing_government
+	#	}
 	}
 }
 
 allianceaction = {
+	# Vanilla:
+	condition = {
+		tooltip = PIRATE_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_pirates
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_pirates }
+				FROM = { has_government_attribute = is_pirate_republic_reform }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_PIRATE_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_pirates
+			}
+			NOT = { has_government_attribute = is_pirate_republic_reform }
+		}
+		allow = {
+			OR = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = {
+					OR = {
+						government = republic
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				OR = {
+					government = republic
+					is_revolutionary = yes
+				}
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+
+	# For SE:
 	condition = {
 		tooltip = CANNOT_ALLY_OVERLORD_RIVAL
 		potential = {
@@ -269,6 +378,17 @@ allianceaction = {
 					is_rival = ROOT
 				}
 			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_RECENTLY_DISSOLVED_ALLIANCE_MEDIEVAL_VASSAL
+		potential = {
+			is_subject_of_type = medieval_vassal
+			has_country_flag = forced_medieval_vassal_to_annul_alliances_with_@FROM
+			NOT = { had_country_flag = { flag = forced_medieval_vassal_to_annul_alliances_with_@FROM days = 1825 } }
 		}
 		allow = {
 			always = no
@@ -358,6 +478,7 @@ callaction = {
 }
 
 annexationaction = {
+	# Vanilla:
 	condition = {
 		tooltip = ANNEX_TOO_LOW
 		potential = {
@@ -374,6 +495,8 @@ annexationaction = {
 			}
 		}
 	}
+
+	# For SE:
 	condition = {
 		tooltip = ANNEX_TOO_LOW_NOT_VASSAL
 		potential = {
@@ -527,38 +650,12 @@ annexationaction = {
 					hidden = yes
 				}
 			}
-			else_if = {
-				limit = {
-					is_subject_of = ROOT
-					is_subject_of_type = annexable_colony
-					NOT = { has_country_flag = annexable_colony_annexation_started }
-				}
-				set_country_flag = annexable_colony_annexation_started
-				export_to_variable = {
-					which = annexable_colony_num_of_cities
-					value = trigger_value:num_of_cities
-				}
-				divide_variable = { which = annexable_colony_num_of_cities value = 2 }
-				while = {
-					limit = {
-						check_variable = { which = annexable_colony_num_of_cities value = 1 }
-					}
-					subtract_variable = { which = annexable_colony_num_of_cities value = 1 }
-					random_owned_province = {
-						limit = {
-							is_city = yes
-							NOT = { is_core = ROOT }
-						}
-						add_core = ROOT
-					}
-				}
-				set_variable = { which = annexable_colony_num_of_cities value = 0 }
-			}
 		}
 	}
 }
 
 integrationaction = {
+	# Vanilla:
 	condition = {
 		tooltip = INTEGRATETOOLOWDESC
 		potential = {
@@ -573,6 +670,17 @@ integrationaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = PUINTEGRATIONIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_integrate_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_integrate_personal_unions }
+		}
+	}
+
+	# For SE:
 	condition = {
 		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
 		potential = {
@@ -660,6 +768,7 @@ requestpeace = {
 	condition = {
 		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
 		potential = {
+			is_expanded_mod_active = { mod = missions }
 			is_in_war = {
 				participants = ROOT
 				participants = FROM

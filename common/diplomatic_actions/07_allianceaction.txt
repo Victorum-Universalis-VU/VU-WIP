@@ -1,0 +1,27 @@
+allianceaction = {
+
+	condition = {
+		tooltip = FREECITY
+		potential = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+		allow = {
+			has_reform = free_city
+		}
+	}
+
+	condition = {
+		tooltip = FREECITY
+		potential = {
+			has_reform = free_city
+		}
+		allow = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+	}
+}
+
