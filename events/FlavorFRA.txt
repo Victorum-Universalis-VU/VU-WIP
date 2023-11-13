@@ -214,18 +214,18 @@ country_event = {
 	
 	option = {		# Let us claim what is rightfully Ours!
 		name = "flavor_fra.EVTOPTA3105"
-		if = {
-			limit = {
-				exists = NAP
-				NAP = { is_subject = no }
+		if = { limit = { tag = FRA }
+			if = {
+				limit = {
+					exists = NAP
+					NAP = { is_subject = no }
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 600
+					target = NAP
+				}
 			}
-			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 600
-				target = NAP
-			}
-		}
-		if = {
 			every_province = {
 				limit = {
 					OR = {
@@ -233,7 +233,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 					OR = {
 						owned_by = NAP 
@@ -257,7 +257,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 					OR = {
 						owned_by = NAP 
@@ -290,7 +290,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 				}
 			}
@@ -321,7 +321,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 				}
 			}
@@ -2163,9 +2163,11 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = {
-				has_adm_advisor = yes
-				has_dip_advisor = yes
-				has_mil_advisor = yes
+				OR = {
+					has_adm_advisor = yes
+					has_dip_advisor = yes
+					has_mil_advisor = yes
+				}
 			}
 		}
 		desc = emp_mission_events.7.d2
@@ -2375,10 +2377,14 @@ country_event = { #House de Valois
 		ai_chance = { factor = 10 } 
 		FRA = { create_union = PRO }  
 		if = { 
-			limit = { LOR = { is_subject_of = PRO } }
+			limit = { 
+				LOR = { 
+					is_subject_of = PRO 
+				} 
+			}
+			inherit = LOR
+			add_stability_or_adm_power = yes
 		}
-		inherit = LOR 
-		add_stability_or_adm_power = yes 
 	}
 	
 	option = { 
@@ -3659,6 +3665,11 @@ country_event = {
     option = { # I love power like a musician loves his instruments
         name = flavor_fra.9504.a
 		if = {
+			limit = {
+				NOT = {
+					has_ruler = napoleon_bonaparte
+				}
+			}
 			hidden_effect = {
                 set_ruler = napoleon_bonaparte
             }
@@ -3769,8 +3780,14 @@ country_event = {
         name = flavor_fra.9507.a
         if = {
             limit = {
-                NOT = { is_religion_enabled = protestant }
+                NOT = { 
+					is_religion_enabled = protestant 
+				}
             }
+			8454 = {
+				change_culture = cosmopolitan_french
+			}
+
         }
         if = {
             limit = {
@@ -4043,13 +4060,25 @@ country_event = {
 		}
 		else = { #Napoleon is executed turning him into a martyr by San Felipe
 			kill_ruler = yes
-			add_nationalism = 50
-			add_unrest = 50
+			capital_scope = {
+				add_nationalism = 50
+				add_unrest = 50
+			}
 		}
 		BFR = { 
-		    set_ruler = louis_xviii
-			add_government_reform = french_monarchic_restoration_reform
-			remove_government_reform = french_first_empire_restoration_reform
+			define_ruler = {
+                name = "Louis XVIII"
+                dynasty = "de Bourbon"
+                adm = 1
+                dip = 1
+                mil = 1
+                age = 59
+                claim = 95
+            }
+			set_legacy_government = constitutional_monarchy
+			#set_ruler = louis_xviii
+			#add_government_reform = french_monarchic_restoration_reform
+			#remove_government_reform = french_first_empire_restoration_reform
 		}
 	}
 }
@@ -4331,6 +4360,7 @@ country_event = {
                     is_subject = no
                 }
             }
+			add_stability = -1
 		}
 		NGC = {
             country_event = { id = flavor_brapru.56 } 
@@ -4354,14 +4384,12 @@ country_event = {
     option = { # Never again shall we have kings or emperors! Long live the Republic!
         name = "flavor_fra.9521.a"
 		change_tag = FTR
-		if = {
-            hidden_effect = {
-				exile_ruler_as = { name = napoleon_iii_in_exile }
-            }		
-            FTR = { 
-                add_government_reform = french_third_republic_reform
-				remove_government_reform = second_french_empire_reform
-            }
+        hidden_effect = {
+			exile_ruler_as = { name = napoleon_iii_in_exile }
+        }		
+        FTR = { 
+            add_government_reform = french_third_republic_reform
+			remove_government_reform = second_french_empire_reform
         }
     }
 }
@@ -4412,11 +4440,11 @@ country_event = {
 				cede_province = FRA
 			}
 			add_truce_with = FRA
+			add_unrest = -4
 		}
 		FRA = { country_event = { id = flavor_fra.9524 } }
 		add_prestige = -100
-		add_stability = -2
-		add_unrest = -4
+		add_stability = -1
 		set_country_flag = rb_gave_up_calais
 	}
 	option = {
