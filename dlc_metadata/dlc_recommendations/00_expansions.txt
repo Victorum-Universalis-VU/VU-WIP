@@ -601,8 +601,10 @@ dlc077 = {
 		trigger = {
 			religion_group = muslim
 			NOT = {
-				culture_group = turko_semitic
-				culture_group = iranian
+				OR = {
+					culture_group = turko_semitic
+					culture_group = iranian
+				}
 			}
 		}
 	}
@@ -798,10 +800,8 @@ dlc095 = {
 #			NOT = { num_of_cities = 7 }
 			NOT = {
 				any_owned_province = {
-					NOT = {
-						region = maghreb_region
-						province_is_on_an_island = yes
-					}
+					NOT = {	region = maghreb_region	}
+					NOT = {	province_is_on_an_island = yes }
 				}
 			}
 			OR = {

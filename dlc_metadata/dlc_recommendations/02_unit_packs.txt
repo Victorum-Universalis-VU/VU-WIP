@@ -768,17 +768,19 @@ dlc078 = {
 				region = arabia_region
 			}
 			NOT = {
-				tag = ALH
-				tag = AKK
-				tag = SHM
-				tag = QAR
-				tag = ANZ
-				tag = FAD
-				tag = MYS
-				tag = IRQ
-				tag = BSR
-				tag = TBR
-				tag = MGR
+				OR = {
+					tag = ALH
+				    tag = AKK
+				    tag = SHM
+				    tag = QAR
+				    tag = ANZ
+				    tag = FAD
+				    tag = MYS
+				    tag = IRQ
+				    tag = BSR
+				    tag = TBR
+				    tag = MGR
+				}
 			}
 		}
 	}
