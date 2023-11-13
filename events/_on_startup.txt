@@ -411,11 +411,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { is_year = 1445 }
-					OR = {
-						technology_group = rapanuan_tech_group
-						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
-					}
+					technology_group = polynesian_tech
 				}
 				europe_superregion = {
 					undiscover_country = ROOT
