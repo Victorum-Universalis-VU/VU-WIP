@@ -4,22 +4,100 @@ set_overlord_idea_groups = {
 	if = {
 		limit = {
 			overlord = {
-				OR = {
-				    technology_group = western
-				    technology_group = english_tech_group
-				    technology_group = french_tech_group
-				    technology_group = dutch_tech_group
-				    technology_group = german_tech_group
-				    technology_group = italian_tech_group
-				    technology_group = portuguese_tech_group
-				    technology_group = roman_tech_group
-				    technology_group = scandinavian_tech_group
-				    technology_group = spanish_tech_group
-				    technology_group = swiss_tech_group
-				}
+			    technology_group = western
 			}
 		}
 		change_technology_group = western
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = dutch_tech_group
+			}
+		}
+		change_technology_group = dutch_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = english_tech_group
+			}
+		}
+		change_technology_group = english_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = french_tech_group
+			}
+		}
+		change_technology_group = french_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = german_tech_group
+			}
+		}
+		change_technology_group = german_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = italian_tech_group
+			}
+		}
+		change_technology_group = italian_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = portuguese_tech_group
+			}
+		}
+		change_technology_group = portuguese_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = roman_tech_group
+			}
+		}
+		change_technology_group = roman_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = scandinavian_tech_group
+			}
+		}
+		change_technology_group = scandinavian_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = spanish_tech_group
+			}
+		}
+		change_technology_group = spanish_tech_group
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = swiss_tech_group
+			}
+		}
+		change_technology_group = swiss_tech_group
 		change_unit_type = western
 	}
 	else_if = {
@@ -143,16 +221,61 @@ set_overlord_idea_groups = {
 		limit = {
 			overlord = {
 				OR = {
-				    technology_group = bohemian_tech_group
-				    technology_group = byzantine_tech_group
-				    technology_group = eastern
-				    technology_group = hungarian_tech_group
-				    technology_group = polish_tech_group
-				    technology_group = russian_tech_group
-				}
+			    	technology_group = eastern
+			        technology_group = bohemian_tech_group
+			        technology_group = byzantine_tech_group
+			        technology_group = hungarian_tech_group
+			        technology_group = polish_tech_group
+			        technology_group = russian_tech_group
+			    }
 			}
 		}
 		change_technology_group = eastern
+		change_unit_type = eastern
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = bohemian_tech_group
+			}
+		}
+		change_technology_group = bohemian_tech_group
+		change_unit_type = eastern
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = byzantine_tech_group
+			}
+		}
+		change_technology_group = byzantine_tech_group
+		change_unit_type = eastern
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = hungarian_tech_group
+			}
+		}
+		change_technology_group = hungarian_tech_group
+		change_unit_type = eastern
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = polish_tech_group
+			}
+		}
+		change_technology_group = polish_tech_group
+		change_unit_type = eastern
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = russian_tech_group
+			}
+		}
+		change_technology_group = russian_tech_group
 		change_unit_type = eastern
 	}
 	else_if = {
@@ -249,7 +372,7 @@ set_overlord_idea_groups = {
 		add_idea = enforced_service
 		add_idea = the_old_and_infirm
 		add_idea = camp_followers
-		add_idea = garrison_conscription
+		#add_idea = garrison_conscription
 		add_idea = expanded_supply_trains
 	}
 }
