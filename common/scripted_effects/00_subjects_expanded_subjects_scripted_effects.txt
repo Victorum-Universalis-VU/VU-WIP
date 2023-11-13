@@ -202,7 +202,7 @@ display_info_for_subject_type = {
 				}
 				NOT = { check_variable = { which = subject_dominion_selected value = 1 } }
 				NOT = { check_variable = { which = subject_autonomous_dominion_selected value = 1 } }
-				NOT = { check_variable = { which = subject_salic_personal_union_selected value = 1 } }
+				#NOT = { check_variable = { which = subject_salic_personal_union_selected value = 1 } }
 				NOT = { check_variable = { which = subject_nahuatl_vassal_selected value = 1 } }
 				NOT = { check_variable = { which = subject_puppet_state_selected value = 1 } }
 				NOT = { check_variable = { which = subject_voivodeship_selected value = 1 } }
@@ -379,7 +379,7 @@ display_info_for_subject_type = {
 				NOT = { check_variable = { which = subject_voivodeship_selected value = 1 } }
 				NOT = { check_variable = { which = subject_native_reserve_selected value = 1 } }
 				NOT = { check_variable = { which = subject_nahuatl_vassal_selected value = 1 } }
-				NOT = { check_variable = { which = subject_salic_personal_union_selected value = 1 } }
+				#NOT = { check_variable = { which = subject_salic_personal_union_selected value = 1 } }
 				NOT = { check_variable = { which = subject_integrated_tribe_subject_selected value = 1 } }
 				NOT = { check_variable = { which = subject_imperial_feud_subject_selected value = 1 } }
 				NOT = { check_variable = { which = subject_palatinate_vassal_selected value = 1 } }
