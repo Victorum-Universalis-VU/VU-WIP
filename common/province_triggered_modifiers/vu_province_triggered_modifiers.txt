@@ -122,7 +122,7 @@ vu_birkarls = {
 	}
 	trigger = {
 		culture = sapmi
-		religion = animism
+		religion = finnish_pagan_reformed
 		is_state = yes
 		owner = {
 			NOT = {
