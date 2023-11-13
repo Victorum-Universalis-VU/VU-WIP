@@ -42,7 +42,7 @@ beer = {
 		
 		modifier = {
 			factor = 0
-			NOT = { capital_scope = { continent = europe } }
+			NOT = { continent = europe }
 		}
 		
 		modifier = {
@@ -1114,15 +1114,17 @@ citrus = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
-			NOT = {
-				region = california_region
-				region = brazil_region
-				region = colombia_region
-				region = peru_region
-				region = carribeans_region
-				area = buenos_aires_area
-				area = banda_oriental_area
-				area = southern_pampas_area
+			NOT = {	region = california_region }
+			NOT = {	region = brazil_region }
+			NOT = {	region = colombia_region }
+			NOT = {	region = peru_region }
+			NOT = {	region = carribeans_region }
+			NOT = {	
+				OR = {
+					area = buenos_aires_area
+			        area = banda_oriental_area
+			        area = southern_pampas_area
+				}
 			}
 		}
 
@@ -1872,7 +1874,7 @@ steam_engine = {
 }
 
 zinc = {
-	color = { 23 231 213 }
+	color = { 0.23 0.231 0.213 }
 	modifier = {
 		innovativeness_gain = 0.25
 	}
@@ -1981,7 +1983,7 @@ brass = {
 cannon = {
 	color = { 0.1 0.1 0.28 }
 	modifier = {
-		artillery_levels_available_vs_fort = 1
+		artillery_power = 0.10
 	}
 	province = {
 		local_hostile_attrition = 1
@@ -2117,7 +2119,7 @@ alpaca_wool = {
 }
 
 indigo = {
-	color = { 49 92 242 }
+	color = { 0.16 0.92 0.24 }
 	modifier = {
 	prestige = 1
 	}
@@ -2218,7 +2220,7 @@ sea_turtle = {
 uniforms = {
 	color = { 0.58 0.45 0.31 }
 	modifier = {
-		infantry_cost = -0.15
+		land_morale = 0.05
 	}
 	province = {
 		regiment_recruit_speed = -0.5
@@ -2229,7 +2231,7 @@ uniforms = {
 }
 
 marble_sculpture = {
-	color = { 100 149 237 }
+	color = { 0.100 0.149 0.237 }
 	modifier = {
 		great_project_upgrade_cost = -0.15
 	}
@@ -2243,7 +2245,7 @@ marble_sculpture = {
 
 
 cigars = {
-	color = { 92 70 54 }
+	color = { 0.92 0.70 0.54 }
 	modifier = {
 	
 	}
@@ -2546,9 +2548,9 @@ agave = {
 }
 
 canned_goods = {
-	color = { 144 107 53 }
+	color = { 0.144 0.107 0.53 }
 	modifier = {
-		global_unrest = -3
+		development_cost = -0.1
 	}
 	province = {
 		local_culture_conversion_cost = -0.30
@@ -2559,7 +2561,7 @@ canned_goods = {
 }
 
 copra = {
-	color = { 161 137 101 }
+	color = { 0.161 0.137 0.101 }
 	modifier = {
 		development_cost = -0.05
 	}
@@ -2610,7 +2612,7 @@ copra = {
 }
 
 vegetables = {
-	color = { 57 85 28 }
+	color = { 0.57 0.85 0.28 }
 	modifier = {
 		naval_attrition = -0.1
 	}
@@ -3019,7 +3021,7 @@ diamonds = {
 }
 
 pottery = {
-	color = { 148 98 89 }
+	color = { 0.148 0.98 0.89 }
 	modifier = {
 		monthly_splendor = 1
 	}
@@ -3032,7 +3034,7 @@ pottery = {
 }
 
 lace = {
-	color = { 143 224 190 }
+	color = { 0.143 0.224 0.190 }
 	modifier = {
 		caravan_power = 0.05
 	}
@@ -3045,7 +3047,7 @@ lace = {
 }
 
 sake = {
-	color = { 222 211 1 }
+	color = { 0.222 0.211 0.1 }
 	modifier = {
 		harsh_treatment_cost = -0.1
 	}
@@ -3059,7 +3061,7 @@ sake = {
 }
 
 bamboo = {
-	color = { 147 169 18 }
+	color = { 0.147 0.169 0.18 }
 	modifier = {
 		build_cost = -0.05
 	}
@@ -3083,7 +3085,7 @@ bamboo = {
 }
 
 whiskey = {
-	color = { 191 135 4 }
+	color = { 0.191 0.135 0.4 }
 	modifier = {
 		promote_culture_cost = -0.15
 	}
@@ -3099,7 +3101,7 @@ whiskey = {
 }
 
 silkworm = {
-	color = { 231 240 220 }
+	color = { 0.231 0.240 0.220 }
 	modifier = {
 		infantry_cost = -0.025
 		justify_trade_conflict_cost = -0.15
@@ -3188,7 +3190,7 @@ rubber = {
 }
 
 cider = {
-	color = { 159 48 25 }
+	color = { 0.159 0.48 0.25 }
 	modifier = {
 		land_morale = 0.05
 	}
@@ -3230,7 +3232,7 @@ cider = {
 		
 		modifier = {
 			factor = 0
-			NOT = { capital_scope = { continent = europe } }
+			NOT = { continent = europe }
 		}
 		
 		modifier = {
