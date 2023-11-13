@@ -229,22 +229,22 @@ papal_subject_vu = {
 
 	can_fight = {
 		independent_nations = yes
-		same_overlord = papal_holding_vu
+		same_overlord = papal_subject_vu
 		other_overlord = all
 	}
 	can_rival = {
 		independent_nations = yes
-		same_overlord = papal_holding_vu
+		same_overlord = papal_subject_vu
 		other_overlord = all
 	}
 	can_ally = {
 		independent_nations = yes
-		same_overlord = papal_holding_vu
+		same_overlord = papal_subject_vu
 		other_overlord = all
 	}
 	can_marry = {
 		independent_nations = yes
-		same_overlord = papal_holding_vu
+		same_overlord = papal_subject_vu
 		other_overlord = all
 	}
 	
@@ -401,7 +401,7 @@ silesian_duke = {
 		same_overlord = vassal
 	}
 	can_rival = {
-		same_overlord = yes
+		same_overlord = silesian_duke
 	}
 	can_ally = {
 		same_overlord = silesian_duke
