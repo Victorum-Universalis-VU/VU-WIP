@@ -1851,7 +1851,7 @@ country_event = {
 
 	option = {
 		name = flavor_eth.48.a
-		vu_change_tech_group_to_western = yes
+		#vu_change_tech_group_to_western = yes
 		change_technology_group = western
 		change_unit_type = western
 		add_country_modifier = {
