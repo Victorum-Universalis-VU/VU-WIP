@@ -880,7 +880,7 @@ me_decrease_emperor_of_romans_level = {
 			check_variable = { which = me_emperor_of_romans_level value = 0 }
 			NOT = { check_variable = { which = me_emperor_of_romans_level value = 1 } }
 		}
-		#Do absolutely nothing
+		add_legitimacy = 5
 	}
 }
 
