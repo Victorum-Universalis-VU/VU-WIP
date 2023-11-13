@@ -389,8 +389,12 @@ province_event = {
 	major = yes
 	major_trigger = {
 		if = {
-		limit = { has_saved_event_target = target_ORM }
-		tag = event_target:target_ORM
+		    limit = { 
+				has_saved_event_target = target_ORM 
+			}
+			owner = {
+				tag = event_target:target_ORM
+			}
 		}
 		else = { always = no }
 	}

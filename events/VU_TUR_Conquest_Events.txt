@@ -413,7 +413,7 @@ country_event = { #Aftermatch of the conquest - Collapse of Hungary
 		add_stability = -1
 		add_army_professionalism = -0.05
 		if = {
-			limit = { exists HAB }
+			limit = { exists = HAB }
 			HAB = { create_union = HUN }
 		}
 		else_if = {
@@ -517,7 +517,7 @@ country_event = { #Aftermatch of the conquest - Collapse of Hungary
 		}
 		HUN = { set_in_empire = yes }
 		if = {
-			limit = { exists HAB }
+			limit = { exists = HAB }
 			HAB = { create_march = HUN }
 		}
 		CRO = { set_in_empire = yes }

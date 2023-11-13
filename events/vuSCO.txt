@@ -177,11 +177,9 @@ province_event = {
 			area = lowlands_area
 		}
 		owner = {
-			NOT = { 
-				tag = SCO
-				culture_group = gaelic
-				accepted_culture = highland_scottish
-			}
+			NOT = { tag = SCO }
+			NOT = { culture_group = gaelic }
+			NOT = { accepted_culture = highland_scottish }
 			OR = {
 				NOT = { primary_culture = scottish }
 				tag = GBR

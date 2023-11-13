@@ -11,14 +11,10 @@ country_event = {
 	
 
 	trigger = {
-		NOT = {
-			exists = GRA
-			is_year = 1550
-			has_country_flag = received_granada_refugees
-		}
-		223 = {
-			owned_by = CAS
-		}
+		NOT = { exists = GRA }
+		NOT = {	is_year = 1550 }
+		NOT = {	has_country_flag = received_granada_refugees }
+		223 = {	owned_by = CAS }
 		capital_scope = {
 			OR = {
 				region = egypt_region
@@ -124,37 +120,29 @@ country_event = {
 		}
 		calabria_area = {
 			limit = {
-				NOT = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				NOT = {	owned_by = ROOT	}
+				NOT = {	is_core = ROOT }
 			}
 			add_claim = SIC
 		}
 		naples_area = {
 			limit = {
-				NOT = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				NOT = {	owned_by = ROOT	}
+				NOT = {	is_core = ROOT }
 			}
 			add_claim = SIC
 		}
 		apulia_area = {
 			limit = {
-				NOT = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				NOT = {	owned_by = ROOT	}
+				NOT = {	is_core = ROOT }
 			}
 			add_claim = SIC
 		}
 		abruzzo_area = {
 			limit = {
-				NOT = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				NOT = {	owned_by = ROOT	}
+				NOT = {	is_core = ROOT }
 			}
 			add_claim = SIC
 		}

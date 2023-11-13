@@ -200,10 +200,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_kosem_tur_flag
 		}
-		NOT = {
-			advisor_exists = 1600
-			is_advisor_employed = 1600
-		}
+		NOT = {	advisor_exists = 1600 }
+		NOT = {	is_advisor_employed = 1600 }
 	}
 	
 	mean_time_to_happen = {
@@ -582,10 +580,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_marywollstonecraft_flag
 		}
-		NOT = {
-			advisor_exists = 1626
-			is_advisor_employed = 1625
-		}
+		NOT = {	advisor_exists = 1626 }
+		NOT = {	is_advisor_employed = 1625 }
 	}
 	
 	mean_time_to_happen = {
@@ -1155,10 +1151,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_lamalince_flag
 		}
-		NOT = {
-			advisor_exists = 1629
-			is_advisor_employed = 1629
-		}
+		NOT = {	advisor_exists = 1629 }
+		NOT = {	is_advisor_employed = 1629 }
 	}
 	
 	mean_time_to_happen = {
@@ -1241,10 +1235,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_juanainesdelacruz_flag
 		}
-		NOT = {
-			advisor_exists = 1631
-			is_advisor_employed = 1631
-		}
+		NOT = {	advisor_exists = 1631 }
+		NOT = {	is_advisor_employed = 1631 }
 	}
 	
 	mean_time_to_happen = {
@@ -2390,16 +2382,16 @@ country_event = {
 			AND = {
 				OR = {
 		        	technology_group = western
+		        	technology_group = dutch_tech_group
 		        	technology_group = english_tech_group
 		        	technology_group = french_tech_group
-		        	technology_group = dutch_tech_group
 		        	technology_group = german_tech_group
 		        	technology_group = italian_tech_group
-			    	technology_group = portuguese_tech_group
+		        	technology_group = portuguese_tech_group
 		        	technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group
+		        	technology_group = scandinavian_tech_group
 		        	technology_group = spanish_tech_group
-			    	technology_group = swiss_tech_group
+		        	technology_group = swiss_tech_group
 		        }
 				any_owned_province = {
 					continent = north_america
@@ -3216,10 +3208,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_yekaterinaromanovnavorontsovadashkova_flag
 		}
-		NOT = {
-			advisor_exists = 1609
-			is_advisor_employed = 1609
-		}
+		NOT = {	advisor_exists = 1609 }
+		NOT = {	is_advisor_employed = 1609 }
 	}
 	
 	mean_time_to_happen = {
@@ -5057,10 +5047,8 @@ country_event = {
 			has_global_flag = wih_eleniethiopia_flag
 		}
 		is_lesser_in_union = no
-		NOT = {
-			advisor_exists = 1611
-			is_advisor_employed = 1611
-		}
+		NOT = {	advisor_exists = 1611 }
+		NOT = {	is_advisor_employed = 1611 }
 	}
 	
 	mean_time_to_happen = {
@@ -6474,10 +6462,8 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_safiyesultan_flag
 		}
-		NOT = {
-			advisor_exists = 1601
-			is_advisor_employed = 1601
-		}
+		NOT = {	advisor_exists = 1601 }
+		NOT = {	is_advisor_employed = 1601 }
 	}
 	
 	mean_time_to_happen = {
@@ -6761,10 +6747,8 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = {
-			advisor_exists = 1602
-			is_advisor_employed = 1602
-		}
+		NOT = { advisor_exists = 1602 }
+		NOT = {	is_advisor_employed = 1602 }
 	}
 	
 	mean_time_to_happen = {

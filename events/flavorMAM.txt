@@ -610,11 +610,9 @@ country_event = {
 		VEN = { is_in_coalition = no }
 		PER = { is_neighbor_of = TUR }
 		MAM = { is_neighbor_of = TUR }
-		NOT = {
-			PER = { alliance_with = TUR }
-			VEN = { alliance_with = TUR }
-			MAM = { alliance_with = TUR }
-		}
+		NOT = { PER = { alliance_with = TUR } }
+		NOT = {	VEN = { alliance_with = TUR } }
+		NOT = {	MAM = { alliance_with = TUR } }
 		TUR = {
 			owns = 141 # Serbia
 			owns = 151 # Constantinople

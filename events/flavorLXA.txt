@@ -189,10 +189,8 @@ country_event = {
 				}
 				has_spawned_rebels = pretender_rebels
 			}
-			NOT = {
-				owns_core_province = 4839
-				owns_core_province = 614
-			}
+			NOT = {	owns_core_province = 4839 }
+			NOT = {	owns_core_province = 614 }
 		}
 	}
 	
