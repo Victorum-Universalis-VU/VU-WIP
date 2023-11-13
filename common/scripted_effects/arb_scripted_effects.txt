@@ -371,89 +371,89 @@ OMA_give_claims_on_area = {
 	}
 }
 
-ARB_pilgrim_route_effect = {
-	385 = {
-		$effect$
-	}
-	384 = {
-		$effect$
-	}
-	2331 = {
-		$effect$
-	}
-	4278 = {
-		$effect$
-	}
-	2329 = {
-		$effect$
-	}
-	2328 = {
-		$effect$
-	}
-	383 = {
-		$effect$
-	}
-	4268 = {
-		$effect$
-	}
-}
+#ARB_pilgrim_route_effect = {
+#	385 = {
+#		$effect$
+#	}
+#	384 = {
+#		$effect$
+#	}
+#	2331 = {
+#		$effect$
+#	}
+#	4278 = {
+#		$effect$
+#	}
+#	2329 = {
+#		$effect$
+#	}
+#	2328 = {
+#		$effect$
+#	}
+#	383 = {
+#		$effect$
+#	}
+#	4268 = {
+#		$effect$
+#	}
+#}
 
-ARB_pilgrim_route_extended_effect = {
-	385 = {
-		$effect$
-	}
-	384 = {
-		$effect$
-	}
-	2331 = {
-		$effect$
-	}
-	4278 = {
-		$effect$
-	}
-	2329 = {
-		$effect$
-	}
-	2328 = {
-		$effect$
-	}
-	383 = {
-		$effect$
-	}
-	4268 = {
-		$effect$
-	}
-	379  = {
-		$effect$
-	}
-	1854  = {
-		$effect$
-	}
-	1855  = {
-		$effect$
-	}
-	382  = {
-		$effect$
-	}
-	364  = {
-		$effect$
-	}
-	4316  = {
-		$effect$
-	}
-	361  = {
-		$effect$
-	}
-	2316  = {
-		$effect$
-	}
-	362  = {
-		$effect$
-	}
-	358  = {
-		$effect$
-	}
-}
+#ARB_pilgrim_route_extended_effect = {
+#	385 = {
+#		$effect$
+#	}
+#	384 = {
+#		$effect$
+#	}
+#	2331 = {
+#		$effect$
+#	}
+#	4278 = {
+#		$effect$
+#	}
+#	2329 = {
+#		$effect$
+#	}
+#	2328 = {
+#		$effect$
+#	}
+#	383 = {
+#		$effect$
+#	}
+#	4268 = {
+#		$effect$
+#	}
+#	379  = {
+#		$effect$
+#	}
+#	1854  = {
+#		$effect$
+#	}
+#	1855  = {
+#		$effect$
+#	}
+#	382  = {
+#		$effect$
+#	}
+#	364  = {
+#		$effect$
+#	}
+#	4316  = {
+#		$effect$
+#	}
+#	361  = {
+#		$effect$
+#	}
+#	2316  = {
+#		$effect$
+#	}
+#	362  = {
+#		$effect$
+#	}
+#	358  = {
+#		$effect$
+#	}
+#}
 
 ARB_claims_capital = {
 	if = {
