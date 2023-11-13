@@ -16,7 +16,7 @@ age_of_discovery = {
 						continent = africa
 					}
 				}
-			}
+			} #CHANGING STUFF BECAUSE YETI IS TESTING A THING
 			custom_trigger_tooltip = {
 				tooltip = obj_discover_america_tooltip
 					OR = {

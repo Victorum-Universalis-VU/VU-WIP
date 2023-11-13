@@ -2156,10 +2156,10 @@ country_decisions = {
 				remove_government_reform = irish_clann_reform
 				add_government_reform = tanistry_reform
 			}
-			if = {
-				limit = { NOT = { has_dlc = "Dharma" } }
-				set_legacy_government = high_kingship_legacy
-			}
+			#if = {
+			#	limit = { NOT = { has_dlc = "Dharma" } }
+			#	set_legacy_government = high_kingship_legacy
+			#}
 			remove_non_electors_emperors_from_empire_effect = yes
 			hidden_effect = { country_event = { id = VictorumUniversalisCelticFlavour.1 days = 1 } }			#Fires new VU Tanistry succession
 			custom_tooltip = tooltip_vu_starts_tanistry_succession

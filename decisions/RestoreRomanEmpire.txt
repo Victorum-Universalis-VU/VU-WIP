@@ -20,6 +20,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
+			NOT = { tag = RMN }
 			NOT = { exists = ROM }
 			OR = {
 				religion_group = christian
@@ -94,7 +95,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						culture_group = ROOT
+						culture_group = latin
 					}
 					change_culture = roman
 				}

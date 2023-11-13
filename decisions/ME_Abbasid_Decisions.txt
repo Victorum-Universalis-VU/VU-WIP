@@ -67,7 +67,6 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					mil_power = 500
 					event_target:Caliph_province = {
 						has_siege = yes
 						num_of_units_in_province = {
@@ -81,6 +80,7 @@ country_decisions = {
 						}
 					}
 				}
+				NOT = {	mil_power = 500	}
 			}
 		}
 	}

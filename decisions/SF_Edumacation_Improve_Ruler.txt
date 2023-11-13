@@ -117,19 +117,21 @@ country_decisions = {
 			is_lesser_in_union = no
 			is_subject = no
 			has_regency = no
-			NOT = { 
-				ruler_has_personality = vu_doctor_of_architecture 
-				ruler_has_personality = vu_doctor_of_arts
-				ruler_has_personality = vu_doctor_of_philosophy
-				ruler_has_personality = vu_doctor_of_science
-				ruler_has_personality = vu_doctor_of_law
-				ruler_has_personality = vu_doctor_of_engineering
-				ruler_has_personality = vu_doctor_of_war
-				ruler_has_personality = vu_doctor_of_diplomacy
-				ruler_has_personality = vu_doctor_of_medicine
-				ruler_has_personality = vu_doctor_of_culinary
-				ruler_has_personality = vu_doctor_of_finance
-				ruler_has_personality = vu_doctor_of_theology
+			NOT = {
+				OR = {
+					ruler_has_personality = vu_doctor_of_architecture 
+				    ruler_has_personality = vu_doctor_of_arts
+				    ruler_has_personality = vu_doctor_of_philosophy
+				    ruler_has_personality = vu_doctor_of_science
+				    ruler_has_personality = vu_doctor_of_law
+				    ruler_has_personality = vu_doctor_of_engineering
+				    ruler_has_personality = vu_doctor_of_war
+				    ruler_has_personality = vu_doctor_of_diplomacy
+				    ruler_has_personality = vu_doctor_of_medicine
+				    ruler_has_personality = vu_doctor_of_culinary
+				    ruler_has_personality = vu_doctor_of_finance
+				    ruler_has_personality = vu_doctor_of_theology
+				}
 			}
 			ruler_has_personality = vu_masters_personality 
 		}
