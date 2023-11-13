@@ -8,7 +8,6 @@ abbasid_revolters = {
 	independence = none				# Does not strive for independence
 	defect_delay = 60
 	gfx_type = culture_owner
-	will_relocate = yes	
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
