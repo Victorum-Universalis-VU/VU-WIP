@@ -1107,6 +1107,8 @@ has_production_building_trigger = {
 		OR = {
 			has_building = workshop
 			has_building = counting_house
+			has_building = treasury
+			has_building = factory
 		}
 	}
 }
@@ -2243,18 +2245,18 @@ has_better_tech_than_westerns = {
 		    any_country = {
 				tech_difference = 1
 				OR = {
-				    technology_group = western
-				    technology_group = english_tech_group
-				    technology_group = french_tech_group
-				    technology_group = dutch_tech_group
-				    technology_group = german_tech_group
-				    technology_group = italian_tech_group
-					technology_group = portuguese_tech_group
-				    technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group
-				    technology_group = spanish_tech_group
-					technology_group = swiss_tech_group
-				}
+			    	technology_group = western
+			    	technology_group = dutch_tech_group
+			    	technology_group = english_tech_group
+			    	technology_group = french_tech_group
+			    	technology_group = german_tech_group
+			    	technology_group = italian_tech_group
+			    	technology_group = portuguese_tech_group
+			    	technology_group = roman_tech_group
+			    	technology_group = scandinavian_tech_group
+			    	technology_group = spanish_tech_group
+			    	technology_group = swiss_tech_group
+			    }
 				NOT = { tag = ROOT }
 			}
 		}
@@ -2272,18 +2274,18 @@ has_more_institutions_than_westerns = {
 						value = 1
 					}
 					OR = {
-				        technology_group = western
-				        technology_group = english_tech_group
-				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
-				        technology_group = german_tech_group
-				        technology_group = italian_tech_group
-				    	technology_group = portuguese_tech_group
-				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-				        technology_group = spanish_tech_group
-				    	technology_group = swiss_tech_group
-				    }
+			        	technology_group = western
+			        	technology_group = dutch_tech_group
+			        	technology_group = english_tech_group
+			        	technology_group = french_tech_group
+			        	technology_group = german_tech_group
+			        	technology_group = italian_tech_group
+			        	technology_group = portuguese_tech_group
+			        	technology_group = roman_tech_group
+			        	technology_group = scandinavian_tech_group
+			        	technology_group = spanish_tech_group
+			        	technology_group = swiss_tech_group
+			        }
 					NOT = { tag = ROOT }
 				}
 				amount = 1
@@ -4136,7 +4138,7 @@ has_updated_culture = {
 
 is_eligible_for_statists_monarchist_events = {
 	NOT = { has_government_attribute = theocratic_monarchy_mechanic }
-	NOT = { has_government_attribute = has_co_rulership }
+	#NOT = { has_government_attribute = has_co_rulership } Thanks PDX, this doesn't even exist in vanilla as a thing.
 }
 
 has_modifier_locking_military_tier = {
