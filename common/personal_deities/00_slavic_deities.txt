@@ -2,7 +2,7 @@ slavic_rod  = {
 	legitimacy = 0.1
 	horde_unity = 0.1
 	core_creation = -0.10
-	potential = { religion = slavic_pagan }
+	potential = { religion = slavic_pagan_reformed }
 	sprite = 9
 	ai_will_do = {
 		factor = 1
@@ -19,7 +19,7 @@ slavic_rod  = {
 slavic_vida = {
 	global_tax_modifier = 0.15
 	production_efficiency = 0.1
-	potential = { religion = slavic_pagan }
+	potential = { religion = slavic_pagan_reformed }
 	sprite = 7
 	ai_will_do = {
 		factor = 1
@@ -40,7 +40,7 @@ slavic_vida = {
 slavic_sud = {
 	discipline = 0.05
 	land_morale = 0.1
-	potential = { religion = slavic_pagan }
+	potential = { religion = slavic_pagan_reformed }
 	sprite = 8
 	ai_will_do = {
 		factor = 1
@@ -61,7 +61,7 @@ slavic_sud = {
 slavic_zhibog = {
 	global_manpower_modifier = 0.1
 	manpower_recovery_speed = 0.2
-	potential = { religion = slavic_pagan }
+	potential = { religion = slavic_pagan_reformed }
 	sprite = 11
 	ai_will_do = {
 		factor = 1
@@ -82,7 +82,7 @@ slavic_zhibog = {
 slavic_ognebog = {
 	global_trade_goods_size_modifier = 0.1
 	trade_efficiency = 0.15
-	potential = { religion = slavic_pagan }
+	potential = { religion = slavic_pagan_reformed }
 	sprite = 10
 	ai_will_do = {
 		factor = 1

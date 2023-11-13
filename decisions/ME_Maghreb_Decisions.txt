@@ -76,7 +76,7 @@ country_decisions = {
 				add_siberian_construction = 100
 			}
 			sahel_region = {
-				discover_province = ROOT
+				discover_country = ROOT
 			}
 		}
 	}
@@ -171,7 +171,7 @@ country_decisions = {
 		}
 		effect = {
 			set_global_flag = TUN_oran_fatwa_issued
-			country_event = { id = ME_Tunis_Events.2 }
+			#country_event = { id = ME_Tunis_Events.2 }
 		}
 		ai_will_do = {
 			factor = 1

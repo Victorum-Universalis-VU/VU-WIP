@@ -331,11 +331,8 @@ grant_imperial_court = {
 			}
 		}
 	}
-	on_decline = {
-	}
-
-	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
-	}
+	#on_decline = {}
+	#ai_acceptance = {} # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 
 	ai_will_do = { # this is a trigger
 		FROM = {
@@ -470,11 +467,8 @@ grant_imperial_marshall = {
 			}
 		}
 	}
-	on_decline = {
-	}
-
-	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
-	}
+	#on_decline = {}
+	#ai_acceptance = {} # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
 
 	ai_will_do = { # this is a trigger
 		FROM = {
@@ -547,157 +541,150 @@ cancel_imperial_marshall =  {
 		}
 	}
 }
-#{
-	# offer_trade_deal_tunisian_italian = {
-	# 	category = relation
-
-	# 	alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
-	# 	alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.
-		
-	# 	require_acceptance = yes
-
-	# 	is_visible = {
-	# 		has_government_attribute = enables_italian_grain_treaties
-	# 		always = no
-	# 		FROM = {
-	# 			culture_group = latin
-	# 		}
-	# 		NOT = {
-	# 			FROM = {
-	# 				has_country_modifier = GE_Tunisian_Grain_Trade
-	# 			}
-	# 		}
-	# 	}
-	# 	is_allowed = {
-	# 		has_government_attribute = enables_italian_grain_treaties
-	# 		FROM = {
-	# 			culture_group = latin
-	# 			alliance_with = ROOT
-	# 		}
-	# 		# NOT = {
-	# 		# 	FROM = {
-	# 		# 		has_country_modifier = GE_Tunisian_Grain_Trade
-	# 		# 	}
-	# 		# }
-	# 	}
-	# 	on_accept = {
-	# 		FROM = {
-	# 			add_country_modifier = {
-	# 				name = GE_Tunisian_Grain_Trade
-	# 				duration = -1
-	# 			}
-	# 		}
-	# 		ROOT = {
-	# 			add_country_modifier = {
-	# 				name = GE_Tunisian_Grain_Production
-	# 				duration = -1
-	# 			}
-	# 		}
-	# 	}
-	# 	on_decline = {
-	# 	}
-
-	# 	ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
-	# 		ai_value = 1
-	# 		# add_entry = {
-	# 		# 	name = GE_diplomatic_reputation    # The localisation key to display for this factor
-				
-	# 		# 	# ai_value MUST always be created within an entry first.
-	# 		# 	export_to_variable = {
-	# 		# 		variable_name = ai_value
-	# 		# 		value = modifier:diplomatic_reputation      # Which exportable value to export
-	# 		# 		who = ROOT                      # Who to export the value from
-	# 		# 		with = FROM                     # Who the ai_value is for
-	# 		# 	}
-	# 		# 	multiply_variable = {
-	# 		# 		which = ai_value
-	# 		# 		value = 5
-	# 		# 	}
-	# 		# 	# You can then change ai_value with effects such as multiply_variable, etc
-	# 		# }
-	# 		# add_entry = {
-	# 		# 	name = GE_base_acceptance
-	# 		# 	export_to_variable = {
-	# 		# 		variable_name = ai_value
-	# 		# 		value = 10      # Which exportable value to export
-	# 		# 		who = ROOT                      # Who to export the value from
-	# 		# 		with = FROM                     # Who the ai_value is for
-	# 		# 	}
-	# 		# }
-	# 		add_entry = {
-	# 			name = GE_base_acceptance
-	# 			export_to_variable = {
-	# 				variable_name = ai_value
-	# 				value = 1      # Which exportable value to export
-	# 				who = ROOT                      # Who to export the value from
-	# 				with = FROM                     # Who the ai_value is for
-	# 			}
-	# 			multiply_variable = {
-	# 				which = ai_value
-	# 				value = 10
-	# 			}
-	# 		}
-	# 	}
-
-	# 	ai_will_do = { # this is a trigger
-	# 		# FROM = {
-	# 		# 	culture_group = latin
-	# 		# 	alliance_with = ROOT
-	# 		# }
-	# 		always = yes
-	# 	}
-	# }
-	# cancel_trade_deal_tunisian_italian = {
-	# 	category = relation
-	# 	require_acceptance = no
-	# 	is_visible = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_country_modifier = GE_Tunisian_Grain_Trade
-	# 				has_country_modifier = GE_Tunisian_Grain_Production
-	# 			}
-	# 		}
-	# 		ROOT = {
-	# 			OR = {
-	# 				has_country_modifier = GE_Tunisian_Grain_Trade
-	# 				has_country_modifier = GE_Tunisian_Grain_Production
-	# 			}
-	# 		}
-	# 	}
-	# 	is_allowed = {
-	# 		FROM = {
-	# 			OR = {
-	# 				has_country_modifier = GE_Tunisian_Grain_Trade
-	# 				has_country_modifier = GE_Tunisian_Grain_Production
-	# 			}
-	# 		}
-	# 		ROOT = {
-	# 			OR = {
-	# 				has_country_modifier = GE_Tunisian_Grain_Trade
-	# 				has_country_modifier = GE_Tunisian_Grain_Production
-	# 			}
-	# 		}
-	# 	}
-	# 	on_accept = {
-	# 		FROM = {
-	# 			remove_country_modifier = GE_Tunisian_Grain_Trade
-	# 			remove_country_modifier = GE_Tunisian_Grain_Production\
-	# 			add_stability = -1
-	# 		}
-	# 		ROOT = {
-	# 			remove_country_modifier = GE_Tunisian_Grain_Trade
-	# 			remove_country_modifier = GE_Tunisian_Grain_Production
-	# 			add_stability = -1
-	# 		}
-	# 	}
-	# 	ai_will_do = { # this is a trigger
-	# 		NOT = {
-	# 			FROM = {
-	# 				alliance_with = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# }
+#
+#	offer_trade_deal_tunisian_italian = {
+#		category = relatio
+#		alert_index = 27 #34             # The alert to use for the action. Refer to static_actions for the indexes. Optional.
+#		alert_tooltip = ICON_GE_TD         # The localisation key to display in the alert tooltip. Optional.	
+#		require_acceptance = ye
+#		is_visible = {
+#			has_government_attribute = enables_italian_grain_treaties
+#			always = no
+#			FROM = {
+#				culture_group = latin
+#			}
+#			NOT = {
+#				FROM = {
+#					has_country_modifier = GE_Tunisian_Grain_Trade
+#				}
+#			}
+#		}
+#		is_allowed = {
+#			has_government_attribute = enables_italian_grain_treaties
+#			FROM = {
+#				culture_group = latin
+#				alliance_with = ROOT
+#			}
+#			# NOT = {
+#			# 	FROM = {
+#			# 		has_country_modifier = GE_Tunisian_Grain_Trade
+#			# 	}
+#			# }
+#		}
+#		on_accept = {
+#			FROM = {
+#				add_country_modifier = {
+#					name = GE_Tunisian_Grain_Trade
+#					duration = -1
+#				}
+#			}
+#			ROOT = {
+#				add_country_modifier = {
+#					name = GE_Tunisian_Grain_Production
+#					duration = -1
+#				}
+#			}
+#		}
+#		on_decline = {
+#		
+#		ai_acceptance = { # This works similarly to variable_arithmetic_trigger, but does not support triggers generally. Instead, "limit" will be evaluated first and the rest ignored if it isn't passed.
+#			add_entry = {
+#				name = GE_diplomatic_reputation    # The localisation key to display for this factor			
+#				# ai_value MUST always be created within an entry first.
+#				export_to_variable = {
+#					variable_name = ai_value
+#					value = modifier:diplomatic_reputation      # Which exportable value to export
+#					who = ROOT                      # Who to export the value from
+#					with = FROM                     # Who the ai_value is for
+#				}
+#				multiply_variable = {
+#					which = ai_value
+#					value = 5
+#				}
+#				# You can then change ai_value with effects such as multiply_variable, etc
+#			}
+#			add_entry = {
+#				name = GE_base_acceptance
+#				export_to_variable = {
+#					variable_name = ai_value
+#					value = 10      # Which exportable value to export
+#					who = ROOT                      # Who to export the value from
+#					with = FROM                     # Who the ai_value is for
+#				}
+#			}
+#			add_entry = {
+#				name = GE_base_acceptance
+#				export_to_variable = {
+#					variable_name = ai_value
+#					value = 1      # Which exportable value to export
+#					who = ROOT                      # Who to export the value from
+#					with = FROM                     # Who the ai_value is for
+#				}
+#				multiply_variable = {
+#					which = ai_value
+#					value = 10
+#				}
+#			}
+#		
+#		ai_will_do = { # this is a trigger
+#			FROM = {
+#				culture_group = latin
+#				alliance_with = ROOT
+#			}
+#			always = yes
+#		}
+#	}
+#	cancel_trade_deal_tunisian_italian = {
+#		category = relation
+#		require_acceptance = no
+#		is_visible = {
+#			FROM = {
+#				OR = {
+#					has_country_modifier = GE_Tunisian_Grain_Trade
+#					has_country_modifier = GE_Tunisian_Grain_Production
+#				}
+#			}
+#			ROOT = {
+#				OR = {
+#					has_country_modifier = GE_Tunisian_Grain_Trade
+#					has_country_modifier = GE_Tunisian_Grain_Production
+#				}
+#			}
+#		}
+#		is_allowed = {
+#			FROM = {
+#				OR = {
+#					has_country_modifier = GE_Tunisian_Grain_Trade
+#					has_country_modifier = GE_Tunisian_Grain_Production
+#				}
+#			}
+#			ROOT = {
+#				OR = {
+#					has_country_modifier = GE_Tunisian_Grain_Trade
+#					has_country_modifier = GE_Tunisian_Grain_Production
+#				}
+#			}
+#		}
+#		on_accept = {
+#			FROM = {
+#				remove_country_modifier = GE_Tunisian_Grain_Trade
+#				remove_country_modifier = GE_Tunisian_Grain_Production
+#				add_stability = -1
+#			}
+#			ROOT = {
+#				remove_country_modifier = GE_Tunisian_Grain_Trade
+#				remove_country_modifier = GE_Tunisian_Grain_Production
+#				add_stability = -1
+#			}
+#		}
+#		ai_will_do = { # this is a trigger
+#			NOT = {
+#				FROM = {
+#					alliance_with = ROOT
+#				}
+#			}
+#		}
+#	}
 #}
 
 cancel_trade_deal_generic = {

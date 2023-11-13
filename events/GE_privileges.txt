@@ -247,10 +247,14 @@ country_event = {
 					any_ally = {
 						tag = ROOT
 					}
-					is_emperor = yes
+				}
+				NOT = { is_emperor = yes }
+				NOT = {
 					overlord = {
 						tag = ROOT
 					}
+				}
+				NOT = {
 					any_neighbor_country = {
 						overlord = {
 							tag = ROOT
@@ -497,7 +501,9 @@ country_event = {
 					any_ally = {
 						tag = ROOT
 					}
-					is_emperor = yes
+				}
+				NOT = { is_emperor = yes }
+				NOT = {
 					overlord = {
 						tag = ROOT
 					}

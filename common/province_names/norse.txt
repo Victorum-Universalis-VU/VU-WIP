@@ -139,11 +139,11 @@
 983 = "Eyjan"
 985 = "Ættbálkur"
 986 = "Örnefni"
-996 = "Gistinótt" "Sandfljót"
+996 = { "Gistinótt" "Sandfljót" }
 995 = "Barm" 
-997 = "Markland" "Skræling"
+997 = { "Markland" "Skræling" }
 1104 = "Eiriksfjörður"
-1105 = "Miðja" "Holsteinsborg"
+1105 = { "Miðja" "Holsteinsborg" }
 1177 = "Höfdhaland" #Cape Town = Höfdhaborg
 1283 = "Vestrsudhreyjar" #Stornoway = Stjórnavágr
 1749 = "Karlsá"
@@ -181,9 +181,9 @@
 2573 = "Karíbú"
 2574 = "Fólk á ísnum"
 2575 = "Stórfljót"
-2576 = "Uppsettur" "Equanitshit"
-2577 = "Flóann" "Sjö eyjar"
-2578 = "Fram land" "Menier Höfn"
+2576 = { "Uppsettur" "Equanitshit" }
+2577 = { "Flóann" "Sjö eyjar" }
+2578 = { "Fram land" "Menier Höfn" }
 2579 = "Suður-Markland"
 2582 = "Friðland elgs"
 2583 = "Suðurflutningur"
@@ -192,9 +192,9 @@
 2972 = "Poddubrunnar"
 2980 = "Lúka"
 2988 = "Tarragun"
-3111 = "Hið norðlæga" "Jacobshaven"
-3112 = "Næs" "Godthåb"
-3113 = "Inntak" "Frederikshåb"
+3111 = { "Hið norðlæga" "Jacobshaven" }
+3112 = { "Næs" "Godthåb" }
+3113 = { "Inntak" "Frederikshåb" }
 4110 = "Sudhrland"
 4113 = "Kvenland" #Uleaborg = Uleárborgr
 4114 = "Lule Laepmork" #Jokkmokk = Jokomuka
@@ -253,7 +253,7 @@
 4785 = "Sjalfelt"
 4891 = "Sprengilegur staður"
 4974 = "Straumfjörður"
-4998 = "landið okkar" "Staður Margra Fiska"
+4998 = { "landið okkar" "Staður Margra Fiska" }
 5013 = "Beotheim"
 5019 = "Eyju Karlsefni"
 5048 = "Jarðarskáli"
@@ -261,7 +261,7 @@
 5051 = "Lönd lýkur"
 5053 = "Úlfs ánni"
 5054 = "Samkomustaður"
-5055 = "Skógarfljót" "Þröngt dalsgil"
+5055 = { "Skógarfljót" "Þröngt dalsgil" }
 5058 = "Ethaylingfjord"
 5059 = "Straumsoy"
 5588 = "Staður með mikið"

@@ -283,8 +283,8 @@ country_event = {
 	option = {
 		name = "hre_event.3.b"
 		trigger = {
+			NOT = {	culture_group = latin }
 			NOT = {
-				culture_group = latin
 				capital_scope = {
 					region = italy_region
 				}
@@ -296,8 +296,8 @@ country_event = {
 	option = {
 		name = "hre_event.3.c"
 		trigger = {
+			NOT = {	culture_group = latin }
 			NOT = {
-				culture_group = latin
 				capital_scope = {
 					region = italy_region
 				}

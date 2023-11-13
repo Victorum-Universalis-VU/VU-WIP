@@ -220,7 +220,7 @@ technology = {  #Heavy Calvalry
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.05
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	cavalry_shock = 0.10
@@ -236,7 +236,7 @@ technology = {  #Plate Armor
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.1
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	land_morale = 0.2

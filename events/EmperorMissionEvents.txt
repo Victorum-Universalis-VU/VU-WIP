@@ -229,11 +229,9 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			NOT = {
-				has_adm_advisor = yes
-				has_dip_advisor = yes
-				has_mil_advisor = yes
-			}
+			NOT = {	has_adm_advisor = yes }
+			NOT = {	has_dip_advisor = yes }
+			NOT = {	has_mil_advisor = yes }
 		}
 		desc = emp_mission_events.7.d2
 	}

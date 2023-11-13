@@ -7,7 +7,6 @@ take_capital_claim_timur_empire = {
 		peace_cost_factor = 0.5
 
 		peace_options = {
-			po_claim_timurid_empire
 			po_demand_provinces
 		}
 

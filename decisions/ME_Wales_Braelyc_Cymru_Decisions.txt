@@ -450,13 +450,13 @@ country_decisions = {
 					limit = {
 						culture = scottish
 					}
-					change_culture = scottish_celtic
+					change_culture = celtic_highland_scottish_culture
 				}
 				every_province = {
 					limit = {
 						culture = highland_scottish
 					}
-					change_culture = scottish_celtic
+					change_culture = celtic_highland_scottish_culture
 				}
 			}
 			SCO = {
@@ -472,7 +472,7 @@ country_decisions = {
 					change_government = monarchy
 					add_government_reform = feudalism_reform
 					add_government_reform = parliamentary_reform
-					change_primary_culture = scottish_celtic
+					change_primary_culture = celtic_highland_scottish_culture
 				}
 			}
 			add_country_modifier = {
@@ -532,7 +532,7 @@ country_decisions = {
 					limit = {
 						culture = breton
 					}
-					change_culture = breton_celtic
+					change_culture = celtic_breton_culture
 				}
 			}
 			create_subject = {
@@ -552,7 +552,7 @@ country_decisions = {
 					change_government = monarchy
 					add_government_reform = feudalism_reform
 					add_government_reform = parliamentary_reform
-					change_primary_culture = breton_celtic
+					change_primary_culture = celtic_breton_culture
 				}
 			}
 			add_country_modifier = {

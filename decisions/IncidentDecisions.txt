@@ -28,10 +28,8 @@ country_decisions = {
 							AND = {
 								is_subject = yes
 								overlord = { # overlord chooses for their vassals if eligible to leave themselves
-									NOT = {
-										is_part_of_hre = yes
-										capital_scope = { region = italy_region }
-									}
+									NOT = {	is_part_of_hre = yes }
+									NOT = {	capital_scope = { region = italy_region } }
 								}
 							}
 						}
@@ -50,10 +48,8 @@ country_decisions = {
 						AND = {
 							is_subject = yes
 							overlord = { # overlord chooses for their vassals if eligible to leave themselves
-								NOT = {
-									is_part_of_hre = yes
-									capital_scope = { region = italy_region }
-								}
+								NOT = {	is_part_of_hre = yes }
+								NOT = {	capital_scope = { region = italy_region } }
 							}
 						}
 					}

@@ -9,6 +9,7 @@ estate_jews = {
 			    NOT = { religion = jewish }
 			    any_owned_province = { has_province_modifier = jewish_population }
 			}
+			has_government_attribute = enables_jewish_estate
 			has_country_flag = country_has_jews_yes
 			AND = {
 			    NOT = { religion = jewish }

@@ -135,11 +135,13 @@ defined_text = {
         trigger = {
 			religion_group = muslim
 			NOT = {
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
+				OR = {
+					culture_group = eastern_aryan
+				    culture_group = hindusthani
+				    culture_group = western_aryan
+				    culture_group = dravidian
+				    culture_group = central_indic
+				}
 			}
         }
 	}
@@ -190,17 +192,19 @@ defined_text = {
         trigger = {
 			NOT = { religion_group = muslim }
 			NOT = {
-				culture_group = east_asian
-				culture_group = eastern_aryan
-				culture_group = hindusthani
-				culture_group = western_aryan
-				culture_group = dravidian
-				culture_group = central_indic
-				culture_group = south_slavic
-				culture_group = british
-				culture = anglois
-				culture_group = french
-				culture_group = germanic
+				OR = {
+					culture_group = east_asian
+				    culture_group = eastern_aryan
+				    culture_group = hindusthani
+				    culture_group = western_aryan
+				    culture_group = dravidian
+				    culture_group = central_indic
+				    culture_group = south_slavic
+				    culture_group = british
+				    culture = anglois
+				    culture_group = french
+				    culture_group = germanic
+				}
 			}
         }
 	}
@@ -338,8 +342,10 @@ defined_text = {
 		localisation_key = string_govtname
 		trigger = {
 			NOT = {
-				government = monarchy
-				government = republic
+				OR = {
+					government = monarchy
+					government = republic
+				}
 			}
 		}
 	}
@@ -1541,7 +1547,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				#Chinese
-				culture_group = east_asian
+				#culture_group = east_asian
 				#All the American tribes
 				technology_group = north_american
 				technology_group = mesoamerican
@@ -1551,8 +1557,8 @@ defined_text = {
 				#Ottomans, Timurids, Mamluks etc
 				tag_with_plural_name_trigger = yes
 			}
-			NOT = { has_country_flag = is_revolutionary_china_flag }
-			NOT = { has_country_flag = is_china_flag }
+			#NOT = { has_country_flag = is_revolutionary_china_flag }
+			#NOT = { has_country_flag = is_china_flag }
 			NOT = { has_country_flag = is_revolutionary_turkey_flag }
 			NOT = { has_country_flag = is_turkey_flag }
 			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
@@ -1573,7 +1579,7 @@ defined_text = {
 					OR = {
 						tag = PLC
 						#Chinese
-						culture_group = east_asian
+						#culture_group = east_asian
 						#All the American tribes
 						technology_group = north_american
 						technology_group = mesoamerican
@@ -1584,8 +1590,8 @@ defined_text = {
 						tag_with_plural_name_trigger = yes
 					}
 				}
-				has_country_flag = is_revolutionary_china_flag
-				has_country_flag = is_china_flag
+				#has_country_flag = is_revolutionary_china_flag
+				#has_country_flag = is_china_flag
 				has_country_flag = is_revolutionary_turkey_flag
 				has_country_flag = is_turkey_flag
 				has_country_flag = is_revolutionary_gurkani_flag
@@ -1605,7 +1611,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				#Chinese
-				culture_group = east_asian
+				#culture_group = east_asian
 				#All the American tribes
 				technology_group = north_american
 				technology_group = mesoamerican
@@ -1615,8 +1621,8 @@ defined_text = {
 				#Ottomans, Timurids, Mamluks etc
 				tag_with_plural_name_trigger = yes
 			}
-			NOT = { has_country_flag = is_revolutionary_china_flag }
-			NOT = { has_country_flag = is_china_flag }
+			#NOT = { has_country_flag = is_revolutionary_china_flag }
+			#NOT = { has_country_flag = is_china_flag }
 			NOT = { has_country_flag = is_revolutionary_turkey_flag }
 			NOT = { has_country_flag = is_turkey_flag }
 			NOT = { has_country_flag = is_revolutionary_gurkani_flag }
@@ -1637,7 +1643,7 @@ defined_text = {
 					OR = {
 						tag = PLC
 						#Chinese
-						culture_group = east_asian
+						#culture_group = east_asian
 						#All the American tribes
 						technology_group = north_american
 						technology_group = mesoamerican
@@ -1648,8 +1654,8 @@ defined_text = {
 						tag_with_plural_name_trigger = yes
 					}
 				}
-				has_country_flag = is_revolutionary_china_flag
-				has_country_flag = is_china_flag
+				#has_country_flag = is_revolutionary_china_flag
+				#has_country_flag = is_china_flag
 				has_country_flag = is_revolutionary_turkey_flag
 				has_country_flag = is_turkey_flag
 				has_country_flag = is_revolutionary_gurkani_flag

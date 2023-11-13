@@ -97,10 +97,8 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			NOT = {
-				primary_culture = manchu
-				primary_culture = manchu_new
-			}
+			NOT = {	primary_culture = manchu }
+			NOT = {	primary_culture = manchu_new }
 		}
 		name = empire_of_china_nomadic_border_events.4.opt
 		custom_tooltip = empire_of_china_nomadic_border_events.4.tooltip
@@ -204,10 +202,8 @@ country_event = {
 				is_emperor_of_china = yes
 				has_any_disaster = yes
 			}
-			NOT = {
-				primary_culture = manchu
-				primary_culture = manchu_new
-			}
+			NOT = {	primary_culture = manchu }
+			NOT = {	primary_culture = manchu_new }
 		}
 		name = empire_of_china_nomadic_border_events.4.opt #deliberately 4
 	}

@@ -203,84 +203,84 @@ country_decisions = {
 		}
 	}
 
-	autonomous_dominion_ghana_nation = {
-		major = yes
-		potential = {
-			NOT = { exists = GHA }
-			NOT = { has_country_flag = changed_from_colonial_nation }
-			OR = {
-				is_former_autonomous_dominion = yes
-				is_subject_of_type = dominion_tc
-				is_subject_of_type = autonomous_dominion_tc
-				is_colonial_nation = yes
-			}
-			is_dominion_tag_in_west_africa = yes
-		}
-		allow = {
-			is_former_autonomous_dominion = yes
-			is_subject = no
-			is_at_war = no
-			capital_scope = {
-				OR = {
-					#West Africa
-			        trade_company_region = trade_company_senegal
-			        trade_company_region = trade_company_gambia
-			        trade_company_region = trade_company_bissau
-			        trade_company_region = trade_company_guinea
-			        trade_company_region = trade_company_sierra_leone
-			        trade_company_region = trade_company_liberia
-			        trade_company_region = trade_company_ivory_coast
-			        trade_company_region = trade_company_ghana
-			        trade_company_region = trade_company_togo
-			        trade_company_region = trade_company_benin
-			        trade_company_region = trade_company_nigeria
-			        trade_company_region = trade_company_cameroon
-			        trade_company_region = trade_company_gabon
-			        trade_company_region = trade_company_angola
-			        
-			        #Timbuktu
-			        trade_company_region = trade_company_mali
-			        trade_company_region = trade_company_mauritania
-			        trade_company_region = trade_company_burkina
-			        
-			        #Katsina
-			        trade_company_region = trade_company_niger
-			        trade_company_region = trade_company_chad
-			        trade_company_region = trade_company_central_africa
-			        
-			        #Kongo
-			        trade_company_region = trade_company_kongo
-				}
-			}
-		}
-		effect = {
-			hidden_effect = {
-				restore_country_name = yes
-				clr_country_flag = renamed_dominion_accordingly_to_free
-				every_country = {
-					limit = {
-						ROOT = {
-							has_country_flag = renamed_dominion_accordingly_to_@PREV
-						}
-					}
-					ROOT = {
-						clr_country_flag = renamed_dominion_accordingly_to_@PREV
-					}
-				}
-			}
-			add_prestige = 25
-			change_tag = GHA
-			set_country_flag = changed_from_colonial_nation
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			swap_free_idea_group = yes
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#autonomous_dominion_ghana_nation = {
+	#	major = yes
+	#	potential = {
+	#		NOT = { exists = GHA }
+	#		NOT = { has_country_flag = changed_from_colonial_nation }
+	#		OR = {
+	#			is_former_autonomous_dominion = yes
+	#			is_subject_of_type = dominion_tc
+	#			is_subject_of_type = autonomous_dominion_tc
+	#			is_colonial_nation = yes
+	#		}
+	#		is_dominion_tag_in_west_africa = yes
+	#	}
+	#	allow = {
+	#		is_former_autonomous_dominion = yes
+	#		is_subject = no
+	#		is_at_war = no
+	#		capital_scope = {
+	#			OR = {
+	#				#West Africa
+	#		        trade_company_region = trade_company_senegal
+	#		        trade_company_region = trade_company_gambia
+	#		        trade_company_region = trade_company_bissau
+	#		        trade_company_region = trade_company_guinea
+	#		        trade_company_region = trade_company_sierra_leone
+	#		        trade_company_region = trade_company_liberia
+	#		        trade_company_region = trade_company_ivory_coast
+	#		        trade_company_region = trade_company_ghana
+	#		        trade_company_region = trade_company_togo
+	#		        trade_company_region = trade_company_benin
+	#		        trade_company_region = trade_company_nigeria
+	#		        trade_company_region = trade_company_cameroon
+	#		        trade_company_region = trade_company_gabon
+	#		        trade_company_region = trade_company_angola
+	#		        
+	#		        #Timbuktu
+	#		        trade_company_region = trade_company_mali
+	#		        trade_company_region = trade_company_mauritania
+	#		        trade_company_region = trade_company_burkina
+	#		        
+	#		        #Katsina
+	#		        trade_company_region = trade_company_niger
+	#		        trade_company_region = trade_company_chad
+	#		        trade_company_region = trade_company_central_africa
+	#		        
+	#		        #Kongo
+	#		        trade_company_region = trade_company_kongo
+	#			}
+	#		}
+	#	}
+	#	effect = {
+	#		hidden_effect = {
+	#			restore_country_name = yes
+	#			clr_country_flag = renamed_dominion_accordingly_to_free
+	#			every_country = {
+	#				limit = {
+	#					ROOT = {
+	#						has_country_flag = renamed_dominion_accordingly_to_@PREV
+	#					}
+	#				}
+	#				ROOT = {
+	#					clr_country_flag = renamed_dominion_accordingly_to_@PREV
+	#				}
+	#			}
+	#		}
+	#		add_prestige = 25
+	#		change_tag = GHA
+	#		set_country_flag = changed_from_colonial_nation
+	#		add_country_modifier = {
+	#			name = "centralization_modifier"
+	#			duration = 7300
+	#		}
+	#		swap_free_idea_group = yes
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 
 	autonomous_dominion_zimbabwe_nation = {
 		major = yes

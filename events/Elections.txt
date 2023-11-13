@@ -124,6 +124,14 @@ country_event = {
 					20 = { set_country_flag = sforza_5 }
 				}
 			}
+			pre_select_possible_ruler_focus = yes
+			if = {
+				limit = { has_government_attribute = has_limited_terms }
+				export_to_variable = {
+					which = max_election_term
+					value = modifier:max_terms
+				}
+			}
 		}
 	}
 	
@@ -146,25 +154,6 @@ country_event = {
 			republican_tradition = 50
 		}
 	}
-
-	immediate = {
-		hidden_effect = {
-			pre_select_possible_ruler_focus = yes
-			if = {
-				limit = { has_government_attribute = has_limited_terms }
-				export_to_variable = {
-					which = max_election_term
-					value = modifier:max_terms
-				}
-			}
-		}
-	}
-
-	after = {
-		clr_country_flag = caretaker_revolutionary_government
-		post_ruler_focus_clearance = yes
-	}
-
 	option = {
 		name = "EVTOPTA700"	# Current ruler stays
 		trigger = {
@@ -1243,6 +1232,8 @@ country_event = {
 		}
 	}
 	after = {
+		clr_country_flag = caretaker_revolutionary_government
+		post_ruler_focus_clearance = yes
 		clr_country_flag = adm_advisor
 		clr_country_flag = adm_pope
 		clr_country_flag = adm_stabcost
@@ -1338,9 +1329,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	after = {
-		post_ruler_focus_clearance = yes
 	}
 	
 	option = {
@@ -2030,6 +2018,7 @@ country_event = {
 		}
 	}
 	after = {
+		post_ruler_focus_clearance = yes
 		clr_country_flag = adm_advisor
 		clr_country_flag = adm_pope
 		clr_country_flag = adm_stabcost

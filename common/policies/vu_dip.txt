@@ -1,0 +1,241 @@
+vu_quality_manufactured_goods = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = quality_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = quality_ideas 
+	}
+	
+	global_trade_goods_size = 0.05 production_efficiency = 0.05
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_trade_import_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = trade_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = trade_ideas 
+	}
+	
+	trade_efficiency = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_boat_manufactories = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = naval_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = naval_ideas 
+	}
+	
+	global_ship_cost = -0.15 ship_durability = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_promote_economic_manuverability = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = plutocracy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = plutocracy_ideas 
+	}
+	
+	center_of_trade_upgrade_cost = -0.1 production_efficiency = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_subject_import_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = exploration_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = exploration_ideas 
+	}
+	
+	liberty_desire_from_subject_development = -0.15 global_tariffs = -0.25 
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_industrial_integration_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = diplomatic_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = diplomatic_ideas 
+	}
+	
+	vassal_forcelimit_bonus = 0.1 	vassal_naval_forcelimit_bonus = 0.1 vassal_income = 0.25
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_expand_definition_of_human = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = humanist_ideas 
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = humanist_ideas 
+	}
+	
+	num_accepted_cultures = 1 promote_culture_cost = -0.2
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_xenophobia_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = spy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = spy_ideas 
+	}
+	
+	culture_conversion_cost = -0.20 global_spy_defence = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_cultural_protectionism_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = diplomatic_ideas  
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = diplomatic_ideas  
+	}
+	
+	diplomatic_upkeep = 1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_depoprtation_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = exploration_ideas 
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = exploration_ideas 
+	}
+	
+	colony_development_boost = 1 expel_minorities_cost = -0.50
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}
+
+vu_armed_murchant_ships = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = expansion_ideas 
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = expansion_ideas 
+	}
+	
+	naval_tradition_from_trade = 0.1 ship_trade_power_modifier = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7			
+	}
+}

@@ -134,8 +134,8 @@ country_event = {
 						}
 					}
 					AND = {
+						NOT = {	exists = FRA }
 						NOT = {
-							exists = FRA
 							FRA = {
 								is_subject = no
 								has_country_flag = restored_the_frankish_realm

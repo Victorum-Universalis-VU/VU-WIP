@@ -5,11 +5,9 @@ zapadoslavia_disloyal_nobles_triggered_modifier = {
 	
 	trigger = {
 		OR = {
-			NOT = {
-				check_variable = { which = ME_slovak_loyalty value = 0 }
-				check_variable = { which = ME_czech_loyalty value = 0 }
-				check_variable = { which = ME_polish_loyalty value = 0 }
-			}
+			NOT = {	check_variable = { which = ME_slovak_loyalty value = 0 } }
+			NOT = {	check_variable = { which = ME_czech_loyalty value = 0 }	}
+			NOT = {	check_variable = { which = ME_polish_loyalty value = 0 } }
 		}
 	}
 	legitimacy = -1

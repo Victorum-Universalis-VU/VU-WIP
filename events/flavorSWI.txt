@@ -714,8 +714,10 @@ country_event = {
 		}
 		trigger = {
 			NOT = {
-				tag = GNV
-				tag = PAP
+				OR = {
+					tag = GNV
+					tag = PAP
+				}
 			}
 		}
 		if = {

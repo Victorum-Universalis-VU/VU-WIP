@@ -240,7 +240,10 @@ establish_peasant_vassal = {
 				value = trigger_value:government_rank
 				who = FROM
 			}
-			subtract_variable = { which = ai_value which = ai_value_2 }
+			subtract_variable = { 
+				which = ai_value 
+				which = ai_value_2 
+			}
 			multiply_variable = { which = ai_value value = 10 }
 		}
 		add_entry = {

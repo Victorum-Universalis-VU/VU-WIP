@@ -335,11 +335,9 @@ country_event = {
 	trigger = {
 		is_revolutionary_republic_trigger = yes
 		has_country_modifier = the_reign_of_terror
-		NOT = {
-			has_country_flag = advisor_events_adm
-			has_country_flag = advisor_events_dip
-			has_country_flag = advisor_events_mil
-		}
+		NOT = {	has_country_flag = advisor_events_adm }
+		NOT = {	has_country_flag = advisor_events_dip }
+		NOT = {	has_country_flag = advisor_events_mil }
 		OR = {
 			has_adm_advisor = yes
 			has_dip_advisor = yes
@@ -448,11 +446,9 @@ country_event = {
 	trigger = {
 		is_revolutionary_republic_trigger = yes
 		has_country_modifier = the_reign_of_terror
-		NOT = {
-			has_country_flag = advisor_events_adm
-			has_country_flag = advisor_events_dip
-			has_country_flag = advisor_events_mil
-		}
+		NOT = { has_country_flag = advisor_events_adm }
+		NOT = { has_country_flag = advisor_events_dip }
+		NOT = {	has_country_flag = advisor_events_mil }
 		OR = {
 			has_adm_advisor = yes
 			has_dip_advisor = yes

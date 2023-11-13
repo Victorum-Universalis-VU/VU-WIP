@@ -1185,11 +1185,9 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			NOT = {
-				has_ruler_flag = high_adm
-				has_ruler_flag = high_dip
-				has_ruler_flag = high_mil
-			}
+			NOT = {	has_ruler_flag = high_adm }
+			NOT = {	has_ruler_flag = high_dip }
+			NOT = {	has_ruler_flag = high_mil }
 		}
 		desc = consort_events.54.dd # even stats or N/A
 	}
@@ -1417,11 +1415,9 @@ country_event = {
 		clr_ruler_flag = high_mil
 
 		trigger = {
-			NOT = {
-				has_ruler_flag = high_adm
-				has_ruler_flag = high_dip
-				has_ruler_flag = high_mil
-			}
+			NOT = {	has_ruler_flag = high_adm }
+			NOT = {	has_ruler_flag = high_dip }
+			NOT = {	has_ruler_flag = high_mil }
 		}
 	}
 }

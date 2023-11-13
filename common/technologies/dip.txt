@@ -160,7 +160,7 @@ technology = {  #City Growth
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.1
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	trade_efficiency = 0.02
@@ -175,7 +175,7 @@ technology = {  #Torpedo
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.05
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	naval_morale = 1.0
@@ -344,8 +344,8 @@ technology = { #Basic Financial Instruments
 		gunpowder_warfare = 0.1
 		medicine = 0.1
 		civil_service = 0.5
-		market_production = 0.5
 		renaissance = 0.15
+		market_production = 0.5
 	}
 	
 	naval_maintenance		=	0.1	

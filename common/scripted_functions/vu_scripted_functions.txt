@@ -15,9 +15,11 @@ can_release_colonial_nation = {
         }
         allow = {
             NOT = {
-				tag = GBR
-				tag = UNK
-				tag = ENG
+				OR = {
+					tag = ENG
+					tag = GBR
+					tag = UNK
+				}
 			}
         }
     }
@@ -63,6 +65,27 @@ can_colonize_province = {
 			FROM = { capital_scope = { continent = ROOT } }
 		}
 	}
+
+	### Dominions cant colonize 
+	condition = {
+		tooltip = "VU_Subject_Colonization"
+		
+		potential = {
+			FROM = { 
+				OR = {
+					is_subject_of_type = dominion
+					is_subject_of_type = dominion_tc
+					is_subject_of_type = autonomous_dominion
+					is_subject_of_type = autonomous_dominion_tc
+				}
+			}
+		}
+		
+		allow = {
+			FROM = { capital_scope = { area = ROOT } }
+		}
+	}
+	
 	
 	### Hard to Colonize
 	condition = {
@@ -84,9 +107,7 @@ can_colonize_province = {
 					technology_group = central_african
 					technology_group = sub_saharan
 					technology_group = aboriginal_tech
-					technology_group = rapanuan_tech_group
 					technology_group = polynesian_tech
-					technology_group = papuan_tech_group
 					dip_tech = 35 #After 1856 the restrictions are lifted
 				}
 			}
@@ -101,10 +122,12 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				current_age = age_of_reformation
-				current_age = age_of_absolutism
-				current_age = age_of_revolutions
-				current_age = age_of_change
+				OR = {
+					current_age = age_of_reformation
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+					current_age = age_of_change
+				}
 			}
 			
 			OR = {
@@ -132,9 +155,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 					}
 				}
 				FROM = {
@@ -151,9 +172,11 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				current_age = age_of_absolutism
-				current_age = age_of_revolutions
-				current_age = age_of_change
+				OR = {
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+					current_age = age_of_change
+				}
 			}
 			
 			OR = {
@@ -181,9 +204,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 					}
 				}
 				FROM = {
@@ -200,8 +221,10 @@ can_colonize_province = {
 		
         potential = {	
 			NOT = {
-				current_age = age_of_revolutions
-				current_age = age_of_change
+				OR = {
+					current_age = age_of_revolutions
+					current_age = age_of_change
+				}
 			}
 			
 			OR = {
@@ -232,9 +255,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 					}
 				}
 				FROM = {
@@ -315,9 +336,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -343,13 +362,14 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Spanish Cultures
-				FROM = { primary_culture = andalucian } #Andalucian
-				FROM = { primary_culture = aragonese } #Aragonese
-				FROM = { primary_culture = castillian } #Castillian
-				FROM = { primary_culture = catalan } #Catalan
-				FROM = { primary_culture = galician } #Galician
-				FROM = { primary_culture = leonese } #Leonese
+				OR = {
+					#Spanish Cultures
+					FROM = { primary_culture = andalucian } #AndalucianFROM = { primary_culture = aragonese } #Aragonese
+				    FROM = { primary_culture = castillian } #Castillian
+				    FROM = { primary_culture = catalan } #Catalan
+				    FROM = { primary_culture = galician } #Galician
+				    FROM = { primary_culture = leonese } #Leonese
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -397,9 +417,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -425,10 +443,12 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
+				OR = {
+					#British Cultures
+					FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -521,9 +541,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -549,21 +567,23 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
+				OR = {
+					#French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -658,9 +678,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -686,22 +704,24 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#German Cultures
-				FROM = { primary_culture = alsatian } #Alsatian
-				FROM = { primary_culture = austrian } #Austrian
-				FROM = { primary_culture = bavarian } #Bavarian
-				FROM = { primary_culture = franconian } #Franconian
-				FROM = { primary_culture = hannoverian } #Westphalian
-				FROM = { primary_culture = hessian } #Rhenish
-				FROM = { primary_culture = holsatian } #Holsatian
-				FROM = { primary_culture = lower_saxon } #Low Saxon
-				FROM = { primary_culture = pommeranian } #Pomeranian
-				FROM = { primary_culture = prussian } #Prussian
-				FROM = { primary_culture = saxon } #High Saxon
-				FROM = { primary_culture = silesian_german } #Low Silesian
-				FROM = { primary_culture = swabian } #Swabian
-				FROM = { primary_culture = swiss } #Low Swiss
-				FROM = { primary_culture = transylvanian_saxons } #Carpathian
+				OR = {
+					#German Cultures
+				    FROM = { primary_culture = alsatian } #Alsatian
+				    FROM = { primary_culture = austrian } #Austrian
+				    FROM = { primary_culture = bavarian } #Bavarian
+				    FROM = { primary_culture = franconian } #Franconian
+				    FROM = { primary_culture = hannoverian } #Westphalian
+				    FROM = { primary_culture = hessian } #Rhenish
+				    FROM = { primary_culture = holsatian } #Holsatian
+				    FROM = { primary_culture = lower_saxon } #Low Saxon
+				    FROM = { primary_culture = pommeranian } #Pomeranian
+				    FROM = { primary_culture = prussian } #Prussian
+				    FROM = { primary_culture = saxon } #High Saxon
+				    FROM = { primary_culture = silesian_german } #Low Silesian
+				    FROM = { primary_culture = swabian } #Swabian
+				    FROM = { primary_culture = swiss } #Low Swiss
+				    FROM = { primary_culture = transylvanian_saxons } #Carpathian
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -741,9 +761,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -769,13 +787,15 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Nordic Cultures
-				FROM = { primary_culture = danish } #Danish
-				FROM = { primary_culture = faroese } #Faroese
-				FROM = { primary_culture = gotlander } #Gutnish
-				FROM = { primary_culture = icelandic } #Icelandic
-				FROM = { primary_culture = norwegian } #Norwegian
-				FROM = { primary_culture = swedish } #Swedish
+				OR = {
+					#Nordic Cultures
+				    FROM = { primary_culture = danish } #Danish
+				    FROM = { primary_culture = faroese } #Faroese
+				    FROM = { primary_culture = gotlander } #Gutnish
+				    FROM = { primary_culture = icelandic } #Icelandic
+				    FROM = { primary_culture = norwegian } #Norwegian
+				    FROM = { primary_culture = swedish } #Swedish
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -805,9 +825,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -833,13 +851,15 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {				
-				#Russian Cultures
-				FROM = { primary_culture = byelorussian } #Belarusian
-				FROM = { primary_culture = cossack } #Cossack
-				FROM = { primary_culture = novgorodian } #Novgorodian
-				FROM = { primary_culture = russian } #Russian
-				FROM = { primary_culture = rusyn } #Russyn
-				FROM = { primary_culture = ruthenian } #Ruthenian
+				OR = {
+					#Russian Cultures
+					FROM = { primary_culture = byelorussian } #Belarusian
+				    FROM = { primary_culture = cossack } #Cossack
+				    FROM = { primary_culture = novgorodian } #Novgorodian
+				    FROM = { primary_culture = russian } #Russian
+				    FROM = { primary_culture = rusyn } #Russyn
+				    FROM = { primary_culture = ruthenian } #Ruthenian
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -869,9 +889,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -897,11 +915,13 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Japanese Cultures
-				FROM = { primary_culture = ainu } #Ainu
-				FROM = { primary_culture = japanese } #Saigoku
-				FROM = { primary_culture = kyushuan } #Kyushuan
-				FROM = { primary_culture = togoku } #Togoku
+				OR = {
+					#Japanese Cultures
+					FROM = { primary_culture = ainu } #Ainu
+				    FROM = { primary_culture = japanese } #Saigoku
+				    FROM = { primary_culture = kyushuan } #Kyushuan
+				    FROM = { primary_culture = togoku } #Togoku
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -933,9 +953,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -961,10 +979,12 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Belgian Cultures
-				FROM = { primary_culture = flemish } #Flemish
-				FROM = { primary_culture = luxembourgish } #Luxembourgish
-				FROM = { primary_culture = wallonian } #Walloon
+				OR = {
+					#Belgian Cultures
+					FROM = { primary_culture = flemish } #Flemish
+				    FROM = { primary_culture = luxembourgish } #Luxembourgish
+				    FROM = { primary_culture = wallonian } #Walloon
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -998,9 +1018,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1026,17 +1044,19 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Dutch Cultures
-				FROM = { primary_culture = brabantian } #Brabatian
-				FROM = { primary_culture = dutch } #Hollander
-				FROM = { primary_culture = dutch_saxon } #Nedersaksisch
-				FROM = { primary_culture = east_frisian } #East Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = guelders } #Guelderish
-				FROM = { primary_culture = limburgish } #Limburgish
-				FROM = { primary_culture = north_frisian } #North Frisian
-				FROM = { primary_culture = zeelandic } #Zeelander
+				OR ={
+					#Dutch Cultures
+					FROM = { primary_culture = brabantian } #Brabatian
+				    FROM = { primary_culture = dutch } #Hollander
+				    FROM = { primary_culture = dutch_saxon } #Nedersaksisch
+				    FROM = { primary_culture = east_frisian } #East Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = guelders } #Guelderish
+				    FROM = { primary_culture = limburgish } #Limburgish
+				    FROM = { primary_culture = north_frisian } #North Frisian
+				    FROM = { primary_culture = zeelandic } #Zeelander
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1090,9 +1110,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1118,21 +1136,23 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Chinese Cultures
-				FROM = { primary_culture = cantonese } #Cantonese
-				FROM = { primary_culture = chihan } #Zhili
-				FROM = { primary_culture = chimin } #Min
-				FROM = { primary_culture = gan } #Gan
-				FROM = { primary_culture = hakka } #Hakka
-				FROM = { primary_culture = hubei } #Hubei
-				FROM = { primary_culture = jianghuai } #Jianghuai
-				FROM = { primary_culture = jin } #Jin
-				FROM = { primary_culture = shandong_culture } #Shandong
-				FROM = { primary_culture = sichuanese } #Sichuanese
-				FROM = { primary_culture = wu } #Wu
-				FROM = { primary_culture = xiang } #Xiang
-				FROM = { primary_culture = xibei } #Xibei
-				FROM = { primary_culture = zhongyuan } #Zhongyuan
+				OR = {
+					#Chinese Cultures
+					FROM = { primary_culture = cantonese } #Cantonese
+				    FROM = { primary_culture = chihan } #Zhili
+				    FROM = { primary_culture = chimin } #Min
+				    FROM = { primary_culture = gan } #Gan
+				    FROM = { primary_culture = hakka } #Hakka
+				    FROM = { primary_culture = hubei } #Hubei
+				    FROM = { primary_culture = jianghuai } #Jianghuai
+				    FROM = { primary_culture = jin } #Jin
+				    FROM = { primary_culture = shandong_culture } #Shandong
+				    FROM = { primary_culture = sichuanese } #Sichuanese
+				    FROM = { primary_culture = wu } #Wu
+				    FROM = { primary_culture = xiang } #Xiang
+				    FROM = { primary_culture = xibei } #Xibei
+				    FROM = { primary_culture = zhongyuan } #Zhongyuan
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1160,9 +1180,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1188,22 +1206,24 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Italian Cultures
-				FROM = { primary_culture = corsican_culture } #Corsican
-				FROM = { primary_culture = dalmatian } #Dalmatian
-				FROM = { primary_culture = friulian_culture } #Frisian
-				FROM = { primary_culture = ladin_culture } #Ladin
-				FROM = { primary_culture = ligurian } #Ligurian
-				FROM = { primary_culture = lombard } #Lombard
-				FROM = { primary_culture = neapolitan } #Neapolitan
-				FROM = { primary_culture = piedmontese } #Piedmontese
-				FROM = { primary_culture = romagnan } #Romagnol
-				FROM = { primary_culture = romanch_culture } #Romansh
-				FROM = { primary_culture = sardinian } #Sardinian
-				FROM = { primary_culture = sicilian } #Sicilian
-				FROM = { primary_culture = tuscan } #Tuscan
-				FROM = { primary_culture = umbrian } #Umbrian
-				FROM = { primary_culture = venetian } #Venetian
+				OR = {
+					#Italian Cultures
+					FROM = { primary_culture = corsican_culture } #Corsican
+				    FROM = { primary_culture = dalmatian } #Dalmatian
+				    FROM = { primary_culture = friulian_culture } #Frisian
+				    FROM = { primary_culture = ladin_culture } #Ladin
+				    FROM = { primary_culture = ligurian } #Ligurian
+				    FROM = { primary_culture = lombard } #Lombard
+				    FROM = { primary_culture = neapolitan } #Neapolitan
+				    FROM = { primary_culture = piedmontese } #Piedmontese
+				    FROM = { primary_culture = romagnan } #Romagnol
+				    FROM = { primary_culture = romanch_culture } #Romansh
+				    FROM = { primary_culture = sardinian } #Sardinian
+				    FROM = { primary_culture = sicilian } #Sicilian
+				    FROM = { primary_culture = tuscan } #Tuscan
+				    FROM = { primary_culture = umbrian } #Umbrian
+				    FROM = { primary_culture = venetian } #Venetian
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1248,9 +1268,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1276,14 +1294,15 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#American Cultures
-				FROM = { primary_culture = american } #American
-				FROM = { primary_culture = dixie } #Dixie
+				OR = {
+					#British Cultures
+					FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #American Cultures
+				    FROM = { primary_culture = american } #American
+				    FROM = { primary_culture = dixie } #Dixie
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1318,9 +1337,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1346,17 +1363,18 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#American Cultures
-				FROM = { primary_culture = american } #American
-				FROM = { primary_culture = dixie } #Dixie
-				
-				#Spanish Cultures
-				FROM = { primary_culture = andalucian } #Andalucian
-				FROM = { primary_culture = aragonese } #Aragonese
-				FROM = { primary_culture = castillian } #Castillian
-				FROM = { primary_culture = catalan } #Catalan
-				FROM = { primary_culture = galician } #Galician
-				FROM = { primary_culture = leonese } #Leonese
+				OR = {
+					#American Cultures
+				    FROM = { primary_culture = american } #American
+				    FROM = { primary_culture = dixie } #Dixie
+				    #Spanish Cultures
+				    FROM = { primary_culture = andalucian } #Andalucian
+				    FROM = { primary_culture = aragonese } #Aragonese
+				    FROM = { primary_culture = castillian } #Castillian
+				    FROM = { primary_culture = catalan } #Catalan
+				    FROM = { primary_culture = galician } #Galician
+				    FROM = { primary_culture = leonese } #Leonese
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1389,9 +1407,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1417,25 +1433,26 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#American Cultures
-				FROM = { primary_culture = american } #American
-				FROM = { primary_culture = dixie } #Dixie
-				
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
+				OR = {
+					#American Cultures
+				    FROM = { primary_culture = american } #American
+				    FROM = { primary_culture = dixie } #Dixie
+				    #French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1463,9 +1480,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1491,26 +1506,27 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {				
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1541,9 +1557,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1569,22 +1583,23 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#Dutch Cultures
-				FROM = { primary_culture = brabantian } #Brabatian
-				FROM = { primary_culture = dutch } #Hollander
-				FROM = { primary_culture = dutch_saxon } #Nedersaksisch
-				FROM = { primary_culture = east_frisian } #East Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = guelders } #Guelderish
-				FROM = { primary_culture = limburgish } #Limburgish
-				FROM = { primary_culture = north_frisian } #North Frisian
-				FROM = { primary_culture = zeelandic } #Zeelander
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #Dutch Cultures
+				    FROM = { primary_culture = brabantian } #Brabatian
+				    FROM = { primary_culture = dutch } #Hollander
+				    FROM = { primary_culture = dutch_saxon } #Nedersaksisch
+				    FROM = { primary_culture = east_frisian } #East Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = guelders } #Guelderish
+				    FROM = { primary_culture = limburgish } #Limburgish
+				    FROM = { primary_culture = north_frisian } #North Frisian
+				    FROM = { primary_culture = zeelandic } #Zeelander
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1615,9 +1630,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1642,18 +1655,19 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#American Cultures
-				FROM = { primary_culture = american } #American
-				FROM = { primary_culture = dixie } #Dixie
-				
-				#Russian Cultures
-				FROM = { primary_culture = byelorussian } #Belarusian
-				FROM = { primary_culture = cossack } #Cossack
-				FROM = { primary_culture = novgorodian } #Novgorodian
-				FROM = { primary_culture = russian } #Russian
-				FROM = { primary_culture = rusyn } #Russyn
-				FROM = { primary_culture = ruthenian } #Ruthenian
+			NOT = {		
+				OR = {
+					#American Cultures
+				    FROM = { primary_culture = american } #American
+				    FROM = { primary_culture = dixie } #Dixie
+				    #Russian Cultures
+				    FROM = { primary_culture = byelorussian } #Belarusian
+				    FROM = { primary_culture = cossack } #Cossack
+				    FROM = { primary_culture = novgorodian } #Novgorodian
+				    FROM = { primary_culture = russian } #Russian
+				    FROM = { primary_culture = rusyn } #Russyn
+				    FROM = { primary_culture = ruthenian } #Ruthenian
+				}		
 			}
 			
 			FROM = { ai = yes }
@@ -1681,9 +1695,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1708,19 +1720,20 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#Nordic Cultures
-				FROM = { primary_culture = danish } #Danish
-				FROM = { primary_culture = faroese } #Faroese
-				FROM = { primary_culture = gotlander } #Gutnish
-				FROM = { primary_culture = icelandic } #Icelandic
-				FROM = { primary_culture = norwegian } #Norwegian
-				FROM = { primary_culture = swedish } #Swedish
+			NOT = {
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #Nordic Cultures
+				    FROM = { primary_culture = danish } #Danish
+				    FROM = { primary_culture = faroese } #Faroese
+				    FROM = { primary_culture = gotlander } #Gutnish
+				    FROM = { primary_culture = icelandic } #Icelandic
+				    FROM = { primary_culture = norwegian } #Norwegian
+				    FROM = { primary_culture = swedish } #Swedish
+				}			
 			}
 			
 			FROM = { ai = yes }
@@ -1748,9 +1761,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1775,19 +1786,20 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#Spanish Cultures
-				FROM = { primary_culture = andalucian } #Andalucian
-				FROM = { primary_culture = aragonese } #Aragonese
-				FROM = { primary_culture = castillian } #Castillian
-				FROM = { primary_culture = catalan } #Catalan
-				FROM = { primary_culture = galician } #Galician
-				FROM = { primary_culture = leonese } #Leonese
+			NOT = {		
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #Spanish Cultures
+				    FROM = { primary_culture = andalucian } #Andalucian
+				    FROM = { primary_culture = aragonese } #Aragonese
+				    FROM = { primary_culture = castillian } #Castillian
+				    FROM = { primary_culture = catalan } #Catalan
+				    FROM = { primary_culture = galician } #Galician
+				    FROM = { primary_culture = leonese } #Leonese
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1819,9 +1831,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1846,30 +1856,31 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
-				
-				#Spanish Cultures
-				FROM = { primary_culture = andalucian } #Andalucian
-				FROM = { primary_culture = aragonese } #Aragonese
-				FROM = { primary_culture = castillian } #Castillian
-				FROM = { primary_culture = catalan } #Catalan
-				FROM = { primary_culture = galician } #Galician
-				FROM = { primary_culture = leonese } #Leonese
+			NOT = {
+				OR = {
+					#French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				    #Spanish Cultures
+				    FROM = { primary_culture = andalucian } #Andalucian
+				    FROM = { primary_culture = aragonese } #Aragonese
+				    FROM = { primary_culture = castillian } #Castillian
+				    FROM = { primary_culture = catalan } #Catalan
+				    FROM = { primary_culture = galician } #Galician
+				    FROM = { primary_culture = leonese } #Leonese
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1897,9 +1908,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -1924,31 +1933,31 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
-				
-				#American Cultures
-				FROM = { primary_culture = american } #American
-				FROM = { primary_culture = dixie } #Dixie
+			NOT = {
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				    #American Cultures
+				    FROM = { primary_culture = american } #American
+				    FROM = { primary_culture = dixie } #Dixie
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -1977,9 +1986,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -2004,39 +2011,39 @@ can_colonize_province = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {				
-				#British Cultures
-				FROM = { primary_culture = english } #English
-				FROM = { primary_culture = northumbrian } #Northumbrian
-				FROM = { primary_culture = scottish } #Scottish
-				
-				#French Cultures
-				FROM = { primary_culture = angevin_culture } #Angevin
-				FROM = { primary_culture = aquitaine } #Provençal
-				FROM = { primary_culture = arpitan } #Arpitan
-				FROM = { primary_culture = auvergnat_culture } #Auvergnat
-				FROM = { primary_culture = breton } #Breton
-				FROM = { primary_culture = burgundian } #Burgundian
-				FROM = { primary_culture = cosmopolitan_french } #Francien
-				FROM = { primary_culture = gallo_culture } #Gallo
-				FROM = { primary_culture = gascon } #Gascon
-				FROM = { primary_culture = lorraine_culture } #Lorraine
-				FROM = { primary_culture = normand } #Norman
-				FROM = { primary_culture = occitain } #Occitain
-				FROM = { primary_culture = picard_culture } #Picard
-				FROM = { primary_culture = poitevin_culture } #Poitevin
-				
-				#Dutch Cultures
-				FROM = { primary_culture = brabantian } #Brabatian
-				FROM = { primary_culture = dutch } #Hollander
-				FROM = { primary_culture = dutch_saxon } #Nedersaksisch
-				FROM = { primary_culture = east_frisian } #East Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = guelders } #Guelderish
-				FROM = { primary_culture = limburgish } #Limburgish
-				FROM = { primary_culture = north_frisian } #North Frisian
-				FROM = { primary_culture = zeelandic } #Zeelander
+			NOT = {
+				OR = {
+					#British Cultures
+				    FROM = { primary_culture = english } #English
+				    FROM = { primary_culture = northumbrian } #Northumbrian
+				    FROM = { primary_culture = scottish } #Scottish
+				    #French Cultures
+				    FROM = { primary_culture = angevin_culture } #Angevin
+				    FROM = { primary_culture = aquitaine } #Provençal
+				    FROM = { primary_culture = arpitan } #Arpitan
+				    FROM = { primary_culture = auvergnat_culture } #Auvergnat
+				    FROM = { primary_culture = breton } #Breton
+				    FROM = { primary_culture = burgundian } #Burgundian
+				    FROM = { primary_culture = cosmopolitan_french } #Francien
+				    FROM = { primary_culture = gallo_culture } #Gallo
+				    FROM = { primary_culture = gascon } #Gascon
+				    FROM = { primary_culture = lorraine_culture } #Lorraine
+				    FROM = { primary_culture = normand } #Norman
+				    FROM = { primary_culture = occitain } #Occitain
+				    FROM = { primary_culture = picard_culture } #Picard
+				    FROM = { primary_culture = poitevin_culture } #Poitevin
+				    #Dutch Cultures
+				    FROM = { primary_culture = brabantian } #Brabatian
+				    FROM = { primary_culture = dutch } #Hollander
+				    FROM = { primary_culture = dutch_saxon } #Nedersaksisch
+				    FROM = { primary_culture = east_frisian } #East Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = guelders } #Guelderish
+				    FROM = { primary_culture = limburgish } #Limburgish
+				    FROM = { primary_culture = north_frisian } #North Frisian
+				    FROM = { primary_culture = zeelandic } #Zeelander
+				}			
 			}
 			
 			FROM = { ai = yes }
@@ -2064,9 +2071,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonisation in their capital's Colonial Region
 						AND = {
@@ -2092,41 +2097,41 @@ can_colonize_province = {
 		
         potential = {
 			NOT = {
-				#Chinese Cultures
-				FROM = { primary_culture = cantonese } #Cantonese
-				FROM = { primary_culture = chihan } #Zhili
-				FROM = { primary_culture = chimin } #Min
-				FROM = { primary_culture = gan } #Gan
-				FROM = { primary_culture = hakka } #Hakka
-				FROM = { primary_culture = hubei } #Hubei
-				FROM = { primary_culture = jianghuai } #Jianghuai
-				FROM = { primary_culture = jin } #Jin
-				FROM = { primary_culture = shandong_culture } #Shandong
-				FROM = { primary_culture = sichuanese } #Sichuanese
-				FROM = { primary_culture = wu } #Wu
-				FROM = { primary_culture = xiang } #Xiang
-				FROM = { primary_culture = xibei } #Xibei
-				FROM = { primary_culture = zhongyuan } #Zhongyuan
-				
-				#Dutch Cultures
-				FROM = { primary_culture = brabantian } #Brabatian
-				FROM = { primary_culture = dutch } #Hollander
-				FROM = { primary_culture = dutch_saxon } #Nedersaksisch
-				FROM = { primary_culture = east_frisian } #East Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = frisian } #Frisian
-				FROM = { primary_culture = guelders } #Guelderish
-				FROM = { primary_culture = limburgish } #Limburgish
-				FROM = { primary_culture = north_frisian } #North Frisian
-				FROM = { primary_culture = zeelandic } #Zeelander
-				
-				#Spanish Cultures
-				FROM = { primary_culture = andalucian } #Andalucian
-				FROM = { primary_culture = aragonese } #Aragonese
-				FROM = { primary_culture = castillian } #Castillian
-				FROM = { primary_culture = catalan } #Catalan
-				FROM = { primary_culture = galician } #Galician
-				FROM = { primary_culture = leonese } #Leonese
+				OR = {
+					#Chinese Cultures
+				    FROM = { primary_culture = cantonese } #Cantonese
+				    FROM = { primary_culture = chihan } #Zhili
+				    FROM = { primary_culture = chimin } #Min
+				    FROM = { primary_culture = gan } #Gan
+				    FROM = { primary_culture = hakka } #Hakka
+				    FROM = { primary_culture = hubei } #Hubei
+				    FROM = { primary_culture = jianghuai } #Jianghuai
+				    FROM = { primary_culture = jin } #Jin
+				    FROM = { primary_culture = shandong_culture } #Shandong
+				    FROM = { primary_culture = sichuanese } #Sichuanese
+				    FROM = { primary_culture = wu } #Wu
+				    FROM = { primary_culture = xiang } #Xiang
+				    FROM = { primary_culture = xibei } #Xibei
+				    FROM = { primary_culture = zhongyuan } #Zhongyuan
+				    #Dutch Cultures
+				    FROM = { primary_culture = brabantian } #Brabatian
+				    FROM = { primary_culture = dutch } #Hollander
+				    FROM = { primary_culture = dutch_saxon } #Nedersaksisch
+				    FROM = { primary_culture = east_frisian } #East Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = frisian } #Frisian
+				    FROM = { primary_culture = guelders } #Guelderish
+				    FROM = { primary_culture = limburgish } #Limburgish
+				    FROM = { primary_culture = north_frisian } #North Frisian
+				    FROM = { primary_culture = zeelandic } #Zeelander
+				    #Spanish Cultures
+				    FROM = { primary_culture = andalucian } #Andalucian
+				    FROM = { primary_culture = aragonese } #Aragonese
+				    FROM = { primary_culture = castillian } #Castillian
+				    FROM = { primary_culture = catalan } #Catalan
+				    FROM = { primary_culture = galician } #Galician
+				    FROM = { primary_culture = leonese } #Leonese
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -2154,9 +2159,7 @@ can_colonize_province = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 						
 						#Colonial Nations ignore Historical Colonization in their capital's Colonial Region
 						AND = {
@@ -2231,13 +2234,15 @@ can_colonize_province_siberian_frontier = {
 		
         potential = {
 			NOT = {				
-				#Russian Cultures
-				FROM = { primary_culture = byelorussian } #Belarusian
-				FROM = { primary_culture = cossack } #Cossack
-				FROM = { primary_culture = novgorodian } #Novgorodian
-				FROM = { primary_culture = russian } #Russian
-				FROM = { primary_culture = rusyn } #Russyn
-				FROM = { primary_culture = ruthenian } #Ruthenian
+				OR = {
+					#Russian Cultures
+				    FROM = { primary_culture = byelorussian } #Belarusian
+				    FROM = { primary_culture = cossack } #Cossack
+				    FROM = { primary_culture = novgorodian } #Novgorodian
+				    FROM = { primary_culture = russian } #Russian
+				    FROM = { primary_culture = rusyn } #Russyn
+				    FROM = { primary_culture = ruthenian } #Ruthenian
+				}
 			}
 			
 			FROM = { ai = yes }
@@ -2266,9 +2271,7 @@ can_colonize_province_siberian_frontier = {
 						technology_group = central_african
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
-						technology_group = rapanuan_tech_group
 						technology_group = polynesian_tech
-						technology_group = papuan_tech_group
 					}
 				}
 			}

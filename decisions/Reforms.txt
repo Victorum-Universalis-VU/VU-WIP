@@ -623,7 +623,7 @@ country_decisions = {
 			dip = 3
 			OR = {
 				innovativeness = 15
-				has_institution = colonialism
+				has_institution = new_world_i
 			}
 			estate_loyalty = {
 				estate = estate_burghers

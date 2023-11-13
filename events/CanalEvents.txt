@@ -1426,35 +1426,30 @@ province_event = {
 			add_permanent_province_modifier = {
 				name = vu_djerid_canal
 				duration = -1
-				hidden = no
 			}
 		}
 		8740 = {
 			add_permanent_province_modifier = {
 				name = vu_djerid_canal
 				duration = -1
-				hidden = no
 			}
 		}
 		5316 = {
 			add_permanent_province_modifier = {
 				name = vu_djerid_canal
 				duration = -1
-				hidden = no
 			}
 		}
 		5550 = {
 			add_permanent_province_modifier = {
 				name = vu_djerid_canal
 				duration = -1
-				hidden = no
 			}
 		}
 		351 = {
 			add_permanent_province_modifier = {
 				name = vu_djerid_canal
 				duration = -1
-				hidden = no
 			}
 		}
 	}

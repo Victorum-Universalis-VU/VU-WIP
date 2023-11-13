@@ -5675,10 +5675,12 @@ country_event = {
 				add_treasury = 500
 				add_years_of_income = 1
 				add_manpower = 20
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.1
-					artillery = 0.3
+				capital_scope = {
+					build_to_forcelimit = {
+				    	infantry = 0.6
+				    	cavalry = 0.1
+				    	artillery = 0.3
+				    }
 				}
 				random_owned_province = {
 					limit = { has_port = yes }
@@ -5708,11 +5710,13 @@ country_event = {
 				}
 			}
 			DAN = {
-				kill_units = {	#Some units desert
-					who = DAN
-					type = infantry
-					amount = 10	#May need adjustment
-				}
+				capital_scope = {
+			    	kill_units = {	#Some units desert
+			    		who = owner
+			    		type = infantry
+			    		amount = 10	#May need adjustment
+			    	}
+			    }
 				add_war_exhaustion = 4
 			}
 			every_country = {	#Countries that support Sweden will join

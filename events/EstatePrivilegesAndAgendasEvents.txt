@@ -141,12 +141,10 @@ country_event = {
 				NOT = {	num_of_estate_privileges = { estate = estate_brahmins	value = 4 } }
 			}
 		}
-		NOT = {
-            has_estate_privilege = estate_brahmins_statutory_rights
-            has_estate_privilege = estate_nobles_statutory_rights
-            has_estate_privilege = estate_burghers_statutory_rights
-            has_estate_privilege = estate_church_statutory_rights
-        }
+		NOT = { has_estate_privilege = estate_brahmins_statutory_rights }
+		NOT = { has_estate_privilege = estate_nobles_statutory_rights }
+		NOT = { has_estate_privilege = estate_burghers_statutory_rights }
+		NOT = { has_estate_privilege = estate_church_statutory_rights }
 	}
 
 	mean_time_to_happen = {
@@ -1329,7 +1327,11 @@ country_event = {
 		custom_tooltip = ESTATES_SEIZE_LAND_EXCEPTION_DESC
 		re_add_loyalty_from_seized_land = yes
 		if = {
-			limit = { NOT = { has_government_attribute = seizing_land_no_rebels } }
+			limit = { 
+				NOT = { 
+					has_government_attribute = seizing_land_no_rebels 
+				} 
+			}
 			custom_tooltip = seize_land_rebels_tt
 		}
 		if = {
@@ -1345,6 +1347,7 @@ country_event = {
 					loyalty = 30
 				}
 			}
+			add_legitimacy = 1
 		}
 		else_if = { 
 			limit = {
