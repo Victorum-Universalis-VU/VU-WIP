@@ -74,14 +74,14 @@ country_event = { #A new Order
 				limit = {
 					culture = breton
 				}
-				change_culture = breton_celtic
+				change_culture = celtic_breton_culture
 			}
-			every_country = {
-				limit = {
-					primary_culture = breton
-				}
-				change_primary_culture = breton_celtic
-			}
+			#every_country = {
+			#	limit = {
+			#		primary_culture = breton
+			#	}
+			#	change_primary_culture = celtic_breton_culture
+			#}
 			set_variable = {
 				which = ENG_Patronized
 				value = 0

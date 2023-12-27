@@ -5,7 +5,67 @@
 # If adding new groups or ideas, make sure they are unique.
 
 #Quonton
-
+cock_ideas = {
+	start = {
+		merchants = 1
+		build_cost = -0.15
+	}
+	
+	bonus = {
+		development_cost_in_primary_culture = -0.25
+		development_cost = -0.1
+	} 
+	trigger = {
+		OR = {
+			tag = ABZ
+			tag = AKN
+			tag = AKZ
+			tag = DER
+			tag = IGS
+			tag = KTG
+			tag = LAZ
+			tag = MGL
+			tag = RUT
+			tag = SVT
+			tag = T4R
+			tag = TLY
+			tag = UBY
+			tag = LEK
+		}
+	}
+	free = yes
+	german_industrialism = {
+		innovativeness_gain = 0.5
+		production_efficiency = 0.15
+		global_trade_goods_size_modifier = 0.1
+ 	}
+	militias_for_our_farms = {
+		regiment_recruit_speed = -0.15
+		global_regiment_cost = -0.10
+		land_morale = 0.10
+	}
+	alone_around_enemies = {
+		global_unrest = -2
+		fort_maintenance_modifier = -0.25
+	}
+	gaurd_the_cities = {
+		defensiveness = 0.5
+		garrison_size = 0.25
+		global_garrison_growth = 0.33
+	}
+	profesional_armyies = {
+		army_tradition = 1
+		discipline = 0.1
+		fire_damage = 0.10
+	}
+	german_efficiencys = {
+		global_trade_goods_size = 0.25
+	}
+	small_yet_powerful = {
+		expand_infrastructure_cost_modifier = -0.40
+		centralize_state_cost = -0.40
+	}	
+}
 #Kinda overpowered but ehh whatever likely no one will ever play these
 gerdia_ideas = {
 	start = {
@@ -1536,8 +1596,10 @@ new_javan_ideas = {
 	}
 	trigger = {
 		NOT = {
-			tag = SUN
-			tag = MAJ
+			OR = {
+				tag = SUN
+				tag = MAJ
+			}
 		}
 		OR = {
 			primary_culture = javanese
@@ -1754,14 +1816,16 @@ new_malayan_ideas = {
 		religion_group = muslim
 		primary_culture = malayan
 		NOT = {
-			tag = MLC
-                        tag = JOH
-                        tag = PAT
-                        tag = SAK
-                        tag = IDG
-                        tag = BEI
-                        tag = MSA
-                        tag = SVJ
+			OR = {
+				tag = MLC
+                tag = JOH
+                tag = PAT
+                tag = SAK
+                tag = IDG
+                tag = BEI
+                tag = MSA
+                tag = SVJ
+			}
 		}
 	}
 	free = yes

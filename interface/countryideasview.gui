@@ -164,8 +164,8 @@ guiTypes = {
 		listboxType = {
 			name = "ideagroups_listbox_left"
 			backGround = ""
-			position = { x=25 y=243 }
-			size = { x=-13 y=380 }
+			position = { x=9 y=243 }
+			size = { x=253 y=400 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1.0
@@ -176,8 +176,8 @@ guiTypes = {
 		listboxType = {
 			name = "ideagroups_listbox_right"
 			backGround = ""
-			position = { x=273 y=243 }
-			size = { x=253 y=380 }
+			position = { x=276 y=243 }
+			size = { x=253 y=400 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1.0
@@ -352,8 +352,8 @@ guiTypes = {
 	windowType = {
 		name = "countryideaview_ideagroupitem"
 		backGround =""
-		position = { x=0 y=0 }	
-		size = { x=64 y=80 }
+		position = { x=200 y=0 }	
+		size = { x=64 y=76 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -556,7 +556,7 @@ guiTypes = {
 		name = "countryideaview_ideagroupunlockitem"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=255 y=80 }
+		size = { x=255 y=76 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""

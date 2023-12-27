@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 mnd_maj_1 = {
 	slot = 1
 	generic = no
@@ -625,6 +626,12 @@ mnd_maj_3 = {
 						religion = hinduism
 					}
 					custom_tooltip = propagate_religion_maj_tt
+					enable_propagate_religion_in_abrahamic_provinces= yes
+				}
+				else = {
+					hidden_effect = {
+						enable_propagate_religion_in_abrahamic_provinces= yes
+					}
 				}
 				every_province = {
 					limit = {
@@ -852,7 +859,7 @@ mnd_maj_4 = {
 				}
 				SUN = {
 					change_primary_culture = javanese
-					add_accepted_culture_or_dip_power = { culture = sundanese }
+					add_accepted_culture_or_dip_power = { culture = sundanese dip_reward = yes }
 				}				
 			}
 			if = {

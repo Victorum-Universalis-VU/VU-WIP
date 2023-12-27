@@ -1,4 +1,10 @@
 #2400 - Hsipaw
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+

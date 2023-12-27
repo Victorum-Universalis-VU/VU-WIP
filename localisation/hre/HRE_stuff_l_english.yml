@@ -3,7 +3,7 @@
  grant_imperial_court_tooltip: "Reward [From.Monarch.GetName] with a privilege to judge in his region."
  grant_imperial_court_desc: "Grant [From.Country.GetName] the right to override the local courts in his region in imperial matters, allowing him to levy taxes beyond his borders and into the lands adjacent to his domains. Lose §R-5§! §YImperial Authority§!, but get §G+5%§! §YImperial Authority Modifier§! untill the end of your reign."
  cancel_imperial_court_title: "Retract Imperial Court Privileges"
- cancel_imperial_court_tooltip: "Remove Imperial Court Privileges from [From.Monarch.GetName].""
+ cancel_imperial_court_tooltip: "Remove Imperial Court Privileges from [From.Monarch.GetName]."
  cancel_imperial_court_desc: "Retract the privilege to judge in his region from [From.Monarch.GetName] of [From.Country.GetName]."
 
  GE_privileges.7.t: "The Imperial Court" 
@@ -29,7 +29,7 @@
  grant_imperial_marshall_tooltip: "Reward [From.Monarch.GetName] with a privilege to recruit in his region."
  grant_imperial_marshall_desc: "Grant [From.Country.GetName] the right to override the local courts in his region in imperial matters, allowing him to levy taxes beyond his borders and into the lands adjacent to his domains. Lose §R-5§! §YImperial Authority§!, but get §G+5%§! §YImperial Authority Modifier§! untill the end of your reign."
  cancel_imperial_marshall_title: "Retract Imperial Court Privileges"
- cancel_imperial_marshall_tooltip: "Remove Imperial Court Privileges from [From.Monarch.GetName]."`
+ cancel_imperial_marshall_tooltip: "Remove Imperial Court Privileges from [From.Monarch.GetName]."
  cancel_imperial_marshall_desc: "Retract the privilege to judge in his region from [From.Monarch.GetName] of [From.Country.GetName]."
 
  GE_privileges.10.t: "The Imperial Marshal" 

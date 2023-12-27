@@ -12,17 +12,24 @@ base_tax = 4
 base_production = 4
 base_manpower = 6
 is_city = yes
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = dutch_tech_group
-#discovered_by = muslim
+
+
+
+
+
+
+
+
+
+
+
 
 1462.1.1 = {
 	owner = KAS
 	controller = KAS
 	add_core = KAS
 }
-1622.1.1 = { discovered_by = RUS }
+
 1650.1.1 = { religion = sunni } #Nestorian churches fade to obscurity
 1682.1.1 = {
 	owner = ZUN

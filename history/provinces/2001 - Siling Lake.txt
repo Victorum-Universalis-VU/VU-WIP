@@ -2,7 +2,14 @@
 
 
 
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
+
+
+
+
 

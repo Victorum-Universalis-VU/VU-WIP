@@ -3,7 +3,7 @@
 owner = PGS
 controller = PGS
 add_core = PGS
-culture = ilocano
+culture = pangasinense
 religion = animism
 capital = "Atuley"
 trade_goods = fish
@@ -13,10 +13,12 @@ base_production = 4
 base_manpower = 4
 is_city = yes
 
-discovered_by = chinese
-discovered_by = japanese
 
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
+
+
+
+
+ # Ferdinand Magellan
 
 1572.1.1 = { #Juan de Salcedo explored the area in June 1572, he and his men were involved in a skirmish with 3 Japanese ships. He discovered that there was a settlement in the area, occupied by Japanese and Chinese merchants. The incident earned Agoo the name “El Puerto de Japon”.
 	owner = SPA

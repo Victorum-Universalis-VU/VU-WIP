@@ -19,8 +19,10 @@ base_manpower = 3
 center_of_trade = 1
 extra_cost = 8
 
-#discovered_by = sub_saharan
-1440.1.1 = { discovered_by = AIR }
+
+
+
+
 
 1449.1.1 = {
 	base_tax = 8

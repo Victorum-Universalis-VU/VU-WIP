@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ###############################
 # Events for Malacca          #
 #                             #
@@ -27,6 +27,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 18
 	}
+
 	
 	option = { 
 		name = flavor_mlc.1.a #Raja Ibrahim will not be forgotten.
@@ -115,6 +116,7 @@ country_event = {
 			}
 		}
 	}
+
 	
 	option = { 
 		name = flavor_mlc.3.a #Assign the task to one of the trader communities.
@@ -331,6 +333,7 @@ country_event = {
 			dynasty = "Srivijaya"
 		}
 		override_country_name = SRIVIJAYA
+		set_country_flag = is_srijivaya_flag
 		ai_chance = {
 			factor = 1000
 		}
@@ -341,6 +344,7 @@ country_event = {
 			primary_culture = javanese
 		}
 		override_country_name = MAJAPAHIT_EMPIRE
+		set_country_flag = is_majapahit_empire_flag
 		ai_chance = {
 			factor = 100
 		}
@@ -348,6 +352,7 @@ country_event = {
 	option = {
 		name = flavor_mlc.9.c
 		override_country_name = NUSANTARA
+		set_country_flag = is_nusantara_flag
 		ai_chance = {
 			factor = 5
 		}

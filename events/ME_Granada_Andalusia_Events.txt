@@ -364,9 +364,6 @@ country_event = {
 			name = GRA_enforced_burgher_support
 			duration = -1
 			age = age_of_discovery
-			else = "
-				add_dip_power = 100
-			"
 		}
 	}
 	
@@ -379,9 +376,9 @@ country_event = {
 			name = GRA_enforced_nobles_support
 			duration = -1
 			age = age_of_discovery
-			else = "
-				add_mil_power = 100
-			"
+			#else = "
+			#	add_mil_power = 100
+			#"
 		}
 	}
 	
@@ -394,9 +391,6 @@ country_event = {
 			name = GRA_enforced_church_support
 			duration = -1
 			age = age_of_discovery
-			else = "
-				add_adm_power = 100
-			"
 		}
 	}
 	
@@ -1743,8 +1737,12 @@ country_event = {
 						capital_scope = { continent = europe }
 						GRA_capital_in_mediterranean = yes
 						technology_group = muslim
-						technology_group = western
-						technology_group = eastern
+		            	technology_group = french_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = byzantine_tech_group
 					}
 				"
 				5 = yes

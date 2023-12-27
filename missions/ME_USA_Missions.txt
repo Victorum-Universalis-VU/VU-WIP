@@ -2564,7 +2564,7 @@ USA_missions_5 = {
 		required_missions = {  USA_missions_caribbean_bases }
 		position = 19	
 		provinces_to_highlight = {
-			trade_company_region = trade_company_west_africa
+			trade_company_region = trade_company_nigeria
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_city = yes }
@@ -2573,7 +2573,7 @@ USA_missions_5 = {
 		trigger = { 
 			num_of_owned_provinces_with = {
 				value = 10
-				trade_company_region = trade_company_west_africa
+				trade_company_region = trade_company_nigeria
 			}
 		}
 		effect = {
@@ -2585,7 +2585,7 @@ USA_missions_5 = {
 		required_missions = {  USA_missions_african_ambition }
 		position = 20	
 		provinces_to_highlight = {
-			trade_company_region = trade_company_west_africa
+			trade_company_region = trade_company_liberia
 			owned_by = ROOT
 			OR = {
 				NOT = { development = 10 }
@@ -2597,7 +2597,7 @@ USA_missions_5 = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				value = 5
-				trade_company_region = trade_company_west_africa
+				trade_company_region = trade_company_liberia
 				development = 10
 				NOT = { num_free_building_slots = 1 }
 			}
@@ -2606,7 +2606,7 @@ USA_missions_5 = {
 			custom_tooltip = liberia_tt
 			hidden_effect = {
 				every_owned_province = {
-					limit = { trade_company_region = trade_company_west_africa }
+					limit = { trade_company_region = trade_company_liberia }
 					add_core = LBA	
 					remove_core = ROOT
 				}

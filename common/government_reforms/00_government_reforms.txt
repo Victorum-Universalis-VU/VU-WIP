@@ -1,10 +1,3 @@
-#Victorum Universalis Note -
-#There is no way to modify the new gov system without overriding it; disappointed in PDX's choice here.
-#File has been documented well and organised to the best of our abilities. Any submods or addons desiring to add their own entries will need to manually update this entirely
-#after every VU update. This is out of our hands and there are no suggestions for this.
-#Furthermore, this file contains new entries throughout various sections. The majority of reforms though are at the bottom.
-#Many thanks to you all - San Felipe.
-
 defaults_reform = {
 	valid_for_new_country = yes
 	allow_convert = yes
@@ -81,6 +74,7 @@ defaults_reform = {
 	has_cultural_union = no 
 	can_remove_idea_group = yes
 	mercs_do_not_cost_army_professionalism = no
+	is_eligible_for_hre_emperor = no
 }
 
 # legacy governments
@@ -250,11 +244,13 @@ revolutionary_empire = {
 	valid_for_nation_designer = no
 	monarchy = yes
 	revolutionary = yes
+	is_eligible_for_hre_emperor = no
 	modifiers = {
     	governing_capacity = 150
 		global_manpower_modifier = 0.25
 		land_morale = 0.10
 		global_autonomy = -0.2
+		allowed_rev_guard_fraction = 0.2
 	}
 	removed_effect = {
 		hidden_effect = {
@@ -288,6 +284,16 @@ revolutionary_empire = {
 				override_country_name = GURKANI_EMPIRE_STRING
 				set_country_flag = is_gurkani_flag
 			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_iran_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_iran_flag
+				restore_country_name = yes
+				override_country_name = IRAN_STRING
+				set_country_flag = is_iran_flag
+			}
 		}
 	}
 
@@ -295,40 +301,6 @@ revolutionary_empire = {
 		factor = 0
 	}
 }
-
-#Start of VU addition by San Felipe
-restoration_reform = {
-	icon = "shogunate"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = restoration_reform
-		dynasty = "Yamato"
-	}
-	maintain_dynasty = yes
-	royal_marriage = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		dynasty = "Yamato"
-	}
-	lock_level_when_selected = yes
-	fixed_rank = 3
-	modifiers = {
-		land_morale = 0.1
-		war_exhaustion = -0.03
-		max_absolutism = 10
-		heir_chance = 1
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-#End of VU addition by San Felipe
 
 ####################################
 #
@@ -566,68 +538,6 @@ signoria = {
 	custom_attributes = {
 		enables_nepotism = yes
 	}
-}
-
-roman_diarchy = {
-    icon = "roman_diarchy_reform"
-	allow_normal_conversion = no
-	legacy_government = yes
-    duration = 1
-    valid_for_new_country = no
-    valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		culture_group = latin
-	}
-	nation_designer_cost = 30
-    republican_name = yes
-    royal_marriage = yes
-	potential = {
-	    OR = {
-		   tag = SNM
-		   tag = ROM
-		   was_tag = ROM
-		   has_reform = roman_diarchy_reform
-		}
-		NOT = { has_reform = revolutionary_council_reform }
-		NOT = { has_reform = absolute_president_reform }
-		NOT = { has_reform = frequent_elections_reform }
-		NOT = { has_reform = consolidation_of_power_reform }
-		NOT = { has_reform = consolidate_power_into_different_candidates_reform }
-	}
-	
-	republic = yes
-	modifiers = {
-   		governing_capacity = 100
-		years_of_nationalism = -5
-		land_morale = 0.1
-		max_absolutism = -30
-		global_autonomy = -0.075
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-    
-    #rank = {
-    #    1 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.05
-    #        global_autonomy = -0.05
-    #    }
-    #    2 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.1
-    #        global_autonomy = -0.075
-    #    }
-    #    3 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.15
-    #        global_autonomy = -0.10
-    #    }
-    #}
 }
 
 pirate_republic = {
@@ -877,30 +787,6 @@ noble_republic = {
 	}
 }
 
-althing_republic = {
-	# government mechanics flags go here
-	icon = "althing_elite_reform"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = yes
-	
-	monarchy = yes
-	modifiers = {
-   		governing_capacity = 100
-		tolerance_heretic = 1
-		land_morale = 0.1
-		max_absolutism = -40
-	}
-
-	ai = {
-		factor = 0
-	}
-}
 
 administrative_republic = {
 	# government mechanics flags go here
@@ -1008,6 +894,7 @@ republican_dictatorship = {
 
 
 	dictatorship = yes
+	is_eligible_for_hre_emperor = no
 	modifiers = {
     	governing_capacity = 150
 		global_autonomy = -0.075
@@ -1113,6 +1000,7 @@ revolutionary_republic = {
 		tolerance_heretic = 2
 		land_morale = 0.1
 		global_autonomy = -0.2
+		allowed_rev_guard_fraction = 0.2
 	}
 
 	conditional = {
@@ -1156,6 +1044,16 @@ revolutionary_republic = {
 				restore_country_name = yes
 				override_country_name = GURKANI_EMPIRE_STRING
 				set_country_flag = is_gurkani_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_iran_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_iran_flag
+				restore_country_name = yes
+				override_country_name = IRAN_STRING
+				set_country_flag = is_iran_flag
 			}
 		}
 	}
@@ -1254,6 +1152,9 @@ monastic_order_government = {
     fixed_rank = 1
 	religion = yes
 	monastic = yes
+
+	is_eligible_for_hre_emperor = no
+
 	modifiers = {
     	governing_capacity = 150
 		tolerance_own = 1
@@ -1284,6 +1185,9 @@ holy_state_theocracy = {
 	}
 	religion = yes
 	monastic = yes
+	
+	is_eligible_for_hre_emperor = no
+
 	modifiers = {
     	governing_capacity = 100
 		# cb_on_religious_enemies = yes
@@ -1299,82 +1203,6 @@ holy_state_theocracy = {
 		has_devotion = yes
 	}
 }
-
-#Start of VU additions by San Felipe
-church_of_france = {
-	# government mechanics flags go here
-	icon = "arcbishop_of_reims"
-	allow_normal_conversion = no
-	allow_convert = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	rulers_can_be_generals = no
-
-	royal_marriage = no
-
-	different_religion_acceptance = -20
-	different_religion_group_acceptance = -50
-
-    fixed_rank = 2
-	religion = yes
-	monastic = yes
-	modifiers = {
-		legitimacy = 1
-        power_projection_from_insults = 0.1
-        global_tax_income = 12
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-
-		has_devotion = yes
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-church_of_england = {
-	# government mechanics flags go here
-	icon = "arcbishop_of_canterbury"
-	allow_normal_conversion = no
-	allow_convert = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	rulers_can_be_generals = no
-
-	royal_marriage = no
-
-	different_religion_acceptance = -20
-	different_religion_group_acceptance = -50
-
-    fixed_rank = 2
-	religion = yes
-	monastic = yes
-	modifiers = {
-		land_morale = 0.1
-        global_trade_power = 0.05
-        global_tax_modifier = 0.05
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-
-		has_devotion = yes
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-#End of VU additions by San Felipe
 
 papal_government = {
 	# government mechanics flags go here
@@ -1395,6 +1223,7 @@ papal_government = {
     fixed_rank = 2
 	religion = yes
 	monastic = yes
+	is_eligible_for_hre_emperor = no
 	modifiers = {
     	governing_capacity = 50
 		tolerance_own = 1
@@ -1713,44 +1542,6 @@ english_monarchy_legacy = {
 		custom_attributes = {
 			blocked_call_diet = yes
 		}
-	}
-	ai = {
-		factor = 5
-	}
-}
-
-#VU addition by San Felipe
-#Special for Scotland
-scottish_monarchy_legacy = {
-	# government mechanics flags go here
-	icon = "scottish_monarchy"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Common Sense"
-	}
-
-	monarchy = yes
-	start_territory_to_estates = 0.2
-	modifiers = {
-		legitimacy = 0.35
-		global_unrest = -0.75
-		global_autonomy = -0.035
-		max_absolutism = -25
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		custom_attributes = {
-			enables_privy_council = yes #pseudoparliament and a development of the King's Council
-		}#fixdis every option is the same
 	}
 	ai = {
 		factor = 5
@@ -2296,6 +2087,7 @@ shogunate_legacy = {
 			shogunate_mechanic
 		}
 	}
+	
     fixed_rank = 2
 	monarchy = yes
 	modifiers = {
@@ -2770,7 +2562,6 @@ sacred_kingdom_legacy = {
 		factor = 5
 	}
 }
-
 negusa_nagast_legacy = {
 	icon = "chieftain"
 	allow_normal_conversion = no
@@ -3266,56 +3057,6 @@ anglo_irish_monarchy_legacy = {			#VU changes this to a cross between an adminis
 
 ### Italian Governments ###
 
-florence_republic_legacy = {
-	icon = "politician"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 30
-	nation_designer_trigger = { capital_scope = { region = italy_region } }
-	monarchy = yes
-	modifiers = {
-		merc_maintenance_modifier = -0.25
-		prestige = 1
-		max_absolutism = -30
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 1 }
-}
-
-regnum_dei_legacy = {
-	icon = "pope"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	rulers_can_be_generals = no
-	papacy = yes
-	royal_marriage = no
-	different_religion_acceptance = -10
-	different_religion_group_acceptance = -25
-	religion = yes
-	monastic = yes
-	fixed_rank = 3
-	modifiers = {
-    	governing_capacity = 400
-		tolerance_own = 1
-		prestige_per_development_from_conversion = 0.33
-		global_autonomy = -0.05
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_devotion = yes
-	}
-	ai = { factor = 1 }
-}
-
 # Legacy Governments Unique to Victorum Universalis
 
 puppet_kingdom_of_ireland_legacy = {			#A powerful government type with large bonuses and large penalties for a vassalised KoI. Events should replace this government type if Ireland ceases to be a vassal.
@@ -3363,24 +3104,6 @@ transitional_government_ireland_legacy = {			#A transitionary government based o
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
 	}
-	ai = { factor = 3 }
-}
-
-lithuanian_grand_duchy_legacy = {			#New in VU 10.0, this is a unique non Dharma government for Lithuania to fit the balance changes made in the Lithuanian Grand Duchy reform for Dharma users.
-	icon = "peasants"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = { #Needs nerfing.
-		diplomatic_upkeep = 2
-		min_autonomy_in_territories = -0.25
-		land_maintenance_modifier = -0.25
-		num_accepted_cultures = 2
-	}
-
 	ai = { factor = 3 }
 }
 
@@ -3518,9 +3241,9 @@ welsh_principality_legacy = {
 
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
-		government_abilities = {
-			monarchy_mechanic
-		}
+		#government_abilities = {
+		#	monarchy_mechanic #Removed in 1.35 Domination 
+		#}
 	}
 
 	ai = {
@@ -3568,9 +3291,9 @@ western_principality_legacy = {
 
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
-		government_abilities = {
-			monarchy_mechanic
-		}
+		#government_abilities = {
+		#	monarchy_mechanic #Removed in 1.35 Domination 
+		#}
 	}
 
 	ai = {
@@ -3600,9 +3323,9 @@ belgian_kingdom_legacy = {
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
-		government_abilities = {
-			monarchy_mechanic #monarchy_mechanic is a reform, are you sure that can be used in government_abilities ?
-		}
+		#government_abilities = {
+		#	monarchy_mechanic #monarchy_mechanic is a reform, are you sure that can be used in government_abilities ?
+		#}
 	}
 	ai = { factor = 1 }
 }
@@ -3625,9 +3348,9 @@ french_kingdom_legacy = {
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
-		government_abilities = {
-			monarchy_mechanic
-		}
+		#government_abilities = {
+		#	monarchy_mechanic
+		#}
 	}
 	ai = { factor = 1 }
 }
@@ -3963,3 +3686,237 @@ greek_roman_governors_legacy = {
 	}
 	ai = { factor = 1 }
 }
+
+#Start of VU addition by San Felipe
+restoration_reform = {
+	icon = "shogunate"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = restoration_reform
+		dynasty = "Yamato"
+	}
+	maintain_dynasty = yes
+	royal_marriage = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = japanese_g
+		dynasty = "Yamato"
+	}
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	modifiers = {
+		land_morale = 0.1
+		war_exhaustion = -0.03
+		max_absolutism = 10
+		heir_chance = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+roman_diarchy = {
+    icon = "roman_diarchy_reform"
+	allow_normal_conversion = no
+	legacy_government = yes
+    duration = 1
+    valid_for_new_country = no
+    valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	nation_designer_cost = 30
+    republican_name = yes
+    royal_marriage = yes
+	potential = {
+	    OR = {
+		   tag = SNM
+		   tag = ROM
+		   was_tag = ROM
+		   has_reform = roman_diarchy_reform
+		}
+		NOT = { has_reform = revolutionary_council_reform }
+		NOT = { has_reform = absolute_president_reform }
+		NOT = { has_reform = frequent_elections_reform }
+		NOT = { has_reform = consolidation_of_power_reform }
+		NOT = { has_reform = consolidate_power_into_different_candidates_reform }
+	}
+	
+	republic = yes
+	modifiers = {
+   		governing_capacity = 100
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = -30
+		global_autonomy = -0.075
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+    
+    #rank = {
+    #    1 = {
+    #        years_of_nationalism = -5
+    #        land_morale = 0.05
+    #        global_autonomy = -0.05
+    #    }
+    #    2 = {
+    #        years_of_nationalism = -5
+    #        land_morale = 0.1
+    #        global_autonomy = -0.075
+    #    }
+    #    3 = {
+    #        years_of_nationalism = -5
+    #        land_morale = 0.15
+    #        global_autonomy = -0.10
+    #    }
+    #}
+}
+
+althing_republic = {
+	# government mechanics flags go here
+	icon = "althing_elite_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = yes
+	
+	monarchy = yes
+	modifiers = {
+   		governing_capacity = 100
+		tolerance_heretic = 1
+		land_morale = 0.1
+		max_absolutism = -40
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+#Start of VU additions by San Felipe
+church_of_france = {
+	# government mechanics flags go here
+	icon = "arcbishop_of_reims"
+	allow_normal_conversion = no
+	allow_convert = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+
+	royal_marriage = no
+
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+
+    fixed_rank = 2
+	religion = yes
+	monastic = yes
+	modifiers = {
+		legitimacy = 1
+        power_projection_from_insults = 0.1
+        global_tax_income = 12
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+church_of_england = {
+	# government mechanics flags go here
+	icon = "arcbishop_of_canterbury"
+	allow_normal_conversion = no
+	allow_convert = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	rulers_can_be_generals = no
+
+	royal_marriage = no
+
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+
+    fixed_rank = 2
+	religion = yes
+	monastic = yes
+	modifiers = {
+		land_morale = 0.1
+        global_trade_power = 0.05
+        global_tax_modifier = 0.05
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+
+		has_devotion = yes
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+#Special for Scotland
+scottish_monarchy_legacy = {
+	# government mechanics flags go here
+	icon = "scottish_monarchy"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+
+	monarchy = yes
+	start_territory_to_estates = 0.2
+	modifiers = {
+		legitimacy = 0.35
+		global_unrest = -0.75
+		global_autonomy = -0.035
+		max_absolutism = -25
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			enables_privy_council = yes #pseudoparliament and a development of the King's Council
+		}#fixdis every option is the same
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+#End of VU addition by San Felipe

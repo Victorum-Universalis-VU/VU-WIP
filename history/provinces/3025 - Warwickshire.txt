@@ -1,7 +1,8 @@
 #3025 - Mazaruni
 
 culture = carib
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Mazaruni"
 trade_goods = unknown

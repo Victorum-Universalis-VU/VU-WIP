@@ -8,15 +8,16 @@ religion = confucianism
 capital = "Pingyang"
 trade_goods = iron
 hre = no
-base_tax = 6 
-base_production = 4
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 add_core = JIN
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1608.1.1 = { discovered_by = SPA }
+
+
+
+
 1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1644.1.1 = {
 	unrest = 0

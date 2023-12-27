@@ -18,7 +18,8 @@ native_hostileness = 2
 
 
 
-#discovered_by = mesoamerican
+
+
 
 1465.1.1 = { owner = TAR controller = TAR }
 1490.1.1 = { add_core = TAR }

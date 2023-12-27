@@ -13,7 +13,5 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 
-##discovered_by = sub_saharan
-1440.1.1 = { 
-    discovered_by = YAO 
-}
+
+

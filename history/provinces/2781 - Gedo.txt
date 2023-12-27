@@ -13,9 +13,16 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 
-##discovered_by = east_african
-#discovered_by = indian
-#discovered_by = muslim
 
-#1550.1.1 = { discovered_by = TUR }
+
+
+
+
+
+
+
+
+
+
+#
 1730.1.1 = { owner = GLE controller = GLE }

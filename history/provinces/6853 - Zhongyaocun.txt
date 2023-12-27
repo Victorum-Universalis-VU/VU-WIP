@@ -10,15 +10,11 @@ religion = confucianism
 capital = "Zhongyaocun"
 trade_goods = opium
 hre = no
-base_tax = 4
-base_production = 5
-base_manpower = 5
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1608.1.1 = { discovered_by = SPA }
 
 1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1641.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB }

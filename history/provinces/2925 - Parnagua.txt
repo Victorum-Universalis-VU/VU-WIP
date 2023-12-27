@@ -1,7 +1,8 @@
 # - Parnagua
 
 culture = ge
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Parnagua"
 trade_goods = unknown
@@ -16,7 +17,7 @@ native_hostileness = 7
 
 
 
-1580.1.1 = { discovered_by = POR }
+
 
 1762.6.19 = {
 	owner = POR

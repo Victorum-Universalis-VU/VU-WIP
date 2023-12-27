@@ -6,25 +6,25 @@ estate_brahmins = {
 	trigger = {
 		has_dlc = "Dharma"
 		NOT = { has_government_attribute = disables_estate_brahmins }
-		NOT = { has_country_flag = disables_estate_brahmins_flag }
+		NOT = { has_disabled_estate = { estate = estate_brahmins } }
 		OR = {
 			has_government_attribute = enables_estate_brahmins
-			has_country_flag = enables_estate_brahmins_flag
+			has_enabled_estate = { estate = estate_brahmins }
 			AND = {
 				OR = {
 					AND = {
 						technology_group = indian
 						religion_group = muslim
-						NOT = { has_country_flag = gained_dhimmi_estate }
+						NOT = { has_unlocked_estate = { estate = estate_dhimmi } }
 					}
 					religion = hinduism
+					has_unlocked_estate = { estate = estate_brahmins }
 				}
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				#NOT = { has_government_attribute = is_merchant_republic }
 				NOT = { has_reform = veche_republic }
 				NOT = { has_reform = trading_city }
 				NOT = { has_reform = siberian_tribe }
-				NOT = { has_reform = cossacks_reform }
 				NOT = { government = native }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				OR = {
@@ -118,13 +118,8 @@ estate_brahmins = {
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_church_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_brahmins }
 		}
 		influence = -40
 	}
@@ -134,13 +129,8 @@ estate_brahmins = {
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_church_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_brahmins }
 		}
 		loyalty = -20
 	}
@@ -171,6 +161,7 @@ estate_brahmins = {
 		#GE
 		estate_brahmins_land_privileges
 	}
+	
 	agendas = {
 		estate_brahmins_build_temple_in_y
 		estate_brahmins_build_manufactory_in_y

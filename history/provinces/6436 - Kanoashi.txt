@@ -7,15 +7,16 @@ religion = shinto
 capital = "Hagi"
 trade_goods = rice
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 7
+base_production = 7
+base_manpower = 7
 is_city = yes
 add_core = YSM
-discovered_by = chinese
-discovered_by = japanese
 
 
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
 
-1542.1.1 = { discovered_by = POR }
+
+
+
+  
+

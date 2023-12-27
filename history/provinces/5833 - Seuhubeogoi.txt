@@ -12,8 +12,6 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
 
 
-1818.1.1 = { discovered_by = GBR }	#MacKenzie expedition
-#Settlement in Cache valley circa 1850s
+

@@ -1576,7 +1576,7 @@ country_decisions = {
 				vu_generic_can_form_potential_check = yes
 				was_never_end_game_tag_trigger = yes
 			}
-				NOT = { has_country_flag = formed_denmark_norway }
+			NOT = { has_country_flag = formed_denmark_norway }
 			OR = {
 				tag = DAN
 				tag = NOR

@@ -14,8 +14,9 @@ base_manpower = 2
 is_city = yes
 add_core = MAK
 
-#discovered_by = east_african
-#discovered_by = muslim
+
+
+
 
 extra_cost = 5
 

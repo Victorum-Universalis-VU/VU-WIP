@@ -334,11 +334,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5
-				agave = 4.5
+				agave = 3
 			}
 			modifier = {
 				factor = 1.5
-				alpaca_wool = 5
+				alpaca_wool = 9
 			}
 			modifier = {
 				factor = 1.5
@@ -393,7 +393,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5
-				agave = 4.5
+				agave = 3
+			}
+			modifier = {
+				factor = 1.5
+				agave = 6
 			}
 			modifier = {
 				factor = 1.5
@@ -401,19 +405,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5
-				agave = 13.5
+				alpaca_wool = 9
 			}
 			modifier = {
 				factor = 1.5
-				alpaca_wool = 5
+				alpaca_wool = 12
 			}
 			modifier = {
 				factor = 1.5
-				alpaca_wool = 10
-			}
-			modifier = {
-				factor = 1.5
-				alpaca_wool = 15
+				alpaca_wool = 16
 			}
 		}
 		set_country_flag = cotton_imports
@@ -584,9 +584,9 @@ country_event = {
 		has_discovered = 1460 # Cape of Good Hope
 		OR = {
 			technology_group = western
+			technology_group = dutch_tech_group
 			technology_group = english_tech_group
 			technology_group = french_tech_group
-			technology_group = dutch_tech_group
 			technology_group = german_tech_group
 			technology_group = italian_tech_group
 			technology_group = portuguese_tech_group
@@ -594,6 +594,13 @@ country_event = {
 			technology_group = scandinavian_tech_group
 			technology_group = spanish_tech_group
 			technology_group = swiss_tech_group
+			technology_group = eastern
+			technology_group = bohemian_tech_group
+			technology_group = byzantine_tech_group
+			technology_group = hungarian_tech_group
+			technology_group = polish_tech_group
+			technology_group = russian_tech_group
+			technology_group = bulgarian_tech_group
 		}
 		any_active_trade_node = {
 			has_merchant = PREV

@@ -14,7 +14,7 @@ native_hostileness = 9
 
 1450.1.1 = {
 	base_tax = 4 
-	discovered_by = POR
+	
 } #Purtuguese mention it as the most prominent town in the region, the only one with walls
 1487.1.1 = {
 	owner = TMB

@@ -464,14 +464,14 @@ country_event = {
 				limit = {
 					check_variable = { this_global_manpower_var = 100000 }
 				}
-				FROM = { add_manpower = 100000 }
+				FROM = { add_manpower = 999 }
 				change_variable = { this_global_manpower_var = -100000 }
 			}
 			while = {
 				limit = {
 					check_variable = { this_global_manpower_var = 10000 }
 				}
-				FROM = { add_manpower = 10000 }
+				FROM = { add_manpower = 999 }
 				change_variable = { this_global_manpower_var = -10000 }
 			}
 			while = {

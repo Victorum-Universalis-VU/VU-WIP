@@ -7,16 +7,23 @@ religion = hinduism
 capital = "Koliabar"
 trade_goods = silk
 hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 5
+base_production = 5
+base_manpower = 5
 is_city = yes
 add_core = ASS
-discovered_by = indian
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1627.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
+
 1662.3.1 = { controller = MUG } # Mirjumla entered Gargaon
 1663.1.1 = { owner = MUG }
 1667.1.1 = { controller = ASS } # The Mughals are defeated

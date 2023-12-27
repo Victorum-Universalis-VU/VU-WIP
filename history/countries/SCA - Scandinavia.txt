@@ -1,4 +1,5 @@
 government = monarchy
+#technology_group = western
 technology_group = scandinavian_tech_group
 unit_type = western
 primary_culture = swedish

@@ -11,7 +11,7 @@ trade_goods = silk
 hre = no
 base_tax = 16
 base_production = 16
-base_manpower = 4
+base_manpower = 16
 is_city = yes
 center_of_trade = 5
 
@@ -25,9 +25,11 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
+
+
+
+
+
 
 extra_cost = 10
 
@@ -35,11 +37,6 @@ add_permanent_province_modifier = {
 	name = yangtze_estuary_modifier
 	duration = -1
 }
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1519.1.1 = { discovered_by = POR } # Tome Pires
 
 1646.2.1 = {
 	owner = QNG

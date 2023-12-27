@@ -14,3 +14,7 @@
  civil_war_wargoal: "Take Capital"
  civil_war_wargoal_desc: "We shall march on the enemy capital!"
  CIVIL_WAR_WAR: "American Civil War"
+ #
+ cb_expel_cologne_desc:0 "Expel Cologne"
+ expel_cologne:0 "Expel Cologne"
+ expel_cologne_desc:0 "Expel Cologne"

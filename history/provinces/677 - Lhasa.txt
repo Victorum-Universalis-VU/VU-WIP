@@ -8,16 +8,23 @@ religion = tantra	#Tibetan Buddhism
 capital = "Lhasa"
 trade_goods = cloth
 hre = no
-base_tax = 4  			#haven't reduced this, it's already quite dirty poor
-base_production = 5	#haven't reduced this, it's already quite dirty poor
+base_tax = 6
+base_production = 6
 base_manpower = 6
 is_city = yes
 center_of_trade = 2
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
+
+
+
+
+
+
+
+
+
+
 
 
 add_province_triggered_modifier = religious_center
@@ -37,7 +44,7 @@ add_province_triggered_modifier = vajrayana_lhasa
 	controller = UTS
 	add_core = UTS
 }
-1721.1.1 = { discovered_by = SPA }
+
 1755.10.4 = { unrest = 7 } # Rebellion aginst the Chinese
 1757.10.4 = { unrest = 0 }
 1792.11.1 = {

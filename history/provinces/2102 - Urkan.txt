@@ -18,8 +18,9 @@ base_manpower = 2
 is_city = yes
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 1653.1.1 = {

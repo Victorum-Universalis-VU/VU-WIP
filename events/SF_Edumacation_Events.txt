@@ -16,6 +16,7 @@ country_event = {
 		has_game_started = yes
 		has_regency = no
 		ai = no
+		government = monarchy
 		is_subject = no
 		has_institution = feudalism
 	}
@@ -96,6 +97,7 @@ country_event = {
 		has_regency = no
 		has_heir = yes
 		ai = no
+		government = monarchy
 		is_subject = no
 		has_institution = feudalism
 	}
@@ -174,6 +176,7 @@ country_event = {
 		has_game_started = yes
 		has_regency = no
 		ai = no
+		government = monarchy
 		is_subject = no
 		has_institution = feudalism
 	}
@@ -184,13 +187,52 @@ country_event = {
 		#Removes all qualifications attained by the heir whilst the ruler was alive.
 		if = {
 			limit = {
+				OR = {
+					has_states_general_mechanic = yes
+					OR = {
+						ruler_has_personality = vu_scholarly_personality
+						ruler_has_personality = vu_bachelorette_personality
+						ruler_has_personality = vu_masters_personality
+						ruler_has_personality = vu_doctor_of_architecture 
+						ruler_has_personality = vu_doctor_of_arts
+						ruler_has_personality = vu_doctor_of_philosophy
+						ruler_has_personality = vu_doctor_of_science
+						ruler_has_personality = vu_doctor_of_law
+						ruler_has_personality = vu_doctor_of_engineering
+						ruler_has_personality = vu_doctor_of_war
+						ruler_has_personality = vu_doctor_of_diplomacy
+						ruler_has_personality = vu_doctor_of_medicine
+						ruler_has_personality = vu_doctor_of_culinary
+						ruler_has_personality = vu_doctor_of_finance
+						ruler_has_personality = vu_doctor_of_theology
+					}
+				}
+			}	
+			add_ruler_personality = vu_scholarly_personality
+		}
+		else_if = {
+			limit = {
 				NOT = {
-					ruler_has_personality = vu_scholarly_personality
-					ruler_has_personality = vu_bachelorette_personality
-					ruler_has_personality = vu_masters_personality
+					OR = {
+						ruler_has_personality = vu_scholarly_personality
+						ruler_has_personality = vu_bachelorette_personality
+						ruler_has_personality = vu_masters_personality
+						ruler_has_personality = vu_doctor_of_architecture 
+						ruler_has_personality = vu_doctor_of_arts
+						ruler_has_personality = vu_doctor_of_philosophy
+						ruler_has_personality = vu_doctor_of_science
+						ruler_has_personality = vu_doctor_of_law
+						ruler_has_personality = vu_doctor_of_engineering
+						ruler_has_personality = vu_doctor_of_war
+						ruler_has_personality = vu_doctor_of_diplomacy
+						ruler_has_personality = vu_doctor_of_medicine
+						ruler_has_personality = vu_doctor_of_culinary
+						ruler_has_personality = vu_doctor_of_finance
+						ruler_has_personality = vu_doctor_of_theology
+					}
 				}
 			}
-			add_ruler_personality = vu_uneducated_personality
+		add_ruler_personality = vu_uneducated_personality
 		}
 	}
 }
@@ -210,6 +252,7 @@ country_event = {
 		has_regency = no
 		has_heir = yes
 		ai = no
+		government = monarchy
 		is_subject = no
 		has_institution = feudalism
 	}
@@ -462,8 +505,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 		}
 		
@@ -480,8 +525,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 		}
 		
@@ -498,8 +545,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 			OR = {
 				master_of_mint = 1
@@ -653,8 +702,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 		}
 		
@@ -671,8 +722,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 		}
 		
@@ -689,8 +742,10 @@ country_event = {
 		highlight = yes 
 		trigger = {
 			NOT = {
-				current_age = age_of_discovery
-				current_age = age_of_reformation
+				OR = {
+					current_age = age_of_discovery
+					current_age = age_of_reformation
+				}
 			}
 			OR = {
 				master_of_mint = 1
@@ -957,15 +1012,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_philosophy 
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -987,15 +1042,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_science
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1017,15 +1072,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_law
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1047,15 +1102,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_engineering 
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1077,15 +1132,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_war 
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1107,15 +1162,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_diplomacy
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1137,15 +1192,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_medicine
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1167,15 +1222,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_culinary
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1197,15 +1252,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_finance 
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}
@@ -1227,15 +1282,15 @@ country_event = {
 		remove_ruler_personality = vu_masters_personality
 		add_ruler_personality = vu_doctor_of_theology 
 		change_ruler_stat = {
-			stat = adm
+			type = adm
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = dip
+			type = dip
 			amount = 1
 		}
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 1
 		}
 	}

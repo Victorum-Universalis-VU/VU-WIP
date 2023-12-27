@@ -229,7 +229,7 @@ slavic_pagan_reformed_rebels = {
 				NOT = { dominant_religion = slavic_pagan_reformed }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = slavic_group }
+				religion_group = slavic_group
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"

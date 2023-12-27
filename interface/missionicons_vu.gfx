@@ -1,6 +1,68 @@
 	### Victorium Universalis ###	
 	
-spriteTypes = {	
+spriteTypes = {
+	#Romania
+    spriteType = {
+		name = "rmn_vu_recover_balkans"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_recover_balkans.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_recover_anatolia"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_recover_anatolia.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_revover_hispania"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_revover_hispania.dds"
+	}
+	spriteType = {
+		name = "rmn_vu_fraternity"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_fraternity.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_romanian_unity"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_romanian_unity.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_scipio_legacy"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_scipio_legacy.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_petit_paris"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_petit_paris.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_recover_panonia"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_recover_panonia.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_revover_italy"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_revover_italy.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_eagle_rising"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_eagle_rising.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_vive_la_france"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_vive_la_france.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_beyond_channel"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_beyond_channel.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_reconect_with_latin"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_reconect_with_latin.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_loanwords"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_loanwords.dds"
+	}
+    spriteType = {
+		name = "rmn_vu_sound_of_latin"
+		texturefile = "gfx//interface//missions//Romania//rmn_vu_sound_of_latin.dds"
+	}
+
 	#Wallachia 2
     spriteType = {
 		name = "kill_credditors"

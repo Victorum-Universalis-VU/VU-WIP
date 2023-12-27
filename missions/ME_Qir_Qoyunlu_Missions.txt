@@ -62,10 +62,6 @@ QIR_missions_3_pick = {
 				name = QIR_major_governmental_changes
 				duration = -1
 				age = age_of_discovery
-				else = "
-					add_adm_power = 100
-					change_government_reform_progress = 20
-				"
 			}
 			
 			set_country_flag = QIR_preview_mode
@@ -728,9 +724,6 @@ QIR_missions_2_sedentary = {
 				name = QIR_population_boost
 				duration = -1
 				age = age_of_reformation
-				else = "
-					add_stability_or_adm_power = yes
-				"
 			}
 			
 			country_event = { id = ME_Qir_Qoyunlu_Events.9 }
@@ -2022,7 +2015,6 @@ QIR_missions_1_tribal = {
 
 	QIR_reach_the_white_sea = {
 		icon = mission_retake_ceuta
-		required_missions = { }
 		required_missions = { AKK_anatolia QAR_anatolia }
 		position = 11
 		provinces_to_highlight = {

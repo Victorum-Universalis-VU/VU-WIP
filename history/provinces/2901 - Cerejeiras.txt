@@ -12,14 +12,15 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 1
 
-#discovered_by = south_american
+
+
 
 add_permanent_province_modifier = {
 	name = vu_amazon_rainforest
 	duration = -1
 }
 1755.1.1 = {
-	discovered_by = POR
+	
 	add_core = POR
 	owner = POR
 	controller = POR

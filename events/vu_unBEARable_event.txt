@@ -68,17 +68,21 @@ country_event = { # Player choice to spawn Bear Kingdom
 				remove_core = ROOT
 			}
 			JMN = {
-				build_to_forcelimit = {
-					heavy_ship = 0.3
-					light_ship = 0.3
-					galley = 0.2
-					transport = 0.2
-				}
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.1
-					artillery = 0.3
-				}
+				capital_scope = {
+			    	build_to_forcelimit = {
+			    		heavy_ship = 0.3
+			    		light_ship = 0.3
+			    		galley = 0.2
+			    		transport = 0.2
+			    	}
+			    }
+				capital_scope = {
+			    	build_to_forcelimit = {
+			    		infantry = 0.6
+			    		cavalry = 0.1
+			    		artillery = 0.3
+			    	}
+			    }
 				add_adm_power = 150
 				add_dip_power = 150
 				add_mil_power = 150

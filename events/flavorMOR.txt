@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ###########################################
 # Flavor Events for Morocco
 #
@@ -581,14 +582,21 @@ country_event = {
 	}
 	option = { # Assert Dominance beyond the capital
 		name = "flavor_mor.13.a"
-
+		add_stability = -1
+		add_country_modifier = {
+			name = "mor_looks_outward"
+			duration = 7300
+		}
 		if = {
 			limit = {
 				MRK = {
 					is_subject_of = ROOT
 				}
 			}
-			inherit = MRK
+			MRK = {
+				add_liberty_desire = 10
+			}
+			#was inherit = MRK
 		}
 		else_if = {
 			limit = {
@@ -604,7 +612,10 @@ country_event = {
 					is_subject_of = ROOT
 				}
 			}
-			inherit = SOS
+			SOS = {
+				add_liberty_desire = 10
+			}
+			#was inherit = SOS
 		}
 		else_if = {
 			limit = {
@@ -620,7 +631,10 @@ country_event = {
 					is_subject_of = ROOT
 				}
 			}
-			inherit = TFL
+			TFL = {
+				add_liberty_desire = 10
+			}
+			#was inherit = TFL
 		}
 		else_if = {
 			limit = {

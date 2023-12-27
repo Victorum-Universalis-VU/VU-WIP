@@ -1,9 +1,8 @@
-capital = 8164 #Waterford, Waterford
-
-technology_group = english_tech_group
-unit_type = western
 government = monarchy
 add_government_reform = norman_lordship_reform
-
+#technology_group = western
+technology_group = english_tech_group
+unit_type = western
 religion = catholic
 primary_culture = anglo_irish
+capital = 8164 #Waterford, Waterford

@@ -100,3 +100,4 @@ uniforms = { base_price = 8 }
 woodworking = {	base_price = 6 }
 pottery = { base_price = 2.5 }
 lace = { base_price = 3.5 }
+lacquerware = { base_price = 4.5 }

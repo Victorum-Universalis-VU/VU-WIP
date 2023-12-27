@@ -1,6 +1,6 @@
 #Cordillera
 
-culture = ilocano
+culture = kankanaey
 religion = animism
 capital = "Bontoc"
 trade_goods = rice
@@ -8,11 +8,12 @@ hre = no
 base_tax = 2 
 base_production = 2 
 base_manpower = 2 
-discovered_by = chinese
+
+
 is_city = yes
 owner = IFG
 controller = IFG
 add_core = IFG
 extra_cost = 8
 
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
+ # Ferdinand Magellan

@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 hab_reform_austria = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.

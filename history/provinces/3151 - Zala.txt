@@ -15,40 +15,15 @@ base_manpower = 2
 is_city = yes
 add_core = HUN
 
-#1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
+
+
+
+
 
 1506.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Szekely rebellion
 1507.1.1 = { revolt = {} controller = HUN }

@@ -424,6 +424,13 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			#gulf_of_arabia_area = {
+			#	limit = { 
+			#		NOT = { religion = coptic } 
+			#		owned_by = ROOT
+			#	}
+			#	set_province_flag = copts_liberated
+			#}
 			vostani_area = {
 				limit = { 
 					NOT = { religion = coptic } 
@@ -472,6 +479,16 @@ country_event = {
 		custom_tooltip = coptic_flavor.11.a.tt
 
 		tooltip = {
+			#gulf_of_arabia_area = {
+			#	limit = { 
+			#		NOT = { religion = coptic } 
+			#		owned_by = FROM
+			#	}
+			#	add_province_modifier = {
+			#		name = the_faithful_liberated
+			#		duration = 3650
+			#	}
+			#}
 			vostani_area = {
 				limit = { 
 					NOT = { religion = coptic } 
@@ -515,6 +532,13 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			#gulf_of_arabia_area = {
+			#	limit = { 
+			#		NOT = { religion = coptic } 
+			#		owned_by = ROOT
+			#	}
+			#	set_province_flag = copts_liberated
+			#}
 			vostani_area = {
 				limit = { 
 					NOT = { religion = coptic } 
@@ -563,6 +587,16 @@ country_event = {
 		custom_tooltip = coptic_flavor.11.a.tt
 
 		tooltip = {
+			#gulf_of_arabia_area = {
+			#	limit = { 
+			#		NOT = { religion = coptic } 
+			#		owned_by = FROM
+			#	}
+			#	add_province_modifier = {
+			#		name = the_faithful_liberated
+			#		duration = 3650
+			#	}
+			#}
 			vostani_area = {
 				limit = { 
 					NOT = { religion = coptic } 

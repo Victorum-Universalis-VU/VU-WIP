@@ -3351,13 +3351,37 @@ me_persia_missions_1_trade = {
 					tooltip = PERSIA_ALL_WESTERN_COUNTRIES_SMALLER_NAVY_TT
 					NOT = {
 						any_country = {
-							technology_group = western
+							OR = {
+				            	technology_group = western
+				                technology_group = dutch_tech_group
+				                technology_group = english_tech_group
+				                technology_group = french_tech_group
+				                technology_group = german_tech_group
+				                technology_group = italian_tech_group
+				                technology_group = portuguese_tech_group
+				                technology_group = roman_tech_group
+				                technology_group = scandinavian_tech_group
+				                technology_group = spanish_tech_group
+				                technology_group = swiss_tech_group
+				            }
 							navy_size = ROOT
 						}
 					}
 				}
 				any_country = {
-					technology_group = western
+					OR = {
+				    	technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
+				    }
 					navy_size = ROOT
 					has_opinion = {
 						who = ROOT

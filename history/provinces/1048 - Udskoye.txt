@@ -12,10 +12,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-#discovered_by = dutch_tech_group
-
-1542.1.1 = { discovered_by = POR }
-1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
 
 1653.1.1 = {
 	owner = RUS
@@ -25,7 +21,6 @@ is_city = yes
 } # Pyotr Beketov
 1678.1.1 = { add_core = RUS }
 1689.8.27 = {
-	discovered_by = QNG
 	owner = QNG
 	controller = QNG
 	add_core = QNG

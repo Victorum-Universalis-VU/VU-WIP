@@ -12,9 +12,9 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
+
+
+
 
 
 1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
@@ -25,12 +25,10 @@ discovered_by = north_american
 	trade_goods = fish
 }
 1444.11.14 = { #VictorumUniversalis batch edit shortcut native start date end
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = YYG
 	is_city = no
 	trade_goods = unknown
 }
-1774.1.1 = { discovered_by = SPA } # Juan Pérez 
-1778.1.1 = { discovered_by = GBR } # James Cook
-1799.1.1 = { discovered_by = RUS } # Calling it Alexander Andreyevich Baranov, because I couldn't really figure out who or when for SE Alaska was first. Definitely by 1803, in any case
+

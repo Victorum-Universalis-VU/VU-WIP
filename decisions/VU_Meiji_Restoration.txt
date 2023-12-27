@@ -189,7 +189,7 @@ country_decisions = {
 			is_at_war = no
 		}
 		effect = {
-			vu_change_tech_group_to_western = yes
+			#vu_change_tech_group_to_western = yes
 			change_technology_group = western
 			change_unit_type = western
 			add_treasury = -500

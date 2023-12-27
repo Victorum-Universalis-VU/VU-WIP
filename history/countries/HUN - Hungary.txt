@@ -33,13 +33,24 @@ change_estate_land_share = {
 }
 
 
-1437.1.1 = { leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 } }
+1437.1.1 = { 
+	leader = {	
+		name = "János Hunyadi"         	
+		type = general	
+		fire = 4	
+		shock = 4	
+		manuever = 4	
+		siege = 1	
+		death_date = 1445.1.1 
+	} 
+}
 
 # Personal union with Habsburg under Albrecht II 1437-39
 # Personal union with Poland under Wladyslaw III 1439-44
 
 1444.11.10 = {
 	monarch = {
+		name = "Kormányzósága"
 		adm = 0
 		mil = 0
 		dip = 0
@@ -154,10 +165,11 @@ add_government_reform = autocracy_reform }
 
 1602.1.1 = {
 	monarch = {
-		regent = yes
+		name = "Szapolyai János kormányzósága"
 		adm = 0
 		dip = 0
 		mil = 0
+		regent = yes
 	}
 }
 

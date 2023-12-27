@@ -177,10 +177,8 @@ cpm_missions_3 = {
 			426 = {
 				if = {
 					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
+						NOT = {	owned_by = ROOT	}
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -188,10 +186,8 @@ cpm_missions_3 = {
 			4341 = {
 				if = {
 					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
+						NOT = {	owned_by = ROOT	}
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -251,10 +247,8 @@ cpm_missions_4 = {
 				417 = {
 					if = {
 						limit = {
-							NOT = {
-								owned_by = ROOT
-								is_core = ROOT
-							}
+							NOT = {	owned_by = ROOT	}
+							NOT = {	is_core = ROOT }
 						}
 						add_permanent_claim = ROOT
 					}
@@ -264,10 +258,8 @@ cpm_missions_4 = {
 				4340 = {
 					if = {
 						limit = {
-							NOT = {
-								owned_by = ROOT
-								is_core = ROOT
-							}
+							NOT = {	owned_by = ROOT	}
+							NOT = {	is_core = ROOT }
 						}
 						add_permanent_claim = ROOT
 					}
@@ -275,10 +267,8 @@ cpm_missions_4 = {
 				4339 = {
 					if = {
 						limit = {
-							NOT = {
-								owned_by = ROOT
-								is_core = ROOT
-							}
+							NOT = {	owned_by = ROOT	}
+							NOT = {	is_core = ROOT }
 						}
 						add_permanent_claim = ROOT
 					}

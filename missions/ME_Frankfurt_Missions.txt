@@ -21,11 +21,9 @@ FRN_Missions_1 = {
 		provinces_to_highlight = {
 			province_id = 1876
 			OR = {
-				NOT = {
-					has_trade_building_trigger = yes
-					owned_by = ROOT
-					num_of_times_improved = 5
-				}
+				NOT = {	has_tax_building_trigger = yes }
+				NOT = {	owned_by = ROOT	}
+				NOT = {	num_of_times_improved = 5 }
 			}
 		}
 		trigger = {
@@ -189,11 +187,9 @@ FRN_Missions_5 = {
 		provinces_to_highlight = {
 			province_id = 1876
 			OR = {
-				NOT = {
-					has_tax_building_trigger = yes
-					owned_by = ROOT
-					development = 20
-				}
+				NOT = {	has_tax_building_trigger = yes }
+				NOT = {	owned_by = ROOT	}
+				NOT = {	development = 20 }
 			}
 		}
 		trigger = {

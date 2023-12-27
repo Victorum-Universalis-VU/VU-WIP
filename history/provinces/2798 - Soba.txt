@@ -14,10 +14,6 @@ base_production = 3
 hre = no
 extra_cost = 10
 
-#discovered_by = east_african
-#discovered_by = muslim
-
-1503.1.1 = { discovered_by = NUB }
 1503.1.1 = {	
     owner = NUB
 	controller = NUB

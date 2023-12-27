@@ -2185,7 +2185,7 @@ lighthouse_of_alexandria = {
 		conditional_modifier = {
 			trigger = {
 				owner = {
-					mission_completed = MAM_lighthouse_of_alexandria 
+					mission_completed = mam_alexandrian_trade 
 				}
 			}
 			modifier = {

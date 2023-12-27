@@ -675,13 +675,13 @@ country_event = {
 			modifier = {
 				factor = 2
 				NOT = {
-					has_unembraced_institution = manufactories
+					has_institution = manufactories
 				}
 			}
 			modifier = {
 				factor = 5
 				NOT = {
-					has_unembraced_institution = industrialization
+					has_institution = industrialization
 				}
 			}
 			modifier = {
@@ -736,16 +736,16 @@ country_event = {
 				AND = {
 					OR = {
 		            	technology_group = western
+		            	technology_group = dutch_tech_group
 		            	technology_group = english_tech_group
 		            	technology_group = french_tech_group
-		            	technology_group = dutch_tech_group
 		            	technology_group = german_tech_group
 		            	technology_group = italian_tech_group
-			        	technology_group = portuguese_tech_group
+		            	technology_group = portuguese_tech_group
 		            	technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+		            	technology_group = scandinavian_tech_group
 		            	technology_group = spanish_tech_group
-			        	technology_group = swiss_tech_group
+		            	technology_group = swiss_tech_group
 		            }
 					is_year = 1830
 				}
@@ -827,16 +827,16 @@ country_event = {
 		AND = {
 			OR = {
 		    	technology_group = western
+		    	technology_group = dutch_tech_group
 		    	technology_group = english_tech_group
 		    	technology_group = french_tech_group
-		    	technology_group = dutch_tech_group
 		    	technology_group = german_tech_group
 		    	technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
+		    	technology_group = portuguese_tech_group
 		    	technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group
+		    	technology_group = scandinavian_tech_group
 		    	technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+		    	technology_group = swiss_tech_group
 		    }
 			NOT = { 
 				has_institution = renaissance 
@@ -970,6 +970,7 @@ country_event = {
 		ai_chance = {
 			factor = 40
 			modifier = {
+				factor = 1
 				NOT = {
 					adm_tech = 29
 				}
@@ -1062,6 +1063,7 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 1
 				OR = {
 					ruler_has_personality = strict_personality
 					ruler_has_personality = cruel_personality
@@ -1182,6 +1184,7 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 1
 				NOT = {
 					stability = 0
 				}

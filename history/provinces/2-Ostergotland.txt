@@ -16,26 +16,10 @@ capital = "Linköping"
 is_city = yes # Estimated
 add_core = GTA
 
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
+
+
 
 #Province history completed by docRobert
-
 1487.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The Axelsson Tott Family
 1487.5.24 = { revolt = {} controller = SWE } # The Demise of the Axelsson Tott Family
 1497.3.13 = { controller = DAN } # Danish loyalists at Danish DoW

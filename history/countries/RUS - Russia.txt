@@ -327,7 +327,7 @@ government_rank = 3
 	}
 }
 	
-1711.1.1 = { technology_group = russian_tech_group } # Governmental Reforms and the Absolutism
+1711.1.1 = { technology_group = western } # Governmental Reforms and the Absolutism
 
 1712.1.1 = { decision = make_st_petersburg_capital } # St. Petersburg
 

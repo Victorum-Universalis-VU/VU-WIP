@@ -483,7 +483,7 @@ country_event = { #6 Liquidation of Cossack Host
 		add_country_modifier = {
 			name = vu_cossack_help
 			duration = 7300
-			hidden = no
+			hidden = yes
 		}
 	}
 }
@@ -510,7 +510,7 @@ country_event = { #7 Avar intentions towards Europe
 		add_country_modifier = {
 			name = vu_avar_invasion_1
 			duration = 3650
-			hidden = no
+			hidden = yes
 		}
 		hidden_effect = {
 			every_known_country = {
@@ -547,7 +547,7 @@ country_event = { #7 Avar intentions towards Europe
 		add_country_modifier = {
 			name = vu_avar_invasion_2
 			duration = 3650
-			hidden = no
+			hidden = yes
 		}
 		hidden_effect = {
 			153 = {
@@ -577,7 +577,7 @@ country_event = { #7 Avar intentions towards Europe
 		add_country_modifier = {
 			name = vu_avar_invasion_3
 			duration = 3650
-			hidden = no
+			hidden = yes
 		}
 		153 = {
 			owner = {

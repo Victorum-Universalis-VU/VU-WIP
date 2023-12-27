@@ -1,19 +1,20 @@
 #8286 - Camarines del Sur
 
-culture = filipino
+culture = bikolano
 religion = animism
 capital = "Ibalon"
 trade_goods = unknown
 hre = no
-base_tax = 2  
-base_production = 2
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 native_size = 70
 native_ferocity = 2
 native_hostileness = 9
-discovered_by = chinese
 
-1569.1.1 = { discovered_by = SPA } # Luis Enríquez de Guzmán, a member of the expedition led by Maestro de Campo Mateo de Saz and Captain Martín de Goiti, led a group which crossed from Burias and Ticao islands and landed on a coastal settlement called Ibalon in what is now the province of Sorsogon.
+
+
+
 1571.1.1 = {
 	owner = SPA
 	controller = SPA

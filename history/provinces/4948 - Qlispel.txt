@@ -16,13 +16,10 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3  
 center_of_trade = 1
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
 
 1444.11.15 = { #VictorumUniversalis batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	trade_goods = unknown
 }
@@ -34,4 +31,3 @@ discovered_by = north_american
 	trade_goods = fur
 }
 #Appears to be native held until late 19th century at least, after which mainly private interests settled the area.
-1811.1.1 = { discovered_by = USA } #David Stuart, probably

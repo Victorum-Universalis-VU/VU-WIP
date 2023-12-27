@@ -1726,10 +1726,8 @@ country_event = { #Fijian War Canoes
 	picture = EP_POLYNESIAN_SHIPS_eventPicture
 	
 	trigger = {
-		NOT = { 
-			has_country_modifier = fijian_canoes_good_mod  
-			has_country_modifier = fijian_canoes_bad_mod  
-		}
+		NOT = { has_country_modifier = fijian_canoes_good_mod }
+		NOT = { has_country_modifier = fijian_canoes_bad_mod }
 		tag = TOG
 	}
 	

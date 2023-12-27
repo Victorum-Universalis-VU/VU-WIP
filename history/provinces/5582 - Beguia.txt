@@ -16,11 +16,11 @@ native_size = 10
 native_ferocity = 5
 native_hostileness = 9
 
-1444.1.1 = { discovered_by = CAB } 1444.1.1 = { discovered_by = ARW } 
+ 
 
 
-1498.1.1 = { discovered_by = CAS } # Christopher Columbus
-1516.1.23 = { discovered_by = SPA }
+
+
 #Spanish 'claim' the island, but never even landed. Much like how the Spanish 'claimed' all of North America, South America, and East Asia, I'm not taking this seriously
 1650.5.1 = {
 	owner = FRA

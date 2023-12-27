@@ -18,10 +18,10 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
 
-1681.1.1 = { discovered_by = FRA } #  Pierre-Esprit Radisson and Médard des Groseilliers
+
+
 
 1668.1.1 = {
 	owner = OJI
@@ -40,8 +40,8 @@ discovered_by = north_american
 } #Fort Michipicoten founded and quickly becomes a secondary outpost to Fort Kaministiquia and a central nexus of trade routes
 
 1763.2.10 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = FRA
 	is_city = no
 	trade_goods = unknown 

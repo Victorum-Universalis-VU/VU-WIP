@@ -3,8 +3,8 @@
 # Missions:
  Timurid_prince_expand_the_state_title: "Expand Our Realm"
  Timurid_prince_expand_the_state_desc: "The Empire of Tamerlane collapses around us; we need but pick up the pieces. Shah Rukh left a considerable amount of land in his wake."
- Timurid_prince_claim_the_empire_title: "Claim Timur's Empire"
- Timurid_prince_claim_the_empire_desc: "It is time we follow the natural course of the empire. First, one must latch onto an ideal, just as Tamerlane latched onto Genghis Khan. We must work to restore the empire of Timur."
+ #Timurid_prince_claim_the_empire_title: "Claim Timur's Empire"
+ #Timurid_prince_claim_the_empire_desc: "It is time we follow the natural course of the empire. First, one must latch onto an ideal, just as Tamerlane latched onto Genghis Khan. We must work to restore the empire of Timur."
  Timurid_support_within_the_people_title: "Support by the People"
  Timurid_support_within_the_people_desc: "We cannot abandon the peoples of Persia and Khorasan. Diverse as they might be, this monumental task can go no further without the support of our fellow princes or the people."
  Timurid_grand_ruler_title: "The Great $MONARCHTITLE$"
@@ -207,7 +207,7 @@
  timurid_legitimacy_influence: "Yearly Timurid Legitimacy"
  
  # Variables:
- timurid_legitimacy_value: "Timurid Legitimacy"
+ #timurid_legitimacy_value: "Timurid Legitimacy"
  
  # Decisions:
  timurid_or_beijing_owner_cancel_pact_title: "Cancel the Beijing-Samarkand Pact"
@@ -216,7 +216,7 @@
  timurid_princes_open_legitimacy_shop_title: "§YTimurid Legitimacy§!"
  timurid_princes_open_legitimacy_shop_desc: "Legitimacy of each prince:\n\n [ME_succession_crisis_HRT.HeratOrTimurids] [ME_succession_crisis_HRT.GetName]: §Y[ME_succession_crisis_HRT.IsAlive]§!\n [ME_succession_crisis_TRS.TRSOrTimurids] [ME_succession_crisis_TRS.GetName]: §Y[ME_succession_crisis_TRS.IsAlive]§!\n [ME_succession_crisis_KHO.KHOOrTimurids] [ME_succession_crisis_KHO.GetName]: §Y[ME_succession_crisis_KHO.IsAlive]§!\n [ME_succession_crisis_QOM.QOMOrTimurids] [ME_succession_crisis_QOM.GetName]: §Y[ME_succession_crisis_QOM.IsAlive]§!\n [ME_succession_crisis_AFG.AFGOrTimurids] [ME_succession_crisis_AFG.GetName]: §Y[ME_succession_crisis_AFG.IsAlive]§!\n [ME_succession_crisis_FRS.FRSOrTimurids] [ME_succession_crisis_FRS.GetName]: §Y[ME_succession_crisis_FRS.IsAlive]§!\n\nWe gain §YTimurid Legitimacy§! by:\n   -Winning §YBattles§! §G+1§!\n   -Various §YMissions§! and §YEvents§!\n   -Gaining §YSupport§! from other §YPrinces§! §G+10§!"
  # Other stuff:
- ME_alive: "[This.timurid_legitimacy_value.GetValue]"
+ #ME_alive: "[This.timurid_legitimacy_value.GetValue]"
  ME_not_alive: "§RDefeated§!"
  ME_Timurids: "@TIM"
  ME_herat: "@HRT"

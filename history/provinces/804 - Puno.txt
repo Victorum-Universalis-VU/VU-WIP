@@ -13,8 +13,10 @@ base_production = 4
 base_manpower = 4
 add_core = CLA
 
-#discovered_by = south_american
-#discovered_by = andean
+
+
+
+
 
 1448.1.1 = {
 	capital = "Puno"
@@ -28,7 +30,7 @@ add_core = CLA
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

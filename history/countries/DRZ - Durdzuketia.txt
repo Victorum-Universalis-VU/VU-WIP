@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = dagestani
 add_accepted_culture = circassian
 religion = shiite
-technology_group = muslim
+technology_group = persian_tech_group
 capital = 6135 #Durdzuketia
 
 

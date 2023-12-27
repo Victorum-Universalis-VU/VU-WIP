@@ -16,21 +16,15 @@ add_core = SIB
 add_core = BSH
 center_of_trade = 1
 
-
-#discovered_by = dutch_tech_group
-#discovered_by = muslim
-
 unrest = 15
 
 1468.1.1 = {
 	owner = SIB
 	controller = SIB 
-	discovered_by = SIB
 	remove_core = NOG 
 	unrest = 0 
 } # Sibir Khanate formed from northern Uzbek lands
 1582.10.23 = {
-	discovered_by = RUS
 	owner = RUS 
 	controller = RUS
 	add_core = RUS 

@@ -12,14 +12,6 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
-
-1811.1.1 = {
-	discovered_by = GBR
-	discovered_by = USA
-} #David Thompson and David Stuart at around the same time.
 1812.1.1 = { 
 	owner = USA
 	controller = USA
@@ -31,7 +23,6 @@ discovered_by = north_american
 	trade_goods = fur 
 } #Alexander Ross founds fort
 1813.1.1 = { 
-	discovered_by = GBR
 	owner = GBR
 	controller = GBR
 	add_core = GBR

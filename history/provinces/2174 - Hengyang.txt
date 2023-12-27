@@ -9,18 +9,19 @@ religion = animism
 capital = "Hengyang"
 trade_goods = gold
 hre = no
-base_tax = 6 
-base_production = 6
-base_manpower = 6
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
 add_core = CHC
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1595.1.1 = { discovered_by = SPA }
+
+
+
+
 
 1643.1.1 = { controller = CXI } # The Xi dynasty of Zhang Xianzhong
 1647.12.1 = {

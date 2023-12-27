@@ -1,5 +1,4 @@
 #Iberian East Africa
-
 government = republic
 add_government_reform = presidential_despot_reform
 #technology_group = western
@@ -8,4 +7,5 @@ primary_culture = iberian_africano
 religion = catholic
 unit_type = western
 government_rank = 1
-mercantilism = 0.1
+mercantilism = 25
+capital = 1201

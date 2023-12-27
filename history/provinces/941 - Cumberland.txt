@@ -18,16 +18,16 @@ native_hostileness = 6
 
 
 
-discovered_by = north_american
 
 
-1671.1.1 = { discovered_by = ENG } # Abraham Wood
+
+
 1672.1.1 = {
 	owner = IRO
 	controller = IRO
 	culture = iroquois
 } #Taken by Iroquois in Beaver Wars.
-1682.1.1 = { discovered_by = FRA } # Estimated
+
 1701.8.14 = {
 	owner = ---
 	controller = ---
@@ -35,7 +35,7 @@ discovered_by = north_american
 	is_city = no
 	culture = shawnee
 } #Vast areas left deserted after the Beaver Wars and the Iroquois withdrawal
-1707.5.12 = { discovered_by = GBR }
+
 1774.10.19= {
 	owner = GBR
 	controller = GBR

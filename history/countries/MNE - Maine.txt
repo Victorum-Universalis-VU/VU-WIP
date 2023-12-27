@@ -5,6 +5,7 @@ primary_culture = normand
 add_accepted_culture = angevin_culture
 add_accepted_culture = cosmopolitan_french
 religion = catholic
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 capital = 177 # Le Mans

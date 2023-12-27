@@ -1979,8 +1979,6 @@
  peasants_hemmingstedt_desc:0 "The King of Denmark wishes to subjugate the fiercely independent people of [Root.GetName]. Though we will surely be outnumbered and outmatched in many ways, we must put our faith in God and use every tactical advantage at our disposal to repel the Danish armies. If by the grace of God we succeed, we should push on and liberate Holstein from Danish rule."
  peasants_denmark_title:0 "Defeat Denmark"
  peasants_denmark_desc:0 "We will never be truly safe until the tyrant King of Denmark is defeated utterly. We must liberate the peasantry of Jutland and drive out the aristocracy from all of Denmark."
- peasants_conquest_of_bread_title:0 "The Conquest of Bread"
- peasants_conquest_of_bread_desc:0 "In other nations the noble laborers who work the fields and factories would be met with bayonets and grapeshot if they demanded bread for their toil. In [Root.GetName] no man, woman, or child shall ever die of hunger. Let us provide bread for all!"
  peasants_means_of_production_title:0 "The Means of Production"
  peasants_means_of_production_desc:0 "Those who hold the means of material production also have control over the means of mental production, so that the ideas of the ruling class subjugate the minds of the poor. We must ensure that material production is controlled by the people and not by an elite few."
  peasants_bremen_title:0 "Pious Alliance"

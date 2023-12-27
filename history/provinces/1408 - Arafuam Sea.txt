@@ -1,12 +1,9 @@
 #1408 - Arafuam Sea
 #VU Discovery Bug Fix
 
-# discovered_by = MKS
-# discovered_by = TER
-# discovered_by = TID
 
-1511.1.1 = { discovered_by = POR }
-1595.1.1 = { discovered_by = western #discovered_by = dutch_tech_group #discovered_by = english_tech_group #discovered_by = french_tech_group #discovered_by = german_tech_group #discovered_by = italian_tech_group #discovered_by = portuguese_tech_group #discovered_by = scandinavian_tech_group #discovered_by = spanish_tech_group #discovered_by = swiss_tech_group 
-}
-#1620.1.1 = { #discovered_by = eastern #discovered_by = bohemian_tech_group #discovered_by = byzantine_tech_group #discovered_by = hungarian_tech_group #discovered_by = polish_tech_group discovered_by = russian_tech_group }
+
+
+
+
 

@@ -8,19 +8,26 @@ religion = confucianism
 capital = "Waichow"
 trade_goods = fruit
 hre = no
-base_tax = 12
-base_production = 12
-base_manpower = 6
+base_tax = 14
+base_production = 14
+base_manpower = 14
 is_city = yes
 add_core = YUE
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
 
-1514.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
+
 
 1647.4.1 = {
 	owner = QNG

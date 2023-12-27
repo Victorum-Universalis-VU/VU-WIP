@@ -708,11 +708,8 @@ country_event = {
 			country_of_origin = BYZ
 			dynasty = "Palailogos"
 			adm = 4
-			max_random_adm = 4
 			dip = 3
-			max_random_dip = 3
 			mil = 1
-			max_random_mil = 1
 			female = yes
 		}
 

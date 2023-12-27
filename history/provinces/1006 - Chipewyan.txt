@@ -12,11 +12,11 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = north_american
 
-1619.1.1 = { discovered_by = DAN } # Jens Munk
-1639.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
+
+
+
+
 
 1717.1.1 = {
 	owner = GBR

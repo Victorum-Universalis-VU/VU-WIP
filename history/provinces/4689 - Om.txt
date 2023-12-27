@@ -13,18 +13,16 @@ base_manpower = 5
 is_city = yes
 add_core = SIB
 add_core = SHY
-#discovered_by = dutch_tech_group
+
 revolt_risk = 15
 center_of_trade = 2
 
 1468.1.1 = {
 	owner = SIB
 	controller = SIB 
-	discovered_by = SIB
 	revolt_risk = 0 
 } # Sibir khanate formed
 1582.10.23 = {
-	discovered_by = RUS
 	owner = RUS
 	controller = RUS
 	add_core = RUS

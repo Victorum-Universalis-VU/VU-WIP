@@ -96,7 +96,7 @@ vu_mosteiro_da_batalha = {
 		province_modifiers = { local_tax_modifier = 0.20 }
 		area_modifier = { local_unrest = -1 }
 		country_modifiers = { prestige_from_land = 0.2 prestige = 0.1 establish_order_cost = -0.15 }
-		on_upgraded = {	owner = { add_estate_loyalty = { estate = estate_church	loyalty = 1- } } }
+		on_upgraded = {	owner = { add_estate_loyalty = { estate = estate_church	loyalty = 1 } } }
 	}
 }
 

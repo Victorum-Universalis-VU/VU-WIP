@@ -16,10 +16,8 @@ MOS_1 = {
 			province_id = 295
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = {
-					has_building = temple
-					has_building = cathedral
-				}
+				NOT = {	has_building = temple }
+				NOT = {	has_building = cathedral }
 			}
 		}
 		trigger = {
@@ -53,10 +51,8 @@ MOS_1 = {
 			owned_by = ROOT
 			NOT = { development = 15 }
 			OR = {
-				NOT = {
-					has_building = temple
-					has_building = cathedral
-				}
+				NOT = {	has_building = temple }
+				NOT = {	has_building = cathedral }
 				has_owner_religion = no
 			}
 		}
@@ -92,30 +88,24 @@ MOS_1 = {
 					province_id = 310
 					OR = {
 						NOT = { owned_by = ROOT }
-						NOT = {
-							has_building = temple
-							has_building = cathedral
-						}
+						NOT = {	has_building = temple }
+						NOT = {	has_building = cathedral }
 					}
 				}
 				AND = {
 					province_id = 303
 					OR = {
 						NOT = { owned_by = ROOT }
-						NOT = {
-							has_building = temple
-							has_building = cathedral
-						}
+						NOT = {	has_building = temple }
+						NOT = {	has_building = cathedral }
 					}
 				}
 				AND = {
 					province_id = 1082
 					OR = {
 						NOT = { owned_by = ROOT }
-						NOT = {
-							has_building = temple
-							has_building = cathedral
-						}
+						NOT = {	has_building = temple }
+						NOT = {	has_building = cathedral }
 					}
 				}
 			}
@@ -843,17 +833,19 @@ MOS_4 = {
 				AND = {
 					province_id = 303
 					NOT = {
-						has_building = fort_15th
-						has_building = fort_16th
-						has_building = fort_17th
-						has_building = fort_18th
-						AND = {
-							OR = {
-								has_building = temple
-								has_building = cathedral
-							}
-							development = 15
-						}
+						OR = {
+						    has_building = fort_15th
+						    has_building = fort_16th
+						    has_building = fort_17th
+						    has_building = fort_18th
+						    AND = {
+						    	OR = {
+						    		has_building = temple
+						    		has_building = cathedral
+						    	}
+						    	development = 15
+						    }
+					    }
 					}
 				}
 			}
@@ -1041,10 +1033,12 @@ MOS_5 = {
 			is_capital_of = ROOT
 			OR = {
 				NOT = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
+					OR = {
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
+					}
 				}
 				NOT = { development = 25 }
 			}

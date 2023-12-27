@@ -14,7 +14,7 @@ native_hostileness = 3
 center_of_trade = 2
 
 1635.1.1 = {
-	discovered_by = RUS
+	
 	owner = RUS
 	controller = RUS
 	religion = orthodox

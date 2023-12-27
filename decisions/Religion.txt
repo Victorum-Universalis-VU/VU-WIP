@@ -1390,13 +1390,15 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				NOT = {
-					owns_core_province = 2221 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 2207 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 2235 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 2236 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 2218 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 441 #Various locations suggested to have been the site of these fires.
-					owns_core_province = 2223 #Various locations suggested to have been the site of these fires.
+					OR = {
+						owns_core_province = 2221 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 2207 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 2235 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 2236 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 2218 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 441 #Various locations suggested to have been the site of these fires.
+					    owns_core_province = 2223 #Various locations suggested to have been the site of these fires.
+					}
 				}
 				factor = 0
 			}
@@ -1459,15 +1461,17 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				NOT = {
-					owns_core_province = 428 #Teheran
-					owns_core_province = 429 #Isfahan
-					owns_core_province = 432 #Kerman
-					owns_core_province = 433 #Yazd
-					owns_core_province = 450 #Balkh
-					owns_core_province = 504 #Thatta
-					owns_core_province = 517 #Sanjan
-					owns_core_province = 529 #Mumbai
-					owns_core_province = 2210 #Kermanshah
+					OR = {
+						owns_core_province = 428 #Teheran
+					    owns_core_province = 429 #Isfahan
+					    owns_core_province = 432 #Kerman
+					    owns_core_province = 433 #Yazd
+					    owns_core_province = 450 #Balkh
+					    owns_core_province = 504 #Thatta
+					    owns_core_province = 517 #Sanjan
+					    owns_core_province = 529 #Mumbai
+					    owns_core_province = 2210 #Kermanshah
+					}
 				}
 				factor = 0
 			}

@@ -14,11 +14,11 @@ native_hostileness = 3
 center_of_trade = 1
 
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
 
-1793.1.1 = { discovered_by = GBR } #Alexander Mackenzie
+
+
+
+
 1805.1.1 = { 
 	owner = GBR
 	controller = GBR

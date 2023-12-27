@@ -12,11 +12,7 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
 add_permanent_province_modifier = {
     name = rich_black_soil
     duration = -1
 }
-
-1826.1.1 = { discovered_by = USA } #Jediah Smith
-#Leodocia, eventually Red Bluff, founded in early 1850s at the latest, probably closer to mid-late 1840s.

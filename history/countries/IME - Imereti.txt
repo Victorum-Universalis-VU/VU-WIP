@@ -2,7 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = georgian
 religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 422 # Kutaisi
 
 1401.1.1 = {

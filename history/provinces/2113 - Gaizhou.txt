@@ -8,16 +8,10 @@ religion = confucianism
 capital = "Gaizhou"
 trade_goods = fish
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
-
-1519.1.1 = { discovered_by = POR } # Tome Pires
 
 1620.1.1 = {
 	owner = MCH

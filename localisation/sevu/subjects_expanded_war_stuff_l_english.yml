@@ -110,9 +110,9 @@
  CB_ALLOWED_make_fief_subject: "Force Fiefdom"
  PEACE_make_fief_subject: "$TAKERS$ Fiefdom"
 
- make_salic_personal_union_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Salic Union of @[Root.GetTag] §Y[Root.GetName]§!."
- CB_ALLOWED_make_salic_personal_union: "Force Salic Union"
- PEACE_make_salic_personal_union: "$TAKERS$ Salic Union"
+ #make_salic_personal_union_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Salic Union of @[Root.GetTag] §Y[Root.GetName]§!."
+ #CB_ALLOWED_make_salic_personal_union: "Force Salic Union"
+ #PEACE_make_salic_personal_union: "$TAKERS$ Salic Union"
 
  make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Peasant Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a §YPeasants Republic§!, they will become one."
  CB_ALLOWED_make_peasant_vassal: "Force Peasant Vassal"

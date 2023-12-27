@@ -141,8 +141,8 @@
  me_tim_babur_ai: "Rise of Babur"
  
  #Timurid Legitimacy:
- timurid_legitimacy_value: "Timurid Legitimacy"
- BASE_VALUE: "Base Value"
+ #timurid_legitimacy_value: "Timurid Legitimacy"
+ #BASE_VALUE: "Base Value"
  
  #Governments:
  mechanic_brotherly_rivalry_yes: "We gain §R-100§! relations with every country that has the §YTimurid§! dynasty"

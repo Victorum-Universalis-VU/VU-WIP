@@ -14,12 +14,10 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
 
-1611.6.13 = { discovered_by = FRA } # Samuel de Champlain via Étienne Brûlé
 
-1664.1.1 = { discovered_by = ENG }		# Who what where no vanilla note
+
 
 1679.1.1 = {
 	owner = FRA
@@ -32,8 +30,8 @@ discovered_by = north_american
 } #French traders use area as a major trading site with the natives
 
 1688.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	trade_goods = unknown
 	base_tax = 1
@@ -50,7 +48,7 @@ discovered_by = north_american
 	base_production = 2
 } #French establish Fort Temiscamingue
 
-1707.5.12 = { discovered_by = GBR }
+
 
 1720.1.1 = {
 	owner = FRA
@@ -64,8 +62,8 @@ discovered_by = north_american
 } #French refound Fort Temiscamingue east of the Lake renaming this settlement to modern city name inspired problem need better name
 
 1758.1.1 = { 
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	trade_goods = unknown
 	capital = "Temikaming"

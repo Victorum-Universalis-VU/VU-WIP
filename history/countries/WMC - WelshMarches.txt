@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform			#Actually ruled by several to dozens of minor marcher lords, loyal to the English crown but effectively independent of it and each other. This is a compromise/approximation at best
 government_rank = 1
+#technology_group = western
 technology_group = english_tech_group
 unit_type = western
 primary_culture = english

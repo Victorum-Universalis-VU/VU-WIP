@@ -1076,7 +1076,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		factor = 1
+		days = 1
 	}
 	
 	hidden = yes
@@ -1105,122 +1105,122 @@ country_event = {
 		NOT = { has_ruler_flag = MAM_coup_ruler }
 	}
 	
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = MAM_no_more_stab }
-				}
-								if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_10 
-					}
-					#it's bad enough as it is. lol
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_9 
-					}
-					remove_country_modifier = MAM_worsening_stability_9
-					add_country_modifier = {
-						name = MAM_worsening_stability_10
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_8 
-					}
-					remove_country_modifier = MAM_worsening_stability_8
-					add_country_modifier = {
-						name = MAM_worsening_stability_9
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_7 
-					}
-					remove_country_modifier = MAM_worsening_stability_7
-					add_country_modifier = {
-						name = MAM_worsening_stability_8
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_6 
-					}
-					remove_country_modifier = MAM_worsening_stability_6
-					add_country_modifier = {
-						name = MAM_worsening_stability_7
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_5 
-					}
-					remove_country_modifier = MAM_worsening_stability_5
-					add_country_modifier = {
-						name = MAM_worsening_stability_6
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_4 
-					}
-					remove_country_modifier = MAM_worsening_stability_4
-					add_country_modifier = {
-						name = MAM_worsening_stability_5
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_3 
-					}
-					remove_country_modifier = MAM_worsening_stability_3
-					add_country_modifier = {
-						name = MAM_worsening_stability_4
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_2 
-					}
-					remove_country_modifier = MAM_worsening_stability_2
-					add_country_modifier = {
-						name = MAM_worsening_stability_3
-						duration = -1
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_modifier = MAM_worsening_stability_1 
-					}
-					remove_country_modifier = MAM_worsening_stability_1
-					add_country_modifier = {
-						name = MAM_worsening_stability_2
-						duration = -1
-					}
-				}
-				else = {
-					add_country_modifier = {
-						name = MAM_worsening_stability_1
-						duration = -1
-					}
-				}
-			}
-		}
-	}
+	#immediate = {
+	#	hidden_effect = {
+	#		if = {
+	#			limit = {
+	#				NOT = { has_country_flag = MAM_no_more_stab }
+	#			}
+	#			if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_10 
+	#				}
+	#				add_stability = -1
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_9 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_9
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_10
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_8 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_8
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_9
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_7 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_7
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_8
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_6 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_6
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_7
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_5 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_5
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_6
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_4 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_4
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_5
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_3 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_3
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_4
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_2 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_2
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_3
+	#					duration = -1
+	#				}
+	#			}
+	#			else_if = {
+	#				limit = {
+	#					has_country_modifier = MAM_worsening_stability_1 
+	#				}
+	#				remove_country_modifier = MAM_worsening_stability_1
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_2
+	#					duration = -1
+	#				}
+	#			}
+	#			else = {
+	#				add_country_modifier = {
+	#					name = MAM_worsening_stability_1
+	#					duration = -1
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
 	
-	major = yes 
-	major_trigger = {
-		is_neighbor_of = ROOT
-	}
+	#major = yes 
+	#major_trigger = {
+	#	is_neighbor_of = ROOT
+	#}
 	
 	immediate = {
 		hidden_effect = {

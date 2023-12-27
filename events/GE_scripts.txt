@@ -1619,8 +1619,8 @@ country_event = {
 				}
 				NOT = {
 					has_global_modifier_value = {
-					which = rural_goods_produced_modifier 
-					value = 0.65
+					    which = rural_goods_produced_modifier 
+					    value = 0.65
 					}
 				}
 			}
@@ -1644,8 +1644,8 @@ country_event = {
 				}
 				NOT = {
 					has_global_modifier_value = {
-					which = rural_goods_produced_modifier 
-					value = 0.70
+					    which = rural_goods_produced_modifier 
+					    value = 0.70
 					}
 				}
 			}

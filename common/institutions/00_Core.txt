@@ -71,23 +71,25 @@ feudalism = {
 					is_playing_custom_nation = yes
 					OR = {
 						technology_group = western
-						technology_group = english_tech_group
-						technology_group = french_tech_group
-						technology_group = dutch_tech_group
-						technology_group = german_tech_group
-						technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-						technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-						technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-						technology_group = bohemian_tech_group
-					    technology_group = byzantine_tech_group
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					    technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -145,16 +147,18 @@ feudalism = {
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
-					government = tribal
-					government = native
-					primary_culture = bedouin_arabic
-					primary_culture = uyghur
-					technology_group = andean
-					technology_group = mesoamerican
-					technology_group = north_american
-					technology_group = south_american
-					technology_group = sub_saharan
-					technology_group = aboriginal_tech
+					OR = {
+						government = tribal
+					    government = native
+					    primary_culture = bedouin_arabic
+					    primary_culture = uyghur
+					    technology_group = andean
+					    technology_group = mesoamerican
+					    technology_group = north_american
+					    technology_group = south_american
+					    technology_group = sub_saharan
+					    technology_group = aboriginal_tech
+					}
 				}
 			}
 			AND = {
@@ -219,17 +223,17 @@ feudalism = {
 			potential = { 
 				owner = { 
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				} 
 			}
@@ -245,17 +249,17 @@ feudalism = {
 			potential = {
 				owner = { 
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
@@ -278,14 +282,15 @@ feudalism = {
 			potential = { 
 				owner = { 
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
-				} 
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
@@ -297,14 +302,15 @@ feudalism = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
@@ -324,7 +330,14 @@ feudalism = {
 			factor = 0.54
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = ottoman } }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				} 
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
 				any_friendly_coast_border_province = { feudalism = 100 }
@@ -335,7 +348,12 @@ feudalism = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { technology_group = ottoman }
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -353,7 +371,11 @@ feudalism = {
 			factor = 0.48
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = muslim } }
+			potential = { 
+				owner = { 
+					technology_group = muslim 
+				} 
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
 				any_friendly_coast_border_province = { feudalism = 100 }
@@ -364,7 +386,9 @@ feudalism = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { technology_group = muslim }
+				owner = { 
+					technology_group = muslim 
+				}
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -382,7 +406,11 @@ feudalism = {
 			factor = 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = indian } }
+			potential = { 
+				owner = { 
+					technology_group = indian 
+				} 
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
 				any_friendly_coast_border_province = { feudalism = 100 }
@@ -393,7 +421,9 @@ feudalism = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { technology_group = indian }
+				owner = { 
+					technology_group = indian 
+				}
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -890,23 +920,25 @@ gunpowder_warfare = {
 					is_playing_custom_nation = yes
 					OR = {
 						technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-						technology_group = bohemian_tech_group
-					    technology_group = byzantine_tech_group
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					    technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -973,8 +1005,10 @@ gunpowder_warfare = {
 				superregion = india_superregion
 				owner = {
 					NOT = {
-						government = tribal
-						government = native
+						OR = {
+							government = tribal
+							government = native
+						}
 					}
 				}
 				development = 25
@@ -1258,33 +1292,34 @@ gunpowder_warfare = {
 						continent = europe
 						owner = { 
 					        OR = {
-					            technology_group = western
-					            technology_group = english_tech_group
-					            technology_group = french_tech_group
-					            technology_group = dutch_tech_group
-					            technology_group = german_tech_group
-					            technology_group = italian_tech_group
-					    		technology_group = portuguese_tech_group
-					            technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
-					            technology_group = spanish_tech_group
-					    		technology_group = swiss_tech_group
-					        }
+						        technology_group = western
+				                technology_group = dutch_tech_group
+				                technology_group = english_tech_group
+				                technology_group = french_tech_group
+				                technology_group = german_tech_group
+				                technology_group = italian_tech_group
+				                technology_group = portuguese_tech_group
+				                technology_group = roman_tech_group
+				                technology_group = scandinavian_tech_group
+				                technology_group = spanish_tech_group
+				                technology_group = swiss_tech_group
+							}
 					    }
 					}
 					AND = {
 						continent = europe
 						development = 10
-						owner = { 
-				        	OR = {
-				        	    technology_group = bohemian_tech_group
-				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
-				        	    technology_group = hungarian_tech_group
-				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
-				        	}
-				        } 
+						owner = {
+							OR = {
+								technology_group = eastern
+					            technology_group = bohemian_tech_group
+					            technology_group = byzantine_tech_group
+					            technology_group = hungarian_tech_group
+					            technology_group = polish_tech_group
+					            technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
+							}
+				        }
 					}
 					superregion = persia_superregion
 					superregion = india_superregion
@@ -1300,15 +1335,17 @@ gunpowder_warfare = {
 				is_year = 1475
 				owner = {
 					NOT = {
-						government = tribal
-						government = native
-						primary_culture = bedouin_arabic
-						technology_group = andean
-						technology_group = mesoamerican
-						technology_group = north_american
-						technology_group = south_american
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
+						OR = {
+							government = tribal
+							government = native
+							primary_culture = bedouin_arabic
+							technology_group = andean
+							technology_group = mesoamerican
+							technology_group = north_american
+							technology_group = south_american
+							technology_group = sub_saharan
+							technology_group = aboriginal_tech
+						}
 					}
 				}
 			}
@@ -1581,22 +1618,25 @@ medicine = {
 					is_playing_custom_nation = yes
 					OR = {
 						technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-						technology_group = bohemian_tech_group
-					    technology_group = byzantine_tech_group
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					    technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -1652,8 +1692,10 @@ medicine = {
 				superregion = far_east_superregion
 				owner = {
 					NOT = {
-						government = tribal
-						government = native
+						OR = {
+							government = tribal
+							government = native
+						}
 					}
 				}
 				development = 25
@@ -1965,22 +2007,25 @@ medicine = {
 				owner = {
 					OR = {
 						technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-						technology_group = bohemian_tech_group
-					    technology_group = byzantine_tech_group
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					    technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -2197,7 +2242,9 @@ civil_service = {
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -2315,7 +2362,7 @@ civil_service = {
 						has_reform = austrian_archduchy_reform
 						has_reform = appanage_reform
 						has_reform = byzantine_autocracy_reform
-						has_reform = byzantine_transitional_gov_reform
+						#has_reform = byzantine_transitional_gov_reform
 						has_reform = margraviate_reform
 						has_reform = roman_empire_reform
 						has_reform = portuguese_monarchy_reform
@@ -2610,7 +2657,9 @@ civil_service = {
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
+						technology_group = persian_tech_group
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
@@ -2870,15 +2919,15 @@ civil_service = {
 
 market_production = {
 	#penalty = 0.5
-	
+
 	bonus = {
 		global_own_trade_power = 0.1
 		naval_tradition_from_trade = 0.1
 	}
-	
+
 	historical_start_date = 1250.1.1
 	historical_start_province = 45 #Lubeck
-	
+
 	history = {
 	    OR = {
 			AND = {
@@ -3079,9 +3128,16 @@ market_production = {
 					        technology_group = hungarian_tech_group
 					        technology_group = polish_tech_group
 					        technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 						}
 				    }
-					owner = { technology_group = ottoman }
+					owner = { 
+						OR = {
+							technology_group = ottoman
+							technology_group = persian_tech_group
+						} 
+					}
+
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
@@ -3156,7 +3212,7 @@ market_production = {
 			province_id = 1744
 		}
 		OR = {
-			owner = { marcantilism = 40 }
+			#owner = { marcantilism = 40 }
 			region = north_german_region
 			region = low_countries_region
 		}
@@ -3169,13 +3225,13 @@ market_production = {
 		is_state = yes
 	}
 	start_chance = 10
-	
+
 	on_start = institution_events.100
-	
+
 	can_embrace = {
 		owner = { has_institution = feudalism }
 	}
-	
+
 	embracement_speed = {
 		modifier = {		#Nearby friendly prov has it	
 			factor = 0.5
@@ -3202,13 +3258,13 @@ market_production = {
 				}
 			}
 		}
-		
+
 		modifier = {		#Has feudalism, monarch has 6 dip and CoT
 			factor = 0.25
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = HAS_FEUDALISM_AND_MONARCH_6_PLUS_COT
-				
+
 				province_has_center_of_trade_of_level = 2
 				owner = {
 					has_institution = feudalism
@@ -3216,13 +3272,13 @@ market_production = {
 				}
 			}
 		}
-		
+
 		modifier = {		#Has feudalism, monarch is 4 4 4, province is port with CoT
 			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = HAS_FEUDALISM_AND_MONARCH_4_PROV_PORT_AND_COT
-				
+
 				has_port = yes
 				province_has_center_of_trade_of_level = 1
 				owner = {
@@ -3233,30 +3289,30 @@ market_production = {
 				}
 			}
 		}
-		
+
 		modifier = {		#Province has feudalism, is port or CoT and owner is republic with lot of mercantilism
 			factor = 0.15
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = HAS_FEUDALISM_PORT_AND_REPUBLIC_WITH_MERCANTILISM
-				
+
 				feudalism = 100
 				has_port = yes
 				owner = {
 					government = republic
-					mercantalism = 40
+					#mercantalism = 40
 				}
 			}
 		}
-		
+
 		modifier = {		#Has at least 50 mercantalism, not tribal, has all advisors
 			factor = 0.2
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = HAS_MERCANTILISM_NOT_TRIBAL_ALL_ADVISORS
-				
+
 				owner = {
-					mercantalism = 50
+					#mercantalism = 50
 					NOT = { government = tribal }
 					employed_advisor = { category = ADM }
 					employed_advisor = { category = DIP }
@@ -3264,7 +3320,7 @@ market_production = {
 				}
 			}
 		}
-		
+
 		modifier = {		#Is colonial nation and overlord has it
 			factor = 0.6
 			scale = yes
@@ -3310,7 +3366,7 @@ market_production = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_market_production_embraced
-				
+
 				owner = { has_institution = market_production }
 				is_in_capital_area = no
 			}
@@ -3326,7 +3382,7 @@ market_production = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_market_production_embraced_has_cot
-				
+
 				owner = { has_institution = market_production }
 				is_in_capital_area = no
 				province_has_center_of_trade_of_level = 1
@@ -3466,39 +3522,47 @@ renaissance = {
 			AND = {
 				is_year = 1500
 				OR = {
-					owner = { 
-					    OR = {
-					        technology_group = western
-					        technology_group = english_tech_group
-					        technology_group = french_tech_group
-					        technology_group = dutch_tech_group
-					        technology_group = german_tech_group
-					        technology_group = italian_tech_group
-							technology_group = portuguese_tech_group
-					        technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
-					        technology_group = spanish_tech_group
-							technology_group = swiss_tech_group
-					    }
+					owner = {
+						OR = {
+					    	technology_group = western
+				            technology_group = dutch_tech_group
+				            technology_group = english_tech_group
+				            technology_group = french_tech_group
+				            technology_group = german_tech_group
+				            technology_group = italian_tech_group
+				            technology_group = portuguese_tech_group
+				            technology_group = roman_tech_group
+				            technology_group = scandinavian_tech_group
+				            technology_group = spanish_tech_group
+				            technology_group = swiss_tech_group
+						}
 					}
-					owner = { technology_group = high_american }
+					owner = { 
+						technology_group = high_american 
+					}
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
 			AND = {
 				is_year = 1525
 				OR = {
-					owner = { 
-				    	OR = {
-						    technology_group = bohemian_tech_group
+					owner = {
+						OR = {
+				    	    technology_group = eastern
+					        technology_group = bohemian_tech_group
 					        technology_group = byzantine_tech_group
-					        technology_group = eastern
 					        technology_group = hungarian_tech_group
 					        technology_group = polish_tech_group
 					        technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 						}
 				    }
-					owner = { technology_group = ottoman }
+					owner = { 
+						OR = {
+							technology_group = ottoman
+							technology_group = persian_tech_group
+						} 
+					}
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
@@ -3639,17 +3703,17 @@ renaissance = {
 			potential = {
 				owner = { 
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 			}
@@ -3665,18 +3729,18 @@ renaissance = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
 			}
@@ -3698,12 +3762,13 @@ renaissance = {
 			potential = { 
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				} 
 			}
@@ -3719,12 +3784,13 @@ renaissance = {
 			potential = {
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
@@ -3744,7 +3810,14 @@ renaissance = {
 			factor = 0.54
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = ottoman } }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
 				any_friendly_coast_border_province = { renaissance = 100 }
@@ -3754,8 +3827,13 @@ renaissance = {
 			factor = 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { technology_group = ottoman }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -4148,18 +4226,18 @@ renaissance = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				continent = europe
 			}			#VU AddOn Change, now only western tech get the full bonus, whereas previously is was all of Europe which was boosting Nomadic groups too much. Note this could slow spread in a game with no western tech countries
@@ -4167,18 +4245,18 @@ renaissance = {
 				tooltip = tooltip_vu_add_new_instituiton_details_aq
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 16
 			}
@@ -4190,18 +4268,18 @@ renaissance = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				continent = europe
 			}			#VU AddOn Change, now only western tech get the full bonus, whereas previously is was all of Europe which was boosting Nomadic groups too much. Note this could slow spread in a game with no western tech countries
@@ -4209,18 +4287,18 @@ renaissance = {
 				tooltip = tooltip_vu_add_new_instituiton_details_ar
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 24
 			}
@@ -4236,12 +4314,13 @@ renaissance = {
 			potential = {
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
 					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				continent = europe
@@ -4250,12 +4329,13 @@ renaissance = {
 				tooltip = tooltip_vu_add_new_instituiton_details_aq
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 16
@@ -4268,12 +4348,13 @@ renaissance = {
 			potential = {
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				continent = europe
@@ -4282,12 +4363,13 @@ renaissance = {
 				tooltip = tooltip_vu_add_new_instituiton_details_ar
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 24
@@ -4300,12 +4382,13 @@ renaissance = {
 			potential = { 
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				} 
 			}
@@ -4313,12 +4396,13 @@ renaissance = {
 				tooltip = tooltip_development_8_post_1550
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				is_year = 1550
@@ -4361,17 +4445,17 @@ renaissance = {
 			potential = { 
 				owner = { 
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				} 
 			}
@@ -4380,18 +4464,18 @@ renaissance = {
 				tooltip = tooltip_development_8_post_1500
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				is_year = 1500
 				development = 8
@@ -4640,18 +4724,18 @@ new_world_i = {
 						owner = { is_colonial_nation = yes }
 						owner = { 
 				            OR = {
-				                technology_group = western
+					        	technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+					        }
 				        }
 					}
 				}
@@ -4707,17 +4791,17 @@ new_world_i = {
 				is_year = 1550
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}	#Note this includes colonies and overseas
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
@@ -4726,12 +4810,13 @@ new_world_i = {
 				is_year = 1575
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}	#Note this includes colonies, overseas and Siberian holdings
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
@@ -4741,11 +4826,16 @@ new_world_i = {
 				OR = {
 					AND = {
 						continent = europe
-
-						NOT = { technology_group = nomad_group }
-
+						owner = {
+							NOT = { technology_group = nomad_group }
+						}
 					}
-					owner = { technology_group = ottoman }
+					owner = { 
+						OR = {
+							technology_group = ottoman
+							technology_group = persian_tech_group
+						} 
+					}
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
@@ -4932,18 +5022,18 @@ new_world_i = {
 			potential = { 
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				} 
 			}
 			custom_trigger_tooltip = {
@@ -4958,18 +5048,18 @@ new_world_i = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
 			}
@@ -4991,12 +5081,13 @@ new_world_i = {
 			potential = { 
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 			}
@@ -5012,12 +5103,13 @@ new_world_i = {
 			potential = {
 				owner = { 
 					OR = {
+				        technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
@@ -5037,7 +5129,14 @@ new_world_i = {
 			factor = 0.54
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = ottoman } }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
 				any_friendly_coast_border_province = { new_world_i = 100 }
@@ -5047,8 +5146,13 @@ new_world_i = {
 			factor = 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { technology_group = ottoman }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -5788,18 +5892,18 @@ printing_press = {
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
@@ -5810,30 +5914,31 @@ printing_press = {
 						continent = europe
 						owner = { 
 				        	OR = {
+				                technology_group = eastern
 					            technology_group = bohemian_tech_group
 					            technology_group = byzantine_tech_group
-					            technology_group = eastern
 					            technology_group = hungarian_tech_group
 					            technology_group = polish_tech_group
-					            technology_group = russian_tech_group 
+					            technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 					        }
 				        }
 					}
 					owner = { 
-				        OR = {
-				            technology_group = western
+						OR = {
+					    	technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
-				    }
+				            technology_group = swiss_tech_group
+					    }
+					}
 					owner = { technology_group = andean }
 					owner = { technology_group = high_american }
 					owner = { technology_group = mesoamerican }
@@ -5847,15 +5952,21 @@ printing_press = {
 				OR = {
 					owner = { 
 				    	OR = {
+				            technology_group = eastern
 					        technology_group = bohemian_tech_group
 					        technology_group = byzantine_tech_group
-					        technology_group = eastern
 					        technology_group = hungarian_tech_group
 					        technology_group = polish_tech_group
-					        technology_group = russian_tech_group 
+					        technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 					    }
 				    }
-					owner = { technology_group = ottoman }
+					owner = { 
+						OR = {
+							technology_group = ottoman
+							technology_group = persian_tech_group
+						} 
+					}
 				}
 			}	#VU MiscAddonChange - Slows spread slightly for later start dates
 
@@ -5916,35 +6027,35 @@ printing_press = {
 
 	embracement_speed = {
 
-		#modifier = {
-		#	factor = 0.6
-		#	scale = yes
-		#	custom_trigger_tooltip = {
-		#		tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
-		#		any_friendly_coast_border_province = {
-		#			printing_press = 100
-		#		}
-		#	}
-		#}
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = {
+					printing_press = 100
+				}
+			}
+		}
 
-		#modifier = {
-		#	factor = 0.2
-		#	scale = yes
-		#	potential = {
-		#		NOT = {
-		#			any_friendly_coast_border_province = {
-		#				printing_press = 100
-		#			}
-		#		}
-		#	}
-		#	custom_trigger_tooltip = {
-		#		tooltip = tooltip_any_neighbor_has_embraced_printing_press
-		#		any_neighbor_province = {
-		#			NOT = { owned_by = ROOT }
-		#			printing_press = 100
-		#		}
-		#	}
-		#}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						printing_press = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_printing_press
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					printing_press = 100
+				}
+			}
+		}
 
 		#########################################################################
 		### Start of VU Tech group specific spread modifiers - printing_press
@@ -5959,19 +6070,19 @@ printing_press = {
 			potential = { 
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
-				} 
+				        technology_group = swiss_tech_group
+					}
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
@@ -5985,18 +6096,18 @@ printing_press = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
 			}
@@ -6016,14 +6127,15 @@ printing_press = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { 
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 			}
@@ -6037,14 +6149,15 @@ printing_press = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
@@ -6064,7 +6177,14 @@ printing_press = {
 			factor = 0.54
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = ottoman } }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
 				any_friendly_coast_border_province = { printing_press = 100 }
@@ -6074,8 +6194,13 @@ printing_press = {
 			factor = 0.18			#1/3 of full speed, as vanilla
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = {
-				owner = { technology_group = ottoman }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -6496,18 +6621,18 @@ printing_press = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				continent = europe
 			}
@@ -6516,18 +6641,18 @@ printing_press = {
 				development = 24
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}			#VU AddOn new, added western only. Ottomans will get it through spread quickly enough, eastern gets their own version, and nomads shouldn't be getting this early at all... only downside is if someone went crazy and annihilated all European nations. On the other hand, you wipe out the cradle of modern civilisation, technology, and thought, and you get less modern civilisation, technology, and thought =p will still spread normally even then.
 				#is_capital = yes			#VU AddOn removed - too limiting
 				continent = europe
@@ -6541,13 +6666,14 @@ printing_press = {
 			potential = {
 				owner = { 
 					OR = {
-				        technology_group = bohemian_tech_group
-				        technology_group = byzantine_tech_group
 				        technology_group = eastern
-				        technology_group = hungarian_tech_group
-				        technology_group = polish_tech_group
-				        technology_group = russian_tech_group 
-				    }
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
 				}
 				continent = europe
 			}
@@ -6556,13 +6682,14 @@ printing_press = {
 				development = 24
 				owner = { 
 					OR = {
-				        technology_group = bohemian_tech_group
-				        technology_group = byzantine_tech_group
 				        technology_group = eastern
-				        technology_group = hungarian_tech_group
-				        technology_group = polish_tech_group
-				        technology_group = russian_tech_group 
-				    }
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
 				}
 				continent = europe
 			}
@@ -6810,18 +6937,18 @@ global_trade = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						OR = {
 							continent = europe
@@ -6836,14 +6963,15 @@ global_trade = {
 				is_year = 1700
 				OR = {
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						OR = {
@@ -6853,18 +6981,18 @@ global_trade = {
 					}
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }			#VU MiscAddon Note, The colonies, most notably the United States, didn't actually enter into the international trade arena until some years after independance, in the early 19th century, but whatever, don't want the US, or any colonies, too far behind
 					region = poland_region
 					region = ruthenia_region
@@ -6875,17 +7003,23 @@ global_trade = {
 			AND = {
 				is_year = 1725
 				OR = {
-					owner = { 
+					owner = {
 				    	OR = {
+				    		technology_group = eastern
 				    	    technology_group = bohemian_tech_group
 				    	    technology_group = byzantine_tech_group
-				    	    technology_group = eastern
 				    	    technology_group = hungarian_tech_group
 				    	    technology_group = polish_tech_group
-				    	    technology_group = russian_tech_group 
+				    	    technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 				    	}
 				    }
-					owner = { technology_group = ottoman }			#VU MiscAddon Note - The Ottomans weren't too far behind Western Europe for most of the period.
+					owner = { 
+						OR = {
+							technology_group = ottoman
+							technology_group = persian_tech_group
+						} 
+					}
 					region = anatolia_region
 					region = mashriq_region
 					region = egypt_region
@@ -7013,18 +7147,18 @@ global_trade = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				has_port = yes
 			}
@@ -7040,18 +7174,18 @@ global_trade = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				OR = {
 					has_port = no
@@ -7071,15 +7205,16 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
-				        technology_group = bohemian_tech_group
-				        technology_group = byzantine_tech_group
-				        technology_group = eastern
-				        technology_group = hungarian_tech_group
-				        technology_group = polish_tech_group
-				        technology_group = russian_tech_group 
-				    }
+						technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
 				}
 				has_port = yes
 			}
@@ -7093,15 +7228,16 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
-				        technology_group = bohemian_tech_group
-				        technology_group = byzantine_tech_group
-				        technology_group = eastern
-				        technology_group = hungarian_tech_group
-				        technology_group = polish_tech_group
-				        technology_group = russian_tech_group 
-				    }
+						technology_group = eastern
+					    technology_group = bohemian_tech_group
+					    technology_group = byzantine_tech_group
+					    technology_group = hungarian_tech_group
+					    technology_group = polish_tech_group
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
 				}
 				OR = {
 					has_port = no
@@ -7121,8 +7257,11 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = {
-					technology_group = ottoman
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
 				}
 				has_port = yes
 			}
@@ -7136,8 +7275,11 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = {
-					technology_group = ottoman
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
 				}
 				OR = {
 					has_port = no
@@ -7936,31 +8078,32 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 32
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
-				                technology_group = bohemian_tech_group
-				                technology_group = byzantine_tech_group
-				                technology_group = eastern
-				                technology_group = hungarian_tech_group
-				                technology_group = polish_tech_group
-				                technology_group = russian_tech_group 
-				            }
+				        		technology_group = eastern
+				        	    technology_group = bohemian_tech_group
+				        	    technology_group = byzantine_tech_group
+				        	    technology_group = hungarian_tech_group
+				        	    technology_group = polish_tech_group
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
+				        	}
 				        }
 						development = 40
 					}
@@ -7974,30 +8117,31 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 24
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 32
@@ -8012,30 +8156,31 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 16
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 24
@@ -8050,30 +8195,31 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 8
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 16
@@ -8087,28 +8233,29 @@ manufactories = {
 				OR = {
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 8
@@ -8122,27 +8269,28 @@ manufactories = {
 				OR = {
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }
-					owner = { 
+					owner = {
 				    	OR = {
+				    		technology_group = eastern
 				    	    technology_group = bohemian_tech_group
 				    	    technology_group = byzantine_tech_group
-				    	    technology_group = eastern
 				    	    technology_group = hungarian_tech_group
 				    	    technology_group = polish_tech_group
-				    	    technology_group = russian_tech_group 
+				    	    technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 				    	}
 				    }
 					development = 8
@@ -8154,36 +8302,42 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 16
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 24
 					}
 					AND = {
-						owner = { technology_group = ottoman }
+						owner = { 
+				        	OR = {
+				        		technology_group = ottoman
+				        		technology_group = persian_tech_group
+				        	} 
+				        }
 						development = 32
 					}
 				}
@@ -8194,36 +8348,42 @@ manufactories = {
 					AND = {
 						owner = { 
 				            OR = {
-				                technology_group = western
+				        		technology_group = western
+				                technology_group = dutch_tech_group
 				                technology_group = english_tech_group
 				                technology_group = french_tech_group
-				                technology_group = dutch_tech_group
 				                technology_group = german_tech_group
 				                technology_group = italian_tech_group
-				        		technology_group = portuguese_tech_group
+				                technology_group = portuguese_tech_group
 				                technology_group = roman_tech_group
-								technology_group = scandinavian_tech_group
+				                technology_group = scandinavian_tech_group
 				                technology_group = spanish_tech_group
-				        		technology_group = swiss_tech_group
-				            }
+				                technology_group = swiss_tech_group
+				        	}
 				        }
 						development = 8
 					}
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 16
 					}
 					AND = {
-						owner = { technology_group = ottoman }
+						owner = { 
+				        	OR = {
+				        		technology_group = ottoman
+				        		technology_group = persian_tech_group
+				        	} 
+				        }
 						development = 24
 					}
 					AND = {
@@ -8245,34 +8405,40 @@ manufactories = {
 				OR = {
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }
 					AND = {
-						owner = { 
+						owner = {
 				        	OR = {
+				        		technology_group = eastern
 				        	    technology_group = bohemian_tech_group
 				        	    technology_group = byzantine_tech_group
-				        	    technology_group = eastern
 				        	    technology_group = hungarian_tech_group
 				        	    technology_group = polish_tech_group
-				        	    technology_group = russian_tech_group 
+				        	    technology_group = russian_tech_group
+								technology_group = bulgarian_tech_group
 				        	}
 				        }
 						development = 8
 					}
 					AND = {
-						owner = { technology_group = ottoman }
+						owner = { 
+				        	OR = {
+				        		technology_group = ottoman
+				        		technology_group = persian_tech_group
+				        	} 
+				        }
 						development = 16
 					}
 					AND = {
@@ -8306,31 +8472,37 @@ manufactories = {
 				OR = {
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }
-					owner = { 
+					owner = {
 				    	OR = {
+				    		technology_group = eastern
 				    	    technology_group = bohemian_tech_group
 				    	    technology_group = byzantine_tech_group
-				    	    technology_group = eastern
 				    	    technology_group = hungarian_tech_group
 				    	    technology_group = polish_tech_group
-				    	    technology_group = russian_tech_group 
+				    	    technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 				    	}
 				    }
 					AND = {
-						owner = { technology_group = ottoman }
+						owner = { 
+				        	OR = {
+				        		technology_group = ottoman
+				        		technology_group = persian_tech_group
+				        	} 
+				        }
 						development = 8
 					}
 					AND = {
@@ -8458,18 +8630,18 @@ manufactories = {
 			potential = { 
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -8484,18 +8656,18 @@ manufactories = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
 			}
@@ -8515,16 +8687,17 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { 
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
-				} 
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
@@ -8536,14 +8709,15 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
@@ -8563,7 +8737,14 @@ manufactories = {
 			factor = 0.27
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = ottoman } }
+			potential = { 
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
 				any_friendly_coast_border_province = { manufactories = 100 }
@@ -8574,7 +8755,12 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { technology_group = ottoman }
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -9006,18 +9192,18 @@ manufactories = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { development = 32 }
 			}
@@ -9025,18 +9211,18 @@ manufactories = {
 				tooltip = tooltip_vu_add_new_instituiton_details_p
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 24
 				NOT = { development = 32 }
@@ -9049,18 +9235,18 @@ manufactories = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 24
 				NOT = { development = 40 }
@@ -9069,18 +9255,18 @@ manufactories = {
 				tooltip = tooltip_vu_add_new_instituiton_details_q
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 32
 				NOT = { development = 40 }
@@ -9093,18 +9279,18 @@ manufactories = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 32
 			}
@@ -9112,18 +9298,18 @@ manufactories = {
 				tooltip = tooltip_vu_add_new_instituiton_details_r
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 40
 			}
@@ -9133,28 +9319,30 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { development = 32 }
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_p
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 24
@@ -9166,14 +9354,15 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 24
@@ -9181,14 +9370,15 @@ manufactories = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_q
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 32
@@ -9200,28 +9390,30 @@ manufactories = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 32
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_r
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 40
@@ -9352,18 +9544,18 @@ enlightenment = {
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 40
 			}
@@ -9372,18 +9564,18 @@ enlightenment = {
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 36
 			}
@@ -9392,18 +9584,18 @@ enlightenment = {
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 32
 			}
@@ -9412,32 +9604,33 @@ enlightenment = {
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 24
 			}
 			AND = {
 				is_year = 1760
 				continent = europe
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 32
@@ -9446,31 +9639,32 @@ enlightenment = {
 				is_year = 1780
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 			}
 			AND = {
 				is_year = 1800
 				continent = europe
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				development = 24
@@ -9494,11 +9688,15 @@ enlightenment = {
 		OR = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_k
-				owner = { has_advisor = natural_scientist }
+				owner = { 
+					advisor = natural_scientist 
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_l
-				owner = { has_advisor = philosopher }
+				owner = { 
+					advisor = philosopher 
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_vu_add_new_instituiton_details_m
@@ -9595,19 +9793,19 @@ enlightenment = {
 			potential = { 
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
-				} 
+				        technology_group = swiss_tech_group
+					}
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
@@ -9621,18 +9819,18 @@ enlightenment = {
 			potential = {
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
 			}
@@ -9652,16 +9850,17 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = { 
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
-				} 
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
@@ -9673,14 +9872,15 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
@@ -9701,14 +9901,15 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { 
+				owner = {
 					OR = {
+						technology_group = eastern
 					    technology_group = bohemian_tech_group
 					    technology_group = byzantine_tech_group
-					    technology_group = eastern
 					    technology_group = hungarian_tech_group
 					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group 
+					    technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 					}
 				}
 			}
@@ -9722,7 +9923,12 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { technology_group = ottoman }
+				owner = { 
+					OR = {
+						technology_group = ottoman
+						technology_group = persian_tech_group
+					} 
+				}
 				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -10160,18 +10366,18 @@ enlightenment = {
 			potential = {
 				is_in_capital_area = yes
 				owner = { 
-					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+				    OR = {
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 			}
@@ -10182,17 +10388,17 @@ enlightenment = {
 					is_great_power = yes
 					capital_scope = { continent = europe }
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 			}
@@ -10207,17 +10413,17 @@ enlightenment = {
 				owner = {
 					is_former_colonial_nation = yes
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 			}
@@ -10227,17 +10433,17 @@ enlightenment = {
 				owner = {
 					is_former_colonial_nation = yes
 					OR = {
-					    technology_group = western
-					    technology_group = english_tech_group
-					    technology_group = french_tech_group
-					    technology_group = dutch_tech_group
-					    technology_group = german_tech_group
-					    technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-					    technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-					    technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
+						technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
 					}
 				}
 			}
@@ -10503,18 +10709,18 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				continent = europe
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 			}
 
@@ -10523,18 +10729,18 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				OR = {
 					owner = { 
 				        OR = {
-				            technology_group = western
+				    		technology_group = western
+				            technology_group = dutch_tech_group
 				            technology_group = english_tech_group
 				            technology_group = french_tech_group
-				            technology_group = dutch_tech_group
 				            technology_group = german_tech_group
 				            technology_group = italian_tech_group
-				    		technology_group = portuguese_tech_group
+				            technology_group = portuguese_tech_group
 				            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
+				            technology_group = scandinavian_tech_group
 				            technology_group = spanish_tech_group
-				    		technology_group = swiss_tech_group
-				        }
+				            technology_group = swiss_tech_group
+				    	}
 				    }
 					continent = europe
 				}
@@ -11194,18 +11400,18 @@ imperialism = {
 				is_year = 1840
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 			}
 		}
@@ -11562,18 +11768,18 @@ nationalism_institution = {
 				is_year = 1860
 				owner = { 
 				    OR = {
-				        technology_group = western
+						technology_group = western
+				        technology_group = dutch_tech_group
 				        technology_group = english_tech_group
 				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
 				        technology_group = german_tech_group
 				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
+				        technology_group = portuguese_tech_group
 				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
+				        technology_group = scandinavian_tech_group
 				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				    }
+				        technology_group = swiss_tech_group
+					}
 				}
 				development = 35
 			}

@@ -66,3 +66,12 @@
 #	start_date = 921.11.7
 #	end_date = 923.1.1
 #}
+
+#HRE
+dependency = {
+	subject_type = "medieval_vassal"
+	first = HAB
+	second = VOR
+	start_date = 1444.1.1
+	end_date = 1903.1.1
+}

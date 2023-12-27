@@ -67,9 +67,9 @@ capital = 1184	# Zimbabwe
 1950.1.1 = { government = republic
 	add_government_reform = parliamentary_reform
 	add_government_reform = strengthen_executive_powers_reform
-	add_government_reform = single_party_system
-	add_government_reform = democracy_reform
-	add_government_reform = powerful_head_of_state
+	#add_government_reform = single_party_system
+	#add_government_reform = democracy_reform
+	#add_government_reform = powerful_head_of_state
 	set_legacy_government = constitutional_republic
  }
 1965.11.11 = { capital = 2853 }

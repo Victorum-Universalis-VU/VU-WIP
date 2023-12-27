@@ -1,10 +1,3 @@
-#Victorum Universalis Note -
-#There is no way to modify the new gov system without overriding it; disappointed in PDX's choice here.
-#File has been documented well and organised to the best of our abilities. Any submods or addons desiring to add their own entries will need to manually update this entirely
-#after every VU update. This is out of our hands and there are no suggestions for this.
-#Furthermore, this file contains new entries throughout various sections.
-#Many thanks to you all - San Felipe.
-
 tribe_mechanic = {
 	tribal = yes
 	monarchy = yes
@@ -699,7 +692,7 @@ tribe_becomes_monarchy_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
@@ -800,7 +793,7 @@ tribe_becomes_republic_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
@@ -927,7 +920,7 @@ tribe_becomes_theocracy_reform = {
 				technology_group = nomad_group
 				religion_group = christian
 			}
-			vu_change_tech_group_to_eastern = yes
+			#vu_change_tech_group_to_eastern = yes
 			change_technology_group = eastern
 			change_unit_type = eastern
 		}
@@ -1059,7 +1052,10 @@ tribe_tribal_unity = {
 	icon = "fist_in_air"
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = tribal_federation
+		OR = {
+			has_reform = tribal_federation
+			has_reform = turkoman_ottoman_institutions
+		}
 		has_dlc = "Cradle of Civilization"
 	}
 	modifiers = {

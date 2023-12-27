@@ -1254,13 +1254,21 @@ bohemian_missions_3 = {
 			1771 = {
 				owned_by = ROOT
 				base_production = 5
-				has_production_building_trigger = yes
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+					trade_goods = silver
+				}
 				NOT = { devastation =  1 }
 			}
 			4238 = {
 				owned_by = ROOT
 				base_production = 5
-				has_production_building_trigger = yes
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+					trade_goods = silver
+				}
 				NOT = { devastation =  1 }
 			}
 		}

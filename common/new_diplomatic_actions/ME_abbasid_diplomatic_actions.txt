@@ -944,15 +944,11 @@ abbasid_ransom = {
 							NOT = { mission_completed = GRA_the_fake_caliph }
 						}
 						AND = {
-							tag = TUN
-							NOT = { mission_completed = TUN_a_title_respected }
-						}
-						AND = {
 							OR = {
 								tag = MAM
 								tag = EGY 
 							}
-							NOT = { mission_completed = MAM_protectors_of_the_caliph }
+							#NOT = { mission_completed = MAM_protectors_of_the_caliph }
 						}
 						AND = {
 							tag = NAJ

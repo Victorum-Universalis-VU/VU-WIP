@@ -7,16 +7,23 @@ religion = buddhism
 capital = "Yamethin"
 trade_goods = tea
 hre = no
-base_tax = 2 
-base_production = 2
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = AVA
 
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 
 1527.1.1 = {
@@ -25,7 +32,7 @@ discovered_by = indian
 	add_core = SST
 	remove_core = AVA
 }
-1535.1.1 = { discovered_by = POR }
+
 1554.1.1 = { add_core = TAU }
 1555.1.22 = { controller = TAU }
 1563.4.1 = {	

@@ -1,4 +1,1 @@
 #365 - Sinai
-
-#discovered_by = muslim
-#discovered_by = east_african

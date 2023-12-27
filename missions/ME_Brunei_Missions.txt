@@ -617,9 +617,9 @@ BEI_missions_4 = {
 						who = ROOT
 						value = 150
 					}
-					alliance_with = ROOT
-					marriage_with = ROOT
 				}
+				NOT = {	alliance_with = ROOT }
+				NOT = {	marriage_with = ROOT }
 			}
 		}
 		trigger = {

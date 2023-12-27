@@ -559,6 +559,10 @@ caucasia_region = {
 		shirvan_area
 		armenia_area
 		dagestan_area
+		qazakh_area
+		ardabil_area
+		mtskheta_area
+		caucasia_stepp_area
 		imereti_area
 		samtskhe_area
 	}
@@ -2287,6 +2291,12 @@ niger_river_region = {
 	}
 }
 
+congo_river_region = {
+	areas = {
+		congo_river_area 
+	}
+}
+
 #Europe
 don_river_region = {
     areas = { 
@@ -2326,7 +2336,7 @@ neva_river_region = {
 
 rhine_river_region = {
     areas = { 
-	    danube_river_area
+		rhine_river_area
 	}
 }
 
@@ -2346,6 +2356,12 @@ oder_river_region = {
 vistula_river_region = {
     areas = {
 	    vistula_river_area
+	}
+}
+
+ob_river_region = {
+    areas = {
+	    ob_river_area
 	}
 }
 

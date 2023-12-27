@@ -3,7 +3,8 @@ add_government_reform = league_of_lezhe_reform
 government_rank = 1
 primary_culture = albanian
 religion = catholic
-technology_group = hungarian_tech_group
+#technology_group = eastern
+technology_group = bulgarian_tech_group
 capital = 4175 # Lezhe
 unit_type = eastern
 

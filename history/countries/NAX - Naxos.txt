@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = venetian
 add_accepted_culture = greek
 religion = catholic
+#technology_group = western
 technology_group = italian_tech_group
 unit_type = western
 capital = 164	# Naxos

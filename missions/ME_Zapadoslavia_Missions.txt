@@ -16,8 +16,10 @@ ZCV_missions_1 = {
 				all_owned_province = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop						
 					}
 				}
 				amount = 20
@@ -28,8 +30,10 @@ ZCV_missions_1 = {
 				limit = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop
 					}
 				}
 				add_base_manpower = 1
@@ -39,8 +43,10 @@ ZCV_missions_1 = {
 				limit = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop
 					}
 				}
 				add_base_manpower = 1
@@ -50,8 +56,10 @@ ZCV_missions_1 = {
 				limit = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop
 					}
 				}
 				add_base_manpower = 1
@@ -61,8 +69,10 @@ ZCV_missions_1 = {
 				limit = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop
 					}
 				}
 				add_base_manpower = 1
@@ -72,8 +82,10 @@ ZCV_missions_1 = {
 				limit = {
 					culture_group = ROOT
 					OR = {
-						has_building = workshop
+						has_building = factory
+						has_building = treasury
 						has_building = counting_house
+						has_building = workshop
 					}
 				}
 				add_base_manpower = 1

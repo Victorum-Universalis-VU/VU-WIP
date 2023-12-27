@@ -118,35 +118,35 @@ country_event = {
 	}
 }
 
-province_event = {
-	id = ME_Cordoba_Events.6 #Silk
-	title = ME_Cordoba_Events.6.t
-	desc = ME_Cordoba_Events.6.d
-	picture = BATTLE_eventPicture
-	
-	is_triggered_only = yes
-	
-	major = yes
-	major_trigger = {
-		OR = {
-			tag = GRA
-			tag = ADU
-			overlord_of = GRA
-			overlord_of = ADU
-		}
-	}
-	
-	option = {
-		name = ME_Cordoba_Events.6.a
-		
-		ai_chance = { factor = 100 }
-		
-		change_trade_goods = silk
-	}
-	
-	option = {
-		name = ME_Cordoba_Events.6.b
-		
-		ai_chance = { factor = 0 }
-	}
-}
+#province_event = {
+#	id = ME_Cordoba_Events.6 #Silk
+#	title = ME_Cordoba_Events.6.t
+#	desc = ME_Cordoba_Events.6.d
+#	picture = BATTLE_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	major = yes
+#	major_trigger = {
+#		OR = {
+#			tag = GRA
+#			tag = ADU
+#			overlord_of = GRA
+#			overlord_of = ADU
+#		}
+#	}
+#	
+#	option = {
+#		name = ME_Cordoba_Events.6.a
+#		
+#		ai_chance = { factor = 100 }
+#		
+#		change_trade_goods = silk
+#	}
+#	
+#	option = {
+#		name = ME_Cordoba_Events.6.b
+#		
+#		ai_chance = { factor = 0 }
+#	}
+#}

@@ -7,32 +7,26 @@ religion = mahayana
 capital = "Dong Kinh"
 trade_goods = chinaware
 hre = no
-base_tax = 9
-base_production = 9
-base_manpower = 5
+base_tax = 10
+base_production = 10
+base_manpower = 10
 fort_15th = yes
 is_city = yes
 add_core = DAI
 extra_cost = 8
 center_of_trade = 2
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
+
+
+
+
+
+
+
 
 add_permanent_province_modifier = {
     name = navalbase_modifier_3
@@ -48,7 +42,7 @@ add_permanent_province_modifier = {
 	controller = TOK
 	add_core = TOK
 } # The kingdom is divided between the Nguyens & the Trinh line
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1730.1.1 = { unrest = 5 } # Peasant revolt
 1731.1.1 = { unrest = 0 }
 1786.6.1 = {

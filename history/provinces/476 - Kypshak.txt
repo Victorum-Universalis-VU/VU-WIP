@@ -16,28 +16,15 @@ add_core = KZH
 center_of_trade = 4
 
 
-1444.1.1 = { discovered_by = KAS } 
-#discovered_by = dutch_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
 
 
 1465.1.1 = { controller = KZH }
 1468.1.1 = { owner = KZH remove_core = SHY } # Kazakhs take over
-1622.1.1 = { discovered_by = RUS }
+
 1740.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion
 1755.1.1 = { owner = KZH controller = KZH }

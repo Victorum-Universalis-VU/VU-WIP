@@ -1,4 +1,4 @@
-# No previous file for Victorum Universalis province
+#5755 - Multnomah
 
 owner = CNK
 controller = CNK
@@ -16,16 +16,11 @@ native_size = 50			#an unambiguous example, but I would call this indicative of 
 native_ferocity = 1 			#ravaged Cascadia and Calfornia even before first contact and I posit this has led to 2 incorrect assumptions. One, that this region was largely empty and not very populated to begin with, and two, that the natives in this region were significantly 
 native_hostileness = 3 			#less affected by Columbian exchange diseases.
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
-
 extra_cost = 20
 
-
 1444.11.15 = { #VictorumUniversalis batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = CNK
 	is_city = no
 	trade_goods = unknown
@@ -37,8 +32,7 @@ extra_cost = 20
 	is_city = yes
 	trade_goods = grain
 }
-1792.10.15 = { discovered_by = GBR } #George Vancouver
-1806.1.1 = { discovered_by = USA } #Lewis and Clark's expedition
+
 1824.1.1 = {
 	owner = GBR
 	controller = GBR

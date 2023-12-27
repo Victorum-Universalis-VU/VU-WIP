@@ -109,8 +109,12 @@ country_event = {
 					}
 				}
 			}
+			DTT = { 
+				NOT = { has_country_flag = won_bloody_coalition_flag } 
+			} 
 		}
 		clr_global_flag = great_peasants_war_flag
+		clr_country_flag = won_bloody_coalition_flag
 		set_global_flag = condemned_peasant_republics # used in CB
 		custom_tooltip = gpw_cb_tt # see cb_change_government_great_peasants_war in 00_cb_types
 		if = {

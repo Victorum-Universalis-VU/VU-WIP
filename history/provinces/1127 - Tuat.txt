@@ -1,6 +1,5 @@
 #1127 - Tuat
 
-is_city = no
 culture = tuareg
 religion = sunni
 capital = "Tawat"
@@ -12,9 +11,6 @@ base_manpower = 1
 native_size = 40
 native_ferocity = 5
 native_hostileness = 8
-
-##discovered_by = sub_saharan
-1444.1.1 = { discovered_by = MOR } 
 
 1555.1.1 = {
 	owner = MOR

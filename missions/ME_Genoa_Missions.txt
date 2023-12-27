@@ -1473,8 +1473,8 @@ genoa_missions_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			163 = {
 				if = {
@@ -1482,8 +1482,8 @@ genoa_missions_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			2410 = {
 				if = {
@@ -1618,8 +1618,8 @@ genoa_missions_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			142 = {
 				if = {
@@ -1627,8 +1627,8 @@ genoa_missions_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1767,8 +1767,8 @@ genoa_missions_3 = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			321 = {
 				if = {
@@ -1776,8 +1776,8 @@ genoa_missions_3 = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			358 = {
 				if = {
@@ -1785,8 +1785,8 @@ genoa_missions_3 = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			213 = {
 				if = {
@@ -1794,8 +1794,8 @@ genoa_missions_3 = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			220 = {
 				if = {
@@ -1803,8 +1803,8 @@ genoa_missions_3 = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}

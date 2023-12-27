@@ -2508,34 +2508,14 @@ type={
 			0.000 1.000 0.000 
 		}
 	}
-	object={
-		name="second_suez_canal"
-		hidden_on_start=yes
-		position={
-			3144.000 0.100 1502.000 
-		}
-		rotation={
-			0.000 -15.000 0.000 
-		}
-	}
 }
 type={
 	type="panama_canal"
 	use_animation=yes
-	scale=0.500000
+	scale=1.010000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
-	object={
-		name="Djerid Canal"
-		hidden_on_start=yes
-		position={
-			2792.000 0.100 1555.200 
-		}
-		rotation={
-			0.000 -80.000 0.000 
-		}
-	}
 	object={
 		name="panama_canal"
 		hidden_on_start=yes
@@ -2554,206 +2534,6 @@ type={
 		}
 		rotation={
 			0.000 27.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2786.800 0.700 1924.100 
-		}
-		rotation={
-			0.000 102.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2775.800 0.150 1922.750 
-		}
-		rotation={
-			0.000 -50.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2779.500 0.400 1925.650 
-		}
-		rotation={
-			0.000 100.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2781.750 0.450 1923.000 
-		}
-		rotation={
-			0.000 -99.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2791.000 0.550 1923.000 
-		}
-		rotation={
-			0.000 -53.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2795.000 0.500 1925.000 
-		}
-		rotation={
-			0.000 -48.000 0.000 
-		}
-	}
-	object={
-		name="kiel_canal"
-		hidden_on_start=yes
-		position={
-			2798.500 0.200 1927.300 
-		}
-		rotation={
-			0.000 -40.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2777.300 0.200 1838.700 
-		}
-		rotation={
-			0.000 69.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2797.000 -0.050 1814.500 
-		}
-		rotation={
-			0.000 55.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2794.300 -0.800 1815.000 
-		}
-		rotation={
-			0.000 -125.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2786.900 0.000 1818.200 
-		}
-		rotation={
-			0.000 -79.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2779.810 0.200 1836.000 
-		}
-		rotation={
-			0.000 45.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2780.600 0.150 1820.800 
-		}
-		rotation={
-			0.000 -117.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2778.150 0.100 1823.650 
-		}
-		rotation={
-			0.000 -135.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2779.800 0.000 1829.000 
-		}
-		rotation={
-			0.000 -18.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2780.800 -0.100 1832.440 
-		}
-		rotation={
-			0.000 13.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2777.400 -0.300 1827.000 
-		}
-		rotation={
-			0.000 -174.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2784.300 0.200 1820.450 
-		}
-		rotation={
-			0.000 78.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2790.600 -0.400 1819.100 
-		}
-		rotation={
-			0.000 84.000 0.000 
-		}
-	}
-	object={
-		name="ludwig_canal"
-		hidden_on_start=yes
-		position={
-			2793.000 0.100 1818.100 
-		}
-		rotation={
-			0.000 73.000 0.000 
 		}
 	}
 }
@@ -2943,15 +2723,247 @@ type={
 	}
 }
 type={
-	type="seuz_canal"
-	use_animation=yes
-	scale=0.250000
-	time_duration=300.000000
-}
-type={
 	type="kiel_canal"
 	use_animation=yes
-	scale=0.350000
+	scale=0.700000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="kiel_canal"
+		hidden_on_start=yes
+		position={
+			2783.250 0.200 1922.200 
+		}
+		rotation={
+			0.000 85.000 0.000 
+		}
+	}
+	object={
+		name="kiel_canal"
+		hidden_on_start=yes
+		position={
+			2791.000 0.200 1923.000 
+		}
+		rotation={
+			0.000 -47.000 0.000 
+		}
+	}
+}
+type={
+	type="don_and_volga_canal"
+	use_animation=yes
+	scale=0.900000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="don_and_volga_canal"
+		hidden_on_start=yes
+		position={
+			3322.650 0.300 1815.000 
+		}
+		rotation={
+			0.000 -82.000 0.000 
+		}
+	}
+}
+type={
+	type="kra_canal"
+	use_animation=yes
+	scale=0.900000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="kra_canal"
+		hidden_on_start=yes
+		position={
+			4185.000 0.300 1156.700 
+		}
+		rotation={
+			0.000 95.000 0.000 
+		}
+	}
+}
+type={
+	type="second_suez_canal"
+	use_animation=yes
+	scale=0.280000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="second_suez_canal"
+		hidden_on_start=yes
+		position={
+			3144.000 0.100 1502.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+}
+type={
+	type="djerid_canal"
+	use_animation=yes
+	scale=0.550000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="djerid_canal"
+		hidden_on_start=yes
+		position={
+			2792.000 0.100 1555.200 
+		}
+		rotation={
+			0.000 -80.000 0.000 
+		}
+	}
+}
+type={
+	type="ludwig_canal"
+	use_animation=yes
+	scale=0.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2784.300 0.200 1820.450 
+		}
+		rotation={
+			0.000 78.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2779.800 0.000 1829.000 
+		}
+		rotation={
+			0.000 -18.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2780.800 -0.100 1832.440 
+		}
+		rotation={
+			0.000 13.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2777.400 0.100 1827.000 
+		}
+		rotation={
+			0.000 -174.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2793.000 0.100 1818.100 
+		}
+		rotation={
+			0.000 73.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2790.600 -0.400 1819.100 
+		}
+		rotation={
+			0.000 84.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2777.300 0.200 1838.700 
+		}
+		rotation={
+			0.000 69.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2797.000 -0.050 1814.500 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2794.300 -0.800 1815.000 
+		}
+		rotation={
+			0.000 -125.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2786.900 0.000 1818.200 
+		}
+		rotation={
+			0.000 -79.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2779.810 0.200 1836.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2780.600 0.150 1820.800 
+		}
+		rotation={
+			0.000 -117.000 0.000 
+		}
+	}
+	object={
+		name="ludwig_canal"
+		hidden_on_start=yes
+		position={
+			2778.150 0.100 1823.650 
+		}
+		rotation={
+			0.000 -135.000 0.000 
+		}
+	}
+}
+type={
+	type="welland_canal"
+	use_animation=yes
+	scale=0.500000
 	time_duration=300.000000
 	always_visible=yes
 	visible_in_all_map_modes=yes
@@ -2963,26 +2975,6 @@ type={
 		}
 		rotation={
 			0.000 -0.100 0.000 
-		}
-	}
-	object={
-		name="kra_canal"
-		hidden_on_start=yes
-		position={
-			4185.000 0.300 1156.700 
-		}
-		rotation={
-			0.000 95.000 0.000 
-		}
-	}
-	object={
-		name="don_and_volga_canal"
-		hidden_on_start=yes
-		position={
-			3322.650 0.300 1815.000 
-		}
-		rotation={
-			0.000 -82.000 0.000 
 		}
 	}
 }

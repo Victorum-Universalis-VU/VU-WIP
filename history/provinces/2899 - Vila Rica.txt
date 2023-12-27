@@ -1,7 +1,8 @@
 # - Vila Rica
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Vila Rica"
 trade_goods = unknown
@@ -16,10 +17,10 @@ native_hostileness = 7
 
 
 
-1520.1.1 = { discovered_by = POR }
+
 
 1652.1.1 = {
-	discovered_by = POR
+	
 	owner = POR
 	controller = POR
 	add_core = POR

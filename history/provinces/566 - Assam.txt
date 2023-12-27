@@ -7,15 +7,22 @@ religion = hinduism
 capital = "Charaideo"
 trade_goods = rice
 hre = no
-base_tax = 8
-base_production = 8
-base_manpower = 6
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = ASS
 
-discovered_by = indian
-#discovered_by = dutch_tech_group
-discovered_by = chinese
+
+
+
+
+
+
+
+
+
+
 center_of_trade = 2
 extra_cost = 8
 
@@ -28,7 +35,7 @@ add_permanent_province_modifier = {
 	capital = "Garhgaon"
 	fort_15th = yes
 }
-1627.1.1 = { discovered_by = POR }
+
 1707.1.1 = { capital = Rangpur }
 1769.9.15 = {
 	revolt = {

@@ -7,7 +7,7 @@ religion = hinduism
 capital = "Dimapur"
 trade_goods = tropical_wood
 hre = no
-base_tax = 4 
+base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
@@ -15,9 +15,16 @@ add_core = KAC
 
 
 
-discovered_by = indian
-#discovered_by = dutch_tech_group
-discovered_by = chinese
+
+
+
+
+
+
+
+
+
+
 
 
 1526.2.1 = { controller = ASS }
@@ -27,7 +34,7 @@ discovered_by = chinese
 	add_core = ASS
 }
 1581.1.1 = { add_core = ASS }
-1760.1.1 = { discovered_by = GBR }
+
 1770.4.11 = { unrest = 8 } # Moamoria rebellion
 1792.11.24 = { unrest = 0 }
 1822.7.1 = {

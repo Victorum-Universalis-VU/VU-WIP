@@ -1,4 +1,4 @@
-#VU 1.35 update by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 ##Made by Ogele 'Comrade Flan'
 #Slot 1 and 2
 #Special to Muscovy only
@@ -38,7 +38,7 @@ mos_rus_handle_succession = {
 					NOT = { has_ruler_flag = has_vasily_ii }
 				}
 				custom_trigger_tooltip = {
-					tooltip = mos_the_civil_war_vu
+					tooltip = mos_the_civil_war_bt
 					has_country_flag = mos_civil_war_ended_flag
 				}
 			}
@@ -84,7 +84,7 @@ mos_rus_handle_succession = {
 				legitimacy = 90
 			}
 			ruler_total_stats = {
-				stats = 10
+				amount = 10
 			}
 		}
 		effect = {
@@ -268,7 +268,7 @@ mos_rus_conquer_west = {
 					first_custom_tooltip = mos_rus_subjugate_scandinavia_at
 					first_limit = "FIN = { exists = yes is_subject_of = ROOT }"
 					first_effect = "
-					custom_tooltip = mos_rus_subjugate_scandinavia_vu
+					custom_tooltip = mos_rus_subjugate_scandinavia_bt
 					hidden_effect = { FIN = { set_country_flag = rus_can_complete_missions_as_subject }	 }"
 					second_custom_tooltip = mos_rus_subjugate_scandinavia_ct
 					second_limit = "NOT = { FIN = { exists = yes is_subject_of = ROOT } }"
@@ -358,7 +358,7 @@ mos_rus_conquer_west = {
 			}
 			else = {
 				custom_trigger_tooltip = {
-					tooltip = dan_a_danish_great_power_vu
+					tooltip = dan_a_danish_great_power_bt
 					NOT = {
 						any_known_country = {
 							total_own_and_non_tributary_subject_development = ROOT
@@ -564,6 +564,7 @@ mos_rus_eastern_europe = {
 				add_accepted_culture = sorbian
 				add_accepted_culture = schlesian
 				add_accepted_culture = polish
+				add_accepted_culture = slovak
 			}
 			add_country_modifier = {
 				name = rus_west_slavic_union
@@ -575,6 +576,7 @@ mos_rus_eastern_europe = {
 				add_accepted_culture = sorbian
 				add_accepted_culture = schlesian
 				add_accepted_culture = polish
+				add_accepted_culture = slovak
 			}
 			add_country_modifier = {
 				name = "rus_partition_poland_modifier"
@@ -612,7 +614,6 @@ mos_rus_eastern_europe = {
 			tooltip = {
 				add_accepted_culture = hungarian
 				add_accepted_culture = romanian
-				add_accepted_culture = slovak
 				add_accepted_culture = transylvanian
 			}
 			add_country_modifier = {
@@ -623,7 +624,6 @@ mos_rus_eastern_europe = {
 			hidden_effect = {
 				add_accepted_culture = hungarian
 				add_accepted_culture = romanian
-				add_accepted_culture = slovak
 				add_accepted_culture = transylvanian
 			}
 			custom_tooltip = mos_rus_carpathian_conquest_ct
@@ -665,7 +665,7 @@ mos_rus_eastern_europe = {
 			}
 		}
 		effect = {
-			custom_tooltip = mos_rus_protect_south_slavs_vu
+			custom_tooltip = mos_rus_protect_south_slavs_bt
 			hidden_effect = {
 				if = { limit = { accepted_culture = russian } remove_accepted_culture = russian }
 				if = { limit = { accepted_culture = czech } remove_accepted_culture = czech }
@@ -1189,6 +1189,7 @@ nov_rus_eastern_europe = {
 				add_accepted_culture = sorbian
 				add_accepted_culture = schlesian
 				add_accepted_culture = polish
+				add_accepted_culture = slovak
 			}
 			add_country_modifier = {
 				name = rus_west_slavic_union
@@ -1200,6 +1201,7 @@ nov_rus_eastern_europe = {
 				add_accepted_culture = sorbian
 				add_accepted_culture = schlesian
 				add_accepted_culture = polish
+				add_accepted_culture = slovak
 			}
 			add_country_modifier = {
 				name = "rus_partition_poland_modifier"
@@ -1315,7 +1317,7 @@ nov_rus_eastern_europe = {
 			simple_dynamic_effect_without_alternative = {
 				first_custom_tooltip = nov_rus_involve_in_asian_trade_at
 				first_limit = "
-				507 = {
+				707 = {
 					trade_share = {
 						country = ROOT
 						share = 20
@@ -1344,9 +1346,9 @@ nov_rus_eastern_europe = {
 					}
 					add_russian_claim = yes
 				}"
-				second_custom_tooltip = nov_rus_involve_in_asian_trade_vu
+				second_custom_tooltip = nov_rus_involve_in_asian_trade_bt
 				second_limit = "
-				707 = {
+				507 = {
 					trade_share = {
 						country = ROOT
 						share = 20
@@ -1852,7 +1854,7 @@ mos_rus_russian_consolidation = {
 			}
 
 			custom_tooltip = mission_alternatively_tt
-			custom_tooltip = mos_rus_conquer_the_caucasus_vu
+			custom_tooltip = mos_rus_conquer_the_caucasus_bt
 			if = {
 				limit = {
 					any_ally = {
@@ -2060,7 +2062,7 @@ mos_rus_russian_consolidation = {
 					value = 6
 				}
 				custom_trigger_tooltip = {
-					tooltip = mos_rus_conquer_persia_vu
+					tooltip = mos_rus_conquer_persia_bt
 					any_ally = {
 						capital_scope = { region = caucasia_region }
 						religion_group = ROOT
@@ -2178,13 +2180,7 @@ mos_rus_russian_consolidation = {
 					has_dlc = "Third Rome"
 					religion = orthodox
 				}
-				OR = {
-					current_icon = icon_climacus
-					current_icon = icon_eleusa
-					current_icon = icon_michael
-					current_icon = icon_nicholas
-					current_icon = icon_pancreator
-				}
+				has_orthodox_religious_icon_trigger = yes
 			}
 		}
 		effect = {
@@ -3412,7 +3408,7 @@ rus_russian_bureaucracy = {
 				first_custom_tooltip = rus_enact_the_sudebnik_at
 				first_limit = "has_reform = tysyatsky_reform"
 				first_effect = "add_estate_loyalty = { estate = estate_nobles loyalty = 15 } add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }"
-				second_custom_tooltip = rus_enact_the_sudebnik_vu
+				second_custom_tooltip = rus_enact_the_sudebnik_bt
 				second_limit = "has_reform = namestnik_reform"
 				second_effect = "change_estate_land_share = { estate = all share = -5 } add_adm_power = 50"
 			}
@@ -3508,7 +3504,7 @@ rus_russian_nobility = {
 					first_custom_tooltip = rus_handle_the_boyars_at
 					first_limit = "crown_land_share = estate_nobles"
 					first_effect = "add_country_modifier = { name = rus_demoted_the_boyars duration = 9125 }"
-					second_custom_tooltip = rus_handle_the_boyars_vu
+					second_custom_tooltip = rus_handle_the_boyars_bt
 					second_limit = "NOT = { crown_land_share = estate_nobles }"
 					second_effect = "add_country_modifier = { name = rus_support_of_the_boyars duration = 9125 }"
 				}
@@ -3742,7 +3738,7 @@ rus_russian_disaster = {
 				first_custom_tooltip = rus_the_time_of_troubles_at
 				first_limit = "has_country_flag = rus_had_time_of_troubles"
 				first_effect = "add_country_modifier = { name = rus_the_strong_motherland duration = -1 }"
-				second_custom_tooltip = rus_the_time_of_troubles_vu
+				second_custom_tooltip = rus_the_time_of_troubles_bt
 				second_limit = "NOT = { current_age = age_of_discovery } NOT = { current_age = age_of_reformation }"
 				second_effect = "add_country_modifier = { name = rus_the_stable_empire duration = 9125 }"
 			}
@@ -3871,7 +3867,7 @@ rus_russian_streltsy = {
 						has_country_flag = rus_enacted_early_disconnection_flag
 					}
 					custom_trigger_tooltip = {
-						tooltip = rus_solidify_serfdom_vu
+						tooltip = rus_solidify_serfdom_bt
 						has_country_flag = rus_crushed_boyars_revolt
 					}
 					NOT = { has_spawned_rebels = noble_rebels }
@@ -3889,6 +3885,15 @@ rus_russian_streltsy = {
 					second_custom_tooltip = rus_solidify_serfdom_et
 					second_limit = "has_estate_privilege = estate_nobles_increased_peasant_freedom has_country_flag = rus_crushed_boyars_revolt NOT = { has_spawned_rebels = noble_rebels }"
 					second_effect = "custom_tooltip = rus_solidify_serfdom_ft set_country_flag = rus_buffed_free_peasantry_privileges"
+				}
+				if = {
+					limit = {
+						NOT = { has_estate_privilege = estate_nobles_early_serfdom }
+						NOT = { has_estate_privilege = estate_nobles_increased_peasant_freedom }
+					}
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
 				}
 			}
 			else = {
@@ -4058,18 +4063,18 @@ rus_court_and_church = {
 			has_discovered = ROOT
 			owner = {
 				OR = {
-		        	technology_group = western
-		        	technology_group = english_tech_group
-		        	technology_group = french_tech_group
-		        	technology_group = dutch_tech_group
-		        	technology_group = german_tech_group
-		        	technology_group = italian_tech_group
-			    	technology_group = portuguese_tech_group
-		        	technology_group = roman_tech_group
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
+					technology_group = italian_tech_group
+					technology_group = portuguese_tech_group
+					technology_group = roman_tech_group
 					technology_group = scandinavian_tech_group
-		        	technology_group = spanish_tech_group
-			    	technology_group = swiss_tech_group
-		        }
+					technology_group = spanish_tech_group
+					technology_group = swiss_tech_group
+				}
 				NOT = {
 					has_opinion = {
 						who = ROOT
@@ -4094,18 +4099,18 @@ rus_court_and_church = {
 			}
 			any_known_country = {
 				OR = {
-		        	technology_group = western
-		        	technology_group = english_tech_group
-		        	technology_group = french_tech_group
-		        	technology_group = dutch_tech_group
-		        	technology_group = german_tech_group
-		        	technology_group = italian_tech_group
-			    	technology_group = portuguese_tech_group
-		        	technology_group = roman_tech_group
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
+					technology_group = italian_tech_group
+					technology_group = portuguese_tech_group
+					technology_group = roman_tech_group
 					technology_group = scandinavian_tech_group
-		        	technology_group = spanish_tech_group
-			    	technology_group = swiss_tech_group
-		        }
+					technology_group = spanish_tech_group
+					technology_group = swiss_tech_group
+				}
 				has_opinion = {
 					who = ROOT
 					value = 100
@@ -4117,7 +4122,7 @@ rus_court_and_church = {
 				first_custom_tooltip = rus_the_courts_direction_at
 				first_limit = "philosopher = 2"
 				first_effect = "add_country_modifier = { name = rus_philosopher_focus duration = 9125 }"
-				second_custom_tooltip = rus_the_courts_direction_vu
+				second_custom_tooltip = rus_the_courts_direction_bt
 				second_limit = "natural_scientist = 2"
 				second_effect = "add_country_modifier = { name = rus_natural_scientist_focus duration = 9125 }"
 				third_custom_tooltip = rus_the_courts_direction_ct
@@ -4361,7 +4366,7 @@ rus_russian_government = {
 				first_custom_tooltip = rus_pass_issues_in_the_senate_at
 				first_limit = "has_reform = governing_senate_reform"
 				first_effect = "halves_parliament_bribe_costs = yes unlock_new_issues = yes add_country_modifier = { name = rus_supremacy_of_the_duna duration = -1 }"
-				second_custom_tooltip = rus_pass_issues_in_the_senate_vu
+				second_custom_tooltip = rus_pass_issues_in_the_senate_bt
 				second_limit = "has_reform = enforced_autocracy_reform"
 				second_effect = "add_absolutism = 20 add_country_modifier = { name = rus_absolute_rule duration = -1 }"
 			}
@@ -4398,6 +4403,32 @@ rus_russian_religion_serfdom = {
 		trigger = {
 			reform_level = 4
 			OR = {
+				AND = {
+					custom_trigger_tooltip = {  
+						tooltip = rus_6_tot_tt
+						has_global_modifier_value = { 
+							which = tolerance_own 
+							value = 6
+						}
+					}
+					if = {
+						limit = { has_estate = estate_church }
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 80
+						}
+					}
+					if = {
+						limit = { uses_patriarch_authority = yes }
+						OR = {
+							patriarch_authority = 1
+							num_of_owned_provinces_with = {
+								has_state_patriach = yes
+								value = 70
+							}
+						}
+					}
+				}
 				custom_trigger_tooltip = {
 					tooltip = rus_most_holy_synod_xx
 					any_known_country = {
@@ -4417,32 +4448,6 @@ rus_russian_religion_serfdom = {
 						}
 					}
 					diplomatic_reputation = 2
-				}
-				AND = {
-					if = {
-						limit = { has_estate = estate_church }
-						estate_loyalty = {
-							estate = estate_church
-							loyalty = 80
-						}
-					}
-					if = {
-						limit = { uses_patriarch_authority = yes }
-						OR = {
-							patriarch_authority = 1
-							num_of_owned_provinces_with = {
-								has_state_patriach = yes
-								value = 70
-							}
-						}
-					}
-					custom_trigger_tooltip = {
-						tooltip = rus_6_tot_tt
-						has_global_modifier_value = {
-							which = tolerance_own
-							value = 6
-						}
-					}
 				}
 			}
 		}
@@ -4466,7 +4471,7 @@ rus_russian_religion_serfdom = {
 			#tooltip = {
 			#	add_government_reform = holy_synod_reform
 			#}
-			custom_tooltip = rus_most_holy_synod_vu
+			custom_tooltip = rus_most_holy_synod_bt
 			if = {
 				limit = {
 					OR = {
@@ -4704,7 +4709,7 @@ rus_russian_religion_serfdom = {
 				custom_tooltip = rus_the_age_of_revolution_at
 			}
 			else = {
-				custom_tooltip = rus_the_age_of_revolution_vu
+				custom_tooltip = rus_the_age_of_revolution_bt
 				set_country_flag = rus_has_rev_missions
 				swap_non_generic_missions = yes
 			}
@@ -4772,7 +4777,7 @@ rus_russian_military = {
 					name = rus_institutionalized_streltsy
 					duration = -1
 				}"
-				second_custom_tooltip = rus_dissolve_the_streltsy_vu
+				second_custom_tooltip = rus_dissolve_the_streltsy_bt
 				second_limit = "
 				NOT = { has_reform = streltsy_reform }
 				army_tradition = 50
@@ -4826,7 +4831,7 @@ rus_russian_military = {
 			}
 			else = {
 				custom_trigger_tooltip = {
-					tooltip = rus_reform_the_military_vu
+					tooltip = rus_reform_the_military_bt
 					always = no
 				}
 			}
@@ -5036,7 +5041,7 @@ rus_revolution = {
 					name = rus_revolutionary_zeal
 					duration = -1
 				}"
-				second_custom_tooltip = rus_the_glorious_revolution_vu
+				second_custom_tooltip = rus_the_glorious_revolution_bt
 				second_limit = "
 				NOT = { has_reform = revolutionary_empire_reform }
 				NOT = { has_reform = revolutionary_republic_reform }

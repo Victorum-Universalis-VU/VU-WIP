@@ -1,7 +1,8 @@
 government = republic
 add_government_reform = peasants_republic			#Not an ideal gov type for the situation, but better than a monarchy type I think. In reality, the bailiff was appointed by the crown not unlike colonial governments. Might make a new gov type in the future.
 government_rank = 1
-technology_group = french_tech_group
+#technology_group = western
+technology_group = english_tech_group
 unit_type = western
 primary_culture = normand
 add_accepted_culture = english

@@ -2,6 +2,7 @@ government = monarchy
 add_government_reform = courts_of_navarra
 primary_culture = basque
 religion = catholic
+#technology_group = western
 technology_group = spanish_tech_group
 unit_type = western
 capital = 210	# Pamplona

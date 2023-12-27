@@ -7,20 +7,27 @@ religion = buddhism
 capital = "Chiang Mai"
 trade_goods = ivory 
 hre = no
-base_tax = 7
-base_production = 7
-base_manpower = 4
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 add_core = LNA
 center_of_trade = 2
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 
 fort_15th = yes
-1535.1.1 = { discovered_by = POR }
+
 1558.4.2 = { add_core = TAU } # Burmese vassal
 1727.1.1 = { unrest = 6 } # Rebellion
 1728.1.1 = { unrest = 0 }

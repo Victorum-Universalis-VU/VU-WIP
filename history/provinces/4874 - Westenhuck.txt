@@ -13,7 +13,7 @@ native_ferocity = 1
 native_hostileness = 2
 tribal_owner = MAH
 
-discovered_by = north_american
+
 
 1655.1.1 = {
 	owner = ENG
@@ -26,7 +26,7 @@ discovered_by = north_american
 	trade_goods = grain
 }
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

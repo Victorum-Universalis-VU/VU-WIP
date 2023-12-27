@@ -11,10 +11,3 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
-
-discovered_by = north_american
-#discovered_by = vu_northwest_tech
-
-1805.1.1 = { discovered_by = USA } #Lewis and Clarke
-1811.1.1 = { discovered_by = GBR } #David Thompson
-#Pretty quiet here until 1860s gold rush, then major forestry industry,

@@ -3,9 +3,9 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = kurdish
 religion = sunni
-technology_group = muslim
-capital = 4310			#Harput in 1444
-fixed_capital = 3740	#Egil
+technology_group = persian_tech_group
+capital = 4310 #Harput in 1444
+fixed_capital = 3740 #Egil
 religious_school = shafii_school
 
 #Names unknown but dynasty ruled from c. 1200 to c. 1800
@@ -21,17 +21,10 @@ religious_school = shafii_school
 }
 1400.1.1 = {
 	monarch = {
+		name = "Ibrahim"
 		dynasty = "Mansûr"
 		adm = 3
 		dip = 2
 		mil = 1
-	}
-}
-1444.1.1 = {
-	monarch = {
-		dynasty = "Mansûr"
-		adm = 3
-		dip = 4
-		mil = 2
 	}
 }

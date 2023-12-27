@@ -1222,11 +1222,11 @@ country_event = {
 		name = ME_France_Events.34.OPT2
 
 		add_prestige_or_monarch_power = { amount = 5 }
-		ME_distribute_development = {
-			type = tax
-			amount = 5
-			limit = " region = france_region "
-		}
+		#ME_distribute_development = {
+		#	type = tax
+		#	amount = 5
+		#	limit = " region = france_region "
+		#}
 	}
 }
 

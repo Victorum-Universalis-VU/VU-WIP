@@ -8,16 +8,11 @@ religion = confucianism
 capital = "Zhending"
 trade_goods = grain
 hre = no
-base_tax = 4  
-base_production = 4
-base_manpower = 4
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
 add_core = YAN
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1608.1.1 = { discovered_by = SPA }
 
 1628.1.1 = { revolt_risk = 6 } # Li Zicheng rebellion
 1644.1.1 = {

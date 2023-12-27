@@ -41,14 +41,14 @@ BRBR_missions_1 = { #BRBR is the namespace for this
 			add_yearly_sailors = 0.5
 			add_yearly_manpower = 0.5
 			
-			ME_overlord_effect = {
-				effect = "
-					add_country_modifier = {
-						name = BRBR_moorish_refugees_overlord
-						duration = 7300
-					}
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_country_modifier = {
+			#			name = BRBR_moorish_refugees_overlord
+			#			duration = 7300
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -113,18 +113,18 @@ BRBR_missions_1 = { #BRBR is the namespace for this
 		}
 		effect = {
 			TUN_enable_raiding_half_money = yes
-		
-			ME_overlord_effect = {
-				effect = "
-					add_dip_power = 50
-					define_advisor = {
-						type = diplomat
-						skill = 3
-						culture = ROOT
-						religion = ROOT
-					}
-				"
-			}
+			add_dip_power = 50
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_dip_power = 50
+			#		define_advisor = {
+			#			type = diplomat
+			#			skill = 3
+			#			culture = ROOT
+			#			religion = ROOT
+			#		}
+			#	"
+			#}
 		}
 	}
 }
@@ -217,12 +217,13 @@ BRBR_missions_2 = {
 					add_or_upgrade_shipyard_building = yes
 				}
 			}
+			add_yearly_sailors = 1
 			
-			ME_overlord_effect = {
-				effect = "
-					add_yearly_sailors = 1
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_yearly_sailors = 1
+			#	"
+			#}
 		}
 	}
 	
@@ -246,15 +247,17 @@ BRBR_missions_2 = {
 				name = BRBR_the_barbary_arsenal
 				duration = -1
 			}
+			create_admiral = { tradition = 80 }
+			country_event = { id = ME_Barbary_Pirates_Events.2 }
 			
-			ME_overlord_effect = {
-				effect = "
-					tooltip = {
-						create_admiral = { tradition = 80 }
-					}
-					country_event = { id = ME_Barbary_Pirates_Events.2 }
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		tooltip = {
+			#			create_admiral = { tradition = 80 }
+			#		}
+			#		country_event = { id = ME_Barbary_Pirates_Events.2 }
+			#	"
+			#}
 			
 			custom_tooltip = " "
 			
@@ -320,21 +323,22 @@ BRBR_missions_3 = {
 				name = BRBR_berber_navy_2
 				duration = -1
 			}
+			country_event = { id = ME_Barbary_Pirates_Events.1 }
 			
-			ME_overlord_effect = {
-				effect = "
-					tooltip = {
-						define_advisor = {
-							type = naval_reformer
-							skill = 3
-							culture = ROOT
-							religion = ROOT
-							cost_multiplier = 0.2
-						}
-					}
-					country_event = { id = ME_Barbary_Pirates_Events.1 } #does the above but informs the player, felt it should have been done for player as they can't really make use if they don't notice it
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		tooltip = {
+			#			define_advisor = {
+			#				type = naval_reformer
+			#				skill = 3
+			#				culture = ROOT
+			#				religion = ROOT
+			#				cost_multiplier = 0.2
+			#			}
+			#		}
+			#		country_event = { id = ME_Barbary_Pirates_Events.1 } #does the above but informs the player, felt it should have been done for player as they can't really make use if they don't notice it
+			#	"
+			#}
 		}
 	}
 }
@@ -378,14 +382,17 @@ BRBR_missions_4 = {
 				name = BRBR_marines
 				duration = -1
 			}
+			add_mil_power = 100
+			add_yearly_sailors = 0.5
+			add_yearly_manpower = 0.5
 			
-			ME_overlord_effect = {
-				effect = "
-					add_mil_power = 100
-					add_yearly_sailors = 0.5
-					add_yearly_manpower = 0.5
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_mil_power = 100
+			#		add_yearly_sailors = 0.5
+			#		add_yearly_manpower = 0.5
+			#	"
+			#}
 		}
 	}
 	
@@ -417,13 +424,14 @@ BRBR_missions_4 = {
 				duration = 9125
 			}
 			add_navy_tradition = 25
+			add_dip_power = 50
 				
-			ME_overlord_effect = {
-				effect = "
-					add_navy_tradition = 25
-					add_dip_power = 50
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_navy_tradition = 25
+			#		add_dip_power = 50
+			#	"
+			#}
 		}
 	}
 	
@@ -488,13 +496,15 @@ BRBR_missions_4 = {
 					add_or_upgrade_fort_building = yes
 				}
 			}
+			add_army_tradition_or_mil_power = { amount = 10 }
+			add_mil_power = 50 
 			
-			ME_overlord_effect = {
-				effect = "
-					add_army_tradition_or_mil_power = { amount = 10 }
-					add_mil_power = 50 
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_army_tradition_or_mil_power = { amount = 10 }
+			#		add_mil_power = 50 
+			#	"
+			#}
 		}
 	}
 }
@@ -626,11 +636,11 @@ BRBR_missions_5 = {
 			
 			set_country_flag = BRBR_slave_trade_nation
 			set_global_flag = BRBR_slave_trade
-			ME_overlord_effect = {
-				effect = "
-					custom_tooltip = BRBR_barbary_slave_trade
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		custom_tooltip = BRBR_barbary_slave_trade
+			#	"
+			#}
 		}
 	}
 	
@@ -677,15 +687,20 @@ BRBR_missions_5 = {
 			create_admiral = { tradition = 100 } #well deserved!
 			
 			custom_tooltip = " "
-			
-			ME_overlord_effect = {
-				effect = "
-					add_power_projection = {
-						type = mission_rewards_power_projection
-						amount = 10
-					}
-				"
+
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
 			}
+
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_power_projection = {
+			#			type = mission_rewards_power_projection
+			#			amount = 10
+			#		}
+			#	"
+			#}
 		}
 	}
 }

@@ -15,12 +15,12 @@ add_core = MIX
 
 
 
-1444.1.1 = { discovered_by = MAY } 1444.1.1 = { discovered_by = ZAP } 1444.1.1 = { discovered_by = AZT } 
+
 
 
 1498.1.1 = { capital = "Huasyacac" } 
 1524.1.1 = {
-	discovered_by = SPA 
+	 
 	owner = SPA 
 	controller = SPA 
 	add_core = SPA

@@ -16,14 +16,15 @@ native_size = 10
 native_ferocity = 5
 native_hostileness = 9
 
-1444.1.1 = { discovered_by = CAB } 1444.1.1 = { discovered_by = ARW } 
-#discovered_by = south_american
+ 
+
+
 
 
 #Island changed hands 33 times, a record for even the Caribbean. I'm not going to go through them all, though. If you're that obsessive, you can do it =p (p.s. if you do, let me know. I would love to copy it)
 
-1498.8.14 = { discovered_by = CAS } # Christopher Columbus
-1516.1.23 = { discovered_by = SPA }
+
+
 #Several attempts, a dutch one even lasting for almost 10 years, but nothing permanent took hold until the Dutch and Courlanders arrived in the same year (in 1654)
 1628.1.1 = {
 	owner = NED
@@ -82,7 +83,7 @@ native_hostileness = 9
 	capital = "Trois-Rivières"
 } # Taken by the French
 1763.12.1 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

@@ -4,14 +4,14 @@ estate_burghers = {
 	# If true, country will get estate
 	trigger = {	
 		NOT = { has_government_attribute = disables_estate_burghers }
-		NOT = { has_country_flag = disables_estate_burghers_flag }
+		NOT = { has_disabled_estate = { estate = estate_burghers } }
 		OR = {
 			has_government_attribute = enables_estate_burghers
-			has_country_flag = enables_estate_burghers_flag
+			has_enabled_estate = { estate = estate_burghers }
+			has_unlocked_estate = { estate = estate_burghers }
 			AND = {
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { is_revolutionary_republic_trigger = yes }
-				NOT = { has_reform = cossacks_reform }
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
 				is_nomad = no
@@ -33,15 +33,15 @@ estate_burghers = {
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		trade_efficiency = 0.2
-		development_cost = -0.1			#Turned on in VU. Was off in VU
+		development_cost = -0.1
 	}
 	country_modifier_neutral = {
-		trade_efficiency = 0.2			#Turned on in VU. Was off in VU
+		trade_efficiency = 0.2
 	}	
 	country_modifier_angry = {
-		trade_efficiency = -0.1			#Was -0.2 in VU
-		development_cost = 0.1			#Turned on in VU. Was off in VU
-		global_unrest = 2               #Added in VU
+		trade_efficiency = -0.1
+		development_cost = 0.1
+		global_unrest = 2
 	}
 	land_ownership_modifier = {
 		burghers_loyalty_modifier = 0.2
@@ -186,29 +186,28 @@ estate_burghers = {
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_church_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_jains_disaster
-			}
-		}	
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_burghers }
+		}
 		influence = -40
 	}
 	
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_church_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_burghers }
 		}
 		loyalty = -20
 	}
 	#Custom Names
+	custom_name = {
+		desc = estate_emporoi
+		trigger = {
+			tag = BYZ
+			culture_group = byzantine
+		}
+	}
 	custom_name = {
 		desc = estate_quartersmasters
 		trigger = {
@@ -225,13 +224,6 @@ estate_burghers = {
 		desc = estate_shangbang
 		trigger = {
 			culture_group = east_asian
-		}
-	}
-	custom_name = {
-		desc = estate_neoconfucian_reformers
-		trigger = {
-			tag = KOR
-			religion = confucianism
 		}
 	}
 	custom_name = {
@@ -300,6 +292,17 @@ estate_burghers = {
 		estate_burghers_financial_demand
 		estate_burghers_sindicat_remensa_privilege
 		estate_burghers_promote_burgher_bookkeeping
+		estate_burghers_great_works_of_iran
+		estate_burghers_fund_karimi
+		estate_burghers_foreign_expeditions
+		estate_burghers_nile_goods_transport
+		estate_burghers_monopoly_of_coffee
+		estate_burghers_reliance_on_republics
+		estate_burghers_exkousseiai_for_latins
+		estate_burghers_BYZ_single_market
+		estate_burghers_ARB_oasis_development
+		estate_burghers_YEM_coffee_monopoly
+		estate_burghers_persian_rugs
 		#GE
 		estate_burghers_town_rights
 		estate_burghers_land_privileges
@@ -320,6 +323,7 @@ estate_burghers = {
 		ME_estate_burghers_steppe_development
 		ME_estate_burghers_SWI_peace_in_the_cantons
 	}
+	
 	agendas = {
 		estate_burghers_develop_x
 		estate_burghers_build_trade_building_in_y
@@ -352,8 +356,6 @@ estate_burghers = {
 		estate_burghers_protect_against_piracy
 		estate_burghers_hire_advisor
 		estate_burghers_fire_advisor
-		#IE
-		#estate_burghers_workshops_investments
 	}
 
 	influence_from_dev_modifier = 1.0

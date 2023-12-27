@@ -7,14 +7,21 @@ religion = buddhism
 capital = "Hsenwi"
 trade_goods = opium
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = HSE
 center_of_trade = 1
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 1502.1.1 = {
 	controller = SST
@@ -33,7 +40,7 @@ discovered_by = indian
 	owner = TAU
 	controller = TAU
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1732.1.1 = {
 	owner = QNG
 	controller = QNG

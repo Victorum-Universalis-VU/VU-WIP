@@ -75,9 +75,13 @@
  
  # Modifiers:
  zcv_full_army: "A Competent Army"
+ zcv_full_army_desc:0 "Full Army"
  zcv_legacy_of_lech_and_czech: "Legacy of Lech and Czech"
+ zcv_legacy_of_lech_and_czech_desc:0 "Legacy of Lech & Czech"
  zcv_conquered_rus: "Conquered Kievian Rus"
+ zcv_conquered_rus_desc:0 "Russia Conquered"
  zcv_united_the_slavs: "A Unified Slavic State"
+ zcv_united_the_slavs_desc:0 "United the Slavs"
  ME_zcv_education_reform: "Education Reforms"
  ME_zcv_centralization_reform: "Centralization Reforms"
  ME_zcv_military_reform: "Military Reforms"
@@ -85,9 +89,13 @@
  ME_champion_of_zapadoslavia: "Champion of Zapadoslavia"
  ME_loyal_poles: "A Loyal Polish Nobility"
  zcv_claimed_wendish_land: "Reclaimed Old Wendish Land"
+ zcv_claimed_wendish_land_desc:0 "Claimed Wendish Land"
  zcv_humiliated_emperor: "Humiliated the Emperor"
+ zcv_humiliated_emperor_desc:0 "Humiliated Emperor"
  zcv_religious_unity_modifier: "Unity Through Faith"
+ zcv_religious_unity_modifier_desc:0 "Religious Unity"
  zcv_universities_expanded: "Expanded our Universities"
+ zcv_universities_expanded_desc:0 "Expanded Universities"
  zapadoslavia_disloyal_nobles_triggered_modifier: "Disloyal Nobles"
  
  # Trade Modifiers:

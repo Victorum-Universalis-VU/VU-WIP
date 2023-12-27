@@ -1,14 +1,20 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 mug_timurid_resurgence = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -285,11 +291,17 @@ mug_towards_china = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -491,11 +503,17 @@ mug_land_assesement = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -528,11 +546,17 @@ mug_indus_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -582,11 +606,17 @@ mug_ganges_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1021,11 +1051,17 @@ mug_hindustan_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1360,11 +1396,17 @@ mug_desh = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1408,11 +1450,17 @@ mug_sufis = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1503,11 +1551,17 @@ mug_rajput_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1750,11 +1804,17 @@ mug_hyderabad_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}
@@ -1862,11 +1922,17 @@ mug_deccan_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
 	}

@@ -2,6 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = manx
 religion = catholic
+#technology_group = western
 technology_group = english_tech_group
 unit_type = western
 capital = 4365 # Mann

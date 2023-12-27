@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 #First slot
 adal_conquest_missions_slot = {
 	slot = 1
@@ -564,7 +565,7 @@ adal_unification_missions_slot = {
 				}
 				tag = SOM
 				custom_trigger_tooltip = {
-					tooltip = ada_justification_for_unity_vu
+					tooltip = ada_justification_for_unity_bt
 					any_known_country = {
 						primary_culture = somali
 						ROOT = {
@@ -656,8 +657,8 @@ adal_unification_missions_slot = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = ajuuran_area
-				area = mogadishu_area
+				area = somaliland_area
+				area = majarteen_area
 				area = ogaden_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -721,8 +722,8 @@ adal_unification_missions_slot = {
 			}
 		}
 		effect = {
-			add_accepted_culture_or_dip_power = { culture = yemeni_culture }
-			add_accepted_culture_or_dip_power = { culture = hejazi_culture }
+			add_accepted_culture_or_dip_power = { culture = yemeni_culture dip_reward = yes new_line = yes }
+			add_accepted_culture_or_dip_power = { culture = hejazi_culture dip_reward = yes }
 			385 = {
 				set_great_project_tier_2 = {
 					type = kaaba

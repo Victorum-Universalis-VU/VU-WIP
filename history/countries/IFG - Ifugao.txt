@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = oligarchy_reform
 technology_group = chinese
-primary_culture = ilocano
+primary_culture = ifugao
 capital = 4348 #Ifugao
 religion = animism
 government_rank = 1

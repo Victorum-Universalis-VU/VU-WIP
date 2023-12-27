@@ -20,7 +20,7 @@
  SYR_combat_readiness: "Combat Readiness"
  
  SYR_overlordship_will_no_longer_cost_diplo_slot: "Overlordship over §Y[Root.GetName]§! will no longer take up a §Yrelation slot§!. It will be mitigated via a §YTriggered Modifier§!."
- SYR_distribute_15_manpower: "Distribute §G15§! §YManpower§! Development among our provinces."
+ #SYR_distribute_15_manpower: "Distribute §G15§! §YManpower§! Development among our provinces."
  #SYR_annexing_root_will_no_longer: "Annexing §Y[Root.GetName]§! will no longer incur '§YAnnexed Subjects§!' Penalty. The modifier will be removed via an §YEvent§! soon afterwards."
  IRQ_SYR_subject_missions: "@[This.GetTag] §Y[This.GetName]§! will receive Subject-oriented mission tree. We will be able to help them complete it and gain bonuses on our own."
  SYR_exclusive_with_permanent: "This mission is mutually exclusive with '§YPermanent Subject§!' mission."

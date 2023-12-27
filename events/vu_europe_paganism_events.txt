@@ -239,7 +239,7 @@ country_event = {	#Norse people revolt
 			add_province_modifier = {
 				name = vu_norse_pagan_unhappy
 				duration = 1825
-				hidden = no
+				hidden = yes
 			}
 		}
 	}
@@ -254,10 +254,12 @@ country_event = {	#Norse people revolt
 			}
 		}
 		add_prestige = -10
-		add_province_modifier = {
-			name = vu_norse_pagan_satisfied
-			duration = 1825
-			hidden = no
+		capital_scope = {
+			add_province_modifier = {
+		    	name = vu_norse_pagan_satisfied
+		    	duration = 1825
+		    	hidden = yes
+		    }
 		}
 	}
 	
@@ -280,7 +282,7 @@ country_event = {	#Norse people revolt
 			add_province_modifier = {
 				name = vu_norse_pagan_stalemate
 				duration = 1825
-				hidden = no
+				hidden = yes
 			}
 		}
 	}

@@ -12,10 +12,6 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
-#discovered_by = vu_northwest_tech
 
 
-1825.1.1 = { discovered_by = GBR } # Peter Skene Ogden circa 1825
-#Americans probably discovered the area a couple decades later, probably 1840s
-#First European settlement probably started in the 20th century
+

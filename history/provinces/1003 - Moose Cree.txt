@@ -14,10 +14,10 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
-1611.1.1 = { discovered_by = ENG } # Henry Hudson
-1672.1.1 = { discovered_by = FRA } # Charles Albanel
+
+
+
 
 1679.1.1 = {
 	owner = ENG
@@ -53,7 +53,7 @@ discovered_by = north_american
 	owner = ENG
 } #Peace gives France James Bay but English hold Fort Albany
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

@@ -5687,8 +5687,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				any_ally = {
-					government = monarchy
+				calc_true_if = {
+					all_ally = {
+						government = monarchy
+					}
+					amount = 2
 				}
 			}
 			remove_country_modifier = Recognize_No_Crown

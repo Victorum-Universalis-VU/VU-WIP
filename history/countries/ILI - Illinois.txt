@@ -1,4 +1,5 @@
 government = republic
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 primary_culture = cosmopolitan_french

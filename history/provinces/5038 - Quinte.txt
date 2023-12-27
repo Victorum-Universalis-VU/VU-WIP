@@ -18,12 +18,12 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
+
 
 
 1500.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = HUR
 	is_city = no
 	base_tax = 1
@@ -32,9 +32,7 @@ discovered_by = north_american
 	culture = iroquois
 } #Iroquois displaced native Wyandot peoples around 1500
 
-1611.6.13 = { discovered_by = FRA } # Samuel de Champlain via Étienne Brûlé
 
-1629.1.1 = { discovered_by = ENG } #Vanilla who what where was no note
 
 1665.1.1 = {
  	owner = IRO
@@ -63,7 +61,7 @@ discovered_by = north_american
 	capital = "Asukhknosk"
 } #Iroquois leave after Nanfan Treaty and Anishinabe move in
 
-1707.5.12 = { discovered_by = GBR }
+
 
 1710.1.1 = {
  	owner = FRA
@@ -75,8 +73,8 @@ discovered_by = north_american
 } #French influence spreads East of here 1695 West of here 1720
 
 1759.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	trade_goods = unknown 
 	capital = "Asukhknosk"

@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Flavor Events for Manchu
 #
@@ -500,6 +501,7 @@ country_event = { #Nurhaci
 		
 		define_ruler = {
 			name = "Nurhachi"
+			dynasty = "Aisin-Gioro"
 			change_adm = 2
 			change_dip = 3
 			change_mil = 4

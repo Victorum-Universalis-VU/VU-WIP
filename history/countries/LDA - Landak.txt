@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = plutocratic_reform
+government_rank = 1
 primary_culture = bornean
 religion = hinduism
 technology_group = chinese
 capital = 8558 #Landak
-government_rank = 1
 
 1430.1.1 = {
 	monarch = {

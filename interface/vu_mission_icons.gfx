@@ -1,4 +1,44 @@
 spriteTypes = {
+	spriteType = {  
+		name = "vu_bishop_needle"
+		texturefile = "gfx//interface//missions//vu_bishop_needle.dds"
+	}
+	spriteType = {  
+		name = "vu_likedeelers"
+		texturefile = "gfx//interface//missions//vu_likedeelers.dds"
+	}
+	spriteType = {  
+		name = "vu_black_guard"
+		texturefile = "gfx//interface//missions//vu_black_guard.dds"
+	}
+	spriteType = {  
+		name = "vu_peasant_leader"
+		texturefile = "gfx//interface//missions//vu_peasant_leader.dds"
+	}
+	spriteType = {  
+		name = "vu_hemmingsteadt"
+		texturefile = "gfx//interface//missions//vu_hemmingsteadt.dds"
+	}
+	spriteType = {  
+		name = "vu_old_times_changing"
+		texturefile = "gfx//interface//missions//vu_old_times_changing.dds"
+	}
+	spriteType = {  
+		name = "vu_estuary"
+		texturefile = "gfx//interface//missions//vu_estuary.dds"
+	}
+	spriteType = {  
+		name = "vu_peasants_field"
+		texturefile = "gfx//interface//missions//vu_peasants_field.dds"
+	}
+	spriteType = {  
+		name = "vu_infrastructure"
+		texturefile = "gfx//interface//missions//vu_infrastructure.dds"
+	}
+	spriteType = {  
+		name = "vu_infrastructure2"
+		texturefile = "gfx//interface//missions//vu_infrastructure2.dds"
+	}
 	spriteType = {
 		name = "conquer_saxony"
 		texturefile = "gfx//interface//missions//victorum_universalis//Brandenburg//conquer_saxony.dds"

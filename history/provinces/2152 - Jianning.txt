@@ -8,19 +8,12 @@ religion = taoism
 capital = "Jianning"
 trade_goods = tea
 hre = no
-base_tax = 4  
-base_production = 4
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 add_core = MIN
 add_core = NNG
-
-
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1595.1.1 = { discovered_by = SPA }
 
 1646.8.28 = {
 	owner = QNG

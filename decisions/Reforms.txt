@@ -485,7 +485,7 @@ country_decisions = {
 	}
 	
 	check_empowered_requirements_again = {
-		major = no
+		#major = no
 		potential = {
 			was_player = yes
 			always = no
@@ -500,7 +500,7 @@ country_decisions = {
 		}
 	}
 	GE_time_to_pray = {
-		major = no
+		#major = no
 		potential = {
 			government = monarchy
 			uses_devotion = yes
@@ -517,7 +517,7 @@ country_decisions = {
 		}
 	}
 	GE_emergency_powers = {
-		major = no
+		#major = no
 		potential = {
 			has_government_attribute = enables_emergency_power
 		}
@@ -557,102 +557,102 @@ country_decisions = {
 		}
 	}
 	
-	reform_byz_gov_part_1 = {
-		major = no
-		potential = {
-			has_reform = byzantine_autocracy_reform
-			NOT = { has_reform = byzantine_transitional_gov_reform }
-			NOT = { have_had_reform = byzantine_transitional_gov_reform }
-		}
-		allow = {
-			government_reform_progress = 100
-			stability = 2
-			grown_by_development = 300
-			legitimacy_equivalent = 99
-			prestige = 25
-			NOT = { num_of_rebel_controlled_provinces = 1 }
-			NOT = { num_of_rebel_armies = 1 }
-			is_at_war = no
-			has_institution = renaissance
-			employed_advisor = { category = ADM }
-			employed_advisor = { category = DIP }
-			NOT = { corruption = 1 }
-			is_in_deficit = no
-		}
-		effect = {
-			add_stability = -1
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -50
-			add_corruption = 4
-			add_legitimacy = -30
-			remove_advisor_by_category = ADM
-			remove_advisor_by_category = DIP
-			change_government_reform_progress = -100
-			remove_government_reform = byzantine_autocracy_reform
-			add_government_reform = byzantine_transitional_gov_reform
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
+	#reform_byz_gov_part_1 = {
+	#	major = no
+	#	potential = {
+	#		has_reform = byzantine_autocracy_reform
+	#		NOT = { has_reform = byzantine_transitional_gov_reform }
+	#		NOT = { have_had_reform = byzantine_transitional_gov_reform }
+	#	}
+	#	allow = {
+	#		government_reform_progress = 100
+	#		stability = 2
+	#		grown_by_development = 300
+	#		legitimacy_equivalent = 99
+	#		prestige = 25
+	#		NOT = { num_of_rebel_controlled_provinces = 1 }
+	#		NOT = { num_of_rebel_armies = 1 }
+	#		is_at_war = no
+	#		has_institution = renaissance
+	#		employed_advisor = { category = ADM }
+	#		employed_advisor = { category = DIP }
+	#		NOT = { corruption = 1 }
+	#		is_in_deficit = no
+	#	}
+	#	effect = {
+	#		add_stability = -1
+	#		add_adm_power = -100
+	#		add_dip_power = -100
+	#		add_mil_power = -50
+	#		add_corruption = 4
+	#		add_legitimacy = -30
+	#		remove_advisor_by_category = ADM
+	#		remove_advisor_by_category = DIP
+	#		change_government_reform_progress = -100
+	#		remove_government_reform = byzantine_autocracy_reform
+	#		add_government_reform = byzantine_transitional_gov_reform
+	#	}
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#}
 	
-	reform_byz_gov_part_2 = {
-		major = no
-		potential = {
-			has_reform = byzantine_transitional_gov_reform
-			NOT = { has_reform = reformed_byzantine_monarchy_reform }
-			NOT = { have_had_reform = reformed_byzantine_monarchy_reform }
-		}
-		allow = {
-			government_reform_progress = 100
-			stability = 2
-			grown_by_development = 600
-			legitimacy_equivalent = 99
-			prestige = 50
-			NOT = { num_of_rebel_controlled_provinces = 1 }
-			NOT = { num_of_rebel_armies = 1 }
-			is_at_war = no
-			employed_advisor = { category = ADM }
-			employed_advisor = { category = DIP }
-			employed_advisor = { category = MIL }
-			NOT = { corruption = 1 }
-			is_in_deficit = no
-			adm = 4
-			dip = 4
-			dip = 3
-			OR = {
-				innovativeness = 15
-				has_institution = colonialism
-			}
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 50
-			}
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 60
-			}
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 60
-			}
-		}
-		effect = {
-			add_stability = -2
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -50
-			add_corruption = 4
-			add_legitimacy = -30
-			remove_advisor_by_category = ADM
-			remove_advisor_by_category = DIP
-			change_government_reform_progress = -100
-			remove_government_reform = byzantine_transitional_gov_reform
-			add_government_reform = reformed_byzantine_monarchy_reform
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
+	#reform_byz_gov_part_2 = {
+	#	major = no
+	#	potential = {
+	#		has_reform = byzantine_transitional_gov_reform
+	#		NOT = { has_reform = reformed_byzantine_monarchy_reform }
+	#		NOT = { have_had_reform = reformed_byzantine_monarchy_reform }
+	#	}
+	#	allow = {
+	#		government_reform_progress = 100
+	#		stability = 2
+	#		grown_by_development = 600
+	#		legitimacy_equivalent = 99
+	#		prestige = 50
+	#		NOT = { num_of_rebel_controlled_provinces = 1 }
+	#		NOT = { num_of_rebel_armies = 1 }
+	#		is_at_war = no
+	#		employed_advisor = { category = ADM }
+	#		employed_advisor = { category = DIP }
+	#		employed_advisor = { category = MIL }
+	#		NOT = { corruption = 1 }
+	#		is_in_deficit = no
+	#		adm = 4
+	#		dip = 4
+	#		dip = 3
+	#		OR = {
+	#			innovativeness = 15
+	#			has_institution = new_world_i
+	#		}
+	#		estate_loyalty = {
+	#			estate = estate_burghers
+	#			loyalty = 50
+	#		}
+	#		estate_loyalty = {
+	#			estate = estate_nobles
+	#			loyalty = 60
+	#		}
+	#		estate_loyalty = {
+	#			estate = estate_church
+	#			loyalty = 60
+	#		}
+	#	}
+	#	effect = {
+	#		add_stability = -2
+	#		add_adm_power = -100
+	#		add_dip_power = -100
+	#		add_mil_power = -50
+	#		add_corruption = 4
+	#		add_legitimacy = -30
+	#		remove_advisor_by_category = ADM
+	#		remove_advisor_by_category = DIP
+	#		change_government_reform_progress = -100
+	#		remove_government_reform = byzantine_transitional_gov_reform
+	#		add_government_reform = reformed_byzantine_monarchy_reform
+	#	}
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#}
 }

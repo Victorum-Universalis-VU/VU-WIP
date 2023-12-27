@@ -7,25 +7,34 @@ religion = nestorian		#Live Christian community established by St. Thomas centur
 capital = "Villarvattom"
 trade_goods = spices
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 add_core = VLV
 
-discovered_by = nomad_group
-discovered_by = indian
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = east_african
 
-1413.1.1 = { discovered_by = chinese }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1490.1.1 = { 
 	owner = KOC
 	controller = KOC
 	add_core = KOC
 } #Villarvattom declines
-1498.1.1 = { discovered_by = POR }
+
 1663.1.1 = { # Dutch Malabar
 	owner = NED
 	add_core = NED

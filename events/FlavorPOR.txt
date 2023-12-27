@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -321,6 +322,8 @@ country_event = {
 				add_claim = POR
 			}
 		}
+
+		
 		MOR = {
 			add_opinion = {
 				who = ROOT

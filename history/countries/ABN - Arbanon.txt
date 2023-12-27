@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = albanian
 add_accepted_culture = greek
 religion = catholic
+#technology_group = eastern
 technology_group = byzantine_tech_group
 unit_type = eastern
 capital = 4175

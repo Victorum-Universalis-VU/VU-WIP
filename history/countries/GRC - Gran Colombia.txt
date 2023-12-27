@@ -4,4 +4,5 @@ primary_culture = castillian
 religion = catholic
 #technology_group = western
 technology_group = spanish_tech_group
+unit_type = western
 capital = 4603 # No one will form them anyways

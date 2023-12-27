@@ -4,19 +4,22 @@ estate_church = {
 	# If true, country will get estate
 	trigger = {
 		NOT = { has_government_attribute = disables_estate_church }
-		NOT = { has_country_flag = disables_estate_church_flag }
+		NOT = { has_disabled_estate = { estate = estate_church } }
 		if = {
 			limit = {
 				religion_group = dharmic
 			}
-			NOT = { has_estate = estate_brahmins }
+			OR = {
+				has_enabled_estate = { estate = estate_church }
+				NOT = { has_estate = estate_brahmins }
+			}
 		}
 		OR = {
 			has_government_attribute = enables_estate_church
-			has_country_flag = enables_estate_church_flag
+			has_enabled_estate = { estate = estate_church }
+			has_unlocked_estate = { estate = estate_church }
 			AND = {
 				NOT = { has_government_attribute = is_pirate_republic_reform }
-				NOT = { has_reform = cossacks_reform }
 				NOT = { has_reform = siberian_tribe }
 				NOT = { government = native }
 				NOT = { is_revolutionary_republic_trigger = yes }
@@ -42,25 +45,26 @@ estate_church = {
 	country_modifier_happy = {
 		global_tax_modifier = 0.2
 		papal_influence = 1
-		devotion = 0.5			#Was 1.0 in VU
-		church_power_modifier = 0.1			#Was 0.2 in VU
+		devotion = 0.5
+		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
-		stability_cost_modifier = -0.1			#Re-added in VU. Was removed in VU
+		stability_cost_modifier = -0.1
 	}
 	country_modifier_neutral = {
-		global_tax_modifier = 0.2			#Re-added in VU. Was removed in VU
-	}	
+		global_tax_modifier = 0.2
+	}
 	country_modifier_angry = {
-		global_tax_modifier = -0.1  #Was -0.2 in VU
+		global_tax_modifier = -0.1
 		papal_influence = -1
-		devotion = 0.5			#Was 1.0 in VU
-		church_power_modifier = -0.25			#Was -0.2 in VU
+		devotion = -0.5
+		church_power_modifier = -0.25
 		monthly_fervor_increase = -1
-		stability_cost_modifier = 0.1			#Was 0.33 in VU
+		stability_cost_modifier = 0.1
 		global_unrest = 2
 	}
+	
 	land_ownership_modifier = {
-		church_loyalty_modifier = 0.2 #+0.2% loyalty equilibrium per 1% owned land.
+		church_loyalty_modifier = 0.2
 	}
 
 	province_independence_weight = {
@@ -111,13 +115,8 @@ estate_church = {
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_church }
 		}
 		influence = -40
 	}
@@ -125,13 +124,8 @@ estate_church = {
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			OR = {
-				has_disaster = estate_nobility_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_church }
 		}
 		loyalty = -20
 	}
@@ -193,7 +187,14 @@ estate_church = {
 			419 = { religion = coptic has_owner_religion = yes }
 		}
 	}
-	
+
+	custom_name = {
+		desc = estate_klirikoi
+		trigger = {
+			tag = BYZ
+			culture_group = byzantine
+		}
+	}
 	custom_name = {
 		desc = estate_ogboni
 		trigger = {
@@ -419,6 +420,13 @@ estate_church = {
 		estate_church_religious_delegation
 		estate_church_institutionalized_clergy
 		estate_church_donation_right
+		estate_church_union_of_the_churches
+		estate_church_BYZ_legitimization_of_dynasty
+		#1.36
+		estate_church_fund_dar_al_hadith
+		estate_church_fund_madrasas
+		estate_church_sponsor_waqf_payments
+		estate_church_muslim_integration
 		#GE
 		estate_church_four_articles_of_prague
 		estate_church_land_privileges
@@ -434,6 +442,7 @@ estate_church = {
 		ME_estate_nobles_loyal_military
 		ME_estate_nobles_theme_system
     }
+
 	agendas = {
 		estate_church_develop_x
 		estate_church_build_temple_in_y

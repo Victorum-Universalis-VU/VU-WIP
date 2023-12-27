@@ -8,7 +8,6 @@ capital = 5235
 historical_friend = HED
 religious_school = hanbali_school
 
-
 #No information here until 18th century
 
 1444.11.11 = {

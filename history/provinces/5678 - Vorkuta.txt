@@ -1,6 +1,6 @@
 #New Victorum Universalis Province
 
-culture = samoyed
+culture = vu_komi
 religion = tengri_pagan_reformed
 capital = "Ust-Usa"
 trade_goods = unknown

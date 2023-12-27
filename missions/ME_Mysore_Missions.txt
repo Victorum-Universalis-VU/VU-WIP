@@ -107,7 +107,19 @@ mysore_column_1 = {
 							owned_by = ROOT
 							NOT = {
 								owner = {
-									technology_group = western
+									OR = {
+				                    	technology_group = western
+				                        technology_group = dutch_tech_group
+				                        technology_group = english_tech_group
+				                        technology_group = french_tech_group
+				                        technology_group = german_tech_group
+				                        technology_group = italian_tech_group
+				                        technology_group = portuguese_tech_group
+				                        technology_group = roman_tech_group
+				                        technology_group = scandinavian_tech_group
+				                        technology_group = spanish_tech_group
+				                        technology_group = swiss_tech_group
+				                    }
 								}
 							}
 						}
@@ -602,8 +614,8 @@ mysore_column_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -659,7 +671,19 @@ mysore_column_3 = {
 							owned_by = ROOT
 							NOT = {
 								owner = {
-									technology_group = western
+									OR = {
+				                    	technology_group = western
+				                        technology_group = dutch_tech_group
+				                        technology_group = english_tech_group
+				                        technology_group = french_tech_group
+				                        technology_group = german_tech_group
+				                        technology_group = italian_tech_group
+				                        technology_group = portuguese_tech_group
+				                        technology_group = roman_tech_group
+				                        technology_group = scandinavian_tech_group
+				                        technology_group = spanish_tech_group
+				                        technology_group = swiss_tech_group
+				                    }
 								}
 							}
 						}

@@ -9,15 +9,10 @@ religion = taoism
 capital = "Yiyang"
 trade_goods = vegetables
 hre = no
-base_tax = 3
-base_production = 2
-base_manpower = 3
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1595.1.1 = { discovered_by = SPA }
 
 1643.1.1 = { controller = CXI } # The Xi dynasty of Zhang Xianzhong
 1647.12.1 = {

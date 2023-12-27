@@ -16,11 +16,11 @@ native_size = 15
 native_ferocity = 3
 native_hostileness = 8
 
-discovered_by = north_american
 
-1524.1.1 = { discovered_by = POR } # Estevão Gomes
-1604.1.1 = { discovered_by = FRA } # Samuel de Champlain
-1605.1.1 = { discovered_by = ENG } # George Waymouth
+
+
+
+
 1609.2.10 = {
 	owner = FRA
 	controller = FRA

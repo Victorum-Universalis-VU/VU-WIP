@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -163,7 +164,8 @@ country_event = {
 			NOT = { has_dlc = "Emperor" }
 		}
 		picture = COURT_eventPicture
-	} 
+	}
+
 	
 	fire_only_once = yes
 	trigger = {
@@ -214,18 +216,18 @@ country_event = {
 	
 	option = {		# Let us claim what is rightfully Ours!
 		name = "flavor_fra.EVTOPTA3105"
-		if = {
-			limit = {
-				exists = NAP
-				NAP = { is_subject = no }
+		if = { limit = { tag = FRA }
+			if = {
+				limit = {
+					exists = NAP
+					NAP = { is_subject = no }
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 600
+					target = NAP
+				}
 			}
-			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 600
-				target = NAP
-			}
-		}
-		if = {
 			every_province = {
 				limit = {
 					OR = {
@@ -233,7 +235,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 					OR = {
 						owned_by = NAP 
@@ -257,7 +259,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 					OR = {
 						owned_by = NAP 
@@ -290,7 +292,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 				}
 			}
@@ -321,7 +323,7 @@ country_event = {
 						area = naples_area
 						area = apulia_area
 						area = calabria_area
-						province_id = 120
+						area = abruzzo_area
 					}
 				}
 			}
@@ -433,9 +435,10 @@ country_event = {
 	title = "flavor_fra.EVTNAME3115"
 	desc = "flavor_fra.EVTDESC3115"
 	picture = MERCHANTS_TALKING_eventPicture
+
+
 		
 	fire_only_once = yes
-	
 	trigger = {
 		OR = {
             tag = BFR
@@ -523,6 +526,7 @@ country_event = {
 			NOT = { stability = -2 }
 		}
 	}
+
 
 	option = {		# Treat the Noble Rebels with Dignity
 		name = "flavor_fra.EVTOPTA3118"
@@ -615,6 +619,8 @@ country_event = {
 	mean_time_to_happen = {
 		months = 60
 	}
+
+
 
 	option = {		# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
@@ -778,6 +784,7 @@ country_event = {
 	immediate = { 
 		set_country_flag = had_colbert
 	}
+
 
 	option = {		# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
@@ -2163,9 +2170,11 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = {
-				has_adm_advisor = yes
-				has_dip_advisor = yes
-				has_mil_advisor = yes
+				AND = {
+					has_adm_advisor = yes
+					has_dip_advisor = yes
+					has_mil_advisor = yes
+				}
 			}
 		}
 		desc = emp_mission_events.7.d2
@@ -2202,7 +2211,7 @@ country_event = { #The Habsburg Ring
 	option = { 
 		ai_chance = { factor = 0 }
 		name = flavor_fra.102.a 
-		trigger = { hre_size = 1 }
+		trigger = { hre_size = 1 ai = yes }
 		add_country_modifier = {
 			name = fra_charlemagne_legacy_modifier
 			duration = 7300
@@ -2232,7 +2241,7 @@ country_event = { #The Habsburg Ring
 	option = { 
 		name = flavor_fra.102.b 
 		ai_chance = { factor = 100 }
-		trigger = { is_emperor = no }
+		trigger = { is_emperor = no ai = yes }
 		add_country_modifier = { 
 			name = fra_war_east_modifier 
 			duration = 5475
@@ -2263,14 +2272,22 @@ country_event = { #The Habsburg Ring
 		set_country_flag = fra_fufujoni_flag
 		swap_non_generic_missions = yes
 	}
+	
+	option = {
+		name = flavor_fra.102.e
+		trigger = {
+			hre_size = 1
+			ai = no
+		}
+		enable_branching_mission_review_without_ai = { key = FRA_HRE }
+	}
 }
 
 country_event = { #The Garden of France 
 	id = flavor_fra.103
 	title = flavor_fra.103.t 
 	desc = flavor_fra.103.d 
-	picture = big_castle_eventPicture
-	
+	picture = big_castle_eventPicture	
 	is_triggered_only = yes 
 	
 	option = { 
@@ -2299,8 +2316,7 @@ country_event = { #Catholicon
 	id = flavor_fra.104
 	title = flavor_fra.104.t 
 	desc = flavor_fra.104.d 
-	picture = BIG_BOOK_eventPicture
-	
+	picture = BIG_BOOK_eventPicture	
 	is_triggered_only = yes 
 	
 	option = { 
@@ -2373,18 +2389,18 @@ country_event = { #House de Valois
 		name = flavor_fra.106.a 
 		
 		ai_chance = { factor = 10 } 
-		FRA = { create_union = PRO }  
 		if = { 
 			limit = { LOR = { is_subject_of = PRO } }
+			inherit = LOR 
 		}
-		inherit = LOR 
+		FRA = { create_union = PRO }  
 		add_stability_or_adm_power = yes 
 	}
 	
 	option = { 
 		name = flavor_fra.106.b 
 		
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 0 }
 		break_alliance = FRA 
 		break_marriage = FRA 
 		declare_war_with_cb = {
@@ -2563,6 +2579,7 @@ country_event = {
 			}
 		}
 	}
+
 	option = {		# Don't give them anything
 		name = "flavor_spa.EVTOPTC3156"
 		ai_chance = { factor = 0 }
@@ -2821,6 +2838,9 @@ country_event = { #Treaty fo the Lily Flower
 	
 	option = {
 		name = flavor_fra.116.a 
+		ai_chance = {
+			factor = 100
+		} 
 		
 		if = { 
 			limit = { 
@@ -2853,6 +2873,46 @@ country_event = { #Treaty fo the Lily Flower
 				remove_core = FRA 
 				add_core = PAP
 				cede_province = PAP 
+			}
+		}
+	}
+
+	option = {
+		name = papacy_events.28.b
+
+		ai_chance = {
+			factor = 0
+		}
+		break_alliance = FRA 
+		add_truce_with = FRA 
+		add_historical_rival = FRA 
+		FRA = { add_historical_rival = ROOT }
+		
+		hidden_effect = {
+			FRA = {
+				if = { 
+					limit = { 
+						has_country_flag = fra_papal_lap_dop_flag 
+					}
+					clr_country_flag = fra_papal_lap_dop_flag 
+					set_country_flag = fra_chose_to_piss_off_pope_flag
+					swap_non_generic_missions = yes 
+					remove_country_modifier = fra_catholic_head_of_state_modifier 
+					remove_country_modifier = fra_fervent_call_to_arms_modifier 
+					clr_country_flag = enable_holy_orders_flag 
+					if = { 
+						limit = { 
+							KOJ = { is_subject_of = ROOT } 
+						}
+						KOJ = { add_liberty_desire = 25 } 
+					}
+					remove_country_modifier = fra_sword_of_christianity_modifier
+					remove_country_modifier = fra_sword_of_christianity_modifier2
+					remove_country_modifier = fra_sword_of_christianity_modifier3
+					remove_country_modifier = fra_sword_of_christianity_modifier4
+					remove_country_modifier = fra_sword_of_christianity_modifier5
+					remove_country_modifier = fra_jerusalem_modifier
+				}
 			}
 		}
 	}
@@ -3040,6 +3100,9 @@ country_event = { #Golden Bull Treaty
 			name = fra_integration_french_legal_code_modifier
 			duration = 7300
 		}
+		add_liberty_desire = -100
+		add_historical_friend = FRA 
+		FRA = { add_historical_friend = PAP }
 	}
 	
 	option = { 
@@ -3419,12 +3482,13 @@ country_event = { #The Holy Lands of Jerusalem
 			duration = 9125
 		}
 	}
+	
 	option = {
 		name = flavor_fra.205.b 
 		
 		add_papal_influence = 50 
 		change_ruler_stat = {
-			stat = mil
+			type = mil
 			amount = 2
 		}
 	}
@@ -3437,6 +3501,11 @@ country_event = { #France in the 15th Century
 	picture = wihgfx_FEMALE_GENERAL_eventPicture
 	is_triggered_only = yes 
 	fire_only_once = yes 
+	trigger = {
+		has_dlc = "Domination"
+		tag = FRA
+		not = { is_year = 1445 }
+	}
 	immediate = {
 		hidden_effect = {
 			if = { 
@@ -3450,6 +3519,7 @@ country_event = { #France in the 15th Century
 			}
 		}
 	}
+
 	option = {
 		name = flavor_fra.206.a 
 	}
@@ -3659,6 +3729,11 @@ country_event = {
     option = { # I love power like a musician loves his instruments
         name = flavor_fra.9504.a
 		if = {
+			limit = {
+				NOT = {
+					has_ruler = napoleon_bonaparte
+				}
+			}
 			hidden_effect = {
                 set_ruler = napoleon_bonaparte
             }
@@ -3769,8 +3844,14 @@ country_event = {
         name = flavor_fra.9507.a
         if = {
             limit = {
-                NOT = { is_religion_enabled = protestant }
+                NOT = { 
+					is_religion_enabled = protestant 
+				}
             }
+			8454 = {
+				change_culture = cosmopolitan_french
+			}
+
         }
         if = {
             limit = {
@@ -4043,13 +4124,25 @@ country_event = {
 		}
 		else = { #Napoleon is executed turning him into a martyr by San Felipe
 			kill_ruler = yes
-			add_nationalism = 50
-			add_unrest = 50
+			capital_scope = {
+				add_nationalism = 50
+				add_unrest = 50
+			}
 		}
 		BFR = { 
-		    set_ruler = louis_xviii
-			add_government_reform = french_monarchic_restoration_reform
-			remove_government_reform = french_first_empire_restoration_reform
+			define_ruler = {
+                name = "Louis XVIII"
+                dynasty = "de Bourbon"
+                adm = 1
+                dip = 1
+                mil = 1
+                age = 59
+                claim = 95
+            }
+			set_legacy_government = constitutional_monarchy
+			#set_ruler = louis_xviii
+			#add_government_reform = french_monarchic_restoration_reform
+			#remove_government_reform = french_first_empire_restoration_reform
 		}
 	}
 }
@@ -4331,6 +4424,7 @@ country_event = {
                     is_subject = no
                 }
             }
+			add_stability = -1
 		}
 		NGC = {
             country_event = { id = flavor_brapru.56 } 
@@ -4354,14 +4448,12 @@ country_event = {
     option = { # Never again shall we have kings or emperors! Long live the Republic!
         name = "flavor_fra.9521.a"
 		change_tag = FTR
-		if = {
-            hidden_effect = {
-				exile_ruler_as = { name = napoleon_iii_in_exile }
-            }		
-            FTR = { 
-                add_government_reform = french_third_republic_reform
-				remove_government_reform = second_french_empire_reform
-            }
+        hidden_effect = {
+			exile_ruler_as = { name = napoleon_iii_in_exile }
+        }		
+        FTR = { 
+            add_government_reform = french_third_republic_reform
+			remove_government_reform = second_french_empire_reform
         }
     }
 }
@@ -4412,11 +4504,11 @@ country_event = {
 				cede_province = FRA
 			}
 			add_truce_with = FRA
+			add_unrest = -4
 		}
 		FRA = { country_event = { id = flavor_fra.9524 } }
 		add_prestige = -100
-		add_stability = -2
-		add_unrest = -4
+		add_stability = -1
 		set_country_flag = rb_gave_up_calais
 	}
 	option = {

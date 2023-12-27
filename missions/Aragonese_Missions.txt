@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 aragonese_missions_1 = {
 	slot = 1
 	generic = no
@@ -66,10 +67,8 @@ aragonese_missions_1 = {
 			209 = {
 				if = {
 					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
+						NOT = {	owned_by = ROOT	}
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}

@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 mnd_khmer_1 = {
 	slot = 1
 	generic = no
@@ -288,11 +289,11 @@ mnd_khmer_3 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
+				value = 10
 				OR = {
 				    region = indo_china_region
 					region = south_china_sea_islands_region
 				}
-				value = 10
 				has_building = farm_estate
 				trade_goods = grain
 			}

@@ -12,11 +12,12 @@ native_size = 20
 native_ferocity = 1 
 native_hostileness = 3
 
-discovered_by = north_american
-#discovered_by = mesoamerican
 
 
-1550.1.1 = { discovered_by = SPA }	#The first encounter between the Spanish and natives occurred in the middle of the 16th century
+
+
+
+
 
 1687.1.1 = {
 	owner = SPA

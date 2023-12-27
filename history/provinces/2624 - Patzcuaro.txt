@@ -18,7 +18,8 @@ native_hostileness = 2
 
 
 
-#discovered_by = mesoamerican
+
+
 
 
 1530.1.1 = {

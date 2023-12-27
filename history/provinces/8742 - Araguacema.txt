@@ -1,7 +1,8 @@
 # - Araguacema
 
 culture = ge
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Araguacema"
 trade_goods = unknown

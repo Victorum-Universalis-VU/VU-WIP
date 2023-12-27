@@ -1,6 +1,6 @@
 #New Victorum Universalis Province
 
-culture = uralic
+culture = vu_komi
 religion = tengri_pagan_reformed
 capital = "Pechora"			#Placeholder, this city wasn't founded until modern era
 trade_goods = unknown

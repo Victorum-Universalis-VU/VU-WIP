@@ -1,10 +1,11 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-mercantilism = 0.1
+mercantilism = 25
 primary_culture = ger_dutch_saxon
 religion = catholic
-technology_group = german_tech_group
+#technology_group = western
+technology_group = dutch_tech_group
 unit_type = western
 capital = 8118	# Groningen
 fixed_capital = 8118

@@ -7,16 +7,23 @@ religion = buddhism
 capital = "Kale"
 trade_goods = rice
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = KAL
 
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 
 1480.1.1 = {
@@ -41,4 +48,4 @@ discovered_by = indian
 	owner = TAU
 	remove_core = SST
 }
-1760.1.1 = { discovered_by = GBR }
+

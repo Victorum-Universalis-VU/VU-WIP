@@ -3735,25 +3735,25 @@ country_event = {
 #####################
 
 country_event = {
-	id = institution_evets.100
+	id = institution_events.100
 	title = institution_events.100.t
 	desc = institution_events.100.d
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	goto = institution_origin
-	
+
 	trigger = {
 		always = yes
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			from = { save_event_target_as = institution_origin }
 		}
 	}
-	
+
 	option = {
 		name = institution_events.100.a
 		add_adm_power = 200
@@ -3799,15 +3799,15 @@ country_event = {
 	title = institution_events.100.t
 	desc = institution_events.100.d
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	goto = institution_origin
-	
+
 	trigger = {
 		always = yes
 	}
-	
+
 	option = {
 		name = institution_events.100.a
 		custom_tooltip = institution_events.100.a.tt
@@ -3820,13 +3820,13 @@ country_event = {
 	title = institution_events.100.t
 	desc = institution_events.1003.d
 	picture = SHIP_SAILING_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		always = no
 	}
-	
+
 	option = {
 		name = institution_events.100.a
 		custom_tooltip = institution_events.100.a.tt

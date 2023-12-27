@@ -837,11 +837,11 @@ FU_swiss_missions_4 = {
 		provinces_to_highlight = {
 			province_id = 186 
 			province_id = 1298 
+			NOT = {	has_merchant = PREV }
 			NOT = {
-				has_merchant = yes 
 				trade_share = {
 					country = ROOT 
-					share = 33 
+					share = 33
 				}
 			}
 		}
@@ -852,14 +852,14 @@ FU_swiss_missions_4 = {
 					country = ROOT 
 					share = 33 
 				}
-				has_merchant = yes 
+				has_merchant = PREV 
 			}
 			1298 = {
 				trade_share = {
 					country = ROOT 
 					share = 33 
 				}
-				has_merchant = yes 
+				has_merchant = PREV 
 			}
 		}
 		effect = {

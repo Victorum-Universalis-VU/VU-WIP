@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = abaza
+religion = orthodox
+#technology_group = eastern
+technology_group = russian_tech_group
+capital = 5559

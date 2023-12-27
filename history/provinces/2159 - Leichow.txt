@@ -8,17 +8,24 @@ religion = taoism
 capital = "Leichow"
 trade_goods = sugar
 hre = no
-base_tax = 6 
-base_production = 6
-base_manpower = 4
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 add_core = YUE
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
 
-1514.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
+
 
 1647.4.1 = {
 	owner = QNG

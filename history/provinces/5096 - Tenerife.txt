@@ -14,36 +14,25 @@ native_size = 20
 native_ferocity = 1
 native_hostileness = 0
 
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1494.4.1 = { 
-	discovered_by = CAS
+	
 	owner = CAS
 	controller = CAS
 	add_core = CAS

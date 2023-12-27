@@ -7,17 +7,24 @@ religion = buddhism
 capital = "Muang Song"
 trade_goods = rice
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 6
+base_production = 6
+base_manpower = 6
 fort_15th = yes
 is_city = yes
 add_core = LXA
 add_core = VIE
-discovered_by = chinese
-discovered_by = indian
 
-1535.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
 1579.1.1 = { unrest = 5 } # Revolt against vassalization
 1580.1.1 = { unrest = 0 }
 1627.1.1 = { unrest = 6 }

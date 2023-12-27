@@ -1,7 +1,8 @@
 government = monarchy
 government_rank = 2
 add_government_reform = feudalism_reform
-technology_group = hungarian_tech_group
+#technology_group = eastern
+technology_group = bulgarian_tech_group
 primary_culture = bulgarian
 religion = orthodox
 unit_type = eastern

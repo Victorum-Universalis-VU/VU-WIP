@@ -6,7 +6,7 @@ religion = catholic
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western
-capital = 41	# Königsberg
+capital = 50 #Berlin
 
 1510.12.14 = {
 	monarch = {

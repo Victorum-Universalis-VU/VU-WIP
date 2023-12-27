@@ -281,13 +281,13 @@ country_event = {
 			limit = {
 				ruler_has_personality = charismatic_negotiator_personality
 			}
-		#required_personality = charismatic_negotiator_personality
+			add_dip_power = 5
 		}
 		else_if = {
 			limit = {
 				ruler_has_personality = silver_tongue_personality
 			}
-		#required_personality = silver_tongue_personality
+			add_dip_power = 10
 		}
 		
 		add_years_of_income = 0.65
@@ -387,15 +387,14 @@ country_event = {
 			limit = {
 				ruler_has_personality = incorruptible_personality
 			}
-		#required_personality = incorruptible_personality
+			add_legitimacy = 5
 		}
 		else_if = {
 			limit = {
 				ruler_has_personality = righteous_personality
 			}
-		#required_personality = righteous_personality
+			add_legitimacy = 10
 		}
-		
 		kill_ruler = yes
 		add_republican_tradition = 12
 	}
@@ -541,19 +540,19 @@ country_event = {
 			limit = {
 				ruler_has_personality = intricate_web_weaver_personality
 			}
-		#required_personality = intricate_web_weaver_personality
+			add_dip_power = 5
 		}
 		else_if = {
 			limit = {
 				ruler_has_personality = righteous_personality
 			}
-		#required_personality = righteous_personality
+			add_legitimacy = 5
 		}
 		else_if = {
 			limit = {
 				ruler_has_personality = secretive_personality
 			}
-		#required_personality = secretive_personality
+			add_dip_power = 10
 		}
 		
 		add_republican_tradition = 3
@@ -694,7 +693,7 @@ country_event = {
 			
 		random_owned_province = {
 			limit = {
-				province_id = event_target:GE_reform_cycle_republic.401
+				province_id = event_target:holy_orthodoxy_cycle_GE_pos
 			}
 			random_list = {
 				50 = { }
@@ -788,13 +787,13 @@ country_event = {
 			limit = {
 				ruler_has_personality = midas_touched_personality
 			}
-		#required_personality = midas_touched_personality
+			add_treasury = 250
 		}
 		else_if = {
 			limit = {
 				ruler_has_personality = entrepreneur_personality
 			}
-		#required_personality = entrepreneur_personality
+			add_treasury = 125
 		}
 		
 		add_country_modifier = {

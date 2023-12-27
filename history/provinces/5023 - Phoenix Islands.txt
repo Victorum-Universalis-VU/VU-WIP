@@ -12,4 +12,3 @@ native_size = 1
 native_ferocity = 1
 native_hostileness = 1
 
-1568.1.1 = { discovered_by = SPA }

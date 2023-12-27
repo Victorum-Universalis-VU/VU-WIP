@@ -8,16 +8,11 @@ religion = taoism
 capital = "Ganzhou"
 trade_goods = lead
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 4
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
 add_core = NNG
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1595.1.1 = { discovered_by = SPA }
 
 1646.10.1 = {
 	owner = QNG

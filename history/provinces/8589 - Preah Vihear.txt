@@ -7,18 +7,25 @@ religion = buddhism
 capital = "Preah Vihear"
 trade_goods = rice
 hre = no
-base_tax = 2
-base_production = 2
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = KHM
 
 
 
-discovered_by = chinese
-discovered_by = indian
 
-1535.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
 
 1594.1.1 = {
 	owner = LXA

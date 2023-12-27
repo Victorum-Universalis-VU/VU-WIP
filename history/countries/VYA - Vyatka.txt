@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = russian
 add_accepted_culture = uralic
 religion = orthodox
+#technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 capital = 3281	# Vyatka

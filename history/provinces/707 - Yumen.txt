@@ -8,12 +8,13 @@ religion = vajrayana
 capital = "Yumen"
 trade_goods = livestock
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 2
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 extra_cost = 16
 
 1513.1.1 = { owner = CHG controller = CHG}
@@ -28,7 +29,7 @@ extra_cost = 16
 	controller = ZUN
 	add_core = ZUN
 }
-1709.1.1 = { discovered_by = SPA }
+
 1755.1.1 = {
 	owner = QNG
 	controller = QNG

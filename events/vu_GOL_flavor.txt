@@ -96,7 +96,7 @@ country_event = { # Grand stand on the Ugra river - Horde crumbles
 		add_country_modifier = {
 			name = great_horde_humiliated
 			duration = 7300	#20 years should be enough
-			hidden = no
+			hidden = yes
 		}
 		clr_country_flag = moscov_no_tribute
 		set_country_flag = decline_of_great_horde
@@ -247,7 +247,7 @@ country_event = { # Dismantle Great Horde
 		AST = {
 			change_religion = sunni
 			adopt_reform_progress = ROOT
-			change_government = steppe_horde
+			change_government = tribal
 			set_government_rank = 1
 		}
 		if = {

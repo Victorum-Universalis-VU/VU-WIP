@@ -13,8 +13,9 @@ base_tax = 3
 base_production = 3
 add_core = MAL
 add_core = KBU #Subject province within the empire
-#discovered_by = sub_saharan
 add_local_autonomy = 50
 extra_cost = 8
 
-1446.1.1 = { discovered_by = POR }
+
+
+

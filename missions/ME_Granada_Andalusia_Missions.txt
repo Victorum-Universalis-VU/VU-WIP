@@ -1153,7 +1153,6 @@ ADU_missions_1_western = {
 				name = GRA_gunpowder
 				age = age_of_reformation
 				duration = -1
-				else = " add_army_tradition_or_mil_power = { amount = 10 } "
 			}
 			
 			define_advisor = {
@@ -1309,7 +1308,6 @@ ADU_missions_1_muslim = {
 				name = GRA_gunpowder
 				age = age_of_reformation
 				duration = -1
-				else = " add_army_tradition_or_mil_power = { amount = 10 } "
 			}
 		}
 	}
@@ -1952,7 +1950,6 @@ ADU_missions_2_muslim = {
 		effect = {
 			add_age_modifier = {
 				age = age_of_reformation
-				else = " add_army_tradition_or_mil_power = { amount = 25 } "
 				name = GRA_heroes_of_the_faith
 				duration = -1
 			}

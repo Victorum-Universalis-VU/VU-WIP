@@ -12,20 +12,11 @@ native_size = 30
 native_ferocity = 4
 native_hostileness = 9
 
-1444.1.1 = { discovered_by = ETH } 
-1444.1.1 = { discovered_by = ADA } 
-1444.1.1 = { discovered_by = NUB } 
-1444.1.1 = { discovered_by = ZAN } 
-1444.1.1 = { discovered_by = AJU } 
-1444.1.1 = { discovered_by = MBA } 
-1444.1.1 = { discovered_by = MDI } 
-1444.1.1 = { discovered_by = MLI } 
-1444.1.1 = { discovered_by = SFA } 
-1444.1.1 = { discovered_by = ZIM } 
+
 
 extra_cost = 8
 
-1498.1.15 = { discovered_by = POR } #Vasco Da Gama
+
 
 #1560.1.1 - Portuguese tradepost established
 1727.1.1 = {

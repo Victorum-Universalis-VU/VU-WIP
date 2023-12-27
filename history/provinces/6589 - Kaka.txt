@@ -13,14 +13,10 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-#discovered_by = east_african
-#discovered_by = muslim
-
 1503.1.1 = {
 	owner = NUB
 	controller = NUB
 	add_core = NUB
-	discovered_by = NUB
 } #Establishment of the Funj Sultanate
 1565.1.1 = { unrest = 8 } #Shaykh Ajib launches invasion of Funj heartland
 1566.1.1 = { unrest = 0 } #Shaykh Ajib forces Funj out of Sennar

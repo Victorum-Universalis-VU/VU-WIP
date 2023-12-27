@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = eastern
+#technology_group = eastern
+technology_group = polish_tech_group
 primary_culture = lithuanian
 religion = catholic
 capital = 271

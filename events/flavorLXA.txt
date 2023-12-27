@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 namespace = flavor_lxa
 normal_or_historical_nations = yes
 

@@ -8,14 +8,15 @@ religion = animism
 capital = "Balanga"
 trade_goods = cloves
 hre = no
-base_tax = 10
-base_production = 10
+base_tax = 4
+base_production = 4
 base_manpower = 4
 is_city = yes
 
-discovered_by = chinese
 
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+
+
+ # Ferdinand Magellan 
 1570.5.1 = {
 	owner = SPA
 	controller = SPA

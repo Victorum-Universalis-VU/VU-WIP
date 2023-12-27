@@ -1,7 +1,8 @@
 #3080 - Guarabira
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Guarabira"
 trade_goods = unknown

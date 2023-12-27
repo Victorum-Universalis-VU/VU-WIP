@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 nor_colonialism_mission_slot = {
 	slot = 1
 	generic = no
@@ -995,7 +995,7 @@ nor_colonize_middle_america_slot = {
 					}
 				}
 				else = {
-					custom_tooltip = nor_colonize_greenland_vu
+					custom_tooltip = nor_colonize_greenland_bt
 				}
 				if = {
 					limit = {
@@ -1152,7 +1152,7 @@ nor_circumnavigate_the_world_slot = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = nor_circumnavigate_the_world_vu
+				tooltip = nor_circumnavigate_the_world_bt
 				OR = {
 					AND = {
 						OR = {
@@ -2039,8 +2039,9 @@ nor_religion_start_mission_slot = {
 			}
 		}
 		effect = {
-			country_event = {
-				id = flavor_sca.1
+			enable_branching_mission_review = {
+				key = NOR
+				ai_event_id = flavor_sca.1
 			}
 		}
 	}
@@ -2287,7 +2288,7 @@ nor_religion_mission_slot = {
 			}
 			custom_tooltip = swe_humanist_effects_tt
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 		}
@@ -2328,6 +2329,7 @@ nor_catholic_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion = catholic
 			OR = {
 				is_papal_controller = yes
@@ -2386,6 +2388,7 @@ nor_catholic_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion = catholic
 			owns_core_province = 4144
 			4144 = {
@@ -2457,6 +2460,7 @@ nor_protestant_mission_slot = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion_group = christian
 			NOT = { religion = catholic }
 			OR = {
@@ -2523,6 +2527,7 @@ nor_protestant_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion_group = christian
 			NOT = { religion = catholic }
 			owns_core_province = 4144
@@ -2591,6 +2596,7 @@ nor_humanist_mission_slot = {
 		required_missions = { nor_religious_path_mission }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			has_idea_group = humanist_ideas
 			if = {
 				limit = { has_estate = estate_church }
@@ -2626,6 +2632,7 @@ nor_humanist_mission_slot = {
 		required_missions = { nor_remove_power_from_the_clergy }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			has_idea_group = humanist_ideas
 			full_idea_group = humanist_ideas
 			num_accepted_cultures = 5
@@ -2636,7 +2643,7 @@ nor_humanist_mission_slot = {
 		}
 		effect = {
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 		}
@@ -2678,6 +2685,7 @@ nor_norse_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion = norse_pagan_reformed
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				religion = ROOT
@@ -2741,6 +2749,7 @@ nor_norse_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = NOR }
 			religion = norse_pagan_reformed
 			num_of_owned_provinces_with = {
 				region = british_isles_region

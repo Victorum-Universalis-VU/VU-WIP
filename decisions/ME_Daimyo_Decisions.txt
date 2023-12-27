@@ -80,10 +80,8 @@ country_decisions = {
 			factor = 1 #Basic
 			modifier = { #there is not a defining power and the flags are not activated
 				factor = 0
-				NOT = {
-					has_country_flag = JAP_supporting_yamana
-					has_country_flag = JAP_supporting_hosokawa
-				}
+				NOT = { has_country_flag = JAP_supporting_yamana }
+				NOT = {	has_country_flag = JAP_supporting_hosokawa }
 				AND = {
 					NOT = {
 						variable_arithmetic_trigger = {

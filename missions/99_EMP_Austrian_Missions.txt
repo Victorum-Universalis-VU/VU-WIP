@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 #This file is necessary due to load order, so I can make use of column 3 rows 1-5 for DLC missions without overwriting the Vanilla mission at 3:6
 
 
@@ -389,7 +390,7 @@ emp_hab_netherlands_branch = {
 						}
 						NOT = { owned_by = root }
 						NOT = { is_core = root }
-						NOT = { is_claim = root }
+						NOT = { is_permanent_claim = root }
 						any_neighbor_province = {
 							owned_by = root
 						}
@@ -432,7 +433,7 @@ emp_hab_netherlands_branch = {
 				limit = {
 					is_city = yes
 					NOT = { is_core = root }
-					NOT = { is_claim = root }
+					NOT = { is_permanent_claim = root }
 					NOT = {
 						owner = {
 							is_subject_of = root

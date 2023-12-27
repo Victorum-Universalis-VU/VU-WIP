@@ -7,16 +7,23 @@ religion = buddhism
 capital = "Xieng Tong"
 trade_goods = jade
 hre = no
-base_tax = 5
-base_production = 5
-base_manpower = 5
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = LXA
 add_core = LUA
 center_of_trade = 2
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 
 1560.1.1 = { capital = "Luang Prabang" }
@@ -24,7 +31,7 @@ discovered_by = indian
 1580.1.1 = { unrest = 0 }
 1593.1.1 = { unrest = 4 } # Revolt against Burmese vassalization
 1603.1.1 = { unrest = 0 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1694.1.1 = { add_core = AYU } # Siamnese Intervention
 1707.1.1 = {
 	owner = LUA

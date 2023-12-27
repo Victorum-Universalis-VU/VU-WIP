@@ -1,7 +1,11 @@
+#VU - Updated by San Felipe for 1.36.*
 manchu_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
 		OR = {
 			tag = MJZ
@@ -13,7 +17,6 @@ manchu_missions_1 = {
 			tag = NHX
 		}
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" }
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
@@ -195,10 +198,13 @@ manchu_missions_1_b = {
 	slot = 1
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
-		tag = MJZ
+		tag = QNG
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" } 
+
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
@@ -499,6 +505,9 @@ manchu_missions_2 = {
 	slot = 2
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
 		OR = {
 			tag = MJZ
@@ -510,7 +519,6 @@ manchu_missions_2 = {
 			tag = NHX
 		}
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" } 
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
@@ -783,14 +791,17 @@ manchu_missions_2_b = {
 	slot = 2
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
-		tag = MJZ
+		tag = QNG
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" } 
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
+
 	mch_establish_tributaries = {
 		icon = mission_kowtow
 		required_missions = { mch_mandate_of_heaven }
@@ -1092,6 +1103,9 @@ manchu_missions_3 = {
 	slot = 3
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
 		OR = {
 			tag = MJZ
@@ -1103,7 +1117,6 @@ manchu_missions_3 = {
 			tag = NHX
 		}
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" } 
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
@@ -1136,10 +1149,12 @@ manchu_missions_3_b = {
 	slot = 3
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
-		tag = MJZ
+		tag = QNG
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" } 
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}
@@ -1311,10 +1326,12 @@ manchu_missions_4 = {
 	slot = 4
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
-		tag = MJZ
+		tag = QNG
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Mandate of Heaven" }
 		NOT = { has_dlc = "Domination" }
 		has_country_flag = use_paradox_missions
 	}

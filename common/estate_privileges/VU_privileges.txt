@@ -6,10 +6,10 @@ estate_jews_foster_jews = {
 	loyalty = 0.15
 	influence = 0.1
 	is_valid = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	on_granted = {
 		custom_tooltip = estate_jews_foster_jews_effect_tooltip
@@ -37,7 +37,37 @@ estate_jews_foster_jews = {
 		tolerance_heathen = 1
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_jews
+					influence = 60
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0
+			has_idea_group = religious_ideas
+		}
 	}
 }
 
@@ -48,12 +78,12 @@ estate_jews_jewish_quarters = {
 	loyalty = 0.05
 	influence = 0.05
 	is_valid = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	can_select = {
 		treasury = 675
 		has_estate_privilege = estate_jews_foster_jews
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	on_granted = {
 		add_treasury = -675
@@ -102,7 +132,7 @@ estate_jews_jewish_quarters = {
 	benefits = {
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
 	}
 }
 
@@ -113,10 +143,10 @@ estate_jews_foster_jews_banking = {
 	loyalty = 0.15
 	influence = 0.1
 	is_valid = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 		has_estate_privilege = estate_jews_foster_jews
 	}
 	on_granted = {
@@ -141,7 +171,7 @@ estate_jews_foster_jews_banking = {
 		tolerance_heathen = 1
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
 	}
 }
 
@@ -152,10 +182,10 @@ estate_jews_foster_jews_homes = {
 	loyalty = 0.2
 	influence = 0.1
 	is_valid = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 		has_estate_privilege = estate_jews_foster_jews
 	}
 	on_granted = {
@@ -179,9 +209,44 @@ estate_jews_foster_jews_homes = {
 		tolerance_heathen = 1
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
 	}
 }
+
+estate_jews_jewish_independence = {
+	icon = privilege_land_rights
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
+		has_estate_privilege = estate_jews_foster_jews
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
 
 estate_jews_land_privileges = {
 	icon = privilege_grant_autonomy
@@ -190,10 +255,10 @@ estate_jews_land_privileges = {
 	loyalty = 0.05
 	influence = 0
 	is_valid = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_jews_suck }
+		NOT = { has_estate_privilege = estate_jews_suck_privileges }
 		has_estate_privilege = estate_jews_foster_jews
 	}
 	on_granted = {
@@ -206,11 +271,11 @@ estate_jews_land_privileges = {
 		exempt_from_seize_land
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
 	}
 }
 
-estate_jews_suck = {
+estate_jews_suck_privileges = {
 	icon = privilege_recruit_inouisitor
 	land_share = -10
 	max_absolutism = 5
@@ -248,7 +313,15 @@ estate_jews_suck = {
 		development_cost_in_primary_culture = -0.1
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 2.5
+			has_idea_group = religious_ideas
+		}
 	}
 }
 
@@ -263,7 +336,7 @@ estate_jews_suck_2 = {
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_jews_foster_jews }
-		has_estate_privilege = estate_jews_suck 
+		has_estate_privilege = estate_jews_suck_privileges 
 	}
 	on_granted = {
 		custom_tooltip = estate_jews_suck_2_effect_tooltip
@@ -292,7 +365,15 @@ estate_jews_suck_2 = {
 		development_cost_in_primary_culture = -0.1
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 0.7
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 2.5
+			has_idea_group = religious_ideas
+		}
 	}
 }
 
@@ -2158,7 +2239,7 @@ estate_peasants_land_rights = {
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 50
+		governing_capacity = 200
 	}
 	ai_will_do = {
 		factor = 0
@@ -2216,8 +2297,8 @@ estate_peasants_voting_rights = {
 		government = republic
 	}
 	penalties = {
-		stability_cost_modifier = 0.50
-		reelection_cost = 0.15
+		stability_cost_modifier = 0.15
+		reelection_cost = 0.10
 	}
 	benefits = {
 		republican_tradition = 0.20
@@ -2333,169 +2414,167 @@ estate_peasants_bear_arms = {
 
 ###############Ghulam Privileges###############
 
-estate_ghulams_land_rights = {
-	icon = privilege_grant_autonomy
-	land_share = 5
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.05
-	can_select = {
-	}
-	on_granted = {
-	}
-	penalties = {
-	}
-	benefits = {
-		governing_capacity = 100
-	}
-	ai_will_do = {
-		factor = 0
-	}
-}
-
-estate_ghulams_loyalty_privilege = {
-	icon = privilege_royal_authority
-	max_absolutism = -10
-	loyalty = 0.1
-	influence = 0.1
-	can_select = {
-	}
-	penalties = {
-	}
-	benefits = {
-		defensiveness = 0.05
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
-}
-
-estate_ghulams_military_corps = {
-	icon = privilege_promote_purbias
-	max_absolutism = -5
-	loyalty = 0.00
-	influence = 0.05
-	can_select = {
-	}
-	is_valid = {
-		has_government_attribute = enables_fire_ghulams
-	}
-	can_select = {
-		has_government_attribute = enables_fire_ghulams
-	}
-	penalties = {
-		nobles_loyalty_modifier = -0.10
-		nobles_influence_modifier = -0.10
-	}
-	benefits = {
-		allowed_rajput_fraction = 0.1
-	}
-	on_granted = {
-		add_country_modifier = {
-			name = GE_ghulam_regiments
-			duration = -1
-		}
-	}
-	on_revoked = {
-		remove_country_modifier = GE_ghulam_regiments
-	}
-	modifier_by_land_ownership = {
-		allowed_rajput_fraction = 0.5
-	}
-	mechanics = {
-		enables_rajput_regiments
-	}
-	ai_will_do = {
-		factor = 10
-	}
-}
-
-estate_ghulams_governor_positions = {
-	icon = privilege_royal_authority
-	max_absolutism = 0
-	loyalty = 0.05
-	influence = 0.05
-	is_valid = {
-		has_government_attribute = enables_ghulam_governors
-	}
-	can_select = {
-		has_government_attribute = enables_ghulam_governors
-	}
-	penalties = {
-		nobles_loyalty_modifier = -0.05
-		nobles_influence_modifier = -0.10
-	}
-	benefits = {
-		global_autonomy = -0.05
-	}
-	modifier_by_land_ownership = {
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
-}
-
-estate_ghulams_trade_privileges = {
-	icon = privilege_monopoly_of_goods_cloth
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.05
-	can_select = {
-	}
-	is_valid = {
-	}
-	penalties = {
-		burghers_loyalty_modifier = -0.10
-		burghers_influence_modifier = -0.10
-	}
-	benefits = {
-		merchants = 1
-	}
-	modifier_by_land_ownership = {
-		trade_efficiency = 0.10
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
-}
-
-estate_ghulams_councilor = {
-	icon = privilege_recruit_minister
-	max_absolutism = -5
-	loyalty = 0.05
-	influence = 0.10
-	is_valid = {
-	}
-	can_select = {
-	}
-	penalties = {
-		stability_cost_modifier = 0.15
-	}
-	benefits = {
-		advisor_cost = -0.10
-	}
-	modifier_by_land_ownership = {
-	}
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 0
-			is_absolutism_active = yes
-		}
-	}
-}
+#estate_ghulams_land_rights = {
+#	icon = privilege_grant_autonomy
+#	land_share = 5
+#	max_absolutism = -5
+#	loyalty = 0.05
+#	influence = 0.05
+#	can_select = {
+#	}
+#	on_granted = {
+#	}
+#	penalties = {
+#	}
+#	benefits = {
+#		governing_capacity = 100
+#	}
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
+#
+#estate_ghulams_loyalty_privilege = {
+#	icon = privilege_royal_authority
+#	max_absolutism = -10
+#	loyalty = 0.1
+#	influence = 0.1
+#	can_select = {
+#	}
+#	penalties = {
+#	}
+#	benefits = {
+#		defensiveness = 0.05
+#	}
+#	ai_will_do = {
+#		factor = 10
+#		modifier = {
+#			factor = 0
+#			is_absolutism_active = yes
+#		}
+#	}
+#}
+#
+#estate_ghulams_military_corps = {
+#	icon = privilege_promote_purbias
+#	max_absolutism = -5
+#	loyalty = 0.00
+#	influence = 0.05
+#	is_valid = {
+#		has_government_attribute = enables_fire_ghulams
+#	}
+#	can_select = {
+#		has_government_attribute = enables_fire_ghulams
+#	}
+#	penalties = {
+#		nobles_loyalty_modifier = -0.10
+#		nobles_influence_modifier = -0.10
+#	}
+#	benefits = {
+#		allowed_rajput_fraction = 0.1
+#	}
+#	on_granted = {
+#		add_country_modifier = {
+#			name = GE_ghulam_regiments
+#			duration = -1
+#		}
+#	}
+#	on_revoked = {
+#		remove_country_modifier = GE_ghulam_regiments
+#	}
+#	modifier_by_land_ownership = {
+#		allowed_rajput_fraction = 0.5
+#	}
+#	mechanics = {
+#		enables_rajput_regiments
+#	}
+#	ai_will_do = {
+#		factor = 10
+#	}
+#}
+#
+#estate_ghulams_governor_positions = {
+#	icon = privilege_royal_authority
+#	max_absolutism = 0
+#	loyalty = 0.05
+#	influence = 0.05
+#	is_valid = {
+#		has_government_attribute = enables_ghulam_governors
+#	}
+#	can_select = {
+#		has_government_attribute = enables_ghulam_governors
+#	}
+#	penalties = {
+#		nobles_loyalty_modifier = -0.05
+#		nobles_influence_modifier = -0.10
+#	}
+#	benefits = {
+#		global_autonomy = -0.05
+#	}
+#	modifier_by_land_ownership = {
+#	}
+#	ai_will_do = {
+#		factor = 10
+#		modifier = {
+#			factor = 0
+#			is_absolutism_active = yes
+#		}
+#	}
+#}
+#
+#estate_ghulams_trade_privileges = {
+#	icon = privilege_monopoly_of_goods_cloth
+#	max_absolutism = -5
+#	loyalty = 0.05
+#	influence = 0.05
+#	can_select = {
+#	}
+#	is_valid = {
+#	}
+#	penalties = {
+#		burghers_loyalty_modifier = -0.10
+#		burghers_influence_modifier = -0.10
+#	}
+#	benefits = {
+#		merchants = 1
+#	}
+#	modifier_by_land_ownership = {
+#		trade_efficiency = 0.10
+#	}
+#	ai_will_do = {
+#		factor = 10
+#		modifier = {
+#			factor = 0
+#			is_absolutism_active = yes
+#		}
+#	}
+#}
+#
+#estate_ghulams_councilor = {
+#	icon = privilege_recruit_minister
+#	max_absolutism = -5
+#	loyalty = 0.05
+#	influence = 0.10
+#	is_valid = {
+#	}
+#	can_select = {
+#	}
+#	penalties = {
+#		stability_cost_modifier = 0.15
+#	}
+#	benefits = {
+#		advisor_cost = -0.10
+#	}
+#	modifier_by_land_ownership = {
+#	}
+#	ai_will_do = {
+#		factor = 10
+#		modifier = {
+#			factor = 0
+#			is_absolutism_active = yes
+#		}
+#	}
+#}
 
 ###############Noble Privileges###############
 
@@ -3045,20 +3124,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = {	is_subject_of_type = tributary_state }
 				}
 				amount = 1
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+					    NOT = {	is_subject_of_type = tributary_state }
 					}
 					amount = 2
 				}
@@ -3072,20 +3147,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = {	is_subject_of_type = tributary_state }
 				}
 				amount = 2
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = {	is_subject_of_type = tributary_state }
 					}
 					amount = 3
 				}
@@ -3099,20 +3170,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = {	is_subject_of_type = tributary_state }
 				}
 				amount = 3
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = {	is_subject_of_type = tributary_state }
 					}
 					amount = 4
 				}
@@ -3126,20 +3193,16 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = {	is_subject_of_type = tributary_state }
 				}
 				amount = 4
 			}
 			NOT = {
 				calc_true_if = {
 					all_subject_country = {
-						NOT = {
-							is_colonial_nation = yes
-							is_subject_of_type = tributary_state
-						}
+						NOT = { is_colonial_nation = yes }
+						NOT = {	is_subject_of_type = tributary_state }
 					}
 					amount = 5
 				}
@@ -3153,10 +3216,8 @@ estate_nobles_blood_tax = {
 		trigger = {
 			calc_true_if = {
 				all_subject_country = {
-					NOT = {
-						is_colonial_nation = yes
-						is_subject_of_type = tributary_state
-					}
+					NOT = { is_colonial_nation = yes }
+					NOT = {	is_subject_of_type = tributary_state }
 				}
 				amount = 5
 			}
@@ -3344,8 +3405,6 @@ estate_nobles_elite_guards = {
 	max_absolutism = -5
 	loyalty = 0.00
 	influence = 0.05
-	can_select = {
-	}
 	is_valid = {
 		has_government_attribute = enables_elite_regiments
 	}
@@ -3374,8 +3433,6 @@ estate_nobles_elite_guards = {
 	}
 	on_invalid = {
 		remove_country_modifier = GE_guards_regiments
-	}
-	modifier_by_land_ownership = {
 	}
 	mechanics = {
 		enables_rajput_regiments
@@ -6430,9 +6487,11 @@ estate_nobles_very_strong_duchies = {
 					is_subject_of_type = naval_march
 					is_subject_of_type = defensive_march 
 					is_subject_of_type = march
+					is_subject_of_type = viceroyalty_vu
+					is_subject_of_type = religious_march
 					is_subject_of_type = agricultural_march 
 					is_subject_of_type = medieval_vassal 
-					#is_subject_of_type = silesian_duke  
+					#is_subject_of_type = silesian_duke   
 				}
 			}
 			amount = 3
@@ -6462,9 +6521,11 @@ estate_nobles_very_strong_duchies = {
 							is_subject_of_type = naval_march
 							is_subject_of_type = defensive_march 
 							is_subject_of_type = march
+							is_subject_of_type = viceroyalty_vu
+							is_subject_of_type = religious_march
 							is_subject_of_type = agricultural_march 
 							is_subject_of_type = medieval_vassal 
-							#is_subject_of_type = silesian_duke  
+							#is_subject_of_type = silesian_duke
 						}
 					}
 				amount = 4
@@ -6508,9 +6569,11 @@ estate_nobles_extremely_strong_duchies = {
 					is_subject_of_type = naval_march
 					is_subject_of_type = defensive_march 
 					is_subject_of_type = march
+					is_subject_of_type = viceroyalty_vu
+					is_subject_of_type = religious_march
 					is_subject_of_type = agricultural_march 
 					is_subject_of_type = medieval_vassal 
-					#is_subject_of_type = silesian_duke  
+					#is_subject_of_type = silesian_duke   
 				}
 			}
 		}
@@ -6536,9 +6599,11 @@ estate_nobles_extremely_strong_duchies = {
 							is_subject_of_type = naval_march
 							is_subject_of_type = defensive_march 
 							is_subject_of_type = march
+							is_subject_of_type = viceroyalty_vu
+							is_subject_of_type = religious_march
 							is_subject_of_type = agricultural_march 
 							is_subject_of_type = medieval_vassal 
-							#is_subject_of_type = silesian_duke  
+							#is_subject_of_type = silesian_duke 
 						}
 					}
 				}
@@ -6581,6 +6646,7 @@ estate_nobles_british_strong_marches = {
 		OR = {
 			all_subject_country = {
 				OR = {
+					is_subject_of_type = appanage
 					is_subject_of_type = vassal
 					is_subject_of_type = client_vassal
 					is_subject_of_type = march
@@ -6589,9 +6655,11 @@ estate_nobles_british_strong_marches = {
 					is_subject_of_type = naval_march
 					is_subject_of_type = defensive_march 
 					is_subject_of_type = march
+					is_subject_of_type = viceroyalty_vu
+					is_subject_of_type = religious_march
 					is_subject_of_type = agricultural_march 
 					is_subject_of_type = medieval_vassal 
-					#is_subject_of_type = silesian_duke  
+					#is_subject_of_type = silesian_duke   
 				}
 			}
 			vassal = 1
@@ -6608,6 +6676,7 @@ estate_nobles_british_strong_marches = {
 					amount = 2
 					all_subject_country = {
 						OR = {
+							is_subject_of_type = appanage
 							is_subject_of_type = vassal
 							is_subject_of_type = client_vassal
 							is_subject_of_type = march
@@ -6616,9 +6685,11 @@ estate_nobles_british_strong_marches = {
 							is_subject_of_type = naval_march
 							is_subject_of_type = defensive_march 
 							is_subject_of_type = march
+							is_subject_of_type = viceroyalty_vu
+							is_subject_of_type = religious_march
 							is_subject_of_type = agricultural_march 
 							is_subject_of_type = medieval_vassal 
-							#is_subject_of_type = silesian_duke  
+							#is_subject_of_type = silesian_duke
 						}
 					}
 				}

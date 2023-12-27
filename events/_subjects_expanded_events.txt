@@ -54,7 +54,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = voivodeship }
 			count_num_of_subjects_of_type = { type = fief_subject }
 			count_num_of_subjects_of_type = { type = crusader_state_vassal }
-			count_num_of_subjects_of_type = { type = salic_personal_union }
+			#count_num_of_subjects_of_type = { type = salic_personal_union }
 			count_num_of_subjects_of_type = { type = nahuatl_vassal }
 			count_num_of_subjects_of_type = { type = peasant_vassal }
 			count_num_of_subjects_of_type = { type = pirate_brotherhood_vassal }
@@ -152,13 +152,13 @@ country_event = {
 		display_subjects_of_type = { type = crusader_state_vassal }
 	}
 
-	option = {
-		name = subjects_expanded_events2.EVTOPT9
-
-		ai_chance = { factor = 100 }
-
-		display_subjects_of_type = { type = salic_personal_union }
-	}
+	#option = {
+	#	name = subjects_expanded_events2.EVTOPT9
+    #
+	#	ai_chance = { factor = 100 }
+    #
+	#	display_subjects_of_type = { type = salic_personal_union }
+	#}
 
 	option = {
 		name = subjects_expanded_events2.EVTOPT10
@@ -411,7 +411,7 @@ country_event = {
 			clear_display_variable_for_subjects_of_type = { type = voivodeship }
 			clear_display_variable_for_subjects_of_type = { type = fief_subject }
 			clear_display_variable_for_subjects_of_type = { type = crusader_state_vassal }
-			clear_display_variable_for_subjects_of_type = { type = salic_personal_union }
+			#clear_display_variable_for_subjects_of_type = { type = salic_personal_union }
 			clear_display_variable_for_subjects_of_type = { type = nahuatl_vassal }
 			clear_display_variable_for_subjects_of_type = { type = peasant_vassal }
 			clear_display_variable_for_subjects_of_type = { type = pirate_brotherhood_vassal }
@@ -595,13 +595,13 @@ country_event = {
 		display_info_for_subject_type = { type = crusader_state_vassal }
 	}
 
-	option = {
-		name = subjects_expanded_events5.EVTOPT9
-
-		ai_chance = { factor = 100 }
-
-		display_info_for_subject_type = { type = salic_personal_union }
-	}
+	#option = {
+	#	name = subjects_expanded_events5.EVTOPT9
+    #
+	#	ai_chance = { factor = 100 }
+    #
+	#	display_info_for_subject_type = { type = salic_personal_union }
+	#}
 
 	option = {
 		name = subjects_expanded_events5.EVTOPT10

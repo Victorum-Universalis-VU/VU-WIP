@@ -561,8 +561,8 @@ TEU_Missions_3 = {
 							who = LIV
 							value = 150
 						}
-						alliance_with = LIV
 					}
+					NOT = {	alliance_with = LIV	}
 					num_of_owned_provinces_with = {
 						OR = {
 							area = curonia_area

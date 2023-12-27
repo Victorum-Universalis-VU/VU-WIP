@@ -13,16 +13,16 @@ native_ferocity = 1
 native_hostileness = 3 
 
 
-discovered_by = north_american
+
 
 
 1550.1.1 = {
 	culture = iroquois
 } # Laurentians appear to have been completely wiped out by around this time. Many theories abound including war with other Iroquoians, European diseases, mass migration, population colapse from overfarming or others. War with Iroquois considered most likely. When Champlain arrives, area controled by the Mohawk
 
-1608.1.1 = { discovered_by = FRA } # Samuel de Champlain
 
-1629.1.1 = { discovered_by = ENG }
+
+
 
 1652.1.1 = {
 	owner = ABE
@@ -48,7 +48,7 @@ discovered_by = north_american
 	culture = abenaki
 } #Great Peace of Montreal pushes Iroquois out. French set aside the land as a reserve for their Abenaki allies, which lasts until after the British gain control of the region 60 years later. Going off memory here, shoud check sources
 
-1707.5.12 = { discovered_by = GBR }
+
 
 1763.2.10 = {
 	owner = GBR
@@ -60,7 +60,7 @@ discovered_by = north_american
 } # Treaty of Paris - With the departure of their French allies, the Abenakis position of former semi-protectorates becomes untenable here and the land effctively defaults to Britain
 
 1779.1.1 = {
-	culture = canadien
+	culture = quebecois
 	religion = catholic
 }	#First European presence Jean-Baptiste Nolain
 

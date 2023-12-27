@@ -2,7 +2,7 @@ spain_iron_fist_in_the_netherlands_province_modifier = {
 	potential = {
 		region = low_countries_region
 		owner = {
-			mission_completed = spain_iron_fist_in_the_netherlands
+			mission_completed = gc_spa_spanish_netherlands2
 		}
 	}
 
@@ -10,7 +10,7 @@ spain_iron_fist_in_the_netherlands_province_modifier = {
 		owner = {
 			custom_trigger_tooltip = {
 				tooltip = SPA_RULER_RULES_WITH_IRON_FIST
-				has_ruler_flag = spain_iron_fist_in_the_netherlands_ruler_flag
+				has_ruler_flag = gc_spa_spanish_netherlands2_ruler_flag
 			}
 		}
 	}

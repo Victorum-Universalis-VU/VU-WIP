@@ -1,7 +1,8 @@
 government = theocracy
 add_government_reform = leading_clergy_reform
 government_rank = 1
-technology_group = bohemian_tech_group
+#technology_group = eastern
+technology_group = polish_tech_group
 unit_type = western
 primary_culture = schlesian
 add_accepted_culture = silesian_german

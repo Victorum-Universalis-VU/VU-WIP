@@ -8,13 +8,10 @@ religion = tengri_pagan_reformed
 capital = "Tunhe"
 trade_goods = lumber
 hre = no
-base_tax = 2
-base_production = 4
-base_manpower = 4
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
 
 1613.2.1 = {
 	owner = MJZ
@@ -34,4 +31,4 @@ discovered_by = chinese
 	add_core = QNG
 	remove_core = MCH
 } # The Qing Dynasty
-1709.1.1 = { discovered_by = SPA }
+

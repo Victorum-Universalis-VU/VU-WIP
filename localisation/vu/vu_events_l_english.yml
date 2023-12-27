@@ -1,6 +1,22 @@
 ﻿l_english:
  #VU EVENTS
  #VU Quonton additions
+ #Romanization Events
+ vu_restore_roman_culture.EVTNAME1:"Romanization"
+ vu_restore_roman_culture.EVTDESC1:"Romanization is the process of converting lands under our control and returning the old Latin Roman culture and language to these lands. We have converted §Y[Root.vu_romano_culture_to_convert.GetValue]§! regions. There are §Y8§! Regions in total we can convert."
+ vu_restore_roman_culture.EVTOPT1:"Romanization isn't in our interest at the moment"
+ vu_restore_roman_culture.EVTOPT2:"Romanize Italy"
+ vu_restore_roman_culture.EVTOPT3:"Romanize Gaul"
+ vu_restore_roman_culture.EVTOPT4:"Romanize Africa"
+ vu_restore_roman_culture.EVTOPT5:"Romanize Illyria"
+ vu_restore_roman_culture.EVTOPT6:"Romanize Hispania"
+ vu_restore_roman_culture.EVTOPT7:"Romanize Dacia"
+ vu_restore_roman_culture.EVTOPT8:"Romanize Raetia"
+ vu_restore_roman_culture.EVTOPT9:"Romanize Britan"
+ #
+ vu_restore_roman_culture.EVTNAME2:"Finalization of Romanization"
+ vu_restore_roman_culture.EVTDESC2:"After countless years, and a complete restoration of the Western Roman Empire, the Roman Latin culture has spread across Europe, and from Dacia to Britain the Roman culture annd language prospers."
+ vu_restore_roman_culture.2.EVTOPT1:"Romanization is complete"
  #German Immigration Events
  volga_spawn.1.t:"German Immigration into Eastern Europe?"
  volga_spawn.1.d:"Recently several Germans, sometimes small families, sometimes large caravans, have been found migrating east and into our Eastern European holdings. Many nobles are against this immigration and have been attempting to stop it, while others have been accepting these migrants with open arms. It now has come to the $MONARCHTITLE$ and now a decision must be made, should we allow this immigration? Or should we end it before it begins?"

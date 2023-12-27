@@ -8,7 +8,6 @@ country_decisions = {
 			NOT = { has_country_flag = navigations_act_passed }
 		}	
 		provinces_to_highlight = { }
-		allow = { }
 		allow = { is_at_war = no }
 		effect = {
 			random_country = { 

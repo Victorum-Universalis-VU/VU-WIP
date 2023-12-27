@@ -121,9 +121,9 @@ country_event = { #surprise occupy plockas
 			25 = {
 				add_years_of_income = 0.5
 			}
-			50 = {
-				add_devastation = 25
-			}
+			#50 = {
+			#	add_devastation = 25
+			#}
 		}
 	}
 }

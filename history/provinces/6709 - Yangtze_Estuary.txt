@@ -1,8 +1,10 @@
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
 
 
 
-1519.1.1 = { discovered_by = POR } # Tome Pires
+
+
+
+
+
+
 

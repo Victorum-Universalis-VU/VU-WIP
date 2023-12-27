@@ -148,9 +148,6 @@ country_event = {
 			name = MZB_quest_to_free_the_ibadiyya
 			duration = -1
 			age = age_of_discovery
-			else = "
-				add_stability_or_adm_power = yes
-			"
 		}
 		
 		hidden_effect = {

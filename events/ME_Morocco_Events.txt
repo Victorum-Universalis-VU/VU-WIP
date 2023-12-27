@@ -392,7 +392,7 @@ country_event = {
 		define_advisor = {
 			type = sufi_scholar_advisor
 			skill = 2
-			culture = berber_group
+			culture = moroccan
 			religion = ROOT
 			cost_multiplier = 0.25
 		}

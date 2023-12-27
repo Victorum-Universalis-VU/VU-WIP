@@ -1,3 +1,4 @@
 #6421 - Lake_George
 
-#discovered_by = central_african
+
+

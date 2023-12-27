@@ -8,23 +8,30 @@ religion = buddhism
 capital = "Mong Mao"
 trade_goods = fruit
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 2
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
+
+
+
+
+
+
+
+
+
+
 
 1449.1.1 = {
 	owner = MNG
 	controller = MNG
         add_core = MNG
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 
 1662.4.1 = {
 	owner = CZH

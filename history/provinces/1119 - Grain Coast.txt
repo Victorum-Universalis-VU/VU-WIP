@@ -11,9 +11,9 @@ base_manpower = 2
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9
-1444.1.1 = { discovered_by = MAL } 1444.1.1 = { discovered_by = SOF } 1444.1.1 = { discovered_by = ASH } 1444.1.1 = { discovered_by = SON } 1444.1.1 = { discovered_by = HAU } 1444.1.1 = { discovered_by = KBO } 1444.1.1 = { discovered_by = OYO } 1444.1.1 = { discovered_by = BEN } 
 
-1465.1.1 = { discovered_by = POR } 
+
+
 
 1543.1.1 = { unrest = 5 } #Mane Invasions reach the coast, disrupt societies in area
 1620.1.1 = { unrest = 5 } #Quoja Invasions destablilize Region

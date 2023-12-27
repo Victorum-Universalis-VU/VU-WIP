@@ -238,6 +238,12 @@ angevin_nobles_reform = {
 parliament_of_sicily_reform = {
 	icon = sicily_parliament_of_sicily
 	allow_normal_conversion = yes
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
 	effect = {
 		change_variable = {
 			which = Royal_Influence
@@ -271,7 +277,6 @@ parliament_of_sicily_reform = {
 	custom_attributes = {
 		enables_noble_estate = yes
 	}
-	has_parliament = yes
 	ai = {
 		factor = 100
 	}

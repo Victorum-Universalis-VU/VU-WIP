@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 #First slot
 oyo_cavalry_missions_slot = {
 	slot = 1
@@ -58,7 +59,7 @@ oyo_cavalry_missions_slot = {
 				}
 				AND = {
 					custom_trigger_tooltip = {
-						tooltip = oyo_trade_with_the_muslims_vu
+						tooltip = oyo_trade_with_the_muslims_bt
 						any_known_country = {
 							any_owned_province = {
 								province_has_center_of_trade_of_level = 1

@@ -5,7 +5,8 @@ primary_culture = ger_guelders
 add_accepted_culture = ger_dutch_saxon
 add_accepted_culture = ger_limburgish
 religion = catholic
-technology_group = german_tech_group
+#technology_group = western
+technology_group = dutch_tech_group
 unit_type = western
 capital = 99	# Coevorde
 

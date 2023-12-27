@@ -386,10 +386,13 @@
 			administrative_efficiency = 0.05
 			max_absolutism = -10
 		}
-		has_parliament = yes
 		custom_attributes = {
 			enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.
 		}
+		conditional = {
+	    	allow = { has_dlc = "Common Sense" }
+	    	has_parliament = yes
+	    }
 		ai = {
 			factor = 100
 		}
@@ -1922,10 +1925,10 @@
 			nobles_influence_modifier = 0.10
 			noble_privilege_slots = 0.01
 		}
-		# custom_attributes = {
-			# enables_junker_estate = yes
-			# enables_disable_noble_estate = yes
-		# }
+		custom_attributes = {
+			enables_junker_estate = yes
+			enables_disable_noble_estate = yes
+		}
 		ai = {
 			factor = 100
 		}
@@ -2097,23 +2100,25 @@
 		}
 		potential = {
 			OR = {
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
+				technology_group = bulgarian_tech_group
 				has_reform = magnate_law_reform
 			}
 		}
 		trigger = {
 			OR = {
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
+				technology_group = bulgarian_tech_group
 				has_reform = magnate_law_reform
 			}
 		}
@@ -3037,13 +3042,16 @@
 			}
 		}
 		potential = {
-			NOT = { 
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
-				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			NOT = {
+				OR = {
+			    	technology_group = eastern
+			        technology_group = bohemian_tech_group
+			        technology_group = byzantine_tech_group
+			        technology_group = hungarian_tech_group
+			        technology_group = polish_tech_group
+			        technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
+			    }
 			}
 			NOT = { culture_group = berber_group }
 		}
@@ -3127,23 +3135,25 @@
 		}
 		potential = {
 			OR = {
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
 				has_reform = magnate_govenors_reform
 			}
 		}
 		trigger = {
 			OR = {
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
 				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
+			    technology_group = bohemian_tech_group
+			    technology_group = byzantine_tech_group
+			    technology_group = hungarian_tech_group
+			    technology_group = polish_tech_group
+			    technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
 				has_reform = magnate_govenors_reform
 			}
 		}
@@ -4692,7 +4702,12 @@
 			global_autonomy = -0.025
 			global_prov_trade_power_modifier = 0.10
 		}
-		can_use_trade_post = yes
+		conditional = {
+	    	allow = {
+	    		has_dlc = "Res Publica"
+	    	}
+	    	can_use_trade_post = yes
+	    }
 		ai = {
 			factor = 101
 		}
@@ -5502,24 +5517,21 @@
 				which = Noble_Influence
 				value = 2
 			}
-			NOT = { 
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
-				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
-			}
 			NOT = {
-				has_estate = estate_maratha
-				technology_group = indian
-				NOT = { has_estate = estate_nobles }
+				OR = {
+			    	technology_group = eastern
+			        technology_group = bohemian_tech_group
+			        technology_group = byzantine_tech_group
+			        technology_group = hungarian_tech_group
+			        technology_group = polish_tech_group
+			        technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
+			    }
 			}
-			NOT = {
-				has_estate = estate_rajput
-				technology_group = indian
-				NOT = { has_estate = estate_nobles }
-			}
+			NOT = {	has_estate = estate_maratha	}
+			NOT = {	has_estate = estate_rajput }
+			NOT = {	has_estate = estate_nobles }
+			NOT = {	technology_group = indian }
 		}
 		trigger = {
 			check_variable = {
@@ -6264,9 +6276,9 @@
 			free_leader_pool = 1
 			army_tradition_decay = -0.005
 		}
-		# custom_attributes = {
-			# enables_junker_estate = yes
-		# }
+		custom_attributes = {
+			enables_junker_estate = yes
+		}
 		ai = {
 			factor = 0
 		}
@@ -6663,7 +6675,6 @@
 	freie_landtage_reform = {
 		icon = king
 		allow_normal_conversion = yes
-		has_parliament = yes
 		effect = {
 			change_variable = {
 				which = Burgher_Influence
@@ -6696,6 +6707,10 @@
 			legitimacy = 0.25
 			trade_efficiency = 0.10
 		}
+		conditional = {
+	    	allow = { has_dlc = "Common Sense" }
+	    	has_parliament = yes
+	    }
 		ai = {
 			factor = 100
 		}
@@ -6739,7 +6754,6 @@
 	parliamental_electors_reform = {
 		icon = judge
 		allow_normal_conversion = yes
-		has_parliament = yes
 		potential = {
 			has_reform = elective_monarchy_reform 
 		}
@@ -6749,6 +6763,10 @@
 		custom_attributes = {
 			enables_bureacratic_apparatus = yes
 		}
+		conditional = {
+	    	allow = { has_dlc = "Common Sense" }
+	    	has_parliament = yes
+	    }
 		ai = {
 			factor = 1
 		}
@@ -8836,7 +8854,12 @@
 			merchants = 1
 			trade_deals_slots = 0.02
 		}
-		can_use_trade_post = yes
+		conditional = {
+	    	allow = {
+	    		has_dlc = "Res Publica"
+	    	}
+	    	can_use_trade_post = yes
+	    }
 		ai = {
 			factor = 1
 		}
@@ -9072,7 +9095,12 @@
 		custom_attributes = {
 			enables_saharan_outposts = yes #privilege that gives +1 merchant and +50% scaling trade steering
 		}
-		can_use_trade_post = yes
+		conditional = {
+	    	allow = {
+	    		has_dlc = "Res Publica"
+	    	}
+	    	can_use_trade_post = yes
+	    }
 		ai = {
 			factor = 10
 		}

@@ -172,6 +172,7 @@ french_dominion_sprite_pack = {
 				overlord = {
 					OR = {
 						tag = FRA
+						tag = BFR
 						culture_group = french
 					}
 				}

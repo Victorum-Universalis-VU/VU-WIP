@@ -18,10 +18,10 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
 
-1611.6.13 = { discovered_by = FRA } # Samuel de Champlain via Étienne Brûlé
+
+
 
 1649.1.1 = {
  	owner = IRO
@@ -35,7 +35,7 @@ discovered_by = north_american
 	culture = iroquois
 } #Taken by Iroquois in Beaver Wars.
 
-1664.1.1 = { discovered_by = ENG } #Vanilla who what where was no note
+ #Vanilla who what where was no note
 
 1701.7.19 = {
 	owner = YZH
@@ -56,7 +56,7 @@ discovered_by = north_american
 #} # French reestablish control after the Great Peace of Montreal, Wendat moved east already to flee Iroquois so French now have direct-ish control with their Mississauga vassal-allies-protectorate
 
 1707.5.12 = {
-	discovered_by = GBR
+	
 	add_core = GBR
 	remove_core = ENG
 }

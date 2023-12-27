@@ -13,9 +13,9 @@ native_ferocity = 4
 native_hostileness = 9 
 extra_cost = 8
 
-1444.1.1 = { discovered_by = KON } 
-1444.1.1 = { discovered_by = NDO } 
-1444.1.1 = { discovered_by = LOA } 
-1472.1.1 = { discovered_by = POR } # Frenão do Pó
-1804.1.1 = { discovered_by = SOK }
+ 
+
+ 
+
+
 

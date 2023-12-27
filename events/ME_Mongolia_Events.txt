@@ -303,9 +303,9 @@ country_event = {
 			}
 			shandong_area = {
 				limit = {
-					has_province_modifier = province_razed
+					has_province_modifier = province_razed_I
 				}
-				remove_province_modifier = province_razed
+				remove_province_modifier = province_razed_I
 			}
 		}
 		else = {

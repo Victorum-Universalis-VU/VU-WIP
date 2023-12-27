@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 unit_type = eastern
+#technology_group = eastern
 technology_group = hungarian_tech_group
 primary_culture = szekely
 add_accepted_culture = transylvanian_saxons # Temporarily since they also represent Szaszfold

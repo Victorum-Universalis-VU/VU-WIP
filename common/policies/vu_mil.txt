@@ -1,0 +1,230 @@
+vu_armour_production_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = offensive_ideas 
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = offensive_ideas 
+	}
+
+	infantry_power = 0.10
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_firearm_production_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = industry_ideas
+		has_idea_group = gunpowder_ideas
+	}
+	
+	allow = {
+		full_idea_group = industry_ideas
+		full_idea_group = gunpowder_ideas
+	}
+
+	fire_damage = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_men_endure_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = offensive_ideas
+	}
+
+	land_morale = 0.10
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_national_protection_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = defensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = defensive_ideas
+	}
+
+	defensiveness = 0.2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_human_wave_tactics = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = nationalism_ideas
+		has_idea_group = quantity_ideas
+	}
+	
+	allow = {
+		full_idea_group = nationalism_ideas
+		full_idea_group = quantity_ideas
+	}
+
+	manpower_in_culture_group_provinces = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_naval_canon_school_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = naval_ideas
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = naval_ideas
+	}
+
+	leader_naval_fire = 2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_firearm_training_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = quality_ideas
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = quality_ideas
+	}
+
+	discipline = 0.05
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_supior_firepower = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = offensive_ideas
+	}
+
+	morale_damage = 0.1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+vu_weakness_of_fortifications = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = defensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = defensive_ideas
+	}
+
+	siege_ability = 0.10
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}
+
+
+vu_weapons_r_and_d_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = gunpowder_ideas
+		has_idea_group = defensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = gunpowder_ideas
+		full_idea_group = defensive_ideas
+	}
+
+	fire_damage = 0.05 shock_damage_received = -0.10
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+	}
+}

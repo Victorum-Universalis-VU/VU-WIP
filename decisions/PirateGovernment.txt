@@ -87,24 +87,25 @@ country_decisions = {
 			if = {
 				limit = {
 					OR = {
-						technology_group = western
-				        technology_group = english_tech_group
-				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
-				        technology_group = german_tech_group
-				        technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-				        technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-				        technology_group = bohemian_tech_group
-				        technology_group = byzantine_tech_group
-				        technology_group = eastern
-				        technology_group = hungarian_tech_group
-				        technology_group = polish_tech_group
-				        technology_group = russian_tech_group
-					}
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            	technology_group = eastern
+		            	technology_group = bohemian_tech_group
+		            	technology_group = byzantine_tech_group
+		            	technology_group = hungarian_tech_group
+		            	technology_group = polish_tech_group
+		            	technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+		            }
 				}
 				apply_sprite_pack = dlc098_nss_sprite_pack
 			}
@@ -113,6 +114,7 @@ country_decisions = {
 					OR = {
 						technology_group = muslim
 						technology_group = ottoman
+						technology_group = persian_tech_group
 					}
 				}
 				apply_sprite_pack = dlc098_sle_sprite_pack

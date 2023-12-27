@@ -8,15 +8,16 @@ religion = animism
 capital = "Kawit"
 trade_goods = pearls
 hre = no
-base_tax = 5
-base_production = 4
-base_manpower = 2
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 center_of_trade = 2
 
-discovered_by = chinese
 
-1521.1.1 = { discovered_by = SPA }
+
+
+
 
 1571.1.1 = { 
     owner = SPA

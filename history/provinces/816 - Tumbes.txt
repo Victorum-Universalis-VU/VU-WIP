@@ -13,9 +13,11 @@ base_manpower = 2
 is_city = yes
 add_core = CHM
 
-#discovered_by = south_american
-#discovered_by = andean
-1444.1.1 = { discovered_by = CHM } 
+
+
+
+
+ 
 
 fort_15th = yes
 
@@ -24,7 +26,7 @@ fort_15th = yes
 	controller = INC
 	add_core = INC
 }
-1528.1.1 = { discovered_by = SPA } # Francisco Pizarro
+
 1532.1.1 = {
 	owner = SPA
 	controller = SPA

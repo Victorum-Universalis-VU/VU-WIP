@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 #Commercial and Tech Line
 
 east_african_trade_slot1 = {
@@ -16,10 +17,8 @@ east_african_trade_slot1 = {
 				region = south_africa_region
 			}
 		}
-		NOT = {
-			tag = ZAN
-			tag = ZIM
-		}
+		NOT = {	tag = ZAN }
+		NOT = {	tag = ZIM }
 		OR = {
 			has_country_flag = use_paradox_missions
 			AND = {
@@ -67,10 +66,8 @@ east_african_trade_slot2 = {
 				region = south_africa_region
 			}
 		}
-		NOT = {
-			tag = ZAN
-			tag = ZIM
-		}
+		NOT = {	tag = ZAN }
+		NOT = {	tag = ZIM }
 		OR = {
 			has_country_flag = use_paradox_missions
 			AND = {
@@ -454,10 +451,8 @@ east_african_diplomatic_slot = {
 				region = south_africa_region
 			}
 		}
-		NOT = {
-			tag = ZAN
-			tag = ZIM
-		}
+		NOT = {	tag = ZAN }
+		NOT = {	tag = ZIM }
 		OR = {
 			has_country_flag = use_paradox_missions
 			AND = {
@@ -614,7 +609,7 @@ east_african_diplomatic_slot = {
 					}
 				}
 			}
-			1371 = {
+			7398 = {
 				strongest_trade_power = {
 					has_opinion = {
 						who = ROOT
@@ -622,7 +617,7 @@ east_african_diplomatic_slot = {
 					}
 				}
 			}
-			4233 = {
+			695 = {
 				strongest_trade_power = {
 					has_opinion = {
 						who = ROOT
@@ -640,7 +635,7 @@ east_african_diplomatic_slot = {
 					key = chinese_trade_agreement
 				}
 			}
-			1371 = {
+			7398 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -648,7 +643,7 @@ east_african_diplomatic_slot = {
 					key = chinese_trade_agreement
 				}
 			}
-			4233 = {
+			695 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -680,10 +675,8 @@ east_african_militar_slot = {
 				region = south_africa_region
 			}
 		}
-		NOT = {
-			tag = ZAN
-			tag = ZIM
-		}
+		NOT = {	tag = ZAN }
+		NOT = {	tag = ZIM }
 		OR = {
 			has_country_flag = use_paradox_missions
 			AND = {

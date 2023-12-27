@@ -7,17 +7,24 @@ religion = animism
 capital = "Xam Neua"
 trade_goods = silk
 hre = no
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = LXA
 add_core = MPH
 
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 
 1478.1.1 = {

@@ -9,15 +9,10 @@ religion = taoism
 capital = "Banlong"
 trade_goods = tea
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-1444.1.1 = { discovered_by = RYU }
-1514.1.1 = { discovered_by = POR }
 
 1647.4.1 = {
 	owner = QNG

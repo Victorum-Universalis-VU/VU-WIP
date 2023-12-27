@@ -1,7 +1,8 @@
 # - Araquara
 
 culture = guarani
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Araquara"
 trade_goods = unknown
@@ -16,7 +17,7 @@ center_of_trade = 1
 
 
 
-1580.1.1 = { discovered_by = POR }
+
 
 1620.1.1 = {	
 	owner = POR

@@ -5,18 +5,25 @@ religion = animism
 capital = "Muang Ngoi"
 trade_goods = ivory
 hre = no
-base_tax = 2 
-base_production = 2
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = LXA
 add_core = LUA
 
 
-discovered_by = chinese
-discovered_by = indian
 
-1535.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
 
 1579.1.1 = { unrest = 5 } # Revolt against vassalization
 1580.1.1 = { unrest = 0 }

@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 #Gotland Monarchy missions
 got_monarchy_slot_1 = {
 	slot = 1
@@ -604,7 +604,7 @@ got_monarchy_slot_3 = {
 					}
 				}
 				custom_trigger_tooltip = {
-					tooltip = got_monarchy_pomerania_vu
+					tooltip = got_monarchy_pomerania_bt
 					any_known_country = {
 						dynasty = ROOT
 						NOT = { tag = ROOT }

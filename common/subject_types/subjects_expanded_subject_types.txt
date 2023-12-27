@@ -30,7 +30,7 @@ roman_client_kingdom = { }
 voivodeship = { }
 fief_subject = { }
 crusader_state_vassal = { }
-salic_personal_union = { }
+#salic_personal_union = { }
 nahuatl_vassal = { }
 peasant_vassal = { }
 pirate_brotherhood_vassal = { }
@@ -76,9 +76,9 @@ protectorate = {
 		is_subject = no
 		OR = {
 			technology_group = western
+			technology_group = dutch_tech_group
 			technology_group = english_tech_group
 			technology_group = french_tech_group
-			technology_group = dutch_tech_group
 			technology_group = german_tech_group
 			technology_group = italian_tech_group
 			technology_group = portuguese_tech_group
@@ -86,16 +86,16 @@ protectorate = {
 			technology_group = scandinavian_tech_group
 			technology_group = spanish_tech_group
 			technology_group = swiss_tech_group
+			technology_group = eastern
 			technology_group = bohemian_tech_group
 			technology_group = byzantine_tech_group
-			technology_group = eastern
 			technology_group = hungarian_tech_group
 			technology_group = polish_tech_group
 			technology_group = russian_tech_group
-			technology_group = muslim
-			AND = {
-				has_global_flag = extended_timeline_mod
-			}
+			technology_group = bulgarian_tech_group
+			#AND = {
+			#	has_global_flag = extended_timeline_mod
+			#}
 		}
 	}
 
@@ -140,7 +140,7 @@ protectorate = {
 		other_overlord = all
 	}
 	can_ally = {
-		same_overlord = all
+		same_overlord = protectorate
 	}
 	can_marry = {
 		independent_nations = yes
@@ -9511,7 +9511,7 @@ fief_subject = {
 			has_reform = crown_of_saint_wenceslaus
 			has_reform = office_of_lord_regent_reform
 			has_reform = arch_king_reform
-			has_reform = austrian_archduchy
+			has_reform = austrian_archduchy_reform
 			has_reform = habsburg_monarchy_reform
 			has_reform = austrian_empire_reform
 			has_reform = granadan_iqta_reform
@@ -9709,26 +9709,25 @@ crusader_state_vassal = {
 	subject_opinion_modifier = is_crusader_state_vassal
 }
 
-salic_personal_union = {
-	copy_from = personal_union
-	count = personal_union
-
-	# Graphics:
-	sprite = GFX_court_union
-	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
-	diplomacy_subject_sprite = GFX_diplomacy_inunion
-
-	# Triggers:
-	is_potential_overlord = {
-		has_global_flag = extended_timeline_mod
-		is_subject = no
-		#has_reform = salic_reform
-	}
-
-	# Properties:
-	can_be_integrated = no
-	can_be_annexed = yes
-}
+#salic_personal_union = {
+#	copy_from = personal_union
+#	count = personal_union
+#
+#	# Graphics:
+#	sprite = GFX_court_union
+#	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+#	diplomacy_subject_sprite = GFX_diplomacy_inunion
+#
+#	# Triggers:
+#	is_potential_overlord = {
+#		is_subject = no
+#		#has_reform = salic_reform
+#	}
+#
+#	# Properties:
+#	can_be_integrated = no
+#	can_be_annexed = yes
+#}
 
 nahuatl_vassal = {
 	copy_from = vassal
@@ -10611,7 +10610,7 @@ integrated_tribe_subject = {
 		# to always trigger call of arms:
 		independent_nations = yes
 		other_overlord = all
-		same_overlord = all
+		same_overlord = integrated_tribe_subject
 	}
 	can_rival = {
 		neighboring_primitives = yes
@@ -11846,22 +11845,22 @@ imperial_feud_subject = {
 	can_fight = {
 		independent_nations = yes
 		other_overlord = all
-		same_overlord = all
+		same_overlord = imperial_feud_subject
 	}
 	can_rival = {
 		independent_nations = yes
 		other_overlord = all
-		same_overlord = all
+		same_overlord = imperial_feud_subject
 	}
 	can_ally = {
 		independent_nations = yes
 		other_overlord = all
-		same_overlord = all
+		same_overlord = imperial_feud_subject
 	}
 	can_marry = {
 		independent_nations = yes
 		other_overlord = all
-		same_overlord = all
+		same_overlord = imperial_feud_subject
 	}
 
 	restoration_cb = cb_disloyal_imperial_feud_subject
@@ -11956,13 +11955,8 @@ pagan_chiefdom = {
 		is_subject = no
 		OR = {
 			religion_group = pagan
-			# Extended Timeline religions
-			religion = druidism
-			religion = zamolxism
-			religion_group = american_pagan
-			religion_group = slavic_pagan
-			religion_group = german_pagan
-			religion = shamanism
+			religion_group = slavic_group
+			religion_group = balto_slavic_group
 		}
 	}
 
@@ -12619,7 +12613,7 @@ banking_family_subject = {
 			# Theocracy
 			has_reform = pious_merchants_reform
 			# Custom Rule
-			has_government_attribute = can_create_banking_family_subject_rule
+			#has_government_attribute = can_create_banking_family_subject_rule
 		}
 		NOT = { has_subject_of_type = banking_family_subject }
 	}
@@ -13299,7 +13293,7 @@ medieval_vassal = {
 					has_reform = crown_of_saint_wenceslaus
 					has_reform = office_of_lord_regent_reform
 					has_reform = arch_king_reform
-					has_reform = austrian_archduchy
+					has_reform = austrian_archduchy_reform
 					has_reform = habsburg_monarchy_reform
 					has_reform = austrian_empire_reform
 					has_reform = granadan_iqta_reform

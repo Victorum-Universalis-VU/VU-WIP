@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################################
 # Events for Cyprus
 #
@@ -108,6 +108,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 # Ottomans get to reply
@@ -226,6 +227,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1
 	}
+	
 	
 	option = {
 		name = flavor_gen.7.a

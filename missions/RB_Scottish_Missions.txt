@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 sco_rb_adm_missions = {
 	slot = 1
 	generic = no
@@ -38,6 +38,7 @@ sco_rb_adm_missions = {
 			}
 		}
 	}
+
 	sco_bank = {
 		icon = mission_rb_the_bank_of_scotland
 		required_missions = { sco_highlands_mission }
@@ -210,10 +211,8 @@ sco_rb_conquest_missions = {
 			369 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -473,6 +472,7 @@ sco_rb_conquest_missions_2 = {
 			}
 		}
 	}
+
 	sco_conquer_ireland = {
 		icon = mission_rb_conquer_ireland
 		required_missions = { sco_into_ireland }
@@ -660,8 +660,8 @@ sco_rb_colonial_2 = {
 			    area = subarctic_islands_area
 				area = iceland_area
 			}
+			NOT = {	province_id = 5591 } #Jan Mayen, Don't think this should be required
 			NOT = {
-				province_id = 5591 #Jan Mayen, Don't think this should be required
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

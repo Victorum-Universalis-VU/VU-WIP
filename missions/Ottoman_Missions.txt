@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 tur_conquerors_of_the_near_east = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
@@ -9,7 +9,22 @@ tur_conquerors_of_the_near_east = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -53,7 +68,6 @@ tur_conquerors_of_the_near_east = {
 		ai_weight = {
 			factor = 250
 		}
-		
 	}
 	conquer_southern_greece = {
 		icon = mission_conquer_southern_greece
@@ -81,15 +95,16 @@ tur_conquerors_of_the_near_east = {
 			#Vanilla claims extra.
 			albania_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
-			aegean_archipelago_area = {
+			every_province = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					area = aegean_archipelago_area
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 					NOT = { province_id = 320 }
 				}
 				add_claim = ROOT
@@ -99,7 +114,6 @@ tur_conquerors_of_the_near_east = {
 		ai_weight = {
 			factor = 250
 		}
-		
 	}
 	conquer_serbia = {
 		icon = mission_conquer_serbia
@@ -127,12 +141,11 @@ tur_conquerors_of_the_near_east = {
 			give_permaclaims_for_mission = { mission=conquer_bosnia }
 			montenegro_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_claim = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
-			
 			if = { #VU re-adding vassalization for Wallachia.
 				limit = {
 					exists = WAL
@@ -156,7 +169,6 @@ tur_conquerors_of_the_near_east = {
 		ai_weight = {
 			factor = 250
 		}
-		
 	}
 	conquer_bosnia = {
 		icon = mission_conquer_bosnia
@@ -180,17 +192,15 @@ tur_conquerors_of_the_near_east = {
 			#Vanilla extra claims
 			east_adriatic_coast_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 		}
-		
 		ai_weight = {
 			factor = 100
 		}
-		
 	}
 	conquer_hungary = {
 		icon = mission_control_the_danube
@@ -213,41 +223,38 @@ tur_conquerors_of_the_near_east = {
 				name = "ottoman_hungary"
 				duration = 7300
 			}
-			#Vanilla claims, unchanged.
 			austria_proper_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			transdanubia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			croatia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			slavonia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 		}
-		
 		ai_weight = {
 			factor = 50
 		}
-		
 	}
 }
 
@@ -261,7 +268,22 @@ tur_eastern_balkans = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -270,7 +292,7 @@ tur_eastern_balkans = {
 	has_country_shield = yes
 	
 	vassalize_wallachia = {
-		icon = mission_vassalize_wallachia
+		icon = mission_impaled_soldies
 		position = 6
 
 		completed_by = 1462.11.1
@@ -305,13 +327,10 @@ tur_eastern_balkans = {
 				#Claims
 				give_permaclaims_for_mission = { mission=vassalize_transylvania }
 			}
-		
 		}
-		
 		ai_weight = {
 			factor = 50
 		}
-		
 	}
 	vassalize_transylvania = {
 		icon = mission_vassalize_transylvania
@@ -337,8 +356,8 @@ tur_eastern_balkans = {
 			#Vanilla claims
 			slovakia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_claim = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
@@ -351,7 +370,6 @@ tur_eastern_balkans = {
 				add_claim = ROOT
 			}
 		}
-		
 		ai_weight = {
 			factor = 50
 		}
@@ -368,7 +386,22 @@ tur_conquest_of_middle_east = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -424,11 +457,9 @@ tur_conquest_of_middle_east = {
 				
 			}
 		}
-		
 		ai_weight = {
 			factor = 200
 		}
-		
 	}
 	safeguard_eastern_anatolia = {
 		icon = mission_safeguard_eastern_anatolia
@@ -534,7 +565,22 @@ tur_black_sea = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -609,7 +655,22 @@ tur_eastern_mediterrenean_missions = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -757,6 +818,7 @@ tur_eastern_mediterrenean_missions = {
 			factor = 300
 		}
 	}
+
 }
 
 tur_conquer_western_mediterrenean = {
@@ -767,7 +829,22 @@ tur_conquer_western_mediterrenean = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }
@@ -850,8 +927,9 @@ tur_conquer_western_mediterrenean = {
 			add_claim = 126
 		}
 	}
+
 	subjugate_algiers = { #Conquer Algiers
-		icon = mission_sea_battles
+		icon = mission_ottoman_harem
 		required_missions = { conquer_tunisia }
 		completed_by = 1534.8.16
 		provinces_to_highlight = {
@@ -876,7 +954,7 @@ tur_conquer_western_mediterrenean = {
 			else = {
 				add_country_modifier = {
 					name = "tur_barbary_pirates"
-					duration = 9125
+					duration = -1
 				}
 			}
 		}
@@ -891,7 +969,22 @@ tur_indian_ocean = {
 				NOT = { has_dlc = "Domination" }
 				tag = TUR
 			}
-			tag = RMM
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						NOT = { was_tag = AKK }
+						NOT = { was_tag = QAR }
+					}
+					AND = {
+						OR = {
+							was_tag = AKK
+							was_tag = QAR
+						}
+						NOT = { has_dlc = "King of Kings" }
+					}
+				}
+			}
 		}
 		has_country_flag = use_paradox_missions
 		NOT = { map_setup = map_setup_random }

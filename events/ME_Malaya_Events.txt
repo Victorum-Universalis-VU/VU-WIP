@@ -3184,7 +3184,10 @@ country_event = {
 		}
 
 		custom_tooltip = MSA_cooldown_10
-		MSA_this_will_cost = { amount = 10 execute = yes }
+		MSA_this_will_cost = { 
+			amount = 10 
+			#execute = yes 
+		}
 		set_country_flag = MSA_investment_a_cooldown
 		custom_tooltip = MSA_100_power_split
 		hidden_effect = { #this is where the fun begins
@@ -3208,7 +3211,10 @@ country_event = {
 		}
 
 		custom_tooltip = MSA_cooldown_10
-		MSA_this_will_cost = { amount = 10 execute = yes }
+		MSA_this_will_cost = { 
+			amount = 10 
+			#execute = yes 
+		}
 		custom_tooltip = MSA_space_lol
 		add_yearly_manpower = 0.5
 		add_country_modifier = {
@@ -3289,7 +3295,10 @@ country_event = {
 		}
 
 		custom_tooltip = MSA_cooldown_5
-		MSA_this_will_cost = { amount = 5 execute = yes }
+		MSA_this_will_cost = { 
+			amount = 5
+			#execute = yes 
+		}
 		custom_tooltip = MSA_space_lol
 		add_army_tradition_or_mil_power = { amount = 10 }
 		set_country_flag = MSA_investment_e_cooldown
@@ -3328,7 +3337,10 @@ country_event = {
 		}
 
 		custom_tooltip = MSA_cooldown_10
-		MSA_this_will_cost = { amount = 10 execute = yes }
+		MSA_this_will_cost = { 
+			amount = 10 
+			#execute = yes 
+		}
 		custom_tooltip = MSA_space_lol
 		custom_tooltip = MSA_get_a_trader
 		set_country_flag = MSA_investment_f_cooldown

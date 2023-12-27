@@ -10,4 +10,3 @@ native_size = 1
 native_ferocity = 2
 native_hostileness = 1
 
-1502.5.21 = { discovered_by = POR }

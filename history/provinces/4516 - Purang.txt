@@ -8,13 +8,20 @@ religion = bon
 capital = "Purang"
 trade_goods = wool
 hre = no
-base_tax = 2 
-base_production = 4
-base_manpower = 4
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
+
+
+
+
 
 1635.1.1 = {
 	owner = LDK
@@ -34,7 +41,7 @@ discovered_by = indian
 	controller = UTS
 	add_core = UTS
 }
-1721.1.1 = { discovered_by = SPA }
+
 1792.11.1 = {
 	owner = QNG
 	controller = QNG

@@ -15,8 +15,9 @@ hre = no
 add_core = MAK
 add_local_autonomy = 95
 
-#discovered_by = east_african
-#discovered_by = muslim
+
+
+
 
 extra_cost = 5
 

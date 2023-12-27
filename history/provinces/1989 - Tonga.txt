@@ -14,15 +14,3 @@ base_production = 3
 base_manpower = 2
 
 extra_cost = 15
-
-#discovered_by = polynesian_tech
-1440.1.1 = { 
-    discovered_by = TOG 
-}
-
-1616.4.21 = {
-	discovered_by = NED	# Explorers Willem Schouten and Jacob Le Maire
-}
-1773.1.1 = {
-	discovered_by = GBR	# James Cook
-}

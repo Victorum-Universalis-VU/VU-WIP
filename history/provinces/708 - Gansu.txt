@@ -10,15 +10,16 @@ trade_goods = saffron
 hre = no
 base_tax = 6 
 base_production = 6
-base_manpower = 3
+base_manpower = 6
 is_city = yes
 add_core = CSH
 add_core = OIR
 fort_15th = yes #the Nine Garrisons
 center_of_trade = 2
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 add_permanent_province_modifier = {
@@ -36,4 +37,4 @@ add_permanent_province_modifier = {
 	add_core = QNG
 }
 1662.1.1 = { remove_core = MNG }
-1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+

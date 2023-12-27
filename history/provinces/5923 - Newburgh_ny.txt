@@ -11,9 +11,9 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 2
 native_hostileness = 8
-discovered_by = north_american
 
-1609.1.1 = { discovered_by = NED } # Henry Hudson
+
+
 
 1674.11.1 = {
 	owner = ENG
@@ -24,7 +24,7 @@ discovered_by = north_american
 	capital = "Newburgh"
 }# Treaty of Westminster
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

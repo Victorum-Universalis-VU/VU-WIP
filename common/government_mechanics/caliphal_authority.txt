@@ -21,7 +21,6 @@ caliphal_authority_mechanic = {
 					manpower_in_true_faith_provinces= 0.25
 				}
 			}
-			base_monthly_growth = 0
 			is_good = yes
 		}
 	}

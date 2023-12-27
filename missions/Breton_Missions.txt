@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 bri_1 = {
 	slot = 1
 	generic = no
@@ -42,33 +42,6 @@ bri_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			7979 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			4389 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			7935 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 		}
 		ai_weight = {
 			factor = 500	#Alliance for survival
@@ -78,23 +51,13 @@ bri_1 = {
 		icon = mission_unite_home_region
 		required_missions = { bri_build_alliances }
 		provinces_to_highlight = {
-			OR = {
-				area = orleans_area
-				province_id = 7979
-				province_id = 4389 
-				province_id = 7935
-			}
+			area = orleans_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6 #5 owned by Anjou, 2 by England, 3 by France. You must go against 2 at least.
-				OR = { 
-					area = orleans_area
-					province_id = 7979 
-					province_id = 4389 
-					province_id = 7935
-				}
+				area = orleans_area
 			}
 		}
 		effect = {

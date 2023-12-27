@@ -53,9 +53,9 @@
  display_information_for_crusader_state_vassal_tt_conditions_subject: "- is a §YVassal§! of the possible overlord \n- is §YCatholic§! \n- is not excommunicated \n- has its capital in §YEurope§! or §YJerusalem§!"
  display_information_for_crusader_state_vassal_tt: "- subject can only be established diplomatically \n- subject has a reduced liberty desire, if its overlord is Curia Controller \n- subject has a subject interaction (§Mdiplomatic action§!) to send them crusader knights \n- subject has a subject interaction (§Mdiplomatic action§!) to conscript missionaries \n- subject has a subject interaction (§Mdiplomatic action§!) to force them to become a theocracy"
 
- display_information_for_salic_personal_union_tt_conditions_overlord: "- §lExtended Timeline§! mod is active \n- is not a subject \n- has the "§YSalic Monarchy§!" government"
- display_information_for_salic_personal_union_tt_conditions_subject: "- is not a subject \n- has the "§YSalic Monarchy§!" government \n- is leader of the defender side in a "§YSalic Reunification War§!" where the possible overlord is leader of the attacker side or vice versa"
- display_information_for_salic_personal_union_tt: "- subject can only be established by war \n- subject can be annexed after §Y10§! years rather than be integrated after §Y50§! years"
+ #display_information_for_salic_personal_union_tt_conditions_overlord: "- §lExtended Timeline§! mod is active \n- is not a subject \n- has the "§YSalic Monarchy§!" government"
+ #display_information_for_salic_personal_union_tt_conditions_subject: "- is not a subject \n- has the "§YSalic Monarchy§!" government \n- is leader of the defender side in a "§YSalic Reunification War§!" where the possible overlord is leader of the attacker side or vice versa"
+ #display_information_for_salic_personal_union_tt: "- subject can only be established by war \n- subject can be annexed after §Y10§! years rather than be integrated after §Y50§! years"
 
  display_information_for_nahuatl_vassal_tt_conditions_overlord: "- £text_DLC_ed£ §YEl Dorado§! DLC is active \n- is §YNahuatl§! \n- has not reformed religion"
  display_information_for_nahuatl_vassal_tt_conditions_subject: "- is a §YVassal§! of the possible overlord \n- has its capital in one of the following regions: §YMexico§!, §YCalifornia§!, §YRio Grande§!, §YCentral America§!"

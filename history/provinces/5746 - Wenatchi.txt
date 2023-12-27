@@ -12,9 +12,7 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
 
 
-1811.1.1 = { discovered_by = GBR } # NWFC traders traveling the Columbia.
 
-#Real settlement appears to date to the late 1800s, between 1860 and 1890.
+

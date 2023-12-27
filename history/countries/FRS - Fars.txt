@@ -3,15 +3,16 @@ add_government_reform = timurid_governor
 government_rank = 1
 primary_culture = persian
 religion = shiite
-technology_group = muslim
+#technology_group = muslim
+technology_group = persian_tech_group
 capital = 2218 # Shiraz
 
 set_country_flag = ME_can_use_timurid_legitimacy
 save_global_event_target_as = ME_succession_crisis_FRS
-set_variable = {
-	which = timurid_legitimacy_value
-	value = 0
-}
+#set_variable = {
+#	which = timurid_legitimacy_value
+#	value = 0
+#}
 
 1442.1.1 = { #New Regent, taking over from Shaykh Muhibb al-Din Abu'l Khayr
 	religion = sunni

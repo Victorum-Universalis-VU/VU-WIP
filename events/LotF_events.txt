@@ -815,7 +815,7 @@ province_event = { #Native Religious Assimilation
 			culture_group = apachean
 			culture_group = na_dene
 			culture_group = penutian
-			culture_group = carribeans
+			culture_group = carribean
 			culture_group = araucanian
 			culture_group = mataco
 		}
@@ -825,7 +825,7 @@ province_event = { #Native Religious Assimilation
 		years = 30
 		modifier = {
 			factor = 2.5
-			is_at_war = yes
+			FROM = { is_at_war = yes } #Added FROM since it was just written as 'is_at_war = yes'
 		}
 		modifier = {
 			factor = 1.5

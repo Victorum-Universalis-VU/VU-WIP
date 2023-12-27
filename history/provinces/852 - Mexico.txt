@@ -13,11 +13,11 @@ base_production = 12
 base_manpower = 8
 fort_15th = yes
 is_city = yes
-1444.1.1 = { discovered_by = MAY } 1444.1.1 = { discovered_by = ZAP } 1444.1.1 = { discovered_by = AZT } 
+
 extra_cost = 8
 center_of_trade = 3
 
-1519.1.1 = { discovered_by = SPA }
+
 
 1521.8.13 = {
 	owner = SPA 

@@ -7,16 +7,18 @@ religion = shinto
 capital = "Itajima"
 trade_goods = tea
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = KNO
-discovered_by = chinese
-discovered_by = japanese
 
 
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+
+
+
+ 
 
 1586.1.1 = { add_core = MRI owner = MRI controller = MRI remove_core = KNO } # Fall of the Kono Clan
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = MRI }

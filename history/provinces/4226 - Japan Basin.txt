@@ -1,7 +1,9 @@
 #4226 - Japan Basin
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
-1542.1.1 = { discovered_by = POR }
-1739.1.1 = { discovered_by = RUS } # Martin Spanberg
+
+
+
+
+
+
+

@@ -270,8 +270,10 @@ SCO_Ideas = {
 	trigger = {
 		primary_culture = scottish
 		NOT = {
-			tag = CEL
-			tag = TNA
+			OR = {
+				tag = CEL
+				tag = TNA
+			}
 		}
 	}
 	free = yes
@@ -1568,8 +1570,10 @@ west_african_ideas = {
 	trigger = {
 		technology_group = sub_saharan
 		NOT = {
-			tag = LOA
-			tag = NDO
+			OR = {
+				tag = LOA
+				tag = NDO
+			}
 		}
 	}
 	free = yes
@@ -3552,10 +3556,12 @@ generic_federation_ideas = {
 	trigger = {
 		is_federation_nation = yes
 		NOT = {
-			primary_culture = iroquois
-			primary_culture = creek
-			primary_culture = algonquin
-			primary_culture = dakota
+			OR = {
+				primary_culture = iroquois
+				primary_culture = creek
+				primary_culture = algonquin
+				primary_culture = dakota
+			}
 		}
 	}
 	free = yes

@@ -8,18 +8,19 @@ religion = confucianism
 capital = "Shiukwan"
 trade_goods = iron
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 4
+base_tax = 14
+base_production = 14
+base_manpower = 14
 is_city = yes
 add_core = HUA
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1595.1.1 = { discovered_by = SPA }
+
+
+
+
 
 1647.4.1 = {
 	owner = QNG

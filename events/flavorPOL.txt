@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ###################################
 # Flavor events for Poland        #
 #                                 #
@@ -1799,7 +1799,7 @@ country_event = {
 			exists = yes
 			is_subject = no
 			NOT = { junior_union_with = POL }
-			dynasty = "Jagiello"
+			dynasty = "Jagiellon"
 		}
 		NOT = { is_year = 1450 }
 	}
@@ -1825,7 +1825,7 @@ country_event = {
 	}
 	
 	option = {
-		name = flavor_pol.18.a #We must retain the Jagiello Dynasty
+		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
 			factor = 75 
 		}
@@ -1837,6 +1837,7 @@ country_event = {
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_chose_pu_flag
 		}
+		custom_tooltip = pol_potential_cb_on_hungary_tt
 	}
 	
 	option = {
@@ -1872,6 +1873,7 @@ country_event = {
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_denied_pu_flag
 		}
+		custom_tooltip = pol_potential_cb_on_bohemia_tt
 	}
 }
 
@@ -2018,6 +2020,9 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		on_non_estate_disaster_end = yes
+	}
 	
 	option = {
 		trigger = {
@@ -2069,7 +2074,8 @@ country_event = {
 	}
 }
 
-####Lions of the North####
+####Lions of the North#### scripted by Small Boss
+
 country_event = { #The Little Kings Uprising
 	id = flavor_pol.23
 	title = flavor_pol.23.t
@@ -2686,7 +2692,6 @@ country_event = { #The Crown of Rome
 		LAE = { 
 			change_religion = catholic
 			set_dynasty = ROOT
-			set_country_flag = is_LAE_flag
 			hidden_effect = { 
 				every_owned_province = { 
 					limit = {

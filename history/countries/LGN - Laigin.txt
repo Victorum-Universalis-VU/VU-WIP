@@ -4,6 +4,7 @@ add_government_reform = irish_clann_reform
 government_rank = 1
 primary_culture = irish
 religion = catholic
+#technology_group = western
 technology_group = english_tech_group
 unit_type = western
 historical_rival = ENG # Trying to prevent England from suiciding by alliance with 4 Irish OPMs

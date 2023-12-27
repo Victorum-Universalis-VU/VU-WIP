@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 #################################################
 # Flavor Events for Korea
 #
@@ -819,7 +820,7 @@ country_event = {
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
-	mean_time_to_happen = { days = 3650 } #Not sure why it was removed
+	mean_time_to_happen = { days = 3650 }
 
 	trigger = {
 		tag = KOR

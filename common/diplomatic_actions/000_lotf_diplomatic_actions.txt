@@ -1,0 +1,21 @@
+declarewar = {
+    condition = {
+        tooltip = no_attack_gb
+        potential = {
+            is_colonial_nation = yes
+            capital_scope = {
+                colonial_region = colonial_eastern_america
+            }
+            overlord = {
+				OR = { 
+				   tag = GBR
+				   tag = UNK
+				   tag = ENG 
+				}
+            }
+		}
+        allow = {
+            NOT = { is_subject_of = FROM }
+        }
+    }
+}

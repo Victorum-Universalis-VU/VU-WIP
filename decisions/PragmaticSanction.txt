@@ -1,5 +1,4 @@
 country_decisions = {
-
 	pragmatic_sanction_decision = {
 		potential = {
 			allows_female_emperor = no
@@ -28,6 +27,7 @@ country_decisions = {
 				limit = {
 					has_country_flag = me_free_pragmatic_sanction
 				}
+				add_imperial_influence = -15
 			}
 			else = {
 				add_imperial_influence = -25
@@ -39,5 +39,4 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
 }

@@ -1,4 +1,4 @@
-
+#VU updated by San Felipe for 1.36
 normal_or_historical_nations = yes
 
 # Braveheart
@@ -545,7 +545,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "flavor_sco.EVTOPTB9" #Ignore him
+		name = "flavor_sco.EVTOPBT9" #Ignore him
 		add_prestige = -1
 	}
 }

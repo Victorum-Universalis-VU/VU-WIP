@@ -3,6 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = pommeranian
 religion = catholic
+#technology_group = western
 technology_group = german_tech_group
 unit_type = western
 capital = 2995
@@ -133,6 +134,9 @@ capital = 2995
 		culture = polish
 		birth_date = 1408.1.1
 		death_date = 1454.2.14
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 

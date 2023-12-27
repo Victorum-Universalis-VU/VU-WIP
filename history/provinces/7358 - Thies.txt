@@ -13,4 +13,5 @@ base_tax = 6
 base_production = 6
 add_core = JOL
 
-#discovered_by = sub_saharan
+
+

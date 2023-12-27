@@ -4,7 +4,7 @@ bookmark = {
     desc = "MAGNA_CARTA_DESC"            #Royal charter of rights agreed between by King John of England and the Barons at Runnymede, Surrey, England on 15 June 1215
     date = 1215.06.15     # Date of the signing <year>.<month>.<day>
     
-    center = 8123                 # Runnymeade Surrey, England
+    center = 236                 # Runnymeade Surrey, England
     country = ENG                 # Kingdom of England under King John 
 	country = SCO                 # Kingdom of Scotland under King Alexander II
 	country = WLS                 # Kingdom of Gwynnedd under Llywelyn

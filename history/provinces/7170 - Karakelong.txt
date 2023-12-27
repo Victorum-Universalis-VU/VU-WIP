@@ -1,6 +1,6 @@
 #Karakelong
 
-culture = north_sulawesi
+culture = minahasan
 religion = animism
 capital = "Beo"
 trade_goods = unknown
@@ -11,4 +11,4 @@ base_manpower = 4
 native_size = 70
 native_ferocity = 2
 native_hostileness = 9
-discovered_by = chinese
+

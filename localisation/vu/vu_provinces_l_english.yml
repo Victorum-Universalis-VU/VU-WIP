@@ -18,8 +18,144 @@
  ############################################################
  #VU_prov_names_l_english (Province Names) - These are HR's provinces
  ############################################################
+ 
  PROV2023:0 "Munsee"
  PROV_ADJ2023:0 "Munsee"
+ 
+ ###Quonton Caucasus
+ PROV3304:0 "Gagra"
+ PROV_ADJ3304:0 "Gagra"
+ 
+ PROV3305:0 "Svan"
+ PROV_ADJ3305:0 "Svan"
+ 
+ PROV3306:0 "Gali"
+ PROV_ADJ3306:0 "Gali"
+
+ PROV3307:0 "Lazica"
+ PROV_ADJ3307:0 "Lazica"
+
+ PROV3308:0 "Ossetia"
+ PROV_ADJ3308:0 "Ossetia"
+
+ PROV3309:0 "Ninotsminda"
+ PROV_ADJ3309:0 "Ninotsminda"
+
+ PROV3310:0 "Kazreti"
+ PROV_ADJ3310:0 "Kazreti"
+
+ PROV3311:0 "Khevsureti"
+ PROV_ADJ3311:0 "Khevsureti"
+
+ PROV3312:0 "Pshavi"
+ PROV_ADJ3312:0 "Pshavi"
+
+ PROV3313:0 "Tusheti"
+ PROV_ADJ3313:0 "Tusheti"
+
+ PROV3314:0 "Qakh"
+ PROV_ADJ3314:0 "Qakh"
+
+ PROV3315:0 "Hereti"
+ PROV_ADJ3315:0 "Hereti"
+
+ PROV3316:0 "Astara"
+ PROV_ADJ3316:0 "Astara"
+
+ PROV3317:0 "Yardimli"
+ PROV_ADJ3317:0 "Yardimli"
+
+ PROV3318:0 "Salyan"
+ PROV_ADJ3318:0 "Salyan"
+
+ PROV3319:0 "Gobustan"
+ PROV_ADJ3319:0 "Gobustan"
+
+ PROV3320:0 "Shamakhi"
+ PROV_ADJ3320:0 "Shamakhi"
+
+ PROV3321:0 "Qabala"
+ PROV_ADJ3321:0 "Qabala"
+
+ PROV3322:0 "Aghjabadi"
+ PROV_ADJ3322:0 "Aghjabadi"
+
+ PROV3323:0 "Barda"
+ PROV_ADJ3323:0 "Barda"
+
+ PROV3324:0 "Dargina"
+ PROV_ADJ3324:0 "Dargina"
+
+ PROV3325:0 "Kaitag"
+ PROV_ADJ3325:0 "Kaitag"
+
+ PROV3326:0 "Qayagentli"
+ PROV_ADJ3326:0 "Qayagentli"
+
+ PROV3327:0 "Lezgina"
+ PROV_ADJ3327:0 "Lezgina"
+
+ PROV3328:0 "Yurtovsky"
+ PROV_ADJ3328:0 "Yurtovsky"
+
+ PROV3329:0 "Shanjir"
+ PROV_ADJ3329:0 "Shanjir"
+
+ PROV3330:0 "Mozdok"
+ PROV_ADJ3330:0 "Mozdok"
+
+ PROV3331:0 "Ingushetia"
+ PROV_ADJ3331:0 "Ingushetia"
+
+ PROV3332:0 "Mezdegu"
+ PROV_ADJ3332:0 "Mezdegu"
+
+ PROV3333:0 "Podkumok"
+ PROV_ADJ3333:0 "Podkumok"
+
+ PROV3334:0 "Maikop"
+ PROV_ADJ3334:0 "Maikop"
+
+ PROV3335:0 "Abadzekh"
+ PROV_ADJ3335:0 "Abadzekh"
+
+ PROV3336:0 "Kola"
+ PROV_ADJ3336:0 "Kola"
+
+ PROV3337:0 "Nalchik"
+ PROV_ADJ3337:0 "Nalchik"
+
+ PROV3338:0 "Beishto"
+ PROV_ADJ3338:0 "Beishto"
+
+ PROV3339:0 "Temirgoy"
+ PROV_ADJ3339:0 "Temirgoy"
+
+ PROV3340:0 "Besleney"
+ PROV_ADJ3340:0 "Besleney"
+
+ PROV3341:0 "Stavropol"
+ PROV_ADJ3341:0 "Stavropol"
+
+ PROV3342:0 "Bzhedug"
+ PROV_ADJ3342:0 "Bzhedug"
+
+ PROV3343:0 "Shanjir"
+ PROV_ADJ3343:0 "Shanjir"
+
+ PROV3344:0 "Adjara"
+ PROV_ADJ3344:0 "Adjara"
+
+ PROV3345:0 "Karanogay"
+ PROV_ADJ3345:0 "Karanogay"
+
+ PROV3346:0 "Makhachkala"
+ PROV_ADJ3346:0 "Makhachkala"
+
+ PROV3347:0 "Maritsa River"
+ PROV_ADJ3347:0 "Maritsa River"
+
+ #PROV3004:0 "Tyrconnell"
  #PROV3004:0 "Tyrconnell"
  PROV3005:0 "Oriel"
  PROV3006:0 "Ulster"          #Changed in VU
@@ -4639,7 +4775,7 @@
  PROV6776:0 "Tianjin"
  PROV6777:0 "Tangshan"
  PROV6778:0 "Langfang"
- PROV6779:0 "Baoding"
+ PROV6779:0 "Shunping"
  PROV6780:0 "Jinzhong"
  PROV6781:0 "Taiyun"
  PROV6782:0 "Xinzhou"
@@ -4727,7 +4863,7 @@
  PROV6864:0 "Mingguang"
  PROV6865:0 "Xuyi"
  PROV6866:0 "Jinhu"
- PROV6867:0 "Yangzhou"
+ PROV6867:0 "Baoying"
  PROV6868:0 "Pukou"
  PROV6869:0 "Changzhou"
  PROV6870:0 "Wuxi"
@@ -7551,7 +7687,7 @@
  PROV_ADJ6776:0 "Tianjin"
  PROV_ADJ6777:0 "Tangshan"
  PROV_ADJ6778:0 "Langfang"
- PROV_ADJ6779:0 "Haigang"
+ PROV_ADJ6779:0 "Shunping"
  PROV_ADJ6780:0 "Jinzhong"
  PROV_ADJ6781:0 "Taiyun"
  PROV_ADJ6782:0 "Xinzhou"
@@ -7639,7 +7775,7 @@
  PROV_ADJ6864:0 "Mingguang"
  PROV_ADJ6865:0 "Xuyi"
  PROV_ADJ6866:0 "Jinhu"
- PROV_ADJ6867:0 "Yangzhou"
+ PROV_ADJ6867:0 "Baoying"
  PROV_ADJ6868:0 "Pukou"
  PROV_ADJ6869:0 "Changzhou"
  PROV_ADJ6870:0 "Wuxi"

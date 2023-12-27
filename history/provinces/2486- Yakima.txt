@@ -12,9 +12,9 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
+
+
+
 
 
 1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
@@ -25,12 +25,10 @@ discovered_by = north_american
 	trade_goods = naval_supplies
 }
 1444.11.14 = { #VictorumUniversalis batch edit shortcut native start date end
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = SAL
 	is_city = no
 	trade_goods = unknown
 }
-1814.1.1 = { discovered_by = GBR } # Alexander Ross
 
-#Settled around 1860s with Josiah Merrit (Uncle Si) at modern North Bend.

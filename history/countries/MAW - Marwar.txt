@@ -314,10 +314,11 @@ capital = 514	# Jodphur
 
 1678.11.28 = {
 	monarch = {
-		regent = yes
+		name = "Antaral"
 		DIP = 0
 		MIL = 0
 		ADM = 0
+		regent = yes
 	}
 }
 

@@ -3,11 +3,7 @@ country_decisions = {
 	mughal_nation = {
 		major = yes
 		potential = {
-			OR = {
-				NOT = { tag = TIM }
-				has_country_flag = me_tim_mughal_path
-				has_country_flag = me_tim_babur_flight
-			}
+			#NOT = { tag = TIM }
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_mughal_empire_flag }
@@ -67,25 +63,14 @@ country_decisions = {
 			NOT = { exists = MUG }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			if = {
-				limit = {
-					has_country_flag = me_tim_babur_flight
-				}
-				num_of_owned_provinces_with = {
-					region = hindusthan_region
-					value = 6
-				}
+			OR = {
+				owns_core_province = 507 #Lahore
+				owns_core_province = 2075 #Sirhind
+				owns_core_province = 524 #Agra
 			}
-			else = {
-				OR = {
-					owns_core_province = 507 #Lahore
-					owns_core_province = 2075 #Sirhind
-					owns_core_province = 524 #Agra
-				}
-				owns_core_province = 522 	#Delhi
-				522 = {						#Delhi
-					is_state = yes
-				}
+			owns_core_province = 522 	#Delhi
+			522 = {						#Delhi
+				is_state = yes
 			}
 		}
 		effect = {

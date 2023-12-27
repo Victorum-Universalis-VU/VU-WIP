@@ -12,18 +12,19 @@ native_size = 15
 native_ferocity = 1
 native_hostileness = 3
 
-#discovered_by = south_american
+
+
 
 add_permanent_province_modifier = {
 	name = vu_amazon_rainforest_thick
 	duration = -1
 }
 
-1444.1.1 = { discovered_by = ZAQ }
-1571.1.1 = { discovered_by = SPA } 
+
+
 
 1571.1.1 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

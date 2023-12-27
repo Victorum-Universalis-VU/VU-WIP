@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 MAM_missions_1 = {
 	slot = 1
 	generic = no
@@ -428,23 +429,23 @@ MAM_missions_1 = {
 			320 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			country_event = { id = ME_Mamluks_Events.4 }
-			
-			custom_tooltip = " "
-			
-			tooltip = {
-				add_age_modifier = {
-					name = MAM_crusaders_repulsed
-					duration = -1
-					age = age_of_absolutism
-				}
-				custom_tooltip = " "
-				add_prestige_or_monarch_power = { amount = 40 }
-				custom_tooltip = " "
-				add_power_projection = {
-					type = mission_rewards_power_projection
-					amount = 20 
-				}
+			country_event_with_effect_insight = { #New effect call, supposed to show the option in the MT afaik : here for testing - by Altan
+				id = ME_Mamluks_Events.4 
+						
+				effect = "
+					add_age_modifier = {
+						name = MAM_crusaders_repulsed
+						duration = -1
+						age = age_of_absolutism
+					}
+					custom_tooltip = \" \"
+					add_prestige_or_monarch_power = { amount = 40 }
+					custom_tooltip = \" \"
+					add_power_projection = {
+						type = mission_rewards_power_projection
+						amount = 20 
+					}
+				"
 			}
 		}
 	}
@@ -1431,8 +1432,6 @@ MAM_missions_3 = {
 			}
 		}
 		effect = {
-			country_event = { id = ME_Mamluks_Events.5 } #influence beyliks or conquer
-			custom_tooltip = " "
 			#claims on lower half of white sheep
 			ME_give_claims = { id = 407 } #white sheep lands
 			ME_give_claims = { id = 418 }
@@ -1447,6 +1446,19 @@ MAM_missions_3 = {
 				name = MAM_ld_from_dev
 				duration = -1
 			}
+			country_event_with_option_insight = { 
+				id = ME_Mamluks_Events.5 
+				option_1 = "
+					ME_mam_event_5_opt_1 = yes
+				"
+				option_2 = "
+					add_country_modifier = {
+						name = MAM_help_vassalize_beyliks
+						duration = 7300
+					}
+					custom_tooltip = MAM_karaman_will_be_easier
+				"
+			} #influence beyliks or conquer
 		}
 	}
 	
@@ -1646,7 +1658,23 @@ MAM_missions_4 = {
 		}
 		effect = {
 			custom_tooltip = MAM_three_most_developed_provinces
-			country_event = { id = ME_Mamluks_Events.3 }
+			country_event_with_option_insight = { 
+				id = ME_Mamluks_Events.3 
+				option_1 = "
+					random_owned_province = {
+						change_trade_goods = paper
+					}
+					random_owned_province = {
+						change_trade_goods = glass
+					}
+					random_owned_province = {
+						change_trade_goods = cloth
+					}
+				"
+				option_2 = "
+					add_years_of_income = 1
+				"
+			}
 			
 			custom_tooltip = " "
 			
@@ -2524,7 +2552,22 @@ MAM_missions_5 = {
 		effect = {
 			custom_tooltip = MAM_if_by_opinion
 			tooltip = {
-				KAR = { country_event = { id = ME_Mamluks_Events.10 } }
+				KAR = { 
+					country_event_with_option_insight = {
+						id = ME_Mamluks_Events.10 
+						option_1 = "
+							ROOT = {
+								create_subject = {
+									subject = KAR
+									subject_type = vassal
+								}
+							}
+						"
+						option_2 = "
+							add_prestige_or_monarch_power = { amount = 10 }
+						"
+					} 
+				}
 				custom_tooltip = " "
 				add_dip_power = 50
 				
@@ -2550,7 +2593,22 @@ MAM_missions_5 = {
 							NOT = { tag = TUR }
 						}
 					}
-					KAR = { country_event = { id = ME_Mamluks_Events.10 } }
+					KAR = { 
+						country_event_with_option_insight = { 
+							id = ME_Mamluks_Events.10 
+							option_1 = "
+								ROOT = {
+									create_subject = {
+										subject = KAR
+										subject_type = vassal
+									}
+								}
+							"
+							option_2 = "
+								add_prestige_or_monarch_power = { amount = 10 }
+							"
+						} 
+					}
 					add_dip_power = 50
 				}
 				else = {

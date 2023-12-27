@@ -5,6 +5,7 @@ add_government_reform = feudal_monarchy #Placeholder for now until somebody come
 government_rank = 1
 primary_culture = catalan
 religion = catholic
+#technology_group = western
 technology_group = spanish_tech_group
 unit_type = western
 capital = 7889

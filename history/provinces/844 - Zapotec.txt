@@ -15,7 +15,8 @@ add_core = ZAP
 
 
 
-#discovered_by = mesoamerican
+
+
 
 1490.1.1 = {
 	owner = AZT
@@ -23,7 +24,7 @@ add_core = ZAP
 	add_core = AZT
 } #estmated, sometime during the reign of Ahuizotl
 1524.1.1 = {
-	discovered_by = SPA 
+	 
 	owner = SPA 
 	controller = SPA
 	add_core = SPA

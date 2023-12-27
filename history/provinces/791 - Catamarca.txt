@@ -15,8 +15,10 @@ native_size = 30
 native_ferocity = 1
 native_hostileness = 7	
 
-#discovered_by = south_american
-#discovered_by = andean
+
+
+
+
 
 1485.1.1 = {
 	owner = INC
@@ -27,13 +29,13 @@ native_hostileness = 7
 	trade_goods = grain
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA
 	capital = "Catamarca"
 }# The death of Atahualpa
-1558.1.1 = { discovered_by = SPA } # Juan Pérez de Zurita, the colony is under constant attack
+
 1683.1.1 = {
 	culture = castillian
 	religion = catholic

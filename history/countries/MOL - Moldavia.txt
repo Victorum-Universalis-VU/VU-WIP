@@ -3,7 +3,8 @@ add_government_reform = romanian_principality
 government_rank = 1
 primary_culture = romanian
 religion = orthodox
-technology_group = polish_tech_group
+#technology_group = eastern
+technology_group = hungarian_tech_group
 capital = 3156 # Suceava
 unit_type = eastern
 

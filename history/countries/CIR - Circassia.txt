@@ -3,7 +3,8 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = circassian
 religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 463 # Circassia
 
 # Being a confederation, there were a lot of Princes that ruled small areas with no significant leader, other than maybe Petrezok.  They banded together for defense when needed.
@@ -20,6 +21,7 @@ capital = 463 # Circassia
 
 1470.1.1 = {
 	monarch = {
+		name = "Petrezok"
 		adm = 0
 		mil = 0
 		dip = 0

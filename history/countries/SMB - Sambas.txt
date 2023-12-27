@@ -17,6 +17,7 @@ capital = 640
 
 1480.1.1 = {
 	monarch = {
+		name = "Sintang"
 		adm = 3
 		dip = 3
 		mil = 3

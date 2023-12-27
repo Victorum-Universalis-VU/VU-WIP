@@ -5,5 +5,6 @@ primary_culture = hannoverian
 religion = catholic
 #technology_group = western
 technology_group = german_tech_group
+unit_type = western
 capital = 82 # Westfalen
 fixed_capital = 82 # Cannot move capital away from this province & no power cost to move to it

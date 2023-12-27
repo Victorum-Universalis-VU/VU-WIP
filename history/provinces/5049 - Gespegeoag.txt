@@ -13,16 +13,6 @@ native_ferocity = 1
 native_hostileness = 3 
 
 
-discovered_by = north_american
-
-
-1500.1.1 = { discovered_by = ENG } # John Cabot per Alwyn Ruddock I'm going with it
-
-1521.1.1 = { discovered_by = POR } # Multiple Portuguese explorers active around this time couldnt find which
-
-1534.9.1 = { discovered_by = FRA } # Jaques Cartier's first voyage
-
-1609.1.1 = { discovered_by = NED } # Henry Hudson sailing for the Dutch
 
 1636.1.1 = {
 	owner = FRA
@@ -36,7 +26,7 @@ discovered_by = north_american
 } #About 1636, Nicolas Denys, Sieur de Fronsac, established a fort and trading post, on the Nepisiguit. Using Caraquet name because it suits better than native name and cant find the proper name for Denyss settlement
 
 1707.5.12  = {
-	discovered_by = GBR
+	
 }
 
 1713.4.11 = {

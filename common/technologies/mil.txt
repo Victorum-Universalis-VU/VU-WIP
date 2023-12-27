@@ -8,7 +8,6 @@ ahead_of_time = {
 }
 
 # Pre-era techs
-
 technology = {
 	# Tech 0
 	year = 1150
@@ -220,7 +219,7 @@ technology = {  #Heavy Calvalry
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.05
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	cavalry_shock = 0.10
@@ -236,7 +235,7 @@ technology = {  #Plate Armor
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 		civil_service = 0.1
-		market_production = 0.05
+		market_production = 0.5
 	}
 
 	land_morale = 0.2
@@ -385,6 +384,8 @@ technology = {
 
 	
 	#Pike Square
+
+
 	land_morale = 0.5
 	military_tactics = 0.25
 	infantry_shock = 0.10
@@ -457,6 +458,9 @@ technology = {
 	military_tactics = 0.25
 	infantry_shock = 0.30
 	infantry_fire = 0.20
+
+
+
 
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry	
@@ -604,6 +608,7 @@ technology = {
 	enable = scottish_mercenary
 	enable = south_american_arquebusier	
 	enable = south_american_rifle_cavalry
+	enable = qizilbash_cavalry_unit
 	enable = spanish_heavy_longpike
 	enable = spanish_heavy_infantry
 	enable = spanish_heavy_mercenary
@@ -632,6 +637,7 @@ technology = {
 	#Matchlock Musket
 	infantry_shock		= 	0.20
 	cavalry_fire		= 	0.5
+
 
 	weapons = yes
 
@@ -794,6 +800,8 @@ technology = {
 	land_morale = 1.0
 	military_tactics = 0.25
 
+
+
 	enable = dutch_maurician
 	enable = english_maurician
 	enable = french_close_shot
@@ -824,6 +832,7 @@ technology = {
 	#Standardisation of Calibre
 	artillery_shock = 0.1
 	artillery_fire = 1.0	
+
 	
 	enable = french_charge
 	enable = irish_charge
@@ -880,6 +889,7 @@ technology = {
 	cavalry_shock = 0.5
 	maneuver_value = 0.25
 
+
 	enable = asian_musketeer
 	enable = french_gallop
 	enable = ha_xoloti
@@ -917,6 +927,8 @@ technology = {
 	#Gustavian Infantry
 	military_tactics = 0.25
 	supply_limit = 0.5
+
+
 
 	enable = austrian_tercio
 	enable = british_snapshot
@@ -963,6 +975,7 @@ technology = {
 	}
 	
 	#Killing Grounds
+
 	infantry_fire = 0.5
 		
 	enable = adal_guerilla_warfare
@@ -1030,6 +1043,8 @@ technology = {
 	cavalry_fire = 0.5
 	artillery_shock = 0.1
 	artillery_fire = 2.0
+	
+
 
 	enable = polish_winged_hussar	
 	enable = muscovite_cossack

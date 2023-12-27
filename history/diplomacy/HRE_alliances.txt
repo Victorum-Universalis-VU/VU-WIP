@@ -1,0 +1,331 @@
+################################################################
+######################## Austria (VU) ########################
+################################################################
+
+###########
+# Vassals #
+###########
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = GLG
+	start_date = 1444.1.1
+	end_date = 1476.2.22
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = GLG
+	start_date = 1480.6.1
+	end_date = 1488.5.25
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = LEG
+	start_date = 1444.1.1
+	end_date = 1526.8.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = HAB
+	second = LEG
+	start_date = 1526.8.30
+	end_date = 1676.6.1
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = OLE
+	start_date = 1444.1.1
+	end_date = 1492.9.21
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = BET
+	start_date = 1492.9.21
+	end_date = 1498.6.1
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = MST
+	start_date = 1472.6.1
+	end_date = 1526.8.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = HAB
+	second = MST
+	start_date = 1526.8.30
+	end_date = 1542.6.1
+}
+vassal = {
+	first = HAB
+	second = MST
+	start_date = 1551.6.1
+	end_date = 1569.3.17
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = OPL
+	start_date = 1444.1.1
+	end_date = 1526.8.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = HAB
+	second = OPL
+	start_date = 1526.8.30
+	end_date = 1650.1.1
+}
+
+vassal = {
+	first = PLC
+	second = OPL
+	start_date = 1650.1.1
+	end_date = 1660.1.1
+}
+
+vassal = {
+	first = HAB
+	second = OPL
+	start_date = 1660.1.1
+	end_date = 1668.9.16
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = TRO
+	start_date = 1444.1.1
+	end_date = 1526.8.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = BEG
+	start_date = 1444.1.1
+	end_date = 1521.5.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = TES
+	start_date = 1444.1.1
+	end_date = 1526.8.30
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = HAB
+	second = TES
+	start_date = 1526.8.30
+	end_date = 1653.6.1
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = RAC
+	start_date = 1444.1.1
+	end_date = 1521.6.1
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = NIE
+	start_date = 1444.1.1
+	end_date = 1447.8.9
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = ASC
+	start_date = 1444.1.1
+	end_date = 1457.1.1
+}
+
+dependency = {
+	subject_type = silesian_duke
+	first = BOH
+	second = SAG
+	start_date = 1461.1.1
+	end_date = 1468.6.1
+}
+
+vassal = {
+	first = BOH
+	second = SAG
+	start_date = 1476.1.1
+	end_date = 1480.6.1
+}
+
+vassal = {
+	first = BOH
+	second = SAG
+	start_date = 1488.5.25
+	end_date = 1504.9.22
+}
+
+################################################################
+######################## Bohemia (VU) ########################
+################################################################
+
+###########
+# Vassals #
+###########
+
+vassal = {
+	first = HAB
+	second = TST
+	start_date = 1806.7.12
+	end_date = 1809.1.1
+}
+
+vassal = {
+	first = WOL
+	second = RUG
+	start_date = 1444.1.1
+	end_date = 1478.1.1
+}
+
+vassal = {
+	first = PRO 
+	second = BAR
+	start_date = 1400.7.12
+	end_date = 1620.1.1
+}
+################################################################
+######################## Lubeck (VU) ###########################
+################################################################
+
+#Bishophoric of Lubeck (VU)
+march = {
+	first = HSA
+	second = BLK
+	start_date = 1160.1.1
+	end_date = 1803.1.1
+}
+
+################################################################
+######################## Munster (VU) ########################
+################################################################
+
+##########
+# Unions #
+##########
+
+union = {
+	first = MUN
+	second = OSN
+	start_date = 1442.1.1
+	end_date = 1444.11.13
+}
+union = {
+	first = MUN
+	second = OSN
+	start_date = 1444.11.18
+	end_date = 1450.6.3
+}
+
+################################################################
+########################## Koln (VU) #########################
+################################################################
+
+##########
+# Unions #
+##########
+
+union = {
+	first = KOL
+	second = PAD
+	start_date = 1415.1.1
+	end_date = 1444.11.13 ##Cologne/Munster Shattered/Performance Start accomodation
+}
+union = {
+	first = KOL
+	second = PAD
+	start_date = 1444.11.18
+	end_date = 1463.2.14
+}
+
+################################################################
+###################### Switzerland (VU) ######################
+################################################################
+
+###########
+# Vassals #
+###########
+
+vassal = {
+	first = SWI
+	second = BSL
+	start_date = 1444.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+vassal = {
+	first = SWI
+	second = BSL
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1501.6.9
+}
+
+vassal = {
+	first = SWI
+	second = ZDN
+	start_date = 1444.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+vassal = {
+	first = SWI
+	second = ZDN
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1529.3.12
+}
+
+# Switzerland-Grey Leagues relations
+vassal = {
+	first = SWI
+	second = TTL
+	start_date = 1497.1.1
+	end_date = 1520.1.1
+}
+
+#############
+# Alliances #
+#############
+
+# Switzerland and Austria (League of Constance)
+alliance = {
+	first = SWI
+	second = HAB
+	start_date = 1474.3.30
+	end_date = 1477.1.6
+}	
+
+# Switzerland and Lorraine (League of Constance)
+alliance = {
+	first = SWI
+	second = LOR
+	start_date = 1474.4.18
+	end_date = 1477.1.6
+}

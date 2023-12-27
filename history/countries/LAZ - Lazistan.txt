@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = noble_elite_reform
+government_rank = 1
+primary_culture = laz_culture
+religion = orthodox
+#technology_group = eastern
+technology_group = russian_tech_group
+capital = 3248

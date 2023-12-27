@@ -4,6 +4,7 @@ government_rank = 3
 primary_culture = cosmopolitan_french
 add_accepted_culture = greek
 religion = catholic
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 capital = 151	#Constantinople

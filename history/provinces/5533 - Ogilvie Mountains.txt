@@ -1,3 +1,2 @@
 # No previous file for Victorum Universalis province
 
-discovered_by = north_american

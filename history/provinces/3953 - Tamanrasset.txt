@@ -1,6 +1,5 @@
 #3953 - Tamanrasset
 
-is_city = no
 culture = tuareg
 religion = sunni
 capital = "Tamanrasset"
@@ -12,7 +11,3 @@ base_manpower = 1
 native_size = 45
 native_ferocity = 8
 native_hostileness = 8
-
-##discovered_by = sub_saharan
-1444.1.1 = { discovered_by = MOR } 
-1800.1.1 = { discovered_by = FRA }

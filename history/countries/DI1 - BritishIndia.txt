@@ -1,5 +1,4 @@
 #British India
-
 government = republic
 add_government_reform = presidential_despot_reform
 #technology_group = western
@@ -8,4 +7,5 @@ primary_culture = british_indian
 religion = protestant
 unit_type = western
 government_rank = 1
-mercantilism = 0.1
+mercantilism = 25
+capital = 522

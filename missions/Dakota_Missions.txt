@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 sioux_1 = {
 	slot = 1
 	generic = no
@@ -90,9 +90,9 @@ sioux_1 = {
 		
 		trigger = {
 			OR = {
-				has_reform = native_becomes_monarchy_reform
-				has_reform = native_becomes_republic_reform
-				has_reform = native_becomes_theocracy_reform
+				government = monarchy
+				government = theocracy
+				government = republic
 			}
 			dakota_area = {
 				type = all
@@ -251,19 +251,19 @@ sioux_1 = {
 		
 		trigger = {
 			any_known_country = {
-				OR = {
-		        	technology_group = western
-		        	technology_group = english_tech_group
-		        	technology_group = french_tech_group
-		        	technology_group = dutch_tech_group
-		        	technology_group = german_tech_group
-		        	technology_group = italian_tech_group
-			    	technology_group = portuguese_tech_group
-		        	technology_group = roman_tech_group
+	        	OR = {
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
+					technology_group = italian_tech_group
+					technology_group = portuguese_tech_group
+					technology_group = roman_tech_group
 					technology_group = scandinavian_tech_group
-		        	technology_group = spanish_tech_group
-			    	technology_group = swiss_tech_group
-		        }
+					technology_group = spanish_tech_group
+					technology_group = swiss_tech_group
+				}
 				OR = {
 					alliance_with = ROOT
 					has_opinion = {

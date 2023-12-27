@@ -1,7 +1,8 @@
 # - Arrial dos Couros
 
 culture = ge
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Arrial dos Couros"
 trade_goods = unknown
@@ -16,7 +17,7 @@ center_of_trade = 1
 
 
 
-1580.1.1 = { discovered_by = POR }
+
 
 1710.1.1 = {
 	owner = POR

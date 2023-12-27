@@ -19,9 +19,10 @@ native_hostileness = 2
 
 
 
-#discovered_by = mesoamerican
 
-1517.1.1 = { discovered_by = SPA }
+
+
+
 1521.8.13 = {
 	owner = SPA
 	controller = SPA

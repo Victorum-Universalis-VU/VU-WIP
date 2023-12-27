@@ -1,11 +1,9 @@
 is_possible_subject_of_subject_type_vassal = {
 	NOT = { is_subject_of_type = vassal }
-	is_possible_vassal = yes
 }
 
 is_possible_subject_of_subject_type_march = {
 	NOT = { is_subject_of_type = march }
-	is_possible_march = yes
 }
 
 is_possible_subject_of_subject_type_daimyo_vassal = {
@@ -58,30 +56,35 @@ is_possible_subject_of_subject_type_protectorate = {
 	NOT = { is_subject_of_type = protectorate }
 	is_subject = no
 	NOT = { 
-		technology_group = western
-		technology_group = english_tech_group
-		technology_group = french_tech_group
-		technology_group = dutch_tech_group
-		technology_group = german_tech_group
-		technology_group = italian_tech_group
-		technology_group = portuguese_tech_group
-		technology_group = roman_tech_group
-		technology_group = scandinavian_tech_group
-		technology_group = spanish_tech_group
-		technology_group = swiss_tech_group
+		OR = {
+			technology_group = western
+			technology_group = dutch_tech_group
+			technology_group = english_tech_group
+			technology_group = french_tech_group
+			technology_group = german_tech_group
+			technology_group = italian_tech_group
+			technology_group = portuguese_tech_group
+			technology_group = roman_tech_group
+			technology_group = scandinavian_tech_group
+			technology_group = spanish_tech_group
+			technology_group = swiss_tech_group
+		}
 	}
 	NOT = { 
-		technology_group = bohemian_tech_group
-		technology_group = byzantine_tech_group
-		technology_group = eastern
-		technology_group = hungarian_tech_group
-		technology_group = polish_tech_group
-		technology_group = russian_tech_group
+		OR = {
+			technology_group = eastern
+			technology_group = bohemian_tech_group
+			technology_group = byzantine_tech_group
+			technology_group = hungarian_tech_group
+			technology_group = polish_tech_group
+			technology_group = russian_tech_group
+			technology_group = bulgarian_tech_group
+		}
 	}
 	NOT = { technology_group = muslim }
-	OR = {
-		NOT = { has_global_flag = extended_timeline_mod }
-	}
+	#OR = {
+	#	NOT = { has_global_flag = extended_timeline_mod }
+	#}
 	PREV = {
 		NOT = { same_continent = PREV }
 	}
@@ -453,25 +456,25 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 	}
 }
 
-is_possible_subject_of_subject_type_salic_personal_union = {
-	# PREVs in THIS scope refer to possible overlord
-	has_global_flag = extended_timeline_mod
-	NOT = { is_subject_of_type = salic_personal_union }
-	is_subject = no
-	#has_reform = salic_reform
-	OR = {
-		is_in_war = {
-			attacker_leader = PREV
-			defender_leader = THIS
-			casus_belli = cb_salic_reunification
-		}
-		is_in_war = {
-			attacker_leader = THIS
-			defender_leader = PREV
-			casus_belli = cb_salic_reunification
-		}
-	}
-}
+#is_possible_subject_of_subject_type_salic_personal_union = {
+#	# PREVs in THIS scope refer to possible overlord
+#	has_global_flag = extended_timeline_mod
+#	NOT = { is_subject_of_type = salic_personal_union }
+#	is_subject = no
+#	has_reform = salic_reform
+#	OR = {
+#		is_in_war = {
+#			attacker_leader = PREV
+#			defender_leader = THIS
+#			casus_belli = cb_salic_reunification
+#		}
+#		is_in_war = {
+#			attacker_leader = THIS
+#			defender_leader = PREV
+#			casus_belli = cb_salic_reunification
+#		}
+#	}
+#}
 
 is_possible_subject_of_subject_type_nahuatl_vassal = {
 	# PREVs in THIS scope refer to possible overlord
@@ -847,13 +850,10 @@ is_possible_subject_of_subject_type_pagan_chiefdom = {
 	vassal_of = PREV
 	OR = {
 		religion_group = pagan
-		# Extended Timeline religions
-		religion = druidism
-		religion = zamolxism
-		religion_group = american_pagan
-		religion_group = slavic_pagan
-		religion_group = german_pagan
+		religion_group = slavic_group
+		religion_group = balto_slavic_group
 		religion = shamanism
+		religion_group = asian_pagan_group
 	}
 }
 
@@ -863,17 +863,19 @@ is_possible_subject_of_subject_type_native_reserve = {
 	is_subject = no
 	is_former_colonial_nation = no
 	NOT = { 
-		technology_group = western
-		technology_group = english_tech_group
-		technology_group = french_tech_group
-		technology_group = dutch_tech_group
-		technology_group = german_tech_group
-		technology_group = italian_tech_group
-		technology_group = portuguese_tech_group
-		technology_group = roman_tech_group
-		technology_group = scandinavian_tech_group
-		technology_group = spanish_tech_group
-		technology_group = swiss_tech_group
+		OR = {
+			technology_group = western
+			technology_group = dutch_tech_group
+			technology_group = english_tech_group
+			technology_group = french_tech_group
+			technology_group = german_tech_group
+			technology_group = italian_tech_group
+			technology_group = portuguese_tech_group
+			technology_group = roman_tech_group
+			technology_group = scandinavian_tech_group
+			technology_group = spanish_tech_group
+			technology_group = swiss_tech_group
+		}
 	}
 	capital_scope = {
 		OR = {
@@ -1666,7 +1668,7 @@ is_subject_type_that_can_have_subjects = {
 	OR = {
 		is_subject_of_type = personal_union
 		is_subject_of_type = tributary_state
-		is_subject_of_type = salic_personal_union
+		#is_subject_of_type = salic_personal_union
 		is_subject_of_type = integrated_personal_union
 		is_subject_of_type = protectorate
 		is_subject_of_type = pirate_brotherhood_vassal
@@ -1703,7 +1705,7 @@ is_subject_type_that_can_be_annexed = {
 		is_subject_of_type = roman_client_kingdom
 		is_subject_of_type = voivodeship
 		is_subject_of_type = fief_subject
-		is_subject_of_type = salic_personal_union
+		#is_subject_of_type = salic_personal_union
 		is_subject_of_type = nahuatl_vassal
 		is_subject_of_type = pirate_brotherhood_vassal
 		is_subject_of_type = integrated_tribe_subject

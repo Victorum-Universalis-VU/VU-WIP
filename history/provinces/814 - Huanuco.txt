@@ -15,9 +15,11 @@ add_core = HJA
 center_of_trade = 1
 
 
-#discovered_by = south_american
-#discovered_by = andean
-1444.1.1 = { discovered_by = CHM } 
+
+
+
+
+ 
 
 
 1465.1.1 = {
@@ -31,7 +33,7 @@ center_of_trade = 1
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

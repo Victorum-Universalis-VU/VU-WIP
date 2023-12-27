@@ -1,7 +1,8 @@
 #750 - Crato
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Crato"
 trade_goods = unknown
@@ -16,7 +17,7 @@ native_hostileness = 6
 
 
 
-1500.4.23 = { discovered_by = POR }
+
 
 1650.1.1 = {
 	owner = POR

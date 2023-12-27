@@ -20,15 +20,16 @@ add_permanent_province_modifier = {
     duration = -1
 }
 
-1444.1.1 = { discovered_by = MAY } 1444.1.1 = { discovered_by = ZAP } 1444.1.1 = { discovered_by = AZT } 
-#discovered_by = mesoamerican
+
+
+
 
 1465.1.1 = { 
 	owner = TAR
 	controller = TAR 
 } #Estimated
 1490.1.1 = { add_core = TAR } #Tarascan resettlement
-1522.1.1 = { discovered_by = SPA } # Cristobal de Olid 
+
 1523.1.1 = {
 	owner = SPA
 	controller = SPA

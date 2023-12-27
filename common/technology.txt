@@ -109,6 +109,23 @@ groups = {
 			value = 75
 		}
 	}
+	bulgarian_tech_group = {
+		start_level = 3
+		start_cost_modifier = 0.20
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
     scandinavian_tech_group = {
 		start_level = 3
 		start_cost_modifier = 0
@@ -163,6 +180,23 @@ groups = {
 	ottoman = {
 		start_level = 3
 		start_cost_modifier = 0.25
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	persian_tech_group = {
+		start_level = 3
+		start_cost_modifier = 0.40
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {

@@ -258,13 +258,6 @@ estate_rajput_rajput_regiments = {
 	can_select = {
 	}
 	on_granted = {
-		add_country_modifier = {
-			name = GE_rajput_regiments
-			duration = -1
-		}
-	}
-	on_revoked = {
-		remove_country_modifier = GE_rajput_regiments
 	}
 	modifier_by_land_ownership = {
 		allowed_rajput_fraction = 0.5
@@ -272,7 +265,6 @@ estate_rajput_rajput_regiments = {
 	penalties = {
 	}
 	benefits = {
-	    allowed_rajput_fraction = 0.1
 	    infantry_cost = -0.10
 	}
 	mechanics = {
@@ -281,6 +273,9 @@ estate_rajput_rajput_regiments = {
 	}
 	ai_will_do = {
 		factor = 10
+	}
+	additional_description = { #You can put static modifier names here as well as normal localisation keys
+		rajput_regiment
 	}
 }
 
@@ -293,10 +288,9 @@ estate_rajput_military = {
 	is_valid = {
 	}
 	can_select = {
-		custom_trigger_tooltip = {
-			tooltip = no_other_mil_privilege
-			NOT = { has_estate_privilege = estate_nobles_nobility_primacy }
-			NOT = { has_estate_privilege = estate_maratha_military }
+		can_select_monarch_power_privilege = {
+			estate = estate_rajput
+			type = mil
 		}
 	}
 	on_granted = {
@@ -350,7 +344,6 @@ estate_rajput_advisor = {
 	is_valid = {
 		NOT = { religion_group = muslim }
 	}
-	loyalty = 0.05
 	penalties = {
 		stability_cost_modifier = 0.1
 	}
@@ -859,7 +852,6 @@ estate_rajput_subject_rights = {
 				is_subject_of_type = client_march
 				is_subject_of_type = personal_union
 			}
-			 
 		}
 		NOT = { has_estate = estate_nobles }
 	}

@@ -141,7 +141,7 @@ monothelite_rebels = {
 				limit = {
 					NOT = { religion = monothelite }
 					is_reformation_center = no
-					NOT = { owner = { religion = nmonothelite } }
+					NOT = { owner = { religion = monothelite } }
 				}
 				change_religion = monothelite
 				add_province_modifier = {
@@ -229,7 +229,7 @@ monothelite_rebels = {
 				NOT = { dominant_religion = monothelite }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = christian }
+				religion_group = christian
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"

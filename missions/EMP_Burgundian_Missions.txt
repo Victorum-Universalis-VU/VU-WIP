@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 emp_burgundy_1 = {
 	slot = 1
 	generic = no
@@ -624,6 +624,9 @@ emp_burgundy_3 = {
 			1742 = {
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	

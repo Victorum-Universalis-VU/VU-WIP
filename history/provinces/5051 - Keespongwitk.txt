@@ -12,15 +12,15 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
 
-1500.1.1 = { discovered_by = ENG } # John Cabot
 
-1521.1.1 = { discovered_by = POR } # Multiple Portuguese explorers active around this time couldnt find which
 
-1604.1.1 = { discovered_by = FRA } # Pierre Dugua, Sieur de Mons
 
-1609.1.1 = { discovered_by = NED } # Henry Hudson sailing for the Dutch
+ 
+
+
+
+
 
 1620.1.1 = {
 	owner = FRA
@@ -65,7 +65,7 @@ discovered_by = north_american
 }	# Treaty of Breda with NED forces ENG to return Acadia to FRA
 
 1707.5.12  = {
-	discovered_by = GBR
+	
 	add_core = GBR
 	remove_core = ENG
 }

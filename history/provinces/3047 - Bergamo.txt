@@ -13,9 +13,8 @@ base_manpower = 4
 base_tax = 6 
 base_production = 6
 
-#discovered_by = sub_saharan
 
-1445.1.1 = { discovered_by = POR }
+
 
 1482.1.1 = { unrest = 4 } #Bemoy revolt against Jolof governors, aided by Portuguese
 1498.1.1 = { unrest = 4 } #Fulani incursions begin 

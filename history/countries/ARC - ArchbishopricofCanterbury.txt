@@ -3,6 +3,7 @@ add_government_reform = church_of_england_reform
 government_rank = 2
 primary_culture = english
 religion = catholic
+#technology_group = western
 technology_group = english_tech_group
 unit_type = western
 capital = 7423 # Canterbury

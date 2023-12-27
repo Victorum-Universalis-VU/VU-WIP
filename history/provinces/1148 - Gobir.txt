@@ -13,11 +13,6 @@ hre = no
 base_tax = 6 
 base_production = 6
 
-
-
-#discovered_by = sub_saharan
-
-
 1514.1.1 = { owner = SON controller = SON add_core = SON } #Askiya Muhammad of Songhai seizes control 
 1515.1.1 = { owner = HAU controller = HAU add_core = HAU} #Rise Of Kebbi to replace Songhai rule in the region
 1592.1.1 = { unrest = 7 capital = "Hisatau" } #Tuareg invasions force relocation of capital
@@ -32,7 +27,6 @@ base_production = 6
 1761.1.1 = { unrest = 0 } #Gobir drives out Zamfara
 1790.1.1 = { unrest = 3 } #Islamic revival led by Usman dan Fodio begins to challenge Hausa ruler legitimacy
 1804.1.1 = {
-	discovered_by = SOK
 	owner = SOK
 	controller = SOK
 	add_core = SOK

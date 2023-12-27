@@ -3,10 +3,9 @@ add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = armenian
 religion = miaphysite
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 3734
-
-###
 
 1200.1.1 = {
 	monarch = {
@@ -17,8 +16,6 @@ capital = 3734
 		mil = 3
 	}
 }
-
-###
 
 1444.1.1 = {
 	monarch = {

@@ -9,11 +9,11 @@ religion = animism
 capital = "Sisirimuka"
 trade_goods = fur
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 
-1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
+
 
 1679.1.1 = {	
 	owner = TKG
@@ -24,4 +24,4 @@ base_manpower = 1
 } # Russian & Japanese attemps at colonization
 1704.1.1 = { add_core = TKG }
 1767.1.1 = { add_core = RUS }
-1787.1.1 = { discovered_by = FRA } # Jean-Francois de La Pérouse
+

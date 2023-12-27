@@ -4,6 +4,7 @@ government_rank = 3
 mercantilism = 25
 primary_culture = novgorodian
 religion = orthodox
+#technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 historical_rival = MOS

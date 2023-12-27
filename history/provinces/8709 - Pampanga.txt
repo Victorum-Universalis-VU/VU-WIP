@@ -1,22 +1,23 @@
 #Pampanga
 
-culture = filipino
+culture = pampangan
 religion = animism
 capital = "Pampanga"
 trade_goods = fish
 hre = no
-base_tax = 2 
-base_production = 2
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 owner = TDO
 controller = TDO
 add_core = TDO
 
-discovered_by = chinese
 
 
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+
+
+ # Ferdinand Magellan 
 1576.1.1 = {
 	owner = SPA
 	controller = SPA

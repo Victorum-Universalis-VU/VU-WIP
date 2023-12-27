@@ -9,14 +9,21 @@ religion = bon
 capital = "Sakya"
 trade_goods = carpet	#was livestock, some carpet making in Tibet but Lhasa already producing cloth
 hre = no
-base_tax = 4 
+base_tax = 4
 base_production = 4
-base_manpower = 2 
+base_manpower = 4
 is_city = yes
 
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
+
+
+
+
 
 1642.6.1 = {
 	controller = KSD
@@ -33,7 +40,7 @@ discovered_by = indian
 	controller = UTS
 	add_core = UTS
 }
-1721.1.1 = { discovered_by = SPA }
+
 1755.10.4 = { unrest = 7 } # Rebellion aginst the Chinese
 1757.10.4 = { unrest = 0 }
 1792.11.1 = {

@@ -9,16 +9,10 @@ religion = taoism
 capital = "Yeungkong"
 trade_goods = sugar
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
-
-1514.1.1 = { discovered_by = POR }
 
 1647.4.1 = {
 	owner = QNG

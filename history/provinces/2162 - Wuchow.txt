@@ -8,18 +8,10 @@ religion = confucianism
 capital = "Ngchow"
 trade_goods = copper
 hre = no
-base_tax = 2  
-base_production = 2 
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
-
-
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
-
-1595.1.1 = { discovered_by = SPA }
 
 1651.12.1 = {
 	owner = QNG

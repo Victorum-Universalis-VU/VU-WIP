@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 emp_bohemia_1 = {
 	slot = 1
 	generic = no
@@ -465,60 +465,50 @@ emp_bohemia_2 = {
 					add_permanent_claim = ROOT
 				}
 				8175 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-				8183 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			    	if = {
+			    		limit = {
+			    			NOT = { is_permanent_claim = ROOT }
+			    			NOT = { is_core = ROOT }
+			    		}
+			    		add_permanent_claim = ROOT
+			    	}
+			    }
+			    8183 = {
+			    	if = {
+			    		limit = {
+			    			NOT = { is_permanent_claim = ROOT }
+			    			NOT = { is_core = ROOT }
+			    		}
+			    		add_permanent_claim = ROOT
+			    	}
+			    }
 				4125 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			    	if = {
+			    		limit = {
+			    			NOT = {	is_permanent_claim = ROOT }
+							NOT = {	is_core = ROOT }
+			    		}
+			    		add_permanent_claim = ROOT
+			    	}
+			    }
 				8194 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			8196 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			    	if = {
+			    		limit = {
+			    			NOT = {	is_permanent_claim = ROOT }
+							NOT = {	is_core = ROOT }
+			    		}
+			    		add_permanent_claim = ROOT
+			    	}
+			    }
+			    8196 = {
+			    	if = {
+			    		limit = {
+			    			NOT = {	is_permanent_claim = ROOT }
+							NOT = {	is_core = ROOT }
+			    		}
+			    		add_permanent_claim = ROOT
+			    	}
+			    }
 			}
 		}
 		ai_weight = {
@@ -591,10 +581,8 @@ emp_bohemia_2 = {
 			134 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -864,10 +852,8 @@ emp_bohemia_3 = {
 			7824 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -875,10 +861,8 @@ emp_bohemia_3 = {
 			2995 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -890,6 +874,9 @@ emp_bohemia_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 100	#Little bit too ambitious?
 		}
 	}
 	

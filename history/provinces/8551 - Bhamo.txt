@@ -7,16 +7,23 @@ religion = buddhism
 capital = "Wanmaw"
 trade_goods = copper
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = MMT
 
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 1502.1.1 = {
 	owner = SST
@@ -35,7 +42,7 @@ discovered_by = indian
 	owner = TAU
 	controller = TAU
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1752.1.1 = {
 	owner = SST
 	controller = SST
@@ -44,4 +51,4 @@ discovered_by = indian
 	owner = TAU
 	controller = TAU
 }
-1760.1.1 = { discovered_by = GBR }
+

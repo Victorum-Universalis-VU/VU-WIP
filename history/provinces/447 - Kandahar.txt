@@ -16,25 +16,11 @@ add_core = AFG
 add_core = KHO
 center_of_trade = 2
 
-1444.1.1 = { discovered_by = KAS } 
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
 fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortress in Western Asia
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur
@@ -56,7 +42,7 @@ fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortr
 } # Conquered by Mughals
 1558.1.1 = { controller = PER owner = PER } #Seized by Safavids
 1595.1.1 = { owner = MUG controller = MUG } #Persian governor coerced into giving the province to the Mughals
-1600.1.1 = { discovered_by = TUR }
+
 1617.1.1 = { controller = PER }
 1618.1.1 = { owner = PER } #Conquered by Persia
 1637.1.1 = { controller = MUG }
@@ -66,11 +52,11 @@ fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortr
 
 
 
-1673.1.1 = { discovered_by = ENG }
-1677.1.1 = { discovered_by = FRA }
+
+
 
 1704.1.1 = { revolt_risk = 5 } # Afghanian revolts
-1707.5.12 = { discovered_by = GBR }
+
 1708.1.1 = { revolt_risk = 8 } # Mir Wais rebelled against Persian rule
 1736.1.1 = { revolt_risk = 0 } # Persia reasserts control over Qandahar
 1747.6.1 = {

@@ -26,39 +26,11 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
+
+
+
+
+
 
 1481.1.1 = { owner = FRA controller = FRA add_core = FRA } # Provence added to France after the death of Duke Charles
 1526.5.22 = { controller = HAB } # Austria invades the Provence during the Franco-Habsburg war (1521-1529)

@@ -7,31 +7,25 @@ religion = mahayana
 capital = "Tam Ky"
 trade_goods = fruit
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 add_core = CHA
 
 
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
+
+
+
+
+
+
+
 
 1472.1.1 = {
 	owner = DAI
@@ -44,7 +38,7 @@ discovered_by = GRA
 	controller = TOK
 	add_core = TOK
 }
-1535.1.1 = { discovered_by = POR }
+
 1558.1.1 = {
 	owner = ANN
 	controller = ANN

@@ -8,16 +8,11 @@ religion = taoism
 capital = "Chaochow"
 trade_goods = chinaware
 hre = no
-base_tax = 12 
+base_tax = 12
 base_production = 12
-base_manpower = 4
+base_manpower = 12
 is_city = yes
 add_core = MIN
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-1444.1.1 = { discovered_by = RYU }
-1514.1.1 = { discovered_by = POR }
 
 1647.4.1 = {
 	owner = QNG

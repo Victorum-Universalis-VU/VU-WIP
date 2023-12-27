@@ -4704,7 +4704,7 @@ country_event = {
 				50 = { }
 				50 = {
 					spawn_rebels = {
-						type = heretic_rebels_rebels
+						type = heretic_rebels
 						size = 2
 					}
 				}

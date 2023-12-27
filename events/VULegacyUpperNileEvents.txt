@@ -181,7 +181,6 @@ country_event = {
 			age = 25
 			claim = 30
 			regency = no
-			female = no
 			adm = 5
 			dip = 5
 			mil = 2

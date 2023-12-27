@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = indep_daimyo
 technology_group = japanese
 religion = animism
-primary_culture = kyushuan
+primary_culture = vu_ryukyuan
 capital = 1015	# Shuri
 
 

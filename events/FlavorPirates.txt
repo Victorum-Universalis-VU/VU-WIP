@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ###### DHE's to spawn pirate republics ######
 ###### by Daniel Tolman ######
 
@@ -11,7 +11,9 @@ country_event = {
 	title = "pirates.2.t"
 	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	desc = "pirates.2.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		NOT = { exists = NSS }
@@ -43,6 +45,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			482 = {
@@ -51,9 +54,11 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = { # play as the pirates
 		name = "pirates.2.a"
 		# play as NSS
@@ -150,7 +155,9 @@ country_event = {
 	title = "pirates.3.t"
 	picture = BUCCANEERS_eventPicture
 	desc = "pirates.3.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		not = { exists = LIB }
@@ -193,6 +200,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			4024 = {
@@ -201,9 +209,11 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = { # play as the pirates
 		name = "pirates.3.a"
 		trigger = {
@@ -304,7 +314,9 @@ country_event = {
 	title = "pirates.4.t"
 	picture = BARBARY_PIRATES_eventPicture
 	desc = "pirates.4.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		not = { exists = SLE }
@@ -329,6 +341,7 @@ country_event = {
 			privateer_power = { share = 5 }
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			4563 = {
@@ -342,10 +355,12 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 		# modifiers
 	}
+
 	option = { # play as the pirates
 		name = "pirates.4.a"
 		trigger = {
@@ -454,7 +469,9 @@ country_event = {
 	title = "pirates.5.t"
 	picture = BARBARY_PIRATES_eventPicture
 	desc = "women_history_events.56.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		is_year = 1515
@@ -477,6 +494,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			4561 = {
@@ -485,10 +503,12 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 		# modifiers
 	}
+
 	option = { # play as the pirates
 		name = "pirates.5.a"
 		trigger = {
@@ -603,7 +623,9 @@ country_event = {
 	title = "pirates.6.t"
 	picture = PIRATE_CAPTAINS_eventPicture
 	desc = "pirates.6.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		NOT = { tag = SOS }
@@ -645,6 +667,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			487 = {
@@ -667,10 +690,12 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 		# modifiers
 	}
+
 	option = { # play as the pirates
 		name = "pirates.6.a"
 		trigger = {
@@ -764,7 +789,9 @@ country_event = {
 	title = "pirates.7.t"
 	picture = PIRATE_CAPTAINS_eventPicture
 	desc = "pirates.7.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		NOT = { exists = TOR }
@@ -812,6 +839,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			5706 = {
@@ -820,9 +848,11 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = { # play as the pirates
 		name = "pirates.7.a"
 		# play as TOR
@@ -924,16 +954,20 @@ country_event = {
 		picture = SMUGGLERS_eventPicture
 	}
 	desc = "pirates.8.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		tag = PLB
 		NOT = { is_year = 1446 }
 		has_dlc = "Golden Century"
 		NOT = { has_reform = pirate_republic_reform }
 	}
+
 	mean_time_to_happen = {
 		months = 1
 	}
+
 	option = {
 		name = "pirates.8.a"
 		ai_chance = {
@@ -955,6 +989,7 @@ country_event = {
 		add_republican_tradition = 50
 		swap_non_generic_missions = yes
 	}
+
 	option = {
 		name = "pirates.8.b"
 		ai_chance = {
@@ -977,7 +1012,9 @@ country_event = {
 		picture = SMUGGLERS_eventPicture
 	}
 	desc = "pirates.9.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		tag = PAT
 		has_dlc = "Golden Century"
@@ -985,9 +1022,11 @@ country_event = {
 		NOT = { is_year = 1590 }
 		NOT = { has_reform = pirate_republic_reform }
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = {
 		name = "pirates.9.a"
 		change_government = republic
@@ -1004,6 +1043,7 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		swap_non_generic_missions = yes
 	}
+
 	option = {
 		name = "pirates.9.b"
 		add_stability = -1
@@ -1016,8 +1056,11 @@ country_event = {
 	title = "pirates.20.t"
 	picture = PIRATE_CAPTAINS_eventPicture
 	desc = "pirates.20.d"
+
 	major = yes
+
 	fire_only_once = yes
+
 	trigger = {
 		has_dlc = "Golden Century"
 		OR = {
@@ -1066,8 +1109,10 @@ country_event = {
 	title = "pirates.21.t"
 	picture = SMUGGLERS_eventPicture
 	desc = "pirates.21.d"
+
 	fire_only_once = yes
 	major = yes
+
 	trigger = {
 		tag = SOO
 		has_dlc = "Golden Century"
@@ -1080,9 +1125,11 @@ country_event = {
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = {
 		name = "pirates.21.a"
 		change_government = republic
@@ -1099,6 +1146,7 @@ country_event = {
 			add_ruler_personality = legendary_pirate_personality
 		swap_non_generic_missions = yes
 	}
+
 	option = {
 		name = "pirates.21.b"
 		add_stability = -1
@@ -1113,7 +1161,9 @@ country_event = {
 	title = "pirates.22.name"
 	picture = SMUGGLERS_eventPicture
 	desc = "pirates.22.desc"
+
 	fire_only_once = yes
+
 	trigger = {
 		tag = RUG
 		OR = {
@@ -1128,9 +1178,11 @@ country_event = {
 		}
 		NOT = { has_reform = pirate_republic_reform }
 	}
+
 	mean_time_to_happen = {
 		months = 6
 	}
+
 	option = {
 		name = "pirates.22.a"
 		change_government = republic
@@ -1153,6 +1205,7 @@ country_event = {
 			factor = 1
 		}
 	}
+
 	option = {
 		name = "pirates.22.b"
 		add_stability = 1
@@ -1169,16 +1222,20 @@ country_event = {
 	title = "pirates.23.t"
 	picture = SMUGGLERS_eventPicture
 	desc = "pirates.23.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		tag = CRN
 		has_dlc = "Golden Century"
 		num_ships_privateering = 3
 		NOT = { has_reform = pirate_republic_reform }
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = {
 		name = "pirates.23.a"
 		ai_chance = {
@@ -1196,6 +1253,7 @@ country_event = {
 		add_ruler_personality = legendary_pirate_personality
 		swap_non_generic_missions = yes
 	}
+
 	option = {
 		name = "pirates.23.b"
 		ai_chance = {
@@ -1216,7 +1274,9 @@ country_event = {
 	title = "pirates.24.t"
 	picture = SMUGGLERS_eventPicture
 	desc = "pirates.24.d"
+
 	fire_only_once = yes
+
 	trigger = {
 		OR = {
 			tag = CRN
@@ -1226,9 +1286,11 @@ country_event = {
 		has_reform = pirate_republic_reform
 		is_year = 1500
 	}
+
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = {
 		name = "pirates.24.a"
 		ai_chance = {
@@ -1241,6 +1303,7 @@ country_event = {
 			cost_multiplier = 0.25
 		}
 	}
+
 	option = {
 		name = "pirates.24.b"
 		ai_chance = {
@@ -1255,6 +1318,7 @@ country_event = {
 		}
 	}
 }
+
 
 # [Root.Monarch.GetName] is now a legendary pirate!
 country_event = {

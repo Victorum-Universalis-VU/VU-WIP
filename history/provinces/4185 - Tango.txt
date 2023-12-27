@@ -7,13 +7,14 @@ religion = shinto
 capital = "Miyazu"
 trade_goods = fish
 hre = no
-base_tax = 1
-manpower = 1
-base_production = 1
+base_tax = 10
+base_manpower = 10
+base_production = 10
 is_city = yes
 add_core = ISK
-discovered_by = chinese
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
+
+
+ 
 
 1569.1.1 = { add_core = ODA }
 1579.1.1 = { owner = ODA controller = ODA } # Nobunaga ousts Yoshiaki

@@ -1,4 +1,4 @@
-
+#VU - Updated by San Felipe for 1.36.*
 palatinate_conquest_group = {
 	slot = 1
 	generic = no
@@ -24,14 +24,14 @@ palatinate_conquest_group = {
 		effect = {
 			franconia_area = {
 				limit = {
-					NOT = { is_claim = root }
+					NOT = { is_permanent_claim = root }
 					NOT = { is_core = root }
 				}
 				add_permanent_claim = root
 			}
 			thuringia_area = {
 				limit = {
-					NOT = { is_claim = root }
+					NOT = { is_permanent_claim = root }
 					NOT = { is_core = root }
 				}
 				add_permanent_claim = root

@@ -4,6 +4,7 @@ government_rank = 2
 #primary_culture = andalusi_culture
 primary_culture = andalucian
 religion = catholic
+#technology_group = western
 technology_group = spanish_tech_group
 unit_type = western
 capital = 1748 # Jaen

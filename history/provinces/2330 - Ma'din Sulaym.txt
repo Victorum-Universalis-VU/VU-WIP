@@ -21,17 +21,24 @@ is_city = yes
 #Special Modifiers
 
 #Known by Technology groups
-#discovered_by = muslim
-discovered_by = indian
-#discovered_by = dutch_tech_group
-#discovered_by = east_african
+
+
+
+
+
+
+
+
+
+
+
 
 #Histories
 1215.6.15 = { owner = MAM controller = MAM add_core = MAM } # Mamluk territorial lands - By San Felipe
 
 1444.11.11 = { owner = HED controller = HED add_core = HED } # Hedjaz territorial lands - By San Felipe
 
-1515.1.1 = { discovered_by = POR }
+
 
 #1516.8.24 = {
 #} #Annexed by the Ottoman Empire along with the rest of Mamluk territory, but remains under the control of the Sharifate of Mecca

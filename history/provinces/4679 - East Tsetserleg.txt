@@ -10,15 +10,16 @@ base_tax = 2
 base_production = 2
 base_manpower = 4
 is_city = yes
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 1454.1.1 = {
 	owner = KHA
 	controller = KHA
 	add_core = KHA
 } # Mark?rgis Khan of the Gold Family rises to power after Esen's death.
-1633.1.1 = { discovered_by = RUS }
+
 1635.4.1 = {
 	owner = KLK
 	controller = KLK
@@ -33,4 +34,3 @@ discovered_by = chinese
 	controller = QNG
 	add_core = QNG
 } # Outer Mongolia intergrated into Qing
-1709.1.1 = { discovered_by = SPA }

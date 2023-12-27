@@ -1,4 +1,4 @@
-##Made by Ogele 'Comrade Flan'
+#VU - Updated by San Felipe for 1.36.*
 
 #English Section
 eng_row_slot_1 = {
@@ -46,7 +46,7 @@ eng_row_slot_1 = {
 				add_permanent_claim = ROOT
 			}
 			ireland_region = {
-                limit {
+                limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
                 }
@@ -62,6 +62,19 @@ eng_row_slot_1 = {
 					months = 300
 				}
 			}
+			else = {
+				capital_scope = {
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+					artillery = ROOT
+				}
+				add_mil_power = 100
+			}
+			add_country_modifier = {
+		    	name = "eng_english_scarlet"
+		    	duration = -1
+		    }
 		}
 	}
 
@@ -97,11 +110,17 @@ eng_row_slot_1 = {
 		}
 		
 		effect = {
-			add_adm_power = 75
+			add_adm_power = 150
+			add_dip_power = 150
+			add_treasury = 1500
 			add_permanent_claim_province = { province = 1978 }
 			add_permanent_claim_province = { province = 1979 }
 			add_permanent_claim_province = { province = 370 }
 			add_permanent_claim_province = { province = 371 }
+			add_country_modifier = {
+		    	name = "eng_hammer_of_the_scots"
+		    	duration = -1
+		    }
 			if = {
 				limit = {
 					NOT = { owns_or_non_sovereign_subject_of = 369 }
@@ -2716,11 +2735,11 @@ ave_row_3 = {
 				add_adm_power = 50
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 1
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 1
 			}
 		}
@@ -3161,6 +3180,10 @@ gbr_row_4 = {
 				type = mission_rewards_power_projection
 				amount = 25
 			}
+			add_country_modifier = {
+		    	name = "eng_english_superiority"
+		    	duration = -1
+		    }
 		}
 		ai_weight = {
 			factor = 250
@@ -4395,7 +4418,7 @@ gbr_ave_the_royal_court_slot = {
 				legitimacy = 95
 			}
 			ruler_total_stats = {
-				stats = 5
+				amount = 5
 			}
 			has_adm_advisor = yes
 			has_dip_advisor = yes

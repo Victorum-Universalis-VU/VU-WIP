@@ -18,12 +18,12 @@ is_city = yes
 
 
 
-discovered_by = north_american
+
 
 
 1444.11.15 = { #VictorumUniversalis batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = COM
 	is_city = no
 	trade_goods = unknown
@@ -37,13 +37,13 @@ discovered_by = north_american
 }
 
 1700.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	remove_core = COM 
 } #Horses cause waves of migration on the Great Plains
 
-1738.1.1 = { discovered_by = FRA }# Pierre Gaultier de Varennes, no real settlements until the very late 1800's
+
 
 1760.1.1 = {
 	owner = CHY

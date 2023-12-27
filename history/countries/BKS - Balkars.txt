@@ -4,7 +4,8 @@ government_rank = 1
 primary_culture = circassian
 religion = tengri_pagan_reformed
 secondary_religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 2197 # Kabardia
 
 

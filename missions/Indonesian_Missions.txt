@@ -1,7 +1,7 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 indonesians_3 = {
 	slot = 3
-	generic = yes
+	generic = no
 	ai = yes
 	potential = {
 		technology_group = chinese
@@ -119,7 +119,7 @@ indonesians_3 = {
 		}
 	}
 	indonesia_invade_the_mainland = {
-		icon = mission_asian_cannon
+		icon = mission_asian_city
 		required_missions = { indonesia_unite_nusantara }
 		provinces_to_highlight = {
 			OR = {
@@ -194,7 +194,6 @@ indonesians_4 = {
 		icon = mission_hands_praying
 		required_missions = {  }
 		provinces_to_highlight = {
-			is_empty = no
 			NOT = { religion = ROOT }
 			OR = {
 				AND = { # borneo
@@ -320,10 +319,9 @@ indonesians_4 = {
 			}
 		}
 		trigger = {
+			NOT = { current_age = age_of_discovery }
 			custom_trigger_tooltip = {
 				tooltip = indonesia_convert_island.tooltip
-				NOT = { current_age = age_of_discovery }
-				NOT = { religion_group = pagan }
 				if = { # borneo
 					limit = {
 						capital_scope = {
@@ -687,22 +685,23 @@ indonesians_4 = {
 			owner = {
 				OR = {
 					technology_group = western
-		    	    technology_group = english_tech_group
-		    	    technology_group = french_tech_group
-		    	    technology_group = dutch_tech_group
-		    	    technology_group = german_tech_group
-		    	    technology_group = italian_tech_group
-					technology_group = portuguese_tech_group
-		    	    technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group
-		    	    technology_group = spanish_tech_group
-					technology_group = swiss_tech_group
-					technology_group = bohemian_tech_group
-					technology_group = byzantine_tech_group
-					technology_group = eastern
-					technology_group = hungarian_tech_group
-					technology_group = polish_tech_group
-					technology_group = russian_tech_group
+				    technology_group = dutch_tech_group
+				    technology_group = english_tech_group
+				    technology_group = french_tech_group
+				    technology_group = german_tech_group
+				    technology_group = italian_tech_group
+				    technology_group = portuguese_tech_group
+				    technology_group = roman_tech_group
+				    technology_group = scandinavian_tech_group
+				    technology_group = spanish_tech_group
+				    technology_group = swiss_tech_group
+				    technology_group = eastern
+				    technology_group = bohemian_tech_group
+				    technology_group = byzantine_tech_group
+				    technology_group = hungarian_tech_group
+				    technology_group = polish_tech_group
+				    technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
 				}
 			}
 			OR = {
@@ -721,22 +720,23 @@ indonesians_4 = {
 					any_country = {
 						OR = {
 				        	technology_group = western
-		    	            technology_group = english_tech_group
-		    	            technology_group = french_tech_group
-		    	            technology_group = dutch_tech_group
-		    	            technology_group = german_tech_group
-		    	            technology_group = italian_tech_group
-				        	technology_group = portuguese_tech_group
-		    	            technology_group = roman_tech_group
-							technology_group = scandinavian_tech_group
-		    	            technology_group = spanish_tech_group
-				        	technology_group = swiss_tech_group
-				        	technology_group = bohemian_tech_group
-				        	technology_group = byzantine_tech_group
-				        	technology_group = eastern
-				        	technology_group = hungarian_tech_group
-				        	technology_group = polish_tech_group
-				        	technology_group = russian_tech_group
+				            technology_group = dutch_tech_group
+				            technology_group = english_tech_group
+				            technology_group = french_tech_group
+				            technology_group = german_tech_group
+				            technology_group = italian_tech_group
+				            technology_group = portuguese_tech_group
+				            technology_group = roman_tech_group
+				            technology_group = scandinavian_tech_group
+				            technology_group = spanish_tech_group
+				            technology_group = swiss_tech_group
+				            technology_group = eastern
+				            technology_group = bohemian_tech_group
+				            technology_group = byzantine_tech_group
+				            technology_group = hungarian_tech_group
+				            technology_group = polish_tech_group
+				            technology_group = russian_tech_group
+							technology_group = bulgarian_tech_group
 				        }
 						any_owned_province = {
 							OR = {
@@ -771,20 +771,20 @@ indonesians_5 = {
 	has_country_shield = yes
 	
 	indonesia_palopo_iron = {
-		icon = mission_war_chest
+		icon = mission_have_manufactories
 		required_missions = { }
 		provinces_to_highlight = {
 			has_discovered = ROOT
 			province_id = 2715
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_manufactory_trigger = yes }
+				NOT = { has_building = weapons }
 			}
 		}
 		trigger = {
 			2715 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_manufactory_trigger = yes
+				has_building = weapons
 			}
 		}
 		effect = {
@@ -804,13 +804,13 @@ indonesians_5 = {
 			province_id = 639
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_manufactory_trigger = yes }
+				NOT = { has_building = textile }
 			}
 		}
 		trigger = {
 			639 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_manufactory_trigger = yes
+				has_building = textile
 			}
 		}
 		effect = {
@@ -823,20 +823,20 @@ indonesians_5 = {
 		}
 	}
 	indonesia_lampung_pepper = {
-		icon = mission_war_chest
+		icon = mission_rb_colonise_spice_islands
 		required_missions = { }
 		provinces_to_highlight = {
 			has_discovered = ROOT
 			province_id = 623
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_manufactory_trigger = yes }
+				NOT = { has_building = tradecompany }
 			}
 		}
 		trigger = {
 			623 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_manufactory_trigger = yes
+				has_building = tradecompany
 			}
 		}
 		effect = {
@@ -849,7 +849,7 @@ indonesians_5 = {
 		}
 	}
 	indonesia_moluccan_cloves = {
-		icon = mission_war_chest
+		icon = mission_rb_monopolize_the_channel
 		required_missions = { }
 		provinces_to_highlight = {
 			has_discovered = ROOT
@@ -859,17 +859,17 @@ indonesians_5 = {
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_manufactory_trigger = yes }
+				NOT = { has_building = tradecompany }
 			}
 		}
 		trigger = {
 			649 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_manufactory_trigger = yes
+				has_building = tradecompany
 			}
 			650 = {
 				country_or_non_sovereign_subject_holds = ROOT
-				has_manufactory_trigger = yes
+				has_building = tradecompany
 			}
 		}
 		effect = {
@@ -888,14 +888,15 @@ indonesians_5 = {
 		}
 	}
 	indonesia_sea_cucumbers = {
-		icon = mission_war_chest
+		icon = mission_junk_boat
 		required_missions = { }
 		provinces_to_highlight = {
 			has_discovered = ROOT
 			province_id = 2728
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_manufactory_trigger = yes }
+				NOT = { has_building = wharf }
+				NOT = { has_building = trade_depot }
 			}
 		}
 		trigger = {
@@ -922,6 +923,7 @@ indonesians_5 = {
 						}
 					}
 					OR = {
+						has_building = wharf
 						has_building = trade_depot
 						has_manufactory_trigger = yes
 					}

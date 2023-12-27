@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################################
 # Flavor Events for Delhi
 #
@@ -322,6 +322,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	option = { # keep capital in Delhi
 		name = "flavor_dlh.EVTOPTA8"
 		capital_scope = {

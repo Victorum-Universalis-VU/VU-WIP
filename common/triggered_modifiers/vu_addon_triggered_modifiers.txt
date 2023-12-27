@@ -7,11 +7,9 @@ vu_addon_triggered_modifier_adm_focus = {
 	potential = {
 		OR = {
 			national_focus = ADM
-			NOT = {
-				national_focus = ADM
-				national_focus = DIP
-				national_focus = MIL
-			}
+			NOT = { national_focus = ADM }
+			NOT = { national_focus = DIP }
+			NOT = { national_focus = MIL }
 		}
 	}
 	trigger = {
@@ -36,11 +34,9 @@ vu_addon_triggered_modifier_dip_focus = {
 	potential = {
 		OR = {
 			national_focus = DIP
-			NOT = {
-				national_focus = ADM
-				national_focus = DIP
-				national_focus = MIL
-			}
+			NOT = { national_focus = ADM }
+			NOT = { national_focus = ADM }
+			NOT = { national_focus = ADM }
 		}
 	}
 	trigger = {
@@ -61,11 +57,9 @@ vu_addon_triggered_modifier_mil_focus = {
 	potential = {
 		OR = {
 			national_focus = MIL
-			NOT = {
-				national_focus = ADM
-				national_focus = DIP
-				national_focus = MIL
-			}
+			NOT = { national_focus = ADM }
+			NOT = { national_focus = DIP }
+			NOT = { national_focus = MIL }
 		}
 	}
 	trigger = {

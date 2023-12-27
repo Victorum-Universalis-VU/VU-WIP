@@ -9,16 +9,10 @@ religion = confucianism
 capital = "Nangangcun"
 trade_goods = seafood
 hre = no
-base_tax = 3
-base_production = 2
-base_manpower = 2
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
-
-1519.1.1 = { discovered_by = POR } # Tome Pires
 
 1644.4.1 = { owner = CSH controller = CSH } # The Shun dynasty of Li Zicheng
 1644.11.1 = {

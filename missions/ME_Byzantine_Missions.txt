@@ -240,6 +240,10 @@ byzantine_missions_1 = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
+			delta_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
 		}
 		effect = {
 			country_event = { id = FU_Byzantium_Events.20 }
@@ -249,6 +253,14 @@ byzantine_missions_1 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT 
+			}
+			362 = {
+				change_culture = egyptian_greek
+				#change_religion = ROOT
+			}
+			6525 = {
+				change_culture = egyptian_greek
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -725,6 +737,18 @@ byzantine_missions_1 = {
 					add_building = cathedral 
 				}
 			}
+			358 = {
+				change_culture = egyptian_greek
+				change_religion = ROOT
+			}
+			363 = {
+				change_culture = egyptian_greek
+				change_religion = ROOT
+			}
+			6568 = {
+				change_culture = egyptian_greek
+				change_religion = ROOT
+			}
 			358 = { add_base_tax = 1 } 
 			hidden_effect = {
 				if = {
@@ -1093,23 +1117,52 @@ noppbyzantine_missions_2 = {
 		position = 6
 		provinces_to_highlight = { 
 			OR = {
-				area = palestine_area 
-				area = aleppo_area 
-				area = syria_area 
-				area = trans_jordan_area
+				area = palestine_area
+				area = syrian_desert_area
+				area = aleppo_area
+				area = al_jazira_area
+				area = rakka_area
+				area = syria_area
+				area = tripoli_area
+				province_id = 4270
+				province_id = 380
+				province_id = 381
+				province_id = 7452
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = palestine_area 
-					area = aleppo_area 
-					area = syria_area 
-					area = trans_jordan_area
-				}
-				has_owner_religion = yes 
-				value = 10 
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			al_jazira_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rakka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tripoli_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4270 = { country_or_non_sovereign_subject_holds = ROOT }
+			380 = { country_or_non_sovereign_subject_holds = ROOT }
+			381 = { country_or_non_sovereign_subject_holds = ROOT }
+			7452 = { country_or_non_sovereign_subject_holds = ROOT }
+			syrian_desert_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1117,6 +1170,34 @@ noppbyzantine_missions_2 = {
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 25
+			}
+			3991 = {
+				change_culture = anatolian_greek
+				#change_religion = ROOT
+			}
+			2313 = {
+				change_culture = anatolian_greek
+				#change_religion = ROOT
+			}
+			3981 = {
+				change_culture = cypriot
+				#change_religion = ROOT
+			}
+			1854 = {
+				change_culture = cypriot
+				#change_religion = ROOT
+			}
+			5180 = {
+				change_culture = cypriot
+				#change_religion = ROOT
+			}
+			7446 = {
+				change_culture = cypriot
+				#change_religion = ROOT
+			}
+			1855 = {
+				change_culture = anatolian_greek
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -1265,6 +1346,22 @@ noppbyzantine_missions_2 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT 
+			}
+			341 = {
+				change_culture = karchidoniac
+				#change_religion = ROOT
+			}
+			5224 = {
+				change_culture = karchidoniac
+				#change_religion = ROOT
+			}
+			2455 = {
+				change_culture = karchidoniac
+				#change_religion = ROOT
+			}
+			5317 = {
+				change_culture = karchidoniac
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -2760,6 +2857,14 @@ noppbyzantine_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			mesopotamia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = { has_country_flag = byz_tolerated_turkish_pop_flag }
 				hidden_effect = {
@@ -2880,30 +2985,54 @@ noppbyzantine_missions_4 = {
 					duration = -1 
 				}
 			}
-			410 = {
+			lower_mesopotamia_area = {	
 				add_province_modifier = {
 					name = byz_renewed_affluence_modifier 
 					duration = -1 
 				}
 			}
-			409 = {
+			kut_area = {	
 				add_province_modifier = {
 					name = byz_renewed_affluence_modifier 
 					duration = -1 
 				}
 			}
-			406 = {
+			iraq_arabi_area = {	
+				add_province_modifier = {
+					name = byz_renewed_affluence_modifier 
+					duration = -1 
+				}
+			}
+			kuwait_area = {	
+				add_province_modifier = {
+					name = byz_renewed_affluence_modifier 
+					duration = -1 
+				}
+			}
+			rakka_area = {	
+				add_province_modifier = {
+					name = byz_renewed_affluence_modifier 
+					duration = -1 
+				}
+			}
+			baghdad_area = {	
+				add_province_modifier = {
+					name = byz_renewed_affluence_modifier 
+					duration = -1 
+				}
+			}
+			mosul_area = {	
 				add_province_modifier = {
 					name = byz_renewed_affluence_modifier 
 					duration = -1 
 				}
 			}	
-			2314 = {
+			badra_area = {	
 				add_province_modifier = {
 					name = byz_renewed_affluence_modifier 
 					duration = -1 
 				}
-			}	
+			}
 		}
 	}
 	

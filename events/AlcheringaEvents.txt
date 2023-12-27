@@ -244,8 +244,10 @@ country_event = {
 				AND = {
 					religion_group = eastern
 					NOT = {
-						religion = shinto
-						religion = confucianism
+						OR = {
+							religion = shinto
+							religion = confucianism
+						}
 					}
 				}
 			}

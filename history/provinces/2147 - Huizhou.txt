@@ -8,15 +8,11 @@ religion = confucianism
 capital = "Huizhou"
 trade_goods = wool
 hre = no
-base_tax = 10 
-base_production = 8
-base_manpower = 6
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
 add_core = WUU
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1595.1.1 = { discovered_by = SPA }
 
 1645.6.14 = {
 	owner = QNG

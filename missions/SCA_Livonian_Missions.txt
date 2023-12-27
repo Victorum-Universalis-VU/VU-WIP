@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 liv_diplomacy_mission_slot = {
 	slot = 1
 	generic = no
@@ -137,7 +137,7 @@ liv_teutonic_mission_slot = {
 							}
 						}
 						custom_trigger_tooltip = {
-							tooltip = liv_handle_teutonic_order_vu
+							tooltip = liv_handle_teutonic_order_bt
 							AND = {
 								OR = {
 									is_rival = ROOT
@@ -328,8 +328,9 @@ liv_riga_and_secularization_mission_slot = {
 			accepted_culture = latvian
 		}
 		effect = {
-			country_event = {
-				id = flavor_liv.1
+			enable_branching_mission_review = {
+				key = LIV
+				ai_event_id = flavor_liv.1
 			}
 			custom_tooltip = teu_defeat_the_poles_tt
 			samogitia_area = {
@@ -668,6 +669,7 @@ liv_lva_colonialism_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			OR = {
 				has_institution = new_world_i
 				has_idea = quest_for_the_new_world
@@ -740,6 +742,7 @@ liv_lva_colonize_north_america_mission_slot = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			OR = {
 				north_america = { has_discovered = ROOT }
 				south_america = { has_discovered = ROOT }
@@ -764,6 +767,7 @@ liv_lva_colonize_north_america_mission_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				continent = north_america
 				value = 5
@@ -810,6 +814,7 @@ liv_lva_colonize_north_america_mission_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			owns_or_non_sovereign_subject_of = 502
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				colonial_region = colonial_the_carribean
@@ -848,6 +853,7 @@ liv_lva_colonize_north_america_mission_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			calc_true_if = {
 				custom_trigger_tooltip = {
 					tooltip = liv_lva_dominate_colonial_trade_tt
@@ -912,6 +918,7 @@ liv_lva_colonize_new_world_mission_slot = {
 			NOT = { has_discovered = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			new_world = { has_discovered = ROOT }
 		}
 		effect = {
@@ -933,6 +940,7 @@ liv_lva_colonize_new_world_mission_slot = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				continent = new_world
 				value = 5
@@ -970,6 +978,7 @@ liv_lva_colonize_new_world_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			NOT = { current_age = age_of_discovery }
 			custom_trigger_tooltip = {
 				tooltip = nor_dominate_new_world_tt
@@ -1046,6 +1055,7 @@ liv_lva_old_world_scramble_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			OR = {
 				owns_core_province = 2239
 				owns_core_province = 1114
@@ -1094,6 +1104,7 @@ liv_lva_old_world_scramble_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			owns_core_province = 1177
 			1460 = {
 				OR = {
@@ -1203,6 +1214,7 @@ liv_lva_old_world_scramble_mission_slot = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				custom_trigger_tooltip = {
 					tooltip = liv_lva_trade_in_india_tt
@@ -1272,6 +1284,7 @@ liv_lva_trade_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			owns_core_province = 37
 			owns_core_province = 36
 			owns_core_province = 39
@@ -1303,6 +1316,7 @@ liv_lva_trade_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			num_of_light_ship = 15
 			num_of_admirals = 1
 		}
@@ -1341,6 +1355,7 @@ liv_lva_trade_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			mercantilism = 15
 			owns_core_province = 37
 			num_of_owned_provinces_with = {
@@ -1393,6 +1408,7 @@ liv_lva_trade_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			trader = 3
 			if = {
 				limit = {
@@ -1504,6 +1520,7 @@ liv_lva_livonian_teutonic_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = liv_lva_prussian_alliance_at
@@ -1532,7 +1549,7 @@ liv_lva_livonian_teutonic_mission_slot = {
 					}
 				}
 				custom_trigger_tooltip = {
-					tooltip = liv_lva_prussian_alliance_vu
+					tooltip = liv_lva_prussian_alliance_bt
 					any_subject_country = {
 						tag = PRU
 						NOT = { liberty_desire = 10 }
@@ -1627,6 +1644,7 @@ liv_lva_livonian_teutonic_mission_slot = {
 		}
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			adm_power_cost = 500
 			has_any_disaster = no
 			is_at_war = no
@@ -1646,6 +1664,7 @@ liv_lva_livonian_teutonic_mission_slot = {
 		required_missions = { liv_lva_reform_the_government }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			monthly_adm = 10
 			monthly_dip = 10
 			monthly_mil = 10
@@ -1701,6 +1720,7 @@ liv_baltic_mission_slot = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			west_prussia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
@@ -1713,6 +1733,7 @@ liv_baltic_mission_slot = {
 		effect = {
 			add_accepted_culture_or_dip_power = {
 				culture = prussian
+				dip_reward = yes
 			}
 			lithuania_area = {
 				limit = {
@@ -1743,6 +1764,7 @@ liv_baltic_mission_slot = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			lithuania_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				type = all
@@ -1755,6 +1777,7 @@ liv_baltic_mission_slot = {
 		effect = {
 			add_accepted_culture_or_dip_power = {
 				culture = lithuanian
+				dip_reward = yes
 			}
 			baltic_region = {
 				limit = {
@@ -1780,6 +1803,7 @@ liv_baltic_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			baltic_region = {
 				country_or_non_sovereign_subject_holds = ROOT
 				num_of_times_improved = 2
@@ -1835,6 +1859,7 @@ liv_lva_handle_the_threats_mission_slot = {
 			NOT = { province_id = 38 }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			custom_trigger_tooltip = {
 				tooltip = liv_lva_develop_livonia_tt
 				estonia_ingria_area = {
@@ -1897,6 +1922,7 @@ liv_lva_handle_the_threats_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			38 = {
 				owned_by = ROOT 
 				development = 20
@@ -1933,6 +1959,7 @@ liv_lva_handle_the_threats_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			if = {
 				limit = { has_dlc = "Rule Britannia" }
 				innovativeness = 30
@@ -1970,6 +1997,7 @@ liv_lva_handle_the_threats_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			owns_core_province = 33
 		}
 		effect = {
@@ -1979,29 +2007,34 @@ liv_lva_handle_the_threats_mission_slot = {
 				}
 				add_accepted_culture_or_dip_power = {
 					culture = novgorodian
+					dip_reward = yes
 				}
 			}
 			else_if = {
 				limit = { 33 = { culture = novgorodian_new } }
 				add_accepted_culture_or_dip_power = {
 					culture = novgorodian_new
+					dip_reward = yes
 				}
 			}
 			else_if = {
 				limit = { 33 = { culture = russian } }
 				add_accepted_culture_or_dip_power = {
 					culture = russian
+					dip_reward = yes
 				}
 			}
 			else_if = {
 				limit = { 33 = { culture = russian_new } }
 				add_accepted_culture_or_dip_power = {
 					culture = russian_new
+					dip_reward = yes
 				}
 			}
 			else = {
 				add_accepted_culture_or_dip_power = {
 					culture = karelian
+					dip_reward = yes
 				}
 			}
 			karelia_area = {
@@ -2046,6 +2079,7 @@ liv_lva_handle_the_threats_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			if = {
 				limit = { exists = PLC }
 				OR = {
@@ -2055,9 +2089,18 @@ liv_lva_handle_the_threats_mission_slot = {
 					}
 					PLC = {
 						alliance_with = ROOT
-						trust = {
-							who = ROOT
-							value = 75
+						if = {
+							limit = { has_dlc = "Leviathan" }
+							trust = {
+								who = ROOT
+								value = 75
+							}
+						}
+						else = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
 						}
 					}
 				}
@@ -2167,6 +2210,7 @@ liv_internal_catholicism_mission_slot = {
 			is_capital_of = PAP
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			if = {
 				limit = {
@@ -2221,6 +2265,7 @@ liv_internal_catholicism_mission_slot = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			grown_by_states = 5
 			religious_unity = 1
@@ -2246,6 +2291,7 @@ liv_internal_catholicism_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			num_of_owned_provinces_with = {
 				religion = catholic
@@ -2262,6 +2308,7 @@ liv_internal_catholicism_mission_slot = {
 			add_years_of_owned_provinces_manpower = {
 				years = 4
 				trigger = {
+					not_in_mission_preview_mode = { key = LIV }
 					religion = ROOT
 					has_tax_building_trigger = yes
 				}
@@ -2283,6 +2330,7 @@ liv_internal_catholicism_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			num_of_owned_provinces_with = {
 				religion = catholic
@@ -2305,6 +2353,7 @@ liv_internal_catholicism_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			if = {
 				limit = {
@@ -2356,6 +2405,7 @@ liv_purge_reformation_mission_slot = {
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			is_religion_enabled = protestant
 			OR = {
@@ -2384,6 +2434,7 @@ liv_purge_reformation_mission_slot = {
 		required_missions = { liv_ally_the_emperor }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			if = {
 				limit = {
@@ -2433,7 +2484,7 @@ liv_purge_reformation_mission_slot = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -2488,7 +2539,7 @@ liv_purge_reformation_mission_slot = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -2517,6 +2568,7 @@ liv_purge_reformation_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			NOT = { current_age = age_of_discovery }
 			OR = {
@@ -2531,7 +2583,7 @@ liv_purge_reformation_mission_slot = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = teu_crusader_destroy_the_heresies_vu
+				tooltip = teu_crusader_destroy_the_heresies_bt
 				NOT = {
 					europe = {
 						owner = {
@@ -2585,13 +2637,17 @@ liv_orders_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			OR = {
 				TEU = {
 					religion = ROOT
-					trust = {
-						who = ROOT
-						value = 80
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = {
+							who = ROOT
+							value = 80
+						}
 					}
 					alliance_with = ROOT
 				}
@@ -2612,9 +2668,12 @@ liv_orders_mission_slot = {
 				limit = {
 					TEU = {
 						religion = ROOT
-						trust = {
-							who = ROOT
-							value = 80
+						if = {
+							limit = { has_dlc = "Leviathan" }
+							trust = {
+								who = ROOT
+								value = 80
+							}
 						}
 						alliance_with = ROOT
 					}
@@ -2661,6 +2720,7 @@ liv_orders_mission_slot = {
 		required_missions = { liv_unite_the_orders }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
@@ -2687,6 +2747,7 @@ liv_orders_mission_slot = {
 		}
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			land_forcelimit = 60
 			num_of_owned_provinces_with = {
@@ -2738,6 +2799,7 @@ liv_end_the_orthodoxy_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
@@ -2786,6 +2848,7 @@ liv_end_the_orthodoxy_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			calc_true_if = {
 				desc = liv_end_the_third_rome_tt
@@ -2823,6 +2886,7 @@ liv_end_the_orthodoxy_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			OR = {
 				AND = {
@@ -2842,7 +2906,7 @@ liv_end_the_orthodoxy_mission_slot = {
 						}
 					}
 					calc_true_if = {
-						desc = liv_heal_the_schism_vu
+						desc = liv_heal_the_schism_bt
 						all_province = {
 							region = russia_region
 							religion = catholic
@@ -2927,6 +2991,7 @@ liv_develop_russia_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			lithuania_area = {
 				religion = catholic
@@ -2983,6 +3048,7 @@ liv_develop_russia_mission_slot = {
 			NOT = { religion = catholic }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			ruthenia_region = {
 				religion = catholic
@@ -3017,6 +3083,7 @@ liv_develop_russia_mission_slot = {
 			NOT = { religion = catholic }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			russia_region = {
 				religion = catholic
@@ -3050,6 +3117,7 @@ liv_develop_russia_mission_slot = {
 			NOT = { religion = catholic }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			religious_unity = 1
 			total_development = 750
@@ -3093,6 +3161,7 @@ liv_develop_russia_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = LIV }
 			religion = catholic
 			calc_true_if = {
 				all_known_country = {
@@ -3670,7 +3739,7 @@ liv_dummy_mission_slot_2 = {
 			add_papal_influence = 200
 			add_war_exhaustion = -2
 			change_ruler_stat = {
-				stat = mil
+				type = mil
 				amount = 2
 			}
 			if = {
@@ -3725,7 +3794,7 @@ liv_dummy_mission_slot_2 = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 1
 				}
 			}
@@ -3788,7 +3857,7 @@ liv_dummy_mission_slot_2 = {
 						}
 					}
 					custom_trigger_tooltip = {
-						tooltip = teu_crusader_destroy_the_heresies_vu
+						tooltip = teu_crusader_destroy_the_heresies_bt
 						NOT = {
 							europe = {
 								owner = {
@@ -4218,7 +4287,7 @@ liv_dummy_mission_slot_4 = {
 							}
 						}
 						custom_trigger_tooltip = {
-							tooltip = liv_lva_prussian_alliance_vu
+							tooltip = liv_lva_prussian_alliance_bt
 							any_subject_country = {
 								tag = PRU
 								NOT = { liberty_desire = 10 }
@@ -4798,6 +4867,7 @@ liv_dummy_mission_slot_5 = {
 			custom_tooltip = liv_livonian_path_effects_tt
 			add_accepted_culture_or_dip_power = {
 				culture = novgorodian
+				dip_reward = yes
 			}
 			karelia_area = {
 				limit = {

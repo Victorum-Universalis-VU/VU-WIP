@@ -16,10 +16,10 @@ native_size = 15
 native_ferocity = 7
 native_hostileness = 2
 
-discovered_by = north_american
 
-1526.1.1 = { discovered_by = FRA }
-1528.10.1 = { discovered_by = SPA } # Cabeza de Vaca
+
+
+
 
 1736.1.1 = {
 	owner = GBR 

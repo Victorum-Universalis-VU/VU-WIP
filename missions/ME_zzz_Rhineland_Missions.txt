@@ -1093,7 +1093,7 @@ RHN_missions_4 = {
 							any_province = {
 								owned_by = ROOT
 								trade_goods = paper
-								total_development = PREV
+								#total_development = PREV
 							}
 						}
 					}

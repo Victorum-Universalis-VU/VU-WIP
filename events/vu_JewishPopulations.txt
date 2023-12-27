@@ -50,7 +50,7 @@ country_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
-		has_estate_privilege = estate_jews_suck 
+		has_estate_privilege = estate_jews_suck_privileges 
 		any_owned_province = { has_province_modifier = jewish_population }
 	}
 

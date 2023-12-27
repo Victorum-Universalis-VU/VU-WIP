@@ -388,10 +388,12 @@ generic_madagascar_missions_5 = {
 			num_of_owned_provinces_with = {
 				value = 5
 				NOT = {
-					area = sakalava_area
-					area = southern_madagascar
-					area = madagascar_highlands_area
-					area = betsimasaraka_area
+					OR = {
+						area = sakalava_area
+						area = southern_madagascar
+						area = madagascar_highlands_area
+						area = betsimasaraka_area
+					}
 				}
 				religion = ROOT
 			}

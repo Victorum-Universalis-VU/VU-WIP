@@ -1,6 +1,5 @@
 government = monarchy
 add_government_reform = english_monarchy
-#mercantilism = 25			#Other changes in VU made England far too powerful with a mercantilism bonus. Also, does this really apply historical in 1444 anyway?
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western

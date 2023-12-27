@@ -41,9 +41,11 @@ albania_missions_1 = {
 				NOT = { owned_by = ROOT }
 				devastation = 1
 				NOT = {
-					has_building = marketplace
-					has_building = trade_depot
-					has_building = stock_exchange
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
 				}
 			}
 		}
@@ -75,9 +77,11 @@ albania_missions_1 = {
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = {
-				has_building = marketplace
-				has_building = trade_depot
-				has_building = stock_exchange
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
 			}
 			ROOT = {
 				NOT = {

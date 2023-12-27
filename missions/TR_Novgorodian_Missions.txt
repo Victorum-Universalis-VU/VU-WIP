@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35 # Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 tr_novgorod_1 = {
 	slot = 1
 	generic = no
@@ -39,8 +39,10 @@ tr_novgorod_1 = {
 			#Tver claims
 			tver_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -54,15 +56,19 @@ tr_novgorod_1 = {
 			}
 			yaroslavl_area = { #Yaroslavl
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
 				}
 				add_permanent_claim = ROOT
 			}
 			beloozero_area = { #Bezhetsk
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -117,8 +123,10 @@ tr_novgorod_1 = {
 			}
 			pskov_area = { #Pskov
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -138,7 +146,9 @@ tr_novgorod_1 = {
 				owner = { is_subject_of = MOS }
 				area = moscow_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			russia_region = {
@@ -211,7 +221,9 @@ tr_novgorod_2 = {
 				owner = { tag = TVE }
 				province_id = 294
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
 			russia_region = {
@@ -237,8 +249,10 @@ tr_novgorod_2 = {
 			}
 			russia_region = {
 				limit = {
-					NOT = { is_core = ROOT	}
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -255,7 +269,10 @@ tr_novgorod_2 = {
 				owner = {
 					AND = {
 						dynasty = "Rurikovich"
-						culture_group = east_slavic
+						OR = {
+							culture_group = east_slavic
+							culture_group = slavic
+						}
 					}
 				}
 			}
@@ -268,7 +285,10 @@ tr_novgorod_2 = {
 				any_country = {
 					AND = {
 						dynasty = "Rurikovich"
-						culture_group = east_slavic
+						OR = {
+							culture_group = east_slavic
+							culture_group = slavic
+						}
 						NOT = {
 							is_subject_of = ROOT
 						}
@@ -470,7 +490,6 @@ tr_novgorod_3 = {
 					province_id = 45
 					NOT = { is_strongest_trade_power = ROOT }
 				}
-					
 			}
 		}
 		trigger = {
@@ -706,8 +725,10 @@ tr_novgorod_4 = {
 			}
 			west_karelia_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -937,8 +958,7 @@ tr_novgorod_5 = {
 				}
 				AND = {
 					province_id = 1975
-					NOT = { is_strongest_trade_power = ROOT }
-												  
+					NOT = { is_strongest_trade_power = ROOT }				  
 				}
 			}
 		}

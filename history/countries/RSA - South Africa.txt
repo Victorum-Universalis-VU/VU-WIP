@@ -3,11 +3,12 @@
 
 government = republic
 set_legacy_government = constitutional_republic
-mercantilism = 0.1
+mercantilism = 25
 primary_culture = dutch
 religion = reformed
 #technology_group = western
-technology_group = english_tech_group
+technology_group = dutch_tech_group
+unit_type = western
 capital = 2596
 
 #100.1.1 = { add_government_reform = early_gov_reform_1 }
@@ -136,10 +137,10 @@ capital = 2596
 	add_government_reform = parliamentary_reform
 	add_government_reform = universal_suffrage_reform
 	add_government_reform = reinforce_republican_values_reform
-	add_government_reform = multi_party_system
-	add_government_reform = democracy_reform
-	add_government_reform = abolish_presidency
-	set_legacy_government = parliamentary_republic
+	#add_government_reform = multi_party_system
+	#add_government_reform = democracy_reform
+	#add_government_reform = abolish_presidency
+	#set_legacy_government = parliamentary_republic
 
 	monarch = {
 		name = "Louis Botha"
@@ -221,9 +222,9 @@ capital = 2596
 	government = republic
 	add_government_reform = parliamentary_reform
 	add_government_reform = strengthen_executive_powers_reform
-	add_government_reform = single_party_system
-	add_government_reform = democracy_reform
-	add_government_reform = powerful_head_of_state
+	#add_government_reform = single_party_system
+	#add_government_reform = democracy_reform
+	#add_government_reform = powerful_head_of_state
 	set_legacy_government = constitutional_republic
 
 	monarch = {

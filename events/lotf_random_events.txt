@@ -142,13 +142,13 @@ country_event = { #Great Awakening
 	is_triggered_only = yes
 	trigger = { 
 		tag = USA
-		NOT = { religious_unity = 100 }
+		NOT = { religious_unity = 1 }
 	}
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 2
-			NOT = { religious_unity = 75 }
+			NOT = { religious_unity = 0.75 }
 		}
 	}
 	option = {

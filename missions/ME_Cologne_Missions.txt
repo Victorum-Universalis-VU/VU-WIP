@@ -36,8 +36,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -64,13 +64,13 @@ KOL_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			1762 = {
-			   if = {
+			    if = {
 					limit = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			81 = {
 				if = {
@@ -78,8 +78,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			1758 = {
 				if = {
@@ -87,8 +87,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			57 = {
 				if = {
@@ -96,8 +96,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			2975 = {
 				if = {
@@ -105,8 +105,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -141,8 +141,8 @@ KOL_missions_1 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}

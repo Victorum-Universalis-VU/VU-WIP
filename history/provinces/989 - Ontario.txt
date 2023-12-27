@@ -18,10 +18,6 @@ native_hostileness = 6
 
 
 
-discovered_by = north_american
-
-1609.1.1 = { discovered_by = FRA } # Samuel de Champlain.
-1629.1.1 = { discovered_by = ENG }
 1649.1.1 = { 
 	owner = ---
 	controller = ---
@@ -37,7 +33,7 @@ discovered_by = north_american
 	religion = catholic
 	is_city = yes
 } # Construction of Fort Frontenac
-1707.5.12 = { discovered_by = GBR } 
+ 
 1763.2.10 = {
 	owner = GBR
 	controller = GBR

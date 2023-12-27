@@ -4552,11 +4552,26 @@ vu_tamaudun = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
+	build_trigger = { 
+		is_year = 1500 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
-	can_upgrade_trigger = { is_year = 1500 owner = { religion_group = state_shinto } }
+	can_use_modifiers_trigger = { 
+		is_year = 1500 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
+	can_upgrade_trigger = { 
+		is_year = 1500 
+		owner = { 
+			religion = state_shinto 
+		}
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4570,25 +4585,25 @@ vu_tamaudun = {
 	tier_1 = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = {	factor = 3500 }
-		province_modifiers = {  local_development_cost = -0.1 local_tax_modifier = 0.05 }
+		province_modifiers = {  local_development_cost = -0.1 local_tax_modifier = 0.1 }
 		area_modifier = { }
-		country_modifiers = { global_tax_modifier = 0.05 }
+		country_modifiers = { global_tax_modifier = 0.15 }
 		on_upgraded = {}
 	}
 	tier_2 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.2 local_tax_modifier = 0.2 }
-		area_modifier = {  local_tax_modifier = 0.1  }
-		country_modifiers = { global_tax_modifier = 0.1 legitimacy = 0.05 governing_capacity_modifier = 0.05 }
+		area_modifier = { }
+		country_modifiers = { global_tax_modifier = 0.2 legitimacy = 0.5 governing_capacity_modifier = 0.2 }
 		on_upgraded = {}
 	}
 	tier_3 = {
 		upgrade_time = { months = 960 }
 		cost_to_upgrade = {	factor = 9000 }
-		province_modifiers = {  local_development_cost = -0.4 local_tax_modifier = 0.4 }
-		area_modifier = { local_tax_modifier = 0.2  }
-		country_modifiers = { global_tax_modifier = 0.2 legitimacy = 1 governing_capacity_modifier = 0.1 }
+		province_modifiers = {  local_development_cost = -0.3 local_tax_modifier = 0.3 }
+		area_modifier = { }
+		country_modifiers = { global_tax_modifier = 0.25 legitimacy = 0.75 governing_capacity_modifier = 0.3 }
 		on_upgraded = { }
 	}
 }
@@ -4602,11 +4617,26 @@ vu_nijo_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
+	build_trigger = { 
+		is_year = 1600 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
-	can_upgrade_trigger = { is_year = 1600 owner = { religion_group = state_shinto } }
+	can_use_modifiers_trigger = { 
+		is_year = 1600 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
+	can_upgrade_trigger = { 
+		is_year = 1600 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4652,11 +4682,23 @@ vu_heijo_palace = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { religion_group = state_shinto } }
+	build_trigger = { 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { religion_group = state_shinto } }
-	can_upgrade_trigger = {  owner = { religion_group = state_shinto } }
+	can_use_modifiers_trigger = { 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
+	can_upgrade_trigger = {  
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -4702,11 +4744,23 @@ vu_itsukushima_ahrine = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { religion_group = state_shinto } }
+	build_trigger = { 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { religion_group = state_shinto } }
-	can_upgrade_trigger = {  owner = { religion_group = state_shinto } }
+	can_use_modifiers_trigger = { 
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
+	can_upgrade_trigger = {  
+		owner = { 
+			religion = state_shinto 
+		} 
+	}
 	keep_trigger = {}
 
 	tier_0 = {

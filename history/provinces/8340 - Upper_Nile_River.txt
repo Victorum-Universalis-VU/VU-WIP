@@ -1,4 +1,5 @@
 #8340 - Upper_Nile_River
 
-#discovered_by = muslim
-#discovered_by = east_african
+
+
+

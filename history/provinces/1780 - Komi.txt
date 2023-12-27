@@ -1,6 +1,6 @@
 #1780 - Komi
 
-culture = samoyed
+culture = vu_komi
 religion = tengri_pagan_reformed #Sami Shamanism
 hre = no
 base_tax = 4  
@@ -13,7 +13,7 @@ native_ferocity = 1
 native_hostileness = 3
 
 1593.1.1 = {
-	discovered_by = RUS
+	
 	owner = RUS
 	controller = RUS
 	add_core = RUS

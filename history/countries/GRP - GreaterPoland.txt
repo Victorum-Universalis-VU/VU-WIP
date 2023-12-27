@@ -8,6 +8,7 @@ capital = 42 # Krakow
 
 1444.11.11 = {
 	monarch = {
+		name = "Bezkrólewie"
 		adm = 0
 		mil = 0
 		dip = 0

@@ -1,10 +1,8 @@
-capital = 3034 #Breconshire, Brecon
-
-technology_group = english_tech_group
-unit_type = western
-
 government = monarchy
 add_government_reform = feudalism_reform
-
+#technology_group = western
+technology_group = english_tech_group
+unit_type = western
 religion = catholic
 primary_culture = welsh #should be Old English/English but it allows it to be released
+capital = 3034 #Breconshire, Brecon

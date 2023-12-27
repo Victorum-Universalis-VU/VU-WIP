@@ -11,15 +11,3 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
-
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
-
-
-1811.1.1 = {
-	discovered_by = GBR
-	discovered_by = USA
-} #David Thompson and David Stuart at around the same time.
-
-#Modern European settlement started late 1850s to early 1860s in Penticton and Kelowna.

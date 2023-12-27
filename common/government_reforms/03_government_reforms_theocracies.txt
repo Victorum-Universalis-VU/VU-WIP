@@ -1,11 +1,3 @@
-#Victorum Universalis Note -
-#There is no way to modify the new gov system without overriding it; disappointed in PDX's choice here.
-#File has been documented well and organised to the best of our abilities. Any submods or addons desiring to add their own entries will need to manually update this entirely
-#after every VU update. This is out of our hands and there are no suggestions for this.
-#Furthermore, this file contains new entries throughout various sections.
-#Many thanks to you all - San Felipe.
-
-# Additional notes by Shoarmadad.
 theocracy_mechanic = {
 	has_devotion = yes
 	rulers_can_be_generals = no
@@ -698,6 +690,7 @@ dutch_theocracy_reform = {
 		heir = no
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
 				naval_forcelimit_modifier = 0.10
@@ -805,16 +798,19 @@ millennialistic_theocracy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		enforce_religion_cost = -0.1
+		monthly_church_power = 1
+		monthly_fervor_increase = 0.25
+		enforce_religion_cost = -0.25
 		morale_damage = 0.1
-		devotion = -1
+		devotion = -2
 	}
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
 		}
 		custom_attributes = {
-			gain_monarch_power_from_force_converting = yes
+			#gain_monarch_power_from_force_converting = yes
+			gain_devotion_from_force_converting = yes
 		}
 	}
 }
@@ -836,6 +832,27 @@ zoroastrian_theocracy_reform = {
 		church_influence_modifier = -0.2
 		manpower_in_accepted_culture_provinces = 0.15
 	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		government_abilities = {
+			the_three_royal_fires_mechanic
+		}
+	}
+	#post_removed_effect = {
+	#	hidden_effect = {
+	#		if = {
+	#			limit = { NOT = { has_government_mechanic = the_three_royal_fires_mechanic } }
+	#			clr_country_flag = can_place_center_of_reformation
+	#			every_owned_province = {
+	#				limit = {
+	#					is_reformation_center = yes
+	#					religion = root
+	#				}
+	#				remove_reform_center = zoroastrian
+	#			}
+	#		}
+	#	}
+	#}
 }
 
 ajuuraan_theocracy_reform = {
@@ -885,9 +902,47 @@ bureaucratic_rule_reform = {
 		reform_progress_growth = 0.15
 		core_creation = -0.05
 		yearly_harmony = 0.1
-		harmonization_speed = -0.1
+		harmonization_speed = 0.1
 	}
 }
+
+# Sisterhood of Jeanne d'Arc
+sisterhood_of_jeanne_darc_reform = {
+	allow_normal_conversion = no
+	icon = "sisterhood"
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		religion_group = christian
+	}
+	potential = {
+		OR = {
+			has_reform = sisterhood_of_jeanne_darc_reform
+			have_had_reform = sisterhood_of_jeanne_darc_reform
+			has_country_modifier = sisters_takeover
+		}
+	}
+	trigger = {
+		religion_group = christian
+	}
+	nation_designer_cost = 100
+	modifiers = {
+		cb_on_religious_enemies = yes
+		monarch_military_power = 1
+		may_recruit_female_generals = yes
+		female_advisor_chance = 1.0
+		fire_damage = 0.1
+		discipline = 0.05
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #Internal vs External Mission
 
 internal_mission_reform = {
@@ -1058,7 +1113,7 @@ education_of_the_missionaries_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		global_missionary_strength = 0.02
-		#power_points_per_development_from_conversion = 0.25	#For 1.35
+		#power_points_per_development_from_conversion = 0.25	#For 1.36
 		missionary_maintenance_cost = -0.5
 		max_absolutism = 5
 	}
@@ -1297,7 +1352,7 @@ conciliarism_reform = {
 		tag = PAP
 	}
 	modifiers = {
-		appoint_cardinal_cost = -0.3
+		appoint_cardinal_cost = -0.33
 		monthly_favor_modifier = 0.5
 	}
 	ai = {
@@ -1476,6 +1531,7 @@ theocratic_democracy_reform = {
 	modifiers = {
 		global_unrest = -1
 	}
+
 	potential = {
 		NOT = {
 			OR = {
@@ -1484,6 +1540,7 @@ theocratic_democracy_reform = {
 			}
 		}
 	}
+
 	trigger = {
 		NOT = { has_government_attribute = monastic_order }
 		if = {
@@ -1519,49 +1576,53 @@ theocratic_democracy_reform = {
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 		}
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 			NOT = {
 				any_neighbor_country = {
 					OR = {
-					    technology_group = western
-						technology_group = english_tech_group
-						technology_group = french_tech_group
-						technology_group = dutch_tech_group
-						technology_group = german_tech_group
-						technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-						technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-						technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-					}
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            }
 				}
 			}
 		}
@@ -1641,49 +1702,53 @@ regionally_elected_commanders = {
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 		}
 		modifier = {
 			factor = 0.5
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group 
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
+				OR = {
+		        	technology_group = western
+		        	technology_group = dutch_tech_group
+		        	technology_group = english_tech_group
+		        	technology_group = french_tech_group
+		        	technology_group = german_tech_group
+		        	technology_group = italian_tech_group
+		        	technology_group = portuguese_tech_group
+		        	technology_group = roman_tech_group
+		        	technology_group = scandinavian_tech_group
+		        	technology_group = spanish_tech_group
+		        	technology_group = swiss_tech_group
+		        }
 			}
 			NOT = {
 				any_neighbor_country = {
 					OR = {
-					    technology_group = western
-						technology_group = english_tech_group
-						technology_group = french_tech_group
-						technology_group = dutch_tech_group
-						technology_group = german_tech_group
-						technology_group = italian_tech_group
-						technology_group = portuguese_tech_group
-						technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-						technology_group = spanish_tech_group
-						technology_group = swiss_tech_group
-					}
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            }
 				}
 			}
 		}
@@ -1716,6 +1781,7 @@ monastic_elections_reform = {
 		election_on_death = yes
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			militarists = {
 				manpower_recovery_speed = 0.2

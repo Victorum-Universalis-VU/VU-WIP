@@ -291,6 +291,9 @@ nile_river_superregion = {
 niger_river_superregion = {
     niger_river_region
 }
+congo_river_superregion = {
+    congo_river_region
+}
 
 #Asia
 #Burma
@@ -355,6 +358,9 @@ oder_river_superregion = {
 }
 vistula_river_superregion = {
     vistula_river_region
+}
+ob_river_superregion = {
+    ob_river_region
 }
 
 #Mesopotamia

@@ -130,12 +130,15 @@
  PROV405:0 "Palmyra"         #Formerly 5182
  PROV407:0 "Rakka"         #Formerly 405
  PROV418:0 "Amida"
+ PROV421:0 "Baku"
+ PROV425:0 "Quba"
  PROV437:0 "Nisa"           #was Kopet Dag
  PROV_ADJ437:0 "Nisan"
  PROV438:0 "Gokdepe"        #was Karakum
  PROV_ADJ438:0 "Gokdepeni"
  PROV452:0 "Jauz Gun"       #was Badakhashan
  PROV_ADJ452:0 "Jauz Guni"
+ PROV463:0 "Krasnadar"
  PROV467:0 "Uryupin"
  PROV473:0 "Uryupin"
  PROV482:0 "Bahama"
@@ -1132,10 +1135,10 @@
  PROV_ADJ3917:0 "West Kijan"
  PROV3918:0 "West Jaru"
  PROV_ADJ3918:0 "West Jarun"
- PROV3919:0 "West_Marringarr"
- PROV_ADJ3919:0 "West_Marringarran"
- PROV3920:0 "West_Doolbong"
- PROV_ADJ3920:0 "West_Doolbonger"
+ PROV3919:0 "West Marringarr"
+ PROV_ADJ3919:0 "West Marringarran"
+ PROV3920:0 "West Doolbong"
+ PROV_ADJ3920:0 "West Doolbonger"
  PROV3921:0 "Miriwoong"
  PROV_ADJ3921:0 "Miriwoonger"
  PROV3922:0 "Kwini"
@@ -1285,7 +1288,7 @@
  PROV4323:0 "A'l-Nyhaha"          #Formerly 5275
  PROV4328:0 "Turnhout"
  PROV_ADJ4328:0 "Turnhouter"
- PROV4340:0 "Talysh"          #Formerly 3257
+ PROV4340:0 "Neftchala"          #Formerly 3257
  PROV4347:0 "Leuven"
  PROV_ADJ4347:0 "Leuvener"
  PROV4349:0 "Tabuco"

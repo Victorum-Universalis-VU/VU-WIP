@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 emp_ven_slot_1 = {
 	slot = 1
 	generic = no
@@ -42,8 +42,7 @@ emp_ven_slot_1 = {
 			}
 		}
 		effect = {
-			custom_tooltip = emp_ven_plague_doctor_training_tt
-			set_country_flag = has_competent_doctors
+			remove_plague_events = yes
 		}
 	}
 	
@@ -592,9 +591,11 @@ emp_ven_slot_4 = {
 				if = {
 					limit = {
 						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+					    	OR = {
+					    		is_permanent_claim = ROOT
+					    		is_core = ROOT
+					    	}
+					    }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -728,7 +729,8 @@ emp_ven_slot_5 = {
 		required_missions = { emp_ven_monopolize_adriatic_trade emp_ven_expand_the_arsenal }
 		
 		provinces_to_highlight = {
-				province_id = 5493
+			province_id = 5493
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = {
 				trade_share = {
 					country = ROOT
@@ -759,8 +761,10 @@ emp_ven_slot_5 = {
 			}
 			cyprus_area	= {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
 				}
 				add_permanent_claim = ROOT
 			}

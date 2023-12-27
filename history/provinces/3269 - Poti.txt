@@ -1,7 +1,8 @@
 #3269 - Poti
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Poti"
 trade_goods = unknown

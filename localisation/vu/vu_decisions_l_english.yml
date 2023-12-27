@@ -1,4 +1,8 @@
 ﻿l_english:
+ #Roman Revival
+ vu_restore_roman_culture_title: "£rome_culture_icon_le£ Romanization"
+ vu_restore_roman_culture_desc: "As our Roman ambitions come to fruition, we must return the old Latin Roman culture and language to the lands that once spoke Latin proudly!"
+ #
  lanfang_decision_title:0 "Invite Kongsi Federations"
  lanfang_decision_desc:0 "Chinese mining collectives are eager to begin exploting the gold mines of Borneo. We should allow them to set up self-governing communities so that they can perform their work most effectively."
  lanfang_decision_formation_title:0 "Invite Kongsi Federations"

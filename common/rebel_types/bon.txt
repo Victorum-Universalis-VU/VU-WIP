@@ -229,7 +229,7 @@ bon_rebels = {
 				NOT = { dominant_religion = bon }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = asian_pagan_group }
+				religion_group = asian_pagan_group
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"

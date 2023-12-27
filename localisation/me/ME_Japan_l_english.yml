@@ -63,9 +63,9 @@
  jap_controllers_trade_title: "Controllers of Trade"
  jap_controllers_trade_desc: "As we sail forth, expanding our horizons and trading exotic goods into our shores, our Republic reminds us not to forget from whence we came. We must not forget to support the pillars that support our great Country."
  jap_malaccan_hegemony_title: "Malaccan Hegemony"
- jap_malaccan_hegemony_desc: "Having conquered the famous port of Malacca, the merchants in charge of the trading feitoria there expected to seize the same control of the spice trade that the Malaccans themselves had once enjoyed. However, they soon found out that without the centralized bureaucracy and navy from the Malacca Sultans, the importance of the port was greatly diminished. Portuguese merchants now had to compete with a host of smaller ports instead of profiting from Malacca’s fabled riches. Action must be taken if we are to received the benefits from the city that our admirals promised us when we set out to take it."
+ jap_malaccan_hegemony_desc: "Having conquered the famous port of Malacca, the merchants in charge of the trading feitoria there expected to seize the same control of the spice trade that the Malaccans themselves had once enjoyed. However, they soon found out that without the centralized bureaucracy and navy from the Malacca Sultans, the importance of the port was greatly diminished. Portuguese merchants now had to compete with a host of smaller ports instead of profiting from Malacca's fabled riches. Action must be taken if we are to received the benefits from the city that our admirals promised us when we set out to take it."
  jap_age_exploration_title: "Age of Exploration"
- jap_age_exploration_desc: "I cannot have a man who is afraid of everything, I don't have the time to soothe insecurities and fears, I cannot have a man who is standing on a stone by a creek, watching for the fish to swim by and every time he sees a fish he says "Oh look, this fish scares me, I wonder what this fish means, this fish might mean- this, or this fish might mean- that" for God's sake, they are just fish, and they don't mean anything! Such a sad thing, so many fine, strong men standing on top of little stones, pointing at fish all the time! Such a waste! Such a waste of time! I can only have a man who will leap into the water, not minding the damn fish and whatever other little things that scare him. I need to have someone who is braver than me; if I am a pirate, he has to be the pirate Captain, if I am a pirate Captain he has to be the flying dragon."
+ jap_age_exploration_desc: "It is time for us to venture forth from these islands and discover what lays beyond the clouds and the vast horizon that surrounds Japan."
  jap_gosenmaigawara_title: "Gosenmaigawara"
  jap_gosenmaigawara_desc: "Inherited Will, The Destiny of the Age, and The Dreams of the People. As long as people continue to pursue the meaning of Freedom, these things will never cease to be!"
  jap_ichidai_sanzen_daisen_sekai_title: "Ichidai Sanzen Daisen Sekai"
@@ -111,7 +111,7 @@
  jap_muzugokoro_title: "Mizugokoro"
  jap_muzugokoro_desc: "I'm cap'n here by 'lection. I'm cap'n here because I'm the best man by a long sea-mile. You won't fight, as gentlemen o' fortune should; then, by thunder, you'll obey, and you may lay to it! I like that boy, now; I never seen a better boy than that. He's more a man than any pair of rats of you in this here house, and what I say is this: let me see him that'll lay a hand on him--that's what I say, and you may lay to it."
  jap_shizurase_title: "Shizurase"
- jap_shizurase_desc: "It comes for you," Lindsay repeated, her voice hideously broken. "You will pass into the sea nothing more than a blackened scaffold, and your dark mistress will not recall your name, for she has swallowed a million of your lecherous kind before you, and she will swallow a million more before she's done."
+ jap_shizurase_desc: "It comes for you, you will pass into the sea nothing more than a blackened scaffold and your dark mistress will not recall your name for she has swallowed a million of your lecherous kind before you and she will swallow a million more before she's done."
 
  #Events
  ME_Japan_Events.1.T: "New Horizon"
@@ -214,7 +214,7 @@
 
  JAP_CONTROLLERS_TRADE_TT: "[Root.GetName] will gain Permanent Claim on all provinces, inside the §YMalaya§! and §YIndonesia§! region that are §Mcoastal§! and have a §Mcenter of trade§!"
 
- JAP_DELICATE_COEXISTANCE_TRIGGER_TT: "All provinces in the §YSouth China Region§!, and §YShanxi§!, §YNorth Henan§!, §YSouth Henan§!, §YNorth Anhui§!, §YNorth Hebei§!, §YSouth Hebei§!, §YShandong§!, §YNorth Jiangsu§!, areas:\n	Owned by §Y[Root.GetName]§!\n	Local Autonomy Above Minimum lower than §Y15%§!\n	Unrest lower than §Y1§!"
+ JAP_DELICATE_COEXISTANCE_TRIGGER_TT: "All provinces in the §YSouth China Region§!, §YShanxi§!, §YNorth Henan§!, §YSouth Henan§!, §YNorth Anhui§!, §YNorth Hebei§!, §YSouth Hebei§!, §YShandong§! and §YNorth Jiangsu§! areas:\n	Owned by §Y[Root.GetName]§!\n	Local Autonomy Above Minimum lower than §Y15%§!\n	Unrest lower than §Y1§!"
 
  JAP_TOGEN_SHIRATAKI_TRIGGER_TT: "All provinces in the §YJapan Region§!:\n	Owned by §Y[Root.GetName]§!\n\nAll §yareas§! in the §YJapan Region§!:\n   One of the following must be true:\n	Have a §YFort§! of any level\n	Have a §YCoastal Defense§! or §YNaval Battery§!"
 

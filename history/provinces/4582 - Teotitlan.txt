@@ -18,7 +18,8 @@ native_hostileness = 2
 
 
 
-#discovered_by = mesoamerican
+
+
 
 1518.1.1 = { add_core = AZT }
 1521.8.13 = {

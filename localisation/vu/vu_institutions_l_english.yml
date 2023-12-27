@@ -282,7 +282,7 @@
  PORT_OR_CAPITAL_IN_COLONY_CIVIL_SERVICE:0 "Port/Capital - Colonial Overlord has §YCivil Service§!"
  tooltip_civil_service_embraced:0 "Owner has embraced §YCivil Service§!"
  tooltip_civil_service_embraced_has_fort:0 "Owner has embraced §YCivil Service§! and province has §Yfort level§!"
- 
+
  FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_MARKET_PRODUCTION:0 "Nearby friendly province with §YEarly Market Economics§!"
  FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_MARKET_PRODUCTION_AND_RULER_GOOD:0 "Nearby friendly province with §YEarly Market Economics§! and ruler has at least §M3, 5, 3§! in skills"
  HAS_FEUDALISM_AND_MONARCH_6_PLUS_COT:0 "§YFeudalism§! embraced, ruler has diplomatic skill of §M6§! and province is §Mlvl 2§! Center of Trade"
@@ -292,17 +292,16 @@
  PORT_OR_CAPITAL_IN_COLONY_MARKET_PRODUCTION:0 "Port/Capital - Colonial Overlord has §YEarly Market Economics§!"
  tooltip_market_production_embraced:0 "Owner has embraced §YEarly Market Economics§!"
  tooltip_market_production_embraced_has_cot:0 "Owner has embraced §YEarly Market Economics§! and province has §YCenter of Trade§!"
- 
+
  birthplace_of_market_production_modifier:0 "Birthplace of Early Market Economics"
  desc_birthplace_of_market_production_modifier:0 "This province gave rise to Early Market Economics"
- 
+
  institution_events.100.t:0 "Early Market Economics!"
  institution_events.100.d:0 "WIP"
  institution_events.100.a:0 "This changes everything..."
  institution_events.100.a.tt:1 "§YEmbracing§! the §Early Market Economics§! Institution will be vital for future advancements in §YTechnology§!."
- institution_events.1003.d:0 "Travelers from far away lands speak of a great storm coming our way. A storm that will come in many shapes and forms, disguised as flattery, bribary and in the worse case scenario blatant and obvious. It is hard to treat such rumors seriously since we have lived in peace for many decades, without a care in the world to meddle in affairs that are no concern of to our people. However, we must not take these rumours forgranted, nor should we ignore them incase they turn out to be true. In that instance, then may the Gods help us and grant us strength, fortitude and courage to bear against this so-called 'Early Market Economics' once it arrives on our shores.""
- 
- 
+ institution_events.1003.d:0 "Travelers from far away lands speak of a great storm coming our way. A storm that will come in many shapes and forms, disguised as flattery, bribary and in the worse case scenario blatant and obvious. It is hard to treat such rumors seriously since we have lived in peace for many decades, without a care in the world to meddle in affairs that are no concern of to our people. However, we must not take these rumours forgranted, nor should we ignore them incase they turn out to be true. In that instance, then may the Gods help us and grant us strength, fortitude and courage to bear against this so-called 'Early Market Economics' once it arrives on our shores."
+
  #VU - Institutions by San Felipe
  institution_events.90.t:0 "Imperialism!"
  institution_events.90.d:0 "Since the age of discovery, our monarchs have dreamt to spread further our people, culture, influence and power to every corner of the earth whether it be through diplomacy or conquest. Finally, our scientific and technological prowess at the turn of $YEAR$ will allow us to pursue this imperialistic goal as we send forth our people to conquer what was once unconquerable."

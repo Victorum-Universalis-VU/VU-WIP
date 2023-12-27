@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 # Flavour events for Teutonic Order - The Prussian Confederation
 # By Daniel Tolman
 
@@ -379,6 +379,7 @@ country_event = {
 			add_permanent_claim = ROOT
 		}
 	}
+
     option = {
 		name = "flavor_teu.3.b"
 		
@@ -441,6 +442,7 @@ country_event = {
 	desc = "flavor_teu.EVTDESC4"
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
+
 	option = {
 		name = "flavor_teu.4.a"
 		custom_tooltip = dnz_decision_available_tooltip
@@ -481,6 +483,7 @@ country_event = {
 	}
 
 	immediate = {
+		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = pru_danzig_victory_happend
 		}
@@ -1054,7 +1057,7 @@ country_event = {
 	
 	option = {	# Livonian Order accepts to be our vassal
 		name = flavor_teu.15.a
-#		vassalize = FROM
+		#vassalize = FROM
 		create_subject = {
 			subject_type = sister_republic
 			subject = LIV
@@ -2154,11 +2157,13 @@ country_event = {
 			}
 			add_accepted_culture_or_dip_power = {
 				culture = russian_new
+				dip_reward = yes
 			}
 		}
 		else = {
 			add_accepted_culture_or_dip_power = {
 				culture = russian
+				dip_reward = yes
 			}
 		}
 		add_dip_power = 100

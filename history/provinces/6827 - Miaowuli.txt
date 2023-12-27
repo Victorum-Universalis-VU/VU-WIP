@@ -9,16 +9,10 @@ religion = confucianism
 capital = "Miaowuli"
 trade_goods = glass
 hre = no
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = japanese
-
-1519.1.1 = { discovered_by = POR } # Tome Pires
 
 1644.4.1 = { owner = CSH controller = CSH } # The Shun dynasty of Li Zicheng
 1644.11.1 = {

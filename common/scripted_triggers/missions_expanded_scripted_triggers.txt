@@ -1,6 +1,33 @@
 country_has_both_paradox_and_me_missions = {
 	OR = {
 		AND = {
+			has_dlc = "King of Kings"
+			OR = {
+				tag = QAR
+				tag = AKK
+				tag = ARM
+				tag = MLK
+				AND = {
+					ARB_hedjaz_najd_bedouin_potential = yes
+					has_generic_arabian_missions = yes 
+				}
+				YEM_is_yemeni_nation = yes
+				tag = ARB
+				tag = ARL
+				tag = GEO
+				tag = PER
+				tag = EGY
+				tag = MAM
+				tag = BYZ
+				tag = ARB
+				tag = NAJ
+				tag = DAW
+				tag = HED
+				tag = MDA
+				tag = MFL 
+			}
+		}
+		AND = {
 			has_dlc = "Domination"
 			OR = {
 				tag = RUS

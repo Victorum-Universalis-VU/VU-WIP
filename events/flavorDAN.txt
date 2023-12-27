@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Flavor Events for Denmark
 #
@@ -3197,6 +3198,7 @@ country_event = {
 		set_capital = 236
 		add_accepted_culture_or_dip_power = {
 			culture = english
+			dip_reward = yes
 		}
 		236 = {
 			add_base_tax = 3
@@ -3570,14 +3572,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 		}
@@ -3625,14 +3627,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 			modifier = {
@@ -3813,14 +3815,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 			modifier = {
@@ -4034,14 +4036,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 			modifier = {
@@ -4508,14 +4510,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 		}
@@ -4708,14 +4710,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 		}
@@ -4764,14 +4766,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 		}
@@ -4930,14 +4932,14 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 14
+					amount = 14
 				}
 			}
 			#Has an okay ruler which doesn't get rejected
 			modifier = {
 				factor = 0.5
 				ruler_total_stats = {
-					stats = 11
+					amount = 11
 				}
 			}
 			modifier = {
@@ -5675,10 +5677,12 @@ country_event = {
 				add_treasury = 500
 				add_years_of_income = 1
 				add_manpower = 20
-				build_to_forcelimit = {
-					infantry = 0.6
-					cavalry = 0.1
-					artillery = 0.3
+				capital_scope = {
+					build_to_forcelimit = {
+				    	infantry = 0.6
+				    	cavalry = 0.1
+				    	artillery = 0.3
+				    }
 				}
 				random_owned_province = {
 					limit = { has_port = yes }
@@ -5704,15 +5708,16 @@ country_event = {
 				add_country_modifier = {
 					name = swedish_military_miracle
 					duration = 54750 #150 years
-					hidden = no
 				}
 			}
 			DAN = {
-				kill_units = {	#Some units desert
-					who = DAN
-					type = infantry
-					amount = 10	#May need adjustment
-				}
+				capital_scope = {
+			    	kill_units = {	#Some units desert
+			    		who = owner
+			    		type = infantry
+			    		amount = 10	#May need adjustment
+			    	}
+			    }
 				add_war_exhaustion = 4
 			}
 			every_country = {	#Countries that support Sweden will join

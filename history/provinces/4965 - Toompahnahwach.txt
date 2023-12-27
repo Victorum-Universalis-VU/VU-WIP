@@ -12,6 +12,5 @@ native_size = 1
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
 
-1776.1.1 = { discovered_by = SPA } # Dominguez-Escalante Expedition
+

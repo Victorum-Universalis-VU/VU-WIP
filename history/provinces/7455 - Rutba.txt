@@ -27,7 +27,7 @@ native_hostileness = 8
 	is_city = yes	
 	add_core = IRQ
 } # The Safavids' expansion
-1515.1.1 = { discovered_by = POR }
+
 1536.1.1 = {
 	owner = TUR
 	controller = TUR

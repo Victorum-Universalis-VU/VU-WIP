@@ -1,7 +1,8 @@
 #8752 - Paraty
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Paraty"
 trade_goods = unknown

@@ -5,6 +5,7 @@ primary_culture = lithuanian
 add_accepted_culture = byelorussian
 add_accepted_culture = ruthenian
 religion = catholic
+#technology_group = eastern
 technology_group = polish_tech_group
 historical_friend = POL
 capital = 272 # Vilnius

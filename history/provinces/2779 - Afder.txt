@@ -15,8 +15,9 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 
-##discovered_by = east_african
 
-1550.1.1 = { discovered_by = TUR }
+
+
+
 1650.1.1 = { owner = AJU controller = AJU is_city = yes }
 1730.1.1 = { owner = GLE controller = GLE }

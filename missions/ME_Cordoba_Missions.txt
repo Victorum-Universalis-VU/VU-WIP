@@ -41,15 +41,19 @@ CRDB_missions_1 = { #CRDB is the namespace for this
 				estate = estate_burghers
 				loyalty = 10
 			}
-			
-			ME_overlord_effect = {
-				effect = "
-					add_country_modifier = {
-						name = CRDB_asset_straits
-						duration = 7300
-					}
-				"
+			add_country_modifier = {
+				name = CRDB_asset_straits
+				duration = 7300
 			}
+			
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_country_modifier = {
+			#			name = CRDB_asset_straits
+			#			duration = 7300
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -80,12 +84,13 @@ CRDB_missions_1 = { #CRDB is the namespace for this
 				name = CRDB_pushing_back_the_crusaders
 				duration = 9125
 			}
+			add_dip_power = 50
 			
-			ME_overlord_effect = {
-				effect = "
-					add_dip_power = 50
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_dip_power = 50
+			#	"
+			#}
 		}
 	}
 	
@@ -105,48 +110,49 @@ CRDB_missions_1 = { #CRDB is the namespace for this
 		}
 		effect = {
 			add_stability_or_adm_power = yes
-			custom_tooltip = CRDB_distribute_dev_among_andalusian_provinces
-			hidden_effect = {
-				for = {
-					amount = 10
-					effect = "
-						random_owned_province = {
-							limit = {
-								culture = andalusian
-							}
-							add_base_tax = 1
-						}
-					"
-				}
-				for = {
-					amount = 10
-					effect = "
-						random_owned_province = {
-							limit = {
-								culture = andalusian
-							}
-							add_base_production = 1
-						}
-					"
-				}
-				for = {
-					amount = 5
-					effect = "
-						random_owned_province = {
-							limit = {
-								culture = andalusian
-							}
-							add_base_manpower = 1
-						}
-					"
-				}
-			}
-			
-			ME_overlord_effect = {
-				effect = "
-					country_event = { id = ME_Cordoba_Events.4 }
-				"
-			}
+			country_event = { id = ME_Cordoba_Events.4 }
+			#custom_tooltip = CRDB_distribute_dev_among_andalusian_provinces
+			#hidden_effect = {
+			#	for = {
+			#		amount = 10
+			#		effect = "
+			#			random_owned_province = {
+			#				limit = {
+			#					culture = andalusian
+			#				}
+			#				add_base_tax = 1
+			#			}
+			#		"
+			#	}
+			#	for = {
+			#		amount = 10
+			#		effect = "
+			#			random_owned_province = {
+			#				limit = {
+			#					culture = andalusian
+			#				}
+			#				add_base_production = 1
+			#			}
+			#		"
+			#	}
+			#	for = {
+			#		amount = 5
+			#		effect = "
+			#			random_owned_province = {
+			#				limit = {
+			#					culture = andalusian
+			#				}
+			#				add_base_manpower = 1
+			#			}
+			#		"
+			#	}
+			#}
+			#
+			#ME_overlord_effect = {
+			#	effect = "
+			#		country_event = { id = ME_Cordoba_Events.4 }
+			#	"
+			#}
 		}
 	}
 }
@@ -212,14 +218,14 @@ CRDB_missions_2 = { #CRDB is the namespace for this
 			}
 			add_yearly_sailors = 1
 				
-			ME_overlord_effect = {
-				effect = "
-					add_country_modifier = {
-						name = CRDB_flagship
-						duration = 10950
-					}
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_country_modifier = {
+			#			name = CRDB_flagship
+			#			duration = 10950
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -262,16 +268,17 @@ CRDB_missions_2 = { #CRDB is the namespace for this
 				name = CRDB_defeated_the_infidels
 				duration = -1
 			}
+			add_army_tradition_or_mil_power = { amount = 20 }
 			
-			ME_overlord_effect = {
-				effect =  "
-					add_country_modifier = {
-						name = CRDB_defeated_the_infidels
-						duration = 7300
-					}
-					add_army_tradition_or_mil_power = { amount = 20 }
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect =  "
+			#		add_country_modifier = {
+			#			name = CRDB_defeated_the_infidels
+			#			duration = 7300
+			#		}
+			#		add_army_tradition_or_mil_power = { amount = 20 }
+			#	"
+			#}
 		}
 	}
 }
@@ -318,31 +325,28 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 			ME_give_claims = { area = basque_area }
 			ME_give_claims = { area = catalonia_area }
 			ME_give_claims = { area = aragon_area }
-			
-			custom_tooltip = " "
-			
 			create_general = { tradition = 80 }
-			
-			custom_tooltip = " "
-			
-			ME_overlord_effect = {
-				effect = "
-					add_power_projection = {
-						type = mission_rewards_power_projection
-						amount = 10
-					}
-					
-					if = {
-						limit = {
-							ROOT = {
-								tag = GRA
-							}
-							NOT = { exists = ADU }
-						}
-						country_event = { id = ME_Cordoba_Events.5 }
-					}
-				"
-			}
+			country_event = { id = ME_Cordoba_Events.5 }
+			#custom_tooltip = " "
+			#
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_power_projection = {
+			#			type = mission_rewards_power_projection
+			#			amount = 10
+			#		}
+			#		
+			#		if = {
+			#			limit = {
+			#				ROOT = {
+			#					tag = GRA
+			#				}
+			#				NOT = { exists = ADU }
+			#			}
+			#			country_event = { id = ME_Cordoba_Events.5 }
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -378,12 +382,12 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 				duration = 14600
 			}
 			
-			ME_overlord_effect = {
-				effect = "
-					add_mil_power = 100
-					add_yearly_manpower = 0.5
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_mil_power = 100
+			#		add_yearly_manpower = 0.5
+			#	"
+			#}
 		}
 	}
 	
@@ -404,20 +408,21 @@ CRDB_missions_3 = { #CRDB is the namespace for this
 		}
 		effect = {
 			add_mil_power = 50
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_country_modifier = {
 				name = CRDB_to_france
 				duration = 9125
 			}
 			
-			ME_overlord_effect = {
-				effect = "
-					add_prestige_or_monarch_power = { amount = 25 }
-					add_country_modifier = {
-						name = CRDB_to_france
-						duration = 9125
-					}
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_prestige_or_monarch_power = { amount = 25 }
+			#		add_country_modifier = {
+			#			name = CRDB_to_france
+			#			duration = 9125
+			#		}
+			#	"
+			#}
 		}
 	}
 }
@@ -483,17 +488,17 @@ CRDB_missions_4 = { #CRDB is the namespace for this
 				}
 			}
 			
-			ME_overlord_effect = {
-				effect = "
-					define_advisor = {
-						type = muscovy_architect
-						skill = 3
-						culture = ROOT
-						religion = ROOT
-						cost_multiplier = 0.2
-					}
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		define_advisor = {
+			#			type = muscovy_architect
+			#			skill = 3
+			#			culture = ROOT
+			#			religion = ROOT
+			#			cost_multiplier = 0.2
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -526,19 +531,19 @@ CRDB_missions_4 = { #CRDB is the namespace for this
 			ME_give_claims = { area = languedoc_area }
 			custom_tooltip = " "
 			
-			ME_overlord_effect = {
-				effect = "
-					214 = {
-						add_trade_modifier = {
-							who = overlord
-							duration = 5475
-							power = 25
-							key = CRDB_moorish_reconquests
-						}
-					}
-					add_prestige_or_monarch_power = { amount = 20 }
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		214 = {
+			#			add_trade_modifier = {
+			#				who = overlord
+			#				duration = 5475
+			#				power = 25
+			#				key = CRDB_moorish_reconquests
+			#			}
+			#		}
+			#		add_prestige_or_monarch_power = { amount = 20 }
+			#	"
+			#}
 		}
 	}
 	
@@ -565,12 +570,12 @@ CRDB_missions_4 = { #CRDB is the namespace for this
 				name = CRDB_saqalibah
 				duration = -1 
 			}
-			
-			ME_overlord_effect = {
-				effect = "
-					country_event = { id = ME_Cordoba_Events.2 } #A Rising Star from Cordoba
-				"
-			}
+			country_event = { id = ME_Cordoba_Events.2 }
+			#ME_overlord_effect = {
+			#	effect = "
+			#		country_event = { id = ME_Cordoba_Events.2 } #A Rising Star from Cordoba
+			#	"
+			#}
 		}
 	}
 }
@@ -610,7 +615,7 @@ CRDB_missions_5 = { #CRDB is the namespace for this
 		effect = {
 			225 = {
 				add_or_upgrade_university_building = yes
-				province_event = { id = ME_Cordoba_Events.6 }
+				#province_event = { id = ME_Cordoba_Events.6 }
 			}
 			
 			custom_tooltip = " "
@@ -621,15 +626,15 @@ CRDB_missions_5 = { #CRDB is the namespace for this
 				duration = 9125
 			}
 				
-			ME_overlord_effect = {
-				effect = "
-					change_innovativeness = 5
-					add_country_modifier = {
-						name = CRDB_wave_of_new_thought
-						duration = 9125
-					}
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		change_innovativeness = 5
+			#		add_country_modifier = {
+			#			name = CRDB_wave_of_new_thought
+			#			duration = 9125
+			#		}
+			#	"
+			#}
 		}
 	}
 	
@@ -665,16 +670,16 @@ CRDB_missions_5 = { #CRDB is the namespace for this
 					duration = -1 
 				}	
 			}
-			ME_overlord_effect = {
-				effect = "
-					change_innovativeness = 5
-					add_country_modifier = {
-						name = CRDB_golden_age_of_islam
-						duration = 9125
-					}
-					#country_event = { id = ME_Cordoba_Events.3 }
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		change_innovativeness = 5
+			#		add_country_modifier = {
+			#			name = CRDB_golden_age_of_islam
+			#			duration = 9125
+			#		}
+			#		#country_event = { id = ME_Cordoba_Events.3 }
+			#	"
+			#}
 		}
 	}
 	
@@ -693,11 +698,11 @@ CRDB_missions_5 = { #CRDB is the namespace for this
 				duration = 7300
 			}
 			
-			ME_overlord_effect = {
-				effect = "
-					add_mil_power = 50
-				"
-			}
+			#ME_overlord_effect = {
+			#	effect = "
+			#		add_mil_power = 50
+			#	"
+			#}
 		}
 	}
 	

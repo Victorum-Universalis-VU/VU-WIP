@@ -8,11 +8,6 @@ add_harmonized_religion = taoism
 primary_culture = jianghuai
 capital = 1821	# Nanjing
 
-add_country_modifier = {
-    name = "mercenary_upkeep_XV"
-    duration = -1
-}
-
 if = {
 	limit = {
 		OR = {

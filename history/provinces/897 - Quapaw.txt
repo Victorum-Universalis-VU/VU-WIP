@@ -18,9 +18,9 @@ native_hostileness = 8
 center_of_trade = 1
 
 
-discovered_by = north_american
 
-1541.1.1 = { discovered_by = SPA } # Hernando de Soto
+
+
 1580.1.1 = {
 	owner = ---
 	controller = ---

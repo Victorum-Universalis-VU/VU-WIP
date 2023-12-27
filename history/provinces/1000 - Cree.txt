@@ -14,9 +14,9 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
-1611.1.1  = { discovered_by = ENG } # Henry Hudson
+
+
 
 1668.10.1  = {
 	owner = ENG
@@ -28,7 +28,7 @@ discovered_by = north_american
 	culture = english
 	religion = protestant
 } # Founding of Charles Fort
-1672.1.1  = { discovered_by = FRA } # Charles Albanel
+
 1686.6.1 = {
 	owner = FRA
 	controller = FRA
@@ -48,7 +48,7 @@ discovered_by = north_american
 	religion = catholic
 } # d'Iberville takes it back
 1707.5.12  = {
-	discovered_by = GBR
+	
 	add_core = GBR
 	remove_core = ENG
 }

@@ -8,14 +8,10 @@ religion = confucianism
 capital = "Wuhu"
 trade_goods = fish
 hre = no
-base_tax = 2
-base_production = 1
-base_manpower = 1
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
-1595.1.1 = { discovered_by = SPA }
 
 1645.6.14 = {
 	owner = QNG

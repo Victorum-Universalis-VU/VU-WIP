@@ -3,11 +3,11 @@ add_government_reform = tribal_federation
 government_rank = 1
 primary_culture = circassian
 religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 historical_rival = CRI
 historical_rival = IME
 capital = 5558 #Anzorey
-
 
 1444.1.1 = {
 	monarch = {

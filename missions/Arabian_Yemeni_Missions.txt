@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 yem_formation = {
 
 	slot = 1

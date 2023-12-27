@@ -114,8 +114,7 @@
  NAJ_special_cb_wargoal: "Najdi Holy War"
  NAJ_special_cb_wargoal_desc: "Even our brothers in faith live misguided in our times. Let us put them on the right path, even if it means violence."
  NAJ_special_cb_wargoal_2: "Najdi Holy War"
- NAJ_special_cb_wargoal_2_desc: "Even our brothers in faith live misguided in our times. Let us put them on the right path, even if it means violence.:
- 
+ NAJ_special_cb_wargoal_2_desc: "Our Prophet Muhammad 'Peace be to his name' stated that to war against the infidel is God's will. However, there are those who call themselves our brothers in faith still living in misguided ways. Hence, let us put them on the right path, even if it means at the point of the sword." 
  po_najd_convert_school_desc: "§Y[From.GetAdjective]§! Religious School changes to §YHanbali§!."
  PEACE_po_najd_convert_school: "Enlighten the Scholars"
  CB_ALLOWED_po_najd_convert_school: "Enlighten the Scholars"

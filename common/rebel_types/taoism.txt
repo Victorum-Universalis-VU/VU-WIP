@@ -229,7 +229,7 @@ taoism_rebels = {
 				NOT = { dominant_religion = taoism }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = eastern }
+				religion_group = eastern
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"

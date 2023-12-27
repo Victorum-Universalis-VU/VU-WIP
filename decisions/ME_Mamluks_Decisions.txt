@@ -2,7 +2,7 @@ country_decisions = {
 	MAM_one_beylik_to_rule_them_all = {
 		major = yes
 		potential = {
-			mission_completed = MAM_influence_the_levant
+			mission_completed = kok_mam_subjugate_beyliks
 			any_subject_country = {
 				primary_culture = turkish
 				NOT = { tag = TUR }

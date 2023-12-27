@@ -78,7 +78,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.10 }
+		add_piety = 0.10
 	}
 	option = {
 		name = muslim_piety.1.b #Leave them be
@@ -112,8 +112,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		
-		ME_add_piety = { amount = -0.10 }
+		add_piety = -0.10
 	}
 }
 
@@ -153,63 +152,6 @@ country_event = {
 	}
 	
 	option = {
-		name = ME_muslim_piety.2.a
-		
-		trigger = {
-			OR = {
-				ruler_has_personality = well_connected_personality
-				ruler_has_personality = well_advised_personality
-			}
-		}
-		highlight = yes
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				piety = 0.1
-			}
-			modifier = {
-				factor = 1.5
-				has_global_flag = neo_sufism
-			}
-			modifier = {
-				factor = 1.5
-				culture_group = turko_semitic
-				NOT = { primary_culture = turkish }
-			}
-			modifier = {
-				factor = 1.5
-				num_of_cities = 35
-			}
-			modifier = {
-				factor = 1.5
-				num_of_cities = 50
-			}
-			modifier = {
-				factor = 2
-				religious_school = {
-					group = muslim
-					school = hanbali_school
-				}
-			}
-			modifier = {
-				factor = 1.25
-				is_year = 1650
-			}
-		}
-		ME_add_piety = { amount = 0.20 }
-		
-		define_advisor = {
-			type = theologian
-			skill = 2
-			culture = ROOT
-			religion = ROOT
-			cost_multiplier = 0.75
-		}
-	}
-	
-	option = {
 		name = muslim_piety.2.a
 		ai_chance = {
 			factor = 50
@@ -246,7 +188,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.10 }
+		add_piety = 0.10
 		add_adm_power = 10
 	}
 	option = {
@@ -281,51 +223,8 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.10 }
-		add_dip_power = 10
-	}
-	
-	option = {
-		name = ME_muslim_piety.2.b
-		
-		trigger = {
-			sufi_scholar_advisor = 1
-		}
-		highlight = yes
-		
-		ai_chance = {
-			factor = 50
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = { piety = -0.1 }
-			}
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		ME_add_piety = { amount = -0.20 }
-		add_adm_power = 50
+		add_piety = -0.10
+		add_legitimacy = 10
 	}
 }
 
@@ -385,11 +284,8 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.15 }
-		
-		custom_tooltip = " "
-		
-		add_prestige_or_monarch_power = { amount = 10 }
+		add_piety = 0.15
+		add_legitimacy = 10
 	}
 	option = {
 		name = muslim_piety.3.b
@@ -423,65 +319,8 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.10 }
-		
-		custom_tooltip = " "
-		
+		add_piety = -0.10
 		add_yearly_manpower = 0.5
-	}
-	
-	option = {
-		name = ME_muslim_piety.3.a
-		
-		trigger = {
-			OR = {
-				NOT = { piety = -0.75 }
-				ME_has_sufi_order_gov_reform_trigger = yes
-			}
-		}
-		highlight = yes
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = { piety = -0.1 }
-			}
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		add_prestige = -15
-		
-		ME_add_piety = { amount = -0.15 }
-		
-		custom_tooltip = " "
-		
-		add_yearly_manpower = 1
-		
-		custom_tooltip = " "
-		
-		add_war_exhaustion = -1
 	}
 }
 
@@ -506,22 +345,7 @@ country_event = {
 	
 	option = {
 		name = muslim_piety.4.a
-		
-		custom_tooltip = ME_this_is_enabled_by_harmony
 		add_stability_or_adm_power = yes
-	}
-	
-	option = {
-		name = ME_muslim_piety.4.a
-		
-		trigger = {
-			piety = -0.06
-			NOT = { piety = 0.05 }
-		}
-		highlight = yes
-		
-		add_stability_or_adm_power = yes
-		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 
@@ -579,18 +403,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.15 }
-		
-		custom_tooltip = ME_if_we_have_philosopher_advisor
-		
-		hidden_effect = {
-			if = {
-				limit = {
-					philosopher = 1
-				}
-				ME_add_piety = { amount = 0.15 }
-			}
-		}
+		add_piety = 0.15
 	}
 	option = {
 		name = muslim_piety.5.b
@@ -624,19 +437,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		
-		ME_add_piety = { amount = -0.15 }
-		
-		custom_tooltip = ME_if_we_have_philosopher_advisor
-		
-		hidden_effect = {
-			if = {
-				limit = {
-					philosopher = 1
-				}
-				ME_add_piety = { amount = -0.15 }
-			}
-		}
+		add_piety = -0.15
 	}
 }
 
@@ -652,22 +453,9 @@ country_event = {
 	trigger = {
 		uses_piety = yes
 		NOT = { has_country_modifier = dhimmi_building_restrictions }
-		NOT = { has_ruler_flag = ME_no_more_dhimmi_building_restrictions }
 		piety = 0.25
 		any_owned_province = {
 			NOT = { religion_group = muslim }
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					NOT = { religion_group = muslim }
-					NOT = { has_tax_building_trigger = yes }
-				}
-				save_event_target_as = mosque_province
-			}
 		}
 	}
 	
@@ -708,11 +496,9 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		custom_tooltip = " "
+		add_piety = 0.10
 		add_estate_church_loyalty_effect = yes
 		reduce_estate_dhimmi_loyalty_effect = yes
-		custom_tooltip = " "
 		add_country_modifier = {
 			name = "dhimmi_building_restrictions"
 			duration = -1
@@ -746,73 +532,9 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.1 }
-		custom_tooltip = " "
+		add_piety = -0.10
 		reduce_estate_church_loyalty_effect = yes
 		add_estate_dhimmi_loyalty_effect = yes
-		custom_tooltip = " "
-		
-		set_ruler_flag = ME_no_more_dhimmi_building_restrictions
-		custom_tooltip = ME_no_more_dhimmi_requests
-	}
-	
-	option = {
-		name = ME_muslim_piety.6.a
-		
-		trigger = {
-			hidden_trigger = {
-				has_saved_event_target = mosque_province 
-			}
-			estate_loyalty = {
-				estate = estate_dhimmi
-				loyalty = 60
-			}
-		}
-		highlight = yes
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		
-		ME_add_piety = { amount = -0.2 }
-		
-		custom_tooltip = " "
-		
-		event_target:mosque_province = {
-			add_building = temple
-		}
-		
-		custom_tooltip = " "
-		reduce_estate_church_loyalty_effect = yes
-		add_estate_dhimmi_loyalty_effect = yes
-		
-		custom_tooltip = " "
-		
-		set_ruler_flag = ME_no_more_dhimmi_building_restrictions
-		custom_tooltip = ME_no_more_dhimmi_requests
 	}
 }
 
@@ -872,7 +594,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.10 }
+		add_piety = 0.10
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
@@ -907,53 +629,9 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.10 }
+		add_piety = -0.10
 		remove_country_modifier = dhimmi_building_restrictions
 		add_estate_dhimmi_loyalty_effect = yes
-	}
-	
-	option = {
-		name = ME_muslim_piety.7.a
-		
-		highlight = yes
-		
-		trigger = {
-			ruler_has_personality = embezzler_personality
-		}
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = { piety = -0.1 }
-			}
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		
-		remove_country_modifier = dhimmi_building_restrictions
-		add_years_of_income = 0.5
 	}
 }
 
@@ -1011,9 +689,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = -0.1 }
-		
-		add_adm_power = 10
+		add_piety = 0.1
 	}
 	option = {
 		name = muslim_piety.8.b
@@ -1047,56 +723,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		
-		add_mil_power = 10
-	}
-	
-	option = {
-		name = ME_muslim_piety.8.a
-		
-		highlight = yes
-		trigger = {
-			ruler_has_personality = zealot_personality
-		}
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = { piety = -0.1 }
-			}
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		ME_add_piety = { amount = 0.25 }
-		
-		custom_tooltip = " "
-		
-		add_years_of_income = -0.25
-		add_adm_power = -10
-		add_mil_power = 50
+		add_piety = -0.1
 	}
 }
 
@@ -1111,12 +738,6 @@ country_event = {
 
 	trigger = {
 		uses_piety = yes
-		NOT = {
-			OR = {
-				has_country_modifier = ME_moderates
-				has_country_modifier = ME_hardliners
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -1160,10 +781,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		add_country_modifier = {
-			name = ME_hardliners
-			duration = 3650
-		}
+		add_piety = 0.1
 	}
 	option = {
 		name = muslim_piety.9.b
@@ -1197,10 +815,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		add_country_modifier = {
-			name = ME_moderates
-			duration = 3650
-		}
+		add_piety = -0.1
 	}
 }
 
@@ -1216,13 +831,7 @@ country_event = {
 	trigger = {
 		uses_piety = yes
 		piety = 0.3
-		NOT = { 
-			OR = {
-				has_country_modifier = purification_of_tax_laws
-				has_country_modifier = ME_opposed_tax_laws
-				has_country_modifier = ME_reformed_tax_laws
-			}
-		}
+		NOT = { has_country_modifier = purification_of_tax_laws }
 	}
 	
 	mean_time_to_happen = {
@@ -1262,7 +871,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
+		add_piety = 0.1
 		add_country_modifier = {
 			name = "purification_of_tax_laws"
 			duration = 3650
@@ -1296,28 +905,8 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.15 }
+		add_piety = -0.15
 		
-		add_country_modifier = {
-			name = "ME_opposed_tax_laws"
-			duration = 3650
-		}
-	}
-	
-	option = {
-		name = ME_muslim_piety.10.a
-		ai_chance = {
-			factor = 50
-		}
-		highlight = yes
-		trigger = {
-			ruler_has_personality = reformist_personality
-		}
-		
-		add_country_modifier = {
-			name = "ME_reformed_tax_laws"
-			duration = 3650
-		}
 	}
 }
 
@@ -1384,19 +973,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		
-		custom_tooltip = " "
-		
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 5
-			}
-		}
+		add_piety = 0.1
 	}
 	option = {
 		name = muslim_piety.11.b
@@ -1430,20 +1007,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.1 }
-		
-		custom_tooltip = " "
-		
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_prestige_or_monarch_power = { amount = 5 }
-			
-			custom_tooltip = " "
-			
-			add_legitimacy = 5
-		}
+		add_piety = -0.1
 	}
 }
 
@@ -1543,11 +1107,8 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		
-		custom_tooltip = " "
-		
-		add_prestige_or_monarch_power = { amount = 10 }
+		add_piety = 0.1
+		add_prestige = 10
 	}
 	option = {
 		name = muslim_piety.12.b
@@ -1581,71 +1142,12 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.1 }
-		
-		custom_tooltip = " "
-		
+		add_piety = -0.1
 		event_target:fraternity_province = {
+			add_local_autonomy = 25
 			add_province_modifier = {
 				name = "fraternities_strengthened"
 				duration = 3650
-			}
-		}
-	}
-	
-	option = {
-		name = ME_muslim_piety.12.a
-		
-		highlight = yes
-		
-		trigger = {
-			ruler_has_personality = industrious_personality 
-		}
-		
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				NOT = { piety = -0.1 }
-			}
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		ME_add_piety = { amount = -0.2 }
-		
-		custom_tooltip = " "
-		
-		add_adm_power = -10
-	
-		custom_tooltip = " "
-		
-		event_target:fraternity_province = {
-			area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_base_production = 1
 			}
 		}
 	}
@@ -1752,10 +1254,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		
-		custom_tooltip = " "
-		
+		add_piety = 0.1
 		event_target:popular_sufism_province = {
 			area = {
 				limit = {
@@ -1797,29 +1296,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.35 }
-	}
-	
-	option = {
-		name = ME_muslim_piety.13.a
-		ai_chance = {
-			factor = 0
-		}
-		add_stability = -1
-		
-		custom_tooltip = " "
-		
-		ME_add_piety = { amount = -0.5 }
-		
-		custom_tooltip = " "
-		
-		define_advisor = {
-			type = sufi_scholar_advisor
-			religion = ROOT
-			culture = ROOT
-			skill = 1
-			cost_multiplier = 0.33
-		}
+		add_piety = -0.35
 	}
 }
 
@@ -1906,10 +1383,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		ME_add_piety = { amount = 0.1 }
-		
-		custom_tooltip = " "
-		
+		add_piety = 0.1
 		event_target:coffee_province = {
 			area = {
 				limit = {
@@ -1925,55 +1399,6 @@ country_event = {
 		}
 		
 	}
-	
-	option = {
-		name = ME_muslim_piety.14.a
-		
-		trigger = {
-			ruler_has_personality = midas_touched_personality 
-		}
-		
-		highlight = yes
-	
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0.75
-				is_year = 1650
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				capital_scope = {
-					OR = {
-						superregion = india_superregion
-						superregion = persia_superregion
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { is_year = 1650 }
-				primary_culture = turkish
-			}
-			modifier = {
-				factor = 1.5
-				NOT = { dominant_religion = ROOT }
-			}
-		}
-		ME_add_piety = { amount = -0.1 }
-		
-		custom_tooltip = " "
-		
-		add_years_of_income = 0.5 
-		
-		custom_tooltip = " "
-		
-		event_target:coffee_province = {
-			add_base_tax = 1
-		}
-	}
-	
 	option = {
 		name = muslim_piety.14.b
 		ai_chance = {
@@ -2002,7 +1427,7 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		ME_add_piety = { amount = -0.25 }
+		add_piety = -0.25
 	}
 }
 
@@ -2034,11 +1459,6 @@ country_event = {
 					NOT = { has_province_modifier = sufi_order_integration }
 				}
 				save_event_target_as = new_province
-			}
-			export_to_variable = {
-				which = new_province_development
-				value = trigger_value:development
-				who = event_target:new_province
 			}
 		}
 	}
@@ -2084,23 +1504,7 @@ country_event = {
 				is_year = 1650
 			}
 		}
-		
-		custom_tooltip = ME_move_dev_towards_legalism
-		hidden_effect = {
-			while = {
-				limit = {
-					check_variable = {
-						which = new_province_development
-						value = 0
-					}
-				}
-				add_piety = 0.01
-				subtract_variable = {
-					which = new_province_development
-					value = 1
-				}
-			}
-		}
+		add_piety = 0.1
 		event_target:new_province = {
 			add_province_modifier = {
 				name = "sufi_orders_in_check"
@@ -2140,33 +1544,12 @@ country_event = {
 				NOT = { dominant_religion = ROOT }
 			}
 		}
-		custom_tooltip = ME_move_dev_towards_mysticism
-		hidden_effect = {
-			while = {
-				limit = {
-					check_variable = {
-						which = new_province_development
-						value = 0
-					}
-				}
-				add_piety = -0.01
-				subtract_variable = {
-					which = new_province_development
-					value = 1
-				}
-			}
-		}
+		add_piety = -0.1
 		event_target:new_province = {
 			add_province_modifier = {
 				name = "sufi_order_integration"
 				duration = 3650
 			}
-		}
-	}
-	after = {
-		set_variable = {
-			which = new_province_development
-			value = 0
 		}
 	}
 }
@@ -2194,37 +1577,19 @@ country_event = {
 	
 	option = {
 		name = muslim_piety.16.a
-		ai_chance = { factor = 1 }
-		
-		ME_add_piety = { amount = 0.35 }
-		
+		ai_chance = { factor = 100 }
+		add_piety = 0.35
 		add_estate_church_loyalty_effect = yes
 	}
 	option = {
 		name = muslim_piety.16.b
 		ai_chance = { factor = 0 }
-		
 		reduce_estate_church_loyalty_effect = yes
-		
-		ME_add_piety = { amount = -0.1 }
-		
+		add_piety = -0.1
 		add_country_modifier = {
 			name = "loss_of_legal_competence"
 			duration = 3650
 		}
-	}
-	
-	option = {
-		name = ME_muslim_piety.16.a
-		ai_chance = { factor = 100 }
-		
-		trigger = {
-			OR = {
-				ruler_has_personality = well_connected_personality
-				ruler_has_personality = well_advised_personality
-			}
-		}
-		highlight = yes
 	}
 }
 
@@ -2250,7 +1615,7 @@ country_event = {
 	
 	option = {
 		name = muslim_piety.17.a
-		ME_add_piety = { amount = -0.10 }
+		add_piety = -0.10
 		remove_country_modifier = dhimmi_building_restrictions
 	}
 }
@@ -2270,7 +1635,6 @@ country_event = {
 		}
 		has_regency = yes
 		has_consort_regency = no
-		NOT = { stability = 1 }
 	}
 	
 	mean_time_to_happen = {
@@ -2329,8 +1693,8 @@ country_event = {
 		set_global_flag = hagia_sophia_now_mosque
 		show_ambient_object = hagia_sophia_minarets
 		hide_ambient_object = hagia_sophia
-		ME_add_piety = { amount = 0.2 }
-		add_prestige_or_monarch_power = { amount = 20 }
+		add_piety = 0.2
+		add_prestige = 20
 		if = {
 			limit = {
 				has_estate = estate_church
@@ -2360,7 +1724,7 @@ country_event = {
 		ai_chance = { 
 			factor = 0
 		}
-		ME_add_piety = { amount = -0.2 }
+		add_piety = -0.2
 		if = {
 			limit = {
 				has_estate = estate_dhimmi
@@ -2404,7 +1768,7 @@ country_event = {
 		ai_chance = { 
 			factor = 100
 		}
-		ME_add_piety = { amount = -0.25 }
+		add_piety = -0.25
 		add_legitimacy = 10
 		add_country_modifier = {
 			name = friday_prayers
@@ -2417,7 +1781,7 @@ country_event = {
 			factor = 0
 		}
 		add_stability_or_adm_power = yes
-		ME_add_piety = { amount = 0.25 }
+		add_piety = 0.25
 	}
 }
 

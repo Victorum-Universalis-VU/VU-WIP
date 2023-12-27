@@ -1,5 +1,6 @@
 #6231 - Lagoon_dos_Patos
 
-#discovered_by = south_american
-1534.1.1 = { discovered_by = SPA }
+
+
+
 

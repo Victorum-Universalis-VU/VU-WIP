@@ -2,6 +2,7 @@
 
 
 
-#discovered_by = mesoamerican
-1530.1.1 = { discovered_by = SPA }
+
+
+
 

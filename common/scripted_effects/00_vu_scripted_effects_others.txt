@@ -61,7 +61,7 @@ create_interregnum_effect = {
         adm = 0
         dip = 0
         mil = 0
-        has_regency = yes #Not sure that interregnum effect is going to work
+        regency = yes #Not sure that interregnum effect is going to work
     }
 }
 
@@ -1086,7 +1086,7 @@ add_import_effect = {
 				}
 			}
 			remove_country_modifier = GE_plantation_trade_deal_imports_4
-			remove_country_modifier = GE_plantation_trade_deal_imports_6 #cwtools complains about that modifier, to check
+			remove_country_modifier = GE_plantation_trade_deal_imports_6
 			add_country_modifier = {
 				name = GE_plantation_trade_deal_imports_5
 				duration = -1

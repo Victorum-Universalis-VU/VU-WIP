@@ -1,6 +1,10 @@
 ﻿l_english:
  #TRADE COMPANIES
  #
+ trade_company_caucasus_trade:0 "Commissariat of the North Caucasus"
+ TRADE_COMPANY_CAUCASUS_Root_Culture_GetName:0 "[Root.Culture.GetName] Norht Caucasian Commissariat"
+ TRADE_COMPANY_CAUCASUS_European_Trade_Company:0 "North Caucasian Commissariat"
+ #
  #Changing Kongolese Charter to Gabon
  trade_company_kongo:0 "Kongo Charter"
  TRADE_COMPANY_KONGO_Root_Culture_GetName:0 "[Root.Culture.GetName] Kongolese Company"
@@ -42,9 +46,9 @@
  TRADE_COMPANY_MURAVA_Root_Culture_GetName:0 "[Root.Culture.GetName] Ryazanian Commissariat"
  TRADE_COMPANY_MURAVA_European_Trade_Company:0 "Ryazanian Commissariat"
  #
- trade_company_pontus_trade:0 "Commissariat of the Caucasus"
- TRADE_COMPANY_PONTUS_Root_Culture_GetName:0 "[Root.Culture.GetName] Caucasian Commissariat"
- TRADE_COMPANY_PONTUS_European_Trade_Company:0 "Caucasian Commissariat"
+ trade_company_pontus_trade:0 "Commissariat of the South Caucasus"
+ TRADE_COMPANY_PONTUS_Root_Culture_GetName:0 "[Root.Culture.GetName] South Caucasian Commissariat"
+ TRADE_COMPANY_PONTUS_European_Trade_Company:0 "South Caucasian Commissariat"
  #
  trade_company_moscow_trade:0 "Commissariat of Moscow"
  TRADE_COMPANY_MOSCOW_Root_Culture_GetName:0 "[Root.Culture.GetName] Moscovite Commissariat"
@@ -144,7 +148,7 @@
  #
  trade_company_namibia:0 "Namibia Charter"
  TRADE_COMPANY_NAMIBIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Namibian Company"
- TRADE_COMPANY_NAMIBIA_Trade_Company:0 "Namibia Trade Company
+ TRADE_COMPANY_NAMIBIA_Trade_Company:0 "Namibia Trade Company"
  #
  trade_company_niger:0 "Niger Charter"
  TRADE_COMPANY_NIGER_Root_Culture_GetName:0 "[Root.Culture.GetName] Nigerian Company"

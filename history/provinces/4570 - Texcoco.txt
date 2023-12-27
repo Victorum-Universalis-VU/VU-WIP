@@ -12,11 +12,12 @@ base_tax = 10
 base_production = 10
 base_manpower = 4 
 is_city = yes
-1444.1.1 = { discovered_by = AZT } 1444.1.1 = { discovered_by = MAY } 1444.1.1 = { discovered_by = ZAP } 
-#discovered_by = mesoamerican
+
+
+
 center_of_trade = 2
 
-1519.1.1 = { discovered_by = SPA }
+
 
 1521.8.13 = {
 	owner = SPA 

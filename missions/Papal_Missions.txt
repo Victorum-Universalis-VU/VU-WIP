@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 papal_missions_slot = {
 	slot = 1
 	generic = no
@@ -39,7 +39,7 @@ papal_missions_slot = {
 					limit = {
 						conquer_ferrara_provinces = yes
 						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -89,9 +89,6 @@ papal_missions_slot_2 = {
 		NOT = { has_dlc = "Emperor" }
 		tag = PAP
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	

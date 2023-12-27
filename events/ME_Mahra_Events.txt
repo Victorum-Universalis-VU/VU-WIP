@@ -223,17 +223,15 @@ province_event = {
 		}
 	}
 	
-	major = yes
-	major_trigger = {
-		OR = {
-			capital_scope = {
-				region = horn_of_africa_region
-			}
-			capital_scope = {
-				region = arabia_region
-			}
-		}
-	}
+	#major = yes
+	#major_trigger = {
+	#	capital_scope = {
+	#		region = horn_of_africa_region
+	#	}
+	#	capital_scope = {
+	#		region = arabia_region
+	#	}
+	#}
 	immediate = {
 		hidden_effect = {
 			1099 = {

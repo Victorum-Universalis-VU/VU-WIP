@@ -19,6 +19,12 @@ spriteTypes = {
 	#Quonton
 
 	spriteType = {
+		name = "GFX_rome_culture_icon_le"
+		texturefile = "gfx//interface//ideas_EU4//rome_culture_icon_le.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
 		name = "vu_united_principalities"
 		texturefile = "gfx//interface//ideas_EU4//vu_united_principalities.dds"
 	}

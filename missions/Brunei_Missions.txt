@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 mnd_bei_1 = {
 	slot = 1
 	generic = no
@@ -365,7 +366,7 @@ mnd_bei_2 = {
 				add_absolutism = 20
 			}
 			else = {
-				add_revolutionary_zeal = 20
+				add_revolutionary_zeal_or_absolutism = { amount = 20 }
 			}
 			add_stability = 1
 			add_prestige = 10

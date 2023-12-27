@@ -1,4 +1,4 @@
-# No previous file for Victorum Universalis province
+#5796 - MountainNisenan
 
 culture = maiduan
 religion = totemism 
@@ -11,9 +11,3 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
-
-discovered_by = north_american
-
-
-1826.1.1 = { discovered_by = USA } #Jediah Smith
-#Californian Gold Rush began here around Coloma (Sutter's Mill)

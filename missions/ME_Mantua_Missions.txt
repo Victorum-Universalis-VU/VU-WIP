@@ -789,8 +789,8 @@ mantua_mission_4 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			2981 = { 
 				if = {
@@ -798,8 +798,8 @@ mantua_mission_4 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			sicily_area = {
 				limit = {

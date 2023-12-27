@@ -4,7 +4,7 @@ primary_culture = turkish
 add_accepted_culture = kurdish
 add_accepted_culture = armenian
 religion = sunni
-technology_group = muslim
+technology_group = persian_tech_group
 capital = 418
 religious_school = hanafi_school
 

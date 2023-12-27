@@ -1,4 +1,5 @@
 capital = 4375 #Cheshire, Chester
+#technology_group = western
 technology_group = english_tech_group
 unit_type = western
 government = monarchy

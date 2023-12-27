@@ -639,7 +639,7 @@
  southwestern_bantu:0 "Southwestern Bantu"
  #
  #ASIAN - Culture Group
- filipino_i:0 "Proto-Austronesian"
+ filipino_i:0 "Philippinic"
 
  #VU additions - regions
  angola_region:0 "Angola"
@@ -852,16 +852,22 @@
  reclaiming_babylon_title:0 "Weeding the Gardens"
  reclaiming_babylon_desc:0 "The Roman Empire once stretched out "at its height" from Britannia in the West to Mesopotamia in the East and from Hadrian's wall in the North to Nubia in the South; Our Empire encompassed the whole breadth of the Mediterranean world and beyond. Time however took its tole on us and through systematic invasions and defeats of our armies, our Empire lost this important part of the world. Now we have a chance to finally reclaim and weed out the Garden of Eden of our infidel Arab neighbours and their false beliefs; Deus Vult!"
  #BRITISH MISSIONS
+ 
  eng_take_bahari_title:0 "The Sea Peoples"
- eng_take_bahari_desc:0 "An apocalyptic a story kept within the annals of Egyptian history told of a nomadic group of sea-faring peoples that once ravaged the shores of the ancient Eastern Mediterranean. Now wooden ships have been sighted off the shores of the Nile Delta flying what seems to be red, blue and white colours. However, these aren't mountains but armed vessels of a different sea-faring people, who aren't bent on our conquest and destruction but rather for our spices and curious artifacts of old."
+ eng_take_bahari_desc:0 "An apocalyptic story kept within the annals of Egyptian history told of a nomadic group of sea-faring peoples that once ravaged the shores of the ancient Eastern Mediterranean. Now wooden ships have been sighted off the shores of the Nile Delta flying what seems to be red, blue and white colours. However, these aren't mountains but armed vessels of a different sea-faring people, who aren't bent on our conquest and destruction but rather for our spices and curious artifacts of old."
+
  eng_take_delta_title:0 "Land of the Pharaohs"
- eng_take_delta_desc:0 "Since ancient times, Egypt has seen and hosted travelers far and wide who come in their droves to visit and gaze upon the statues and Pyramids within the former lands of the Pharaohs. The English are the relative newcomers to these lands but unlike former foes, they not only bring soldiers and weapons but excited archaeologists, all eager to dig up and examine the riches that lie below Egypt's great monuments.
+ eng_take_delta_desc:0 "Since ancient times, Egypt has seen and hosted travelers far and wide who come in their droves to visit and gaze upon the statues and Pyramids within the former lands of the Pharaohs. The English are the relative newcomers to these lands but unlike former foes, they not only bring soldiers and weapons but excited archaeologists, all eager to dig up and examine the riches that lie below Egypt's great monuments."
+ 
  eng_take_nubia_and_lower_sudan_title:0 "Four Feathers"
  eng_take_nubia_and_lower_sudan_desc:0 "With the fall of Egypt and control of the river Nile, English explorers now seek to explore the newly opened lands to the south. Rumors of untold riches within ancient Pyramid-like structures lie within Nubia and on the borders of the Sudan, inviting not only eager explorers to venture in but also curious men and women who wish to finally find and uncover the true source of the Nile."
+ 
  eng_take_nubia_and_upper_sudan_title:0 "Longer Than Expected"
  eng_take_nubia_and_upper_sudan_desc:0 "Our expeditions into Nubia and the Sudan have fallen short since recent discoveries have shown that the Nile river is much longer than we expected, not to mention the strange primate-like creatures and hostile savages that lie along its banks and within the nearby forests. Therefore we must continue onwards and ever deeper into the heart of Africa itself if we are to finally discover the true source of the Nile."
+ 
  eng_take_kenya_and_uganda_title:0 "African Safari"
  eng_take_kenya_and_uganda_desc:0 "As our explorers continue to send us letters of their latest findings, it seems as though we're nearing the source of the Nile river it-self. Recent reports show that the river is indeed narrowing and as our expedition continues up along its banks, the dark forests and Jungles that once covered our crews have now started to open up into vast plains and savannahs, exhibiting both strange new creatures and magnificent vistas. Furthermore, new less hostile primitive tribes have made their presence known to our teams, even though we still experiences "from time to time" savage native attacks on our flanks. These trials though will not stop our progress, even if it means venturing ever deeper into the very heart of this dark continent."
+ 
  eng_rb_take_somaliland_title:0 "Our Red Sea"
  eng_rb_take_somaliland_desc:0 "Whilst our expeditions are underway in other parts of the world, one place mostly overlooked is the small passage which runs out of a narrow sea which the locals call "Al Bahr al ahmar" or "Red Sea" which then opens out into an even wider body of water or gulf which continues to flow forward and connect with the Indian Ocean. We've now named this Gulf "Aden" and since its discovery, advisors from within our military and economic departments have stated that they foresee potential importance in controlling this passage. If their visions do come to fruition, then it would be wise to send an expedition to nearby lands along the banks of this gulf with the intent of militarising and building forts along its full width. This in theory would allow our nation to secure any future trade or access routes coming in from our trade posts in India and Asia."
  eng_take_tanzania_and_rawanda_title:0 "Bustling Zanzibar"
@@ -1013,6 +1019,12 @@
  desc_extending_our_reach:0 "Let it be known that we have successfully extended our reach into the Mediterranean."
  eng_conquest_of_hanover:0 "Kingdom of Hanover"
  desc_eng_conquest_of_hanover:0 "Let it be known that we have taken the throne of Hanover."
+ eng_english_scarlet:0 "English Scarlet"
+ desc_eng_english_scarlet:0 "Whether it is cheap, to hide blood or in order for officers to easily identify their men in heavy smoke one can only debate. However, it is indisputible that scarlet or 'English Red' should be used as it not only represents the primary colours of our Royal Standard, the Royal Coat of Arms and is the of course the colour of St George's and England."
+ eng_english_superiority:0 "English Superiority"
+ desc_eng_english_superiority:0 "Finally, we have triumphed over the French."
+ eng_hammer_of_the_scots:0 "Hammer of the Scots"
+ desc_eng_hammer_of_the_scots:0 "The hammer has been slammed and the Scots defeated. Let us now see to the outlying islets on the periphery so that we may finally rule the whole of our own island."
  eng_rb_the_kings_bodyguards:0 "The King's Bodyguards"
  desc_eng_rb_the_kings_bodyguards:0 "Let it be known that we have recruited an elite force of bodyguards."
  eng_rb_conquest_of_palestine:0 "The Temple Mount"

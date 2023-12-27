@@ -14,7 +14,7 @@ base_production = 3			#By 1317, it was mentioned as a small town. In 1573, it wa
 trade_goods = iron
 base_manpower = 2 			#Don't want dev too low in Brandenburg, so giving it 6, the surround countryside was rich enough to justify it
 capital = "Spandau"
-is_city = no
+is_city = yes
 
 #Claimants
 
@@ -23,39 +23,9 @@ is_city = no
 #Special Modifiers
 
 #Known by Technology groups
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
+
+
+
 
 #Histories by docRobert & SF
 1444.1.11 = {

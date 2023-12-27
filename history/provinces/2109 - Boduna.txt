@@ -15,8 +15,9 @@ is_city = yes
 center_of_trade = 2
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 1624.1.1 = {	owner = MCH
@@ -29,4 +30,3 @@ discovered_by = chinese
 	add_core = QNG
 	remove_core = MCH
 } # The Qing Dynasty
-1709.1.1 = { discovered_by = SPA }

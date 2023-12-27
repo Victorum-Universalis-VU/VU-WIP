@@ -1,9 +1,1 @@
 #8378 - Angara_River
-
-#discovered_by = eastern
-##discovered_by = bohemian_tech_group
-##discovered_by = byzantine_tech_group
-##discovered_by = hungarian_tech_group
-##discovered_by = polish_tech_group
-#discovered_by = russian_tech_group
-

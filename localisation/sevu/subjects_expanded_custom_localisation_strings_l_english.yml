@@ -80,7 +80,7 @@
  string_moluccas_trade_company_region: "§Y[trade_company_moluccas]§![Root.GetFirstEastIndiesTradeCompanyRegionWeCedeComma]"
  string_no_moluccas_trade_company_region: ""
 
- string_indonesian_trade_company_region: "§Y[trade_company_indonesia]§!"
+ string_indonesian_trade_company_region: "§Y[trade_company_indonesia]§![Root.GetSecondEastIndiesTradeCompanyRegionWeCede]"
  string_no_indonesian_trade_company_region: ""
 
  string_indochina_trade_company_region: "§Y[trade_company_indochina]§![Root.GetFirstIndochinaTradeCompanyRegionWeCedeComma]"
@@ -92,32 +92,98 @@
  string_east_india_trade_company_region: "§Y[trade_company_east_india]§! (outside the §YIndian Subcontinent§!)"
  string_no_east_india_trade_company_region: ""
 
- string_west_africa_trade_company_region: "§Y[trade_company_west_africa]§![Root.GetFirstWestAfricanTradeCompanyRegionWeCedeComma]"
- string_no_west_africa_trade_company_region: ""
+ string_angola_trade_company_region: "§Y[trade_company_angola]§![Root.GetFirstAngolaTradeCompanyRegionWeCede]"
+ string_no_angola_trade_company_region: ""
 
- string_timbuktu_trade_company_region: "§Y[trade_company_timbuktu]§![Root.GetSecondWestAfricanTradeCompanyRegionWeCedeComma]"
- string_no_timbuktu_trade_company_region: ""
+ string_benin_trade_company_region: "§Y[trade_company_benin]§![Root.GetSecondBeninTradeCompanyRegionWeCede]"
+ string_no_benin_trade_company_region: ""
 
- string_katsina_trade_company_region: "§Y[trade_company_katsina]§![Root.GetThirdWestAfricanTradeCompanyRegionWeCedeComma]"
- string_no_katsina_trade_company_region: ""
+ string_bissau_trade_company_region: "§Y[trade_company_bissau]§![Root.GetThirdBissauTradeCompanyRegionWeCede]"
+ string_no_bissau_trade_company_region: ""
 
- string_kongo_trade_company_region: "§Y[trade_company_kongo]§!"
+ string_burkina_trade_company_region: "§Y[trade_company_burkina]§![Root.GetFourthBurkinaTradeCompanyRegionWeCede]"
+ string_no_burkina_trade_company_region: ""
+
+ string_cameroon_trade_company_region: "§Y[trade_company_cameroon]§![Root.GetFifthCameroonTradeCompanyRegionWeCede]"
+ string_no_cameroon_trade_company_region: ""
+
+ string_central_africa_trade_company_region: "§Y[trade_company_central_africa]§![Root.GetSixthCentralAfricaTradeCompanyRegionWeCede]"
+ string_no_central_africa_trade_company_region: ""
+
+ string_chad_trade_company_region: "§Y[trade_company_chad]§![Root.GetSeventhChadTradeCompanyRegionWeCede]"
+ string_no_chad_trade_company_region: ""
+
+ string_gabon_trade_company_region: "§Y[trade_company_gabon]§![Root.GetEighthGabonTradeCompanyRegionWeCede]"
+ string_no_gabon_trade_company_region: ""
+
+ string_gambia_trade_company_region: "§Y[trade_company_gambia]§![Root.GetNinthGambiaTradeCompanyRegionWeCede]"
+ string_no_gambia_trade_company_region: ""
+
+ string_ghana_trade_company_region: "§Y[trade_company_ghana]§![Root.GetTenthGhanaTradeCompanyRegionWeCede]"
+ string_no_ghana_trade_company_region: ""
+
+ string_guinea_trade_company_region: "§Y[trade_company_guinea]§![Root.GetEleventhGuineaTradeCompanyRegionWeCede]"
+ string_no_guinea_trade_company_region: ""
+
+ string_kongo_trade_company_region: "§Y[trade_company_kongo]§![Root.GetTwelfthKongoTradeCompanyRegionWeCede]"
  string_no_kongo_trade_company_region: ""
 
- string_east_africa_trade_company_region: "§Y[trade_company_east_africa]§![Root.GetFirstEastAfricanTradeCompanyRegionWeCedeComma]"
- string_no_east_africa_trade_company_region: ""
+ string_ivory_coast_trade_company_region: "§Y[trade_company_burkina]§![Root.GetThirteenthIvoryCoastTradeCompanyRegionWeCede]"
+ string_no_ivory_coast_trade_company_region: ""
 
- string_zambezi_trade_company_region: "§Y[trade_company_zambezi]§![Root.GetSecondEastAfricanTradeCompanyRegionWeCedeComma]"
+ string_liberia_trade_company_region: "§Y[trade_company_liberia]§![Root.GetFourteenthLiberiaTradeCompanyRegionWeCede]"
+ string_no_liberia_trade_company_region: ""
+
+ string_mali_trade_company_region: "§Y[trade_company_mali]§![Root.GetFifteenthMaliTradeCompanyRegionWeCede]"
+ string_no_mali_trade_company_region: ""
+
+ string_mauritania_trade_company_region: "§Y[trade_company_mauritania]§![Root.GetSixteenthMauritaniaTradeCompanyRegionWeCede]"
+ string_no_mauritania_trade_company_region: ""
+
+ string_namibia_trade_company_region: "§Y[trade_company_namibia]§![Root.GetSeventeenthNamibiaTradeCompanyRegionWeCede]"
+ string_no_namibia_trade_company_region: ""
+
+ string_niger_trade_company_region: "§Y[trade_company_niger]§![Root.GetEighteenthNigerTradeCompanyRegionWeCede]"
+ string_no_niger_trade_company_region: ""
+
+ string_nigeria_trade_company_region: "§Y[trade_company_nigeria]§![Root.GetNineteenthNigeriaTradeCompanyRegionWeCede]"
+ string_no_nigeria_trade_company_region: ""
+
+ string_senegal_trade_company_region: "§Y[trade_company_senegal]§![Root.GetTwentiethSenegalTradeCompanyRegionWeCede]"
+ string_no_senegal_trade_company_region: ""
+
+ string_sierra_leone_trade_company_region: "§Y[trade_company_sierra_leone]§![Root.GetTwentyFirstSierraLeoneTradeCompanyRegionWeCede]"
+ string_no_sierra_leone_trade_company_region: ""
+
+ string_togo_trade_company_region: "§Y[trade_company_togo]§![Root.GetTwentySecondTogoTradeCompanyRegionWeCede]"
+ string_no_togo_trade_company_region: ""
+
+ string_buganda_trade_company_region: "§Y[trade_company_buganda]§![Root.GetFirstBugandaTradeCompanyRegionWeCede]"
+ string_no_buganda_trade_company_region: ""
+
+ string_ethiopia_trade_company_region: "§Y[trade_company_ethiopia]§![Root.GetSecondEthiopiaTradeCompanyRegionWeCede]"
+ string_no_ethiopia_trade_company_region: ""
+ 
+ string_kenya_trade_company_region: "§Y[trade_company_kenya]§![Root.GetThirdKenyaTradeCompanyRegionWeCede]"
+ string_no_kenya_trade_company_region: ""
+
+ string_mozambique_trade_company_region: "§Y[trade_company_mozambique]§![Root.GetFourthMozambiqueTradeCompanyRegionWeCede]"
+ string_no_mozambique_trade_company_region: ""
+
+ string_madagascar_trade_company_region: "§Y[trade_company_madagascar]§![Root.GetFifthMadagascarTradeCompanyRegionWeCede]"
+ string_no_madagascar_trade_company_region: ""
+
+ string_somalia_trade_company_region: "§Y[trade_company_somalia]§![Root.GetSixthSomaliaTradeCompanyRegionWeCede]"
+ string_no_somalia_trade_company_region: ""
+
+ string_sudan_trade_company_region: "§Y[trade_company_sudan]§![Root.GetSeventhSudanTradeCompanyRegionWeCede]"
+ string_no_sudan_trade_company_region: ""
+
+ string_zambezi_trade_company_region: "§Y[trade_company_zambezi]§![Root.GetEighthZambeziTradeCompanyRegionWeCede]"
  string_no_zambezi_trade_company_region: ""
 
- string_great_lakes_trade_company_region: "§Y[trade_company_great_lakes]§![Root.GetThirdEastAfricanTradeCompanyRegionWeCedeComma]"
- string_no_great_lakes_trade_company_region: ""
-
- string_ethiopia_trade_company_region: "§Y[trade_company_ethiopia]§![Root.GetFourthEastAfricanTradeCompanyRegionWeCedeComma]"
- string_no_ethiopia_trade_company_region: ""
-
- string_gulf_of_aden_trade_company_region: "§Y[trade_company_hormuz]§! (in §YAfrica§!)"
- string_no_gulf_of_aden_trade_company_region: ""
+ string_tanganyika_trade_company_region: "§Y[trade_company_tanganyika]§![Root.GetNinethTanganyikaTradeCompanyRegionWeCede]"
+ string_no_tanganyika_trade_company_region: ""
 
  string_trade_company_list_comma: ", "
  string_trade_company_list_no_comma: ""

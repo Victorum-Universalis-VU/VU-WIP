@@ -1,3 +1,4 @@
 #6694 - Lake_Gemeri
 
-#discovered_by = east_african
+
+

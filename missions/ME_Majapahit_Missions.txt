@@ -47,10 +47,8 @@ MAJ_missions_1 = {
 				}
 			}
 			SUN = {
-				NOT = {
-					is_subject_of = ROOT
-					is_subject_of_type = vassal
-				}
+				NOT = { is_subject_of = ROOT }
+				NOT = { is_subject_of_type = vassal }
 			}
 		}
 		trigger = {

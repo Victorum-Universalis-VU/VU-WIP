@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 gc_aragon_1 = {
 	slot = 1
 	generic = no
@@ -48,7 +48,7 @@ gc_aragon_1 = {
 						province_id = 220
 					}
 					OR = {
-						NOT = { has_building = marketplace }
+						has_trade_building_trigger = no
 						NOT = { owned_by = ROOT }
 					}
 				}
@@ -86,11 +86,11 @@ gc_aragon_1 = {
 				}
 			}
 			213 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 			220 = {
-				has_building = marketplace
+				has_trade_building_trigger = yes
 				owned_by = ROOT
 			}
 		}
@@ -116,13 +116,13 @@ gc_aragon_1 = {
 				220 = {
 					OR = { 
 						province_has_center_of_trade_of_level = 3
-						development = 30
+						development = 20
 					}
 				}
 			}
 			else = {
 				220 = {
-					development = 30
+					development = 20
 				}
 			}
 		}
@@ -761,45 +761,47 @@ gc_aragon_4 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 10
-			add_navy_tradition = 25
-			add_prestige = 50
-			#Removing permaclaims from these. Permaclaims are exclusively for when they are required for other missions. These are not.
+			add_mercantilism = 3
 			anatolia_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			balkan_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			mashriq_region = { #Levant
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			maghreb_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			carinthia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
+		}
+		effect = {
+			add_mercantilism = 10
+			add_navy_tradition = 25
+			add_prestige = 50
 		}
 	}
 }
@@ -934,7 +936,7 @@ gc_aragon_5 = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			give_permaclaims_for_mission = { mission=gc_ara_mare_nostrum_5 }
 		}

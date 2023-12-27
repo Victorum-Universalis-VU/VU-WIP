@@ -13,8 +13,10 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 
-#discovered_by = south_american
-#discovered_by = andean
+
+
+
+
 
 1485.1.1 = {
 	owner = INC
@@ -22,13 +24,13 @@ base_manpower = 2
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA
 	capital = "Santa Catalina"
 }# The death of Atahualpa
-1593.1.1 = { discovered_by = SPA } # Francisco de Asgaranaz y Murguía, under constant attack
+
 1600.1.1 = {	
 	culture = castillian
 	religion = catholic

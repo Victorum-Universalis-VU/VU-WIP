@@ -363,6 +363,7 @@ spriteTypes = {
 		noOfFrames = 2
 		transparencecheck = yes
 	}
+
 	
 	spriteType = {
 		name = "GFX_institution_tab_global_trade"

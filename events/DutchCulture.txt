@@ -30,98 +30,97 @@ mean_time_to_happen = {
 		name = "dutch_culture.1.a"
 		set_global_flag = dutchculture
 		hidden_effect = {
-		custom_tooltip = dutch_cultural_awakening
-		every_province = { 
-			limit = { culture = ger_dutch }
-			change_culture = dutch 
-			}
-		every_province = { 
-			limit = { culture = ger_brabantian  }
-			change_culture = brabantian  
-			}
-		every_province = { 
-			limit = { culture = ger_dutch_saxon   }
-			change_culture = dutch_saxon   
-			}
-		every_province = { 
-			limit = { culture = ger_zeelandic    }
-			change_culture = zeelandic   
-			}
-		every_province = { 
-			limit = { culture = ger_limburgish     }
-			change_culture = limburgish    
-			}
-		every_province = { 
-			limit = { culture = ger_guelders      }
-			change_culture = guelders     
-			}
-		every_province = { 
-			limit = { culture = ger_flemish       }
-			change_culture = flemish      
-			}
-		every_province = { 
-			limit = { culture = ger_frisian        }
-			change_culture = frisian       
-			}
-		every_province = { 
-			limit = { culture = ger_east_frisian         }
-			change_culture = east_frisian        
-			}
-		every_province = { 
-			limit = { culture = ger_north_frisian          }
-			change_culture = north_frisian         
-			}
-
-		every_country = {
-			limit = { primary_culture = ger_dutch }
-			change_primary_culture = dutch 
-			change_technology_group = dutch_tech_group
-			}
-		every_country = { 
-			limit = { primary_culture = ger_brabantian  }
-			change_primary_culture = brabantian  
-			change_technology_group = dutch_tech_group
-			}
-		every_country = { 
-			limit = { primary_culture = ger_dutch_saxon   }
-			change_primary_culture = dutch_saxon   
-			change_technology_group = dutch_tech_group
-			}
-		every_country = { 
-			limit = { primary_culture = ger_zeelandic    }
-			change_primary_culture = zeelandic   
-			change_technology_group = dutch_tech_group
-			}
-		every_country = { 
-			limit = { primary_culture = ger_limburgish     }
-			change_primary_culture = limburgish    
-			change_technology_group = dutch_tech_group
-			}
-		every_country = { 
-			limit = { primary_culture = ger_guelders      }
-			change_primary_culture = guelders  
-			change_technology_group = dutch_tech_group   
-			}
-		every_country = { 
-			limit = { primary_culture = ger_flemish       }
-			change_primary_culture = flemish     
-			change_technology_group = dutch_tech_group 
-			}
-		every_country = { 
-			limit = { primary_culture = ger_frisian        }
-			change_primary_culture = frisian   
-			change_technology_group = dutch_tech_group    
-			}
-		every_country = { 
-			limit = { primary_culture = ger_east_frisian         }
-			change_primary_culture = east_frisian 
-			change_technology_group = dutch_tech_group       
-			}
-		every_country = { 
-			limit = { primary_culture = ger_north_frisian          }
-			change_primary_culture = north_frisian    
-			change_technology_group = dutch_tech_group     
-			}
+		    custom_tooltip = dutch_cultural_awakening
+		    every_province = { 
+		    	limit = { culture = ger_dutch }
+		    	change_culture = dutch 
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_brabantian  }
+		    	change_culture = brabantian  
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_dutch_saxon   }
+		    	change_culture = dutch_saxon   
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_zeelandic    }
+		    	change_culture = zeelandic   
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_limburgish     }
+		    	change_culture = limburgish    
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_guelders      }
+		    	change_culture = guelders     
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_flemish       }
+		    	change_culture = flemish      
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_frisian        }
+		    	change_culture = frisian       
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_east_frisian         }
+		    	change_culture = east_frisian        
+		    }
+		    every_province = { 
+		    	limit = { culture = ger_north_frisian          }
+		    	change_culture = north_frisian         
+		    }
+		    every_country = {
+		    	limit = { primary_culture = ger_dutch }
+		    	change_primary_culture = dutch 
+		    	change_technology_group = western
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_brabantian  }
+		    	change_primary_culture = brabantian  
+		    	change_technology_group = western
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_dutch_saxon   }
+		    	change_primary_culture = dutch_saxon   
+		    	change_technology_group = western
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_zeelandic    }
+		    	change_primary_culture = zeelandic   
+		    	change_technology_group = western
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_limburgish     }
+		    	change_primary_culture = limburgish    
+		    	change_technology_group = western
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_guelders      }
+		    	change_primary_culture = guelders  
+		    	change_technology_group = western   
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_flemish       }
+		    	change_primary_culture = flemish     
+		    	change_technology_group = western 
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_frisian        }
+		    	change_primary_culture = frisian   
+		    	change_technology_group = western    
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_east_frisian }
+		    	change_primary_culture = east_frisian 
+		    	change_technology_group = western       
+		    }
+		    every_country = { 
+		    	limit = { primary_culture = ger_north_frisian }
+		    	change_primary_culture = north_frisian    
+		    	change_technology_group = western     
+		    }
 		}
 	}
 }
@@ -186,52 +185,52 @@ country_event = {
 		every_country = {
 			limit = { primary_culture = ger_dutch }
 			change_primary_culture = dutch 
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_brabantian  }
 			change_primary_culture = brabantian  
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_dutch_saxon   }
 			change_primary_culture = dutch_saxon  
-			change_technology_group = dutch_tech_group 
+			change_technology_group = western 
 			}
 		every_country = { 
 			limit = { primary_culture = ger_zeelandic    }
 			change_primary_culture = zeelandic   
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_limburgish     }
 			change_primary_culture = limburgish    
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_guelders      }
 			change_primary_culture = guelders     
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_flemish       }
 			change_primary_culture = flemish      
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_frisian        }
 			change_primary_culture = frisian       
-			change_technology_group = dutch_tech_group
+			change_technology_group = western
 			}
 		every_country = { 
 			limit = { primary_culture = ger_east_frisian         }
 			change_primary_culture = east_frisian    
-			change_technology_group = dutch_tech_group    
+			change_technology_group = western    
 			}
 		every_country = { 
 			limit = { primary_culture = ger_north_frisian          }
 			change_primary_culture = north_frisian  
-			change_technology_group = dutch_tech_group       
+			change_technology_group = western       
 			}
 		}
 	}

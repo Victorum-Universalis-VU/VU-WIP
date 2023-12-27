@@ -9,16 +9,23 @@ religion = taoism
 capital = "Swabue"
 trade_goods = grain
 hre = no
-base_tax = 3
-base_production = 2
-base_manpower = 2
+base_tax = 14
+base_production = 14
+base_manpower = 14
 is_city = yes
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
-1444.1.1 = { discovered_by = RYU }
-1514.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
+
+
 
 1647.4.1 = {
 	owner = QNG

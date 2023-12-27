@@ -105,16 +105,18 @@ GHD_missions_1 = {
 				name = GHD_army_buff
 				duration = -1 
 				age = age_of_reformation
-				else = "
-					create_general_with_pips = {
-						add_fire = 2
-						tradition = 80
-					}
-				"
+				#else = "
+				#	create_general_with_pips = {
+				#		add_fire = 2
+				#		tradition = 80
+				#	}
+				#"
 			}
-			
 			add_army_tradition_or_mil_power = { amount = 15 }
-			
+			create_general_with_pips = {
+				add_fire = 2
+				tradition = 80
+			}
 			if = {
 				limit = {
 					has_estate = estate_nobles

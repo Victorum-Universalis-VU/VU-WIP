@@ -16,10 +16,9 @@ native_size = 40
 native_ferocity = 4
 native_hostileness = 9 
 
-##discovered_by = sub_saharan
-1440.1.1 = { 
-    discovered_by = AIR 
-}
+
+
+
 1444.1.1 = { add_core = KBO }
 
 1590.1.1 = {

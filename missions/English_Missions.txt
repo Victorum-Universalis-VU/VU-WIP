@@ -1,4 +1,4 @@
-#VU updated for 1.35 but kept the same by San Felipe
+#VU - Not updated by San Felipe for 1.36.*
 #eng_slot_1 = {
 #	slot = 1
 #	generic = no

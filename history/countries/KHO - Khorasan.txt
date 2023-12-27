@@ -3,16 +3,17 @@ add_government_reform = timurid_governor
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = shiite
-technology_group = muslim
+#technology_group = muslim
+technology_group = persian_tech_group
 #capital = 446	# Herat
 capital = 2214 #Astarabad
 
 set_country_flag = ME_can_use_timurid_legitimacy
 save_global_event_target_as = ME_succession_crisis_KHO
-set_variable = {
-	which = timurid_legitimacy_value
-	value = 20
-}
+#set_variable = {
+#	which = timurid_legitimacy_value
+#	value = 20
+#}
 
 1444.1.1 = { #At start this represents Astarabad, with alegience to Babur bin Baysunkur.
 	#capital = 2214 #Astarabad
@@ -82,11 +83,12 @@ set_variable = {
 
 1459.3.1 = {
 	monarch = {
+		name = "Intergrenom"
 		dynasty = "Timurid"
-		regent = yes
 		adm = 1
 		dip = 1
 		mil = 0
+		regent = yes
 	}
 	capital = 451	# Kabul
 }

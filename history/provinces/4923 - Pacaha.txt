@@ -18,9 +18,9 @@ native_hostileness = 2
 
 
 
-discovered_by = north_american
 
-1554.1.1 = { discovered_by = SPA }
+
+
 1600.1.1 = { culture = osage } #Mississippian collapse. Pacaha tag now represent Quapaw. 
 1762.1.1 = {
 	owner = SPA

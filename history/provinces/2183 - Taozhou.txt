@@ -8,17 +8,11 @@ religion = confucianism
 capital = "Taozhou"
 trade_goods = chinaware
 hre = no
-base_tax = 4  
-base_production = 4
-base_manpower = 4
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 add_core = CSH
-
-
-
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
 
 1644.1.1 = {
 	revolt_risk = 0
@@ -30,4 +24,3 @@ discovered_by = chinese
 	controller = QNG
 	add_core = QNG
 }
-1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest

@@ -12,15 +12,15 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
+
 add_permanent_province_modifier = {
     name = rich_black_soil
     duration = -1
 }
 
 1444.11.15 = { #VictorumUniversalis batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = BLA
 	is_city = no
 	trade_goods = unknown

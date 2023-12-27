@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Flavor Events for Crimea
 #
@@ -37,7 +38,7 @@ country_event = {
 		name = "flavor_cri.1.a" #We must seek Ottoman Protection!
 		trigger = { NOT = { war_with = TUR } } #Will never be an option if you're at war with TUR.
 		ai_chance = {
-			factor = 65
+			factor = 35
 			modifier = {
 				factor = 1.5
 				TUR = {
@@ -145,7 +146,11 @@ country_event = {
 	option = {
 		name = "flavor_cri.1.b" #We will be better of without Ottoman involvement.
 		ai_chance = {
-			factor = 35
+			factor = 65
+			modifier = { 
+				factor = 0 
+				TUR = { has_country_flag = tur_guarantee_cri_flag }
+			}
 			modifier = {
 				factor = 1.5
 				TUR = {
@@ -246,7 +251,10 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		custom_tooltip = flavor_cri.2.a.ct
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			custom_tooltip = flavor_cri.2.a.ct
+		}
 		CRI = {
 			country_event = { id = flavor_cri.4 }
 		}
@@ -515,12 +523,24 @@ country_event = {
 				}
 			}
 			TUR = {
-				set_country_flag = forced_tributary_state
-				create_subject = {
-					subject_type = tributary_state
-					subject = CRI
+				if = {
+					limit = {
+						has_country_flag = tur_guarantee_cri_flag
+					}
+					create_march = CRI
 				}
-				clr_country_flag = forced_tributary_state
+				else_if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					set_country_flag = forced_tributary_state
+					create_subject = {
+						subject_type = tributary_state
+						subject = CRI
+					}
+					clr_country_flag = forced_tributary_state
+				}
+				else = { vassalize = CRI }
 			}
 		}
 	}
@@ -533,9 +553,7 @@ country_event = {
 		add_mil_power = 50
 		add_dip_power = 50
 		add_adm_power = 50
-		custom_tooltip = flavor_cri.2.a.ct
-					 
-   
+		custom_tooltip = flavor_cri.2.a.ct   
 		add_opinion = {
 			who = TUR
 			modifier = support_in_crimean_succession
@@ -709,7 +727,10 @@ country_event = {
 				owned_by = ROOT
 			}
 			add_core = ILK
-			remove_core = ROOT
+			if = {
+				limit = { is_core = ROOT }
+				remove_core = ROOT
+			}
 		}
 		release = ILK
 		create_march = ILK

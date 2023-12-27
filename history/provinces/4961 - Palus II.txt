@@ -1,4 +1,4 @@
-# No previous file for Victorum Universalis province
+#4961 - Palus II
 
 culture = nez_perce_culture
 religion = totemism 
@@ -12,15 +12,11 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
-#discovered_by = vu_northwest_tech
-
-1805.1.1 = { discovered_by = USA } #Lewis and Clarke
 1812.1.1 = {
 	owner = USA
 	controller = USA
 	add_core = USA
-	capital = "Clearwater"			#aka Mackenzie's Post
+	capital = "Clearwater"
 	is_city = yes
 	trade_goods = fur
 	culture = american

@@ -12,9 +12,11 @@ base_production = 8
 base_manpower = 4
 is_city = yes
 add_core = CHM
-1444.1.1 = { discovered_by = CHM } 
-#discovered_by = south_american
-#discovered_by = andean
+ 
+
+
+
+
 fort_15th = yes
 extra_cost = 8
 center_of_trade = 2
@@ -30,7 +32,7 @@ add_permanent_province_modifier = {
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

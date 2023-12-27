@@ -1,6 +1,7 @@
 government = republic
 #technology_group = western
 technology_group = dutch_tech_group
+unit_type = western
 primary_culture = afrikaner_culture
 religion = protestant
 capital = 4782 #Endvogelfontein

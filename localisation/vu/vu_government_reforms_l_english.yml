@@ -45,9 +45,6 @@
  transitional_government_ireland_legacy:0 "Transitional Government"
  transitional_government_ireland_legacy_desc:0 "A transitional government fulfills administrative duties in a society in transition, often a nation recently independent from a foreign power, or a nation in the throws of a revolution. While this government may be all that stands between the country and pure anarchy, it is rarely much better than anarchy. Warlords and oligarchs vie for positions of power in the new society, patriots and revolutionaries scheme to take the country in a new direction, while loyalists and conservatives try to return the country to its former structure. Thankfully, this chaos most often proves very temporary, as one faction or another usually wins out within a few years and the nation returns to a more stable form of government."
  #
- lithuanian_grand_duchy_legacy:0 "Grand Duchy" #Inspired by the EU4 vanilla's Lithuanian grand_duchy_reform localisation
- lithuanian_grand_duchy_legacy_desc:0 "Our region never had many kings, instead it is our dukes that have united and led the various peoples within our borders to greatness."         #Copied from vanilla Lithuanian grand duchy reform localisation
- #
  irish_clann_reform:0 "Clann"
  irish_clann_reform_desc:0 "Clanns were the primary local political and social unit in Gaelic Ireland. The hereditary system was highly stable, but its power structures were exceptionally weak and decentralized for early modern Europe and its largely rural population was quickly becoming unable to compete in a modernising Europe."
  #
@@ -219,18 +216,8 @@
  high_kingship_legacy_ruler_female:0 "Ard Banríon"
  high_kingship_legacy_desc:0 "The highest level of kingship in Gaelic Ireland. High Kings were crowned at the Aonach, an assembly of the leading men in Gaelic Irish society, at Teamhair na Rí. Though the exact reach and totality of the High King's authority varied over time, all other kings in Ireland were at the very least nominally subordinate, if not directly subservient, to the High King. The High Kingship also revives the traditional Tanistry system of succession, making it very difficult for a dynasty to lose power or be inherited by another kingdom."
  #
- florence_republic_legacy:0 "Florentine Republic"
- florence_republic_legacy_ruler:0 "Gonfaloniere"
- florence_republic_legacy_ruler_female:0 "Gonfaloniette"
- florence_republic_legacy_desc:0 "The form of government of the Republic of Florence under the Medicis. The Medicis held no official post, but were the unquestioned rulers of Florence."
- #
- regnum_dei_legacy:0 "Regnum Dei"
- regnum_dei_legacy_ruler:0 "Pope"
- regnum_dei_legacy_ruler_female:0 "Popette"
- regnum_dei_legacy_desc:0 "The Kingdom of God on Earth, ruled directly by the Holy Father."
- #
- byzantine_transitional_gov_reform:0 "Transitional Byzantine Government"
- byzantine_transitional_gov_reform_desc:0 "Byzantine empire has survived the era of greatest turmoil and is slowly reforming itself into functioning state once again. The empire is undergoing a period of reforms and experimentation as the ruling class tries to reestablish its authority."
+ #byzantine_transitional_gov_reform:0 "Transitional Byzantine Government"
+ #byzantine_transitional_gov_reform_desc:0 "Byzantine empire has survived the era of greatest turmoil and is slowly reforming itself into functioning state once again. The empire is undergoing a period of reforms and experimentation as the ruling class tries to reestablish its authority."
  #
  #VU New San Marino Reforms from Shattered Europa by San Felipe
  roman_diarchy_reform:0 "Roman Diarchy"
@@ -262,4 +249,10 @@
  cooperate_with_legislators_desc: ""
  american_monarchy: "American Monarchy"
  reinforced_republic: "Great American Republic"
+ #
+ high_king_of_ireland_reform:0 "High King of Ireland"
+ high_king_of_ireland_reform_desc:0 "The High King of Ireland or Ard Rí is special kingship whose occupants had supremacy among the kings of Ireland which was used in dominating the whole island."
+ clans_of_ireland_reform:0 "Clans of Ireland"
+ clans_of_ireland_reform_desc:0 "Clan or Clann meaning 'a plant, an offshoot, offspring, a single child or children, by extension race or descendants' is a system especially denoted to Ireland during Medieval times for the provision of plurals for surnames beginning with Mac meaning 'son of'. For example, 'Clann Cárthaigh' meant the men of the MacCarthy family and 'Clann Suibhne' meant the men of the MacSweeny family. Clann was also used to denote a subgroup within a wider surname, for example the descendants of a recent common ancestor such as the Clann Aodha Buidhe or the O'Neills of Clandeboy, whose ancestor was Aodh Buidhe who died in 1298. It was later replaced by the introduction of English Common Law in the 16th century."
+ #
  

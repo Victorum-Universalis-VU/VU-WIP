@@ -1,5 +1,106 @@
 ﻿l_english: 
  #Quonton
+ #Policies
+ #ADM
+ vu_public_healthcaree: "Public Healthcare Act"
+ vu_public_healthcaree_desc: ""
+
+ vu_public_workss: "Public Works Act"
+ vu_public_workss_desc: ""
+
+ vu_efficient_employment: "Efficient Employment Act"
+ vu_efficient_employment_desc: ""
+
+ vu_aristocratic_power: "Strengthening Aristocratic Power"
+ vu_aristocratic_power_desc: ""
+
+ vu_native_urbanization: "American Urbanization"
+ vu_native_urbanization_desc: ""
+ 
+ vu_promotion_of_science: "Public School Act"
+ vu_promotion_of_science_desc: ""
+
+ vu_enforcement_of_religious_culture: "Enforcement of Religious Culture"
+ vu_enforcement_of_religious_culture_desc: ""
+
+ vu_common_culture_act: "Common Culture Act"
+ vu_common_culture_act_desc: ""
+
+ vu_cultural_exclusion_act: "Cultural Exclusion Act"
+ vu_cultural_exclusion_act_desc: ""
+
+ vu_agressive_trade_act: "Aggressive Trade Act"
+ vu_agressive_trade_act_desc: ""
+
+ vu_gunboat_colonialization: "Gunship Colonization"
+ vu_gunboat_colonialization_desc: ""
+
+ #DIP
+ vu_quality_manufactured_goods: "Quality Control Act"
+ vu_quality_manufactured_goods_desc: ""
+
+ vu_trade_import_act: "Importation Act"
+ vu_trade_import_act_desc: ""
+
+ vu_boat_manufactories: "Grand Shipyards"
+ vu_boat_manufactories_desc: ""
+
+ vu_promote_economic_manuverability: "Economic Maneuverability Act"
+ vu_promote_economic_manuverability_desc: ""
+
+ vu_subject_import_act: "Subject Trade Act"
+ vu_subject_import_act_desc: ""
+
+ vu_industrial_integration_act: "Industrial Integration Act"
+ vu_industrial_integration_act_desc: ""
+
+ vu_expand_definition_of_human: "National Inclusion Act"
+ vu_expand_definition_of_human_desc: ""
+
+ vu_xenophobia_act: "Xenophobia Act"
+ vu_xenophobia_act_desc: ""
+
+ vu_cultural_protectionism_act: "Cultural Protectionism Act"
+ vu_cultural_protectionism_act_desc: ""
+
+ vu_depoprtation_act: "Deportation Act"
+ vu_depoprtation_act_desc: ""
+
+ vu_armed_murchant_ships: "Armed Merchant Navy"
+ vu_armed_murchant_ships_desc: ""
+
+ #MIL
+ vu_armour_production_act: "Armour Production Act"
+ vu_armour_production_act_desc: ""
+
+ vu_firearm_production_act: "Firearm Production Act"
+ vu_firearm_production_act_desc: ""
+
+ vu_men_endure_act: "Endure Act"
+ vu_men_endure_act_desc: ""
+
+ vu_national_protection_act: "National Protection Act"
+ vu_national_protection_act_desc: ""
+
+ vu_human_wave_tactics: "Human Wave Tactics"
+ vu_human_wave_tactics_desc: ""
+
+ vu_naval_canon_school_act: "Naval Cannon Education Act"
+ vu_naval_canon_school_act_desc: ""
+
+ vu_firearm_training_act: "Firearm Training Act"
+ vu_firearm_training_act_desc: ""
+
+ vu_supior_firepower: "Superior Firepower"
+ vu_supior_firepower_desc: ""
+
+ vu_weakness_of_fortifications: "Anti-Cannon Fortification Act"
+ vu_weakness_of_fortifications_desc: ""
+
+ vu_weapons_r_and_d_act: "Weapons R&D Act"
+ vu_weapons_r_and_d_act_desc: ""
+
+ #End of Policies
  industry_ideas: "Industrialism Ideas"
  industry_ideas_bonus: "Full Industriousness"
 

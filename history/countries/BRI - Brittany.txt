@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = breton
 add_accepted_culture = gallo_culture
 religion = catholic
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 capital = 172	# Nantes

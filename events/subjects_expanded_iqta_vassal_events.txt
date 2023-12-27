@@ -211,14 +211,14 @@ province_event = {
 				}
 			}
 		}
-		modifier = {
-			factor = 1.1
-			num_of_cities = 20
-		}
-		modifier = {
-			factor = 1.5
-			num_of_cities = 50
-		}
+		#modifier = {
+		#	factor = 1.1
+		#	num_of_cities = 20
+		#}
+		#modifier = {
+		#	factor = 1.5
+		#	num_of_cities = 50
+		#}
 	}
 
 	immediate = {

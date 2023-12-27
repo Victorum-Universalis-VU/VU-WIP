@@ -12,10 +12,10 @@ native_size = 6
 native_ferocity = 6
 native_hostileness = 9
 
-discovered_by = aboriginal_tech
 
-1642.11.24 = { discovered_by = NED } # Abel Tasman
-1798.1.1 = { discovered_by = GBR } # George Bass and Matthew Flinders were sent to explore the possibility that there was a strait between Australia and Van Diemen's Land (Tasmania).
+
+
+
 1804.1.1 = {
 	owner = GBR
 	controller = GBR

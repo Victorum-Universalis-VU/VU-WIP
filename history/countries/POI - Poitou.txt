@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = appanage_reform
 government_rank = 1
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 primary_culture = poitevin_UKS
@@ -12,6 +13,7 @@ fixed_capital = 180 # Cannot move capital away from this province & no power cos
 
 1444.1.1 = {
 	monarch = {
+		name = "Interrègne"
 		adm = 3
 		dip = 3
 		mil = 3

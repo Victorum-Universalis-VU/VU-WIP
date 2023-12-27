@@ -7,13 +7,13 @@ trade_goods = unknown
 hre = no
 base_tax = 6
 base_production = 6
-base_manpower = 4
+base_manpower = 6
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
 
-1653.1.1 = { discovered_by = RUS } # Pyotr Beketov
+
 
 1656.1.1 = {
 	owner = RUS

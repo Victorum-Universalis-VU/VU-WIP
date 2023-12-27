@@ -4,6 +4,6 @@ government_rank = 1
 primary_culture = maori
 religion = animism
 #technology_group = polynesian_tech
-technology_group = papuan_tech_group
+technology_group = polynesian_tech
 capital = 2738 #Timaru
 

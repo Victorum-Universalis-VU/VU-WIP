@@ -5,7 +5,8 @@ mercantilism = 25
 primary_culture = mazandarani
 add_accepted_culture = talysh
 religion = sunni
-technology_group = muslim
+#technology_group = muslim
+technology_group = persian_tech_group
 capital = 4339 # Rasht
 religious_school = hanafi_school
 

@@ -1,4 +1,4 @@
-#VU updated and ammended by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 tr_russia_religious_missions = {
 	slot = 1
 	generic = no
@@ -215,6 +215,7 @@ tr_muscovy_conquest = {
 	}
 	
 }
+
 	
 tr_russia_conquest_1 = {
 	slot = 2
@@ -926,12 +927,14 @@ tr_russia_conquest_2 = {
 		provinces_to_highlight = {
 			region = khorasan_region
 			NOT = {
-			    area = mashhad_area
-				area = tambov_area
-				province_id = 434
-				province_id = 2233
-				province_id = 4325
-				province_id = 6129
+				OR = {
+					area = mashhad_area
+				    area = tambov_area
+				    province_id = 434
+				    province_id = 2233
+				    province_id = 4325
+				    province_id = 6129
+				}
 			} 
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1084,6 +1087,7 @@ tr_russia_exclusive_2 = {
 					}
 				}
 			}
+
 		}
 		effect = {
 			add_army_tradition = 25

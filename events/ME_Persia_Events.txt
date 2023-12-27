@@ -579,7 +579,7 @@ country_event = {
 		name = ME_Persia_Events.6.OPT1
 
 		event_target:persia_turkmeni_province_assimilated = {
-			change_culture = khwarezmians
+			change_culture = khwarezmian
 		}
 	}
 }
@@ -637,7 +637,7 @@ country_event = {
 		name = ME_Persia_Events.7.OPT1
 
 		event_target:persia_uzbehk_province_assimilated = {
-			change_culture = tajiks
+			change_culture = tajik
 		}
 	}
 }
@@ -1442,8 +1442,8 @@ country_event = {
 				limit = {
 					has_dlc = "Leviathan"
 				}
+				add_development_half_monthly_monarch_power = yes
 			}
-			add_development_half_monthly_monarch_power = yes
 		}
 	}
 

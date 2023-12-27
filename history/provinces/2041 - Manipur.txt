@@ -9,15 +9,22 @@ trade_goods = cloth
 hre = no
 base_tax = 4 
 base_production = 4
-base_manpower = 2 
+base_manpower = 4
 is_city = yes
 add_core = MLB
 
 
 
-discovered_by = indian
-#discovered_by = dutch_tech_group
-discovered_by = chinese
+
+
+
+
+
+
+
+
+
+
 
 
 1597.1.1 = { fort_15th = yes } #Kangla
@@ -31,7 +38,7 @@ discovered_by = chinese
 	controller = TAU
 	add_core = TAU
 }
-1760.1.1 = { discovered_by = GBR }
+
 1769.1.1 = { unrest = 6 }
 1773.1.1 = { unrest = 0 }
 1782.1.1 = {

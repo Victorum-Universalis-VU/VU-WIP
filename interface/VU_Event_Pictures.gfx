@@ -1,4 +1,9 @@
 spriteTypes = {
+	spriteType = { 
+		name = "vu_cereal_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_cereal_eventPicture.dds"
+		allwaystransparent = yes
+	}
 	spriteType = {
 		name = "crusader_on_horse_with_infidel_eventPicture"
 		texturefile = "gfx/event_pictures/crusader_on_horse_with_infidel_eventPicture.dds"

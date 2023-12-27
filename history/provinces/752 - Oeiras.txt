@@ -1,7 +1,8 @@
 #752 - Oeiras
 
 culture = tupinamba
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Oeiras"
 trade_goods = unknown
@@ -16,7 +17,7 @@ native_hostileness = 8
 
 
 
-1500.4.23 = { discovered_by = POR }
+
 
 1650.1.1 = {
 	owner = POR

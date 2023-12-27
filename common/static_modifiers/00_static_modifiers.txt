@@ -127,6 +127,7 @@ in_capital_state = {
 	local_institution_spread = 0.05
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost = -1.0
+	local_has_qizilbash = yes
 }
 
 coastal = {
@@ -187,7 +188,6 @@ arid = {
 	local_colonial_growth = -20
 	supply_limit_modifier = -0.6
 	local_hostile_attrition = 5
-
 	allowed_num_of_buildings = -1
 	local_development_cost = 0.5
 	local_institution_spread = -0.2
@@ -204,13 +204,14 @@ land_province = {
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes
 	local_has_streltsy = yes
+	local_has_mamluks = yes
 }
 
 mild_winter = {
 	local_hostile_attrition = 1
+	supply_limit_modifier = -0.2
 	local_hostile_movement_speed = -0.10
 	local_friendly_movement_speed = -0.10
-	supply_limit_modifier = -0.2
 
 	picture = "winter_mild"
 }
@@ -221,6 +222,7 @@ normal_winter = {
 	local_friendly_movement_speed = -0.30
 	supply_limit_modifier = -0.5
 	migration_cost = 0.1
+
 	picture = "winter_normal"
 }
 
@@ -230,6 +232,7 @@ severe_winter = {
 	local_friendly_movement_speed = -0.50
 	supply_limit_modifier = -0.8
 	migration_cost = 0.2
+
 	picture = "winter_severe"
 }
 
@@ -296,11 +299,6 @@ manpower = {
 	garrison_growth = 0.005					#1% increase from manpower.
 }
 
-# Caps at 600
-horde_development = {
-	horde_unity = -3
-}
-
 province_razed = {
 	picture = "province_razed"
 }
@@ -364,7 +362,7 @@ native_assimilation = {
 }
 
 native_aggressiveness = {
-	#local_colonist_placement_chance = -0.005
+	local_colonist_placement_chance = -0.005
 }
 
 core = {
@@ -429,6 +427,7 @@ pu_overlord_bonus = {
 	global_manpower_modifier = 0.05
 	global_sailors_modifier = 0.05
 }
+
 gbr_emperor_of_india_subject_bonus = {
 	global_trade_goods_size_modifier = 0.15
 }
@@ -437,6 +436,7 @@ gbr_emperor_of_india_overlord_bonus = {
 	trade_efficiency = 0.1
 	reduced_trade_penalty_on_non_main_tradenode = 0.25
 }
+
 same_culture_group = {
 	local_tax_modifier = -0.1				#10% penalty if same culture group but nothing else. Not applied if the controller is the Union Tag of the culture group, or has culture_group_union set.			#VU AddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
 	local_manpower_modifier = -0.1			#VU AddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
@@ -529,6 +529,7 @@ intolerance = {
 unrest = {
 	regiment_recruit_speed = 0.1			#10% longer time to build troops for each rr
 	ship_recruit_speed = 0.1
+	local_tax_modifier = -0.02
 }
 
 nationalism = {
@@ -651,6 +652,7 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+	has_marines = yes
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -673,8 +675,6 @@ war_taxes = {
 stability = {
 	global_trade_power = 0.01				#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 positive_stability = {
@@ -844,8 +844,7 @@ peace = {
 	pr_smugglers_influence = 0.1
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
-	#EE
-	#monthly_conquest_frenzy_power = -0.5
+	monthly_asha_vahishta = 0.25
 }
 
 unconditional_surrender = {
@@ -926,6 +925,8 @@ army_tradition = {
 	maratha_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
 	janissaries_loyalty_modifier = 0.05
+	qizilbash_loyalty_modifier = 0.05
+	ghulams_loyalty_modifier = 0.05
 	allowed_tercio_fraction = 0.1
 	allowed_samurai_fraction = 0.1
 }
@@ -952,8 +953,6 @@ positive_piety = { #As of 1.23 Legalism
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
 	dhimmi_loyalty_modifier = -0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.2
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -964,8 +963,6 @@ negative_piety = { #As of 1.23 Mysticism
 	brahmins_muslim_loyalty_modifier = 0.1
 	church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.2
 }
 
 defender_of_faith = {
@@ -979,14 +976,12 @@ defender_of_faith = {
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
 	devotion = 0.5
-	#EE
-	#monthly_caliphal_legitimacy = 0.1
+	monthly_asha_vahishta = 0.25
 }
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
-	#EE
-	#monthly_caliphal_legitimacy = -0.15
+	monthly_asha_vahishta = -2
 }
 
 emperor = {
@@ -1070,12 +1065,6 @@ country_development = {
 	horde_unity = -3
 }
 
-# Multiplied by Tribal Allegiance / 100
-tribal_allegiance = {
-	manpower_recovery_speed = 0.33
-	global_unrest = -3
-}
-
 # Multiplied by current Legitimacy - 50
 legitimacy = {
 	global_unrest = -4
@@ -1147,13 +1136,13 @@ corruption = {
 	dhimmi_loyalty_modifier = 0.1
 	jains_loyalty_modifier = 0.1
 	rajput_loyalty_modifier = 0.1
-	janissaries_loyalty_modifier = 0.1
 	eunuchs_loyalty_modifier = 0.1
+	janissaries_loyalty_modifier = 0.1
+	qizilbash_loyalty_modifier = 0.1
+	ghulams_loyalty_modifier = 0.1
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
-	#EE
-	#monthly_caliphal_legitimacy = -10
 }
 
 root_out_corruption = {
@@ -1226,8 +1215,9 @@ prestige = {
 	monthly_fervor_increase = 1
 	ae_impact = -0.10
 	#embracement_cost = -0.1				#VU AddOn removed - no real reason other than I don't like it. It does make balance easier to plan too, though, when not having to factor this into AI chance to embrace.
-
 	monthly_heir_claim_increase = 0.05
+
+	monthly_persian_influence = 0.25
 
 	brahmins_hindu_loyalty_modifier = 0.05
 	brahmins_muslim_loyalty_modifier = 0.05
@@ -1244,6 +1234,8 @@ prestige = {
 	rajput_loyalty_modifier = 0.05
 	janissaries_loyalty_modifier = 0.05
 	eunuchs_loyalty_modifier = 0.05
+	qizilbash_loyalty_modifier = 0.05
+	ghulams_loyalty_modifier = 0.05
 }
 
 no_debate_in_parliament = {
@@ -1296,8 +1288,6 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
-	#EE
-	#monthly_caliphal_legitimacy = 0.15
 }
 
 inverse_religious_unity = {
@@ -1354,6 +1344,39 @@ federation_leader = {
 	land_morale = 0.1
 }
 
+pronoia_base_overlord_modifiers = {
+	# land_forcelimit = -5
+	pronoia_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+pronoia_base_modifiers = {
+	core_creation = 1
+	overextension_impact_modifier = 1
+	administrative_efficiency = -0.2
+	global_manpower = 5
+	global_manpower_modifier = 0.5 
+	global_regiment_cost = -0.5
+}
+
+BYZ_pronoia_buff_army_tradition_modifier = {
+	army_tradition = 0.2
+}
+
+BYZ_pronoia_land_forcelimit_penalty = {
+	land_forcelimit = -5
+}
+
+BYZ_extra_forcelimit_for_pronoiars = {
+	land_forcelimit = 5
+}
+
+BYZ_army_trad = {
+	army_tradition = 3
+}
+
+BYZ_discipline = {
+	discipline = 0.05
+}
 
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
@@ -1387,7 +1410,7 @@ liberty_desire = {
 	diplomatic_upkeep = 1.25
 }
 
-is_great_power = {							#Only works with Rights of Man DLC enabled
+is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
 	max_absolutism = 5
@@ -1448,6 +1471,12 @@ musketeers_modifier = {
 samurai_modifier = {
 }
 
+qizilbash_modifier = {
+}
+
+mamluks_modifier = {
+}
+
 geobukseon_modifier = {
 }
 
@@ -1465,6 +1494,7 @@ caravel_modifier = {
 
 voc_indiamen_modifier = {
 }
+
 power_projection = {
 	defensiveness = 0.1
 	global_trade_power = 0.2
@@ -1483,17 +1513,18 @@ power_projection_25 = {
 
 #100 Land Forcelimit = 1
 land_forcelimit = {
-	free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
+    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
+	num_of_pronoiars = 1
 }
 
 #100 Naval Forcelimit = 1
 naval_forcelimit = {
 	free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
 }
+
 trade_company_strong = {
 	merchants = 1
 }
-
 
 large_colonial_nation = {
 	merchants = 1
@@ -1510,6 +1541,7 @@ gbr_colonial_investment = {
 	production_efficiency = 0.5
 	trade_efficiency = 0.5
 }
+
 crown_colony_overlord = {
 	merchants = 1                           #VU OnlyKarlos addition
 	global_trade_power = 0.075				#VU increase from 0.05
@@ -1599,6 +1631,7 @@ appanage_subject = {
 appanage_overlord = {
 	nobles_loyalty_modifier = 0.02
 }
+
 union_subject = {
 }
 
@@ -1633,7 +1666,8 @@ pirate_subject = {
 
 subject_tax_modifier = {
 	global_tax_modifier = 0.25
-}												   
+}
+
 same_religion_subject_bonus_mod = {
 	manpower_in_true_faith_provinces = 0.25
 	global_sailors_modifier = 0.25
@@ -1648,7 +1682,6 @@ eyalet_modifier = {
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
-	#EE
 	fort_bonus_check_influence = 1
 }
 
@@ -1738,8 +1771,6 @@ discontent_sowed = {
 
 reputation_sabotaged = {
 	diplomatic_reputation = -3
-	#EE
-	#monthly_caliphal_legitimacy = -0.05
 }
 
 corrupt_officials = {
@@ -1859,7 +1890,7 @@ native_policy_hostile = {
 ########################################
 
 high_harmony = {
-	tolerance_own = 1
+	tolerance_own = 3
 	development_cost = -0.1
 	meritocracy = 1
 	legitimacy = 0.5
@@ -2037,6 +2068,7 @@ expansion_focus_modifier = {
 	manpower_recovery_speed = 0.1
 	ae_impact = -0.1
 }
+
 ########################################
 # Religious Schools
 ########################################
@@ -2046,8 +2078,6 @@ hanafi_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	adm_tech_cost_modifier = -0.05
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 hanbali_scholar_modifier = {
@@ -2056,8 +2086,6 @@ hanbali_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	ae_impact = -0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 maliki_scholar_modifier = {
@@ -2066,8 +2094,6 @@ maliki_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	development_cost = -0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 shafii_scholar_modifier = {
@@ -2076,8 +2102,6 @@ shafii_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	merchants = 1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 ismaili_scholar_modifier = {
@@ -2089,8 +2113,6 @@ ismaili_scholar_modifier = {
 	legitimacy = 1
 	republican_tradition = 0.5
 	devotion = 1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 jafari_scholar_modifier = {
@@ -2099,8 +2121,6 @@ jafari_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage = 0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 zaidi_scholar_modifier = {
@@ -2109,8 +2129,6 @@ zaidi_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	shock_damage_received = -0.1
-	#EE
-	#monthly_caliphal_legitimacy = 0.05
 }
 
 ########################################
@@ -2178,6 +2196,17 @@ samurai_regiment = {
 	reinforce_cost_modifier = 0.5
 }
 
+qizilbash_regiment = {
+	fire_damage_received = -0.05
+	land_maintenance_modifier = -0.25
+}
+
+mamluks_regiment = {
+	drill_gain_modifier = 1
+	morale_damage = 0.1
+	reinforce_speed = 0.33 
+}
+
 geobukseon_ship = {
 	ship_durability = 0.1
 	galley_power = 0.1
@@ -2209,6 +2238,7 @@ voc_indiamen_ship = {
 	ship_trade_power_modifier = 0.2
 	can_transport_units = yes
 }
+
 cossacks_regiment = {
     shock_damage = 0.15
 }
@@ -2217,6 +2247,7 @@ carolean_regiment = {
 	morale_damage = 0.05
 	drill_decay_modifier = -0.25
 }
+
 revolutionary_guard_regiment = {
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
@@ -2255,6 +2286,7 @@ mobilized_new_order_regiments = {
 	infantry_power = 0.1
 	reinforce_speed = 0.2
 }
+
 ########################################
 # Government/Reform modfiers
 ########################################
@@ -2278,21 +2310,12 @@ over_governing_capacity_modifier = {
 	monthly_ottoman_decadence = 2
 }
 
-#A new, modified 100% over capacity modifier that VU wants to test.
-under_governing_capacity_modifier = {																								 
+#Scales with used capacity, being at full capacity means 100% of the modifier
+under_governing_capacity_modifier = {																							 
 }
-
-# over_governing_capacity_modifier = {
-	# stability_cost_modifier = 1.0
-	# #ae_impact = 0.5 					#Cut in VU in favour of economically impacting modifiers
-	# #improve_relation_modifier = -0.5 	#Cut in VU in favour of economically impacting modifiers
-	# core_creation = 0.2 #-5% admin efficiency in dev diaries. Worthwhile change? Not sure.
-	# advisor_cost = 1.0
-	# monthly_militarized_society = -1.0
-	# min_autonomy = 50					#VU new: This just makes sense on so many levels: Being over what you could possibly govern means that you can't administrate your territories, hence increased base autonomy. If your economy gets crippled, you have little choice than to unstate some of your provinces to get below.
-	# min_autonomy_in_territories = 5	#To impact territories 1/10th of what it impacts in regular provinces.
-# }
-
+#Scales with unused capacity, eing at full capacity means 0% of the modifier
+reverse_under_governing_capacity_modifier = {
+}
 
 lost_hegemony = {
 	all_power_cost	= 0.10
@@ -2341,8 +2364,6 @@ diplomatic_reputation = {
 }
 
 tolerance_own = {
-	#EE
-	#monthly_caliphal_legitimacy = 0.02
 }
 
 tolerance_heretic = {
@@ -2356,14 +2377,17 @@ num_accepted_cultures = {
 
 ruler_adm = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 heir_adm = {
@@ -2385,29 +2409,36 @@ consort_mil = {
 }
 
 mandate = {
+
 }
 
 imperial_authority_emperor = {
+
 }
 
 imperial_authority_member = {
+
 }
 
 positive_imperial_authority_emperor = {
+	
 }
 
 positive_imperial_authority_member = {
+	
 }
 
 negative_imperial_authority_emperor = {
+	
 }
 
 negative_imperial_authority_member = {
+	
 }
 
 slackening_modifier = {
     yearly_army_professionalism = -0.05
-    manpower_recovery_speed = 1
+    manpower_recovery_speed = 2
 }
 
 royal_council_meeting_mod = {
@@ -2423,6 +2454,7 @@ war_council_meeting_mod = {
 }
 
 average_overseas_subject_liberty_desire = { #only counts subjects with capitals on different continents than yours, 100% LD => 100% modifier
+
 }
 
 reverse_average_overseas_subject_liberty_desire = { #only counts subjects with capitals on different continents than yours, 100% LD => 0% modifier
@@ -2434,6 +2466,7 @@ average_subject_liberty_desire = { #100% LD => 100% modifier
 }
 
 reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
+
 }
 
 average_global_autonomy = { #100% autonomy => 100% modifier
@@ -2442,6 +2475,57 @@ average_global_autonomy = { #100% autonomy => 100% modifier
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
 	monthly_council_consensus = 0.2
+}
+
+adur_burzhen_mihr_mod = {
+	country_diplomatic_power = 1
+	development_cost = -0.1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+adur_farnbag_mod = {
+	country_admin_power = 1
+	reform_progress_growth = 0.1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+adur_gushnasp_mod = {
+	country_military_power = 1
+	own_territory_dice_roll_bonus = 1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+culturally_influencing_countries = {
+	influence_to_vassal_elevation_cost = 20
+	monthly_persian_influence = -0.2
+}
+
+culturally_influencing_countries_same_culture = {
+	influence_to_vassal_elevation_cost = 20
+}
+
+culturally_influenced_country = {
+	relation_with_same_religion = 10
+	reverse_relation_with_same_religion = 10
+}
+
+manpower_percentage = {
+
+}
+
+reverse_manpower_percentage = {
+
+}
+
+sailors_percentage = {
+
+}
+
+reverse_sailors_percentage = {
+
 }
 
 ################################

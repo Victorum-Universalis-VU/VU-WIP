@@ -84,9 +84,9 @@ AKK_missions_1 = {
 					name = AKK_builder_of_monuments
 					duration = -1
 					age = age_of_reformation
-					else = "
-						add_stability_or_adm_power = yes
-					"
+					#else = "
+					#	add_stability_or_adm_power = yes
+					#"
 				}
 			}
 			else = {
@@ -94,9 +94,9 @@ AKK_missions_1 = {
 					name = AKK_builder_of_monuments_no_dlc
 					duration = -1
 					age = age_of_discovery
-					else = "
-						add_stability_or_adm_power = yes
-					"
+					#else = "
+					#	add_stability_or_adm_power = yes
+					#"
 				}
 			}
 			

@@ -10,16 +10,17 @@ trade_goods = gems #Youyan Jade
 hre = no
 base_tax = 10 
 base_production = 10
-base_manpower = 4
+base_manpower = 10
 is_city = yes
 fort_15th = yes #the Nine Garrisons
 center_of_trade = 2
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
 
-1519.1.1 = { discovered_by = POR } # Tome Pires
+
+
+
+
 1621.1.1 = {
 	owner = MCH
 	controller = MCH

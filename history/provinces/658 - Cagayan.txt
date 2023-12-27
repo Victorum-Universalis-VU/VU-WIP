@@ -1,21 +1,23 @@
 #658 - Cagayan
 
-culture = ilocano
+culture = ibanag
 religion = animism
 capital = "Catagayan"
 trade_goods = unknown
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 native_size = 50
 native_ferocity = 1
 native_hostileness = 3
 
-discovered_by = chinese
-discovered_by = japanese
 
-1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan
+
+
+
+
+ # Ferdinand Magellan
 
 1581.1.1 = { } #Captain Ivan Sabala arrived in Cagayan with a hundred fully equipped soldiers and their families by order of Gonzalo Ronquillo de Peñaloza, the fourth Spanish Governor-General of the Philippines.
 

@@ -1,4 +1,4 @@
-# No previous file for Victorum Universalis province
+#5811 - Kwalhioqua
 
 culture = clatskanie
 religion = totemism 
@@ -11,11 +11,3 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
-
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
-
-
-1806.1.1 = { discovered_by = USA } #Lewis and Clark's expedition
-1820.1.1 = { discovered_by = GBR } #Sir George Simpson's push to control Cascadia.

@@ -2853,3 +2853,205 @@ lake = {
     }
     height = 23
 }
+
+#Lake Toba part 1
+lake = {
+    triangle_strip = { 
+        4190 1045  #1
+        4184 1040  #2
+        4179 1044  #3
+    }
+    height = 23
+}
+
+#Lake Toba part 2
+lake = {
+    triangle_strip = { 
+        4190 1045  #1
+		4179 1044  #2
+		4185 1051  #3
+    }
+    height = 23
+}
+
+#Lake Toba part 3
+lake = {
+    triangle_strip = { 
+        4185 1051  #1
+		4179 1044  #2
+		4175 1049  #3
+    }
+    height = 23
+}
+
+#Lake Toba part 4
+lake = {
+    triangle_strip = { 
+        4185 1051  #1
+		4175 1049  #2
+		4177 1056  #3
+    }
+    height = 23
+}
+
+#Lake Taupo
+lake = {
+    triangle_strip = { 
+        5396 378  #1
+		5385 369  #2
+		5382 381  #3
+    }
+    height = 21
+}
+
+#Lake Coleridge
+lake = {
+    triangle_strip = { 
+        5324 300  #1
+		5317 292  #2
+		5313 301  #3
+    }
+    height = 21
+}
+
+#Lake Tekapo and Lake Pukaki Part 1
+lake = {
+    triangle_strip = { 
+        5309 288  #1 - 2016
+		5303 280  #2 - 2024
+		5301 291  #3 - 2013
+    }
+    height = 21
+}
+
+#Lake Tekapo and Lake Pukaki Part 2
+lake = {
+    triangle_strip = { 
+        5303 280  #1 - 2024
+		5296 286  #2 - 2018
+		5301 291  #3 - 2013
+    }
+    height = 21
+}
+
+#Lake Tekapo and Lake Pukaki Part 3
+lake = {
+    triangle_strip = { 
+        5296 280  #1 - 2024
+		5296 286  #2 - 2018
+		5303 280  #3 - 2024
+    }
+    height = 21
+}
+
+#Lake Tekapo and Lake Pukaki Part 4
+lake = {
+    triangle_strip = { 
+        5303 280  #1 - 2024
+		5297 275  #2 - 2029
+		5296 280  #3 - 2024
+    }
+    height = 21
+}
+
+#Lake Oahu Part 1
+lake = {
+    triangle_strip = { 
+        5297 282  #1 - 2022
+		5290 274  #2 - 2030
+		5291 281  #3 - 2023
+    }
+    height = 21
+}
+
+#Lake Oahu Part 2
+lake = {
+    triangle_strip = { 
+        5298 273  #1 - 2031
+		5290 274  #2 - 2030
+		5297 282  #3 - 2022
+    }
+    height = 21
+}
+
+#Lake Hawea and Lake Wanaka Part 1
+lake = {
+    triangle_strip = { 
+        5291 279  #1
+		5286 269  #2
+		5279 279  #3
+    }
+    height = 21
+}
+
+#Lake Hawea and Lake Wanaka Part 2
+lake = {
+    triangle_strip = { 
+        5286 269  #1
+		5277 266  #2
+		5279 279  #3
+    }
+    height = 21
+}
+
+#Lake Wakatipu Part 1
+lake = {
+    triangle_strip = { 
+        5279 270  #1
+		5269 259  #2
+		5267 271  #3
+    }
+    height = 21
+}
+
+#Lake Wakatipu Part 2
+lake = {
+    triangle_strip = { 
+        5279 270  #1
+		5278 255  #2
+		5269 259  #3
+    }
+    height = 21
+}
+
+#Lake Te Anau Part 1
+lake = {
+    triangle_strip = { 
+        5266 268  #1 - 2036
+		5264 260  #2 - 2044
+		5255 264  #3 - 2040
+    }
+    height = 20
+}
+
+#Lake Te Anau Part 2
+lake = {
+    triangle_strip = { 
+        5264 260  #1 - 2044
+		5251 252  #2 - 2052
+		5255 264  #3 - 2040
+    }
+    height = 20
+}
+
+#Lake Te Anau Part 3
+lake = {
+    triangle_strip = { 
+        5259 249  #1 - 2055
+		5251 252  #2 - 2052
+		5264 260  #3 - 2044
+    }
+    height = 20
+}
+
+#1 = x4190 (x value always stays the same)
+#y1259 ( 1045 when subtracted from 2304)
+#
+#2 = x4184 (x value always stays the same)
+#y1263 (1041 when subtracted from 2304)
+#
+#3 = x4176 (x value always stays the same)
+#y1255 (1049 when subtracted from 2304)
+#
+#4 = x4178 (x value always stays the same)
+#y1249 (1055 when subtracted from 2304)

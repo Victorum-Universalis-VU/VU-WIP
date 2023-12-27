@@ -13,8 +13,8 @@ base_tax = 1
 base_production = 1 
 base_manpower = 1 
 
-1596.1.1 = { discovered_by = NUB }
-1596.1.1 = { discovered_by = ETH }
+
+
 
 1596.1.1 = {
 	owner = DAR

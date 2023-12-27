@@ -171,7 +171,7 @@ rejected_treaty = {
 #########################
 
 turned_norse_pagan = {
-	opition = -30
+	opinion = -30
 	yearly_decay = 1
 }
 

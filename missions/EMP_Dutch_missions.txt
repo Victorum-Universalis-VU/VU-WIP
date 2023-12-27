@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 emp_ned_slot1_branch = {
 	slot = 1
 	generic = no
@@ -813,6 +813,7 @@ emp_ned_slot3_branch = {
 		required_missions = { emp_ned_charter_the_voc }
 		position = 6
 		completed_by = 1652.1.1
+		
 		provinces_to_highlight = {
 			colonial_region = colonial_cape
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1283,7 +1284,9 @@ emp_ned_slot5_branch = { # Orangists
 				}
 			}
 			else_if = {
-				army_tradition = 50
+				limit = {
+					army_tradition = 50
+				}
 			}
 		}
 		effect = {

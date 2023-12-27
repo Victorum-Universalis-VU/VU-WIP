@@ -1257,7 +1257,10 @@ QAR_missions_4 = {
 			
 			custom_tooltip = QAR_if_jahan_shah
 			tooltip = {
-				add_stat_or_monarch_power = { stat = mil amount = 1 }
+				add_stat_or_monarch_power = { 
+					stat = mil 
+					amount = 1 
+				}
 			}
 			
 			custom_tooltip = " "
@@ -1282,7 +1285,10 @@ QAR_missions_4 = {
 					limit = {
 						has_ruler_flag = QAR_jahan_shah_rules
 					}
-					add_stat_or_monarch_power = { stat = mil amount = 1 }
+					add_stat_or_monarch_power = { 
+						stat = mil 
+						amount = 1 
+					}
 				}
 			}
 		}

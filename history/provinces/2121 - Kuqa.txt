@@ -8,13 +8,14 @@ religion = sunni
 capital = "Kuqa"
 trade_goods = gold
 hre = no
-base_tax = 4  
-base_production = 4
+base_tax = 6
+base_production = 6
 base_manpower = 6
 is_city = yes
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 1682.1.1 = {

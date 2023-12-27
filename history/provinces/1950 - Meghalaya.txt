@@ -3,9 +3,16 @@
 
 
 
-discovered_by = indian
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1627.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
+
 

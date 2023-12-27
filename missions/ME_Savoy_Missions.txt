@@ -654,8 +654,8 @@ savoy_missions_3 = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			liguria_area = {
 				limit = {

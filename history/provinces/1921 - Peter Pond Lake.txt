@@ -1,21 +1,3 @@
-discovered_by = north_american #Copied from PROV2595.
-#The fuck is this?
-# #discovered_by = muslim
-# #discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-# #discovered_by = dutch_tech_group
-# discovered_by = KAS
-# 1622.1.1 = { discovered_by = RUS }
+#1921 - Peter Pond Lake
+
+

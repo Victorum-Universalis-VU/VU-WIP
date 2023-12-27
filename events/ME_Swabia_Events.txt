@@ -201,7 +201,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { our_cities = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3 
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -214,7 +217,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { our_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3 
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -230,7 +236,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { their_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3 
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -243,7 +252,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { their_army = 3 }
+					multiply_variable = { 
+						which = their_army 
+						value = 3 
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -302,7 +314,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { our_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -315,7 +330,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { our_army = 3 }
+					multiply_variable = { 
+						which = their_army 
+						value = 3 
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -331,7 +349,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { their_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -344,7 +365,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { their_army = 3 }
+					multiply_variable = { 
+						which = their_army 
+						value = 3 
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -410,7 +434,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { our_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -423,7 +450,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { our_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -439,7 +469,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { their_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -452,7 +485,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { their_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -518,7 +554,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { our_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -531,7 +570,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { our_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -547,7 +589,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { their_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -560,7 +605,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { their_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -619,7 +667,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { our_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -632,7 +683,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { our_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}
@@ -648,7 +702,10 @@ country_event = {
 						value = trigger_value:num_of_cities
 						who = FROM
 					}
-					multiply_variable = { their_cities = 3 }
+					multiply_variable = { 
+						which = their_cities 
+						value = 3  
+					}
 					check_variable = { which = their_cities which = our_cities }
 				}
 				variable_arithmetic_trigger = {
@@ -661,7 +718,10 @@ country_event = {
 						value = trigger_value:army_size
 						who = FROM
 					}
-					multiply_variable = { their_army = 3 }
+					multiply_variable = { 
+						which = our_army 
+						value = 3  
+					}
 					check_variable = { which = their_army which = our_army }
 				}
 			}

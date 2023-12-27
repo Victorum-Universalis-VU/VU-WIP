@@ -402,16 +402,34 @@ country_decisions = {
 					add_permanent_claim = CEL
 				}
 				233 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
-					add_permanent_claim = CEL
+					if = { 
+						limit = { 
+							NOT = { 
+								owned_by = ROOT 
+							} 
+						}
+						add_permanent_claim = CEL
+					}
 				}
 				8122 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
-					add_permanent_claim = CEL
+					if = { 
+						limit = { 
+							NOT = { 
+								owned_by = ROOT 
+							} 
+						}
+						add_permanent_claim = CEL
+					}
 				}
 				4373 = {
-					if = { limit = { NOT = { owned_by = ROOT } } }
-					add_permanent_claim = CEL
+					if = { 
+						limit = { 
+							NOT = { 
+								owned_by = ROOT 
+							} 
+						}
+						add_permanent_claim = CEL
+					}
 				}
 				brittany_area = {
 					limit = { NOT = { owned_by = ROOT } }

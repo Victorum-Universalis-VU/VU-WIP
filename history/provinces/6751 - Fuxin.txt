@@ -8,16 +8,17 @@ religion = confucianism
 capital = "Fuxin"
 trade_goods = jade #Youyan Jade
 hre = no
-base_tax = 2
-base_production = 1
-base_manpower = 2
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
 
-1519.1.1 = { discovered_by = POR } # Tome Pires
+
+
+
+
 1621.1.1 = {
 	owner = MCH
 	controller = MCH

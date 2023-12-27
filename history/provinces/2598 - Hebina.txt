@@ -18,10 +18,10 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
-1692.1.1 = { discovered_by = ENG } #Henry Kelsey
-1707.5.12 = { discovered_by = GBR }
+
+
+
 
 1710.1.1 = {
 	owner = ARP

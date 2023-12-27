@@ -8,13 +8,20 @@ religion = mahayana
 capital = "Quang Yen"
 trade_goods = pearls
 hre = no
-base_tax = 3
-base_production = 4
-base_manpower = 3
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 1413.1.1 = {
 	owner = MNG
@@ -28,7 +35,7 @@ discovered_by = indian
 	controller = DAI
 	remove_core = MNG
 } # The Le Dynasty
-1514.1.1 = { discovered_by = POR }
+
 1520.1.1 = { unrest = 10 } # Civil War in Dai Viet
 1524.1.1 = { unrest = 0 }
 1600.1.1 = { capital = "An Quang" }

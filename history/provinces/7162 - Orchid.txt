@@ -1,6 +1,6 @@
 #6553 - Orchid
 
-culture = formosan_culture
+culture = malayo_polynesian
 religion = animism
 capital = "Orchid"
 trade_goods = unknown
@@ -14,7 +14,8 @@ native_hostileness = 5
 
 
 
-discovered_by = chinese
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG }
 
-1521.1.1 = { discovered_by = SPA }
+
+
+
+

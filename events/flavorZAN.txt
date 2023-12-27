@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ###############################
 # Events for Kilwa            #
 #                             #
@@ -39,10 +39,12 @@ country_event = {
 				num_of_ports = 1
 				religion_group = muslim
 				NOT = {
-					tag = PTE
-					tag = MLI
-					tag = MBA
-					tag = SFA
+					OR = {
+						tag = PTE
+						tag = MLI
+						tag = MBA
+						tag = SFA
+					}
 				}
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }
@@ -69,10 +71,12 @@ country_event = {
 				num_of_ports = 1
 				religion_group = muslim
 				NOT = {
-					tag = PTE
-					tag = MLI
-					tag = MBA
-					tag = SFA
+					OR = {
+						tag = PTE
+						tag = MLI
+						tag = MBA
+						tag = SFA
+					}
 				}
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }
@@ -209,10 +213,12 @@ country_event = {
 				num_of_ports = 1
 				religion = sunni
 				NOT = {
-					tag = PTE
-					tag = MLI
-					tag = MBA
-					tag = SFA
+					OR = {
+						tag = PTE
+						tag = MLI
+						tag = MBA
+						tag = SFA
+					}
 				}
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }

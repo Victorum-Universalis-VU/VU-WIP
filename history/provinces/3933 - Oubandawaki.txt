@@ -14,7 +14,9 @@ base_production = 1
 base_manpower = 1
 fort_15th = yes
 
-##discovered_by = sub_saharan
+
+
+
 
 1500.1.1 = {
 	owner = SON

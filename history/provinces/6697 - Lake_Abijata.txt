@@ -1,3 +1,4 @@
 #6697 - Lake_Abijata
 
-#discovered_by = east_african
+
+

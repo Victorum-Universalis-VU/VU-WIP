@@ -1,15 +1,16 @@
 #7172 - Bangsamoro
 
-culture = danao
+culture = illongo
 religion = animism
 capital = "Cotabato"
 trade_goods = palm_oil
 hre = no
 is_city = yes
-base_tax = 10
-base_production = 10
+base_tax = 6
+base_production = 6
 base_manpower = 6
-discovered_by = chinese
+
+
 owner = MGD
 controller = MGD
 add_core = MGD
@@ -18,5 +19,5 @@ add_core = MGD
 	religion = sunni
 } # Sultanate of Maguindanao
 
-1527.1.1 = { discovered_by = SPA }
+
  

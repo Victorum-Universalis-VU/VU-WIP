@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 mnd_dai_1 = {
 	slot = 1
 	generic = no
@@ -363,25 +363,27 @@ mnd_dai_2 = {
 						continent = europe
 					}
 					OR = {
-						technology_group = western
-		    	        technology_group = english_tech_group
-		    	        technology_group = french_tech_group
-		    	        technology_group = dutch_tech_group
-		    	        technology_group = german_tech_group
-		    	        technology_group = italian_tech_group
-					    technology_group = portuguese_tech_group
-		    	        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-		    	        technology_group = spanish_tech_group
-					    technology_group = swiss_tech_group
-					    technology_group = bohemian_tech_group
-					    technology_group = byzantine_tech_group
-					    technology_group = eastern
-					    technology_group = hungarian_tech_group
-					    technology_group = polish_tech_group
-					    technology_group = russian_tech_group
+				    	technology_group = western
+				        technology_group = dutch_tech_group
+				        technology_group = english_tech_group
+				        technology_group = french_tech_group
+				        technology_group = german_tech_group
+				        technology_group = italian_tech_group
+				        technology_group = portuguese_tech_group
+				        technology_group = roman_tech_group
+				        technology_group = scandinavian_tech_group
+				        technology_group = spanish_tech_group
+				        technology_group = swiss_tech_group
+				        technology_group = eastern
+				        technology_group = bohemian_tech_group
+				        technology_group = byzantine_tech_group
+				        technology_group = hungarian_tech_group
+				        technology_group = polish_tech_group
+				        technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
 						technology_group = ottoman
-					}
+						technology_group = persian_tech_group
+				    }
 					any_owned_province = {
 						superregion = east_indies_superregion
 					}
@@ -850,7 +852,7 @@ mnd_dai_5 = {
 		}
 	}
 	mnd_dai_lna = {
-		icon = mission_mnd_dai_control_the_army
+		icon = mission_rice_field
 		required_missions = { mnd_dai_lxa }
 		provinces_to_highlight = {
 			area = northern_thai_area

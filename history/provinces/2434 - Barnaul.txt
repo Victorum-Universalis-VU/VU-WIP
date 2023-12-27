@@ -14,7 +14,7 @@ native_hostileness = 3
 
 
 
-#discovered_by = dutch_tech_group
+
 
 1444.1.1 = {
 	owner = OIR
@@ -26,7 +26,7 @@ native_hostileness = 3
 
 
 1618.1.1 = {
-	discovered_by = RUS
+	
 	owner = RUS
 	controller = RUS
 	religion = orthodox

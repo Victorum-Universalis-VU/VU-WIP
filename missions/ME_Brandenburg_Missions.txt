@@ -404,10 +404,8 @@ BRA_missions_2 = {
 					limit = {
 						WOL = { is_subject_of = ROOT }
 						STE = { is_subject_of = ROOT }
-						NOT = {
-							STE = { ai = no }
-							WOL = { ai = no }
-						}
+						NOT = {	STE = { ai = no } }
+						NOT = {	WOL = { ai = no } }
 					}
 					country_event = { id = ME_Prussia_Events.7 } #Treaty of Prenzlau
 				}

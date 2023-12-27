@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35 #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 spice_1 = {
 	slot = 1
 	generic = no

@@ -18,7 +18,8 @@ native_hostileness = 2
 
 
 
-#discovered_by = mesoamerican
+
+
 
 1470.1.1 = {
 	owner = AZT

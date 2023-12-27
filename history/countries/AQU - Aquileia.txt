@@ -2,6 +2,7 @@ government = theocracy
 add_government_reform = leading_clergy_reform
 primary_culture = venetian
 religion = catholic
+#technology_group = western
 technology_group = italian_tech_group
 unit_type = western
 capital = 111	# Friuli

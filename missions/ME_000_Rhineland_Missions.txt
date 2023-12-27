@@ -392,10 +392,7 @@ generic_rhenish_missions_4 = {
 							culture = romagnan
 							religion = catholic
 							location = 4730
-							culture = PREV
-							religion = PREV
 							cost_multiplier = 0.4
-							location = PREV
 						}
 					}
 				}
@@ -412,10 +409,7 @@ generic_rhenish_missions_4 = {
 								culture = romagnan
 								religion = catholic
 								location = 4730
-								culture = PREV
-								religion = PREV
 								cost_multiplier = 0.4
-								location = PREV
 							}
 						}
 					}

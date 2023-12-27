@@ -1,9 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = uralic
+primary_culture = vu_komi
 religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 1963	# Cherdyn
 
 

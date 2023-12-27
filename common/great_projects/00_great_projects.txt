@@ -29,7 +29,7 @@ ludwig_canal = {
 		FROM = {
 			owns_or_vassal_of = 7572
 			is_subject = no			
-			adm_tech = 27
+			adm_tech = 37
 			treasury = 7500
 		}
 	}
@@ -209,7 +209,7 @@ don_and_volga_canal = {
 		FROM = {
 			owns_or_vassal_of = 1971
 			is_subject = no			
-			adm_tech = 27
+			adm_tech = 37
 			treasury = 10000
 		}
 	}
@@ -392,9 +392,9 @@ kiel_canal = {
 			OR = { 
 				AND ={
 					mission_completed = emp_brapru_kiel_canal
-					adm_tech = 22
+					adm_tech = 27
 				}
-				adm_tech = 27
+				adm_tech = 37
 			}
 			treasury = 10000
 		}
@@ -579,7 +579,7 @@ suez_canal = {
 			OR = {
 				has_country_flag = AYY_may_upgrade_suez
 				#has_country_flag = vu_enable_suez_canal this flag doesn't exist anyway
-				adm_tech = 27
+				adm_tech = 37
 			}
 			treasury = 20000
 		}
@@ -760,8 +760,14 @@ second_suez_canal = { #Phase Two
 			owns_or_vassal_of = 5261
 			owns_or_vassal_of = 6537
 			is_subject = no
-			adm_tech = 28
+			adm_tech = 37
 			treasury = 20000
+		}
+		2315 = {
+			has_great_project = {
+				type = suez_canal
+				tier = 3
+			}
 		}
 	}
 
@@ -941,7 +947,7 @@ panama_canal = {
 				AND = {
 					owns_or_vassal_of = 835
 					is_subject = no
-					adm_tech = 27
+					adm_tech = 37
 					treasury = 30000
 				}
 			#	AND = { #Lol no
@@ -1132,7 +1138,7 @@ kra_canal = {
 		FROM = {
 			owns_or_vassal_of = 2390
 			is_subject = no			
-			adm_tech = 22
+			adm_tech = 32
 			treasury = 30000
 		}
 	}
@@ -1312,7 +1318,7 @@ welland_canal = {
 		FROM = {
 			owns_or_vassal_of = 987
 			is_subject = no			
-			adm_tech = 27
+			adm_tech = 37
 			treasury = 9000
 		}
 	}
@@ -1492,7 +1498,7 @@ djerid_canal = {
 		FROM = {
 			owns_or_vassal_of = 5312
 			is_subject = no			
-			adm_tech = 25
+			adm_tech = 35
 			treasury = 7500
 		}
 	}

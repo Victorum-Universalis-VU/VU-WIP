@@ -229,7 +229,7 @@ tantra_rebels = {
 				NOT = { dominant_religion = tantra }
 				NOT = { tag = PAP }
 				NOT = { has_country_modifier = heathen_tolerance_modifier }
-				religion_group = { NOT = buddhist_group }
+				religion_group = buddhist_group
 			}
 			add_country_modifier = {
 				name = "heathen_tolerance_modifier"

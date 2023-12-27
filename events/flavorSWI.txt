@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################################
 # Event for Switzerland
 #
@@ -714,8 +714,10 @@ country_event = {
 		}
 		trigger = {
 			NOT = {
-				tag = GNV
-				tag = PAP
+				OR = {
+					tag = GNV
+					tag = PAP
+				}
 			}
 		}
 		if = {
@@ -852,7 +854,7 @@ country_event = {
 		define_ruler = {
 			name = "Jean"
 			dynasty = "Calvin"
-			culture = normand
+			culture = cosmopolitan_french
 			religion = reformed
 			adm = 4
 			dip = 3

@@ -29,7 +29,9 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		add_ruler_personality = righteous_personality
+		hidden_effect = {
+		    add_ruler_personality = righteous_personality
+		}
 	}
 	
 	option = {

@@ -277,16 +277,16 @@ country_event = {
 		}
 	}
 	
-	after = {
-		WES_every_target = {
-			effect = "
-				set_variable = {
-					which = Westphalia_AdvisorCost
-					value = 0
-				}
-			"
-		}
-	}
+	#after = {
+	#	WES_every_target = {
+	#		effect = "
+	#			set_variable = {
+	#				which = Westphalia_AdvisorCost
+	#				value = 0
+	#			}
+	#		"
+	#	}
+	#}
 }
 
 country_event = { 

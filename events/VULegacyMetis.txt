@@ -18,6 +18,16 @@ province_event = {
 		}
 		NOT = { development = 10 } #Will not fire in provinces with dev over 9
 		NOT = { culture = metis } #Doesnt fire if culture already Meti
+		any_neighbor_province = {
+			NOT = {
+				OR = {
+					culture = metis
+					culture_group = central_algonquian
+					culture_group = eastern_algonquian
+					culture_group = na_dene
+				}
+			} 
+		}
 		culture_group = french
 		is_capital = no #Doesnt fire in capitals
 	}
@@ -91,7 +101,11 @@ province_event = {
 		}
 		change_culture = metis
 		if = {
-			limit = { NOT = { accepted_culture = metis } }
+			limit = { 
+				NOT = { 
+					accepted_culture = metis 
+				} 
+			}
 			add_accepted_culture = metis
 		}
 	}
@@ -236,7 +250,11 @@ province_event = {
 		}
 		change_culture = anglo_metis
 		if = {
-			limit = { NOT = { accepted_culture = anglo_metis } }
+			limit = { 
+				NOT = { 
+					accepted_culture = anglo_metis 
+				} 
+			}
 			add_accepted_culture = anglo_metis
 		}
 	}
@@ -380,7 +398,11 @@ province_event = {
 		}
 		change_culture = bungi
 		if = {
-			limit = { NOT = { accepted_culture = bungi } }
+			limit = { 
+				NOT = { 
+					accepted_culture = bungi 
+				} 
+			}
 			add_accepted_culture = bungi
 		}
 	}
@@ -426,6 +448,5 @@ province_event = {
 			name = "mettling_government"
 			duration = 1825
 		}
-		add_adm_power  = -10
 	}
 }

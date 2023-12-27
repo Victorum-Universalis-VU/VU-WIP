@@ -303,7 +303,21 @@ BRZ_missions_2 = {
 		trigger = {
 			all_country = {
 				OR = {
-					NOT = { technology_group = western }
+					NOT = { 
+						OR = {
+				        	technology_group = western
+				            technology_group = dutch_tech_group
+				            technology_group = english_tech_group
+				            technology_group = french_tech_group
+				            technology_group = german_tech_group
+				            technology_group = italian_tech_group
+				            technology_group = portuguese_tech_group
+				            technology_group = roman_tech_group
+				            technology_group = scandinavian_tech_group
+				            technology_group = spanish_tech_group
+				            technology_group = swiss_tech_group
+				        }
+					}
 					NOT = { slaves = 1 }
 				}
 			}

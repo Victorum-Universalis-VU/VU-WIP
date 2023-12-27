@@ -4,7 +4,7 @@ graphical_culture = muslimgfx
 
 color = { 173 216 230 }
 
-revolutionary_colors = { 147 167 108 }
+revolutionary_colors = { 14 16 10 }
 
 historical_idea_groups = {
 	administrative_ideas

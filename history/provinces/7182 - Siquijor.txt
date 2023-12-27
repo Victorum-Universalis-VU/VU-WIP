@@ -12,4 +12,4 @@ is_city = yes
 owner = SAB
 controller = SAB
 add_core = SAB
-discovered_by = chinese
+

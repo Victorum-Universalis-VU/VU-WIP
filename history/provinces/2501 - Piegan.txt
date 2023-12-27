@@ -20,7 +20,7 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 2
 
-discovered_by = north_american
+
 
 #1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
 #	owner = QQN			#Pikani
@@ -30,8 +30,8 @@ discovered_by = north_american
 #	trade_goods = fur
 #}
 #1444.11.14 = { #VictorumUniversalis batch edit shortcut native start date end
-#	owner = XXX
-#	controller = XXX
+#	owner = ---
+#	controller = ---
 #	remove_core = QQN
 #	is_city = no
 #	trade_goods = unknown

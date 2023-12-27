@@ -3,7 +3,7 @@
 owner = NAK
 controller = NAK
 add_core = NAK
-culture = bungi
+culture = cheyenne
 religion = totemism
 capital = "Wappus"
 trade_goods = unknown
@@ -17,11 +17,6 @@ native_hostileness = 2
 
 
 
-discovered_by = north_american
-
-
-1732.1.1 = { discovered_by = FRA } # Pierre Gaultier de Varennes
-
 1732.1.1 = {
 	owner = FRA
 	controller = FRA
@@ -32,7 +27,7 @@ discovered_by = north_american
 	trade_goods = fur
  } #Fort St Charles
 1763.2.10 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

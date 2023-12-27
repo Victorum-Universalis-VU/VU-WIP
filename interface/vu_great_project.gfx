@@ -1341,10 +1341,10 @@ spriteTypes = {
 		name = "GFX_great_project_vu_brandenburg_gate"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_brandenburg_gate.dds"
 	}
-	spriteType = {
-		name = "GFX_great_project_vu_venetian_arsenal"	
-		texturefile = "gfx//interface//VU_great_projects//great_project_vu_venetian_arsenal.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_great_project_vu_venetian_arsenal"	
+	#	texturefile = "gfx//interface//VU_great_projects//great_project_vu_venetian_arsenal.dds"
+	#}
 	spriteType = {
 		name = "GFX_great_project_vu_warsaw_palace"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_warsaw_palace.dds"
@@ -1378,8 +1378,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_porcelain_tower.dds"
 	}
 	spriteType = {
-		name = "GFX_great_project_vu_pharos_alexandria"	
-		texturefile = "gfx//interface//VU_great_projects//great_project_vu_pharos_alexandria.dds"
+		name = "GFX_great_project_lighthouse_of_alexandria"	
+		texturefile = "gfx//interface//VU_great_projects//great_project_lighthouse_of_alexandria.dds"
 	}
 	spriteType = {
 		name = "GFX_great_project_vu_red_fort"	

@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = appanage_reform
 government_rank = 1
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 primary_culture = gascon
@@ -22,7 +23,6 @@ fixed_capital = 3083 # Cannot move capital away from this province & no power co
 
 1407.1.1 = {
 	heir = {
-		name = "Charles"
 		name = "Charles II"
 		dynasty = "d'Albret"
 		claim = 95

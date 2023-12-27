@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Events for Mali
 #
@@ -657,6 +658,7 @@ country_event = {
 			}
 		}
 	}
+
 }
 
 ########################################
@@ -706,6 +708,7 @@ country_event = {
 	major = yes
 
 	immediate = {
+		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = had_decline_of_mali
 			clr_country_flag = started_decline_of_mali
@@ -2464,7 +2467,7 @@ country_event = {
 					amount = 2
 				}
 			}
-			custom_tooltip = flavor_mal.36.a.vu
+			custom_tooltip = flavor_mal.36.a.bt
 			hidden_effect = {
 				every_country = {
 					limit = {
@@ -2816,7 +2819,7 @@ country_event = {
 				#Inflation for target
 				multiply_variable = {
 					which = trade_income_variable_tt
-					value = 0.2
+					value = 0.25
 				}
 			}
 			export_to_variable = {
@@ -3101,7 +3104,7 @@ country_event = {
 			#Inflation for target
 			multiply_variable = {
 				which = trade_income_variable_tt
-				value = 0.2
+				value = 0.25
 			}
 		}
 	}
@@ -3111,7 +3114,7 @@ country_event = {
 		custom_tooltip = flavor_mal.43.a.tt
 		add_inflation_scaled_to_trade = {
 			custom_tooltip = add_025_inflation
-			inflation = 0.2
+			inflation = 0.25
 		}
 		add_country_modifier = {
 			name = mal_investment_of_the_mansa

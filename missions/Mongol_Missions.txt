@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 # These missions should require X provinces in [region] rather than entire regions
 
 oir_missions_1 = {
@@ -41,7 +42,6 @@ mongol_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		NOT = { tag = GLH }
 		OR = {
 			primary_culture = mongol
 			primary_culture = chahar
@@ -49,6 +49,7 @@ mongol_missions_1 = {
 			primary_culture = oirats
 			primary_culture = altaic_new
 		}
+		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
 		OR = {
 			AND = {
@@ -220,7 +221,6 @@ mongol_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		NOT = { tag = GLH }
 		OR = {
 			primary_culture = mongol
 			primary_culture = chahar
@@ -228,15 +228,10 @@ mongol_missions_2 = {
 			primary_culture = oirats
 			primary_culture = altaic_new
 		}
+		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
-		OR = {
-			AND = {
-				NOT = { tag = KHA }
-				NOT = { tag = YUA }
-				NOT = { tag = ILK }
-			}
-			has_country_flag = use_paradox_missions
-		}
+
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -472,7 +467,6 @@ mongol_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		NOT = { tag = GLH }
 		OR = {
 			primary_culture = mongol
 			primary_culture = chahar
@@ -480,15 +474,10 @@ mongol_missions_3 = {
 			primary_culture = oirats
 			primary_culture = altaic_new
 		}
+		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
-		OR = {
-			AND = {
-				NOT = { tag = KHA }
-				NOT = { tag = YUA }
-				NOT = { tag = ILK }
-			}
-			has_country_flag = use_paradox_missions
-		}
+
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -650,7 +639,6 @@ mongol_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		NOT = { tag = GLH }
 		OR = {
 			primary_culture = mongol
 			primary_culture = chahar
@@ -658,15 +646,9 @@ mongol_missions_4 = {
 			primary_culture = oirats
 			primary_culture = altaic_new
 		}
+		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
-		OR = {
-			AND = {
-				NOT = { tag = KHA }
-				NOT = { tag = YUA }
-				NOT = { tag = ILK }
-			}
-			has_country_flag = use_paradox_missions
-		}
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	

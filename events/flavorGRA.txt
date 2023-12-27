@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 namespace = flavor_gra
 normal_or_historical_nations = yes
 
@@ -151,10 +151,8 @@ country_event = {
 		}
 		abruzzo_area = {
 			limit = {
-				NOT = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				NOT = {	owned_by = ROOT	}
+				NOT = {	is_core = ROOT }
 			}
 			add_claim = SIC
 		}

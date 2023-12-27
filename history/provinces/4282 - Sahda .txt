@@ -20,10 +20,17 @@ native_hostileness = 5
 #Special Modifiers
 
 #Known by Technology groups
-#discovered_by = muslim
-#discovered_by = indian
-#discovered_by = dutch_tech_group
-##discovered_by = east_african
+
+
+
+
+
+
+
+
+
+
+
 
 #Histories
 1215.6.15 = { 

@@ -14,14 +14,14 @@ native_hostileness = 3
 
 
 
-discovered_by = north_american
 
 
-1675.1.1 = { discovered_by = ENG } # Charles Bayly explores area around James Bay
 
-1681.1.1 = { discovered_by = FRA } # Unknown Pierre de Troyes came through 5 years later in 1686 on the way to Moose Factory if nothing else
 
-1707.5.12 = { discovered_by = GBR }
+
+
+
+
 
 1727.1.1 = {
 	owner = FRA
@@ -32,8 +32,8 @@ discovered_by = north_american
 } #Surrounded by French settlements and exercise de facto control
 
 1758.1.1 = { 
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	trade_goods = unknown
 } # Fall of New France French abandon sites in the west to protect failing east

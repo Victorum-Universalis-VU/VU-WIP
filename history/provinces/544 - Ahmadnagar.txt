@@ -9,29 +9,23 @@ trade_goods = jade
 hre = no
 base_tax = 8
 base_production = 8
-base_manpower = 2 
+base_manpower = 8
 is_city = yes
 add_core = BAH
 add_core = AHM
-discovered_by = indian
-#discovered_by = dutch_tech_group
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-discovered_by = chinese
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 1490.1.1 = {
@@ -40,7 +34,7 @@ discovered_by = chinese
 	remove_core = BAH
 	#capital = "Ahmednagar"
 } # The Breakup of the Bahmani sultanate
-1498.1.1 = { discovered_by = POR }
+
 1633.7.27 = {
 	owner = MUG
 	controller = MUG

@@ -1701,6 +1701,16 @@ guiTypes = {
 					spacing = 2
 					format = center
 				}
+
+				listboxType = {
+					name = "enabled_dlc_list_1"
+					position = { x = 300 y = 60 }
+					size = { x = 50 y = 500 }
+					orientation = "UPPER_LEFT"
+					horizontal = 0
+					scrollbartype = "standardlistbox_slider"
+				}
+
 				
 				#guiButtonType = {
 				#	name = "newgame_tab"
@@ -1749,15 +1759,12 @@ guiTypes = {
 				#}
 
 				listboxType = {
-					name ="enabled_dlc_list"
+					name = "enabled_dlc_list_0"
 					position = { x = 291 y = 40 }
-					backGround=""
-					size = { x=50 y =500 }
-					Orientation = "UPPER_LEFT"
+					size = { x = 40 y = 500 }
+					orientation = "UPPER_LEFT"
 					horizontal = 0
-					spacing = 0
 					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
 				}
 
 				### SAVE GAMES
@@ -2875,6 +2882,16 @@ guiTypes = {
 					Orientation = "LOWER_LEFT"
 				}
 				###
+				
+				guiButtonType = {
+					name = "random_new_world_button"
+					position = { x = 1000 y = -139 }
+					quadTextureSprite ="GFX_frontend_random_world"
+					buttonText = "RANDOM_WORLD_START"
+					buttonFont = "vic_18"
+					Orientation = "LOWER_RIGHT"
+					clicksound = click
+				}
 
 				guiButtonType = {
 					name = "enable_custom_nation_button"
@@ -3037,6 +3054,7 @@ guiTypes = {
 			position = { x= 20 y = 15 }
 			Orientation = "UPPER_LEFT"
 		}
+
 		instantTextBoxType = {
 			name = "save_progress"
 			position = { x = 20 y =15 }
@@ -3200,6 +3218,7 @@ guiTypes = {
 			position = { x= 20 y = 15 }
 			Orientation = "UPPER_LEFT"
 		}
+
 		instantTextBoxType = {
 			name = "save_progress"
 			position = { x = 20 y =15 }
@@ -3468,20 +3487,13 @@ guiTypes = {
 
 	### DLC entry
 	windowType = {
-		name = "enabled_dlc_entry_odd"
-		backGround=""
-		position = { x=0 y=0 }
-		size = { x=50 y= 25 }
+		name = "enabled_dlc_entry_0"
+		size = { x = 50 y = 40 }
 		moveable = 0
-		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
-		fullScreen = no
 
 		iconType = {
 			name = "dlc_icon_bg"
 			spriteType = "GFX_dlc_icon_bg"
-			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
 
@@ -3499,15 +3511,9 @@ guiTypes = {
 	}
 
 	windowType = {
-		name = "enabled_dlc_entry_even"
-		backGround=""
-		position = { x=0 y=0 }
-		size = { x=50 y= 25 }
+		name = "enabled_dlc_entry_1"
+		size = { x = 50 y = 40 }
 		moveable = 0
-		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
-		fullScreen = no
 
 		iconType = {
 			name = "dlc_icon_bg"

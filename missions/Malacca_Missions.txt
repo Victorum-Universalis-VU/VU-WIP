@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EEVU
+#VU - Updated by San Felipe for 1.36.*
 mnd_mlc_1 = {
 	slot = 1
 	generic = no
@@ -405,9 +405,12 @@ mnd_mlc_2 = {
 								who = ROOT
 								value = 100
 							}
-							trust = { 
-								who = ROOT 
-								value = 65 
+							if = {
+								limit = { has_dlc = "Leviathan" }
+								trust = { 
+									who = ROOT 
+									value = 65 
+								}
 							}
 						}
 					}

@@ -43,9 +43,6 @@ HSN_AYY_missions_1 = {
 				name = AYY_support_of_a_major_power
 				duration = 9125
 				age = age_of_discovery
-				else = "
-					add_dip_power = 200 
-				"
 			}
 			
 			custom_tooltip = AYY_if_we_have_diplomat_or_statesman

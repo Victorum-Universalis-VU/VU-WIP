@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################
 # Major Flavor Events  #
 ########################
@@ -527,8 +527,7 @@ country_event = {
 		any_owned_province = {
 			region = carpathia_region
 			NOT = { area = wallachia_area }
-			NOT = { area = moldavia_area }
-	
+			NOT = { area = moldavia_area }	
 			religion = protestant
 		}
 	}
@@ -547,8 +546,7 @@ country_event = {
 				limit = {
 					region = carpathia_region
 					NOT = { area = wallachia_area }
-					NOT = { area = moldavia_area }
-	  
+					NOT = { area = moldavia_area }	  
 					religion = protestant
 				}
 				set_province_flag = hungarian_revolt
@@ -776,8 +774,7 @@ country_event = {
 		create_subject = {
 			who = HUN
 			subject_type = vassal
-		}
-					 
+		}					 
 	}
 }
 
@@ -800,8 +797,7 @@ country_event = {
 		any_owned_province = {
 			region = carpathia_region
 			NOT = { area = wallachia_area }
-			NOT = { area = moldavia_area }
-	
+			NOT = { area = moldavia_area }	
 		}
 		NOT = { accepted_culture = hungarian }
 		NOT = {
@@ -823,8 +819,7 @@ country_event = {
 				limit = {
 					region = carpathia_region
 					NOT = { area = wallachia_area }
-					NOT = { area = moldavia_area }
-	  
+					NOT = { area = moldavia_area }	  
 				}
 				set_province_flag = hungarian_revolt
 			}
@@ -837,8 +832,7 @@ country_event = {
 		carpathia_region = {
 			limit = {
 				NOT = { area = wallachia_area }
-				NOT = { area = moldavia_area }
-								   
+				NOT = { area = moldavia_area }								   
 			}
 			add_core = HUN
 		}
@@ -869,8 +863,7 @@ country_event = {
 				any_owned_province = {
 					region = carpathia_region
 					NOT = { area = wallachia_area }
-					NOT = { area = moldavia_area }
-	  
+					NOT = { area = moldavia_area }	  
 					NOT = { has_province_flag = hungarian_revolt }
 				}
 			}
@@ -878,8 +871,7 @@ country_event = {
 				limit = {
 					region = carpathia_region
 					NOT = { area = wallachia_area }
-					NOT = { area = moldavia_area }
-	  
+					NOT = { area = moldavia_area }	  
 					NOT = { has_province_flag = hungarian_revolt }
 				}
 				spawn_rebels = {
@@ -1535,6 +1527,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 100
 	}
+	
 	
 	option = {		# Claim all French land in Italy!
 		name = "flavor_spa.EVTOPTA1007"

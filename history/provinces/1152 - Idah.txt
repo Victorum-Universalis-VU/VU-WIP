@@ -16,7 +16,8 @@ native_size = 50
 native_ferocity = 4
 native_hostileness = 9 
 
-#discovered_by = sub_saharan
+
+
 
 add_permanent_province_modifier = {
     name = vu_malaria_present
@@ -36,7 +37,7 @@ add_permanent_province_modifier = {
 	add_core = NUP
 } #Civil war in Benin ends Ode domination of Igala
 1700.1.1 = { trade_goods = slaves } #Source of Slaves for Trade In Calabar-Bonny region
-1804.1.1 = { discovered_by = SOK }
+
 1807.1.1 = {
 	owner = SOK
 	controller = SOK

@@ -38,17 +38,19 @@ country_event = {
 						NOT = { continent = oceania }
 						NOT = { continent = africa }
 					}
-					technology_group = western
-		            technology_group = english_tech_group
-		            technology_group = french_tech_group
-		            technology_group = dutch_tech_group
-		            technology_group = german_tech_group
-		            technology_group = italian_tech_group
-			        technology_group = portuguese_tech_group
-		            technology_group = roman_tech_group
-					technology_group = scandinavian_tech_group
-		            technology_group = spanish_tech_group
-			        technology_group = swiss_tech_group
+					OR = {
+		            	technology_group = western
+		            	technology_group = dutch_tech_group
+		            	technology_group = english_tech_group
+		            	technology_group = french_tech_group
+		            	technology_group = german_tech_group
+		            	technology_group = italian_tech_group
+		            	technology_group = portuguese_tech_group
+		            	technology_group = roman_tech_group
+		            	technology_group = scandinavian_tech_group
+		            	technology_group = spanish_tech_group
+		            	technology_group = swiss_tech_group
+		            }
 				}
 			}
 		}
@@ -58,12 +60,12 @@ country_event = {
 				casus_belli = cb_independence_war
 			}
 		}
-		NOT = {
-			is_in_war = {
-				defender_leader = ROOT
-				casus_belli = cb_colonial_independance_war
-			}
-		}
+		#NOT = {
+		#	is_in_war = {
+		#		defender_leader = ROOT
+		#		casus_belli = cb_colonial_independance_war
+		#	}
+		#}
 	}
 
 	mean_time_to_happen = {
@@ -103,17 +105,19 @@ country_event = {
 							NOT = { continent = oceania }
 							NOT = { continent = africa }
 						}
-						technology_group = western
-		            	technology_group = english_tech_group
-		            	technology_group = french_tech_group
-		            	technology_group = dutch_tech_group
-		            	technology_group = german_tech_group
-		            	technology_group = italian_tech_group
-			        	technology_group = portuguese_tech_group
-		            	technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-		            	technology_group = spanish_tech_group
-			        	technology_group = swiss_tech_group
+						OR = {
+		                	technology_group = western
+		                	technology_group = dutch_tech_group
+		                	technology_group = english_tech_group
+		                	technology_group = french_tech_group
+		                	technology_group = german_tech_group
+		                	technology_group = italian_tech_group
+		                	technology_group = portuguese_tech_group
+		                	technology_group = roman_tech_group
+		                	technology_group = scandinavian_tech_group
+		                	technology_group = spanish_tech_group
+		                	technology_group = swiss_tech_group
+		                }
 					}
 				}
 				grant_independence = yes

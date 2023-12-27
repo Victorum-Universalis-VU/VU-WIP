@@ -16,11 +16,11 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 1
 
-1444.1.1 = { discovered_by = CAB } 1444.1.1 = { discovered_by = ARW } 
+ 
 
 
 
-1494.1.1 = { discovered_by = CAS } # Christopher Columbus's second voyage
+
 #Spanish took slaves and left. Appears the Spanish, English, and French exchanged 'posession' of the island for the next few hundred years, but no one ever actually settled it until the Bermudans
 1681.1.1 = {
 	owner = ENG
@@ -38,7 +38,7 @@ native_hostileness = 1
 	add_core = FRA
 }	#France captures the islands
 1707.5.12 = { 
-	discovered_by = GBR 
+	 
 	add_core = GBR
 	remove_core = ENG
 }

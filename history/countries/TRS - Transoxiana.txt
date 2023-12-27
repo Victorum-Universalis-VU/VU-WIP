@@ -1,20 +1,18 @@
-#######################################
-# Timurid Empire
-#######################################
-technology_group = muslim
-primary_culture = uzbehk
-religion = sunni
 government = monarchy
 add_government_reform = timurid_governor
+#technology_group = muslim
+technology_group = persian_tech_group
+primary_culture = uzbehk
+religion = sunni
 capital = 454 # Samarkand
 religious_school = hanafi_school
 
 set_country_flag = ME_can_use_timurid_legitimacy
 save_global_event_target_as = ME_succession_crisis_TRS
-set_variable = {
-	which = timurid_legitimacy_value
-	value = 50
-}
+#set_variable = {
+#	which = timurid_legitimacy_value
+#	value = 50
+#}
 
 1409.5.13 = {
 	monarch = {

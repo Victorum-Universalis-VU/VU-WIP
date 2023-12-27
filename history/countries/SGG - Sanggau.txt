@@ -12,8 +12,8 @@ capital = 8546 #Sanggau
 		adm = 3
 		dip = 3
 		mil = 2
-                culture = javanese
-                female = yes
+        culture = javanese
+        female = yes
 	}
 }
 
@@ -32,7 +32,7 @@ capital = 8546 #Sanggau
 		name = "Aria Batang"
 		dynasty = "Sanggau"
 		adm = 2
-                dip = 2
+		dip = 2
 		mil = 2
 	}
 }
@@ -54,7 +54,7 @@ capital = 8546 #Sanggau
 		adm = 2
 		dip = 3
 		mil = 1
-                female = yes
+        female = yes
 	}
 }
 
@@ -65,7 +65,7 @@ capital = 8546 #Sanggau
 		adm = 2
 		dip = 3
 		mil = 2
-                female = yes
+        female = yes
 	}
 }
 

@@ -3,7 +3,8 @@ add_government_reform = feudalism_reform
 primary_culture = austrian
 add_accepted_culture = croatian
 religion = catholic
-technology_group = german_tech_group
+#technology_group = western
+technology_group = bulgarian_tech_group
 unit_type = western
 capital = 4752
 

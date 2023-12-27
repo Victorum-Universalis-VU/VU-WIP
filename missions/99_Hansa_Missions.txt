@@ -1,4 +1,4 @@
-#MEVU 1.35 updated by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 lubeck_missions_1 = {
 	slot = 1 
 	generic = no 
@@ -289,29 +289,32 @@ lubeck_missions_1 = {
 			}
 			if = {
 				limit = { 
-					OR = {
-						is_in_trade_league = yes
-						num_of_subjects = 1 
-					}
+					is_in_trade_league = yes
 				}
-				custom_trigger_tooltip = { 
-					tooltip = hsa_either_trade_or_subject_all_100_tt
+				calc_true_if = {
 					all_country = {
-						OR = {
-							NOT = { is_in_trade_league_with = ROOT }
-							has_opinion = {
-								who = ROOT
-								value = 100
-							}
+						has_opinion = {
+							who = ROOT
+							value = 100
 						}
 						OR = {
-							NOT = { is_subject_of = ROOT }
-							has_opinion = {
-								who = ROOT
-								value = 100
-							}
+							is_in_trade_league_with = ROOT
+							is_subject_of = ROOT
 						}
 					}
+					amount = 3
+				}
+			}
+			else = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					amount = 2
 				}
 			}
 		}
@@ -435,7 +438,7 @@ lubeck_missions_1 = {
 	}
 }
 
-lubeck_missions_2 = { #Made by Big Boss 
+lubeck_missions_2 = {
 	slot = 2
 	generic = no 
 	ai = yes 
@@ -888,11 +891,14 @@ lubeck_missions_2 = { #Made by Big Boss
 	}
 }
 
-lubeck_missions_3 = { #Made by Big Boss 
+lubeck_missions_3 = {
 	slot = 3 
 	generic = no 
 	ai = yes 
-	potential = { tag = HSA has_country_flag = use_paradox_missions }
+	potential = { 
+		tag = HSA 
+		has_country_flag = use_paradox_missions 
+	}
 	has_country_shield = yes	
 	
 	hsa_young_men_lubeck = {
@@ -1345,11 +1351,14 @@ lubeck_missions_3 = { #Made by Big Boss
 }
 
 
-lubeck_missions_4 = { #Made by Big Boss
+lubeck_missions_4 = {
 	slot = 4 
 	generic = no 
 	ai = yes 
-	potential = { tag = HSA has_country_flag = use_paradox_missions }
+	potential = { 
+		tag = HSA 
+		has_country_flag = use_paradox_missions 
+	}
 	has_country_shield = yes
 	
 	hsa_secure_salt_road = {
@@ -1838,11 +1847,14 @@ lubeck_missions_4 = { #Made by Big Boss
 	}
 }
 	
-lubeck_missions_5 = { #Made by Big Boss
+lubeck_missions_5 = {
 	slot = 5 
 	generic = no 
 	ai = yes 
-	potential = { tag = HSA has_country_flag = use_paradox_missions }
+	potential = {
+		tag = HSA 
+		has_country_flag = use_paradox_missions 
+	}
 	has_country_shield = yes	
 	
 	hsa_imperial_allegience = {

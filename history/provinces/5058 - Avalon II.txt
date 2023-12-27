@@ -13,7 +13,7 @@ native_ferocity = 1
 native_hostileness = 3
 
 
-discovered_by = north_american
+
 
 
 add_permanent_province_modifier = {
@@ -22,16 +22,13 @@ add_permanent_province_modifier = {
 }
 
 
-1497.6.24 = { discovered_by = ENG } # John Cabot
 
-1502.1.1 = { discovered_by = POR } # Gaspar, Miguel Corte-Real	
 
-1507.1.1 = { 
-	discovered_by = SPA 
-	discovered_by = NAV 
-} # Spanish and Basque fishing in the area by this time
+	
 
-1536.5.1 = { discovered_by = FRA } # Jaques Cartier's second voyage
+
+
+
 
 1617.1.1 = {
 	owner = ENG
@@ -44,8 +41,8 @@ add_permanent_province_modifier = {
 } # William Vaughan leads a small settlement
 
 1618.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no
 	culture = beothuk
 	religion = totemism
@@ -102,7 +99,7 @@ add_permanent_province_modifier = {
 } # Rear Admiral John Leake takes Trepassey once and for all, but destroys much of it in the process
 
 1707.5.12 = { 
-	discovered_by = GBR 
+	 
 	owner = GBR
 	controller = GBR
 	add_core = GBR

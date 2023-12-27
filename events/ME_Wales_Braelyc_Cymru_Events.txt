@@ -151,15 +151,15 @@ country_event = { #The welsh identity
 				limit = {
 					culture = welsh
 				}
-				change_culture = welsh_celtic
+				change_culture = celtic_welsh_culture
 			}
-			change_primary_culture = welsh_celtic
-			set_ruler_culture = welsh_celtic
+			change_primary_culture = celtic_welsh_culture
+			set_ruler_culture = celtic_welsh_culture
 			if = {
 				limit = {
 					has_heir = yes
 				}
-				set_heir_culture = welsh_celtic
+				set_heir_culture = celtic_welsh_culture
 			}
 			change_tag = CYR
 		}
@@ -263,7 +263,7 @@ country_event = { #Brothers of Brittany
 				limit = {
 					culture = breton
 				}
-				change_culture = breton_celtic
+				change_culture = celtic_breton_culture
 			}
 		}
 		create_subject = {
@@ -283,7 +283,7 @@ country_event = { #Brothers of Brittany
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 				add_government_reform = parliamentary_reform
-				change_primary_culture = breton_celtic
+				change_primary_culture = celtic_breton_culture
 			}
 		}
 		custom_tooltip = wls_bri_ideas_tooltip
@@ -546,13 +546,13 @@ country_event = { #kingdom of Scotland
 				limit = {
 					culture = scottish
 				}
-				change_culture = scottish_celtic
+				change_culture = celtic_highland_scottish_culture
 			}
 			every_province = {
 				limit = {
 					culture = highland_scottish
 				}
-				change_culture = scottish_celtic
+				change_culture = celtic_highland_scottish_culture
 			}
 		}
 		SCO = {
@@ -568,7 +568,7 @@ country_event = { #kingdom of Scotland
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 				add_government_reform = parliamentary_reform
-				change_primary_culture = scottish_celtic
+				change_primary_culture = celtic_highland_scottish_culture
 			}
 		}
 		custom_tooltip = wls_sco_ideas_tooltip

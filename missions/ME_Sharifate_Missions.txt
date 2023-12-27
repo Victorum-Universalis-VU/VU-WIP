@@ -54,15 +54,6 @@ HED_missions_1 = {
 				estate = estate_church
 				loyalty = 10
 			}
-			ME_overlord_effect = {
-				effect = "
-					add_estate_loyalty = {
-						estate = estate_church
-						loyalty = 10
-					}
-					add_prestige_or_monarch_power = { amount = 20 }
-				"
-			}
 		}
 	}
 	
@@ -133,18 +124,6 @@ HED_missions_1 = {
 				loyalty = 15
 				duration = -1
 			}
-
-			ME_overlord_effect = {
-				effect = "
-					add_stability_or_adm_power = yes
-					add_estate_loyalty_modifier = {
-						estate = estate_church
-						desc = HED_supporter_of_the_holy_cities
-						loyalty = 15
-						duration = -1
-					}
-				"
-			}
 		}
 	}
 }
@@ -189,21 +168,7 @@ HED_missions_2 = {
 		effect = {
 			384 = { add_or_upgrade_tax_building = yes }
 			385 = { add_or_upgrade_tax_building = yes }
-			
-			custom_tooltip = " "
-			
 			add_stability_or_adm_power = yes
-			
-			custom_tooltip = " "
-			
-			ME_overlord_effect = {
-				effect = "
-					add_country_modifier = {
-						name = HED_custodians
-						duration = 9125
-					}
-				"
-			}
 		}
 	}
 	
@@ -215,21 +180,101 @@ HED_missions_2 = {
 			ARB_is_in_pilgrim_route = yes
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
-				ARB_pilgrim_route_trigger = {
-					trigger = "
-						owner = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-								overlord_of = ROOT
-							}
-						}
-						num_of_times_improved = 3
-					"
+			383 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
 				}
+				num_of_times_improved = 3
 			}
+	        384 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			385 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2328 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2329 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2331 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4278 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4268 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
+			#	ARB_pilgrim_route_trigger = {
+			#		trigger = {
+			#			owner = {
+			#				OR = {
+			#					tag = ROOT
+			#					is_subject_of = ROOT
+			#					overlord_of = ROOT
+			#				}
+			#			}
+			#			num_of_times_improved = 3
+			#		}
+			#	}
+			#}
 		}
 		effect = {
 			384 = {
@@ -315,20 +360,100 @@ HED_missions_3 = {
 			ARB_is_in_pilgrim_route = yes
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord
-				ARB_pilgrim_route_trigger = {
-					trigger = "
-						owner = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-								overlord_of = ROOT
-							}
-						}
-					"
+			383 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
 				}
+				num_of_times_improved = 3
 			}
+	        384 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			385 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2328 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2329 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2331 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4278 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4268 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord
+			#	ARB_pilgrim_route_trigger = {
+			#		trigger = "
+			#			owner = {
+			#				OR = {
+			#					tag = ROOT
+			#					is_subject_of = ROOT
+			#					overlord_of = ROOT
+			#				}
+			#			}
+			#		"
+			#	}
+			#}
 		}
 		effect = {
 			384 = {
@@ -375,21 +500,201 @@ HED_missions_3 = {
 			ARB_is_in_extended_pilgrim_route = yes
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
-				ARB_pilgrim_route_extended_trigger = {
-					trigger = "
-						owner = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-								overlord_of = ROOT
-							}
-						}
-						num_of_times_improved = 3
-					"
+			358 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
 				}
+				num_of_times_improved = 3
 			}
+			361 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			362 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			364 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+	        379 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			382 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			383 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+	        384 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			385 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			1854 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			1855 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2316 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2328 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2329 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			2331 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4278 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4268 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			4316 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+						overlord_of = ROOT
+					}
+				}
+				num_of_times_improved = 3
+			}
+			#custom_trigger_tooltip = {
+			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
+			#	ARB_pilgrim_route_extended_trigger = {
+			#		trigger = "
+			#			owner = {
+			#				OR = {
+			#					tag = ROOT
+			#					is_subject_of = ROOT
+			#					overlord_of = ROOT
+			#				}
+			#			}
+			#			num_of_times_improved = 3
+			#		"
+			#	}
+			#}
 		}
 		effect = {
 			custom_tooltip = ARB_the_highlighted_area
@@ -399,16 +704,17 @@ HED_missions_3 = {
 					duration = -1
 				}
 			}
-			hidden_effect = {
-				ARB_pilgrim_route_extended_effect = {
-					effect = "
-						add_permanent_province_modifier = {
-							name = HED_road
-							duration = -1
-						}
-					"
-				}
-			}
+			#hidden_effect = {
+			#	ARB_pilgrim_route_extended_effect = {
+			#		effect = "
+			#			add_permanent_province_modifier = {
+			#				name = HED_road
+			#				duration = -1
+			#			}
+			#		"
+			#	}
+			#}
+			add_stability_or_adm_power = yes
 		}
 	}
 }

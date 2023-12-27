@@ -13,5 +13,5 @@ base_manpower = 1
 capital = "Yolngu"
 is_city = yes
 
-discovered_by = aboriginal_tech
-1619.1.10 = { discovered_by = NED }
+
+

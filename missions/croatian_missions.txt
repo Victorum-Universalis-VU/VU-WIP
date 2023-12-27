@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 cro_1 = {
 	slot = 1
 	generic = no
@@ -98,10 +98,8 @@ cro_1 = {
 			4752 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -251,10 +249,8 @@ cro_2 = {
 			1828 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -262,10 +258,8 @@ cro_2 = {
 			7727 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -318,10 +312,10 @@ cro_2 = {
 		effect = {
 		    if = {
 				limit = { has_updated_culture = { culture = slavic } }
-				add_accepted_culture_or_dip_power = { culture = bosnian_new }
+				add_accepted_culture_or_dip_power = { culture = bosnian_new dip_reward = yes }
 			}
 			else = {
-				add_accepted_culture_or_dip_power = { culture = bosnian }
+				add_accepted_culture_or_dip_power = { culture = bosnian dip_reward = yes }
 			}
 		}
 		ai_weight = {

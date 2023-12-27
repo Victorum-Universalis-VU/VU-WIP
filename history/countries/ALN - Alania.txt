@@ -6,7 +6,8 @@ add_accepted_culture = circassian
 historical_rival = GEN
 historical_friend = GEO
 religion = orthodox
-technology_group = eastern
+#technology_group = eastern
+technology_group = russian_tech_group
 capital = 2201 #Alania
 
 

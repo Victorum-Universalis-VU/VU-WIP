@@ -18,8 +18,10 @@ native_hostileness = 2
 center_of_trade = 3
 extra_cost = 8
 
-#discovered_by = south_american
-#discovered_by = andean
+
+
+
+
 
 1450.1.1 = {
 	owner = MCA
@@ -28,7 +30,7 @@ extra_cost = 8
 } #Muiscan Confederacy
 
 1538.9.6 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

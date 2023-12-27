@@ -1,6 +1,6 @@
 #Benguet
 
-culture = ilocano
+culture = kankanaey
 religion = animism
 capital = "Benguet"
 trade_goods = salt
@@ -13,7 +13,8 @@ owner = PGS
 controller = PGS
 add_core = PGS
 
-discovered_by = chinese
+
+
 
 1572.1.1 = { } #Conquistador Juan de Salcedo leads a small expedition into the southern part of Benguet, but is forced to retreat.
 1620.1.1 = { } #In 1620, Fajardo sent the first expedition under Captain Garcia Aldana y Cabrera, Governor of Pangasinan which reaches the settlement of Bua, only to find it abandoned.

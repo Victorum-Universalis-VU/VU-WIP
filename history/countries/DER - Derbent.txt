@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = dagestani
+religion = sunni
+technology_group = persian_tech_group 
+capital = 3261
+religious_school = shafii_school

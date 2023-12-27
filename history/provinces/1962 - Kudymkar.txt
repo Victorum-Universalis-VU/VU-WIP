@@ -3,7 +3,7 @@
 owner = PRM
 controller = PRM
 capital = "Kudymkar"
-culture = uralic
+culture = vu_komi
 religion = tengri_pagan_reformed #Sami Shamanism
 trade_goods = fur
 hre = no
@@ -15,24 +15,12 @@ add_core = PRM
 
 
 
-discovered_by = western
-#discovered_by = dutch_tech_group
-#discovered_by = english_tech_group
-#discovered_by = french_tech_group
-#discovered_by = german_tech_group
-#discovered_by = italian_tech_group
-#discovered_by = portuguese_tech_group
-#discovered_by = roman_tech_group
-#discovered_by = scandinavian_tech_group
-#discovered_by = spanish_tech_group
-#discovered_by = swiss_tech_group
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
 
 
 1455.1.1 = { religion = orthodox }

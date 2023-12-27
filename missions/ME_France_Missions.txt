@@ -1790,13 +1790,13 @@ france_missions_3 = {
 					}
 				}
 				AND = {
-					superregion = andes_superregion
+					superregion = south_america_superregion
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					ROOT = {
 						NOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 								value = 10
-								superregion = andes_superregion
+								superregion = south_america_superregion
 							}
 						}
 					}
@@ -1879,10 +1879,6 @@ france_missions_3 = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
 					superregion = south_america_superregion
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					superregion = andes_superregion
 				}
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
@@ -2457,7 +2453,21 @@ france_missions_4 = {
 			}
 			all_country = {
 				OR = {
-					NOT = { technology_group = western }
+					NOT = { 
+						OR = {
+				        	technology_group = western
+				            technology_group = dutch_tech_group
+				            technology_group = english_tech_group
+				            technology_group = french_tech_group
+				            technology_group = german_tech_group
+				            technology_group = italian_tech_group
+				            technology_group = portuguese_tech_group
+				            technology_group = roman_tech_group
+				            technology_group = scandinavian_tech_group
+				            technology_group = spanish_tech_group
+				            technology_group = swiss_tech_group
+				        }
+					}
 					NOT = {
 						num_of_owned_provinces_with = {
 							value = 5
@@ -2657,12 +2667,11 @@ france_missions_4 = {
 					duration = -1
 				}
 			}
-
-			ME_distribute_development = {
-				type = production
-				amount = 10
-				limit = " region = france_region "
-			}
+			#ME_distribute_development = {
+			#	type = production
+			#	amount = 10
+			#	limit = " region = france_region "
+			#}
 		}
 	}
 

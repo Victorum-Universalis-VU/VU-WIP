@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 tr_russian_minors_1 = {
 	slot = 1
 	generic = no
@@ -10,24 +11,24 @@ tr_russian_minors_1 = {
 			AND = {
 				has_country_flag = use_paradox_missions
 				OR = {
-					tag = VOL
-					tag = KIE
-					tag = CHR
-					tag = PSK
-					tag = RYA
-					tag = TVE
-					tag = YAR
-					tag = PLT
-					#tag = PRM #Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
-					tag = RSO
-					tag = SMO
-					tag = NZH
-					tag = ZAZ
-					tag = OKA
+			        tag = VOL
+			        tag = KIE
+			        tag = CHR
+			        tag = OKA
+			        tag = PSK
+			        tag = RYA
+			        tag = TVE
+			        tag = UKR
+			        tag = YAR
+			        tag = PLT
+			        tag = PRM
+			        tag = BLO
+			        tag = RSO
+			        tag = SMO
+			        tag = NZH
+			        tag = ZAZ
 				}
 			}
-			tag = UKR			
-			tag = BLO
 			AND = {
 				is_playing_custom_nation = yes 
 				capital_scope = {
@@ -36,16 +37,16 @@ tr_russian_minors_1 = {
 				NOT = { technology_group = nomad_group }
 			}
 			#VU Added
-			tag = ZBT
-			tag = GLC
-			tag = MLL
-			tag = SPK
-			tag = MOZ
-			tag = PRS
-			tag = BLV
-			tag = MSL
-			tag = VTN
-			tag = VYA
+			#tag = ZBT
+			#tag = GLC
+			#tag = MLL
+			#tag = SPK
+			#tag = MOZ
+			#tag = PRS
+			#tag = BLV
+			#tag = MSL
+			#tag = VTN
+			#tag = VYA
 		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
@@ -65,7 +66,7 @@ tr_russian_minors_1 = {
 		trigger = {
 			is_subject = no
 			capital_scope = {
-				fort_level = 2
+				fort_level = 3
 				area_for_scope_province = {
 					type = all
 					owned_by = ROOT
@@ -277,12 +278,14 @@ tr_russian_minors_2 = {
 					tag = VOL
 					tag = KIE
 					tag = CHR
-					tag = PSK
-					tag = RYA
-					tag = TVE
-					tag = YAR
-					tag = PLT
-					#tag = PRM			#Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
+			        tag = OKA
+			        tag = PSK
+			        tag = RYA
+			        tag = TVE
+			        tag = UKR
+			        tag = YAR
+			        tag = PLT
+			        tag = PRM
 					tag = BLO
 					tag = RSO
 					tag = SMO
@@ -291,8 +294,6 @@ tr_russian_minors_2 = {
 					tag = OKA
 				}
 			}
-			#tag = PRM			#Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
-			tag = BLO
 			AND = {
 				is_playing_custom_nation = yes 
 				capital_scope = {
@@ -454,9 +455,10 @@ tr_russian_minors_3 = {
 				tag = PSK
 				tag = RYA
 				tag = TVE
+				tag = UKR
 				tag = YAR
 				tag = PLT
-				#tag = PRM			#Disabling Perm. Eventually I ought to do some uralic missions, but in the meantime this makes no sense for Perm, imho
+				tag = PRM
 				tag = BLO
 				tag = RSO
 				tag = SMO
@@ -472,18 +474,18 @@ tr_russian_minors_3 = {
 				}
 				NOT = { technology_group = nomad_group }
 			}
-			tag = UKR
-			#VU Added
-			tag = ZBT
-			tag = GLC
-			tag = MLL
-			tag = SPK
-			tag = MOZ
-			tag = PRS
-			tag = BLV
-			tag = MSL
-			tag = VTN
-			tag = VYA
+			#tag = UKR
+			##VU Added
+			#tag = ZBT
+			#tag = GLC
+			#tag = MLL
+			#tag = SPK
+			#tag = MOZ
+			#tag = PRS
+			#tag = BLV
+			#tag = MSL
+			#tag = VTN
+			#tag = VYA
 		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
@@ -625,10 +627,8 @@ tr_russian_minors_3 = {
 			280 = {
 				if = {
 					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
+						NOT = {	owned_by = ROOT	}
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}

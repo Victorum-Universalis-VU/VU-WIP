@@ -4,31 +4,25 @@ religion = hinduism
 capital = "Paser"
 trade_goods = cloves
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 4
 native_size = 40
 native_ferocity = 8
 native_hostileness = 5
 
-discovered_by = chinese
-discovered_by = indian
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
+
+
+
+
+
+
+
+
+
+
+
+
 
 1444.1.1 = {
 	owner = BNJ
@@ -38,4 +32,4 @@ discovered_by = GRA
 	trade_goods = cloves
 }
 
-1521.1.1 = { discovered_by = POR }
+

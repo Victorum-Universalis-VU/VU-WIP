@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe
+#VU - Updated by San Felipe for 1.36.*
 dreamtime_1 = {
 	slot = 1
 	generic = yes

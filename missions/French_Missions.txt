@@ -24,10 +24,8 @@ french_missions_north = {
 				area = lower_normandy_area
 				area = normandy_area
 			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-				province_id = 3110
-			}
+			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {	province_id = 3110 }
 		}
 		trigger = {
             lower_normandy_area = {
@@ -110,10 +108,8 @@ french_missions_north = {
 			89 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -121,10 +117,8 @@ french_missions_north = {
 			88 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -132,10 +126,8 @@ french_missions_north = {
 			1743 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -203,10 +195,8 @@ french_missions_north = {
 			87 = {
 				if = {
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = {	is_permanent_claim = ROOT }
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -595,10 +585,8 @@ french_missions_colonial = {
 				120 = {
 					if = {
 						limit = {
-							NOT = {
-								is_permanent_claim = ROOT
-								is_core = ROOT
-							}
+							NOT = {	is_permanent_claim = ROOT }
+							NOT = {	is_core = ROOT }
 						}
 						add_permanent_claim = ROOT
 					}

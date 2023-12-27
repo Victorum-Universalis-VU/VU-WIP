@@ -1,7 +1,8 @@
 # - Conceicao
 
 culture = ge
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Conceicao"
 trade_goods = unknown
@@ -16,7 +17,7 @@ native_hostileness = 7
 
 
 
-1580.1.1 = { discovered_by = POR }
+
 
 1710.1.1 = {
 	owner = POR

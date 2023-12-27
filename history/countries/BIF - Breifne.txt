@@ -1,13 +1,11 @@
-capital = 8160 #Breifne, Dromahair
-
-technology_group = english_tech_group
-unit_type = western
-
 government = monarchy
 add_government_reform = irish_clann_reform
-
+#technology_group = western
+technology_group = english_tech_group
+unit_type = western
 religion = catholic
 primary_culture = irish
+capital = 8160 #Breifne, Dromahair
 
 1435.1.1 = {
 	monarch = {

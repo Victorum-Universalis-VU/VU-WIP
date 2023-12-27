@@ -14,11 +14,12 @@ add_core = CHG
 
 
 
-1444.1.1 = { discovered_by = CHG } 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+ 
 
-1622.1.1 = { discovered_by = RUS }
+
+
+
+
 
 1623.1.1 = {
 	owner = OIR

@@ -12,7 +12,7 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
+
 
 
 1444.11.12 = { #VictorumUniversalis batch edit shortcut native start date begin
@@ -23,13 +23,13 @@ discovered_by = north_american
 	trade_goods = fur
 }
 1444.11.14 = { #VictorumUniversalis batch edit shortcut native start date end
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = YYS
 	is_city = no
 	trade_goods = unknown
 }
-1542.1.1 = { discovered_by = SPA } # Juan Rodriguez Cabrillo
+
 1771.7.14 = {
 	owner = SPA
 	controller = SPA

@@ -174,9 +174,9 @@ country_event = { #A Modest Request (Avignon)
 				}
 				cede_province = FROM
 			}
-			else = {
-				add_prestige = -50 #Stiopa's idea
-			}
+			#else = {
+			#	add_prestige = -50 #Stiopa's idea
+			#}
 		}
 	}
 	option = {

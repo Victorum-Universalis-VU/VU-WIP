@@ -402,7 +402,7 @@ country_event = { # Response to Mushasha claims
 			add_country_modifier = {
 				name = msy_religious_defense
 				duration = 3650
-				hidden = no
+				hidden = yes
 			}
 		}
 	}

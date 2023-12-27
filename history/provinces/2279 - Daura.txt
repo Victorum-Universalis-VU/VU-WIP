@@ -18,8 +18,6 @@ base_manpower = 2
 
 
 
-#discovered_by = sub_saharan
-
 
 1806.1.1 = {	
 	owner = SOK

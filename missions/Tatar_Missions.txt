@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 tatar_missions_1 = {
 	slot = 1
 	generic = no
@@ -9,17 +10,19 @@ tatar_missions_1 = {
 				OR = {
 					tag = GOL
 					tag = CRI
-					tag = KAZ
-					tag = AST
-					tag = QAS
-					tag = GLH
 				}
 			}			
 			tag = NOG
+			tag = KAZ
 			tag = SHY
+			tag = GLH
 			tag = SIB
-			tag = KZH
 			tag = BSH
+			tag = AST
+			tag = QAS
+			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -330,19 +333,22 @@ tatar_missions_slot_2 = {
 			AND = {
 				has_country_flag = use_paradox_missions
 				OR = {
-					tag = GOL
-					tag = CRI
-					tag = KAZ
-					tag = BSH
-					tag = AST
-					tag = QAS
+			        tag = GOL
+			        tag = CRI
+			        tag = NOG
+			        tag = KAZ
+			        tag = SHY
+			        tag = GLH
+			        tag = SIB
+			        tag = BSH
+			        tag = AST
+			        tag = QAS
 					tag = GLH
 				}
 			}			
-			tag = NOG
-			tag = SHY
-			tag = SIB
 			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -628,19 +634,22 @@ tatar_missions_2 = {
 			AND = {
 				has_country_flag = use_paradox_missions
 				OR = {
-					tag = GOL
-					tag = CRI
-					tag = KAZ
-					tag = BSH
-					tag = AST
-					tag = QAS
+			        tag = GOL
+			        tag = CRI
+			        tag = NOG
+			        tag = KAZ
+			        tag = SHY
+			        tag = GLH
+			        tag = SIB
+			        tag = BSH
+			        tag = AST
+			        tag = QAS
 					tag = GLH
 				}
 			}			
-			tag = NOG
-			tag = SHY
-			tag = SIB
 			tag = KZH
+			tag = CHG
+			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
 	}

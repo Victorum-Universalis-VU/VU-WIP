@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = plutocratic_reform
-technology_group = chinese
-primary_culture = filipino
-capital = 8267 #Ivata
-religion = animism
 government_rank = 2
+technology_group = chinese
+religion = animism
+primary_culture = ivata
+capital = 8267 #Ivata
 
 1409.1.1 = {
 	monarch = {

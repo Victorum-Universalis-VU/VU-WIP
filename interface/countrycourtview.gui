@@ -694,6 +694,7 @@ guiTypes = {
 			name ="no_personality_overlay"
 			spriteType = "GFX_no_provinceView_chart_overlay_0.9"
 			position = { x= 6 y = 2 }
+#			scale = 0.86
 		}
 
 	}

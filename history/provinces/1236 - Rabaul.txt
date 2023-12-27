@@ -12,5 +12,5 @@ native_size = 30
 native_ferocity = 4
 native_hostileness = 9
 
-#discovered_by = papuan_tech_group
-#1770.2.27 = { discovered_by = GBR } # William Dampier
+
+

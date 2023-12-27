@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################################
 # Events for Ethiopia
 #
@@ -20,7 +20,8 @@ country_event = {
 	trigger = {
 		tag = ETH
 		NOT = { is_year = 1550 }
-		religion_group = christian	
+		religion_group = christian
+
 		any_owned_province = {
 			has_discovered = POR
 		}
@@ -80,6 +81,8 @@ country_event = {
 			}
 		}
 	}	
+
+
 }
 
 #An Embassy Is Here!
@@ -99,6 +102,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 90
 	}
+
 	
 	option = { 
 		name = flavor_eth.2.a
@@ -124,6 +128,7 @@ country_event = {
 		name = flavor_eth.2.c
 		add_years_of_income = 1.0
 	}
+
 }
 
 
@@ -224,11 +229,13 @@ country_event = {
 	mean_time_to_happen = {
 		months = 48
 	}
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = eth_had_centralization_event
 		}
 	}
+
 	
 	option = { 
 		name = flavor_eth.6.a
@@ -245,8 +252,7 @@ country_event = {
 		name = flavor_eth.6.b	
 		ai_chance = { factor = 10 }
 		add_stability_or_adm_power = yes
-	}
-	
+	}	
 }
 
 # The itinerant capital
@@ -1851,7 +1857,7 @@ country_event = {
 
 	option = {
 		name = flavor_eth.48.a
-		vu_change_tech_group_to_western = yes
+		#vu_change_tech_group_to_western = yes
 		change_technology_group = western
 		change_unit_type = western
 		add_country_modifier = {

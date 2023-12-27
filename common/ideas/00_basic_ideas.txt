@@ -1023,10 +1023,12 @@ exploration_ideas = {
 			factor = 0.1
 			capital_scope = {
 				NOT = {
-					region = france_region
-					region = iberia_region
-					region = british_isles_region
-					region = low_countries_region
+					OR = {
+						region = france_region
+						region = iberia_region
+						region = british_isles_region
+						region = low_countries_region
+					}
 				}
 			}
 			NOT = { technology_group = high_american }
@@ -1452,24 +1454,27 @@ expansion_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = { 
-				technology_group = western
-				technology_group = english_tech_group 
-				technology_group = french_tech_group 
-				technology_group = dutch_tech_group 
-				technology_group = german_tech_group 
-				technology_group = italian_tech_group
-				technology_group = portuguese_tech_group
-				technology_group = roman_tech_group
-				technology_group = scandinavian_tech_group
-				technology_group = spanish_tech_group
-				technology_group = swiss_tech_group
-				technology_group = bohemian_tech_group
-				technology_group = byzantine_tech_group
-				technology_group = eastern
-				technology_group = hungarian_tech_group
-				technology_group = polish_tech_group
-				technology_group = russian_tech_group
-				technology_group = muslim
+				OR = {
+					technology_group = western
+				    technology_group = dutch_tech_group
+				    technology_group = english_tech_group
+				    technology_group = french_tech_group
+				    technology_group = german_tech_group
+				    technology_group = italian_tech_group
+				    technology_group = portuguese_tech_group
+				    technology_group = roman_tech_group
+				    technology_group = scandinavian_tech_group
+				    technology_group = spanish_tech_group
+				    technology_group = swiss_tech_group
+					technology_group = eastern
+					technology_group = bohemian_tech_group
+					technology_group = byzantine_tech_group
+					technology_group = hungarian_tech_group
+					technology_group = polish_tech_group
+					technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
+				    technology_group = muslim
+				}
 			}
 		}
 	}
@@ -2031,7 +2036,7 @@ gunpowder_ideas = {
 	}
 	greater_armor = {
 		fire_damage_received = -0.10
-		shock_damage_received = -0.5
+		shock_damage_received = -0.05
 	}
 	greater_cannons = {
 			artillery_power = 0.15

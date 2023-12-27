@@ -13,25 +13,16 @@ base_manpower = 4
 is_city = yes
 add_core = TIM
 add_core = AFG
-1444.1.1 = { discovered_by = KAS } 
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
+
+
+
+
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO
@@ -56,17 +47,17 @@ discovered_by = indian
 	add_core = MUG
 	remove_core = TIM 
 } #Battle of Panipat
-1550.1.1 = { culture = uzbekh }	#Uzbekh influence came to the region
+1550.1.1 = { culture = uzbehk }	#Uzbekh influence came to the region
 1566.1.1 = { revolt = { type = nationalist_rebels size = 0 name = "Hakim Timurid's Faction" } controller = REB }	#Hakim, should be pretender that declares independence
 1566.6.1 = { revolt = { } owner = AFG controller = AFG } #Independent of the Mughal empire
 1585.1.1 = { controller = BUK owner = BUK add_core = BUK remove_core = MUG }	# Man Singh occupies Kabulistan after death of Mirza Hakim, Balkh generally falls under Uzbekh controll after this point
 
 
 
-1600.1.1 = { discovered_by = TUR }
-1673.1.1 = { discovered_by = ENG }
-1677.1.1 = { discovered_by = FRA }
-1707.5.12 = { discovered_by = GBR }
+
+
+
+
 
 1737.1.1 = { owner = PER controller = PER } #Conquered by Nadir Shah
 1748.1.1 = { owner = BUK controller = BUK }

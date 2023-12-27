@@ -1,10 +1,9 @@
-# Principality of Nizhny Novgorod-Suzdal
-
 government = monarchy
 add_government_reform = principality
 government_rank = 1
 primary_culture = russian
 religion = orthodox
+#technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 capital = 306	# Nizhny Novgorod

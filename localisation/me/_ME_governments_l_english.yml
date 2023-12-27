@@ -13,8 +13,6 @@
  ## Greek League:
  greek_league: "Greek League"
  greek_league_desc: " A league of united Greek states that wish to protect each other. This government type is only available for Greece and for greek culture nation. Its devided into 3 parties, The democrats, The aristocrats and The oligarchs."
- greek_league_reform: "Greek League"
- greek_league_reform_desc: " A league of united Greek states that wish to protect each other. This government type is only available for Greece and for greek culture nation. Its devided into 3 parties, The democrats, The aristocrats and The oligarchs."
  gl_aristocrats: "The Aristocrats"
  gl_aristocrats_FACTION_DESC: "Aristocrats is a form of government that places power in the hands of a small, privileged ruling class. The term derives from the Greek aristokratia, meaning "rule of the best"."
  gl_democrats: "The Democrats"
@@ -135,4 +133,67 @@
  ME_Reform_Events1.EVTOPT4: "[Root.Monarch.GetName] wasn't elected, but [Root.Monarch.GetSheHe] seems to be the right choice..."
 
  CALIPHATE_CURRENT_RULER_STAYS: "§Y[Root.Monarch.GetName]§! ([Root.Monarch.GetAdm]/[Root.Monarch.GetDip]/[Root.Monarch.GetMil]), of §Y[Root.current_ruler_culture.GetCultureName]§! heritage, following the §Y[Root.current_ruler_religion.GetReligionName]§! faith, remains ruler of §Y[Root.GetName]§! at the age of §Y[Root.current_ruler_age.GetValue]§!.\n"
+
+ #VU addition by San Felipe
+ crusader_kingdom_legacy: "Crusader Kingdom"
+ crusader_kingdom_legacy_desc: "Crusader Kingdom government represents the patch-work of governments established by the crusaders in the Levant."
+ 
+ crusader_kingdom: "Crusader Kingdom"
+ crusader_kingdom_desc: "Crusader Kingdom government represents the patch-work of governments established by the crusaders in the Levant."
+
+ sharia_reform: "Sharia Law"
+ sharia_reform_desc: "Sharia law government represents an Islamic form of government that adheres to the strict codes set down by the Prophet Muhammad."
+
+ khaganate_legacy: "Khaganate"
+ khaganate_legacy_desc: "Khaganate government represents a form of government established by the nomadic Khaganate hordes of the steppes."
+
+ khaganate: "Khaganate"
+ khaganate_desc: "Khaganate government represents a form of government established by the nomadic Khaganate hordes of the steppes."
+ 
+ athenian_monarchy_legacy: "Athenian Monarchy"
+ athenian_monarchy_legacy_desc: "Athenian Monarchy government represents the monarchial governments established by the ancient greeks."
+
+ athenian_monarchy: "Athenian Monarchy"
+ athenian_monarchy_desc: "Athenian Monarchy government represents the monarchial governments established by the ancient greeks."
+
+ athenian_republic_legacy: "Athenian Republic"
+ athenian_republic_legacy_desc: "Athenian Republic government represents the republican governments established by the ancient greeks."
+
+ athenian_republic: "Athenian Republic"
+ athenian_republic_desc: "Athenian Republic government represents the republican governments established by the ancient greeks."
+
+ german_kaiserreich_legacy: "German Kaiserreich"
+ german_kaiserreich_legacy_desc: "German Kaiserreich government represents the patch-work of germanic governments established by within the HRE."
+
+ german_kaiserreich: "German Kaiserreich"
+ german_kaiserreich_desc: "German Kaiserreich government represents the patch-work of germanic governments established by within the HRE."
+
+ west_slavic_legacy: "West Slavic"
+ west_slavic_legacy_desc: "West Slavic government represents the governments established by the slavic faction in Eastern Europe."
+
+ west_slavic_monarchy: "West Slavic Monarchy"
+ west_slavic_monarchy_desc: "West Slavic Monarchy government represents the governments established by the slavic faction in Eastern Europe."
+
+ austria_hungary_reform: "Austria Hungary"
+ austria_hungary_reform_desc: "Austria Hungary government represents the government form established between Austria and Hungary."
+
+ enlightened_despotism_reform: "Enlightened Despotism"
+ enlightened_despotism_reform_desc: "Enlightened Despotism government represents the enlightened government form."
+
+ me_hofkammer_reform: "Hofkammer"
+ me_hofkammer_reform_desc: "'Hofkammer' or 'General Treasury' represents an imperial reform established by Emperor HRE in 1502."
+
+ me_baroque_monarchy_reform: "Baroque Monarchy"
+ me_baroque_monarchy_reform_desc: "Baroque Monarchy government represents the Baroque form of government established in Europe in the later half of the 15th - 16th century."
+
+ me_nordmark: "Nordmark"
+ me_nordmark_desc: "The Northern March or North March was created out of the division of the vast Marca Geronis in 965. It initially comprised the northern third of the Marca roughly corresponding to the modern state of Brandenburg and was part of the territorial organisation of areas conquered from the Wends."
+
+ EE_synthetic_monarchy: "EE Synthetic Monarchy"
+ EE_synthetic_monarchy_desc: "EE Synthetic Monarchy is an easter egg government reform."
+
+ EE_synthetic_monarchy_militarized: "EE Synthetic Monarchy Militarized"
+ EE_synthetic_monarchy_militarized_desc: "EE Synthetic Monarchy Militarized is an easter egg government reform."
+
+
 

@@ -10,24 +10,31 @@ religion = animism
 capital = "Jianchang"
 trade_goods = apiculture
 hre = no
-base_tax = 4  
-base_production = 4
-base_manpower = 4
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 add_core = CXI
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-discovered_by = indian
+
+
+
+
+
+
+
+
+
+
 
 
 1644.10.1 = {
 	owner = CXI
 	controller = CXI
 } # Zhang Xianzhong's Xi empire
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1662.4.1 = {
 	owner = CZH
 	controller = CZH

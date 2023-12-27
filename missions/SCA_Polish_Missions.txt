@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 poland_sca_slot_1 = {
 	slot = 1
 	generic = no
@@ -49,7 +49,7 @@ poland_sca_slot_1 = {
 						NOT = { 
 							num_of_estate_privileges = {
 								estate = estate_nobles 
-								value = 2
+								value = 4
 							}
 						}
 						crown_land_share = 50
@@ -755,6 +755,14 @@ poland_sca_slot_2_a = {
 				province_id = 7653
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			owner = { 
+				NOT = { alliance_with = ROOT }
+			}
+			owner = { 
+				overlord = {
+					NOT = { alliance_with = ROOT }
+				}
+			}
 		}
 		trigger = { 
 			OR = { 
@@ -811,9 +819,12 @@ poland_sca_slot_2_a = {
 						who = ROOT 
 						value = 190 
 					}
-					trust = { 	
-						who = ROOT 
-						value = 100 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = {
+							who = ROOT
+							value = 100
+						}
 					}
 					is_at_war = no 
 					NOT = { total_development = ROOT } 
@@ -831,7 +842,7 @@ poland_sca_slot_2_a = {
 			custom_tooltip = pol_alternatively_every_required_province_tt
 			tooltip = {
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 2
 				}
 				if = {
@@ -881,7 +892,7 @@ poland_sca_slot_2_a = {
 					8768 = { add_nationalism = -5 } 
 					7653 = { add_nationalism = -5 }
 					change_ruler_stat = {
-						stat = mil
+						type = mil
 						amount = 2
 					}
 					if = { 
@@ -937,10 +948,16 @@ poland_sca_slot_2_a = {
 				province_id = 8768  
 				province_id = 7653
 			}
-			OR = { 
-				unrest = 1 
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				local_autonomy_above_min = 5
+			OR = {
+			    NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			    owner = { 
+			    	NOT = { alliance_with = ROOT }
+			    }
+			    owner = { 
+			    	overlord = {
+			    		NOT = { alliance_with = ROOT }
+			    	}
+			    }
 			}
 		}
 		trigger = { 
@@ -1223,7 +1240,7 @@ poland_sca_slot_2_a = {
 				}
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -1270,7 +1287,7 @@ poland_sca_slot_2_b = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1278,7 +1295,7 @@ poland_sca_slot_2_b = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1349,7 +1366,7 @@ poland_sca_slot_2_plc_1 = {
 					ruler_has_personality = free_thinker_personality 
 					ruler_has_personality = scholar_personality 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -1357,7 +1374,7 @@ poland_sca_slot_2_plc_1 = {
 				OR = { 
 					full_idea_group = innovativeness_ideas 
 					ruler_total_stats = {
-						stats = 14 
+						amount = 14 
 					}
 				}
 			}
@@ -2052,9 +2069,12 @@ poland_sca_slot_3_a = {
 						who = ROOT 
 						value = 190 
 					}
-					trust = { 	
-						who = ROOT 
-						value = 100 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = { 	
+							who = ROOT 
+							value = 100 
+						}
 					}
 					is_at_war = no 
 					NOT = { total_development = ROOT } 
@@ -2220,7 +2240,7 @@ poland_sca_slot_3_a = {
 				else_if = { 
 					limit = { mercantilism = 25 } 
 					change_ruler_stat = {
-						stat = dip
+						type = dip
 						amount = 1
 					}
 					set_country_flag = enable_special_trader_flag
@@ -2424,7 +2444,7 @@ poland_sca_slot_3_b = {
 				}
 				else_if = {
 					limit = { in_golden_age = yes } 
-					extend_golden_age = 360
+					extend_golden_age = 600
 				}
 			}
 			else = {
@@ -2688,7 +2708,7 @@ poland_sca_slot_3_plc_1 = {
 			}
 			else = { 
 				change_ruler_stat = {
-					stat = adm
+					type = adm
 					amount = 1
 				}
 			}
@@ -2776,6 +2796,7 @@ poland_sca_slot_3_plc_1 = {
 				}
 			}
 		}
+
 		effect = {
 			if = { 
 				limit = { has_dlc = "Mandate of Heaven" }
@@ -2786,7 +2807,7 @@ poland_sca_slot_3_plc_1 = {
 				}
 				else_if = {
 					limit = { in_golden_age = yes } 
-					extend_golden_age = 360 
+					extend_golden_age = 600
 				}
 			}
 			else = {
@@ -3411,9 +3432,18 @@ poland_sca_slot_4_b = {
 			}
 			OR = { 
 				PAP = { 
-					trust = { 
-						who = ROOT 
-						value = 70 
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = { 	
+							who = ROOT 
+							value = 70
+						}
+					}
+					else = {
+						has_opinion_modifier = {
+							who = ROOT 
+							modifier = sent_gift
+						}
 					}
 				}
 				religious_unity = 0.9 
@@ -3721,10 +3751,8 @@ poland_sca_slot_4_d = {
 			1859 = {
 				if = {
 					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
+						NOT = {	owned_by = ROOT	}
+						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -4608,7 +4636,7 @@ poland_sca_slot_5_branching_lit_hre = {
 				duration = 9125 
 			}
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 2
 			}
 		}
@@ -4664,6 +4692,7 @@ poland_sca_slot_5_branching_lit_east = {
 		}	
 		position = 2 
 		trigger = { 
+			not_in_mission_preview_mode = { key = POL }
 			west_dniepr_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
@@ -4791,6 +4820,7 @@ poland_sca_slot_5_branching_lit_east = {
 			}
 		}
 		trigger = { 
+			not_in_mission_preview_mode = { key = POL }
 			lithuania_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -4868,6 +4898,7 @@ poland_sca_slot_5_branching_lit_east = {
 		required_missions = { pol_tend_east } 
 		position = 4 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			tag = PLC 
 			total_development = 1500
 			if = {
@@ -4914,6 +4945,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_varna_aftermath } 
 		position = 2 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			if = {
 				limit = { is_emperor = yes } 
 				is_emperor = yes 
@@ -4994,6 +5026,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_delegate_emperor } 
 		position = 3
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			OR = {
 				is_elector = yes 
 				is_emperor = yes 
@@ -5057,11 +5090,11 @@ poland_sca_slot_5_branching_hre_west = {
 			}
 			else = {
 				change_ruler_stat = {
-					stat = dip
+					type = dip
 					amount = 2
 				}
 				change_ruler_stat = {
-					stat = mil
+					type = mil
 					amount = 1
 				}
 			}
@@ -5073,6 +5106,7 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_place_sun } 
 		position = 4 
 		trigger = {
+			not_in_mission_preview_mode = { key = POL }
 			if = {
 				limit = { hre_size = 1 }
 				is_emperor = yes 
@@ -5114,7 +5148,7 @@ poland_sca_slot_5_branching_hre_west = {
 
 			}
 			change_ruler_stat = {
-				stat = adm
+				type = adm
 				amount = 2
 			}
 		}

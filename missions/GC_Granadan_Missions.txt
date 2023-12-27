@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU - Updated by San Felipe for 1.36.*
 granada_development_missions = {
 	slot = 1
 	generic = no
@@ -185,7 +185,7 @@ andalusia_slot_1_missions = {
 					}
 				}
 				223 = {
-					add_or_spawn_center_of_trade = { level = 1 }
+					center_of_trade = 1
 				}
 			}
 			else = {
@@ -442,11 +442,12 @@ granada_slot_2_missions = {
 						}
 					}
 				}
+
 			}
 			army_size_percentage = 1
 		}
 		
-		effect ={
+		effect = {
             if = {
                 limit = {
                     OR = {
@@ -459,16 +460,16 @@ granada_slot_2_missions = {
                                 }
                             }
                         }
-                        AND = {
+						AND = {
                             exists = SPA
-                            SPA= {
+                            SPA = {
                                 has_opinion_modifier = {
                                     who = ROOT
                                     modifier = scornfully_insulted
                                 }
                             }
                         }
-                        AND = {
+						AND = {
                             exists = BSP
                             BSP= {
                                 has_opinion_modifier = {
@@ -477,7 +478,7 @@ granada_slot_2_missions = {
                                 }
                             }
                         }
-						AND = {
+			            AND = {
                             exists = SPB
                             SPB = {
                                 has_opinion_modifier = {
@@ -486,7 +487,7 @@ granada_slot_2_missions = {
                                 }
                             }
                         }
-						AND = {
+			            AND = {
                             exists = BBS
                             BBS = {
                                 has_opinion_modifier = {
@@ -495,7 +496,7 @@ granada_slot_2_missions = {
                                 }
                             }
                         }
-						AND = {
+			            AND = {
                             exists = CSP
                             CSP = {
                                 has_opinion_modifier = {
@@ -504,21 +505,51 @@ granada_slot_2_missions = {
                                 }
                             }
                         }
-                    }
-                }
-                create_general = {
-                    tradition = 100
-                }
-            }
-            else = {
-                create_general = {
-                    tradition = 60
-                }
-            }
-            #Claims
-            give_permaclaims_for_mission = { mission=gra_reconquer_valencia }
-            give_permaclaims_for_mission = { mission=gra_reconquer_sevilla }
+					}
+				}
+				create_general = {
+					tradition = 100
+				}
+			}
+			else = {
+				create_general = {
+					tradition = 60
+				}
+			}
+			#221 = {
+			#	if = {
+			#		limit = {
+			#			NOT = { is_core = ROOT }
+			#			NOT = { is_permanent_claim = ROOT }
+			#		}
+			#		add_permanent_claim = ROOT
+			#	}
+			#}
+			#4547 = {
+			#	if = {
+			#		limit = {
+			#			NOT = { is_core = ROOT }
+			#			NOT = { is_permanent_claim = ROOT }
+			#		}
+			#		add_permanent_claim = ROOT
+			#	}
+			#}
+			#valencia_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { is_permanent_claim = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			#lower_andalucia_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { is_permanent_claim = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
         }
+
     }
 	
 	gra_reconquer_valencia = { #art
@@ -1373,10 +1404,8 @@ andalusia_slot_4_missions_c = {
 			}
 			arabia_region = {
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
+					NOT = { owned_by = ROOT	}
+					NOT = {	is_core = ROOT }
 				}
 				add_claim = ROOT
 			}
@@ -1406,22 +1435,7 @@ andalusia_slot_4_missions_c = {
 		effect = {
 			add_adm_power = 300
 			408 = {
-				if = {
-					limit = {	
-						NOT = {
-							province_has_center_of_trade_of_level = 2
-						}
-					}
-					add_center_of_trade_level = 2
-				}
-				else_if = {
-					limit = {	
-						NOT = {
-							province_has_center_of_trade_of_level = 3
-						}
-					}
-					add_center_of_trade_level = 1
-				}
+				set_center_level_3_center_of_trade = yes
 			}
 			persian_gulf_coast = {
 				limit = {
@@ -1613,19 +1627,18 @@ andalusia_slot_5_missions = {
 					NOT = {
 						is_core = ROOT
 					}
+					NOT = {
+						province_id = 2474
+					}
 				}
 				add_claim = ROOT
 			}
 			fezzan_area = {
 				limit = {
-					NOT = {
-						owned_by = ROOT
-					}
-					NOT = {
-						is_core = ROOT
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			#Claims
 			give_permaclaims_for_mission = { mission=adu_fatimid_lands }
@@ -1660,33 +1673,24 @@ andalusia_slot_5_missions = {
 			#Just some extra southern Egypt claims to match Mecca's coast.
 			lower_nubia_area = {
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-						is_empty = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
 			dongola_area = {
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-						is_empty = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			red_sea_coast_area = {
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-						is_empty = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			#Claims
 			give_permaclaims_for_mission = { mission=adu_levantine_restoration }
@@ -1727,28 +1731,22 @@ andalusia_slot_5_missions = {
 			}
 			erzurum_area = { #Upper Euphrates
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
+					NOT = { owned_by = ROOT	}
+					NOT = {	is_core = ROOT }
 				}
 				add_claim = ROOT
 			}
 			mardin_area = { #Mardin
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
+					NOT = { owned_by = ROOT	}
+					NOT = {	is_core = ROOT }
 				}
 				add_claim = ROOT
 			}
 			north_kurdistan_area = { #Vaspurakan
 				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
+					NOT = { owned_by = ROOT	}
+					NOT = {	is_core = ROOT }
 				}
 				add_claim = ROOT
 			}

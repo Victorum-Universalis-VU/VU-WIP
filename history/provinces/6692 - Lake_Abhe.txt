@@ -1,3 +1,4 @@
 #6692 - Lake_Abhe
 
-#discovered_by = east_african
+
+

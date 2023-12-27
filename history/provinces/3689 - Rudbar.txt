@@ -19,30 +19,27 @@ fort_15th = yes
 center_of_trade = 1
 extra_cost = 8
 
-#discovered_by = muslim
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-#discovered_by = eastern
-#discovered_by = bohemian_tech_group
-#discovered_by = byzantine_tech_group
-#discovered_by = hungarian_tech_group
-#discovered_by = polish_tech_group
-discovered_by = russian_tech_group
-discovered_by = indian
-#discovered_by = dutch_tech_group
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1592.1.1 = {
 	owner = PER
@@ -50,8 +47,8 @@ discovered_by = indian
 	add_core = PER
 } # Safavid Conquest
 1669.1.1 = { unrest = 3 } # Plundered by Stenka Razin
-1673.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
+
+
 1722.1.1 = {
 	owner = RUS
 	controller = RUS

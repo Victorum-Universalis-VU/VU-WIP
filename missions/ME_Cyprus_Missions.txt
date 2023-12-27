@@ -609,13 +609,15 @@ CYP_slot_4 = {
 			province_id = 320
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			ROOT = {
+				NOT = {	alliance_with = KNI	}
 				NOT = {
-					alliance_with = KNI
 					reverse_has_opinion = {
 						who = KNI
 						value = 100
 					}
-					total_development = KNI
+				}
+				NOT = {	total_development = KNI	}
+				NOT = {
 					KNI = {
 						is_at_war = no
 						is_subject = no

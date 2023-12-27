@@ -26,7 +26,19 @@ po_brazil_abolish_slavery = {
 	is_visible = {
 		has_country_flag = BRZ_a_lei
 		FROM = {
-			technology_group = western
+			OR = {
+				technology_group = western
+				technology_group = dutch_tech_group
+				technology_group = english_tech_group
+				technology_group = french_tech_group
+				technology_group = german_tech_group
+				technology_group = italian_tech_group
+				technology_group = portuguese_tech_group
+				technology_group = roman_tech_group
+				technology_group = scandinavian_tech_group
+				technology_group = spanish_tech_group
+				technology_group = swiss_tech_group
+			}
 			slaves = 1
 		}
 	}

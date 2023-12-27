@@ -10,15 +10,16 @@ trade_goods = fruit
 hre = no
 base_tax = 8
 base_production = 8
-base_manpower = 6
+base_manpower = 8
 is_city = yes
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
 
-1608.1.1 = { discovered_by = SPA }
+
+
+
+
 
 1645.6.1 = {
 	owner = QNG

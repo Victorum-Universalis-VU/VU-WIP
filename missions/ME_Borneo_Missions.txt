@@ -190,16 +190,16 @@ BEI_generic_missions_2 = {
 					limit = {
 						is_empty = yes
 					}
+					add_siberian_construction = 100
 				}
-				add_siberian_construction = 100
 			}
 			2714 = {
 				if = {
 					limit = {
 						is_empty = yes
 					}
+					add_siberian_construction = 100
 				}
-				add_siberian_construction = 100
 			}
 			add_years_of_income = 0.5
 			

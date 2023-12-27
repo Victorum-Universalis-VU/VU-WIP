@@ -3,6 +3,7 @@ add_government_reform = romanian_principality
 government_rank = 1
 primary_culture = romanian
 religion = orthodox
+#technology_group = eastern
 technology_group = hungarian_tech_group
 capital = 161 # Târgoviste
 unit_type = eastern

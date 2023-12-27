@@ -12,9 +12,11 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 1
 
-#discovered_by = south_american
-#discovered_by = andean
-1561.3.2 = { discovered_by = SPA }
+
+
+
+
+
 
 add_permanent_province_modifier = {
     name = vu_patagonian_desert

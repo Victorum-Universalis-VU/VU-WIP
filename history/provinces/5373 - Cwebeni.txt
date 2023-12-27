@@ -13,8 +13,11 @@ hre = no
 base_tax = 1
 base_production = 1
  
-##discovered_by = east_african
-#discovered_by = central_african
 
-1497.1.1 = { discovered_by = POR } # Vasco da Gama
-1616.1.1 = { discovered_by = NED } # Dirk Hartog
+
+
+
+
+
+
+

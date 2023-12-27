@@ -5,17 +5,24 @@ religion = buddhism
 capital = "Pursat"
 trade_goods = rum
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 4 
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = KHM
 
 
-discovered_by = chinese
-discovered_by = indian
 
-1535.1.1 = { discovered_by = POR }
+
+
+
+
+
+
+
+
+
+
 
 1594.1.1 = {
 	owner = LXA

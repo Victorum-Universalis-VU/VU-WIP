@@ -3,7 +3,8 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = burgundian
 religion = catholic
-technology_group = french_tech_group
+#technology_group = western
+technology_group = dutch_tech_group
 unit_type = western
 capital = 4764
 

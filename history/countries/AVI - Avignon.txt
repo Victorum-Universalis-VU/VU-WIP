@@ -4,6 +4,7 @@ government_rank = 1
 religion = catholic
 primary_culture = occitain
 add_accepted_culture = cosmopolitan_french
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 capital = 202	# Avignon

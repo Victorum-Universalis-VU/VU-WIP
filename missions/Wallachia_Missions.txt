@@ -97,7 +97,13 @@ wallachia_missions_1 = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
-					NOT = { province_id = 7137 province_id = 151 province_id = 6932 }
+					NOT = {
+						OR = {
+							province_id = 7137 
+							province_id = 151 
+							province_id = 6932
+						}
+					}
 				}
 				add_permanent_claim = ROOT
 			}
@@ -276,10 +282,8 @@ wallachia_missions_1 = {
 			7137 = {
 			    if = {
 				    limit = {
-				    	NOT = { 
-						    is_permanent_claim = ROOT
-				    	    is_core = ROOT 
-						}
+				    	NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 				    }
 					add_permanent_claim = ROOT
 				}
@@ -287,10 +291,8 @@ wallachia_missions_1 = {
 			151 = {
 			    if = {
 				    limit = {
-				    	NOT = { 
-						    is_permanent_claim = ROOT
-				    	    is_core = ROOT 
-						}
+				    	NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 				    }
 					add_permanent_claim = ROOT
 				}
@@ -298,10 +300,8 @@ wallachia_missions_1 = {
 			6932 = {
 			    if = {
 				    limit = {
-				    	NOT = { 
-						    is_permanent_claim = ROOT
-				    	    is_core = ROOT 
-						}
+				    	NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
 				    }
 					add_permanent_claim = ROOT
 				}
@@ -835,27 +835,27 @@ wallachia_missions_3_before = {
 		effect = {
 		    add_loan = {
 		    	interest_modifier = -0.5
-		    	fixed_interest = 0.75
+		    	#fixed_interest = 0.75
 		    	duration = 60
 		    }
 		    add_loan = {
 		    	interest_modifier = -0.5
-		    	fixed_interest = 0.75
+		    	#fixed_interest = 0.75
 		    	duration = 60
 		    }
 		    add_loan = {
 		    	interest_modifier = -0.5
-		    	fixed_interest = 0.75
+		    	#fixed_interest = 0.75
 		    	duration = 60
 		    }
 		    add_loan = {
 		    	interest_modifier = -0.5
-		    	fixed_interest = 0.75
+		    	#fixed_interest = 0.75
 		    	duration = 60
 		    }
 		    add_loan = {
 		    	interest_modifier = -0.5
-		    	fixed_interest = 0.75
+		    	#fixed_interest = 0.75
 		    	duration = 60
 		    }
 		}
@@ -961,6 +961,7 @@ wallachia_missions_3_branching = {
 		}
 		effect = {
 			change_tag = RMN	
+			swap_non_generic_missions = yes
 			set_government_rank = 2
 			set_capital = 3160
 			3160 = {
@@ -1003,7 +1004,7 @@ wallachia_missions_3_turk_cuck = {
 			country_event = { id = wal_events.8 }
 			hidden_effect = {
 			    if = {
-			    	limit {
+			    	limit = {
 			    		exists = MOL
 			    	}
 			        add_casus_belli = {
@@ -1036,7 +1037,7 @@ wallachia_missions_3_turk_cuck = {
 			        }
 			    }
 			    if = {
-			    	limit {
+			    	limit = {
 			    		exists = TRA
 			    	}
 			        add_casus_belli = {
@@ -1160,6 +1161,7 @@ wallachia_missions_3_turk_cuck = {
 		}
 		effect = {
 			change_tag = RMN	
+			swap_non_generic_missions = yes
 			set_government_rank = 2
 			set_capital = 3160
 			3160 = {
@@ -1197,7 +1199,7 @@ wallachia_missions_3_independence = {
 			custom_tooltip = wal_independence2
 			hidden_effect = {
 			    if = {
-			    	limit {
+			    	limit = {
 			    		exists = MOL
 			    	}
 			        add_casus_belli = {
@@ -1228,7 +1230,7 @@ wallachia_missions_3_independence = {
 			    	add_permanent_claim = ROOT
 			    }
 			    if = {
-			    	limit {
+			    	limit = {
 			    		exists = TRA
 			    	}
 			        add_casus_belli = {
@@ -1354,6 +1356,7 @@ wallachia_missions_3_independence = {
 		}
 		effect = {
 			change_tag = RMN	
+			swap_non_generic_missions = yes
 			set_government_rank = 2
 			set_capital = 3160
 			3160 = {

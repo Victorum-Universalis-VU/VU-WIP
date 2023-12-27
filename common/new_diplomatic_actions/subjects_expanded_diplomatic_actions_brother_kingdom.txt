@@ -911,17 +911,17 @@ establish_brother_kingdom = {
 				}
 			}
 		}
-		OR = {
-			marriage_with = FROM
-			alliance_with = FROM
-			AND = {
-				num_of_free_diplomatic_relations = 1
-				has_casus_belli = {
-					target = FROM
-					type = cb_salic_reunification
-				}
-			}
-		}
+		#OR = {
+		#	marriage_with = FROM
+		#	alliance_with = FROM
+		#	AND = {
+		#		num_of_free_diplomatic_relations = 1
+		#		has_casus_belli = {
+		#			target = FROM
+		#			type = cb_salic_reunification
+		#		}
+		#	}
+		#}
 	}
 }
 
@@ -1354,7 +1354,7 @@ make_personal_union_to_brother_kingdom = {
 			is_subject_of = ROOT
 			OR = {
 				is_subject_of_type = personal_union
-				is_subject_of_type = salic_personal_union
+				#is_subject_of_type = salic_personal_union
 			}
 			government = monarchy
 			religion_group = christian
@@ -1369,7 +1369,7 @@ make_personal_union_to_brother_kingdom = {
 				is_subject_of = ROOT
 				OR = {
 					is_subject_of_type = personal_union
-					is_subject_of_type = salic_personal_union
+					#is_subject_of_type = salic_personal_union
 				}
 				government = monarchy
 				religion_group = christian
@@ -1395,7 +1395,7 @@ make_personal_union_to_brother_kingdom = {
 					is_subject_of = ROOT
 					OR = {
 						is_subject_of_type = personal_union
-						is_subject_of_type = salic_personal_union
+						#is_subject_of_type = salic_personal_union
 					}
 					government = monarchy
 					religion_group = christian

@@ -1,7 +1,8 @@
 #3035 - Apuruaque
 
 culture = guajiro
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Apuruaque"
 trade_goods = unknown

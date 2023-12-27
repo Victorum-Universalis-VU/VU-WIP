@@ -8,12 +8,11 @@ religion = vajrayana
 capital = "Chengde"
 trade_goods = jade
 hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 2
+base_tax = 12
+base_production = 12
+base_manpower = 12
 is_city = yes
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
 add_core = CHH
 
 #add_permanent_province_modifier = {
@@ -26,7 +25,7 @@ add_core = CHH
 	controller = KHA
 	add_core = KHA
 } # The Oirads are defeated & Altan Khan reunites the the area.
-1608.1.1 = { discovered_by = SPA }
+
 1624.1.1 = {
 	owner = MCH
 	controller = MCH
@@ -40,4 +39,4 @@ add_core = CHH
 	remove_core = MCH
 } # The Qing Dynasty
 #1662.1.1 = { remove_core = MNG } # The government in Taiwan surrendered
-1709.1.1 = { discovered_by = SPA }
+

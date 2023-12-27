@@ -1,7 +1,8 @@
 #3033 - Mana
 
 culture = guajiro
-#discovered_by = south_american
+
+
 religion = animism
 capital = "Mana"
 trade_goods = unknown

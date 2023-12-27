@@ -1,3 +1,10 @@
+vassal = {
+	first = SRV
+	second = DER
+	start_date = 1444.1.1
+	end_date = 1447.3.13 #Death of Shah Rokh
+}
+
 #Shah Rokhs Empire
 
 #Ulugh Begh

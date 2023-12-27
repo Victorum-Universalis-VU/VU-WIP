@@ -9,19 +9,20 @@ religion = shinto
 capital = "Ano"
 trade_goods = rice
 hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 7
+base_production = 7
+base_manpower = 7
 is_city = yes
-discovered_by = chinese
-discovered_by = japanese
-discovered_by = chinese
 
 
 
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 1444.1.1 = { discovered_by = ANU } 
 
-1542.1.1 = { discovered_by = POR }
+
+
+
+  
+
+
 1568.1.1 = { add_core = ODA } # Oda Nobunaga invaded Ano
 1569.10.3 = { owner = ODA controller = ODA} # Oda Nobunaga controlled Ano
 1576.12.15 = { remove_core = KTB } # Assassination of Kitabatake Tomonori

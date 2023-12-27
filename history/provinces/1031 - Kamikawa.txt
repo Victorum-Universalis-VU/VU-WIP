@@ -5,15 +5,15 @@ religion = animism
 capital = "Kamikawa"
 trade_goods = fish
 hre = no
-base_tax = 1
-base_production = 3
-base_manpower = 1 
+base_tax = 5
+base_production = 5
+base_manpower = 5
 owner = ANU
 controller = ANU
 add_core = ANU
 is_city = yes
 
-1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
+
 
 1679.1.1 = {	
 	owner = TKG
@@ -24,4 +24,4 @@ is_city = yes
 } # Russian & Japanese attemps at colonization
 1704.1.1 = { add_core = TKG }
 1767.1.1 = { add_core = RUS }
-1787.1.1 = { discovered_by = FRA } # Jean-Francois de La Pérouse
+

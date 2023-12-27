@@ -2793,12 +2793,12 @@ province_event = { #Conversion of Anatolia
 				NOT = { has_country_flag = ee_byz_culture_change_cooldown }
 				had_country_flag = {
 					flag = ee_byz_culture_change_cooldown
-					days = 1825
+					days = 40
 				}
 			}
 		}
 		region = anatolia_region
-		NOT = { culture_group = byzantine }
+		culture_group = turkish_g
 	}
 
 	mean_time_to_happen = {
@@ -2820,9 +2820,22 @@ province_event = { #Conversion of Anatolia
 		
 		if = {
 			limit = {
-				area = kastamonu_area
+				area = rum_area
 			}
 			change_culture = pontic_greek
+		}
+		else_if = {
+			limit = {
+				area = karaman_area
+				area = dulkadir_area
+			}
+			change_culture = cappadocian
+		}
+		else_if = {
+			limit = {
+				area = cukurova_area
+			}
+			change_culture = anatolian_greek
 		}
 		else = {
 			change_culture = greek

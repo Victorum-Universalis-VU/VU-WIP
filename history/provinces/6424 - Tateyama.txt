@@ -8,17 +8,19 @@ religion = shinto
 capital = "Asai"
 trade_goods = rice
 hre = no
-base_tax = 4
-base_production = 6
-base_manpower = 4
+base_tax = 3
+base_manpower = 3
+base_production = 3
 is_city = yes
-discovered_by = chinese
-discovered_by = japanese
 
 
-1444.1.1 = { discovered_by = MCH } 1444.1.1 = { discovered_by = KHA } 1444.1.1 = { discovered_by = OIR } 1444.1.1 = { discovered_by = QNG } 
 
-1542.1.1 = { discovered_by = POR }
+
+
+
+ 
+
+
 1570.1.1 = { add_core = HJO } # The Hojo expands the territory into Shimousa
 1585.1.1 = { owner = HJO controller = HJO add_core = HJO remove_core = CBA } # The Chiba clan became vassal of the Hojo
 # Battle of Konodai

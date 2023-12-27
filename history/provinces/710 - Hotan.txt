@@ -8,14 +8,15 @@ religion = sunni
 capital = "Hotan"
 trade_goods = jade #Hotan Jade
 hre = no
-base_tax = 4  
-base_production = 5
-base_manpower = 6
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 center_of_trade = 2
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 extra_cost = 8
 
 1682.1.1 = {

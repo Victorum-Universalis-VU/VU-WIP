@@ -1,4 +1,4 @@
-# No previous file for Victorum Universalis province
+#5805 - Tualatin
 
 owner = CNK
 controller = CNK
@@ -17,16 +17,11 @@ native_ferocity = 1
 native_hostileness = 3 
 center_of_trade = 2
 
-discovered_by = north_american
-#discovered_by = vu_northwest_tech
-
 add_permanent_province_modifier = {
     name = navalbase_modifier_2
     duration = -1
 }
 
-1792.10.15 = { discovered_by = GBR } #George Vancouver
-1806.1.1 = { discovered_by = USA } #Lewis and Clark's expedition
 1829.1.1 = {
 	owner = GBR
 	controller = GBR

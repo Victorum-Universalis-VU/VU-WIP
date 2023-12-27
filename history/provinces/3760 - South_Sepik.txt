@@ -1,4 +1,4 @@
 #3760 - South_Sepik
 
-#discovered_by = papuan_tech_group
-#1526.1.1 = { discovered_by = POR } # Don Jorge de Mneses
+
+#

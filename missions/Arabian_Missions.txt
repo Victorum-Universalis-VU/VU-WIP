@@ -1,7 +1,8 @@
- ###########################################################
- ##### Dub's Mission Work - All credit to Dub for this #####
- ###########################################################
- #VU amendments by San Felipe
+#VU - Updated by San Felipe for 1.36.*
+###########################################################
+##### Dub's Mission Work - All credit to Dub for this #####
+###########################################################
+#VU amendments by San Felipe
 ara_conquest = {
 
 	slot = 1
@@ -22,6 +23,12 @@ ara_conquest = {
 				tag = FDI
 				tag = HDR
 			}
+		}
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			NOT = { tag = EGY }
 		}
 	}
 	
@@ -85,7 +92,7 @@ ara_conquest = {
 	}
 	
 	ara_gen_trade_leader = {
-		icon = mission_high_income
+		icon = mission_bedouins
 		required_missions = { }
 		position = 3
 		

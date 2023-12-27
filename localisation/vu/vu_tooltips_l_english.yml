@@ -1,6 +1,15 @@
 ﻿l_english:
  #Custom tooltips
  #VU Quonton additions
+ vu_roman_revival_finished_manpower:0 "from owned provinces, which are of §YOld Latin§! culture
+ vu_change_italian_to_roman:0 "All §YItalian§! provinces within §YItaly§! under our control will be §RRomanized§!"
+ vu_change_french_to_roman:0 "Thirty §YFrench§! provinces within §YFrance§! will be §RRomanized§!"
+ vu_change_africa_to_roman:0 "Twenty provinces within the §YMaghreb§! will be §RRomanized§!"
+ vu_change_illyria_to_roman:0 "Twenty §YCroatian§!, §YBosnian§!, and §YSerbian§! provinces within the §YBalkans§! will be §RRomanized§!"
+ vu_change_hispania_to_roman:0 "Thirty §YIberian§! provinces within the §YIberian Peninsula§! will be §RRomanized§!"
+ vu_change_dacia_to_roman:0 "All §YRomanian§! provinces under our control will be §RRomanized§!"
+ vu_change_german_to_roman:0 "Fourty §YGerman§! provinces within §YAustria§! and §YSouthern Germany§! will be §RRomanized§!"
+ vu_change_britain_to_roman:0 "Twenty-Five §YEnglish§! provinces within §YGreat Britain§! will be §RRomanized§!"
  FRA_tower_london:0 "Is §YFrance§!, Was §YFrance§!, or our Liege is or was §YFrance§! And §YFrance§! has completed the Mission §YLondon Calling§!"
  is_europeans_tooltip:0 "Is §YGEuropean§!"
  german_imigration_stuff:0 "Large Numbers of §YGermans§! will immigrate into Eastern Europe, §GImproving and Developing§! our land"

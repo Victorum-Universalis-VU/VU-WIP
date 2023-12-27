@@ -74,10 +74,8 @@ me_hab_1_branching_germany = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_hre_path
-			has_country_flag = me_hab_german_path
-		}
+		NOT = {	has_country_flag = me_hab_hre_path }
+		NOT = {	has_country_flag = me_hab_german_path }
 	}
 	
 	has_country_shield = yes
@@ -371,12 +369,14 @@ me_hab_1_1 = {
 			NOT = { owned_by = ROOT }
 			NOT = { has_global_flag = emperor_trying_to_avert_shadow_kingdom }
 			NOT = {
-				area = apulia_area
-				area = calabria_area
-				area = naples_area
-				area = sicily_area
-				area = corsica_sardinia_area
-				province_id = 120
+				OR = {
+					area = apulia_area
+				    area = calabria_area
+				    area = naples_area
+				    area = sicily_area
+				    area = corsica_sardinia_area
+				    province_id = 120
+				}
 			}
 			ROOT = {
 				NOT = {
@@ -415,11 +415,13 @@ me_hab_1_1 = {
 			region = italy_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = {
-				area = apulia_area
-				area = calabria_area
-				area = naples_area
-				area = sicily_area
-				area = corsica_sardinia_area
+				OR = {
+					area = apulia_area
+				    area = calabria_area
+				    area = naples_area
+				    area = sicily_area
+				    area = corsica_sardinia_area
+				}
 			}
 		}
 		trigger = {
@@ -519,10 +521,8 @@ me_hab_1_1 = {
 		position = 10
 		provinces_to_highlight = {
 			province_id = 266
-			NOT = { 
-				country_or_non_sovereign_subject_holds = ROOT
-				development = 50 # Was 25, nerfed for VU
-			}
+			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
+			NOT = {	development = 50 } # Was 25, nerfed for VU
 		}
 		trigger = {
 			OR = {
@@ -758,10 +758,8 @@ me_hab_1_1 = {
 		provinces_to_highlight = {
 			province_id = 134
 			owned_by = ROOT
-			NOT = {
-				has_building = university
-				num_of_buildings_in_province = 5
-			}
+			NOT = {	has_building = university }
+			NOT = {	num_of_buildings_in_province = 5 }
 		}
 		trigger = {
 			134 = {
@@ -803,7 +801,6 @@ me_hab_1_1 = {
 		}
 	}
 }
-
 
 me_hab_2 = {
 	slot = 2
@@ -864,10 +861,8 @@ me_hab_2_branching_germany = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_hre_path
-			has_country_flag = me_hab_german_path
-		}
+		NOT = {	has_country_flag = me_hab_hre_path }
+		NOT = { has_country_flag = me_hab_german_path }
 	}
 	has_country_shield = yes
 	
@@ -1439,12 +1434,14 @@ me_hab_2_1 = {
 			region = italy_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = {
-				area = apulia_area
-				area = calabria_area
-				area = naples_area
-				area = sicily_area
-				area = corsica_sardinia_area
-				province_id = 120
+				OR = {
+					area = apulia_area
+				    area = calabria_area
+				    area = naples_area
+				    area = sicily_area
+				    area = corsica_sardinia_area
+				    province_id = 120
+				}
 			}
 		}
 		trigger = {
@@ -2475,10 +2472,8 @@ me_hab_3_branching_germany = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_hre_path
-			has_country_flag = me_hab_german_path
-		}
+		NOT = {	has_country_flag = me_hab_hre_path }
+		NOT = {	has_country_flag = me_hab_german_path }
 	}
 	has_country_shield = yes
 	
@@ -3267,10 +3262,8 @@ me_hab_3_branching_navy = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_venetian_module
-			has_country_flag = me_hab_modern_navy
-		}
+		NOT = {	has_country_flag = me_hab_venetian_module }
+		NOT = {	has_country_flag = me_hab_modern_navy }
 	}
 	has_country_shield = yes
 	
@@ -4119,10 +4112,8 @@ me_hab_3_branching_internal = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_mainland_development
-			has_country_flag = me_hab_minorities_branch
-		}
+		NOT = {	has_country_flag = me_hab_mainland_development }
+		NOT = {	has_country_flag = me_hab_minorities_branch	}
 	}
 	has_country_shield = yes
 
@@ -4168,6 +4159,8 @@ me_hab_3_branching_internal = {
 					estate = me_estate_cultural_minorities
 					influence = 50
 				}
+			}
+			NOT = {
 				num_of_estate_privileges = {
 					estate = me_estate_cultural_minorities
 					value = 3
@@ -4355,9 +4348,11 @@ me_hab_3_minorities_focus = {
 		trigger = {
 			NOT = {
 				estate_influence = {
-					estate = me_estate_cultural_minorities
-					influence = 50
-				}
+				   	estate = me_estate_cultural_minorities
+				   	influence = 50
+				   }
+			}
+			NOT = {
 				num_of_estate_privileges = {
 					estate = me_estate_cultural_minorities
 					value = 3
@@ -4429,10 +4424,8 @@ me_hab_3_branching_modern_state = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_mainland_development
-			has_country_flag = me_hab_minorities_branch
-		}
+		NOT = {	has_country_flag = me_hab_mainland_development }
+		NOT = {	has_country_flag = me_hab_minorities_branch }
 	}
 	has_country_shield = yes
 	
@@ -4630,15 +4623,19 @@ me_hab_3_enlightenment = {
 		trigger = {
 			crown_land_share = 100
 			absolutism = 100
-			NOT = {
-				num_of_estate_privileges = {
-					estate = estate_church
-					value = 2
+			NOT = { 
+			    num_of_estate_privileges = {
+				    estate = estate_church 
+					value = 2 
 				}
+			}
+			NOT = {
 				num_of_estate_privileges = {
 					estate = estate_nobles
 					value = 2
 				}
+			}
+			NOT = {
 				num_of_estate_privileges = {
 					estate = estate_burghers
 					value = 2
@@ -4666,10 +4663,8 @@ me_hab_4_branching_germany = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_hre_path
-			has_country_flag = me_hab_german_path
-		}
+		NOT = {	has_country_flag = me_hab_hre_path }
+		NOT = {	has_country_flag = me_hab_german_path }
 	}
 	has_country_shield = yes
 	
@@ -5039,10 +5034,8 @@ me_hab_4_navy = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_venetian_module
-			has_country_flag = me_hab_modern_navy
-		}
+		NOT = {	has_country_flag = me_hab_venetian_module }
+		NOT = {	has_country_flag = me_hab_modern_navy }
 	}
 	has_country_shield = yes
 	
@@ -5085,10 +5078,12 @@ me_hab_4_navy = {
 		effect = {
 			custom_tooltip = me_hab_venetian_branch
 			custom_tooltip = me_hab_every_province_with_a_shipyard
-		#	add_province_modifier = {
-		#		name = me_hab_prepare_the_sailors
-		#		duration = 7300
-		#	}
+			#tooltip = {
+		    #	add_province_modifier = {
+		    #		name = me_hab_prepare_the_sailors
+		    #		duration = 7300
+		    #	}
+		    #}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -5313,10 +5308,12 @@ me_hab_4_venetian_module = {
 		}
 		effect = {
 			custom_tooltip = me_hab_every_province_with_a_shipyard
-		#	add_province_modifier = {
-		#		name = me_hab_prepare_the_sailors
-		#		duration = 7300
-		#	}
+			#tooltip = {
+			#	add_province_modifier = {
+			#    	name = me_hab_prepare_the_sailors
+			#    	duration = 7300
+			#    }
+			#}
 			set_country_flag = lan_allow_access_to_venetian_arsenal_flag
 			if = {
 				limit = {
@@ -5944,10 +5941,8 @@ me_hab_4_internal_development = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_mainland_development
-			has_country_flag = me_hab_minorities_branch
-		}
+		NOT = {	has_country_flag = me_hab_mainland_development }
+		NOT = {	has_country_flag = me_hab_minorities_branch }
 	}
 	has_country_shield = yes
 	
@@ -6131,10 +6126,12 @@ me_hab_4_internal_development = {
 			custom_tooltip = " "
 			custom_tooltip = me_hab_minorities_branch
 			custom_tooltip = me_hab_required_areas
-		#	add_province_modifier = {
-		#		name = me_hab_expanding_the_lands
-		#		duration = -1
-		#	}
+			#tooltip = {
+			#	add_province_modifier = {
+			#    	name = me_hab_expanding_the_lands
+			#    	duration = -1
+			#    }
+			#}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -6366,10 +6363,12 @@ me_hab_4_minorities_focus = {
 		}
 		effect = {
 			custom_tooltip = me_hab_all_required_areas
-		#	add_province_modifier = {
-		#		name = me_hab_expanding_the_lands
-		#		duration = -1
-		#	}
+			#tooltip = {
+			#	add_province_modifier = {
+			#    	name = me_hab_expanding_the_lands
+			#    	duration = -1
+			#    }
+			#}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -6995,10 +6994,8 @@ me_hab_5_navy = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_venetian_module
-			has_country_flag = me_hab_modern_navy
-		}
+		NOT = {	has_country_flag = me_hab_venetian_module }
+		NOT = {	has_country_flag = me_hab_modern_navy }
 	}
 	has_country_shield = yes
 
@@ -7255,10 +7252,8 @@ me_hab_5_internal_development = {
 	potential = {
 		tag = HAB
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		NOT = {
-			has_country_flag = me_hab_mainland_development
-			has_country_flag = me_hab_minorities_branch
-		}
+		NOT = {	has_country_flag = me_hab_mainland_development }
+		NOT = {	has_country_flag = me_hab_minorities_branch }
 	}
 	has_country_shield = yes
 	
@@ -7665,11 +7660,13 @@ me_hab_5_2 = {
 				limit = {
 					has_estate = estate_nobles
 				}
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 50
+				NOT = {	
+				    estate_influence = { 
+					    estate = estate_nobles 
+						influence = 50 
 					}
+				}
+				NOT = {
 					estate_territory = {
 						estate = estate_nobles
 						territory = 30

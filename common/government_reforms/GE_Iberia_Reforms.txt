@@ -533,6 +533,13 @@ casa_de_india_reform = {
 trade_princes_reform = {
 	icon = GE_trader
 	allow_normal_conversion = yes
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+            NOT = { has_dlc = "Mare Nostrum" }
+		}
+		can_use_trade_post = yes
+	}
 	effect = {
 		change_variable = {
 			which = Burgher_Influence
@@ -571,7 +578,6 @@ trade_princes_reform = {
 		burghers_loyalty_modifier = 0.05
 		trade_deals_slots = 0.01
 	}
-	can_use_trade_post = yes
 	ai = {
 		factor = 100
 	}

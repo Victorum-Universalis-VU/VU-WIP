@@ -16,15 +16,15 @@ native_size = 10
 native_ferocity = 1 
 native_hostileness = 3 
 
-discovered_by = north_american
-#discovered_by = vu_athabaskan_tech
-#discovered_by = vu_northwest_tech
 
 
-1806.1.1 = { discovered_by = USA } #Lewis and Clarke
-1811.1.1 = { discovered_by = GBR } #David Thompson
+
+
+
+
+
 1832.1.1 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

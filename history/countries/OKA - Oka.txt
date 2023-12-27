@@ -4,6 +4,7 @@ government = monarchy
 add_government_reform = principality
 primary_culture = ryazanian
 religion = orthodox
+#technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 capital = 4116	# Upper Oka

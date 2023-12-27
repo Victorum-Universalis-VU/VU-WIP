@@ -8,16 +8,17 @@ religion = taoism
 capital = "Xiangyang"
 trade_goods = gems #Turquoise
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 6
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
 add_core = CXI
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 1643.5.1 = {
@@ -29,4 +30,3 @@ discovered_by = chinese
 	controller = QNG
 	add_core = QNG
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis

@@ -12,11 +12,11 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-1444.1.1 = { discovered_by = CAB } 1444.1.1 = { discovered_by = ARW } 
+ 
 
 
 
-1499.6.1 = { discovered_by = CAS } # Alonso de Ojeda
+
 1526.1.1 = {
 	owner = SPA 
 	controller = SPA

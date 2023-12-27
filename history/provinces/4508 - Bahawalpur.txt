@@ -7,30 +7,24 @@ religion = sunni
 capital = "Bahawalpur"
 trade_goods = carpet		#was saffron, can be re-added once more provinces are here, then move carpets somewhere nearby
 hre = no
-base_tax = 2  
-base_production = 2 
-base_manpower = 2 
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 add_core = MUL
-discovered_by = indian
-#discovered_by = muslim 
-#discovered_by = ottoman
-discovered_by = TUR
-discovered_by = MAM
-discovered_by = TUN
-discovered_by = TLC
-discovered_by = MOR
-discovered_by = TFL
-discovered_by = SOS
-discovered_by = MRK
-discovered_by = BSM
-discovered_by = GDM
-discovered_by = GHD
-discovered_by = ZAB
-discovered_by = LGH
-discovered_by = GRA
-#discovered_by = dutch_tech_group
-discovered_by = chinese
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 1414.1.1 = {
@@ -60,8 +54,8 @@ discovered_by = chinese
 	add_core = MUG
 	remove_core = SND
 } # Integrated into Mughal Empire
-1690.1.1 = { discovered_by = ENG }
-1707.5.12 = { discovered_by = GBR }
+
+
 1752.1.1 = {
 	owner = AFG
 	controller = AFG

@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.36
 ########################################
 # Events for Bohemia
 #
@@ -515,6 +515,7 @@ country_event = {
 	id = flavor_boh.7
 	title = flavor_boh.7.t
 	desc = flavor_boh.7.d
+	
 	picture = {	
 		trigger = {
 			has_dlc = "Emperor"

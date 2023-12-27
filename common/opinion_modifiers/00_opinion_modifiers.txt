@@ -220,6 +220,10 @@ want_subject_provinces = {
 	opinion = -15
 	min = -200
 }
+want_your_and_subject_provinces = {
+	opinion = -15
+	min = -200
+}
 
 border_friction = {
 	opinion = -1
@@ -460,6 +464,7 @@ subject_called_to_arms = {
 	yearly_decay = 5
 	min = -200
 }
+
 defended_allied_territory =
 {
 	opinion = 10
@@ -663,7 +668,7 @@ sabotage_reputation = {
 aggressive_expansion = {
 	opinion = -1
 	months = 0
-	yearly_decay = 4
+	yearly_decay = 3
 	min = -1000
 }
 
@@ -1003,6 +1008,7 @@ eng_pro_reformation = {
 	opinion = 50
 	yearly_decay = 2
 }
+
 eng_no_english_in_france = {
 	opinion = 50
 	years = 25
@@ -1024,6 +1030,7 @@ ave_unification_of_the_french_region = {
 	opinion = 50
 	yearly_decay = 1
 }
+
 accepted_supremacy_of_rome = {
 	opinion = 25
 	years = 25
@@ -1080,6 +1087,7 @@ french_english_reconciliation_act_opinion = {
 	opinion = 25
 	years = 50
 }
+
 swedish_hats = {
 	opinion = 25
 	years = 25
@@ -1949,10 +1957,10 @@ opinion_annex_part_of_empire = {
 	yearly_decay = 1
 }
 
-opinion_annex_vassal = {
-	opinion = -30
-	years = 15
-	yearly_decay = 5
+opinion_annex_vassal = {     
+	opinion = -1             #was opinion = -30
+	years = 20               #was years = 15
+	yearly_decay = 1         #was yearly_decay = 5
 }
 
 opinion_denying_the_holy_mother = {
@@ -2314,6 +2322,7 @@ anglican_reformation_diplomacy = {
 	max = 100
 	yearly_decay = 3
 }
+
 ##################################################
 # Muslim DLC
 ##################################################
@@ -3698,14 +3707,36 @@ fra_gave_up_on_maine = {
 	opinion = -75
 	yearly_decay = 3
 }
-
-fra_gave_up_on_calais = {
-	opinion = -75
-	yearly_decay = 3
-}
-
 is_tributary = {
 	opinion = 15
+}
+
+is_sphere_of_influence_overlord = {
+	opinion = 15
+}
+
+is_sphere_of_influence_subject = {
+	opinion = 15
+}
+
+left_our_sphere_of_influence = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+left_their_sphere_of_influence = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+was_removed_from_our_sphere_of_influence = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+removed_from_our_sphere_of_influence = {
+	opinion = -100
+	yearly_decay = 2
 }
 
 is_trade_protectorate = {
@@ -3715,6 +3746,7 @@ is_trade_protectorate = {
 is_trade_company = {
 	opinion = 50
 }
+
 they_forced_tributary = {
 	opinion = -100
 	yearly_decay = 2
@@ -4062,6 +4094,7 @@ has_spared_the_tripitaka_koreana = {
 	opinion = 50
 	yearly_decay = 1
 }
+
 opinion_gen_spanish_alliance = {
 	opinion = 100
 	yearly_decay = 1
@@ -4598,6 +4631,7 @@ opinion_malay_converted_to_islam = {
 	opinion = 50
 	yearly_decay = 2
 }
+
 lunar_new_year = {
 	opinion = 50
 	yearly_decay = 2
@@ -4722,6 +4756,7 @@ refused_to_break_alliance_favor = {
 	min = -50
 	yearly_decay = 5
 }
+
 refused_to_give_gold_for_favors = {
 	opinion = -10
 	min = -50
@@ -4792,6 +4827,7 @@ sitting_in_my_friends_tribal_land_opinion = {
 }
 
 # Africa opinions
+
 eth_refused_annexation = {
 	opinion = -50
 	yearly_decay = 1
@@ -4982,6 +5018,7 @@ dan_early_victories = {
 	opinion = 200
 	yearly_decay = 2
 }
+
 nor_refuses_to_aid = {
 	opinion = -50
 	yearly_decay = 2
@@ -5230,4 +5267,72 @@ failed_province_purchase = {
 revoked_our_right_to_war = {
 	opinion = -50
 	yearly_decay = 2
+}
+
+#Byzantium
+BYZ_spared_masjid = {
+	opinion = 35
+	yearly_decay = 1
+}
+
+BYZ_orthodox_confraternity = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+BYZ_union_of_the_churches_op = {
+	opinion = 125
+	yearly_decay = 0
+}
+
+BYZ_refused_union = {
+	opinion = -75
+	yearly_decay = 0.5
+}
+
+#Persia
+per_traveling_artist = {
+	opinion = 50
+	yearly_decay = 5
+}
+
+promote_good_reputation_opinion = {
+	max = 100
+	opinion = 25
+	years = 10
+}
+
+promote_good_reputation_upgraded_opinion = {
+	max = 200
+	opinion = 50
+	years = 10
+}
+
+royal_ambassador_visit = {
+	max = 50
+	opinion = 50
+	years = 5
+}
+
+converted_to_zoroastrian = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+#Mamluks
+
+engaged_in_grain_trade_modifier = {
+	opinion = 25
+	yearly_decay = 2.5
+}
+
+performed_hajj_modifier = {
+	opinion = 30
+	yearly_decay = 3
+}
+
+#VU additions
+fra_gave_up_on_calais = {
+	opinion = -75
+	yearly_decay = 3
 }

@@ -8,15 +8,16 @@ religion = tengri_pagan_reformed
 capital = "Halacha"
 trade_goods = fur
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 4
+base_tax = 6
+base_production = 6
+base_manpower = 6
 is_city = yes
 
 
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
+
+
+
 
 
 1628.1.1 = {
@@ -30,5 +31,5 @@ discovered_by = chinese
 	add_core = QNG
 	remove_core = MCH
 } # The Qing Dynasty
-1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
-1709.1.1 = { discovered_by = SPA }
+
+

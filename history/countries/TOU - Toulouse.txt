@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = occitain
 add_accepted_culture = occitain
 religion = catholic
+#technology_group = western
 technology_group = french_tech_group
 unit_type = western
 capital = 196	# Toulouse

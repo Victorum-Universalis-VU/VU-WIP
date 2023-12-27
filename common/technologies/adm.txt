@@ -9,6 +9,7 @@ ahead_of_time = {
 	monthly_russian_modernization = 0.05
 }
 
+# Pre-era techs
 technology = { #Tribal Government
 	# Tech 0
 	year = 1150
@@ -26,6 +27,8 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+
+	#effect = { } # When a country researches the technology
 }
 
 technology = { #Advanced Tribes
@@ -51,6 +54,8 @@ technology = { #Feudal Monarchy
 	feudal_monarchy = yes
 	oligarchic_republic = yes
 }
+
+# The 30 big techs from here on
 
 technology = { #Medieval Administration  
 	# Tech 3
@@ -110,7 +115,7 @@ technology = { #Agriculture
 	}
 
 	production_efficiency = 0.025
-	development_efficiency = 0.025
+	administrative_efficiency = 0.025
 }
 
 
@@ -254,7 +259,7 @@ technology = {  # Late Feudalism
 
 	allowed_idea_groups = 2
 	production_efficiency = 0.02
-	development_efficiency = 0.03
+	administrative_efficiency = 0.03
 }
 
 technology = {  # Better Tax Collection
@@ -345,11 +350,10 @@ technology = { #Workshop
 		market_production = 0.5		#Very important for this tech
 	}
 
+	#Workshop
 	farm_estate = yes
-	ramparts = yes
-	
-	#Workshop Building
 	workshop = yes
+	ramparts = yes
 }
 
 technology = { #Renaissance Thought
@@ -403,6 +407,8 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.025
+
+
 }
 
 technology = { #Modern Theocracy
@@ -440,6 +446,7 @@ technology = { #Textile Manufactory
 	
 	#Textile Manufactory
 	textile = yes
+
 }
 
 technology = { #Early Modern Administration
@@ -537,6 +544,8 @@ technology = { #Metallurgy
 	
 	mills = yes
 	production_efficiency 	=	0.035
+
+
 }
 
 technology = { #University
@@ -596,7 +605,7 @@ technology = { #Cathedral
 		global_trade = 0.5
 	}
 	
-	#Cathedral Building
+	#Cathedral
 	cathedral = yes
 }
 
@@ -647,7 +656,6 @@ technology = { #The Constitution
 		gunpowder_warfare = 0.5
 		medicine = 0.5
 		civil_service = 0.5
-		market_production = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
@@ -690,7 +698,6 @@ technology = { #Bonds and Tontines
 		gunpowder_warfare = 0.5
 		medicine = 0.5
 		civil_service = 0.5
-		market_production = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
@@ -784,7 +791,6 @@ technology = { #Rotherham Plough
 		gunpowder_warfare = 0.5
 		medicine = 0.5
 		civil_service = 0.5
-		market_production = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
@@ -793,6 +799,7 @@ technology = { #Rotherham Plough
 		enlightenment = 0.5
 		industrialization = 0.25
 	}
+	
 	#Rotherham Plough
 	production_efficiency 	=	0.050
 	administrative_efficiency = 0.15

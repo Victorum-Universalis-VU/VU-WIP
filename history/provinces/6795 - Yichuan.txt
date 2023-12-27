@@ -13,17 +13,12 @@ religion = confucianism
 capital = "Yichuan"
 trade_goods = chinaware
 hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
 
-discovered_by = chinese
-#discovered_by = dutch_tech_group
-
 add_province_triggered_modifier = mahayana_louyang
-
-1608.1.1 = { discovered_by = SPA }
 
 1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1641.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB }

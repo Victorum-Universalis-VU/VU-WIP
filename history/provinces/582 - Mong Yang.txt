@@ -9,7 +9,7 @@ trade_goods = tin
 hre = no
 base_tax = 4
 base_production = 4
-base_manpower = 3
+base_manpower = 4
 fort_15th = yes
 is_city = yes
 add_core = MMA
@@ -17,8 +17,15 @@ add_core = MYA
 
 
 
-discovered_by = chinese
-discovered_by = indian
+
+
+
+
+
+
+
+
+
 
 1449.1.1 = {
 	owner = MYA
@@ -43,7 +50,7 @@ discovered_by = indian
 	controller = TAU
 	add_core = TAU
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+
 1752.1.1 = {
 	owner = SST
 	controller = SST

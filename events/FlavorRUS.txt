@@ -1,3 +1,4 @@
+#VU updated by San Felipe for 1.36
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -89,9 +90,11 @@ country_event = {
 		}
 		owns = 295		# Moskva
 	}
+
 	mean_time_to_happen = {
 		months = 38
 	}
+
 
 	option = {			# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
@@ -131,9 +134,11 @@ country_event = {
 			tag = TZR
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 60
 	}
+
 	option = {		# It all belongs to Mother Russia
 		name = "flavor_rus.EVTOPTA3404"
 		ai_chance = { factor = 100 }
@@ -188,6 +193,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 32
 	}
+
 	
 	option = {		# It all belongs to Mother Russia
 		name = "flavor_rus.EVTOPTA3405"
@@ -235,6 +241,8 @@ country_event = {
 				add_opinion = {	who = ROOT modifier = rus_claimed_land }
 			}
 		}
+
+
 	}
 	option = {
 		name = "flavor_rus.EVTOPTB3405"
@@ -249,7 +257,9 @@ country_event = {
 	title = "flavor_rus.EVTNAME3406"
 	desc = "flavor_rus.EVTDESC3406"
 	picture = MILITARY_CAMP_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 	    OR = { tag = RUS tag = TZR }
 		kazan_area = {
@@ -404,6 +414,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 300
 	}
+
 
 	option = {		# Reform Treasury and Abolish Kormlenije
 		name = "flavor_rus.EVTOPTA3413"
@@ -600,6 +611,7 @@ country_event = {
 			has_estate_privilege = estate_nobles_early_serfdom
 		}
 	}
+
 	
 	option = {			# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
@@ -940,6 +952,7 @@ country_event = {
 	}
 	
 	fire_only_once = yes
+
 		
 	mean_time_to_happen = {
 		months = 240
@@ -1269,7 +1282,9 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			total_development = 400 #VU Dev Doubling
 			is_neighbor_of = ROOT
-			NOT = { alliance_with = ROOT }
+			NOT = {
+				alliance_with = ROOT
+			}
 			any_enemy_country = {
 				NOT = { is_rival = ROOT }
 				NOT = { is_enemy = ROOT }
@@ -1643,6 +1658,8 @@ country_event = {
 		months = 64
 	}
 
+
+
 	option = {		# Keep the Masses in Chains
 		name = "flavor_rus.EVTOPTA3436"
 		ai_chance = { factor = 70 }
@@ -1676,7 +1693,9 @@ country_event = {
 				loyalty = -50
 			}
 		}
+
 	}
+
 }
 
 # Tsar Paul I:s Liberal Legislation
@@ -1863,6 +1882,7 @@ country_event = {
 		months = 60
 	}
 
+
 	option = {		# Excellent
 		name = "EXCELLENT"
 		add_adm_power = 10
@@ -1928,6 +1948,7 @@ country_event = {
 		months = 75
 	}
 
+
 	option = {		# Excellent
 		name = "EXCELLENT"
 		define_advisor = {
@@ -1965,6 +1986,7 @@ country_event = {
 		}
 		government = monarchy
 		dynasty = "Rurikovich"
+		is_lesser_in_union = no
 		is_year = 1500
 		NOT = { is_year = 1600 }
 	}
@@ -1994,7 +2016,7 @@ country_event = {
 				factor = 0
 				NOT = {
 					ruler_total_stats = {
-						stats = 15
+						amount = 15
 					}
 				}
 			}
@@ -2012,7 +2034,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				ruler_total_stats = {
-					stats = 15
+					amount = 15
 				}
 			}
 			modifier = {
@@ -2223,7 +2245,7 @@ country_event = {
 	#A new age for Russia
 	option = {
 		name = flavor_rus.44.a
-		custom_tooltip = rus_the_age_of_revolution_vu
+		custom_tooltip = rus_the_age_of_revolution_bt
 		set_country_flag = rus_has_rev_missions
 		swap_non_generic_missions = yes
 		
@@ -2466,49 +2488,49 @@ country_event = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		perm_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		west_karelia_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		tambov_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		middle_don_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		pskov_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		toropets_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_claim = ROOT
 		}
 		kama_area = {
 			limit = {
@@ -2627,10 +2649,10 @@ country_event = {
 	option = {
 		name = flavor_rus.102.a
 		1955 = {
-				add_base_tax = -1
-				add_base_production = -1
-				add_base_manpower = -1
-				add_center_of_trade_level = -1
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			add_center_of_trade_level = -1
 		}
 		313 = {
 			center_of_trade = 2
@@ -2663,6 +2685,7 @@ country_event = {
 		hidden_effect = {
 			finland_area = {
 				add_core = FIN
+				remove_core = ROOT 
 				if = {
 					limit = { NOT = { owned_by = ROOT } }
 					cede_province = ROOT
@@ -2670,6 +2693,7 @@ country_event = {
 			}
 			bothnia_area = {
 				add_core = FIN
+				remove_core = ROOT 
 				if = {
 					limit = { NOT = { owned_by = ROOT } }
 					cede_province = ROOT
@@ -2677,6 +2701,31 @@ country_event = {
 			}
 			laponia_area = {
 				add_core = FIN
+				remove_core = ROOT 
+				if = {
+					limit = { NOT = { owned_by = ROOT } }
+					cede_province = ROOT
+				}
+			}
+			32 = {
+				add_core = FIN
+				remove_core = ROOT 
+				if = {
+					limit = { NOT = { owned_by = ROOT } }
+					cede_province = ROOT
+				}
+			}
+			4124 = {
+				add_core = FIN
+				remove_core = ROOT 
+				if = {
+					limit = { NOT = { owned_by = ROOT } }
+					cede_province = ROOT
+				}
+			}
+			4151 = {
+				add_core = FIN
+				remove_core = ROOT 
 				if = {
 					limit = { NOT = { owned_by = ROOT } }
 					cede_province = ROOT
@@ -3352,6 +3401,7 @@ country_event = {
 		is_year = 1600
 		NOT = { is_year = 1700 } 
 		government = monarchy
+		is_lesser_in_union = no
 		has_regency = no
 		OR = {
 			has_heir = no
@@ -3451,6 +3501,7 @@ country_event = {
 		is_year = 1700
 		NOT = { is_year = 1800 } 
 		government = monarchy
+		is_lesser_in_union = no
 		NOT = { adm = 3 }
 		NOT = { dip = 3 }
 		NOT = { mil = 3 }
@@ -3751,7 +3802,7 @@ country_event = {
 				}
 			}
 		}
-		vu_change_tech_group_to_western = yes
+		#vu_change_tech_group_to_western = yes
 		change_technology_group = western
 		add_prestige_or_monarch_power = {
 			amount = 50
@@ -3767,14 +3818,7 @@ country_event = {
 	#	set_country_flag = rus_westernized_in_court
 	#	if = {
 	#		limit = { 
-	#	        OR = {
-	#			    technology_group = bohemian_tech_group
-	#			    technology_group = byzantine_tech_group
-	#			    technology_group = eastern
-	#			    technology_group = hungarian_tech_group
-	#			    technology_group = polish_tech_group
-	#			    technology_group = russian_tech_group 
-	#			}
+	#	        technology_group = eastern
 	#		}
 	#		unlock_estate = {
 	#			estate = estate_cossacks
@@ -3876,6 +3920,10 @@ country_event = {
 			multiply_variable = {
 				which = money_to_transfer
 				value = 3
+			}
+			set_variable = {
+				which = money_to_transfer_info
+				which = money_to_transfer
 			}
 		}
 	}
@@ -4195,6 +4243,12 @@ country_event = {
 			add_estate_loyalty = {
 				estate = estate_nobles
 				loyalty = 25
+			}
+		}
+		event_target:revolt_province = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 2
 			}
 		}
 		ai_chance = {
@@ -4641,6 +4695,7 @@ country_event = {
 		has_dlc = "Domination"
 		tag = RUS
 		NOT = { has_country_flag = rus_peasant_fate }
+		has_estate = estate_nobles
 	}
 	
 	mean_time_to_happen = {
@@ -4651,13 +4706,25 @@ country_event = {
 		name = "flavor_rus.EVTOPTA3416"
 		ai_chance = { factor = 75 }
 		add_stability = -1
-		set_estate_privilege = estate_nobles_early_serfdom
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_nobles_early_serfdom }
+				NOT = { has_estate_privilege = estate_nobles_increased_peasant_freedom }
+			}
+			set_estate_privilege = estate_nobles_early_serfdom
+		}
 	}
 	option = {		# Do not enserf them
 		name = "flavor_rus.EVTOPTB3416"
 		ai_chance = { factor = 25 }
 		add_stability = -1
-		set_estate_privilege = estate_nobles_increased_peasant_freedom
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_nobles_early_serfdom }
+				NOT = { has_estate_privilege = estate_nobles_increased_peasant_freedom }
+			}
+			set_estate_privilege = estate_nobles_increased_peasant_freedom
+		}
 	}
 }
 
