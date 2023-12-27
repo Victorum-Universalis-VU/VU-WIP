@@ -13,3 +13,6 @@ San Felipe - VU Creator, Edumacation Mechanic Creator, Image/Icon editing, Flags
 SherpatheYeti - Discovery Bug fixer, File checker, Verifyer and Tech Specialist
 Sphinx - China and India overhaul
 Mirza - Provinces, Countries, Terrain
+Moriavis - Tradegoods file 00 & 01
+Oblivier - Religions overhaul
+Manuelmax - Estonian tags for 1215
