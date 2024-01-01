@@ -2967,9 +2967,24 @@ cultural_administration_reform = {
 presidential_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Populist_Influence
+			value = -1
+		}
+	}
 	modifiers = {
 		embracement_cost = -0.1
 		max_absolutism = 5
+	}
+	custom_attributes = {
+		enables_presidental_authority = yes #-15% stabcost at 4 adm, +1 diprep at 4 dip, +25 reinforce speed at 4 mil
 	}
 	ai = {
 		factor = 1

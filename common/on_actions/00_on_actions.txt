@@ -8191,7 +8191,7 @@ on_golden_bull_enacted = {
 			add_papal_influence = 10
 		}
 	}
-	else = {
+	else_if = {
 		limit = {
 			TFR = { has_country_flag = vu_gain_25_random_pp_and_10_pi_per_bull_flag }
 		}

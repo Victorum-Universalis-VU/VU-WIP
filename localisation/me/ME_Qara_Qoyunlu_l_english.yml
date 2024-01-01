@@ -152,6 +152,7 @@
  QAR_curb_qar_title: "Curb Qara Qoyunlu"
  QAR_curb_qar_desc: "That petty tribal federation must be defeated."
  cb_curb_baghdad_qq: "Curb Qara Qoyunlu"
+ cb_curb_baghdad_qq_desc: "That petty tribal federation must be defeated."
  superiority_punish_qara_qoyunlu: "Punish Qara Qoyunlu"
  superiority_punish_qara_qoyunlu_desc: "The Qara Qoyunlu refused to bend the knee. Soon they will bend their heads instead."
  take_capital_cb_curb_baghdad_qq: "Reduce Autonomy"
@@ -295,6 +296,7 @@
  ME_Qara_Qoyunlu_Events.33.b: "We have grown too reliant on old Jalayirid Nobility."
  
  cb_punish_qara_qoyunlu: "Punish Qara Qoyunlu"
+ cb_punish_qara_qoyunlu_desc: "Let us Punish Qara Qoyunlu."
  QAR_PUNISH_QARA_QOYUNLU: "The Punishment of Qara Qoyunlu"
  QAR_curb_baghdad: "The Curbing of Baghdad"
  

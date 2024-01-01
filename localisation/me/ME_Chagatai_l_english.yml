@@ -26,8 +26,8 @@
  CHG_chinese_relations_desc: "Since the collapse of the Great Yuan, our relations with China have deteriorated significantly. Unlike the Yuan, the Ming Chinese see us as simply another pastoral tribe seeking their demise. We cannot simply submit, but compared to their power, we are but ants. Perhaps the peaceful route would spare us the same fate as the Yuan."
  CHG_the_splinters_title: "The Splinters"
  CHG_the_splinters_desc: "Since the collapse of the Great Yuan, our relations with China have deteriorated significantly. Unlike the Yuan, the Ming Chinese see us as simply another pastoral tribe seeking their demise. We cannot simply submit, but compared to their power, we are but ants. Perhaps the peaceful route would spare us the same fate as the Yuan."
- CHG_integrate_the_tribes_title: "Integrate the Tribes"
- CHG_integrate_the_tribes_desc: "The various Mongol tribes we have brought under our control remain disorganized and in need of centralized rule. Though we control them in name, they remain subject to their own desires. We must fix this grave oversight."
+ #CHG_integrate_the_tribes_title: "Integrate the Tribes"
+ #CHG_integrate_the_tribes_desc: "The various Mongol tribes we have brought under our control remain disorganized and in need of centralized rule. Though we control them in name, they remain subject to their own desires. We must fix this grave oversight."
  
  ME_Chagatai_Tooltip.1: "§Y[Root.GetName]§! is moved §Y10§! towards legalism or mysticism, depending on its current piety."
  ME_Chagatai_Tooltip.3: "The decision '§YConsolidate Splinters§!' is unlocked."

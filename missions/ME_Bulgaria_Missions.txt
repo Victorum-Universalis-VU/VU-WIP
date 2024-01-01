@@ -2044,10 +2044,7 @@ bulgaria_missions_5 = {
 		effect = {
 			custom_tooltip = BUL_CULTURE_CONVERSION_TT
 			hidden_effect = {
-				country_event = {
-					id = ME_Bulgaria_Events.8
-					days = 5475
-				}
+				country_event = { id = ME_Bulgaria_Events.8 days = 5475 }
 			}
 			add_country_modifier = {
 				name = bul_subsidized_the_migrants

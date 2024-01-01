@@ -740,7 +740,6 @@ south_east_asia_provinces = {
 
 east_african_coast_provinces_2 = {
 	4020 #Comoros
-	7300 #Limpopo River
 	1194 4021 4022 4024 #Madagascar
 	1248 #Maldives
 	1447 1448 1449 1450 1453 1616 1617 1619 #Indian Ocean

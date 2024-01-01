@@ -70,7 +70,7 @@ SVT = "countries/Svaneti.txt"
 T4R = "countries/Tarki.txt"
 TLY = "countries/Talysh.txt"
 UBY = "countries/Ubykh.txt"
-LEK = "countries/Lezgia.txt"
+LEK = "countries/Lekia.txt"
 
 #German Diaspora
 VOG = "countries/Wolgadeutche.txt"

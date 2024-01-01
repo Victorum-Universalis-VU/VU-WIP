@@ -150,6 +150,7 @@
  string_is_subject_tge: "Overlord"
  string_is_not_subject_tge: "Subjects"
  import_from_subjects_modifier: "Overlord Is Importing Resources"
+ desc_import_from_subjects_modifier: "Let us import from our subject."
  chocolate_modifier: "Chocolate Trading in bonus"
  mine_local: "Local Mining Industry\n\n§W---------------\nLocals are providing just enough resources to sustain local industry in the province§!"
   

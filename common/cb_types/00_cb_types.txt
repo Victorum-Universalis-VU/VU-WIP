@@ -409,7 +409,6 @@ cb_conquest = {
 
 	prerequisites = {
 		claim = FROM
-		NOT = { has_country_flag = me_tim_less_ae_claims }
 	}
 
 	war_goal = take_claim
@@ -1410,25 +1409,8 @@ cb_chinese_unification = {
 			any_owned_province = {
 				OR = {
 					region = north_china_region 
-					#region = hebei_region 
-                    #region = henan_region
-                    #region = shanxi_region
-                    #region = gansu_region
-                    #region = shaanxi_region
-                    #region = anhui_region
-					region = south_china_region 
-                    #region = hainan_region 
-                    #region = guangdong_region
-                    #region = fujian_region
-                    #region = jiangxi_region
-                    #region = zhejiang_region
-                    #region = jiangsu_region
-                    #region = hunan_region
-                    #region = guangxi_region
-                    #region = taiwan_region
 					region = xinan_region
-                    #region = sichuan_region
-                    #region = yunnan_region
+					region = south_china_region 
 				}
 			}
 			NOT = { has_country_modifier = the_mandate_of_heaven }
@@ -1809,7 +1791,6 @@ cb_push_back_colonizers = {
 		has_dlc = "Conquest of Paradise"
 		is_native_tribe = yes
 	}
-
 	prerequisites = {
 		FROM = {
 			is_native_tribe = no
@@ -1970,25 +1951,8 @@ conquer_china_cb = {
 			any_owned_province = {
 				OR = {
 					region = north_china_region 
-					#region = hebei_region 
-                    #region = henan_region
-                    #region = shanxi_region
-                    #region = gansu_region
-                    #region = shaanxi_region
-                    #region = anhui_region
-					region = south_china_region
-                    #region = hainan_region 
-                    #region = guangdong_region
-                    #region = fujian_region
-                    #region = jiangxi_region
-                    #region = zhejiang_region
-                    #region = jiangsu_region
-                    #region = hunan_region
-                    #region = guangxi_region
-                    #region = taiwan_region
 					region = xinan_region
-                    #region = sichuan_region
-                    #region = yunnan_region
+					region = south_china_region
 				}
 			}
 		}

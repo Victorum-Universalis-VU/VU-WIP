@@ -106,6 +106,7 @@
  NAJ_clerical_ministers_buff_tooltip: "While we are at least §Y50.0§! towards §YLegalism§!:\n    Global Prosperity Growth: §G+0.50§!"
  
  ME_wahhabi_scholar: "Founder of Wahhabi Movement"
+ ME_wahhabi_scholar_desc: "Found the Wahhabi faith."
  
  cb_najd_war: "Najdi Holy War"
  cb_najd_war_desc: "Everyone shall submit to one true Fiqh!"

@@ -11012,7 +11012,7 @@ bara_katra = {
 }
 
 bran_castle = {
-    start = 4128
+    start = 7010
     
     date = 1212.01.01
     
@@ -11037,11 +11037,11 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = dacian 
+			culture = romanian
 			province_is_or_accepts_culture = yes
 		}
         else = {
-			culture_group = dacian
+			culture = romanian
 			province_is_or_accepts_culture = yes
 		}
     }

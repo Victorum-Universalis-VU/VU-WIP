@@ -2,6 +2,7 @@
 
 type = infantry
 unit_type = muslim
+unit_type = persian_tech_group
 
 maneuver = 1
 offensive_morale = 1

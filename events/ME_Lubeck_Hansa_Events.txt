@@ -833,8 +833,10 @@ province_event = { # A New Kontor
 			set_province_flag = HNS_this_node_has_kontor
 		}
 		else = {
-			random_trade_node_member_province = {
-				province_event = { id = ME_Hansa_Events.16 } #need to rescope FROM
+			45 = {
+				random_trade_node_member_province = {
+			    	province_event = { id = ME_Hansa_Events.16 } #need to rescope FROM
+			    }
 			}
 		}
 	}

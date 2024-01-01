@@ -13,6 +13,7 @@ l_english:
  thevoyage: "The Voyage - EUIV Main Theme"
  
  ME_historian: "Historian"
+ ME_historian_desc: "Historian"
  
  # loc for decision to update missions
  the_fix_title: "§YUpdate Missions§!"
@@ -27,7 +28,9 @@ l_english:
  ME_no: "£no£"
  ME_nothing: ""
  sufi_scholar_advisor: "Sufi Scholar"
+ sufi_scholar_advisor_desc: "Sufi Scholar"
  ME_mercenary_commander: "Mercenary Commander"
+ ME_mercenary_commander_desc: "Mercenary Commander"
 
  ME_cb_20: "This §YCasus Belli§! lasts for §G20§! years."
  ME_cb_15: "This §YCasus Belli§! lasts for §G15§! years."

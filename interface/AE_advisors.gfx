@@ -342,6 +342,15 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_advisor_vu_noble_man"
+		texturefile = "gfx/interface/advisors//vu_noble_man.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_advisor_administrator_female"
 		texturefile = "gfx//interface//advisors//administrator_female.dds"
 		noOfFrames = 1
@@ -659,6 +668,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_advisor_asiangfx_defensive_planner_female"
 		texturefile = "gfx//interface//advisors//asian_defensive_planner_female.dds"
+		noOfFrames = 1
+
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_vu_noble_man_female"
+		texturefile = "gfx/interface/advisors//vu_noble_woman.dds"
 		noOfFrames = 1
 
 		effectFile = "gfx/FX/buttonstate.lua"

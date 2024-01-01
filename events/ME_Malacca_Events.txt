@@ -285,12 +285,12 @@ country_event = {
 						variable_arithmetic_trigger = {
 							export_to_variable = {
 								variable_name = JOH_Distance
-								value = capital_distance
+								value = border_distance #was capital_distance
 								who = JOH
 							}
 							export_to_variable = {
 								variable_name = PRK_Distance
-								value = capital_distance
+								value = border_distance #was capital_distance
 								who = PRK
 							}
 							check_variable = {

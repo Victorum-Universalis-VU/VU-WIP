@@ -24,7 +24,8 @@
  PAL_bavarian_wittelbachs_title: "Bavarian Wittelsbachs"
  PAL_bavarian_wittelbachs_desc: "A branch of the Wittelsbachs resides in Bavaria, south of Upper Palatinate. We need to bring their branch so close to us, so close in fact, that they will fully submit to our rule."
  
- PAL_bibliotheca_palatina: "Center of Religious Books"
+ PAL_bibliotheca_palatina_modifier: "Center of Religious Books"
+ desc_PAL_bibliotheca_palatina_modifier: "Center of Religious Books"
  PAL_palatina: "The Treasure Trove of Books"
  PAL_bibliotheca_palatina_triggered: "Bibliotheca Palatina"
  PAL_center_of_books: "Center of Learning"

@@ -2242,7 +2242,7 @@ me_hab_2_1 = {
 			custom_trigger_tooltip = {
 				tooltip = me_hab_can_support_7_generals
 				has_global_modifier_value = {
-					which = free_leader_pool
+					which = land_morale #free_leader_pool
 					value = 5
 				}
 			}
@@ -5245,7 +5245,7 @@ me_hab_4_navy = {
 			set_country_flag = me_hab_better_admirality
 			tooltip = {
 				add_country_modifier = {
-					name = me_hab_burghers_in_navy
+					name = me_hab_burghers_in_navy_modifier
 					duration = -1
 					desc = "until privilege is revoked"
 				}
@@ -5256,7 +5256,7 @@ me_hab_4_navy = {
 						has_estate_privilege = estate_burghers_admirals
 					}
 					add_country_modifier = {
-						name = me_hab_burghers_in_navy
+						name = me_hab_burghers_in_navy_modifier
 						duration = -1
 						desc = "until privilege is revoked"
 					}
@@ -5496,7 +5496,7 @@ me_hab_4_modern_navy = {
 			set_country_flag = me_hab_better_admirality
 			tooltip = {
 				add_country_modifier = {
-					name = me_hab_burghers_in_navy
+					name = me_hab_burghers_in_navy_modifier
 					duration = -1
 					desc = "until privilege is revoked"
 				}
@@ -5507,7 +5507,7 @@ me_hab_4_modern_navy = {
 						has_estate_privilege = estate_burghers_admirals
 					}
 					add_country_modifier = {
-						name = me_hab_burghers_in_navy
+						name = me_hab_burghers_in_navy_modifier
 						duration = -1
 						desc = "until privilege is revoked"
 					}
@@ -6850,7 +6850,8 @@ me_hab_5 = {
 						}
 					}
 					1826 = {
-						remove_province_modifier = autonomy_decreased
+						add_unrest = -10
+						#remove_province_modifier = autonomy_decreased
 					}
 				}
 				else = {

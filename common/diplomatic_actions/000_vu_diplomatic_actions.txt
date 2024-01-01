@@ -536,7 +536,7 @@ annexationaction = {
 				set_country_flag = annexable_colony_annexation_started
 				export_to_variable = {
 					which = annexable_colony_num_of_cities
-					value = trigger_value:num_of_cities
+					value = 1
 				}
 				divide_variable = { which = annexable_colony_num_of_cities value = 2 }
 				while = {

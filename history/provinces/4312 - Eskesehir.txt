@@ -1,8 +1,6 @@
 #4312 - Eskisehir
 
-latent_trade_goods = {
-	coal
-}
+
 
 #Default
 owner = TUR

@@ -239,8 +239,6 @@ spriteTypes = {
 	}
 	
 
-
-
 #### Generic Mission Icons ####
 	spriteType = {
 		name = "mission_placeholder"

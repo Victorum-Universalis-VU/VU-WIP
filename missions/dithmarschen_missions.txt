@@ -579,6 +579,7 @@ vu_dithmarschen_missions_3 = {
 							limit = {
 								government = republic
 							}
+							change_government_to_republic = yes
 						}
 						add_government_reform = peasants_republic
 						add_historical_friend = DTT 
@@ -598,13 +599,21 @@ vu_dithmarschen_missions_3 = {
 			hidden_effect = {
 				if = {
 					limit = { 
-						45 = { owned_by = ROOT }
+						45 = { 
+							owned_by = ROOT 
+						}
 					}
-					45 = { add_center_of_trade_level = 1 }
+					45 = { 
+						add_center_of_trade_level = 1 
+					}
 					country_event = { id = FU_Monument_Events.2 }
 				}
 				else_if = {
-					limit = { 45 = { is_subject_of = ROOT } }
+					limit = { 
+						45 = {
+							owned_by_subject_of = ROOT #was is_subject_of = ROOT
+						} 
+					}
 					45 = {
 						add_trade_modifier = {
 							who = ROOT 

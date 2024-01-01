@@ -1606,14 +1606,14 @@ country_event = { #The Decay of Rome
 		is_subject = no 
 		# if = {
 			# limit = { has_dlc = "Purple Phoenix" }
-			NOT = { mission_completed = byz_prevent_collapse }
+			NOT = { mission_completed = BYZ_greece } #was byz_prevent_collapse
 		# }
 		# else = { 
 			# NOT = { mission_completed = ppbyz_prevent_collapse }
 		# }
 		# if = {
 			# limit = { has_dlc = "Purple Phoenix" }
-			NOT = { mission_completed = byz_retain_imperial_throne }
+			NOT = { mission_completed = BYZ_royal_purple } #was byz_retain_imperial_throne
 		# }
 		# else = { 
 			# NOT = { mission_completed = ppbyz_retain_imperial_throne }
@@ -2529,10 +2529,10 @@ country_event = { #The Preservation of Old Ideals
 	trigger = {
 		tag = BYZ 
 		OR = {
-			mission_completed = byz_zupac_rascia
-			mission_completed = byz_subjugate_bulgars
-			mission_completed = byz_house_wisdom
-			mission_completed = byz_lost_sheep
+			#mission_completed = byz_zupac_rascia
+			mission_completed = BYZ_bulgaria #byz_subjugate_bulgars
+			#mission_completed = byz_house_wisdom
+			#mission_completed = byz_lost_sheep
 		}
 		BYZ = { total_development = 600 }
 		
@@ -2645,7 +2645,7 @@ country_event = { #A Man of Technical Expertise
 			AND = {
 				tag = BYZ 
 				# OR = { 
-					mission_completed = byz_admiralty_purple
+					mission_completed = BYZ_restore_navy #was byz_admiralty_purple
 					# mission_completed = ppbyz_admiralty_purple 
 				# }
 				navy_tradition = 50 

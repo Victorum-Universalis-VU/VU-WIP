@@ -18,7 +18,6 @@ aq_qoyunlu_first = {
 		has_dlc = "King of Kings"
 		has_country_flag = use_paradox_missions
 	}
-	}
 	has_country_shield = yes
 	
 	aq_qoyunlu_last_romans = {

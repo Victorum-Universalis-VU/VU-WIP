@@ -459,9 +459,11 @@ Azerbaijani_Generic_Missions_TBR = {
 			}
 		}
 		effect = {
-			add_province_modifier = {
-				name = TBR_the_center_of_azerbaijan
-				duration = -1
+			416 = {
+				add_province_modifier = {
+			    	name = TBR_the_center_of_azerbaijan_modifier
+			    	duration = -1
+			    }
 			}
 		}
 	}
@@ -783,7 +785,7 @@ AZE_Missions_2 = {
 		}
 	}
 	AZE_an_empire_spanning_wide = {
-		icon = me_mission_shiny_crown
+		icon = vu_crowning_shah
 		required_missions = { AZE_thrust_east AZE_conquer_Iran AZE_conquer_anatolia }
 		position = 8
 		provinces_to_highlight = {

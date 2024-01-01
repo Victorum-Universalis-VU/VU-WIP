@@ -259,6 +259,7 @@ wine = {
 			}
 		}
 		modifier = {
+		#Added various areas known for producing wine in North America -NK.
 			factor = 0
 			normal_or_historical_nations = yes
 			NOT = { continent = south_america }
@@ -275,6 +276,10 @@ wine = {
 			NOT = { area = upper_canada_area }
 			NOT = { area = oregon_area }
 			NOT = { area = salish_sea_area }
+			NOT = { area = hudson_valley_area }
+			NOT = { area = ohio_country_area }
+			NOT = { area = upper_louisiana_area }
+			NOT = { region = canada_region }
 		}
 		modifier = {
 			factor = 0.25

@@ -1255,7 +1255,7 @@ country_event = {
 				iranian_coast_area_provinces = { discover_country = ROOT }
 				west_coast_of_india_provinces = { discover_country = ROOT }
 				yemen_area = { discover_country = ROOT }
-				#Uniscovered provinces
+				#Uniscovered provinces*
 				205 = { undiscover_country = ROOT }
 				361 = { undiscover_country = ROOT }
 				383 = { undiscover_country = ROOT }

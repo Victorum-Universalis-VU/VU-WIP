@@ -70,7 +70,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_country_modifier = RHN_blast_furnace_cost
+					has_country_modifier = RHN_blast_furnace_cost_modifier
 				}
 				treasury = 1500
 			}
@@ -97,7 +97,7 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = {
-					has_country_modifier = RHN_blast_furnace_cost
+					has_country_modifier = RHN_blast_furnace_cost_modifier
 				}
 				custom_tooltip = RHN_Blast_furnaces_decision_tt2
 			}
@@ -441,7 +441,7 @@ country_decisions = {
 	RHN_palace = {
 		potential = {
 			has_country_flag = RHN_may_have_buildings
-			NOT = { has_country_modifier = RHN_palace_3 }
+			NOT = { has_country_modifier = RHN_palace_3_modifier }
 			#OR = {
 			#	NOT = { has_country_flag = RHN_building_flag }
 			#	had_country_flag = {
@@ -453,13 +453,13 @@ country_decisions = {
 		allow = {
 			if = {
 				limit = {
-					has_country_modifier = RHN_palace_1
+					has_country_modifier = RHN_palace_1_modifier
 				}
 				treasury = 10000
 			}
 			else_if = {
 				limit = {
-					has_country_modifier = RHN_palace_2
+					has_country_modifier = RHN_palace_2_modifier
 				}
 				treasury = 50000
 			}
@@ -488,7 +488,7 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = {
-					has_country_modifier = RHN_palace_1
+					has_country_modifier = RHN_palace_1_modifier
 				}
 				custom_tooltip = RHN_current_benefits
 				custom_tooltip = RHN_palace_benefits_one
@@ -498,7 +498,7 @@ country_decisions = {
 			}
 			else_if = {
 				limit = {
-					has_country_modifier = RHN_palace_2
+					has_country_modifier = RHN_palace_2_modifier
 				}
 				custom_tooltip = RHN_current_benefits
 				custom_tooltip = RHN_palace_benefits_two

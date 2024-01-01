@@ -13249,16 +13249,16 @@ medieval_vassal = {
 		}
 		OR = {
 			AND = {
-				has_global_flag = extended_timeline_mod
-				OR = {
-					AND = {
-						#current_age = dark_age
-						#has_institution = early_feudalism
-					}
-					#current_age = feudal_age
-					#current_age = high_middle_ages
-					#current_age = late_middle_ages
-				}
+				#has_global_flag = extended_timeline_mod
+				#OR = {
+				#	AND = {
+				#		#current_age = dark_age
+				#		#has_institution = early_feudalism
+				#	}
+				#	#current_age = feudal_age
+				#	#current_age = high_middle_ages
+				#	#current_age = late_middle_ages
+				#}
 				OR = {
 					religion_group = christian
 					religion_group = muslim

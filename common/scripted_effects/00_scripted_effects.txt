@@ -4426,6 +4426,54 @@ fifty_percent_merc_army_professionalism_cost = {
 }
 
 #Province effect
+set_center_level_5_center_of_trade = {
+	custom_tooltip = set_center_level_5_center_of_trade_tt
+	hidden_effect = {
+		if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 1 } }
+			center_of_trade = 5
+		}
+		else = {
+			if = {
+				limit = { province_has_center_of_trade_of_level = 5 }
+				add_base_production = 8
+			}
+			else_if = {
+				limit = { province_has_center_of_trade_of_level = 4 }
+				add_base_production = 6
+				add_center_of_trade_level = 1
+			}
+			else = {
+				add_center_of_trade_level = 2
+			}
+		}
+	}
+}
+
+set_center_level_4_center_of_trade = {
+	custom_tooltip = set_center_level_4_center_of_trade_tt
+	hidden_effect = {
+		if = {
+			limit = { NOT = { province_has_center_of_trade_of_level = 1 } }
+			center_of_trade = 4
+		}
+		else = {
+			if = {
+				limit = { province_has_center_of_trade_of_level = 4 }
+				add_base_production = 6
+			}
+			else_if = {
+				limit = { province_has_center_of_trade_of_level = 3 }
+				add_base_production = 4
+				add_center_of_trade_level = 1
+			}
+			else = {
+				add_center_of_trade_level = 2
+			}
+		}
+	}
+}
+
 set_center_level_3_center_of_trade = {
 	custom_tooltip = set_center_level_3_center_of_trade_tt
 	hidden_effect = {

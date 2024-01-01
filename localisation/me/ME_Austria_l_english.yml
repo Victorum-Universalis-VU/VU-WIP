@@ -566,12 +566,12 @@
  ME_Austria_Events.8.a: "We shall."
 
  ME_Austria_Events.9.t: "The Habsburg Wedding"
- ME_Austria_Events.9.d: "WIth our Habsburg heir finally coming of age, it is time to decide. He himself rules Austria and the Holy Roman Empire. If we fall under his rule we may be well under their protection."
+ ME_Austria_Events.9.d: "With our Habsburg heir finally coming of age, it is time to decide. He himself rules Austria and the Holy Roman Empire. If we fall under his rule we may be well under their protection."
  ME_Austria_Events.9.a: "Charles will lead us to greatness!"
  ME_Austria_Events.9.b: "No Habsburg prince will look out for us."
 
  ME_Austria_Events.10.t: "A Balanced Court"
- ME_Austria_Events.10.d: "The estates have been controlling our every decision for far too long. All united against ruining our rule, looking out for themselves. Instead, how about we make it so the estates fight against eachother? Give them the proper privileges to steer enough conflict, and reap the benefits of their discord."
+ ME_Austria_Events.10.d: "Let us find a balance so that the estates fight against eachother by giving them privileges that create division and conflict between them that will allow us to eventually reap the benefits from."
  ME_Austria_Events.10.a: "They will remember who truly rules them soon enough."
 
  ME_Austria_Events.11.t: "Founding of the Nordmark"
@@ -1015,7 +1015,8 @@
  me_hab_abolished_serfdom: "Abolished Serfdom"
  me_hab_unity_of_the_confederation: "Unity of the Confederation"
  me_hab_austrian_led_confederation: "Austrian Led Confederation"
- me_hab_burghers_in_navy: "Burghers in the Navy"
+ me_hab_burghers_in_navy_modifier: "Merchant Navy"
+ desc_me_hab_burghers_in_navy_modifier: "Merchant Navy"
  me_hab_bohemian_gold: "Bohemian Gold"
  me_hab_kingdom_of_italy: "Kingdom of Italy"
  me_hab_german_settlers: "German Settlers"

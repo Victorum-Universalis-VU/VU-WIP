@@ -430,7 +430,7 @@ australia_missions_2 = {
 						}
 					}
 				}
-				1397 = {
+				6081 = {
 					every_trade_node_member_province = {
 						limit = {
 							owned_by = ROOT

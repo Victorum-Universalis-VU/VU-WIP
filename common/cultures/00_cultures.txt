@@ -11225,7 +11225,7 @@ japanese_g = {
 	}
 	hokkaido = { 
 		province = { local_has_samurai = yes }
-		#primary = 
+		#primary = na
 		dynasty_names = {
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa
 			Kuni Nashimoto Takeda Yamashina

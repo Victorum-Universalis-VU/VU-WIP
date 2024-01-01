@@ -868,6 +868,7 @@
  me_mug_lose_15_ae_in_india: "Lose §G15§! Agressive Expansion with all countries whose capital is in §YIndia§!"
  #CB Types:
  cb_conquest_of_india: "Conquest of India"
+ cb_conquest_of_india_desc: "Let us conquer India."
  cb_conquest_of_india_less_ae: "Conquest of India"
  cb_conquest_of_india_less_ae_desc: "Conquer India"
  cb_conquest_of_india_less_province: "Conquest of India"
@@ -876,7 +877,9 @@
  cb_conquest_tim_desc: ""
 
  MUG_conquer_india_ae: "Unification of India"
+ MUG_conquer_india_ae_desc: "Let us unify India."
  MUG_conquer_india_cost: "Unification of India"
+ MUG_conquer_india_cost_desc: "Let us unify India."
  
  MUG_conquer_hindustan: "Unification of India"
  MUG_conquer_hindustan_desc: "Conquest of India"

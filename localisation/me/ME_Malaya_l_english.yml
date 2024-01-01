@@ -678,7 +678,8 @@
  MSA_pilgrims: "Pilgrims from Malaya"
  MSA_pilgrim_routes_protected: "Pilgrim Routes Protected"
  desc_MSA_pilgrim_routes_protected: ""
- MSA_religious_minority: "Religious Minority"
+ MSA_religious_minority_modifier: "Religious Minority"
+ desc_MSA_religious_minority_modifier: "Religious Minority"
  MSA_scholarly_practices: "Scholarly Practices"
  MSA_innovations: "Naval Innovations"
  MSA_masterful_spice: "Masterful Spice Production"
@@ -1001,4 +1002,5 @@
  flavor_mlc.9.e: "Our literary name suits us best."
 
  bendahara: "Bendahara"
+ bendahara_desc: "Bendahara"
  travelling_merchant: "Travelling Merchant"

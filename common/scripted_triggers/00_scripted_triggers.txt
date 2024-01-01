@@ -1080,20 +1080,6 @@ has_holy_order_trigger = {
 				holy_order = du_si
 				holy_order = savafid_order
 				holy_order = zahediyeh_order
-				holy_order = benedictines
-				holy_order = carthusians
-				holy_order = hieronymites
-				holy_order = jesuit_order
-				holy_order = augustinians
-				holy_order = carmelites
-				holy_order = dominican_order
-				holy_order = franciscan_order
-				holy_order = alcantara_order
-				holy_order = avis_order
-				holy_order = calatrava_order
-				holy_order = montesa_order
-				holy_order = san_juan_order
-				holy_order = santiago_order
 			}
 		}
 	}
@@ -1127,20 +1113,6 @@ has_any_holy_order = {
 			holy_order = du_si
 			holy_order = savafid_order
 			holy_order = zahediyeh_order
-			holy_order = benedictines
-			holy_order = carthusians
-			holy_order = hieronymites
-			holy_order = jesuit_order
-			holy_order = augustinians
-			holy_order = carmelites
-			holy_order = dominican_order
-			holy_order = franciscan_order
-			holy_order = alcantara_order
-			holy_order = avis_order
-			holy_order = calatrava_order
-			holy_order = montesa_order
-			holy_order = san_juan_order
-			holy_order = santiago_order
 		}
 	}
 }

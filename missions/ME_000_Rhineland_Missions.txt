@@ -93,7 +93,7 @@ generic_rhenish_missions_2 = {
 				}
 			}
 			add_country_modifier = {
-				name = rhn_generic_centralization
+				name = rhn_generic_centralization_modifier
 				duration = 9125
 			}
 			capital_scope = {
@@ -297,7 +297,7 @@ generic_rhenish_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "rhn_imperial_approval"
+				name = "rhn_imperial_approval_modifier"
 				duration = 9125
 			}
 		}
@@ -375,7 +375,7 @@ generic_rhenish_missions_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = rhn_a_renaissance_court
+				name = rhn_a_renaissance_court_modifier
 				duration = 9125
 			}
 			if = {
@@ -481,7 +481,7 @@ generic_rhenish_missions_5 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_generic_faith
+				name = RHN_generic_faith_modifier
 				duration = 9125
 			}
 		}

@@ -3,8 +3,8 @@
 owner = GOL
 controller = GOL
 add_core = GOL
-culture = kabardian
-religion = orthodox
+culture = astrakhani
+religion = sunni
 hre = no
 base_tax = 4 
 base_production = 4 
@@ -12,8 +12,6 @@ trade_goods = silver
 base_manpower = 2 
 capital = "Beishto"
 is_city = yes
-add_core = CIR
-add_core = KBD
 
 add_permanent_province_modifier = {
     name = rich_black_soil

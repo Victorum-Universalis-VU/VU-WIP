@@ -3,8 +3,8 @@
 owner = GOL
 controller = GOL
 add_core = GOL
-culture = kabardian
-religion = orthodox
+culture = astrakhani
+religion = sunni
 capital = "Kyuzyb"	#Uncertain
 trade_goods = wool
 hre = no

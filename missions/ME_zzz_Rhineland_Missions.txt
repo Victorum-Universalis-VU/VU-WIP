@@ -76,7 +76,7 @@ generic_rhenish_missions_4_2 = {
 			}
 			tooltip = {
 				add_province_modifier = {
-					name = RHN_pearl_of_the_rhineland
+					name = RHN_pearl_of_the_rhineland_modifier
 					duration = -1
 				}
 			}
@@ -87,7 +87,7 @@ generic_rhenish_missions_4_2 = {
 						num_of_times_improved = 5
 					}
 					add_province_modifier = {
-						name = RHN_pearl_of_the_rhineland
+						name = RHN_pearl_of_the_rhineland_modifier
 						duration = -1
 					}
 				}
@@ -96,7 +96,7 @@ generic_rhenish_missions_4_2 = {
 						is_capital = yes
 					}
 					add_province_modifier = {
-						name = RHN_pearl_of_the_rhineland
+						name = RHN_pearl_of_the_rhineland_modifier
 						duration = -1
 					}
 				}
@@ -106,7 +106,7 @@ generic_rhenish_missions_4_2 = {
 						num_of_times_improved = 5
 					}
 					add_province_modifier = {
-						name = RHN_pearl_of_the_rhineland
+						name = RHN_pearl_of_the_rhineland_modifier
 						duration = -1
 					}
 				}
@@ -116,7 +116,7 @@ generic_rhenish_missions_4_2 = {
 						num_of_times_improved = 5
 					}
 					add_province_modifier = {
-						name = RHN_pearl_of_the_rhineland
+						name = RHN_pearl_of_the_rhineland_modifier
 						duration = -1
 					}
 				}
@@ -141,7 +141,7 @@ generic_rhenish_missions_4_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = rhn_generic_production_sector_expanding
+				name = rhn_generic_production_sector_expanding_modifier
 				duration = 9125
 			}
 		}
@@ -265,22 +265,22 @@ RHN_missions_1 = {
 				tooltip = RHN_dev_at_least_100
 				development_in_provinces = {
 					OR = {
-				province_id = 2975
-				province_id = 84
-				province_id = 7527
-				province_id = 7317
-				province_id = 3199
-				province_id = 7533
-				province_id = 7529	
-				province_id = 7530
-				province_id = 3292
-				province_id = 3200
-				province_id = 7532
-				province_id = 8514
-				province_id = 7526
-				province_id = 7527
-				province_id = 86
-				province_id = 7526
+				        province_id = 2975
+				        province_id = 84
+				        province_id = 7527
+				        province_id = 7317
+				        province_id = 3199
+				        province_id = 7533
+				        province_id = 7529	
+				        province_id = 7530
+				        province_id = 3292
+				        province_id = 3200
+				        province_id = 7532
+				        province_id = 8514
+				        province_id = 7526
+				        province_id = 7527
+				        province_id = 86
+				        province_id = 7526
 					}
 					value = 300
 				}
@@ -299,104 +299,104 @@ RHN_missions_1 = {
 			custom_tooltip = RHN_highlighted_area_gets
 			tooltip = {
 				add_province_modifier = {
-					name = RHN_ruhrgebiet
+					name = RHN_ruhrgebiet_modifier
 					duration = -1
 				}
 			}
 			hidden_effect = {
 				2975 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				8514 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				84 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7527 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7317 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				3199 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7533 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7529 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7530 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				3292 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				3200 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7532 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7526 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7527 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				86 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
 				7526 = {
 					add_province_modifier = {
-						name = RHN_ruhrgebiet
+						name = RHN_ruhrgebiet_modifier
 						duration = -1
 					}
 				}
@@ -423,7 +423,7 @@ RHN_missions_1 = {
 		effect = {
 			add_mil_power = 100
 				add_country_modifier = {
-					name = RHN_munitions
+					name = RHN_munitions_modifier
 					duration = -1
 				}
 
@@ -496,7 +496,7 @@ RHN_missions_1 = {
 				amount = 15
 			}
 			add_country_modifier = {
-				name = RHN_defeat_of_the_french
+				name = RHN_defeat_of_the_french_modifier
 				duration = 5475
 			}
 		}
@@ -603,7 +603,7 @@ RHN_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_unifying_germany
+				name = RHN_unifying_germany_modifier
 				duration = 9125
 			}
 		}
@@ -655,7 +655,7 @@ RHN_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_high_quality_steel
+				name = RHN_high_quality_steel_modifier
 				duration = 9125
 			}
 			custom_tooltip = RHN_if_ally
@@ -663,7 +663,7 @@ RHN_missions_2 = {
 				add_dip_power = 100
 				custom_tooltip = RHN_random_province_in_ally_land
 				add_province_modifier = {
-					name = RHN_rhenish_demand
+					name = RHN_rhenish_demand_modifier
 					duration = 10950
 				}
 			}
@@ -673,7 +673,7 @@ RHN_missions_2 = {
 				tooltip = {
 					add_adm_power = 100
 					add_province_modifier = {
-						name = RHN_center_of_steel_production
+						name = RHN_center_of_steel_production_modifier
 						duration = 10950
 					}
 				}
@@ -694,7 +694,7 @@ RHN_missions_2 = {
 							has_production_building_trigger = yes
 						}
 						add_province_modifier = {
-							name = RHN_center_of_steel_production
+							name = RHN_center_of_steel_production_modifier
 							duration = 10950
 						}
 					}
@@ -714,7 +714,7 @@ RHN_missions_2 = {
 								trade_goods = iron
 							}
 							add_province_modifier = {
-								name = RHN_rhenish_demand
+								name = RHN_rhenish_demand_modifier
 								duration = 10950
 							}
 						}
@@ -749,13 +749,13 @@ RHN_missions_2 = {
 			}
 			else = {
 				82 = {
-					add_country_modifier = {
+					add_province_modifier = {
 						name = RHN_coal_industry_coexisting
 						duration = 36500
 					}
 				}
 				1878 = {
-					add_country_modifier = {
+					add_province_modifier = {
 						name = RHN_coal_industry_coexisting
 						duration = 36500
 					}
@@ -824,7 +824,7 @@ RHN_missions_2 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_Defense
+				name = RHN_Defense_modifier
 				duration = -1
 			}
 			add_yearly_manpower = 1
@@ -886,13 +886,13 @@ RHN_missions_3 = {
 			}
 			westphalia_area = {
 				add_province_modifier = {
-					name = RHN_integration_of_westfalen
+					name = RHN_integration_of_westfalen_modifier
 					duration = 9125
 				}
 			}
 			north_westphalia_area = {
 				add_province_modifier = {
-					name = RHN_integration_of_westfalen
+					name = RHN_integration_of_westfalen_modifier
 					duration = 9125
 				}
 			}
@@ -922,7 +922,7 @@ RHN_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_king_of_saxony
+				name = RHN_king_of_saxony_modifier
 				duration = 9125
 			}
 			altmark_area = {
@@ -971,7 +971,7 @@ RHN_missions_3 = {
 			custom_tooltip = RHN_new_estate
 			hidden_effect = {
 				add_country_modifier = {
-					name = RHN_free_estate_loyalty
+					name = RHN_free_estate_loyalty_modifier
 					duration = -1
 					hidden = yes
 				}
@@ -1002,7 +1002,7 @@ RHN_missions_3 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = RHN_growing_industrial_power
+				name = RHN_growing_industrial_power_modifier
 				duration = -1
 			}
 			custom_tooltip = RHN_may_have_buildings
@@ -1049,9 +1049,9 @@ RHN_missions_3 = {
 			}
 		}
 		effect = {
-			remove_country_modifier = RHN_growing_industrial_power
+			remove_country_modifier = RHN_growing_industrial_power_modifier
 			add_country_modifier = {
-				name = RHN_industrial_center
+				name = RHN_industrial_center_modifier
 				duration = -1
 			}
 		}
@@ -1081,7 +1081,7 @@ RHN_missions_4 = {
 			custom_tooltip = RHN_the_most_developed_paper_province
 			tooltip = {
 				add_province_modifier = {
-					name = RHN_paper
+					name = RHN_paper_modifier
 					duration = -1
 				}
 			}
@@ -1098,7 +1098,7 @@ RHN_missions_4 = {
 						}
 					}
 					add_province_modifier = {
-						name = RHN_paper
+						name = RHN_paper_modifier
 						duration = -1
 					}
 				}
@@ -1136,7 +1136,7 @@ RHN_missions_4 = {
 				}
 			}
 			add_country_modifier = {
-				name = RHN_religious
+				name = RHN_religious_modifier
 				duration = 10950
 			}
 		}
@@ -1215,7 +1215,7 @@ RHN_missions_4 = {
 			# }
 			83 = {
 				add_province_modifier = {
-					name = RHN_centre_of_rhenish_alloy_works
+					name = RHN_centre_of_rhenish_alloy_works_modifier
 					duration = -1
 				}
 			}
@@ -1268,7 +1268,7 @@ RHN_missions_4 = {
 				custom_tooltip = RHN_one_of_the_provinces
 				tooltip = {
 					add_province_modifier = {
-						name = RHN_optics
+						name = RHN_optics_modifier
 						duration = -1
 					}
 				}
@@ -1276,7 +1276,7 @@ RHN_missions_4 = {
 				tooltip = {
 					1762 = {
 						add_province_modifier = {
-							name = RHN_hessian_crystal
+							name = RHN_hessian_crystal_modifier
 							duration = -1
 						}
 					}
@@ -1284,7 +1284,7 @@ RHN_missions_4 = {
 				hidden_effect = {
 					1762 = {
 						add_province_modifier = {
-							name = RHN_hessian_crystal
+							name = RHN_hessian_crystal_modifier
 							duration = -1
 						}
 					}
@@ -1293,7 +1293,7 @@ RHN_missions_4 = {
 			else = {
 				1762 = {
 					add_province_modifier = {
-						name = RHN_hessian_crystal
+						name = RHN_hessian_crystal_modifier
 						duration = -1
 					}
 				}
@@ -1413,7 +1413,7 @@ RHN_missions_4 = {
 				add_or_upgrade_trade_building = yes
 			}
 			add_country_modifier = {
-				name = RHN_united_rheinzoll
+				name = RHN_united_rheinzoll_modifier
 				duration = 9125
 			}
 		}
@@ -1541,7 +1541,7 @@ RHN_missions_5 = {
 			1757 = {
 				change_trade_goods = tin
 				add_province_modifier = {
-					name = RHN_sole_source_of_tin
+					name = RHN_sole_source_of_tin_modifier
 					duration = -1
 				}
 			}
