@@ -195,7 +195,7 @@ float GetTI( float4 vFoWColor )
 
 float4 GetTIColor( float3 vPos, in sampler2D TITexture )
 {
-	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 4096.0f, 2816.0f ) );
+	return tex2D( TITexture, ( vPos.xz + 0.5f ) / float2( 5632.0f, 2304.0f ) );
 }
 
 float GetFoW( float3 vPos, float4 vFoWColor, in sampler2D FoWDiffuse )
