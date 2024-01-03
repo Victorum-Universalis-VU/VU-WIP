@@ -33,7 +33,7 @@ add_core = BOU
 #Histories
 1215.6.15 = { owner = TOU controller = TOU add_core = TOU } # Countship of Toulouse - By San Felipe
 
-1444.1.1 = { owner = AUV controller = AUV add_core = AUV }
+1444.1.1 = { owner = BOU controller = BOU add_core = BOU add_core = AUV}
 
 1453.1.1 = { add_core = BOU }
 1560.1.1 = { religion = reformed }

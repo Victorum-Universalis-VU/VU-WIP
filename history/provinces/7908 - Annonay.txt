@@ -13,6 +13,9 @@ trade_goods = paper
 is_city = yes
 hre = no
 
+#History
+
+1444.1.1 = { owner = BOU controller = BOU add_core = BOU add_core = FOR}
 
 
 
