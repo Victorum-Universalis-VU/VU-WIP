@@ -1,18 +1,18 @@
-#Sancerre
+#Parthenay
 #Region - France
-#Area - Loire
+
 
 owner = FRA
 controller = FRA
 add_core = FRA
-capital = "Sancerre"
+capital = "Parthenay"
 is_city = yes
-culture = cosmopolitan_french
+culture = poitevin_culture
 religion = catholic
 hre = no
 base_tax = 2
 base_production = 2
-trade_goods = vegetables
+trade_goods = livestock
 base_manpower = 1
 add_local_autonomy = 10
 
@@ -21,6 +21,7 @@ add_local_autonomy = 10
 
 
 
+1444.11.11 = { owner = ORL controller = ORL add_core = ORL }
 
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 5 }
