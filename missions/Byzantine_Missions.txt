@@ -6,6 +6,7 @@ byz_western = {
 		tag = BYZ
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "King of Kings" }
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -270,6 +271,7 @@ byz_generic_slot_2 = {
 		tag = BYZ
 		NOT = { has_dlc = "Purple Phoenix" }
 		NOT = { has_dlc = "King of Kings" }
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -359,6 +361,7 @@ byz_east = {
 		NOT = { map_setup = map_setup_random }
 		tag = BYZ
 		NOT = { has_dlc = "King of Kings" }
+		has_country_flag = use_paradox_missions
 	}
 	
 	has_country_shield = yes
@@ -479,6 +482,7 @@ byz_generic_slot_5 = {
 		tag = BYZ
 		NOT = { has_dlc = "Purple Phoenix" }
 		NOT = { has_dlc = "King of Kings" }
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
