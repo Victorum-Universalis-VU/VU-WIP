@@ -18,6 +18,7 @@ base_manpower = 2
 
 
 
+1444.1.1 = { owner = BOU controller = BOU add_core = BOU add_core = FOR}
 
 1453.1.1 = { add_core = BOU }
 1560.1.1 = { religion = reformed }

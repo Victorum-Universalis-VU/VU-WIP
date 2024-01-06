@@ -1285,6 +1285,8 @@
  mechanic_enables_serfdom_yes: "Serfdom: Unlocks the §YSerfdom§! Privilege, Which decreases Rural Goods Produced by §R10%§! and increases governmental capacity by §G+10%§!."
  mechanic_enables_colonial_plantations_yes: "Colonial Plantations: §G+15%§! Plantation Goods Produced in your colonial subjects."
  mechanic_enables_landsknecht_sergeants_yes: "Landsknecht Sergeants: §G+10%§! Infantry Combat Ability while you employ mercenaries."
+ GE_minority_exploitation: "Minority Exploitation"
+ GE_minority_exploitation_desc: "Gain manpower from this year's foreign recruitment efforts."
  mechanic_enables_foreign_drill_masters_yes: "Foreign Drill Masters: §G+10%§! Drill Gain and §G-4%§! Military Technology Cost for each ally with more development or technology, up to a maximum of 5 allies."
  mechanic_enables_berber_guides_yes: "Berber autonomy: Unlocks the §YBerber Autonomy§! Privilege, granting §G-15%§! land attrition while the noble estate has over §Y60§! Loyalty, as well as §G-10%§! cavalry cost."
  mechanic_enables_saharan_outposts_yes: "Saharan Outposts: Unlocks the §YSaharan Outposts§! Privilege, granting §G+1§! Merchant and a Scaling amount of Trade Steering, up to §G+50%§!"

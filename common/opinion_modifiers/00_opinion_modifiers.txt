@@ -424,36 +424,31 @@ they_force_unioned_us = {
 }
 
 
-elector_voted_for_us =
-{
+elector_voted_for_us = {
 	opinion = 25
 	yearly_decay = 2
 	max = 25
 }
 
-elector_stopped_voting_for_us =
-{
+elector_stopped_voting_for_us = {
 	opinion = -25
 	yearly_decay = 1
 	min = -25
 }
 
-returned_province =
-{
+returned_province = {
 	opinion = 25
 	yearly_decay = 1
 	max = 25
 }
 
-gave_away_province = 
-{
+gave_away_province = {
 	opinion = -25
 	yearly_decay = 1
 	min = -75
 }
 
-liberated_province =
-{
+liberated_province = {
 	opinion = 25
 	yearly_decay = 1
 	max = 25
@@ -465,8 +460,7 @@ subject_called_to_arms = {
 	min = -200
 }
 
-defended_allied_territory =
-{
+defended_allied_territory = {
 	opinion = 10
 	yearly_decay = 1
 	max = 20

@@ -5,6 +5,7 @@
 #Default
 capital = "Oulu"
 culture = sapmi
+add_core = SMI
 religion = finnish_pagan_reformed
 hre = no
 base_tax = 1
@@ -27,6 +28,22 @@ add_permanent_province_modifier = {
 }
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,9 +89,9 @@ add_permanent_province_modifier = {
 
 #1444 on
 1527.6.1 = { religion = protestant }
-1605.4.8 = { capital = "Uleåborg" }
+1605.4.8 = { capital = "Ule borg" }
 1742.11.5 = { controller = RUS } # The War of the Hats-Estimated date
-1743.8.7 = { controller = SWE } # The Peace of Åbo
+1743.8.7 = { controller = SWE } # The Peace of  bo
 1808.9.14 = { controller = RUS } # The Swedish forces are defeated at the battle Oravais
 1809.9.17 = {
 	owner = RUS

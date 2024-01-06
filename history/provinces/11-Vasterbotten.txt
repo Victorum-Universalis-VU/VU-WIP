@@ -5,6 +5,7 @@
 #Default
 capital = "Umeå"
 culture = sapmi
+add_core = SMI
 religion = finnish_pagan_reformed
 hre = no
 base_tax = 1
@@ -22,6 +23,22 @@ native_ferocity = 2
 #Special Modifiers
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

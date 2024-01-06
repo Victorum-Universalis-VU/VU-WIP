@@ -68,7 +68,7 @@ fort_15th = yes
 	owner = POL
 	controller = POL
 	add_core = POL
-	add_core = GPL
+	add_core = GRP
 }
 1569.7.1 = {
 	owner = PLC

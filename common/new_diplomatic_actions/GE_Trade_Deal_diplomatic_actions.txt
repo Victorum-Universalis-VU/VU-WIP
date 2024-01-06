@@ -157,7 +157,7 @@ offer_trade_deal_rural_exports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -442,7 +442,7 @@ offer_trade_deal_rural_imports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -727,7 +727,7 @@ offer_trade_deal_urban_exports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1012,7 +1012,7 @@ offer_trade_deal_urban_imports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1297,7 +1297,7 @@ offer_trade_deal_mining_exports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1582,7 +1582,7 @@ offer_trade_deal_mining_imports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -1852,7 +1852,7 @@ offer_trade_deal_plantation_exports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {
@@ -2122,7 +2122,7 @@ offer_trade_deal_plantation_imports = {
 	is_visible = {
 		has_global_modifier_value = {
 			which = trade_deals_slots
-			value = 0.01
+			value = 1
 		}
 		NOT = {
 			OR = {

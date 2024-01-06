@@ -2074,10 +2074,15 @@ country_event = {
 		}
 
 		change_religion = FROM
-		add_province_modifier = {
-			name = MSA_religious_minority
+		add_country_modifier = {
+			name = MSA_religious_minority_modifier
 			duration = 36500
 		}
+		#Was below by San Felipe
+		#add_province_modifier = {
+		#	name = MSA_religious_minority_modifier
+		#	duration = 36500
+		#}
 	}
 
 	option = {
@@ -2100,7 +2105,7 @@ country_event = {
 		}
 
 		change_religion = FROM
-		owner = {
+		ROOT = {
 			change_religion = FROM
 		}
 
@@ -2116,11 +2121,15 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-
-		add_province_modifier = {
-			name = MSA_religious_minority
+		add_country_modifier = {
+			name = MSA_religious_minority_modifier
 			duration = 9125
 		}
+		#Was below by San Felipe
+		#add_province_modifier = {
+		#	name = MSA_religious_minority_modifier
+		#	duration = 9125
+		#}
 	}
 	after = { clr_country_flag = MSA_event_fired }
 }
@@ -3447,7 +3456,7 @@ country_event = {
 			has_country_flag = MSA_1_province
 		}
 
-		goto = Malaya_target_1
+		goto = ROOT #was Malaya_target_1
 
 		ai_chance = {
 			factor = 1
@@ -3465,7 +3474,7 @@ country_event = {
 			has_country_flag = MSA_2_province
 		}
 
-		goto = Malaya_target_2
+		goto = ROOT #was Malaya_target_2
 
 		ai_chance = {
 			factor = 1
@@ -3483,7 +3492,7 @@ country_event = {
 			has_country_flag = MSA_3_province
 		}
 
-		goto = Malaya_target_3
+		goto = ROOT #was Malaya_target_3
 
 		ai_chance = {
 			factor = 1
@@ -3501,7 +3510,7 @@ country_event = {
 			has_country_flag = MSA_4_province
 		}
 
-		goto = Malaya_target_4
+		goto = ROOT #was Malaya_target_4
 
 		ai_chance = {
 			factor = 1
@@ -3519,7 +3528,7 @@ country_event = {
 			has_country_flag = MSA_5_province
 		}
 
-		goto = Malaya_target_5
+		goto = ROOT #was Malaya_target_5
 
 		ai_chance = {
 			factor = 1

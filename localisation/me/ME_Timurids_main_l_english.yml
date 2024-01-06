@@ -847,6 +847,7 @@
  me_tim_harsh_conversions: "Harsh Conversions"
  me_tim_killer_of_heaven: "Killer of Heaven"
  ME_tim_horsemen_of_apocalypse_modifier: "Horsemen of the Apocalypse"
+ desc_ME_tim_horsemen_of_apocalypse_modifier: "Horsemen of the Apocalypse"
  me_tim_bulwark_against_the_apocalypse: "Bulwark Against the Apocalypse"
  estate_tribes_bedouin_recruits: "Bedouin Recruits"
  me_tim_ignored_roman_legacy: "Ignored Rome's Legacy"
@@ -938,6 +939,7 @@
  cb_timurids_conquest_type_desc: "War goal is to take the capital of the enemy"
  TIMURID_CONQUEST_NAME: "$ORDER$ Timurid Conquest"
  me_tim_timurid_conquest_type: "Timurid Conquest"
+ me_tim_timurid_conquest_type_desc: "Timurid Conquest"
 
  po_claim_timurid_empire_desc: "Claim the Timurid Empire and become the @TAG Timurids"
  CB_ALLOWED_po_claim_timurid_empire: "Claim the Timurid Empire"
@@ -945,8 +947,8 @@
  take_capital_claim_timur_empire: "Claim TImurid Empire"
  take_capital_claim_timur_empire_desc: "Take the Timurid Capital"
  TIMURID_WAR_NAME: "War Over the Timurid Throne"
- TIM_conquer_europe: "Conquest of Europe"
- TIM_conquer_europe_desc: "Europe lays in our path of conquest"
+ #TIM_conquer_europe: "Conquest of Europe"
+ #TIM_conquer_europe_desc: "Europe lays in our path of conquest"
 
 
  #Mercenaries:

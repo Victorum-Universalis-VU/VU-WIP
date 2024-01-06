@@ -5204,7 +5204,7 @@ estate_industrial_blast_furnaces = {
 			loyalty = 15
 		}
 		add_country_modifier = {
-			name = RHN_blast_furnace_cost
+			name = RHN_blast_furnace_cost_modifier
 			duration = 1825
 		}
 	}

@@ -1827,7 +1827,7 @@ country_event = {
 	option = {
 		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
-			factor = 75 
+			factor = 95 
 		}
 		LIT = { 
 			country_event = { id = flavor_lit.16 }
@@ -1843,7 +1843,7 @@ country_event = {
 	option = {
 		name = flavor_pol.18.b #Appoint a Local Noble.
 		ai_chance = { 
-			factor = 25
+			factor = 5
 		}
 		define_ruler = {
 			change_dip = 3

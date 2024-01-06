@@ -5,7 +5,7 @@ owner = CAS
 controller = CAS
 add_core = CAS
 add_core = SVL #BTB added: Castilian revolter tag.
-culture = castillian
+culture = andalusi_arabic
 religion = catholic
 capital = "Écija"
 base_tax = 4
@@ -22,6 +22,26 @@ hre = no
 #Special Modifiers
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Histories

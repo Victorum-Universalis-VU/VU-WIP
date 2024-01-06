@@ -2,7 +2,8 @@ country_decisions = {
 	ME_Chagatai_consolidate_splinters = {
 		potential = {
 			has_dlc = "The Cossacks"
-			mission_completed = CHG_integrate_the_tribes
+			tag = CHG
+			#mission_completed = CHG_integrate_the_tribes
 		}
 		allow = {
 			mil_power = 50

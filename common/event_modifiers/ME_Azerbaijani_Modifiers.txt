@@ -32,7 +32,7 @@ Azerbaijani_fortifications = {
 Azerbaijani_supporting_religion = {
 	global_missionary_strength = 0.02
 }
-TBR_the_center_of_azerbaijan = {
+TBR_the_center_of_azerbaijan_modifier = {
 	local_build_cost = -0.15
 }
 TBR_the_blue_mosque = {

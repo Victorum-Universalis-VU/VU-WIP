@@ -3104,36 +3104,6 @@ has_professionals_reform_35 = {
 	}
 }
 
-#####
-
-has_industry_reform_55 = {
-	OR = {
-		has_reform = strenghten_industry_reform
-		has_reform = reinforce_the_hwangog_reform
-		has_reform = empowered_free_trade_reform
-	}
-}
-
-has_merchants_reform_55 = {
-	OR = {
-		has_reform = mercantilism_reform
-		has_reform = empowered_monastic_centres_reform
-		has_reform = empowered_royal_trading_company_reform
-		has_reform = armenian_silk_traders_reform
-		has_reform = caravanserai_reform
-	}
-}
-
-has_taxes_reform_55 = {
-	OR = {
-		has_reform = noble_taxes_reform
-		has_reform = empowered_aristocratic_estates_reform
-		has_reform = empowered_expand_corvee_reform
-		has_reform = empowered_enlarge_royal_estate_reform
-		has_reform = bureaucratic_economy_reform
-	}
-}
-
 #####Estate Privileges#####
 has_noble_privilege_space = {
 	custom_trigger_tooltip = {
@@ -3151,7 +3121,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.01
+					value = 1
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -3163,7 +3133,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.02
+					value = 2
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -3175,7 +3145,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.03
+					value = 3
 				}
 				NOT = {
 					num_of_estate_privileges = {
@@ -3187,7 +3157,7 @@ has_noble_privilege_space = {
 			AND = {
 				has_global_modifier_value = {
 					which = noble_privilege_slots
-					value = 0.04
+					value = 4
 				}
 				NOT = {
 					num_of_estate_privileges = {

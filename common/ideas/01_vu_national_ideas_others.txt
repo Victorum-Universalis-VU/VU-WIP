@@ -16,22 +16,7 @@ cock_ideas = {
 		development_cost = -0.1
 	} 
 	trigger = {
-		OR = {
-			tag = ABZ
-			tag = AKN
-			tag = AKZ
-			tag = DER
-			tag = IGS
-			tag = KTG
-			tag = LAZ
-			tag = MGL
-			tag = RUT
-			tag = SVT
-			tag = T4R
-			tag = TLY
-			tag = UBY
-			tag = LEK
-		}
+		tag = KOK
 	}
 	free = yes
 	german_industrialism = {

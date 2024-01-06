@@ -280,7 +280,7 @@ SOE_Missions_1 = {
 		required_missions = { WES_rhineland }
 		position = 5
 		provinces_to_highlight = {
-			owned_by = overlord
+			owned_by = ROOT
 		}
 		trigger = {
 			is_subject = no
@@ -804,8 +804,8 @@ WES_Generic_Missions_3_2 = {
 					skill = 1
 					cost_multiplier = 0.5
 				}
-				capital_scope = {
-					province_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
+				ROOT = {
+					country_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
 				}
 			}
 			else = {
@@ -982,7 +982,10 @@ MUN_Missions_3 = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
+				check_variable = { 
+					which = num_converted_religion 
+					value = 10 
+				}
 			}
 		}
 		effect = {

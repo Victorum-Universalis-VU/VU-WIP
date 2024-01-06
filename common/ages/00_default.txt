@@ -480,9 +480,11 @@ age_of_discovery = {
 		obj_100_development = {
 			allow = {
 				capital_scope = {
-					NOT = {	continent = asia }
-					NOT = {	continent = africa }
-					NOT = {	continent = europe }
+					NOT = {
+						continent = europe
+						continent = asia
+						continent = africa
+					}
 				}
 			}
 			total_development = 100

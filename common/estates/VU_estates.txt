@@ -1,6 +1,6 @@
 #VU_jews
 estate_jews = {
-	icon = 14	
+	icon = 18	
 
 	# If true, country will get estate
 	trigger = {
@@ -179,7 +179,6 @@ estate_dhimmi = {
 	}
 }
 
-#trade_outpost_release_estate
 trade_outpost_release_estate = {
 	icon = 4
 
@@ -226,7 +225,7 @@ trade_outpost_release_estate = {
 
 #GE_08_peasants
 estate_peasants = {
-	icon = 12
+	icon = 17
 
 	trigger = {
 		OR = {
@@ -324,7 +323,7 @@ estate_peasants = {
 
 #GE_09_junkers
 estate_junkers = {
-	icon = 12
+	icon = 16
 
 	# If true, country will get estate
 	trigger = {

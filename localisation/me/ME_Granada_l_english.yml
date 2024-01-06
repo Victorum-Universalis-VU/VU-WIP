@@ -226,6 +226,7 @@
  GRA_bargain_for_genoese_loans_desc: "Perhaps because of Castilian aggression towards those in the Italian states, or their incapable ruler, for one reason or another, the Italian mercantile states are willing to fund our desperate war against Castile in exchange for some favours. This will give us much needed funds to hire mercernaries to bolster our forces."
  
  GRA_polymath: "Polymath"
+ GRA_polymath_desc: "Polymath"
  
  GRA_military_advice: "Military Advice"
  GRA_setting_differences_aside: "Setting our Differences Aside"
@@ -686,13 +687,21 @@
  ME_Granada_Events.52.b: "Those words do convince me..."
  
  GRA_mathematician: "Mathematician"
+ GRA_mathematician_desc: "Mathematician"
  GRA_muslim_scholar: "Quran Scholar"
+ GRA_muslim_scholar_desc: "Quran Scholar"
  GRA_translator: "Translator"
+ GRA_translator_desc: "Interpreter"
  GRA_astronomer: "Astronomer"
+ GRA_astronomer_desc: "Astronomer"
  GRA_alchemist: "Alchemist"
- GRA_andalusian_philosopher: "Andalusian Philosopher"
+ GRA_alchemist_desc: "Alchemist"
+ GRA_andalusian_philosopher: "Philosopher"
+ GRA_andalusian_philosopher_desc: "Philosopher"
  GRA_civil_engineer: "Civil Engineer"
- GRA_military_writer: "Military Treatise Writer"
+ GRA_civil_engineer_desc: "Civil Engineer"
+ GRA_military_writer: "Military Historian"
+ GRA_military_writer_desc: "Military Historian"
  
  GRA_every_muslim_country: "The §YCapital§! of every §YMuslim§! Country that has at least 100 §YTotal Development§! and that is in the §YMaghreb§! Region will receive §G+50.0%§! §YRenaissance§! Institution Progress. Similarly, countries within the §YEgypt§!, §YAnatolia§! and §YMashriq§! Regions will receive §G+25.0%§!.\n\n§Y[Root.GetAdjective]§! Rivals and Enemies are excluded."
  
@@ -722,6 +731,7 @@
  ADU_conversion_of_fetishists: "$ORDER$ $FIRST$" Conversion Campaign against $SECOND_NAME$"
  ADU_all_fetishists: "All §YFetishist§! Countries with capital in either §YGuinea§!, §YNiger§! or §YCongo§! Region."
  andalusia_convert_fetishists: "Convert Locals"
+ andalusia_convert_fetishists_desc: "Convert Locals"
  cb_andalusia_convert_fetishists: "Spread our Teachings"
  cb_andalusia_convert_fetishists_desc: "Some of the Africans are yet to embrace our teachings. Let us change that."
  

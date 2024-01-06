@@ -4,8 +4,8 @@
 owner = KAR
 controller = KAR
 add_core = KAR
-culture = cappadocian
-religion = orthodox
+culture = turkish
+religion = sunni
 capital = "Aksaray"
 trade_goods = vegetables			#This is a rich agricultural region producing grains, meat and dairy and many kinds of fruit and vegetables. 
 hre = no

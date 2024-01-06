@@ -1,10 +1,9 @@
 government = tribal
 add_government_reform = tribal_federation
 government_rank = 1
-primary_culture = circassian
+primary_culture = kabardian
 religion = orthodox
-#technology_group = eastern
-technology_group = russian_tech_group
+technology_group = eastern
 historical_rival = CRI
 historical_rival = IME
 capital = 5558 #Anzorey

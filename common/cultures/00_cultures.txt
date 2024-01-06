@@ -3726,7 +3726,7 @@ iberian	= {
 	#End of MEVU
 }
 
-french	= {
+french = {
 	graphical_culture = westerngfx
 
 	cosmopolitan_french = {
@@ -3960,7 +3960,7 @@ french	= {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
-	french_east_indian  = {
+	french_east_indian = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
@@ -6961,7 +6961,7 @@ iranian	= {
 	}
 	afghani = {		#Now represents Dari
 		graphical_culture = persiangfx
-		#primary = AFG
+		primary = AFG
 		male_names = {
 			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
 			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
@@ -7165,6 +7165,7 @@ iranian	= {
 		}
 	}
 	talysh = {
+	    primary = TLY
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -7177,6 +7178,7 @@ iranian	= {
 		}
 	}
 	tati = {
+		primary = TAT
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -11225,7 +11227,7 @@ japanese_g = {
 	}
 	hokkaido = { 
 		province = { local_has_samurai = yes }
-		#primary = 
+		#primary = na
 		dynasty_names = {
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa
 			Kuni Nashimoto Takeda Yamashina
@@ -15492,7 +15494,7 @@ tartar	= {
 		}
 	}
 	kumyk = {
-		primary = T4R
+		primary = TRR
 		dynasty_names = {
 			Altan Asanin Bekmambet Ziyaeddin Sarigöl Bektöre Celebicihan Cobanzade Dägci Gaspirali Giraybay Hablemitoglu Hilmi 
 			Inalcik Ipci Kirimal Seydahmet Ihsan Kubay Qirimoglu Mamut Mansiz Mehdi Neyazi Ortayli Semizade Soysal Zihni Tarhan 
@@ -18990,7 +18992,7 @@ nakh_daghestani = {
 	}
 	tsakhur = {
         graphical_culture = turkishgfx
-		primary = GAZ
+		primary = TSK
 		dynasty_names = {
 			Shamkhal Kumukh
 		}

@@ -6,7 +6,7 @@ PAL_bibliotheca_palatina_triggered = {
 			religion = hussite
 		}
 		77 = {
-			has_province_modifier = PAL_bibliotheca_palatina
+			has_province_modifier = PAL_bibliotheca_palatina_modifier
 		}
 	}
 	

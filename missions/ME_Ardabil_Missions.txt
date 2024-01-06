@@ -557,7 +557,7 @@ ARL_missions_3 = {
 	}
 
 	ARL_Shahanshah = {
-		icon = me_mission_shiny_crown
+		icon = vu_crowning_shah
 		required_missions = { ARL_Capture_Tabriz }
 		position = 5
 		trigger = {

@@ -359,7 +359,7 @@ me_hab_venetian_arsenal_in_our_control_no_dlc = {
 	ship_durability = 0.05
 }
 
-me_hab_burghers_in_navy = {
+me_hab_burghers_in_navy_modifier = {
 	admiral_cost = -0.25
 	army_professionalism_per_admiral = 0.01
 }

@@ -3,7 +3,7 @@
 owner = NOV
 controller = NOV
 add_core = NOV
-culture = novgorodian
+culture = vu_komi
 religion = orthodox
 capital = "Karpogory"
 trade_goods = fur

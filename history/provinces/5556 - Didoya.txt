@@ -23,6 +23,22 @@ add_core = AVR
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1569.1.1 = {
 	owner = GAZ
 	controller = GAZ

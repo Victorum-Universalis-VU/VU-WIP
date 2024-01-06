@@ -62,16 +62,19 @@ sicily_mission_1 = {
 							}
 						}
 					}
-					papal_controller = {
-						OR = {
-							has_opinion = {
-								who = ROOT
-								value = 125
-							}
-							NOT = {
+					any_country = {
+						AND = { 
+							is_papal_controller = yes
+							OR = {
 								has_opinion = {
 									who = ROOT
-									value = -50
+									value = 125
+								}
+								NOT = {
+									has_opinion = {
+										who = ROOT
+										value = -50
+									}
 								}
 							}
 						}
@@ -311,16 +314,19 @@ sicily_mission_2 = {
 							}
 						}
 					}
-					papal_controller = {
-						OR = {
-							has_opinion = {
-								who = ROOT
-								value = 125
-							}
-							NOT = {
+					any_country = {
+						AND = { 
+							is_papal_controller = yes
+							OR = {
 								has_opinion = {
 									who = ROOT
-									value = -50
+									value = 125
+								}
+								NOT = {
+									has_opinion = {
+										who = ROOT
+										value = -50
+									}
 								}
 							}
 						}
@@ -415,16 +421,19 @@ sicily_mission_2 = {
 									}
 								}
 							}
-							papal_controller = {
-								OR = {
-									has_opinion = {
-										who = ROOT
-										value = 125
-									}
-									NOT = {
+							any_country = {
+								AND = { 
+									is_papal_controller = yes
+									OR = {
 										has_opinion = {
 											who = ROOT
-											value = -50
+											value = 125
+										}
+										NOT = {
+											has_opinion = {
+												who = ROOT
+												value = -50
+											}
 										}
 									}
 								}

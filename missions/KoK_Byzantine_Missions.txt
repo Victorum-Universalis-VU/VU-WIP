@@ -20,7 +20,7 @@ MEE_BYZ_conquest_1 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -215,7 +215,7 @@ MEE_BYZ_conquest_2 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -538,7 +538,7 @@ MEE_BYZ_conquest_3 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -881,7 +881,7 @@ MEE_BYZ_defense_4 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -1287,7 +1287,7 @@ MEE_BYZ_defense_5 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -1440,7 +1440,7 @@ MEE_BYZ_conquest_5 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -1762,7 +1762,7 @@ MEE_BYZ_economy_1 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2045,7 +2045,7 @@ MEE_BYZ_economy_2 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2251,7 +2251,7 @@ MEE_BYZ_economy_3 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2467,7 +2467,7 @@ MEE_BYZ_economy_4 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2623,7 +2623,7 @@ MEE_BYZ_economy_5 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2914,7 +2914,7 @@ MEE_BYZ_religion_1 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3222,7 +3222,7 @@ MEE_BYZ_religion_2 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3409,7 +3409,7 @@ MEE_BYZ_military_3 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3508,7 +3508,7 @@ MEE_BYZ_military_4 = {
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3572,7 +3572,7 @@ MEE_BYZ_military_branching_4 = {
 				has_country_flag = BYZ_centralized
 			}
 		}
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3613,7 +3613,7 @@ MEE_BYZ_military_decentralized_4 = {
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
 		has_country_flag = BYZ_decentralized
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3697,7 +3697,7 @@ MEE_BYZ_military_centralized_4 = {
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
 		has_country_flag = BYZ_centralized
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3755,7 +3755,7 @@ MEE_BYZ_military_branching_5 = {
 				has_country_flag = BYZ_centralized
 			}
 		}
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3810,7 +3810,7 @@ MEE_BYZ_military_decentralized_5 = {
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
 		has_country_flag = BYZ_decentralized
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3937,7 +3937,7 @@ MEE_BYZ_military_centralized_5 = {
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
 		has_country_flag = BYZ_centralized
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	

@@ -67,10 +67,12 @@ LAZ = "countries/Lazistan.txt"
 MGL = "countries/Mingrelia.txt"
 RUT = "countries/Rutul.txt"
 SVT = "countries/Svaneti.txt"
-T4R = "countries/Tarki.txt"
+TRR = "countries/Tarki.txt"
+TAT = "countries/Tati.txt"
+TSK = "countries/Tsuketi.txt"
 TLY = "countries/Talysh.txt"
 UBY = "countries/Ubykh.txt"
-LEK = "countries/Lezgia.txt"
+LEK = "countries/Lekia.txt"
 
 #German Diaspora
 VOG = "countries/Wolgadeutche.txt"
@@ -899,7 +901,6 @@ SNG = "countries/Song.txt"
 
 #Eastern Europe
 DYM = "countries/Dymin.txt"
-GPL = "countries/Greaterpoland.txt"
 KIR = "countries/Kievan RUS.txt"
 KPL = "countries/Kalisz.txt"
 SLP = "countries/Slawno.txt"
@@ -1064,6 +1065,10 @@ IDN = "countries/Indonesia.txt"
 RSA = "countries/SouthAfrica.txt"
 THL = "countries/Thailand.txt"
 ZIB = "countries/Zimbabwe.txt"
+
+######Sphinx China Overhaul######
+#Mongolia
+KYG = "countries/Kyrgyz.txt"
 
 ###################
 # VU Merged Notes #

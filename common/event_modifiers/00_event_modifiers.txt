@@ -17768,7 +17768,7 @@ Crusader_Order_9 = {
 Crusader_Order_10 = {
 	infantry_power = 0.10
 }
-Satrapy = {
+satrapy_modifier = {
 	local_manpower = 0.10
 	local_tax_modifier = 0.10
 }

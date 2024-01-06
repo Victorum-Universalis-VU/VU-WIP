@@ -1,4 +1,4 @@
-graphical_culture = easterngfx
+graphical_culture = greekgfx #easterngfx
 
 color = { 167 0 90 }
 
@@ -11,6 +11,25 @@ historical_idea_groups = {
 	economic_ideas
 	innovativeness_ideas
 	diplomatic_ideas
+}
+
+historical_units = {
+	eastern_medieval_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
 }
 
 army_names = {

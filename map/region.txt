@@ -694,10 +694,6 @@ east_africa_region = {
 		limpopo_area
 		lower_zambezi_area
 		mascarenes_area
-		madagascar_highlands_area
-		betsimasaraka_area
-		sakalava_area
-		southern_madagascar
 		uticulo_makuana_area
 		#east_african_islands_area			#Cut in 1.20
 		#VU moved from South Africa

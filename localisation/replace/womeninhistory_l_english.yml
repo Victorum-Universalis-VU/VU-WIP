@@ -40,7 +40,7 @@
  women_history_events.10.a:0 "Her knowledge would be useful for us, we should consider her as an advisor."
  women_history_events.10.b:0 "She is a great example to us all."
  women_history_events.11.t:0 "Isabella of Castile"
- women_history_events.11.d:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor, even for those unhappy with the rule of [Root.Monarch.GetName] Isabella is held to be a given candidate to be [Root.Monarch.GetHerHis] successor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
+ women_history_events.11.d:0 "While not the primary candidate for the throne few can deny the talents and virtues of the young princess Isabella. As a daughter of the powerful Trastamara family she has managed to secure powerful allies through marriage who support her claim to our throne. Few can tell what the future has in store for our country but even for those who are unhappy with the rule of [Root.Monarch.GetName] Isabella is held to be a given candidate to be [Root.Monarch.GetHerHis] successor."
  women_history_events.11.a:0 "The throne is hers."
  women_history_events.11.b:0 "Her political power can be used elsewhere."
  women_history_events.12.t:0 "Sophie Germain"

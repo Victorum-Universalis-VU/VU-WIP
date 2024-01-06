@@ -5,7 +5,7 @@ primary_culture = circassian
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
-capital = 463 # Circassia
+capital = 3343 # Circassia
 
 # Being a confederation, there were a lot of Princes that ruled small areas with no significant leader, other than maybe Petrezok.  They banded together for defense when needed.
 

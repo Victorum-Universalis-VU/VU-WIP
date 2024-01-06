@@ -2044,7 +2044,7 @@ ME_estate_nobles_theme_system = {
 	loyalty = 0.05
 	influence = 0.15
 	is_valid = {
-		mission_completed = byz_restore_themata
+		mission_completed = reestablish_the_theme_system #was byz_restore_themata
 	}
 	penalties = {
 	}

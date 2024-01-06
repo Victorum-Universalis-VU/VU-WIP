@@ -132,7 +132,7 @@ MSA_pilgrim_routes_protected = {
 	institution_spread_from_true_faith = 0.25
 }
 
-MSA_religious_minority = {
+MSA_religious_minority_modifier = {
 	local_production_efficiency = 0.25
 	local_missionary_strength = -0.05
 }

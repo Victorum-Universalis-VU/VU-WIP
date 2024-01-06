@@ -263,12 +263,12 @@ italian_minor_misisons_2 = {
 						variable_arithmetic_trigger = {
 							export_to_variable = {
 								which = this_trade_power
-								value = trigger_value:province_trade_power
+								value = trigger_value:base_production
 							}
 							export_to_variable = {
 								which = prev_trade_power
-								value = trigger_value:province_trade_power
-								who = PREV
+								value = trigger_value:base_production
+								who = ROOT
 							}
 							check_variable = { which = prev_trade_power which = this_trade_power }
 						}

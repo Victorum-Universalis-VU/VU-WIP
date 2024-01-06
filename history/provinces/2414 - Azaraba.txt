@@ -1,16 +1,17 @@
 #2414 - Azaraba
 
-owner = CRI
-controller = CRI
+owner = CIR
+controller = CIR
 culture = crimean
 religion = sunni
 hre = no
-base_tax = 3  
-base_production = 3 
+base_tax = 2  
+base_production = 1 
 trade_goods = grain
-base_manpower = 2 
+base_manpower = 1 
 capital = "Azaraba"
 is_city = yes
+add_core = CIR
 add_core = CRI
 
 add_permanent_province_modifier = {

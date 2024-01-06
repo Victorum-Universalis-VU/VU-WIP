@@ -259,27 +259,27 @@ rhineland_building_upgrade_palace = {
 		owner = {
 			if = {
 				limit = {
-					has_country_modifier = RHN_palace_2
+					has_country_modifier = RHN_palace_2_modifier
 				}
 				add_country_modifier = {
-					name = RHN_palace_3
+					name = RHN_palace_3_modifier
 					duration = -1
 				}
 				remove_country_modifier = RHN_landtag_2
 			}
 			else_if = {
 				limit = {
-					has_country_modifier = RHN_palace_1
+					has_country_modifier = RHN_palace_1_modifier
 				}
 				add_country_modifier = {
-					name = RHN_palace_2
+					name = RHN_palace_2_modifier
 					duration = -1
 				}
 				remove_country_modifier = RHN_landtag_1
 			}
 			else = {
 				add_country_modifier = {
-					name = RHN_palace_1
+					name = RHN_palace_1_modifier
 					duration = -1
 				}
 			}

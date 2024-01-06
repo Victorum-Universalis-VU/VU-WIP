@@ -181,7 +181,7 @@ persia_indian_hegemony_decision_coup_effect = {
 	hidden_effect = {
 		export_to_variable = {
 			which = manpower_to_pay_var
-			value = trigger_value:max_manpower
+			value = 0
 		}
 		multiply_variable = { which = manpower_to_pay_var value = 0.25 }
 		while = {
@@ -309,7 +309,7 @@ persia_indian_hegemony_decision_coup_effect = {
 						limit = {
 							has_port = yes
 						}
-						every_neighbor_sea_zone = {
+						every_neighbor_province = {
 							discover_country = event_target:persia_independence_target
 						}
 					}

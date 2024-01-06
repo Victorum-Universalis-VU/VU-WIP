@@ -30,6 +30,22 @@ fort_15th = yes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 add_permanent_province_modifier = {
     name = sea_of_dead_palestine
     duration = -1

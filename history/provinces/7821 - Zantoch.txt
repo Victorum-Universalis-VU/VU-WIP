@@ -1,9 +1,9 @@
 #7821 - Zantoch
 
 #Default
-owner = GPL
-controller = GPL
-add_core = GPL
+owner = GRP
+controller = GRP
+add_core = GRP
 culture = polish
 religion = catholic
 capital = "Zantoch"

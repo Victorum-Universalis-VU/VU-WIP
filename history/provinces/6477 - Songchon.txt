@@ -11,12 +11,21 @@ religion = confucianism
 capital = "Songchon"
 trade_goods = apiculture
 hre = no
-base_tax = 10
-base_production = 10
-base_manpower = 10
+base_tax = 1
+base_production = 3
+base_manpower = 2
 is_city = yes
 add_core = GOG
 add_core = KOR
+
+
+
+
+
+
+
+
+
 
 1592.7.19 = { unrest = 5 } # Japanese invasion
 1593.2.8 = { controller = KOR unrest = 0 } # Japanese retreat

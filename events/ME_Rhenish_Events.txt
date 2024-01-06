@@ -33,7 +33,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 
 		add_country_modifier = {
-			name = RHN_great_arts
+			name = RHN_great_arts_modifier
 			duration = 10950
 		}
 	}
@@ -75,7 +75,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 
 		add_country_modifier = {
-			name = RHN_generic_spread_knowledge
+			name = RHN_generic_spread_knowledge_modifier
 			duration = 10950
 		}
 	}
@@ -86,7 +86,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 
 		add_country_modifier = {
-			name = RHN_generic_propaganda
+			name = RHN_generic_propaganda_modifier
 			duration = 10950
 		}
 	}
@@ -96,7 +96,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 
 		add_country_modifier = {
-			name = RHN_akzise
+			name = RHN_akzise_modifier
 			duration = 10950
 		}
 	}
@@ -116,7 +116,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 
 		add_country_modifier = {
-			name = RHN_promote_faith
+			name = RHN_promote_faith_modifier
 			duration = 1825
 		}
 
@@ -128,7 +128,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 
 		add_country_modifier = {
-			name = RHN_promote_tolerance
+			name = RHN_promote_tolerance_modifier
 			duration = 1825
 		}
 	}
@@ -180,7 +180,7 @@ country_event = {
 		tooltip = {
 			event_target:Rhineland_target_1 = {
 				add_country_modifier = {
-					name = RHN_hessian_optics
+					name = RHN_hessian_optics_modifier
 					duration = 9125
 				}
 			}
@@ -201,7 +201,7 @@ country_event = {
 		tooltip = {
 			event_target:Rhineland_target_2 = {
 				add_country_modifier = {
-					name = RHN_hessian_optics
+					name = RHN_hessian_optics_modifier
 					duration = 9125
 				}
 			}
@@ -222,7 +222,7 @@ country_event = {
 		tooltip = {
 			event_target:Rhineland_target_3 = {
 				add_country_modifier = {
-					name = RHN_hessian_optics
+					name = RHN_hessian_optics_modifier
 					duration = 9125
 				}
 			}
@@ -315,7 +315,7 @@ country_event = {
 
 		custom_tooltip = RHN_pay_ducats
 		add_country_modifier = {
-			name = RHN_hessian_optics
+			name = RHN_hessian_optics_modifier
 			duration = 9125
 		}
 		hidden_effect = {
@@ -578,13 +578,13 @@ country_event = {
 		ai_chance = { factor = 0 } #AI likes coal.
 
 		82 = {
-			add_country_modifier = {
+			add_province_modifier = {
 				name = RHN_coal_industry_coexisting
 				duration = 36500
 			}
 		}
 		1878 = {
-			add_country_modifier = {
+			add_province_modifier = {
 				name = RHN_coal_industry_coexisting
 				duration = 36500
 			}
@@ -817,7 +817,9 @@ province_event = {
 	trigger = {
 		has_province_flag = RHN_coal_debuff
 		trade_goods = coal
-		has_institution = enlightenment
+		RHN = {
+			has_institution = enlightenment
+		}
 	}
 
 	option = {
@@ -1615,12 +1617,22 @@ country_event = {
 	id = ME_Rhenish_Events.16
 	title = RHN_Blast_furnaces_decision_title
 	desc = {
-	   trigger = { owner = { has_country_modifier = RHN_blast_furnace_cost } }
-	   desc = RHN_Blast_furnaces_decision_tt2
+	    trigger = { 
+		    ROOT = { 
+				has_country_modifier = RHN_blast_furnace_cost_modifier 
+			} 
+		}
+	    desc = RHN_Blast_furnaces_decision_tt2
 	}
 	desc = {
-	   trigger = { NOT = { owner = { has_country_modifier = RHN_blast_furnace_cost } } }
-	   desc = RHN_Blast_furnaces_decision_tt1
+	    trigger = { 
+		    NOT = { 
+				ROOT = { 
+					has_country_modifier = RHN_blast_furnace_cost_modifier 
+				} 
+			} 
+		}
+	    desc = RHN_Blast_furnaces_decision_tt1
 	}
 	picture = CITY_VIEW_eventPicture
 
@@ -1823,7 +1835,7 @@ country_event = {
 		event_target:target1 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1852,7 +1864,7 @@ country_event = {
 		event_target:target2 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1881,7 +1893,7 @@ country_event = {
 		event_target:target3 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1910,7 +1922,7 @@ country_event = {
 		event_target:target4 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1939,7 +1951,7 @@ country_event = {
 		event_target:target5 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1968,7 +1980,7 @@ country_event = {
 		event_target:target6 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -1997,7 +2009,7 @@ country_event = {
 		event_target:target7 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2026,7 +2038,7 @@ country_event = {
 		event_target:target8 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2055,7 +2067,7 @@ country_event = {
 		event_target:target9 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2078,11 +2090,11 @@ country_event = {
 	id = ME_Rhenish_Events.17
 	title = RHN_Blast_furnaces_decision_title
 	desc = {
-	   trigger = { has_country_modifier = RHN_blast_furnace_cost }
+	   trigger = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 	   desc = RHN_Blast_furnaces_decision_tt2
 	}
 	desc = {
-	   trigger = { NOT = { has_country_modifier = RHN_blast_furnace_cost } }
+	   trigger = { NOT = { has_country_modifier = RHN_blast_furnace_cost_modifier } }
 	   desc = RHN_Blast_furnaces_decision_tt1
 	}
 	picture = CITY_VIEW_eventPicture
@@ -2286,7 +2298,7 @@ country_event = {
 		event_target:target1 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2315,7 +2327,7 @@ country_event = {
 		event_target:target2 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2344,7 +2356,7 @@ country_event = {
 		event_target:target3 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2373,7 +2385,7 @@ country_event = {
 		event_target:target4 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2402,7 +2414,7 @@ country_event = {
 		event_target:target5 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2431,7 +2443,7 @@ country_event = {
 		event_target:target6 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2460,7 +2472,7 @@ country_event = {
 		event_target:target7 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2489,7 +2501,7 @@ country_event = {
 		event_target:target8 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace
@@ -2518,7 +2530,7 @@ country_event = {
 		event_target:target9 = {
 			if = {
 				limit = {
-					owner = { has_country_modifier = RHN_blast_furnace_cost }
+					owner = { has_country_modifier = RHN_blast_furnace_cost_modifier }
 				}
 				add_building_construction = {
 					building = blast_furnace

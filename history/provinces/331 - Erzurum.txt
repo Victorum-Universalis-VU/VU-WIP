@@ -4,8 +4,8 @@
 owner = AKK
 controller = AKK
 add_core = AKK
-culture = armenian			#Though only an island of Arab power within Christian Armenian-populated territory, the native population was generally a reliable client of the Caliph's governors
-religion = miaphysite
+culture = turkish			#Though only an island of Arab power within Christian Armenian-populated territory, the native population was generally a reliable client of the Caliph's governors
+religion = sunni
 capital = "Erzurum"
 trade_goods = livestock
 hre = no

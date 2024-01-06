@@ -2830,7 +2830,7 @@ on_monarch_death = {
 		limit = {
 			dip = 0
 			NOT = { dip = 1 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 0 }
 	}
@@ -2838,7 +2838,7 @@ on_monarch_death = {
 		limit = {
 			dip = 1
 			NOT = { dip = 2 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 1 }
 	}
@@ -2846,7 +2846,7 @@ on_monarch_death = {
 		limit = {
 			dip = 2
 			NOT = { dip = 3 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 2 }
 	}
@@ -2854,7 +2854,7 @@ on_monarch_death = {
 		limit = {
 			dip = 3
 			NOT = { dip = 4 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 3 }
 	}
@@ -2862,7 +2862,7 @@ on_monarch_death = {
 		limit = {
 			dip = 4
 			NOT = { dip = 5 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 4 }
 	}
@@ -2870,14 +2870,14 @@ on_monarch_death = {
 		limit = {
 			dip = 5
 			NOT = { dip = 6 }
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 5 }
 	}
 	else_if = {
 		limit = {
 			dip = 6
-			has_country_flag = me_tim_caravan_modifier
+			#has_country_flag = me_tim_caravan_modifier
 		}
 		ME_add_caravan_modifier = { level = 6 }
 	}
@@ -8191,7 +8191,7 @@ on_golden_bull_enacted = {
 			add_papal_influence = 10
 		}
 	}
-	else = {
+	else_if = {
 		limit = {
 			TFR = { has_country_flag = vu_gain_25_random_pp_and_10_pi_per_bull_flag }
 		}

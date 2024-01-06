@@ -38,6 +38,8 @@
  #Version 1.2
  subject_mediator: "Subject Mediator"
  subject_mediator_desc: ""When kings the sword of justice first lay down, \nThey are no kings, though they possess the crown. \nTitles are shadows, crowns are empty things, \nThe good of subjects is the end of kings.""
+ vu_noble_man: "Nobleman"
+ vu_noble_man_desc: "A member of the nobility who has sworn us allegiance."
 
  #Version 1.3
 

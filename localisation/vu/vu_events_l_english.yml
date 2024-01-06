@@ -94,7 +94,7 @@
  wal_events.5.a:"The Sultan's head will be mine!"
  #
  wal_events.6.t:"Michael the Brave"
- wal_events.6.d:"Michael the Brave (Romanian Mihai Viteazul or Mihai Bravu 1558 – 9 August 1601), born as Mihai Patrascu, was the Prince of Wallachia (as Michael II, 1593 – 1601), Prince of Moldavia (1600) and de facto ruler of Transylvania (1599 – 1600). He is considered one of Romania's greatest national heroes. Since the 19th century, Michael the Brave has been regarded by Romanian nationalists as a symbol of Romanian unity, as his reign marked the first time all principalities inhabited by Romanians were under the same ruler."
+ wal_events.6.d:"Michael the Brave (Romanian Mihai Viteazul or Mihai Bravu 1558 to 9 August 1601), born as Mihai Patrascu, was the Prince of Wallachia (as Michael II, 1593 to 1601), Prince of Moldavia (1600) and de facto ruler of Transylvania (1599 to 1600). He is considered one of Romania's greatest national heroes. Since the 19th century, Michael the Brave has been regarded by Romanian nationalists as a symbol of Romanian unity, as his reign marked the first time all principalities inhabited by Romanians were under the same ruler."
  wal_events.6.a:"Let the Prince purchase his throne from the Sultan!"
  wal_events.6.b:"Wallachian Independence is non-negotiable!"
  #
@@ -106,13 +106,17 @@
  wal_events.8.d:"The time has come to commit to Michael's plan, and to gain our independence from the Ottomans. Their armies will break upon Romania like water upon stone, and our armies will hold strong. God favours us."
  wal_events.8.a:"To Death, Glory, and Battle, for Romania's Freedom"
  #
- wal_events.9.t:"Our Independence Assured"
- wal_events.9.d:"After years of war, and much bloodshed, finally we have our independence from the Sultan. Romania will forever more have it's independence, and never again shall we be under another nation's thumb"
- wal_events.9.a:"May our nation forever be free"
+ wal_events.9.t: "Our Independence Assured"
+ wal_events.9.d: "After years of war and much bloodshed, Romania finally has her independence and never again shall she be under another nation's thumb."
+ wal_events.9.a: "May our nation forever be free"
  #
- wal_events.10.t:0 "Romanian Unification"
- wal_events.10.d:0 "Let's lock together hand to hand  We of Romanian heart  And on our ancestral land  The dance of unity let's start!"
- wal_events.10.a:0 "Now and Forever Together"
+ wal_events.10.t: "Romanian Unification"
+ wal_events.10.d: "Let's lock together hand in hand and dance in unity for we are all of Romanian blood."
+ wal_events.10.a: "Now and Forever Together"
+ #
+ wal_events.11.t: "Eagle Rising"
+ wal_events.11.d: "The Eagle has once again risen!"
+ wal_events.11.a: "Send forth the legions"
  #
  #Moldova Events
  mol_events.1.t:"Rule of Stefan the Great"

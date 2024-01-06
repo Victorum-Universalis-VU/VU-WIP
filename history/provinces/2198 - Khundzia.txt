@@ -23,6 +23,22 @@ add_core = AVR
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1801.1.18 = {
 	owner = RUS
 	controller = RUS

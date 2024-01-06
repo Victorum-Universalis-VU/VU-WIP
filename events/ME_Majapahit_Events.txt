@@ -536,7 +536,7 @@ country_event = {
 	id = ME_Majapahit_Events.15 #Unruly Subject
 	title = "ME_Majapahit_Events.15.t"
 	desc = "ME_Majapahit_Events.15.d"
-	picture = DIPLOMACY
+	picture = DIPLOMACY_eventPicture
 
 	mean_time_to_happen = { months = 12 }
 	hidden = yes

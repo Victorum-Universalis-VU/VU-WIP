@@ -219,6 +219,7 @@
  iqta_vassal_low_religious_unity_modifier: "Has low religious unity"
  iqta_vassal_scutage_modifier: "Scutage"
  iqta_vassal_allow_annex_modifier: "Could get annexed"
+ desc_iqta_vassal_allow_annex_modifier: "Iqta Vassal - Allow Annex"
  iqta_vassal_overlord_modifier: "Has Iqtas"
  iqta_vassal_same_religion_overlord_modifier: "Iqtas are following the True Faith"
 

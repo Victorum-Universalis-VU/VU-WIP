@@ -1735,6 +1735,22 @@ caucasus_ideas = {
 		OR = {
 			culture_group = caucasian
 			primary_culture = azerbaijani
+			tag = ABZ
+			tag = AKN
+			tag = AKZ
+			tag = BKS
+			tag = QRC
+			tag = DER
+			tag = IGS
+			tag = KTG
+			tag = LAZ
+			tag = MGL
+			tag = RUT
+			tag = SVT
+			tag = TRR
+			tag = TLY
+			tag = TAT
+			tag = TSK
 		}
 	}
 	free = yes

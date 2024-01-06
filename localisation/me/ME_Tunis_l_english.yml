@@ -122,8 +122,10 @@
  TUN_emirate_of_siicly: "Emirate of Sicily"
  TUN_pious_ruler_modifier: "Pious Ruler"
  
- Leo_Africanus_Diplomat: "Leo Africanus" #cut content
- Leo_Africanus_Geographer: "Leo Africanus" #cut content
+ Leo_Africanus_Diplomat: "Geographer"
+ Leo_Africanus_Diplomat_desc: "Diplomat"
+ Leo_Africanus_Geographer: "Geographer"
+ Leo_Africanus_Geographer_desc: "Geographer"
  
  TUN_recruiting_berbers_gives_5_army_tradition: "Empower the '§YRecruit from the Berber Tribes§!' privilege, making it also grant §G5.0§! Army Tradition whenever enacted."
  TUN_rename_zaytunah_To_medina: "Rename '§YZaytunah Madrasah§!' Modifier to '§YMedina of Tunis§!' and append it by:\n Yearly Tax Income §G+12.00§!¤\n Tolerance of the True Faith: §G+0.50§!"
@@ -278,6 +280,7 @@
  SIC_emirate_of_siicly_str_ADJ: "Sicilian"
  
  cb_maghreb_expel_europeans: "Expel the Europeans"
+ cb_maghreb_expel_europeans_desc: "Expel the Europeans from our shores."
  maghreb_expel_europeans: "Expel the Europeans"
  maghreb_expel_europeans_desc: "The foolish Christian Kingdoms dare think they can continue their Reconquista into the Maghreb."
  
@@ -286,6 +289,7 @@
  TUN_oran_fatwa_warname: "$ORDER$ Liberation of the Mudejar" 
  
  cb_tunis_capture_islands: "Capture Islands"
+ cb_tunis_capture_islands_desc: "Capture those islands."
  tunis_capture_islands_wargoal: "Take Islands"
  tunis_capture_islands_wargoal_desc: "The Tunisian Terror shall extend to all coasts of the Mediterranean. Christian shipping shall be no more."
  TUN_capture_islands_warname: "$ORDER$ $FIRST$ Raid on Mediterranean Islands"

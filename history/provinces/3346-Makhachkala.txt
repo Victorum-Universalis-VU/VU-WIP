@@ -12,15 +12,7 @@ base_tax = 2
 base_production = 4
 base_manpower = 4 
 is_city = yes
-add_core = T4R
-
-
-
-
-
-
-
-
+add_core = TRR
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

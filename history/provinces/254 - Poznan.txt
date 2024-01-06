@@ -1,9 +1,9 @@
 #254 - Poznan
 
 #Default
-owner = GPL
-controller = GPL
-add_core = GPL
+owner = GRP
+controller = GRP
+add_core = GRP
 capital = "Poznan"
 culture = polish
 religion = catholic

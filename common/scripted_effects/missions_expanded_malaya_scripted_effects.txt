@@ -350,7 +350,7 @@ MSA_the_end = {
 				value = 80
 			}
 		}
-		MSA_absolutely_loyal_bonus = { }
+		MSA_absolutely_loyal_bonus = { tooltip = yes }
 	}
 	else_if = {
 		limit = {
@@ -359,7 +359,7 @@ MSA_the_end = {
 				value = 60
 			}
 		}
-		MSA_swayed_bonus = { }
+		MSA_swayed_bonus = { tooltip = yes }
 	}
 	else_if = {
 		limit = {
@@ -368,7 +368,7 @@ MSA_the_end = {
 				value = 40
 			}
 		}
-		MSA_neutral_bonus = { }
+		MSA_neutral_bonus = { tooltip = yes }
 	}
 	else_if = {
 		limit = {
@@ -377,10 +377,10 @@ MSA_the_end = {
 				value = 20
 			}
 		}
-		MSA_in_defiance_bonus = { }
+		MSA_in_defiance_bonus = { tooltip = yes }
 	}
 	else = {
-		MSA_insulting_bonus = { }
+		MSA_insulting_bonus = { tooltip = yes }
 	}
 }
 
@@ -1080,7 +1080,10 @@ MSA_execute_province_effect = {
 			duration = -1
 		}
 		owner = {
-			MSA_this_will_cost = { amount = 15 execute = yes }
+			MSA_this_will_cost = { 
+				amount = 15 
+				#execute = yes 
+			}
 			set_country_flag = MSA_investment_c_cooldown
 		}
 	}
@@ -1093,7 +1096,10 @@ MSA_execute_province_effect = {
 			duration = -1
 		}
 		owner = {
-			MSA_this_will_cost = { amount = 20 execute = yes }
+			MSA_this_will_cost = { 
+				amount = 20 
+				#execute = yes 
+			}
 			set_country_flag = MSA_investment_g_cooldown
 		}
 	}

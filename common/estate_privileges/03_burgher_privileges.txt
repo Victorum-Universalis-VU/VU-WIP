@@ -388,14 +388,14 @@ estate_burghers_admirals = {
 		}
 		else = {
 			add_country_modifier = {
-				name = me_hab_burghers_in_navy
+				name = me_hab_burghers_in_navy_modifier
 				duration = -1
 				desc = "until privilege is revoked"
 			}
 		}
 	}
 	on_revoked = {
-		remove_country_modifier = me_hab_burghers_in_navy
+		remove_country_modifier = me_hab_burghers_in_navy_modifier
 	}
 	penalties = {
 	}

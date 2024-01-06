@@ -392,8 +392,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_unit_banner_checkbox"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="icon_type"
 			spriteType = "GFX_estates_icons"
 			position = { x = -20 y = 4 }

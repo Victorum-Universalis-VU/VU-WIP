@@ -329,7 +329,9 @@ BRA_missions_2 = {
 			hidden_effect = {
 				if = {
 					limit = {					
-						NOT = { country_or_non_sovereign_subject_holds = 4747 }
+						4747 = {
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						}
 					}
 					4747 = {
 						remove_province_modifier = BRA_neumark_province
@@ -343,8 +345,10 @@ BRA_missions_2 = {
 					}
 				}
 				if = {
-					limit = {					
-						NOT = { country_or_non_sovereign_subject_holds = 49 }
+					limit = {		
+						49 = {
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						}			
 					}
 					49 = {
 						remove_province_modifier = BRA_neumark_province

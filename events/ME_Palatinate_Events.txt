@@ -50,7 +50,7 @@ country_event = {
 		
 		77 = {
 			add_province_modifier = {
-				name = PAL_bibliotheca_palatina
+				name = PAL_bibliotheca_palatina_modifier
 				duration = -1
 			}
 		}
@@ -67,7 +67,7 @@ province_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	trigger = {
-		has_province_modifier = PAL_bibliotheca_palatina
+		has_province_modifier = PAL_bibliotheca_palatina_modifier
 		controller = {
 			NOT = {
 				OR = {
@@ -102,7 +102,7 @@ province_event = {
 		ai_chance = { factor = 33 }
 		
 		77 = {
-			remove_country_modifier = PAL_bibliotheca_palatina
+			remove_province_modifier = PAL_bibliotheca_palatina_modifier
 		}
 	}
 }

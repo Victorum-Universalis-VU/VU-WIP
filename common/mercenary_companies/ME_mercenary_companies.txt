@@ -1163,7 +1163,7 @@ ee_byz_varangian_guard = {
 	cavalry_weight = 0
 	artillery_weight = 0
 	trigger = {
-		mission_completed = byz_army_of_the_basileus
+		mission_completed = reestablish_the_theme_system #was byz_army_of_the_basileus
 	}
 	modifier = {
 		infantry_power = 0.1

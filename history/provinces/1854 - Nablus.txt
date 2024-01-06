@@ -29,6 +29,22 @@ add_core = MAM
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 center_of_trade = 2
 extra_cost = 30
 

@@ -535,7 +535,7 @@ country_event = {
 
 	trigger = {
 		tag = PER
-		mission_completed = persia_persian_renaissance
+		mission_completed = per_tim_patronage_of_the_arts #persia_persian_renaissance
 		any_owned_province = {
 			culture = turkmeni
 			any_neighbor_province = {
@@ -593,7 +593,7 @@ country_event = {
 
 	trigger = {
 		tag = PER
-		mission_completed = persia_persian_renaissance
+		mission_completed = per_tim_patronage_of_the_arts #persia_persian_renaissance
 		any_owned_province = {
 			culture = uzbehk
 			any_neighbor_province = {
@@ -651,7 +651,7 @@ country_event = {
 
 	trigger = {
 		tag = PER
-		mission_completed = persia_persian_renaissance
+		mission_completed = per_tim_patronage_of_the_arts #persia_persian_renaissance
 		any_owned_province = {
 			culture = dagestani
 			any_neighbor_province = {
@@ -709,7 +709,7 @@ country_event = {
 
 	trigger = {
 		tag = PER
-		mission_completed = persia_persian_renaissance
+		mission_completed = per_tim_patronage_of_the_arts #persia_persian_renaissance
 		any_owned_province = {
 			culture = al_iraqiya_arabic
 			any_neighbor_province = {
@@ -1345,7 +1345,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		mission_completed = persia_saoshyant
+		mission_completed = per_reborn_in_fire# persia_saoshyant
 		NOT = { has_ruler_modifier = persia_empire_peace }
 	}
 

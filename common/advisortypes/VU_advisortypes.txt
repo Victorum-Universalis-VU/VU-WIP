@@ -3530,3 +3530,63 @@ ME_historian = {
 		factor = 1
 	}
 }
+
+vu_noble_man = {
+	monarch_power = MIL
+
+	free_leader_pool = 1
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = parliament_vs_monarchy_mechanic
+				NOT = { culture_group = PREV }
+			}
+		}
+		modifier = {
+			monthly_russian_modernization = 0.02
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_attribute = republican_tradition_from_advisors
+			}
+		}
+		modifier = {
+			republican_tradition = 0.02
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				is_emperor_of_china = yes
+			}
+		}
+		modifier = { meritocracy = 0.25 }
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_attribute = advisors_generate_innovativeness
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02
+		}
+	}
+
+	allow_only_male = yes
+
+	chance = {
+		factor = 1
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}

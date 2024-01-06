@@ -13,7 +13,6 @@ native_ferocity = 2
 native_hostileness = 3
 
 1604.1.1 = {
-	
 	owner = RUS
 	controller = RUS
 	religion = orthodox

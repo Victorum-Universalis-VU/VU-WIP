@@ -7424,7 +7424,7 @@
 		}
 		custom_attributes = {
 			enables_white_knights = yes
-			#enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
+			enables_noble_knights = yes #5% shock damage if you have aristocratic ideas.
 		}
 		ai = {
 			factor = 1
@@ -7598,7 +7598,7 @@
 			yearly_army_professionalism = 0.001
 		}
 		custom_attributes = {
-			#enables_general_guards = yes #+1.25 AP per General
+			enables_general_guards = yes #+1.25 AP per General
 			enables_elite_regiments = yes #Elite Regiments, +50% Drill gain, -50% reinforcement speed, +10% ICA
 		}
 		ai = {
@@ -9362,52 +9362,52 @@
 		}
 	}
 	reinforce_the_hwangog_reform = {
-		icon = "banker"
-		allow_normal_conversion = yes
-		effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						trade_goods = grain
-						NOT = { has_province_modifier = GE_hwangog }
-					}
-					add_province_modifier = {
-						name = GE_hwangog
-						duration = -1
-					}
-				}
-			}
-		}
-		removed_effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						has_province_modifier = GE_hwangog
-					}
-					remove_province_modifier = GE_hwangog
-				}
-			}
-		}
-		modifiers = {
-			stability_cost_modifier = -0.2
-			global_tax_modifier = 0.15
-		}
-		potential = {
-			OR = {
-				has_reform = reinforce_the_hwangog_reform
-				primary_culture = korean
-			}
-		}
-		trigger = {
-			OR = {
-				has_reform = reinforce_the_hwangog_reform
-				primary_culture = korean
-			}
-		}
-		custom_attributes = {
-			enables_better_grain = yes
-		}
-	}
+    	icon = "banker"
+    	allow_normal_conversion = yes
+    	effect = {
+    		hidden_effect = {
+    			every_owned_province = {
+    				limit = {
+    					trade_goods = grain
+    					NOT = { has_province_modifier = GE_hwangog }
+    				}
+    				add_province_modifier = {
+    					name = GE_hwangog
+    					duration = -1
+    				}
+    			}
+    		}
+    	}
+    	removed_effect = {
+    		hidden_effect = {
+    			every_owned_province = {
+    				limit = {
+    					has_province_modifier = GE_hwangog
+    				}
+    				remove_province_modifier = GE_hwangog
+    			}
+    		}
+    	}
+    	modifiers = {
+    		stability_cost_modifier = -0.2
+    		global_tax_modifier = 0.15
+    	}
+    	potential = {
+    		OR = {
+    			has_reform = reinforce_the_hwangog_reform
+    			primary_culture = korean
+    		}
+    	}
+    	trigger = {
+    		OR = {
+    			has_reform = reinforce_the_hwangog_reform
+    			primary_culture = korean
+    		}
+    	}
+    	custom_attributes = {
+    		enables_better_grain = yes
+    	}
+    }
 	bureaucratic_economy_reform = {
 		icon = "asian_scripture"
 		allow_normal_conversion = yes

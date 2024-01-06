@@ -261,7 +261,7 @@ province_event = {
 			add_republican_tradition = 50
 			change_religion = coptic
 			change_primary_culture = mahri_culture
-			discover_provinces = ROOT
+			#discover_provinces = ROOT
 			capital_scope = {
 				build_to_forcelimit = {
 					infantry = 0.8
@@ -296,7 +296,7 @@ province_event = {
 			add_republican_tradition = 50
 			change_religion = coptic
 			change_primary_culture = mahri_culture
-			discover_provinces = ROOT
+			#discover_provinces = ROOT
 			capital_scope = {
 				build_to_forcelimit = {
 					infantry = 0.8
@@ -315,7 +315,9 @@ province_event = {
 	}
 	
 	after = {
-		swap_free_idea_group = yes
-		swap_non_generic_missions = yes
+		SUQ = {
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
 	}
 }

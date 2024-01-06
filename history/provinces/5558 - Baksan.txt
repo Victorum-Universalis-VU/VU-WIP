@@ -24,6 +24,22 @@ add_core = KBD
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1520.1.1 = { religion = sunni }
 1814.1.1 = {
 	owner = RUS

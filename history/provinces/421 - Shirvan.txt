@@ -12,6 +12,7 @@ base_production = 5
 base_manpower = 3 
 is_city = yes
 add_core = SRV
+add_core = TAT
 
 add_permanent_province_modifier = {
     name = navalbase_modifier

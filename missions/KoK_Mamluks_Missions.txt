@@ -668,7 +668,7 @@ mam_missions_2 = {
 				}
 				403 = { 
 					add_great_project_tier = {
-						type = nizwa_fort 
+						type = vu_bahla_fort
 						tier = 1 
 					}
 				}

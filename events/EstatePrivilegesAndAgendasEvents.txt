@@ -953,7 +953,7 @@ country_event = {
 	}
 
 	option = {
-		name = estate_privileges_and_agendas_events.3.A_PREVIOUS_RULER
+		name = estate_privileges_and_agendas_events.3.n
 		trigger = { has_country_flag = estate_jews_present_agenda }
 		start_estate_agenda = estate_jews
 		goto = estate_jews
