@@ -3726,7 +3726,7 @@ iberian	= {
 	#End of MEVU
 }
 
-french	= {
+french = {
 	graphical_culture = westerngfx
 
 	cosmopolitan_french = {
@@ -3960,7 +3960,7 @@ french	= {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
-	french_east_indian  = {
+	french_east_indian = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
