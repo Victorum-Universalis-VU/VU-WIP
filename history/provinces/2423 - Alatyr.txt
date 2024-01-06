@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Alatyr"
 is_city = yes
 add_core = KAZ
+add_core = ERZ
 
 
 

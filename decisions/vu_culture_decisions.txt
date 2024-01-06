@@ -57,7 +57,7 @@ country_decisions = {
 			adm_tech = 25
 		}
 		effect = {
-			add_dip_power = -100
+			add_dip_power = -50
 			add_prestige = 5
 			every_province = {
 				limit = {
@@ -68,7 +68,20 @@ country_decisions = {
 						culture = latgalian
 					}
 				}
+				add_core = LAT
 				change_culture = latvian
+			}
+			if = {
+				limit = {
+					OR = {
+						primary_culture = curonian
+						primary_culture = zemgalian
+						primary_culture = selonian
+						primary_culture = latgalian
+					}
+				}
+				change_tag = LAT
+				on_change_tag_effect = yes
 			}
 			if = {
 				limit = {

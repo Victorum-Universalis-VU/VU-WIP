@@ -1,4 +1,6 @@
 ﻿l_english:
+ #Fixed Tooltip
+ allow_earlier_scandinavia_formation_tt:0 "The country of §YScandinavia§! no longer needs an §YAdministrative Technology§! of §Y37§! to be formed."
  #Development doubling tax mechanic alterations
  PP_BASE_TAX_VALUE2:0 "Base Tax is $VAL|Y$, with each level giving:\nYearly Tax Income: §G+0.5§!¤\nLocal Recruitment Time: §G-0.5%§!"
  IMPR_TAX_IMCOME:0 " Monthly Tax Income: §G+$VAL$§!¤"

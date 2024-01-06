@@ -13,7 +13,7 @@ base_manpower = 1
 native_size = 20
 native_ferocity = 3
 native_hostileness = 1
-
+add_core = NEN
  
 center_of_trade = 1
 extra_cost = 10

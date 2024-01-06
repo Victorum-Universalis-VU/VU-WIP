@@ -13,6 +13,7 @@ capital = "Mezen"			#Okladnikova Sloboda
 is_city = yes
 add_core = NOV
 add_local_autonomy = 75
+add_core = NEN
 
 
 

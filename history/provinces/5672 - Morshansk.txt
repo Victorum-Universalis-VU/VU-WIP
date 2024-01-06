@@ -3,6 +3,7 @@
 owner = KAZ
 controller = KAZ
 add_core = KAZ
+add_core = MOK
 culture = vu_mordvinic
 religion = orthodox
 capital = "Morshansk"

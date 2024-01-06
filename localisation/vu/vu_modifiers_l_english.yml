@@ -1,5 +1,9 @@
 ﻿l_english:
  ##VU Quonton additions
+ vu_ural_steppe_supremacy:0 "Master of the Steppes" 
+ vu_ural_steppe_supremacy_desc:0 "" 
+ vu_estland:0 "Northern Trade" 
+ vu_estland_desc:0 "" 
  Promoted_Industry_v2_idea:0 "Greater Expanded Industrial Capacity" 
  Promoted_Industry_idea:0 "Expanded Industrial Capacity" 
  vu_roman_cultural_restoration_complete:0 "Romanization Complete"

@@ -489,6 +489,8 @@ KRL_ideas = {
 	
 	trigger = {
 		tag = KRL
+		tag = LUD
+		tag = LVV
 	}
 	free = yes
 	

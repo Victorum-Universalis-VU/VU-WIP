@@ -5,6 +5,7 @@
 owner = NOV
 controller = NOV  
 add_core = KRL
+add_core = LVV
 culture = vu_livviki
 religion = orthodox
 hre = no

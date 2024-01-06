@@ -5,6 +5,7 @@
 owner = KUR
 controller = KUR
 add_core = KUR
+add_core = LVA
 culture = livonian #Was estonian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 hre = no

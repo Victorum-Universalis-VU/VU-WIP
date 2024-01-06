@@ -5,6 +5,7 @@
 owner = NOV
 controller = NOV
 add_core = KRL
+add_core = VEP
 capital = "Pudozh"
 culture = vu_vepsian
 religion = orthodox
