@@ -7,9 +7,9 @@ religion = shinto
 capital = "Hamada"
 trade_goods = fish
 hre = no
-base_tax = 7
-base_production = 7
-base_manpower = 7
+base_tax = 1
+base_manpower = 2
+base_production = 2
 is_city = yes
 add_core = YMN
 

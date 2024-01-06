@@ -12,9 +12,9 @@ religion = hinduism
 capital = "Cebu"
 trade_goods = pearls #Pearls
 hre = no
-base_tax = 8
-base_production = 8
-base_manpower = 8
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 
 center_of_trade = 1

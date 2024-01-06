@@ -210,10 +210,27 @@ country_event = { # Dismantle Great Horde
 		}
 		if = {
 			limit = {
+				exists = DRZ
+				3330 = { owned_by = GOL }
+			}
+			3330 = {
+				cede_province = DRZ
+			}
+		}
+		if = {
+			limit = {
 				2416 = { owned_by = GOL }
 			}
 			2416 = {
-				cede_province = CRI
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				468 = { owned_by = GOL }
+			}
+			468 = {
+				cede_province = AST
 			}
 		}
 		if = {
@@ -221,7 +238,55 @@ country_event = { # Dismantle Great Horde
 				3263 = { owned_by = GOL }
 			}
 			3263 = {
-				cede_province = CRI
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				3340 = { owned_by = GOL }
+			}
+			3340 = {
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				3333 = { owned_by = GOL }
+			}
+			3333 = {
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				3341 = { owned_by = GOL }
+			}
+			3341 = {
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				3339 = { owned_by = GOL }
+			}
+			3339 = {
+				cede_province = CIR
+			}
+		}
+		if = {
+			limit = {
+				5553 = { owned_by = GOL }
+			}
+			5553 = {
+				cede_province = CIR
+			}
+		}
+		if = {
+			limit = {
+				3332 = { owned_by = GOL }
+			}
+			3332 = {
+				cede_province = AST
 			}
 		}
 		if = {
@@ -229,7 +294,7 @@ country_event = { # Dismantle Great Horde
 				3264 = { owned_by = GOL }
 			}
 			3264 = {
-				cede_province = CRI
+				cede_province = AST
 			}
 		}
 		if = {
@@ -237,7 +302,7 @@ country_event = { # Dismantle Great Horde
 				1971 = { owned_by = GOL }
 			}
 			1971 = {
-				cede_province = CRI
+				cede_province = AST
 			}
 		}
 		GOL = {
@@ -303,6 +368,14 @@ country_event = { # Dismantle Great Horde
 				2415 = { owned_by = GOL }
 			}
 			2415 = {
+				cede_province = AST
+			}
+		}
+		if = {
+			limit = {
+				3331 = { owned_by = GOL }
+			}
+			3331 = {
 				cede_province = AST
 			}
 		}

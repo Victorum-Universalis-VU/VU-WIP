@@ -5,7 +5,7 @@ owner = KIR
 controller = KIR
 add_core = KIR
 culture = byelorussian
-religion = orthodox
+religion = slavic_pagan_reformed
 capital = "Chavusy"
 base_tax = 1
 base_production = 1
@@ -22,6 +22,22 @@ hre = no
 add_local_autonomy = 25
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

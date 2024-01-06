@@ -4,7 +4,7 @@
 owner = CAS
 controller = CAS
 add_core = CAS
-culture = castillian
+culture = andalusi_arabic
 religion = catholic
 capital = "Lorca"
 base_tax = 2
@@ -22,6 +22,22 @@ add_core = MUR
 #Special Modifiers
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

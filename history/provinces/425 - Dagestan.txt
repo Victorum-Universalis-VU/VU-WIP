@@ -4,6 +4,7 @@ owner = SRV
 controller = SRV 
 add_core = SRV
 add_core = LEK
+add_core = TAT
 culture = tati
 religion = shiite
 capital = "Quba"
@@ -13,6 +14,22 @@ base_tax = 5
 base_production = 5 
 base_manpower = 3 
 is_city = yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

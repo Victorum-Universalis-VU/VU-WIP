@@ -1,10 +1,9 @@
 #5558 - Baksan
 
-owner = GOL
-add_core = GOL
-controller = GOL
-culture = astrakhani
-religion = sunni
+owner = KBD
+controller = KBD
+culture = kabardian
+religion = orthodox
 hre = no
 base_tax = 3
 base_production = 3
@@ -12,7 +11,24 @@ trade_goods = wool
 base_manpower = 2 
 capital = "Anzorey"
 is_city = yes
+add_core = CIR
 add_core = KBD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

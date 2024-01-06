@@ -23,6 +23,22 @@ add_core = QRC
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1500.1.1 = { owner = CIR controller = CIR }
 1569.1.1 = { owner = GAZ controller = GAZ } # Budai-Chopan conquest
 1801.1.18 = {

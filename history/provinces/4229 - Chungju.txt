@@ -7,11 +7,17 @@ religion = confucianism
 capital = "Chungju"
 trade_goods = lumber
 hre = no
-base_tax = 10
-base_production = 10
-base_manpower = 10
+base_tax = 2
+base_production = 3
+base_manpower = 3
 is_city = yes
 add_core = KOR
+
+
+
+
+
+
 
 1592.6.6 = { controller = ODA unrest = 5 } # Japanese invasion - Battle of Cheongju
 1593.6.10 = { controller = KOR unrest = 0 } # With Chinese help the Japanese are driven back

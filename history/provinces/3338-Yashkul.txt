@@ -1,0 +1,35 @@
+#5559 - Abaza
+
+owner = GOL
+controller = GOL
+add_core = GOL
+add_core = AST
+culture = astrakhani
+religion = sunni
+capital = "Yashkul"	#Uncertain
+trade_goods = horses
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
 owner = ARA		#Martin I of Aragon
 controller = ARA
 add_core = ARA
-culture = castillian
+culture = andalusi_arabic
 religion = catholic
 hre = no
 base_tax = 2
@@ -22,6 +22,22 @@ add_core = VAL
 #Special Modifiers
 
 #Known by Technology groups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -32,6 +32,22 @@ is_city = yes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Just about 0 information for the region, was going to leave it wasteland, but JP wanted a province here so why not
 
 1516.8.24 = {

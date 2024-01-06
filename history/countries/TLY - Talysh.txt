@@ -3,7 +3,8 @@ add_government_reform = iqta
 government_rank = 2
 primary_culture = talysh
 religion = sunni
-technology_group = muslim
+#technology_group = muslim
+technology_group = persian_tech_group
 capital = 3692
 religious_school = shafii_school
 

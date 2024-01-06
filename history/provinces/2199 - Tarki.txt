@@ -13,7 +13,23 @@ base_production = 4
 base_manpower = 4 
 is_city = yes
 center_of_trade = 1
-add_core = T4R
+add_core = TRR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

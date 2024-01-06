@@ -3,9 +3,9 @@
 #Region - Poland
 
 #Default
-owner = GPL
-controller = GPL
-add_core = GPL
+owner = GRP
+controller = GRP
+add_core = GRP
 capital = "Koscian"
 is_city = yes
 culture = polish

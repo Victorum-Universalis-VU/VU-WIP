@@ -4,7 +4,7 @@ government_rank = 2
 technology_group = chinese
 religion = animism
 primary_culture = ivata
-capital = 8267 #Ivata
+capital = 7161 #Ivata
 
 1409.1.1 = {
 	monarch = {

@@ -23,6 +23,22 @@ add_core = AVR
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1569.1.1 = { owner = GAZ controller = GAZ } # Budai-Chopan conquest
 1801.1.18 = {
 	owner = RUS

@@ -1,10 +1,10 @@
 government = tribal
 add_government_reform = tribal_federation
 government_rank = 1
-primary_culture = dagestani
+primary_culture = chechen
 add_accepted_culture = circassian
 religion = shiite
-technology_group = persian_tech_group
+technology_group = muslim
 capital = 6135 #Durdzuketia
 
 

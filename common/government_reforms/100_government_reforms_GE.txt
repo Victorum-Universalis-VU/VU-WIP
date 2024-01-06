@@ -7598,7 +7598,7 @@
 			yearly_army_professionalism = 0.001
 		}
 		custom_attributes = {
-			#enables_general_guards = yes #+1.25 AP per General
+			enables_general_guards = yes #+1.25 AP per General
 			enables_elite_regiments = yes #Elite Regiments, +50% Drill gain, -50% reinforcement speed, +10% ICA
 		}
 		ai = {

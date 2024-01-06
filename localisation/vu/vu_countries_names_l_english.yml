@@ -1,5 +1,9 @@
 ﻿l_english:
 #Caucasus
+ TSK: "Tsuketi"
+ TSK_ADJ: "Tsuketia"
+ TAT: "Tat"
+ TAT_ADJ: "Tat"
  ABZ: "Abazinia"
  ABZ_ADJ: "Abaza"
  AKN: "Akhtyn"
@@ -20,8 +24,8 @@
  RUT_ADJ: "Rutul"
  SVT: "Svaneti"
  SVT_ADJ: "Svani"
- T4R: "Tarki"
- T4R_ADJ: "Tarki"
+ TRR: "Tarki"
+ TRR_ADJ: "Tarki"
  TLY: "Talysh"
  TLY_ADJ: "Talyshi"
  UBY: "Ubykh"

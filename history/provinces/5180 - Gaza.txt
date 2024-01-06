@@ -32,6 +32,22 @@ is_city = yes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1517.1.1 = {
 	owner = TUR
 	controller = TUR

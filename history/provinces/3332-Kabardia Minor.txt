@@ -3,15 +3,34 @@
 owner = GOL
 controller = GOL
 add_core = GOL
-culture = astrakhani
-religion = sunni
+culture = kabardian
+religion = orthodox
 capital = "Mezdegu"	#Uncertain
 trade_goods = livestock
 hre = no
 base_tax = 3
-base_production = 4
+base_production = 3
 base_manpower = 4 
 is_city = yes
+add_core = CIR
+add_core = KBD
+add_core = AST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
