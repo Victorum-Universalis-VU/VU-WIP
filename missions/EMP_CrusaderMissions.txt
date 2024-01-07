@@ -13,11 +13,11 @@ EMP_crusader_1 = {
 				OR = {
 					tag = CYP
 					tag = KNI
+					tag = NAX
 				}
 				has_country_flag = use_paradox_missions
 			}
 			tag = ATH
-			tag = NAX
 			tag = KOJ
 			tag = EPI
 		}
@@ -124,11 +124,11 @@ EMP_crusader_2 = {
 				OR = {
 					tag = CYP
 					tag = KNI
+					tag = NAX
 				}
 				has_country_flag = use_paradox_missions
 			}
 			tag = ATH
-			tag = NAX
 			tag = KOJ
 			tag = EPI
 		}
@@ -406,7 +406,6 @@ EMP_crusader_3 = {
 				has_country_flag = use_paradox_missions
 			}
 			tag = ATH
-			tag = NAX
 			tag = KOJ
 			tag = EPI
 		}
@@ -744,7 +743,6 @@ EMP_crusader_4 = {
 				has_country_flag = use_paradox_missions
 			}
 			tag = ATH
-			tag = NAX
 			tag = KOJ
 			tag = EPI
 		}
@@ -1013,14 +1011,13 @@ EMP_crusader_5 = {
 		OR = {
 			AND = {
 				OR = {
-				tag = CYP
-				tag = KNI
-				tag = NAX
-			}
+					tag = CYP
+					tag = KNI
+					tag = NAX
+				}
 				has_country_flag = use_paradox_missions
 			}
 			tag = ATH
-			tag = NAX
 			tag = KOJ
 			tag = EPI
 		}

@@ -52,7 +52,6 @@ cpm_missions_1 = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}
@@ -82,7 +81,6 @@ cpm_missions_2 = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}
@@ -118,7 +116,6 @@ cpm_missions_2_no_tab = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}
@@ -156,7 +153,6 @@ cpm_missions_3 = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}
@@ -228,7 +224,6 @@ cpm_missions_4 = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}
@@ -248,7 +243,6 @@ cpm_missions_4 = {
 			if = {
 				limit = {
 					tag = BPI
-					#tag = TLY
 				}
 				417 = {
 					if = {
@@ -372,7 +366,6 @@ cpm_missions_5 = {
 	potential = {
 		OR = {
 			tag = BPI
-			#tag = TLY
 			tag = KRY
 			tag = BDP
 		}

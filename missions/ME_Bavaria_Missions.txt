@@ -430,7 +430,7 @@ me_bavaria_minor_missions_3 = {
 						}
 						export_to_variable = {
 							which = trade_income_share
-							value = trigger_value:trade_income_percentage
+							value = trade_income_percentage
 						}
 						multiply_variable = { which = current_trade_income which = trade_income_share }
 						check_variable = { which = current_trade_income value = 20 }
@@ -2985,11 +2985,11 @@ me_bavaria_missions_wittelsbach_3 = {
 								custom_tooltip = BAV_MONTHLY_DIP_AT_LEAST_PAL
 								export_to_variable = {
 									which = monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 								}
 								export_to_variable = {
 									which = their_monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 									who = PAL
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }
@@ -3320,11 +3320,11 @@ me_bavaria_missions_wittelsbach_4 = {
 								custom_tooltip = BAV_MONTHLY_DIP_AT_LEAST_BRA
 								export_to_variable = {
 									which = monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 								}
 								export_to_variable = {
 									which = their_monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 									who = BRA
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }
@@ -3394,11 +3394,11 @@ me_bavaria_missions_wittelsbach_4 = {
 								custom_tooltip = BAV_MONTHLY_DIP_AT_LEAST_PRU
 								export_to_variable = {
 									which = monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 								}
 								export_to_variable = {
 									which = their_monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 									who = PRU
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }
@@ -3686,11 +3686,11 @@ me_bavaria_missions_wittelsbach_5 = {
 								custom_tooltip = BAV_MONTHLY_DIP_AT_LEAST_DAN
 								export_to_variable = {
 									which = monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 								}
 								export_to_variable = {
 									which = their_monthly_dip_gain
-									value = trigger_value:dip_power
+									value = trigger_value:monthly_dip
 									who = DAN
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }
@@ -4198,11 +4198,11 @@ me_bavaria_missions_welf_2 = {
 								custom_tooltip = BAV_MONTHLY_MIL_AT_LEAST_SAX
 								export_to_variable = {
 									which = monthly_mil_gain
-									value = trigger_value:mil_power
+									value = trigger_value:monthly_mil
 								}
 								export_to_variable = {
 									which = their_monthly_mil_gain
-									value = trigger_value:mil_power
+									value = trigger_value:monthly_mil
 									who = SAX
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }
@@ -4418,11 +4418,11 @@ me_bavaria_missions_welf_3 = {
 								custom_tooltip = BAV_MONTHLY_MIL_AT_LEAST_PAL
 								export_to_variable = {
 									which = monthly_mil_gain
-									value = trigger_value:mil_power
+									value = trigger_value:monthly_mil
 								}
 								export_to_variable = {
 									which = their_monthly_mil_gain
-									value = trigger_value:mil_power
+									value = trigger_value:monthly_mil
 									who = PAL
 								}
 								check_variable = { which = monthly_mil_gain which = their_monthly_mil_gain }

@@ -691,7 +691,7 @@ armenia_missions_slot_5_1 = {
 	}
 	
 	armenia_kingdom_of_armenia = {
-		icon = arm_proclaim_great_armenia
+		icon = me_mission_shiny_crown
 		position = 7
 		required_missions = {
 			armenia_path_to_anatolia

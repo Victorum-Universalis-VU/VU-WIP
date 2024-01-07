@@ -1749,17 +1749,17 @@ qara_qoyunlu_fourth = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				culture_group = iranian
 				has_tax_building_trigger = yes
-				value = 20
+				value = 15
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				culture_group = iranian
 				has_production_building_trigger = yes
-				value = 20
+				value = 10
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				culture_group = iranian
 				has_trade_building_trigger = yes
-				value = 20
+				value = 5
 			}
 		}
 		
@@ -2119,7 +2119,6 @@ qara_qoyunlu_fifth = {
 						area = iraq_e_ajam_area
 						area = shahrizor_area
 						area = luristan_area
-				province_id = 446
 					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
@@ -2131,9 +2130,6 @@ qara_qoyunlu_fifth = {
 		}
 		
 		trigger = {
-			446 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			NOT = {
 				persia_region = {
 					owner = {

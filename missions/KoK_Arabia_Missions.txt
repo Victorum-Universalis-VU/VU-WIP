@@ -9,8 +9,8 @@ KoK_ARB_hedjaz_najd_bedouin_1 = {
 	potential = {
 		ARB_hedjaz_najd_bedouin_potential = yes
 		has_dlc = "King of Kings"
-		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions	
+		NOT = { map_setup = map_setup_random }		
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -885,7 +885,7 @@ KoK_ARB_hedjaz_najd_bedouin_3 = {
 		ARB_hedjaz_najd_bedouin_potential = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions	
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1718,7 +1718,7 @@ KoK_ARB_hedjaz_najd_bedouin_arb_1 = {
 		ARB_hedjaz_najd_bedouin_potential = yes	
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions		
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 

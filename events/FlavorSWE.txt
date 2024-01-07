@@ -55,7 +55,7 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
-		# Claim Sk ne
+		# Claim Skåne
 		if = {
 			limit = {
 				NOT = { owns = 6 }
@@ -98,10 +98,10 @@ country_event = {
 		1 = {	# Stockholm
 			add_base_tax = 2
 		}
-		2 = {	# sterg tland
+		2 = {	#Östergötland
 			add_base_tax = 1
 		}
-		7 = {	#V sterg tland
+		7 = {	#Västergötland
 			add_base_tax = 1
 		}
 		27 = {	#Finland
@@ -299,7 +299,7 @@ country_event = {
 }
 
 
-# The Parliament of V ster s
+# The Parliament of Västerås
 country_event = {
 	id = flavor_swe.2
 	title = flavor_swe.2.t
@@ -341,7 +341,7 @@ country_event = {
 
 }
 
-# J ran Persson
+# Jöran Persson
 country_event = {
 	id = flavor_swe.3281
 	title = "flavor_swe.EVTNAME3281"
@@ -381,7 +381,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = spymaster
-			name = "J ran Persson"
+			name = "Jöran Persson"
 			culture = swedish
 			location = 4
 			discount = yes
@@ -431,7 +431,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = statesman
-			name = "Per Brahe den  ldre"
+			name = "Per Brahe den äldre"
 			culture = swedish
 			discount = yes
 			location = 1
@@ -1859,7 +1859,7 @@ country_event = {
 	}
 }
 
-# Carl von Linn 
+# Carl von Linné
 country_event = {
 	id = flavor_swe.5033
 	title = "flavor_swe.EVTNAME5033"
@@ -3495,7 +3495,7 @@ country_event = {
 	}
 }
 
-# Pillage of L beck
+# Pillage of Lübeck
 country_event = {
 	id = flavor_swe.110
 	title = flavor_swe.110.t
@@ -4441,10 +4441,10 @@ country_event = {
 		1 = {	# Stockholm
 			add_base_tax = 2
 		}
-		2 = {	# sterg tland
+		2 = {	#Östergötland
 			add_base_tax = 1
 		}
-		7 = {	#V sterg tland
+		7 = {	#Västergötland
 			add_base_tax = 1
 		}
 		27 = {	#Finland

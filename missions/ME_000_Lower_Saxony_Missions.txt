@@ -139,8 +139,8 @@ HAN_gen_missions_1 = {
 					skill = 1
 					cost_multiplier = 0.5
 				}
-				ROOT = {
-					country_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
+				capital_scope = {
+					province_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
 				}
 			}
 			else = { #Brick Renaissance
@@ -391,8 +391,8 @@ HAN_gen_missions_3 = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT }
 					}
-					add_permanent_claim = ROOT
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

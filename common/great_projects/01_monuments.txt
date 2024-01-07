@@ -19457,6 +19457,116 @@ shah_rukn_e_alam_tomb = {
 	}
 }
 
+nizwa_fort = {
+	start = 403 
+	date = 1350.1.1 #1650 
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			attrition = 1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			attrition = 1
+			max_attrition = 1
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			autonomy_change_time = -0.15
+		}
+		on_upgraded = {
+			add_base_manpower = 1
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			attrition = 2
+			max_attrition = 2
+		}
+		region_modifier = { 
+			
+		}
+		country_modifiers = {
+			autonomy_change_time = -0.25
+			max_absolutism = 5
+		}	
+		on_upgraded = {
+			add_base_manpower = 2
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			
+		}
+		country_modifiers = {
+			autonomy_change_time = -0.25
+			all_estate_possible_privileges = 1
+			max_absolutism = 10
+		}
+		on_upgraded = {
+			add_base_manpower = 3
+		}
+	}
+}
+
 city_of_sanaa = {
 	start = 390 
 	date = 622.1.2 #The era of the prohet, symbolic date

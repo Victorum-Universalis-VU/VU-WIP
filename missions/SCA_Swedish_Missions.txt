@@ -966,6 +966,13 @@ swe_diplomacy_mission_slot = {
 					name = "swe_pommerania_conquered"
 					duration = 9125
 				}
+				saxony_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
 				holstein_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -1133,7 +1140,7 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		effect = {
-			#Maybe a new event for L beck?
+			#Maybe a new event for Lübeck?
 			if = {
 				limit = {
 					owns_or_non_sovereign_subject_of = 45
@@ -1833,6 +1840,27 @@ swe_kalmar_union_mission_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
+				#hinter_pommern_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
+				#vorpommern_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
+				#mecklenburg_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
 			}
 			else = {
 				if = {
@@ -2280,8 +2308,8 @@ swe_internal_slot = {
 		effect = {
 			add_accepted_culture_or_dip_power = { culture = novgorodian dip_reward = yes }
 			310 = {
-				change_province_name = "H lmgar r"
-				rename_capital = "H lmgar r"
+				change_province_name = "Hólmgarðr"
+				rename_capital = "Hólmgarðr"
 				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				hidden_effect = {
 				    if = {
@@ -2334,6 +2362,13 @@ swe_internal_slot = {
 				add_permanent_claim = ROOT
 			}
 			toropets_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pskov_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

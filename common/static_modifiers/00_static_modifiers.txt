@@ -1726,6 +1726,8 @@ autonomy_increased = {
 
 autonomy_decreased = {
 	local_unrest = 10
+
+	picture="autonomy_decreased"
 }
 
 revolution_target = {

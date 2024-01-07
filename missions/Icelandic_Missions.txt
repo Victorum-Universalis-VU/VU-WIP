@@ -525,7 +525,7 @@ iceland_missions_2 = {
 			add_country_modifier = {
 				name = ice_rediscovered_greenland
 				duration = 9125		#25 years
-				#hidden = no
+				hidden = no
 			}
 		}
 	}
@@ -563,7 +563,7 @@ iceland_missions_2 = {
 			add_country_modifier = {
 				name = second_viking_colonization
 				duration = -1
-				#hidden = no
+				hidden = no
 			}
 		}
 	}
@@ -963,7 +963,7 @@ iceland_missions_4 = {
 				add_permanent_province_modifier = {
 					name = vu_reykjavik_base
 					duration = -1
-					#hidden = no
+					hidden = no
 				}
 			}
 		}
@@ -1054,7 +1054,7 @@ iceland_missions_5 = {
 			add_country_modifier = {
 				name = vu_developing_nation_1
 				duration = 3650
-				#hidden = no
+				hidden = no
 			}
 		}
 	}
@@ -1119,12 +1119,12 @@ iceland_missions_5 = {
 			add_country_modifier = {
 				name = vu_developing_nation_1
 				duration = 3650
-				#hidden = no
+				hidden = no
 			}
 			add_country_modifier = {
 				name = vu_modernized_nation_1
 				duration = 7300
-				#hidden = no
+				hidden = no
 			}
 		}
 	}

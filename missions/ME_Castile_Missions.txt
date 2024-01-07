@@ -1,4 +1,3 @@
-#VU - Turned this off by San Felipe for v1.36.*
 #CAS_missions_1 = {
 #	slot = 1
 #	generic = no
