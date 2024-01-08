@@ -16,7 +16,7 @@ spa_colonial_group = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -145,7 +145,7 @@ spa_colonial_group_rnw_off = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	
 	has_country_shield = yes
@@ -327,7 +327,7 @@ spa_colonial_group_two = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -512,7 +512,7 @@ spa_colonial_group_two_rnw_off = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -563,7 +563,7 @@ spa_iberia_convert = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -620,7 +620,7 @@ spa_colonial_group_three_rnw_off = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -671,7 +671,7 @@ spa_reconquista = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -860,7 +860,7 @@ spa_reconquista_por = {
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 		NOT = { has_dlc = "Domination" }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	

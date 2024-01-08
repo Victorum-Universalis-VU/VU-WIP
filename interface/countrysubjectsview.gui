@@ -267,9 +267,8 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		iconType =
-		{
-			name ="merchant_icon"
+		iconType = {
+			name ="icon_strong_merchant"
 			quadTextureSprite = "GFX_icon_merchant"
 			position = { x= 381 y = 6 }
 			Orientation = "UPPER_LEFT"
