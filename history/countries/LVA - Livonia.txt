@@ -5,7 +5,7 @@ government_rank = 1
 technology_group = german_tech_group
 unit_type = western
 religion = catholic
-primary_culture = baltic_german
+primary_culture = livonian
 capital = 37
 
 1542.1.1 = {
