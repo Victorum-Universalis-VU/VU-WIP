@@ -1,4 +1,4 @@
-#6599 - Gunzenhausen
+#7662 - Gunzenhausen
 #Region - Germany
 #Area - Franconia
 
@@ -14,12 +14,6 @@ trade_goods = wine
 capital = "Gunzenhausen"
 is_city = yes
 hre = yes
-
-
-
-
-
-
 
 #Documented 802 AD
 1803.1.1 = {

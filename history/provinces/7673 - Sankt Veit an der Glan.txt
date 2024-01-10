@@ -3,8 +3,6 @@
 owner = HAB
 controller = HAB
 add_core = HAB
-add_core = FRG
-add_core = STY
 culture = austrian
 religion = catholic
 base_tax = 3
@@ -15,6 +13,10 @@ fort_15th = yes
 capital = "Sankt Veit"
 is_city = yes
 hre = yes
+
+#Other claims of ownership
+add_core = FRG
+add_core = STY
 
 #Special Modifiers
 

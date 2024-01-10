@@ -315,7 +315,7 @@ country_event = { # Mushasha tries to sieze land
 				add_province_modifier = {
 					name = vu_shiite_unrest
 					duration = 1460
-					hidden = no
+					#hidden = no
 				}
 			}
 		}

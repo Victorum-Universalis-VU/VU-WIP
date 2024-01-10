@@ -155,90 +155,85 @@ set_disabled_colonial_nation_spawning_for_region_for_overlord = {
 	# Extended Timeline:
 	else_if = {
 		limit = {
-			has_global_flag = extended_timeline_mod
-		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_papua
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_papua
-				}
+			capital_scope = {
+				colonial_region = colonial_papua
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_solomons
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_solomons
-				}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_papua
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_vanuatu
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_vanuatu
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_solomons
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_new_caledonia
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_new_caledonia
-				}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_solomons
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_fiji
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_fiji
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_vanuatu
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_polynesia
-				}
-			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_polynesia
-				}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_vanuatu
 			}
 		}
-		else_if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_cape
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_new_caledonia
 			}
-			overlord = {
-				set_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_cape
-				}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_new_caledonia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_fiji
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_fiji
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_polynesia
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_polynesia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_cape
+			}
+		}
+		overlord = {
+			set_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_cape
 			}
 		}
 	}
@@ -392,90 +387,85 @@ unset_disabled_colonial_nation_spawning_for_region_for_overlord = {
 	# Extended Timeline:
 	else_if = {
 		limit = {
-			has_global_flag = extended_timeline_mod
-		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_papua
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_papua
-				}
+			capital_scope = {
+				colonial_region = colonial_papua
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_solomons
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_solomons
-				}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_papua
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_vanuatu
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_vanuatu
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_solomons
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_new_caledonia
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_new_caledonia
-				}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_solomons
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_fiji
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_fiji
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_vanuatu
 			}
 		}
-		if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_polynesia
-				}
-			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_polynesia
-				}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_vanuatu
 			}
 		}
-		else_if = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_cape
-				}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_new_caledonia
 			}
-			overlord = {
-				unset_disabled_colonial_nation_spawning_for_region = {
-					colonial_region = colonial_cape
-				}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_new_caledonia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_fiji
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_fiji
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_polynesia
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_polynesia
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			capital_scope = {
+				colonial_region = colonial_cape
+			}
+		}
+		overlord = {
+			unset_disabled_colonial_nation_spawning_for_region = {
+				colonial_region = colonial_cape
 			}
 		}
 	}

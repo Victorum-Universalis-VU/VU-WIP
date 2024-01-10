@@ -176,8 +176,7 @@ guiTypes = {
 			fullscreen=no
 			Orientation = "CENTER"
 
-			iconType =
-			{
+			iconType = {
 				name ="frontend_paper_bg"
 				spriteType = "GFX_hotjoining_bg"
 				position = { x= -30 y = 28 }
@@ -247,8 +246,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 
 
-				iconType =
-				{
+				iconType = {
 					name ="frontend_game_logo"
 					spriteType = "GFX_frontend_game_logo"
 					position = { x= 0 y = 20 }
@@ -766,22 +764,19 @@ guiTypes = {
 				fullscreen=no
 				Orientation = "UPPER_RIGHT"
 
-				guiButtonType =
-				{
+				guiButtonType =	{
 					name = "content_button"
 					position = { x = 98 y = -703 }
 					quadTextureSprite ="bannerbackground"
 					clicksound = click
 				}
-				iconType =
-				{
+				iconType = {
 					name ="dlc_alert_frame"
 					spriteType = "GFX_dlc_alert_frame"
 					position = { x= 65 y = -770 }
 				}
 
-				guiButtonType =
-				{
+				guiButtonType =	{
 					name = "buy_dlc_button"
 					position = { x = 110 y = -570 }
 					quadTextureSprite ="GFX_buy_dlc_button"
@@ -790,8 +785,7 @@ guiTypes = {
 					buttonText = "OPEN_STORE"
 				}
 
-				instantTextBoxType =
-				{
+				instantTextBoxType = {
 					name = "content_new_dlc"
 					position = { x = 117 y = -745 }
 					font = "vic_18"
@@ -804,8 +798,7 @@ guiTypes = {
 					fixedsize = yes
 				}
 
-				instantTextBoxType =
-				{
+				instantTextBoxType = {
 					name = "content_name"
 					position = { x = 90 y = -597 }
 					font = "vic_22"
@@ -840,8 +833,7 @@ guiTypes = {
 
 ### MAIN MENU PANEL (bottom)
 
-				iconType =
-				{
+				iconType = {
 					name ="frontend_bottom_bg"
 					spriteType = "GFX_frontend_bottom_small_bg"
 					position = { x= 213 y = -56 }
@@ -872,8 +864,7 @@ guiTypes = {
 					name ="continue_container"
 					position = { x= 384 y = -94 }
 
-					iconType =
-					{
+					iconType = {
 						name ="frontend_continue_bg"
 						spriteType = "GFX_frontend_continue_bg"
 						position = { x= -38 y = -24 }
@@ -885,8 +876,7 @@ guiTypes = {
 						quadTextureSprite ="GFX_frontend_continue_button"
 					}
 
-					guiButtonType =
-					{
+					guiButtonType =	{
 						name ="continue_game_shield"
 						spriteType = "standarddialogshield"
 						position = { x= -40 y = -17 }
@@ -903,8 +893,7 @@ guiTypes = {
 						alwaystransparent = yes
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="ironman_icon"
 						spriteType = "GFX_ironman_icon"
 						position = { x= 275 y = 10 }
@@ -932,8 +921,7 @@ guiTypes = {
 				}
 				###
 
-				iconType =
-				{
+				iconType = {
 					name ="version_background"
 					spriteType = "GFX_frontend_version_bg"
 					position = { x= -32 y = 20 }
@@ -1144,16 +1132,14 @@ guiTypes = {
 			fullscreen=yes
 			Orientation = "CENTER_UP"
 
-			iconType =
-			{
+			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
 				position = { x= 0 y = 0 }
 				Orientation = "UPPER_LEFT"
 			}
 
-			iconType =
-			{
+			iconType = {
 				name ="frontend_dev_logo"
 				spriteType = "GFX_frontend_tinto_logo"
 				position = { x= 0 y = 0 }
@@ -1450,8 +1436,7 @@ guiTypes = {
 				fullscreen=no
 				Orientation = "CENTER_DOWN"
 
-				iconType =
-				{
+				iconType = {
 					name ="chatpanel"
 					spriteType = "GFX_lobby_chat_bg"
 					position = { x= 0 y = 0 }
@@ -1548,8 +1533,7 @@ guiTypes = {
 				}
 
 				### chat list
-				listboxType =
-				{
+				listboxType = {
 					name ="chatlog"
 					position = { x = 26 y = 15 }
 					backGround=""
@@ -1879,8 +1863,7 @@ guiTypes = {
 					fullscreen=no
 					Orientation = "UPPER_LEFT"
 
-					iconType =
-					{
+					iconType = {
 						name ="selectdate_bg"
 						spriteType = "GFX_lobby_date_bg"
 						position = { x= 0 y = 0 }
@@ -2087,8 +2070,7 @@ guiTypes = {
 				fullscreen=no
 				Orientation = "CENTER_UP"
 
-				iconType =
-				{
+				iconType = {
 					name ="frontend_banner2"
 					spriteType = "GFX_lobby_top_bg"
 					position = { x= -235 y = 6 }
@@ -2257,16 +2239,14 @@ guiTypes = {
 				downsound = ""
 				fullscreen=yes
 
-				iconType =
-				{
+				iconType = {
 					name ="right_sidepanel"
 					spriteType = "GFX_lobby_right_bg"
 					position = { x= -266 y = 16 }
 					Orientation = "UPPER_RIGHT"
 				}
 
-				iconType =
-				{
+				iconType = {
 					name ="ironman_icon"
 					spriteType = "GFX_ironman_icon"
 					position = { x= -200 y = 30 }
@@ -2299,8 +2279,7 @@ guiTypes = {
 					fullscreen=no
 					Orientation = "UPPER_RIGHT"
 
-					iconType =
-					{
+					iconType = {
 						name ="right_sidepanel"
 						spriteType = "GFX_lobby_right_mp_bg"
 						position = { x = -220 y = -18 }
@@ -2359,8 +2338,7 @@ guiTypes = {
 						clicksound = click
 					}
 
-					listboxType =
-					{
+					listboxType = {
 						name ="multiplayer_list"
 						position = { x=0 y = 72}
 						backGround=""
@@ -2471,8 +2449,7 @@ guiTypes = {
 						maxHeight = 32
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="techgroup_icon"
 						spriteType = "GFX_tech_group_strip"
 						position = { x= 19 y = 78 }
@@ -2485,8 +2462,7 @@ guiTypes = {
 						quadTextureSprite ="GFX_shield_thin"
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="government_rank"
 						spriteType = "GFX_government_rank_strip"
 						position = { x= 12 y = 38 }
@@ -2560,8 +2536,7 @@ guiTypes = {
 						fixedsize = yes
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="ruler_adm_icon"
 						spriteType = "GFX_icon_powers_administrative"
 						position = { x= 20 y = 210 }
@@ -2580,8 +2555,7 @@ guiTypes = {
 						format = centre
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="ruler_dip_icon"
 						spriteType = "GFX_icon_powers_diplomatic"
 						position = { x= 79 y = 210 }
@@ -2601,8 +2575,7 @@ guiTypes = {
 					}
 
 
-					iconType =
-					{
+					iconType = {
 						name ="ruler_mil_icon"
 						spriteType = "GFX_icon_powers_military"
 						position = { x= 129 y = 210 }
@@ -2622,8 +2595,7 @@ guiTypes = {
 					}
 
 
-					iconType =
-					{
+					iconType = {
 						name ="admtech_icon"
 						spriteType = "GFX_icon_powers_administrative_tech"
 						position = { x= 25 y = 246 }
@@ -2642,8 +2614,7 @@ guiTypes = {
 						format = right
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="diptech_icon"
 						spriteType = "GFX_icon_powers_diplomatic_tech"
 						position = { x= 80 y = 246 }
@@ -2662,8 +2633,7 @@ guiTypes = {
 						format = right
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="miltech_icon"
 						spriteType = "GFX_icon_powers_military_tech"
 						position = { x= 140 y = 246 }
@@ -2694,8 +2664,7 @@ guiTypes = {
 						format = left
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="ideas_icon"
 						spriteType = "GFX_icon_ideas"
 						position = { x= 170 y = 286 }
@@ -2714,56 +2683,49 @@ guiTypes = {
 						format = right
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="national_idea1"
 						spriteType = "GFX_idea_empty"
 						position = { x= -7 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea2"
 						spriteType = "GFX_idea_empty"
 						position = { x= 25 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea3"
 						spriteType = "GFX_idea_empty"
 						position = { x= 57 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea4"
 						spriteType = "GFX_idea_empty"
 						position = { x= 89 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea5"
 						spriteType = "GFX_idea_empty"
 						position = { x= 121 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea6"
 						spriteType = "GFX_idea_empty"
 						position = { x= 153 y = 320 }
 						Orientation = "UPPER_LEFT"
 						scale = 0.5
 					}
-					iconType =
-					{
+					iconType = {
 						name ="national_idea7"
 						spriteType = "GFX_idea_empty"
 						position = { x= 185 y = 320 }
@@ -2771,8 +2733,7 @@ guiTypes = {
 						scale = 0.5
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="provinces_icon"
 						spriteType = "GFX_province_icon"
 						position = { x= -5 y = 366 }
@@ -2792,8 +2753,7 @@ guiTypes = {
 						fixedsize = yes
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="economy_icon"
 						spriteType = "GFX_development_icon"
 						position = { x= 70 y = 366 }
@@ -2813,8 +2773,7 @@ guiTypes = {
 						fixedsize = yes
 					}
 
-					iconType =
-					{
+					iconType = {
 						name ="fort_icon"
 						spriteType = "GFX_fort_defense_icon"
 						position = { x= 150 y = 366 }

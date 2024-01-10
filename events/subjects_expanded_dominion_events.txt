@@ -19,9 +19,11 @@ country_event = {
 					capital_scope = {
 						is_node_in_trade_company_region = yes
 						OR = {
-							NOT = { has_global_flag = extended_timeline_mod }
+							#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+							#NOT = { has_global_flag = extended_timeline_mod }
 							AND = {
-								has_global_flag = extended_timeline_mod
+								#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+								#has_global_flag = extended_timeline_mod
 								NOT = { colonial_region = colonial_papua }
 								NOT = { colonial_region = colonial_solomons }
 								NOT = { colonial_region = colonial_vanuatu }
@@ -61,9 +63,11 @@ country_event = {
 					capital_scope = {
 						is_node_in_trade_company_region = yes
 						OR = {
-							NOT = { has_global_flag = extended_timeline_mod }
+							#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+							#NOT = { has_global_flag = extended_timeline_mod }
 							AND = {
-								has_global_flag = extended_timeline_mod
+								#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+								#has_global_flag = extended_timeline_mod
 								NOT = { colonial_region = colonial_papua }
 								NOT = { colonial_region = colonial_solomons }
 								NOT = { colonial_region = colonial_vanuatu }
@@ -460,7 +464,8 @@ country_event = {
 	# hidden = yes
 
 	trigger = {
-		NOT = { has_global_flag = extended_timeline_mod }
+		#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+		#NOT = { has_global_flag = extended_timeline_mod }
 		capital_scope = {
 			NOT = { superregion = india_superregion }
 			NOT = { superregion = china_superregion }
@@ -1131,7 +1136,8 @@ country_event = {
 	# hidden = yes
 
 	trigger = {
-		NOT = { has_global_flag = extended_timeline_mod }
+		#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+		#NOT = { has_global_flag = extended_timeline_mod }
 		capital_scope = {
 			NOT = { superregion = india_superregion }
 			NOT = { superregion = china_superregion }
@@ -1495,7 +1501,8 @@ country_event = {
 	# hidden = yes
 
 	trigger = {
-		NOT = { has_global_flag = extended_timeline_mod }
+		#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+		#NOT = { has_global_flag = extended_timeline_mod }
 		capital_scope = {
 			NOT = { superregion = india_superregion }
 			NOT = { superregion = china_superregion }

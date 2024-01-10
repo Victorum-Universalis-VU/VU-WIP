@@ -425,10 +425,9 @@
  GE_Foreign_Students_3: "Foreign Students"
  GE_Foreign_Students_4: "Foreign Students"
  GE_Foreign_Students_5: "Foreign Students"
- GE_emergency_powers_modifier: "Emergency Powers"
+ #GE_emergency_powers_modifier: "Emergency Powers"
+ #desc_GE_emergency_powers_modifier: "Emergency Powers"
  GE_cultural_supremacy: "Cultural Supremacy"
-
-
  GE_vassal_tax_script_1: "Vassal Tax Income"
  GE_vassal_tax_script_2: "Vassal Tax Income"
  GE_vassal_tax_script_3: "Vassal Tax Income"

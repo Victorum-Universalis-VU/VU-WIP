@@ -221,8 +221,10 @@
  #
  #VU New San Marino Reforms from Shattered Europa by San Felipe
  roman_diarchy_reform:0 "Roman Diarchy"
- roman_diarchy_reform_ruler:0 "Consul"
  roman_diarchy_reform_desc:0 "A form of government in which two individuals are joint heads of state. Most diarchs hold their position for life, passing the position to their children or other family members."
+ roman_diarchy:0 "Roman Diarchy"
+ roman_diarchy_desc:0 "Following the overthrow of the Roman monarchy, the Romans established an oligarchic Roman Republic which divided supreme executive power between two consuls, both elected each year and each holding a veto over the other's actions. The historical duumviri were not rulers but magistrates, performing various judicial, religious, or public functions. "
+ roman_diarchy_reform_ruler:0 "Consul"
  #
  #VU New Icelandic Reforms by San Felipe
  althing_elite_reform:0 "Alþingi"
@@ -252,7 +254,41 @@
  #
  high_king_of_ireland_reform:0 "High King of Ireland"
  high_king_of_ireland_reform_desc:0 "The High King of Ireland or Ard Rí is special kingship whose occupants had supremacy among the kings of Ireland which was used in dominating the whole island."
- clans_of_ireland_reform:0 "Clans of Ireland"
- clans_of_ireland_reform_desc:0 "Clan or Clann meaning 'a plant, an offshoot, offspring, a single child or children, by extension race or descendants' is a system especially denoted to Ireland during Medieval times for the provision of plurals for surnames beginning with Mac meaning 'son of'. For example, 'Clann Cárthaigh' meant the men of the MacCarthy family and 'Clann Suibhne' meant the men of the MacSweeny family. Clann was also used to denote a subgroup within a wider surname, for example the descendants of a recent common ancestor such as the Clann Aodha Buidhe or the O'Neills of Clandeboy, whose ancestor was Aodh Buidhe who died in 1298. It was later replaced by the introduction of English Common Law in the 16th century."
  #
+ clans_of_ireland_reform: "Clans of Ireland"
+ clans_of_ireland_reform_desc: "Clan or Clann meaning 'a plant, an offshoot, offspring, a single child or children, by extension race or descendants' is a system especially denoted to Ireland during Medieval times for the provision of plurals for surnames beginning with Mac meaning 'son of'. For example, 'Clann Cárthaigh' meant the men of the MacCarthy family and 'Clann Suibhne' meant the men of the MacSweeny family. Clann was also used to denote a subgroup within a wider surname, for example the descendants of a recent common ancestor such as the Clann Aodha Buidhe or the O'Neills of Clandeboy, whose ancestor was Aodh Buidhe who died in 1298. It was later replaced by the introduction of English Common Law in the 16th century."
+ #
+ althing_republic: "Althing"
+ althing_republic_desc: "The Althingi or Althing, founded in 930AD as an outdoor assembly or thing held on the plains of Þingvellir where the country's most powerful leaders or goðar met to decide on legislation and dispense justiceis throughout the island of Iceland. It is one of the oldest parliaments in the world and its establishment laid the foundation for Iceland's independence and national identity."
+ #
+ welsh_principality_legacy: "Welsh Principality"
+ welsh_principality_legacy_desc: "The Principality of Wales or Tywysogaeth Cymru once encompassed two-thirds of modern Wales during its height of 1267 to 1277. It is a form of government where focus and emphasis is placed on the territorial integrity of the principality, with the prince as lord of all the land and other Welsh lords swearing fealty to the prince directly."
+ #
+ western_principality_legacy: "Principality"
+ western_principality_legacy_desc: "Is a form of government where focus and emphasis is placed on the territorial integrity of the principality, with the prince as lord of all the land and other noble lords swearing fealty to the prince directly."
+ #
+ french_kingdom_legacy: "Kingdom of France"
+ french_kingdom_legacy_desc: "REPLACE_ME"
+ #
+ belgian_kingdom_legacy: "Kingdom of Belgium"
+ belgian_kingdom_legacy_desc: "REPLACE_ME"
+ #
+ first_french_empire_legacy: "First French Empire"
+ first_french_empire_legacy_desc: "REPLACE_ME"
+ #
+ second_french_empire_legacy: "Second French Empire"
+ second_french_empire_legacy_desc: "REPLACE_ME"
+ #
+ national_assembly_republic_legacy: "National Assembly Republic"
+ national_assembly_republic_legacy_desc: "REPLACE_ME"
+ #
+ french_second_republic_legacy: "French Second Republic"
+ french_second_republic_legacy_desc: "REPLACE_ME"
+ #
+ french_third_republic_legacy: "French Third Republic"
+ french_third_republic_legacy_desc: "REPLACE_ME"
+ #
+ directory_republic_legacy: "Directory"
+ directory_republic_legacy_desc: "REPLACE_ME"
+ 
  

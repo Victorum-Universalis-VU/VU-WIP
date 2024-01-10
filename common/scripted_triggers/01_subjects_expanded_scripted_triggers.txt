@@ -82,6 +82,7 @@ is_possible_subject_of_subject_type_protectorate = {
 		}
 	}
 	NOT = { technology_group = muslim }
+	#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
 	#OR = {
 	#	NOT = { has_global_flag = extended_timeline_mod }
 	#}
@@ -455,7 +456,7 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 		}
 	}
 }
-
+#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
 #is_possible_subject_of_subject_type_salic_personal_union = {
 #	# PREVs in THIS scope refer to possible overlord
 #	has_global_flag = extended_timeline_mod
@@ -991,19 +992,27 @@ is_possible_subject_of_subject_type_annexable_colony = {
 			colonial_region = colonial_la_plata
 			colonial_region = colonial_brazil
 			colonial_region = colonial_australia
+			colonial_region = colonial_papua
+			colonial_region = colonial_solomons
+			colonial_region = colonial_vanuatu
+			colonial_region = colonial_new_caledonia
+			colonial_region = colonial_fiji
+			colonial_region = colonial_polynesia
+			colonial_region = colonial_cape
+			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
 			# Extended Timeline:
-			AND = {
-				has_global_flag = extended_timeline_mod
-				OR = {
-					colonial_region = colonial_papua
-					colonial_region = colonial_solomons
-					colonial_region = colonial_vanuatu
-					colonial_region = colonial_new_caledonia
-					colonial_region = colonial_fiji
-					colonial_region = colonial_polynesia
-					colonial_region = colonial_cape
-				}
-			}
+			#AND = {
+			#	has_global_flag = extended_timeline_mod
+			#	OR = {
+			#		colonial_region = colonial_papua
+			#		colonial_region = colonial_solomons
+			#		colonial_region = colonial_vanuatu
+			#		colonial_region = colonial_new_caledonia
+			#		colonial_region = colonial_fiji
+			#		colonial_region = colonial_polynesia
+			#		colonial_region = colonial_cape
+			#	}
+			#}
 		}
 	}
 }

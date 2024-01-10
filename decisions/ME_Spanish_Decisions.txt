@@ -39,7 +39,7 @@ country_decisions = {
 					custom_tooltip = HAS_NOT_USED_ALL_12_BUILDING_SLOTS
 					export_to_variable = {
 						which = num_of_used_building_slots
-						value = modifier:allowed_num_of_buildings
+						value = 1 #was modifier:allowed_num_of_buildings but changed by San Felipe to 1
 					}
 					OR = {
 						NOT = { check_variable = { which = num_of_used_building_slots value = 12 } }

@@ -222,8 +222,8 @@ declarewar = {
 			}
 		}
 
-		# Needed for Extended Timeline
-	#	if = { #We don't care about Extended timeline
+	#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+	#	if = { #We don't care about Extended timeline 100%
 	#		limit = {
 	#			has_global_flag = extended_timeline_mod
 	#			OR = {

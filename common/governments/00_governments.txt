@@ -208,11 +208,18 @@ monarchy = {
 				united_holy_roman_empire_reform
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
-				mantua_house_of_gonzaga_reform
+				house_of_gonzaga_reform
 				kingdom_of_gao_reform
 				kingdom_of_sardinia_reform
 				klever_union_reform
 				life_on_the_plateau_reform
+				#GE
+				duchi_montefeltro_reform
+				giudicati_sardi_reform
+				house_of_este_reform
+				italian_monarchy_reform
+				palaiologos_montferrat_reform
+				savoia_reform
 		        #ML8991
 				anglois_dual_monarchy
 			}
@@ -491,7 +498,6 @@ monarchy = {
 				strenghten_the_haeren_reform
 				army_of_flanders_reform
 				jayish_al_malik_reform
-				mantua_knightly_orders_reform
 				bedouin_reserves_reform
 				slave_soldiers_reform
 				farari_commanders_reform
@@ -804,6 +810,8 @@ monarchy = {
 				danske_besiddelser_reform
 				expand_the_trans_saharan_trade_reform
 				customs_duties_reform
+				maritime_republic_reform
+				banco_dei_medici_reform
 			}
 		}
 		legitimation_of_power = {
@@ -1192,7 +1200,9 @@ republic = {
 		    	#GE
 				florentine_republic
 				#american_government
-				genoan_republic_reform
+				genoese_republic
+				italian_republic_reform
+				signoria_baglioni_reform
 				old_swiss_confederation_reform
 				russian_republic_republic
 				caucasian_republic
@@ -1234,8 +1244,8 @@ republic = {
 		    	mixed_republic_reform
 		    	independence_reform
 		    	sovereignity_reform
-		    	support_ghibbelline_republic_reform
-		    	support_guelphs_republic_reform
+				support_ghibbelline_reform
+				support_guelphs_reform
 		    	legacy_of_st_ambrose_reform
 		    	hanseatic_ties_reform
 		    	archdiocese_of_pisa_reform
@@ -1270,10 +1280,8 @@ republic = {
 				#GE
 				feudal_levies_reform_republic
 				national_guard_reform_republic
-				milizia_nationale_reform_republic
 				mercenary_corps_reform_republic
 				professional_army_reform_republic
-				italian_mercenaries_reform_republic
 				imperial_circles_reform
 				expanded_devshirme_reform
 				tatar_mercenaries_reform
@@ -1481,7 +1489,7 @@ republic = {
 				vu_canton_administration
 				mil_sforza_administration
 				#GE
-				advanced_bookkeeping_reform_republic
+				advanced_bookkeeping_reform
 				advanced_bookkeeping_reform_republic_venice
 				communal_territories_reform
 				united_indian_companies_reform
@@ -1520,6 +1528,8 @@ republic = {
 				commercial_trade_empire_reform
 				#1.36
 				karimi_stations_reform
+				## GE
+				maritime_republic_reform
 			}
 		}
 		consolidation_of_power_category = {
@@ -2203,6 +2213,8 @@ theocracy = {
 				commercial_trade_empire_reform
 				#1.36
 				karimi_stations_reform
+				## GE
+				maritime_republic_reform
 			}
 		}
 		divine_cause = {

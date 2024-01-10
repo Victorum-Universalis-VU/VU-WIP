@@ -34,7 +34,12 @@ province_event = {
 	immediate = {
 		hidden_effect = {
 			random_core_country = {
-				limit = { NOT = { tag = owner } }
+				limit = { 
+					#VU - Changed owner to ROOT for v1.36.2.* by San Felipe
+					NOT = { 
+						tag = ROOT 
+					} 
+				}
 				save_event_target_as = original_core_target
 			}
 			owner = { save_event_target_as = current_owner_target }
@@ -54,14 +59,14 @@ province_event = {
 		name = vu_latent_colonization.1.b
 		ai_chance = { factor = 25 }		#AI will eventually decolonize this (prevents dangerous loops of shifting ownership)
 		remove_core = event_target:current_owner_target
-		decolonize = THIS
+		decolonize = yes
 	}
 	
 	# Just in case there is no previous owner
 	after = {
 		if = {	
 			limit = { owned_by = event_target:current_owner_target }
-			decolonize = THIS
+			decolonize = yes
 		}
 	}
 }

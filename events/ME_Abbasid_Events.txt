@@ -366,7 +366,11 @@ province_event = {
 					random_list = {
 						1 = {
 							trigger = {
-								NOT = {	has_country_modifier = Abbasid_totf }
+								NOT = {
+									owner = {
+										has_country_modifier = Abbasid_totf 
+									}	
+								}
 							}
 							owner = {
 								country_event = { id = ME_Abbasid_Events.10 } #caliph addresses the populace, totf
@@ -381,7 +385,11 @@ province_event = {
 						}
 						1 = {
 							trigger = {
-								NOT = {	has_country_modifier = Abbasid_patron_of_art }
+								NOT = {
+									owner = {
+										has_country_modifier = Abbasid_patron_of_art 
+									}
+								}
 							}
 							owner = {
 								country_event = { id = ME_Abbasid_Events.12 }

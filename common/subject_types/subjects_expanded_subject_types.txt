@@ -93,6 +93,7 @@ protectorate = {
 			technology_group = polish_tech_group
 			technology_group = russian_tech_group
 			technology_group = bulgarian_tech_group
+			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
 			#AND = {
 			#	has_global_flag = extended_timeline_mod
 			#}
@@ -9314,10 +9315,11 @@ roman_client_kingdom = {
 				is_playing_custom_nation = yes
 				primary_culture = roman
 			}
-			AND = {
-				has_global_flag = extended_timeline_mod
-				#tag = ROW
-			}
+			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+			#AND = {
+			#	has_global_flag = extended_timeline_mod
+			#	#tag = ROW
+			#}
 		}
 		#NOT = { has_reform = salic_reform }
 	}
@@ -9588,9 +9590,10 @@ fief_subject = {
 		modifier = fief_subject_overlord_modifier
 	}
 	modifier_overlord = {
-		trigger = {
-			has_global_flag = extended_timeline_mod
-		}
+		#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+		#trigger = {
+		#	has_global_flag = extended_timeline_mod
+		#}
 		modifier = fief_subject_no_slot_cost_overlord_modifier
 	}
 
@@ -10576,7 +10579,8 @@ integrated_tribe_subject = {
 				NOT = { current_age = age_of_reformation }
 				NOT = { current_age = age_of_absolutism }
 				NOT = { current_age = age_of_revolutions }
-				NOT = { has_global_flag = extended_timeline_mod }
+				#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+				#NOT = { has_global_flag = extended_timeline_mod }
 			}
 		}
 	}
@@ -13000,11 +13004,12 @@ religious_march = {
 		primitives = no
 		OR = {
 			full_idea_group = religious_ideas
-			AND = {
-				has_global_flag = extended_timeline_mod
-				#full_idea_group = early_religious_ideas
-				NOT = { adm_tech = 50 }
-			}
+			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+			#AND = {
+			#	has_global_flag = extended_timeline_mod
+			#	#full_idea_group = early_religious_ideas
+			#	NOT = { adm_tech = 50 }
+			#}
 			AND = {
 				has_global_flag = idea_groups_expanded_mod_active
 				OR = {
@@ -13249,6 +13254,7 @@ medieval_vassal = {
 		}
 		OR = {
 			AND = {
+				#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
 				#has_global_flag = extended_timeline_mod
 				#OR = {
 				#	AND = {

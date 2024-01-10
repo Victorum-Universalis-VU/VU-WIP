@@ -769,13 +769,15 @@ country_event = {
 	
 	trigger = {
         tag = GEN
+		exists = TUR
+		6932 = {
+			owned_by = GEN
+		}
         is_subject = no
-        exists = TUR
         NOT = { alliance_with = TUR }
         NOT = { war_with = TUR }
         NOT = { is_year = 1463 }
         NOT = { truce_with = TUR }
-        owns = 6932
         TUR = {
 		    OR = {
 				owns = 151
