@@ -1,3 +1,15 @@
+#Quonton
+vu_estland = {
+	development_cost = -0.1
+	trade_efficiency = 0.1
+}
+
+vu_ural_steppe_supremacy = {
+	cavalry_power = 0.20
+	loot_amount = 0.20
+	land_forcelimit_modifier = 0.1
+}
+
 rom_great_mod2 = {
 	development_cost = -0.25
 	num_accepted_cultures = 2

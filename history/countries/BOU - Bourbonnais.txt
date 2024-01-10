@@ -6,9 +6,11 @@ religion = catholic
 #technology_group = western
 technology_group = french_tech_group
 unit_type = western
-capital = 190	# Bourges
-fixed_capital = 190 # Cannot move capital away from this province & no power cost to move to it
+capital = 190	# Moulins
 
+1215.1.1 = { 
+    capital = 190	# Moulins
+}
 
 1356.1.1 = {
 	monarch = {

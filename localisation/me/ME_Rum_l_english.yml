@@ -98,9 +98,13 @@
  RUM_trade_with_india: "Trade with India"
  RUM_supported_by_rum_opinion: "Supported by Rum"
  RUM_supported_by_rum: "Supported by Rum"
+ desc_RUM_supported_by_rum: "We are supported by Rum"
  RUM_mamluks_remain: "Mamluks Retain Control"
+ desc_RUM_mamluks_remain: "The Mamluks retain control"
  RUM_pasha_sent_from_anatolia: "Pasha Sent from Anatolia"
+ desc_RUM_pasha_sent_from_anatolia: "The Pasha has been sent from Anatolia"
  RUM_grateful_janissaries: "Grateful Janissaries"
+ desc_RUM_grateful_janissaries: "Our Janissaries are grateful"
  RUM_following_the_footsteps: "Following the Footsteps"
  RUM_following_the_footsteps_2: "Following the Footsteps"
  RUM_the_seljuk_sultanate_of_rum: "Seljuk Sultanate of Rum"
@@ -137,6 +141,7 @@
  RUM_beylik_buff: "Beylik Warlord"
  RUM_weakness_in_anatolia: "Quelling Anatolia"
  RUM_perma_silk_buff: "Silk of Rum"
+ desc_RUM_perma_silk_buff: "Silk made in Rum"
  
  RUM_anatolia_control: "Anatolian Eyalet Revolt"
  
@@ -213,12 +218,17 @@
  ME_ottoman_government: "Ottoman Government"
  ME_ottoman_government_desc: ""
  
+ ME_Rum_Events.1.t: "Anatolian Control"
+ ME_Rum_Events.1.d: "The Anatolian heartland has been very good to us but our control there has been tenuous at best due to bandits and raids by those who wish to see us lose control of it. Therefore, we must exert more effort and focus into controling Anatolia even in such risky situations or face the consequence of not doing so."
+ ME_Rum_Events.1.a: "It is a risk we must take"
+
  ME_Rum_Events.2.t: "The Frontier Crisis"
  ME_Rum_Events.2.d: "The skirmish on our border with [From.GetName] has taken a turn for the worse. The border conflicts have evolved into an open war, where we seem not to be the ones winning. As this news is delivered, [From.GetName] is besieging several key border fortresses. If we don't do, rest of Anatolia might follow suit."
  ME_Rum_Events.2.a: "Calamity!"
  
  ME_Rum_Events.3.t: "Frontier Left Unattended"
  ME_Rum_Events.3.d: "Our mismanagement of the matters in Anatolia has lead to a rise of a new Beylik. Initially intended to be part of our glorious Empire, the beylik of [Powerful_Beylik.GetName] has outgrown their containment size and started meddling in our affairs that manifested itself in a coordinated attack. During the attack, many of our officials governing Asia Minor have been either killed or taken into captivity. In this situation, many of the clans once controlled by us are looking into secession, while the remaining beyliks are sure to exploit the mayhem."
+ ME_Rum_Events.3.a: "The Beyliks have revolted!"
  
  ME_Rum_Events.4.t: "Weakness in our Neighbor?"
  ME_Rum_Events.4.d: "The great Ottoman Empire is beginning to show signs of weakness. Unable to keep the beyliks at bey, their collapse can be felt from a distance. Let us hope they cannot pull themselves back together."
@@ -251,7 +261,17 @@
  ME_Rum_Events.11.t: "[318.GetName] is captured!"
  ME_Rum_Events.11.d: "The coastal province of [318.GetName], important to the Ottoman administration, has been captured by us. [TUR.GetName] deprived of the province, will not be able to reinforce their remaining garrisons in Anatolia."
  ME_Rum_Events.11.a: "We are on path to victory!"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.12.t: "REPLACE_ME"
+ ME_Rum_Events.12.d: "REPLACE_ME"
+ ME_Rum_Events.12.a: "REPLACE_ME"
  
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.13.t: "REPLACE_ME"
+ ME_Rum_Events.13.d: "REPLACE_ME"
+ ME_Rum_Events.13.a: "REPLACE_ME"
+
  #14 is hidden, determines 15
  
  ME_Rum_Events.15.t: "[From.GetName] in Shambles?"
@@ -271,6 +291,60 @@
  ME_Rum_Events.18.t: "Deadly Infighting"
  ME_Rum_Events.18.d: "In order to curb the beyliks from rebelling during out war, we have to send a significant portion of our forces to keep them in check. It would seem though, the fighting is ferocious."
  ME_Rum_Events.18.a: "We are losing control..."
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.19.t: "REPLACE_ME"
+ ME_Rum_Events.19.d: "REPLACE_ME"
+ ME_Rum_Events.19.a: "REPLACE_ME"
+ ME_Rum_Events.19.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.20.t: "REPLACE_ME"
+ ME_Rum_Events.20.d: "REPLACE_ME"
+ ME_Rum_Events.20.a: "REPLACE_ME"
+ ME_Rum_Events.20.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.21.t: "REPLACE_ME"
+ ME_Rum_Events.21.d: "REPLACE_ME"
+ ME_Rum_Events.21.a: "REPLACE_ME"
+ ME_Rum_Events.21.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.22.t: "REPLACE_ME"
+ ME_Rum_Events.22.d: "REPLACE_ME"
+ ME_Rum_Events.22.a: "REPLACE_ME"
+ ME_Rum_Events.22.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.23.t: "REPLACE_ME"
+ ME_Rum_Events.23.d: "REPLACE_ME"
+ ME_Rum_Events.23.a: "REPLACE_ME"
+ ME_Rum_Events.23.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.24.t: "REPLACE_ME"
+ ME_Rum_Events.24.d: "REPLACE_ME"
+ ME_Rum_Events.24.a: "REPLACE_ME"
+ ME_Rum_Events.24.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.25.t: "REPLACE_ME"
+ ME_Rum_Events.25.d: "REPLACE_ME"
+ ME_Rum_Events.25.a: "REPLACE_ME"
+ ME_Rum_Events.25.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.26.t: "REPLACE_ME"
+ ME_Rum_Events.26.d: "REPLACE_ME"
+ ME_Rum_Events.26.a: "REPLACE_ME"
+ ME_Rum_Events.26.b: "REPLACE_ME"
+
+ #Hidden event which does not need any localisation
+ ME_Rum_Events.27.t: "REPLACE_ME"
+ ME_Rum_Events.27.d: "REPLACE_ME"
+ ME_Rum_Events.27.a: "REPLACE_ME"
+ ME_Rum_Events.27.b: "REPLACE_ME"
  
  ME_Rum_Events.28.t: "Fate of Anatolia"
  ME_Rum_Events.28.d: "Aliquam erat volutpat. Sed vitae suscipit urna. Cras rutrum velit dignissim euismod imperdiet. Ut ante lectus, tincidunt et feugiat tempor, dapibus ut est. Aenean interdum sit amet felis vel eleifend. Integer sollicitudin lectus a magna aliquet efficitur. Nam eu risus et enim fermentum luctus quis sit amet augue. Quisque in volutpat nulla, vitae volutpat lorem. Proin luctus venenatis elit, eu semper nisl. Donec efficitur nibh eros, sit amet fringilla libero vulputate vel. Curabitur nec mattis dolor. Etiam arcu mi, egestas a erat laoreet, semper vulputate mi. Donec hendrerit eros tincidunt arcu malesuada interdum."
@@ -278,7 +352,7 @@
  ME_Rum_Events.28.b: "We will hold onto Anatolia at all costs."
  
  ME_Rum_Events.29.t: "The Recovery"
- ME_Rum_Events.29.t: "Aliquam erat volutpat. Sed vitae suscipit urna. Cras rutrum velit dignissim euismod imperdiet. Ut ante lectus, tincidunt et feugiat tempor, dapibus ut est. Aenean interdum sit amet felis vel eleifend. Integer sollicitudin lectus a magna aliquet efficitur. Nam eu risus et enim fermentum luctus quis sit amet augue. Quisque in volutpat nulla, vitae volutpat lorem. Proin luctus venenatis elit, eu semper nisl. Donec efficitur nibh eros, sit amet fringilla libero vulputate vel. Curabitur nec mattis dolor. Etiam arcu mi, egestas a erat laoreet, semper vulputate mi. Donec hendrerit eros tincidunt arcu malesuada interdum."
+ ME_Rum_Events.29.d: "Aliquam erat volutpat. Sed vitae suscipit urna. Cras rutrum velit dignissim euismod imperdiet. Ut ante lectus, tincidunt et feugiat tempor, dapibus ut est. Aenean interdum sit amet felis vel eleifend. Integer sollicitudin lectus a magna aliquet efficitur. Nam eu risus et enim fermentum luctus quis sit amet augue. Quisque in volutpat nulla, vitae volutpat lorem. Proin luctus venenatis elit, eu semper nisl. Donec efficitur nibh eros, sit amet fringilla libero vulputate vel. Curabitur nec mattis dolor. Etiam arcu mi, egestas a erat laoreet, semper vulputate mi. Donec hendrerit eros tincidunt arcu malesuada interdum."
  ME_Rum_Events.29.a: "They will pay for their treachery."
  
  ME_Rum_Events.100.t: "Fate of the Ponts"
@@ -301,7 +375,13 @@
  ME_Rum_Events.103.a: "Keep the Mamluks in place."
  ME_Rum_Events.103.b: "We must impose our own governship."
  ME_Rum_Events.103.c: "Put the Janissaries in their place!"
- ME_Rum_Events.103.c: "Why don't we just tolerate them?"
+ #ME_Rum_Events.103.c: "Why don't we just tolerate them?"
+ ME_Rum_Events.103.e: "REPLACE_ME"
+
+ ME_Rum_Events.104.t: "REPLACE_ME"
+ ME_Rum_Events.104.d: "REPLACE_ME"
+ ME_Rum_Events.104.a: "REPLACE_ME"
+ ME_Rum_Events.104.b: "REPLACE_ME"
  
  ME_Rum_Events.105.t: "A Return to the Past?"
  ME_Rum_Events.105.d: "We have long since abandoned our roots in favor of a more organized government. But perhaps, we could change our mind on that. The steppes are calling after all."
@@ -327,6 +407,7 @@
  ME_Rum_Events.109.d: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis nunc congue est fermentum auctor. Aliquam volutpat lorem sed tristique laoreet. Aliquam ultrices eros vitae nulla volutpat, sit amet consequat diam mollis. Nulla auctor neque sed rutrum pellentesque. Etiam eget elit dictum, venenatis lectus eu, finibus nulla. Maecenas quis felis arcu. Pellentesque non tempus nibh. Quisque ac erat ut sem mattis malesuada at ut felis. Aliquam a vestibulum ipsum. Sed accumsan tristique vehicula. "
  ME_Rum_Events.109.a: "Muslims are back in Iberia."
  ME_Rum_Events.109.t: "We will be their successors."
+ ME_Rum_Events.109.b: "REPLACE_ME"
   
  ME_Rum_Events.110.t: "City of the World's Desire"
  ME_Rum_Events.110.d: "Quisque vitae mi efficitur, vestibulum nunc ut, facilisis dolor. Nullam pharetra purus ac sodales elementum. Praesent id lectus vitae erat varius imperdiet at sit amet mi. In hac habitasse platea dictumst. Morbi lorem ipsum, pulvinar vel consectetur in, elementum sit amet tellus. Curabitur scelerisque metus sed nisi porta dapibus. Etiam commodo nisl non dui malesuada pellentesque. "

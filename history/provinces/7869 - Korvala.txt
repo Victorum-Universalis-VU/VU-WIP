@@ -4,6 +4,7 @@ owner = NOV
 controller = NOV
 add_core = NOV
 add_core = KRL
+add_core = VEP
 culture = vu_vepsian
 religion = orthodox
 capital = "Korvala"
@@ -14,6 +15,22 @@ trade_goods = fur
 is_city = yes
 hre = no
 add_local_autonomy = 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

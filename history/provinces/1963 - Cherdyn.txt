@@ -13,9 +13,26 @@ base_production = 4
 base_manpower = 2 
 is_city = yes
 add_core = PRM
+add_core = KOM
 
 extra_cost = 16
 center_of_trade = 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -317,7 +317,7 @@ NDiplomacy = {
 	PEACE_COST_SPREAD_REVOLUTION = 60,
 	MAX_PEACE_COST_TRIBUTARY_STATE = 40,
 	MAX_PEACE_COST_CANCEL_SUBJECT = 50,
-	MAX_WARSCORE = 100,							    -- Increased this to 120 from 100
+	MAX_WARSCORE = 125,							    -- Increased this to 125 from 100
 
 	MAX_PEACE_TREATY_PRESTIGE = 100,
 	MAX_PEACE_TREATY_AE = 50,
@@ -509,7 +509,7 @@ NCountry = {
 
 
 	MONARCH_MIN_SKILL = 0,						-- Probably bad idea to reduce this
-	MONARCH_MAX_SKILL = 8,						-- Monarch skills will be chosen between MONARCH_MIN_SKILL and MONARCH_MAX_SKILL
+	MONARCH_MAX_SKILL = 6,						-- Monarch skills will be chosen between MONARCH_MIN_SKILL and MONARCH_MAX_SKILL
 	ELECTIVE_LOCAL_MONARCH_MIN_BONUS = 0,		-- The minimum change that is applied to non-foreign heirs in elective monarchy
 	ELECTIVE_LOCAL_MONARCH_MAX_BONUS = 1,		-- The maximum change that is applied to non-foreign heirs in elective monarchy
 	ELECTIVE_FOREIGN_MONARCH_MIN_BONUS = 0,		-- The minimum change that is applied to foreigns heirs in elective monarchy

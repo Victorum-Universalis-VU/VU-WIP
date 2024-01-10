@@ -2656,7 +2656,6 @@ consolidate_power_in_cities_reform = {
 			#End of VU addition by Rob
 			has_reform = great_veche_republic
 			#Start of VU addition by San Felipe
-			has_reform = genoan_republic_reform
 			#End of VU addition by San Felipe
 		}
 	}
@@ -2667,7 +2666,6 @@ consolidate_power_in_cities_reform = {
 			has_reform = veche_republic
 			has_reform = improved_veche_republic
 			has_reform = great_veche_republic
-			has_reform = genoan_republic_reform
 		}
 	}
 	modifiers = {

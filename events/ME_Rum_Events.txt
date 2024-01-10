@@ -372,7 +372,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ME_Rum_Events.11.a
+		name = ME_Rum_Events.12.a
 
 		ai_chance = { factor = 100 }
 
@@ -405,7 +405,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ME_Rum_Events.11.a
+		name = ME_Rum_Events.13.a
 
 		ai_chance = { factor = 100 }
 
@@ -447,7 +447,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = ME_Rum_Events.11.a
+		name = ME_Rum_Events.14.a
 
 		ai_chance = { factor = 100 }
 
@@ -1138,6 +1138,8 @@ country_event = {
 			duration = 9125
 		}
 	}
+
+	#What, no d? By San Felipe
 
 	option = {
 		name = ME_Rum_Events.103.e

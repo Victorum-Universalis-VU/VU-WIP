@@ -556,15 +556,14 @@ verona_mission_3 = {
 									}
 								}
 							}
-							any_country = {
-					        	is_papal_controller = yes
-					        	NOT = {
+							papal_controller = {
+								NOT = {
 									has_opinion = {
-					        	    	who = ROOT
-					        	    	value = -25
-					        	    }
+										who = ROOT
+										value = -25
+									}
 								}
-					        }
+							}
 						}
 					}
 				}
@@ -614,13 +613,12 @@ verona_mission_3 = {
 									}
 								}
 							}
-							any_country = {
-					        	is_papal_controller = yes
-					        	has_opinion = {
-					        		who = ROOT
-					        		value = 75
-					        	}
-					        }
+							papal_controller = {
+								has_opinion = {
+									who = ROOT
+									value = 75
+								}
+							}
 						}
 					}
 				}
@@ -670,10 +668,9 @@ verona_mission_3 = {
 								war_with = ROOT
 							}
 						}
-						any_country = {
-					    	is_papal_controller = yes
+						papal_controller = {
 							war_with = ROOT
-					    }
+						}
 					}
 				}
 			}
@@ -1009,14 +1006,13 @@ verona_mission_4 = {
 							}
 							}
 						}
-						any_country = {
-					    	is_papal_controller = yes
-					    	ROOT = {
+						papal_controller = {
+							ROOT = {
 								has_won_war_against = {
 									who = PREV
 								}
 							}
-					    }
+						}
 					}
 				}
 			}

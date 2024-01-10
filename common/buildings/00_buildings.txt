@@ -1,4 +1,4 @@
-#VU 1.35 update by San Felipe
+#VU - Updated by San Felipe for v1.36.2.*
 #Victorum Universalis Note -
 #There is no way to modify this carefully overriding parts of it.
 #File has been documented well and organised to the best of our abilities. Any submods or addons desiring to add their own entries will need to manually update this entirely

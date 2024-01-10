@@ -14,7 +14,24 @@ base_manpower = 2
 capital = "Atemar"
 is_city = yes
 add_core = KAZ
+add_core = MOK
 center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

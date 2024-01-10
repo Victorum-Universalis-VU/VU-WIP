@@ -8,9 +8,9 @@ religion = shinto
 capital = "Aso"
 trade_goods = rice
 hre = no
-base_tax = 7
-base_manpower = 7
-base_production = 7
+base_tax = 2
+base_production = 3
+base_manpower = 3
 is_city = yes
 
 

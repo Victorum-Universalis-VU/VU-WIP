@@ -12,7 +12,24 @@ base_manpower = 4
 capital = "Yagoshikha"
 is_city = yes
 add_core = PRM
+add_core = KOM
 center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

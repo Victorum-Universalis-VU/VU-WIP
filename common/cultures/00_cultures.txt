@@ -3726,7 +3726,7 @@ iberian	= {
 	#End of MEVU
 }
 
-french	= {
+french = {
 	graphical_culture = westerngfx
 
 	cosmopolitan_french = {
@@ -3960,7 +3960,7 @@ french	= {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
-	french_east_indian  = {
+	french_east_indian = {
         graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
@@ -4196,6 +4196,7 @@ finno_ugric = { #Ugric
 	}
 	vu_vepsian = {
         graphical_culture = easterngfx
+		primary = VEP
 		#primary = NA Would like to add vepsia as releasable tag
 		male_names = {
 			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
@@ -4215,7 +4216,7 @@ finno_ugric = { #Ugric
 	}
 	vu_komi = {
         graphical_culture = easterngfx
-		primary = PRM
+		primary = KOM
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4226,7 +4227,7 @@ finno_ugric = { #Ugric
 	}
 	vu_mari = {
         graphical_culture = mongolgfx
-		primary = PRM
+		primary = UMA
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4237,6 +4238,7 @@ finno_ugric = { #Ugric
 	}
 	vu_livviki = {
         graphical_culture = easterngfx
+		primary = LVV
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4247,6 +4249,7 @@ finno_ugric = { #Ugric
 	}
 	vu_ludic = {
         graphical_culture = easterngfx
+		primary = LUD
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4257,7 +4260,7 @@ finno_ugric = { #Ugric
 	}
 	vu_udmurt = {
         graphical_culture = mongolgfx
-		primary = PRM
+		primary = UDM
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4268,7 +4271,7 @@ finno_ugric = { #Ugric
 	}
 	vu_erzya = {
         graphical_culture = easterngfx
-		primary = PRM
+		primary = ERZ
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4279,7 +4282,7 @@ finno_ugric = { #Ugric
 	}
 	vu_mordvinic = {
         graphical_culture = mongolgfx
-		primary = PRM
+		primary = MOK
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta Öndrey Stepan Ölyöksey Boris Danil Dmitry Pedot Illya Segö Semö Pedör 
@@ -4310,6 +4313,7 @@ finno_ugric = { #Ugric
 	}
 	samoyed = {
         graphical_culture = mongolgfx
+		primary = NEN
 		male_names = {
 			Alik Hasaba Kako Kharuchi Kolik Mandak Nabtiko Nenyts Nga Ngënoh Noumea Num Nyalku Panay 
 			Salinder Samatu Sarak Sirtya Somatu Syudbya Tatva Tolik Vesei Wayngachi Xëryuchi Yadne 
@@ -4415,6 +4419,7 @@ finno_ugric = { #Ugric
 		}
 	}
 	livonian = {
+		primary = LVA
 		male_names = {
 			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Piške Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut 
 			Vandemeel Hüvatõiv Otelemb Hõimulemb Ilmar Aul Vilitõiv Arp Alar Niglas Arvo Manivald Heameel Kiurupelg Ohevald Arvet Kahrulemb Ilmalemb Uku Kahus Olev Kalev Toivo 
@@ -5584,7 +5589,7 @@ baltic	= {
 	}
 	latvian = {
         graphical_culture = westerngfx
-		primary = LVA
+		primary = LAT
 		male_names = {
 			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave
 			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta
@@ -5729,6 +5734,7 @@ baltic	= {
 	}
 	latgalian = {
         graphical_culture = westerngfx
+		primary = LTG
 		male_names = {
 		Kaupo Pukuveras Lonkogveni Ringaudas Dzintis Jedetus Karijotas Sviendorog Steikint Valikaila Dausprungas Butovit 
 		Gastile Gerden Golovke Rusins Nameisis Sabe Pukiik Vishikut Ako Erdzivil Litto Kodere Viesturs Stegut Cirulis 
@@ -6961,7 +6967,7 @@ iranian	= {
 	}
 	afghani = {		#Now represents Dari
 		graphical_culture = persiangfx
-		#primary = AFG
+		primary = AFG
 		male_names = {
 			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
 			Behrad Behram Bahram Behrouz Bextîyar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
@@ -7165,6 +7171,7 @@ iranian	= {
 		}
 	}
 	talysh = {
+	    primary = TLY
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -7177,6 +7184,7 @@ iranian	= {
 		}
 	}
 	tati = {
+		primary = TAT
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -15492,7 +15500,7 @@ tartar	= {
 		}
 	}
 	kumyk = {
-		primary = T4R
+		primary = TRR
 		dynasty_names = {
 			Altan Asanin Bekmambet Ziyaeddin Sarigöl Bektöre Celebicihan Cobanzade Dägci Gaspirali Giraybay Hablemitoglu Hilmi 
 			Inalcik Ipci Kirimal Seydahmet Ihsan Kubay Qirimoglu Mamut Mansiz Mehdi Neyazi Ortayli Semizade Soysal Zihni Tarhan 
@@ -18814,7 +18822,7 @@ septrional_creoles = {
 oghuric	= {
 	graphical_culture = muslimgfx
 	chuvash = {
-		#primary = NA would like to add
+		primary = CUV
 		dynasty_names = {
 			Cälil Göbäydullina Nasiri Näcmetdin Nigmät Nurgäli Isxaqi Märcani Qamay "Qol-Gäli" Qursawi Tuqay Yusupow
 		}
@@ -18990,7 +18998,7 @@ nakh_daghestani = {
 	}
 	tsakhur = {
         graphical_culture = turkishgfx
-		primary = GAZ
+		primary = TSK
 		dynasty_names = {
 			Shamkhal Kumukh
 		}

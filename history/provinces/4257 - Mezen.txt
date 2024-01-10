@@ -2,7 +2,7 @@
 
 owner = NOV 
 controller = NOV 
-culture = novgorodian
+culture = samoyed
 religion = orthodox
 hre = no
 base_tax = 1 
@@ -13,6 +13,23 @@ capital = "Mezen"			#Okladnikova Sloboda
 is_city = yes
 add_core = NOV
 add_local_autonomy = 75
+add_core = NEN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

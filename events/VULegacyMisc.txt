@@ -9,7 +9,7 @@ province_event = {
 	picture = COLONIZATION_eventPicture
 	
 	trigger = {
-		area = subarctic_islands_area	#Only fires in the northern isles area
+		province_id = 1979	#Only fires in the northern isles area
 		culture = norwegian	#Only fires for Norwegian culture
 		NOT = { owner = { primary_culture = norwegian } }	#Will not fire if owner culture is Norwegian
 	}

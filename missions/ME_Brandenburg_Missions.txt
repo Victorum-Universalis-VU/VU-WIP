@@ -329,9 +329,7 @@ BRA_missions_2 = {
 			hidden_effect = {
 				if = {
 					limit = {					
-						4747 = {
-							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-						}
+						NOT = { country_or_non_sovereign_subject_holds = 4747 }
 					}
 					4747 = {
 						remove_province_modifier = BRA_neumark_province
@@ -345,10 +343,8 @@ BRA_missions_2 = {
 					}
 				}
 				if = {
-					limit = {		
-						49 = {
-							NOT = { country_or_non_sovereign_subject_holds = ROOT }
-						}			
+					limit = {					
+						NOT = { country_or_non_sovereign_subject_holds = 49 }
 					}
 					49 = {
 						remove_province_modifier = BRA_neumark_province
@@ -653,7 +649,7 @@ BRA_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = east_prussia_area
-				area = west_prussia_area
+				area = nadruvia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -663,9 +659,9 @@ BRA_missions_3 = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with  = {
 					OR = {
 						area = east_prussia_area
-						area = west_prussia_area
+						area = nadruvia_area
 					}
-					value = 4
+					value = 8
 				}
 			}
 		}
@@ -676,7 +672,7 @@ BRA_missions_3 = {
 				}
 				add_local_autonomy = -25
 			}
-			west_prussia_area = {
+			nadruvia_area = {
 				limit = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}

@@ -16,7 +16,6 @@ hre = no
 
 #Claimants
 add_core = GTA
-add_core = FIN
 add_core = SWE
 
 #Buildings

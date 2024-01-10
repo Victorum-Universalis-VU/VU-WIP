@@ -91,6 +91,7 @@
  
  # Modifiers:
  rome_roman_culture: "Roman Culture"
+ desc_rome_roman_culture: "Roman Culture"
  rome_illyricum: "Illyricum Assimilated"
  rome_antiochia: "Antiochia Assimilated"
  rome_morocco: "Morocco Assimilated"

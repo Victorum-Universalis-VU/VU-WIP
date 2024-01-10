@@ -34,6 +34,22 @@ add_local_autonomy = 10
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #Histories by docRobert & SF
 1215.6.15 = { owner = PLS controller = PLS add_core = PLS } # Philippopolis territorial lands - By San Felipe
 1311.1.1 = {

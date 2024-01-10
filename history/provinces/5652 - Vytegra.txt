@@ -4,6 +4,7 @@ owner = NOV
 controller = NOV
 add_core = NOV
 add_core = KRL
+add_core = VEP
 culture = vu_vepsian
 religion = orthodox
 capital = "Vytegra"			#Not founded until later. Someday I'll look for a better option
@@ -14,6 +15,22 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 add_local_autonomy = 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -195,6 +195,8 @@
 3111 = { "Hið norðlæga" "Jacobshaven" }
 3112 = { "Næs" "Godthåb" }
 3113 = { "Inntak" "Frederikshåb" }
+3348 = { "Honningsvåg" "Honningsvåg" }
+3349 = { "Porsangr" "Porsangr" }
 4110 = "Sudhrland"
 4113 = "Kvenland" #Uleaborg = Uleárborgr
 4114 = "Lule Laepmork" #Jokkmokk = Jokomuka

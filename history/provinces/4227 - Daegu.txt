@@ -7,13 +7,20 @@ religion = mahayana
 capital = "Jinju"
 trade_goods = paper
 hre = no
-base_tax = 8
-base_production = 8
-base_manpower = 8
+base_tax = 2
+base_production = 3
+base_manpower = 4
 is_city = yes
 add_core = GAY
 add_core = SLL
 add_core = KOR
+
+
+
+
+
+
+
 
 1592.5.26 = { controller = ODA } # Japanese invasion - Siege of Busan
 1598.12.24 = { controller = KOR }

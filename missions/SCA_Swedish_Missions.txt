@@ -120,6 +120,20 @@ swe_scandinavian_colonialism_mission_slot = {
 				}
 				add_permanent_claim = 315
 			}
+			southern_norway_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			trondelag_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			eastern_norway = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -153,6 +167,8 @@ swe_scandinavian_colonialism_mission_slot = {
 				area = eastern_norway
 				area = western_norway
 				area = northern_norway
+				area = trondelag_area 
+				area = southern_norway_area
 				owned_by = NOR
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -165,8 +181,10 @@ swe_scandinavian_colonialism_mission_slot = {
 						area = eastern_norway
 						area = western_norway
 						area = northern_norway
+						area = trondelag_area 
+						area = southern_norway_area
 					}
-					value = 8
+					value = 12
 				}
 			}
 			owns_or_non_sovereign_subject_of = 17
@@ -191,6 +209,34 @@ swe_scandinavian_colonialism_mission_slot = {
 			add_country_modifier = {
 				name = "norway_subjugated_swe"
 				duration = 5475
+			}
+			schleswig_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lubeck_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kobenhavn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sjaelland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			jutland_area = {
 				limit = {
@@ -934,6 +980,48 @@ swe_diplomacy_mission_slot = {
 					}
 					add_claim = ROOT
 				}
+				lower_saxony_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				altmark_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				anhalt_area  = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				mittelmark_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				neumark_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				uckermark_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
 				weser_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -1443,8 +1531,10 @@ swe_kalmar_union_mission_slot = {
 						area = estonia_ingria_area
 						area = livonia_area
 						area = curonia_area
+						area = north_livonia_area
+						area = latgallia_area
 					}
-					value = 6
+					value = 18
 				}
 				owns_or_non_sovereign_subject_of = 38
 			}
@@ -1457,8 +1547,10 @@ swe_kalmar_union_mission_slot = {
 								area = estonia_ingria_area
 								area = livonia_area
 								area = curonia_area
+								area = north_livonia_area
+								area = latgallia_area
 							}
-							value = 6
+							value = 18
 						}
 						owns_or_non_sovereign_subject_of = 38
 					}
@@ -1476,8 +1568,10 @@ swe_kalmar_union_mission_slot = {
 										area = estonia_ingria_area
 										area = livonia_area
 										area = curonia_area
+										area = north_livonia_area
+										area = latgallia_area
 									}
-									value = 6
+									value = 18
 								}
 							}
 							OR = {
@@ -1503,8 +1597,10 @@ swe_kalmar_union_mission_slot = {
 										area = estonia_ingria_area
 										area = livonia_area
 										area = curonia_area
+										area = north_livonia_area
+										area = latgallia_area
 									}
-									value = 6
+									value = 18
 								}
 							}
 							OR = {
@@ -1566,6 +1662,20 @@ swe_kalmar_union_mission_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
+				nadruvia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				masuria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			else = {
 				if = {
@@ -1618,8 +1728,10 @@ swe_kalmar_union_mission_slot = {
 					OR = {
 						area = east_prussia_area
 						area = west_prussia_area
+						area = nadruvia_area
+						area = masuria_area 
 					}
-					value = 5
+					value = 12
 				}
 				owns_or_non_sovereign_subject_of = 40
 			}
@@ -1631,8 +1743,10 @@ swe_kalmar_union_mission_slot = {
 							OR = {
 								area = east_prussia_area
 								area = west_prussia_area
+								area = nadruvia_area
+								area = masuria_area 
 							}
-							value = 5
+							value = 12
 						}
 						owns_or_non_sovereign_subject_of = 40
 					}
@@ -1649,8 +1763,10 @@ swe_kalmar_union_mission_slot = {
 									OR = {
 										area = east_prussia_area
 										area = west_prussia_area
+										area = nadruvia_area
+										area = masuria_area 
 									}
-									value = 5
+									value = 12
 								}
 							}
 							OR = {
@@ -1675,8 +1791,10 @@ swe_kalmar_union_mission_slot = {
 									OR = {
 										area = east_prussia_area
 										area = west_prussia_area
+										area = nadruvia_area
+										area = masuria_area 
 									}
-									value = 5
+									value = 12
 								}
 							}
 							OR = {
@@ -1715,27 +1833,34 @@ swe_kalmar_union_mission_slot = {
 						builder = ROOT
 					}
 				}
-				hinter_pommern_area = {
+				baltic_region = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				vorpommern_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				mecklenburg_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				#hinter_pommern_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
+				#vorpommern_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
+				#mecklenburg_area = {
+				#	limit = {
+				#		NOT = { is_core = ROOT }
+				#		NOT = { is_permanent_claim = ROOT }
+				#	}
+				#	add_permanent_claim = ROOT
+				#}
 			}
 			else = {
 				if = {
@@ -2223,6 +2348,20 @@ swe_internal_slot = {
 				add_permanent_claim = ROOT
 			}
 			moscow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			beloozero_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			toropets_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -5181,6 +5320,34 @@ swe_sca_caroliner_slot = {
 						name = sca_hegemony_over_germany_province
 						duration = -1
 					}
+				}
+				low_countries_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				south_german_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				austria_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				north_german_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
 				every_owned_province = {
 					limit = {

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = kingdom_of_sardinia_reform
 government_rank = 1
 #technology_group = western
 technology_group = italian_tech_group

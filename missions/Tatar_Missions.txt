@@ -10,18 +10,17 @@ tatar_missions_1 = {
 				OR = {
 					tag = GOL
 					tag = CRI
+					tag = KAZ
 				}
 			}			
 			tag = NOG
-			tag = KAZ
+			tag = KZH
 			tag = SHY
 			tag = GLH
 			tag = SIB
 			tag = BSH
 			tag = AST
 			tag = QAS
-			tag = KZH
-			tag = CHG
 			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
@@ -347,7 +346,6 @@ tatar_missions_slot_2 = {
 				}
 			}			
 			tag = KZH
-			tag = CHG
 			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }
@@ -648,7 +646,6 @@ tatar_missions_2 = {
 				}
 			}			
 			tag = KZH
-			tag = CHG
 			tag = KAS
 		}
 		NOT = { map_setup = map_setup_random }

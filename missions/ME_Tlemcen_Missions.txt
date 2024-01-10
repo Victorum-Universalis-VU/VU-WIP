@@ -107,9 +107,12 @@ TLC_missions_1 = {
 		provinces_to_highlight = {
 			if = {
 				limit = {
-					any_owned_province = {
-						culture = shenwa
-						NOT = { has_manpower_building_trigger = yes }
+					#Added owner - by San Felipe
+					owner = {
+						any_owned_province = {
+					    	culture = shenwa
+					    	NOT = { has_manpower_building_trigger = yes }
+					    }
 					}
 				}
 				owned_by = ROOT

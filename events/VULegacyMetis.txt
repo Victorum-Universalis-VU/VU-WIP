@@ -100,13 +100,18 @@ province_event = {
 			add_base_production = 1
 		}
 		change_culture = metis
+		#VU - Added owner to this for v1.36.2.* to see if it will work and fix the issue. By San Felipe 
 		if = {
 			limit = { 
-				NOT = { 
-					accepted_culture = metis 
+				NOT = {
+					owner = {
+						accepted_culture = metis 
+					}
 				} 
 			}
-			add_accepted_culture = metis
+			owner = {
+				add_accepted_culture = metis
+			}
 		}
 	}
 	
@@ -151,7 +156,10 @@ province_event = {
 			name = "mettling_government"
 			duration = 1825
 		}
-		add_adm_power  = -10
+		#VU - Added owner to this for v1.36.2.* to see if it will work and fix the issue. By San Felipe 
+		owner = {
+			add_adm_power = -10
+		}
 	}
 }
 
@@ -249,13 +257,18 @@ province_event = {
 			add_base_production = 1
 		}
 		change_culture = anglo_metis
+		#VU - Added owner to this for v1.36.2.* to see if it will work and fix the issue. By San Felipe 
 		if = {
 			limit = { 
-				NOT = { 
-					accepted_culture = anglo_metis 
+				NOT = {
+					owner = {
+						accepted_culture = anglo_metis 
+					}
 				} 
 			}
-			add_accepted_culture = anglo_metis
+			owner = {
+				add_accepted_culture = anglo_metis
+			}
 		}
 	}
 	
@@ -300,7 +313,10 @@ province_event = {
 			name = "mettling_government"
 			duration = 1825
 		}
-		add_adm_power  = -10
+		#VU - Added owner to this for v1.36.2.* to see if it will work and fix the issue. By San Felipe 
+		owner = {
+			add_adm_power  = -10
+		}
 	}
 }
 
@@ -397,13 +413,18 @@ province_event = {
 			add_base_production = 1
 		}
 		change_culture = bungi
+		#VU - Added owner to this for v1.36.2.* to see if it will work and fix the issue. By San Felipe 
 		if = {
 			limit = { 
-				NOT = { 
-					accepted_culture = bungi 
+				NOT = {
+					owner = {
+						accepted_culture = bungi
+					}
 				} 
 			}
-			add_accepted_culture = bungi
+			owner = {
+				add_accepted_culture = bungi
+			} 
 		}
 	}
 	

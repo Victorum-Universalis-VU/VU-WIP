@@ -13,6 +13,23 @@ capital = "Sarov"
 is_city = yes
 add_core = NZH
 add_core = MOS
+add_core = ERZ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

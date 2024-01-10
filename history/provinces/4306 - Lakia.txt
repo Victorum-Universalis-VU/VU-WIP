@@ -15,6 +15,31 @@ add_core = GAZ
 
 extra_cost = 8
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1801.1.18 = {
 	owner = RUS
 	controller = RUS

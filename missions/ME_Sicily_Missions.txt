@@ -62,7 +62,7 @@ sicily_mission_1 = {
 							}
 						}
 					}
-					any_country = {
+					any_known_country = {
 						AND = { 
 							is_papal_controller = yes
 							OR = {
@@ -314,7 +314,7 @@ sicily_mission_2 = {
 							}
 						}
 					}
-					any_country = {
+					any_known_country = {
 						AND = { 
 							is_papal_controller = yes
 							OR = {
@@ -421,7 +421,7 @@ sicily_mission_2 = {
 									}
 								}
 							}
-							any_country = {
+							any_known_country = {
 								AND = { 
 									is_papal_controller = yes
 									OR = {

@@ -1,5 +1,10 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = house_of_este_reform
+add_government_power = {
+	mechanic_type = italian_dinasties_mechanic
+	power_type = italian_dinasties
+	value = 15
+}
 government_rank = 1
 #technology_group = western
 technology_group = italian_tech_group

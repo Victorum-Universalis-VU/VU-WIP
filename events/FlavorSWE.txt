@@ -3905,14 +3905,52 @@ country_event = {
 			add_permanent_claim = 315
 		}
 		if = {
-			limit = { NOT = { owns_core_province = 1777 } }
-			add_permanent_claim = 1777
+			limit = { NOT = { owns_core_province = 25 } }
+			add_permanent_claim = 25
 		}
-		if = {
-			limit = { NOT = { owns_core_province = 1776 } }
-			add_permanent_claim = 1776
+		laponia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
 		}
 		karelia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		latgallia_area  = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		pskov_area  = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		vladimir_area  = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		north_livonia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		west_karelia_area = {
 			limit = {
 				NOT = { is_core = ROOT }
 				NOT = { is_permanent_claim = ROOT }

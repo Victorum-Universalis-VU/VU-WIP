@@ -12,6 +12,23 @@ base_production = 6
 base_manpower = 4 
 is_city = yes
 add_core = KAZ
+add_core = CUV
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

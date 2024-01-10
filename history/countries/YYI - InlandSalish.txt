@@ -7,7 +7,6 @@ technology_group = north_american
 capital = 4948
 historical_friend = KTX
 
-
 1444.11.11 = {
 	monarch = {
 		name = "Native Council"

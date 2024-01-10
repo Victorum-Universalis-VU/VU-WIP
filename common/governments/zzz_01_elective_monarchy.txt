@@ -57,8 +57,6 @@ elective_monarchy = {
 				nobi_jongbubub_reform
 				lithuania_law_reform
 				guild_dominance_reform
-				growth_signoria_reform
-				akritai_privileges_reform
 				portuguese_cortes_reform
 				crusader_orders_reform
 				old_world_privileges_reform
@@ -83,8 +81,6 @@ elective_monarchy = {
 				curia_regis_reform
 				taha_divisions_reform 
 				unite_the_royal_houses_reform
-				support_ghibbelline_reform
-				support_guelphs_reform
 				franconian_salic_law_reform
 				arch_marshal_reform
 				chhetri_clans_reform
@@ -97,8 +93,6 @@ elective_monarchy = {
 				order_of_the_dragon_reform
 				buddhist_nation_reform
 			#	1.13
-				angevin_nobles_reform
-				parliament_of_sicily_reform
 				nationalized_cetas_reform
 				hussite_reform
 			#	1.14
@@ -256,7 +250,6 @@ elective_monarchy = {
 		    	army_of_flanders_reform
 		    #	1.15
 		    	jayish_al_malik_reform
-		    	mantua_knightly_orders_reform
 		    	bedouin_reserves_reform
 		    #	1.16
 		    	slave_soldiers_reform
@@ -311,7 +304,6 @@ elective_monarchy = {
 		    #	ME
 		    #	GE
 		    	integrate_moneyloaners_reform
-		    	advanced_bookkeeping_reform
 		    	colonial_govenors_reform
 		    	sulu_administration_reform
 		    	academy_of_science_reform
@@ -447,7 +439,6 @@ elective_monarchy = {
 				empowered_royal_trading_company_reform
 				armenian_silk_traders_reform
 				caravanserai_reform
-				reinforce_the_hwangog_reform
 				bureaucratic_economy_reform
 				fredrickan_reforms_reform
 			#	1.13
@@ -490,8 +481,6 @@ elective_monarchy = {
 				absolutist_administration_reform
 				permanent_regency_reform
 				tanzimat_reforms_reform
-			#	1.13
-				constitution_of_melfi_reform
 			}
 		}
 		separation_of_power = {

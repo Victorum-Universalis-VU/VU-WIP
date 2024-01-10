@@ -334,7 +334,7 @@ vu_althing = {
 	tier_2 = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = {	factor = 3000 }
-		province_modifiers = { local_production_efficiency = 0.1 }
+		province_modifiers = { local_production_efficiency = 0.1 local_development_cost = 0.1 }
 		area_modifier = { local_development_cost = -0.3 }
 		country_modifiers = { stability_cost_modifier = -0.05 reform_progress_growth = 0.10 republican_tradition = 0.5 governing_capacity_modifier = 0.05}
 		on_upgraded = {}
@@ -342,7 +342,7 @@ vu_althing = {
 	tier_3 = {
 		upgrade_time = { months = 960 }
 		cost_to_upgrade = {	factor = 9000 }
-		province_modifiers = { local_production_efficiency = 0.2 }
+		province_modifiers = { local_production_efficiency = 0.2 local_development_cost = 0.2 }
 		area_modifier = { local_development_cost = -0.5}
 		country_modifiers = {  stability_cost_modifier = -0.1 reform_progress_growth = 0.15 republican_tradition = 0.75 candidate_random_bonus = 1 governing_capacity_modifier = 0.1}
 		on_upgraded = { }

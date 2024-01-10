@@ -8,9 +8,9 @@ religion = shinto
 capital = "Iwashiro"
 trade_goods = fruit
 hre = no
-base_tax = 5
-base_manpower = 5
-base_production = 5
+base_tax = 3
+base_production = 2
+base_manpower = 2
 is_city = yes
 
 

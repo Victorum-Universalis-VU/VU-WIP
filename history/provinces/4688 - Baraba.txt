@@ -1,8 +1,8 @@
 #4688 - Baraba
 
-owner = SHY
-controller = SHY
-add_core = SHY
+owner = KYG
+controller = KYG
+add_core = KYG
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Baraba"
@@ -19,9 +19,11 @@ unrest = 15
 1468.1.1 = {
 	owner = SIB
 	controller = SIB 
+	 
 	unrest = 0 
 } # Sibir Khanate formed from northern Uzbek lands
 1582.10.23 = { 
+		
 	owner = RUS 
 	controller = RUS 
 	add_core = RUS 

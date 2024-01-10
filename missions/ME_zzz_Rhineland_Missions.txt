@@ -265,22 +265,22 @@ RHN_missions_1 = {
 				tooltip = RHN_dev_at_least_100
 				development_in_provinces = {
 					OR = {
-				        province_id = 2975
-				        province_id = 84
-				        province_id = 7527
-				        province_id = 7317
-				        province_id = 3199
-				        province_id = 7533
-				        province_id = 7529	
-				        province_id = 7530
-				        province_id = 3292
-				        province_id = 3200
-				        province_id = 7532
-				        province_id = 8514
-				        province_id = 7526
-				        province_id = 7527
-				        province_id = 86
-				        province_id = 7526
+				province_id = 2975
+				province_id = 84
+				province_id = 7527
+				province_id = 7317
+				province_id = 3199
+				province_id = 7533
+				province_id = 7529	
+				province_id = 7530
+				province_id = 3292
+				province_id = 3200
+				province_id = 7532
+				province_id = 8514
+				province_id = 7526
+				province_id = 7527
+				province_id = 86
+				province_id = 7526
 					}
 					value = 300
 				}
@@ -422,11 +422,10 @@ RHN_missions_1 = {
 		}
 		effect = {
 			add_mil_power = 100
-				add_country_modifier = {
-					name = RHN_munitions_modifier
-					duration = -1
-				}
-
+			add_country_modifier = {
+				name = RHN_munitions_modifier
+				duration = -1
+			}
 		}
 	}
 

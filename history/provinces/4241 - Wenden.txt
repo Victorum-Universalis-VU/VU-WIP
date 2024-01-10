@@ -5,6 +5,7 @@
 owner = RIG
 controller = RIG
 add_core = RIG
+add_core = LVA
 culture = livonian #Was estonian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 capital = "Limbazi"

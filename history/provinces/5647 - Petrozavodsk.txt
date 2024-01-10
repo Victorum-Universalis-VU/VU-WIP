@@ -4,6 +4,7 @@ owner = NOV
 controller = NOV
 add_core = NOV
 add_core = KRL
+add_core = LUD
 culture = vu_ludic
 religion = orthodox
 capital = "Petrozavodsk"			#Not properly founded until the 18th century, but it appears to have been settled in small numbers much before this, and the province itself contains several historical sites dating to the 15th century. Largest city in Karelia by 1720s
@@ -15,6 +16,22 @@ base_manpower = 1
 is_city = yes
 add_local_autonomy = 65
 center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

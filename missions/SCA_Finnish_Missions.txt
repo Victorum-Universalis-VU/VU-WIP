@@ -165,7 +165,7 @@ fin_missions_1 = {
 			}
 			custom_tooltip = fin_claim_baltic_trade_node_tt
 			hidden_effect = {
-				33 = { 
+				1926 = { 
 					every_trade_node_member_province = {
 						limit = { 
 							NOT = { owned_by = ROOT }

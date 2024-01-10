@@ -1,3 +1,4 @@
+#VU - Updated by San Felipe for 1.36.*
 byz_western = {
 	slot = 1 #upper left column
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
@@ -11,159 +12,104 @@ byz_western = {
 	has_country_shield = yes
 	
 	recover_greece = {
-		icon = mission_assemble_an_army
+		icon = mission_slopes_of_olympus
 		required_missions = {  } #None
+		ai_weight = {
+			factor = 5
+		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 144
-				province_id = 145
-				province_id = 146
-				province_id = 147
-				province_id = 148
-				province_id = 148
-				province_id = 4779
-				province_id = 1773
-				province_id = 1853
-				province_id = 4699
-				province_id = 4701
-				province_id = 4705
-				province_id = 4702
-			}
+			area = thrace_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 144
-			owns_or_non_sovereign_subject_of = 145
-			owns_or_non_sovereign_subject_of = 146
-			owns_or_non_sovereign_subject_of = 147
-			owns_or_non_sovereign_subject_of = 148
-			owns_or_non_sovereign_subject_of = 4779
-			owns_or_non_sovereign_subject_of = 1773
-			owns_or_non_sovereign_subject_of = 1853
-			owns_or_non_sovereign_subject_of = 4699
-			owns_or_non_sovereign_subject_of = 4701
-			owns_or_non_sovereign_subject_of = 4705
-			owns_or_non_sovereign_subject_of = 4702
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = "byzantium_resurgent"
 				duration = 5475
 			}
-			bulgaria_area = {
+			eastern_macedonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			silistria_area = {
+			macedonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			thrace_area = {
+			northern_thrace_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			hudavendigar_area = {
+			upper_thrace_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}	
-			aydin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					has_dlc = "Purple Phoenix" #For the PP mission to conquer Albania
-				}
-				albania_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				3001 = {
-					if = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-				}
-				4780 = {
-					if = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-				}
-			}
-		}
-		ai_weight = {
-			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
-	recover_the_balkans = {
-		icon = mission_eastern_european_city
+	
+	recover_macedon = { #Recover Macedonia
+		icon = mission_when_in_pella
 		required_missions = { recover_greece }
-		position = 3
+		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = bulgaria_area
-				area = silistria_area
+			    area = eastern_macedonia_area
+				area = macedonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			bulgaria_area = {
+			eastern_macedonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			silistria_area = {
+			macedonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			if = {
-				limit = { has_reform = byzantine_autocracy_reform }
-				add_government_reform = reformed_byzantine_monarchy_reform
-			}
-			apulia_area = {
+			northern_macedonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			calabria_area = {
+			thessaly_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			naples_area = {
+			northern_greece_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -172,23 +118,168 @@ byz_western = {
 			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
-	recover_south_italy = {
-		icon = mission_italian_condottiere
-		required_missions = { recover_the_balkans }
+	recover_central_greece = { #Recover Thessaly & Epirus
+		icon = mission_thessaly_and_epirus
+		required_missions = { recover_macedon }
 		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = thessaly_area
+				area = northern_greece_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			thessaly_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aetolia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_epirus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_aegean_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	recover_southern_greece = { #Recover Hellas
+		icon = mission_recover_southern_greece
+		required_missions = { recover_central_greece }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = aetolia_area
+				area = morea_area
+				area = western_aegean_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aetolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			morea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_aegean_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_mediterrenean_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#capitanata_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { owned_by = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			abruzzo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			#lucania_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { owned_by = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			add_country_modifier = {
+				name = "greece_is_ours"
+				duration = -1
+			}
+			add_permanent_claim_province = { province = 7016 }
+			add_permanent_claim_province = { province = 7017 }
+		}
+	}
+	
+	recover_south_italy = {
+		icon = mission_recover_south_italy
+		required_missions = { recover_southern_greece }
+		position = 8
 		provinces_to_highlight = {
 			OR = {
 				area = apulia_area
 				area = calabria_area
 				area = naples_area
+				#area = capitanata_area
+				area = abruzzo_area
+				#area = lucania_area
+				province_id = 7016
+				province_id = 7017
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			apulia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -197,6 +288,24 @@ byz_western = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			#capitanata_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			abruzzo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			#lucania_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			owns_or_non_sovereign_subject_of = 7016
+			owns_or_non_sovereign_subject_of = 7017
 		}
 		effect = {
 			capital_scope = {
@@ -204,28 +313,9 @@ byz_western = {
 				add_base_tax = 2
 				add_base_production = 2
 			}
-			lazio_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			sicily_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lazio_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim = 118
 			add_permanent_claim = 124
+			add_permanent_claim = 125
 			add_permanent_claim = 2982
 		}
 		ai_weight = {
@@ -233,22 +323,30 @@ byz_western = {
 		}
 	}
 	recover_sicily = {
-		icon = mission_sea_battles
+	    position = 9
+		icon = mission_recover_sicily
 		required_missions = { recover_south_italy }
 		provinces_to_highlight = {
 			OR = {
 				area = sicily_area
-				province_id = 124
-				province_id = 2982
+				#area = demone_area
+				#area = noto_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			sicily_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			owns_or_non_sovereign_subject_of = 124
-			owns_or_non_sovereign_subject_of = 2982
+			#demone_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			#noto_area = {
+			#	type = all
+			##	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		effect = {
 			add_country_modifier = {
@@ -276,8 +374,8 @@ byz_generic_slot_2 = {
 	has_country_shield = yes
 	
 	recover_rome = {
-		position = 6
-		icon = mission_religious
+		position = 10
+		icon = mission_recover_rome
 		required_missions = { recover_south_italy }
 		provinces_to_highlight = {
 			province_id = 118
@@ -294,7 +392,7 @@ byz_generic_slot_2 = {
 			venetia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -323,7 +421,7 @@ byz_generic_slot_2 = {
 	}
 	
 	destroy_venice = {
-		icon = mission_monarch_in_throne_room
+		icon = mission_destroy_venice
 		required_missions = { recover_rome }
 		provinces_to_highlight = {
 			area = venetia_area
@@ -367,17 +465,25 @@ byz_east = {
 	has_country_shield = yes
 	
 	recover_the_coast_of_asia_minor = {
-		icon = mission_galleys_in_port
+		icon = mission_anatolian_coast
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				area = hudavendigar_area
+				area = aeolia_area
 				area = aydin_area
+				area = cukurova_area
+				area = hudavendigar_area
+				area = karasi_area
+				area = kastamonu_area
+				area = lycia_area
+				area = pamphylia_area
+				area = pontus_area
+				area = rum_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			hudavendigar_area = {
+			aeolia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -385,86 +491,46 @@ byz_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			cukurova_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hudavendigar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			karasi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kastamonu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lycia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pamphylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pontus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			if = {
-				limit = { NOT = { has_dlc = "Purple Phoenix" } }
-				germiyan_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			anatolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
-				ankara_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				karaman_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				kastamonu_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				rum_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				thrace_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				erzurum_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				add_permanent_claim = 327 # Adana
-				add_permanent_claim = 2302 # Icel
-				add_permanent_claim = 2750 # Plovdiv
-				add_permanent_claim = 4310 # Divrigi
-			}
-			else = {
-				germiyan_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				ankara_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				kastamonu_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -492,15 +558,20 @@ byz_generic_slot_5 = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = hudavendigar_area
-				area = germiyan_area
-				area = aydin_area
 				area = ankara_area
+				area = aydin_area
+				area = cukurova_area
+				area = erzurum_area
+				area = germiyan_area
+				area = hudavendigar_area
 				area = karaman_area
+				area = karasi_area
 				area = kastamonu_area
+				area = mardin_area
+				area = pamphylia_area
+				area = pontus_area
 				area = rum_area
 				area = thrace_area
-				area = erzurum_area
 				province_id = 327 # Adana
 				province_id = 2302 # Icel
 				province_id = 4310 # Divrigi
@@ -509,11 +580,7 @@ byz_generic_slot_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			hudavendigar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			germiyan_area = {
+			ankara_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -521,7 +588,19 @@ byz_generic_slot_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			ankara_area = {
+			cukurova_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			germiyan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hudavendigar_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -529,7 +608,23 @@ byz_generic_slot_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			karasi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			kastamonu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mardin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pamphylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pontus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -541,10 +636,6 @@ byz_generic_slot_5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			erzurum_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			owns = 327 # Adana
 			owns = 2302 # Icel
 			owns = 4310 # Divrigi
@@ -552,6 +643,48 @@ byz_generic_slot_5 = {
 				
 		}
 		effect = {
+			hidden_effect = {
+				149 = { change_province_name = Adrianople rename_capital = Adrianople }
+				151 = { change_province_name = Constantinople rename_capital = Constantinople }
+				316 = { change_province_name = Optimatoi rename_capital = Nikomedeia }
+				317 = { change_province_name = Opsikion rename_capital = Prussa }
+				318 = { change_province_name = Smyrna rename_capital = Smyrna }
+				319 = { change_province_name = Mylasa rename_capital = Mougla }
+				322 = { change_province_name = Kotyaion rename_capital = Kotyaion }
+				323 = { change_province_name = Ikonion rename_capital = Iconion }
+				324 = { change_province_name = Laranda rename_capital = Laranda }
+				325 = { change_province_name = Paphlagonia rename_capital = Timonio }
+				326 = { change_province_name = Galatia rename_capital = Ancyra }
+				327 = { change_province_name = Cilicia rename_capital = Atana }
+				328 = { change_province_name = Sinope rename_capital = Sinop }
+				329 = { change_province_name = Sebasteia rename_capital = Sebastopolis }
+				330 = { change_province_name = Trebizond rename_capital = Trapezous }
+				331 = { change_province_name = Theodosiopolis rename_capital = Theodosiopolis }
+				1764 = { change_province_name = Mesambria rename_capital = Mesambria }
+				1846 = { change_province_name = Armeniakon rename_capital = Amasea }
+				1848 = { change_province_name = Baris rename_capital = Baris }
+				2296 = { change_province_name = Abydos rename_capital = Pigai }
+				2297 = { change_province_name = Thrakesion rename_capital = Magnesia }
+				2298 = { change_province_name = Attalia rename_capital = Attalia }
+				2299 = { change_province_name = Boukellarion rename_capital = Klaudiopol}
+				2300 = { change_province_name = Cappadocia rename_capital = Tavium }
+				2301 = { change_province_name = Charsianon rename_capital = Ceasarea }
+				2302 = { change_province_name = Seleucia rename_capital = Kermarage }
+				2304 = { change_province_name = Chaldia rename_capital = Amissos}
+				2305 = { change_province_name = Acilisene rename_capital = Acilisene }
+				2750 = { change_province_name = Philippopolis rename_capital = Philippopolis}
+				4307 = { change_province_name = Colonia rename_capital = Colonia }
+				4308 = { change_province_name = Laodicea rename_capital = Laodicea }
+				4309 = { change_province_name = Tralles rename_capital = Tralles }
+				4310 = { change_province_name = Tephrike rename_capital = Tephrike }
+				4311 = { change_province_name = Anatolikon rename_capital = Polydorion }
+				4312 = { change_province_name = Dorylaeum rename_capital = Dorylaeum }
+				4313 = { change_province_name = Gangra rename_capital = Gangra }
+				4314 = { change_province_name = Justinianopolis rename_capital = Justinianopolis }
+				4315 = { change_province_name = Evdoksia rename_capital = Evdoksia }
+				
+			}
+			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
 					NOT = { has_global_flag = constantinople_restored }
@@ -569,19 +702,28 @@ byz_generic_slot_5 = {
 				duration = -1
 			}
 		}
-		ai_weight = {
+	    ai_weight = {
 			factor = 500	#Byzantium is basically Ottomans in its conquest behavior
 		}
 	}
 	
 	convert_asia_minor = {
-		icon = mission_non-western_soldiers
+		icon = mission_hands_praying
 		required_missions = { reestablish_the_theme_system }
 		position = 5
 		provinces_to_highlight = {
 			OR = {
+				area = ankara_area
 				area = aydin_area
+				area = erzurum_area
+				area = germiyan_area
 				area = hudavendigar_area
+				area = karaman_area
+				area = karasi_area
+				area = kastamonu_area
+				area = mardin_area
+				area = rum_area
+				area = thrace_area
 			}
 			OR = {
 				NOT = { religion = orthodox }
@@ -590,12 +732,57 @@ byz_generic_slot_5 = {
 		}
 		trigger = {
 			religion = orthodox
+			ankara_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
 			aydin_area = {
 				type = all
 				owned_by = ROOT
 				religion = orthodox
 			}
+			erzurum_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			germiyan_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
 			hudavendigar_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			karaman_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			karasi_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			kastamonu_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			mardin_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			rum_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			thrace_area = {
 				type = all
 				owned_by = ROOT
 				religion = orthodox
@@ -617,7 +804,7 @@ byz_generic_slot_5 = {
 	}
 	
 	the_pentarchy = {
-		icon = mission_empire
+		icon = mission_the_pentarchy
 		position = 7
 		required_missions = {
 			recover_rome

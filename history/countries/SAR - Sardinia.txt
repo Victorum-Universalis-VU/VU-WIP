@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = giudicati_sardi_reform
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western

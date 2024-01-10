@@ -235,6 +235,8 @@
 3286 = { "Skið" "Ríkhöfn" } #Skye
 3296 = "Ívist"
 3298 = { "Þingvöllur" "Þingvöllur" } #Dingwall
+3348 = { "Honningsvåg" "Honningsvåg" }
+3349 = { "Porsangr" "Porsangr" }
 4110 = { "Katanes" "Vík" } #Caithness
 4113 = { "Kvenland" "Uleárborgr" }
 4114 = { "Lule Læpmork" "Jokomuka" }

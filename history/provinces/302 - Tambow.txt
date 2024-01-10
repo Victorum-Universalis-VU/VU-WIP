@@ -14,6 +14,7 @@ base_manpower = 2
 capital = "Tomba"
 is_city = yes
 add_core = GOL
+add_core = MOK
 
 add_permanent_province_modifier = {
     name = rich_black_soil

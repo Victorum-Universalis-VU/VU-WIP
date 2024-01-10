@@ -5,35 +5,26 @@ primary_culture = circassian
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
-historical_friend = KBD
-historical_friend = TUR
-capital = 3335 # Circassia
+capital = 3343 # Circassia
+
+# Being a confederation, there were a lot of Princes that ruled small areas with no significant leader, other than maybe Petrezok.  They banded together for defense when needed.
 
 1444.1.1 = {
 	monarch = {
-		name = "Inal the Great"
-		dynasty = "Talhosten"
-		birth_date = 1400.1.30
-		adm = 5
+		name = "Petrezok"
+		dynasty = "Petrezok"
+		adm = 1
 		dip = 3
-		mil = 4
+		mil = 2
 	}
-	add_ruler_personality = conqueror_personality
 }
 
-1444.1.1 = {
+1470.1.1 = {
 	monarch = {
-		name = "Mehmed II Fatih"
-		dynasty = Osmanoglu
-		birth_date = 1432.3.30
-		adm = 6
-		dip = 4
-		mil = 6
+		name = "Petrezok"
+		adm = 0
+		mil = 0
+		dip = 0
+		regent = yes
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = conqueror_personality
-	#add_ruler_personality = lawgiver_personality
-	add_piety = -0.2
-	add_adm_tech = 3
-	add_mil_tech = 3
 }

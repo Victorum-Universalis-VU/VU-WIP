@@ -710,19 +710,16 @@ perugia_mission_4 = {
 							}
 						}
 					}
-					any_country = {
-						AND = { 
-							is_papal_controller = yes
-							OR = {
+					papal_controller = {
+						OR = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+							NOT = {
 								has_opinion = {
 									who = ROOT
-									value = 125
-								}
-								NOT = {
-									has_opinion = {
-										who = ROOT
-										value = -50
-									}
+									value = -50
 								}
 							}
 						}
@@ -1001,15 +998,14 @@ perugia_mission_5 = {
 									}
 								}
 							}
-							any_country = {
-					        	is_papal_controller = yes
-					        	NOT = {
+							papal_controller = {
+								NOT = {
 									has_opinion = {
-					        	    	who = ROOT
-					        	    	value = -25
-					        	    }
+										who = ROOT
+										value = -25
+									}
 								}
-					        }
+							}
 						}
 					}
 				}
@@ -1059,13 +1055,12 @@ perugia_mission_5 = {
 									}
 								}
 							}
-							any_country = {
-					        	is_papal_controller = yes
-					        	has_opinion = {
-					        		who = ROOT
-					        		value = 75
-					        	}
-					        }
+							papal_controller = {
+								has_opinion = {
+									who = ROOT
+									value = 75
+								}
+							}
 						}
 					}
 				}
@@ -1116,10 +1111,9 @@ perugia_mission_5 = {
 								war_with = ROOT
 							}
 						}
-						any_country = {
-					    	is_papal_controller = yes
+						papal_controller = {
 							war_with = ROOT
-					    }
+						}
 					}
 				}
 			}
@@ -1158,11 +1152,11 @@ perugia_mission_5 = {
 						}
 						134 = {
 							owner = {
-							    ROOT = {
-							    	has_won_war_against = {
-							    		who = PREV
-							    	}
-							    }
+							ROOT = {
+								has_won_war_against = {
+									who = PREV
+								}
+							}
 							}
 						}
 					}
@@ -1186,21 +1180,20 @@ perugia_mission_5 = {
 						}
 						118 = {
 							owner = {
-							    ROOT = {
-							    	has_won_war_against = {
-							    		who = PREV
-							    	}
-							    }
-							}
-						}
-						any_country = {
-					    	is_papal_controller = yes
-					    	ROOT = {
+							ROOT = {
 								has_won_war_against = {
 									who = PREV
 								}
 							}
-					    }
+							}
+						}
+						papal_controller = {
+							ROOT = {
+								has_won_war_against = {
+									who = PREV
+								}
+							}
+						}
 					}
 				}
 			}

@@ -5,6 +5,7 @@
 owner = NOV
 controller = NOV  
 add_core = KRL
+add_core = LVV
 culture = vu_livviki
 religion = orthodox
 hre = no
@@ -17,6 +18,22 @@ is_city = yes
 add_core = NOV
 add_local_autonomy = 65
 #fort_15th = yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@
 owner = SRV
 controller = SRV 
 add_core = SRV
+add_core = TAT
 culture = tati
 religion = shiite
 capital = "Samaxi"	#Uncertain
@@ -12,6 +13,22 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 is_city = yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

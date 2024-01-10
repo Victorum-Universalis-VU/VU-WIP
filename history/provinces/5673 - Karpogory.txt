@@ -3,7 +3,7 @@
 owner = NOV
 controller = NOV
 add_core = NOV
-culture = novgorodian
+culture = vu_komi
 religion = orthodox
 capital = "Karpogory"
 trade_goods = fur
@@ -13,6 +13,7 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 add_local_autonomy = 50
+add_core = KOM
 
 
 

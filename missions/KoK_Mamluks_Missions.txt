@@ -668,7 +668,7 @@ mam_missions_2 = {
 				}
 				403 = { 
 					add_great_project_tier = {
-						type = nizwa_fort 
+						type = vu_bahla_fort
 						tier = 1 
 					}
 				}
@@ -1474,13 +1474,6 @@ mam_missions_4 = {
 		}
 		effect = {
 			clr_country_flag = mam_intervened_syria
-			anatolia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			dulkadir_area = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -24,7 +24,7 @@ dependency = {
 	subject_type = appanage
 	first = FRA
 	second = AUV
-	start_date = 1444.11.11
+	start_date = 1444.1.1
 	end_date = 1531.9.22
 }
 
@@ -33,19 +33,19 @@ dependency = {
 	subject_type = appanage
 	first = FRA
 	second = CMG
-	start_date = 1444.11.11
+	start_date = 1444.1.1
 	end_date = 1453.6.1
 }
 
 
 # France-Forez
-dependency = {
-	subject_type = appanage
-	first = FRA
-	second = FOR
-	start_date = 1444.11.11
-	end_date = 1531.9.22
-}
+#dependency = {
+#	subject_type = appanage
+#	first = FRA
+#	second = FOR
+#	start_date = 1444.1.1
+#	end_date = 1531.9.22
+#}
 
 # France-Foix
 dependency = {

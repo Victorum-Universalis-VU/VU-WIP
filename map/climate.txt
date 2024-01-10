@@ -186,7 +186,7 @@ arctic = {
 	#21 11 18
 	
 	#VU - San Felipe Fix
-	2601 4984 5033 5086 5895 5900 6128
+	2601 3348 3349 4984 5033 5086 5895 5900 6128
 }
 
 #Generally places where snow is not unusual, but not guaranteed in a year and average winter temps is below 10, but above 0
@@ -288,6 +288,9 @@ mild_winter = {
 	
 	#Magna Carta Start Date
 	3693 3694 3695 3696 3697 3698 3726 3743 3744
+
+	#SF additions
+	3350
 }
 
 #Generally places where snow is nearly guaranteed any given year, and average winter temperatures hover around 0C

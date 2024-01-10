@@ -18443,9 +18443,9 @@ GE_Foreign_Students_4 = {
 GE_Foreign_Students_5 = {
 	adm_advisor_cost = -0.25
 }
-GE_emergency_powers_modifier = {
-	max_absolutism = 20
-}
+#GE_emergency_powers_modifier = { #Hashed out by San Felipe as it was connected to a non-existing government attribute 
+#	max_absolutism = 20
+#}
 GE_cultural_supremacy = {
 	local_governing_cost = -0.15
 }

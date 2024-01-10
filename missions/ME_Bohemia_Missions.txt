@@ -1453,7 +1453,7 @@ bohemian_missions_4 = {
 			tooltip = {
 				remove_country_modifier = annexers_legacy
 				define_advisor = {
-					type = vu_noble_man
+					type = vu_aristocrat
 					cost_multiplier = 0.25
 				}
 				custom_tooltip = boh_every_level_grants_manpower_tt
@@ -1491,7 +1491,7 @@ bohemian_missions_4 = {
 					}
 					remove_country_modifier = annexers_legacy
 					define_advisor = {
-						type = vu_noble_man
+						type = vu_aristocrat
 						cost_multiplier = 0.25
 					}
 					custom_tooltip = boh_every_level_grants_manpower_tt

@@ -5,6 +5,415 @@
 # If adding new groups or ideas, make sure they are unique.
 
 #Quonton
+
+
+vu_komi_ideas = {
+	start = {
+		prestige_decay = -0.01
+		tolerance_heathen = 2	
+	}
+	
+	bonus = {
+		defensiveness = 0.2
+	}
+	
+	trigger = {
+		tag = KOM
+
+	}
+	free = yes
+	
+	capital_of_prikamye = {
+		advisor_cost = -0.1
+	}
+	turkic_mercenaries = {
+		cavalry_cost = -0.1
+	}	
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+	the_great_perm = {
+		trade_efficiency = 0.10		
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1		
+	}
+	komi_resolve = {
+		land_morale = 0.10
+ 		infantry_cost = -0.25
+	}
+	permian_army_reform = {
+		land_forcelimit_modifier = 0.25
+	}
+}
+
+
+vu_chuvash_ideas = {
+	start = {
+		ae_impact = -0.10		
+		cavalry_power = 0.20	
+	}
+	
+	bonus = {
+		 cavalry_flanking = 0.5
+	}
+	
+	trigger = {
+		tag = CUV
+	}
+	free = yes
+	
+	the_mountain_khanate = {
+		hostile_attrition = 0.2
+		land_attrition = -0.10
+	}
+	ost_idea_2 = {
+		core_creation = -0.25
+	}
+	grand_capital = {
+		advisor_cost = -0.2
+	}
+	border_wars = {
+		land_morale = 0.05
+		manpower_recovery_speed = 0.15
+	}
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+	search_for_new_ideas = {
+ 		global_institution_spread = 0.1
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1
+		land_morale = 0.1
+	}
+}
+
+vu_latvia_ideas = {
+	start = {
+		manpower_recovery_speed = 0.15
+		global_unrest = -1
+	}
+	bonus = {
+		fire_damage_received = -0.1
+		land_morale = 0.1
+	}
+	trigger = {
+		tag = LAT
+	}
+	free = yes
+	ltg_daugava_river_trade = {
+		trade_efficiency = 0.1
+	}
+	ltg_diplomatic_overtures = {
+		improve_relation_modifier = 0.3
+	}
+	ltg_religious_flexibility = {
+		tolerance_of_heretics_capacity = 2
+	}
+	ltg_latvian_people = {
+		num_accepted_cultures = 1
+		promote_culture_cost = -0.25
+	}
+	ltg_modernize_livonian_castles = {
+		defensiveness = 0.2
+	}	
+	ltg_daina = {
+		prestige_decay = -0.01
+	}
+	ltg_reduction_of_noble_lands = {
+		global_autonomy = -0.05
+		nobles_influence_modifier = -0.1
+	}
+}
+
+
+vu_ingria_ideas = {
+	start = {
+		light_ship_power = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = IGR
+	}
+	free = yes		#will be added at load.
+	
+	hanseatic_kontor = {
+		merchants = 1
+		global_trade_power = 0.1
+	}		
+	western_connections = {
+		idea_cost = -0.1
+		trade_efficiency = 0.10
+	}
+	among_friends = {
+		merc_maintenance_modifier = -0.15
+	}
+	constitution = {
+		global_unrest = -2
+	}
+	reform_the_army = {
+		discipline = 0.05
+	}
+	northern_banks = {
+		interest = -0.1
+		production_efficiency = 0.1
+	}
+	baltic_shipyard = {
+		light_ship_cost = -0.20
+	}
+}
+
+
+vu_karelian_ideas = {
+	start = {
+		hostile_attrition = 1.0
+		manpower_recovery_speed = 0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = LVV
+			tag = LUD
+			tag = KRL
+		}
+	}
+	free = yes		#will be added at load.
+	
+	ugric_professional_army = {
+		infantry_power = 0.1
+	}
+	nordern_fur_trade = {
+		production_efficiency = 0.2
+	}
+	pan_finno-ugrism = {
+		num_accepted_cultures = 2
+	}
+	settle_northern_karelia = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	land_of_trade = {
+		dip_tech_cost_modifier = -0.1
+	}		
+	hakkapelitta_fin = {
+ 		cavalry_power = 0.15
+	}
+	between_empires = {
+		diplomatic_reputation = 2
+	}
+}
+
+
+VEP_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		development_cost = -0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = VEP
+	}
+	free = yes		#will be added at load.
+	
+	among_friends = {
+		merc_maintenance_modifier = -0.15
+	}
+	resassimilating_old_lands = {
+		culture_conversion_cost = -0.2
+	}
+	dvindeling_population = {
+		tolerance_own = 2
+	}		
+	pan_finno-ugrism = {
+		num_accepted_cultures = 2
+	}
+	between_empires = {
+		diplomatic_reputation = 1
+	}
+	northern_banks = {
+		interest = -0.15
+		production_efficiency = 0.1
+	}
+	ugric_professional_army = {
+		infantry_power = 0.05
+	}
+}
+
+vu_mordvia_ideas = {
+	start = {
+		land_morale = 0.1
+		tolerance_heathen = 2	
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = MOK
+			tag = ERZ
+		}
+	}
+	free = yes
+	
+	warriors_of_taiga = {
+		leader_land_manuever = 1
+		land_morale = 0.1
+	}
+	between_empires = {
+		diplomatic_reputation = 2
+	}
+	pan_finno-ugrism = {
+		num_accepted_cultures = 2
+	}
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+	mordvic_stubbornness = {
+		global_missionary_strength = 0.02
+	}
+	western_finno-ugric_advisers = {
+		land_forcelimit_modifier = 0.25
+	}
+	turkic_mercenaries = {
+		cavalry_cost = -0.1
+	}	
+}
+
+vu_mari_ideas = {
+	start = {
+		hostile_attrition = 2.0
+		manpower_recovery_speed = 0.1
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = UMA
+	}
+	free = yes		#will be added at load.
+	
+	the_old_traditions = {
+		global_unrest = -2		
+	}
+	professional_army = {
+		infantry_power = 0.1
+	}
+	pan_finno-ugrism = {
+		num_accepted_cultures = 2
+	}
+	settle_around_mari = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	land_of_trade = {
+		technology_cost = -0.1
+	}		
+	search_for_new_ideas = {
+ 		global_institution_spread = 0.1
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1
+		land_morale = 0.1
+	}
+}
+
+vu_udmurtia_ideas = {
+	start = {
+		ae_impact = -0.10
+		tolerance_heathen = 2	
+	}
+	
+	bonus = {
+		cavalry_flanking = 0.5
+	}
+	
+	trigger = {
+		tag = UDM
+	}
+	free = yes
+	
+	grand_capital = {
+		advisor_cost = -0.2
+	}
+	turkic_mercenaries = {
+		cavalry_cost = -0.1
+	}	
+	komi_tolerance = {
+		religious_unity = 0.25
+	}
+	the_great_perm = {
+		trade_efficiency = 0.10		
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1		
+	}
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+	among_friends = {
+		merc_maintenance_modifier = -0.2
+	}
+}
+
+vu_nenets_ideas = {
+	start = {
+		ae_impact = -0.10		
+		cavalry_power = 0.20	
+	}
+	
+	bonus = {
+		 cavalry_flanking = 0.5
+	}
+	
+	trigger = {
+		tag = NEN
+	}
+	free = yes
+	
+	the_mountain_khanate = {
+		hostile_attrition = 0.2
+		land_attrition = -0.10
+	}
+	ost_idea_2 = {
+		core_creation = -0.25
+	}
+	grand_capital = {
+		advisor_cost = -0.2
+	}
+	border_wars = {
+		land_morale = 0.05
+		manpower_recovery_speed = 0.15
+	}
+	the_old_traditions = {
+		global_unrest = -1		
+	}
+	search_for_new_ideas = {
+ 		global_institution_spread = 0.1
+	}
+	warriors_of_taiga = {
+		leader_land_manuever = 1
+		land_morale = 0.1
+	}
+}
+
 cock_ideas = {
 	start = {
 		merchants = 1
@@ -16,22 +425,7 @@ cock_ideas = {
 		development_cost = -0.1
 	} 
 	trigger = {
-		OR = {
-			tag = ABZ
-			tag = AKN
-			tag = AKZ
-			tag = DER
-			tag = IGS
-			tag = KTG
-			tag = LAZ
-			tag = MGL
-			tag = RUT
-			tag = SVT
-			tag = T4R
-			tag = TLY
-			tag = UBY
-			tag = LEK
-		}
+		tag = KOK
 	}
 	free = yes
 	german_industrialism = {

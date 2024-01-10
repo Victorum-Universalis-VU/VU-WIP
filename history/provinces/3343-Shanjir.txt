@@ -25,6 +25,22 @@ center_of_trade = 1
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 
 	add_local_autonomy = -60 

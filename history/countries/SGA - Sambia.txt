@@ -10,8 +10,7 @@ unit_type = western
 historical_friend = TEU
 capital = 7833
 
-
-1442.1.1  = {		#Exact date is unknown.
+1442.1.1 = {		#Exact date is unknown.
 	monarch = {
 		name = "Nikolaus"
 		dynasty = "Schlotterkopf"

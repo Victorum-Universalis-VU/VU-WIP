@@ -5,6 +5,7 @@
 owner = NOV
 controller = NOV
 add_core = KRL
+add_core = VEP
 capital = "Pudozh"
 culture = vu_vepsian
 religion = orthodox
@@ -16,6 +17,22 @@ base_manpower = 1
 is_city = yes
 add_core = NOV 
 add_local_autonomy = 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

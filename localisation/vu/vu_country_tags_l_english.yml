@@ -1380,8 +1380,8 @@
  LBA_ADJ:0 "Liberian"
  
  #poland
- GPL:0 "Greaterpoland"
- GPL_ADJ:0 "Greaterpolan"
+ GRP:0 "Greaterpoland"
+ GRP_ADJ:0 "Greaterpolan"
  KPL:0 "Kalisz"
  KPL_ADJ:0 "Kaliszian"
  SLP:0 "Slawno"

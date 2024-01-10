@@ -13,7 +13,8 @@ country_decisions = {
 			stability = 1
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				adm_power = 200
@@ -79,15 +80,16 @@ country_decisions = {
 				add_stability = -1
 				custom_tooltip = DUTCH_PROVINCE_SUBJECT_NO_STAB_HIT_WITH_IDEAS_TT
 			}
-			if = {
-				limit = {
-					has_global_flag = extended_timeline_mod
-					NOT = { adm_tech = 40 }
-				}
-				add_adm_power = -200
-				add_dip_power = -200
-				add_mil_power = -200
-			}
+			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+			#if = {
+			#	limit = {
+			#		has_global_flag = extended_timeline_mod
+			#		NOT = { adm_tech = 40 }
+			#	}
+			#	add_adm_power = -200
+			#	add_dip_power = -200
+			#	add_mil_power = -200
+			#}
 			else = {
 				add_adm_power = -100
 				add_dip_power = -100
@@ -137,7 +139,8 @@ country_decisions = {
 			stability = 1
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				adm_power = 200
@@ -209,7 +212,8 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				add_adm_power = -200
@@ -265,7 +269,8 @@ country_decisions = {
 			stability = 1
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				adm_power = 200
@@ -337,7 +342,8 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				add_adm_power = -200
@@ -430,7 +436,8 @@ country_decisions = {
 			stability = 1
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				adm_power = 200
@@ -520,7 +527,8 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_global_flag = extended_timeline_mod
+					#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+					#has_global_flag = extended_timeline_mod
 					NOT = { adm_tech = 40 }
 				}
 				add_adm_power = -200

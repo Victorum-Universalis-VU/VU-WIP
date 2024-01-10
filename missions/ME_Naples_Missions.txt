@@ -86,19 +86,16 @@ naples_missions_1 = {
 							}
 						}
 					}
-					any_country = {
-						AND = { 
-							is_papal_controller = yes
-							OR = {
+					papal_controller = {
+						OR = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+							NOT = {
 								has_opinion = {
 									who = ROOT
-									value = 125
-								}
-								NOT = {
-									has_opinion = {
-										who = ROOT
-										value = -50
-									}
+									value = -50
 								}
 							}
 						}
@@ -175,23 +172,20 @@ naples_missions_1 = {
 								}
 							}
 						}
-						any_country = {
-					    	AND = { 
-					    		is_papal_controller = yes
-					    		OR = {
-					    			has_opinion = {
-					    				who = ROOT
-					    				value = 125
-					    			}
-					    			NOT = {
-					    				has_opinion = {
-					    					who = ROOT
-					    					value = -50
-					    				}
-					    			}
-					    		}
-					    	}
-					    }
+						papal_controller = {
+							OR = {
+								has_opinion = {
+									who = ROOT
+									value = 125
+								}
+								NOT = {
+									has_opinion = {
+										who = ROOT
+										value = -50
+									}
+								}
+							}
+						}
 					}
 				}
 				add_country_modifier = {
@@ -1262,7 +1256,7 @@ naples_missions_3 = {
 		effect = {
 			custom_tooltip = NAP_OTTOMAN_DOMAIN_TOOLTIP
 			hidden_effect = {
-				1309 = {
+				137 = {
 					every_trade_node_member_province = {
 						limit = {
 							owned_by = TUR

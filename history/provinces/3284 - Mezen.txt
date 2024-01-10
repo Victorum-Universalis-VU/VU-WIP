@@ -4,7 +4,7 @@
 
 owner = NOV 
 controller = NOV 
-culture = novgorodian
+culture = vu_komi
 religion = orthodox
 hre = no
 base_tax = 1 
@@ -14,8 +14,25 @@ base_manpower = 1
 capital = "Ust-Vashka"
 is_city = yes
 add_core = NOV
+add_core = KOM
 add_local_autonomy = 75
 center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

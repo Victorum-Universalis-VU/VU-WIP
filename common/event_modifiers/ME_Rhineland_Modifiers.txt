@@ -102,6 +102,7 @@ RHN_munitions_tge_modifier = {
 
 RHN_munitions_modifier = {
 	fire_damage = 0.075
+	infantry_fire = 1
 }
 
 RHN_ruhrgebiet_modifier = {

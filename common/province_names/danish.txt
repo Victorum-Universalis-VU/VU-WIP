@@ -68,6 +68,9 @@
 2348 = "Scio"
 2963 = "Netzeland"
 
+3348 = { "Honningsvåg" "Honningsvåg" }
+3349 = { "Porsangr" "Porsangr" }
+
 4123 = "Birkeland"
 4124 = "Karelen"
 4141 = "Ditmersken"

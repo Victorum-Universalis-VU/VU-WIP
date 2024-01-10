@@ -2,7 +2,7 @@
 
 owner = SHY
 controller = SHY
-culture = ostyaki
+culture = siberian
 religion = sunni
 capital = "Qashliq"
 trade_goods = fur
@@ -18,22 +18,15 @@ revolt_risk = 15
 
 1468.1.1 = {
 	owner = SIB
-	controller = SIB
-	revolt_risk = 0
-} # Sibir Khanate formed from northern Uzbek lands
+	controller = SIB 
+	
+	revolt_risk = 0 
+} # Sibir khanate formed
 1582.10.23 = {
 	
 	owner = RUS
 	controller = RUS
-	add_core = RUS 
+	add_core = RUS
+	remove_core = SIB 
 } # Yermak Timofeevich
-1587.1.1 = { 
-	capital = "Tobolsk"
-	religion = orthodox
-	culture = russian 
-}
-1606.1.1 = { revolt_risk = 3 } # Rebellions
-1608.1.1 = { revolt_risk = 5 }
-1610.1.1 = { revolt_risk = 2 }
-1616.1.1 = { revolt_risk = 6 }
-1620.1.1 = { revolt_risk = 0 remove_core = SIB }
+

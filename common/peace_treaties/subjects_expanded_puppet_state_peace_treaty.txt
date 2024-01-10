@@ -44,7 +44,8 @@ make_puppet_state = {
 				casus_belli = cb_imperial
 			}
 		}
-		NOT = { has_global_flag = extended_timeline_mod }
+		#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
+		#NOT = { has_global_flag = extended_timeline_mod }
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = puppet_state

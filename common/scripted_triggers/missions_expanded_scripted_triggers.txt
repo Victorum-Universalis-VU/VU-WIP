@@ -36,9 +36,9 @@ country_has_both_paradox_and_me_missions = {
 				tag = ENG
 				tag = AVE
 				tag = GBR
-				tag = CAS
+			#	tag = CAS
 				tag = ARA 
-				tag = SPA
+			#	tag = SPA
 				tag = JAP
 				tag = TUR
 				tag = BRA
@@ -159,7 +159,7 @@ country_has_both_paradox_and_me_missions = {
 		tag = BYZ
 		tag = MUG
 		tag = ARA
-		tag = CAS
+	#	tag = CAS
 		tag = HAB
 		tag = CRI
 		tag = DAN
@@ -184,11 +184,11 @@ country_has_both_paradox_and_me_missions = {
 		tag = PER
 		tag = QAR
 		tag = AKK
-		AND = {
-			tag = SPA
-			is_random_new_world = no
-			NOT = { map_setup = map_setup_random }
-		}
+	#	AND = {
+	#		tag = SPA
+	#		is_random_new_world = no
+	#		NOT = { map_setup = map_setup_random }
+	#	}
 		tag = PRU
 		tag = BRA
 		tag = KOR
