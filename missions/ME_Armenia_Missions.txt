@@ -137,6 +137,8 @@ armenia_missions_slot_3_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
 		}
 		if = {
 			limit = {
@@ -343,6 +345,8 @@ armenia_missions_slot_4_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
 		}
 		if = {
 			limit = {
@@ -584,6 +588,8 @@ armenia_missions_slot_5_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
 		}
 		if = {
 			limit = {
