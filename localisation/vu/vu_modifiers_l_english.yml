@@ -1,5 +1,9 @@
 ﻿l_english:
  ##VU Quonton additions
+ vu_uralin_meidan:0 "Uraliin Meidän" 
+ vu_uralin_meidan_desc:0 "We are the masters of the Urals" 
+ vu_uralin:0 "Uralin" 
+ vu_uralin_desc:0 "We will be the masters of the Rus and the Urals" 
  vu_ural_steppe_supremacy:0 "Master of the Steppes" 
  vu_ural_steppe_supremacy_desc:0 "We are Masters of the Steppes!" 
  vu_estland:0 "Northern Trade" 
@@ -33,7 +37,7 @@
  vu_greek_trade:0 "Greek Trade" 
  vu_wal_force_limit:0 "Great Wallachian Army"
  wal_chad_limit:0 "Romanian Efficiency"
- wal_chad_limit_desc:0 "Chad"
+ desc_wal_chad_limit:0 "Chad"
  vu_wal_maitenence_war:0 "Desperate Defence"
  vu_wal_high_productivity:0 "A Rising Economy"
  vu_WAL_merc_cost:0 "Mercinary Hosts"

@@ -306,6 +306,27 @@ wallachia_missions_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			bukovina_area = {
+		    	limit = {
+		    		NOT = { is_permanent_claim = ROOT	}
+			   		NOT = { is_core = ROOT	}
+			   	}
+			   	add_permanent_claim = ROOT
+		    }
+		    western_moldovia = {
+		    	limit = {
+		    		NOT = { is_permanent_claim = ROOT	}
+		    		NOT = { is_core = ROOT	}
+		    	}
+			   	add_permanent_claim = ROOT
+		    }
+		    moldavia_area = {
+			   	limit = {
+			   		NOT = { is_permanent_claim = ROOT	}
+			   		NOT = { is_core = ROOT	}
+			   	}
+		    	add_permanent_claim = ROOT
+		    }
 		}
 	}
 	baba_novak = {
@@ -1388,7 +1409,7 @@ wallachia_missions_4 = {
 		trigger = {
 			NOT = { is_year = 1500 }
 			OR = { dynasty = "Draculesti" dynasty = "Basarab" }
-			prestige = 50
+			prestige = 30
 		}
 		effect = {
 		    define_ruler = {
@@ -1424,7 +1445,12 @@ wallachia_missions_4 = {
 		}
 		effect = {
 		    161 = {set_province_flag = wal_idkwhattoputhere}
-		    TUR = {declare_war = WAL}
+		    TUR = {
+			declare_war_with_cb = {
+    					who = WAL
+ 					casus_belli = cb_annex
+				}
+			}
 		}
 	}
 	

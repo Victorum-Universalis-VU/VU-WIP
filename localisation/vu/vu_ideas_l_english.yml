@@ -175,7 +175,24 @@
 
 
  #################################################
-
+ #VU - Quonton additions
+ UGR_ideas_start:0 "Ugrian Ideas"
+ UGR_ideas_bonus:0 "Ugrian Ambition"
+ UGR_ideas:0 "Ugrian Ideas"
+ expand_ugric_fortresses:0 "Expand Viborg"
+ expand_ugric_fortresses_desc:0 "The fortress of Viborg sits on Finland's easternmost frontier against the Russian realm. For centuries it has proven itself as a defense against those who would attack the Finnish nation and an obstacle for any invader. By expanding the fortress we would make the situation even worse for our enemies. And applying its building techniques across the nation will protect the rest of Ugria from other foes."
+ the_fourth_estate_ugr:0 "The Fourth Estate"
+ the_fourth_estate_ugr_desc:0 "Ugria has always relied on its fourth estate, the free peasants, for the prosperity of the realm. The peasant class has throughout Ugria's history often been powerful enough to challenge the nobles and sometimes even the king himself."
+ settle_middle_ugria:0 "Settle Middle Ugria"
+ settle_middle_ugria:0 "During the 16th Century Ugria saw a substantial growth in the area settled by the farming population and this development was actively supported by the crown. While beneficial in the long run it also displaced local Russians, leading to conflict."
+ found_turun_akatemia:0 "Found Turun Akatemia"
+ found_turun_akatemia_desc:0 "In 1640 the Turun Akatemia was founded at the suggestion of Count Per Brahe by Queen Christina of Sweden. It is today the first and thus oldest university in Ugria."
+ hakkapelitta_ugr:0 "The Hakkapeliitta"
+ hakkapelitta_ugr_desc:0 "The Hakkapeliitta were the fearsome Ugric cavalry that Gustavus Adolphus employed during the Thirty Years' War. The name Hakkapeliitta is a Finnish modification of the names that the soldiers of the Holy Roman Empire gave them, stemming from their battle cry 'Hakkaa päälle!', or 'Hack on them!'/'Cut them down!'. The Hakkapeliitta were feared for their sudden and savage attacks that shocked the enemy into submission."
+ the_white_death_ugr:0 "The White Death"
+ the_white_death_ugr_desc:1 "Prepare for a spring invasion if you wish to conquer Ugria as you do not wish to feel the deadly, cold embrace of the Ugric winter."
+ anjala_conspiracy_ugr:0 "The Anjala Conspiracy"
+ anjala_conspiracy_ugr_desc:0 "A pivotal point to the building of the Ugric Nation was the Anjala Conspiracy. It came as a result of the Swedish King Gustav III's war with Russia in 1788. Viewing the king as a tyrant and displeased with the war many Finnish officers signed the Liikkala note and had it delivered to Tsarina Catherine the Great. The officers condemned the war in the note and declared it illegal and asked for the restoration of the Finnish borders according to the Treaty of Nystad.
  vu_chuvash_ideas_start:0 "Chuvash Ideas"
  vu_chuvash_ideas_bonus:0 "Chuvash Ambition"
  vu_chuvash_ideas:0 "Chuvash Ideas"

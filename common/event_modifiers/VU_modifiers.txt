@@ -1,4 +1,22 @@
 #Quonton
+vu_uralin_meidan = {
+	infantry_cost = -0.1
+ 	land_morale = 0.10
+	defensiveness = 0.1
+ 	development_cost = -0.1
+}
+
+vu_uralin = {
+	infantry_cost = -0.25
+ 	army_tradition_decay = -0.02
+ 	infantry_power = 0.10
+ 	land_morale = 0.10
+	defensiveness = 0.35
+	war_exhaustion = -0.10
+	ae_impact = -0.2
+	province_warscore_cost = -0.5
+}
+
 vu_estland = {
 	development_cost = -0.1
 	trade_efficiency = 0.1

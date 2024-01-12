@@ -467,6 +467,7 @@ VYA = "countries/Vyatka.txt"
 ZBT = "countries/Zubtsov.txt"
 NRU = "countries/NovgorodRus.txt"
 CUV = "countries/Chuvash.txt"
+UGR = "countries/Ugria.txt"
 
 #Caucasus update
 BKS = "countries/Balkars.txt"

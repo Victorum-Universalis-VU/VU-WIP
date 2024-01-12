@@ -38,59 +38,33 @@ SMI_missions_1 = {
 			}
 		}
 		effect = {
-			315 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			laponia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			4151 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			northern_norway = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			4114 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			norrland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			18 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			bothnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-			}
-			4152 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1777 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -100,135 +74,34 @@ SMI_missions_1 = {
 		required_missions = { independence_for_sapmi }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 315
-				province_id = 4151
-				province_id = 4114
-				province_id = 18
-				province_id = 4152
-				province_id = 1777
+				area = laponia_area
+				area = northern_norway
+				area = norrland_area
+				area = bothnia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		position = 3
 		trigger = {
 			is_at_war = no
-			315 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			laponia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			4151 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			northern_norway = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			4114 = {
-				country_or_non_sovereign_subject_holds = ROOT
+			norrland_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			18 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4152 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1777 = {
+			bothnia_area = {
+				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			northern_norway = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			norrland_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			bothnia_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1776 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			add_country_modifier = {
-				name = "unified_sami"
-				duration = 9125
-			}
-		}
-	}
-
-	expand_sami_borders = {
-		icon = mission_assemble_an_army
-		required_missions = { unite_sami_people }
-		provinces_to_highlight = {
-			OR = {
-				area = northern_norway
-				area = norrland_area
-				area =	bothnia_area
-				province_id = 1776
-			}
-			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
-		}
-		position = 5
-		trigger = {
-			is_at_war = no
-			northern_norway = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			norrland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bothnia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1776 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			eastern_norway = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_norway = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			svealand_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			vastra_gotaland_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			finland_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -243,7 +116,101 @@ SMI_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_karelia_area = {
+			west_karelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			svealand_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			trondelag_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "unified_sami"
+				duration = 9125
+			}
+		}
+	}
+
+	expand_sami_borders = {
+		icon = mission_assemble_an_army
+		required_missions = { unite_sami_people }
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+				area = karelia_area
+				area = west_karelia_area
+				area = svealand_area
+				area = trondelag_area
+			}
+			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
+		}
+		position = 5
+		trigger = {
+			is_at_war = no
+			finland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_karelia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			svealand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			trondelag_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			eastern_norway = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_norway_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_norway = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vastra_gotaland_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gotaland_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -264,32 +231,19 @@ SMI_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			2 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			north_karelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
 				}
+				add_permanent_claim = ROOT
 			}
-			3 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			vladimir_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
 				}
-			}
-			4166 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -301,6 +255,7 @@ SMI_missions_1 = {
 			OR = {
 				area = eastern_norway
 				area = western_norway
+				area = southern_norway_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -315,9 +270,20 @@ SMI_missions_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			southern_norway_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			subarctic_islands_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kingdom_of_the_isles_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -367,7 +333,7 @@ SMI_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			kingdom_of_the_isles_area = {
+			grampians_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -408,20 +374,13 @@ SMI_missions_1 = {
 			}
 		}
 		effect = {
-			23 = {				# North Sea
+			373 = {				# North Sea
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 400
 					key = north_sea_ambition
 				}
-			}
-			ulster_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
 			}
 			lowlands_area = {
 				limit = {
@@ -431,6 +390,13 @@ SMI_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			scottish_marches_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ulster_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -462,21 +428,7 @@ SMI_missions_1 = {
 			}
 		}
 		effect = {
-			yorkshire_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_midlands_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_midlands_area = {
+			british_isles_region = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -503,11 +455,8 @@ SMI_missions_2 = {
 			OR = {
 				area = svealand_area
 				area = vastra_gotaland_area
+				area = gotaland_area
 				area = finland_area
-				province_id = 2
-				province_id = 3
-				province_id = 4166
-				province_id = 30
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -515,6 +464,10 @@ SMI_missions_2 = {
 		trigger = {
 			is_at_war = no
 			svealand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gotaland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -526,18 +479,6 @@ SMI_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			2 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			3 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4166 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			30 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			skaneland_area = {
@@ -546,15 +487,6 @@ SMI_missions_2 = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			25 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 			add_adm_power = 25
 			add_dip_power = 25
@@ -569,7 +501,6 @@ SMI_missions_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = skaneland_area
-				province_id = 25
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -577,9 +508,6 @@ SMI_missions_2 = {
 			is_at_war = no
 			skaneland_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			25 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -592,6 +520,20 @@ SMI_missions_2 = {
 				add_permanent_claim = ROOT
 			}
 			jutland_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kobenhavn_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sjaelland_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -618,6 +560,8 @@ SMI_missions_2 = {
 			OR = {
 				area = denmark_area
 				area = jutland_area
+				area = kobenhavn_area
+				area = sjaelland_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -631,13 +575,28 @@ SMI_missions_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			kobenhavn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sjaelland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
+			schleswig_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			17 = {				# Lubeck
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 400
 					key = danish_sea_ambition
 				}
 			}
@@ -659,28 +618,7 @@ SMI_missions_2 = {
 			}
 		}
 		effect = {
-			munster_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			connacht_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			leinster_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wales_area = {
+			ireland_region = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -706,11 +644,11 @@ SMI_missions_3 = {
 		position = 1
 		provinces_to_highlight = {
 			is_capital_of = ROOT
-			NOT = { fort_level = 3 }
+			NOT = { fort_level = 2 }
 		}
 		trigger = {
 			capital_scope = {
-				fort_level = 3
+				fort_level = 2
 			}
 		}
 		effect = {
@@ -731,6 +669,7 @@ SMI_missions_3 = {
 				area = laponia_area
 				area = bothnia_area
 				area = norrland_area
+				area = northern_norway
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -751,9 +690,17 @@ SMI_missions_3 = {
 				fort_level = 2
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			northern_norway = {
+				fort_level = 2
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			add_mil_power = 75
+			add_mil_power = 275
+			add_country_modifier = {
+				name = sami_defensiveness2
+				duration = -1
+			}
 		}
 	}
 
@@ -771,7 +718,7 @@ SMI_missions_3 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 350
 					key = north_sea_ambition
 				}
 			}
@@ -786,9 +733,7 @@ SMI_missions_3 = {
 				area = north_karelia_area
 				area = pomor_area
 				area = arkhangelsk_area
-				province_id = 1961
-				province_id = 33
-				province_id = 34
+				area = vladimir_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -807,35 +752,44 @@ SMI_missions_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1961 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			33 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			34 = {
+			vladimir_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			estonia_ingria_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			latgallia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			curonia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -852,6 +806,8 @@ SMI_missions_3 = {
 			OR = {
 				area = estonia_ingria_area
 				area = livonia_area
+				area = latgallia_area
+				area = north_livonia_area
 				area = curonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -864,6 +820,14 @@ SMI_missions_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			latgallia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -880,50 +844,12 @@ SMI_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			40 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			baltic_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-			}
-			41 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			42 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			767 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			43 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -949,7 +875,7 @@ SMI_missions_3 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 400
 					key = baltic_sea_ambition
 				}
 			}
@@ -971,29 +897,29 @@ SMI_missions_4 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			315 = {			# White Sea
+			313 = {			# White Sea
 				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
-			23 = {				# North Sea
+			313 = {				# White Sea
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 175
 					key = north_sea_ambition
 				}
 			}
-			315 = {				# White Sea
+			7799 = {				# Stockholm Sea
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 300
 					key = white_sea_ambition
 				}
 			}
 			capital_scope = {
-				add_base_production = 3
+				add_base_production = 4
 			}
 		}
 	}
@@ -1008,15 +934,16 @@ SMI_missions_4 = {
 			}
 		}
 		effect = {
-			28 = {				# Baltic Sea
+			33 = {				# Baltic Sea
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 400
 					key = baltic_sea_ambition
 				}
 			}
 			capital_scope = {
+				add_base_tax = 2
 				add_base_production = 2
 			}
 		}
@@ -1027,16 +954,24 @@ SMI_missions_4 = {
 		required_missions = { control_novgorod_trade }
 		position = 3
 		trigger = {
-			28 = {			# Baltic Sea
+			1 = {			# Baltic Sea
 				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
-			17 = {				# Lubeck
+			1 = {				# Lubeck
 				add_trade_modifier = {
 					who = ROOT
 					duration = 5475
-					power = 20
+					power = 200
+					key = danish_sea_ambition
+				}
+			}
+			43 = {				# Lubeck
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 400
 					key = danish_sea_ambition
 				}
 			}
@@ -1048,14 +983,14 @@ SMI_missions_4 = {
 		required_missions = { end_swedish_trade dominate_norwegian_trade }
 		position = 4
 		trigger = {
-			17 = {			# Lubeck
+			45 = {			# Lubeck
 				is_strongest_trade_power = SMI
 			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = scandinavian_trade
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -1074,9 +1009,9 @@ SMI_missions_4 = {
 				}
 				set_government_rank = 3
 			}
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
 			add_country_modifier = {
 				name = "sami_empire"
 				duration = -1
@@ -1101,6 +1036,12 @@ SMI_missions_5 = {
 			OR = {
 				province_id = 1104
 				province_id = 1105
+				province_id = 3112
+				province_id = 3113
+				province_id = 3111
+				province_id = 5588
+				province_id = 5589
+				province_id = 5590
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1109,8 +1050,16 @@ SMI_missions_5 = {
 		}
 		position = 1
 		trigger = {
-			owns_core_province = 1104
-			owns_core_province = 1105
+			OR = {
+				owns_core_province = 3112
+				owns_core_province = 3113
+				owns_core_province = 3111
+				owns_core_province = 5588
+				owns_core_province = 5589
+				owns_core_province = 5590
+				owns_core_province = 1104
+				owns_core_province = 1105
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -1153,7 +1102,7 @@ SMI_missions_5 = {
 			add_dip_power = 50
 			add_country_modifier = {
 				name = sami_colonial_enthusiasm
-				duration = 5475
+				duration = -1
 			}
 			add_prestige = 10
 		}

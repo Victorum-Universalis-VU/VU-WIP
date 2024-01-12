@@ -1,4 +1,7 @@
 ﻿l_english:
+ #Quonton Ugria
+ ugria_nation_title:0 "Form Finno-Ugric Nation"
+ ugria_nation_desc:0 "For untold centuries the scattered ugric nations of the world have been divided and preyed upon by outsiders and foes. The vision of a lasting union remains a tantalizing possibility..."
  #Roman Revival
  vu_restore_roman_culture_title: "£rome_culture_icon_le£ Romanization"
  vu_restore_roman_culture_desc: "As our Roman ambitions come to fruition, we must return the old Latin Roman culture and language to the lands that once spoke Latin proudly!"

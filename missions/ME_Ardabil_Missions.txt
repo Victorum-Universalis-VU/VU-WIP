@@ -557,7 +557,7 @@ ARL_missions_3 = {
 	}
 
 	ARL_Shahanshah = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { ARL_Capture_Tabriz }
 		position = 5
 		trigger = {

@@ -18,8 +18,8 @@ country_decisions = {
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			OR = {
-			tag = FIN
-			culture_group = scandinavian
+			    has_country_flag = fin_scandinavia
+			    culture_group = scandinavian
 			}
 			OR = {
 				ai = no
