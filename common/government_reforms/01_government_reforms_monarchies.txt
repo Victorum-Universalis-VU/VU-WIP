@@ -7992,7 +7992,7 @@ romanian_principality = {
 		nobles_influence_modifier = 0.05
 		improve_relation_modifier = 0.2
 		manpower_in_culture_group_provinces = 0.1
-		governing_cost = 0.50
+		governing_cost = 0.33
 	}
 }
 
@@ -8010,6 +8010,6 @@ romanian_united_principality = {
 		expand_infrastructure_cost_modifier = -0.25
 		liberty_desire_from_subject_development = -0.50
 		manpower_in_culture_group_provinces = 0.20
-		governing_cost = 0.75
+		governing_cost = 0.66
 	}
 }

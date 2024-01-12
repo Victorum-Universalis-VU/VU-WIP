@@ -351,7 +351,7 @@ LOR_missions_3 = {
 	}
 
 	lor_kingdom_of_lotharinga = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		position = 6
 		required_missions = { lor_restore_lower_lorraine }
 		trigger = {

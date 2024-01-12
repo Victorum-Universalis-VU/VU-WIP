@@ -2800,7 +2800,7 @@ llama = {
 		infantry_cost = -0.05
 	}
 	province = {
-		global_trade_goods_size_modifier = 0.2
+		trade_goods_size_modifier = 0.2
 	}
 	chance = {
 		factor = 50

@@ -1261,7 +1261,7 @@ KON_missions_3 = {
 	}
 
 	KON_modern_empire = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { KON_modern_government KON_colonies KON_build_buildings KON_assimilate_central_cultures KON_flourishing_kongo }
 		position = 16
 		trigger = {

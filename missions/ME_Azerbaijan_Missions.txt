@@ -785,7 +785,7 @@ AZE_Missions_2 = {
 		}
 	}
 	AZE_an_empire_spanning_wide = {
-		icon = mission_crown_byzantium
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { AZE_thrust_east AZE_conquer_Iran AZE_conquer_anatolia }
 		position = 8
 		provinces_to_highlight = {

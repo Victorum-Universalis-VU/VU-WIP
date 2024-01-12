@@ -1,5 +1,9 @@
 ﻿l_english:
  #VU Quonton additions
+ #
+ german_kaiserreich_republic:0 "German Republic"
+ german_kaiserreich_republic_desc:0 "German Republic government represents the Federal Republic of Germany, created by the patchwork of small German countries in the former HRE."
+ #
  romanian_principality:0 "Romanian Principality"
  romanian_principality_desc:0 "As a historical term designating the pre-Union Principalities of Moldavia and Wallachia, sometimes including the Principality of Transylvania, the term "Romanian Principalities" dates back to the beginnings of modern Romanian history in the mid-19th century."
  #
@@ -268,27 +272,27 @@
  western_principality_legacy_desc: "Is a form of government where focus and emphasis is placed on the territorial integrity of the principality, with the prince as lord of all the land and other noble lords swearing fealty to the prince directly."
  #
  french_kingdom_legacy: "Kingdom of France"
- french_kingdom_legacy_desc: "REPLACE_ME"
+ french_kingdom_legacy_desc: "Descended directly from the western Frankish realm of the Carolingian Empire. Royaulme de France is the historical umbrella term given to the various political entities of France since the mid to high medieval periods, representing what is arguably one of the most powerful states in Europe today with its ruler assuming the title of 'Rex Francorum' or 'King of the Franks' upon their coronation."
  #
  belgian_kingdom_legacy: "Kingdom of Belgium"
- belgian_kingdom_legacy_desc: "REPLACE_ME"
+ belgian_kingdom_legacy_desc: "Situated in what is considered as one of the liveliest and most economically prosperous regions of Europe, with both sea and inland connections to some of Europes most prosperous commercial centres, Belgium's existence is owed to its unification of the Flemish, Walloonian and Germanic peoples of the low countries, whilst at the same time fighting off potential threats to its sovereignity from the neighbouring powers of Holland, France, Englad and the Holy Roman Empire. The name for Belgium ofc is derived from the Latin word Belgica, used in Julius Caesar's 'Gallic Wars', to describe a nearby region in the period around 55 BCE. Belgium has also been the battleground of European powers, earning the moniker 'the Battlefield of Europe'."
  #
  first_french_empire_legacy: "First French Empire"
- first_french_empire_legacy_desc: "REPLACE_ME"
+ first_french_empire_legacy_desc: ""
  #
  second_french_empire_legacy: "Second French Empire"
- second_french_empire_legacy_desc: "REPLACE_ME"
+ second_french_empire_legacy_desc: ""
  #
  national_assembly_republic_legacy: "National Assembly Republic"
- national_assembly_republic_legacy_desc: "REPLACE_ME"
+ national_assembly_republic_legacy_desc: ""
  #
  french_second_republic_legacy: "French Second Republic"
- french_second_republic_legacy_desc: "REPLACE_ME"
+ french_second_republic_legacy_desc: ""
  #
  french_third_republic_legacy: "French Third Republic"
- french_third_republic_legacy_desc: "REPLACE_ME"
+ french_third_republic_legacy_desc: ""
  #
  directory_republic_legacy: "Directory"
- directory_republic_legacy_desc: "REPLACE_ME"
+ directory_republic_legacy_desc: ""
  
  

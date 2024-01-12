@@ -187,16 +187,21 @@ caucasian_republic = {
 	duration = 7
 }
 
+ #Re-added by Quonton for VU v1.36.2.*
 common_republic_reform = {
 	icon = common_republic_reform
 	allow_normal_conversion = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = { 
-		max_absolutism = -40
-		reelection_cost = 0.15
+		max_absolutism = -75
+		reelection_cost = -0.1
+		global_trade_goods_size_modifier = 0.1
+		republican_tradition = 0.10
+		land_morale = 0.05
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes

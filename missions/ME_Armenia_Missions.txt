@@ -4,6 +4,12 @@ armenia_missions_slot_1 = {
 	ai = yes
 	potential = {
 		tag = ARM
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -44,6 +50,12 @@ armenia_missions_slot_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -125,6 +137,14 @@ armenia_missions_slot_3_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
+		}
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -225,6 +245,12 @@ armenia_missions_slot_3_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -259,7 +285,21 @@ armenia_missions_slot_3_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			imereti_area = {
+			qazakh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ardabil_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samtskhe_area = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -307,6 +347,24 @@ armenia_missions_slot_3_2 = {
 					duration = -1
 				}
 			}
+			qazakh_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = ARM_armenian_highlands
+					duration = -1
+				}
+			}
+			tabriz_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = ARM_armenian_highlands
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -319,6 +377,14 @@ armenia_missions_slot_4_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
+		}
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -429,6 +495,12 @@ armenia_missions_slot_4_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -548,6 +620,14 @@ armenia_missions_slot_5_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
+			tag = KCN
+			tag = ART
+		}
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -595,7 +675,21 @@ armenia_missions_slot_5_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			north_kurdistan_area = {
+			mtskheta_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			imereti_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pontus_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -691,7 +785,7 @@ armenia_missions_slot_5_1 = {
 	}
 	
 	armenia_kingdom_of_armenia = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		position = 7
 		required_missions = {
 			armenia_path_to_anatolia
@@ -731,6 +825,12 @@ armenia_missions_slot_5_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	

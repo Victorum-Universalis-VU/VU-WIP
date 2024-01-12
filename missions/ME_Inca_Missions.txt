@@ -2312,7 +2312,7 @@ inca_missions_4 = {
 	}
 
 	inca_centralization = {
-		icon = me_mission_shiny_crown_indian
+		icon = me_mission_shiny_crown_indian #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { inca_roads_in_chinchansuyu inca_capital_administration inca_roads_in_collasuyu }
 		position = 7
 		trigger = {

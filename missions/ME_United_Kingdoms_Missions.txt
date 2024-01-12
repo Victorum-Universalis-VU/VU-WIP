@@ -657,7 +657,7 @@ ENG_UKS_missions_3 = {
 	}
 	
 	UKS_union = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { UKS_Palace UKS_develop_french_lands }
 		position = 8
 		trigger = {
@@ -1178,7 +1178,7 @@ UKS_missions_1 = {
 	}
 	
 	UKS_the_emperor = {
-		icon = me_mission_shiny_crown_hre
+		icon = me_mission_shiny_crown_hre #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { UKS_elector_support }
 		position = 17
 		trigger = {

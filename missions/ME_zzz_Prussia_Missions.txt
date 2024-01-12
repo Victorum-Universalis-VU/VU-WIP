@@ -617,7 +617,9 @@ PRU_missions_2_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				if = {
 					limit = {
-						ai = yes
+						owner = {
+							ai = yes
+						}
 					}
 					OR = {
 						development = 24
@@ -712,26 +714,28 @@ PRU_missions_2_2 = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
 						NOT = {
 							OR = {
-								development_in_provinces = {
-									OR = {
-										area = north_rhine_area
-										area = lower_rhineland_area
-										area = westphalia_area
-										area = north_westphalia_area
-									}
-									value = 200
-								}
-								any_subject_country = {
-									development_in_provinces = {
-										OR = {
-											area = north_rhine_area
-											area = lower_rhineland_area
-											area = westphalia_area
-											area = north_westphalia_area
-										}
-										value = 100
-									}
-								}
+								ROOT = {
+							    	development_in_provinces = {
+							    		OR = {
+							    			area = north_rhine_area
+							    			area = lower_rhineland_area
+							    			area = westphalia_area
+							    			area = north_westphalia_area
+							    		}
+							    		value = 200
+							    	}
+							    	any_subject_country = {
+							    		development_in_provinces = {
+							    			OR = {
+							    				area = north_rhine_area
+							    				area = lower_rhineland_area
+							    				area = westphalia_area
+							    				area = north_westphalia_area
+							    			}
+							    			value = 100
+							    		}
+							    	}
+							    }
 							}
 						}
 					}
@@ -2006,9 +2010,11 @@ PRU_missions_4 = {
 					OR = {
 						NOT = { owned_by = ROOT }
 						NOT = {
-							development_in_provinces = {
-								area = silesia_area
-								value = 75
+							ROOT = {
+								development_in_provinces = {
+							    	area = silesia_area
+							    	value = 75
+							    }
 							}
 						}
 					}
@@ -2245,7 +2251,9 @@ PRU_missions_4 = {
 								value = 0
 							}
 							export_to_variable = {
-								#GUH?
+								which = money_to_give
+								value = years_of_income
+								who = ROOT
 							}
 						}
 					}

@@ -281,6 +281,6 @@ WES_significant_religious_minority = {
 	local_missionary_strength = -0.05
 }
 
-WES_swabia = {
+WES_swabia_modifier = {
 	 mercenary_discipline = 0.05
 }

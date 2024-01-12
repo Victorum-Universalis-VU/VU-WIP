@@ -139,9 +139,9 @@ seat_in_parliament = {
 	#local_manpower_modifier = 0.1			#VU AddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
 	#local_sailors_modifier = 0.05			#VU AddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
 	#local_tax_modifier = 0.1			#VU AddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
-	#local_production_efficiency = 0.1		#VU AddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
+	local_production_efficiency = 0.1		#VU AddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy. --- Readded because in history places with parlimentary repusentation were given extra attention and funding leading to ecomonic prosparity
 	local_institution_spread = 0.10			#VU AddOn new - local representation at a federal level does often mean the province benefits from new ideas sooner. This also is a consolation prize for the enlightenment, which no longer spreads in provinces with a seat in parliament.
-	local_development_cost = -0.05			#VU AddOn new - little bonus, because I say so =p
+	local_development_cost = -0.075			#VU AddOn new - little bonus, because I say so =p
 	local_unrest = -2				#VU AddOn new - People appreciate representation
 }
 

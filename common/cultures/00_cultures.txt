@@ -6703,7 +6703,7 @@ turko_semitic = { #Levantine -Darth Modus changed to Arabic
 	}
 	palastinian_arabic = { #Palastinian Arab
         graphical_culture = muslimgfx
-		#primary = NA Would like to add palastine as releasable tag
+		primary = HMA
 		dynasty_names = {
 			Mirdasid Maanid "al-Shihab" Yakubid Hassanid
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli 
