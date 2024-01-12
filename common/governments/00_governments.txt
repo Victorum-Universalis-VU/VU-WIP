@@ -1190,6 +1190,7 @@ republic = {
 				improved_veche_republic
 				roman_diarchy_reform
 				german_kaiserreich_republic
+				german_kaiserreich_peasant_republic
 				althing_elite_reform
 		    	puppet_kingdom_reform
 		    	transitional_government_reform

@@ -85,6 +85,7 @@
  ME_Germany_Events.EVTDESC1: "With the unification of every important German state, we can finally look to give representation to most of them. A change in our working government will be needed in order to achieve that. A more libertarian approach in fact."
  ME_Germany_Events1.EVTOPT1: "Long live the Kaiserreich!"
  ME_Germany_Events1.EVTOPT2: "Libertarian thoughts is not what [Root.GetName] needs."
+ ME_Germany_Events1.EVTOPT3: "The Fires of Revolution prevail! Long live the German Peasant Republic!"
 
  ME_Germany_Events.EVTNAME2: "Fate of the Polish culture"
  ME_Germany_Events.EVTDESC2: "With the Polish nation defeated, the fate of the Polish culture lies at our hand. What shall we do?"

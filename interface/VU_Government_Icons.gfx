@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "government_reform_german_republic_democratic_kaiserreich"
+		texturefile = "gfx//interface//government_reform_icons//german_republic_democratic_kaiserreich.dds"
+	}
+	spriteType = {
+		name = "government_reform_german_kaiserreich"
+		texturefile = "gfx//interface//government_reform_icons//german_kaiserreich.dds"
+	}
+	spriteType = {
+		name = "government_reform_german_republic_kaiserreich"
+		texturefile = "gfx//interface//government_reform_icons//german_republic_kaiserreich.dds"
+	}
+	spriteType = {
 		name = "government_reform_ara_consulate_sea"
 		texturefile = "gfx//interface//government_reform_icons//ara_consulate_sea.dds"
 	}
