@@ -35,7 +35,7 @@ UGR_ideas = {
 		build_cost = -0.15
 		development_cost = -0.2
 	}
-	found_turun_akatemia_ugr = {
+	found_turun_akatemia = {
 		technology_cost = -0.05
 	}
 	the_white_death_ugr = {

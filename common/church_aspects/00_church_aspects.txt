@@ -92,7 +92,7 @@ holy_sacraments_aspect = {
 		}
 	}
 	modifier = { 
-		discipline = 0.075
+		discipline = 0.05
 	}
 	ai_will_do = {
 		factor = 12
@@ -200,7 +200,7 @@ heretics_deported_aspect = {
 		}
 	}
 	modifier = {
-		global_colonial_growth = 17.5
+		global_colonial_growth = 15
 	}
 	ai_will_do = {
 		factor = 10

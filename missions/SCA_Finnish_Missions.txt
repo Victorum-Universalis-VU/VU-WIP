@@ -1001,7 +1001,7 @@ vu_fin_missions_3_uralia = {
 		effect = { 
 			add_army_tradition = 25
 			add_army_professionalism = 0.15
-			add_yearly_manpower = 1
+			add_yearly_manpower = 10
 			create_general = { tradition = 100 }
 			define_general = {
     				shock = 6
