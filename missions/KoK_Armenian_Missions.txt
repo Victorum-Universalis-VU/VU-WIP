@@ -10,8 +10,6 @@ arm_first_branch = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
@@ -312,8 +310,6 @@ arm_second_branch = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
@@ -417,8 +413,6 @@ arm_third_branch = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
@@ -992,8 +986,6 @@ arm_fourth_branch = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"
@@ -1337,8 +1329,6 @@ arm_fifth_branch = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
 		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "King of Kings"

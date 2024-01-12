@@ -7,13 +7,11 @@ country_has_both_paradox_and_me_missions = {
 				tag = AKK
 				tag = ARM
 				tag = MLK
-				tag = KCN
-				tag = ART
 				AND = {
 					ARB_hedjaz_najd_bedouin_potential = yes
 					has_generic_arabian_missions = yes 
 				}
-			#	YEM_is_yemeni_nation = yes
+				YEM_is_yemeni_nation = yes
 				tag = ARB
 				tag = ARL
 				tag = GEO
