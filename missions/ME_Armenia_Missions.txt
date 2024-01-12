@@ -4,12 +4,6 @@ armenia_missions_slot_1 = {
 	ai = yes
 	potential = {
 		tag = ARM
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		}
 	}
 	has_country_shield = yes
 	
@@ -50,12 +44,6 @@ armenia_missions_slot_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		}
 	}
 	has_country_shield = yes
 	
@@ -137,14 +125,6 @@ armenia_missions_slot_3_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
-		}
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -245,12 +225,6 @@ armenia_missions_slot_3_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		}
 	}
 	has_country_shield = yes
 	
@@ -345,14 +319,6 @@ armenia_missions_slot_4_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
-		}
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -463,12 +429,6 @@ armenia_missions_slot_4_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		}
 	}
 	has_country_shield = yes
 	
@@ -588,14 +548,6 @@ armenia_missions_slot_5_1 = {
 		OR = {
 			tag = MLK
 			tag = ARM
-			tag = KCN
-			tag = ART
-		}
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -779,12 +731,6 @@ armenia_missions_slot_5_2 = {
 	ai = yes
 	potential = {
 		tag = ARM
-		if = {
-			limit = {
-				has_dlc = "King of Kings"
-			}
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-		}
 	}
 	has_country_shield = yes
 	

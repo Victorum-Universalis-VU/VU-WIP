@@ -10,7 +10,7 @@ KoK_YEM_missions_1 = {
 		YEM_is_yemeni_nation = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -168,7 +168,7 @@ KoK_YEM_missions_2 = {
 		YEM_is_yemeni_nation = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -446,7 +446,7 @@ KoK_YEM_missions_3 = {
 		YEM_is_yemeni_nation = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -587,7 +587,7 @@ KoK_YEM_missions_4 = {
 		YEM_is_yemeni_nation = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -761,7 +761,7 @@ KoK_YEM_missions_5 = {
 		YEM_is_yemeni_nation = yes
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -986,7 +986,7 @@ KoK_YEM_missions_2_religious = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1087,7 +1087,7 @@ KoK_YEM_missions_3_religious = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1166,7 +1166,7 @@ KoK_YEM_missions_1_RAS_religious = {
 			was_tag = RAS
 		}
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1224,7 +1224,7 @@ KoK_YEM_missions_2_RAS_religious = {
 			was_tag = RAS
 		}
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1409,7 +1409,7 @@ KoK_YEM_missions_3_RAS_religious = {
 			was_tag = RAS
 		}
 		NOT = { map_setup = map_setup_random }
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
