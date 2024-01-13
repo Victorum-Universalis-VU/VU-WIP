@@ -39,8 +39,32 @@ country_event = {
 		add_prestige = 5
 		add_absolutism = 10
 		change_government = republic
-		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 		add_government_reform = german_kaiserreich_republic
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+	}
+
+	option = {
+		name = ME_Germany_Events1.EVTOPT3
+
+		trigger = {
+ 			has_reform = peasants_republic
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				government = republic
+			}
+		}
+		
+		add_prestige = 5
+		add_absolutism = 10
+		change_government = republic
+		add_government_reform = german_kaiserreich_peasant_republic
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 20 }
+		override_country_name = ddr_germany
 	}
 }
 

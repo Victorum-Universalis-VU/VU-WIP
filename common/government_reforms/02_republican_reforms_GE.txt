@@ -197,9 +197,9 @@ common_republic_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = { 
-		max_absolutism = -75
+		max_absolutism = -40
 		reelection_cost = -0.1
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.05
 		republican_tradition = 0.10
 		land_morale = 0.05
 	}
@@ -249,6 +249,7 @@ sovereignity_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = sovereignity_reform
 			has_reform = peasants_republic
 		}
@@ -378,6 +379,7 @@ peasant_council_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = peasant_council_reform
 			has_reform = peasants_republic
 		}
@@ -606,6 +608,7 @@ peasant_militia_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = peasant_militia_reform
 			has_reform = peasants_republic
 		}
@@ -1107,6 +1110,7 @@ clergical_administration_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = clergical_administration_reform
 			has_reform = peasants_republic
 		}
@@ -1245,6 +1249,7 @@ hansa_representatives_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = hansa_representatives_reform
 			has_reform = peasants_republic
 		}
@@ -1377,6 +1382,7 @@ hansa_domination_reform = {
 	}
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = hansa_domination_reform
 			has_reform = peasants_republic
 		}
@@ -1560,6 +1566,7 @@ independent_principle_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = independent_principle_reform
 			has_reform = peasants_republic
 		}
@@ -1703,6 +1710,7 @@ peasantry_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = peasantry_reform
 			has_reform = peasants_republic
 		}
@@ -1745,6 +1753,7 @@ hansa_universities_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
+			has_reform = german_kaiserreich_peasant_republic
 			has_reform = hansa_universities_reform
 			has_reform = peasants_republic
 		}

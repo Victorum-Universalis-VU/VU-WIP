@@ -1,8 +1,11 @@
 ﻿l_english:
  #VU Quonton additions
  #
+ german_kaiserreich_peasant_republic:0 "German Democratic Republic"
+ german_kaiserreich_peasant_republic_desc:0 "The German Democratic Republic government represents the Federal Republic of Germany, created by the patchwork of small German countries in the former HRE. The Peasants, and the Workers, of this state have been liberated from the oppression of Monarchy."
+ #
  german_kaiserreich_republic:0 "German Republic"
- german_kaiserreich_republic_desc:0 "German Republic government represents the Federal Republic of Germany, created by the patchwork of small German countries in the former HRE."
+ german_kaiserreich_republic_desc:0 "The German Republic government represents the Federal Republic of Germany, created by the patchwork of small German countries in the former HRE."
  #
  romanian_principality:0 "Romanian Principality"
  romanian_principality_desc:0 "As a historical term designating the pre-Union Principalities of Moldavia and Wallachia, sometimes including the Principality of Transylvania, the term "Romanian Principalities" dates back to the beginnings of modern Romanian history in the mid-19th century."
