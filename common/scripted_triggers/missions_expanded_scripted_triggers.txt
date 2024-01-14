@@ -90,7 +90,6 @@ country_has_both_paradox_and_me_missions = {
 				tag = KNI
 				tag = NAX
 				#Germany
-				tag = GER
 				tag = HLR
 				tag = SAX
 				tag = THU
@@ -248,7 +247,6 @@ country_has_both_paradox_and_me_missions = {
 		tag = TRI
 		tag = MAI
 		tag = DTT
-		tag = GER
 		tag = HLR
 		#Pomerania
 		tag = POM

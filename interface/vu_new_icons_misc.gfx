@@ -30,6 +30,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "mitteleuropa_icon"
+		texturefile = "gfx//interface//ideas_EU4//mitteleuropa_icon.dds"
+	}
+
+	spriteType = {
 		name = "vu_arctic_bad"
 		texturefile = "gfx//interface//ideas_EU4//vu_arctic_bad.dds"
 	}
