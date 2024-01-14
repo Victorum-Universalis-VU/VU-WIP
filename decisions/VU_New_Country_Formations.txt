@@ -497,15 +497,19 @@ country_decisions = {
 					NOT = { government = theocracy }
 				}
 			}
-			OR = {  
-				primary_culture = hannoverian #Westphalian
-				primary_culture = pommeranian
-				primary_culture = hessian
-				primary_culture = saxon
-				primary_culture = bavarian
-				primary_culture = prussian
-				primary_culture = swabian
-				primary_culture = franconian
+			culture_group = germanic
+			NOT = {
+				OR = {  
+					primary_culture = ger_dutch
+					primary_culture = ger_brabantian
+					primary_culture = ger_zeelandic
+					primary_culture = ger_limburgish
+					primary_culture = ger_guelders
+					primary_culture = ger_flemish
+					primary_culture = ger_frisian
+					primary_culture = ger_east_frisian
+					primary_culture = ger_north_frisian
+				}
 			}
 		}
 		provinces_to_highlight = {
@@ -583,8 +587,9 @@ country_decisions = {
 			else = {
 				swap_non_generic_missions = yes
 			}
-			change_tag = GER
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			change_tag = GER
 			emperor = {
 				add_opinion = {
 					who = root

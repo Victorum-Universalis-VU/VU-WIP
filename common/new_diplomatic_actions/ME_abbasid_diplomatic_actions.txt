@@ -4,13 +4,15 @@ abbasid_denounce_actions = {
 	require_acceptance = no
 
 	is_visible = {
-		ME_has_abbasid_caliph = yes
+		#ME_has_abbasid_caliph = yes #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+		has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		ME_can_benefit_from_abbasid_caliph = yes
 	}
 	
 	is_allowed = {
 		hidden_trigger = {
-			ME_has_abbasid_caliph = yes
+			#ME_has_abbasid_caliph = yes #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 			# FROM = {
 				# is_enemy = ROOT
 				# religion = ROOT
@@ -100,7 +102,7 @@ abbasid_call_jihad = {
 	require_acceptance = no
 
 	is_visible = {
-		ME_has_abbasid_caliph = yes
+		has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		ME_can_benefit_from_abbasid_caliph = yes
 		# FROM = {
 			# NOT = { religion_group = ROOT }
@@ -109,7 +111,7 @@ abbasid_call_jihad = {
 	
 	is_allowed = {
 		hidden_trigger = {
-			ME_has_abbasid_caliph = yes
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		}
 		FROM = {
 			NOT = { religion_group = ROOT }
@@ -188,13 +190,13 @@ abbasid_praise = {
 	require_acceptance = no
 
 	is_visible = {
-		ME_has_abbasid_caliph = yes
+		has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		ME_can_benefit_from_abbasid_caliph = yes
 	}
 	
 	is_allowed = {
 		hidden_trigger = {
-			ME_has_abbasid_caliph = yes
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 			# FROM = {
 				# religion = ROOT
 			# }
@@ -741,13 +743,13 @@ abbasid_ransom = {
 	require_acceptance = yes
 
 	is_visible = {
-		ME_has_abbasid_caliph = yes
+		has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		has_country_flag = ABA_ransom_abbasid
 	}
 	
 	is_allowed = {
 		hidden_trigger = {
-			ME_has_abbasid_caliph = yes
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 			has_country_flag = ABA_ransom_abbasid
 		}
 		FROM = {

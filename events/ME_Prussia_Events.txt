@@ -771,6 +771,69 @@ country_event = {
 			}
 			add_devastation = -25
 		}
+		8248 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		8244 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		8243 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		8242 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		8241 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		8240 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
+		7677 = { #Legnica 10 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+			}
+			add_devastation = -25
+		}
 	}
 	option = {
 		name = ME_Prussia_Events.17.b
@@ -782,38 +845,103 @@ country_event = {
 			add_base_tax = 1
 			add_base_production = 1
 			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
+			change_culture = silesian_german
+			add_devastation = 25
 		}
 		4238 = { #Legnica 10 dev
 			add_base_tax = 1
 			add_base_production = 1
 			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
+			change_culture = silesian_german
+			add_devastation = 25
 		}
 		264 = { #Wroclaw 13 dev
 			add_base_manpower = 1
 			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
+			change_culture = silesian_german
+			add_devastation = 25
 		}
 		4723 = { #Opole 8 dev
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
+			change_culture = silesian_german
+			add_devastation = 25
 		}
 		263 = { #Racibórz 8 dev
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
+			change_culture = silesian_german
+			add_devastation = 25
 		}
+		8248 = { 
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		8243 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		8244 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		8242 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		8241 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		4723 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		8240 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+		7677 = { #Racibórz 8 dev
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = silesian_german
+			add_devastation = 25
+		}
+
 	}
 }
 country_event = {

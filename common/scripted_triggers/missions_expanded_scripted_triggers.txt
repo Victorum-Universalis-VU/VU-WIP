@@ -43,8 +43,6 @@ country_has_both_paradox_and_me_missions = {
 			#	tag = SPA
 				tag = JAP
 				tag = TUR
-				tag = BRA
-				tag = PRU
 			}
 		}
 		# Dharma DLC
@@ -190,8 +188,6 @@ country_has_both_paradox_and_me_missions = {
 	#		is_random_new_world = no
 	#		NOT = { map_setup = map_setup_random }
 	#	}
-		tag = PRU
-		tag = BRA
 		tag = KOR
 		tag = TUR
 		tag = RMM

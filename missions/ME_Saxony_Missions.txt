@@ -1,3 +1,4 @@
+#VU - Updated by Quonton for v1.36.2.*
 saxony_missions_slot_1 = {
 	slot = 1
 	generic = no
@@ -1500,6 +1501,8 @@ saxony_missions_slot_3 = {
 					set_country_flag = saxony_the_road_to_germany_completed
 					complete_mission = saxony_claim_east_frankish_heritage
 				}
+				set_country_flag = me_hab_easier_german_formation
+				custom_tooltip = me_hab_easier_german_formation
 				custom_tooltip = saxony_the_road_to_germany_tt
 			}
 		}

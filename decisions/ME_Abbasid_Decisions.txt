@@ -8,7 +8,8 @@ country_decisions = {
 					has_province_modifier = Abbasid_Caliph_in_province
 				}
 			}
-			ME_has_abbasid_caliph = yes
+			#ME_has_abbasid_caliph = yes #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -36,7 +37,7 @@ country_decisions = {
 	Abbasid_flee = {
 		major = yes
 		potential = {
-			ME_has_abbasid_caliph = yes
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 			is_at_war = yes
 			religion_group = muslim
 		}

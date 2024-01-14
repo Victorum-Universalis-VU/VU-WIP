@@ -116,6 +116,16 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
+				culture = moravian
+			}
+			change_culture = czechBOH
+			add_province_modifier = {
+				name = germany_fate_of_the_polish_culture
+				duration = 7300
+			}
+		}
+		every_owned_province = {
+			limit = {
 				culture = schlesian
 			}
 			change_culture = silesian_german

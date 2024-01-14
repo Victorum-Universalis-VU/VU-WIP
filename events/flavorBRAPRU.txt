@@ -2472,7 +2472,7 @@ country_event = {
 		}
 		if = {
 			limit = { has_dlc = "Emperor" }
-			mission_completed = emp_brapru_renovate_berlin
+			mission_completed = PRU_berlin_colln
 		}
 	}
 

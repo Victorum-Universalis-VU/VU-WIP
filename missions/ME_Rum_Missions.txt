@@ -4918,7 +4918,8 @@ RUM_missions_4_religion = {
 				army_size = 100
 				army_size_percentage = 0.9
 			}
-			ME_has_abbasid_caliph = yes
+			#ME_has_abbasid_caliph = yes #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		}
 		effect = {
 			country_event = { id = ME_Rum_Events.101 }

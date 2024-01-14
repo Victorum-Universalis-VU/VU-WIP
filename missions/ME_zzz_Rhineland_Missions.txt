@@ -1,3 +1,4 @@
+#VU - Updated by Quonton for v1.36.2.*
 generic_rhenish_missions_4_2 = {
 	slot = 4
 	generic = no
@@ -605,6 +606,8 @@ RHN_missions_2 = {
 				name = RHN_unifying_germany_modifier
 				duration = 9125
 			}
+			set_country_flag = me_hab_easier_german_formation
+			custom_tooltip = me_hab_easier_german_formation
 		}
 	}
 
