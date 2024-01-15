@@ -1,3 +1,4 @@
+#VU - Updated by Quonton for v1.36.2.*
 generic_rhenish_missions_4_2 = {
 	slot = 4
 	generic = no
@@ -265,22 +266,22 @@ RHN_missions_1 = {
 				tooltip = RHN_dev_at_least_100
 				development_in_provinces = {
 					OR = {
-				province_id = 2975
-				province_id = 84
-				province_id = 7527
-				province_id = 7317
-				province_id = 3199
-				province_id = 7533
-				province_id = 7529	
-				province_id = 7530
-				province_id = 3292
-				province_id = 3200
-				province_id = 7532
-				province_id = 8514
-				province_id = 7526
-				province_id = 7527
-				province_id = 86
-				province_id = 7526
+				        province_id = 2975
+				        province_id = 84
+				        province_id = 7527
+				        province_id = 7317
+				        province_id = 3199
+				        province_id = 7533
+				        province_id = 7529	
+				        province_id = 7530
+				        province_id = 3292
+				        province_id = 3200
+				        province_id = 7532
+				        province_id = 8514
+				        province_id = 7526
+				        province_id = 7527
+				        province_id = 86
+				        province_id = 7526
 					}
 					value = 300
 				}
@@ -605,6 +606,8 @@ RHN_missions_2 = {
 				name = RHN_unifying_germany_modifier
 				duration = 9125
 			}
+			set_country_flag = me_hab_easier_german_formation
+			custom_tooltip = me_hab_easier_german_formation
 		}
 	}
 

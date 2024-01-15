@@ -6,6 +6,46 @@
 
 #Quonton
 
+UGR_ideas = {
+	start = {
+		discipline = 0.075
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		 culture_conversion_cost = -0.25
+	}
+	
+	trigger = {
+		tag = UGR
+	}
+	free = yes
+	
+	expand_ugric_fortresses = {
+		defensiveness = 0.15
+	}
+	hakkapelitta_ugr = {
+ 		cavalry_power = 0.15
+	}	
+	the_fourth_estate_ugr = {
+		production_efficiency = 0.2
+		global_trade_goods_size_modifier = 0.05
+	}
+	settle_middle_ugria = {
+		build_cost = -0.15
+		development_cost = -0.2
+	}
+	found_turun_akatemia = {
+		technology_cost = -0.05
+	}
+	the_white_death_ugr = {
+		hostile_attrition = 2
+		max_hostile_attrition = 3
+	}
+	anjala_conspiracy_ugr = {
+		land_morale = 0.2
+	}
+}
 
 vu_komi_ideas = {
 	start = {

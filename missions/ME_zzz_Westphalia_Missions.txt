@@ -121,7 +121,7 @@ WES_missions_1 = {
 			}
 			custom_tooltip = WES_more_mercs
 			add_country_modifier = {
-				name = WES_swabia
+				name = WES_swabia_modifier
 				duration = 9125
 			}
 			#ME_mercenary_commander?

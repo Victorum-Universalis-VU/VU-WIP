@@ -5063,8 +5063,8 @@ country_event = {
 			tag = BSP
 			tag = CSP
 			tag = SPB
-			absolutism = 50
 		}
+		absolutism = 50
 	}
 	
 	mean_time_to_happen = {

@@ -11470,7 +11470,7 @@ iqta_vassal = {
 				OR = {
 					has_reform = iqta
 					# Extended Timeline reforms
-					#has_reform = caliphate_reform
+					has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 				}
 			}
 		}

@@ -31,3 +31,6 @@
  mormon_rebels_name:0 "$RELIGION$ Zealots"
  mormon_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  mormon_rebels_army:0 "$RELIGION$ Army"
+
+ LATTER-DAY:0 "Latter-Day"
+ SAINT:0 "Saint"

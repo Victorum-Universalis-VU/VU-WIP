@@ -2480,7 +2480,7 @@ vu_kamianets_podilskyi_castle = {
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = { local_defensiveness = 0.05 local_manpower_modifier = 0.05 }
 		area_modifier = { }
-		country_modifiers = { global_manpower_modifier = 0.5 max_hostile_attrition = 1 }
+		country_modifiers = { global_manpower_modifier = 0.05 max_hostile_attrition = 1 }
 		on_upgraded = { }
 	}
 	tier_2 = {

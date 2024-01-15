@@ -397,9 +397,9 @@ cb_margrave_war = {
 	# prerequisites = {
 		# is_subject = no
 		# religion = sunni
-		# NOT = { has_reform = caliphate_reform_sunni }
+		# NOT = { has_reform = caliphate_reform_sunni } #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		# FROM = {
-			# has_reform = caliphate_reform_sunni
+			# has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		# }
 	# }
 	
@@ -1078,7 +1078,7 @@ cb_fight_caliph_holder = {
 	prerequisites = {
 		has_country_flag = TUN_cb_on_caliphate_holder_flag
 		FROM = {
-			ME_has_abbasid_caliph = yes
+			has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
 		}
 	}
 	

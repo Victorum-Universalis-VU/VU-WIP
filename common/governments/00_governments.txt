@@ -155,7 +155,7 @@ monarchy = {
 				#crusader_kingdom
 				#khaganate
 				#athenian_monarchy
-				#german_kaiserreich
+				german_kaiserreich
 				#caliphate_reform_sunni
 				#west_slavic_monarchy
 				#####EndOfMEReforms#####
@@ -1189,6 +1189,8 @@ republic = {
 				#VU
 				improved_veche_republic
 				roman_diarchy_reform
+				german_kaiserreich_republic
+				german_kaiserreich_peasant_republic
 				althing_elite_reform
 		    	puppet_kingdom_reform
 		    	transitional_government_reform
@@ -1206,7 +1208,7 @@ republic = {
 				old_swiss_confederation_reform
 				russian_republic_republic
 				caucasian_republic
-				#common_republic_reform		Part of updoot, will check
+				common_republic_reform #Re-added by Quonton for VU v1.36.2.* 
 				#LoTF
 				reinforced_republic
 			}

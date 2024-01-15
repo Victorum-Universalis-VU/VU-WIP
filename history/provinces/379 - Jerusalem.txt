@@ -12,38 +12,8 @@ base_production = 10
 base_manpower = 6
 is_city = yes
 add_core = MAM
+add_core = HMA
 center_of_trade = 3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 add_province_triggered_modifier = jerusalem_held
 add_permanent_province_modifier = {

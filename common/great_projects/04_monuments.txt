@@ -9214,8 +9214,11 @@ fort_geldria = {
 
 	#can we build it?
 	build_trigger = {	
-    	
-		
+		owner = {
+			capital_scope = {
+		    	continent = europe
+		    }
+		}
 	}
 
 	#what to do when it's built
@@ -9230,32 +9233,21 @@ fort_geldria = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-     OR = {
-			AND = {
-				culture_group = germanic
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture_group = british
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+		owner = {
+			capital_scope = {
+		    	continent = europe
+		    }
 		}	
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		
 	is_year = 1613
-	culture_group = germanic
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+	    owner = {
+			capital_scope = {
+		    	continent = europe
+		    }
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?

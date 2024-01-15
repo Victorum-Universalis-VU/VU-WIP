@@ -309,7 +309,7 @@ CHG_missions_3 = {
 	}
 	
 	CHG_trans_mongol_khanate = {
-		icon = me_mission_shiny_crown
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
 		required_missions = { CHG_kazakh_mongols CHG_finish_the_federation CHG_integrate_the_tribes }
 		position = 4
 		provinces_to_highlight = {

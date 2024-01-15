@@ -63,7 +63,7 @@
  MINING: "Mining"
  INFRASTRUCTURE: "Infrastructure"
  LATENT: "Latent Goods"
- LATENT_METALWORKING: "§WMetalworking   6.00¤\nGoods Produced with production building:§! §G+0.1§!"
+ LATENT_METALWORKING: "§WMetalworking   6.00¤\nGoods Produced From Production Building:§! §G+0.1§!"
  LATENT_METALWORKING_TECH: "£Military_technology_TGE£33"
  LATENT_MUNI: "§WMunitions   8.00¤\nDiscipline:§! §G+2.5%§!"
  LATENT_MUNI_TECH: "£Military_technology_TGE£32"
@@ -90,7 +90,7 @@
  #VU additions by San Felipe
  LATENT_CANNED_GOODS: "§WCanned Goods   9.00¤\nDevelopment Cost:§! §G-10%§!"
  LATENT_CANNED_GOODS_TECH: "£Administrative_technology_TGE£47"
- LATENT_SWEET_CONFECTIONERIES: "§WSweet Confectioneries   6.00¤\nGlobal Unrest:§! §G-1.5%§!"
+ LATENT_SWEET_CONFECTIONERIES: "§WSweet Confectioneries   6.00¤\nCulture Conversion Cost:§! §G-15%§!"
  LATENT_SWEET_CONFECTIONERIES_TECH: "£Diplomatic_technology_TGE£23"
  
  prices_marcin.1.t: "Reinheitsgebot"

@@ -1,8 +1,17 @@
 ﻿l_english:
- #VU Quonton additions
- #Baltic
+ #VU - Quonton additions
+ #Finish
  finland_rising_title:0 "Finland on the Rise"
  finland_rising_desc:0 "It is time for Finland to take bring our brothers and sisters into the fold."
+ fin_suomikin_isanmaa_title:0 "Suomikin Isänmaa"
+ fin_suomikin_isanmaa_desc:0 "Finland is a relatively poor country, and for us to take on the Rus and unite our Uralic brothers we must build ourselves up. Through a collective effort of our peoples, we will be strong enough to reconquer the homelands of the Uralic Peoples!"
+ fin_uraliin_title:0 "Uraliin"
+ fin_uraliin_desc:0 "To the Urals! We must unite the Uralic peoples under our banner! For too long outsiders have harmed our people, for too long we have been separated and destroyed. Uralia will be achieved!"
+ fin_taakse_sen_title:0 "Taakse Sen!"
+ fin_taakse_sen_desc:0 "Behind Them! Uralia isn't just the forests of Russia and of the Urals, But behind them too! All of the Uralic peoples will be united, behind or ahead of the Urals! Uralia has nearly been achieved!"
+ fin_kaalimaan_title:0 "Kaalimaan"
+ fin_kaalimaan_desc:0 "Kallimaan, or "Cabbage  Land" is within our crosshairs. The Cabbage Land will soon be under our control, and we will free the isolated Uralic peoples of the Rus!"
+ #Baltic
  northern_unity_title:0 "Northern Unity"
  northern_unity_desc:0 "We must unite the north to expand futher."
  fin_mis_1_title:0 "Liberate Samis"

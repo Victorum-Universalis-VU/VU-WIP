@@ -884,9 +884,9 @@ NCountry = {
 	REBEL_BREAK_EXHAUSTION_SET = 0, 				-- Exhaustion will be set to this value when rebels break country.
 	
 	REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.1,		-- Multiplied with the province's development
-	REVOLT_SIZE_BASE = 5,							-- lowered from vanilla 4
-	REVOLT_TECH_IMPACT = 0.03, 						-- % each tech increases size of rebels by this percent (+1%).
-	REVOLT_TECH_MORALE = 0.01,						-- 0,5% per tech level
+	REVOLT_SIZE_BASE = 4,							-- lowered from vanilla 4
+	REVOLT_TECH_IMPACT = 0.02, 						-- % each tech increases size of rebels by this percent (+1%).
+	REVOLT_TECH_MORALE = 0.006,						-- 0,5% per tech level
 
 	REBEL_ARTILLERY_INCREASE_LEVEL_1_TECH = 28,		-- Tech level at which REBEL_ARTILLERY_INCREASE_LEVEL_1_SIZE is applied
 	REBEL_ARTILLERY_INCREASE_LEVEL_1_SIZE = 0.1,	-- The increase in artillery as fraction of total troops given to rebels

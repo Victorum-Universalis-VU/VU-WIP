@@ -281,7 +281,7 @@
   vu_aristocrat: "Aristocrat"
   vu_aristocrat_desc: "An aristocrat is typically a member of landed social class with inherited titles, heraldry and privileges." 
  #Culture#
-  czechBOH: "Czech"
-  polishBOH: "Polish" 
-  schlesianBOH: "Silesian"
-  sorbianBOH: "Sorbian"
+  czechBOH: "Bohmisch"
+  polishBOH: "Polen" 
+  schlesianBOH: "Schlesisch"
+  sorbianBOH: "Sorbisch"

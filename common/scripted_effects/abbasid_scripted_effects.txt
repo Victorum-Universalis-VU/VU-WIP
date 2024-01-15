@@ -17,7 +17,8 @@ ME_set_abbasid_caliph_province = {
                 has_saved_event_target = Old_caliph_province
                 event_target:Old_caliph_province = {
                     owner = {
-                        NOT = { ME_has_abbasid_caliph = yes }
+						#NOT = { ME_has_abbasid_caliph = yes } #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+                        NOT = { has_reform = caliphate_reform } #VU - ET entry used by PDX that they've not given any credit to ET for. 
                         religion = sunni
                     }
                 }

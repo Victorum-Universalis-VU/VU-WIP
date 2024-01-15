@@ -45,14 +45,7 @@ arm_first_branch = {
 				name = "arm_dethrone_turkomans"
 				duration = 5475
 			}
-			shahrizor_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			iraq_arabi_area = {
+			ardalan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -67,6 +60,13 @@ arm_first_branch = {
 				add_permanent_claim = ROOT
 			}
 			azerbaijan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mesopotamia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -109,7 +109,7 @@ arm_first_branch = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			iraq_arabi_area = {
+			baghdad_area = {
 				type = all
 				religion = ROOT
 			}
@@ -360,41 +360,44 @@ arm_second_branch = {
 		position = 6
 		
 		provinces_to_highlight = {
-			province_id = 418
+			province_id = 2306
 		}
 		
 		trigger = {
-			owns = 418
-			418 = {
+			owns = 2306
+			2306 = {
 				religion = ROOT
 			}
-			418 = {
+			2306 = {
 				culture = ROOT
 			}
-			418 = {
+			2306 = {
 				development = 15
 			}
-			418 = {
+			2306 = {
 				has_tax_building_trigger = yes
 			}
-			418 = {
+			2306 = {
 				has_trade_building_trigger = yes
 			}
-			418 = {
+			2306 = {
 				has_production_building_trigger = yes
 			}
 		}
 		
 		effect = {
 			set_country_flag = arm_capital_tigranakert
-			418 = {
+			2306 = {
 				change_province_name = "Tigranakert"
 				rename_capital = "Tigranakert"
 			}
-			418 = {
+			2306 = {
 				change_trade_goods = cloth
 			}
-			418 = {
+			2306 = {
+				add_base_tax = 3
+				add_base_manpower = 2
+				add_base_production = 2
 				add_province_modifier = {
 					name = "arm_great_city_tigranes"
 					duration = -1
@@ -458,6 +461,20 @@ arm_third_branch = {
 				add_permanent_claim = ROOT
 			}
 			shirvan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			qazakh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ardabil_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1155,13 +1172,6 @@ arm_fourth_branch = {
 				name = "arm_new_anatolian_hegemon"
 				duration = 7300
 			}
-			anatolia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
@@ -1239,7 +1249,7 @@ arm_fourth_branch = {
 		}
 		
 		trigger = {
-			327 = {
+			cukurova_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				religion = ROOT
 				NOT = {
@@ -1265,8 +1275,8 @@ arm_fourth_branch = {
 		effect = {
 			custom_tooltip = arm_cilicia_tt
 			hidden_effect = {
-				327 = {
-					change_culture = ROOT
+				cukurova_area = {
+					change_culture = cilician
 					if = {
 						limit = {
 							owner = {
@@ -1282,8 +1292,14 @@ arm_fourth_branch = {
 						set_province_flag = arm_converted_bonus
 					}
 				}
+				327 = {
+					change_culture = cilician
+					add_base_tax = 1
+					add_base_manpower = 1
+					add_base_production = 1
+				}
 				332 = {
-					change_culture = ROOT
+					change_culture = cilician
 					if = {
 						limit = {
 							owner = {
@@ -1300,7 +1316,7 @@ arm_fourth_branch = {
 					}
 				}
 				4298 = {
-					change_culture = ROOT
+					change_culture = cilician
 					if = {
 						limit = {
 							owner = {
@@ -1380,6 +1396,13 @@ arm_fifth_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			mtskheta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			imereti_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1432,70 +1455,14 @@ arm_fifth_branch = {
 					duration = 7300
 				}
 			}
-			dulkadir_area = {
+			anatolia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			erzurum_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			rum_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			kastamonu_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			karaman_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			aleppo_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			syrian_desert_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			al_jazira_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			north_kurdistan_area = {
+			mashriq_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1546,12 +1513,9 @@ arm_fifth_branch = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = aleppo_area
-					area = syrian_desert_area
-					area = syria_area
-					area = al_jazira_area
+					region = mashriq_region
 				}
-				value = 12
+				value = 26
 			}
 		}
 		
@@ -1577,21 +1541,7 @@ arm_fifth_branch = {
 			}
 			add_country_modifier = {
 				name = "arm_renew_crusades"
-				duration = 7300
-			}
-			palestine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			trans_jordan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+				duration = -1
 			}
 		}
 	}
@@ -1638,10 +1588,10 @@ arm_fifth_branch = {
 			}
 			if = {
 				limit = {
-					religion = coptic
+					religion = miaphysite
 					NOT = {
 						any_country = {
-							religion = coptic
+							religion = miaphysite
 							is_defender_of_faith = yes
 						}
 					}
@@ -1654,10 +1604,10 @@ arm_fifth_branch = {
 			hidden_effect = {
 				if = {
 					limit = {
-						religion = coptic
+						religion = miaphysite
 						NOT = {
 							any_country = {
-								religion = coptic
+								religion = miaphysite
 								is_defender_of_faith = yes
 							}
 						}

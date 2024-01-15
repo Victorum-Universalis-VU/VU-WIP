@@ -1055,6 +1055,7 @@ christian = {
 		country = {
 			administrative_efficiency = 0.1
 			core_creation = -0.15
+			war_exhaustion = -0.03
 		}
 		country_as_secondary = {
 			core_creation = -0.15

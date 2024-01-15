@@ -1,6 +1,11 @@
 ﻿l_english:
  #VU EVENTS
  #VU Quonton additions
+ #Finish Flavor
+ vu_flavor_fin.1.t:"The Future of Finland"
+ vu_flavor_fin.1.desc:"Now stands before us a crossroads. Finland has long been within the cultural sphere of Scandinavia, and we have quickly became a nation close to Sweden and Scandinavia as a whole. But, the east, and our Uralic brothers and sisters under the thumb of the Rus becons to us. Should we Focus on the West and Scandinavia, or the East and Uralia?"
+ vu_flavor_fin.1.a:"Uralia is our Destiny!"
+ vu_flavor_fin.1.b:"Scandinavia is our Destiny!"
  #Romanization Events
  vu_restore_roman_culture.EVTNAME1:"Romanization"
  vu_restore_roman_culture.EVTDESC1:"Romanization is the process of converting lands under our control and returning the old Latin Roman culture and language to these lands. We have converted §Y[Root.vu_romano_culture_to_convert.GetValue]§! regions. There are §Y8§! Regions in total we can convert."

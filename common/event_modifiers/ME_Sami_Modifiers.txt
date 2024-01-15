@@ -17,6 +17,10 @@ scandinavian_trade = {
 }
 
 sami_defensiveness = {
+	local_defensiveness = 0.25
+}
+
+sami_defensiveness2 = {
 	defensiveness = 0.25
 }
 

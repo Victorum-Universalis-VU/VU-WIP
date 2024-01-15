@@ -1,6 +1,21 @@
 ﻿l_english:
  #Custom tooltips
  #VU Quonton additions
+ vu_change_iberian_to_german:0 "Thirty provinces within §YIberia§! will be §RGermanized§!"
+ vu_change_scandinavian_to_german:0 "Thirty provinces within §YScandinavia§! will be §RGermanized§!"
+ vu_change_french_to_german:0 "Thirty provinces within §YFrance§! will be §RGermanized§!"
+ vu_change_italian_to_german:0 "Thirty provinces within §YItaly§! will be §RGermanized§!"
+ vu_ger_mitteleuropa:0 "All Vassals for the rest of the game will join §GMitteleuropa§! and will gain large economic §Mbonuses§!"
+ ger_urbanization_tt:0 "Every owned province which has §G50§! §GDevelopment§! will gain §G1§! of each §MDevelopment§! and the §GGerman Urbanization§! province modifier"
+ ddr_germany:0 "German Democratic Republic"
+ ddr_germany_ADJ:0 "German Democratic Republic"
+ fin_every_province_claim:0 "Every province which is within the §YFinno-Ugric§! Culture Group will be permanently claimed by §YFinland§!"
+ fin_every_province_increase:0 "Every owned province which is within the §YFinno-Ugric§! Culture Group will gain §G1§! of each §MDevelopment§! and the §GMilitary Reinforcement§! province modifier for §G20 years§!"
+ fin_claim_moscovite_provinces:0 ""We shall lay a claim on the decadent \n§YKingdom of Muscovy! @MOS""
+ fin_claim_russian_provinces:0 ""We shall lay a claim on the decadent \n§YTsardom  of Russia§! @RUS""
+ vu_scandinavia_vs_uralia:0 "An event will fire allowing us to deside the §YFuture§! of §YFinland§!"
+ vu_allow_uralia_formation:0 "Finland will now be able to form §YUralia§! and will follow our Uralic Destiny"
+ vu_fin_scandinavia:0 "Finland will now be able to form §YScandinavia§! and will follow our Scandinavian Destiny"
  vu_roman_revival_finished_manpower:0 "from owned provinces, which are of §YOld Latin§! culture
  vu_change_italian_to_roman:0 "All §YItalian§! provinces within §YItaly§! under our control will be §RRomanized§!"
  vu_change_french_to_roman:0 "Thirty §YFrench§! provinces within §YFrance§! will be §RRomanized§!"

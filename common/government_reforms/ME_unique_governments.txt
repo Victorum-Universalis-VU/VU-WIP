@@ -400,7 +400,7 @@ german_kaiserreich_legacy = {
 	modifiers = {
 		global_unrest = -2
 		global_autonomy = -0.05
-		max_absolutism = -20
+		max_absolutism = 20
 		monarch_military_power = 1
 		monthly_militarized_society = 0.5
 	}
@@ -426,7 +426,10 @@ german_kaiserreich = {
 	lock_level_when_selected = yes
 	allow_normal_conversion = no
 	potential = {
-		has_reform = german_kaiserreich
+		OR = {
+			has_reform = german_kaiserreich
+			tag = GER
+		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100

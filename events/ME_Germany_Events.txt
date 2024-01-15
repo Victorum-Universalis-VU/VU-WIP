@@ -38,12 +38,33 @@ country_event = {
 		
 		add_prestige = 5
 		add_absolutism = 10
-		if = {
-			limit = {
+		change_government = republic
+		add_government_reform = german_kaiserreich_republic
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+	}
+
+	option = {
+		name = ME_Germany_Events1.EVTOPT3
+
+		trigger = {
+ 			has_reform = peasants_republic
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
 				government = republic
 			}
-			add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 		}
+		
+		add_prestige = 5
+		add_absolutism = 10
+		change_government = republic
+		add_government_reform = german_kaiserreich_peasant_republic
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 20 }
+		override_country_name = ddr_germany
 	}
 }
 
@@ -77,7 +98,47 @@ country_event = {
 			limit = {
 				culture = polish
 			}
-			change_culture = ROOT
+			change_culture = polishBOH
+			add_province_modifier = {
+				name = germany_fate_of_the_polish_culture
+				duration = 7300
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = czech
+			}
+			change_culture = czechBOH
+			add_province_modifier = {
+				name = germany_fate_of_the_polish_culture
+				duration = 7300
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = moravian
+			}
+			change_culture = czechBOH
+			add_province_modifier = {
+				name = germany_fate_of_the_polish_culture
+				duration = 7300
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = schlesian
+			}
+			change_culture = silesian_german
+			add_province_modifier = {
+				name = germany_fate_of_the_polish_culture
+				duration = 7300
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = sorbian 
+			}
+			change_culture = sorbianBOH
 			add_province_modifier = {
 				name = germany_fate_of_the_polish_culture
 				duration = 7300

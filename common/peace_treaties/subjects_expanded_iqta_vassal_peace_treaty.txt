@@ -74,7 +74,8 @@ make_iqta_vassal = {
 				has_reform = ME_caliphate_reform_sunni_andalusia
 				has_reform = ME_caliphate_reform_sunni_arabian
 				# Extended Timeline reforms
-				#has_reform = caliphate_reform
+				#ME_has_abbasid_caliph = yes #Was this but changed to 'caliphate_reform' as it is already in the base game - by SF
+				has_reform = caliphate_reform #VU - Used by PDX but they've not given any credit to ET. 
 			}
 			OR = {
 				num_of_free_diplomatic_relations = 1

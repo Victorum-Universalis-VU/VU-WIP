@@ -63,7 +63,35 @@ fin_missions_1 = {
 					add_permanent_claim = ROOT 
 				}
 			}
+			west_karelia_area = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
 			karelia_area = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			laponia_area = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			northern_norway = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			norrland_area = { 
 				limit = {
 					NOT = { owned_by = ROOT } 
 					NOT = { is_core = ROOT } 
@@ -165,7 +193,7 @@ fin_missions_1 = {
 			}
 			custom_tooltip = fin_claim_baltic_trade_node_tt
 			hidden_effect = {
-				1926 = { 
+				43 = { 
 					every_trade_node_member_province = {
 						limit = { 
 							NOT = { owned_by = ROOT }
@@ -207,7 +235,8 @@ fin_missions_1 = {
 			}
 			else = { set_government_rank = 2 } 
 			define_advisor = { 
-				type = trader 
+				type = trader
+				skill = 2
 				cost_multiplier = 0.5
 			}
 		}
@@ -475,6 +504,7 @@ fin_missions_3 = {
 				area = laponia_area
 				area = norrland_area
 				area = bothnia_area
+				area = northern_norway
 			}
 			OR = {
 				NOT = { religion = ROOT }
@@ -503,6 +533,12 @@ fin_missions_3 = {
 					has_owner_accepted_culture = yes
 					type = all
 				}
+				northern_norway = { 
+					owned_by = ROOT
+					religion = ROOT
+					has_owner_accepted_culture = yes
+					type = all
+				}
 			}
 			else = {
 				laponia_area = { 
@@ -516,6 +552,11 @@ fin_missions_3 = {
 					type = all
 				}
 				bothnia_area = { 
+					owned_by = ROOT
+					religion = ROOT
+					type = all
+				}
+				northern_norway = { 
 					owned_by = ROOT
 					religion = ROOT
 					type = all
@@ -535,6 +576,10 @@ fin_missions_3 = {
 				add_base_manpower = 2
 			}
 			bothnia_area = {
+				add_local_autonomy = -100
+				add_base_manpower = 2
+			}
+			northern_norway = { 
 				add_local_autonomy = -100
 				add_base_manpower = 2
 			}
@@ -562,6 +607,14 @@ fin_missions_3 = {
 					type = all 
 					country_or_non_sovereign_subject_holds = ROOT 
 				}
+				west_karelia_area = {
+					type = all 
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				laponia_area = {
+					type = all 
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
 				30 = { 
 					owned_by = ROOT 
 					has_fort_building_trigger = yes 
@@ -577,6 +630,13 @@ fin_missions_3 = {
 					duration = -1 
 					desc = fin_remove_modifier_upon_siege_tt
 				}
+			}
+			north_karelia_area = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
 			}
 			custom_tooltip = fin_finnish_militarization_tt
 			tooltip = { 
@@ -624,13 +684,25 @@ fin_missions_3 = {
 			}
 		}
 		effect = {
-			32 = { change_trade_goods = tar }
+			32 = {
+				change_trade_goods = tar
+				add_province_modifier = {
+					name = fin_commercial_tar_modifier
+					duration = -1
+				}
+			}
 			33 = { 
+				add_province_modifier = {
+					name = fin_commercial_tar_modifier
+					duration = -1
+				}
+			}
+			34 = { 
 				change_trade_goods = naval_supplies 
 				add_manufactory = yes 
 				add_province_modifier = {
 					name = fin_commercial_tar_modifier
-					duration = 9125 
+					duration = -1
 				}
 			}
 		}
@@ -656,8 +728,12 @@ fin_missions_3 = {
 				name = fin_white_death_descends_upon_europe
 				duration = -1 
 			}
-			custom_tooltip = allow_earlier_scandinavia_formation_tt
-			hidden_effect = { set_country_flag = can_form_scandinavia_earlier }
+			custom_tooltip = vu_scandinavia_vs_uralia
+			hidden_effect = {
+				country_event = {
+					id = vu_flavor_fin.1
+				}
+			}
 		}
 	}
 }
@@ -796,6 +872,8 @@ fin_missions_5 = {
 				rename_capital = "Turku"
 				change_province_name = "Turku"
 				add_base_tax = 2 
+				add_base_production = 1
+				add_base_manpower  = 1
 				if = { 
 					limit = { has_dlc = "Mandate of Heaven" }
 					add_prosperity = 100
@@ -822,6 +900,11 @@ fin_missions_5 = {
 		}
 		effect = { 
 			28 = { 
+				rename_capital = "Helsinki"
+				change_province_name = "Helsinki"
+				add_base_tax = 2 
+				add_base_production = 3
+				add_base_manpower  = 2
 				center_of_trade = 2 
 				if = { 
 					limit = { has_building = dock }
@@ -839,4 +922,211 @@ fin_missions_5 = {
 			add_mercantilism = 3
 		}
 	}
+}
+
+vu_fin_missions_2_uralia = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Lions of the North"
+	}
+	potential = {
+		tag = FIN
+		has_dlc = "Lions of the North"
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = fin_uralia
+	}
+	has_country_shield = yes
+	
+	fin_suomikin_isanmaa = {
+		icon = mission_beyond_the_urals
+		required_missions = { fin_uraliin }
+		position = 7
+		provinces_to_highlight = { province_id = 28 } 
+		trigger = { 
+			army_size_percentage = 1 
+			has_mil_advisor = yes 
+		}
+		effect = { 
+			custom_tooltip = fin_every_province_claim
+			custom_tooltip = fin_every_province_increase
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture_group = finno_ugric
+						NOT = { owned_by = ROOT } 
+					}
+					add_permanent_claim = ROOT 
+				}
+				every_owned_province = {
+					limit = {
+						culture_group = finno_ugric
+					}
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower  = 1
+					add_province_modifier = { 
+    						name = military_reinforcement
+    						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+
+vu_fin_missions_3_uralia = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Lions of the North"
+	}
+	potential = {
+		tag = FIN
+		has_dlc = "Lions of the North"
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = fin_uralia
+	}
+	has_country_shield = yes
+	
+	fin_uraliin = {
+		icon = mission_cannons_firing
+		required_missions = { fin_fourth_rome }
+		position = 6
+		trigger = { 
+			always = yes
+		}
+		effect = { 
+			add_army_tradition = 25
+			add_army_professionalism = 0.15
+			add_yearly_manpower = 10
+			create_general = { tradition = 100 }
+			define_general = {
+    				shock = 6
+    				fire = 6
+    				manuever = 6
+   				siege = 6
+				name = "Carl Mannerheim "
+			}
+			add_country_modifier = { 
+   				name = vu_uralin
+    				duration = 7300
+			}
+		}
+	}
+
+	fin_taakse_sen = {
+		icon = me_mission_shiny_crown #This is a false negative - by San Felipe 12/01/2023
+		required_missions = { fin_uraliin fin_kaalimaan fin_suomikin_isanmaa }
+		position = 8
+		provinces_to_highlight = { province_id = 28 } 
+		trigger = { 
+			MOS = {
+				exists = no
+			}
+			RUS = {
+				exists = no
+			}
+			has_unified_culture_group = yes
+		}
+		effect = { 
+			ural_region = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			west_siberia_region = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			add_country_modifier = { 
+   				name = vu_uralin_meidan
+    				duration = -1
+			}
+			capital_scope = { 
+				add_base_tax = 2 
+				add_base_production = 2
+				add_base_manpower  = 2
+			}
+		}
+	}
+}
+
+vu_fin_missions_4_uralia = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Lions of the North"
+	}
+	potential = {
+		tag = FIN
+		has_dlc = "Lions of the North"
+		NOT = { map_setup = map_setup_random }
+		has_country_flag = fin_uralia
+	}
+	has_country_shield = yes
+
+	fin_kaalimaan = {
+		icon = me_mission_poland_bathory
+		required_missions = { fin_uraliin }
+		position = 7
+		provinces_to_highlight = { province_id = 28 } 
+		trigger = { 
+			army_size_percentage = 1 
+			has_mil_advisor = yes 
+		}
+		effect = { 
+			if = { 
+				limit = { 
+					calc_true_if = {
+						all_province = { is_core = MOS }
+						amount = 10 
+					}
+				}
+				custom_tooltip = fin_claim_moscovite_provinces
+				hidden_effect = {
+					every_province = {
+						limit = {
+							is_core = MOS 
+							NOT = { owned_by = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					calc_true_if = {
+						all_province = { is_core = RUS }
+						amount = 10 
+					}
+				}
+				custom_tooltip = fin_claim_russian_provinces
+				hidden_effect = {
+					every_province = {
+						limit = {
+							is_core = RUS 
+							NOT = { owned_by = ROOT } 
+						}
+						add_permanent_claim = ROOT 
+					}
+				}
+			}
+			russia_region = { 
+				limit = {
+					NOT = { owned_by = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}	
 }

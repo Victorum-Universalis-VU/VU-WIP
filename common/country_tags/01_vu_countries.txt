@@ -467,6 +467,7 @@ VYA = "countries/Vyatka.txt"
 ZBT = "countries/Zubtsov.txt"
 NRU = "countries/NovgorodRus.txt"
 CUV = "countries/Chuvash.txt"
+UGR = "countries/Ugria.txt"
 
 #Caucasus update
 BKS = "countries/Balkars.txt"
@@ -627,6 +628,7 @@ SUQ = "countries/Socotra.txt" #Was SOC changed it to SUQ for compatibility with 
 SRN = "countries/Soran.txt"
 TKK = "countries/Tekke.txt"
 UNZ = "countries/Unaizah.txt"
+HMA = "countries/Palestine.txt"
 
 #VU - Rest of Asia
 #ARU	= "countries/Aru.txt" - Removed from list because it was added in vanilla EU4 as DLI

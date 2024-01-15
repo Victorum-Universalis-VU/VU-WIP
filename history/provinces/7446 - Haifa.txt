@@ -12,46 +12,12 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = MAM
+add_core = HMA
 
 add_permanent_province_modifier = {
     name = navalbase_modifier
     duration = -1
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1517.1.1 = {
 	owner = TUR
