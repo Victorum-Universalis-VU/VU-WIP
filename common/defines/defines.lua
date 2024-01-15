@@ -504,7 +504,7 @@ NCountry = {
 	SPLENDOR_ABILITY_COST = 600,
 	PROSPERITY_MONTHLY_DECLINE = -2,				-- monthly tick
 	PROSPERITY_INCREASE_SIZE= 1,				-- if diceroll of d20< monarch stat, while possible ot increase
-	CORRUPTION_FROM_BANNERS = 5,
+	CORRUPTION_FROM_BANNERS = 0.1,
 	FORCE_CONVERT_COOLDOWN_DURATION = 10,				-- Years
 
 
