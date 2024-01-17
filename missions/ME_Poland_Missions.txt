@@ -672,7 +672,8 @@ POL_Missions_1 = {
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = {
-				is_institution_enabled = enlightenment
+				enlightenment = 100
+				#is_institution_enabled = enlightenment #is_institution_ enabled is not what you think it is
 				#has_institution = enlightenment #VU - Was 'has_institution = enlightenment' but changed to 'is_institution_enabled = enlightenment'in v1.36.2.*. By San Felipe
 			}
 		}
@@ -682,9 +683,7 @@ POL_Missions_1 = {
 			OR = {
 				current_age = age_of_revolutions
 				all_owned_province = { 
-					owner = {
-						has_institution = enlightenment 
-					}
+					enlightenment = 100
 				}
 			}
 		}
