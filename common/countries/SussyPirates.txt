@@ -1,4 +1,4 @@
-#Country Name: Please see filename.
+#Country Name: Please see filename.SussyPirates
 
 graphical_culture = muslimgfx
 
@@ -9,9 +9,10 @@ historical_score = 100
 
 historical_idea_groups = {
 	maritime_ideas
-	naval_ideas
-	spy_ideas
-	quantity_ideas
+	defensive_ideas
+	religious_ideas
+	expansion_ideas
+	administrative_ideas
 	offensive_ideas
 	trade_ideas
 	economic_ideas

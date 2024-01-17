@@ -2,7 +2,7 @@ ABB_abbasid_caliph_revolt = {
 	potential = {
 		custom_trigger_tooltip = {
 			tooltip = ME_has_abbasid_caliph
-      #if = { limit = { NOT = { has_saved_event_target = Caliph_province } } log = "HEY!" }
+            #if = { limit = { NOT = { has_saved_event_target = Caliph_province } } log = "HEY!" }
 			has_saved_event_target = Caliph_province
 			event_target:Caliph_province = {
 				owned_by = ROOT

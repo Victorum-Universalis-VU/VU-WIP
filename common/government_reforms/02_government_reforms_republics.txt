@@ -297,6 +297,7 @@ german_kaiserreich_republic = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		generals_become_rulers = yes
+		has_unify_germany_cb = yes
 	}
 
 	conditional = {
@@ -358,6 +359,7 @@ german_kaiserreich_peasant_republic = {
 		enables_aristocratic_idea_group = no
 		disables_estate_nobles = yes
 		is_peasants_republic = yes
+		has_unify_germany_cb = yes
 	}
 
 	conditional = {
@@ -1854,6 +1856,7 @@ trade_company_government = {
 		enables_estate_burghers = yes
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
+		can_create_stato_da_mar_vassal_rule = yes
 	}
 	conditional = {
 		allow = {

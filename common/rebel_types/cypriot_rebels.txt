@@ -2,8 +2,10 @@ cypriot_rebels = {
 
 	color = { 25 180 25 }
 
-	province_id = 144
-	province_id = 146			   # An FYI to anyone reading this, screw Paradox
+	area = nation
+	#VU - Hashed this out in v1.36.2.*. By San Felipe
+	#province_id = 144
+	#province_id = 146			   # An FYI to anyone reading this, screw Paradox
 	government = any				# No special preference
 	defection = nation_rebel_tag			# If the country seeks independence, defection specifies what type of provinces it wants.
 	independence = nation_rebel_tag		 # Seeks independence for spawn province culture. Will not spawn at all if there is no suitable tag.
@@ -84,6 +86,8 @@ cypriot_rebels = {
 	can_enforce_trigger = {
 		always = yes
 	}
+
+	demands_description = "vu_cypriot_rebels_demand"
 
 	demands_enforced_effect = {
 		add_prestige = -10

@@ -397,7 +397,7 @@ country_event = {
 	option = {
 		name = "flavor_ara.EVTOPTA7"
 		ai_chance = {
-			factor = 20
+			factor = 100 #VU - Increased this to 100 for historical purposes. By San Felipe 
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
 		hidden_effect = {
@@ -405,6 +405,16 @@ country_event = {
 				country_event = { id = flavor_ara.8 }
 			}
 		}
+		#VU - Fix by Jay (Abyssian007) for v1.36.2.* and added in by San Felipe.
+		hidden_effect = {
+            sicily_area = {
+                limit = {
+                    owned_by = NAP
+                }
+                cede_province = ARA
+                add_core = ARA
+            }
+        }
 		set_ruler_flag = alfonsos_successor
 	}
 	

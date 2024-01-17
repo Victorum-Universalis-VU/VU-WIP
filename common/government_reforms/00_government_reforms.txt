@@ -434,6 +434,7 @@ venetian_merchant_republic = {
 		election_on_death = yes
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
+		can_create_stato_da_mar_vassal_rule = yes
 	}
 
 	ai = {
@@ -3912,7 +3913,8 @@ scottish_monarchy_legacy = {
 		}
 		custom_attributes = {
 			enables_privy_council = yes #pseudoparliament and a development of the King's Council
-		}#fixdis every option is the same
+			#has_unify_british_isles_cb = yes
+		}   #fixdis every option is the same
 	}
 	ai = {
 		factor = 5

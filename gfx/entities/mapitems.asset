@@ -12,7 +12,7 @@ entity = {
 
 entity = {
 	name = "flag"
-	pdxmesh = "empty"
+	pdxmesh = "empty" #VU - Was flag but removed in v1.35. By San Felipe
 	state = { name = "idle" 		animation = "idle" }
 }
 
@@ -20,6 +20,7 @@ entity = {
 	name = "construction_building"
 	pdxmesh = "construction_building"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
@@ -28,18 +29,21 @@ entity = {
 	state = { name = "idle" 		
 		animation = "idle" 	event = { time = 0.535	node = "hot_metal"	particle = "smith_sparks" }
 	}
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "construction_navalmilitary"
 	pdxmesh = "construction_navalmilitary"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "construction_colony"
 	pdxmesh = "construction_colony"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
@@ -148,12 +152,14 @@ entity = {
 	name = "westerngfx_traderoute_land"
 	pdxmesh = "westerngfx_traderoute_land"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "westerngfx_traderoute_naval"
 	pdxmesh = "westerngfx_traderoute_naval"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 
@@ -161,24 +167,28 @@ entity = {
 	name = "westerngfx_envoy_land"
 	pdxmesh = "westerngfx_envoy_land"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "westerngfx_envoy_naval"
 	pdxmesh = "westerngfx_envoy_naval"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "tradenode"
 	pdxmesh = "tradenode"
 	state = { name = "idle" 		animation = "idle" }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {
 	name = "tradenode_terrain"
 	pdxmesh = "tradenode_terrain"
 	state = { name = "idle" state_time = 5 }
+	scale = 0.25 #Added 25 in v1.36.2.*. By San Felipe
 }
 
 entity = {

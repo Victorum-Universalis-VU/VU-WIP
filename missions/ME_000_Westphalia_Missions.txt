@@ -279,9 +279,9 @@ SOE_Missions_1 = {
 		icon = spread_the_von_wettins
 		required_missions = { WES_rhineland }
 		position = 5
-		provinces_to_highlight = {
-			owned_by = overlord
-		}
+		#provinces_to_highlight = {
+		#	owned_by = overlord
+		#}
 		trigger = {
 			is_subject = no
 		}
@@ -804,9 +804,7 @@ WES_Generic_Missions_3_2 = {
 					skill = 1
 					cost_multiplier = 0.5
 				}
-				capital_scope = {
-					province_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
-				}
+				country_event = { id = ME_Westphalian_Events.2 } #build either town hall, castle or church
 			}
 			else = {
 				add_country_modifier = {
@@ -982,7 +980,10 @@ MUN_Missions_3 = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
+				check_variable = { 
+					which = num_converted_religion 
+					value = 10 
+				}
 			}
 		}
 		effect = {

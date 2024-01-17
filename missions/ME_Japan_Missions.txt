@@ -2157,7 +2157,7 @@ Japan_missions_4 = {
 						}
 					}
 				}
-				1397 = {
+				6081 = {
 					every_trade_node_member_province = {
 						limit = {
 							country_or_non_sovereign_subject_holds = ROOT

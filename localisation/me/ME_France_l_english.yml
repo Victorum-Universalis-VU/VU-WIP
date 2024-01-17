@@ -49,13 +49,13 @@
  fra_compagnies_ordonnance_title: "Compagnies d'Ordonnance"
  fra_compagnies_ordonnance_desc: "Warfare in its current form relies heavily on hired mercenaries who are only loyal to the gold they will receive and are very prone to defect once they receive a better offer. To counter this, we should create a private army that will be loyal to the state and the state alone."
  fra_royaulme_france_title: "Royaulme de France"
- fra_royaulme_france_desc: "At long last, France has been united. Never again will a Frenchman bow down to a foreign lord or power. France will protect every Frenchman and the fleur-de-lis and its infamous spear with three pikes will serve as a warning to all those who try to break this unity, for "thou shall go no further" it was said they shall not pass!"
+ fra_royaulme_france_desc: "At long last, France has been united. Never again will a Frenchman bow down to a foreign lord or power. France will protect every Frenchman and the fleur-de-lis and its infamous spear with three pikes will serve as a warning to all those who try to break this unity, for 'thou shall go no further' it was said they shall not pass!"
  fra_age_france_title: "The Age of France"
  fra_age_france_desc: "A period when great tasks are being accomplished, welfare all over France and cultural breakthrough is upon us. A time where innovation and culture is at it's peak. There is no better time to be alive than now. Truly a golden age for France; an age made for France."
  fra_french_superiority_title: "French Superiority"
  fra_french_superiority_desc: "Our dream of European supremacy is becoming a reality. France will hold the reins over European economy, politics, and culture for ages to come. All of Europe will tremble when they hear the French battle cry of \"Montjoie Saint-Denis!\""
  fra_puppeteers_play_title: "A Puppeteers Play"
- fra_puppeteers_play_desc: "World conquest is a dream many have dreamt of. From Alexander the Great to the Mongols in the East, many have tried to achieve this dream but fell a victim to over extension and disloyal subjects. Instead of directly controlling the globe, we should form "client states" which will govern a region and prepare it for future French annexation."
+ fra_puppeteers_play_desc: "World conquest is a dream many have dreamt of. From Alexander the Great to the Mongols in the East, many have tried to achieve this dream but fell a victim to over extension and disloyal subjects. Instead of directly controlling the globe, we should form 'client states' which will govern a region and prepare it for future French annexation."
  fra_confederation_rhine_title: "Confederation of the Rhine"
  fra_confederation_rhine_desc: "The Rhineland is a collection of independent duchies all vying for glory and strength. We should collect all of these duchies and unite them under the French banner in order for them to serve in interest of France."
  fra_one_nation_to_rule_them_all_title: "One Nation to Rule them all"
@@ -154,7 +154,7 @@
  ME_France_Events.8.OPT1: "We will claim the riches of North Africa."
 
  ME_France_Events.9.T: "Antoine Lavoisier"
- ME_France_Events.9.D: "A French nobleman and a chemist, Antoine Lavoisier had a large influence on both the history of chemistry and the history of biology. Dubbed as "The Father of Modern Chemistry", his discoveries surely support that title."
+ ME_France_Events.9.D: "A French nobleman and a chemist, Antoine Lavoisier had a large influence on both the history of chemistry and the history of biology. Dubbed as 'The Father of Modern Chemistry', his discoveries surely support that title."
  ME_France_Events.9.OPT1: "Excellent"
 
  ME_France_Events.11.T: "Company of the American Islands"
@@ -243,7 +243,7 @@
  ME_France_Events.30.OPT1: "Excellent"
 
  ME_France_Events.31.T: "The Royal Musketeers"
- ME_France_Events.31.D: "With the state's monopoly of force, the need of an elite group to enforce that monopoly is rising. "The Royal Musketeers" as our police force calls them, is an elite group of units who will have specialized training be it battle training or monarch protection. Recruitment to this task force will be open to the lower nobility as well, in order for them to prove their loyalty to the nation"
+ ME_France_Events.31.D: "With the state's monopoly of force, the need of an elite group to enforce that monopoly is rising. The 'Royal Musketeers' as our police force calls them, is an elite group of units who will have specialized training be it battle training or monarch protection. Recruitment to this task force will be open to the lower nobility as well, in order for them to prove their loyalty to the nation"
  ME_France_Events.31.OPT1: "Establish the musketeers;"
  ME_France_Events.31.OPT2: "They are too costly"
 
@@ -273,7 +273,7 @@
  ME_France_Events.36.OPT2: "Invest in the current industry of Lyon"
 
  ME_France_Events.37.T: "The Enemy of my Enemy..."
- ME_France_Events.37.D: "The Habsburg power has been growing out of control. With their title as Holy Roman Emperor they have continued to fund their rivalry against us by using the imperial princes. But as the old saying goes; "The enemy of my enemy is my friend" and for that reason we have found an unusual ally in an unusual place. The Ottoman Turks have been very receptive of our anti-Austrian cause. We should send a mission to Constantinople to agree on some final terms with them."
+ ME_France_Events.37.D: "The Habsburg power has been growing out of control. With their title as Holy Roman Emperor they have continued to fund their rivalry against us by using the imperial princes. But as the old saying goes; 'The enemy of my enemy is my friend' and for that reason we have found an unusual ally in an unusual place. The Ottoman Turks have been very receptive of our anti-Austrian cause. We should send a mission to Constantinople to agree on some final terms with them."
  ME_France_Events.37.OPT1: "Send a mission to Constantinople."
 
  ME_France_Events.38.T: "Hidden Event"
@@ -304,7 +304,7 @@
  ME_France_Events.43.OPT1: "The calm before the storm."
 
  ME_France_Events.44.T: "The Huguenots"
- ME_France_Events.44.D: "Once a minor faction in France the Huguenots were considered as vocal heretics at best. With the ever growing popularity of the Reformation in France, the Huguenots saw their chance in gaining power and urged the peasantry to take up arms against the oppressive Catholic church and the state. We are in front of a crossroad, should we be tolerant towards this faction and anger the catholic world, or should we "forcefully" end their movement? "
+ ME_France_Events.44.D: "Once a minor faction in France the Huguenots were considered as vocal heretics at best. With the ever growing popularity of the Reformation in France, the Huguenots saw their chance in gaining power and urged the peasantry to take up arms against the oppressive Catholic church and the state. We are in front of a crossroad, should we be tolerant towards this faction and anger the catholic world, or should we 'forcefully' end their movement? "
  ME_France_Events.44.OPT1: "We should allow them to worship in peace."
  ME_France_Events.44.OPT2: "We can not tolerate heretics."
 
@@ -421,7 +421,7 @@
  ME_France_Events.69.OPT2: "We will reign over the British with a fist of steel"
 
  ME_France_Events.70.T: "The Dawn of a New World Order"
- ME_France_Events.70.D: "With our newly found supremacy in the European continent, the next logical question to be asked is "What now?" All this power amassed and stored inside the French homeland surely must lead to something bigger. What is the difference between ambition and utter madness? Our men stand in line awaiting orders, our horses poised to charge and our artillery ready to roar in the battlefield. For victory belongs to the most persevering and France is infinite!"
+ ME_France_Events.70.D: "With our newly found supremacy in the European continent, the next logical question to be asked is 'What now?' All this power amassed and stored inside the French homeland surely must lead to something bigger. What is the difference between ambition and utter madness? Our men stand in line awaiting orders, our horses poised to charge and our artillery ready to roar in the battlefield. For victory belongs to the most persevering and France is infinite!"
  ME_France_Events.70.OPT1: "Impossible is a word to be found only in the dictionary of fools."
  ME_France_Events.70.OPT2: "Let us not anger the entirety of Europe."
 
@@ -468,7 +468,7 @@
  ME_France_Events.79.OPT1: "Hidden Option"
 
  ME_France_Events.80.T: "How does the French HRE work?"
- ME_France_Events.80.D: "The French HRE operates somewhat close to the vanilla HRE that eu4 provides. You have §BFrench Authority§! which is accumulated yearly. The yearly tick happens in the first month of every year. §BFrench Authority§! will let you pass reforms which will be found in the decisions tab. The amount of §GPrince Français§! you have will obviously increase the amount of §BFrench Authority§! you gain per yearly tick. §GPrince Français§! act somewhat similarly to the HRE princes as in they are independent and autonomous (to an extent per PDX limitations on modding of course). At the start, every §Ovassal§! you own will be converted to a §GPrince Français§! "Whose total development is less than 100 and is located in Europe". You can get more §GPrince Français§! through war and diplomacy. There will be a peace offer which converts viable nations into §GPrince Français§! and a diplomacy button which invites nations to become §GPrince Français§!."
+ ME_France_Events.80.D: "The French HRE operates somewhat close to the vanilla HRE that eu4 provides. You have §BFrench Authority§! which is accumulated yearly. The yearly tick happens in the first month of every year. §BFrench Authority§! will let you pass reforms which will be found in the decisions tab. The amount of §GPrince Français§! you have will obviously increase the amount of §BFrench Authority§! you gain per yearly tick. §GPrince Français§! act somewhat similarly to the HRE princes as in they are independent and autonomous (to an extent per PDX limitations on modding of course). At the start, every §Ovassal§! you own will be converted to a §GPrince Français§! 'Whose total development is less than 100 and is located in Europe'. You can get more §GPrince Français§! through war and diplomacy. There will be a peace offer which converts viable nations into §GPrince Français§! and a diplomacy button which invites nations to become §GPrince Français§!."
  ME_France_Events.80.OPT1: "Thanks GrumpyKing"
 
  ME_France_Events.81.T: "HIDDEN EVENT"
@@ -585,6 +585,7 @@
  fra_colonial_empire: "Colonial Empire"
  fra_marseille: "La Marseillaise"
  fra_french_fabric: "French Fabric"
+ desc_fra_french_fabric: ""
  fra_local_university: "Local University"
  fra_swiss_traditions: "Swiss Traditions"
  fra_mass_production_weapons: "Mass Production of Weapons"
@@ -610,7 +611,6 @@
  fra_increase_agri_interest: "Increased Agriculture Interest"
  fra_new_world_crops: "New World Crops"
  fra_promise_independence: "Promise of Independence"
- fra_bailwick: "Bailiwick"
  fra_the_taille: "The Taille"
  fra_silk_must_flow: "The Silk Must Flow"
  fra_invest_lyon: "Investing in Lyon"

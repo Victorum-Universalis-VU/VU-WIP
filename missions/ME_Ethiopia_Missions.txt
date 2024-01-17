@@ -65,9 +65,9 @@ ETH_slot_2 = {
 			}
 			tigray_area = {
 				limit = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			1226 = {

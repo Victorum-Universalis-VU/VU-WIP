@@ -258,6 +258,7 @@
  cooperate_with_legislators_desc: ""
  american_monarchy: "American Monarchy"
  reinforced_republic: "Great American Republic"
+ reinforced_republic_desc: ""
  #
  high_king_of_ireland_reform:0 "High King of Ireland"
  high_king_of_ireland_reform_desc:0 "The High King of Ireland or Ard Rí is special kingship whose occupants had supremacy among the kings of Ireland which was used in dominating the whole island."
@@ -280,6 +281,24 @@
  belgian_kingdom_legacy: "Kingdom of Belgium"
  belgian_kingdom_legacy_desc: "Situated in what is considered as one of the liveliest and most economically prosperous regions of Europe, with both sea and inland connections to some of Europes most prosperous commercial centres, Belgium's existence is owed to its unification of the Flemish, Walloonian and Germanic peoples of the low countries, whilst at the same time fighting off potential threats to its sovereignity from the neighbouring powers of Holland, France, Englad and the Holy Roman Empire. The name for Belgium ofc is derived from the Latin word Belgica, used in Julius Caesar's 'Gallic Wars', to describe a nearby region in the period around 55 BCE. Belgium has also been the battleground of European powers, earning the moniker 'the Battlefield of Europe'."
  #
+ church_of_england_reform: "Church of England"
+ church_of_england_reform_desc: ""
+ #
+ church_of_france_reform: "Church of France"
+ church_of_france_reform_desc: ""
+ #
+ prussian_republic: "Prussian Republic"
+ prussian_republic_desc: ""
+ #
+ anglois_dual_monarchy: "Anglois Dual Monarchy"
+ anglois_dual_monarchy_desc: ""
+ #
+ revolutionary_republic: "Revolutionary Republic"
+ revolutionary_republic_desc: ""
+ #
+ revolutionary_empire: "Revolutionary Empire"
+ revolutionary_empire_desc: ""
+ #
  first_french_empire_legacy: "First French Empire"
  first_french_empire_legacy_desc: ""
  #
@@ -297,5 +316,40 @@
  #
  directory_republic_legacy: "Directory"
  directory_republic_legacy_desc: ""
- 
- 
+ #
+ nahuatl_reform_1_FACTION_DESC:0 "Let us reform Nahuatl."
+ nahuatl_reform_1_influence:0 "Nahuatl Reform"
+ nahuatl_reform_2_FACTION_DESC:0 "Let us reform Nahuatl."
+ nahuatl_reform_2_influence:0 "Nahuatl Reform"
+ nahuatl_reform_3_FACTION_DESC:0 "Let us reform Nahuatl."
+ nahuatl_reform_3_influence:0 "Nahuatl Reform"
+ nahuatl_reform_4_FACTION_DESC:0 "Let us reform Nahuatl."
+ nahuatl_reform_4_influence:0 "Nahuatl Reform"
+ nahuatl_reform_5_FACTION_DESC:0 "Let us reform Nahuatl."
+ nahuatl_reform_5_influence:0 "Nahuatl Reform"
+ #
+ inti_reform_1_FACTION_DESC:0 "Let us reform Inti."
+ inti_reform_1_influence:0 "Inti Reform"
+ inti_reform_2_FACTION_DESC:0 "Let us reform Inti."
+ inti_reform_2_influence:0 "Inti Reform"
+ inti_reform_3_FACTION_DESC:0 "Let us reform Inti."
+ inti_reform_3_influence:0 "Inti Reform"
+ inti_reform_4_FACTION_DESC:0 "Let us reform Inti."
+ inti_reform_4_influence:0 "Inti Reform"
+ inti_reform_5_FACTION_DESC:0 "Let us reform Inti."
+ inti_reform_5_influence:0 "Inti Reform"
+ #
+ mesoamerican_reform_1_FACTION_DESC:0 "Let us reform Mesoamerican"
+ mesoamerican_reform_1_influence:0 "Mesoamerican Reform"
+ mesoamerican_reform_2_FACTION_DESC:0 "Let us reform Mesoamerican"
+ mesoamerican_reform_2_influence:0 "Mesoamerican Reform"
+ mesoamerican_reform_3_FACTION_DESC:0 "Let us reform Mesoamerican"
+ mesoamerican_reform_3_influence:0 "Mesoamerican Reform"
+ mesoamerican_reform_4_FACTION_DESC:0 "Let us reform Mesoamerican"
+ mesoamerican_reform_4_influence:0 "Mesoamerican Reform"
+ mesoamerican_reform_5_FACTION_DESC:0 "Let us reform Mesoamerican"
+ mesoamerican_reform_5_influence:0 "Mesoamerican Reform"
+ #
+ trade_outpost_release_estate: "Release this Trade Outpost"
+ desc_trade_outpost_release_estate: ""
+ # 

@@ -20,7 +20,7 @@
  PRO_provencal_hegemony_title: "Provencal Hegemony"
  PRO_provencal_hegemony_desc: "Our success in Brittany, western Italy and Lorraine has lifted our small nation in the eyes of the world. Provence is no more a small tier county that will be used as a pawn in major nations' affairs. Provencal Hegemony is a dream that is now close to reality."
  PRO_croissant_title: "Ordre du Croissant"
- PRO_croissant_desc: "With the establishment of the English "Order of the Garter", the establishment of a French counterpart has seen an increased interest amongst our nobility and clergy alike."
+ PRO_croissant_desc: "With the establishment of the English 'Order of the Garter', the establishment of a French counterpart has seen an increased interest amongst our nobility and clergy alike."
  PRO_absolutism_title: "Provencal Absolutism"
  PRO_absolutism_desc: "A new age dawns upon us! Divided nations who follow the will of estates and factions are becoming a mere shadow of their former glory. Power should be held by one leader whose reign should be supreme and absolute."
  PRO_maritime_base_title: "A Maritime Base"
@@ -54,7 +54,7 @@
  PRO_louis_ii_title: "The Legacy of Louis III"
  PRO_louis_ii_desc: "Louis III also known as Louis the Blind, was a Provencal count who got crowned emperor of the Holy Roman empire. We shall storm the forts of [Root.Emperor.Name] and seize this illustrious Crown. We shall restore Louis' legacy as the new rulers of the Holy Roman Empire."
  PRO_house_of_anjou_title: "The House of Anjou"
- PRO_house_of_anjou_desc: "With our recent conquests of the French and the Palestinian regions we have achieved what everyone though of as "outrageous". We will no longer be the laughing stock of nations that deem our claims untrue and fabricated. The Anjou dynasty has finally united under our banner and French unity is at an all time high."
+ PRO_house_of_anjou_desc: "With our recent conquests of the French and the Palestinian regions we have achieved what everyone though of as 'outrageous. We will no longer be the laughing stock of nations that deem our claims untrue and fabricated. The Anjou dynasty has finally united under our banner and French unity is at an all time high."
  PRO_the_third_temple_title: "The Third Temple"
  PRO_the_third_temple_desc: "\"I will make my dwelling among them and walk among them, and I will be their God, and they shall be my people.\""
  PRO_hungary_title: "Second House of Anjou"
@@ -193,7 +193,7 @@
  ME_Provence_Events.8.b: "We are above such requests."
  
  ME_Provence_Events.9.t: "A \"Good\" Offer"
- ME_Provence_Events.9.d: "The incapability of Charles the Bold in producing any male offspring has us now on the edge. Our country has swayed into the hands of the treacherous "Good King" who has his eyes firmly on our hold. Diplomats have arrived into our court asking us to be integrated diplomatically into the Provencal lands for some autonomy."
+ ME_Provence_Events.9.d: "The incapability of Charles the Bold in producing any male offspring has us now on the edge. Our country has swayed into the hands of the treacherous 'Good King' who has his eyes firmly on our hold. Diplomats have arrived into our court asking us to be integrated diplomatically into the Provencal lands for some autonomy."
  ME_Provence_Events.9.a: "Let us merge our states into a greater country."
  ME_Provence_Events.9.b: "We reject the good king's offer. Vive la Lorraine!"
  

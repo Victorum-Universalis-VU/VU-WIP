@@ -132,7 +132,7 @@ country_event = {
 country_event = {
 	id = ME_Abbasid_Events.4
 	title = ME_Abbasid_Events.4.t #Caliph flees the city!
-	desc = ME_Abbasid_Events.4.d
+	desc = ME_Abbasid_Events.4.desc
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	major = yes
@@ -243,7 +243,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Abbasid_Events.4.e
+		name = ME_Abbasid_Events.4.d
 
 		ai_chance = {
 			factor = 1

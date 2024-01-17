@@ -43,8 +43,8 @@ POL_Missions_1 = {
 					}
 				}
 				OR = {
-					is_papal_controller = yes
-					papal_controller = {
+					any_country = {
+						is_papal_controller = yes
 						has_opinion = {
 							who = ROOT
 							value = 100
@@ -671,14 +671,21 @@ POL_Missions_1 = {
 		position = 17
 		provinces_to_highlight = {
 			owned_by = ROOT
-			NOT = { has_institution = enlightenment }
+			NOT = {
+				is_institution_enabled = enlightenment
+				#has_institution = enlightenment #VU - Was 'has_institution = enlightenment' but changed to 'is_institution_enabled = enlightenment'in v1.36.2.*. By San Felipe
+			}
 		}
 		trigger = {
 			ME_has_completed_all_reforms = yes
 			has_adm_advisor_3 = yes
 			OR = {
 				current_age = age_of_revolutions
-				all_owned_province = { has_institution = enlightenment }
+				all_owned_province = { 
+					owner = {
+						has_institution = enlightenment 
+					}
+				}
 			}
 		}
 		effect = {
@@ -2095,7 +2102,7 @@ POL_Missions_4_Jagiellon_2 = {
 						limit = {
 							OR = {
 								culture = czech
-								culture = silesian
+								culture = silesian_german
 							}
 						}
 						add_nationalism = -10
@@ -3705,9 +3712,9 @@ POL_Missions_5_2 = {
 				AND = {
 					ROOT = {
 						NOT = { religious_unity = 0.75 }
-						owned_by = ROOT
-						NOT = { religion = ROOT }
 					}
+					owned_by = ROOT
+					NOT = { religion = ROOT }
 				}
 			}
 		}

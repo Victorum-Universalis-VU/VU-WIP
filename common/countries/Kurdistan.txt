@@ -1,4 +1,4 @@
-#copied from Aq-Qoyunlu
+#Country Name: Please seefilename. Aq-Qoyunlu
 
 graphical_culture = muslimgfx
 
@@ -13,6 +13,20 @@ historical_idea_groups = {
 	defensive_ideas
 	diplomatic_ideas
 	economic_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
 }
 
 #copied from Bitlis 

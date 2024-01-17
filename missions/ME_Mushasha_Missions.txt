@@ -496,7 +496,6 @@ MSY_missions_2 = {
 		}
 		effect = {
 			country_event = { id = ME_Mushasha_Events.9 } #Sugar everywhere
-			
 			412 = { 
 				add_province_modifier = {
 					name = MSY_sugar

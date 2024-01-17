@@ -554,7 +554,7 @@ me_venice_missions_2 = {
 				}
 			}
 			hidden_effect = {
-				137 = {
+				1309 = {
 					every_trade_node_member_province = {
 						limit = { owned_by = ROOT }
 						add_province_modifier = {
@@ -805,7 +805,7 @@ me_venice_missions_3 = {
 			}
 			custom_tooltip = VEN_ARMADA_CONQUEST_TT
 			hidden_effect = {
-				137 = {
+				1309 = {
 					every_trade_node_member_province = {
 						limit = {
 							has_port = yes
@@ -1943,11 +1943,11 @@ me_venice_missions_5 = {
 				}
 			}
 			define_explorer = {
+				name = "Romano Mairano"
 				fire = 2
 				shock = 0
 				manuever = 3
 				siege = 0
-				name = "Romano Mairano"
 			}
 			arabian_sea_region = {
 				discover_country = ROOT

@@ -33,6 +33,7 @@ vu_civilwar_full_annex = {
 #New Additions by San Felipe
 #vu_engsco_full_annex = {
 #	ae_base = 0.0
+#	power_projection = no
 #	prestige_base = 0.5
 #	warscore_cost = {
 #		no_provinces = 100

@@ -84,14 +84,19 @@
 
  #Event Modifiers
  nap_magnanimo: "Il Magnanimo"
+ desc_nap_magnanimo: ""
  nap_transumanza: "Transumanza"
+ desc_nap_transumanza: ""
  nap_transumanza_ge: "Transumanza"
+ desc_nap_transumanza_ge: ""
  nap_porta_capuana: "Porta Capuana"
- nap_twenty_years_prosperity: "Twenty Years of Prosperity"
+ desc_nap_porta_capuana: ""
 
  #Opinion Modifiers
  melva_naples_recoinciliation: "Recoincilation"
+ desc_melva_naples_recoinciliation: ""
  nap_helps_skanderberg: "Helping the Albanians"
+ desc_nap_helps_skanderberg: ""
 
  #Tooltips
  Accademia_NAP_TT: "\nHe has a proposal about a new accademy he wants to bring further"

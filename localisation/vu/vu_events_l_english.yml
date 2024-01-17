@@ -70,12 +70,14 @@
 
  #Dutch Culture Events
  dutch_culture.1.t:"The Dutch Cultural Awakening"
- dutch_culture.1.d:"The Culture of the Lowlands has slowly over the past decades begun to drift apart from the other German nations, and now after years of influence from outside sources has gain a distinct cultural Identity apart from German. Centuries of being united by politics and economics allowed the people of the Low Countries – even though they spoke different languages – to feel part of a shared culture the Netherlandish culture"
+ dutch_culture.1.d:"The Culture of the Lowlands has slowly over the past decades begun to drift apart from the other German nations, and now after years of influence from outside sources has gained a distinct cultural identity apart from German. Centuries of being united by politics and economics allowed the people of the Low Countries (even though they spoke different languages) to feel part of a shared culture the 'Netherlandish' culture."
  dutch_culture.1.a:"A New Culture in Europe"
+ dutch_culture.1.b:"No, we are German!"
  #
  dutch_culture.2.t:"The Dutch Cultural Awakening"
- dutch_culture.2.d:"The Culture of the Lowlands has slowly over the past decades begun to drift apart from the other German nations, and now after the formation of the Netherlands, the Dutch people have gained a distinct cultural Identity apart from German. Centuries of being united by politics and economics allowed the people of the Low Countries – even though they spoke different languages – to feel part of a shared culture the Netherlandish culture"
+ dutch_culture.2.d:"The Culture of the Lowlands has slowly over the past decades begun to drift apart from the other German nations, and now after the formation of the Netherlands, the Dutch people have gained a distinct cultural Identity apart from German. Centuries of being united by politics and economics allowed the people of the Low Countries (even though they spoke different languages) to feel part of a shared culture the 'Netherlandish' culture."
  dutch_culture.2.a:"Our New Culture in Europe"
+ dutch_culture.2.b:"No, we are German!"
  #
  #Wallachia Events
  wal_events.1.t:"Impale the Boyars"

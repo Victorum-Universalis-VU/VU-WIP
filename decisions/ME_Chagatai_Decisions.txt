@@ -3,7 +3,7 @@ country_decisions = {
 		potential = {
 			has_dlc = "The Cossacks"
 			tag = CHG
-			#mission_completed = CHG_integrate_the_tribes
+			mission_completed = CHG_integrate_the_tribes
 		}
 		allow = {
 			mil_power = 50

@@ -1081,11 +1081,11 @@ genoa_missions_2 = {
 		}
 		effect = {
 			define_explorer = {
+				name = "Antonio da Noli"
 				fire = 2
 				shock = 1
 				manuever = 3
 				siege = 0
-				name = "Antonio da Noli"
 				trait = ironside_personality
 			}
 			add_country_modifier = {

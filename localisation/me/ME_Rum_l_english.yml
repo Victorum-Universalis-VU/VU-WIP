@@ -406,8 +406,7 @@
  ME_Rum_Events.109.t: "Emirate of Cordoba"
  ME_Rum_Events.109.d: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis nunc congue est fermentum auctor. Aliquam volutpat lorem sed tristique laoreet. Aliquam ultrices eros vitae nulla volutpat, sit amet consequat diam mollis. Nulla auctor neque sed rutrum pellentesque. Etiam eget elit dictum, venenatis lectus eu, finibus nulla. Maecenas quis felis arcu. Pellentesque non tempus nibh. Quisque ac erat ut sem mattis malesuada at ut felis. Aliquam a vestibulum ipsum. Sed accumsan tristique vehicula. "
  ME_Rum_Events.109.a: "Muslims are back in Iberia."
- ME_Rum_Events.109.t: "We will be their successors."
- ME_Rum_Events.109.b: "REPLACE_ME"
+ ME_Rum_Events.109.b: "We must accept that Iberia is lost."
   
  ME_Rum_Events.110.t: "City of the World's Desire"
  ME_Rum_Events.110.d: "Quisque vitae mi efficitur, vestibulum nunc ut, facilisis dolor. Nullam pharetra purus ac sodales elementum. Praesent id lectus vitae erat varius imperdiet at sit amet mi. In hac habitasse platea dictumst. Morbi lorem ipsum, pulvinar vel consectetur in, elementum sit amet tellus. Curabitur scelerisque metus sed nisi porta dapibus. Etiam commodo nisl non dui malesuada pellentesque. "
@@ -842,9 +841,6 @@
  beylik_islamic_trade_networks: "Islamic Trade Networks"
  desc_beylik_islamic_trade_networks: "The reach of the Caliph is great."
 
- kar_expansion: "Karaman Expansion"
- desc_kar_expansion: "Karaman Grows!"
-
  kar_ports: "Development of the Karaman Ports"
  desc_kar_ports: "Ports grow!"
  
@@ -896,7 +892,10 @@
  desc_MEN_knights_tactics: "Use their knowledge against them."
  
  ere_expansion: "Eretna Expansion"
- desc_kar_expansion: "Eretna Grows!"
+ desc_ere_expansion: ""
+
+ kar_expansion: "Eretna Grows!"
+ desc_kar_expansion: ""
  
  ERE_masoleum: "Royal Mausoleum"
  desc_ERE_masoleum: "Bury the royals here!"

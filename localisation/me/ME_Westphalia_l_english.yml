@@ -185,8 +185,12 @@
  WES_if_we_supported_both: "Reward if the §YMission§! was completed by building §YUniversities§! in §MBoth Provinces§!:"
  
  
- 
+ #CBs
  cb_expel_cologne: "Expel from Westphalia"
+ cb_expel_cologne_desc: "Expel Cologne"
+ expel_cologne: "Expel Cologne"
+ expel_cologne_desc: "Expel Cologne"
+
  #Events
  ME_Westphalian_Events.1.t: "A Holy Favor"
  ME_Westphalian_Events.1.d: "We have been most faithful servants to the God above. Surely the current Pope, [PAP.Monarch.GetName], would grant us one of his famous 'Holy Favors'? After all, the system favors the pious, not the ones with deep pockets, right?"

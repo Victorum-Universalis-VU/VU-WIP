@@ -1916,8 +1916,8 @@ country_event = {
 
 country_event = {
 	id = elections.7002
-	title = "elections.EVTNAME7001"
-	desc = "EVTDESC701"
+	title = "elections.EVTNAME7002"
+	desc = "EVTDESC7002"
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
@@ -1927,11 +1927,9 @@ country_event = {
 	}
 	
 	option = {
-		name = "elections.EVTOPTB7001"	
+		name = "elections.EVTOPTB7002"	
 		ai_chance = { factor = 20 }
-			define_ruler = {
-				
-			}
+		define_ruler = {}
 		add_faction_influence = {
 			faction = GE_federalists
 			influence = 10
@@ -1939,11 +1937,9 @@ country_event = {
 		set_ruler_flag = federalist_in_office
 	}
 	option = {
-		name = "elections.EVTOPTC7001"	
+		name = "elections.EVTOPTC7002"	
 		ai_chance = { factor = 20 }
-			define_ruler = {
-				
-			}
+		define_ruler = {}
 		add_faction_influence = {
 			faction = GE_republicans
 			influence = 10

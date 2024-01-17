@@ -4,7 +4,8 @@
 
 owner = SIC
 controller = SIC
-culture = lombard
+add_core = SIC
+culture = sicilian
 religion = catholic 
 hre = no 
 base_tax = 4
@@ -14,14 +15,6 @@ base_manpower = 2
 fort_15th = yes #Numerous forts, Castello Maniace and Castello di Milazzo being the prominent.
 capital = "Messina"
 is_city = yes 
-add_core = SIC
-
-
-
-
-
-
-
 
 add_permanent_province_modifier = {
 	name = straits_of_messina_estuary_modifier

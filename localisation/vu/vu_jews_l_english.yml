@@ -1,10 +1,10 @@
 ﻿l_english:
  jewish_population:0 "Significant Jewish Population"
- jewish_population_desc:0 "This province has a significant population of Jews"
+ desc_jewish_population:0 "This province has a significant population of Jews"
  jewish_expulsions:0 "Jewish Expulsions"
- jewish_expulsions_desc:0 "The expulsion of the Jews from this province has left parts of the province unpopulated and abandoned"
+ desc_jewish_expulsions:0 "The expulsion of the Jews from this province has left parts of the province unpopulated and abandoned"
  GE_jewish_quarter:0 "Jewish Quarter"
- GE_jewish_quarter_desc:0 "This province has built a Jewish Quarter."
+ desc_GE_jewish_quarter:0 "This province has built a Jewish Quarter."
 
  jewish_ww2:0 "All Jews within our nation will be expelled, and must fend for themselves elsewhere. They will be evicted by §Rforce§! if necessary."
 

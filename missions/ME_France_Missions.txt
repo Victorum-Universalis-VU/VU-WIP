@@ -2131,11 +2131,20 @@ france_missions_4 = {
 		}
 		effect = {
 			custom_tooltip = me_fra_every_province_that_meets_requirements
-			add_province_modifier = {
-				name = fra_french_fabric
-				duration = 10950
+			167 = {
+				add_province_modifier = {
+			    	name = fra_french_fabric
+			    	duration = 10950
+			    }
+				add_base_production = 2
 			}
-			add_base_production = 2
+			168 = {
+				add_province_modifier = {
+			    	name = fra_french_fabric
+			    	duration = 10950
+			    }
+				add_base_production = 2
+			}
 			hidden_effect = {
 				every_owned_province = {
 					limit = {

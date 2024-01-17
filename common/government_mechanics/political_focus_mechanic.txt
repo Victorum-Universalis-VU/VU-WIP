@@ -32,10 +32,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_administrative_focus = {
 			center = no
 			gui = political_focus_mechanic_administrative_focus
-			potential = {
-				NOT = { has_country_modifier = political_focus_mechanic_administrative_focus_modifier }
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	NOT = { has_country_modifier = political_focus_mechanic_administrative_focus_modifier }
+			#}
 			trigger = {
+				NOT = { has_country_modifier = political_focus_mechanic_administrative_focus_modifier }
 				has_government_power = {
 					mechanic_type = political_focus_mechanic
 					power_type = political_focus_power
@@ -62,10 +64,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_administrative_focus_selected = {
 			center = no
 			gui = political_focus_mechanic_administrative_focus_selected
-			potential = {
-				has_country_modifier = political_focus_mechanic_administrative_focus_modifier
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	has_country_modifier = political_focus_mechanic_administrative_focus_modifier
+			#}
 			trigger = {
+				has_country_modifier = political_focus_mechanic_administrative_focus_modifier
 			}
 			effect = {
 				custom_tooltip = political_focus_mechanic_disable_focus_tt
@@ -88,9 +92,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_dummy_interaction_1 = {
 			center = no
 			gui = political_focus_mechanic_dummy_interaction
-			potential = {
-				always = no
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	always = no
+			#}
 			trigger = {
 				always = no
 			}
@@ -105,10 +110,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_diplomatic_focus = {
 			center = no
 			gui = political_focus_mechanic_diplomatic_focus
-			potential = {
-				NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
+			#}
 			trigger = {
+				NOT = { has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier }
 				has_government_power = {
 					mechanic_type = political_focus_mechanic
 					power_type = political_focus_power
@@ -135,10 +142,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_diplomatic_focus_selected = {
 			center = no
 			gui = political_focus_mechanic_diplomatic_focus_selected
-			potential = {
-				has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
+			#}
 			trigger = {
+				has_country_modifier = political_focus_mechanic_diplomatic_focus_modifier
 			}
 			effect = {
 				custom_tooltip = political_focus_mechanic_disable_focus_tt
@@ -161,9 +170,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_dummy_interaction_2 = {
 			center = no
 			gui = political_focus_mechanic_dummy_interaction
-			potential = {
-				always = no
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	always = no
+			#}
 			trigger = {
 				always = no
 			}
@@ -178,10 +188,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_military_focus = {
 			center = no
 			gui = political_focus_mechanic_military_focus
-			potential = {
-				NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
+			#}
 			trigger = {
+				NOT = { has_country_modifier = political_focus_mechanic_military_focus_modifier }
 				has_government_power = {
 					mechanic_type = political_focus_mechanic
 					power_type = political_focus_power
@@ -208,10 +220,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_military_focus_selected = {
 			center = no
 			gui = political_focus_mechanic_military_focus_selected
-			potential = {
-				has_country_modifier = political_focus_mechanic_military_focus_modifier
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	has_country_modifier = political_focus_mechanic_military_focus_modifier
+			#}
 			trigger = {
+				has_country_modifier = political_focus_mechanic_military_focus_modifier
 			}
 			effect = {
 				custom_tooltip = political_focus_mechanic_disable_focus_tt
@@ -234,9 +248,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_dummy_interaction_3 = {
 			center = no
 			gui = political_focus_mechanic_dummy_interaction
-			potential = {
-				always = no
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	always = no
+			#}
 			trigger = {
 				always = no
 			}
@@ -251,10 +266,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_religious_focus = {
 			center = no
 			gui = political_focus_mechanic_religious_focus
-			potential = {
-				NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
+			#}
 			trigger = {
+				NOT = { has_country_modifier = political_focus_mechanic_religious_focus_modifier }
 				has_government_power = {
 					mechanic_type = political_focus_mechanic
 					power_type = political_focus_power
@@ -281,10 +298,12 @@ political_focus_mechanic = {
 		political_focus_mechanic_religious_focus_selected = {
 			center = no
 			gui = political_focus_mechanic_religious_focus_selected
-			potential = {
-				has_country_modifier = political_focus_mechanic_religious_focus_modifier
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	has_country_modifier = political_focus_mechanic_religious_focus_modifier
+			#}
 			trigger = {
+				has_country_modifier = political_focus_mechanic_religious_focus_modifier
 			}
 			effect = {
 				custom_tooltip = political_focus_mechanic_disable_focus_tt
@@ -307,9 +326,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_dummy_interaction_4 = {
 			center = no
 			gui = political_focus_mechanic_dummy_interaction
-			potential = {
-				always = no
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	always = no
+			#}
 			trigger = {
 				always = no
 			}
@@ -324,9 +344,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_trade_focus = {
 			center = no
 			gui = political_focus_mechanic_trade_focus
-			potential = {
-				NOT = { has_country_modifier = political_focus_mechanic_trade_focus_modifier }
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	NOT = { has_country_modifier = political_focus_mechanic_trade_focus_modifier }
+			#}
 			trigger = {
 				has_government_power = {
 					mechanic_type = political_focus_mechanic
@@ -354,9 +375,10 @@ political_focus_mechanic = {
 		political_focus_mechanic_trade_focus_selected = {
 			center = no
 			gui = political_focus_mechanic_trade_focus_selected
-			potential = {
-				has_country_modifier = political_focus_mechanic_trade_focus_modifier
-			}
+			#VU - Hashed this out in v1.36.2.* as this is classed as a trigger and you cannot have two triggers in a mechanic at once. By San Felipe
+			#potential = {
+			#	has_country_modifier = political_focus_mechanic_trade_focus_modifier
+			#}
 			trigger = {
 			}
 			effect = {

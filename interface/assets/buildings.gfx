@@ -16,66 +16,79 @@ objectTypes = {
 	pdxmesh = {
 		name = "tax_building_01_mesh"
 		file = "gfx/models/Buildings/Western/tax_building_01.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "tax_building_02_mesh"
 		file = "gfx/models/Buildings/Western/tax_building_02.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "tax_building_03_mesh"
 		file = "gfx/models/Buildings/Western/tax_building_03.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "tax_building_04_mesh"
 		file = "gfx/models/Buildings/Western/tax_building_04.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}	
 
 	# production
 	pdxmesh = {
 		name = "production_building_01_mesh"
 		file = "gfx/models/Buildings/Western/production_building_01.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "production_building_02_mesh"
 		file = "gfx/models/Buildings/Western/production_building_02.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
+
 	}
 	pdxmesh = {
 		name = "production_building_03_mesh"
 		file = "gfx/models/Buildings/Western/production_building_03.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "production_building_04_mesh"
 		file = "gfx/models/Buildings/Western/production_building_04.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}	
 
 	# manpower
 	pdxmesh = {
 		name = "manpower_building_01_mesh"
 		file = "gfx/models/Buildings/Western/manpower_building_01.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "manpower_building_02_mesh"
 		file = "gfx/models/Buildings/Western/manpower_building_02.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "manpower_building_03_mesh"
 		file = "gfx/models/Buildings/Western/manpower_building_03.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "manpower_building_04_mesh"
 		file = "gfx/models/Buildings/Western/manpower_building_04.mesh"
-		scale = 0.36			#VUAddOn changed from 0.4
+		#scale = 0.36			#VUAddOn changed from 0.4
+		scale = 0.15 #Added 0.25 in v1.36.2.*. By San Felipe
 	}	
 
 #### western buildings ########################################################
@@ -85,49 +98,49 @@ objectTypes = {
 	pdxmesh = {
 		name = "westerngfx_port_mesh"
 		file = "gfx/models/Buildings/Western/western_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
-	
+
 	pdxmesh = {
 		name = "easterngfx_port_mesh"
 		file = "gfx/models/Buildings/Eastern/eastern_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
 	
 	pdxmesh = {
 		name = "muslimgfx_port_mesh"
 		file = "gfx/models/Buildings/Muslim/muslim_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
-	
+
 	pdxmesh = {
 		name = "indiangfx_port_mesh"
 		file = "gfx/models/Buildings/Indian/indian_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
 	
 	pdxmesh = {
 		name = "asiangfx_port_mesh"
 		file = "gfx/models/Buildings/Asian/asian_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
-	
+
 	pdxmesh = {
 		name = "africangfx_port_mesh"
 		file = "gfx/models/Buildings/African/african_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
 	
 	pdxmesh = {
 		name = "northamericagfx_port_mesh"
 		file = "gfx/models/Buildings/NorthAmerica/north_american_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
 	
 	pdxmesh = {
 		name = "southamericagfx_port_mesh"
 		file = "gfx/models/Buildings/SouthAmerica/south_american_port.mesh"
-		scale = 0.45			#VUAddOn changed from 0.6
+		scale = 0.35			#VUAddOn changed from 0.6
 	}
 	
 	
@@ -314,25 +327,25 @@ objectTypes = {
 	pdxmesh = {
 		name = "westerngfx_fort_15th"
 		file = "gfx/models/Buildings/Western/cose_castle.mesh"
-		scale = 0.23			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.23
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	pdxmesh = {
 		name = "westerngfx_fort_16th"
 		file = "gfx/models/Buildings/Western/cose_starfort.mesh"
-		scale = 0.2			#VUAddOn changed from scale 0.25
+		scale = 0.125		    #VUAddOn changed from scale 0.2
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	pdxmesh = {
 		name = "westerngfx_fort_17th"
 		file = "gfx/models/Buildings/Western/cose_bastion.mesh"
-		scale = 0.17			#VUAddOn changed from scale 0.20
+		scale = 0.10			#VUAddOn changed from scale 0.17
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	pdxmesh = {
 		name = "westerngfx_fort_18th"
 		file = "gfx/models/Buildings/Western/cose_fortress.mesh"
-		scale = 0.16			#VUAddOn changed from scale 0.18
+		scale = 0.09			#VUAddOn changed from scale 0.16
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 

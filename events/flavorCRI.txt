@@ -365,7 +365,6 @@ country_event = {
 			}
 			7190 = { add_claim = TUR }
 		}
-		
 		if = {
 			limit = {
 				3245 = {
