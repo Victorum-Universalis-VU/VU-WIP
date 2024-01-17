@@ -1,8 +1,8 @@
 ﻿l_english:
 
- balto_slavic_group:0 "Balto-Slavic"
+ balto_slavic_group: "Balto-Slavic"
 
- OLD_ROMUVA:0 "Old Romuva"
+ OLD_ROMUVA: "Old Romuva"
  baltic_pagan_reformed_religion_desc: "Romuva is the polytheistic traditional belief system of the Baltic peoples.\nBy 1444 the Romuvan religion was mostly practiced in secret by the Lithuanian peoples, as they had been forced to convert to Catholicism else suffer by the sword in Catholic crusades. The religion has faded into obscurity with the formal christianization of Lithuania in 1385."
  baltic_pagan_reformed: "Romuva"
  baltic_pagan_reformed_rebels_title: "Religious"
@@ -25,7 +25,7 @@
  saule_desc: "Saule is the goddess of the Sun. She is often associated with life, fertility and health."
 
 
- finnic_group:0 "Finno-Uralic"
+ finnic_group: "Finno-Uralic"
 
  OLD_SUOMENUSKO: "Old Suomenusko"
  finnish_pagan_reformed_religion_desc: "Finnic Suomenusko is the polytheistic traditional belief system of the Finnic peoples. In their traditions most of their deities ruled over a specific aspect of nature. By 1444 the Suomenusko religion is in great recess and mostly practiced by the Sami people. Cold, scarsly populated regions of Northern Scandinavia are the last places where Suomenusko faith is still dominant."
@@ -50,7 +50,7 @@
  tuoni_desc: "Tuoni is the god of death and the ruler of the underworld."
 
 
- slavic_group:0 "Rodnovery"
+ slavic_group: "Rodnovery"
 
  OLD_SLAVIC: "Old Slavic"
  slavic_pagan_reformed_religion_desc: "Slavic Paganism is the polytheistic traditional belief system of the Slavic peoples. In their traditions most of their deities ruled over a specific aspect of nature. Before christian missions in IX and X century, it had been strong and dominant faith of all Slavs from Rus, Balkans, Poland, Greater Moravia and Pomerania. By 1444 the slavic paganism has been completely erradicated from western slavs and almost completely in Rus. Secluded regions of Rus are the last places where slavic paganism may still be practiced, though only as minority."
@@ -61,13 +61,13 @@
  slavic_pagan_reformed_rebels_army: "$RELIGION$ Army"
  slavic_pagan_reformed_rebels_demand: "Convert $COUNTRYNAME$"
  slavic_pagan_reformed_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- blessing_arkona:0 "Temple of Arkona"
- blessing_slenzha:0 "Temple in Slenzha"
- blessing_kiev:0 "Temple of Kiev"
- blessing_radgost:0 "Temple of Radgost"
- blessing_peryn:0 "Temple of Peryn"
- slavic_pagan_reformed_blessings:0 "Slavic Blessings"
- pick_slavic_pagan_reformed_blessing:0 "Pick Temple Blessing"
+ blessing_arkona: "Temple of Arkona"
+ blessing_slenzha: "Temple in Slenzha"
+ blessing_kiev: "Temple of Kiev"
+ blessing_radgost: "Temple of Radgost"
+ blessing_peryn: "Temple of Peryn"
+ slavic_pagan_reformed_blessings: "Slavic Blessings"
+ pick_slavic_pagan_reformed_blessing: "Pick Temple Blessing"
 
 
  bogomilist_new_religion_desc: "Bogomilism is a Christian Neo-Gnostic sect founded during First Bulgarian Empire by the priest Bogomil. The Bogomils called for a return to what they considered to be early spiritual teaching, rejecting the ecclesiastical hierarchy, and their primary political tendencies were resistance to the state and church authorities. This allowed Bogomilism to spread quickly though Balkans, evantually leaving boundries of Bulgaria and Byzantine Empire. The Bogomils were dualists or Gnostics in that they believed in a world within the body and a world outside the body. They did not use the Christian cross, nor build churches, as they revered their gifted form and considered their body to be the temple. This gave rise to many forms of practice to cleanse oneself through purging, fasting, celebrating and dancing. In 1444 Bogomilist heresy has been erradicated from Bosnia and is only present in few areas of Hum and Bosnia."
@@ -97,10 +97,10 @@
  miaphysite_rebels_demand: "Convert $COUNTRYNAME$"
  miaphysite_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  #Cant find where holy sites go, so here they shall go -Quonton
- HOLY_SITE_379_DESC:0 "Jerusalem is the Holiest city in Christianity. Long has it been held by the muslims, and sense the crusades christian power in the City, and all of Palestine has been all but lost. The city still has a significant population of Christians and would bring great prestige if it was to come back under Christian Rule."
- HOLY_SITE_2308_DESC:0 "Urha is a great city in south-western Anatolia, and has a large armenian and chirstian population. Long ago Urha was where the Armenian alphabet was invented, and as such it must be returned under Armenian rule. The city was the hometown of Abraham, the grandfather of Jacob and is of great religious importance. "
+ HOLY_SITE_379_DESC: "Jerusalem is considered the holiest city in Christianity. However, it has long been held by the muslims since the last crusades, leading to the dwindle of christian power in the City and all of Palestine, inspite of the city still having a significant Christian population. Hence, it would bring great prestige to whoever owns it, especially if said owner were Christian."
+ HOLY_SITE_2308_DESC: "Urha is a great city in south-western Anatolia, and has a large armenian and chirstian population. Long ago Urha was where the Armenian alphabet was invented, and as such it must be returned under Armenian rule. The city was the hometown of Abraham, the grandfather of Jacob and is of great religious importance. "
 
- nestorian_religion_desc: "Nestorianism is a Christian theological doctrine that upholds several distinctive teachings in the fields of Christology and Mariology. It opposes the concept of hypostatic union and emphasizes that the two natures (human and divine) of Jesus Christ were joined by will rather than personhood. Nestorius' teachings brought him into conflict with other prominent church leaders, most notably Cyril of Alexandria, who criticized especially his rejection of the title Theotokos ("God-bearer") for Mary, the mother of Jesus, and issued 12 anathemas against him at a council in Rome in 430. Nestorius and his teachings were eventually condemned as heretical at the Council of Ephesus in 431, and again at the Council of Chalcedon in 451, which led to the Nestorian Schism; churches supporting Nestorian teachings broke with the rest of the Christian Church. After these incidents the nestorians relocated in the east such as India, Persia, Babilonia, Khasgar and even China. That's why other christians call them as the Church of the East. In 1444 Nestorian communities are still present in Northern Mesopotamia and few remote regions of Middle Asia."
+ nestorian_religion_desc: "Nestorianism is a Christian theological doctrine that upholds several distinctive teachings in the fields of Christology and Mariology. It opposes the concept of hypostatic union and emphasizes that the two natures (human and divine) of Jesus Christ were joined by will rather than personhood. Nestorius' teachings brought him into conflict with other prominent church leaders, most notably Cyril of Alexandria, who criticized especially his rejection of the title Theotokos 'God-bearer' for Mary, the mother of Jesus, and issued 12 anathemas against him at a council in Rome in 430. Nestorius and his teachings were eventually condemned as heretical at the Council of Ephesus in 431, and again at the Council of Chalcedon in 451, which led to the Nestorian Schism; churches supporting Nestorian teachings broke with the rest of the Christian Church. After these incidents the nestorians relocated in the east such as India, Persia, Babilonia, Khasgar and even China. That's why other christians call them as the Church of the East. In 1444 Nestorian communities are still present in Northern Mesopotamia and few remote regions of Middle Asia."
  nestorian: "Nestorian"
  nestorian_rebels_title: "Religious"
  nestorian_rebels_name: "$RELIGION$ Zealots"
@@ -113,8 +113,8 @@
  vu_nestorian_monasteries: "Nestorian Monasteries"
  vu_nestorian_king_glory: "Nestorian Glorious Kings"
  vu_isolated_nestorian_christianity: "Isolated Nestorian Church"
- nestorian_blessings:0 "Nestorian Blessings"
- pick_nestorian_blessing:0 "Pick Nestorian Blessing"
+ nestorian_blessings: "Nestorian Blessings"
+ pick_nestorian_blessing: "Pick Nestorian Blessing"
 
 
  lollardy_religion_desc: "Lollardy, also known as Lollardism or the Lollard movement, is a Proto-Protestant Christian religious movement that existed from the mid-14th century until the reformation of English Church. It was initially led by John Wycliffe, a Roman Catholic theologian who was dismissed from the University of Oxford in 1381 for criticism of the Roman Catholic Church. The Lollards' demands were primarily for reform of Western Christianity. They formulated their beliefs in the Twelve Conclusions of the Lollards. In 1444 Lollardy is still present on the British Isles, even after years of repressions."
@@ -138,7 +138,7 @@
  druze_new_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
 
- yazidi_religion_desc: "Yazidi, Yazidism is a monotheistic ethnic religion that has roots in a western Iranic pre-Zoroastrian religion directly derived from the Indo-Iranian tradition. Yazidism is followed by the mainly by some groups of Kurdish people and is based on belief in one God who created the world and entrusted it into the care of seven Holy Beings, known as Angels. Preeminent among these Angels is Tawese Melek (also spelled as "Melek Taus"), who is the leader of the Angels and who has authority over the world. Melek is often depicted as a holy peacock, thus the origin of peacock feather as the symbol of the religion. Scripture of the faith is written in Yazidi Book of Revelation and Yazidi Black Book. By 1444 few pockets of Yazidism majority exist among Kurdish-dominated region of Mesopotamia."
+ yazidi_religion_desc: "Yazidi, Yazidism is a monotheistic ethnic religion that has roots in a western Iranic pre-Zoroastrian religion directly derived from the Indo-Iranian tradition. Yazidism is followed by the mainly by some groups of Kurdish people and is based on belief in one God who created the world and entrusted it into the care of seven Holy Beings, known as Angels. Preeminent among these Angels is Tawese Melek (spelt 'Melek Taus'), who is the leader of the Angels and who has authority over the world. Melek is often depicted as a holy peacock, thus the origin of peacock feather as the symbol of the religion. Scripture of the faith is written in Yazidi Book of Revelation and Yazidi Black Book. By 1444 few pockets of Yazidism majority exist among Kurdish-dominated region of Mesopotamia."
  yazidi: "Yazidi"
  yazidi_rebels_title: "Religious"
  yazidi_rebels_name: "$RELIGION$ Zealots"
@@ -146,28 +146,30 @@
  yazidi_rebels_army: "$RELIGION$ Army"
  yazidi_rebels_demand: "Convert $COUNTRYNAME$"
  yazidi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- yazidi_blessings:0 "Yazidism Blessings"
- pick_yazidi_blessing:0 "Pick Yazidi Blessing"
+ yazidi_blessings: "Yazidism Blessings"
+ pick_yazidi_blessing: "Pick Yazidi Blessing"
 
 
- vu_lollardy_rebels_demand:0 "Supremacy of Lollardy"
- vu_lollardy_rebels_demand_desc:0 "State's religion has been opressing Lollard community for too long. It is time for reactionary uprising."
- vu_nestorian_rebels_demand:0 "Supremacy of Nestorian faith"
- vu_nestorian_rebels_demand_desc:0 "State's religion has been opressing Nestorian community for too long. It is time for reactionary uprising."
- vu_druze_new_rebels_demand:0 "Supremacy of Druze faith"
- vu_druze_new_rebels_demand_desc:0 "State's religion has been opressing Druze community for too long. It is time for reactionary uprising."
- vu_miaphysite_rebels_demand:0 "Supremacy of Miaphysite faith"
- vu_miaphysite_rebels_demand_desc:0 "State's religion has been opressing Miaphysite religion for too long. It is time for reactionary uprising."
- vu_bogomilist_new_rebels_demand:0 "Supremacy of Bogomilist doctrine"
- vu_bogomilist_new_rebels_demand_desc:0 "State's religion has been opressing bogomilist communities for too long. It is time for reactionary uprising."
- vu_pagan_rebels_demand:0 "Supremacy of pagan faith"
- vu_pagan_rebels_demand_desc:0 "State's religion has been opressing native faith for too long. It is time for pagan reactionary uprising."
+ vu_lollardy_rebels_demand: "Supremacy of Lollardy"
+ vu_lollardy_rebels_demand_desc: "State's religion has been opressing Lollard community for too long. It is time for reactionary uprising."
+ vu_nestorian_rebels_demand: "Supremacy of Nestorian faith"
+ vu_nestorian_rebels_demand_desc: "State's religion has been opressing Nestorian community for too long. It is time for reactionary uprising."
+ vu_druze_new_rebels_demand: "Supremacy of Druze faith"
+ vu_druze_new_rebels_demand_desc: "State's religion has been opressing Druze community for too long. It is time for reactionary uprising."
+ vu_miaphysite_rebels_demand: "Supremacy of Miaphysite faith"
+ vu_miaphysite_rebels_demand_desc: "State's religion has been opressing Miaphysite religion for too long. It is time for reactionary uprising."
+ vu_bogomilist_new_rebels_demand: "Supremacy of Bogomilist doctrine"
+ vu_bogomilist_new_rebels_demand_desc: "State's religion has been opressing bogomilist communities for too long. It is time for reactionary uprising."
+ vu_pagan_rebels_demand: "Supremacy of pagan faith"
+ vu_pagan_rebels_demand_desc: "State's religion has been opressing native faith for too long. It is time for pagan reactionary uprising."
+ 
+ vu_cypriot_rebels_demand: "Supremacy of Cypriot Rebels"
+ vu_cypriot_rebels_demand_desc: "The State has been opressing the Cypriot community for too long. It is time for reactionary uprising."
 
+ asian_pagan_group: "East Asian Paganism"
 
- asian_pagan_group:0 "East Asian Paganism"
-
- OLD_BON:0 "Old Bon"
- bon_religion_desc:0 "Bön is ancient, pre-Buddhist religion of Tibet. Its nature is animistic and shamanistic in nature, and consists of many deities. Its oroginal shape - Pre-Buddhist Bön - has gone through many reforms by taking influence from the spread of neighbor religions. First into Yungdrung Bon in 10th century and finally into New Bon around 14th century. Both times incorporating various aspects of Tibetan Buddhism and Buddhist schools of thoughts. In 1444 Bön remains dominant in mountainous Tibet and some regions of Nepal but it's long past its days of the greatest power."
+ OLD_BON: "Old Bon"
+ bon_religion_desc: "Bön is ancient, pre-Buddhist religion of Tibet. Its nature is animistic and shamanistic in nature, and consists of many deities. Its oroginal shape - Pre-Buddhist Bön - has gone through many reforms by taking influence from the spread of neighbor religions. First into Yungdrung Bon in 10th century and finally into New Bon around 14th century. Both times incorporating various aspects of Tibetan Buddhism and Buddhist schools of thoughts. In 1444 Bön remains dominant in mountainous Tibet and some regions of Nepal but it's long past its days of the greatest power."
  bon: "Bön"
  bon_rebels_title: "Religious"
  bon_rebels_name: "$RELIGION$ Zealots"
@@ -177,7 +179,7 @@
  bon_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
 
- monothelite_religion_desc:0 "Monothelitism is a Christological doctrine that was declared heretical during the Council of Constantinople in 681. Monothelites attempted to develop the Miaphysite and Monophysite stance on the single nature of Christ by saying he had both a human and a divine nature but only a single will. In the game, Monothelite also represents its putative ancestor the Maronite Catholic Church of Lebanon which is also the last place monothelite provinces can be found."
+ monothelite_religion_desc: "Monothelitism is a Christological doctrine that was declared heretical during the Council of Constantinople in 681. Monothelites attempted to develop the Miaphysite and Monophysite stance on the single nature of Christ by saying he had both a human and a divine nature but only a single will. In the game, Monothelite also represents its putative ancestor the Maronite Catholic Church of Lebanon which is also the last place monothelite provinces can be found."
  monothelite: "Monothelite"
  monothelite_rebels_title: "Religious"
  monothelite_rebels_name: "$RELIGION$ Zealots"
@@ -187,9 +189,9 @@
  monothelite_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
 
- buddhist_group:0 "Buddhist"
+ buddhist_group: "Buddhist"
 
- tantra_religion_desc:0 "Tantra is advanced Buddhist practise of achieving enlightment. While tantra elements can easily be found in all Buddhist branches and even Hinduism, this religion is centered around it especially. In game Tantra religion represents Tibetan version of Buddhism and it is where it can be found in 1444."
+ tantra_religion_desc: "Tantra is advanced Buddhist practise of achieving enlightment. While tantra elements can easily be found in all Buddhist branches and even Hinduism, this religion is centered around it especially. In game Tantra religion represents Tibetan version of Buddhism and it is where it can be found in 1444."
  tantra: "Tantra"
  tantra_rebels_title: "Religious"
  tantra_rebels_name: "$RELIGION$ Zealots"
@@ -199,7 +201,7 @@
  tantra_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
 
- taoism_religion_desc:0 "Taoism or Daoism can be viewed as both school of philosophical thought and religion that both share ideas and concepts of Chinese origin and emphasize living in harmony with the Tao - natural order of the universe. In Taoism, the Tao is the source of everything and the ultimate principle underlying reality. Taoism teaches about the various disciplines for achieving perfection through self-cultivation. This can be done through the use of Taoist techniques and by becoming one with the unplanned rhythms of the all, called 'the way' or 'Tao'. Taoist ethics vary depending on the particular school, but in general tend to emphasize wu wei (action without intention), naturalness, simplicity, spontaneity and the Three Treasures - compassion, frugality and humility. In 1444 Taoism is scattered in various regions of China, mostly the southern part."
+ taoism_religion_desc: "Taoism or Daoism can be viewed as both school of philosophical thought and religion that both share ideas and concepts of Chinese origin and emphasize living in harmony with the Tao - natural order of the universe. In Taoism, the Tao is the source of everything and the ultimate principle underlying reality. Taoism teaches about the various disciplines for achieving perfection through self-cultivation. This can be done through the use of Taoist techniques and by becoming one with the unplanned rhythms of the all, called 'the way' or 'Tao'. Taoist ethics vary depending on the particular school, but in general tend to emphasize wu wei (action without intention), naturalness, simplicity, spontaneity and the Three Treasures - compassion, frugality and humility. In 1444 Taoism is scattered in various regions of China, mostly the southern part."
  taoism: "Taoism"
  taoism_rebels_title: "Religious"
  taoism_rebels_name: "$RELIGION$ Zealots"

@@ -455,6 +455,7 @@ reformer_state_reform = {
 		enables_divine_idea_group = no
 		enables_plutocratic_idea_group = yes
 		elections_increase_factions_influence = yes
+		can_create_stato_da_mar_vassal_rule = yes
 	}
 	conditional = {
 		allow = { 

@@ -106,6 +106,7 @@ country_event = {
 				culture_group = low_franconian #Dutch
 				culture_group = scandinavian #Nordic
 				culture_group = east_slavic
+				culture_group = germanic
 			}
 			
 			# Nation can't already have a colonial culture - prevents the event from triggering when not needed
@@ -157,7 +158,24 @@ country_event = {
 					primary_culture = russo_alaskan
 					
 					# Germanic
-					
+					primary_culture = hunsrik
+					primary_culture = argentiner
+					primary_culture = deutschkolumbian
+					primary_culture = peruanisch
+					primary_culture = guyanisch
+					primary_culture = texasdeutsch
+					primary_culture = haitianisch
+					primary_culture = kubaner
+					primary_culture = antillen
+					primary_culture = mexikaner
+					primary_culture = nordlander
+					primary_culture = kanadisch
+					primary_culture = kalifornier
+					primary_culture = neues_deutsch
+					primary_culture = alaskaner
+					primary_culture = afrikaner
+					primary_culture = australier
+					primary_culture = seelander
 					# Italian
 					
 					# Chinese
@@ -927,6 +945,37 @@ country_event = {
 				FROM = { change_primary_culture = deutschkolumbian }
 			}
 			
+			# Germanic Guyana
+			if = {
+				limit = {
+					FROM = {
+						culture_group = germanic
+						capital_scope = {
+							colonial_region = colonial_guyana
+						}
+						NOT = { primary_culture = guyanisch }
+					}
+				}
+				FROM = { change_primary_culture = guyanisch }
+			}
+			
+			# Germanic Peru, Bolivia
+			if = {
+				limit = {
+					FROM = {
+						culture_group = germanic
+						capital_scope = {
+							OR = {
+								colonial_region = colonial_peru
+								colonial_region = colonial_bolivia
+							}
+						}
+						NOT = { primary_culture = peruanisch }
+					}
+				}
+				FROM = { change_primary_culture = peruanisch }
+			}
+			
 			# Germanic Cuba
 			if = {
 				limit = {
@@ -940,85 +989,94 @@ country_event = {
 				}
 				FROM = { change_primary_culture = kubaner }
 			}
+			# Germanic Hati
+			if = {
+				limit = {
+					FROM = {
+						culture_group = germanic
+						capital_scope = {
+							colonial_region = colonial_hispaniola
+						}
+						NOT = { primary_culture = haitianisch }
+					}
+				}
+				FROM = { change_primary_culture = haitianisch }
+			}
+			# Germanic Antillies
+			if = {
+				limit = {
+					FROM = {
+						culture_group = germanic
+						capital_scope = {
+							colonial_region = colonial_the_carribean
+						}
+						NOT = { primary_culture = antillen }
+					}
+				}
+				FROM = { change_primary_culture = antillen }
+			}
 			
 			# Germanic Mexico
 			if = {
 				limit = {
 					FROM = {
 						culture_group = germanic
-						capital_scope = { colonial_region = colonial_mexico }
+						capital_scope = {							
+							OR = {
+								colonial_region = colonial_mexico
+								colonial_region = colonial_central_america
+							}
+						}
 						NOT = { primary_culture = mexikaner }
 					}
 				}
 				FROM = { change_primary_culture = mexikaner }
 			}
 			
-			# Germanic Eastern America
+			# Germanic America
 			if = {
 				limit = {
 					FROM = {
 						culture_group = germanic
-						capital_scope = { colonial_region = colonial_eastern_america }
-						NOT = { primary_culture = pennsilfaanisch }
+						capital_scope = {
+							OR = {
+								colonial_region = colonial_louisiana
+								colonial_region = colonial_eastern_america
+								colonial_region = colonial_mississippi
+								colonial_region = colonial_great_lakes
+								colonial_region = colonial_florida
+							}
+						}
+						NOT = { primary_culture = neues_deutsch }
 					}
 				}
-				FROM = { change_primary_culture = pennsilfaanisch }
+				FROM = { change_primary_culture = neues_deutsch }
 			}
-			
-			# Germanic Mississippi
+
+			# Germanic Texas
 			if = {
 				limit = {
 					FROM = {
 						culture_group = germanic
-						capital_scope = { colonial_region = colonial_mississippi }
-						NOT = { primary_culture = pennsilfaanisch }
+						capital_scope = {
+							colonial_region = colonial_texas
+						}
+						NOT = { primary_culture = texasdeutsch }
 					}
 				}
-				FROM = { change_primary_culture = pennsilfaanisch }
+				FROM = { change_primary_culture = texasdeutsch }
 			}
-			
-			# Germanic Great Lakes
-			if = {
-				limit = {
-					FROM = {
-						culture_group = germanic
-						capital_scope = { colonial_region = colonial_great_lakes }
-						NOT = { primary_culture = pennsilfaanisch }
-					}
-				}
-				FROM = { change_primary_culture = pennsilfaanisch }
-			}
-			
-			# Germanic Louisiana
-			if = {
-				limit = {
-					FROM = {
-						culture_group = germanic
-						capital_scope = { colonial_region = colonial_louisiana }
-						NOT = { primary_culture = pennsilfaanisch }
-					}
-				}
-				FROM = { change_primary_culture = pennsilfaanisch }
-			}
-			
-			# Germanic Florida
-			if = {
-				limit = {
-					FROM = {
-						culture_group = germanic
-						capital_scope = { colonial_region = colonial_florida }
-						NOT = { primary_culture = pennsilfaanisch }
-					}
-				}
-				FROM = { change_primary_culture = pennsilfaanisch }
-			}
-			
 			# Germanic California
 			if = {
 				limit = {
 					FROM = {
 						culture_group = germanic
-						capital_scope = { colonial_region = colonial_california }
+						capital_scope = { 
+							OR = {
+								colonial_region = colonial_california
+								colonial_region = colonial_cascadia
+							}
+						}
 						NOT = { primary_culture = kalifornier }
 					}
 				}
@@ -1037,10 +1095,10 @@ country_event = {
 								colonial_region = colonial_newfoundland
 							}
 						}
-						NOT = { primary_culture = neu_prussian }
+						NOT = { primary_culture = kanadisch }
 					}
 				}
-				FROM = { change_primary_culture = neu_prussian }
+				FROM = { change_primary_culture = kanadisch }
 			}
 			
 			# Germanic Hudson Bay
@@ -1054,22 +1112,10 @@ country_event = {
 								colonial_region = colonial_northwest_territories
 							}
 						}
-						NOT = { primary_culture = neu_prussian }
+						NOT = { primary_culture = nordlander }
 					}
 				}
-				FROM = { change_primary_culture = neu_prussian }
-			}
-			
-			# Germanic Cascadia
-			if = {
-				limit = {
-					FROM = {
-						culture_group = germanic
-						capital_scope = { colonial_region = colonial_cascadia }
-						NOT = { primary_culture = neu_prussian }
-					}
-				}
-				FROM = { change_primary_culture = neu_prussian }
+				FROM = { change_primary_culture = nordlander }
 			}
 			
 			# Germanic Alaska
@@ -1200,11 +1246,17 @@ country_event = {
 				primary_culture = hunsrik
 				primary_culture = argentiner
 				primary_culture = deutschkolumbian
+				primary_culture = peruanisch
+				primary_culture = guyanisch
+				primary_culture = texasdeutsch
+				primary_culture = haitianisch
 				primary_culture = kubaner
+				primary_culture = antillen
 				primary_culture = mexikaner
-				primary_culture = pennsilfaanisch
+				primary_culture = nordlander
+				primary_culture = kanadisch
 				primary_culture = kalifornier
-				primary_culture = neu_prussian
+				primary_culture = neues_deutsch
 				primary_culture = alaskaner
 				primary_culture = afrikaner
 				primary_culture = australier
@@ -1227,6 +1279,7 @@ country_event = {
 				culture_group = low_franconian # Dutch
 				culture_group = scandinavian # Nordic
 				culture_group = east_slavic
+				culture_group = germanic
 			}
 			# ...that hasn't already diverged
 			NOT = {
@@ -1277,7 +1330,24 @@ country_event = {
 					culture = russo_alaskan
 					
 					# Germanic
-
+					culture = hunsrik
+					culture = argentiner
+					culture = deutschkolumbian
+					culture = peruanisch
+					culture = guyanisch
+					culture = texasdeutsch
+					culture = haitianisch
+					culture = kubaner
+					culture = antillen
+					culture = mexikaner
+					culture = nordlander
+					culture = kanadisch
+					culture = kalifornier
+					culture = neues_deutsch
+					culture = alaskaner
+					culture = afrikaner
+					culture = australier
+					culture = seelander
 					# Italian
 
 					# Chinese
@@ -1917,6 +1987,31 @@ country_event = {
 				change_culture = deutschkolumbian
 			}
 			
+			# Germanic Peru, Bolivia
+			every_owned_province = {
+				limit = {
+					culture_group = germanic
+					OR = {
+						colonial_region = colonial_peru
+						colonial_region = colonial_bolivia
+					}
+					is_colony = no
+					NOT = { culture = peruanisch }
+				}
+				change_culture = peruanisch
+			}
+
+			# Germanic Guyana
+			every_owned_province = {
+				limit = {
+					culture_group = germanic
+					colonial_region = colonial_guyana
+					is_colony = no
+					NOT = { culture = guyanisch }
+				}
+				change_culture = guyanisch
+			}
+			
 			# Germanic Cuba
 			every_owned_province = {
 				limit = {
@@ -1927,12 +2022,37 @@ country_event = {
 				}
 				change_culture = kubaner
 			}
+
+			# Germanic Hati
+			every_owned_province = {
+				limit = {
+					culture_group = germanic
+					colonial_region = colonial_hispaniola
+					is_colony = no
+					NOT = { culture = haitianisch }
+				}
+				change_culture = haitianisch
+			}
+
+			# Germanic Antillies
+			every_owned_province = {
+				limit = {
+					culture_group = germanic
+					colonial_region = colonial_the_carribean
+					is_colony = no
+					NOT = { culture = antillen }
+				}
+				change_culture = antillen
+			}
 			
 			# Germanic Mexico
 			every_owned_province = {
 				limit = {
 					culture_group = germanic
-					colonial_region = colonial_mexico
+					OR = {
+						colonial_region = colonial_mexico
+						colonial_region = colonial_central_america
+					}
 					is_colony = no
 					NOT = { culture = mexikaner }
 				}
@@ -1943,62 +2063,38 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					culture_group = germanic
-					colonial_region = colonial_eastern_america
+					OR = {
+						colonial_region = colonial_eastern_america
+						colonial_region = colonial_mississippi
+						colonial_region = colonial_great_lakes
+						colonial_region = colonial_louisiana
+						colonial_region = colonial_florida
+					}
 					is_colony = no
-					NOT = { culture = pennsilfaanisch }
+					NOT = { culture = neues_deutsch }
 				}
-				change_culture = pennsilfaanisch
+				change_culture = neues_deutsch
 			}
-			
-			# Germanic Mississippi
+
+			# Germanic Texas
 			every_owned_province = {
 				limit = {
 					culture_group = germanic
-					colonial_region = colonial_mississippi
+					colonial_region = colonial_texas
 					is_colony = no
-					NOT = { culture = pennsilfaanisch }
+					NOT = { culture = texasdeutsch }
 				}
-				change_culture = pennsilfaanisch
+				change_culture = texasdeutsch
 			}
-			
-			# Germanic Great Lakes
-			every_owned_province = {
-				limit = {
-					culture_group = germanic
-					colonial_region = colonial_great_lakes
-					is_colony = no
-					NOT = { culture = pennsilfaanisch }
-				}
-				change_culture = pennsilfaanisch
-			}
-			
-			# Germanic Louisiana
-			every_owned_province = {
-				limit = {
-					culture_group = germanic
-					colonial_region = colonial_louisiana
-					is_colony = no
-					NOT = { culture = pennsilfaanisch }
-				}
-				change_culture = pennsilfaanisch
-			}
-			
-			# Germanic Florida
-			every_owned_province = {
-				limit = {
-					culture_group = germanic
-					colonial_region = colonial_florida
-					is_colony = no
-					NOT = { culture = pennsilfaanisch }
-				}
-				change_culture = pennsilfaanisch
-			}
-			
+
 			# Germanic California
 			every_owned_province = {
 				limit = {
 					culture_group = germanic
-					colonial_region = colonial_california
+					OR = {
+						colonial_region = colonial_california
+						colonial_region = colonial_cascadia
+					}
 					is_colony = no
 					NOT = { culture = kalifornier }
 				}
@@ -2015,9 +2111,9 @@ country_event = {
 						colonial_region = colonial_newfoundland
 					}
 					is_colony = no
-					NOT = { culture = neu_prussian }
+					NOT = { culture = kanadisch }
 				}
-				change_culture = neu_prussian
+				change_culture = kanadisch
 			}
 			
 			# Germanic Hudson Bay
@@ -2029,20 +2125,9 @@ country_event = {
 						colonial_region = colonial_northwest_territories
 					}
 					is_colony = no
-					NOT = { culture = neu_prussian }
+					NOT = { culture = nordlander }
 				}
-				change_culture = neu_prussian
-			}
-			
-			# Germanic Cascadia
-			every_owned_province = {
-				limit = {
-					culture_group = germanic
-					colonial_region = colonial_cascadia
-					is_colony = no
-					NOT = { culture = neu_prussian }
-				}
-				change_culture = neu_prussian
+				change_culture = nordlander
 			}
 			
 			# Germanic Alaska

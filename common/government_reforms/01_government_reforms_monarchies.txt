@@ -851,6 +851,7 @@ english_monarchy = {
 		has_parliament = yes
 		custom_attributes = {
 			english_parliament = yes
+			#has_unify_british_isles_cb = yes
 		}
 	}
 }
@@ -1610,6 +1611,7 @@ zoroastrian_persian_government_reform = {
 	custom_attributes = {
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
+		unlock_persia_holy_orders = yes
 	}
 	maintain_dynasty = yes
 	conditional = {
@@ -2283,8 +2285,8 @@ prussian_monarchy = {
 			AND = {
 				tag = PRU
 				OR = {
-					has_mission = emp_brapru_army_reforms_2
-					has_mission = emp_brapru_army_reforms_3
+					has_mission = PRU_standing_army #VU - Was 'has_mission = emp_brapru_army_reforms_2' but changed to 'PRU_standing_army' due to its removal by Quonton in his German/Prussian missions merge. By San Felipe
+					has_mission = PRU_an_army_with_a_state #VU - Was 'has_mission = emp_brapru_army_reforms_3' but changed to 'PRU_an_army_with_a_state' due to its removal by Quonton in his German/Prussian missions merge. By San Felipe
 				}
 				NOT = { map_setup = map_setup_random }
 			}
@@ -2346,8 +2348,9 @@ prussian_monarchy_base = {
 		NOT = { have_had_reform = prussian_monarchy }
 		OR = {
 			NOT = { has_dlc = "Domination" }
-			NOT = { has_mission = emp_brapru_army_reforms_2 }
-			NOT = { has_mission = emp_brapru_army_reforms_3 }
+			#VU - Hashed these out as they were removed by Quonton by San Felipe
+			NOT = { has_mission = PRU_standing_army } #VU - Was 'NOT = { has_mission = emp_brapru_army_reforms_2 }' but changed to 'PRU_standing_army' due to its removal by Quonton in his German/Prussian missions merge. By San Felipe
+			NOT = { has_mission = PRU_an_army_with_a_state } #VU - Was 'NOT = { has_mission = emp_brapru_army_reforms_3 }' but changed to 'PRU_standing_army' due to its removal by Quonton in his German/Prussian missions merge. By San Felipe
 		}
 		OR = {
 			AND = {
@@ -7905,7 +7908,8 @@ scottish_monarchy = {
 		}
 		custom_attributes = {
 			enables_privy_council = yes #pseudoparliament and a development of the King's Council
-		}#fixdis every option is the same
+			#has_unify_british_isles_cb = yes
+		}   #fixdis every option is the same
 	}
 }
 

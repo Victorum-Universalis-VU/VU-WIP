@@ -186,7 +186,7 @@
  
  ME_Qara_Qoyunlu_Events.5.t: "Second Flight"
  ME_Qara_Qoyunlu_Events.5.d: "Once again has the traitorous Alvand Mirza fled from our victorious forces. It is said he fled to the court of Khorasan, from where he is going to plan his next moves."
- ME_Qara_Qoyunlu_Events.5.a: "Come back here!
+ ME_Qara_Qoyunlu_Events.5.a: "Come back here!"
  
  ME_Qara_Qoyunlu_Events.6.t: "Arrival of Alvand Mirza"
  ME_Qara_Qoyunlu_Events.6.d: "Alvand Mirza, war veteran of wars against the Qara Qoyunlu has decided to seek custody and employment in the court of [Root.Monarch.GetName]. With the experience he has gathered, he is bound to be of use in our future campaigns, be it against Qara Qoyunlu or not."
@@ -235,13 +235,13 @@
  ME_Qara_Qoyunlu_Events.16.a: "Curse them!"
  
  ME_Qara_Qoyunlu_Events.19.t: "Matters of Religious Adherence" 
- ME_Qara_Qoyunlu_Events.19.d: "Maecenas non tempor nunc, quis consectetur sem. Integer vestibulum pretium massa, pellentesque pharetra elit hendrerit eget. Duis consequat at eros tempus tincidunt. Nunc in enim sed felis finibus congue at non velit. Vestibulum sollicitudin nulla molestie, ultricies eros quis, luctus ligula. Mauris aliquam justo ac enim sodales egestas. Suspendisse maximus dapibus diam, eget fermentum odio malesuada non. Etiam lacus elit, ultricies id lacus non, convallis viverra dui. Nulla sagittis feugiat turpis nec porttitor.
+ ME_Qara_Qoyunlu_Events.19.d: "Maecenas non tempor nunc, quis consectetur sem. Integer vestibulum pretium massa, pellentesque pharetra elit hendrerit eget. Duis consequat at eros tempus tincidunt. Nunc in enim sed felis finibus congue at non velit. Vestibulum sollicitudin nulla molestie, ultricies eros quis, luctus ligula. Mauris aliquam justo ac enim sodales egestas. Suspendisse maximus dapibus diam, eget fermentum odio malesuada non. Etiam lacus elit, ultricies id lacus non, convallis viverra dui. Nulla sagittis feugiat turpis nec porttitor."
  ME_Qara_Qoyunlu_Events.19.a: "We shall acknowledge our Shi'a sympathy."
  ME_Qara_Qoyunlu_Events.19.b: "We are so close to the light, yet so far."
  ME_Qara_Qoyunlu_Events.19.c: "Spare the sympathy, everyone wants to be my enemy."
  
  ME_Qara_Qoyunlu_Events.20.t: "A Different Outlook on Shi'ism"
- ME_Qara_Qoyunlu_Events.20.d: "Quisque accumsan sem vitae nulla placerat euismod. Nam velit enim, hendrerit vitae fermentum non, interdum ac felis. Cras laoreet ipsum dui, vitae varius quam aliquam id. Aenean sagittis at lectus lacinia mattis. Praesent convallis, eros vitae feugiat sodales, purus purus molestie lorem, in bibendum lectus urna ut lorem. Donec dapibus justo et sagittis interdum. Morbi a lectus mauris. Integer gravida diam imperdiet placerat convallis. Sed ut tincidunt risus, vel bibendum tortor. In enim mauris, dictum sit amet tempor at, eleifend blandit arcu. Duis ut cursus eros. Nunc lectus odio, convallis vitae iaculis vel, egestas quis tortor.""
+ ME_Qara_Qoyunlu_Events.20.d: "Quisque accumsan sem vitae nulla placerat euismod. Nam velit enim, hendrerit vitae fermentum non, interdum ac felis. Cras laoreet ipsum dui, vitae varius quam aliquam id. Aenean sagittis at lectus lacinia mattis. Praesent convallis, eros vitae feugiat sodales, purus purus molestie lorem, in bibendum lectus urna ut lorem. Donec dapibus justo et sagittis interdum. Morbi a lectus mauris. Integer gravida diam imperdiet placerat convallis. Sed ut tincidunt risus, vel bibendum tortor. In enim mauris, dictum sit amet tempor at, eleifend blandit arcu. Duis ut cursus eros. Nunc lectus odio, convallis vitae iaculis vel, egestas quis tortor."
  ME_Qara_Qoyunlu_Events.20.a: "The scholars from Gilan have a good idea..."
  ME_Qara_Qoyunlu_Events.20.b: "The Ardabili are right."
  

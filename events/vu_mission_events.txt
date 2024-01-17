@@ -409,7 +409,6 @@ country_event = { #6 Liquidation of Cossack Host
 				add_province_modifier = {
 					name = vu_ravaged_cossacks
 					duration = 5000
-					#hidden = no
 				}
 			}
 		}
@@ -440,7 +439,6 @@ country_event = { #6 Liquidation of Cossack Host
 				add_province_modifier = {
 					name = vu_ravaged_cossacks
 					duration = 3650
-					#hidden = no
 				}
 			}
 		}
@@ -466,7 +464,6 @@ country_event = { #6 Liquidation of Cossack Host
 				add_province_modifier = {
 					name = vu_cossack_host
 					duration = 7300
-					#hidden = no
 				}
 				add_local_autonomy = 75
 			}

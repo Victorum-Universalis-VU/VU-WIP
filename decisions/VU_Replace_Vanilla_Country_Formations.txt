@@ -3509,7 +3509,8 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 41	# Königsberg
-				owns_core_province = 42		# Warmia
+				#VU - Hashed out in v1.36.2.*. By San Felipe
+				#owns_core_province = 42		# Warmia
 				province_id = 43	# Danzig
 				province_id = 2995	# Stolp
 				AND = {

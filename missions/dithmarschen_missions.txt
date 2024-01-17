@@ -66,8 +66,8 @@ vu_dithmarschen_missions_1 = {
 							limit = {
 								government = republic
 							}
+							add_government_reform = peasants_republic #VU - Moved this here from the last bracket of the if. By San Felipe
 						}
-						add_government_reform = peasants_republic
 					}
 				}
 			}
@@ -582,9 +582,9 @@ vu_dithmarschen_missions_3 = {
 							limit = {
 								government = republic
 							}
+							add_government_reform = peasants_republic
+							add_historical_friend = DTT 
 						}
-						add_government_reform = peasants_republic
-						add_historical_friend = DTT 
 					}
 				}
 			}
@@ -607,7 +607,13 @@ vu_dithmarschen_missions_3 = {
 					country_event = { id = FU_Monument_Events.2 }
 				}
 				else_if = {
-					limit = { 45 = { is_subject_of = ROOT } }
+					limit = { 
+						45 = {
+							owner = {
+								is_subject_of = ROOT 
+							}
+						} 
+					}
 					45 = {
 						add_trade_modifier = {
 							who = ROOT 

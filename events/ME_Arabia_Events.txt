@@ -819,7 +819,7 @@ country_event = {
 country_event = {
 	id = ME_Arabia_Events.18
 	title = ME_Arabia_Events.18.t
-	desc = ME_Arabia_Events.18.d
+	desc = ME_Arabia_Events.18.desc
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -928,7 +928,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Arabia_Events.18.e
+		name = ME_Arabia_Events.18.d
 
 		ai_chance = { factor = 0 }
 
@@ -948,7 +948,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Arabia_Events.18.f
+		name = ME_Arabia_Events.18.e
 
 		ai_chance = { factor = 0 }
 
@@ -968,7 +968,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Arabia_Events.18.g
+		name = ME_Arabia_Events.18.f
 
 		ai_chance = { factor = 0 }
 

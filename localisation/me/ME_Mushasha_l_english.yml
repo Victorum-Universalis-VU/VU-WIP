@@ -61,12 +61,14 @@
  MSY_arabistan_modifier: "State of Arabistan"
  MSY_persian_gulf_trade_modifier: "Persian Gulf Trade"
  MSY_sugar: "The Sugar of Khuzestan"
+ desc_MSY_sugar: ""
  MSY_devout_mushasha_followers: "Devout Followers of the Mahdi"
  MSY_massacred_unbelievers: "Decimated the Defiant"
  MSY_spared_citizens_of_najaf: "Spared the Misguided"
  MSY_upkeep_of_the_holy_cities: "Upkeep of the Holy Cities"
  MSY_delta: "Delta Development"
  estate_burghers_marsh_development: "Delta Works"
+ desc_estate_burghers_marsh_development: ""
  MSY_diversification_of_economy: "Diversification of Income"
  MSY_zealotry_modifier: "Extreme Zealotry"
  MSY_spreading_the_word: "Spreading the Word"
@@ -74,6 +76,7 @@
  MSY_no_more_milleniarism: "Moderating our Theology"
  MSY_we_must_finish_the_mahdis_will: "We Must Fulfill the Mahdi's Will"
  MSY_the_end_is_nigh: "The End is Nigh!"
+ desc_MSY_the_end_is_nigh_desc: ""
  
  MSY_ARABISTAN: "Arabistan"
  MSY_ARABISTAN_ADJ: "Arabistani"
@@ -110,8 +113,6 @@
  estate_burghers_marsh_development_rt: "Every owned province with §YMarsh§! Terrain no longer gets §G-25.0%§! Local Development Cost."
  ME_estate_burghers_MSY_marsh_development: "Delta Works"
  ME_estate_burghers_MSY_marsh_development_desc: ""
- 
- MSY_sugar: "Growing Availability of Sugar"
  
  ME_Mushasha_Events.1.t: "Muhammad ibn Falah the Mahdi" 
  ME_Mushasha_Events.1.d: "Our spiritual and de facto leader is [Root.Monarch.GetName], a Wasit born theologian who studied in al-Hillah, who is yet so different to all of his peers. It was there, in Hillah, that he recognized that he is the embodiment of the prophecied representative of Imam Ali, the Mahdi. As such, in fervor of his grand quest to fulfill the prophecies, he founded the Musha'sha', an order where the Mahdi's followers were to rid the world of evil. It has been a few years since the founding of the order, and, by Allah, we will fulfill our greater purpose." 

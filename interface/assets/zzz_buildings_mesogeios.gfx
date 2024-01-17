@@ -10,42 +10,42 @@ objectTypes = {
 	pdxmesh = {
 		name = "latingfx_port_mesh"
 		file = "gfx/models/Buildings/Latin/latin_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "greekgfx_port_mesh"
 		file = "gfx/models/Buildings/Greek/greek_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "turkishgfx_port_mesh"
 		file = "gfx/models/Buildings/Turkish/turkish_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "persiangfx_port_mesh"
 		file = "gfx/models/Buildings/Indian/indian_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "mongolgfx_port_mesh"
 		file = "gfx/models/Buildings/Mongol/mongol_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "thaigfx_port_mesh"
 		file = "gfx/models/Buildings/Thai/thai_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "polynesiangfx_port_mesh"
 		file = "gfx/models/Buildings/Polynesian/polynesian_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	pdxmesh = {
 		name = "aboriginalgfx_port_mesh"
 		file = "gfx/models/Buildings/Aboriginal/aboriginal_port.mesh"
-		scale = 0.6
+		scale = 0.35 #VU - Changed from 0.6 in v1.36.2.*. By San Felipe
 	}
 	
 	###############################################################
@@ -172,25 +172,25 @@ objectTypes = {
 	pdxmesh = {
 		name = "latingfx_fort_15th"
 		file = "gfx/models/Buildings/Western/cose_castle.mesh"
-		scale = 0.3
+		scale = 0.15 #VU - Changed from 0.3 in v1.36.2.*. By San Felipe
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "latingfx_fort_16th"
 		file = "gfx/models/Buildings/Western/cose_starfort.mesh"
-		scale = 0.25
+		scale = 0.125 #VU - Changed from 0.25 in v1.36.2.*. By San Felipe
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "latingfx_fort_17th"
 		file = "gfx/models/Buildings/Western/cose_bastion.mesh"
-		scale = 0.20
+		scale = 0.10 #VU - Changed from 0.2 in v1.36.2.*. By San Felipe
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "latingfx_fort_18th"
 		file = "gfx/models/Buildings/Western/cose_fortress.mesh"
-		scale = 0.18
+		scale = 0.09 #VU - Changed from 0.18 in v1.36.2.*. By San Felipe
 		cull_distance = 700.0f
 	}
 

@@ -4,7 +4,7 @@
  MOR_inner_tribes_title: "Conquer the Inner Tibes"
  MOR_inner_tribes_desc: "Our state shall become a union of all berber tribes. Having established control over the coast, a move into the inner oasees is only natural. And with our policies, our conquest might not even be that controversial."
  MOR_hintata_title: "The Hintata Clan"
- MOR_hintata_desc: "The Hintata Berbers have been in control over Marrakesh and it's surroundings since about 13th century,  and steps to change this fact are only being taken now. Let us, the [Root.Monarch.GetDynasty] be the decisive force behind the area."
+ MOR_hintata_desc: "The Hintata Berbers have been in control over Marrakesh and it's surroundings since about 13th century and steps to change this fact are only being taken now. Let us, the [Root.Monarch.GetDynasty] be the decisive force behind the area."
  MOR_sufis_title: "Deal with the Sufis"
  MOR_sufis_desc: "In the south, various berber tribes with sufism deeply enrooted in their culture have carved out their autonomous piece of Morocco. We cannot just let such institutions strive for political and territorial independence."
  MOR_canaries_title: "Take the Canaries"
@@ -58,7 +58,7 @@
  MOR_fezzian_funduqs_title: "Fezzian Funduqs"
  MOR_fezzian_funduqs_desc: "Fez is growing to be a trading hub between the north and the south. We must take best advantage of this and expand the marketplaces and funduqs so long the city thrives."
  MOR_guarantee_the_nasrids_title: "Guarantee the Nasrids"
- MOR_guarantee_the_nasrids_desc: "The Nasrid dynasty of Granada is all that remains of Iberian Taifas and the al-Andalus. Let us continue our policy of guaranteeing the muslims in Iberia with the hope of one day restoring that powerful kingdom. 
+ MOR_guarantee_the_nasrids_desc: "The Nasrid dynasty of Granada is all that remains of Iberian Taifas and the al-Andalus. Let us continue our policy of guaranteeing the muslims in Iberia with the hope of one day restoring that powerful kingdom." 
  MOR_plight_of_granada_title: "The Plight of Granada"
  MOR_plight_of_granada_desc: "The plight of Granada is a harsh reality. Either we conquer the area ourselves to ensure its allegiance, or we demand more oaths of loyalty from the Nasrids."
  MOR_restore_old_taifas_title: "Restore Old Taifas"
@@ -97,6 +97,7 @@
  MOR_stabilized_the_sultanate: "Stabilized the Sultanate"
  MOR_stabilized_the_sultanate_modifier: "Stabilized the Sultanate"
  MOR_hintata_autonomy: "Hintata Autonomy"
+ desc_MOR_hintata_autonomy: ""
  MOR_sugar_plantations: "Sugar Plantations"
  MOR_pleased_the_warriors: "Pleased The Warriors"
  MOR_granted_land_to_the_nobles: "Granted Land to the Nobles"
@@ -216,7 +217,7 @@
  MOR_15_domestic_trade_power: "For as long as §Y[TMB.GetName]§! is §Y[Root.GetAdjective]§! subject, we will gain:\n  Trade Efficiency: §G+7.5%§!\n  Diplomatic Advisor Cost: §G-10.0%§!"
  MOR_negative_piety_buff: "For as long as we remain at least §Y50.0§! piety towards §YMysticism§!, we will get the following:\n Morale of Armies: §G+10.0%§!"
  MOR_negative_piety_buff_modifier: "Negative Piety"
- MOR_provinces_raided_125: "Has §YSlave Raided§! at least 125 Provinces. (Currently: [Root.NumOfRaidedCoasts.GetValue])": "
+ MOR_provinces_raided_125: "Has §YSlave Raided§! at least 125 Provinces. (Currently: [Root.NumOfRaidedCoasts.GetValue])."
  #Berber Estate
  estate_berbers: "Berber Tribes"
  estate_berbers_desc: "The Berbers are a semi-nomadic people mainly residing in the Northern Sands of Maghreb. With the spread of the Maghrebi culture and their influence of the region, they can be found anywhere from Andalusia to the southern cities of the Sahara. To gain their loyalty is to gain an important ally in the Maghreb."
@@ -233,6 +234,7 @@
  estate_berbers_development_cost: "Subsidize the Tribes"
  estate_berbers_development_cost_desc: "The Berbers tend to live in harsher environments than the rest of the population and therefore should receive more subsidies."
  MOR_berber_dev_cost: "Subsidized the Tribes"
+ desc_MOR_berber_dev_cost: ""
  estate_berbers_hintata_mor_autonomy: "Grant Hintata Autonomy"
  estate_berbers_hintata_mor_autonomy_desc: "The Hintata tribes have held the lands Marrakesh for centuries. They should be given autonomy."
  estate_berbers_cavalry: "Recruit Berber Cavalry"
@@ -267,6 +269,7 @@
  berbers_influence_modifier: "Berber Influence Modifier"
  
  estate_berbers_settlement: "Berber Settlements"
+ desc_estate_berbers_settlement: ""
  
  merc_mor_black_guard: "§JThe Black Guard§!"
  merc_mor_ottoman_mercenaries: "§JOttoman Fortune Seekers§!"

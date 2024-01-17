@@ -812,6 +812,7 @@
  me_tim_emperors_guard: "The Emperor's Guard"
  me_tim_emperors_guard_2: "The Emperor's Guard"
  estate_burghers_steppe_development: "Steppe Development"
+ desc_estate_burghers_steppe_development: ""
  me_tim_allahs_faithful: "Allah's Faithful"
  me_tim_field_marshal: "Field Marshal"
  ME_tim_riders_of_timur: "Riders of Timur"
@@ -843,6 +844,7 @@
  me_tim_supress_bedouins: "Supress the Bedouins"
  me_tim_seat_of_the_old_emperor: "Seat of the Chinese Emperor"
  estate_tribes_horde_unity_modifier: "Horde Unity"
+ desc_estate_tribes_horde_unity_modifier: ""
  me_tim_tolerance_of_heatens: "Tolerance of the Heathens"
  me_tim_harsh_conversions: "Harsh Conversions"
  me_tim_killer_of_heaven: "Killer of Heaven"
@@ -850,6 +852,7 @@
  desc_ME_tim_horsemen_of_apocalypse_modifier: "Horsemen of the Apocalypse"
  me_tim_bulwark_against_the_apocalypse: "Bulwark Against the Apocalypse"
  estate_tribes_bedouin_recruits: "Bedouin Recruits"
+ desc_estate_tribes_bedouin_recruits: ""
  me_tim_ignored_roman_legacy: "Ignored Rome's Legacy"
  me_tim_above_rome: "Above Rome"
  me_tim_persian_empire_province: "Persian Empire Province"
@@ -1067,9 +1070,9 @@
 
  me_tim_current_sow_gives: "Our current §YSpoils of War§! give us:"
  
- ME_TIM_spoils_of_war_title: "Spoils of War (§Y[Root.METimSpoilsOfWar.GetValue]§!)"
- ME_TIM_spoils_of_war_desc: "Spoils of War (§Y[Root.METimSpoilsOfWar.GetValue]§!) represents our conquest frenzy.\nIt is gained by:\n-§YRazing§! provinces §G+1§!\n-Winning §YBattles§! §G+1§!\n-Ruler with high £mil£ §YPower§! ascending to the throne §G+2§!\n\nIt is lost by:\n-Losing §YBattles§! §R-2§!\n§R-1§! yearly from not being at §YWar§!\n§R-1§! yearly by default"
- METimSpoilsOfWar: "Spoils of War"
+ #ME_TIM_spoils_of_war_title: "Spoils of War (§Y[Root.METimSpoilsOfWar.GetValue]§!)"
+ #ME_TIM_spoils_of_war_desc: "Spoils of War (§Y[Root.METimSpoilsOfWar.GetValue]§!) represents our conquest frenzy.\nIt is gained by:\n-§YRazing§! provinces §G+1§!\n-Winning §YBattles§! §G+1§!\n-Ruler with high £mil£ §YPower§! ascending to the throne §G+2§!\n\nIt is lost by:\n-Losing §YBattles§! §R-2§!\n§R-1§! yearly from not being at §YWar§!\n§R-1§! yearly by default"
+ #METimSpoilsOfWar: "Spoils of War"
 
  #New Modifiers:
  iqta_abilities_effectiveness: "Iqta Taxation Efficiency"
@@ -1089,15 +1092,16 @@
  me_tim_peaceful_governance: "Peaceful Governance"
  me_tim_balanced_factions: "Balanced Approach"
  me_tim_promote_warbands: "Promote Warbands"
+ desc_me_tim_promote_warbands: ""
  me_tim_add_extra_buffs: "We will gain §R+2.00§! National Unrest and §G+25.0%§! Manpower Recovery Speed as long as we keep our §YConquest Frenzy§! at §Y100§!"
 
  #Timurid Militarization Mechanic:
- 
-
-
  me_tim_can_declare_wars: "Is allowed to §YDeclare Wars§!"
  timurid_militarization: "Timurid Militarization"
  timurid_stratocracy_power: "Stratocracy Militarization"
  boost_militarization_timurid: "Boost Stratocracy Militarization"
  boost_militarization_timurid_desc: " "
  ME_TIM_STRATOCRACY_CANNOT_DECLARE_WARS: "§RMilitary in Charge§!"
+ 
+ #Tooltips
+ timurids_ask_support_dialog: "Ask Support"

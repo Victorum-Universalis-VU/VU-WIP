@@ -761,7 +761,6 @@ gc_aragon_4 = {
 			}
 		}
 		effect = {
-			add_mercantilism = 3
 			anatolia_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -797,8 +796,6 @@ gc_aragon_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		effect = {
 			add_mercantilism = 10
 			add_navy_tradition = 25
 			add_prestige = 50

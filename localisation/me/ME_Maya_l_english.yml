@@ -136,11 +136,17 @@
 
  # Modifiers:
  maya_the_mayan_cores_modifier: "The Mayan Cores"
- maya_a_great_army_modifier: "A Great Army"
- maya_dominate_mexico_modifier: "Dominated Mexico"
- maya_rebuild_abandoned_cities_province_modifier: "Rebuilt Abandoned Cities"
- maya_mayan_renaissaince_modifier: "Mayan Renaissance"
- maya_chontales_merchants_modifier: "Chontales Merchants"
+ desc_maya_the_mayan_cores_modifier: ""
+ #maya_a_great_army_modifier: "A Great Army"
+ #desc_maya_a_great_army_modifier: ""
+ #maya_dominate_mexico_modifier: "Dominated Mexico"
+ #desc_maya_dominate_mexico_modifier: ""
+ #maya_rebuild_abandoned_cities_province_modifier: "Rebuilt Abandoned Cities"
+ #desc_maya_rebuild_abandoned_cities_province_modifier: ""
+ #maya_mayan_renaissaince_modifier: "Mayan Renaissance"
+ #desc_maya_mayan_renaissaince_modifier: ""
+ #maya_chontales_merchants_modifier: "Chontales Merchants"
+ #desc_maya_chontales_merchants_modifier: ""
  maya_trade_fleet_modifier: "Strong Trade Fleet"
  maya_mexican_trade_modifier: "Mexican Trade"
  maya_mayan_mesoamerica_modifier: "Mayan Mesoamerica"
@@ -202,6 +208,7 @@
  maya_claims_discovered: "Ancient Claims Discovered"
  maya_history_school_improved: "Improved Historian School"
  estate_maya_advisor_employed_modifier: "Aj tz'ib at Court"
+ desc_estate_maya_advisor_employed_modifier: ""
 
  # Trade Modifiers:
  MAYA_LIMA_TRADE: "Mayan Merchants in Lima"

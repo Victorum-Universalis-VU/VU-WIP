@@ -237,6 +237,9 @@ house_of_gonzaga_reform = {
 	government_abilities = {
 		italian_dinasties_mechanic
 	}
+	custom_attributes = {
+		enables_marriage_policies = yes
+	}
 }
 italian_monarchy_reform = {
 	icon = italian_monarchy_reform
@@ -416,6 +419,7 @@ republic_of_saint_blaise = {
 		has_candidate_bonus = yes
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
+		can_create_stato_da_mar_vassal_rule = yes
 	}
 	government_abilities = {
 		maritime_republic_mechanic

@@ -1,7 +1,7 @@
 #Quonton
 vu_ger_kaiserreich_pupets = {
 	picture = "mitteleuropa_icon"
-	liberty_desire = -200
+	liberty_desire = -20
 	liberty_desire_from_subject_development = -0.30
 	vassal_manpower_bonus = 0.2
 	diplomatic_upkeep = 5

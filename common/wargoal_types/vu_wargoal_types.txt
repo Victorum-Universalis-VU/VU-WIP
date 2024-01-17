@@ -66,32 +66,6 @@ civil_war_wargoal = {
 
 #Additions by San Felipe
 #unify_british_isles_wargoal = {
-#	type = take_capital	
-#	attacker = {
-#		badboy_factor = 0.50
-#		prestige_factor = 1.5
-#		peace_cost_factor = 1				
-#		peace_options = {
-#			vu_engsco_full_annex
-#		}		
-#	}
-#	defender = {
-#		badboy_factor = 0.50
-#		prestige_factor = 1.5
-#		peace_cost_factor = 1	
-#		allowed_provinces = {
-#			always = no		
-#		}
-#		allowed_provinces_are_eligible = yes
-#		peace_options = {
-#			vu_engsco_full_annex
-#		}		
-#	}	
-#	
-#	war_name = UNIFY_BRITISH_ISLES_WAR
-#}
-
-#unify_british_isles_wargoal = {
 #	type = superiority
 #	
 #	attacker = {

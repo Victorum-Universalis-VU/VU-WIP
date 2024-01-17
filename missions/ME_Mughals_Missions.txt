@@ -1139,10 +1139,12 @@ Mughal_missions_2 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						trade_share = {
-							country = ROOT
-							share = 60
-						}
+						426 = { #Sari, center of Persia node
+					    	trade_share = {
+					    		country = ROOT
+					    		share = 60
+					    	}
+					    }
 					}
 					add_country_modifier = {
 						name = me_mug_wealth_of_persia
@@ -3779,9 +3781,11 @@ Mughal_missions_3_2_unlocked = {
 					limit = {
 						capital_scope = {
 							continent = europe
-							has_opinion = {
-								who = ROOT
-								value = 150
+							owner = {
+								has_opinion = {
+							    	who = ROOT
+							    	value = 150
+							    }
 							}
 						}
 					}
@@ -5196,6 +5200,7 @@ Mughal_missions_5_locked = {
 								has_building = fort_17th
 								has_building = fort_18th
 							}
+							value = 3
 						}
 					}
 					add_mil_power = 100

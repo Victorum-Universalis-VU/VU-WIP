@@ -30,7 +30,9 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-		    add_ruler_personality = righteous_personality
+			owner = {
+				add_ruler_personality = righteous_personality
+			}
 		}
 	}
 	

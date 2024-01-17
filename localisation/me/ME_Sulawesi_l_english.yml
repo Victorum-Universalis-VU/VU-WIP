@@ -65,11 +65,11 @@
  MKS_trade_with_australia: "First Tiwi Contacts"
  MKS_naval_empire: "Eastern Thalassocracy"
  MKS_iron_extraction: "Iron Deposits of Lake Matano"
+ desc_MKS_iron_extraction: ""
  MKS_spice_control_modifier: "Control Mandated by Bajau"
  MKS_ambitions_outwards: "Outward Ambitions"
  MKS_gateway: "Western Gateway"
  MKS_mastery_of_the_seas: "Mastery of the Seas"
- MKS_iron_extraction: "Iron Extraction"
  MKS_iron_is_secondary: "Secondary Industry"
  MKS_artillery_foundry: "Cannon Foundry"
  

@@ -142,7 +142,8 @@
  
  #Timurid Legitimacy:
  #timurid_legitimacy_value: "Timurid Legitimacy"
- #BASE_VALUE: "Base Value"
+ BASE_VALUE: "Base Value"
+ desc_BASE_VALUE: ""
  
  #Governments:
  mechanic_brotherly_rivalry_yes: "We gain §R-100§! relations with every country that has the §YTimurid§! dynasty"

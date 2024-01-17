@@ -16,13 +16,6 @@ fort_15th = yes
 capital = "Hamburg"
 is_city = yes
 
-
-
-
-
-
-
-
 center_of_trade = 4
 extra_cost = 60
 

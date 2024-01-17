@@ -490,9 +490,6 @@ schonbrunn = { #Built on site of Katterburg
 		}	
     }
 	
-	keep_trigger = {
-	}
-
     on_built = {
     }
 	

@@ -24,13 +24,13 @@ country_event = {
 			modifier = {
 				factor = 2
 				employed_advisor = {
-					type = ADM
+					type = administrator
 				}
 				employed_advisor = {
-					type = DIP
+					type = negotiator
 				}
 				employed_advisor = {
-					type = MIL
+					type = commander
 				}
 			}
 		}

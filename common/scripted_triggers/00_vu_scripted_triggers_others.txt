@@ -746,7 +746,7 @@ conquer_mocha_provinces = {
 conquer_warmia_provinces = { #Unchanged
 	OR = {
 		area = west_prussia_area
-		area = pomerelia_area
+		#area = pomerelia_area
 	}
 }
 annex_mazovia_provinces = { #Unchanged
@@ -778,8 +778,8 @@ vassalize_lithuania_provinces = {
 		area = white_ruthenia_area
 		#area = central_galicia_area
 		area = eastern_volhynia_area
-		area = western_podolia_area
-		area = cherkasy_area
+		area = malopolska_area
+		area = west_dniepr_area
 		#area = mazur_area
 		area = vitebsk_area
 		area = polotsk_area
@@ -1637,7 +1637,7 @@ dh_tim_khorasan_two_provinces = {
 		area = ghor_area
 		area = kabulistan_area
 		area = balkh_area
-		area = zabulistan
+		area = zabulistan_area
 		area = loya_paktia_area
 		area = kunduz_area
 	}

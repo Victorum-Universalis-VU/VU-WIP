@@ -616,6 +616,7 @@
  me_mug_akbar_reform_diplo: "Establishment of the Rahdars"
  me_mug_akbar_reform_mil: "Expand the Mansabdari"
  me_mug_land_reforms: "Land Reforms"
+ desc_me_mug_land_reforms: ""
  me_mug_indian_pass: "Indian Pass"
  me_mug_failed_coinage_reforms: "Failed Coinage Reforms"
  me_mug_recruiting_sailors: "Integrating the Indian Sailors"
@@ -895,6 +896,11 @@
  CB_ALLOWED_po_annex_delhi: "Annexation of Delhi"
  
  #Reforms:
+ mughal_government_me: "Mansabdar"
+ mughal_government_me_desc: "The system determined the rank and status of a government official and military generals."
+ mughal_government_me_modifier_buff: "Mughal Diwan"
+ mughal_government_me_modifier_buff_desc: "The system determined the rank and status of a government official and military generals."
+
  mughal_government_me_me: "Mughal Diwan"
  mughal_government_me_me_desc: "If there is one thing our dynasty has learned over the centuries it is that we must be able to adopt to the local population in the regions we expand into. Let us ensure that we learn from those we conquer so that our empire can keep growing."
  

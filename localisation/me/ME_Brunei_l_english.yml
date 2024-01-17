@@ -69,11 +69,11 @@
  ME_Brunei_Events.2.b: "We will consider it..."
 
  ME_Brunei_Events.3.t: "Camphor Hotspot"
- ME_Brunei_Events.3.d: "One of the main exports of Borneo is camphor, a substance used in incense, perfumes and medicine. Produced all throughout the island and our territories, perhaps it's time to invest into this growing industry and establish a trade outpost dedicated to its exports?"
+ ME_Brunei_Events.3.desc: "One of the main exports of Borneo is camphor, a substance used in incense, perfumes and medicine. Produced all throughout the island and our territories, perhaps it's time to invest into this growing industry and establish a trade outpost dedicated to its exports?"
  ME_Brunei_Events.3.a: "[Brunei_Target_1.GetName] will do just fine."
  ME_Brunei_Events.3.b: "We should consider [Brunei_Target_2.GetName] instead."
  ME_Brunei_Events.3.c: "The likes of [Brunei_Target_3.GetName] are the most fitting."
- ME_Brunei_Events.3.e: "Invest in the Capital instead."
+ ME_Brunei_Events.3.d: "Invest in the Capital instead."
 
  BEI_merge: "Merge '§YWestern Seas Secured§!' and '§YEastern Seas Secured§!' into '§YSeas Secured§!' and modify it by:\n§G+5.0%§! Trade Efficiency"
  BEI_no_muslim_center_exists: "There is no §YMuslim Center§! province."

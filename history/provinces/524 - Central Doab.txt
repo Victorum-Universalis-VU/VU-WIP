@@ -16,18 +16,6 @@ add_core = DLH
 add_core = JNP
 fort_15th = yes # Badalgarh
 
-
-
-
-
-
-
-
-
-
-
-
-
 extra_cost = 16
 center_of_trade = 5
 

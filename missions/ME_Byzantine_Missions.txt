@@ -107,7 +107,9 @@ byzantine_missions_1 = {
 				}
 			}
 			else_if = {
-				limit = { religion = catholicism }
+				limit = { 
+					religion = catholic 
+				}
 				add_country_modifier = {
 					name = byz_host_of_the_holy_see_modifier
 					duration = -1 
@@ -1252,15 +1254,15 @@ byzantine_missions_2 = {
 					358 = {
 						OR = {
 							has_great_project = {
-								type = vu_pharos_alexandria
+								type = lighthouse_of_alexandria
 								tier = 1 
 							}
 							has_great_project = {
-								type = vu_pharos_alexandria
+								type = lighthouse_of_alexandria
 								tier = 2 
 							}
 							has_great_project = {
-								type = vu_pharos_alexandria
+								type = lighthouse_of_alexandria
 								tier = 3 
 							}
 						}
@@ -1457,8 +1459,15 @@ byzantine_missions_2 = {
 		effect = {
 			358 = {
 				if = {
-					limit = { has_building = university }
-					add_adm_power = 100 
+					limit = { 
+						has_building = university 
+					}
+					owner = {
+						add_country_modifier = {
+					    	name = add_unrest_5_modifier
+					    	duration = -1
+					    }
+					}
 				}
 				else = { add_building = university }
 			}

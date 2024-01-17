@@ -473,9 +473,10 @@ ENG_missions_1_3 = {
 				current_debate = quartering_of_troops
 				current_debate = expand_officer_lists
 				current_debate = expand_the_army
-				has_country_modifier = quartering_of_troops
-				has_country_modifier = expand_officer_lists
-				has_country_modifier = expand_the_army
+				#VU - Hashed this out in v1.36.2.* as it doesn't exist as a modifier and I believe has been replaced by the above three debates. By San Felipe
+				#has_country_modifier = quartering_of_troops
+				#has_country_modifier = expand_officer_lists
+				#has_country_modifier = expand_the_army
 			}
 		}
 		effect = {
@@ -496,8 +497,9 @@ ENG_missions_1_3 = {
 			OR = {
 				current_debate = appoint_a_grand_admiral
 				current_debate = expand_navy
-				has_country_modifier = appoint_a_grand_admiral
-				has_country_modifier = expand_navy
+				#VU - Hashed this out as it doesn't exist as a modifier and I believe has been replaced by the above three debates. By San Felipe
+				#has_country_modifier = appoint_a_grand_admiral
+				#has_country_modifier = expand_navy
 			}
 			naval_reformer = 1
 			OR = {

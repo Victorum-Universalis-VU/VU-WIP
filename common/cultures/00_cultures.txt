@@ -1554,24 +1554,48 @@ germanic = {
 	deutschkolumbian = {
         graphical_culture = westerngfx
 	}
+	#Peru, Bolivia
+	peruanisch = {
+        graphical_culture = westerngfx
+	} 
+	#Guyana
+	guyanisch = {
+        graphical_culture = westerngfx
+	}
+	#Texan
+	texasdeutsch = {
+        graphical_culture = westerngfx
+	}
+	#Hispaniola
+	haitianisch = {
+        graphical_culture = westerngfx
+	}
 	#Cuba CR
 	kubaner = {
         graphical_culture = westerngfx
 	}
-	#Mexico CR
+	#Antilies
+	antillen = {
+        graphical_culture = westerngfx
+	}
+	#Mexico, Central America CR
 	mexikaner = {
         graphical_culture = westerngfx
 	}
-	#Eastern America, Mississippi, Great Lakes, Louisiana, Florida
-	pennsilfaanisch = {
-        graphical_culture = westerngfx
-	}
-	#California CR
-	kalifornier = {
+	#Hudsom Bay, Northern Territories
+	nordlander = { #Nordländer
         graphical_culture = westerngfx
 	}
 	#Acadia, Canada, Newfoundland CR
-	neu_prussian = {	
+	kanadisch = {
+        graphical_culture = westerngfx
+	}
+	#California, Cascadia CR
+	kalifornier = {
+        graphical_culture = westerngfx
+	}
+	#Eastern America, Mississippi, Great Lakes, Louisiana, Florida
+	neues_deutsch = {	
         graphical_culture = westerngfx
 	}
 	#Alaska CR
@@ -15272,9 +15296,8 @@ sudanese = {
 }
 
 evenks = {
-	graphical_culture = asiangfx
 	evenk = {
-		graphical_culture = inuitgfx
+		graphical_culture = mongolgfx #VU - Was 'inuitgfx' but changed in v1.36.2.*. By San Felipe
 		primary = SOL
 		dynasty_names = {
 			Badarhan Tabangut
@@ -15286,7 +15309,7 @@ evenks = {
 		}
 	}
 	yakut = {
-		graphical_culture = inuitgfx
+		graphical_culture = mongolgfx #VU - Was 'inuitgfx' but changed in v1.36.2.*. By San Felipe
 		dynasty_names = {
 			Badarhan Tabangut
 		}
@@ -15297,7 +15320,7 @@ evenks = {
 		}
 	}
 	yukagyr = {
-		graphical_culture = inuitgfx
+		graphical_culture = mongolgfx #VU - Was 'inuitgfx' but changed in v1.36.2.*. By San Felipe
 		primary = HOD
 		dynasty_names = {
 			Uygulaan Khorints
@@ -15309,7 +15332,7 @@ evenks = {
 		}
 	}
 	buryat = {
-		graphical_culture = inuitgfx
+		graphical_culture = mongolgfx #VU - Was 'inuitgfx' but changed in v1.36.2.*. By San Felipe
 		primary = BRT
 		dynasty_names = {
 			Badarhan Chagatay Edigüid Giray Borjigin Shaybanid Janid Mangit
@@ -15325,7 +15348,7 @@ evenks = {
 		}
 	}
 	tungus = {
-		graphical_culture = inuitgfx
+		graphical_culture = mongolgfx #VU - Was 'inuitgfx' but changed in v1.36.2.*. By San Felipe
 		dynasty_names = {
 			Bulagat Ekhirit Khongodor
 		}
@@ -15337,6 +15360,7 @@ evenks = {
 		}
 	}
 	manchu = {
+	    graphical_culture = mongolgfx #VU - Was 'asiangfx' but changed in v1.36.2.*. By San Felipe
 		country = { has_banners = yes}
 		province = { local_has_banners = yes}
 		primary = MJZ

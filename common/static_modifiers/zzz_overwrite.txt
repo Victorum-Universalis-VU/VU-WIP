@@ -1,8 +1,4 @@
 #Disabling, whatever is here is already in static modifiers
-maintained_forts = {
-	army_tradition = 1
-	fort_bonus_check_influence = 1
-}
 
 peace = {
 	war_exhaustion = -0.1

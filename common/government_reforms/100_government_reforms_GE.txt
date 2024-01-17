@@ -4816,9 +4816,10 @@
 			inflation_reduction = 0.05
 			trade_deals_slots = 0.01
 		}
-		# custom_attributes = { 	
+		custom_attributes = { 	
+			can_create_banking_family_subject_rule = yes
 			# enables_merchant_privileges = yes #+1 merchantilism when you ask for contribution from the burghers.
-		# }
+		}
 		ai = {
 			factor = 1
 		}

@@ -861,13 +861,13 @@ abbasid_ransom = {
 			}
 			
 			export_to_variable = {
-				variable_name = their_treasury
+				variable_name = ai_value
 				value = treasury
 				who = FROM
 			}
 			
 			export_to_variable = {
-				variable_name = their_years_of_income
+				variable_name = ai_value
 				value = years_of_income
 				who = FROM
 			}
@@ -901,13 +901,13 @@ abbasid_ransom = {
 			}
 			
 			export_to_variable = {
-				variable_name = their_balance
+				variable_name = ai_value
 				value = trigger_value:current_income_balance
 				who = FROM
 			}
 			
 			export_to_variable = {
-				variable_name = their_monthly_income
+				variable_name = ai_value
 				value = trigger_value:monthly_income
 				who = FROM
 			}

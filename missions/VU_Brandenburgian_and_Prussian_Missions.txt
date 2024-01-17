@@ -135,6 +135,7 @@ BRA_missions_1_franconia = {
 	
 	emp_brapru_ansbach_succession = {
 		icon = ansbach_succession
+		position = 5
 		required_missions = {  }
 		provinces_to_highlight = {
 			province_id = 71
@@ -180,6 +181,7 @@ BRA_missions_1_franconia = {
 	}
 	emp_brapru_franconian_conquest = {
 		icon = mission_eastern_european_city
+		position = 6
 		required_missions = { emp_brapru_ansbach_succession }
 		provinces_to_highlight = {
 			area = franconia_area
@@ -822,6 +824,33 @@ BRA_missions_3 = {
 			}
 			custom_tooltip = BRA_Prussian_modifier
 			complete_prussian_ascendance_missions = yes
+		}
+	}
+}
+
+BRA_missions_3_branching = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = BRA
+		NOT = { tag = PRU }
+	}
+	has_country_shield = yes
+	
+	BRA_branch_mission_3 = { 
+		icon = mission_unknown_mission
+		required_missions = { BRA_prussian_ascendance }
+		position = 7
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = { 
+			custom_tooltip = bra_shittynotpru_tt
 		}
 	}
 }
@@ -4365,6 +4394,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4374,6 +4404,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4383,6 +4414,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4392,6 +4424,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4401,6 +4434,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4410,6 +4444,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4419,6 +4454,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4428,6 +4464,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4437,6 +4474,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4446,6 +4484,7 @@ PRU_missions_4 = {
 						limit = {
 							trade_goods = grain
 						}
+						change_trade_goods = potato #VU - v1.36.2.* Quonton addition. By San Felipe
 						add_province_modifier = {
 							name = PRU_potatoes
 							duration = -1
@@ -4785,7 +4824,7 @@ PRU_missions_6 = {
 	emp_brapru_westphalian_conquest = {
 		icon = westphalian_conquest
 		required_missions = { emp_brapru_lower_saxony }
-		position = 7
+		position = 9
 		provinces_to_highlight = {
 			area = westphalia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4861,7 +4900,7 @@ PRU_missions_6 = {
 	emp_brapru_duchy_of_cleves = {
 		icon = mission_cannons_firing
 		required_missions = { emp_brapru_westphalian_conquest }
-		position = 8
+		position = 10
 		provinces_to_highlight = {
 			area = north_rhine_area
 			NOT = {

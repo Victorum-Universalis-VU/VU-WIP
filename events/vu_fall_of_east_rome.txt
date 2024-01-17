@@ -530,7 +530,6 @@ country_event = { # Ottomans own Constantinople
 				add_province_modifier = {
 					name = vu_greek_unrest
 					duration = 3650
-					hidden = no
 				}
 			}
 		}

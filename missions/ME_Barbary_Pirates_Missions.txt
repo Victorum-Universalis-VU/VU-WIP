@@ -670,7 +670,7 @@ BRBR_missions_5 = {
 			else = {
 				calc_true_if = {
 					all_country = {
-						religion = christian
+						religion_group = christian
 						ROOT = {
 							has_won_war_against = { who = PREV max_years_since = 50 }
 						}

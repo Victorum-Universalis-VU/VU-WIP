@@ -14,18 +14,6 @@ is_city = yes	#Still Recovering after sack by Timur
 add_core = DLH
 add_core = MUL
 
-
-
-
-
-
-
-
- 
-
-
-
-
 extra_cost = 16
 center_of_trade = 5
 add_core = SRH

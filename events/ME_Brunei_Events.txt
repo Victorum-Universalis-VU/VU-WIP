@@ -73,7 +73,7 @@ country_event = {
 country_event = {
 	id = ME_Brunei_Events.3
 	title = "ME_Brunei_Events.3.t"
-	desc = "ME_Brunei_Events.3.d"
+	desc = "ME_Brunei_Events.3.desc"
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -136,7 +136,7 @@ country_event = {
 	}
 
 	option = {
-		name = "ME_Brunei_Events.3.e"
+		name = "ME_Brunei_Events.3.d"
 
 		ai_chance = { factor = 33 }
 

@@ -1,6 +1,7 @@
 ﻿l_english:
  #Custom tooltips
  #VU Quonton additions
+ bra_shittynotpru_tt:0 "Once we achieve our §YPrussian Aspirations§!, a greater §MDestiny§! will be revealed "
  vu_change_iberian_to_german:0 "Thirty provinces within §YIberia§! will be §RGermanized§!"
  vu_change_scandinavian_to_german:0 "Thirty provinces within §YScandinavia§! will be §RGermanized§!"
  vu_change_french_to_german:0 "Thirty provinces within §YFrance§! will be §RGermanized§!"
@@ -16,7 +17,7 @@
  vu_scandinavia_vs_uralia:0 "An event will fire allowing us to deside the §YFuture§! of §YFinland§!"
  vu_allow_uralia_formation:0 "Finland will now be able to form §YUralia§! and will follow our Uralic Destiny"
  vu_fin_scandinavia:0 "Finland will now be able to form §YScandinavia§! and will follow our Scandinavian Destiny"
- vu_roman_revival_finished_manpower:0 "from owned provinces, which are of §YOld Latin§! culture
+ vu_roman_revival_finished_manpower:0 "from owned provinces, which are of §YOld Latin§! culture"
  vu_change_italian_to_roman:0 "All §YItalian§! provinces within §YItaly§! under our control will be §RRomanized§!"
  vu_change_french_to_roman:0 "Thirty §YFrench§! provinces within §YFrance§! will be §RRomanized§!"
  vu_change_africa_to_roman:0 "Twenty provinces within the §YMaghreb§! will be §RRomanized§!"
@@ -195,7 +196,7 @@
  tooltip_vu_add_new_instituiton_details_f:0 "is a Center of Trade or a Capital"
  tooltip_vu_add_new_instituiton_details_g:0 "Development at least 24 in Europe"
  tooltip_vu_add_new_instituiton_details_h:0 "Development at least 48"
- tooltip_vu_add_new_instituiton_details_i:0 "Development at least 40"            #Unused, removed after some testing and consideration
+ #tooltip_vu_add_new_instituiton_details_i:0 "Development at least 40"            #Unused, removed after some testing and consideration
  tooltip_vu_add_new_instituiton_details_j:0 "Manufactory constructed and has §YPrinting Press§!"
  tooltip_vu_add_new_instituiton_details_k:0 "Owner employs a Natural Scientist"
  tooltip_vu_add_new_instituiton_details_l:0 "Owner employs a Philosopher"
@@ -205,23 +206,23 @@
  tooltip_vu_add_new_instituiton_details_p:0 "Development at least 24"
  tooltip_vu_add_new_instituiton_details_q:0 "Development at least 32"
  tooltip_vu_add_new_instituiton_details_r:0 "Development at least 40"
- tooltip_vu_add_new_instituiton_details_s:0 "[Root.GetName] has at least 5 trade power"         #ended up not using these
- tooltip_vu_add_new_instituiton_details_t:0 "[Root.GetName] has at least 10 trade power"         #ended up not using these
- tooltip_vu_add_new_instituiton_details_u:0 "[Root.GetName] has at least 20 trade power"         #ended up not using these
- tooltip_vu_add_new_instituiton_details_v:0 "[Root.GetName] has at least 40 trade power"         #ended up not using these
- tooltip_vu_add_new_instituiton_details_w:0 "[Root.GetName] has at least 60 trade power"         #ended up not using these
+ #tooltip_vu_add_new_instituiton_details_s:0 "[Root.GetName] has at least 5 trade power" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #tooltip_vu_add_new_instituiton_details_t:0 "[Root.GetName] has at least 10 trade power" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #tooltip_vu_add_new_instituiton_details_u:0 "[Root.GetName] has at least 20 trade power" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #tooltip_vu_add_new_instituiton_details_v:0 "[Root.GetName] has at least 40 trade power" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #tooltip_vu_add_new_instituiton_details_w:0 "[Root.GetName] has at least 60 trade power" #VU - Hashed out for v1.36.2.*. By San Felipe
  tooltip_vu_add_new_instituiton_details_x:0 "Is a Center of Trade and has §YPrinting Press§!"
  tooltip_vu_add_new_instituiton_details_y:0 "Manufactory constructed and has §YGlobal Trade§!"
  tooltip_vu_add_new_instituiton_details_z:0 "Owner has completed Humanist Idea Group"
- tooltip_vu_add_new_instituiton_details_aa:0 "Highly developed province (24 or above) after 1550"           #ended up not using this, sticking with increased strength 30 and above only
+ #tooltip_vu_add_new_instituiton_details_aa:0 "Highly developed province (24 or above) after 1550" #VU - Hashed out for v1.36.2.*. By San Felipe
  tooltip_vu_add_new_instituiton_details_ab:0 "Very highly developed province (32 or above) after 1600"
  tooltip_vu_add_new_instituiton_details_ac:0 "Mainland core of a Western Great Power"
  tooltip_vu_add_new_instituiton_details_ad:0 "Owned by an independant colonial nation"
  tooltip_vu_add_new_instituiton_details_ae:0 "Owner employs a philosopher or natural scientist"
  tooltip_vu_add_new_instituiton_details_af:0 "Owner employs a skilled philosopher or natural scientist"
  tooltip_vu_add_new_instituiton_details_ag:0 "Owner employs a gifted philosopher or natural scientist"
- tooltip_vu_add_new_instituiton_details_ah:0 "Owner is Tolerant"
- tooltip_vu_add_new_instituiton_details_ai:0 "Owner is a Scholar"
+ #tooltip_vu_add_new_instituiton_details_ah:0 "Owner is Tolerant" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #tooltip_vu_add_new_instituiton_details_ai:0 "Owner is a Scholar" #VU - Hashed out for v1.36.2.*. By San Felipe
  tooltip_vu_add_new_instituiton_details_aj:0 "Is a Center of Trade"
  tooltip_vu_add_new_instituiton_details_ak:0 "Is a coastal capital"
  tooltip_vu_add_new_instituiton_details_al:0 "Is in the capital area"
@@ -232,11 +233,11 @@
  tooltip_vu_add_new_instituiton_details_aq:0 "Development at least 16"
  tooltip_vu_add_new_instituiton_details_ar:0 "Development at least 24"
  #Generic tooltips just while I'm at it. Note average overhauled dev in dev doubled areas is actually more like x1.4, not a full x2, so provincially speaking 14 is closer to 10 vanilla and 28 is closer to 20 vanilla.
- vu_tooltip_lightly_developed_province:0 "Lightly developed province (at least 8)"
- vu_tooltip_developed_province:0 "Developed province (at least 16)"
- vu_tooltip_well_developed_province:0 "Well developed province (at least 24)"
- vu_tooltip_very_well_developed_province:0 "Very well developed province (at least 32)"
- vu_tooltip_extremely_well_developed_province:0 "Extremely developed province (at least 40)"
+ #vu_tooltip_lightly_developed_province:0 "Lightly developed province (at least 8)" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #vu_tooltip_developed_province:0 "Developed province (at least 16)" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #vu_tooltip_well_developed_province:0 "Well developed province (at least 24)" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #vu_tooltip_very_well_developed_province:0 "Very well developed province (at least 32)" #VU - Hashed out for v1.36.2.*. By San Felipe
+ #vu_tooltip_extremely_well_developed_province:0 "Extremely developed province (at least 40)" #VU - Hashed out for v1.36.2.*. By San Felipe
 
  #All others
  emilia_in_hre_tooltip_vul:0 "Emilia Area is in the Empire or a vassal of the Emperor."
@@ -522,3 +523,12 @@
  #
  FREECITY:0 "Free cities of the Empire can only ally other Free Cities!"
  #
+ #REPLACE ME Tooltips
+ request_canton_dialog:0 "Request Canton"
+ request_canton_alert_tooltip:0 ""
+ #MISSING Tooltips
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_same_culture: ""
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_diff_culture: ""
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_same_religion: ""
+ tooltip_any_friendly_coast_border_province_has_embraced_nationalism_diff_religion: ""
+ set_center_level_5_center_of_trade_tt: ""

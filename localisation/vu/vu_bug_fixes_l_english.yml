@@ -13,7 +13,7 @@
  lotf_royal_ties: "American Royal Ties"
  #New Additions by San Felipe
  #unify_british_isles: "Anglo-Scottish Wars"
- #unify_british_isles_desc: "Scotland, my land. The French, will grovel to anyone with strength, but how will they believe our strength when we cannot rule the whole of our own island!"
+ #unify_british_isles_desc: "Scotland, my land. The French, will grovel to anyone with strength, but how will they #believe our strength when we cannot rule the whole of our own island!"
  #vu_engsco_full_annex_desc: "@[Root.GetTag] §Y[Root.GetName]§! fully annexes @[From.GetTag] §Y[From.GetName]§!."
  #PEACE_vu_engsco_full_annex: "Unify the Isles"
  #CB_ALLOWED_vu_engsco_full_annex: "Unify the Isles"
@@ -21,10 +21,10 @@
  #unify_british_isles_wargoal_desc: "We shall march on the enemy capital!"
  #UNIFY_BRITISH_ISLES_WAR: "Anglo-Scottish Wars"
  #mechanic_has_unify_british_isles_cb_yes:0 "Has access to the Unify British Isles casus belli"
- mechanic_has_unify_germany_cb_yes:0 "Has access to the Unify Germany casus belli"
- #mechanic_has_unify_italy_cb_yes:0 "Has access to the Unify Italy casus belli"
- #mechanic_has_unify_greece_cb_yes:0 "Has access to the Unify Greece casus belli"
- #mechanic_has_unify_russia_cb_yes:0 "Has access to the Unify Russia casus belli"
- 
-
- 
+ #de-bugging
+ vu_debug.1.t:0 "Debug"
+ vu_debug.1.d:0 "Debug"
+ vu_debug.1.a:0 "Debug"
+ fort_bonus_check:0 "Fort Bonus Check"
+ fort_bonus_check_FACTION_DESC:0 "Bonus Check"
+ fort_bonus_check_influence:0 "Influence Check"

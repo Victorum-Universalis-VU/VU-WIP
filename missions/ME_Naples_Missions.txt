@@ -86,16 +86,19 @@ naples_missions_1 = {
 							}
 						}
 					}
-					papal_controller = {
-						OR = {
-							has_opinion = {
-								who = ROOT
-								value = 125
-							}
-							NOT = {
+					any_country = {
+						AND = { 
+							is_papal_controller = yes
+							OR = {
 								has_opinion = {
 									who = ROOT
-									value = -50
+									value = 125
+								}
+								NOT = {
+									has_opinion = {
+										who = ROOT
+										value = -50
+									}
 								}
 							}
 						}
@@ -172,20 +175,23 @@ naples_missions_1 = {
 								}
 							}
 						}
-						papal_controller = {
-							OR = {
-								has_opinion = {
-									who = ROOT
-									value = 125
-								}
-								NOT = {
-									has_opinion = {
-										who = ROOT
-										value = -50
-									}
-								}
-							}
-						}
+						any_country = {
+					    	AND = { 
+					    		is_papal_controller = yes
+					    		OR = {
+					    			has_opinion = {
+					    				who = ROOT
+					    				value = 125
+					    			}
+					    			NOT = {
+					    				has_opinion = {
+					    					who = ROOT
+					    					value = -50
+					    				}
+					    			}
+					    		}
+					    	}
+					    }
 					}
 				}
 				add_country_modifier = {
@@ -195,13 +201,13 @@ naples_missions_1 = {
 			}
 			else = {
 				add_adm_power = 120
-			add_dip_power = 120
-			add_mil_power = 120
+			    add_dip_power = 120
+			    add_mil_power = 120
 			}
 		}
 	}
 
-	nap_hyunyady_throne= {
+	nap_hyunyady_throne = {
 		icon = the_hungarian_question
 		required_missions = {
 			nap_papal_relations
@@ -1256,7 +1262,7 @@ naples_missions_3 = {
 		effect = {
 			custom_tooltip = NAP_OTTOMAN_DOMAIN_TOOLTIP
 			hidden_effect = {
-				137 = {
+				1309 = {
 					every_trade_node_member_province = {
 						limit = {
 							owned_by = TUR

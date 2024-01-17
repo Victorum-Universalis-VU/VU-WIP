@@ -74,11 +74,6 @@ estate_jews = {
 		desc = EST_VAL_JEWISH_MINORITIES
 		trigger = {
 			has_country_flag = country_has_jews_yes
-		}	
-		influence = 10
-
-		desc = EST_VAL_JEWISH_MINORITIES_POP
-		trigger = {
 			any_province = { has_province_modifier = jewish_population }
 		}	
 		influence = 10
@@ -1844,7 +1839,14 @@ estate_industrial = {
 	country_modifier_angry = {
 		global_trade_goods_size_modifier = -0.1
 	}
-	
+
+	land_ownership_modifier = {
+		global_trade_goods_size = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 1
+	}
 	influence_from_dev_modifier = 0.5
 	
 	base_influence = 30
@@ -2267,6 +2269,14 @@ me_estate_cultural_minorities = {
 		global_unrest = 2
 		global_manpower_modifier = -0.2
 	}
+
+	province_independence_weight = {
+		factor = 1
+	}
+
+	land_ownership_modifier = {
+		global_manpower_modifier = -0.2
+	}
 	
 	influence_from_dev_modifier = 0.5
 	
@@ -2338,6 +2348,15 @@ estate_berbers = {
 		}	
 		influence = 10
 	}
+
+	province_independence_weight = {
+		factor = 1
+	}
+
+	land_ownership_modifier = {
+		global_supply_limit_modifier = 1
+	}
+
 	influence_modifier = {
 		desc = MOR_berber_is_primary
 		trigger = {

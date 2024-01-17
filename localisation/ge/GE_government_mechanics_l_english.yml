@@ -96,10 +96,15 @@
 
  ## Modifiers:
  political_focus_mechanic_administrative_focus_modifier: "Administrative Focus"
+ desc_political_focus_mechanic_administrative_focus_modifier: ""
  political_focus_mechanic_diplomatic_focus_modifier: "Diplomatic Focus"
+ desc_political_focus_mechanic_diplomatic_focus_modifier: ""
  political_focus_mechanic_military_focus_modifier: "Military Focus"
+ desc_political_focus_mechanic_military_focus_modifier: ""
  political_focus_mechanic_religious_focus_modifier: "Religious Focus"
+ desc_political_focus_mechanic_religious_focus_modifier: ""
  political_focus_mechanic_trade_focus_modifier: "Trade Focus"
+ desc_political_focus_mechanic_trade_focus_modifier: ""
 
  ## Tooltips:
  political_focus_power_min_reached_tt: "§RAll active focuses are deactivated.§!"

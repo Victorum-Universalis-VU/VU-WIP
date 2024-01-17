@@ -1490,7 +1490,7 @@ ADU_missions_1_cont = {
 					share = 5
 				}
 			}
-			4346 = { #gulf of aden
+			1331 = { #gulf of aden
 				trade_share = {
 					country = ROOT
 					share = 5
@@ -1517,7 +1517,7 @@ ADU_missions_1_cont = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = GRA_gulf_of_aden_opinion_with_trade_power
-				4346 = {
+				1331 = {
 					all_trade_node_member_country = {
 						OR = {
 							4346 = {
@@ -3557,9 +3557,11 @@ ADU_missions_4 = {
 				}
 			}
 			else = {
-				add_institution_embracement = {
-					which = new_world_i
-					value = 50
+				224 = {
+					add_institution_embracement = {
+				    	which = new_world_i
+				    	value = 50
+				    }
 				}
 			}
 			
@@ -4810,7 +4812,9 @@ GRA_ADU_missions_castile_incident_5 = {
 			has_port = yes 
 		}
 		trigger = {
-			employed_advisor = { type = DIP }
+			employed_advisor = { 
+				type = negotiator 
+			}
 			naval_maintenance = 1
 			num_of_admirals = 1
 			any_owned_province = { 

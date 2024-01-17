@@ -1,6 +1,6 @@
 country_decisions = {
 
-	from_great_yuan = {
+	yuan_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
