@@ -13,12 +13,6 @@ base_production = 4
 base_manpower = 2 
 is_city = yes
 
-
-
-
-
-
-
 1539.1.1 = { religion = protestant } #Reformation
 1790.8.1 = { unrest = 5 } # Peasant revolt
 1791.1.1 = { unrest = 0 }

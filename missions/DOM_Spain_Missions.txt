@@ -443,7 +443,7 @@ dom_cas_missions_1_b = {
 			}
 			tag = ARA 
 		}
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1303,7 +1303,7 @@ dom_cas_missions_2_b = {
 	}
 	potential = {
 		has_dlc = "Domination"
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 		OR = {
 			AND = {
 				was_tag = ARA 
@@ -2473,7 +2473,7 @@ dom_cas_missions_3_b = {
 			}
 			tag = ARA 
 		}
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3381,7 +3381,7 @@ dom_cas_missions_4_b = {
 			}
 			tag = ARA 
 		}
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -4139,7 +4139,7 @@ dom_cas_missions_5_b = {
 			}
 			tag = ARA 
 		}
-	#	has_country_flag = use_paradox_missions
+		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
