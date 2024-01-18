@@ -14,6 +14,7 @@ emp_bav_prestige_branch = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -187,6 +188,7 @@ emp_bav_missions_conquest = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -465,6 +467,7 @@ emp_bav_missions_conquest_2 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -518,6 +521,7 @@ emp_bav_missions_military = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -593,6 +597,7 @@ emp_bav_cultural_dominance_branch = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -671,6 +676,7 @@ emp_bav_missions_religious = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -801,6 +807,7 @@ emp_bav_missions_illuminati = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -1009,6 +1016,7 @@ emp_bav_missions_conquer_austria = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -1191,6 +1199,7 @@ emp_bav_missions_conquer_italy = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions
@@ -1267,6 +1276,7 @@ emp_bav_missions_netherlands = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = use_paradox_missions

@@ -297,6 +297,7 @@ country_has_both_paradox_and_me_missions = {
 		tag = ING
 		tag = LBV
 		tag = UBV
+		is_bavarian_minor = yes
 		#Low Countries
 		tag = UTR
 		tag = GEL
@@ -399,6 +400,24 @@ country_has_both_paradox_and_me_missions = {
 		## Remember to add "has_country_flag = use_missions_expanded_missions_instead_of_paradox" to the ME missions. 				##
 		## For an example, look at Yaroslavl_Missions.txt and TR_Russian_Minors_Missions.txt										##
 		##############################################################################################################################
+	}
+}
+
+is_bavarian_minor = {
+	OR = {
+		tag = BET
+		tag = EGR
+		tag = FRG
+		tag = HLF
+		tag = KMP
+		tag = KRH
+		tag = LMP
+		tag = OET
+		tag = PSS
+		tag = REG
+		tag = SLZ
+		tag = TRU
+		tag = WLB
 	}
 }
 
