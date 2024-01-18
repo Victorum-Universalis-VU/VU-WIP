@@ -885,7 +885,7 @@ NCountry = {
 	
 	REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.1,		-- Multiplied with the province's development
 	REVOLT_SIZE_BASE = 4,							-- lowered from vanilla 4
-	REVOLT_TECH_IMPACT = 0.02, 						-- % each tech increases size of rebels by this percent (+1%).
+	REVOLT_TECH_IMPACT = 0.015, 						-- % each tech increases size of rebels by this percent (+1%).
 	REVOLT_TECH_MORALE = 0.006,						-- 0,5% per tech level
 
 	REBEL_ARTILLERY_INCREASE_LEVEL_1_TECH = 28,		-- Tech level at which REBEL_ARTILLERY_INCREASE_LEVEL_1_SIZE is applied

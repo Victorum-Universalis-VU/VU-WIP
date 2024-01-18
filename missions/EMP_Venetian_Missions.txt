@@ -762,9 +762,9 @@ emp_ven_slot_5 = {
 			cyprus_area	= {
 				limit = {
 					NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
 				}
 				add_permanent_claim = ROOT
 			}

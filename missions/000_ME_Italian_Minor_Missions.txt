@@ -268,7 +268,7 @@ italian_minor_misisons_2 = {
 							export_to_variable = {
 								which = prev_trade_power
 								value = trigger_value:base_production
-								who = PREV
+								who = owner
 							}
 							check_variable = { which = prev_trade_power which = this_trade_power }
 						}

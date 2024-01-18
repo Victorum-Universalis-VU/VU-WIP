@@ -2,6 +2,8 @@
 #Region - Scandinavia
 #Area - Northern Isles
 
+culture = ursus
+religion = totemism
 capital = "Isabella"
 trade_goods = unknown
 hre = no

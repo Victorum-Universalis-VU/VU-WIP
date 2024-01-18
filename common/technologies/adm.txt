@@ -88,7 +88,7 @@ technology = { #Centralisation Attempts
 		gunpowder_warfare = 0.05
 	}
 
-	administrative_efficiency = 0.02
+	administrative_efficiency = 0.01
 }
 
 
@@ -115,7 +115,7 @@ technology = { #Agriculture
 	}
 
 	production_efficiency = 0.025
-	administrative_efficiency = 0.025
+	administrative_efficiency = 0.005
 }
 
 
@@ -128,7 +128,7 @@ technology = { #Legal Systems
 		medicine = 0.05
 	}
 	allowed_idea_groups = 1
-	administrative_efficiency = 0.01
+	administrative_efficiency = 0.005
 }
 
 
@@ -229,7 +229,7 @@ technology = {  # Early Machinery
 		market_production = 0.5
 	}
 
-		production_efficiency = 0.02
+	production_efficiency = 0.01
 }
 
 technology = {  # Royal Officials
@@ -259,7 +259,7 @@ technology = {  # Late Feudalism
 
 	allowed_idea_groups = 2
 	production_efficiency = 0.02
-	administrative_efficiency = 0.03
+	administrative_efficiency = 0.01
 }
 
 technology = {  # Better Tax Collection
@@ -301,7 +301,7 @@ technology = {  #Husite Wars
 		market_production = 0.5
 	}
 
-	administrative_efficiency = 0.02
+	administrative_efficiency = 0.01
 }
 
 #End of pre-1444 techs

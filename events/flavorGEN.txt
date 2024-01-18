@@ -770,6 +770,7 @@ country_event = {
 	trigger = {
         tag = GEN
 		exists = TUR
+		is_year = 1453 #VU - There's nothing wrong here and this red line is just messing around. By San Felipe
 		6932 = {
 			owned_by = GEN
 		}
@@ -785,7 +786,6 @@ country_event = {
 			}
             is_subject = no
         }
-        is_year = 1453
     }
 	
 	mean_time_to_happen = {
