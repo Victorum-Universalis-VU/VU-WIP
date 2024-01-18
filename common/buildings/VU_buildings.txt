@@ -2590,20 +2590,20 @@ Ai_def_push_dip = {
 		variable_arithmetic_trigger = {				
 			export_to_variable = {
 				variable_name = Base_tax 
-				value = base_tax
-				who = ROOT
+				value = trigger_value:base_tax
+				who = owner
 			}
 			
 			export_to_variable = {
 				variable_name = Base_pro 
-				value = base_production 
-				who = ROOT
+				value = trigger_value:base_production 
+				who = owner
 			}
 			
 			export_to_variable = {
 				variable_name = Base_man
-				value = base_manpower
-				who = ROOT
+				value = trigger_value:base_manpower
+				who = owner
 			}
 			
 			change_variable = { 
@@ -2771,20 +2771,20 @@ Ai_def_push_tax = {
 		variable_arithmetic_trigger = {				
 			export_to_variable = {
 				variable_name = Base_tax 
-				value = base_tax
-				who = ROOT
+				value = trigger_value:base_tax
+				who = owner
 			}
 			
 			export_to_variable = {
 				variable_name = Base_pro 
-				value = base_production 
-				who = ROOT
+				value = trigger_value:base_production 
+				who = owner
 			}
 			
 			export_to_variable = {
 				variable_name = Base_man
-				value = base_manpower
-				who = ROOT
+				value = trigger_value:base_manpower
+				who = owner
 			}
 			
 			change_variable = { 

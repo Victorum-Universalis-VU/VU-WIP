@@ -549,6 +549,18 @@ estate_nobles = {
 		estate_noble_baron_squires
 		estate_noble_baron_titles
 		estate_noble_absolute_taxation
+		#ZZZ_new_privs
+		#EE Privileges:
+		ME_estate_nobles_TIM_influencial_military
+		ME_estate_nobles_TIM_disloyal_princes
+		ME_estate_nobles_TIM_eternal_regency
+		ME_estate_nobles_MAM_oligarchy
+		estate_nobles_recruit_grenzens
+		estate_nobles_conscription_law
+		ME_estate_nobles_bedouin_recruitment
+		ME_estate_maratha_special_privilege
+		ME_estate_nobles_loyal_military
+		ME_estate_nobles_theme_system
 	}
 
 	agendas = {
