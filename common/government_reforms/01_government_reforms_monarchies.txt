@@ -7317,6 +7317,7 @@ western_principality = {
 				have_had_reform = western_principality
 			}
 		}
+		government_rank = 1 #Apparently AI France and Danemark take that reform, hopefully that should stop that from happening
 	}
 	fixed_rank = 1
 	legacy_equivalent = western_principality_legacy

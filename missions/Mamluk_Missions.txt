@@ -10,7 +10,7 @@ mam_south_missions = {
 		tag = MAM
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "King of Kings" }
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -134,7 +134,7 @@ mam_north_missions = {
 		tag = MAM
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "King of Kings" }
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
