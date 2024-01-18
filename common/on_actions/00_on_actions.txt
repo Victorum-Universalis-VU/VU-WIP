@@ -2677,7 +2677,7 @@ on_monarch_death = {
 	random_events = {
 		#100 = 0
 		100 = 0
-		900 = ME_Mamluks_Events.21
+		#900 = ME_Mamluks_Events.21
 	}
 	#
 	#if = {

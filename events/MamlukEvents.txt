@@ -184,25 +184,26 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = {
-			if = {
-				limit = {
-					event_target:MAM_new_mamluk_target = {
-						culture = polish
-					}
-				}
-				country_event = { id = ME_Mamluks_Events.19 days = 30 random = 60  }
-			}
-			else_if = {
-				limit = {
-					event_target:MAM_new_mamluk_target = {
-						culture = greek
-					}
-				}
-				country_event = { id = ME_Mamluks_Events.20 days = 30 random = 60  }
-			}
-			else = { }
-		}
+		#VU - Hashed out for now to see what the effects are. By San Felipe
+		#hidden_effect = {
+		#	if = {
+		#		limit = {
+		#			event_target:MAM_new_mamluk_target = {
+		#				culture = polish
+		#			}
+		#		}
+		#		country_event = { id = ME_Mamluks_Events.19 days = 30 random = 60  }
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			event_target:MAM_new_mamluk_target = {
+		#				culture = greek
+		#			}
+		#		}
+		#		country_event = { id = ME_Mamluks_Events.20 days = 30 random = 60  }
+		#	}
+		#	else = { }
+		#}
 	}
 
 	option = {
