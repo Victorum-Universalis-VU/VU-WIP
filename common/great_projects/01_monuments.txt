@@ -17736,10 +17736,10 @@ edinburgh_castle = {
 				}
 				province_is_or_accepts_culture = yes
 			}
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+		#	custom_trigger_tooltip = { #Edit by Altan : flag not set, disabling until further notice
+		#		tooltip = enabled_via_mission
+		#		owner = { has_country_flag = enable_edinburgh_castle_flag }
+		#	}
 		}
 	}
 
@@ -17770,10 +17770,10 @@ edinburgh_castle = {
 				}
 				province_is_or_accepts_culture = yes
 			}
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+		#	custom_trigger_tooltip = { #Edit by Altan : flag not set, disabling until further notice
+		#		tooltip = enabled_via_mission
+		#		owner = { has_country_flag = enable_edinburgh_castle_flag }
+		#	}
 		}
 	}
 
@@ -17798,10 +17798,10 @@ edinburgh_castle = {
 				}
 				province_is_or_accepts_culture = yes
 			}
-			custom_trigger_tooltip = {
-				tooltip = enabled_via_mission
-				owner = { has_country_flag = enable_edinburgh_castle_flag }
-			}
+		#	custom_trigger_tooltip = { #Edit by Altan : flag not set, disabling until further notice
+		#		tooltip = enabled_via_mission
+		#		owner = { has_country_flag = enable_edinburgh_castle_flag }
+		#	}
 		}
 	}
 

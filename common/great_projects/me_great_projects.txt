@@ -9,18 +9,18 @@ me_ulugh_beg_observatory = {
 	starting_tier = 1
 	type = canal
 	build_trigger = {
-		owner = {
-			has_country_flag = me_tim_built_observatory
-		}
+	#	owner = { #Edit by Altan : flag not set, disabling until further notice
+	#		has_country_flag = me_tim_built_observatory
+	#	}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 	}
 	can_upgrade_trigger = {
-		owner = {
-			has_country_flag = me_tim_built_observatory
-		}
+	#	owner = { #Edit by Altan : flag not set, disabling until further notice
+	#		has_country_flag = me_tim_built_observatory
+	#	}
 	}
 	keep_trigger = {
 	}
@@ -165,18 +165,18 @@ me_grand_palace = {
 	starting_tier = 1
 	type = canal
 	build_trigger = {
-		owner = {
-			has_country_flag = me_tim_grand_palace_unlocked
-		}
+	#	owner = { #Edit by Altan : flag not set, disabling until further notice
+	#		has_country_flag = me_tim_grand_palace_unlocked
+	#	}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 	}
 	can_upgrade_trigger = {
-		owner = {
-			has_country_flag = me_tim_built_observatory
-		}
+	#	owner = { #Edit by Altan : flag not set, disabling until further notice
+	#		has_country_flag = me_tim_built_observatory
+	#	}
 	}
 	keep_trigger = {
 	}
@@ -301,42 +301,42 @@ me_skull_pyramid = {
 	starting_tier = 1
 	type = canal
 	build_trigger = {
-		owner = {
-			has_country_flag = me_tim_skull_pyramid_unlocked
-		}
+	#	owner = { #Edit by Altan : flag not set, disabling until further notice
+	#		has_country_flag = me_tim_skull_pyramid_unlocked
+	#	}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 	}
 	can_upgrade_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = me_tim_skull_pyramid_requirement
-			if = {
-				limit = {
-					has_great_project = {
-						type = me_skull_pyramid
-						tier = 1
-					}
-					NOT = {
-						has_great_project = {
-							type = me_skull_pyramid
-							tier = 2
-						}
-					}
-				}
-				check_variable = {
-					which = METimSkullPyramidProgress
-					value = 50
-				}
-			}
-			else = {
-				check_variable = {
-					which = METimSkullPyramidProgress
-					value = 100
-				}
-			}
-		}
+	#	custom_trigger_tooltip = { #Edit by Altan : Goofy trigger, disabling until further notice
+	#		tooltip = me_tim_skull_pyramid_requirement
+	#		if = {
+	#			limit = {
+	#				has_great_project = {
+	#					type = me_skull_pyramid
+	#					tier = 1
+	#				}
+	#				NOT = {
+	#					has_great_project = {
+	#						type = me_skull_pyramid
+	#						tier = 2
+	#					}
+	#				}
+	#			}
+	#			check_variable = {
+	#				which = METimSkullPyramidProgress
+	#				value = 50
+	#			}
+	#		}
+	#		else = {
+	#			check_variable = {
+	#				which = METimSkullPyramidProgress
+	#				value = 100
+	#			}
+	#		}
+	#	}
 	}
 	keep_trigger = {
 	}
@@ -453,9 +453,9 @@ tomb_timur = { #Yes, I got Parm's Permission for this
 
 	#can we build it?
 	build_trigger = {
-		owner = {
-			has_country_flag = me_tim_parm
-		}
+	#	owner = { #Edit by Altan : Missing flag, disabling until further notice
+	#		has_country_flag = me_tim_parm
+	#	}
 	}
 
 	#what to do when it's built

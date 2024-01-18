@@ -921,10 +921,10 @@ vu_red_fort = {
 			OR = {
 				tag = MUG 
 				technology_group = indian
-				custom_trigger_tooltip = {
-					tooltip = per_delhi_requirement_tt
-					has_country_flag = per_delhi_requirement_flag
-				}
+			#	custom_trigger_tooltip = { #Edit by Altan : flag not set, disabling until further notice
+			#		tooltip = per_delhi_requirement_tt
+			#		has_country_flag = per_delhi_requirement_flag
+			#	}
 			}
 		}
 	}
@@ -934,10 +934,10 @@ vu_red_fort = {
 			OR = {
 				tag = MUG 
 				technology_group = indian
-				custom_trigger_tooltip = {
-					tooltip = per_delhi_requirement_tt
-					has_country_flag = per_delhi_requirement_flag
-				}
+			#	custom_trigger_tooltip = { #Edit by Altan : flag not set, disabling until further notice
+			#		tooltip = per_delhi_requirement_tt
+			#		has_country_flag = per_delhi_requirement_flag
+			#	}
 			}
 		}
 		NOT = { current_age = age_of_discovery }
