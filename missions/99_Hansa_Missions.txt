@@ -1246,7 +1246,7 @@ lubeck_missions_3 = {
 			OR = {
 				province_id = 45
 				province_id = 1975
-				province_id = 1926
+				province_id = 1
 				province_id = 33
 			}
 			NOT = { is_strongest_trade_power = ROOT }
@@ -1265,7 +1265,7 @@ lubeck_missions_3 = {
 			}
 			45 = { is_strongest_trade_power = ROOT }
 			1975 = { is_strongest_trade_power = ROOT }
-			1926 = { is_strongest_trade_power = ROOT }
+			1 = { is_strongest_trade_power = ROOT }
 			33 = { is_strongest_trade_power = ROOT }
 			custom_trigger_tooltip = {
 				tooltip = largest_trade_fleet_in_europe_ttt
