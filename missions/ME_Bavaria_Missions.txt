@@ -8,6 +8,7 @@ me_bavaria_minor_missions_1 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -254,6 +255,7 @@ me_bavaria_minor_missions_2 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -356,6 +358,7 @@ me_bavaria_minor_missions_3 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -489,6 +492,7 @@ me_bavaria_minor_missions_4_1 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -557,6 +561,7 @@ me_bavaria_minor_missions_4_2 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
@@ -591,6 +596,7 @@ me_bavaria_minor_missions_5 = {
 			tag = ING
 			tag = LBV
 			tag = UBV
+			is_bavarian_minor = yes
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	}
