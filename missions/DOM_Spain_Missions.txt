@@ -17,7 +17,7 @@ dom_cas_missions_1 = {
 			tag = CSP
 		}
 		NOT = { was_tag = ARA } 
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -443,7 +443,7 @@ dom_cas_missions_1_b = {
 			}
 			tag = ARA 
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -770,7 +770,7 @@ dom_cas_missions_1_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1057,7 +1057,7 @@ dom_cas_missions_2 = {
 			tag = CSP
 		}
 		NOT = { was_tag = ARA } 
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1303,7 +1303,7 @@ dom_cas_missions_2_b = {
 	}
 	potential = {
 		has_dlc = "Domination"
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 		OR = {
 			AND = {
 				was_tag = ARA 
@@ -1327,7 +1327,6 @@ dom_cas_missions_2_b = {
 			}
 			tag = ARA 
 		}
-		has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -1631,7 +1630,7 @@ dom_cas_missions_2_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2010,7 +2009,7 @@ dom_cas_missions_3 = {
 			tag = CSP
 		}
 		NOT = { was_tag = ARA }
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2474,7 +2473,7 @@ dom_cas_missions_3_b = {
 			}
 			tag = ARA 
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -2747,7 +2746,7 @@ dom_cas_missions_3_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3025,7 +3024,7 @@ dom_cas_missions_4 = {
 			tag = CSP
 		}
 		NOT = { was_tag = ARA } 
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3382,7 +3381,7 @@ dom_cas_missions_4_b = {
 			}
 			tag = ARA 
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3584,7 +3583,7 @@ dom_cas_missions_4_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -3869,7 +3868,7 @@ dom_cas_missions_5 = {
 			tag = CSP
 		}
 		NOT = { was_tag = ARA } 
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -4140,7 +4139,7 @@ dom_cas_missions_5_b = {
 			}
 			tag = ARA 
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -4488,7 +4487,7 @@ dom_cas_missions_5_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -4810,7 +4809,7 @@ dom_cas_missions_6_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -4949,7 +4948,7 @@ dom_cas_missions_7_c = {
 			tag = BBS
 			tag = CSP
 		}
-		has_country_flag = use_paradox_missions
+	#	has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
