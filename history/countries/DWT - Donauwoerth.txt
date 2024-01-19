@@ -8,3 +8,4 @@ religion = catholic
 primary_culture = swabian
 capital = 4711	# Donauwörth
 #fixed_capital = 4711 #VU - Commented out in v1.36.2.*. By SF
+

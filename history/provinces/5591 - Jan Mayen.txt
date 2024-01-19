@@ -2,7 +2,7 @@
 #Region - Scandinavia
 #Area - Northern Isles
 
-culture = ursus
+culture = ursus #VU - Latin for BEAR by San Felipe
 religion = totemism
 capital = "Isabella"
 trade_goods = unknown
