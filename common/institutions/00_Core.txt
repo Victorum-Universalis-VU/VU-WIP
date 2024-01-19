@@ -7738,34 +7738,30 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
+				has_building = marketplace
 				NOT = { has_building = trade_depot }
 				NOT = { has_building = stock_exchange }
-			}			#VU AddOn new - this cleans up UI by making only one or two spread factors show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = marketplace
+			}
 		}
 		modifier = {
 			factor = 0.1
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				OR = {
-					has_building = marketplace
-					has_building = trade_depot
-				}
-			}			#VU AddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = trade_depot
+				has_building = trade_depot
+				NOT = { has_building = marketplace }
+				NOT = { has_building = stock_exchange }
+			}
 		}
 		modifier = {
 			factor = 0.3			#VU AddOn changed from 1.0. Want CoT to be the most important for this institution, rather than buildings and TP, so lowering the bonus here.
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				OR = {
-					has_building = trade_depot
-					has_building = stock_exchange
-				}
-			}			#VU AddOn new - this cleans up UI by making only one spread factor show, instead of all three. Might cause some minor confusion to a player because trade depot and stock exchange don't appear to spread it at first, but in my opinion cleaning it up does more good than harm, even so
-			has_building = stock_exchange
+				has_building = stock_exchange
+				NOT = { has_building = marketplace }
+				NOT = { has_building = trade_depot }
+			}
 		}
 		##########################################################################################################################################################################################################################################################
 		#VU AddOn Note - removing trade power factors for global trade spread entirely. They are messy, complicated, don't encourage proper spread, and are redundant as most major factors in tp (CoT/buildings) also spread global trade themselves, estuaries lose out, but oh well. Leaving this here in case I reconsider.

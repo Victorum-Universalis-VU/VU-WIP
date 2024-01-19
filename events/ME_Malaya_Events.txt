@@ -355,7 +355,7 @@ country_event = {
 	option = {
 		name = ME_Malaya_Events.7.a #farewell
 
-		MSA_insulting_bonus = { }
+		MSA_insulting_bonus= { tooltip = yes }
 		custom_tooltip = MSA_our_neighboring_countries
 		hidden_effect = {
 			every_country = {

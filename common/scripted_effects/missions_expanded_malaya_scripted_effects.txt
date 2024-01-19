@@ -1488,7 +1488,9 @@ MSA_christian_spread_center = { #the other spread.
 	if = {
 		limit = {
 			if = {
-				limit = { has_global_flag = MSA_spread_of_christianity_slow }
+				limit = { 
+					has_global_flag = MSA_spread_of_christianity_slow 
+				}
 				num_of_owned_provinces_with = {
 					religion_group = christian
 					value = 6
