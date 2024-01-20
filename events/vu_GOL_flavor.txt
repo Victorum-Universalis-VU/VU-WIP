@@ -121,7 +121,7 @@ country_event = { # Falling horde is easy target
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 12
 	}
 	
 	option = { # Enemies everywhere

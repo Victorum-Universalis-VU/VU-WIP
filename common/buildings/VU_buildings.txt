@@ -2607,13 +2607,13 @@ Ai_def_push_dip = {
 			}
 			
 			change_variable = { 
-				which = Base_tax
+				which = Base_pro
 				which = Base_man
 			}
 					
 			check_variable = {
-				which = Base_tax
 				which = Base_pro
+				which = Base_tax
 			}
 		}
 	}

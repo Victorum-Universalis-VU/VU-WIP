@@ -76,7 +76,7 @@ champagne = { base_price = 4 }
 cheese = { base_price = 3 }
 rum = {	base_price = 4 }
 vodka = { base_price = 3 }
-marble_sculpture = { base_price = 4 }
+marble_sculpture = { base_price = 5.65 }
 cigars = { base_price = 4.25 }
 sake = { base_price = 3.5 }
 whiskey = { base_price = 4 }

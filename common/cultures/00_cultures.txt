@@ -19298,6 +19298,26 @@ armenic = {
 	}
 }
 
+ursidae = {
+	ursus = {
+		graphical_culture = westerngfx
+		#primary = JAN - Jan Mayen
+
+		dynasty_names = {
+			Adalbern Artis
+		}
+		male_names = {
+			Armel Arthur Barrett Bjorn Espen Gerben Humbert Oberon Orson Torben Vernados Aloysius Baloo 
+			Barney Beorn Bobo "Boo-Boo" Fozzie Freddy Gummi Iorek Byrnison Kenai Paddington Panda Radar 
+			Rupert Røg Ted Winnie Yogi Brownie Ven Sjokolade Fluffy "Fuzzy-Wuzzy" Hugsy Koala 
+			Nandi Poter Indelukket Solrig 
+		}
+		female_names = {
+			Armelle Benate Berne Calysta Eden Goldie Honey Koda Orsa Ursel Ursula 
+		}
+	}
+}
+
 
 #############################################################################################################################
 #############################################################################################################################
