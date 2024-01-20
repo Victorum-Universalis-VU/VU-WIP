@@ -3110,6 +3110,12 @@ defined_text = {
 		}
 	}
 	text = {
+		localisation_key = arctolatry_string
+		trigger = {
+			religion = arctolatry
+		}
+	}
+	text = {
 		localisation_key = totemism_string
 		trigger = {
 			religion = totemism

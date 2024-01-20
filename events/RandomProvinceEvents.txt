@@ -16,6 +16,7 @@ province_event = {
 			religion = animism
 			religion = shamanism
 			religion = totemism
+			religion = arctolatry
 		}
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_catholic }
@@ -23,6 +24,7 @@ province_event = {
 				religion = animism
 				religion = shamanism
 				religion = totemism
+				religion = arctolatry
 			}
 			any_neighbor_country = {
 				religion = catholic
@@ -91,6 +93,7 @@ province_event = {
 			religion = animism
 			religion = shamanism
 			religion = totemism
+			religion = arctolatry
 		}
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_protestant }
@@ -98,6 +101,7 @@ province_event = {
 				religion = animism
 				religion = shamanism
 				religion = totemism
+				religion = arctolatry
 			}
 			any_neighbor_country = {
 				religion = protestant
@@ -166,6 +170,7 @@ province_event = {
 			religion = animism
 			religion = shamanism
 			religion = totemism
+			religion = arctolatry
 		}
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_sunni }
@@ -173,6 +178,7 @@ province_event = {
 				religion = animism
 				religion = shamanism
 				religion = totemism
+				religion = arctolatry
 			}
 			any_neighbor_country = {
 				religion = sunni
@@ -242,6 +248,7 @@ province_event = {
 			religion = animism
 			religion = shamanism
 			religion = totemism
+			religion = arctolatry
 		}
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_shiite }
@@ -249,6 +256,7 @@ province_event = {
 				religion = animism
 				religion = shamanism
 				religion = totemism
+				religion = arctolatry
 			}
 			any_neighbor_country = {
 				religion = shiite
@@ -679,6 +687,7 @@ province_event = {
 			religion = animism
 			religion = shamanism
 			religion = totemism
+			religion = arctolatry
 		}
 		owner = {
 			NOT = { has_country_flag = honor_ancestors_buddhism }
@@ -686,6 +695,7 @@ province_event = {
 				religion = animism
 				religion = shamanism
 				religion = totemism
+				religion = arctolatry
 			}
 			OR = {
 				any_neighbor_country = {

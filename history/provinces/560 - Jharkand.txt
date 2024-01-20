@@ -13,21 +13,6 @@ base_manpower = 7
 is_city = yes
 add_core = NGP
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
 1674.1.1 = {
 	owner = MUG
 	controller = MUG

@@ -12,7 +12,10 @@ vu_black_hills = {
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	always = no}
@@ -76,17 +79,26 @@ vu_montezuma_castle = {
 	type = monument
 	build_trigger = { 
 		is_year = 1444 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	keep_trigger = { always = yes }
@@ -170,7 +182,10 @@ vu_pipestone = {
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	always = no}
@@ -232,7 +247,10 @@ vu_devil_tower = {
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	always = no	}
@@ -287,17 +305,26 @@ vu_serpent_mound = {
 	type = monument
 	build_trigger = { 
 		is_year = 1444 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	keep_trigger = { always = yes }
@@ -367,17 +394,26 @@ vu_ocmulgee_mound = {
 	type = monument
 	build_trigger = { 
 		is_year = 1444 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	keep_trigger = { always = yes }
@@ -449,17 +485,26 @@ vu_chaco_complex = {
 	type = monument
 	build_trigger = { 
 		is_year = 1444 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	keep_trigger = { always = yes }
@@ -534,17 +579,26 @@ vu_poverty_point = {
 	starting_tier = 0
 	type = monument
 	build_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = { 
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	can_upgrade_trigger = {	
-		religion = totemism 
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes 
 	}
 	keep_trigger = { always = yes }

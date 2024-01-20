@@ -880,6 +880,19 @@ country_event = {
 	option = {
 		name = "EVTOPTAh9469"
 		trigger = {
+			religion = arctolatry
+		}
+		define_heir = {
+			dynasty = ROOT
+			male = yes
+			name = "Deganawida"
+			claim = 100
+			mil = 6
+		}
+	}
+	option = {
+		name = "EVTOPTAh9469"
+		trigger = {
 			religion = totemism
 		}
 		define_heir = {

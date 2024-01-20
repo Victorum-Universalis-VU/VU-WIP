@@ -5864,7 +5864,10 @@ sleeping_giant = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
@@ -6049,7 +6052,10 @@ the_great_salt_lake = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
@@ -6235,13 +6241,16 @@ yellowstone = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	always = no	
+		always = no	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -6420,7 +6429,10 @@ yosemite = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
@@ -6971,13 +6983,13 @@ tombs_of_ancient_lycia = {
 	can_use_modifiers_trigger = {
 	OR = {
 		AND = {
-				culture = greek
-				has_owner_religion = yes
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+			culture = greek
+			has_owner_religion = yes
+			OR = {
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
 			}
+		}
 		AND = {
 		    religion_group = pagan
             has_owner_religion = yes
@@ -7368,8 +7380,8 @@ kljutjevskaja_sopka = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-			religion = tengri_pagan_reformed
-			has_owner_religion = yes	
+		religion = tengri_pagan_reformed
+		has_owner_religion = yes	
 	}
 
 	#can our country upgrade it?
@@ -7553,7 +7565,7 @@ lake_baikal = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-			OR = {		
+		OR = {		
 			AND = {
 				religion = tengri_pagan_reformed
 				has_owner_religion = yes
@@ -7749,7 +7761,7 @@ peak_pobeda = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-			OR = {		
+		OR = {		
 			AND = {
 				religion = tengri_pagan_reformed
 				has_owner_religion = yes
@@ -7945,7 +7957,7 @@ tomb_of_genghis_kahn = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-			OR = {		
+		OR = {		
 			AND = {
 				religion = tengri_pagan_reformed
 				has_owner_religion = yes
@@ -8151,7 +8163,7 @@ yonaguni_ruins = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-			OR = {		
+		OR = {		
 			AND = {
 				culture_group = taiwanese_group
 				OR = {
@@ -8671,8 +8683,8 @@ masrur_temples = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_unrest = -2
-		local_monthly_devastation = -0.05
+			local_unrest = -2
+			local_monthly_devastation = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8705,8 +8717,8 @@ masrur_temples = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_unrest = -3
-		local_monthly_devastation = -0.1
+			local_unrest = -3
+			local_monthly_devastation = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8854,7 +8866,7 @@ krishna_mandapam = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_unrest = -1
+			local_unrest = -1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8887,8 +8899,8 @@ krishna_mandapam = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_unrest = -2
-		local_monthly_devastation = -0.05
+			local_unrest = -2
+			local_monthly_devastation = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8922,8 +8934,8 @@ krishna_mandapam = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_unrest = -3
-		local_monthly_devastation = -0.1
+			local_unrest = -3
+			local_monthly_devastation = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9092,7 +9104,7 @@ iron_pillar_of_delhi = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_development_cost = -0.1
+			local_development_cost = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9125,8 +9137,8 @@ iron_pillar_of_delhi = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_development_cost = -0.15
-		allowed_num_of_buildings = 1
+			local_development_cost = -0.15
+			allowed_num_of_buildings = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9160,8 +9172,8 @@ iron_pillar_of_delhi = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-		local_development_cost = -0.2
-		allowed_num_of_buildings = 2
+			local_development_cost = -0.2
+			allowed_num_of_buildings = 2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier

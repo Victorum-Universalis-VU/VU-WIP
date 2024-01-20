@@ -4132,7 +4132,10 @@ mesa_verde = {
 	#can we build it?
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = totemism
+			OR = {
+				religion = totemism
+				religion = arctolatry
+			}
 		}
 	}
 
@@ -4148,14 +4151,20 @@ mesa_verde = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = totemism
+			OR = {
+				religion = totemism
+				religion = arctolatry
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = totemism
+			OR = {
+				religion = totemism
+				religion = arctolatry
+			}
 		}
 	}
 
@@ -7513,7 +7522,10 @@ inukshuk = {
 
 	#can we build it?
 	build_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
@@ -7528,13 +7540,19 @@ inukshuk = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-	    religion = totemism
+	    OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion = totemism
+		OR = {
+			religion = totemism
+			religion = arctolatry
+		}
 		has_owner_religion = yes
 	}
 

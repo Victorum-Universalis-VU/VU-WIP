@@ -2358,6 +2358,39 @@ eastern = {
 		harmonized_modifier = harmonized_taoism
 	}
 	
+	wuism = {
+		color = { 139 15 255 }
+		icon = 63
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
+		
+	bimoism = { 
+		color = { 35 101 255 }
+		icon = 62
+		country = {
+			
+		}
+		province = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+
+		fetishist_cult = yes
+		heretic = { GOAT_SKULL }
+	}
+	
 	#bon moved to asian_pagan_group
 	
 	crusade_name = CRUSADE
@@ -3137,6 +3170,31 @@ pagan = {
 	#
 	#	heretic = { Tuurngait Erlik }
 	#}
+	#
+	#VU - New addition in v1.36.2.*. By San Felipe
+	arctolatry = {
+		color = { 140 72 65 }
+		icon = 56
+		country = {
+			tolerance_own = 1
+			global_unrest = -1
+			leader_land_manuever = 1
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+			leader_land_manuever = 1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+
+		can_have_secondary_religion = yes
+		ancestors = yes
+		
+		heretic = { BEAR_SPIRIT }	
+	}
+	
 	totemism = {
 		color = { 127 115 115 }
 		icon = 13
@@ -3157,7 +3215,7 @@ pagan = {
 		can_have_secondary_religion = yes
 		ancestors = yes
 		
-		heretic = { BEAR_SPIRIT }	
+		heretic = { EAGLE_SPIRIT }	#VU - Changed this from Bear to Eagle Spirit in v1.36.2.*. By San Felipe
 	}
 	
 	inti = {
@@ -3579,7 +3637,6 @@ jewish_group = {
 	
 }
 
-
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
 	defender_of_faith = yes
@@ -3979,6 +4036,96 @@ asian_pagan_group = {
 		uses_karma = yes
 	
 		harmonized_modifier = harmonized_bon
+	}
+	
+	kirat_mundhum = {
+		color = { 255 158 79 }
+		icon = 61
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		harmonized_modifier = harmonized_kirat_mundhum
+	}
+	
+	donyi_polo = {
+		color = { 242 226 255 }
+		icon = 58
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		harmonized_modifier = harmonized_donyi_polo
+	}
+	
+	bathouism = {
+		color = { 116 158 67 }
+		icon = 60
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		harmonized_modifier = harmonized_bathou
+	}
+	
+	sanamahism = {
+		color = { 255 204 38 }
+		icon = 59
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		harmonized_modifier = harmonized_sanamahism
+	}
+	
+	sarnaism = {
+		color = { 124 18 84 }
+		icon = 57
+		country = {
+			
+		}
+		country_as_secondary = {
+			
+		}
+		province = {
+			
+		}
+		
+		heretic = { SNAKE_CLAN }
+		
+		harmonized_modifier = harmonized_bathou
 	}
 	
 	harmonized_modifier = harmonized_asian_pagan_group

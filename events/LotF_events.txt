@@ -819,7 +819,10 @@ province_event = { #Native Religious Assimilation
 			culture_group = araucanian
 			culture_group = mataco
 		}
-		religion = totemism
+		OR = {
+			religion = arctolatry
+			religion = totemism
+		}
 	}
 	mean_time_to_happen = {
 		years = 30

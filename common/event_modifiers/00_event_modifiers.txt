@@ -6978,6 +6978,12 @@ wandering_shamans_modifier = {
 	religion = yes
 }
 
+#Arctolatry
+arctolatry_purification_movement_modifier = {
+	global_missionary_strength = 0.02
+	religion = yes
+}
+
 #Totemism
 purification_movement_modifier = {
 	global_missionary_strength = 0.02

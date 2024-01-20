@@ -13,20 +13,6 @@ base_manpower = 3
 is_city = yes
 add_core = LWA
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1609.1.1 = {
 	owner = SKK
 	controller = SKK

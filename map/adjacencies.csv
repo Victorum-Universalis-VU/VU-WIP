@@ -3,7 +3,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 8788;7731;sea;8353;-1;-1;-1;-1;Danzig-Marienburg
 43;1841;sea;7310;-1;-1;-1;-1;Danzig-Marienburg
 7257;7196;sea;3016;-1;-1;-1;-1;Dnipro-Ekaterinoslav
-2957;8778;sea;8355;-1;-1;-1;-1;Regensburg-Kelheim
 7766;12;sea;1258;-1;-1;-1;-1;Skåne-Sjaelland
 7768;14;sea;5494;-1;-1;-1;-1;Sjaelland-Fyn
 14;4142;sea;5494;-1;-1;-1;-1;Fyn-Aarhus
@@ -410,7 +409,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2807;830;sea;1519;-1;-1;-1;-1;Altagracia-Maracaibo
 134;7672;sea;3012;-1;-1;-1;-1;Wein-Donaustadt
 133;4761;sea;3013;-1;-1;-1;-1;Linz-Traungau
-7591;4711;sea;8355;-1;-1;-1;-1;Altenmuhr-Donauworth
 359;2318;sea;5301;-1;-1;-1;-1;Faiyum-Bahariya
 6500;1233;sea;5301;-1;-1;-1;-1;Sohag-Kharga
 2319;1233;sea;5301;-1;-1;-1;-1;Asyut-Kharga

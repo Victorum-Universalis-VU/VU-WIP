@@ -3252,6 +3252,7 @@
 		potential = {
 			OR = {
 				religion = shamanism
+				religion = arctolatry
 				religion = totemism
 			}
 			
@@ -3259,6 +3260,7 @@
 		trigger = {
 			OR = {
 				religion = shamanism
+				religion = arctolatry
 				religion = totemism
 			}
 			

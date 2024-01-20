@@ -1328,7 +1328,10 @@ add_ruler_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		add_ruler_personality = ancestor_$key$_personality
 	}
@@ -1342,7 +1345,10 @@ add_heir_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		add_heir_personality = ancestor_$key$_personality
 	}
@@ -1356,7 +1362,10 @@ add_queen_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		add_queen_personality = ancestor_$key$_personality
 	}
@@ -1370,7 +1379,10 @@ remove_ruler_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		remove_ruler_personality = ancestor_$key$_personality
 	}
@@ -1384,7 +1396,10 @@ remove_heir_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		remove_heir_personality = ancestor_$key$_personality
 	}
@@ -1398,7 +1413,10 @@ remove_queen_personality_ancestor = {
 	if = {
 		limit = { 
 			has_dlc = "Leviathan"
-			religion = totemism 
+			OR = {
+		    	religion = totemism
+		    	religion = arctolatry
+		    }
 		}
 		remove_queen_personality = ancestor_$key$_personality
 	}
@@ -2644,6 +2662,7 @@ spawn_country_religious_rebels = {
 			sikhism =               { PREV = { spawn_rebels = { type = sikhism_rebels size = $size$ } } }
 			sunni =                 { PREV = { spawn_rebels = { type = sunni_rebels size = $size$ } } }
 			tengri_pagan_reformed = { PREV = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } } }
+			arctolatry =            { PREV = { spawn_rebels = { type = arctolatry_rebels size = $size$ } } }
 			totemism =              { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ } } }
 			vajrayana =             { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ } } }
 			zoroastrian =           { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ } } }
@@ -2680,6 +2699,7 @@ spawn_province_religious_rebels = {
 		sikhism =               { spawn_rebels = { type = sikhism_rebels size = $size$ } }
 		sunni =                 { spawn_rebels = { type = sunni_rebels size = $size$ } }
 		tengri_pagan_reformed = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } }
+		arctolatry =            { spawn_rebels = { type = arctolatry_rebels size = $size$ } }
 		totemism =              { spawn_rebels = { type = totemism_rebels size = $size$ } }
 		vajrayana =             { spawn_rebels = { type = vajrayana_rebels size = $size$ } }
 		zoroastrian =           { spawn_rebels = { type = zoroastrian_rebels size = $size$ } }
@@ -4946,6 +4966,7 @@ set_likely_rebels_flag = {
 		if = { limit = { likely_rebels = sikhism_rebels } 					set_province_flag = likely_spawns_sikhism_rebels }
 		if = { limit = { likely_rebels = sunni_rebels } 					set_province_flag = likely_spawns_sunni_rebels }
 		if = { limit = { likely_rebels = tengri_pagan_reformed_rebels } 	set_province_flag = likely_spawns_tengri_pagan_reformed_rebels }
+		if = { limit = { likely_rebels = arctolatry_rebels } 				set_province_flag = likely_spawns_arctolatry_rebels }
 		if = { limit = { likely_rebels = totemism_rebels } 					set_province_flag = likely_spawns_totemism_rebels }
 		if = { limit = { likely_rebels = tribal_rebels } 					set_province_flag = likely_spawns_tribal_rebels }
 		if = { limit = { likely_rebels = vajrayana_rebels } 				set_province_flag = likely_spawns_vajrayana_rebels }
@@ -4998,6 +5019,7 @@ spawn_likely_rebels = {
 		likely_spawns_sikhism_rebels = {				spawn_rebels = { type = sikhism_rebels size = $size$ } }
 		likely_spawns_sunni_rebels = {					spawn_rebels = { type = sunni_rebels size = $size$ } }
 		likely_spawns_tengri_pagan_reformed_rebels = {	spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ } }
+		likely_spawns_arctolatry_rebels = {				spawn_rebels = { type = arctolatry_rebels size = $size$ } }
 		likely_spawns_totemism_rebels = {				spawn_rebels = { type = totemism_rebels size = $size$ } }
 		likely_spawns_tribal_rebels = {					spawn_rebels = { type = tribal_rebels size = $size$ } }
 		likely_spawns_vajrayana_rebels = {				spawn_rebels = { type = vajrayana_rebels size = $size$ } }
@@ -5045,6 +5067,7 @@ spawn_likely_rebels = {
 		clr_province_flag = likely_spawns_sikhism_rebels
 		clr_province_flag = likely_spawns_sunni_rebels
 		clr_province_flag = likely_spawns_tengri_pagan_reformed_rebels
+		clr_province_flag = likely_spawns_arctolatry_rebels
 		clr_province_flag = likely_spawns_totemism_rebels
 		clr_province_flag = likely_spawns_tribal_rebels
 		clr_province_flag = likely_spawns_vajrayana_rebels

@@ -1749,6 +1749,13 @@ defined_text = {
 			religion = norse_pagan_reformed
         }
     }
+	#Arctolatry
+	text = {
+        localisation_key = string_start_religion_arctolatry
+        trigger = {
+			religion = arctolatry
+        }
+    }
 	#Totemism
 	text = {
         localisation_key = string_start_religion_totemism
@@ -2140,6 +2147,26 @@ defined_text = {
         trigger = {
 			religion = mesoamerican_religion
 			NOT = { has_dlc = "El Dorado" }
+        }
+    }
+}
+
+#Arctolatry Ancestors
+defined_text = {
+	name = start_arctolatry_ancestor
+	random = no
+	text = {
+        localisation_key = string_ancestor_info #Has to end with \n
+        trigger = {
+			religion = arctolatry
+			has_dlc = "Leviathan"
+        }
+    }
+	text = {
+        localisation_key = string_ancestor_info_no #\n
+        trigger = {
+			religion = arctolatry
+			NOT = { has_dlc = "Leviathan" }
         }
     }
 }

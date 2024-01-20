@@ -2187,6 +2187,7 @@ has_religion_of_increased_opinion_for_scope = {
 		AND = { religion = sikhism $who$ = { has_country_flag = has_increased_sikhism_opinion } }
 		AND = { religion = animism $who$ = { has_country_flag = has_increased_animism_opinion } }
 		AND = { religion = shamanism $who$ = { has_country_flag = has_increased_shamanism_opinion } }
+		AND = { religion = arctolatry $who$ = { has_country_flag = has_increased_arctolatry_opinion } }
 		AND = { religion = totemism $who$ = { has_country_flag = has_increased_totemism_opinion } }
 		AND = { religion = inti $who$ = { has_country_flag = has_increased_inti_opinion } }
 		AND = { religion = nahuatl $who$ = { has_country_flag = has_increased_nahuatl_opinion } }
@@ -2220,6 +2221,7 @@ reverse_has_religion_of_increased_opinion_for_scope = {
 		AND = { $who$ = { religion = sikhism } has_country_flag = has_increased_sikhism_opinion }
 		AND = { $who$ = { religion = animism } has_country_flag = has_increased_animism_opinion }
 		AND = { $who$ = { religion = shamanism } has_country_flag = has_increased_shamanism_opinion }
+		AND = { $who$ = { religion = arctolatry } has_country_flag = has_increased_arctolatry_opinion }
 		AND = { $who$ = { religion = totemism } has_country_flag = has_increased_totemism_opinion }
 		AND = { $who$ = { religion = inti } has_country_flag = has_increased_inti_opinion }
 		AND = { $who$ = { religion = nahuatl } has_country_flag = has_increased_nahuatl_opinion }

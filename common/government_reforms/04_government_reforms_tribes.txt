@@ -699,6 +699,14 @@ tribe_becomes_monarchy_reform = {
 		if = {
 			limit = {
 				technology_group = nomad_group
+				religion = arctolatry
+			}
+			change_technology_group = north_american
+			change_unit_type = north_american
+		}
+		if = {
+			limit = {
+				technology_group = nomad_group
 				religion = totemism
 			}
 			change_technology_group = north_american
@@ -739,6 +747,7 @@ tribe_becomes_monarchy_reform = {
 				NOT = { secondary_religion = sunni }
 				NOT = { secondary_religion = shiite }
 				NOT = { secondary_religion = ibadi }
+				NOT = { religion = arctolatry }
 				NOT = { religion = totemism }
 				NOT = { religion = inti }
 				NOT = { religion = nahuatl }
@@ -800,6 +809,14 @@ tribe_becomes_republic_reform = {
 		if = {
 			limit = {
 				technology_group = nomad_group
+				religion = arctolatry
+			}
+			change_technology_group = north_american
+			change_unit_type = north_american
+		}
+		if = {
+			limit = {
+				technology_group = nomad_group
 				religion = totemism
 			}
 			change_technology_group = north_american
@@ -840,6 +857,7 @@ tribe_becomes_republic_reform = {
 				NOT = { secondary_religion = sunni }
 				NOT = { secondary_religion = shiite }
 				NOT = { secondary_religion = ibadi }
+				NOT = { religion = arctolatry }
 				NOT = { religion = totemism }
 				NOT = { religion = inti }
 				NOT = { religion = nahuatl }
@@ -927,6 +945,14 @@ tribe_becomes_theocracy_reform = {
 		if = {
 			limit = {
 				technology_group = nomad_group
+				religion = arctolatry
+			}
+			change_technology_group = north_american
+			change_unit_type = north_american
+		}
+		if = {
+			limit = {
+				technology_group = nomad_group
 				religion = totemism
 			}
 			change_technology_group = north_american
@@ -967,6 +993,7 @@ tribe_becomes_theocracy_reform = {
 				NOT = { secondary_religion = sunni }
 				NOT = { secondary_religion = shiite }
 				NOT = { secondary_religion = ibadi }
+				NOT = { religion = arctolatry }
 				NOT = { religion = totemism }
 				NOT = { religion = inti }
 				NOT = { religion = nahuatl }

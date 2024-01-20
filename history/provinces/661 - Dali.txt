@@ -15,20 +15,6 @@ is_city = yes
 add_core = CDL
 center_of_trade = 2
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1662.4.1 = {
 	owner = CZH
 	controller = CZH

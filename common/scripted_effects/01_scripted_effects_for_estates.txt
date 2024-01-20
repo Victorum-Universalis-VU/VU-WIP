@@ -3390,6 +3390,7 @@ spawn_rebels_from_unhappy_estate = {
 						sikhism =       { PREV = { spawn_rebels = { type = sikhism_rebels size = $size$ as_if_faction = yes } } }
 						sunni =         { PREV = { spawn_rebels = { type = sunni_rebels size = $size$ as_if_faction = yes } } }
 						tengri_pagan_reformed = { PREV = { spawn_rebels = { type = tengri_pagan_reformed_rebels size = $size$ as_if_faction = yes } } }
+						arctolatry =    { PREV = { spawn_rebels = { type = arctolatry_rebels size = $size$ as_if_faction = yes } } }
 						totemism =      { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ as_if_faction = yes } } }
 						vajrayana =     { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ as_if_faction = yes } } }
 						zoroastrian =   { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ as_if_faction = yes } } }
