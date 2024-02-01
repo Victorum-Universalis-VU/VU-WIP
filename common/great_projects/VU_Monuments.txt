@@ -2560,14 +2560,38 @@ vu_bilhorod_dnistrovskyi = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian
-	} } }
+	build_trigger = {
+		owner = {
+			OR = {
+				primary_culture = polish
+				primary_culture = romanian
+				primary_culture = ruthenian
+				primary_culture = french_romanian
+			} 
+		}
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian
-	} } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian
-	} } }
+	can_use_modifiers_trigger = {
+		owner = {
+			OR = {
+				primary_culture = polish
+				primary_culture = romanian
+				primary_culture = ruthenian
+				primary_culture = french_romanian
+			}
+		}
+	}
+	can_upgrade_trigger = {
+		owner = {
+			OR = {
+				primary_culture = polish
+				primary_culture = romanian
+				primary_culture = ruthenian
+				primary_culture = french_romanian
+			}
+		}
+	}
 	keep_trigger = {}
 
 	tier_0 = {
