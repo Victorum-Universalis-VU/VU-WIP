@@ -1,6 +1,6 @@
 #7434 - Pwllheli
 
-capital = "Pwllheli"
+capital = "Porthmadog" #VU - Was Pwllheli. By San Felipe
 is_city = yes
 owner = WLS
 controller = WLS
@@ -12,12 +12,6 @@ base_manpower = 1
 trade_goods = fish
 add_core = WLS
 hre = no
-
-
-
-
-
-
 
 1444.11.16 = { #VictorumUniversalis batch edit shortcut no vassal start date begin
 	owner = ENG

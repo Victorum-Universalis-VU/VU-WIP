@@ -1760,19 +1760,19 @@ Ottoman_Missions_3 = {
 		} 
 		effect = { 
 			luristan_area = { 
-				add_country_modifier = { 
+				add_province_modifier = { 
 					name = TUR_persia_march 
 					duration = -1 
 				} 
 			} 
 			azerbaijan_area = { 
-				add_country_modifier = { 
+				add_province_modifier = { 
 					name = TUR_persia_march 
 					duration = -1 
 				} 
 			} 
 			shirvan_area = { 
-				add_country_modifier = { 
+				add_province_modifier = { 
 					name = TUR_persia_march 
 					duration = -1 
 				} 
@@ -1878,63 +1878,63 @@ Ottoman_Missions_3 = {
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			4279 = { #zabid 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			388 = { #aden 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			1212 = { #zeila 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			4283 = { #sihir 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			400 = { #masqat 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			2999 = { #hormuz 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 			394 = { #haasa 
 				if = { 
@@ -1942,17 +1942,17 @@ Ottoman_Missions_3 = {
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
 					} 
-				} 
-				add_permanent_claim = ROOT 
+					add_permanent_claim = ROOT 
+				}
 			} 
 			408 = { #basrah 
 				if = { 
 					limit = { 
 						NOT = { owned_by = ROOT } 
 						NOT = { is_core = ROOT } 
-					} 
-				} 
-				add_permanent_claim = ROOT 
+					}
+					add_permanent_claim = ROOT 
+				}
 			} 
 		} 
 	} 

@@ -14,19 +14,13 @@ trade_goods = fur
 base_manpower = 1 
 capital = "Borgholm"
 is_city = yes
-add_core = GTA
 
-
-
-
-
-
-
+add_core = VGT
 
 #Province history completed by - Darth Modus
 1291.5.21 = { #VictorumUniversalis batch edit shortcut the first shattering begins
-	owner = GTA
-	controller = GTA
+	owner = VGT
+	controller = VGT
 	remove_core = SWE
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1291.5.23 = { #VictorumUniversalis batch edit shortcut the first shattering ends
@@ -39,8 +33,8 @@ add_core = GTA
 #1291 - 1444
 
 1444.11.13 = { #VictorumUniversalis batch edit shortcut the second shattering begins
-	owner = GTA
-	controller = GTA
+	owner = VGT
+	controller = VGT
 	remove_core = SWE
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #VictorumUniversalis batch edit shortcut the second shattering ends

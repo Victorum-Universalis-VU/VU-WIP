@@ -11,7 +11,7 @@
  tts_army_two_sicilies_title: "Army of the Two Sicilies"
  tts_army_two_sicilies_desc: "All that was needed by the army was built or provided in the Kingdom. The metallurgical material for artillery was manufactured at Mongiana, cannons were melted in Naples, rifles were made in Torre Annunziata, machines for war wood were made in Pietrarsa, powders in Scafati, and a fireworks factory in Capua and in Naples a topographical office, directed by the colonel of the genius Visconti, a mathematician of great value. In Castelnuovo there was an ancient and modern armory, quite important."
  tts_real_esercito_title: "Real Esercito"
- tts_real_esercito_desc: "The Neapolitan soldier is lively, intelligent, daring, and in a very imaginative one; and yet easy to exalt and run to the most daring enterprises, but easy to run away. He easily submits to discipline, when this moves from a just power, strong and constant. The elementary education of the different weapons is excellent: they maneuver exactly and promptly, both separate and united; The Neapolitan and Sicilian military institutions boast a much older history, which has its foundations in the organization of a "state-owned" (ie state and no longer feudal) army by Ferrante d Aragon in 1464. In particular, the Spanish viceregal period (1503-1714) profoundly marked the military customs of the subsequent Bourbon period. During this time the soldiers of southern Italy were in fact involved in almost all the military events of the Spanish Empire (from the wars of Charles V to the wars of Flanders, from the colonial campaigns in America to the thirty years war), often giving proof of great value and loyalty to the imperial authorities. The captains, belonging to the best feudal nobility of the Neapolitan and Sicilian provinces, were able to frame and prepare the subjects of the two viceroys for war, obeying the firm political direction given by the monarchs of Spain."
+ tts_real_esercito_desc: "The Neapolitan soldier is lively, intelligent, daring, and in a very imaginative one; and yet easy to exalt and run to the most daring enterprises, but easy to run away. He easily submits to discipline, when this moves from a just power, strong and constant. The elementary education of the different weapons is excellent: they maneuver exactly and promptly, both separate and united; The Neapolitan and Sicilian military institutions boast a much older history, which has its foundations in the organization of a 'state-owned' (ie state and no longer feudal) army by Ferrante d Aragon in 1464. In particular, the Spanish viceregal period (1503-1714) profoundly marked the military customs of the subsequent Bourbon period. During this time the soldiers of southern Italy were in fact involved in almost all the military events of the Spanish Empire (from the wars of Charles V to the wars of Flanders, from the colonial campaigns in America to the thirty years war), often giving proof of great value and loyalty to the imperial authorities. The captains, belonging to the best feudal nobility of the Neapolitan and Sicilian provinces, were able to frame and prepare the subjects of the two viceroys for war, obeying the firm political direction given by the monarchs of Spain."
 
  #3rd column
  tts_dream_ruggero_title: "Dream of Ruggero"
@@ -21,7 +21,7 @@
 
  #4th column
  tts_army_sea_title: "Army of the Sea"
- tts_army_sea_desc: "The recruitment of sailors was too concentrated in Campania and in some (few) areas of northern Sicily, without either a sort of coastal lever / militia on the French seventeenth-century model (which would have involved the whole Kingdom), or press-gangs on the British model (which would have involved all ports), while the officers were always also gentlemen by birth, with a substantial differentiation between navigators and fighters, based on the anachronistic model of the Spanish navy (but also in this case the Acton intended to introduce the British model , meritocratic). However, the Bourbon navy was always understaffed in terms of personnel and many ships were decidedly "empty" compared to those of other European powers."
+ tts_army_sea_desc: "The recruitment of sailors was too concentrated in Campania and in some (few) areas of northern Sicily, without either a sort of coastal lever / militia on the French seventeenth-century model (which would have involved the whole Kingdom), or press-gangs on the British model (which would have involved all ports), while the officers were always also gentlemen by birth, with a substantial differentiation between navigators and fighters, based on the anachronistic model of the Spanish navy (but also in this case the Acton intended to introduce the British model , meritocratic). However, the Bourbon navy was always understaffed in terms of personnel and many ships were decidedly 'empty' compared to those of other European powers."
  tts_real_marina_title: "Real Marina"
  tts_real_marina_desc: "During the first decade of the reign of [Root.Monarch.GetName], the Sicilian naval forces therefore included only one vessel, the S. Filippo-the Royal, the frigate S. Carlo-the Partenope, and the four galleys S. Gennaro, Concezione, S. Antonio and Capitana , in addition to some minor wood. \nAt the same time the Marine Infantry Corps was established, the first in Italy designed to operate on board warships together with crews; later on his duties also included the supervision of naval bases. \nOur attempt to unite the Italian peninsula and creating a fleet to dominate the others seas should start with the creation of the largest navy the Mediterranean has ever seen."
 
@@ -43,7 +43,7 @@
  ME_The_Two_Sicilies_Events.3.OPT2: "We are the knights of Ruggiero"
 
  ME_The_Two_Sicilies_Events.2.T: "Sicilian Union"
- ME_The_Two_Sicilies_Events.2.D: "The first official mention of the toponym "Two Sicilies" came instead when Alfonso V of Aragon in 1442 took the title without unifying the Kingdom of Sicily and the Kingdom of Naples, which remained separate Kingdoms; the crown of Rex Utriusque Siciliae then represented the personal union of the two kingdoms of the same name, sometimes distinguished as "citra pharum" (of Naples) and "ultra pharum" (of Sicily proper). After the brief Alfonsina parenthesis, the two kingdoms became completely separate again, one with the capital Naples, the other with the capital Palermo. It's time to reunite the crowns, isn't it, brother?"
+ ME_The_Two_Sicilies_Events.2.D: "The first official mention of the toponym 'Two Sicilies' came instead when Alfonso V of Aragon in 1442 took the title without unifying the Kingdom of Sicily and the Kingdom of Naples, which remained separate Kingdoms; the crown of Rex Utriusque Siciliae then represented the personal union of the two kingdoms of the same name, sometimes distinguished as 'citra pharum' of Naples and 'ultra pharum' of Sicily proper. After the brief Alfonsina parenthesis, the two kingdoms became completely separate again, one with the capital Naples, the other with the capital Palermo. It's time to reunite the crowns, isn't it, brother?"
  ME_The_Two_Sicilies_Events.2.OPT1: "We are one"
 
  ME_The_Two_Sicilies_Events.4.T: "A Promising Candidate"
@@ -53,35 +53,40 @@
  ME_The_Two_Sicilies_Events.4.OPT3: "Have you looked at his paintings?"
 
  #Modifiers
- #
  tts_transumanza: "Transumanza"
- #2
+ desc_tts_transumanza: ""
  tts_army_preparation: "Army Preparation"
+ desc_tts_army_preparation: ""
  tts_nunziatella: "Nunziatella"
- 
- #3
+ desc_tts_nunziatella: ""
  tts_norman_sicilia: "Norman Sicilia"
- 
- #4
+ desc_tts_norman_sicilia: ""
  tts_naval_preparation: "Naval Preparation"
+ desc_tts_naval_preparation: ""
  tts_marine_infrantry_corps: "Marine Infantry Corps"
+ desc_tts_marine_infrantry_corps: ""
  tts_real_marina: "Real Marina"
-
- #5
+ desc_tts_real_marina: ""
  tts_tonnara_siciliana: "Tonnara Siciliana"
- #Opinion modifier
-
- #Event modifier
+ desc_tts_tonnara_siciliana: ""
  tts_genio: "Genio Militare"
+ desc_tts_genio: ""
  tts_infantry: "Indomitable Knights"
- #Decisions modifier
+ desc_tts_infantry: ""
  tts_royal_palace_modifier: "Reggia di Caserta"
+ desc_tts_royal_palace_modifier: ""
  tts_maschio_angioino_modifier: "Maschio Angioino"
+ desc_tts_maschio_angioino_modifier: ""
  tts_margherita: "It's Pizza Time"
+ desc_tts_margherita: ""
  tts_margherita_tge: "It's Pizza Time"
+ desc_tts_margherita_tge: ""
  tts_deus_vult: "Deus Vult"
+ desc_tts_deus_vult: ""
  tts_duomo_monreale: "Duomo di Monreale"
+ desc_tts_duomo_monreale: ""
  tts_parramentu_sicilianu: "Parramentu Sicilianu"
+ desc_tts_parramentu_sicilianu: ""
 
  #Triggered modifiers
  union_of_the_crowns: "Union of the Crowns"
@@ -97,9 +102,9 @@
  tts_king_jerusalem_title: "King of Jerusalem"
  tts_king_jerusalem_desc: "The kingdom of Jerusalem originated following the first crusade, when the Christian army led by Godfrey of Bouillon conquered the Holy City (July 15, 1099). Godfrey, after renouncing the royal title, obtained that of Advocatus Sancti Sepulchri (Protector of the Holy Sepulcher) and was crowned Governor of Jerusalem in the Basilica of the Nativity in Bethlehem. \nAt his death the following year, his brother Baldwin was the first of the rulers to be crowned with the title of king of Jerusalem. The ceremony took place in the Basilica of the Holy Sepulcher in Jerusalem. The exact formula of the royal title was Rex Latinorum Hierosolymitanus, ie \"King of the Latins of Jerusalem\", meaning that the sovereign's jurisdiction did not include the native populations: Christian, Muslim and Jewish. \nThe succession to the throne of Jerusalem generally took place according to both hereditary and elective criteria. Even when the title was inherited within the same ruling family, the sovereign always received validation from the Jerusalem High Court. The king was in fact considered a primus inter pares (first among equals) rather than a real monarch, so much so that in his absence the functions of government were entrusted to his officers."
  tts_duomo_monreale_title: "Duomo di Monreale"
- tts_duomo_monreale_desc: "According to legend, William II the Good, who succeeded his father on the throne of Sicily, would have fallen asleep under a carob tree, overwhelmed by fatigue, while hunting in the woods of Monreale. In a dream the Madonna appeared to him, to whom he was very devoted, who revealed the secret of a \"truvatura\" with these words: \"In the place where you are sleeping the greatest treasure in the world is hidden: unearth it and build a temple in my honor ". Having said these words, the Virgin disappeared and William, confident of the revelation in a dream, ordered that the carob be uprooted and dug around it. With great amazement, a treasure in gold coins was discovered which were immediately destined for the construction of the Cathedral of Monreale, to which Greek-Byzantine mosaic masters (“the masters of the oru”) of the interior were called for the realization."
+ tts_duomo_monreale_desc: "According to legend, William II the Good, who succeeded his father on the throne of Sicily, would have fallen asleep under a carob tree, overwhelmed by fatigue, while hunting in the woods of Monreale. In a dream the Madonna appeared to him, to whom he was very devoted, who revealed the secret of a truvatura with these words. 'In the place where you are sleeping the greatest treasure in the world is hidden.Unearth it and build a temple in my honor'. Having said these words, the Virgin disappeared and William, confident of the revelation in a dream, ordered that the carob be uprooted and dug around it. With great amazement, a treasure in gold coins was discovered which were immediately destined for the construction of the Cathedral of Monreale, to which Greek-Byzantine mosaic masters 'the masters of the oru' of the interior were called for the realization."
  tts_parramentu_sicilianu_title: "Parlamento del Regno di Sicilia"
- tts_parramentu_sicilianu_desc: "The Sicilian parliament was made up of three "branches" ("feudal", "ecclesiastical" and "state property"). The feudal branch was made up of the noble representatives of counties and baronies, the ecclesiastical branch was made up of archbishops, bishops, abbots and archimandrites, while the state branch was made up of representatives of the 42 state-owned cities of Sicily. The first Norman parliament was not deliberative, and had only a consultative and ratification function of the sovereign's activity, especially in taxation, in the economy and in the management of relations with foreign powers. The deputies were chosen from among the most powerful nobles. The first radical change took place with Frederick II of Swabia, who also allowed partial access to civil society, such as state-owned cities. Federico gathered a parliament in September 1221 in Messina known as the "Assise di Messina", where he proceeded to reorganize the legislation of the Regnum by promulgating a further nucleus of assisae, four or five, conceived to defend morality, order and "good customs "of the Kingdom", the first nucleus of those that in 1231 would have been promulgated in Melfi as Constitutionum Regni Siciliarum, then integrated into the Syracuse assembly in 1233."
+ tts_parramentu_sicilianu_desc: "The Sicilian parliament was made up of three 'branches' 'feudal', 'ecclesiastical' and 'state property'. The feudal branch was made up of the noble representatives of counties and baronies, the ecclesiastical branch was made up of archbishops, bishops, abbots and archimandrites, while the state branch was made up of representatives of the 42 state-owned cities of Sicily. The first Norman parliament was not deliberative, and had only a consultative and ratification function of the sovereign's activity, especially in taxation, in the economy and in the management of relations with foreign powers. The deputies were chosen from among the most powerful nobles. The first radical change took place with Frederick II of Swabia, who also allowed partial access to civil society, such as state-owned cities. Federico gathered a parliament in September 1221 in Messina known as the 'Assise di Messina', where he proceeded to reorganize the legislation of the Regnum by promulgating a further nucleus of assisae, four or five, conceived to defend morality, order and good customs 'of the Kingdom', the first nucleus of those that in 1231 would have been promulgated in Melfi as Constitutionum Regni Siciliarum, then integrated into the Syracuse assembly in 1233."
  tts_university_federico_II_title: "Università Federico II"
  tts_university_federico_II_desc: "The erection of the Studium was decreed by Emperor Frederick II of Swabia on 5 June (5 July according to some sources) 1224 through a circular letter (generalis lictera) sent from Syracuse. Since it was created at the behest of the emperor, the University of Naples is considered by far the first lay university in Europe of a state type (not founded, that is, by corporations or associations of intellectuals, or students, but by virtue of a provision sovereign). \nInitially the studies were directed towards law (fundamental for the training of jurists), the liberal arts, medicine and theology: the latter, compared to other subjects, was taught in religious centers, in particular in the convent of San Domenico Maggiore , where Thomas Aquinas taught from 1271 to 1274. During the Angevin period (1265-1443) the structure and organization of the University remained substantially unchanged. \nFurthermore, during the Angevin period the University of Naples, unlike the others, remained independent from papal power: in fact, Charles I of Anjou reaffirmed and increased the previous privileges granted by the Swabian kings to the University. The first difficulties came with the advent of the Aragonese dominion in 1443, which in fact forced the university to a first closure."
 

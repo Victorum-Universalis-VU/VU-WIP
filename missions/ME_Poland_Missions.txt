@@ -1344,6 +1344,7 @@ POL_Missions_3_1 = {
 		trigger = {
 			OR = {
 				has_reform = elective_monarchy
+				has_reform = phoenician_elective_monarchical_republic
 				has_regency = no
 			}
 		}
@@ -1380,6 +1381,7 @@ POL_Missions_3_1 = {
 					limit = {
 						OR = {
 							has_reform = elective_monarchy
+							has_reform = phoenician_elective_monarchical_republic
 							dynasty = "Jagiellon"
 							senior_union_with = LIT
 						}

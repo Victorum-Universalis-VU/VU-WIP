@@ -2496,7 +2496,10 @@ on_new_monarch = {
 	#VU additions integrated by San Felipe
 	if = {
 		limit = {
-			has_reform = elective_monarchy
+			OR = {
+				has_reform = elective_monarchy
+				has_reform = phoenician_elective_monarchical_republic
+			}
 			OR = {
 				technology_group = western
 				technology_group = dutch_tech_group
@@ -2522,7 +2525,10 @@ on_new_monarch = {
 	}
 	if = {
 		limit = {
-			has_reform = elective_monarchy
+			OR = {
+				has_reform = elective_monarchy
+				has_reform = phoenician_elective_monarchical_republic
+			}
 			OR = {
 				technology_group = western
 				technology_group = dutch_tech_group

@@ -597,7 +597,7 @@ Generic_Kurdistan_4 = {
 							owned_by = ROOT
 						}
 					}
-					capital_scope = {
+					ROOT = {
 						save_event_target_as = reward_province
 					}
 					random_trade_node_member_province = {

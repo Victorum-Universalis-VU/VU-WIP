@@ -160,6 +160,149 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//northamerica_town_hall.tga"
 		loadType = "INGAME"
 	}
+	#GOVERNMENT
+	#Hall
+	spriteType = {
+		name = "GFX_hall"
+		texturefile = "gfx//interface//buildings//government//hall//western//latin_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_latingfx"
+		texturefile = "gfx//interface//buildings//government//hall//western//latin_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_easterngfx"
+		texturefile = "gfx//interface//buildings//government//hall//eastern//eastern_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_greekgfx"
+		texturefile = "gfx//interface//buildings//government//hall//eastern//eastern_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_asiangfx"
+		texturefile = "gfx//interface//buildings//government//hall//asian//chinese_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_africangfx"
+		texturefile = "gfx//interface//buildings//government//hall//african//african_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_indiangfx"
+		texturefile = "gfx//interface//buildings//government//hall//indian//indian_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_mongolgfx"
+		texturefile = "gfx//interface//buildings//government//hall//indian//chinese_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_muslimgfx"
+		texturefile = "gfx//interface//buildings//government//hall//muslim//muslim_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_persiangfx"
+		texturefile = "gfx//interface//buildings//government//hall//muslim//muslim_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_thaigfx"
+		texturefile = "gfx//interface//buildings//government//hall//muslim//chinese_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_turkishgfx"
+		texturefile = "gfx//interface//buildings//government//hall//muslim//muslim_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_southamericagfx"
+		texturefile = "gfx//interface//buildings//government//hall//southamerican//southamerican_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hall_northamericagfx"
+		texturefile = "gfx//interface//buildings//government//hall//northamerican//northamerican_hall.tga"
+		loadType = "INGAME"
+	}
+	#City Hall
+	spriteType = {
+		name = "GFX_city_hall"
+		texturefile = "gfx//interface//buildings//government//city_hall//western//latin_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_latingfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//western//latin_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_easterngfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//eastern//eastern_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_greekgfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//eastern//eastern_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_asiangfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_mongolgfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_thaigfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_africangfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//african//african_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_indiangfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//indian//indian_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_muslimgfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//muslim//muslim_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_turkishgfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//muslim//muslim_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_persiangfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//muslim//muslim_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_southamericagfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//southamerican//southamerican_city_hall.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_city_hall_northamericagfx"
+		texturefile = "gfx//interface//buildings//government//city_hall//northamerican//northamerican_city_hall.tga"
+		loadType = "INGAME"
+	}
 	spriteType = {
 		name = "GFX_college"
 		texturefile = "gfx//interface//buildings//latin_college.tga"
@@ -1030,84 +1173,76 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//northamerica_trade_depot.tga"
 		loadType = "INGAME"
 	}
+
+	#REVENUE & CUSTOMS
 	spriteType = {
-		name = "GFX_post_office"
+		name = "GFX_stamp_office"
 		texturefile = "gfx//interface//buildings//latin_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_easterngfx"
+		name = "GFX_stamp_office_latingfx"
+		texturefile = "gfx//interface//buildings//latin_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_easterngfx"
 		texturefile = "gfx//interface//buildings//eastern_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_asiangfx"
+		name = "GFX_stamp_office_greekgfx"
+		texturefile = "gfx//interface//buildings//eastern_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_asiangfx"
 		texturefile = "gfx//interface//buildings//chinese_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_africangfx"
+		name = "GFX_stamp_office_mongolgfx"
+		texturefile = "gfx//interface//buildings//chinese_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_thaigfx"
+		texturefile = "gfx//interface//buildings//chinese_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_africangfx"
 		texturefile = "gfx//interface//buildings//african_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_indiangfx"
+		name = "GFX_stamp_office_indiangfx"
 		texturefile = "gfx//interface//buildings//indian_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_muslimgfx"
+		name = "GFX_stamp_office_muslimgfx"
 		texturefile = "gfx//interface//buildings//muslim_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_southamericagfx"
+		name = "GFX_stamp_office_turkishgfx"
+		texturefile = "gfx//interface//buildings//muslim_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_persiangfx"
+		texturefile = "gfx//interface//buildings//muslim_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_stamp_office_southamericagfx"
 		texturefile = "gfx//interface//buildings//southamerica_post_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_post_office_northamericagfx"
+		name = "GFX_stamp_office_northamericagfx"
 		texturefile = "gfx//interface//buildings//northamerica_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house"
-		texturefile = "gfx//interface//buildings//latin_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_easterngfx"
-		texturefile = "gfx//interface//buildings//eastern_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_asiangfx"
-		texturefile = "gfx//interface//buildings//chinese_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_africangfx"
-		texturefile = "gfx//interface//buildings//african_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_indiangfx"
-		texturefile = "gfx//interface//buildings//indian_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_muslimgfx"
-		texturefile = "gfx//interface//buildings//muslim_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_southamericagfx"
-		texturefile = "gfx//interface//buildings//southamerica_customs_house.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_customs_house_northamericagfx"
-		texturefile = "gfx//interface//buildings//northamerica_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -1963,6 +2098,2647 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_corporative_headquarters_northamericagfx"
 		texturefile = "gfx//interface//buildings//northamerica_corporative_headquarters.tga"
+		loadType = "INGAME"
+	}
+
+	#NEW VU Buildings
+	#FOREIGN & DOMESTIC
+	#Foreign Office
+	spriteType = {
+		name = "GFX_foreign_office"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//western//latin_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_latingfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//western//latin_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_easterngfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//eastern//eastern_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_greekgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//eastern//eastern_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_asiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_thaigfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_mongolgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_africangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//african//african_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_indiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//indian//indian_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_muslimgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//muslim//muslim_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_turkishgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//muslim//muslim_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_persiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//muslim//muslim_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_southamericagfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//south_american//southamerican_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_foreign_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//northamerican//northamerican_foreign_office.tga"
+		loadType = "INGAME"
+	}
+	#Supreme Court
+	spriteType = {
+		name = "GFX_supreme_court"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_latingfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_easterngfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_greekgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_asiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_thaigfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_mongolgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_africangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_indiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_muslimgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_turkishgfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_persiangfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_southamericagfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_supreme_court_northamericagfx"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//supreme_court//western//latin_supreme_court.tga"
+		loadType = "INGAME"
+	}
+	#EDUCATION
+	#Library
+	spriteType = {
+		name = "GFX_library"
+		texturefile = "gfx//interface//buildings//education//library//western//latin_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_latingfx"
+		texturefile = "gfx//interface//buildings//education//library//western//latin_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_easterngfx"
+		texturefile = "gfx//interface//buildings//education//library//eastern//eastern_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_greekgfx"
+		texturefile = "gfx//interface//buildings//education//library//eastern//eastern_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_asiangfx"
+		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_thaigfx"
+		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_mongolgfx"
+		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_africangfx"
+		texturefile = "gfx//interface//buildings//education//library//african//african_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_indiangfx"
+		texturefile = "gfx//interface//buildings//education//library//indian//indian_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_muslimgfx"
+		texturefile = "gfx//interface//buildings//education//library//muslim//muslim_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_turkishgfx"
+		texturefile = "gfx//interface//buildings//education//library//muslim//muslim_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_persiangfx"
+		texturefile = "gfx//interface//buildings//education//library//muslim//muslim_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_southamericagfx"
+		texturefile = "gfx//interface//buildings//education//library//southamerican//southamerican_library.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_library_northamericagfx"
+		texturefile = "gfx//interface//buildings//education//library//northamerican//northamerican_library.tga"
+		loadType = "INGAME"
+	}
+	#School
+	spriteType = {
+		name = "GFX_school"
+		texturefile = "gfx//interface//buildings//education//school//western//latin_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_latingfx"
+		texturefile = "gfx//interface//buildings//education//school//western//latin_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_easterngfx"
+		texturefile = "gfx//interface//buildings//education//school//eastern//eastern_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_greekgfx"
+		texturefile = "gfx//interface//buildings//education//school//eastern//eastern_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_asiangfx"
+		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_mongolgfx"
+		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_thaigfx"
+		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_africangfx"
+		texturefile = "gfx//interface//buildings//education//school//african//african_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_indiangfx"
+		texturefile = "gfx//interface//buildings//education//school//indian//indian_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_muslimgfx"
+		texturefile = "gfx//interface//buildings//education//school//muslim//muslim_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_turkishgfx"
+		texturefile = "gfx//interface//buildings//education//school//muslim//muslim_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_persiangfx"
+		texturefile = "gfx//interface//buildings//education//school//muslim//muslim_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_southamericagfx"
+		texturefile = "gfx//interface//buildings//education//school//southamerican//southamerican_school.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_school_northamericagfx"
+		texturefile = "gfx//interface//buildings//education//school//northamerican//northamerican_school.tga"
+		loadType = "INGAME"
+	}
+	#HEALTHCARE
+	#Apothecary
+	spriteType = {
+		name = "GFX_apothecary"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//western//latin_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_latingfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//western//latin_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_easterngfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//eastern//eastern_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_greekgfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//eastern//eastern_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_asiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_thaigfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_mongolgfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_africangfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//african//african_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_indiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//indian//indian_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_muslimgfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//muslim//muslim_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_turkishgfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//muslim//muslim_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_persiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//muslim//muslim_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_southamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//southamerican//southamerican_apothecary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_apothecary_northamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//northamerican//northamerican_apothecary.tga"
+		loadType = "INGAME"
+	}
+	#Barber
+	spriteType = {
+		name = "GFX_barber"
+		texturefile = "gfx//interface//buildings//healthcare//barber//western//latin_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_latingfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//western//latin_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_easterngfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//eastern//eastern_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_greekgfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//eastern//eastern_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_asiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_thaigfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_mongolgfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_africangfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//african//african_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_indiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//indian//indian_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_muslimgfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//muslim//muslim_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_turkishgfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//muslim//muslim_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_persiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//muslim//muslim_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_southamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//southamerican//southamerican_barber.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_barber_northamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//barber//northamerican//northamerican_barber.tga"
+		loadType = "INGAME"
+	}
+	#Hospital
+	spriteType = {
+		name = "GFX_hospital"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//western//latin_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_latingfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//western//latin_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_easterngfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//eastern//eastern_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_greekgfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//eastern//eastern_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_asiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_thaigfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_mongolgfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_africangfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//african//african_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_indiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//indian//indian_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_muslimgfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//muslim//muslim_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_turkishgfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//muslim//muslim_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_persiangfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//muslim//muslim_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_southamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//southamerican//southamerican_hospital.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_hospital_northamericagfx"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//northamerican//northamerican_hospital.tga"
+		loadType = "INGAME"
+	}
+	#LEISURE
+	#Park
+	spriteType = {
+		name = "GFX_park"
+		texturefile = "gfx//interface//buildings//leisure//park//western//latin_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_latingfx"
+		texturefile = "gfx//interface//buildings//leisure//park//western//latin_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_easterngfx"
+		texturefile = "gfx//interface//buildings//leisure//park//eastern//eastern_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_greekgfx"
+		texturefile = "gfx//interface//buildings//leisure//park//eastern//eastern_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_asiangfx"
+		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_thaigfx"
+		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_mongolgfx"
+		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_africangfx"
+		texturefile = "gfx//interface//buildings//leisure//park//african//african_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_indiangfx"
+		texturefile = "gfx//interface//buildings//leisure//park//indian//indian_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_muslimgfx"
+		texturefile = "gfx//interface//buildings//leisure//park//muslim//muslim_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_turkishgfx"
+		texturefile = "gfx//interface//buildings//leisure//park//muslim//muslim_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_persiangfx"
+		texturefile = "gfx//interface//buildings//leisure//park//muslim//muslim_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_southamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//park//southamerican//southamerican_park.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_park_northamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//park//northamerican//northamerican_park.tga"
+		loadType = "INGAME"
+	}
+	#Zoo
+	spriteType = {
+		name = "GFX_zoo"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_latingfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_easterngfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_greekgfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_asiangfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_thaigfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_mongolgfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_africangfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_indiangfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_muslimgfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_turkishgfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_persiangfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_southamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_zoo_northamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//zoo//western//latin_zoo.tga"
+		loadType = "INGAME"
+	}
+	#Botanical Gardens
+	spriteType = {
+		name = "GFX_botanical_gardens"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_latingfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_easterngfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_greekgfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_asiangfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_thaigfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_mongolgfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_africangfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_indiangfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_muslimgfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_turkishgfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_persiangfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_southamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_botanical_gardens_northamericagfx"
+		texturefile = "gfx//interface//buildings//leisure//botanical_gardens//western//latin_botanical_gardens.tga"
+		loadType = "INGAME"
+	}
+	#SANITATION
+	#Cesspit
+	spriteType = {
+		name = "GFX_cesspit"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_latingfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_easterngfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_greekgfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_asiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_thaigfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_mongolgfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_africangfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_indiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_muslimgfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_turkishgfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_persiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_southamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cesspit_northamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//cesspit//western//latin_cesspit.tga"
+		loadType = "INGAME"
+	}
+	#Bath House
+	spriteType = {
+		name = "GFX_bath_house"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_latingfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_easterngfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_greekgfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_asiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_thaigfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_mongolgfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_africangfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_indiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_turkishgfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_persiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bath_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//bath_house//western//latin_bath_house.tga"
+		loadType = "INGAME"
+	}
+	#Latrines
+	spriteType = {
+		name = "GFX_latrines"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_latingfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_easterngfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_greekgfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_asiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_thaigfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_mongolgfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_africangfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_indiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_muslimgfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_turkishgfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_persiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_southamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_latrines_northamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//latrines//western//latin_latrines.tga"
+		loadType = "INGAME"
+	}
+	#Sewer system
+	spriteType = {
+		name = "GFX_sewer_system"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_latingfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_easterngfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_greekgfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_asiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_mongolgfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_thaigfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_africangfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_indiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_muslimgfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_turkishgfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_persiangfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_southamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sewer_system_northamericagfx"
+		texturefile = "gfx//interface//buildings//sanitation//sewer_system//western//latin_sewer_system.tga"
+		loadType = "INGAME"
+	}
+	#WATER
+	#Well
+	spriteType = {
+		name = "GFX_well"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_latingfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_easterngfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_greekgfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_asiangfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_mongolgfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_thaigfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_africangfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_indiangfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_muslimgfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_turkishgfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_persiangfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_southamericagfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_well_northamericagfx"
+		texturefile = "gfx//interface//buildings//water//well//western//latin_well.tga"
+		loadType = "INGAME"
+	}
+	#Aqueduct
+	spriteType = {
+		name = "GFX_aqueduct"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_latingfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_easterngfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_greekgfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_asiangfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_mongolgfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_thaigfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_africangfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_indiangfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_muslimgfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_turkishgfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_persiangfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_southamericagfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_aqueduct_northamericagfx"
+		texturefile = "gfx//interface//buildings//water//aqueduct//western//latin_aqueduct.tga"
+		loadType = "INGAME"
+	}
+	#Distillery
+	spriteType = {
+		name = "GFX_distillery"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_latingfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_easterngfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_greekgfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_asiangfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_mongolgfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_thaigfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_africangfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_indiangfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_muslimgfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_turkishgfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_persiangfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_southamericagfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_distillery_northamericagfx"
+		texturefile = "gfx//interface//buildings//water//distillery//western//latin_distillery.tga"
+		loadType = "INGAME"
+	}
+	#Pump House
+	spriteType = {
+		name = "GFX_pump_house"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_latingfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_easterngfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_greekgfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_asiangfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_mongolgfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_thaigfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_africangfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_indiangfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_turkishgfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_persiangfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pump_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//water//pump_house//western//latin_pump_house.tga"
+		loadType = "INGAME"
+	}
+	#ENTERTAINMENT
+	#Wrestling
+	spriteType = {
+		name = "GFX_wrestling"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_latingfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_easterngfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_greekgfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_asiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_mongolgfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_thaigfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_africangfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_indiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_muslimgfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_turkishgfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_persiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_southamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_wrestling_northamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//wrestling//western//latin_wrestling.tga"
+		loadType = "INGAME"
+	}
+	#Theatrics
+	spriteType = {
+		name = "GFX_theatrics"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//western//latin_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_latingfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//western//latin_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_easterngfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//eastern//eastern_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_greekgfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//eastern//eastern_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_asiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_mongolgfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_thaigfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_africangfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//african//african_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_indiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//indian//indian_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_muslimgfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//muslim//muslim_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_turkishgfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//muslim//muslim_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_persiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//muslim//muslim_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_southamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//southamerican//southamerica_theatrics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_theatrics_northamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//northamerican//northamerica_theatrics.tga"
+		loadType = "INGAME"
+	}
+	#Operatics
+	spriteType = {
+		name = "GFX_operatics"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_latingfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_easterngfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_greekgfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_asiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_mongolgfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_thaigfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_africangfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_indiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_muslimgfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_turkishgfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_persiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_southamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_operatics_northamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//operatics//western//latin_operatics.tga"
+		loadType = "INGAME"
+	}
+	#Cinema
+	spriteType = {
+		name = "GFX_cinema"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_latingfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_easterngfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_greekgfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_asiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_mongolgfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_thaigfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_africangfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_indiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_muslimgfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_turkishgfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_persiangfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_southamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cinema_northamericagfx"
+		texturefile = "gfx//interface//buildings//entertainment//cinema//western//latin_cinema.tga"
+		loadType = "INGAME"
+	}
+	#REVENUE & CUSTOMS
+	#Custom House
+	spriteType = {
+		name = "GFX_custom_house"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_latingfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_easterngfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_greekgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_asiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_mongolgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_thaigfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_africangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_indiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_turkishgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_persiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_custom_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		loadType = "INGAME"
+	}
+	#Excise Office
+	spriteType = {
+		name = "GFX_excise_office"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_latingfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_easterngfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_greekgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_asiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_mongolgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_thaigfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_africangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_indiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_muslimgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_turkishgfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_persiangfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_southamericagfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_excise_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//excise_office//western//latin_excise_office.tga"
+		loadType = "INGAME"
+	}
+	#COURIERS
+	#Pigeon Shed
+	spriteType = {
+		name = "GFX_pigeon_shed"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_latingfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_easterngfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_greekgfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_asiangfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_mongolgfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_thaigfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_africangfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_indiangfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_muslimgfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_turkishgfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_persiangfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_southamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pigeon_shed_northamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//pigeon_shed//western//latin_pigeon_shed.tga"
+		loadType = "INGAME"
+	}
+	#Relay Stations
+	spriteType = {
+		name = "GFX_relay_stations"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_latingfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_easterngfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_greekgfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_asiangfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_mongolgfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_thaigfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_africangfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_indiangfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_muslimgfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_turkishgfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_persiangfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_southamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_relay_stations_northamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//relay_stations//western//latin_relay_stations.tga"
+		loadType = "INGAME"
+	}
+	#Radio Stations
+	spriteType = {
+		name = "GFX_radio_station"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_latingfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_easterngfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_greekgfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_asiangfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_mongolgfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_thaigfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_africangfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_indiangfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_muslimgfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_turkishgfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_persiangfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_southamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_radio_station_northamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//radio_station//western//latin_radio_station.tga"
+		loadType = "INGAME"
+	}
+	#Telephone Exchange
+	spriteType = {
+		name = "GFX_telephone_exchange"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_latingfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_easterngfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_greekgfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_asiangfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_mongolgfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_thaigfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_africangfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_indiangfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_muslimgfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_turkishgfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_persiangfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_southamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_telephone_exchange_northamericagfx"
+		texturefile = "gfx//interface//buildings//couriers//telephone_exchange//western//latin_telephone_exchange.tga"
+		loadType = "INGAME"
+	}
+	#DISCOVERIES
+	#Observatory
+	spriteType = {
+		name = "GFX_observatory"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_latingfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_easterngfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_greekgfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_asiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_mongolgfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_thaigfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_africangfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_indiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_muslimgfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_turkishgfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_persiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_southamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_observatory_northamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//observatory//western//latin_observatory.tga"
+		loadType = "INGAME"
+	}
+	#Archaeological dig
+	spriteType = {
+		name = "GFX_archaeological_dig"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_latingfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_easterngfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_greekgfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_asiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_mongolgfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_thaigfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_africangfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_indiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_muslimgfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_turkishgfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_persiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_southamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_archaeological_dig_northamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//archaeological_dig//western//latin_archaeological_dig.tga"
+		loadType = "INGAME"
+	}
+	#National Museum
+	spriteType = {
+		name = "GFX_national_museum"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_latingfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_easterngfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_greekgfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_asiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_mongolgfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_thaigfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_africangfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_indiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_muslimgfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_turkishgfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_persiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_southamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_national_museum_northamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//national_museum//western//latin_national_museum.tga"
+		loadType = "INGAME"
+	}
+	#Natural History Museum
+	spriteType = {
+		name = "GFX_natural_history_museum"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_latingfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_easterngfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_greekgfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_asiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_mongolgfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_thaigfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_africangfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_indiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_muslimgfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_turkishgfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_persiangfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_southamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_natural_history_museum_northamericagfx"
+		texturefile = "gfx//interface//buildings//discoveries//natural_history_museum//western//latin_natural_history_museum.tga"
+		loadType = "INGAME"
+	}
+	#PUBLIC SAFETY
+	#Fire Office
+	spriteType = {
+		name = "GFX_fire_office"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_latingfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_easterngfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_greekgfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_asiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_mongolgfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_thaigfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_africangfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_indiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_muslimgfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_turkishgfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_persiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_southamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fire_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//fire_office//western//latin_fire_office.tga"
+		loadType = "INGAME"
+	}
+	#Guard House
+	spriteType = {
+		name = "GFX_guard_house"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_latingfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_easterngfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_greekgfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_asiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_mongolgfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_thaigfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_africangfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_indiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_turkishgfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_persiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_guard_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//guard_house//western//latin_guard_house.tga"
+		loadType = "INGAME"
+	}
+	#Penitentiary
+	spriteType = {
+		name = "GFX_penitentiary"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_latingfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_easterngfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_greekgfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_asiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_mongolgfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_thaigfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_africangfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_indiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_muslimgfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_turkishgfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_persiangfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_southamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_penitentiary_northamericagfx"
+		texturefile = "gfx//interface//buildings//public_safety//penitentiary//western//latin_penitentiary.tga"
+		loadType = "INGAME"
+	}
+	#Offence
+	#War Office
+	spriteType = {
+		name = "GFX_war_office"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_latingfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_easterngfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_greekgfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_asiangfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_mongolgfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_thaigfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_africangfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_indiangfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_muslimgfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_turkishgfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_persiangfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_southamericagfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_war_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//offence//war_office//western//latin_war_office.tga"
+		loadType = "INGAME"
+	}
+	#Admiralty
+	spriteType = {
+		name = "GFX_admiralty"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_latingfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_easterngfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_greekgfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_asiangfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_mongolgfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_thaigfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_africangfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_indiangfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_muslimgfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_turkishgfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_persiangfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_southamericagfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_admiralty_northamericagfx"
+		texturefile = "gfx//interface//buildings//offence//admiralty//western//latin_admiralty.tga"
 		loadType = "INGAME"
 	}
 }

@@ -43,10 +43,7 @@ iroquoians_1 = {
 					name = "The Great Peacemaker"
 					discount = yes
 					culture = iroquois
-					OR = {
-						religion = arctolatry
-						religion = totemism
-					}
+					religion = totemism
 					skill = 3
 				}
 			}
@@ -56,10 +53,7 @@ iroquoians_1 = {
 					name = "Hiawatha"
 					discount = yes
 					culture = iroquois
-					OR = {
-						religion = arctolatry
-						religion = totemism
-					}
+					religion = totemism
 					skill = 2
 				}
 			}

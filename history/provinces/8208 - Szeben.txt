@@ -5,8 +5,8 @@
 #Core Details
 capital = "Nagyszeben"
 is_city = yes
-owner = SZE
-controller = SZE # Should be Szaszfold but no tag yet
+owner = TRA
+controller = TRA # Should be Szaszfold but no tag yet
 
 #Demographics
 culture = transylvanian_saxons

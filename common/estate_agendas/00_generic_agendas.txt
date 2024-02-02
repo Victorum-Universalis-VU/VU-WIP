@@ -9546,6 +9546,7 @@ estate_jains_build_production_building_in_y = {
     }
 }
 
+
 estate_nobles_build_manufactory_in_y = {
 	can_select = {
 		any_owned_province = {

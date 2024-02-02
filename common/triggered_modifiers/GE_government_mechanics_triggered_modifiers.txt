@@ -9,7 +9,7 @@ GE_maritime_republic_triggered_modifier_new_world = {
 
 	monthly_maritime_republic = -0.33
 
-	picture = "monthly_maritime_republic_opposite"
+	#picture = "monthly_maritime_republic_opposite"
 }
 
 GE_maritime_republic_triggered_modifier_global_trade = {
@@ -22,5 +22,5 @@ GE_maritime_republic_triggered_modifier_global_trade = {
 
 	monthly_maritime_republic = -0.33
 
-	picture = "monthly_maritime_republic_opposite"
+	#picture = "monthly_maritime_republic_opposite"
 }

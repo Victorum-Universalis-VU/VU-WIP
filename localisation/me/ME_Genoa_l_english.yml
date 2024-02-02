@@ -1,5 +1,5 @@
 ﻿l_english:
-# Missions:
+ #Missions:
  #1
  gen_roman_diplomacy_title: "Roman Diplomacy"
  gen_roman_diplomacy_desc: "At the same time, there was also a Genoese expansion on the trade routes of the Byzantine Mediterranean. In fact, the Fourth Crusade broke the traditional cooperation between Venice and the Byzantine Empire. With the Treaty of Nymphaeum of 1261 the Greek Empire allied itself with Genoa against Venice, and consequently granted to the Compagna Communis and to Genoese families and companies many bases, guaranteeing them a quasi-monopoly of trade in the Black Sea."
@@ -100,7 +100,7 @@
  gen_defeat_milan_title: "Defeat Milan"
  gen_defeat_milan_desc: "It turns out Milan did not wish to part with Parma. To account for us overestimating their intelligence, we must deliver swift strikes and fully annex Milan before they do the same to us."
 
-#Event
+ #Event
  ME_Genoa_Events.1.T: "Andrea Doria"
  ME_Genoa_Events.1.D: "Born in Oneglia, of which his father Ceva Doria was lord, who at a certain point was forced to sell his feudal titles, he was orphaned at seventeen. In those days, a young noble who wanted to improve his condition could take two paths: the profession of arms or an ecclesiastical career. Andrea chose to become a soldier."
  ME_Genoa_Events.1.OPT1: "His knowledge might come handy"
@@ -137,80 +137,160 @@
  ME_Genoa_Events.9.D: "You should not be able to see it, if you see it report the bug on the Missions Expanded Discord"
  ME_Genoa_Events.9.OPT1: "Is Melvasul's fault"
 
-#Decisions
+ #Decisions
  gen_the_colony_system_title: "£icon_colonist£ The Colony System"
  gen_the_colony_system_desc: "These Genoese colonies consisted of a district of the city equipped with some wooden houses with one or two floors; the artisans had their shops lined up on the main road (Ruga Genuensium) which led towards the sea and was crossed by numerous dead ends. It was called embolus if the street was flanked by arcades where houses and warehouses were located. colony was exempt from local taxes); in front of the customs the Genoese scribes called \"traders\" drew up the documents in the local language. Upstairs there was a temporary accommodation for merchants. Nearby (in some areas in the same building as the customs office) are the Fondaco warehouses, if a building, or Volta, if only one room. In the square, the meeting place of the colony, there were public buildings in stone and brick: the Common Loggia and the Church."
  
-# Modifiers:
- #1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ #Modifiers:
  gen_frank_roman_trade_aggreement: "Mending the Schism"
+ desc_gen_frank_roman_trade_aggreement: ""
  gen_mending_schism: "Frank-Roman Trade Agreement"
+ desc_gen_mending_schism: ""
  gen_conquest_constantinople: "Conquest of Constantinople"
+ desc_gen_conquest_constantinople: ""
  gen_krymchaks: "Krymchaks"
+ desc_gen_krymchaks: ""
  gen_return_genoese_ruling: "Return of Genoese ruling"
+ desc_gen_return_genoese_ruling: ""
  gen_protecting_trade: "Protecting Trade"
+ desc_gen_protecting_trade: ""
  gen_port_new_world: "Port of the New World"
-
- #2
+ desc_gen_port_new_world: ""
  gen_safe_crusading_port: "Safe Crusading Port"
+ desc_gen_safe_crusading_port: ""
  gen_route_india: "Route to India"
+ desc_gen_route_india: ""
  gen_colonial_expedition: "Colonial Expedition"
+ desc_gen_colonial_expedition: ""
  gen_specie_indian: "Specie Indian"
+ desc_gen_specie_indian: ""
  gen_indian_spices: "Spesia da la India"
+ desc_gen_indian_spices: ""
  gen_genoese_haven_dlc: "Genoese Haven"
+ desc_gen_genoese_haven_dlc: ""
  gen_genoese_haven: "Genoese Haven"
-
- #3
+ desc_gen_genoese_haven: ""
  gen_genoese_naval_tactics: "Genoese Naval Tactics"
+ desc_gen_genoese_naval_tactics: ""
  gen_facing_doge: "Facing the Doge"
+ desc_gen_facing_doge: ""
  gen_victory_doge: "Subdiderit Serenissima Respublica"
+ desc_gen_victory_doge: ""
  gen_genoese_assault: "Genoese Assault"
+ desc_gen_genoese_assault: ""
  gen_mediterranean_ambition: "Mediterranean Ambition"
+ desc_gen_mediterranean_ambition: ""
  gen_trading_egypt: "Trading in Egypt"
+ desc_gen_trading_egypt: ""
  gen_mediterranean_trade_republic: "Mediterranean Trade Republic"
+ desc_gen_mediterranean_trade_republic: ""
  gen_defensive_on_the_alps: "Alpine Defence"
+ desc_gen_defensive_on_the_alps: ""
  gen_conquest_piedmont: "Conquest of Piedmont"
-
- #4
+ desc_gen_conquest_piedmont: ""
  gen_tyrrenean_wood: "Tyrrenean Wood"
+ desc_gen_tyrrenean_wood: ""
  gen_timber_surplus: "Timber Surplus"
+ desc_gen_timber_surplus: ""
  gen_protecting_maghreb_trade: "Protecting the Maghreb Trade"
+ desc_gen_protecting_maghreb_trade: ""
  gen_genoese_fortress: "Genoese Fortress"
+ desc_gen_genoese_fortress: ""
  gen_superba: "La Superba"
+ desc_gen_superba: ""
  gen_merchant_army: "Merchant Army"
+ desc_gen_merchant_army: ""
  gen_arts: "Tuscan Arts"
+ desc_gen_arts: ""
  gen_italian_trade_conquered: "Conquered Italy"
+ desc_gen_italian_trade_conquered: ""
  gen_conquest_tuscany: "Conquest of Tuscany"
-
- #5
+ desc_gen_conquest_tuscany: ""
  gen_genoese_market_dominance: "Ianuensis Ergo Mercator"
+ desc_gen_genoese_market_dominance: ""
  gen_anziani_fall: "Anziani's fall"
+ desc_gen_anziani_fall: ""
  gen_genoese_ruling: "Genoese Ruling"
+ desc_gen_genoese_ruling: ""
  gen_nuraghe: "Nuraghe"
+ desc_gen_nuraghe: ""
  gen_pine_timber: "Pine Timber"
+ desc_gen_pine_timber: ""
  gen_santa_maria_carignano: "Santa Maria di Carignano"
+ desc_gen_santa_maria_carignano: ""
  gen_san_giovanni_battista: "San Giovanni Battista"
+ desc_gen_san_giovanni_battista: ""
  gen_trade_with_alps: "Lombardian Trade"
+ desc_gen_trade_with_alps: ""
  gen_conquest_lombardy: "Conquest of Lombardy"
-
- #Event Modifiers
+ desc_gen_conquest_lombardy: ""
  gen_genoese_trade_agreement: "Genoese Trade Agreement"
+ desc_gen_genoese_trade_agreement: ""
  gen_genoese_steppe_trade_aggreement_genoa: "Genoese-Steppe Trade Agreement"
+ desc_gen_genoese_steppe_trade_aggreement_genoa: ""
  gen_genoese_steppe_trade_aggreement_steppe: "Genoese-Steppe Trade Agreement"
+ desc_gen_genoese_steppe_trade_aggreement_steppe: ""
  gen_genoese_silk_road_trade_aggreement_genoa: "Genoese Silk Road"
+ desc_gen_genoese_silk_road_trade_aggreement_genoa: ""
  gen_genoese_silk_road_trade_aggreement_asiatic: "Silk Road Rebuilt"
-
- #Opinion Modifiers
+ desc_gen_genoese_silk_road_trade_aggreement_asiatic: ""
  gen_accepted_treaty: "Accepted Trade Agreement"
+ desc_gen_accepted_treaty: ""
  gen_refused_treaty: "Refused Trade Agreement"
- 
- #Trade Modifiers:
- gen_theodoro_loc: "Theodoran Coastal Trade"
-
- #Decision Modifiers
+ desc_gen_refused_treaty: ""
  gen_colonia_genovese: "Colonia Genovese"
+ desc_gen_colonia_genovese: ""
+
+ #KEY
+ gen_theodoro_loc: "Theodoran Coastal Trade"
  
-#Tooltip:
+ #Tooltip:
  GEN_TRADERS_BURGEOIS_HAPPY_TT: "If the §YTraders§! are in power (or the §YBurgeois§! have at least §Y60 loyalty§!) they will fund the upgrade of the Trade Center in Panama for free!"
  GEN_STEPPE_TRADE_AGGREEMENT_TT: "The Bonuses will last as long as the alliance is alive"
  GEN_BYZ_ALLIANCE_TT: "[Root.GetName] and [BYZ.GetName], for as long as the alliance will last, will gain in all the owned provinces inside the Constantinople Trade Node:"

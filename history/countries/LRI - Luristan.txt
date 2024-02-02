@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = luri
 religion = sunni
 technology_group = persian_tech_group
+unit_type = muslim
 #capital = 4342 # Malamir
 capital = 413 #Khorramabad
 religious_school = hanafi_school

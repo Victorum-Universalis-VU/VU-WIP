@@ -66,10 +66,15 @@
  
  # Modifiers:
  JAP_kyoto_kanrei: "The Kyoto Kanrei"
+ desc_JAP_kyoto_kanrei: ""
  JAP_kanto_kanrei: "The Kanto Kanrei"
+ desc_JAP_kanto_kanrei: ""
  JAP_tax: "New Taxation"
+ desc_JAP_tax: ""
  JAP_drafting: "Splendid Draftation"
+ desc_JAP_drafting: ""
  JAP_appeasement: "Appeasement"
+ desc_JAP_appeasement: ""
  
  # Decisions:
  JAP_support_title: "Onin Crisis"

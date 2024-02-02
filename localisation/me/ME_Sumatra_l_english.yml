@@ -42,6 +42,7 @@
  SUM_army_modifier: "Mastery of the Islander's Life"
  SUM_sumatran_architecture: "Sumatran Architecture"
  SUM_trade: "Secured Sumatran Routes"
+ desc_SUM_trade: ""
  SUM_capital_of_srivijaya_conquered: "Capital of Srivijaya Conquered"
  SUM_generic_suvarnadvipa_modifier: "Island of Gold"
  SUM_generic_spice_flows: "The Spice Must Flow"

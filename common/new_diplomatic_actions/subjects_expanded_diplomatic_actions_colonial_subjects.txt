@@ -288,7 +288,7 @@ demand_manpower_from_autonomous_dominion = {
 			}
 		}
 		is_at_war = yes
-		FROM = { is_at_war = no }
+		FROM = { is_at_war = yes }
 		FROM = {
 			manpower = 5
 		}

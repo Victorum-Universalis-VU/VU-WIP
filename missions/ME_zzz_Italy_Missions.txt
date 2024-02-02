@@ -623,7 +623,7 @@ italy_missions_3 = {
 			341 = {
 				is_strongest_trade_power = ROOT
 			}
-			137 = {
+			1309 = {
 				is_strongest_trade_power = ROOT
 			}
 			1320 = {
@@ -1085,7 +1085,7 @@ italy_missions_4 = {
 			341 = {
 				is_strongest_trade_power = ROOT
 			}
-			137 = {
+			1309 = {
 				is_strongest_trade_power = ROOT
 			}
 			1295 = {
@@ -1105,7 +1105,7 @@ italy_missions_4 = {
 						add_permanent_claim = ROOT
 					}
 				}
-				137 = {
+				1309 = {
 					every_trade_node_member_province = {
 						limit = {
 							has_port = yes
@@ -1241,7 +1241,7 @@ italy_missions_4 = {
 						}
 					}
 				}
-				137 = { #ragusa
+				1309 = { #ragusa
 					all_trade_node_member_province = {
 						OR = {
 							has_port = no
@@ -1364,7 +1364,7 @@ italy_missions_4 = {
 			1308 = { #Venice
 				is_strongest_trade_power = ROOT
 			}
-			137 = { #Ragusa
+			1309 = { #Ragusa
 				is_strongest_trade_power = ROOT
 			}
 			1320 = { #Costantinople
@@ -1498,7 +1498,7 @@ italy_missions_5 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = ITA_blooded_shores_TT
-				137 = {
+				1309 = {
 					all_trade_node_member_province = {
 						OR = {
 							has_port = no

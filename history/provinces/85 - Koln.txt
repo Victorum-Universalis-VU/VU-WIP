@@ -13,15 +13,11 @@ base_manpower = 10
 is_city = yes
 fort_15th = yes #Godesberg
 hre = yes
+
 add_permanent_province_modifier = {
     name = jewish_population 
     duration = -1
 }
-
-
-
-
-
 
 center_of_trade = 5
 extra_cost = 10

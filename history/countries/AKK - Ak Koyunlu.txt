@@ -5,6 +5,7 @@ add_accepted_culture = kurdish
 add_accepted_culture = armenian
 religion = sunni
 technology_group = persian_tech_group
+unit_type = muslim
 capital = 418
 religious_school = hanafi_school
 

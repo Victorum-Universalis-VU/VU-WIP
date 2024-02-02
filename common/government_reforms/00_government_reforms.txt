@@ -1648,6 +1648,68 @@ elective_monarchy_legacy = {
 	}
 }
 
+phoenician_elective_monarchical_republic_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	legacy_government = yes
+	icon = "crown"
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	monarchy = yes
+	modifiers = {
+		vassal_income = 0.25
+		global_unrest = -1
+		global_autonomy = -0.025
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+phoenician_elective_monarchical_republic_reform_legacy = {
+	# government mechanics flags go here
+	allow_normal_conversion = no
+	legacy_government = yes
+	icon = "crown"
+
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	monarchy = yes
+	modifiers = {
+		vassal_income = 0.25
+		global_unrest = -1
+		global_autonomy = -0.025
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+	}
+	ai = {
+		factor = 5
+	}
+}
+
 #Special for HRE free cities
 imperial_city = {
 	# government mechanics flags go here
@@ -2465,6 +2527,83 @@ tsardom_legacy = {
 			russian_mechanic
 		}
 		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+#Assyrian Empire
+issi_akdom_reform_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		primary_culture = assyrian
+		religion = ashurist
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		governing_capacity = 150
+		technology_cost = 0.1
+		global_institution_spread = -0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			militarization_mechanic
+		}
+		claim_states = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+#Babylonian Empire
+sardom_reform_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	monarchy = yes
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		primary_culture = babylonian
+		religion = cult_of_marduk
+	}
+
+    fixed_rank = 3
+	modifiers = {
+		global_trade_power = 0.1
+		monarch_diplomatic_power = 2
+		years_of_nationalism = 5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			bureaucracy_vs_military_mechanic
+		}
 	}
 
 	ai = {

@@ -28,6 +28,12 @@ technology = { #Tribal Government
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
 
+	aqueduct = yes
+	cesspit = yes
+	fire_office = yes
+	hall = yes
+	well = yes
+
 	#effect = { } # When a country researches the technology
 }
 
@@ -143,6 +149,7 @@ technology = {  #Religion
 	}
 
 	administrative_efficiency = 0.01
+	bath_house = yes
 }
 
 
@@ -216,6 +223,7 @@ technology = {  # Organized Courts
 	}
 
 	administrative_efficiency = 0.01
+	library = yes
 }
 
 technology = {  # Early Machinery
@@ -243,7 +251,9 @@ technology = {  # Royal Officials
 		market_production = 0.4
 	}
 
-	administrative_efficiency = 0.01	
+	administrative_efficiency = 0.01
+
+	custom_house = yes
 }
 
 technology = {  # Late Feudalism
@@ -429,6 +439,7 @@ technology = { #Modern Theocracy
 	
 	#Woodworking Workshop TGE Manufactory
 	wood_workshop = yes
+	school = yes
 }
 
 technology = { #Textile Manufactory
@@ -669,6 +680,7 @@ technology = { #The Constitution
 
 	#Town Hall Building
 	town_hall = yes
+	stamp_office = yes
 }
 
 technology = { #Measuring the World
@@ -779,6 +791,7 @@ technology = { #Modern Bureaucracy
 	}
 	governing_capacity = 1000
 	production_efficiency 	= 0.01
+	city_hall = yes
 }
 
 technology = { #Rotherham Plough
@@ -805,6 +818,7 @@ technology = { #Rotherham Plough
 	administrative_efficiency = 0.15
 	development_cost_modifier = -0.20
 	governing_capacity = 500	#Dev doubled but cap gains not?
+	excise_office = yes
 }
 
 technology = { #Rights of Man
@@ -830,6 +844,7 @@ technology = { #Rights of Man
 	
 	#Grand Cathedral Building
 	grand_cathedral = yes
+	supreme_court = yes
 }
 
 technology = { #Advanced Production
@@ -854,6 +869,8 @@ technology = { #Advanced Production
 		enlightenment = 0.5
 		industrialization = 1
 	}
+
+	distillery = yes
 }
 
 technology = { #Revolutionary Ideals
@@ -902,6 +919,7 @@ technology = { #Factories
 	#Factory Building
 	factory = yes
 	cannery_workshop = yes
+	penitentiary = yes
 	
 	#Revolutionary Ideals
 	revolutionary_republic = yes
@@ -979,6 +997,8 @@ technology = {
 	administrative_efficiency = 0.2
 	governing_capacity = 750	#Dev doubled but cap gains not?
 	allowed_idea_groups = 11
+
+	sewer_system = yes
 }
 
 technology = {
@@ -1005,6 +1025,9 @@ technology = {
 	governing_capacity = 1000	#Dev doubled but cap gains not?
 	#parliamentary_monarchy = yes
 	#parliamentary_democracy = yes
+
+	latrines = yes
+	telephone_exchange = yes
 }
 
 technology = {
@@ -1029,6 +1052,8 @@ technology = {
 
 	#Repleceable Parts
 	production_efficiency 	=	0.075
+
+	pump_house = yes
 }
 
 technology = {
@@ -1053,6 +1078,8 @@ technology = {
 
 	#Assembly Line
 	production_efficiency 	=	0.08
+
+	radio_station = yes
 }
 
 technology = {

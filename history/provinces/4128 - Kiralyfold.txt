@@ -3,11 +3,11 @@
 #Core Details
 capital = "Brassó"
 is_city = yes
-owner = SZE
-controller = SZE
+owner = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
+controller = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
 
 #Demographics
-culture = transylvanian_saxons
+culture = szekely #VU - Changed from transylvanian_saxons by San Felipe on Yani's advice.
 religion = catholic
 
 #Development and Trade

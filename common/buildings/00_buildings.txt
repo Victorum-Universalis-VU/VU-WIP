@@ -31,20 +31,27 @@
 # AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
 # It will still check whether it can afford a building before doing so though, but may save up to it.
 
+
 ################################################
 
 ### PRODUCTION
 
 #Tier 1 Production - Workshop
 workshop = {
-	cost = 100
+	cost = 200 #VU - Kept at 150 to 200 in v1.36.2.* by San Felipe
 	time = 12
 	#Returned price to 100 due to the production efficiency increase.
-	
 	modifier = {
-		#Returned modifier to the EU4 50% instead of the VU 30% to make the building more worthwhile, specially in the early game.
-		local_production_efficiency = 0.5
+		local_production_efficiency = 0.05 #VU - Lowered to 0.05 in v1.36.2.* by San Felipe
 	}
+	
+	build_trigger = {
+		if = {
+			limit = { FROM = { ai = yes } }
+			FROM = { NOT = { num_of_loans = 4 } }
+		}
+	}
+
 	on_built = {
 		add_development_from_building = {
 			building = workshop
@@ -63,37 +70,46 @@ workshop = {
 	}
 
 	allow_in_gold_provinces = no
-
 	ai_will_do = {
-		factor = 1
-		
+		factor = 10.0
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
 			factor = 0
-			owner = { num_of_loans = 3 }
+			FROM = { num_of_loans = 1 }
 		}
 		modifier = {
-			factor = 0.3
-			owner = { num_of_loans = 2 }
+			factor = 4.5
+			owner = { is_subject = yes }
 		}
 		modifier = {
-			factor = 0.5
-			owner = { num_of_loans = 1 }
+			factor = 100.0
+			FROM = { treasury = 10000 }
 		}
-		
+		#FROM AUTONOMY
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
+		modifier = {
+			factor = 0.4
+			local_autonomy = 75
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0.8
+			local_autonomy = 25
+		}
+		#FROM BASE DEV
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 200 } }
 		}
-		
 		#SPECIFIC
 		#AI more likely to build in provinces with high development
 		modifier = {
@@ -109,18 +125,18 @@ workshop = {
 			development = 30
 		}
 		modifier = {
-			factor = 1.5
-			base_production = 3
+			factor = 3.0
+			base_production = 4
 		}
 		modifier = {
-			factor = 3.5
-			base_production = 5
+			factor = 6.0
+			base_production = 6
 		}
 		modifier = {
-			factor = 6.5
-			base_production = 7
+			factor = 9.0
+			base_production = 8
 		}
-		
+		#FROM TRADE GOODS
 		#GENERAL
 		#AI is strongly discouraged to build this where climate renders development difficult.
 		modifier = {
@@ -175,12 +191,19 @@ workshop = {
 			factor = 2.0
 			is_part_of_hre = yes
 		}
+		#FROM CASH
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
+		}
 	}
 }
 
 #Tier 2 Production - Counting House
 counting_house = {
-	cost = 200
+	cost = 400 #VU - Kept at 400 in v1.36.2.* by San Felipe
 	time = 24
 	#VU AddOn price changed from 400 to 200. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
 	#VU AddOn time changed from 12 to 24. Doubling upgraded buildings' build time.
@@ -188,7 +211,7 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		#Modifier is now 75% instead of the EU4 100% or the VU 60%. It should be balanced for the extra provinces of VU while still being worth its price.
-		local_production_efficiency = 0.75
+		local_production_efficiency = 0.075 #VU - Lowered to 0.075 in v1.36.2.* by San Felipe
 	}
 	
 	on_built = {
@@ -214,7 +237,6 @@ counting_house = {
 
 	ai_will_do = {
 		factor = 4
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -328,13 +350,13 @@ counting_house = {
 
 #Tier 3 Production - Treasury
 treasury = {
-	cost = 400
+	cost = 600 #VU - Increased from 400 to 600 in v1.36.2.* by San Felipe
 	time = 36
 	#Same price as the EU4 Counting House.
 	
 	make_obsolete = counting_house
 	modifier = {
-		local_production_efficiency = 1.0
+		local_production_efficiency = 1.0 #VU - Kept to 0.05 in v1.36.2.* by San Felipe
 		#Same modifier as the EU4 Counting House.
 	}
 	
@@ -476,13 +498,13 @@ treasury = {
 
 #Tier 4 Production - Factory 
 factory = {
-	cost = 800
+	cost = 800 #VU - Kept at 800 in v1.36.2.* by San Felipe
 	time = 48
 	#Factories are expensive and take a long time to build because they're the last tier of the production category and are quite powerful (as they should be).
 	
 	make_obsolete = treasury
 	modifier = {
-		local_production_efficiency = 2.0
+		local_production_efficiency = 0.15
 		#Factories had a massive impact on production (Industrial Revolution) so they're represented by having a huge modifier.
 	}
 	
@@ -629,15 +651,27 @@ factory = {
 
 #Tier 1 Trade - Marketplace
 marketplace = {
-	cost = 100
+	cost = 200 #VU - Increased from 100 to 200 in v1.36.2.* by San Felipe
 	time = 12
 	
 	modifier = {
-		province_trade_power_modifier = 0.25
+		province_trade_power_modifier = 0.5
 		#VU AddOn changed from 0.5. A 50% bonus available at practically day 1 was overpowered, and it snowballed for Centers of Trade.
 		#While we still want CoTs strong, we don't want them x15 stronger than any other province this early
-		#VU's lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
+		#VU's 
+		#lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
 	}
+
+	build_trigger = {
+		FROM = {
+			adm_tech = 3
+		}
+		if = {
+			limit = { FROM = { ai = yes } }
+			FROM = { NOT = { num_of_loans = 4 } }
+		}
+	}
+
 	on_built = {
 		add_development_from_building = {
 			building = marketplace
@@ -660,21 +694,21 @@ marketplace = {
 	}
 
 	ai_will_do = {
-		factor = 0.75 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
 			factor = 0
-			owner = { num_of_loans = 3 }
+			FROM = { num_of_loans = 1 }
 		}
 		modifier = {
-			factor = 0.3
-			owner = { num_of_loans = 2 }
+			factor = 4.5
+			owner = { is_subject = yes }
 		}
 		modifier = {
-			factor = 0.5
-			owner = { num_of_loans = 1 }
+			factor = 100.0
+			FROM = { treasury = 10000 }
 		}
 		
 		#AI avoids building when in deficit
@@ -698,24 +732,22 @@ marketplace = {
 		
 		#AI more likely to build if there is a center of trade
 		modifier = {
-			factor = 10.0
+			factor = 10
 			province_has_center_of_trade_of_level = 1
 		}
 		modifier = {
-			factor = 20.0
+			factor = 20
 			province_has_center_of_trade_of_level = 2
 		}
 		modifier = {
-			factor = 30.0
-			province_has_center_of_trade_of_level = 1
+			factor = 30
+			province_has_center_of_trade_of_level = 3
 		}
-		
 		#AI more likely to build if there is a river estuary
 		modifier = {
 			factor = 5.0
 			has_river_estuary_trigger = yes
 		}
-		
 		#GENERAL
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note 25 is base for several mercantile nations like England, so some will start with this, and many more reach it later.
@@ -723,14 +755,12 @@ marketplace = {
 			factor = 0.65
 			NOT = { FROM = { mercantilism = 25 } }
 		}
-		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note England can hit 40s by the late 1400s with some luck, so this isn't so high.
 		modifier = {
 			factor = 1.5
 			FROM = { mercantilism = 40 }
 		}
-		
 		#Trade leagues and merchant republics will get more trade buildings... that is rather their mandate, no?
 		modifier = {
 			factor = 2.0
@@ -743,22 +773,17 @@ marketplace = {
 				}
 			}
 		}
-		
 		#Just to encourage a bit of English Channel node competition. Dutch society flourished on trade in this period.
-														  
-					
-	
 		modifier = {
 			factor = 2.0
-			FROM = { primary_culture = dutch }			
-	
+			FROM = { primary_culture = dutch }
 		}
 	}
 }
 
 #Tier 2 Trade - Trade Depot
 trade_depot = {
-	cost = 200
+	cost = 400 #VU - Increased from 300 to 400 in v1.36.2.* by San Felipe
 	time = 24
 	#VU AddOn price changed from 300.
 	#VU AddOn time changed from 12. Doubling upgraded buildings' build time.
@@ -766,10 +791,10 @@ trade_depot = {
 	make_obsolete = marketplace
 
 	modifier = {
-		province_trade_power_modifier = 0.5
+		province_trade_power_modifier = 0.75
 		#VU AddOn changed from 1.0, for reasons explained in market entry.
 	}
-	
+
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = trade_depot
@@ -790,8 +815,7 @@ trade_depot = {
 	}
 
 	ai_will_do = {
-		factor = 3
-		
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -806,26 +830,22 @@ trade_depot = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		#SPECIFIC
 		#AI less likely to build if there isn't a center of trade
 		modifier = {
 			factor = 0.5
 			NOT = { province_has_center_of_trade_of_level = 1 }
 		}
-		
 		#AI more likely to build if there is a center of trade
 		modifier = {
 			factor = 10.0
@@ -839,13 +859,11 @@ trade_depot = {
 			factor = 30.0
 			province_has_center_of_trade_of_level = 1
 		}
-		
 		#AI more likely to build if there is a river estuary
 		modifier = {
 			factor = 5.0
 			has_river_estuary_trigger = yes
 		}
-		
 		#GENERAL		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note 25 is base for several mercantile nations like England, so some will start with this, and many more reach it later.
@@ -853,14 +871,12 @@ trade_depot = {
 			factor = 0.65
 			NOT = { FROM = { mercantilism = 25 } }
 		}
-		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note England can hit 40s by the late 1400s with some luck, so this isn't so high.
 		modifier = {
 			factor = 1.5
 			FROM = { mercantilism = 40 }
 		}
-		
 		#Trade leagues and merchant republics will get more trade buildings... that is rather their mandate, no?
 		modifier = {
 			factor = 2.0
@@ -873,7 +889,6 @@ trade_depot = {
 				}
 			}
 		}
-		
 		#Just to encourage a bit of English Channel node competition. Dutch society flourished on trade in this period.
 		modifier = {
 			factor = 2.0
@@ -884,15 +899,16 @@ trade_depot = {
 
 #Tier 3 Trade - Stock Exchange
 stock_exchange = {
-	cost = 400
+	cost = 600 #VU - Increased from 400 to 600 in v1.36.2.* by San Felipe
 	time = 36
+
 	#VU AddOn time changed from 12. Tripling stock exchange build time, as a doubled upgraded building.
-	
 	make_obsolete = trade_depot
+
 	modifier = {
 		province_trade_power_modifier = 1.0
 	}
-	
+
 	on_built = {
 		if = {
 			limit = {
@@ -935,10 +951,8 @@ stock_exchange = {
 	}
 	on_obsolete = {
 	}
-
 	ai_will_do = {
 		factor = 6
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -953,26 +967,22 @@ stock_exchange = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 800 } }
 		}
-		
 		#SPECIFIC
 		#AI less likely to build if there isn't a center of trade
 		modifier = {
 			factor = 0.5
 			NOT = { province_has_center_of_trade_of_level = 1 }
 		}
-		
 		#AI more likely to build if there is a center of trade
 		modifier = {
 			factor = 10.0
@@ -986,13 +996,11 @@ stock_exchange = {
 			factor = 30.0
 			province_has_center_of_trade_of_level = 1
 		}
-		
 		#AI more likely to build if there is a river estuary
 		modifier = {
 			factor = 5.0
 			has_river_estuary_trigger = yes
 		}
-		
 		#GENERAL	
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note 25 is base for several mercantile nations like England, so some will start with this, and many more reach it later.
@@ -1000,14 +1008,12 @@ stock_exchange = {
 			factor = 0.65
 			NOT = { FROM = { mercantilism = 25 } }
 		}
-		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note England can hit 40s by the late 1400s with some luck, so this isn't so high.
 		modifier = {
 			factor = 1.5
 			FROM = { mercantilism = 40 }
 		}
-		
 		#Trade leagues and merchant republics will get more trade buildings... that is rather their mandate, no?
 		modifier = {
 			factor = 2.0
@@ -1020,27 +1026,23 @@ stock_exchange = {
 				}
 			}
 		}
-		
 		#Just to encourage a bit of English Channel node competition. Dutch society flourished on trade in this period.
 		modifier = {
 			factor = 2.0
 			FROM = { primary_culture = dutch }
-			
 		}
 	}
 }
 
 #Tier 4 Trade - Corporative Headquarters
 corporative_headquarters = {
-	cost = 800
+	cost = 800 #VU - Kept at 800 in v1.36.2.* by San Felipe
 	time = 48
-	
 	make_obsolete = stock_exchange
 	modifier = {
-		province_trade_power_modifier = 2.0
+		province_trade_power_modifier = 1.5
 		#VU AddOn changed from 1.25. While earlier levels were weaker than vanilla, I'm increasing the final level, because by this tech level, the centres of wealth should be pulling a massive slice of the wealth in a node, and the many new provinces will have had plenty chance to build up and compete with the capitals much more than in vanilla.
 	}
-	
 	on_built = {
 	    if = {
 			limit = {
@@ -1095,10 +1097,8 @@ corporative_headquarters = {
 	}
 	on_obsolete = {
 	}
-
 	ai_will_do = {
 		factor = 9
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -1113,26 +1113,22 @@ corporative_headquarters = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 1600 } }
 		}
-		
 		#SPECIFIC
 		#AI less likely to build if there isn't a center of trade
 		modifier = {
 			factor = 0.5
 			NOT = { province_has_center_of_trade_of_level = 1 }
 		}
-		
 		#AI more likely to build if there is a center of trade
 		modifier = {
 			factor = 10.0
@@ -1146,13 +1142,11 @@ corporative_headquarters = {
 			factor = 30.0
 			province_has_center_of_trade_of_level = 1
 		}
-		
 		#AI more likely to build if there is a river estuary
 		modifier = {
 			factor = 5.0
 			has_river_estuary_trigger = yes
 		}
-		
 		#GENERAL		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note 25 is base for several mercantile nations like England, so some will start with this, and many more reach it later.
@@ -1160,14 +1154,12 @@ corporative_headquarters = {
 			factor = 0.65
 			NOT = { FROM = { mercantilism = 25 } }
 		}
-		
 		#I know this is probably already factored in, but I want highly mercantile states to build trade buildings everywhere, while lower mercantilism states only build these in provinces with high TP.
 		#Note England can hit 40s by the late 1400s with some luck, so this isn't so high.
 		modifier = {
 			factor = 1.5
 			FROM = { mercantilism = 40 }
 		}
-		
 		#Trade leagues and merchant republics will get more trade buildings... that is rather their mandate, no?
 		modifier = {
 			factor = 2.0
@@ -1180,7 +1172,6 @@ corporative_headquarters = {
 				}
 			}
 		}
-		
 		#Just to encourage a bit of English Channel node competition. Dutch society flourished on trade in this period.
 		modifier = {
 			factor = 2.0
@@ -1195,11 +1186,17 @@ corporative_headquarters = {
 
 #Tier 1 Army - Barracks
 barracks = {
-	cost = 100
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.25
 		#VU AddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
+	}
+	build_trigger = {
+		if = {
+			limit = { FROM = { ai = yes } }
+			FROM = { NOT = { num_of_loans = 4 } }
+		}
 	}
 	on_built = {
 		if = {
@@ -1229,8 +1226,7 @@ barracks = {
 			value = 1
 		}
 		update_improved_military_buildings_modifier = {
-			building = barracks
-				   
+			building = barracks				   
 		}
 	}
 	on_destroyed = {
@@ -1268,35 +1264,45 @@ barracks = {
 	}
 
 	ai_will_do = {
-		factor = 40
-        
+		factor = 4.5
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
-            factor = 0
-            owner = { num_of_loans = 3 }
-        }
-        modifier = {
-            factor = 0.3
-            owner = { num_of_loans = 2 }
-        }
-        modifier = {
-            factor = 0.5
-            owner = { num_of_loans = 1 }
-        }
-        
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 4.5
+			owner = { is_subject = yes }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = { treasury = 10000 }
+		}
+		#FROM AUTONOMY
+		modifier = {
+			factor = 0.4
+			local_autonomy = 75
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0.8
+			local_autonomy = 25
+		}
+		#FROM BASE DEV
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build in provinces with high development
 		modifier = {
@@ -1308,55 +1314,49 @@ barracks = {
 			development = 21
 		}
 		modifier = {
-			factor = 1.5
-			base_manpower = 3
+			factor = 3.0
+			base_manpower = 4
 		}
 		modifier = {
-			factor = 3.5
-			base_manpower = 5
+			factor = 6.0
+			base_manpower = 6
 		}
 		modifier = {
-			factor = 6.5
-			base_manpower = 7
+			factor = 9.0
+			base_manpower = 8
 		}
-		
+		#FROM TRADE GOODS
 		#GENERAL
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 0.5
 			NOT = { FROM = { army_tradition = 20 } }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { army_tradition = 40 } }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 1.2
 			FROM = { army_tradition = 60 }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 1.5
 			FROM = { army_tradition = 80 }
 		}
-		
 		#Further encouraged if low on manpower
 		modifier = {
 			factor = 1.2
 			NOT = { owner = { manpower_percentage = 0.35 } }
 		}
-		
 		#Slightly discouraged if plenty of manpower
 		modifier = {
 			factor = 0.9
 			owner = { manpower_percentage = 0.8 }
 		}
-		
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
 		#	factor = 1.5
@@ -1369,13 +1369,11 @@ barracks = {
 		#		}
 		#	}
 		#}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
 			local_autonomy = 40
 		}
-		
 		modifier = {
 			factor = 0.65
 			is_state = no
@@ -1385,12 +1383,13 @@ barracks = {
 
 #Tier 2 Army - Training Fields
 training_fields = {
-	cost = 200
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
 	time = 24
+
 	#VU AddOn price changed from 300. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
 	#VU AddOn time changed from 12. Doubling second level military buildings build time.
     make_obsolete = barracks
-	
+
 	modifier = {
 		local_manpower_modifier = 0.5
 		#VU AddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the VU  map (with all its new provinces).
@@ -1428,8 +1427,7 @@ training_fields = {
 				add_army_professionalism = 0.001
 			}
 		}
-	}
- 
+	} 
 	on_destroyed = {
 		if = {
 			limit = {
@@ -1466,7 +1464,6 @@ training_fields = {
 
 	ai_will_do = {
 		factor = 160
-		
 		#ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -1481,19 +1478,16 @@ training_fields = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build in provinces with high development
 		modifier = {
@@ -1516,44 +1510,37 @@ training_fields = {
 			factor = 6.5
 			base_manpower = 7
 		}
-		
 		#GENERAL		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 0.5
 			NOT = { FROM = { army_tradition = 20 } }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { army_tradition = 40 } }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 1.2
 			FROM = { army_tradition = 60 }
 		}
-		
 		#Army tradition now either encourages or discourages building barracks
 		modifier = {
 			factor = 1.5
 			FROM = { army_tradition = 80 }			
 		}
-		
 		#Further encouraged if low on manpower
 		modifier = {
 			factor = 1.2
 			NOT = { owner = { manpower_percentage = 0.35 } }
 		}
-		
 		#Slightly discouraged if plenty of manpower
 		modifier = {
 			factor = 0.9
 			owner = { manpower_percentage = 0.8 }
 		}
-		
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
 		#	factor = 1.5
@@ -1566,13 +1553,11 @@ training_fields = {
 		#		}
 		#	}
 		#}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
 			local_autonomy = 40
 		}
-		
 		modifier = {
 			factor = 0.65
 			is_state = no
@@ -1582,12 +1567,11 @@ training_fields = {
 
 #Tier 1 Army - Regimental Camp
 regimental_camp = {
-	cost = 100
+	cost = 150 #VU - Decreased from 200 to 150 in v1.36.2.* by San Felipe
 	time = 12
 	modifier = {
 		land_forcelimit = 0.5
 		#VU AddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
-		
 		regiment_recruit_speed = -0.125
 		#VU AddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
 	}
@@ -1639,9 +1623,8 @@ regimental_camp = {
 
 	ai_will_do = {
 		factor = 60
-		
+
 		#Better AI Economy
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -1656,68 +1639,57 @@ regimental_camp = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
-		
 		#GENERAL
 		#Running total 72
 		modifier = {
 			factor = 1.2
 			FROM = { army_size_percentage = 0.75 }
 		}
-		
 		#Running total 93.6
 		modifier = {
-			factor = 1.3
-			FROM = { army_size_percentage = 1.0 }
+			factor = 1.5 # more likely if we have an army close to the force limit
+			FROM = { army_size_percentage = 0.95 }
 		}
-		
 		#Running total 131.04
 		modifier = {
 			factor = 1.4
 			FROM = { army_size_percentage = 1.25 }
 		}
-		
 		#Running total 196.56
 		modifier = {
 			factor = 1.5			
 			FROM = { army_size_percentage = 1.5 }
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 0.75
 			NOT = { FROM = { army_tradition = 20 } }
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 0.9
 			NOT = { FROM = { army_tradition = 40 } }
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 1.1
 			FROM = { army_tradition = 60 }			
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 1.25
 			FROM = { army_tradition = 80 }			
 		}
-		
 		#Heavy handed attempt to encourage historical miltary powers
 		modifier = {
 			factor = 1.5
@@ -1734,7 +1706,6 @@ regimental_camp = {
 				}
 			}
 		}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
@@ -1745,49 +1716,50 @@ regimental_camp = {
 			factor = 0.65
 			is_state = no
 		}
-		
 		#AI army size (force limit) gets way too big in the late-game, so the AI should avoiding building these if they have a large army.
 		modifier = {
 			factor = 0.75
 			owner = { land_forcelimit = 250 }
 		}
-		
 		modifier = {
 			factor = 0.5
 			owner = { land_forcelimit = 375 }
 		}
-		
 		modifier = {
 			factor = 0.25
 			owner = { land_forcelimit = 500 }
 		}
-		
 		modifier = {
 			factor = 0.125
 			owner = { land_forcelimit = 625 }
 		}
-		
 		modifier = {
 			factor = 0.0
 			owner = { land_forcelimit = 750 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
 		}
 	}
 }
 
 #Tier 2 Army - Conscription Center
 conscription_center = {
-	cost = 200
+	cost = 300 #VU - Decreased from 400 to 300 in v1.36.2.* by San Felipe
 	time = 24
+
 	#VU AddOn price changed from 400. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
 	#VU AddOn time changed from 12. Doubling second level military buildings build time.
 	make_obsolete = regimental_camp
+
 	modifier = {
 		land_forcelimit = 1
 		#VU AddOn changed from 2.0. Part of the comprehensive balance overhaul to adjust buildings to the VU  map (with all its new provinces).
 		regiment_recruit_speed = -0.25
 		#VU AddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
 	}
-	
+	#THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		add_development_from_upgrading_or_building = {
 			building = conscription_center
@@ -1837,9 +1809,7 @@ conscription_center = {
 	
 	ai_will_do = {
 		factor = 180
-		
 		#Better AI Economy
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -1854,68 +1824,61 @@ conscription_center = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
+		modifier = {
+			factor = 1.5 # more likely if we have an army close to the force limit
+			FROM = { army_size_percentage = 0.95 }
+		}
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
-		
 		#GENERAL		
 		#Running total 216
 		modifier = {
 			factor = 1.2			
 			FROM = { army_size_percentage = 0.75 }
 		}
-		
 		#Running total 280.8
 		modifier = {
 			factor = 1.3			
 			FROM = { army_size_percentage = 1.0 }
 		}
-		
 		#Running total 393.12
 		modifier = {
 			factor = 1.4			
 			FROM = { army_size_percentage = 1.25 }
 		}
-		
 		#Running total 589.68
 		modifier = {
 			factor = 1.5			
 			FROM = { army_size_percentage = 1.5 }
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 0.75
 			NOT = { FROM = { army_tradition = 20 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 0.9
 			NOT = { FROM = { army_tradition = 40 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 1.1
 			FROM = { army_tradition = 60 }			
 		}
-		
 		#Army tradition now either encourages or discourages building camps
 		modifier = {
 			factor = 1.25
 			FROM = { army_tradition = 80 }			
 		}
-		
 		#Heavy handed attempt to encourage historical miltary powers
 		modifier = {
 			factor = 1.5
@@ -1932,61 +1895,66 @@ conscription_center = {
 				}
 			}
 		}
-		
-		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
-		modifier = {
-			factor = 0.65
-			local_autonomy = 40
-		}
-		
 		modifier = {
 			factor = 0.65
 			is_state = no
 		}
-		
 		#AI army size (force limit) gets way too big in the late-game, so the AI should avoiding building these if they have a large army.
 		modifier = {
 			factor = 0.75
 			owner = { land_forcelimit = 250 }
 		}
-		
 		modifier = {
 			factor = 0.5
 			owner = { land_forcelimit = 375 }
 		}
-		
 		modifier = {
 			factor = 0.25
 			owner = { land_forcelimit = 500 }
 		}
-		
 		modifier = {
 			factor = 0.125
 			owner = { land_forcelimit = 625 }
 		}
-		
 		modifier = {
 			factor = 0.0
 			owner = { land_forcelimit = 750 }
 		}
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
 	}
 }
-
 ################################################
 
 ### Navy
 
 #Tier 1 Navy - Shipyard
 shipyard = {
-	cost = 100
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
 	time = 12
 	#VU AddOn notes - leaving cost here despite lowering most others. Dramtically improving naval capabilities was a bit overpowered, in my opinion.
 	#Especially compared to the regimental camp with half effect at double the price.
-	
 	build_trigger = {
 		has_port = yes
+		if = {
+			limit = { 
+				FROM = { 
+					ai = yes 
+				} 
+			}
+			FROM = { 
+				NOT = { 
+					num_of_loans = 4 
+				} 
+			}
+		}
 	}
+
 	modifier = {
+		tax_income = 1
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
 		local_has_man_of_war = yes
@@ -2016,34 +1984,26 @@ shipyard = {
 
 	ai_will_do = {
 		factor = 60
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
-            factor = 0
-            owner = { num_of_loans = 3 }
-        }
-        modifier = {
-            factor = 0.3
-            owner = { num_of_loans = 2 }
-        }
-        modifier = {
-            factor = 0.5
-            owner = { num_of_loans = 1 }
-        }
-        
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
+		modifier = {
+			factor = 4.5
+			owner = { is_subject = yes }
+		}
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build when rich
 		modifier = {
@@ -2062,7 +2022,17 @@ shipyard = {
 			factor = 1.5
 			owner = { treasury = 1000 }
 		}
-		
+		modifier = {
+			factor = 100.0
+			FROM = { treasury = 10000 }
+		}
+		#FROM AUTONOMY
+		modifier = {
+			factor = 0
+			FROM = {
+				NOT = { navy_size_percentage = 0.9 }
+			}
+		}
 		#GENERAL
 		#VU AddOn removed navy size modifier below, replaced with a more detailed version in new factors
 		#modifier = {
@@ -2074,57 +2044,47 @@ shipyard = {
 		#	factor = 1.1
 		#	local_autonomy = 50
 		#}
-		
 		#VU Addon New factors, range 40 percent to 676 percent (replacing vanilla 100 percent to 11,550). I'm assuming from vanilla's high factor that the AI doesn't consider forcelimits as valuable, but if you start seeing too many or too few, please do report.
-		
 		#Running total 72
 		modifier = {
 			factor = 1.2			
 			FROM = { navy_size_percentage = 0.75 }
 		}
-		
 		#Running total 93.6
 		modifier = {
 			factor = 1.3			
 			FROM = { navy_size_percentage = 1.0 }
 		}
-		
 		#Running total 131.04
 		modifier = {
 			factor = 1.4			
 			FROM = { navy_size_percentage = 1.25 }
 		}
-		
 		#Running total 196.56
 		modifier = {
 			factor = 1.5			
 			FROM = { navy_size_percentage = 1.5 }
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 0.75
 			NOT = { FROM = { navy_tradition = 20 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 0.9
 			NOT = { FROM = { navy_tradition = 40 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 1.1
 			FROM = { navy_tradition = 60 }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 1.25
 			FROM = { navy_tradition = 80 }			
 		}
-		
 		#Heavy handed attempt to encourage historical naval powers
 		modifier = {
 			factor = 1.5
@@ -2138,23 +2098,54 @@ shipyard = {
 				}
 			}
 		}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
-			factor = 0.65
-			local_autonomy = 40
+			factor = 0.4
+			local_autonomy = 75
 		}
-		
+		modifier = {
+			factor = 0.6
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0.8
+			local_autonomy = 25
+		}
+		#FROM BASE DEV
+		modifier = {
+			factor = 3.0
+			FROM = { num_of_ports = 5 }
+		}
+		modifier = {
+			factor = 6.0
+			FROM = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 9.0
+			FROM = { num_of_ports = 15 }
+		}
+		modifier = {
+			factor = 10.0
+			NOT = { development = 7 }
+		}
+		#BUILDINGS
 		modifier = {
 			factor = 0.65
 			is_state = no
+		}
+		#FROM CASH
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
 		}
 	}
 }
 
 #Tier 2 Navy - Training Fields
 grand_shipyard = {
-	cost = 200
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
 	time = 24
 	
 	make_obsolete = shipyard
@@ -2162,11 +2153,10 @@ grand_shipyard = {
 	build_trigger = {
 		has_port = yes
 	}
-	
 	modifier = {
-					  
-		ship_recruit_speed = -0.5
-		local_ship_repair = 0.5
+		tax_income = 2
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.50
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 		#Moved naval_forcelimit to dock and drydock since faster build and repair speed already makes this building worthwhile.		
@@ -2197,7 +2187,6 @@ grand_shipyard = {
 
 	ai_will_do = {
 		factor = 180
-		
 		#ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -2212,19 +2201,16 @@ grand_shipyard = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build when rich
 		modifier = {
@@ -2243,56 +2229,47 @@ grand_shipyard = {
 			factor = 1.5
 			owner = { treasury = 2000 }
 		}
-		
 		#GENERAL
 		#Running total 216
 		modifier = {
 			factor = 1.2			
 			FROM = { navy_size_percentage = 0.75 }
 		}
-		
 		#Running total 280.8
 		modifier = {
 			factor = 1.3			
 			FROM = { navy_size_percentage = 1.0 }
 		}
-		
 		#Running total 393.12
 		modifier = {
 			factor = 1.4			
 			FROM = { navy_size_percentage = 1.25 }
 		}
-		
 		#Running total 589.68
 		modifier = {
 			factor = 1.5			
 			FROM = { navy_size_percentage = 1.5 }
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 0.75
 			NOT = { FROM = { navy_tradition = 20 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 0.9
 			NOT = { FROM = { navy_tradition = 40 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 1.1
 			FROM = { navy_tradition = 60 }			
 		}
-		
 		#Naval tradition now either encourages or discourages building shipyards
 		modifier = {
 			factor = 1.25
 			FROM = { navy_tradition = 80 }			
 		}
-		
 		#Heavy handed attempt to encourage historical naval powers
 		modifier = {
 			factor = 1.5
@@ -2306,31 +2283,34 @@ grand_shipyard = {
 				}
 			}
 		}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
-			local_autonomy = 40
-		}
-		
-		modifier = {
-			factor = 0.65
 			is_state = no
+		}
+		modifier = {
+			factor = 1.5 # bit more likely if close to the force limit
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
 		}
 	}
 }
 
 #Tier 1 Navy - Dock
 dock = {
-	cost = 100
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
 	time = 12
-	#Increased cost back to 100 because of the additional naval_forcelimit modifier
-	
+	#Increased cost back to 100 because of the additional naval_forcelimit modifier	
 	build_trigger = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 1
+		province_trade_power_modifier = 0.1
+		trade_goods_size_modifier = 0.025
+		naval_forcelimit = 0.5
 		local_sailors_modifier = 0.5
 		local_has_man_of_war = yes
 		local_has_galleass = yes
@@ -2425,9 +2405,7 @@ dock = {
 			}
 			factor = 0
 		}
-		
 		#Better AI Economy
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -2442,62 +2420,52 @@ dock = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
-		
 		#GENERAL
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 0.5
 			NOT = { FROM = { navy_tradition = 20 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { navy_tradition = 40 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 1.2
 			FROM = { navy_tradition = 60 }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 1.5
 			FROM = { navy_tradition = 80 }			
 		}
-		
 		#Further encouraged if low on sailors
 		modifier = {
 			factor = 1.2
 			NOT = { owner = { sailors_percentage = 0.35 } }			
 		}
-		
 		#Slightly discouraged if plenty of sailors
 		modifier = {
 			factor = 0.9
 			owner = { sailors_percentage = 0.8 }			
 		}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
 			local_autonomy = 40
 		}
-		
 		modifier = {
 			factor = 0.65
 			is_state = no
@@ -2507,17 +2475,21 @@ dock = {
 
 #Tier 2 Navy - Drydock
 drydock = {
-	cost = 200
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
 	time = 24
+
 	#VU AddOn cost changed from 300. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces)
 	#VU AddOn time changed from 12. Doubling second level military buildings build time.
 	make_obsolete = dock
+
 	build_trigger = {
 		has_port = yes
 	}
 
 	modifier = {
-	    naval_forcelimit = 2
+		province_trade_power_modifier = 0.2
+		trade_goods_size_modifier = 0.05
+	    naval_forcelimit = 1
 		local_sailors_modifier = 1.0
 		local_has_man_of_war = yes
 		local_has_galleass = yes
@@ -2563,11 +2535,10 @@ drydock = {
 	on_obsolete = {
 	}
 
+
 	ai_will_do = {
 		factor = 80
-		
 		#Better AI Economy
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -2582,62 +2553,52 @@ drydock = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
-		
 		#GENERAL		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 0.5
 			NOT = { FROM = { navy_tradition = 20 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { navy_tradition = 40 } }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 1.2
 			FROM = { navy_tradition = 60 }			
 		}
-		
 		#Naval tradition now either encourages or discourages building docks
 		modifier = {
 			factor = 1.5
 			FROM = { navy_tradition = 80 }			
 		}
-		
 		#Further encouraged if low on sailors
 		modifier = {
 			factor = 1.2
 			NOT = { owner = { sailors_percentage = 0.35 } }			
 		}
-		
 		#Slightly discouraged if plenty of sailors
 		modifier = {
 			factor = 0.9
 			owner = { sailors_percentage = 0.8 }			
 		}
-		
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.65
 			local_autonomy = 40
 		}
-		
 		modifier = {
 			factor = 0.65
 			is_state = no
@@ -2650,16 +2611,14 @@ drydock = {
 ### GOVERNMENT
 
 #Tier 1 Government - Courthouse
-courthouse = {
-	cost = 100
+courthouse = { 
+	cost = 750 #VU - Increased to 750 in v1.36.2.* by San Felipe
 	time = 12
 	#Changed price back to 100 to avoid AI building this when it doesn't need to.
-	
 	#VU 13 added to balance states territories and tradecompanies.
 	build_trigger = { 
 		is_state = yes
 	}
-	
 	modifier = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
@@ -2694,42 +2653,43 @@ courthouse = {
 	}
 
 	ai_will_do = {
-		factor = 0.5
-        
+		factor = 15
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
-            factor = 0
-            owner = { num_of_loans = 3 }
-        }
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 4.5
+			owner = { is_subject = yes }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = { treasury = 10000 }
+		}
         modifier = {
-            factor = 0.3
-            owner = { num_of_loans = 2 }
-        }
-        modifier = {
-            factor = 0.5
-            owner = { num_of_loans = 1 }
-        }
-        
+			factor = 0
+			area_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
-		
 		#SPECIFIC
 		#AI less likely to build in provinces with low development
 		modifier = {
 			factor = 0.5
 			NOT = { development = 6	}			
 		}
-		
         #AI more likely to build in provinces with high development
         modifier = {
             factor = 2.5
@@ -2743,31 +2703,32 @@ courthouse = {
             factor = 2.5
             development = 30
         }
-		
 		#AI less likely to build if autonomy is too low
 		modifier = {
 			factor = 0.75
 			NOT = { local_autonomy = 10 }			
 		}
-		
-		#AI more likely to build if autonomy is too high
+		modifier = {
+			factor = 0.25
+			num_free_building_slots = 2
+		}
+		#FROM AUTONOMY
 		modifier = {
 			factor = 1.5
-			local_autonomy = 20
+			local_autonomy = 25
 		}
 		modifier = {
-			factor = 1.5
-			local_autonomy = 40
+			factor = 3.0
+			local_autonomy = 50
 		}
 		modifier = {
-			factor = 1.5
-			local_autonomy = 60
+			factor = 4.5
+			local_autonomy = 75
 		}
 		modifier = {
 			factor = 1.5
 			local_autonomy = 85			
 		}
-		
 		#AI less likely to build if it still has plenty of governing capacity
 		modifier = {
 			factor = 0.5
@@ -2777,21 +2738,20 @@ courthouse = {
 			factor = 0.75
 			owner = { NOT = { governing_capacity_percentage = 0.7 } }
 		}
-		
+		#FROM GOV CAP
 		#AI more likely to build if approaching or over governing capacity
 		modifier = {
 			factor = 5.0
-			owner = { governing_capacity_percentage = 0.8 }
+			FROM = { governing_capacity_percentage = 0.9 }
 		}
 		modifier = {
 			factor = 10.0
-			owner = { governing_capacity_percentage = 1.0 }
+			FROM = { governing_capacity_percentage = 1.0 }
 		}
 		modifier = {
 			factor = 15.0
-			owner = { governing_capacity_percentage = 1.1 }
+			FROM = { governing_capacity_percentage = 1.1 }
 		}
-		
 		#AI more likely to build when rich
 		modifier = {
 			factor = 1.5
@@ -2809,7 +2769,6 @@ courthouse = {
 			factor = 1.5
 			owner = { treasury = 1000 }
 		}
-		
 		#AI more likely to build if it's a big nation
 		modifier = {
 			factor = 1.5
@@ -2823,116 +2782,112 @@ courthouse = {
 			factor = 1.5
 			owner = { total_development = 3000 }
 		}
+		#FROM CASH
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
+		}
 	}
 }
 
-#Tier 2 Government - Town Hall
-town_hall = {
-	cost = 200
-	time = 24
-	#VU AddOn changed from 12. Doubling upgraded buildings' build time.
+#Tier 1 Government - Hall
+hall = {
+	cost = 200 #VU - Increased from 150 to 200 in v1.36.2.* by San Felipe
+	time = 12
 	
+	#VU AddOn changed from 12. Doubling upgraded buildings' build time.
 	#VU 13 added to balance states territories and tradecompanies.
 	build_trigger = {
 		is_state = yes
 	}
-	
-	make_obsolete = courthouse
 
 	modifier = {
-		local_state_maintenance_modifier = -0.5
-		local_autonomy = -0.2
-		local_governing_cost = -0.5
+		local_state_maintenance_modifier = -0.25
+		local_autonomy = -0.1
 		allowed_num_of_buildings = 1
 	}
 
 	on_built = {
 		add_development_from_upgrading_or_building = {
-			building = town_hall
-			obsolete_building = courthouse
+			building = hall
 			type = tax
 			value = 2
 			upgrade_value = 1
 		}
-		if = { 
-			limit = { 
-				FROM = { has_country_flag = fra_courthouse_bonus_flag }
-				NOT = { has_province_modifier = fra_improved_court_houses_modifier }
-			}
-			add_province_modifier = {
-				name = fra_improved_court_houses_modifier
-				duration = -1 
-			}
-		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = town_hall
+			building = hall
 			type = tax
 			value = 2
 		}
-		remove_province_modifier = fra_improved_court_houses_modifier 
 	}
 	on_obsolete = {
 	}
-
 	ai_will_do = {
 		factor = 2
 		
 		#ECONOMY 101
         #AI avoids building with loans
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
         modifier = {
-            factor = 0
-            owner = { num_of_loans = 3 }
-        }
-        modifier = {
-            factor = 0.3
-            owner = { num_of_loans = 2 }
-        }
-        modifier = {
-            factor = 0.5
-            owner = { num_of_loans = 1 }
-        }
-        
-        #AI avoids building when in deficit
-        modifier = {
-            factor = 0.75
-            owner = { is_in_deficit = yes }
-        }
-        
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
 		#AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
-		
 		#SPECIFIC
 		#AI less likely to build in provinces with low development
 		modifier = {
 			factor = 0.5
 			NOT = { development = 6	}			
 		}
-		
         #AI more likely to build in provinces with high development
         modifier = {
-            factor = 2.5
-            development = 15
-        }
-        modifier = {
-            factor = 2.5
-            development = 21
-        }
-        modifier = {
-            factor = 2.5
-            development = 30
-        }
-		
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
 		#AI less likely to build if autonomy is too low
 		modifier = {
 			factor = 0.75
 			NOT = { local_autonomy = 10 }			
 		}
-		
 		#AI more likely to build if autonomy is too high
 		modifier = {
 			factor = 1.5
@@ -2950,7 +2905,6 @@ town_hall = {
 			factor = 1.5
 			local_autonomy = 85			
 		}
-		
 		#AI less likely to build if it still has plenty of governing capacity
 		modifier = {
 			factor = 0.5
@@ -2974,7 +2928,6 @@ town_hall = {
 			factor = 15.0
 			owner = { governing_capacity_percentage = 1.1 }
 		}
-		
 		#AI more likely to build when rich
 		modifier = {
 			factor = 1.5
@@ -3006,13 +2959,1236 @@ town_hall = {
 			factor = 1.5
 			owner = { total_development = 3000 }
 		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 300 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 400 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
 	}
 }
 
-#Tier 1 Government - University
-university = {
-	cost = 400
+#Tier 2 Government - Town Hall
+town_hall = {
+	cost = 400 #VU - Increased from 300 to 400 in v1.36.2.* by San Felipe
 	time = 24
+	
+	#VU AddOn changed from 12. Doubling upgraded buildings' build time.
+	#VU 13 added to balance states territories and tradecompanies.
+	build_trigger = {
+		is_state = yes
+	}
+	make_obsolete = hall
+
+	modifier = {
+		local_state_maintenance_modifier = -0.5
+		local_autonomy = -0.2
+		allowed_num_of_buildings = 1
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = town_hall
+			obsolete_building = hall
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+		if = { 
+			limit = { 
+				FROM = { has_country_flag = fra_hall_bonus_flag }
+				NOT = { has_province_modifier = fra_improved_halls_modifier }
+			}
+			add_province_modifier = {
+				name = fra_improved_halls_modifier
+				duration = -1 
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = town_hall
+			type = tax
+			value = 2
+		}
+		remove_province_modifier = fra_improved_halls_modifier 
+	}
+	on_obsolete = {
+		remove_development_from_building = {
+			building = town_hall
+			type = tax
+			value = 2
+		}
+		remove_province_modifier = fra_improved_halls_modifier 
+	}
+	ai_will_do = {
+		factor = 2
+		
+		#ECONOMY 101
+        #AI avoids building with loans
+		modifier = {
+			factor = 10
+			has_building = hall
+		}
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+        modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		#AI will try to stockpile some amount of money
+        modifier = {
+            factor = 0.75
+            owner = { NOT = { treasury = 400 } }
+        }
+		#SPECIFIC
+		#AI less likely to build in provinces with low development
+		modifier = {
+			factor = 0.5
+			NOT = { development = 6	}			
+		}
+        #AI more likely to build in provinces with high development
+        modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		#AI less likely to build if autonomy is too low
+		modifier = {
+			factor = 0.75
+			NOT = { local_autonomy = 10 }			
+		}
+		#AI more likely to build if autonomy is too high
+		modifier = {
+			factor = 1.5
+			local_autonomy = 20
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 40
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 60
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 85			
+		}
+		#AI less likely to build if it still has plenty of governing capacity
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { governing_capacity_percentage = 0.5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { governing_capacity_percentage = 0.7 } }
+		}
+		
+		#AI more likely to build if approaching or over governing capacity
+		modifier = {
+			factor = 5.0
+			owner = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 10.0
+			owner = { governing_capacity_percentage = 1.0 }
+		}
+		modifier = {
+			factor = 15.0
+			owner = { governing_capacity_percentage = 1.1 }
+		}
+		#AI more likely to build when rich
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 800 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1200 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1600 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 2000 }
+		}
+		
+		#AI more likely to build if it's a big nation
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 2000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 3000 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 300 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 400 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
+	}
+}
+
+#Tier 3 Government - City Hall
+city_hall = {
+	cost = 600 #VU - Increased from 450 to 600 in v1.36.2.* by San Felipe
+	time = 36
+	
+	#VU AddOn changed from 12. Doubling upgraded buildings' build time.
+	#VU 13 added to balance states territories and tradecompanies.
+	build_trigger = {
+		is_state = yes
+	}
+	make_obsolete = town_hall
+
+	modifier = {
+		local_state_maintenance_modifier = -0.75
+		local_autonomy = -0.3
+		allowed_num_of_buildings = 2
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = city_hall
+			obsolete_building = town_hall
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+		if = { 
+			limit = { 
+				FROM = { has_country_flag = fra_town_hall_bonus_flag }
+				NOT = { has_province_modifier = fra_improved_town_hall_modifier }
+			}
+			add_province_modifier = {
+				name = fra_improved_town_hall_modifier
+				duration = -1 
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = city_hall
+			type = tax
+			value = 2
+		}
+		remove_province_modifier = fra_improved_town_hall_modifier 
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 2
+		
+		#ECONOMY 101
+        #AI avoids building with loans
+		modifier = {
+			factor = 10
+			has_building = town_hall
+		}
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+        modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		#AI will try to stockpile some amount of money
+        modifier = {
+            factor = 0.75
+            owner = { NOT = { treasury = 400 } }
+        }
+		#SPECIFIC
+		#AI less likely to build in provinces with low development
+		modifier = {
+			factor = 0.5
+			NOT = { development = 6	}			
+		}
+        #AI more likely to build in provinces with high development
+        modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		#AI less likely to build if autonomy is too low
+		modifier = {
+			factor = 0.75
+			NOT = { local_autonomy = 10 }			
+		}
+		#AI more likely to build if autonomy is too high
+		modifier = {
+			factor = 1.5
+			local_autonomy = 20
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 40
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 60
+		}
+		modifier = {
+			factor = 1.5
+			local_autonomy = 85			
+		}
+		#AI less likely to build if it still has plenty of governing capacity
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { governing_capacity_percentage = 0.5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { governing_capacity_percentage = 0.7 } }
+		}
+		
+		#AI more likely to build if approaching or over governing capacity
+		modifier = {
+			factor = 5.0
+			owner = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 10.0
+			owner = { governing_capacity_percentage = 1.0 }
+		}
+		modifier = {
+			factor = 15.0
+			owner = { governing_capacity_percentage = 1.1 }
+		}
+		#AI more likely to build when rich
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 800 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1200 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1600 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 2000 }
+		}
+		
+		#AI more likely to build if it's a big nation
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 1000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 2000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { total_development = 3000 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 300 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 400 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
+	}
+}
+
+#Tier 1 Education - Library
+library = {
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
+	time = 12
+    modifier = {
+		local_development_cost = -0.10
+		local_institution_spread = 0.5
+		#Changed from 0.5 to better represent that universities were often the birthplace of scientific advancements and innovation.
+		#Brought back local_development_cost and removed those tax and production modifier.
+		#OP really said "Universities do encourage complex economic systems, advanced industry, and improved production methods" in the same line as "I wouldn't say universities aid development".
+	}
+
+	on_built = {
+		add_development_from_building = {
+			building = library
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = library
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	#Neart perfect copy because I'm not spending my time organising this. Economy 101 was shoved at the end.
+	ai_will_do = {
+		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
+		factor = 12			#VU Addon changed from 1. Changing all base factors to price divided by 100.
+		#VU Addon cut a bunch of... not horrible but not great AI code here encouraging unis to be built. Replacing it below. Vanilla range was 36 percent to 7,500 percent.
+		#Note with this addon, universities are no longer economically worthless, and I am assuming the AI will pick up on that. I do not know, however, what the exact figures are and thus balancing it will be a challenge. For a start, it has roughly half the economic contribution of a cathedral, but x3 the cost,
+		#assuming the new AI is not smart enough to pick up on institution spread modifiers, which do not exist in vanilla, without any other modifiers I'm assuming (notice a trend here?) that it will require a factor of 6 or so before the AI will choose this before a cathedral or a factor of 12 to pick before a temple.
+		#VU Addon New factors, range (roughly) 0.0001 percent to over 50,000 percent. Note vanilla range was 36 percent to 7,500 percent.
+		###############################################################################################
+		###############		Using tech groups to establish base factors of 0.3 to 4		###############
+		###############################################################################################
+		modifier = {
+			factor = 10
+			development = 16
+		}
+		modifier = {
+			factor = 1.4
+			development = 21
+		}
+		modifier = {
+			factor = 1.4
+			development = 26
+		}
+		modifier = {
+			factor = 1.4
+			development = 30
+		}
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_climate = tropical
+				has_climate = arid
+			}
+		}
+		modifier = {
+			factor = 0.2
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 1.3
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 2
+			is_year = 1690 # Enlightenment spawns in 1700
+			not = {
+				owner = {
+					has_institution = enlightenment
+				}
+			}
+			not = {
+				provincial_institution_progress = {
+					which = enlightenment
+					value = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3			#One 20th of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = mesoamerican
+					technology_group = andean
+					technology_group = north_american
+					technology_group = south_american
+					#Any other future new world cultures should be added here
+				}
+			}
+		}	#Much as I love the concept of a bustling university discovering advanced scientific principles while speaking Maori or something equally absurd/obscure, the fact is some technology groups simply did not have the infrastructure, history, or circumstance to evolve in this way. Making it very unlikely
+		modifier = {
+			factor = 1			#One 6th of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = indian
+					technology_group = east_african
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = central_african
+					technology_group = nomad_group
+				}
+			}
+		}	#Penalty for medium-low tech groups
+		modifier = {
+			factor = 2			#One 3rd of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = ottoman
+					technology_group = persian_tech_group
+					technology_group = muslim
+				}
+			}
+		}	#Lesser penalty for non european medium-high tech groups.
+		modifier = {
+			factor = 3			#half of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = eastern
+				    technology_group = bohemian_tech_group
+				    technology_group = byzantine_tech_group
+				    technology_group = hungarian_tech_group
+				    technology_group = polish_tech_group
+				    technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
+				}
+			}
+		}	#Medium range for eastern, and throwing in High American for fun as this is effectively the default level.
+		modifier = {
+			factor = 4			#Two 3rds of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
+					technology_group = italian_tech_group
+					technology_group = portuguese_tech_group
+					technology_group = roman_tech_group
+					technology_group = scandinavian_tech_group
+					technology_group = spanish_tech_group
+					technology_group = swiss_tech_group
+				}
+			}
+		}	#The concept of a university may or may not be a uniquely western concept, but in this specific period, it was a western reality, less so elsewhere. Though as a point of interest, universities were a very different beast in this period than the BA most modern people think of.
+		################################################################################
+		###############		Various bonuses and penalties to make things dynamic		###############
+		################################################################################
+		#Note that IN THEORY, without any other modifiers, it would require....
+		#About 4 of the 1.4 bonuses for Muslim or Ottoman tech to build a uni before a cathedral and all 6 to be a higher priority than a temple,
+		#all 6 1.4 bonuses for other Old World techs to build a uni before a cathedral and they will never place it above a temple,
+		#New World techs will effectively never build unis without player intervention,
+		#eastern requires about 3 of the 1.4 bonuses to place them as a higher priority than cathedrals or 5 of the 1.4 bonuses to be a higher priority than a temple,
+		#and western will place them at a higher priority than cathedrals with 2 1.4 bonuses. or a higher priority than temples with 4 1.4 bonuses.
+		#Once 5 universities are built, the AI will be less likely to build more.
+		modifier = {
+			factor = 1.4
+			FROM = { ruler_has_personality = scholar_personality }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { advisor = natural_scientist }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { advisor = philosopher }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { full_idea_group = innovativeness_ideas }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { is_great_power = yes }			#Primarily to keep Russia, Poland, and Ottomans in line with western, and the top western powers ahead of everyone else, as real history went, but also may potentially help China, India, or any ahistorical superpower in Asia or Africa as well.
+		}
+		modifier = {
+			factor = 1.4
+			province_has_center_of_trade_of_level = 1			#Cheap shortcut method to try to get unis in plausible rich centers, especially for alt history non-european unis.
+		}
+		modifier = {
+			factor = 1.18			#Half strength
+			num_of_times_improved = 10
+		}	#A province which has been developed intensely is slightly more likely to get a uni
+		modifier = {
+			factor = 10
+			is_institution_origin = enlightenment
+		}
+		modifier = {
+			factor = 0.2
+			FROM = {
+				num_of_owned_provinces_with = {
+					value = 5
+					OR = {
+						has_building = library
+						has_construction = library
+					}
+					is_core = PREV			#I'm useless with coding =p. Do I need PREV or ROOT here, or will either work?
+				}
+			}
+		}	#If the owner has 5 cores with unis already, make it less likely to build more
+		modifier = {
+			factor = 0.2
+			any_neighbor_province = {
+				has_building = library
+			}
+		}	#Hopefully this doesn't make the engine go too insane. From a gameplay perspective, this is huge at distributing enlightenment spreaders evenly. Could also try to do something area related, but with the other factors below this should suffice.
+		####################################################################################################
+		##########	Effectively disabling unis for fringes, harsh climates, minorities, and non western minors 	##########
+		####################################################################################################
+		modifier = {
+			factor = 0.1
+			FROM = {
+				NOT = { 
+					OR = {
+				    	technology_group = western
+				    	technology_group = dutch_tech_group
+				    	technology_group = english_tech_group
+				    	technology_group = french_tech_group
+				    	technology_group = german_tech_group
+				    	technology_group = italian_tech_group
+				    	technology_group = portuguese_tech_group
+				    	technology_group = roman_tech_group
+				    	technology_group = scandinavian_tech_group
+				    	technology_group = spanish_tech_group
+				    	technology_group = swiss_tech_group
+				    }
+				}
+				NOT = {
+					OR = {
+						technology_group = eastern
+						technology_group = bohemian_tech_group
+						technology_group = byzantine_tech_group
+						technology_group = hungarian_tech_group
+						technology_group = polish_tech_group
+						technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
+				}
+				NOT = { total_development = 200 }
+			}	#Small non European AI countries shouldn't build many unis, further penalty even beyond the tech group penalty above.
+		}
+		modifier = {
+			factor = 0.5
+			is_in_capital_area = no
+		}			#AI should rarely build uni in a province which is not connected to the capital by land. This could cause some issues in the extremely rare cases of thalassocracies, but it fixes far more problems than it creates, so leaving it.
+		modifier = {
+			factor = 0.1
+			is_state = no
+		}			#AI should almost never build uni in a province which is not a state
+		modifier = {
+			factor = 0.1
+			has_owner_culture = no
+			has_owner_accepted_culture = no
+		}			#AI should almost never build uni in a province with a different culture, even if that culure is accepted
+		modifier = {
+			factor = 0.33
+			has_owner_culture = no
+			has_owner_accepted_culture = yes
+		}			#Though an accepted culture is still more likely than a non accepted culture
+		modifier = {
+			factor = 0.1
+			has_owner_religion = no
+		}			#AI should almost never build uni in a province with a different religion, even if there is positive tolerance.
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_climate = tropical
+				has_climate = arctic
+				has_climate = arid
+			}
+		}	#AI should almost never build uni in a province with a hostile climate. This may hurt the chances of some small countries who only own land in these climate types, but well... they really shouldn't be building too many unis anyway, with very, very few exceptions. As in none I can think of
+		################################################################################
+		###############	Almost guaranteeing unis in provinces with real historical universities	###############
+		################################################################################
+		#modifier = {
+		#	factor = 20
+		#	OR = {
+		#		province_id = 4730		#Bologna, 1088
+		#		province_id = 237			#Oxford, 1096
+		#		province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
+		#		province_id = 3027		#Cambrige, 1209
+		#		province_id = 216			#Salamanca, 1218
+		#		province_id = 108			#Padua (actually Verona atm, might add some provinces to Italy in the future), 1222 or older
+		#		province_id = 121			#Naples, 1224
+		#		province_id = 196			#Toulouse, 1229
+		#		province_id = 200			#Montpellier, 1289
+		#		province_id = 119			#Macerata (Ancona), 1290
+		#		province_id = 1851		#Coimbra (actually started in Lisbon and moved to Coimbra in 1537, but whatever), 1290
+		#		province_id = 217			#Alcala (Madrid), 1293
+		#		province_id = 118			#Rome, 1303
+		#		province_id = 2976		#Perugia (Umbria), 1308
+		#		province_id = 116			#Florence, 1321
+		#		province_id = 115			#Pisa, 1343
+		#		province_id = 266			#Prague, 1348
+		#		province_id = 4728		#Pavia, 1361
+		#		province_id = 262			#Jagiellonian (Krakow), 1364
+		#		province_id = 134			#Vienna, 1365
+		#		province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
+		#		province_id = 113			#Ferrara, 1391
+		#		province_id = 103			#Turin, 1404
+		#		province_id = 117			#Siena, 1408
+		#		province_id = 62			#Leipzig, 1409
+		#		province_id = 250			#St. Andrews (Fife), 1413
+		#		province_id = 46			#Rostock, 1419
+		#		province_id = 168			#Caen, 1432
+		#		province_id = 124			#Catania (Mesina), 1434
+		#	}
+		#}			#Few little nudges to history to try to encourage the main historical universities (Which actually exisited prior to our start date) to be 'built' in the proper provinces first. For Unis founded after our 1444 start date, I'm not doing anything. There are several more which no longer exist, but for those I have to figure out when they closed, so not doing them now.
+		################################################################################
+		##########	End of the insanely overcomplicated uni AI controls by VU's Misc Addon	##########
+		################################################################################
+		#P.S. Sorry I got carried away, hopefully the engine doesn't blow up calculating all these.
+		
+		#ECONOMY 101
+        #AI avoids building with loans
+        modifier = {
+            factor = 0
+            owner = { num_of_loans = 3 }
+        }
+        modifier = {
+            factor = 0.3
+            owner = { num_of_loans = 2 }
+        }
+        modifier = {
+            factor = 0.5
+            owner = { num_of_loans = 1 }
+        }
+        
+        #AI avoids building when in deficit
+        modifier = {
+            factor = 0.75
+            owner = { is_in_deficit = yes }
+        }
+        
+        #AI will try to stockpile some amount of money
+        modifier = {
+            factor = 0.75
+            owner = { NOT = { treasury = 800 } }
+        }
+		
+		#AI less likely to build in provinces with low development
+		modifier = {
+			factor = 0.1
+			NOT = { development = 9 }
+		}
+		
+		#AI more likely to build in provinces with high development
+        modifier = {
+            factor = 1.18
+            development = 21
+        }
+		
+		#AI more likely to build when rich
+		modifier = {
+			factor = 1.1
+			owner = { treasury = 1600 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { treasury = 2400 }
+		}
+		modifier = {
+			factor = 1.3
+			owner = { treasury = 3200 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { treasury = 4000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1400 }
+		}
+	}
+}
+
+#Tier 2 Education - School
+school = {
+	cost = 600 #VU - Increased from 300 to 600 in v1.36.2.* by San Felipe
+	time = 12
+    modifier = {
+		local_development_cost = -0.10
+		local_institution_spread = 0.5
+		#Changed from 0.5 to better represent that universities were often the birthplace of scientific advancements and innovation.
+		#Brought back local_development_cost and removed those tax and production modifier.
+		#OP really said "Universities do encourage complex economic systems, advanced industry, and improved production methods" in the same line as "I wouldn't say universities aid development".
+	}
+
+	on_built = {
+		add_development_from_building = {
+			building = school
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = school
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	#Neart perfect copy because I'm not spending my time organising this. Economy 101 was shoved at the end.
+	ai_will_do = {
+		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
+		factor = 12			#VU Addon changed from 1. Changing all base factors to price divided by 100.
+		#VU Addon cut a bunch of... not horrible but not great AI code here encouraging unis to be built. Replacing it below. Vanilla range was 36 percent to 7,500 percent.
+		#Note with this addon, universities are no longer economically worthless, and I am assuming the AI will pick up on that. I do not know, however, what the exact figures are and thus balancing it will be a challenge. For a start, it has roughly half the economic contribution of a cathedral, but x3 the cost,
+		#assuming the new AI is not smart enough to pick up on institution spread modifiers, which do not exist in vanilla, without any other modifiers I'm assuming (notice a trend here?) that it will require a factor of 6 or so before the AI will choose this before a cathedral or a factor of 12 to pick before a temple.
+		#VU Addon New factors, range (roughly) 0.0001 percent to over 50,000 percent. Note vanilla range was 36 percent to 7,500 percent.
+		###############################################################################################
+		###############		Using tech groups to establish base factors of 0.3 to 4		###############
+		###############################################################################################
+		modifier = {
+			factor = 10
+			development = 16
+		}
+		modifier = {
+			factor = 1.4
+			development = 21
+		}
+		modifier = {
+			factor = 1.4
+			development = 26
+		}
+		modifier = {
+			factor = 1.4
+			development = 30
+		}
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_climate = tropical
+				has_climate = arid
+			}
+		}
+		modifier = {
+			factor = 0.2
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 1.3
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 2
+			is_year = 1690 # Enlightenment spawns in 1700
+			not = {
+				owner = {
+					has_institution = enlightenment
+				}
+			}
+			not = {
+				provincial_institution_progress = {
+					which = enlightenment
+					value = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3			#One 20th of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = mesoamerican
+					technology_group = andean
+					technology_group = north_american
+					technology_group = south_american
+					#Any other future new world cultures should be added here
+				}
+			}
+		}	#Much as I love the concept of a bustling university discovering advanced scientific principles while speaking Maori or something equally absurd/obscure, the fact is some technology groups simply did not have the infrastructure, history, or circumstance to evolve in this way. Making it very unlikely
+		modifier = {
+			factor = 1			#One 6th of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = indian
+					technology_group = east_african
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = central_african
+					technology_group = nomad_group
+				}
+			}
+		}	#Penalty for medium-low tech groups
+		modifier = {
+			factor = 2			#One 3rd of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = ottoman
+					technology_group = persian_tech_group
+					technology_group = muslim
+				}
+			}
+		}	#Lesser penalty for non european medium-high tech groups.
+		modifier = {
+			factor = 3			#half of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = eastern
+				    technology_group = bohemian_tech_group
+				    technology_group = byzantine_tech_group
+				    technology_group = hungarian_tech_group
+				    technology_group = polish_tech_group
+				    technology_group = russian_tech_group
+					technology_group = bulgarian_tech_group
+				}
+			}
+		}	#Medium range for eastern, and throwing in High American for fun as this is effectively the default level.
+		modifier = {
+			factor = 4			#Two 3rds of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
+			FROM = {
+				OR = {
+					technology_group = western
+					technology_group = dutch_tech_group
+					technology_group = english_tech_group
+					technology_group = french_tech_group
+					technology_group = german_tech_group
+					technology_group = italian_tech_group
+					technology_group = portuguese_tech_group
+					technology_group = roman_tech_group
+					technology_group = scandinavian_tech_group
+					technology_group = spanish_tech_group
+					technology_group = swiss_tech_group
+				}
+			}
+		}	#The concept of a university may or may not be a uniquely western concept, but in this specific period, it was a western reality, less so elsewhere. Though as a point of interest, universities were a very different beast in this period than the BA most modern people think of.
+		################################################################################
+		###############		Various bonuses and penalties to make things dynamic		###############
+		################################################################################
+		#Note that IN THEORY, without any other modifiers, it would require....
+		#About 4 of the 1.4 bonuses for Muslim or Ottoman tech to build a uni before a cathedral and all 6 to be a higher priority than a temple,
+		#all 6 1.4 bonuses for other Old World techs to build a uni before a cathedral and they will never place it above a temple,
+		#New World techs will effectively never build unis without player intervention,
+		#eastern requires about 3 of the 1.4 bonuses to place them as a higher priority than cathedrals or 5 of the 1.4 bonuses to be a higher priority than a temple,
+		#and western will place them at a higher priority than cathedrals with 2 1.4 bonuses. or a higher priority than temples with 4 1.4 bonuses.
+		#Once 5 universities are built, the AI will be less likely to build more.
+		modifier = {
+			factor = 1.4
+			FROM = { ruler_has_personality = scholar_personality }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { advisor = natural_scientist }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { advisor = philosopher }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { full_idea_group = innovativeness_ideas }
+		}
+		modifier = {
+			factor = 1.4
+			FROM = { is_great_power = yes }			#Primarily to keep Russia, Poland, and Ottomans in line with western, and the top western powers ahead of everyone else, as real history went, but also may potentially help China, India, or any ahistorical superpower in Asia or Africa as well.
+		}
+		modifier = {
+			factor = 1.4
+			province_has_center_of_trade_of_level = 1			#Cheap shortcut method to try to get unis in plausible rich centers, especially for alt history non-european unis.
+		}
+		modifier = {
+			factor = 1.18			#Half strength
+			num_of_times_improved = 10
+		}	#A province which has been developed intensely is slightly more likely to get a uni
+		modifier = {
+			factor = 10
+			is_institution_origin = enlightenment
+		}
+		modifier = {
+			factor = 0.2
+			FROM = {
+				num_of_owned_provinces_with = {
+					value = 5
+					OR = {
+						has_building = school
+						has_construction = school
+					}
+					is_core = PREV			#I'm useless with coding =p. Do I need PREV or ROOT here, or will either work?
+				}
+			}
+		}	#If the owner has 5 cores with unis already, make it less likely to build more
+		modifier = {
+			factor = 0.2
+			any_neighbor_province = {
+				has_building = school
+			}
+		}	#Hopefully this doesn't make the engine go too insane. From a gameplay perspective, this is huge at distributing enlightenment spreaders evenly. Could also try to do something area related, but with the other factors below this should suffice.
+		####################################################################################################
+		##########	Effectively disabling unis for fringes, harsh climates, minorities, and non western minors 	##########
+		####################################################################################################
+		modifier = {
+			factor = 0.1
+			FROM = {
+				NOT = { 
+					OR = {
+				    	technology_group = western
+				    	technology_group = dutch_tech_group
+				    	technology_group = english_tech_group
+				    	technology_group = french_tech_group
+				    	technology_group = german_tech_group
+				    	technology_group = italian_tech_group
+				    	technology_group = portuguese_tech_group
+				    	technology_group = roman_tech_group
+				    	technology_group = scandinavian_tech_group
+				    	technology_group = spanish_tech_group
+				    	technology_group = swiss_tech_group
+				    }
+				}
+				NOT = {
+					OR = {
+						technology_group = eastern
+						technology_group = bohemian_tech_group
+						technology_group = byzantine_tech_group
+						technology_group = hungarian_tech_group
+						technology_group = polish_tech_group
+						technology_group = russian_tech_group
+						technology_group = bulgarian_tech_group
+					}
+				}
+				NOT = { total_development = 200 }
+			}	#Small non European AI countries shouldn't build many unis, further penalty even beyond the tech group penalty above.
+		}
+		modifier = {
+			factor = 0.5
+			is_in_capital_area = no
+		}			#AI should rarely build uni in a province which is not connected to the capital by land. This could cause some issues in the extremely rare cases of thalassocracies, but it fixes far more problems than it creates, so leaving it.
+		modifier = {
+			factor = 0.1
+			is_state = no
+		}			#AI should almost never build uni in a province which is not a state
+		modifier = {
+			factor = 0.1
+			has_owner_culture = no
+			has_owner_accepted_culture = no
+		}			#AI should almost never build uni in a province with a different culture, even if that culure is accepted
+		modifier = {
+			factor = 0.33
+			has_owner_culture = no
+			has_owner_accepted_culture = yes
+		}			#Though an accepted culture is still more likely than a non accepted culture
+		modifier = {
+			factor = 0.1
+			has_owner_religion = no
+		}			#AI should almost never build uni in a province with a different religion, even if there is positive tolerance.
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_climate = tropical
+				has_climate = arctic
+				has_climate = arid
+			}
+		}	#AI should almost never build uni in a province with a hostile climate. This may hurt the chances of some small countries who only own land in these climate types, but well... they really shouldn't be building too many unis anyway, with very, very few exceptions. As in none I can think of
+		################################################################################
+		###############	Almost guaranteeing unis in provinces with real historical universities	###############
+		################################################################################
+		#modifier = {
+		#	factor = 20
+		#	OR = {
+		#		province_id = 4730		#Bologna, 1088
+		#		province_id = 237			#Oxford, 1096
+		#		province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
+		#		province_id = 3027		#Cambrige, 1209
+		#		province_id = 216			#Salamanca, 1218
+		#		province_id = 108			#Padua (actually Verona atm, might add some provinces to Italy in the future), 1222 or older
+		#		province_id = 121			#Naples, 1224
+		#		province_id = 196			#Toulouse, 1229
+		#		province_id = 200			#Montpellier, 1289
+		#		province_id = 119			#Macerata (Ancona), 1290
+		#		province_id = 1851		#Coimbra (actually started in Lisbon and moved to Coimbra in 1537, but whatever), 1290
+		#		province_id = 217			#Alcala (Madrid), 1293
+		#		province_id = 118			#Rome, 1303
+		#		province_id = 2976		#Perugia (Umbria), 1308
+		#		province_id = 116			#Florence, 1321
+		#		province_id = 115			#Pisa, 1343
+		#		province_id = 266			#Prague, 1348
+		#		province_id = 4728		#Pavia, 1361
+		#		province_id = 262			#Jagiellonian (Krakow), 1364
+		#		province_id = 134			#Vienna, 1365
+		#		province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
+		#		province_id = 113			#Ferrara, 1391
+		#		province_id = 103			#Turin, 1404
+		#		province_id = 117			#Siena, 1408
+		#		province_id = 62			#Leipzig, 1409
+		#		province_id = 250			#St. Andrews (Fife), 1413
+		#		province_id = 46			#Rostock, 1419
+		#		province_id = 168			#Caen, 1432
+		#		province_id = 124			#Catania (Mesina), 1434
+		#	}
+		#}			#Few little nudges to history to try to encourage the main historical universities (Which actually exisited prior to our start date) to be 'built' in the proper provinces first. For Unis founded after our 1444 start date, I'm not doing anything. There are several more which no longer exist, but for those I have to figure out when they closed, so not doing them now.
+		################################################################################
+		##########	End of the insanely overcomplicated uni AI controls by VU's Misc Addon	##########
+		################################################################################
+		#P.S. Sorry I got carried away, hopefully the engine doesn't blow up calculating all these.
+		
+		#ECONOMY 101
+        #AI avoids building with loans
+        modifier = {
+            factor = 0
+            owner = { num_of_loans = 3 }
+        }
+        modifier = {
+            factor = 0.3
+            owner = { num_of_loans = 2 }
+        }
+        modifier = {
+            factor = 0.5
+            owner = { num_of_loans = 1 }
+        }
+        
+        #AI avoids building when in deficit
+        modifier = {
+            factor = 0.75
+            owner = { is_in_deficit = yes }
+        }
+        
+        #AI will try to stockpile some amount of money
+        modifier = {
+            factor = 0.75
+            owner = { NOT = { treasury = 800 } }
+        }
+		
+		#AI less likely to build in provinces with low development
+		modifier = {
+			factor = 0.1
+			NOT = { development = 9 }
+		}
+		
+		#AI more likely to build in provinces with high development
+        modifier = {
+            factor = 1.18
+            development = 21
+        }
+		
+		#AI more likely to build when rich
+		modifier = {
+			factor = 1.1
+			owner = { treasury = 1600 }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { treasury = 2400 }
+		}
+		modifier = {
+			factor = 1.3
+			owner = { treasury = 3200 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { treasury = 4000 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { treasury = 1400 }
+		}
+	}
+}
+
+#Tier 3 Education - University
+university = {
+	cost = 900 #VU - Increased from 600 to 900 in v1.36.2.* by San Felipe
+	time = 36
 	#VU AddOn price changed from 300. This is late game, vital to the spread of the enlightenment, and generally very important.
 	#Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think.
 	#Changing cost and time to be closer to/higher than the earlier manufactories.
@@ -3020,24 +4196,102 @@ university = {
 	#VU AddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
 	
 	modifier = {
+		local_development_cost = -0.20
 		local_institution_spread = 1.0
 		#Changed from 0.5 to better represent that universities were often the birthplace of scientific advancements and innovation.
-		
-		local_development_cost = -0.25
 		#Brought back local_development_cost and removed those tax and production modifier.
 		#OP really said "Universities do encourage complex economic systems, advanced industry, and improved production methods" in the same line as "I wouldn't say universities aid development".
 	}
 
+	on_built = {
+		add_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
 	#Neart perfect copy because I'm not spending my time organising this. Economy 101 was shoved at the end.
 	ai_will_do = {
+		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
 		factor = 12			#VU Addon changed from 1. Changing all base factors to price divided by 100.
 		#VU Addon cut a bunch of... not horrible but not great AI code here encouraging unis to be built. Replacing it below. Vanilla range was 36 percent to 7,500 percent.
 		#Note with this addon, universities are no longer economically worthless, and I am assuming the AI will pick up on that. I do not know, however, what the exact figures are and thus balancing it will be a challenge. For a start, it has roughly half the economic contribution of a cathedral, but x3 the cost,
 		#assuming the new AI is not smart enough to pick up on institution spread modifiers, which do not exist in vanilla, without any other modifiers I'm assuming (notice a trend here?) that it will require a factor of 6 or so before the AI will choose this before a cathedral or a factor of 12 to pick before a temple.
 		#VU Addon New factors, range (roughly) 0.0001 percent to over 50,000 percent. Note vanilla range was 36 percent to 7,500 percent.
-		################################################################################
+		###############################################################################################
 		###############		Using tech groups to establish base factors of 0.3 to 4		###############
-		################################################################################
+		###############################################################################################
+		modifier = {
+			factor = 10
+			development = 16
+		}
+		modifier = {
+			factor = 1.4
+			development = 21
+		}
+		modifier = {
+			factor = 1.4
+			development = 26
+		}
+		modifier = {
+			factor = 1.4
+			development = 30
+		}
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_climate = tropical
+				has_climate = arid
+			}
+		}
+		modifier = {
+			factor = 0.2
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 1.3
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 2
+			is_year = 1690 # Enlightenment spawns in 1700
+			not = {
+				owner = {
+					has_institution = enlightenment
+				}
+			}
+			not = {
+				provincial_institution_progress = {
+					which = enlightenment
+					value = 20
+				}
+			}
+		}
 		modifier = {
 			factor = 0.3			#One 20th of 6, which is what it would require to roughly match a cathedral in priority with no other modifiers
 			FROM = {
@@ -3342,7 +4596,7 @@ university = {
 
 #Tier 1 Taxation - Temple
 temple = {
-	cost = 100
+	cost = 250 #VU - Increased from 100 to 250 in v1.36.2.* by San Felipe
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.01
@@ -3351,7 +4605,14 @@ temple = {
 		local_tax_modifier = 0.5
 		#Changed this from 0.3 to 0.5 since temples were really not worth it from an economic POV. Higher taxation should make it worthwhile in high dev provinces.
 	}
+	build_trigger = {
+		if = {
+			limit = { FROM = { ai = yes } }
+			FROM = { NOT = { num_of_loans = 4 } }
+		}
+	}
 	on_built = {
+		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_building = {
 			building = temple
@@ -3379,14 +4640,43 @@ temple = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
 	}
-	
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
 		remove_development_from_building = {
 			building = temple
 			type = tax
 			value = 1
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
 		}
 		if = {
 			limit = {
@@ -3400,33 +4690,43 @@ temple = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
 	}
-	
-	keep_trigger = {
-	    always = yes
-	}
-	
 	on_obsolete = {
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
 	}
 
+	onmap = yes
+
+	influencing_fort = yes
+
 	ai_will_do = {
-		factor = 1
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
 
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
 			factor = 0
-			owner = { num_of_loans = 3 }
+			OR = {
+				FROM = { num_of_loans = 1 }
+			}
 		}
-		modifier = {
-			factor = 0.3
-			owner = { num_of_loans = 2 }
-		}
-		modifier = {
-			factor = 0.5
-			owner = { num_of_loans = 1 }
-		}
-		
+		#FROM AUTONOMY
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
@@ -3441,6 +4741,32 @@ temple = {
 		
 		#SPECIFIC
 		#AI more likely to build in provinces with high development
+		modifier = {
+			factor = 0.4
+			local_autonomy = 75
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0.8
+			local_autonomy = 25
+		}
+		#FROM BASE DEV
+		modifier = {
+			factor = 3.0
+			base_tax = 4
+		}
+		modifier = {
+			factor = 6.0
+			base_tax = 6
+		}
+		modifier = {
+			factor = 9.0
+			base_tax = 8
+		}
+		#FROM TRADE GOODS
 		modifier = {
 			factor = 2.5
 			development = 15
@@ -3478,22 +4804,33 @@ temple = {
 			factor = 2.0
 			FROM = { government = theocracy }			
 		}
+		modifier = {
+			factor = 100.0
+			num_free_building_slots = 3
+		}
+		#FROM CASH
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
+		}
 	}
 }
 
 #Tier 2 Taxation - Cathedral
 cathedral = {
 	make_obsolete = temple
-	cost = 200
+	cost = 500 #VU - Increased from 300 to 500 in v1.36.2.* by San Felipe
 	time = 24
 	modifier = {
-		local_missionary_strength = 0.02
+		local_missionary_strength = 0.03
 		local_tax_modifier = 0.75
 	}
 	#VU AddOn changed price from 300. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
 	#VU AddOn changed from 12. Doubling upgraded buildings' build time.
-	
 	on_built = {
+		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
 		add_development_from_upgrading_or_building = {
 			building = cathedral
@@ -3523,6 +4860,28 @@ cathedral = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			add_province_modifier = {
+				name = turkoman_peaceful_worshipping
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = -0.25
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -3530,6 +4889,14 @@ cathedral = {
 			building = cathedral
 			type = tax
 			value = 2
+		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = mosque_local_unrest_flag
+				}
+			}
+			remove_province_modifier = turkoman_peaceful_worshipping
 		}
 		if = {
 			limit = {
@@ -3543,6 +4910,17 @@ cathedral = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		if = {
+			limit = {
+				FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+			}
+			FROM = {
+				change_estate_land_share = {
+					estate = all
+					share = 0.25
+				}
+			}
+		}
 	}
 	on_obsolete = {
 	}
@@ -3622,7 +5000,7 @@ cathedral = {
 #Tier 3 Taxation - Grand Cathedral
 grand_cathedral = {
     make_obsolete = cathedral
-	cost = 400
+	cost = 750 #VU - Increased from 400 to 750 in v1.36.2.* by San Felipe
 	time = 36
 	modifier = {
 		local_missionary_strength = 0.05
@@ -3761,7 +5139,7 @@ grand_cathedral = {
 
 #Tier 1 Transportation - Road System
 road_system = {
-	cost = 50
+	cost = 100 #VU - Kept at 100 in v1.36.2.* by San Felipe
 	time = 6
 	
 	modifier = {
@@ -3783,6 +5161,31 @@ road_system = {
 		allowed_num_of_buildings = 1
 		#This allows for improved transportation between urban and rural areas, so buildings can be made when otherwise they would be too far to get to.
 		#Also serves the gameplay function of tecnically not costing a building slot.
+	}
+
+	build_trigger = {
+		FROM = {
+			adm_tech = 3
+		}
+		if = {
+			limit = { FROM = { ai = yes } }
+			FROM = { NOT = { num_of_loans = 4 } }
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
 	}
 
 	ai_will_do = {
@@ -3935,12 +5338,17 @@ road_system = {
 				has_building = fort_18th
 			}
 		}
+		#modifier = {
+	    #	local_friendly_movement_speed = 0.2
+	    #	province_trade_power_modifier = 0.2
+	    #	allowed_num_of_buildings = 1
+	    #}
 	}
 }
 
 #Tier 2 Transportation - Canal System
 canal_system = {
-	cost = 100
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
 	time = 12
 	
 	make_obsolete = road_system
@@ -3955,10 +5363,10 @@ canal_system = {
 		local_development_cost = -0.15
 		#Canals significantly improved the development of any cities it connected to by facilitating the transport of people and goods substantially.
 		
-		trade_goods_size_modifier = 0.25
+		trade_goods_size_modifier = 0.20
 		#Canals were significant in boosting the production of local goods.
 		
-		province_trade_power_modifier = 0.25
+		province_trade_power_modifier = 0.20
 		#Canals played a crucial role in trade power, generating modest wealth for those lucky enough to invest in this alternative form of goods transportation.
 		
 		allowed_num_of_buildings = 1
@@ -3988,46 +5396,50 @@ canal_system = {
 			}
 		}
 	}
-
 	ai_will_do = {
 		factor = 100
-		
 		### ECONOMY
-		
 		#AI avoids building with loans.
 		modifier = {
 			factor = 0
-			owner = { num_of_loans = 3 }
+			FROM = { num_of_loans = 1 }
 		}
-		modifier = {
-			factor = 0.2
-			owner = { num_of_loans = 2 }
-		}
-		modifier = {
-			factor = 0.4
-			owner = { num_of_loans = 1 }
-		}
-		
 		#AI avoids building when in deficit.
 		modifier = {
 			factor = 0.5
 			owner = { is_in_deficit = yes }
 		}
-		
+		modifier = {
+			factor = 4.5
+			owner = { is_subject = yes }
+		}
 		#AI avoids building when it doesn't have a lot of money.
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { treasury = 200 } }
 		}
-		
+		modifier = {
+			factor = 100.0
+			FROM = { treasury = 10000 }
+		}
+		modifier = {
+			factor = 10
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = {
+			factor = 20
+			province_has_center_of_trade_of_level = 2
+		}
+		modifier = {
+			factor = 30
+			province_has_center_of_trade_of_level = 3
+		}
 		### GENERAL
-		
 		#AI is VERY encouraged to build in its capital.
 		modifier = {
 			factor = 20
 			is_capital = yes
 		}
-		
 		#AI is VERY encouraged to build in capital area.
 		modifier = {
 			factor = 10
@@ -4044,7 +5456,6 @@ canal_system = {
 			factor = 3
 			has_owner_culture = yes
 		}
-		
 		#AI is encouraged to build in provinces with high development.
 		modifier = {
 			factor = 2
@@ -4066,21 +5477,17 @@ canal_system = {
 			factor = 10
 			development = 75 #25/25/25
 		}
-		
 		#AI is discouraged to build in provinces that are not accepted cultures.
 		modifier = {
 			factor = 0.75
 			has_owner_accepted_culture = no
 		}
-		
 		#AI is discouraged to build in provinces with different religion.
 		modifier = {
 			factor = 0.75
 			has_owner_religion = no
 		}
-		
 		### ADJACENT
-		
 		#AI is encouraged to build nearby other infrastructure buildings.
 		modifier = {
 			factor = 2
@@ -4100,7 +5507,6 @@ canal_system = {
 				has_building = railway_system
 			}
 		}
-		
 		#AI is encouraged to build in provinces with forts.
 		modifier = {
 			factor = 3
@@ -4118,7 +5524,6 @@ canal_system = {
 			factor = 12
 			has_building = fort_18th
 		}
-		
 		#AI is encouraged to build nearby forts.
 		modifier = {
 			factor = 2
@@ -4144,15 +5549,12 @@ canal_system = {
 				has_building = fort_18th
 			}
 		}
-		
 		### UPGRADE
-		
 		#AI is encouraged to build in coastal provinces.
 		modifier = {
 			factor = 2
 			has_port = yes
 		}
-		
 		#AI is encouraged to upgrade infrastructure buildings.
 		modifier = {
 			factor = 2
@@ -4163,8 +5565,8 @@ canal_system = {
 
 #Tier 3 Transportation - Railway System
 railway_system = {
-	cost = 200
-	time = 24
+	cost = 300 #VU - Increased from 250 to 300 in v1.36.2.* by San Felipe
+	time = 18
 	
 	make_obsolete = canal_system
 	
@@ -4178,10 +5580,10 @@ railway_system = {
 		#Can't build if province has a terrain not suitable for railways.
 		NOT = {
 			OR = {
-				has_terrain = mountain
-			    has_terrain = cold_mountains
-			    has_terrain = desert_ranges
-			    has_terrain = tundra_terrain
+				#has_terrain = mountain       #VU - Hashed these out as it doesn't really make any sense that you can't build railroads in or on top mountains.
+			    #has_terrain = cold_mountains
+			    #has_terrain = desert_ranges
+			    #has_terrain = tundra_terrain
 			    has_terrain = glacier
 			}
 		}
@@ -4381,11 +5783,11 @@ railway_system = {
 
 ################################################
 
-### COASTAL
+### COASTAL DEFENCE
 
 #Tier 1 Coastal - Naval Base
 naval_base = {
-	cost = 100
+	cost = 250 #VU - Increased from 100 to 250 in v1.36.2.* by San Felipe
 	time = 12
 	
 	build_trigger = {
@@ -4431,32 +5833,31 @@ naval_base = {
             factor = 0.75
             owner = { NOT = { treasury = 200 } }
         }
+		modifier = {
+			factor = 1000.0
+			is_capital = yes
+		}
 	}
 }
 
 #Tier 2 Coastal - Naval Arsenal
 naval_arsenal = {
-	cost = 200
+	cost = 500
 	time = 24
-	
 	build_trigger = {
 		has_port = yes
 	}
-	
 	make_obsolete = naval_base
 	modifier = {
 		blockade_force_required = 1.0
-		hostile_disembark_speed = 1.0
-		
-		hostile_fleet_attrition = 2
+		hostile_disembark_speed = 2.0
+		hostile_fleet_attrition = 5
 		#Added so, firstly, this building is worth it, and secondly, to add a way to counter blockades even if just a little.
-		
 		block_slave_raid = yes
 	}
 
 	ai_will_do = {
 		factor = 1
-        
         #ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -4471,13 +5872,11 @@ naval_arsenal = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
@@ -4488,7 +5887,7 @@ naval_arsenal = {
 
 #Tier 3 Coastal - Coastal Artillery
 coastal_artillery = {
-	cost = 400
+	cost = 750
 	time = 36
 	
 	build_trigger = {
@@ -4535,6 +5934,10 @@ coastal_artillery = {
             factor = 0.75
             owner = { NOT = { treasury = 800 } }
         }
+		modifier = {
+			factor = 1000.0
+			is_capital = yes
+		}
 	}
 }
 
@@ -4544,8 +5947,8 @@ coastal_artillery = {
 
 #Tier 1 Fortification - Castle
 fort_15th = {
-	cost = 100
-	time = 24
+	cost = 250 #VU - Increased from 200 to 250 in v1.36.2.* by San Felipe
+	time = 12
 	#VU AddOn changed price from original 200. Castles were way too cheap to build but also too expensive to maintain in VU. Note upkeep is controlled in defines and is generated based on fort level, I believe with reduced fort levels the vanilla .5 per month per level is fine
 	#Time changed from 30 to 24 so fort levels are 2y, 3y, 4y and 5y respectively.
 	modifier = {
@@ -4767,8 +6170,8 @@ fort_15th = {
 
 #Tier 2 Fortification - Bastion
 fort_16th = {
-	cost = 400
-	time = 48
+	cost = 500 #VU - Increased from 400 to 500 in v1.36.2.* by San Felipe
+	time = 24
 	make_obsolete = fort_15th
 	modifier = {
 		#VU AddOn changed from 4
@@ -4846,6 +6249,7 @@ fort_16th = {
 	}
 
 	onmap = yes
+
 	influencing_fort = yes
 
 	ai_will_do = {
@@ -4991,17 +6395,16 @@ fort_16th = {
 
 #Tier 3 Fortification - Star Fort
 fort_17th = {
-	cost = 600
-	time = 72
+	cost = 750 #VU - Increased from 400 to 750 in v1.36.2.* by San Felipe
+	time = 36
+
 	make_obsolete = fort_16th
 
 	modifier = {
 		#VU AddOn changed from 6
 		fort_level = 3
-		
 		#VU AddOn new
 		local_unrest = -1.5
-		
 		#VU AddOn new
 		local_defensiveness = 0.75
 	}
@@ -5076,7 +6479,6 @@ fort_17th = {
 
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		
 		#ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -5091,19 +6493,16 @@ fort_17th = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 1200 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build when rich
 		modifier = {
@@ -5122,38 +6521,32 @@ fort_17th = {
 			factor = 1.5
 			owner = { treasury = 6000 }
 		}
-		
 		#GENERAL
 		#AI would want to fortify their home province.
 		modifier = {
 			factor = 2
 			is_capital = yes			
 		}
-		
 		#Being a march encourages building forts
 		modifier = {
 			factor = 1.5
 			FROM = { is_march = yes }
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { army_tradition = 20 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 0.95
 			NOT = { FROM = { army_tradition = 40 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 1.05
 			FROM = { army_tradition = 60 }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 1.1
@@ -5178,9 +6571,7 @@ fort_17th = {
 				}
 		    }
 		}
-		
 		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		
 		#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
 		modifier = {
 			factor = 0.5
@@ -5201,14 +6592,14 @@ fort_17th = {
 
 #Tier 4 Fortification - Fortress
 fort_18th = {
-	cost = 800
-	time = 96
+	cost = 1000 #VU - Increased from 800 to 1000 in v1.36.2.* by San Felipe
+	time = 48
 	#VU AddOn cost changed from original 800
 	#Time changed from 72 to 96 so fort levels are 1y, 2y, 3y and 4y respectively.
 	make_obsolete = fort_17th
 
 	modifier = {
-		#VU AddOn changed from 8
+		#VU - Changed from TGE's 8
 		fort_level = 5
 		
 		#VU AddOn new
@@ -5288,7 +6679,6 @@ fort_18th = {
 
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
-		
 		#ECONOMY 101
         #AI avoids building with loans
         modifier = {
@@ -5303,19 +6693,16 @@ fort_18th = {
             factor = 0.5
             owner = { num_of_loans = 1 }
         }
-        
         #AI avoids building when in deficit
         modifier = {
             factor = 0.75
             owner = { is_in_deficit = yes }
         }
-        
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
             owner = { NOT = { treasury = 1600 } }
         }
-		
 		#SPECIFIC
 		#AI more likely to build when rich
 		modifier = {
@@ -5334,44 +6721,37 @@ fort_18th = {
 			factor = 1.5
 			owner = { treasury = 8000 }
 		}
-		
 		#GENERAL
 		#AI would want to fortify their home province.
 		modifier = {
 			factor = 2
 			is_capital = yes			
 		}
-				
 		#Being a march encourages building forts
 		modifier = {
 			factor = 1.5
 			FROM = { is_march = yes }
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 0.8
 			NOT = { FROM = { army_tradition = 20 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 0.95
 			NOT = { FROM = { army_tradition = 40 } }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 1.05
 			FROM = { army_tradition = 60 }			
 		}
-		
 		#Army tradition now either encourages or discourages building forts
 		modifier = {
 			factor = 1.1
 			FROM = { army_tradition = 80 }			
 		}
-		
 		#Partly for gameplay, but Europe became insanely fortified during this period
 		modifier = {
 			factor = 1.25
@@ -5391,9 +6771,7 @@ fort_18th = {
 				}
 		    }
 		}
-		
 		#Note Eastern, Ottoman, Muslim, East African, Indian, and Chinese tech groups receive no penalty nor bonus
-		
 		#Partly for gameplay, but these techs didn't really have the castle-every-100-meters thing going on for the most part
 		modifier = {
 			factor = 0.33
@@ -5492,26 +6870,27 @@ trench = {
 manufactory = {
 	cost = 500
 	time = 36			#VU AddOn changed from 60. 5 year construction times are way out of line with all other buildings, and quite unneccessary, I think. Reducing this to comparable with other buildings.
-	modifier = { }
+	modifier = {
+		trade_goods_size = 1.0
+	}
 }
 
 #If trade good assignment changes, also update scripted trigger "has_manufactory trigger"!
 
 wharf = {
 	manufactory = {
-	    naval_supplies
-		fish
 		salt
+		fish
+		naval_supplies
+		tropical_wood
 		seafood
 		tar
-		tropical_wood
 	}
 	modifier = {
 		trade_goods_size = 0.4			#VU Addon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 0.5			#VU AddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		naval_forcelimit = 1			#VU AddOn new - Just a fun little new bonus
 	}
-
 	keep_trigger = {
 		OR = {
 			trade_goods = fish
@@ -5537,7 +6916,6 @@ wharf = {
 		
 	}
 	on_destroyed = {
-				 
 		remove_development_from_building = {
 			building = manufactory
 			type = production
@@ -5568,22 +6946,31 @@ wharf = {
 			owner = { num_of_loans = 2 }
 		}
 		modifier = {
+			factor = 0.4
+			NOT = { base_production = 6 }
+		}
+		modifier = {
+			factor = 1.5
+			base_production = 10
+		}
+		modifier = {
+			factor = 1.5
+			base_production = 15
+		}
+		modifier = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		modifier = {
 			factor = 0.9
 			FROM = { 
@@ -5709,15 +7096,15 @@ wharf = {
 
 weapons = {
 	manufactory = {
-		cannon
 		copper
 		iron
 		lead
 		mercury
+		tin
 		metalworking
 		munitions
-		tin
 		zinc
+		cannon
 	}
 	modifier = {
 		trade_goods_size = 0.4			#VU Addon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
@@ -5910,9 +7297,9 @@ weapons = {
 
 textile = {
 	manufactory = {
-		silk
-		cloth
 		wool
+		cloth
+		silk
 		books
 		dyes
 		indigo
@@ -6113,21 +7500,21 @@ textile = {
 
 plantations = {
 	manufactory = {
-		chocolate
-		cinnamon
-		cloves
 		coffee
 		cotton
-		dates
-		nutmeg
-		opium
-		palm_oil
-		saffron
 		sugar
         tobacco
 		tea
 		cocoa
+		palm_oil
+		saffron
+		cinnamon
+		cloves
+		opium
+		dates
 		vanilla
+		nutmeg
+		chocolate
 	}
 	modifier = {
 			#Changed for VU: With different effects of slaves/indentured servants the plantation gets better and better
@@ -6163,7 +7550,6 @@ plantations = {
 	}
 	on_obsolete = {
 	}
-
 	keep_trigger = {
 		OR = {
 			trade_goods = chocolate
@@ -6187,7 +7573,6 @@ plantations = {
 	ai_will_do = {
 		factor = 8			#VU Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#VU Addon New factors, range 2 percent to about 425 percent
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -6202,19 +7587,16 @@ plantations = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		modifier = {
 			factor = 0.9
 			FROM = { 
@@ -6323,29 +7705,33 @@ tradecompany = {
 		ivory
 		slaves
 		spices
-		beer
+		fur
 		canned_goods
 		cider
-		carpet
-		cheese
-		cigars
 		cloves
-		exotic_animals
-		fur
-		gunpowder
 		incense
-		jade
-		jewellery
-		leather
-		maple_syrup
-		marble
-		marble_sculpture
-		rum
-		sea_turtle
-		sulfur
-		sweet_confectioneries
 		whaling
+		beer
+		rum
+		jade
+		marble
+		gunpowder
+		cheese
+		carpet
+		exotic_animals
+		sulfur
+		leather
 		woodworking
+		jewellery
+		maple_syrup
+		sea_turtle
+		cigars
+		marble_sculpture
+		jade_sculptures
+		exotic_fur
+		fur_clothing
+		String_Instruments
+		sweet_confectioneries
 	}
 	modifier = {
 		trade_goods_size = 0.4			#VU Addon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
@@ -6382,7 +7768,6 @@ tradecompany = {
 	}
 	on_obsolete = {
 	}
-
 	keep_trigger = {
 		OR = {
 			trade_goods = beer
@@ -6566,26 +7951,27 @@ tradecompany = {
 
 farm_estate = {
 	manufactory = {
-		apiculture
 		beer
 		cider
-		camel
-		champagne
-		citrus
-		elephants
 		fruit
 		grain
-		horses
 		livestock
-		llama
-		maize
-		olive_oil
-		potato
+		wine
+		apiculture
 		rice
+		horses
+		olive_oil
+		camel
+		elephants
+		citrus
+		potato
+		maize
 		tomato
+		champagne
+		llama
+		millet
 		vegetables #Makes sense to have vegetables in a farm doesn't it ?
 		vodka
-		wine
 		whiskey
 	}
 	modifier = {
@@ -6608,22 +7994,37 @@ farm_estate = {
 			type = production 
 			value = 1
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = 1
+		}
 	}
 	on_destroyed = {
-		add_dev_from_building = {
+		remove_development_from_building = {
 			building = manufactory 
 			type = production 
-			value = 1 
+			value = 2 
 		}
 		remove_dev_from_building = {
 			building = manufactory 
 			type = production 
 			value = 1
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = geo_wine_manufactory_flag
+				}
+			}
+			add_base_production = -1
+		}
 	}
 	on_obsolete = {
 	}
-
 	keep_trigger = {
 		OR = {
 			trade_goods = apiculture
@@ -6653,7 +8054,6 @@ farm_estate = {
 	ai_will_do = {
 		factor = 8			#VU Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#VU Addon New factors, range 2 percent to about 425 percent
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -6668,19 +8068,16 @@ farm_estate = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		modifier = {
 			factor = 0.9
 			FROM = { 
@@ -6786,19 +8183,20 @@ farm_estate = {
 
 mills = {
 	manufactory = {
+		paper
 		amber
-		chinaware
 		lacquerware
 		diamonds
-		ebony
 		gems
-		glass
-		lumber
-		optics
-		paper
 		pearls
-		steam_engine
 		tropical_wood
+		glass
+		chinaware
+		lumber
+		ebony
+		amber
+		steam_engine
+		optics
 		bamboo
 		pottery
 	}
@@ -6857,7 +8255,6 @@ mills = {
 	ai_will_do = {
 		factor = 8			#VU Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#VU Addon New factors, range 2 percent to about 425 percent
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -6872,19 +8269,16 @@ mills = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		modifier = {
 			factor = 0.9
 			FROM = { 
@@ -7032,7 +8426,6 @@ furnace = {
 	}
 	on_obsolete = {
 	}
-
 	keep_trigger = {
 		trade_goods = coal
 	}
@@ -7040,7 +8433,6 @@ furnace = {
 	ai_will_do = {
 		factor = 15			#VU Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#VU Addon New factors, range 2 percent to about 425 percent
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -7055,19 +8447,16 @@ furnace = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
-		
 		modifier = {
 			factor = 0.9
 			FROM = { 
@@ -7208,6 +8597,10 @@ ramparts = {
 	}
 	
 	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = per_reinforced_defenses }
+			remove_province_modifier = per_reinforced_defenses
+		}
 		remove_dev_from_building = {
 			building = manufactory 
 			type = manpower 
@@ -7259,24 +8652,25 @@ soldier_households = {
 	}
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
-		apiculture
 		beer
 		cider
-		camel
-		champagne
-		citrus
-		elephants
-		fish
 		grain
-		horses
+		fish
 		livestock
-		llama
-		maize
-		olive_oil
-		potato
-		rice
-		vodka
 		wine
+		apiculture
+		rice
+		horses
+		olive_oil
+		camel
+		elephants
+		citrus
+		potato
+		maize
+		llama
+		champagne
+		millet
+		vodka
 		whiskey
 	}
 
@@ -7334,7 +8728,6 @@ soldier_households = {
 
 	ai_will_do = {
 		factor = 1
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -7349,13 +8742,11 @@ soldier_households = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
@@ -7370,15 +8761,15 @@ impressment_offices = {
 	}
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
+		salt
 		beer
 		cider
 		fish
 		lumber
 		naval_supplies
-		salt
+		tropical_wood
 		seafood
 		tar
-		tropical_wood
 	}
 
 	build_trigger = {
@@ -7464,19 +8855,20 @@ state_house = {
 
 	bonus_manufactory = { # Will apply an extra modifier if these goods
 		paper
+		gems
+		tropical_wood
 		glass
-		amber
 		chinaware
 		diamonds
-		ebony
+		marble
 		gems
 		jade
 		jewellery
 		lumber
-		marble
-		optics
+		ebony
+		amber
 		steam_engine
-		tropical_wood
+		optics
 	}
 
 	build_trigger = {
@@ -7542,7 +8934,6 @@ state_house = {
 	
 	ai_will_do = {
 		factor = 1
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -7557,13 +8948,11 @@ state_house = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
@@ -7577,24 +8966,19 @@ oil_well = {
 	manufactory = {
 		oil
 	}
-
 	potential = {
 		has_dlc = "Rule Britannia"
 	}
-	
 	keep_trigger = {
 		trade_goods = oil
 	}
-
 	modifier = {
 		global_trade_goods_size_modifier = 0.05 #National Bonus
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
-	
 	ai_will_do = {
 		factor = 1
-		
 		#ECONOMY 101
 		#AI avoids building with loans
 		modifier = {
@@ -7609,13 +8993,11 @@ oil_well = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
-		
 		#AI avoids building when in deficit
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
-		
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75

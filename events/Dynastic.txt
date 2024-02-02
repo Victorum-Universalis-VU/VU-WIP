@@ -58,6 +58,7 @@ country_event = {
 		has_regency = no
 		government = monarchy
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_government_attribute = has_harem_events }
@@ -117,6 +118,7 @@ country_event = {
 		government = monarchy
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
 	}
@@ -168,6 +170,7 @@ country_event = {
 		NOT = { has_reform = mamluk_government }
 		heir_age = 4
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 	}
 	
@@ -388,6 +391,7 @@ country_event = {
 		has_regency = no
 		is_lesser_in_union = no
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 	}
 	
@@ -434,6 +438,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		has_government_attribute = heir
 	}
@@ -481,6 +486,7 @@ country_event = {
 		heir_age = 15
 		is_lesser_in_union = no
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
@@ -547,6 +553,7 @@ country_event = {
 		heir_age = 15
 		is_lesser_in_union = no
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 	}
 	mean_time_to_happen = {
@@ -581,6 +588,7 @@ country_event = {
 		government = monarchy
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 	}
 	
@@ -753,6 +761,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		is_lesser_in_union = no
 		has_heir = no
@@ -1209,6 +1218,7 @@ country_event = {
 		religion_group = christian
 		government = monarchy
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
@@ -1221,6 +1231,7 @@ country_event = {
 			religion_group = christian
 			government = monarchy
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			NOT = { has_reform = polish_elective_monarchy }
 			NOT = { has_government_attribute = has_harem_events }
 			NOT = { has_reform = mamluk_government }
@@ -1372,6 +1383,7 @@ province_event = {
 			has_heir = yes
 			religion_group = christian
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			NOT = { has_reform = polish_elective_monarchy }
 			NOT = { has_government_attribute = has_harem_events }
 			is_lesser_in_union = no
@@ -1727,6 +1739,7 @@ country_event = {
 	trigger = {
 		government = monarchy
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		has_heir = yes
 		is_heir_leader = yes
@@ -1797,6 +1810,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		has_heir = no
 		is_female = no
@@ -1854,6 +1868,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		is_lesser_in_union = no
 		has_government_attribute = heir
@@ -1949,6 +1964,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_reform = shogunate }
 		is_lesser_in_union = no
@@ -2010,6 +2026,7 @@ country_event = {
 		ruler_age = 40
 		government = monarchy
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { religion_group = muslim }
 		NOT = { has_government_attribute = has_harem_events }
@@ -2109,6 +2126,7 @@ country_event = {
 		government = monarchy
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_elective_monarchy }
 		NOT = { has_reform = mamluk_government }
 		religion_group = christian
@@ -2120,6 +2138,7 @@ country_event = {
 			religion_group = christian
 			NOT = { has_government_attribute = has_harem_events }
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			NOT = { has_reform = polish_elective_monarchy }
 			has_regency = no
 			is_free_or_tributary_trigger = yes
@@ -2146,6 +2165,7 @@ country_event = {
 					government = monarchy
 					NOT = { has_government_attribute = has_harem_events }
 					NOT = { has_reform = elective_monarchy }
+					NOT = { has_reform = phoenician_elective_monarchical_republic }
 					NOT = { has_reform = polish_elective_monarchy }
 					has_regency = no
 					is_free_or_tributary_trigger = yes
@@ -2255,6 +2275,7 @@ country_event = {
 		NOT = { has_government_attribute = has_harem_events }
 		NOT = { has_reform = mamluk_government }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		religion_group = christian
 		is_free_or_tributary_trigger = yes
 		has_consort = no
@@ -2266,6 +2287,7 @@ country_event = {
 			government = monarchy
 			NOT = { has_government_attribute = has_harem_events }
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			religion_group = christian
 			has_heir = no
 			ruler_age = 16
@@ -2318,6 +2340,7 @@ country_event = {
 				government = monarchy
 				NOT = { has_government_attribute = has_harem_events }
 				NOT = { has_reform = elective_monarchy }
+				NOT = { has_reform = phoenician_elective_monarchical_republic }
 				NOT = { has_reform = polish_elective_monarchy }
 				NOT = { has_reform = mamluk_government }
 				religion_group = christian

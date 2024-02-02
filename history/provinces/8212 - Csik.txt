@@ -5,8 +5,8 @@
 #Core Details
 capital = "Csíkszereda"
 is_city = yes
-owner = SZE
-controller = SZE
+owner = TRA
+controller = TRA
 
 #Demographics
 culture = szekely
@@ -31,15 +31,5 @@ hre = no
 #Special Modifiers
 
 #Discoveries known by technology groups
-
-
-
-
-
-
-
-
-
-
 
 #Histories by SF

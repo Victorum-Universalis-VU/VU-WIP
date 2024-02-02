@@ -603,9 +603,7 @@
  ME_Korea_Events.500.t: "Westology"
  ME_Korea_Events.500.d: "The contact with the western civilization was series of surprise for us. Over time, we believed there is no other civilized world than the Confucianism cosmovision. But we were wrong. The people we've met just now seems to believe the things that doesn't even exist, and snobbish about the religion they believe in however, their effort to reveal the world seems pretty usuful to us. Perhaps a slight touch on their philosophy wouldn't hurt much."
  ME_Korea_Events.500.a: "Let's taste the new methods!"
- ME_Korea_Events.2.t: "Intresting Instruments"
- ME_Korea_Events.2.d: "We've tasted a small bit of the tools they brought with. It was far more intresting than we thought at the first glance. Glass lens is clearer and smoothly cut compared to ours, clockwork machinary is precise and delicate. If we study this, the technological advance could be done."
- ME_Korea_Events.2.a: "Intresting..."
+ #
  ME_Korea_Events.51.t: "Scholasticism"
  ME_Korea_Events.51.d: "The philosophy basis of theirs are pretty unfamilar from what we know about philosophy. Unlike Intuitionistic-empiricism based theory, they are more obsessed with the intellectualism-noetics. The surface of the philosophy don't really appeal to us, but the core concept seems valuable."
  ME_Korea_Events.51.a: "Heresy!"
@@ -653,10 +651,12 @@
  ME_Korea_Events.61.t: "The Miracle in the Far-East"
  ME_Korea_Events.61.d: "The heretics are ruining the Europe's Christianity. The church built upon Saint Peter's grave is losing power. The secular world is gradually overpowering confessional world. It seems obvious that the word of the God will become vague echo in the end. However, the news from the far-east diocese flew into the pope's ears\nThere were many people volunteered to believe in the faith of the Christianity, without the missionary sent. Although they violated the church law by assigning the Bishop and the priests by themselves, it was a mistake by ignorance. Now they are asking a priests to guide them. With this chance, it could be used to regain the prestige of the Church."
  ME_Korea_Events.61.a: "A Miracle Indeed!"
+ #
  ME_Korea_Events.62.t: "Question of Ancestral Ritual"
  ME_Korea_Events.62.d: "We've sent the priests to the Far-east lands, and various reports are coming in from Orders. The Jesuits who mostly handle the upper class reports that the rituals they conduct is reverent ritual. One of the way to remember ancestors and the heroic souls. The Dominico and Franciscan Orders, who mostly meet the low class are refuting that the ritual is obsence and more pagan. The balance of the two sides are tight. It's up to the Pope's decision to choose side and end the controversy."
  ME_Korea_Events.62.a: "You are right. It's idol worships."
  ME_Korea_Events.62.b: "It is their culture. Father will understand."
+ #
  ME_Korea_Events.63.t: "Korean Catholic Gathers"
  ME_Korea_Events.63.d: "The news of the Pope banning the Ancestral Ritual quickly spread. There were small controversy about the ritual rose time to time, but the majority opinion was 'It's remembrance of the forefathers'. But the with the Pope's proclamation, they would have to choose whether to be beheaded for believing the cult, or appeal to someone who can persuade Pope.\nNow, people gathered outside of the Four gates of [Root.Capital] city wall. They are pleading for the help from the [Root.GetTitle]."
  ME_Korea_Events.63.a: "VOX POPULI VOX DEI."

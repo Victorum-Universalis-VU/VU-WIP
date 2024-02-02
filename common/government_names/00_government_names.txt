@@ -4899,6 +4899,68 @@ muscovite_monarchy = {
 	}
 }
 
+issiakdom_monarchy = {
+	rank = {
+		1 = IMPERIAL_ISSIAKDOM
+		2 = ISSIAKDOM
+		3 = ISSIAKDOM
+	}
+
+	ruler_male = {
+		1 = ISSIAK
+		2 = ISSIAK
+		3 = ISSIAK
+	}
+
+	consort_female = {
+		1 = SEGALLU
+		2 = SEGALLU
+		3 = SEGALLU
+	}
+
+	heir_male = {
+		1 = RUBU_PALIHSU
+		2 = RUBU_PALIHSU
+		3 = RUBU_PALIHSU
+	}
+
+	trigger = {
+		has_reform = issi_akdom_reform
+		tag = ASR
+	}
+}
+
+sardom_monarchy = {
+	rank = {
+		1 = SARDOM
+		2 = SARDOM
+		3 = SARDOM
+	}
+
+	ruler_male = {
+		1 = SAR
+		2 = SAR
+		3 = SAR
+	}
+
+	consort_female = {
+		1 = ISSU
+		2 = ISSU
+		3 = ISSU
+	}
+
+	heir_male = {
+		1 = SAMAS
+		2 = SAMAS
+		3 = SAMAS
+	}
+
+	trigger = {
+		has_reform = sardom_reform
+		tag = BAB
+	}
+}
+
 russian_monarchy = {
 	rank = {
 		1 = PRINCIPALITY

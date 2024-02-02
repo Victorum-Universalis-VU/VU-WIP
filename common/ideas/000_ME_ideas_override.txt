@@ -88,7 +88,7 @@ TUN_improved_ideas = {
 	}
 	trigger = {
 		tag = TUN
-		has_country_flag = TUN_modify_catalan_guard
+		#has_country_flag = TUN_modify_catalan_guard #Edit by Altan : flag not set, disabling until further notice
 	}
 	free = yes
 	tun_catalan_guard_improved = {
@@ -128,7 +128,7 @@ TIM_improved_ideas = {
 	}
 	trigger = {
 		tag = TIM
-		has_country_flag = me_tim_upgraded_ideas
+		#has_country_flag = TUN_modify_catalan_guard #Edit by Altan : flag not set, disabling until further notice
 	}
 	free = yes
 	TIM_shahrukh_empire = {

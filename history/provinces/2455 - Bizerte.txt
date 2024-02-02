@@ -2,6 +2,7 @@
 
 owner = TUN
 controller = TUN
+add_core = TUN
 culture = tunisian
 religion = sunni
 capital = "Bizerte"
@@ -11,9 +12,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = TUN
 
-
+add_core = CAR
 
 
 

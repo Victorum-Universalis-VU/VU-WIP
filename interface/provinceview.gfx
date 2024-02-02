@@ -146,8 +146,8 @@ spriteTypes = {
 	}		
 	### Added by Abyssian007, this is an extra image for a larger UI ###
 	spriteType = {
-		name = "gfx_select_building_large_bg3"
-		texturefile = "gfx/interface/select_building_large_bg3.dds"
+		name = "gfx_select_building_large_bg2"
+		texturefile = "gfx/interface/select_building_large_bg2.dds"
 	}																	 
 	
 	spriteType = {
@@ -222,11 +222,21 @@ spriteTypes = {
 		name = "GFX_exploit_button_reduce_infrastructure"
 		texturefile = "gfx/interface/exploit_button_reduce_infrastructure.dds"
 	}
+	
+	#spriteType = {
+	#	name = "GFX_development_button_production"
+	#	texturefile = "gfx/interface/development_button_literacy.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_development_button_production"
 		texturefile = "gfx/interface/development_button_production.dds"
 	}
+	
+	#spriteType = {
+	#	name = "GFX_development_button_manpower"
+	#	texturefile = "gfx/interface/development_button_sanitation.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_development_button_manpower"
@@ -985,14 +995,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 110
+		noOfFrames = 115
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_resource_icon_small"
 		texturefile = "gfx//interface//resources_small.dds"
-		noOfFrames = 110
+		noOfFrames = 115
 		loadType = "INGAME"
 	}
 
@@ -1005,7 +1015,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 110
+		noOfFrames = 115
 		loadType = "INGAME"
 		
 		alwaystransparent = yes

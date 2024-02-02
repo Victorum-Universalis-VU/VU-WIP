@@ -102,19 +102,32 @@
  
  #ModifierS:
  AZE_crossroad_of_persian_trade: "Crossroad of Persian Trade"
+ desc_AZE_crossroad_of_persian_trade: ""
  AZE_persian_legacy: "Persian Legacy"
+ desc_AZE_persian_legacy: ""
  AZE_pushing_west: "Pushing West"
+ desc_AZE_pushing_west: ""
  AZE_end_of_georgia: "End of Georgia"
+ desc_AZE_end_of_georgia: ""
  AZE_caucasia_subjugated: "Caucasia Subjugated"
+ desc_AZE_caucasia_subjugated: ""
  AZE_reunited_with_brethren: "Reunited"
+ desc_AZE_reunited_with_brethren: ""
  AZE_city_of_worlds_desire: "City of World's Desire"
+ desc_AZE_city_of_worlds_desire: ""
  AZE_immense_prestige: "Immense Prestige"
+ desc_AZE_immense_prestige: ""
  AZE_qizilbashi: "Qizilbashi"
+ desc_AZE_qizilbashi: ""
  AZE_true_faith: "Followers of God"
+ desc_AZE_true_faith: ""
  AZE_nation_of_poets: "Nation of Poets"
+ desc_AZE_nation_of_poets: ""
  AZE_growth_of_capital: "Growth of Capital"
+ desc_AZE_growth_of_capital: ""
  AZE_in_halls_of_mountain_shah: "In the Halls of Mountain Shah"
- 
+ desc_AZE_in_halls_of_mountain_shah: ""
+
  #§
  #Tooltips:
  AZE_Tooltip.1: "Every owned province of §YPersian§! culture gets -§G25.0%§! local autonomy."

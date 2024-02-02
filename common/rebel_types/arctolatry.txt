@@ -1,14 +1,14 @@
 
 ######################################################################
-# Arcolatry rebels. Disgruntled fanatics.
+# Arctolatry rebels. Disgruntled fanatics.
 ######################################################################
-Arcolatry_rebels = {
+arctolatry_rebels = {
 
 	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = arcolatry
+	religion = arctolatry
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -46,7 +46,7 @@ Arcolatry_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = arcolatry }
+			NOT = { religion = arctolatry }
 		}
 		modifier = {
 			factor = 0.001
@@ -91,21 +91,21 @@ Arcolatry_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = arcolatry
-			owner = { religion = arcolatry }
+			religion = arctolatry
+			owner = { religion = arctolatry }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = arcolatry }
+			NOT = { religion = arctolatry }
 			any_neighbor_province = {
-	 			religion = arcolatry
+	 			religion = arctolatry
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = arcolatry
+			religion = arctolatry
 		}
 		modifier = {
 			factor = 1.5
@@ -136,9 +136,9 @@ Arcolatry_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = arcolatry
+						religion = arctolatry
 						is_reformation_center = yes
-						owner = { religion = arcolatry }
+						owner = { religion = arctolatry }
 					}
 				}
 				add_province_modifier = {
@@ -148,11 +148,11 @@ Arcolatry_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = arcolatry }
+					NOT = { religion = arctolatry }
 					is_reformation_center = no
-					NOT = { owner = { religion = arcolatry } }
+					NOT = { owner = { religion = arctolatry } }
 				}
-				change_religion = arcolatry
+				change_religion = arctolatry
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -179,7 +179,7 @@ Arcolatry_rebels = {
 	}
 	
 	# Localisation for their demands
-	demands_description = "arcolatry_rebels_demand"
+	demands_description = "arctolatry_rebels_demand"
 	
 	# Country Scope	
 	demands_enforced_effect = {
@@ -210,7 +210,7 @@ Arcolatry_rebels = {
 		}
 		else_if = {
 			limit = {
-				religion = arcolatry
+				religion = arctolatry
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -219,16 +219,16 @@ Arcolatry_rebels = {
 		}
 		else_if = {
 			limit = {
-				dominant_religion = arcolatry
-				NOT = { religion = arcolatry }
+				dominant_religion = arctolatry
+				NOT = { religion = arctolatry }
 			}
-			change_religion = arcolatry
+			change_religion = arctolatry
 			force_converted = yes
 		}
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {
-				religion = arcolatry
+				religion = arctolatry
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {

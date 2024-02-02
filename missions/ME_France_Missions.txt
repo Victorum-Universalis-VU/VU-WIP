@@ -3476,7 +3476,7 @@ france_missions_5 = {
 					}
 					random_owned_province = {
 						limit = {
-							base_production = 16
+							base_production = 8 #VU - Changed from 16 to 8. Solution found by Yeti & Quonton, applied in v1.36.2.* update by San Felipe.
 							has_manufactory_trigger = yes
 							trade_goods = wine
 							NOT = { has_province_flag = fra_wine_flag }

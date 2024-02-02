@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = kurdish
 religion = sunni
 technology_group = persian_tech_group
+unit_type = muslim
 capital = 3733 #Mahabad
 fixed_capital = 3733
 religious_school = shafii_school

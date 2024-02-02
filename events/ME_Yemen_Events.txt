@@ -897,8 +897,40 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			YEM_event_20_potential = { goods = coffee }
+			YEM_event_20_potential = { 
+				goods = coffee 
+			}
 			set_country_flag = YEM_event_dialogue
+		    random_owned_province = {
+                limit = {
+                    NOT = { trade_goods = coffee }
+                }
+                save_event_target_as = Yemen_target_1
+            }
+		    random_owned_province = {
+                limit = {
+                    NOT = { trade_goods = coffee }
+                }
+                save_event_target_as = Yemen_target_2
+            }
+		    random_owned_province = {
+                limit = {
+                    NOT = { trade_goods = coffee }
+                }
+                save_event_target_as = Yemen_target_3
+            }
+		    random_owned_province = {
+                limit = {
+                    NOT = { trade_goods = coffee }
+                }
+                save_event_target_as = Yemen_target_4
+            }
+		    random_owned_province = {
+                limit = {
+                    NOT = { trade_goods = coffee }
+                }
+                save_event_target_as = Yemen_target_5
+            }
 		}
 	}
 

@@ -927,6 +927,20 @@ restore_old_nation_on_formation_effect = {
 			}
 			else_if = {
 				limit = {
+					has_reform = phoenician_elective_monarchical_republic
+				}
+				event_target:old_tag_target = {
+					change_government = monarchy
+					add_government_reform = phoenician_elective_monarchical_republic
+					#set_legacy_government = has_reform = phoenician_elective_monarchical_republic_legacy
+					define_ruler = {
+						dynasty = ROOT
+						claim = 95
+					}
+				}
+			}
+			else_if = {
+				limit = {
 					has_reform = ottoman_government
 				}
 				event_target:old_tag_target = {

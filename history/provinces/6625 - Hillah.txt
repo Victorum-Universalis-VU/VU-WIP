@@ -3,7 +3,7 @@
 owner = QAR
 controller = QAR
 add_core = QAR
-culture = al_iraqiya_arabic
+culture = babylonian #Was al_iraqiya_arabic but changed to Babylonian. By San Felipe
 religion = sunni
 capital = "Hillah"
 trade_goods = dyes
@@ -14,6 +14,9 @@ base_manpower = 3
 is_city = yes
 add_core = BSR
 add_core = MSY
+add_core = BAB
+
+center_of_trade = 1
 
 
 

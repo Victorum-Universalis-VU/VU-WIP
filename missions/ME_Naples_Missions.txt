@@ -1616,7 +1616,7 @@ naples_missions_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = nap_italian_chestnut
+				name = nap_italian_chestnuts
 				duration = 7300
 			}
 			377 = {	# Aleppo

@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = tsez
 add_accepted_culture = circassian
 religion = sunni
-technology_group = eastern
+technology_group = muslim
 capital = 5556 #Didoya
 
 

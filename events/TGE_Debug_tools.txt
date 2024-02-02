@@ -265,7 +265,7 @@ province_event = {
 	
 	option = {
 		name = marcin_events.48.t
-		change_trade_goods = brass
+		change_trade_goods = fur_clothing
 	}
 	
 
@@ -300,6 +300,16 @@ province_event = {
 	option = {
 		name = marcin_events.55.t
 		change_trade_goods = sea_turtle
+	}
+
+	option = {
+		name = marcin_events.64.t
+		change_trade_goods = brass
+	}
+
+	option = {
+		name = marcin_events.67.t
+		change_trade_goods = cider
 	}
 
 	option = {
@@ -377,18 +387,18 @@ province_event = {
 	}
 
 	option = {
-		name = marcin_events.60.t
-		change_trade_goods = cider
+		name = marcin_events.63.t
+		change_trade_goods = String_Instruments
 	}
 
 	option = {
-		name = marcin_events.61.t
-		change_trade_goods = canned_goods
-	}
-
-	option = {
-		name = marcin_events.62.t
+		name = marcin_events.65.t
 		change_trade_goods = sweet_confectioneries
+	}
+
+	option = {
+		name = marcin_events.66.t
+		change_trade_goods = canned_goods
 	}
 
 	option = {

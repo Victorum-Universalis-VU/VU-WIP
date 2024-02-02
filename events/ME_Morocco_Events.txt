@@ -10,7 +10,9 @@ province_event = {
 	is_triggered_only = yes 
 	major = yes
 	major_trigger = {
-		tag = GRA
+		owner = {
+			tag = GRA
+		}
 	}
 	immediate = {
 		hidden_effect = {

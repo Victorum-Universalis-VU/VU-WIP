@@ -1,5 +1,0 @@
-provincial_production_size = {
-	trade_goods_size = 0.16
-	ship_recruit_speed = -0.01
-}
-

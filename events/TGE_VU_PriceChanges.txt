@@ -1047,9 +1047,9 @@ country_event = {
 }
 
 country_event = {
-	id = prices_marcin.19
-	title = prices_marcin.19.t
-	desc = prices_marcin.19.d
+	id = prices_marcin.21
+	title = prices_marcin.21.t
+	desc = prices_marcin.21.d
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	

@@ -250,9 +250,9 @@
  thugga_title:0 "Thugga"
  thugga:0 "Thugga"
  great_project_thugga:0 "Thugga"
- carthage_title:0 "Carthage"
- carthage:0 "Carthage"
- great_project_carthage:0 "Carthage"
+ carthage_title:0 "Qart-Hadašt"
+ carthage:0 "Qart-Hadašt"
+ great_project_carthage:0 "Qart-Hadašt"
  amphitheatre_of_el_jem_title:0 "Amphitheatre of Thysdrus"
  amphitheatre_of_el_jem:0 "Amphitheatre of Thysdrus"
  great_project_amphitheatre_of_el_jem:0 "Amphitheatre of Thysdrus"
@@ -395,3 +395,20 @@
  dannevirke:0 "Dannevirke"
  kronborg_castle:0 "Kronborg Castle"
  lund_cathedral:0 "Lund Cathedral"
+
+ #NEW VU Monuments for v1.36.2.*. By San Felipe
+ city_of_nineveh_title:0 "Old City of Nineveh"
+ city_of_nineveh:0 "Old City of Nineveh"
+ great_project_city_of_nineveh:0 "Old City of Nineveh"
+
+ temple_city_of_assur_title:0 "Temple City of Assur"
+ temple_city_of_assur:0 "Temple City of Assur"
+ great_project_temple_city_of_assur:0 "Temple City of Assur"
+ 
+ fortress_city_of_nimrud_title:0 "Fortress City of Nimrud"
+ fortress_city_of_nimrud:0 "Fortress City of Nimrud"
+ great_project_fortress_city_of_nimrud:0 "Fortress City of Nimrud"
+
+ cothon_of_qart_hadast_title:0 "Cothon of Qart-Hadašt"
+ cothon_of_qart_hadast:0 "Cothon of Qart-Hadašt"
+ great_project_cothon_of_qart_hadast:0 "Cothon of Qart-Hadašt"

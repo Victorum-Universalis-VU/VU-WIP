@@ -470,4 +470,24 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//grand_combo_monuments//great_project_lund_cathedral.dds"
 	}
 
+	#NEW VU Monuments for v1.36.2.*. By San Felipe
+	spriteType = {
+        name = "GFX_great_project_city_of_nineveh"
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_project_city_of_nineveh.dds"
+	}
+
+	spriteType = {
+        name = "GFX_great_project_temple_city_of_assur"
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_project_temple_city_of_assur.dds"
+	}
+
+	spriteType = {
+        name = "GFX_great_project_fortress_city_of_nimrud"
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_project_fortress_city_of_nimrud.dds"
+	}
+
+	spriteType = {
+        name = "GFX_great_project_cothon_of_qart_hadast"
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_project_cothon_of_qart_hadast.dds"
+	}
 }

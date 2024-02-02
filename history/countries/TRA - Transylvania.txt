@@ -8,7 +8,7 @@ add_accepted_culture = hungarian
 add_accepted_culture = szekely
 religion = orthodox
 unit_type = eastern
-capital = 1951	# Alba Iulia
+capital = 1951	#Alba Iulia
 
 
 1395.1.1 = {

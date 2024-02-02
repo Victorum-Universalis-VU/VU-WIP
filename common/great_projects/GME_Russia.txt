@@ -8,7 +8,10 @@ gme_bolshoi_theatre = {
 	can_be_moved = no
 	build_trigger = {
 	    is_year = 1825
-        culture_group = east_slavic
+		OR = { 
+       			culture_group = east_slavic
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -18,7 +21,10 @@ gme_bolshoi_theatre = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 	    owner = {
-			culture_group = east_slavic 
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }
@@ -28,7 +34,10 @@ gme_bolshoi_theatre = {
 	can_upgrade_trigger = {
 	    is_year = 1826
 		owner = {
-			culture_group = east_slavic 
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }
@@ -92,7 +101,10 @@ gme_petersburg_admiralty = {
 	can_be_moved = no
 	build_trigger = {
 	    is_year = 1823
-        culture_group = east_slavic
+		OR = { 
+       			culture_group = east_slavic
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -101,8 +113,11 @@ gme_petersburg_admiralty = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-	    owner = {
-			culture_group = east_slavic 
+		owner = {
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }
@@ -112,7 +127,10 @@ gme_petersburg_admiralty = {
 	can_upgrade_trigger = {
 	    is_year = 1824
 		owner = {
-			culture_group = east_slavic 
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }
@@ -181,7 +199,10 @@ gme_peterhof_palace = {
 	can_be_moved = no
 	build_trigger = {
 	    is_year = 1723
-        culture_group = east_slavic
+		OR = { 
+       			culture_group = east_slavic
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -190,8 +211,11 @@ gme_peterhof_palace = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-	    owner = {
-			culture_group = east_slavic 
+		owner = {
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }
@@ -201,7 +225,10 @@ gme_peterhof_palace = {
 	can_upgrade_trigger = {
 	    is_year = 1745
 		owner = {
-			culture_group = east_slavic 
+			OR = { 
+       				culture_group = east_slavic
+       				culture_group = slavic
+			}
 		}
 		OR = {
 			ROOT = { has_owner_accepted_culture = yes }

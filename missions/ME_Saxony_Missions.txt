@@ -623,7 +623,10 @@ saxony_missions_slot_2 = {
 										NOT = { legitimacy = 66 }
 									}
 									AND = {
-										has_reform = elective_monarchy
+										OR = {
+											has_reform = elective_monarchy
+											has_reform = phoenician_elective_monarchical_republic
+										}
 										NOT = { legitimacy = 33 }
 										OR = {
 											has_heir = no
@@ -671,7 +674,10 @@ saxony_missions_slot_2 = {
 										NOT = { legitimacy = 66 }
 									}
 									AND = {
-										has_reform = elective_monarchy
+										OR = {
+											has_reform = elective_monarchy
+											has_reform = phoenician_elective_monarchical_republic
+										}
 										NOT = { legitimacy = 33 }
 										OR = {
 											has_heir = no

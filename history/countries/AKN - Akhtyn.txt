@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = iqta
 primary_culture = dagestani
 religion = sunni
-technology_group = persian_tech_group
+technology_group = muslim
 capital = 3327 #Akhty
 religious_school = shafii_school
 

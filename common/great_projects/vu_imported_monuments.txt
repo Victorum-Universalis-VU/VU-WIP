@@ -26,12 +26,45 @@ vu_vladislav_hall = {
 	type = monument
 
 	#can we build it?
-	build_trigger = { is_year = 1490 OR = { AND = { culture_group = west_slavic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } AND = { culture_group = germanic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
+	build_trigger = {
+		is_year = 1490
+ 		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		} 
+	 }
 	
-	can_use_modifiers_trigger = { is_year = 1490 OR = { AND = { culture_group = west_slavic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } AND = { culture_group = germanic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
+	can_use_modifiers_trigger = { 
+		is_year = 1490
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}
 
 	#can our country upgrade it?
-	can_upgrade_trigger = { is_year = 1490 OR = { AND = { culture_group = west_slavic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } AND = { culture_group = germanic OR = { has_owner_culture = yes has_owner_accepted_culture = yes } } } }
+	can_upgrade_trigger = {
+		is_year = 1490
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {

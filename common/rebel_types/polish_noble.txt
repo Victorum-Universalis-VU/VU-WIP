@@ -84,6 +84,7 @@ polish_noble_rebels = {
 			owner = { 
 				OR = { 
 					has_reform = elective_monarchy 
+					has_reform = phoenician_elective_monarchical_republic
 					has_reform = polish_elective_monarchy
 				}
 			}
@@ -189,6 +190,7 @@ polish_noble_rebels = {
 					    has_reform = siberian_tribe
 					    government = native
 					    has_reform = elective_monarchy
+						has_reform = phoenician_elective_monarchical_republic
 					    has_reform = english_monarchy
 					    has_reform = scottish_monarchy
 					    has_reform = ottoman_government
@@ -212,7 +214,10 @@ polish_noble_rebels = {
 				}
 				NOT = {	has_dlc = "Lions of the North" }
 			}
-			add_government_reform = elective_monarchy
+			OR = {
+				add_government_reform = elective_monarchy
+				add_government_reform = phoenician_elective_monarchical_republic
+			}
 		}
 		else_if = { 
 			limit = { 

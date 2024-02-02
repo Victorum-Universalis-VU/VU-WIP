@@ -1,4 +1,16 @@
-#VU updated to 1.35 by San Felipe
+#VU updated to v1.36.2.* by San Felipe
+
+#San Felipe
+has_hall_building_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = has_hall_building_trigger_tt
+		OR = {	
+			has_building = hall
+			has_building = town_hall
+			has_building = city_hall
+		}
+	}
+}
 
 #Quonton
 

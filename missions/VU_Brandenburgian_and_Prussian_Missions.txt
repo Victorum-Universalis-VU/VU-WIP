@@ -4703,7 +4703,7 @@ PRU_missions_5 = {
 					tooltip = PRU_two_cots_in_lubeck
 					num_of_owned_provinces_with = {
 						owned_by = ROOT
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						province_has_center_of_trade_of_level = 2
 						value = 2
 					}
@@ -4712,7 +4712,7 @@ PRU_missions_5 = {
 					tooltip = PRU_five_marketplaces_in_lubeck
 					num_of_owned_provinces_with = {
 						owned_by = ROOT
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						has_trade_building_trigger = yes
 						value = 5
 					}
@@ -4732,7 +4732,7 @@ PRU_missions_5 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						province_has_center_of_trade_of_level = 3
 					}
 					add_institution_embracement = {
@@ -4742,7 +4742,7 @@ PRU_missions_5 = {
 				}
 				every_owned_province = {
 					limit = {
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						province_has_center_of_trade_of_level = 2
 					}
 					add_institution_embracement = {
@@ -4752,7 +4752,7 @@ PRU_missions_5 = {
 				}
 				every_owned_province = {
 					limit = {
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						province_has_center_of_trade_of_level = 1
 					}
 					add_institution_embracement = {
@@ -4762,7 +4762,7 @@ PRU_missions_5 = {
 				}
 				every_owned_province = {
 					limit = {
-						trade_company_region = trade_company_lubeck
+						trade_company_region = trade_company_saxony
 						has_trade_building_trigger = yes
 					}
 					add_institution_embracement = {

@@ -22,6 +22,9 @@ country_event = {
 		
 		change_government = monarchy
 		add_government_reform = german_kaiserreich
+		clr_country_flag = enable_second_mil_level_flag
+		set_country_flag = enable_third_mil_level_flag
+		regenerate_government_mechanics = yes
 	}
 	
 	option = {
@@ -40,6 +43,9 @@ country_event = {
 		add_absolutism = 10
 		change_government = republic
 		add_government_reform = german_kaiserreich_republic
+		clr_country_flag = enable_second_mil_level_flag
+		set_country_flag = enable_third_mil_level_flag
+		regenerate_government_mechanics = yes
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 	}
 
@@ -63,6 +69,9 @@ country_event = {
 		add_absolutism = 10
 		change_government = republic
 		add_government_reform = german_kaiserreich_peasant_republic
+		clr_country_flag = enable_second_mil_level_flag
+		set_country_flag = enable_third_mil_level_flag
+		regenerate_government_mechanics = yes
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 20 }
 		override_country_name = ddr_germany
 	}

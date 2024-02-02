@@ -35,63 +35,72 @@
  ME_Timurid_Princes_Event.1.a: "Ok"
  ME_Timurid_Princes_Event.2.t: "Babur bin Baysunkur - The Combatant of Khorasan"
  ME_Timurid_Princes_Event.2.d: "Babur bin Baysunkur, also known as Abul-Qasim Babur Mirza, was perhaps the greatest strategist of the Timurid brothers. Though his holdings were relatively small, he would move on to defeat the Transoxianians in combat, nearly restoring the Timurid Empire to its height under Shah Rukh. Khorasan sits in a somehwat troubling position: a handful of Persian nations to the west offer promising expansion, but if we cannot deal with Ulugh Beg, he will surely spell our downfall."
+ #
  ME_Timurid_Princes_Event.2.a: "Very well"
  ME_Timurid_Princes_Event.3.t: "Malik Mahmud - Ruler of Sistan"
  ME_Timurid_Princes_Event.3.d: "Malik Mahmud sits upon a crumbling throne. Not a Timurid himself, he receives no special care at the hands of Shah Rukh. He is not a prince of the empire, but merely a vassal, forced to serve. The situation does not appear favorable, but anything can happen in the heat of battle."
+ ME_Timurid_Princes_Event.3.a: ""
+ #
  ME_Timurid_Princes_Event.4.t: "Death of Ulugh Beg"
  ME_Timurid_Princes_Event.4.d: "Just like Shah Rukh perished decades ago, so did the benevolent Ulugh Beg, leaving the state in temporary turmoil. A great scholar, he helped push the scientific fields further, while also ruling his domain. For his great deeds, he was consequently nicknamed 'Ulugh Beg' which means 'Great Ruler'."
  ME_Timurid_Princes_Event.4.a: "We mourn this loss."
  ME_Timurid_Princes_Event.4.b: "Abu Sa'id shall lead us from now on."
+ #
  ME_Timurid_Princes_Event.5.t: "Baysonqor's Rebellion"
  ME_Timurid_Princes_Event.5.d: "The Government of Qom has launched a campaign against us! We never should have trusted the conniving prince. We can only hope to hasten our preparations for defense."
  ME_Timurid_Princes_Event.5.a: "We will demand he peacefully surrenders."
  ME_Timurid_Princes_Event.5.b: "The war is not over, not under my rule!"
  ME_Timurid_Princes_Event.5.c: "We will not get involved in a war against the Persian governor"
+ #
  ME_Timurid_Princes_Event.6.t: "[TIM.Monarch.GetName] Claims the Timurid Empire"
  ME_Timurid_Princes_Event.6.d: "[TIM.Monarch.GetName] Has claimed the empire of Tamerlane. Passed from son to son via succession crisis, it appears as though the succession has been decided once and for all."
  ME_Timurid_Princes_Event.6.a: "We shan't tremble, for we are strong as well."
+ #
  ME_Timurid_Princes_Event.7.t: "The Flight to India"
  ME_Timurid_Princes_Event.7.d: "Our forces lie defeated on the fields of Khorasan, having met their match by ambitious relatives. This is not the end of our empire though! The lands of India are exposed."
  ME_Timurid_Princes_Event.7.a: "All hail Babur!"
  ME_Timurid_Princes_Event.7.b: "We shall not trust another scheming relative..."
+ #
  ME_Timurid_Princes_Event.8.t: "Karatshar bin Soyurghatmish - The Governor in Kabul"
  ME_Timurid_Princes_Event.8.d: "In 1444, Afghanistan is ruled by Karatshar bin Soyurghatmish, member of the Timurid Dynasty. Not much is known by his reign, except for the fact that he avoided conflict."
  ME_Timurid_Princes_Event.8.a: "Ok"
+ #
  ME_Timurid_Princes_Event.9.t: "Mu'izz al-Din Malik- The Regency of Farsistan"
  ME_Timurid_Princes_Event.9.d: "The state of Fars is currently plunged in turmoil caused by the Regency."
  ME_Timurid_Princes_Event.9.a: "Ok"
+ #
  ME_Timurid_Princes_Event.10.t: "Muhammad bin Baysonqor - Rebel of the West"
  ME_Timurid_Princes_Event.10.d: "Muhammad bin Baysonqor, born a son of the Shah Rukh, is now up in arms against his former overlord, who is also his father. Will he prevail or will he succumb to his the wrath of his father? Only time will tell."
  ME_Timurid_Princes_Event.10.a: "Ok"
- 
+ #
  ME_Timurid_Princes_Event.11.t: "Naming The Heir"
  ME_Timurid_Princes_Event.11.d: "Fearing imminent death, and with the risk of his Empire utterly collapsing, the time has come for [Root.Monarch.GetName] to finally name who will lead the Timurid Empire once his time has come."
  ME_Timurid_Princes_Event.11.a: "[Root.Heir.GetName] is the heir!"
  ME_Timurid_Princes_Event.11.b: "[TRS.Monarch.GetName] deserves to be the successor."
  ME_Timurid_Princes_Event.11.c: "Shah Rukh puts his trust in Muhammad Juki."
  ME_Timurid_Princes_Event.11.e: "The worthiest of them all will carry on Shah Rukh's mantle."
- 
+ #
  ME_Timurid_Princes_Event.12.t: "The Military Up in Arms"
  ME_Timurid_Princes_Event.12.d: "With no declared successor, the military has no one to support in the Empire. Instead, they have risen up in arms ready to claim the Empire for themselves."
  ME_Timurid_Princes_Event.12.a: "What does this treachery mean?"
- 
+ #
  ME_Timurid_Princes_Event.13.t: "Military Occupies [Root.Capital.GetName]"
  ME_Timurid_Princes_Event.13.d: "After getting the support they needed, many generals in our Empire have marched to [Root.Capital.GetName] and have executed the royal family and the court. They now wish to create their own state in Persia."
  ME_Timurid_Princes_Event.13.a: "Is this the end?"
- 
+ #
  ME_Timurid_Princes_Event.14.t: "The Persian Stratocracy"
  ME_Timurid_Princes_Event.14.d: "After much debate, the military has finally decided on their new government. They have decided to become a stratocracy, abolishing the monarchy complete and replacing it with themselves in charge."
  ME_Timurid_Princes_Event.14.a: "Huzzah!"
- 
+ #
  ME_Timurid_Princes_Event.17.t: "[From.GetName]'s Demands"
  ME_Timurid_Princes_Event.17.d: "Despite our initial success in our rebellion against [From.Monarch.GetnName], we are still not completely sovereign. They now demand that we become their vassal once again lest we have our titles stripped away."
  ME_Timurid_Princes_Event.17.a: "Anything to preserve our realm."
  ME_Timurid_Princes_Event.17.b: "They cannot possibly defeat us."
- 
+ #
  ME_Timurid_Princes_Event.18.t: "[From.GetName]'s Response"
  ME_Timurid_Princes_Event.18.d: "[From.GetName] has declined our offer. They see us as not a threat, and wish to keep their sovereinty. We are ready for war."
  ME_Timurid_Princes_Event.18.a: "Very well."
- 
+ #
  ME_Timurid_Princes_Event.19.t: "[me_tim_successor.GetName] Claims the Empire"
  ME_Timurid_Princes_Event.19.d: "[me_tim_successor.GetName] has been declared as the true successor of the Timurid Empire, and has claimed the throne for himself. He wishes to bring prosperity to his new Empire."
  ME_Timurid_Princes_Event.19.a: "Your new Empire?"

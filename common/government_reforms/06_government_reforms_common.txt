@@ -70,6 +70,7 @@ parliamentary_reform = {
 			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 		}	
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_great_sejm }
 		NOT = { has_reform = polish_elective_monarchy }
 		if = {
@@ -188,6 +189,7 @@ restoration_of_the_senate_reform = {
 	
 	trigger = {
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = polish_great_sejm }
 		NOT = { has_reform = polish_elective_monarchy }
 		if = {
@@ -532,6 +534,10 @@ governing_senate_reform = {
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
+		}
+		if = {
+			limit = { has_dlc = "Res Publica" }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 		}
 		if = {
 			limit = { has_dlc = "Lions of the North" }

@@ -67,9 +67,13 @@
  denmark_norway_nation_desc:0 "Time has come to unite the regions of Denmark and Norway into one nation."
  novgorod_rus_nation_title:0 "Proclaim Novgorodian Rus"
  novgorod_rus_nation_desc:0 "Unite all lands of Eastern Europe and restore Great Rus under the Novgorod rule"
+ assur_nation_title:0 "Revive old Assurian State"
+ assur_nation_desc:0 "Assurian lands and cultures have been in steady decline over past millennia since the collapse in 609BC but now this can be changed as new light shines to unite the region and restore the once mighty empire under local rule."
+ assur_nation_tooltip:0 "5 Random owned provinces will adopt our religion and culture"
  assyria_nation_title:0 "Revive old Assyrian State"
  assyria_nation_desc:0 "Assyrian lands and cultures have been in steady decline over past millennia since the collapse in 609BC but now this can be changed as new light shines to unite the region and restore the once mighty empire under local rule."
  assyria_nation_tooltip:0 "5 Random owned provinces will adopt our religion and culture"
+
  #Non-European Old World
  vu_kabylia_nation_title:0 "Form Kabylia"
  vu_kabylia_nation_desc:0 "Uniting the rich, fertile hills of Kabylia is the first step in establishing a strong Berber nation in the Maghreb!"

@@ -2103,7 +2103,7 @@ estate_industrial = {
 					# who = ROOT
 					# duration = 5475
 					# power = 15
-					# key = UKS_trade_support
+					# key = UKS_trade_support1
 				# }
 			# }
 			# 174 = {
@@ -2111,7 +2111,7 @@ estate_industrial = {
 					# who = ROOT
 					# duration = 5475
 					# power = 15
-					# key = UKS_trade_support
+					# key = UKS_trade_support1
 				# }
 			# }
 			# if = {
@@ -2412,7 +2412,10 @@ estate_magnates = {
 			tag = PLC
 			tag = POL
 		}
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		NOT = {
 			has_estate = estate_vaisyas
 		}

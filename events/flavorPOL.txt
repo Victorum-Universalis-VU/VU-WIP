@@ -279,6 +279,7 @@ country_event = {
 		OR = {
 			has_reform = polish_elective_monarchy
 			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
 		}
 		NOT = { has_country_flag = pol_pact_conventa_flag }
 		has_country_flag = pol_had_nieszawa_privileges_country_flag
@@ -1508,9 +1509,13 @@ country_event = {
 		remove_estate_privilege = estate_nobles_golden_liberty
 		if = {
 			limit = {
-				has_reform = elective_monarchy
+				OR = {
+					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
+				}
 			}
 			remove_government_reform = elective_monarchy
+			remove_government_reform = phoenician_elective_monarchical_republic
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}
 			add_absolutism = 10
@@ -2033,9 +2038,11 @@ country_event = {
 				OR = {
 					has_reform = polish_elective_monarchy
 					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
 				}
 			}
 			remove_government_reform = elective_monarchy
+			remove_government_reform = phoenician_elective_monarchical_republic
 			remove_government_reform = polish_elective_monarchy
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}
@@ -2057,9 +2064,11 @@ country_event = {
 				OR = {
 					has_reform = polish_elective_monarchy
 					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
 				}
 			}
 			remove_government_reform = elective_monarchy
+			remove_government_reform = phoenician_elective_monarchical_republic
 			remove_government_reform = polish_elective_monarchy
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}

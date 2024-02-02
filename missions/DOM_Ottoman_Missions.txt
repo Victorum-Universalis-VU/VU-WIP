@@ -4372,8 +4372,9 @@ tur_issue_the_kannuname_slot = {
 			num_of_owned_provinces_with = {
 				has_owner_religion = no
 				OR = {
-					has_building = courthouse
+					has_building = hall
 					has_building = town_hall
+					has_building = city_hall
 				}
 				value = 10
 			}

@@ -7,8 +7,13 @@ gme_reichstag = {
 	type = monument
 	can_be_moved = no
 	build_trigger = {
-	    is_year = 1884
-        culture_group = germanic
+		FROM = {
+			OR = {
+				tag = GER
+				tag = HLR
+			}
+		}
+        	culture_group = germanic
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -47,7 +52,6 @@ gme_reichstag = {
 		}
 	}
 	can_upgrade_trigger = {
-	    is_year = 1885
 		FROM = { adm_tech = 37 }
 		FROM = {
 			OR = {

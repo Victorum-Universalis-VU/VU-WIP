@@ -17,8 +17,7 @@ extra_cost = 15
 
 fort_15th = yes
 
-
-
+add_core = CAR
 
 add_permanent_province_modifier = {
     name = navalbase_modifier_4

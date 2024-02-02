@@ -5,13 +5,6 @@ GER_missions_1 = {
 	ai = yes
 	potential = {
 		tag = GER
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-
-			}
-		}
 	}
 	has_country_shield = yes
 	
@@ -201,26 +194,18 @@ GER_missions_1 = {
 			}
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					continent = europe
-					culture_group = french
-				}
-				add_province_modifier = {
-					name = germany_reintegrating_the_french_province_modifier
-					duration = 18250
-				}
-			}
-			brittany_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
 			custom_tooltip = vu_change_french_to_german
 			hidden_effect = {
+			    every_owned_province = {
+			    	limit = {
+			    		continent = europe
+			    		culture_group = french
+			    	}
+			    	add_province_modifier = {
+			    		name = germany_reintegrating_the_french_province_modifier
+			    		duration = 18250
+			    	}
+			    }
 
 				random_owned_province = {
 					limit = {
@@ -648,13 +633,6 @@ GER_missions_2 = {
 	ai = yes
 	potential = {
 		tag = GER
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-
-			}
-		}
 	}
 	has_country_shield = yes
 	
@@ -774,6 +752,14 @@ GER_missions_2 = {
 			france_region = {
 				limit = {
 					NOT = { area = brittany_area }
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			brittany_region = {
+				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1348,13 +1334,6 @@ GER_missions_3 = {
 	ai = yes
 	potential = {
 		tag = GER
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-
-			}
-		}
 	}
 	has_country_shield = yes
 
@@ -1580,6 +1559,22 @@ GER_missions_3 = {
 			}
 			custom_tooltip = vu_change_scandinavian_to_german
 			hidden_effect = {
+
+				370 = { 
+					limit = {
+						owned_by = ROOT
+					} 
+					change_culture = nordic_german
+					set_province_flag = changed_culture	
+				}
+
+				5591 = {
+					limit = {
+						owned_by = ROOT
+					} 
+					change_culture = nordic_german
+					set_province_flag = changed_culture
+				}
 
 				random_owned_province = {
 					limit = {
@@ -2811,13 +2806,6 @@ GER_missions_4 = {
 	ai = yes
 	potential = {
 		tag = GER
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-
-			}
-		}
 	}
 	has_country_shield = yes
 	
@@ -3119,13 +3107,6 @@ GER_missions_5 = {
 	ai = yes
 	potential = {
 		tag = GER
-		OR = {
-			NOT = { has_dlc = "Emperor" }
-			AND = {
-				has_dlc = "Emperor"
-
-			}
-		}
 	}
 	has_country_shield = yes
 

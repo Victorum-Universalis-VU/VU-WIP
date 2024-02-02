@@ -1,3 +1,9 @@
+#VU - Updated to v1.36.2.*. By San Felipe
+#San Felipe
+fra_improved_halls_modifier = {
+	local_unrest = -1 
+}
+
 #Quonton
 vu_ger_kaiserreich_pupets = {
 	picture = "mitteleuropa_icon"
@@ -411,4 +417,13 @@ vu_olive_oil_production = {
 birthplace_of_market_production_modifier = {
 	trade_value = 2
 	local_production_efficiency = 0.2
+}
+
+#New
+vu_potential_archaeological_dig = {
+	trade_value = 0.25
+}
+
+vu_book_of_grudges_modifier = {
+	cb_on_religious_enemies = yes
 }

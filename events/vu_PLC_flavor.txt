@@ -1131,7 +1131,10 @@ country_event = { # Elective monarchy estates influence
 	is_triggered_only = yes
 	
 	trigger = {
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles
@@ -1206,7 +1209,10 @@ country_event = { # Estate influence from foreign ruler based on his nationality
 	is_triggered_only = yes
 	
 	trigger = {
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles

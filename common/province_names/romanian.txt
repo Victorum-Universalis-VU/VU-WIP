@@ -3,7 +3,7 @@
 158 = "Mures"
 268 = { "Botosani" "Dorohoi" }
 1756 = "Basarabia"
-1951 = "Hunedoara"
+1951 = { "Hunedoara" "Alba Iulia" }
 1952 = "Maramures"
 2327 = { "Magna" "Magna" }
 2405 = "Tighina"

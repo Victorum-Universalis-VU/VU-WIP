@@ -120,7 +120,18 @@ country_event = {
 				exists = RUS
 				RUS = {
 					NOT = { has_country_flag = steppe_traders_refused }
-					NOT = { is_at_war = GEN }
+					NOT = { 
+                        OR = {
+                            is_in_war = {
+                                attackers = RUS
+                                defenders = GEN
+                            }
+                            is_in_war = {
+                                defenders = RUS
+                                attackers = GEN
+                            }
+                        }
+                    }
 				}
 			}
 			RUS = {
@@ -134,9 +145,18 @@ country_event = {
 			limit = {
 				exists = MOS
 				MOS = { 
-					NOT = {
-						is_at_war = GEN
-					}
+					NOT = { 
+                        OR = {
+                            is_in_war = {
+                                attackers = MOS
+                                defenders = GEN
+                            }
+                            is_in_war = {
+                                defenders = MOS
+                                attackers = GEN
+                            }
+                        }
+                    }
 				}
 			}
 			MOS = {

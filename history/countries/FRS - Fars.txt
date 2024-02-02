@@ -5,6 +5,7 @@ primary_culture = persian
 religion = shiite
 #technology_group = muslim
 technology_group = persian_tech_group
+unit_type = muslim
 capital = 2218 # Shiraz
 
 set_country_flag = ME_can_use_timurid_legitimacy

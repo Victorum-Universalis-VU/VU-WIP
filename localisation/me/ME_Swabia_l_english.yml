@@ -17,7 +17,7 @@
  swa_conquer_sundgau_title: "Free the Swabians in Austria!"
  swa_conquer_sundgau_desc: "The final piece of the Swabian puzzle lies in Sundgau, a Habsburg posession near the Rhine river. Conquering it will be hard, but if we succeed, the rewards will be great."
  swa_conquer_memmingen_title: "Expand Towards the East"
- swa_conquer_memmingen_desc: "Memmingen is a part of the Swabian league, and it is our duty to protect the Swabian league. Let's offer our "protection" to Memmingen, shall we?"
+ swa_conquer_memmingen_desc: "Memmingen is a part of the Swabian league, and it is our duty to protect the Swabian league. Let's offer our 'protection' to Memmingen shall we?"
  swa_conquer_augsburg_title: "Attack Augsburg"
  swa_conquer_augsburg_desc: "Augsburg is anorther Swabian bishopric, and a troublemaker too. Conquering them will be hard due to them being in the Austrain sphere of influence, but it'll help us out on our journey to reform Swabia."
  swa_conquer_ulm_title: "The Stronghold of Ulm"
@@ -31,18 +31,28 @@
  
  # Generic Modifiers:
  swa_prepared_army: "A Prepared Army"
+ desc_swa_prepared_army: ""
  swa_conquest_of_wurttemburg: "Conquest of Wurttemberg"
+ desc_swa_conquest_of_wurttemburg: ""
  swa_conquest_of_ravensburg: "Conquest of Ravensburg"
+ desc_swa_conquest_of_ravensburg: ""
  swa_conquest_of_ansbach: "Conquest of Ansbach"
  swa_conquest_of_baden: "Conquest of Baden"
+ desc_swa_conquest_of_baden: ""
  swa_conquest_of_upper_swabia: "Conquest of Upper Swabia"
+ desc_swa_conquest_of_upper_swabia: ""
  swa_conquest_of_alsace: "Conquest of Alsace"
+ desc_swa_conquest_of_alsace: ""
  swa_conquest_of_lower_swabia: "Conquest of Lower Swabia"
+ desc_swa_conquest_of_lower_swabia: ""
  swa_swabian_league: "Swabian Circle"
+ desc_swa_swabian_league: ""
  swa_war_recovery: "Recovering From War"
+ desc_swa_war_recovery: ""
  swa_conquest_of_austria: "Conquest of Austria"
+ desc_swa_conquest_of_austria: ""
  wur_united_swabia: "A United Swabia!"
- 
+
  # Country:
  SWA: "Swabia"
  SWA_ADJ: "Swabian"
@@ -168,39 +178,96 @@
  
  # Modifiers:
  SWA_Rhineland_modifier: "Influence in Rhineland"
+ desc_SWA_Rhineland_modifier: ""
  SWA_uniting_the_stem_duchy: "Uniting the Saxon Stem Duchy"
+ desc_SWA_uniting_the_stem_duchy: ""
  SWA_Pathway_through_the_alps: "Pathway Through the Alps"
+ desc_SWA_Pathway_through_the_alps: ""
  SWA_Franconian_modifier: "Pathway to Saxony"
+ desc_SWA_Franconian_modifier: ""
  SWA_Lessons_of_the_Saxons: "Lessons from the Saxons"
+ desc_SWA_Lessons_of_the_Saxons: ""
  SWA_access_to_baltic_sea: "Power in the Baltic"
+ desc_SWA_access_to_baltic_sea: ""
  SWA_FC_modifier: "The Guard of Swabia"
+ desc_SWA_FC_modifier: ""
  SWA_Barbarossa_legacy: "Barbarossa's Legacy"
+ desc_SWA_Barbarossa_legacy: ""
  SWA_Legitimate_Successor: "Legitimate Successor to Barbarossa"
+ desc_SWA_Legitimate_Successor: ""
  SWA_support_of_electors: "Support of Electors"
+ desc_SWA_support_of_electors: ""
  SWA_allies_modifier: "Enhanced Diplomacy"
+ desc_SWA_allies_modifier: ""
  SWA_acting_in_counterreformation: "Acting in Counterreformation"
+ desc_SWA_acting_in_counterreformation: ""
  SWA_support_of_the_pope: "Support of the Pope"
+ desc_SWA_support_of_the_pope: ""
  SWA_jesuits: "Jesuits"
+ desc_SWA_jesuits: ""
  SWA_popular_emperor: "Popular Emperor"
+ desc_SWA_popular_emperor: ""
  SWA_protector_of_peace: "Protector of Peace"
+ desc_SWA_protector_of_peace: ""
  SWA_income_from_vassals: "Vassalization and Taxation"
+ desc_SWA_income_from_vassals: ""
  SWA_Renovation_Imperii: "Renovatio Imperii"
+ desc_SWA_Renovation_Imperii: ""
  SWA_Huge_step: "Huge Step for the Civilization"
+ desc_SWA_Huge_step: ""
  SWA_Herd_protected_by_emperor: "Imperial Protection"
+ desc_SWA_Herd_protected_by_emperor: ""
  SWA_france_modifier: "West Francian Domain Secured"
+ desc_SWA_france_modifier: ""
  SWA_centralization: "Centralization"
+ desc_SWA_centralization: ""
  SWA_Important_Press: "Important Printing Press Center"
+ desc_SWA_Important_Press: ""
  SWA_Fortification: "Fortification"
+ desc_SWA_Fortification: ""
  SWA_Safe_people: "People Feel Safe"
+ desc_SWA_Safe_people: ""
  SWA_Confederation_time: "Union of Swabians"
+ desc_SWA_Confederation_time: ""
  SWA_helping_develop: "Development of Poor Regions"
+ desc_SWA_helping_develop: ""
  SWA_Investing: "Investing in Swabia"
  desc_SWA_Investing: "If you didn't do this, then your children would ask you 'Why didn't you invest in Swabia?'"
  SWA_12_articles_modifier: "First Human Rights"
+ desc_SWA_12_articles_modifier: ""
  SWA_Spa: "Tourist Infrastructure"
+ desc_SWA_Spa: ""
  SWA_Swabian_League: "The League of the Swabians"
+ desc_SWA_Swabian_League: ""
  SWA_Swabian_Tradition: "Swabian Tradition"
+ desc_SWA_Swabian_Tradition: ""
  SWA_Prospering_cities: "Prospering Cities"
+ desc_SWA_Prospering_cities: ""
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  # Triggered Modifiers:
  ME_SWA_Stability_1: "Stability Bonus"

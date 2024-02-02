@@ -33,7 +33,14 @@ technology = { #Early Ships
 	off_5 = yes
 	off_6 = yes
 	off_7 = yes
-	off_8 = yes		
+	off_8 = yes
+    
+	admiralty = yes
+	archaeological_dig = yes
+	observatory = yes
+	park = yes
+	pigeon_shed = yes
+	war_office = yes
 }
 
 technology = { #Merchants & Trade
@@ -56,6 +63,8 @@ technology = {  # Early Banking
 	}
 
 	trade_efficiency = 0.02
+
+	relay_stations = yes
 }
 
 technology = { #The Knarr
@@ -97,6 +106,7 @@ technology = { # Guilds
 	}
 
 	trade_efficiency = 0.02
+	fur_workshop = yes
 }
 
 
@@ -223,7 +233,7 @@ technology = {  # Recovery of Trade
 		market_production = 0.5
 	}
 
-	trade_efficiency = 0.01	
+	trade_efficiency = 0.01
 }
 
 technology = {  # Economic Specialisation
@@ -252,6 +262,7 @@ technology = {  # Barque
 	}
 
 	enable = barque
+	spy_agency = yes
 }
 
 technology = {  # Rising City States
@@ -279,8 +290,8 @@ technology = {  # Value of Diplomacy
 		market_production = 0.4
 	}
 
-		naval_morale = 0.5
-		range = 50
+	naval_morale = 0.5
+	range = 50
 }
 
 technology = {  # Winds of Renaissance
@@ -360,6 +371,7 @@ technology = { #Basic Financial Instruments
 	
 	#Naval Base Building
 	naval_base = yes
+	Instruments_workshop = yes
 }
 
 technology = { #Shipyards
@@ -395,11 +407,11 @@ technology = { #Naval Ambitions
 	
 	naval_morale			= 0.3
 	range					= 115
-	impressment_offices 	= yes
+	impressment_offices = yes
 	naval_engagement_width = 10
 }
 
-technology  = { #Docks
+technology = { #Docks
 	# Tech 8
 	year = 1505
 	expects_institution = {
@@ -463,6 +475,7 @@ technology = { #The Flute
 	global_colonial_growth  = 	10
 	enable = flute
 	enable = war_galley
+
 }
 
 technology = { #Wharf
@@ -512,6 +525,8 @@ technology = { #Man of War
 	
 	#Cholocate Factory TGE Manufactory
 	chocolate_factory = yes
+
+	botanical_gardens = yes
 }
 
 technology = { #Chartered Companies
@@ -550,6 +565,7 @@ technology = { #The Galleass
 	tradecompany = yes
 	num_accepted_cultures = 1
 
+	theatrics = yes
 	
 	enable = galleass
 }
@@ -646,7 +662,7 @@ technology = { #Line of Battle
 	
 	naval_engagement_width = 10
 
-
+	operatics = yes
 }
 
 technology = { #The War Galleon
@@ -694,7 +710,6 @@ technology = { #Naval Professionalization
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	num_accepted_cultures = 1
-
 }
 
 technology = { #The Chebeck
@@ -770,7 +785,6 @@ technology = { #Heavy Frigates
 	global_colonial_growth  = 	25	
 	range					=	150
 	allow_client_states = yes	
-
 
 	enable = heavy_frigate
 }
@@ -876,7 +890,7 @@ technology = { #Public Punishments
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
 	may_agitate_for_liberty = yes
-	
+	national_museum = yes
 }
 
 technology = { #Joint Stock Companies
@@ -923,6 +937,8 @@ technology = { #Midshipmen Cadets
 	#Joint Stock Companies
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+
+	zoo = yes
 }
 
 technology = { #Insurance Companies
@@ -1073,6 +1089,7 @@ technology = {
 	#Oil Refining
 	trade_efficiency = 0.05
 	oil_well = yes
+	foreign_office = yes
 }
 
 technology = {
@@ -1103,6 +1120,7 @@ technology = {
 	#enable = ironclad_muslim
 	#enable = ironclad_eastern
 	#enable = ironclad_asian
+	natural_history_museum = yes
 }
 
 technology = {
@@ -1158,6 +1176,7 @@ technology = {
 	trade_range 			= 20
 	range					= 100
 
+	cinema = yes
 }
 
 technology = {

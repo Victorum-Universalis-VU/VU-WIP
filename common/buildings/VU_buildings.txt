@@ -1,4 +1,703 @@
-#ME_buildings
+#VU Buildings
+#Leisure - Department added to VU by San Felipe
+park = { #Gardens were actually pretty expensive to set up and occupied a lot of land.
+	cost = 500 #VU - Increased from 100 to 500 in v1.36.2.* by San Felipe
+	time = 12
+	#one_per_country = yes
+	modifier = { 
+		local_prosperity_growth = 0.25
+		local_development_cost = -0.05
+		local_culture_conversion_cost = -0.25
+		local_culture_conversion_time = -0.25
+	}
+	build_trigger = { 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+botanical_gardens = { #Botanical gardens are also very expensive like Zoos to set up due to more or less the same requirements with regards to hiring experts and sanctioning global expeditions in order to acquire insects and exotic animals and or plants. 
+	cost = 750 #VU - Increased from 400 to 750 in v1.36.2.* by San Felipe
+	time = 24
+	one_per_country = yes
+
+	modifier = { 
+		local_prosperity_growth = 0.5
+		local_development_cost = -0.1
+		culture_conversion_cost = -0.1
+		culture_conversion_time = -0.1
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+zoo = { #Zoos were also very expensive to set up due to the acquisition of wild animals from far away lands and the risk involved, not to mention the expertise needed in order to acquire said wild beasts.
+	cost = 1000 #VU - Increased from 300 to 750 in v1.36.2.* by San Felipe
+	time = 36
+	one_per_country = yes
+	modifier = { 
+		local_prosperity_growth = 0.5
+		local_development_cost = -0.1
+		culture_conversion_cost = -0.1
+		culture_conversion_time = -0.1
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Healthcare - Department added to VU by San Felipe
+apothecary = { #Apothecaries are precursors of the modern day pharmacy, acting as both the later and as clinics where ordinary citizens can go to acquire potions, herbal remedies and or cures.
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
+	time = 12
+	#one_per_country = yes
+	modifier = { 
+		land_attrition = -0.002
+		monarch_lifespan = 0.002 
+	}
+	build_trigger = { 	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+barber = { #Barbers were the precursors to modern day surgeries wherin their propriators practiced both surgical operations and or dental treatments.
+	cost = 175 #VU - Decreased from 250 to 175 in v1.36.2.* by San Felipe
+	time = 24
+	#one_per_country = yes
+	modifier = { 
+		manpower_recovery_speed = 0.002 
+		monarch_lifespan = 0.002 
+	}
+	build_trigger = { 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+hospital = { #Contrary to popular belief, Hospitals were actually fairly common and usually set up after major battles via surgical tents or aquiring peoples homes and or establishments and turning them into makeshift Hospitals.
+	cost = 500 #VU - Decreased from 400 to 200 in v1.36.2.* by San Felipe
+	time = 36
+	#one_per_country = yes
+	modifier = { 
+		manpower_recovery_speed = 0.005 
+		monarch_lifespan = 0.002
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Sanitation - Department added to VU by San Felipe
+cesspit = {
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
+	time = 12
+	#one_per_country = yes
+	modifier = { 
+		local_unrest = -0.5
+		local_development_cost = -0.05
+	}
+	build_trigger = { 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+bath_house = {
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
+	time = 24
+	#one_per_country = yes
+	modifier = { 
+		local_unrest = -0.75
+		local_development_cost = -0.075
+	}
+	build_trigger = {
+		is_state = yes	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+sewer_system = {
+	cost = 450 #VU - Decreased from 800 to 600 in v1.36.2.* by San Felipe
+	time = 36
+	#one_per_country = yes
+	modifier = { 
+		local_unrest = -1
+		local_development_cost = -0.1
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+latrines = {
+	cost = 600 #VU - Increased from 400 to 450 in v1.36.2.* by San Felipe
+	time = 48
+	#one_per_country = yes
+	modifier = { 
+		local_unrest = -2
+		local_development_cost = -0.2
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Water - Department added to VU by San Felipe
+
+well = {
+	cost = 150 #VU - Decreased from 100 to 75 in v1.36.2.* by San Felipe
+	time = 12
+	#one_per_country = yes
+	modifier = { 
+		supply_limit_modifier = 0.1
+		local_development_cost = -0.05
+		local_build_time = -0.05
+		local_build_cost = -0.05
+	}
+	build_trigger = { 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+aqueduct = {
+	cost = 300 #VU - Decreased from 300 to 225 in v1.36.2.* by San Felipe
+	time = 24
+	#one_per_country = yes
+	modifier = { 
+		supply_limit_modifier = 0.15
+		local_development_cost = -0.075
+		local_build_time = -0.075
+		local_build_cost = -0.075
+	}
+	build_trigger = {
+		is_state = yes	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+distillery = {
+	cost = 450 #VU - Increased from 400 to 450 in v1.36.2.* by San Felipe
+	time = 36
+	#one_per_country = yes
+	modifier = { 
+		supply_limit_modifier = 0.2
+		local_development_cost = -0.1
+		local_build_time = -0.1
+		local_build_cost = -0.1
+	}
+	build_trigger = { 
+		is_state = yes	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+pump_house = {
+	cost = 900 #VU - Increased from 800 to 900 in v1.36.2.* by San Felipe
+	time = 48
+	#one_per_country = yes
+	modifier = { 
+		supply_limit_modifier = 0.25
+		local_development_cost = -0.2
+		local_build_time = -0.2
+		local_build_cost = -0.2
+	}
+	build_trigger = {
+		is_state = yes	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Entertainment - Department added to VU by San Felipe
+wrestling = {
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
+	time = 12
+	#one_per_country = yes
+	modifier = { 
+		local_hostile_movement_speed = 0.1
+		local_manpower_modifier = 0.1 
+		regiment_recruit_speed = -0.1
+		local_regiment_cost = -0.1
+	}
+	build_trigger = { 	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+theatrics = {
+	cost = 300 #VU - Kept at 300 in v1.36.2.* by San Felipe
+	time = 24
+	#one_per_country = yes
+	modifier = { 
+		local_governing_cost_increase = -1
+		local_autonomy = -0.2 
+		local_unrest = -0.5 
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+operatics = {
+	cost = 450 #VU - Increased from 400 to 450 in v1.36.2.* by San Felipe
+	time = 36
+	#one_per_country = yes
+	modifier = { 
+		local_governing_cost_increase = -1.5
+		local_autonomy = -0.3
+		local_unrest = -0.75
+	}
+	build_trigger = {
+		#is_year = 1637 #Venice's Teatro San Cassiano
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+cinema = {
+	cost = 900 #VU - Kept at 800 in v1.36.2.* by San Felipe
+	time = 48
+	#one_per_country = yes
+	modifier = { 
+		local_governing_cost_increase = -2
+		local_autonomy = -0.4
+		local_unrest = -1
+	}
+	build_trigger = {
+		is_state = yes	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#TGE Buildings
+#TGE addition
+#Foreign & Domestic - Department added to VU by San Felipe
+spy_agency = {
+	cost = 750 #VU - Re-adjusted from 3000 to 150 in v1.36.2.* by San Felipe
+	time = 12
+
+	one_per_country = yes
+
+	modifier = { 
+		diplomats = 1 
+		ae_impact = -0.05 
+		unjustified_demands = -0.075 
+		spy_offence = 0.1 
+		global_spy_defence = 0.1 
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Court House
+
+#VU - Addition by San Felipe
+foreign_office = {
+	cost = 750 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 12
+
+	one_per_country = yes
+
+	modifier = { 
+		core_creation = -0.05
+		diplomatic_reputation = 1 
+		envoy_travel_time = -0.2 
+	} 
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+supreme_court = {
+	cost = 1500
+	time = 12
+
+	one_per_country = yes
+
+	modifier = { 
+		governing_capacity = 300 
+		possible_policy = 1 
+		all_power_cost = -0.025 
+		yearly_corruption = -0.1 
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+custom_house = {
+	cost = 250 #VU - Lowered from 270 to 250 in v1.36.2.* by San Felipe
+	time = 12
+	modifier = { 
+		global_tariffs = 0.005
+		global_own_trade_power = 0.005
+		province_trade_power_modifier = 0.1
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#TGE Buiding
+#Revenue & Customs - Department added to VU by San Felipe
+stamp_office = {
+	cost = 250 #VU - Increased from 150 to 250 in v1.36.2.* by San Felipe
+	time = 12
+	modifier = { 
+		land_maintenance_modifier = -0.002
+		tax_income = 1 
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+excise_office = {
+	cost = 250 #VU - Lowered from 360 to 250 in v1.36.2.* by San Felipe
+	time = 12
+	modifier = { 
+		global_tax_income = 1 
+		local_tax_modifier = 0.25
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Couriers - Department added to VU by San Felipe
+pigeon_shed = {
+	cost = 150 #VU - Increased from 100 to 150 in v1.36.2.* by San Felipe
+	time = 12
+	modifier = { 
+		local_institution_spread = 0.1
+		local_governing_cost = 0.1
+	}
+	build_trigger = { 	
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+relay_stations = {
+	cost = 300 #VU - Increased from 180 to 300 in v1.36.2.* by San Felipe
+	time = 24
+	modifier = { 
+		local_institution_spread = 0.25 
+		local_governing_cost = 0.2
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+telephone_exchange = {
+	cost = 450 #VU - Increased from 180 to 900 in v1.36.2.* by San Felipe
+	time = 36
+
+	modifier = { 
+		local_institution_spread = 0.5
+		local_governing_cost = 0.25
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+radio_station = {
+	cost = 900 #VU - Increased from 360 to 450 in v1.36.2.* by San Felipe
+	time = 48
+	modifier = { 
+		local_institution_spread = 1
+		local_governing_cost = 0.5
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Public Safety - Department added to VU by San Felipe
+fire_office = {
+	cost = 150 #VU - Increased from 90 to 250 in v1.36.2.* by San Felipe
+	time = 12
+	modifier = { 
+		local_monthly_devastation = -0.1
+		local_development_cost = -0.05
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+guard_house = {
+	cost = 300 #VU - Increased from 180 to 500 in v1.36.2.* by San Felipe
+	time = 24
+	modifier = { 
+		local_autonomy = -0.002
+		global_rebel_suppression_efficiency = 0.002
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+penitentiary = {
+	cost = 600 #VU - Increased from 360 to 750 in v1.36.2.* by San Felipe
+	time = 36
+
+	one_per_country = yes
+
+	modifier = { 
+		local_autonomy = -1
+		global_rebel_suppression_efficiency = 4
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Discoveries - Department added to VU by San Felipe
+
+#VU - Addition by San Felipe
+observatory = {
+	cost = 750 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 12
+
+	modifier = { 
+		promote_culture_cost = -0.002
+		technology_cost = -0.002
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+archaeological_dig = {
+	cost = 750 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 12
+
+	modifier = { 
+		prestige = 0.25
+		idea_cost = -0.05
+	}
+	build_trigger = {
+		FROM = {
+			has_province_modifier = vu_potential_archaeological_dig
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+national_museum = {
+	cost = 1500 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 24
+
+	one_per_country = yes
+
+	modifier = { 
+		prestige = 1
+		prestige_decay = -0.01
+		development_cost = -0.05
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+natural_history_museum = {
+	cost = 3000 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 36
+
+	one_per_country = yes
+
+	modifier = { 
+		prestige = 1
+		prestige_decay = -0.01
+		development_cost = -0.1
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+#Offence - Department added to VU by San Felipe
+#TGE addition
+armory = {
+	cost = 750 #VU - Re-adjusted from 3000 to 250 in v1.36.2.* by San Felipe
+	time = 24
+
+	one_per_country = yes
+
+	modifier = { 
+		free_land_leader_pool = 1 
+		special_unit_forcelimit = 1.0
+	}
+	build_trigger = {
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+war_office = {
+	cost = 1500 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 24
+
+	one_per_country = yes
+
+	modifier = { 
+		free_land_leader_pool = 1
+		max_general_shock = 1 
+		max_general_fire = 1
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#VU - Addition by San Felipe
+admiralty = {
+	cost = 1500 #VU - Re-adjusted from 3000 to 300 in v1.36.2.* by San Felipe
+	time = 24
+
+	one_per_country = yes
+
+	modifier = { 
+		free_navy_leader_pool = 2
+		max_admiral_shock = 1
+		max_admiral_fire = 1
+	}
+	build_trigger = { 
+		is_state = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#ME buildings
 el_escorial = {
 	cost = 10000
 	time = 240
@@ -316,7 +1015,7 @@ rhineland_building_upgrade_palace = {
 
 off = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -393,7 +1092,7 @@ off = {
 
 off_2 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -451,9 +1150,10 @@ off_2 = {
 	}
 }
 
+
 off_3 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -514,7 +1214,7 @@ off_3 = {
 
 off_4 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -588,9 +1288,10 @@ off_4 = {
 	}
 }
 
+
 off_5 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -649,9 +1350,10 @@ off_5 = {
 	}
 }
 
+
 off_6 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -712,7 +1414,7 @@ off_6 = {
 
 off_7 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -773,7 +1475,7 @@ off_7 = {
 
 off_8 = {
 	cost = 0
-	time = 1
+	time = 0
 		
 	on_destroyed = {
 		hidden_effect = {
@@ -834,7 +1536,7 @@ off_8 = {
 
 import_from_subjects = {
 	cost = 0
-	time = 1
+	time = 0
 	
 	potential = {
 		owner = {
@@ -846,7 +1548,11 @@ import_from_subjects = {
 		}
 	}
 	build_trigger = {
+		FROM = {
+			is_subject_other_than_tributary_trigger = yes
+		}
 		ROOT = {
+			NOT = {	has_province_modifier = import_from_subjects_modifier }
 			OR = {
 				trade_goods = copper
 				trade_goods = tin
@@ -857,10 +1563,6 @@ import_from_subjects = {
 				trade_goods = tobacco
 				trade_goods = cocoa
 			}
-			NOT = {	has_province_modifier = import_from_subjects_modifier }
-		}
-		FROM = {
-			is_subject_other_than_tributary_trigger = yes
 		}
 	}
 	
@@ -928,9 +1630,10 @@ import_from_subjects = {
 	}
 }
 
+
 stop_import_from_subjects = {
 	cost = 0
-	time = 1
+	time = 0
 	
 	potential = {
 		owner = {
@@ -943,7 +1646,11 @@ stop_import_from_subjects = {
 	}
 	
 	build_trigger = {
+		FROM = {
+			is_subject_other_than_tributary_trigger = yes
+		}
 		ROOT = {
+			has_province_modifier = import_from_subjects_modifier
 			OR = {
 				trade_goods = copper
 				trade_goods = tin
@@ -954,10 +1661,6 @@ stop_import_from_subjects = {
 				trade_goods = tobacco
 				trade_goods = cocoa
 			}
-			has_province_modifier = import_from_subjects_modifier
-		}
-		FROM = {
-			is_subject_other_than_tributary_trigger = yes
 		}
 	}
 	
@@ -1017,65 +1720,6 @@ stop_import_from_subjects = {
 	}
 }
 
-#TGE Manufactories
-
-cannery_workshop = {
-	cost = 1000
-	time = 12
-
-	build_trigger = {
-		ROOT = {
-			OR = {
-				trade_goods = fish
-				trade_goods = vegetables
-				trade_goods = fruit
-				trade_goods = tomato
-				trade_goods = maize
-			}
-			NOT = { has_province_flag = has_latent_good }
-		}
-		
-		FROM = {
-			adm_tech = 47
-		}
-		NOT = { has_global_flag = No_Canned_Goods }
-	}
-	
-	on_built = {
-		hidden_effect = { 			
-			ROOT = { 
-				goods_save = yes
-				change_trade_goods = canned_goods 
-				set_province_flag = has_latent_good
-			}
-			
-		}
-	}
-	
-	on_destroyed = {
-		ROOT = {
-			clr_province_flag = has_latent_good
-			goods_back = yes	
-		}
-	}
-
-	modifier = {
-		allowed_num_of_buildings = 1
-		local_governing_cost = 0.15
-	}	
-	
-	ai_will_do = {
-		factor = 700
-		
-		modifier = {	
-			factor = 0
-			FROM = {
-				canned_goods = 3
-			}
-		}
-
-	}
-}
 
 cannon_foundry = {
 	cost = 1000
@@ -1088,29 +1732,33 @@ cannon_foundry = {
 			NOT = {	trade_goods = tin }
 			NOT = {	has_province_flag = has_latent_good	}
 		}
-		
 		FROM = {
 			mil_tech = 24
-			
 			#OR = {
 			#	innovativeness = 10
 			#	NOT = { has_dlc = "Rule Britannia" }
 			#}
-			
 			check_variable = {
 				which = copper
 				value = 0.4
 			}
-			
 			check_variable = {
 				which = tin
 				value = 0.3
 			}
 		}
-		
+		ROOT = {
+			AND = {
+				development = 10	
+				NOT = {	
+					trade_goods = copper
+					trade_goods = tin
+					has_province_flag = has_latent_good
+				}
+			}
+		}
 		NOT = { has_global_flag = No_Cannon }
 	}
-	
 	on_built = {
 		hidden_effect = {
 			FROM = {
@@ -1152,8 +1800,8 @@ cannon_foundry = {
 				change_trade_goods = cannon
 			}
 		}
+
 	}
-	
 	on_destroyed = {
 		hidden_effect = {
 			clr_province_flag = has_cannon
@@ -1209,24 +1857,28 @@ cannon_foundry = {
 			}
 		}
 	}
-	
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
 	}	
-	
 	ai_will_do = {
 		factor = 2000
 
 		modifier = {	
 			factor = 0
 			FROM = {
-				cannon = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = cannon
+				}
 			}
+			
 		}
 		
 	}
 }
+
+
 
 metalworking_workshop = {
 	cost = 1000
@@ -1234,17 +1886,17 @@ metalworking_workshop = {
 
 	build_trigger = {
 		AND = {	
-			NOT = {	trade_goods = iron }
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = iron
+				has_province_flag = has_latent_good
+			}
 		}
 		FROM = {
 			mil_tech = 33
-			
 			#OR = {
 			#	innovativeness = 15
 			#	NOT = { has_dlc = "Rule Britannia" }
 			#}
-			
 			check_variable = {
 				which = iron
 				value = 1.0
@@ -1346,11 +1998,16 @@ metalworking_workshop = {
 		modifier = {	
 			factor = 0
 			FROM = {
-				metalworking = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = metalworking
+				}
 			}
+			
 		}
 	}
 }
+
 
 munition_factory = {
 	cost = 1000
@@ -1358,8 +2015,10 @@ munition_factory = {
 	
 	build_trigger = {
 		AND = {	
-			NOT = {	trade_goods = lead }
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = lead
+				has_province_flag = has_latent_good
+			}
 		}
 		FROM = {
 			mil_tech = 32
@@ -1467,11 +2126,18 @@ munition_factory = {
 		modifier = {	
 			factor = 0
 			FROM = {
-				munitions = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = munitions
+				}
 			}
+			
 		}
 	}
 }
+
+
+
 
 wood_workshop = {
 	cost = 400
@@ -1523,8 +2189,12 @@ wood_workshop = {
 		modifier = {	
 			factor = 0
 			FROM = {
-				woodworking = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = woodworking
+				}
 			}
+			
 		}
 
 	}
@@ -1581,35 +2251,39 @@ leather_workshop = {
 		modifier = {	
 			factor = 0
 			FROM = {
-				leather = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = leather
+				}
 			}
+
 		}
 
 	}
 }
 
-sculpture_workshop = {
-	cost = 600
+
+
+
+fur_workshop = {
+	cost = 400
 	time = 12
 	
 	build_trigger = {
 		ROOT = {
-			trade_goods = marble
-			#development = 15
+			trade_goods = fur
+			#development = 10
 			NOT = { has_province_flag = has_latent_good }
 		}
 		
-		has_dlc = "Leviathan"
-		
 		FROM = {
-			adm_tech = 24
-			#OR = {
-			#	innovativeness = 7
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			
+			dip_tech = 5
+			OR = {
+				innovativeness = 5
+				NOT = { has_dlc = "Rule Britannia" }
+			}
 		}
-		NOT = { has_global_flag = No_Marble_sculpture }
+		NOT = { has_global_flag = No_Leather }
 	}
 	
 	
@@ -1618,7 +2292,7 @@ sculpture_workshop = {
 		hidden_effect = { 
 			ROOT = { 
 				goods_save = yes
-				change_trade_goods = marble_sculpture 
+				change_trade_goods = fur_clothing 
 				set_province_flag = has_latent_good
 			}
 		}
@@ -1641,11 +2315,158 @@ sculpture_workshop = {
 		
 		modifier = {	
 			factor = 0
-			NOT = { has_dlc = "Leviathan" }
+			FROM = {
+				fur_clothing = 3
+			}
 		}
-		
+
 	}
 }
+
+Instruments_workshop = {
+	cost = 1500
+	time = 12
+	
+	build_trigger = {
+		ROOT = {
+			#development = 25
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 12
+			OR = {
+				innovativeness = 15
+				NOT = { has_dlc = "Rule Britannia" }
+			}
+		}
+		
+		FROM = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = jungle
+				}
+			}
+		}
+		NOT = { has_global_flag = No_String_Instruments }
+	}
+	
+	
+
+	on_built = {
+		hidden_effect = { 
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = String_Instruments 
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = String_Instruments
+				}
+			}
+			
+		}
+
+	}
+}
+
+
+
+sculpture_workshop = {
+	cost = 600
+	time = 12
+	
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = marble
+				trade_goods = jade
+			}
+			#development = 15
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		has_dlc = "Leviathan"
+		
+		FROM = {
+			adm_tech = 24
+			#OR = {
+			#	innovativeness = 7
+			#	NOT = { has_dlc = "Rule Britannia" }
+			#}
+			
+		}
+		NOT = { has_global_flag = No_Marble_sculpture }
+	}
+	
+	
+
+	on_built = {
+		hidden_effect = { 
+			if = {
+				limit = { trade_goods = marble }
+				ROOT = { 
+					goods_save = yes
+					change_trade_goods = marble_sculpture 
+					set_province_flag = has_latent_good
+				}
+			}
+			else_if = {
+				limit = { trade_goods = jade }
+				ROOT = { 
+					goods_save = yes
+					change_trade_goods = jade_sculptures 
+					set_province_flag = has_latent_good
+				}
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+	}
+}
+
+
+
+
 
 jewellery_workshop = {
 	cost = 2000
@@ -1705,12 +2526,17 @@ jewellery_workshop = {
 		modifier = {	
 			factor = 0
 			FROM = {
-				jewellery = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					trade_goods = jewellery
+				}
 			}
+
 		}
 
 	}
 }
+
 
 uniforms_workshop = {
 	cost = 650
@@ -1830,9 +2656,12 @@ steam_engine_manu = {
 			}
 		}
 		AND = {	
-			NOT = {	trade_goods = zinc }
-			NOT = {	trade_goods = copper }
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = zinc
+				trade_goods = copper
+				has_province_flag = has_latent_good
+			}
+			
 		}
 		NOT = { has_global_flag = No_Steam_engine }
 	}
@@ -1954,14 +2783,23 @@ steam_engine_manu = {
 	}
 }
 
+
+
+
 mine = {
 	cost = 500
-	time = 1
-	
+	time = 12
 	
 	build_trigger = {
 		AND = {
 			ROOT = { 
+				NOT = { has_province_flag = has_latent_good }
+				NOT = { has_province_flag = has_mine }
+				NOT = { trade_goods = copper }
+				NOT = { trade_goods = tin }
+				NOT = { trade_goods = zinc }
+				NOT = { trade_goods = iron }
+				NOT = { trade_goods = lead }
 				OR = {
 					has_terrain = mountain
 					has_terrain = hills
@@ -1971,14 +2809,13 @@ mine = {
 					has_terrain = desert_ranges
 					has_terrain = dry_highlands
 				}
-				NOT = { has_province_modifier = mine_fail }
-				NOT = { has_province_flag = has_latent_good }
+				#NOT = { has_province_modifier = mine_fail }
 			}
 			FROM = {
 				dip_power = 100
 			}
 		}
-		NOT = { has_global_flag = No_Mine }
+		#NOT = { has_global_flag = No_Mine }
 	}
 	
 	modifier = {
@@ -1988,13 +2825,32 @@ mine = {
 
 	}
 	
+	on_destroyed = {
+		
+	}
+	
 	allow_in_gold_provinces = no
 
 	
 	ai_will_do = {
-		factor = 0
+		factor = 1
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				num_of_loans = 1
+			}
+		}
+		
+		modifier = {	
+			factor = 2
+			FROM = {
+				treasury = 1000
+			}
+		}
 	}
 }
+
 
 spectacle_factory = {
 	cost = 1000
@@ -2010,12 +2866,14 @@ spectacle_factory = {
 			check_variable = {
 				which = glass
 				value = 0.8
-				#value = 0.6
+				#value = 0.6 #VU - This is a TGE value
 			}
 		}
 		AND = {	
-			NOT = {	trade_goods = glass	}
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = glass
+				has_province_flag = has_latent_good
+			}
 		}
 		NOT = { has_global_flag = No_Optics  }
 	}
@@ -2118,6 +2976,7 @@ spectacle_factory = {
 	}
 }
 
+
 cigars_factory = {
 	cost = 1500
 	time = 12	
@@ -2135,8 +2994,10 @@ cigars_factory = {
 			}
 		}
 		AND = {	
-			NOT = {	trade_goods = tobacco }
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = tobacco
+				has_province_flag = has_latent_good
+			}
 		}
 		NOT = { has_global_flag = No_Cigars  }
 	}
@@ -2256,8 +3117,10 @@ chocolate_factory = {
 			}
 		}
 		AND = {	
-			NOT = {	trade_goods = cocoa }
-			NOT = {	has_province_flag = has_latent_good	}
+			NOT = {	
+				trade_goods = cocoa
+				has_province_flag = has_latent_good
+			}
 		}
 		NOT = { has_global_flag = No_Chocolate  }
 	}
@@ -2456,6 +3319,64 @@ bakery = {
 				sweet_confectioneries = 3
 			}
 		}
+	}
+}
+
+cannery_workshop = {
+	cost = 1000
+	time = 12
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = fish
+				trade_goods = vegetables
+				trade_goods = fruit
+				trade_goods = tomato
+				trade_goods = maize
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			adm_tech = 47
+		}
+		NOT = { has_global_flag = No_Canned_Goods }
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = canned_goods 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				canned_goods = 3
+			}
+		}
+
 	}
 }
 

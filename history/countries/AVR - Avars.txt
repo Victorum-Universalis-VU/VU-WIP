@@ -3,7 +3,7 @@ add_government_reform = iqta
 primary_culture = avar
 add_accepted_culture = dagestani
 religion = sunni
-technology_group = persian_tech_group
+technology_group = muslim
 capital = 2198 #Khunzah
 religious_school = shafii_school
 

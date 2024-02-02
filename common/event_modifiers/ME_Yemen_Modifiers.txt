@@ -189,7 +189,7 @@ YEM_last_remnant_of_old_yemen = {
 	manpower_recovery_speed = 0.10
 }
 
-yem_marib_dam_modifier = {
+YEM_marib_dam_modifier = {
 	local_development_cost = -0.5 
 }
 

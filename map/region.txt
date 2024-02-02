@@ -2437,7 +2437,7 @@ labrador_sea_region = {
 
 #Prevents crashes when testing new alpha drafts
 unused_region = {
-	areas = {
+	#areas = {
 	    #unused_area
 	    #lower_silesia_area
 		#middle_silesia_area
@@ -2611,5 +2611,5 @@ unused_region = {
 		#bighorn_area
 		#chatham_and_auckland_islands_area
 		#upper_rhineland_area
-	}
+	#}
 }

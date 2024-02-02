@@ -85,10 +85,7 @@ cherokee_1 = {
 			define_advisor = {
 				type = treasurer
 				skill = 2
-				OR = {
-					religion = arctolatry
-					religion = totemism
-				}
+				religion = totemism
 				culture = ROOT
 				discount = yes
 			}

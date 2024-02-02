@@ -3,7 +3,6 @@
 add_core = SWE
 owner = SWE
 controller = SWE
-add_core = GTA
 culture = swedish
 religion = catholic
 hre = no
@@ -14,10 +13,7 @@ base_manpower = 1
 capital = "Dalaborg"
 is_city = yes
 
-
-
-
-
+add_core = VGT
 
 1497.3.13 = { controller = DAN } #Danish loyalists at Danish DoW
 1497.10.6 = { controller = SWE } #Hans I become King and Sweden a Danish Vassal

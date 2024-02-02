@@ -99,11 +99,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//culture_selection_bg.dds"
 	}
 
-
-
-
-
-
 	spriteType = {
 		name = "GFX_exploit_button_manpower"
 		texturefile = "gfx//interface//exploit_button_manpower.dds"
@@ -143,14 +138,7 @@ spriteTypes = {
 		name = "GFX_sort_total_49"
 		texturefile = "gfx//interface//sort_total_49.dds"
 	}
-
-
-
-
-
-
-
-
+	
 	spriteType = {
 		name = "GFX_close_gold"
 		texturefile = "gfx//interface//close_gold.dds"
@@ -234,7 +222,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_macro_buildings_category_strip"
 		texturefile = "gfx//interface//macro_buildings_category_strip.dds"
-		noOfFrames = 9
+		noOfFrames = 22
 	}
 
 	spriteType = {
@@ -896,4 +884,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//southamerica_fort04.dds"
 		loadType = "INGAME"
 	}
+
+
 }

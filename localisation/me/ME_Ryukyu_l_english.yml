@@ -22,19 +22,30 @@
  RYU_influence_the_heavenly_throne_desc: "Diplomacy is sometimes inadequate to fulfill our goals. Thus, in certain cases we need to employ espionage and use whatever secrets we find as a pressure point to have the Chinese Emperors and Kings legitimize our conquest!"
  RYU_the_entrepot_title: "The Entrepot"
  RYU_the_entrepot_desc: "We are at a very advantageous position between the mighty China and Japan. By playing both sides via our strong diplomatic capabilities, we shall enjoy the fruits of trading with both superpowers."
- 
+
  # Modifiers:
  RYU_deterrent: "Deterrent"
+ desc_RYU_deterrent: ""
  RYU_growing: "A Growing State"
+ desc_RYU_growing: ""
  RYU_great_far_eastern_empire: "Great Far Eastern Empire"
+ desc_RYU_great_far_eastern_empire: ""
  RYU_centre_of_tge_gunpowder: "Centre of Gunpowder"
- RYU_center_of_gunpowder: "Centre of Gunpowder" 
+ desc_RYU_centre_of_tge_gunpowder: ""
+ RYU_center_of_gunpowder: "Centre of Gunpowder"
+ desc_RYU_center_of_gunpowder: "" 
  RYU_technology_sharing: "Technology Sharing"
+ desc_RYU_technology_sharing: ""
  RYU_maritime_culture_thriving: "Maritime Culture Thriving"
+ desc_RYU_maritime_culture_thriving: ""
  RYU_prospering_times: "Prospering Times"
+ desc_RYU_prospering_times: ""
  RYU_relations_with_china: "Chinese Subsidies"
+ desc_RYU_relations_with_china: ""
  RYU_chinese_approval: "Chinese Approval"
+ desc_RYU_chinese_approval: ""
  RYU_the_medium: "The Medium"
+ desc_RYU_the_medium: ""
  
  # Events:
  ME_Ryukyu_Events.1.t: "Piracy in Okinawa"

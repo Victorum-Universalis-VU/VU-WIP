@@ -12,6 +12,8 @@ trade_goods = olive_oil
 is_city = yes
 hre = no
 
+add_core = CAR
+
 
 
 

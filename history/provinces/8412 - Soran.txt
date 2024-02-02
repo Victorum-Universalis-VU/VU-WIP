@@ -3,7 +3,6 @@
 owner = SRN
 controller = SRN
 add_core = SRN
-add_core = ASY 
 culture = assyrian
 religion = nestorian
 capital = "Diyana"		#Baziran could also work as it was Kurdish
@@ -15,30 +14,8 @@ base_manpower = 1
 is_city = yes
 add_core = IRQ
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = ASR 
+add_core = ASY
 
 1469.2.4 = {
 	owner = AKK

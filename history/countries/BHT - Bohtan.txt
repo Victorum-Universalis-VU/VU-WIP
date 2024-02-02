@@ -3,6 +3,6 @@ add_government_reform = iqta
 government_rank = 1
 primary_culture = kurdish
 religion = sunni
-technology_group = muslim
+technology_group = persian_tech_group
 capital = 4293 #Arbil
 religious_school = shafii_school

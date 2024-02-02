@@ -14,7 +14,7 @@
  greek_league: "Greek League"
  greek_league_desc: " A league of united Greek states that wish to protect each other. This government type is only available for Greece and for greek culture nation. Its devided into 3 parties, The democrats, The aristocrats and The oligarchs."
  gl_aristocrats: "The Aristocrats"
- gl_aristocrats_FACTION_DESC: "Aristocrats is a form of government that places power in the hands of a small, privileged ruling class. The term derives from the Greek aristokratia, meaning "rule of the best"."
+ gl_aristocrats_FACTION_DESC: "Aristocrats is a form of government that places power in the hands of a small, privileged ruling class. The term derives from the Greek aristokratia, meaning 'rule of the best'."
  gl_democrats: "The Democrats"
  gl_democrats_FACTION_DESC: "During the Classical era of Ancient Greece many city-states had forms of government similar to a democracy, in which the free, native adult male citizens of the city took a major and direct part in the management of the affairs of state."
  gl_democrats_influence: "Democratic Party Influence"
@@ -118,10 +118,13 @@
  PEACE_po_take_caliphate: "Claim the Caliphate"
 
  west_slav_slovaks: "The Slovaks"
+ west_slav_slovaks_influence: "Slovak Influence"
  west_slav_slovaks_FACTION_DESC: "Although isolated, the Slovaks are the most brave and most productive out of all. Whilst they inhabit small and mountainous areas, they have proven quite capable of leading a nation as well."
  west_slav_poles: "The Poles"
+ west_slav_poles_influence: "Polish Influence"
  west_slav_poles_FACTION_DESC: "Sons of Lech, true warriors of the plains, the Polish people prove the most numerous and crafty, maintaining the biggest noble force in our realm. They are true leaders, but they are fractured by petty differences."
  west_slav_czechs: "The Czechs"
+ west_slav_czechs_influence: "Czech Influence"
  west_slav_czechs_FACTION_DESC: "The Czechs. Their society has proven to be the most tolerant, protecting everyone's rights, as well as maintaining most of their old traditions. Some of their legacy however can be described as dangerous, standing on the brink of defeat against numerous crusades."
 
  # Events:

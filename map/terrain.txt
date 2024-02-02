@@ -864,8 +864,8 @@ categories =  {
 			#South Australia
 			3775 3870 3871 3872 3873 3882 3904 3905 3906 3913 3914 3915 6198
 			
-			#Western Australia
-			3916
+            #Western Australia
+			3907 3909 3910 3916
 
             #Northern Territories
             3883
@@ -893,9 +893,6 @@ categories =  {
 			#Victorum Universalis
 			2324 347 575 2349 2452 3591 3600 3719 3720 4327 5312 5274 355 2451 2325 5272 2326 387 5180 7449 430 439 1970 2726 4865 5255 2244 7461 6962 6963 4577 1111 2826 364 866 2616 4964 5251 5387
 			5426 5555 6134 6551 6552 6553 6585 2841 5271 2788 1206 2024 2783 8409
-			
-			#Western Australia
-			3907 3909 3910
 		}
 	}
 	
@@ -4879,7 +4876,6 @@ categories =  {
         type = forest
         sound_type = forest
         supply_limit = 4
-        movement_cost = 1.10
         local_development_cost = -0.10
         allowed_num_of_buildings = 3
         nation_designer_cost_multiplier = 1.4
@@ -7108,7 +7104,6 @@ categories =  {
     # Ottomans
 	urban_constantinople = {
 		color = { 177 156 217 }
-		movement_cost = 1.10
         type = plains
         sound_type = plains
         supply_limit = 15
@@ -14031,7 +14026,6 @@ categories =  {
 	# Russia
 	urban_petrozavodsk = {
 		color = { 177 156 217 }
-		movement_cost = 1.10
         type = forest
         sound_type = forest
         supply_limit = 2
@@ -15703,7 +15697,6 @@ categories =  {
         type = forest
         sound_type = forest
         supply_limit = 4
-        movement_cost = 1.10
         local_development_cost = -0.10
         allowed_num_of_buildings = 3
         nation_designer_cost_multiplier = 1.4

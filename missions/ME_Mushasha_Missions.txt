@@ -967,6 +967,7 @@ MSY_missions_5 = {
 		effect = {
 			ME_give_claims = { area = pirate_coast_area }
 			ME_give_claims = { area = bahrain_area }
+			ME_give_claims = { area = kuwait_area }
 			ME_give_claims = { id = 2999 }
 			
 			custom_tooltip = " "

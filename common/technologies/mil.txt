@@ -26,6 +26,13 @@ technology = {
 	enable = african_spearmen
 	enable = african_clubmen
 	enable = indian_archers
+
+	apothecary = yes
+	armory = yes
+	barber = yes
+	guard_house = yes
+	hospital = yes
+	wrestling = yes
 }
 
 technology = {
@@ -302,6 +309,7 @@ technology = {  # Fight over the Seas
 	}
 
 	supply_limit = 0.20
+	armory = yes
 }
 
 technology = {  #Swarm

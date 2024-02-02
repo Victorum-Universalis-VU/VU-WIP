@@ -7,6 +7,7 @@ monarchy = {
 				feudalism_reform
 				autocracy_reform
 				elective_monarchy_reform
+				phoenician_elective_monarchical_republic_reform
 				plutocratic_reform
 				indian_sultanate_reform
 				nayankara_reform
@@ -20,6 +21,7 @@ monarchy = {
 				daimyo
 				indep_daimyo
 				elective_monarchy
+				phoenician_elective_monarchical_republic
 				iqta
 				ottoman_government
 				prussian_monarchy
@@ -27,6 +29,8 @@ monarchy = {
 				austrian_dual_monarchy
 				principality
 				tsardom
+				issi_akdom_reform
+				sardom_reform
 				mamluk_government
 				feudal_theocracy
 				celestial_empire
@@ -893,6 +897,7 @@ monarchy = {
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
+		phoenician_elective_monarchical_republic_legacy
 		celestial_empire_legacy
 		ottoman_government_legacy
 		prussian_monarchy_legacy
@@ -949,6 +954,8 @@ monarchy = {
 		indian_sultanate_reform
 		mamluk_government
 		tsardom
+		issi_akdom_reform
+		sardom_reform
 		ruthenian_tsardom
 		russian_empire_reform
 		principality
@@ -960,7 +967,9 @@ monarchy = {
 		system_of_councils_reform
 		courts_of_navarra
 		elective_monarchy_reform
+		phoenician_elective_monarchical_republic_reform
 		elective_monarchy
+		phoenician_elective_monarchical_republic
 		# ME Reforms:
 		ME_tribal_federation_monarchy
 		ME_ibadi_community
@@ -1030,6 +1039,7 @@ monarchy = {
 		prussian_monarchy
 		prussian_monarchy_base
 		elective_monarchy
+		phoenician_elective_monarchical_republic
 		kalmar_union
 		celestial_empire
 		#VU
@@ -2504,6 +2514,14 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = elective_monarchy_legacy
 	}
+	phoenician_elective_monarchical_republic = {
+		government = monarchy
+		legacy_government = phoenician_elective_monarchical_republic_legacy
+	}
+	phoenician_elective_monarchical_republic_reform = { #VU - Added to 1.36.2.* by San Felipe
+	    government = monarchy
+		legacy_government = phoenician_elective_monarchical_republic_reform_legacy
+	}
 	imperial_city = {
 		government = republic
 		legacy_government = imperial_city
@@ -2610,6 +2628,14 @@ pre_dharma_mapping = {
 	tsardom = {
 		government = monarchy
 		legacy_government = tsardom_legacy
+	}
+	sardom_reform = {
+		government = monarchy
+		legacy_government = sardom_reform_legacy
+	}
+	issi_akdom_reform = {
+		government = monarchy
+		legacy_government = issi_akdom_reform_legacy
 	}
 	pirate_republic_reform = {
 		government = republic

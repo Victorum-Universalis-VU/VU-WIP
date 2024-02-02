@@ -1217,6 +1217,7 @@ estate_nobles_golden_liberty = {
 		OR = {
 			has_estate_privilege = estate_nobles_golden_liberty #Poland starts with it
 			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
 			has_reform = polish_elective_monarchy 
 		}
 	}
@@ -1235,6 +1236,7 @@ estate_nobles_golden_liberty = {
 				AND = { 
 					NOT = { has_reform = polish_elective_monarchy } 
 					NOT = { has_reform = elective_monarchy }
+					NOT = { has_reform = phoenician_elective_monarchical_republic }
 				}
 				has_reform = polish_autocratic_monarchy
 				mission_completed = plc_golden_liberty
@@ -1288,6 +1290,7 @@ estate_nobles_golden_liberty = {
 			limit = {
 				OR = { 
 					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
 					has_reform = polish_elective_monarchy
 				}
 				has_estate = estate_nobles
@@ -1360,6 +1363,7 @@ estate_nobles_veto_heir_apparent = {
 		OR = { 
 			has_reform = polish_elective_monarchy
 			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
 		}
 	}
 	penalties = {
@@ -2493,6 +2497,8 @@ estate_nobles_early_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2575,6 +2581,8 @@ estate_nobles_legalized_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2654,6 +2662,8 @@ estate_nobles_total_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2732,6 +2742,8 @@ estate_nobles_restricted_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2806,6 +2818,8 @@ estate_nobles_devastating_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2882,6 +2896,8 @@ estate_nobles_increased_peasant_freedom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2962,6 +2978,8 @@ estate_nobles_peasant_liberation = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
+			has_reform = issi_akdom_reform
+			has_reform = sardom_reform
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform

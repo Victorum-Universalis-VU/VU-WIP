@@ -15,6 +15,7 @@ elective_monarchy = {
 			reforms = {
 				feudalism_reform
 				elective_monarchy_reform
+				phoenician_elective_monarchical_republic_reform
 			}
 		}
 		candidates_for_election = {
@@ -513,6 +514,7 @@ elective_monarchy = {
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
+		phoenician_elective_monarchical_republic_legacy
 		celestial_empire_legacy
 		ottoman_government_legacy
 		iqta_legacy
@@ -538,6 +540,8 @@ elective_monarchy = {
 		indian_sultanate_reform
 		mamluk_government
 		tsardom
+		issi_akdom_reform
+		sardom_reform
 		principality
 		#greek_aparchate_reform
 		parliamentary_reform
@@ -569,9 +573,11 @@ elective_monarchy = {
 		ottoman_government
 		revolutionary_empire_reform
 		elective_monarchy
+		phoenician_elective_monarchical_republic
 		celestial_empire
 		crown_of_saint_wenceslaus
 		elective_monarchy_reform
+		phoenician_elective_monarchical_republic_reform
 		polish_constitutionalism_reform
 		empire_of_japan_reform
 	}

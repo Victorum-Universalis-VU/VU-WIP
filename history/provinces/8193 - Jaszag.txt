@@ -7,7 +7,7 @@ owner = HUN
 controller = HUN
 
 #Demographics
-culture = cuman
+culture = hungarian #VU - Changed from cuman Hungarian by San Felipe on Yani's advice.
 religion = catholic
 
 #Development and Trade

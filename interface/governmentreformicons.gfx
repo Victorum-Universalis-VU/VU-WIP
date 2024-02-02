@@ -1669,6 +1669,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//common_republic_reform.dds"
 	}
 	spriteType = {
+		name = "government_reform_phoenician_republic"
+		texturefile = "gfx//interface//government_reform_icons//phoenician_republic_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_phoenician_republic_reform"
+		texturefile = "gfx//interface//government_reform_icons//phoenician_republic_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_mixed_republic_reform"
 		texturefile = "gfx//interface//government_reform_icons//mixed_republic_reform.dds"
 	}
@@ -1771,5 +1779,14 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_third_republic"
 		texturefile = "gfx//interface//government_reform_icons//third_republic.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_issi_akdom_reform"
+		texturefile = "gfx//interface//government_reform_icons//issi_akdom_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_sardom_reform"
+		texturefile = "gfx//interface//government_reform_icons//sardom_reform.dds"
 	}
 }

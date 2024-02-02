@@ -13,31 +13,8 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = IRQ
+add_core = ASR
 add_core = ASY 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1405.1.1 = {
 	owner = QAR

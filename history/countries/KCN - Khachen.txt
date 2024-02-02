@@ -3,8 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = armenian
 religion = miaphysite	#was coptic
-#technology_group = eastern
-technology_group = russian_tech_group
+technology_group = eastern
 capital = 2202
 
 1440.1.1 = {
