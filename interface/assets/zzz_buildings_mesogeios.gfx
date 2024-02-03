@@ -318,25 +318,25 @@ objectTypes = {
 	pdxmesh = {
 		name = "greekgfx_fort_15th"
 		file = "gfx/models/Buildings/Western/cose_castle.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "greekgfx_fort_16th"
 		file = "gfx/models/Buildings/Western/cose_starfort.mesh"
-		scale = 0.25
+		scale = 0.125
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "greekgfx_fort_17th"
 		file = "gfx/models/Buildings/Western/cose_bastion.mesh"
-		scale = 0.20
+		scale = 0.10
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "greekgfx_fort_18th"
 		file = "gfx/models/Buildings/Western/cose_fortress.mesh"
-		scale = 0.18
+		scale = 0.09
 		cull_distance = 700.0f
 	}
 
@@ -464,25 +464,25 @@ objectTypes = {
 	pdxmesh = {
 		name = "turkishgfx_fort_15th"
 		file = "gfx/models/Buildings/Western/cose_castle.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "turkishgfx_fort_16th"
 		file = "gfx/models/Buildings/Western/cose_starfort.mesh"
-		scale = 0.25
+		scale = 0.125
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "turkishgfx_fort_17th"
 		file = "gfx/models/Buildings/Western/cose_bastion.mesh"
-		scale = 0.20
+		scale = 0.1
 		cull_distance = 700.0f
 	}
 	pdxmesh = {
 		name = "turkishgfx_fort_18th"
 		file = "gfx/models/Buildings/Western/cose_fortress.mesh"
-		scale = 0.18
+		scale = 0.09
 		cull_distance = 700.0f
 	}
 	
@@ -611,7 +611,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "persiangfx_fort_15th"
 		file = "gfx/models/Buildings/Indian/cose_indian_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 
@@ -700,7 +700,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "mongolgfx_fort_15th"
 		file = "gfx/models/Buildings/Mongol/mongol_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 	
@@ -829,7 +829,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "southamericagfx_fort_15th"
 		file = "gfx/models/Buildings/SouthAmerica/cose_s_american_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 
@@ -959,7 +959,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "thaigfx_fort_15th"
 		file = "gfx/models/Buildings/Thai/cose_thai_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 
@@ -1048,7 +1048,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "polynesiangfx_fort_15th"
 		file = "gfx/models/Buildings/Polynesian/polynesian_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 
@@ -1137,7 +1137,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "aboriginalgfx_fort_15th"
 		file = "gfx/models/Buildings/Aboriginal/aboriginal_fort.mesh"
-		scale = 0.3
+		scale = 0.15
 		cull_distance = 700.0f
 	}
 }

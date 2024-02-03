@@ -356,7 +356,7 @@ treasury = {
 	
 	make_obsolete = counting_house
 	modifier = {
-		local_production_efficiency = 1.0 #VU - Kept to 0.05 in v1.36.2.* by San Felipe
+		local_production_efficiency = 0.1 #VU - Kept to 0.05 in v1.36.2.* by San Felipe
 		#Same modifier as the EU4 Counting House.
 	}
 	
