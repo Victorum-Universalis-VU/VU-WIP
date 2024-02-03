@@ -15,6 +15,10 @@ base_production = 10
 base_manpower = 10
 is_city = yes
 
+
+
+
+
 1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1644.1.1 = {
 	unrest = 0

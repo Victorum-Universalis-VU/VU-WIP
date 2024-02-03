@@ -1,4 +1,4 @@
-#6825 - Yantai
+#6826 - Weihai
 
 owner = MNG
 controller = MNG
@@ -6,13 +6,16 @@ add_core = MNG
 add_core = QIC
 culture = shandong_culture
 religion = confucianism
-capital = "Yantai"
-trade_goods = lacquerware #VU - Was naval_supplies but changed by San Felipe in v1.36.2.* because Changsha has long been a long been a center of Chinese lacquerware production.
+capital = "Weihai"
+trade_goods = grain
 hre = no
-base_tax = 8
-base_production = 8
-base_manpower = 8
+base_tax = 10
+base_production = 10
+base_manpower = 10
 is_city = yes
+
+extra_cost = 8
+center_of_trade = 1
 
 1644.4.1 = { owner = CSH controller = CSH } # The Shun dynasty of Li Zicheng
 1644.11.1 = {

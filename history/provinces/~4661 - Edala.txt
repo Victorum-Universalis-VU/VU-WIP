@@ -1,17 +1,20 @@
-#6742 - Liaoyuan
+#Edala
 
 owner = MHX
 controller = MHX
 add_core = MHX
 culture = manchu
 religion = confucianism
-capital = "Liaoyuan"
-trade_goods = millet #VU - Was grain but changed by San Felipe in v1.36.2.* because millet is more widespread than grain in China.
+capital = "Edala"
+trade_goods = grain
 hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 8
+base_production = 8
+base_manpower = 8
 is_city = yes
+
+
+
 
 1613.2.1 = {
 	owner = MJZ
