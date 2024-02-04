@@ -30,7 +30,6 @@ technology = { #Tribal Government
 
 	aqueduct = yes
 	cesspit = yes
-	fire_office = yes
 	hall = yes
 	well = yes
 
@@ -1027,7 +1026,6 @@ technology = {
 	#parliamentary_democracy = yes
 
 	latrines = yes
-	telephone_exchange = yes
 }
 
 technology = {
@@ -1079,7 +1077,6 @@ technology = {
 	#Assembly Line
 	production_efficiency 	=	0.08
 
-	radio_station = yes
 }
 
 technology = {

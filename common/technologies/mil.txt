@@ -33,6 +33,7 @@ technology = {
 	guard_house = yes
 	hospital = yes
 	wrestling = yes
+	war_office = yes
 }
 
 technology = {

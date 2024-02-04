@@ -40,7 +40,7 @@ technology = { #Early Ships
 	observatory = yes
 	park = yes
 	pigeon_shed = yes
-	war_office = yes
+	fire_office = yes
 }
 
 technology = { #Merchants & Trade
@@ -1121,6 +1121,7 @@ technology = {
 	#enable = ironclad_eastern
 	#enable = ironclad_asian
 	natural_history_museum = yes
+	telephone_exchange = yes
 }
 
 technology = {
@@ -1177,6 +1178,7 @@ technology = {
 	range					= 100
 
 	cinema = yes
+	radio_station = yes
 }
 
 technology = {

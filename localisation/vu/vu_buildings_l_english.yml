@@ -38,11 +38,11 @@
  #Government
  hall: "Hall"
  building_hall: "Hall"
- building_building_hall_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_hall_desc: "§TCountry Requirements:§!\n-Administrative Technology (0)\n"
 
  city_hall: "City Hall"
  building_city_hall: "City Hall"
- building_city_hall_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_city_hall_desc: "§TCountry Requirements:§!\n-Administrative Technology (0)\n"
 
  #Trade
  corporative_headquarters: "Corporative Headquarters" 
@@ -55,172 +55,172 @@
  #Revenue & Customs
  custom_house: "Customs House" #Customs
  building_custom_house: "Customs House"
- building_custom_house_desc: "Requires §TAdministrative Technology§! §T16§!"
+ building_custom_house_desc: "§TCountry Requirements:§!\n-Administrative Technology (16)\n"
 
  stamp_office: "Stamp House"
  building_stamp_office: "Stamp House"
- building_stamp_office_desc: "Requires §TAdministrative Technology§! §T22§!"
+ building_stamp_office_desc: "§TCountry Requirements:§!\n-Administrative Technology (22)\n"
 
  excise_office: "Excise Office" #Collections
  building_excise_office: "Excise Office"
- building_excise_office_desc: "Requires §TAdministrative Technology§! §T28§!"
+ building_excise_office_desc: "§TCountry Requirements:§!\n-Administrative Technology (28)\n"
 
  #Sanitation
  cesspit: "Cesspit"
  building_cesspit: "Cesspit"
- building_cesspit_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_cesspit_desc: "§TCountry Requirements:§!\n-Administrative Technology (0)\n"
 
  bath_house: "Bath House"
  building_bath_house: "Bath House"
- building_bath_house_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_bath_house_desc: "§TCountry Requirements:§!\n-Administrative Technology (9)\n"
 
  latrines: "Latrines"
  building_latrines: "Latrines"
- building_latrines_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_latrines_desc: "§TCountry Requirements:§!\n-Administrative Technology (36)\n"
 
  sewer_system: "Sewer System"
  building_sewer_system: "Sewer System"
- building_sewer_system_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_sewer_system_desc: "§TCountry Requirements:§!\n-Administrative Technology (35)\n"
 
  #Education
  library: "Library"
  building_library: "Library"
- building_library_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_library_desc: "§TCountry Requirements:§!\n-Administrative Technology (14)\n"
 
  school: "School"
  building_school: "School"
- building_school_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_school_desc: "§TCountry Requirements:§!\n-Administrative Technology (10)\n"
 
  #Water
  well: "Well"
  building_well: "Well"
- building_well_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_well_desc: "§TCountry Requirements:§!\n-Administrative Technology (0)\n"
 
  aqueduct: "Aqueduct"
  building_aqueduct: "Aqueduct"
- building_aqueduct_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_aqueduct_desc: "§TCountry Requirements:§!\n-Administrative Technology (0)\n"
 
  distillery: "Distillery"
  building_distillery: "Distillery"
- building_distillery_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_distillery_desc: "§TCountry Requirements:§!\n-Administrative Technology (30)\n"
 
  pump_house: "Pump House"
  building_pump_house: "Pump House"
- building_pump_house_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_pump_house_desc: "§TCountry Requirements:§!\n-Administrative Technology (37)\n"
 
  #Healthcare
  apothecary: "Clinic"
  building_apothecary: "Clinic"
- building_apothecary_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_apothecary_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  barber: "Barber-Surgeons"
  building_barber: "Barber-Surgeons"
- building_barber_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_barber_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  hospital: "Hospital"
  building_hospital: "Hospital"
- building_hospital_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_hospital_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  #Entertainment
  wrestling: "Wrestling"
  building_wrestling: "Wrestling"
- building_wrestling_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_wrestling_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  theatrics: "Theatrics"
  building_theatrics: "Theatrics"
- building_theatrics_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_theatrics_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (14)\n"
 
  operatics: "Operatics"
  building_operatics: "Operatics"
- building_operatics_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_operatics_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (18)\n"
 
  cinema: "Cinema"
  building_cinema: "Cinema"
- building_cinema_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_cinema_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (38)\n"
 
  #Leisure
  park: "Park"
  building_park: "Park"
- building_park_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_park_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
 
  zoo: "Zoo"
  building_zoo: "Zoo"
- building_zoo_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_zoo_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (29)\n"
 
  botanical_gardens: "Botanical Gardens"
  building_botanical_gardens: "Botanical Gardens"
- building_botanical_gardens_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_botanical_gardens_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (12)\n"
 
  #Foreign & Domestic
  #spy_agency already exists so it will go here. By San Felipe
 
  foreign_office: "Foreign Office"
  building_foreign_office: "Foreign Office"
- building_foreign_office_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_foreign_office_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (35)\n"
 
  #courthouse already exists so it will go here. By San Felipe
 
  supreme_court: "Supreme Court"
  building_supreme_court: "Supreme Court"
- building_supreme_court_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_supreme_court_desc: "§TCountry Requirements:§!\n-Administrative Technology (29)\n"
 
  #Couriers
  pigeon_shed: "Carrier Pigeons" #Homing Pigeons
  building_pigeon_shed: "Carrier Pigeons"
- building_pigeon_shed_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_pigeon_shed_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
 
  relay_stations: "Relay Station" #Pony Express
  building_relay_stations: "Relay Station"
- building_relay_stations_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_relay_stations_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (2)\n"
 
  radio_station: "Wireless Station"
  building_radio_station: "Wireless Station"
- building_radio_station_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_radio_station_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (38)\n"
 
  telephone_exchange: "Telephone Exchange"
  building_telephone_exchange: "Telephone Exchange"
- building_telephone_exchange_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_telephone_exchange_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (36)\n"
 
  #Discoveries
  observatory: "Observatory"
  building_observatory: "Observatory"
- building_observatory_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_observatory_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
 
  archaeological_dig: "Archaeological Dig"
  building_archaeological_dig: "Archaeological Dig"
- building_archaeological_digdesc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_archaeological_digdesc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
 
  national_museum: "National Museum"
  building_national_museum: "National Museum"
- building_national_museum_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_national_museum_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (27)\n"
 
  natural_history_museum: "Natural History Museum"
  building_natural_history_museum: "Natural History Museum"
- building_natural_history_museum_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_natural_history_museum_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (36)\n"
  
  #Public Safety
  fire_office: "Fire Office" #Fire Station
  building_fire_office: "Fire Office"
- building_fire_office_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_fire_office_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
 
  guard_house: "Guard House" #Police Station
  building_guard_house: "Guard House"
- building_guard_house_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_guard_house_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  penitentiary: "Penitentiary" #Jail
  building_penitentiary: "Penitentiary"
- building_penitentiary_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_penitentiary_desc: "§TCountry Requirements:§!\n-Administrative Technology (32)\n"
 
  #Offence
  #Armory already exists so it will go here. By San Felipe
 
  war_office: "War Office"
  building_war_office: "War Office"
- building_war_office_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_war_office_desc: "§TCountry Requirements:§!\n-Military Technology (0)\n"
 
  admiralty: "Admiralty"
  building_admiralty: "Admiralty"
- building_admiralty_desc: "§TProvince Requirements:§!\n-Development: 20¤1\n\n§TCountry Requirements:§!\n-Ruler has Administrative Skill of at least §Y5§!\n"
+ building_admiralty_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
  
  #Transportation
  building_road_system: "Roads"
