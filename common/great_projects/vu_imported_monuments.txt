@@ -248,17 +248,17 @@ vu_escola_de_marina = {
 	type = monument
 
 	#can we build it?
-	build_trigger = { AND = { culture_group = iberian OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
+	build_trigger = { AND = { OR = { culture_group = iberian culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
 
 	}
 	
-	can_use_modifiers_trigger = { AND = { culture_group = iberian OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
+	can_use_modifiers_trigger = { AND = { OR = { culture_group = iberian culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
 		
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	AND = { culture_group = iberian OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
+		AND = { OR = { culture_group = iberian culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
 		owner = { 
 			OR = {
 				full_idea_group = naval_ideas 

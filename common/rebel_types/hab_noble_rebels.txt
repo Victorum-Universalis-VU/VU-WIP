@@ -189,10 +189,7 @@ me_noble_rebels = {
 					}
 				}
 			}
-			OR = {
-				add_government_reform = elective_monarchy
-				add_government_reform = phoenician_elective_monarchical_republic
-			}
+			add_government_reform = elective_monarchy
 		}
 		if = {
 			limit = { has_estate = estate_nobles }

@@ -23,7 +23,10 @@ notre_dame_de_reims = { #Notre-Dame de Reims
 
     build_trigger = {
         religion_group = christian
-	    culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -38,7 +41,10 @@ notre_dame_de_reims = { #Notre-Dame de Reims
 
     can_use_modifiers_trigger = {
         religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -48,7 +54,10 @@ notre_dame_de_reims = { #Notre-Dame de Reims
     can_upgrade_trigger = {
         is_year = 1444
 		religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -189,7 +198,10 @@ abbaye_basilique_saint_denys = { #Abbaye-basilique de Saint-Denys
 
     build_trigger = {
         religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -204,7 +216,10 @@ abbaye_basilique_saint_denys = { #Abbaye-basilique de Saint-Denys
 
     can_use_modifiers_trigger = {
         religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -213,7 +228,10 @@ abbaye_basilique_saint_denys = { #Abbaye-basilique de Saint-Denys
 
     can_upgrade_trigger = {
 		religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -348,7 +366,10 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
 
     build_trigger = {
         religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			
 			has_owner_culture = yes
@@ -364,7 +385,10 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
 
     can_use_modifiers_trigger = {
        	religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -374,7 +398,10 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
     can_upgrade_trigger = {
         is_year = 1523
 		religion_group = christian
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -511,7 +538,10 @@ chateau_angers = { #ChÃÂ¢teau d'Angers
     type = monument
 
     build_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -525,7 +555,10 @@ chateau_angers = { #ChÃÂ¢teau d'Angers
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -534,7 +567,10 @@ chateau_angers = { #ChÃÂ¢teau d'Angers
 
     can_upgrade_trigger = {
         is_year = 1444
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -622,7 +658,10 @@ palais_des_tuileries = { #Palais des Tuileries
 	#can we build it?
 	build_trigger = {
 	    is_year = 1563
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -639,7 +678,10 @@ palais_des_tuileries = { #Palais des Tuileries
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -649,7 +691,10 @@ palais_des_tuileries = { #Palais des Tuileries
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		is_year = 1564
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -809,7 +854,10 @@ port_de_toulon = { #Port de Toulon
 
     build_trigger = {
 	    is_year = 1514
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -980,7 +1028,10 @@ ciutat_de_carcassona = { #Ciutat de Carcassona
     type = monument
 
     build_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -994,7 +1045,10 @@ ciutat_de_carcassona = { #Ciutat de Carcassona
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1003,7 +1057,10 @@ ciutat_de_carcassona = { #Ciutat de Carcassona
 
     can_upgrade_trigger = {
         is_year = 1849
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes

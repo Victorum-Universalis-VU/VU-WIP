@@ -42,7 +42,7 @@ workshop = {
 	time = 12
 	#Returned price to 100 due to the production efficiency increase.
 	modifier = {
-		local_production_efficiency = 0.05 #VU - Lowered to 0.05 in v1.36.2.* by San Felipe
+		local_production_efficiency = 0.5 #VU - Lowered to 0.05 in v1.36.2.* by San Felipe
 	}
 	
 	build_trigger = {
@@ -211,7 +211,7 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		#Modifier is now 75% instead of the EU4 100% or the VU 60%. It should be balanced for the extra provinces of VU while still being worth its price.
-		local_production_efficiency = 0.075 #VU - Lowered to 0.075 in v1.36.2.* by San Felipe
+		local_production_efficiency = 0.75 #VU - Lowered to 0.075 in v1.36.2.* by San Felipe
 	}
 	
 	on_built = {
@@ -356,7 +356,7 @@ treasury = {
 	
 	make_obsolete = counting_house
 	modifier = {
-		local_production_efficiency = 0.1 #VU - Kept to 0.05 in v1.36.2.* by San Felipe
+		local_production_efficiency = 1.0 #VU - Kept to 0.05 in v1.36.2.* by San Felipe
 		#Same modifier as the EU4 Counting House.
 	}
 	
@@ -504,7 +504,7 @@ factory = {
 	
 	make_obsolete = treasury
 	modifier = {
-		local_production_efficiency = 0.15
+		local_production_efficiency = 1.5
 		#Factories had a massive impact on production (Industrial Revolution) so they're represented by having a huge modifier.
 	}
 	

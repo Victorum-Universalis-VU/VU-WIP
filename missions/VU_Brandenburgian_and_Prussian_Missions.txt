@@ -4513,7 +4513,7 @@ PRU_missions_5 = {
 	
 	PRU_enlightened_despotism = {
 		icon = enlightened_absolutism
-		required_missions = { }
+		required_missions = { BRA_universita_viadrina BRA_kreditwerk }
 		position = 8
 		provinces_to_highlight = {
 			owned_by = ROOT
@@ -4533,7 +4533,7 @@ PRU_missions_5 = {
 	
 	PRU_place_in_the_sun = {
 		icon = centralized_empire
-		required_missions = { PRU_uniting_germany PRU_enlightened_despotism }
+		required_missions = { PRU_uniting_germany }
 		position = 10
 		provinces_to_highlight = {
 		}

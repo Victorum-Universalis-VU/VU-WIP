@@ -1559,21 +1559,28 @@ GER_missions_3 = {
 			}
 			custom_tooltip = vu_change_scandinavian_to_german
 			hidden_effect = {
-
-				370 = { 
+				if = {
 					limit = {
-						owned_by = ROOT
+						370 = {
+						    owned_by = ROOT
+						}
 					} 
-					change_culture = nordic_german
-					set_province_flag = changed_culture	
+					370 = { 
+						change_culture = nordic_german
+						set_province_flag = changed_culture	
+					}
 				}
 
-				5591 = {
+				if = {
 					limit = {
-						owned_by = ROOT
+						5591 = {
+						    owned_by = ROOT
+						}
 					} 
-					change_culture = nordic_german
-					set_province_flag = changed_culture
+					5591 = { 
+						change_culture = nordic_german
+						set_province_flag = changed_culture	
+					}
 				}
 
 				random_owned_province = {
@@ -3017,7 +3024,6 @@ GER_missions_4 = {
 			is_capital = yes
 			has_courthouse_building_trigger = no
 		}
-		position = 5
 		trigger = {
 			monthly_dip = 10
 			capital_scope = {

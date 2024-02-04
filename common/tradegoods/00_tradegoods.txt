@@ -7062,7 +7062,7 @@ llama = {
 
 indigo = {
 	is_valuable = yes
-	color = { 0.16 0.92 0.24 }
+	color = { 0.49 0.92 0.242 }
 	modifier = {
 		envoy_travel_time = -0.2 # Changed because prestige is used in so many of these - Q
 	}

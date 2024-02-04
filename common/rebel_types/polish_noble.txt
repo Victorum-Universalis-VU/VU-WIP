@@ -214,10 +214,7 @@ polish_noble_rebels = {
 				}
 				NOT = {	has_dlc = "Lions of the North" }
 			}
-			OR = {
-				add_government_reform = elective_monarchy
-				add_government_reform = phoenician_elective_monarchical_republic
-			}
+			add_government_reform = elective_monarchy
 		}
 		else_if = { 
 			limit = { 

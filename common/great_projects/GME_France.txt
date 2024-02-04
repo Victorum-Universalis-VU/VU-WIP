@@ -10,21 +10,27 @@ gme_bretagne_castles = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture = breton
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = french
+				OR = { 
+					culture_group = brythonic
+					culture_group = french
+					culture_group = old_latin
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture = breton
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = french
+				OR = { 
+					culture_group = brythonic
+					culture_group = french
+					culture_group = old_latin
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -113,12 +119,18 @@ gme_chambord = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = french
+		OR = { 
+			culture_group = french
+			culture_group = old_latin
+		}
 		FROM = { government = monarchy }
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = french
+		OR = { 
+			culture_group = french
+			culture_group = old_latin
+		}
 		FROM = { government = monarchy }
 		province_is_or_accepts_culture = yes
 	}
@@ -186,11 +198,17 @@ gme_chenonceau = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = french
+		OR = { 
+			culture_group = french
+			culture_group = old_latin
+		}
 		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		culture_group = french
+		OR = { 
+			culture_group = french
+			culture_group = old_latin
+		}
 		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = { }

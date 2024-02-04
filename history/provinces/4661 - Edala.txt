@@ -6,12 +6,15 @@ add_core = MHX
 culture = manchu
 religion = confucianism
 capital = "Edala"
-trade_goods = millet #VU - Was grain but changed by San Felipe in v1.36.2.* because millet is more widespread than grain in China.
+trade_goods = grain
 hre = no
 base_tax = 8
 base_production = 8
 base_manpower = 8
 is_city = yes
+
+
+
 
 1613.2.1 = {
 	owner = MJZ

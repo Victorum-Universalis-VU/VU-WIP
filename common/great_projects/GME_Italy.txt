@@ -643,11 +643,11 @@ gme_duomo_monreale = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -671,11 +671,11 @@ gme_duomo_monreale = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -697,11 +697,11 @@ gme_duomo_monreale = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1259,11 +1259,11 @@ gme_parramentu_sicilianu = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1277,11 +1277,11 @@ gme_parramentu_sicilianu = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1293,11 +1293,11 @@ gme_parramentu_sicilianu = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1371,11 +1371,11 @@ gme_sala_dei_cavalli = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1389,11 +1389,11 @@ gme_sala_dei_cavalli = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }
@@ -1405,11 +1405,11 @@ gme_sala_dei_cavalli = {
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = old_latin }
+				owner = { culture_group = french }
 			}
 			AND = {
 				has_owner_accepted_culture = yes
-				owner = { culture_group = french }
+				owner = { culture_group = old_latin }
 			}
 		}
     }

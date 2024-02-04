@@ -877,7 +877,7 @@ country_event = {
 				owner = { add_adm_power = 100 }
 			}
 			add_province_modifier = {
-				name = yem_marib_dam_modifier 
+				name = YEM_marib_dam_modifier
 				duration = -1 
 			}
 			add_base_tax = 1 

@@ -251,13 +251,23 @@ gme_igreja_madre_deus = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			religion = catholic
+		OR = { 
+			province_is_or_accepts_religion = {
+				religion = catholic
+			}
+			owner = { 
+ 				has_harmonized_with = catholic
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			religion = catholic
+		OR = { 
+			province_is_or_accepts_religion = {
+				religion = catholic
+			}
+			owner = { 
+ 				has_harmonized_with = catholic
+			}
 		}
 	}
 	keep_trigger = { }

@@ -16063,7 +16063,7 @@ old_germanic_group = {
 mesopotamian_group = {
 	graphical_culture = muslimgfx
 	assyrian = {
-		primary = ASR
+		primary = ASY
 		dynasty_names = {
 			Shalmaneser "Ashur-dan" "Ashur-nirari" "Adad-nirari" Ashurnasirpal Tukurti Ninurtal "Ashur-uballit" "Enlil-nirar" "Puzur-ashur" "Shalim-ahum" "Ilu-shuma"
 			"Ikunum" "Sargon" "Erishum" "Puzur-Ashur"  "Shamshi-Adad"  "Amorite" "Adaside" "Sargonid"

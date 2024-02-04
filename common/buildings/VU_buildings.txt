@@ -294,7 +294,7 @@ operatics = {
 	time = 36
 	#one_per_country = yes
 	modifier = { 
-		local_governing_cost_increase = -1.5
+		local_governing_cost_increase = -1
 		local_autonomy = -0.3
 		local_unrest = -0.75
 	}
@@ -449,7 +449,7 @@ pigeon_shed = {
 	time = 12
 	modifier = { 
 		local_institution_spread = 0.1
-		local_governing_cost = 0.1
+		local_governing_cost = -0.1
 	}
 	build_trigger = { 	
 	}
@@ -464,7 +464,7 @@ relay_stations = {
 	time = 24
 	modifier = { 
 		local_institution_spread = 0.25 
-		local_governing_cost = 0.2
+		local_governing_cost = -0.2
 	}
 	build_trigger = { 
 		is_state = yes
@@ -481,7 +481,7 @@ telephone_exchange = {
 
 	modifier = { 
 		local_institution_spread = 0.5
-		local_governing_cost = 0.25
+		local_governing_cost = -0.3
 	}
 	build_trigger = {
 		is_state = yes
@@ -497,7 +497,7 @@ radio_station = {
 	time = 48
 	modifier = { 
 		local_institution_spread = 1
-		local_governing_cost = 0.5
+		local_governing_cost = -0.5
 	}
 	build_trigger = {
 		is_state = yes

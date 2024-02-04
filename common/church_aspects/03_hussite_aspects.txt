@@ -33,7 +33,7 @@ bread_and_wine_aspect = {
 sola_scriptura_aspect = {
 	cost = 100
 	modifier = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.05
 		land_morale = 0.1
 	}
 }
@@ -69,7 +69,7 @@ regular_defenestrations_aspect = {
 taborite_resurgence_aspect = {
 	cost = 100
 	modifier = {
-		manpower_in_true_faith_provinces = 0.2
+		manpower_in_true_faith_provinces = 0.1
 		manpower_recovery_speed = 0.1
 	}
 }

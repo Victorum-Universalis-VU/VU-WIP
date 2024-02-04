@@ -106,6 +106,7 @@ gme_bishop_palace = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -119,6 +120,7 @@ gme_bishop_palace = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -222,6 +224,7 @@ gme_bruges_city_centre = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -233,6 +236,7 @@ gme_bruges_city_centre = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -435,6 +439,7 @@ gme_grote_raad_mechelen = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -447,6 +452,7 @@ gme_grote_raad_mechelen = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -595,6 +601,7 @@ gme_het_gravensteen = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -606,6 +613,7 @@ gme_het_gravensteen = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -689,6 +697,7 @@ gme_kasteel_de_haar = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -700,6 +709,7 @@ gme_kasteel_de_haar = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -788,6 +798,7 @@ gme_leiden_university = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -801,6 +812,7 @@ gme_leiden_university = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -932,6 +944,7 @@ gme_old_leuven_university = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -945,6 +958,7 @@ gme_old_leuven_university = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -1035,6 +1049,7 @@ gme_paleis_koudenberg = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -1047,6 +1062,7 @@ gme_paleis_koudenberg = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -1196,6 +1212,7 @@ gme_sint_pietersabdij = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}
@@ -1209,6 +1226,7 @@ gme_sint_pietersabdij = {
 				culture_group = germanic
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
 	}

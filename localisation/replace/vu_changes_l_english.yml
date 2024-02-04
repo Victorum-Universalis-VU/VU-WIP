@@ -2936,10 +2936,10 @@
  construct_city_jerusalem_title: "Construct Grand City of Jerusalem"
  construct_city_jerusalem_desc: "Totally different than Temple of Jerusalem!"
  #
- great_project_city_of_carthage: "Cothon of Carthage"
- city_of_carthage_title: "Cothon of Carthage"
- city_of_carthage: "Cothon of Carthage"
- construct_city_of_carthage_title: "Construct Cothon of Carthage"
+ great_project_city_of_carthage: "Cothon of Qart-Hadast"
+ city_of_carthage_title: "Cothon of Qart-Hadast"
+ city_of_carthage: "Cothon of Qart-Hadast"
+ construct_city_of_carthage_title: "Construct Cothon of Qart-Hadast"
  construct_city_of_carthage_desc: "Seriously, is monument description even visible anywhere? If you are reading this during your game, contact curious mod dev."
  #
  great_project_isfahan_city: "City of Isfahan"

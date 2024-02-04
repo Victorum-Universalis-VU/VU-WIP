@@ -9,11 +9,7 @@ update_goods = {
 
 	every_owned_province = { 
 		limit = {
-			OR = {
-				trade_goods = $GOODS$
-				has_province_modifier = $GOODS$_mine_small
-			    has_province_modifier = $GOODS$_mine
-			}
+			trade_goods = $GOODS$
 		}
 
 		export_to_variable = {
@@ -45,24 +41,6 @@ update_goods = {
 		change_variable = {            
 			which = $GOODS$ 
 			which = tradegood_modifier 
-		}
-		
-		if = {
-			limit = { 	has_province_modifier = $GOODS$_mine_small }
-			
-			set_variable = {            
-				which = $GOODS$ 
-				value = 0.2
-			}
-		}
-		
-		if = {
-			limit = { has_province_modifier = $GOODS$_mine }
-			
-			set_variable = {            
-				which = $GOODS$ 
-				value = 0.4
-			}
 		}
 		
 		owner = {
@@ -148,24 +126,6 @@ update_goods_subjects = {
 							which = import_$GOODS$
 							which = $GOODS$ 
 						}
-						
-						if = {
-							limit = { has_province_modifier = $GOODS$_mine_small }
-							
-							change_variable = {            
-								which = import_$GOODS$ 
-								value = 0.2
-							}
-						}
-						
-						if = {
-							limit = { has_province_modifier = $GOODS$_mine }
-							
-							change_variable = {            
-								which = import_$GOODS$ 
-								value = 0.4
-							}
-						}
 					}
 					owner = {
 						change_variable = {            
@@ -230,24 +190,6 @@ update_goods_subjects_monthly = {
 					set_variable = {            
 						which = import_$GOODS$
 						which = $GOODS$ 
-					}
-					
-					if = {
-						limit = { has_province_modifier = $GOODS$_mine_small }
-							
-						change_variable = {            
-							which = import_$GOODS$ 
-							value = 0.2
-						}
-					}
-						
-					if = {
-						limit = { has_province_modifier = $GOODS$_mine }
-						
-						change_variable = {            
-							which = import_$GOODS$ 
-							value = 0.4
-						}
 					}
 				}
 				owner = {
@@ -317,24 +259,6 @@ update_goods_subjects_province = {
 		change_variable = {            
 			which = import_$GOODS$
 			which = $GOODS$ 
-		}
-		
-		if = {
-			limit = { has_province_modifier = $GOODS$_mine_small }
-				
-			change_variable = {            
-				which = import_$GOODS$ 
-				value = 0.2
-			}
-		}
-			
-		if = {
-			limit = { has_province_modifier = $GOODS$_mine }
-			
-			change_variable = {            
-				which = import_$GOODS$ 
-				value = 0.4
-			}
 		}
 	
 		owner = {

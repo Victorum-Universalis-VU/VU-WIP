@@ -342,7 +342,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -371,7 +371,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -391,7 +391,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -581,7 +581,7 @@ tower_of_london = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -611,7 +611,7 @@ tower_of_london = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -633,7 +633,7 @@ tower_of_london = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -1329,7 +1329,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}	
@@ -1369,7 +1369,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1390,7 +1390,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1966,7 +1966,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1994,7 +1994,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -2012,7 +2012,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -2399,7 +2399,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -2418,7 +2418,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -2428,7 +2428,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -9123,11 +9123,10 @@ versailles = {
 	    is_year = 1623
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9147,11 +9146,10 @@ versailles = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9162,11 +9160,10 @@ versailles = {
 		is_year = 1682
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9347,7 +9344,7 @@ el_escorial = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9371,7 +9368,7 @@ el_escorial = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9386,7 +9383,7 @@ el_escorial = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9562,7 +9559,10 @@ potosi = {
 	#can we build it?
 	build_trigger = {
 	    is_year = 1545
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -9581,7 +9581,10 @@ potosi = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -9590,7 +9593,10 @@ potosi = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -11154,7 +11160,11 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = dacian
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
         	else = {
@@ -11176,7 +11186,11 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = dacian
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
         	else = {
@@ -11192,7 +11206,11 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = dacian
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
         	else = {
@@ -11988,9 +12006,11 @@ doges_palace = {
 	}
 
 	can_use_modifiers_trigger = {
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_upgrade_trigger = {
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	keep_trigger = {
@@ -12211,7 +12231,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -12226,7 +12246,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -12235,7 +12255,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -15417,11 +15437,11 @@ royal_palace_caserta = {
 	move_days_per_unit_distance = 10
 	starting_tier = 0
 	type = monument
-	build_trigger = { culture = neapolitan }
+	build_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { culture = neapolitan }
-	can_upgrade_trigger = { culture = neapolitan }
+	can_use_modifiers_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
+	can_upgrade_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -16339,7 +16359,7 @@ ulm_minster_great_project = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -16352,7 +16372,7 @@ ulm_minster_great_project = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -16571,7 +16591,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -16586,7 +16606,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -16595,7 +16615,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -17755,7 +17775,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -17785,7 +17805,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -17817,7 +17837,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {

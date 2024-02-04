@@ -12,7 +12,8 @@ gme_alcazar_segovia = {
 	can_use_modifiers_trigger = {
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -26,7 +27,8 @@ gme_alcazar_segovia = {
 	can_upgrade_trigger = {
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -243,7 +245,8 @@ gme_cathedral_seville = {
 		has_owner_religion = yes
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -254,7 +257,8 @@ gme_cathedral_seville = {
 		has_owner_religion = yes
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -321,7 +325,8 @@ gme_lonja_seda = {
 	can_use_modifiers_trigger = {
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -330,7 +335,8 @@ gme_lonja_seda = {
 	can_upgrade_trigger = {
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -440,7 +446,8 @@ gme_mosque_cathedral = {
 		}
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -454,7 +461,8 @@ gme_mosque_cathedral = {
 		}
 		owner = {
 			OR = {
-				culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -585,13 +593,19 @@ gme_sagres_school_navigation = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		owner = {
-			culture_group = iberian
+			OR = {
+        			culture_group = iberian
+				culture_group = old_latin
+			}
 		}
 		has_owner_accepted_culture = yes
 	}
 	can_upgrade_trigger = {
 		owner = {
-			culture_group = iberian
+			OR = {
+        			culture_group = iberian
+				culture_group = old_latin
+			}
 		}
 		has_owner_accepted_culture = yes
 	}
@@ -863,7 +877,8 @@ gme_tower_hercules = {
 	can_use_modifiers_trigger = {
 		owner = {
 			OR = {
-      			culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}
@@ -872,7 +887,8 @@ gme_tower_hercules = {
 	can_upgrade_trigger = {
 		owner = {
 			OR = {
-      			culture_group = iberian
+        		culture_group = iberian
+				culture_group = old_latin
 				culture = andalusi_arabic
 			}
 		}

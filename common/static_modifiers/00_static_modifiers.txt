@@ -107,7 +107,7 @@ difficulty_very_hard_ai = {
 
 city = {
 	local_tax_modifier = 0.25
-	allowed_num_of_buildings = 2
+	allowed_num_of_buildings = 4
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
 	allowed_num_of_manufactories = 1
@@ -131,6 +131,7 @@ in_capital_state = {
 }
 
 coastal = {
+	allowed_num_of_buildings = 2
 	supply_limit_modifier = 0.5
 	province_trade_power_modifier = 0.25
 }

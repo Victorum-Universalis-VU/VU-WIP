@@ -60,11 +60,33 @@ vu_voronet_monastery = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { culture_group = dacian has_owner_culture = yes owner = {has_country_flag = voronet_monastry} }
+	build_trigger = { 
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+		owner = { has_country_flag = voronet_monastry } 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = {culture_group = dacian has_owner_culture = yes}
-	can_upgrade_trigger = { culture_group = dacian has_owner_culture = yes}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2562,13 +2584,13 @@ vu_bilhorod_dnistrovskyi = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian culture_group = slavic
+	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
 	} } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian culture_group = slavic
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
 	} } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian culture_group = slavic
+	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian culture_group = old_latin primary_culture = ruthenian culture_group = slavic
 	} } }
 	keep_trigger = {}
 
@@ -4359,8 +4381,9 @@ vu_otanahaortress = {
    	is_year = 1522
 	    OR = {
 	        culture_group = low_franconian
-	        culture_group = iberian	
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes
@@ -4382,9 +4405,10 @@ vu_otanahaortress = {
 	can_use_modifiers_trigger = {	
     	is_year = 1522
 	    OR = {
-	    culture_group = low_franconian
-	        culture_group = iberian	
+	        culture_group = low_franconian
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes
@@ -4396,9 +4420,10 @@ vu_otanahaortress = {
 	can_upgrade_trigger = {		
 	is_year = 1522
 	    OR = {
-	    culture_group = low_franconian
-	        culture_group = iberian	
+	        culture_group = low_franconian
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes

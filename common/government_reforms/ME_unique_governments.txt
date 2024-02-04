@@ -402,7 +402,7 @@ german_kaiserreich_legacy = {
 		global_unrest = -2
 		global_autonomy = -0.05
 		max_absolutism = 20
-		monarch_military_power = 1
+		country_military_power = 1
 		monthly_militarized_society = 0.5
 	}
 
@@ -441,7 +441,7 @@ german_kaiserreich = {
 		global_unrest = -2
 		global_autonomy = -0.05
 		max_absolutism = 20
-		monarch_military_power = 1
+		country_military_power = 1
 		monthly_militarized_society = 0.5
 	}
 

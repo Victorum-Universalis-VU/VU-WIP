@@ -3927,7 +3927,10 @@ intramuros = {
 	#can we build it?
 	build_trigger = {	
     is_year = 1571
-	culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -3947,7 +3950,10 @@ intramuros = {
 	#can our country use it?
 	can_use_modifiers_trigger = {	
     is_year = 1571
-	culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -3956,8 +3962,11 @@ intramuros = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		
-	is_year = 1571
-	culture_group = iberian
+	is_year = 1571		
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -9233,11 +9242,20 @@ fort_geldria = {
 	type = monument
 
 	#can we build it?
-	build_trigger = {	
-		owner = {
-			capital_scope = {
-		    	continent = europe
-		    }
+	build_trigger = {
+		OR = {	
+			owner = {
+				capital_scope = {
+		    			continent = europe
+		    		}
+			}
+			owner = {
+				overlord = { 
+					capital_scope = {
+		    				continent = europe
+		    			}
+				}
+			}
 		}
 	}
 

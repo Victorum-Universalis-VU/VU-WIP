@@ -2893,13 +2893,13 @@ guiTypes = {
 
 				guiButtonType = {
 					name = "center_of_trade_button"
-					position = { x = 174 y = 245 }
+					position = { x = 174 y = 495 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 
 				iconType = {
 					name = "center_of_trade_icon"
-					position = { x = 174 y = 245 }
+					position = { x = 174 y = 495 }
 					spriteType = "GFX_center_of_trade_inland_1"
 				}
 
@@ -3230,7 +3230,7 @@ guiTypes = {
 				horizontalBorder= ""
 				verticalBorder= ""
 				fullScreen = no
-				moveable = yes
+				moveable = 1
 				Orientation = "UPPER_LEFT"
 
 				iconType = {
@@ -4830,12 +4830,12 @@ guiTypes = {
 		guiButtonType = {
 			name ="building"
 			quadTextureSprite = "GFX_building_default"
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 4 }
 		}
 
 		instantTextBoxType = {
 			name = "required_development"
-			position = { x = 4 y = 8 }
+			position = { x = 10 y = 4 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
 			text = "0"
@@ -4847,33 +4847,33 @@ guiTypes = {
 		iconType = {
 			name ="building_status"
 			spriteType = "GFX_building_status_strip"
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 4 }
 		}
 
 		iconType = {
 			name ="building_progress"
 			spriteType = "GFX_building_progress"
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 4 }
 		}
 
 		iconType = {
 			name ="building_currentlybuilding"
 			spriteType = "GFX_building_currentlybuilding"
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 5 }
 		}
 
 
 		guiButtonType = {
 			name ="building_canbuild"
 			quadTextureSprite = "GFX_building_canbuild_unique"
-			position = { x = 2 y = 2 }
+			position = { x = 3 y = -4 }
 		}
 
 
 		guiButtonType = {
 			name ="building_destroy"
 			quadTextureSprite = "GFX_building_destroy"
-			position = { x = 10 y = 10 }
+			position = { x = 10 y = 4 }
 		}
 	}
 
@@ -5688,7 +5688,7 @@ guiTypes = {
 		backGround=""
 		position = { x = 0 y = 0 }
 		size = { x = 1310 y = 573 }
-		moveable = yes
+		moveable = 1
 		dontRender = ""
 		horizontalBorder= ""
 		verticalBorder= ""

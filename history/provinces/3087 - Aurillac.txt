@@ -13,7 +13,7 @@ religion = catholic
 hre = no
 base_tax = 2  
 base_production = 2
-trade_goods = fruit			#Nuts
+trade_goods = fruit			#Nuts - Busta Nutz. SF ;)
 base_manpower = 1 
 
 #Claimants

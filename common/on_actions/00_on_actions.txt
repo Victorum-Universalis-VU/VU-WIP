@@ -6515,9 +6515,13 @@ on_revoke_estate_land_post = {
 on_grant_estate_land = {
 	if = {
 		limit = {
-			has_province_modifier = revoked_estate_modifier
+			any_owned_province = {
+				has_province_modifier = revoked_estate_modifier
+			}
 		}
-		remove_province_modifier = revoked_estate_modifier
+		every_owned_province = {
+			remove_province_modifier = revoked_estate_modifier
+		}
 	}
 }
 
