@@ -2221,7 +2221,7 @@ type={
 		name="tower_of_london"
 		hidden_on_start=no
 		position={
-			2638.000 0.200 1872.300 
+			2637.450 0.200 1872.300 
 		}
 		rotation={
 			0.000 20.000 0.000 
