@@ -14721,7 +14721,7 @@ city_of_nineveh = {
 		}
 
 		country_modifiers = {
-			governing_capacity = 0.25
+			governing_capacity = 0.025
 			core_creation = 0.1
 			administrative_efficiency = 0.05
 		}
