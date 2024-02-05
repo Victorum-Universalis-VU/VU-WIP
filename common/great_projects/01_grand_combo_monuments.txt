@@ -14721,8 +14721,8 @@ city_of_nineveh = {
 		}
 
 		country_modifiers = {
-			governing_capacity = 0.025
-			core_creation = 0.1
+			governing_capacity = 25
+			core_creation = -0.1
 			administrative_efficiency = 0.05
 		}
 
@@ -14747,8 +14747,8 @@ city_of_nineveh = {
 		}
 
 		country_modifiers = {
-			governing_capacity = 0.05
-			core_creation = 0.15
+			governing_capacity = 50
+			core_creation = -0.15
 			administrative_efficiency = 0.075
 		}	
 
@@ -14774,8 +14774,8 @@ city_of_nineveh = {
 		}
 
 		country_modifiers = {
-			governing_capacity = 0.075
-			core_creation = 0.2
+			governing_capacity = 75
+			core_creation = -0.2
 			administrative_efficiency = 0.1
 		}
 
@@ -14787,7 +14787,7 @@ city_of_nineveh = {
 temple_city_of_assur = {
 
 	# province it starts in
-	start = 2310
+	start = 6638
 	date = 1444.01.01
 
 	time = {

@@ -184,7 +184,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hall_asiangfx"
-		texturefile = "gfx//interface//buildings//government//hall//asian//chinese_hall.tga"
+		texturefile = "gfx//interface//buildings//government//hall//asian//asian_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -199,7 +199,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hall_mongolgfx"
-		texturefile = "gfx//interface//buildings//government//hall//indian//chinese_hall.tga"
+		texturefile = "gfx//interface//buildings//government//hall//asian//asian_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -214,7 +214,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hall_thaigfx"
-		texturefile = "gfx//interface//buildings//government//hall//muslim//chinese_hall.tga"
+		texturefile = "gfx//interface//buildings//government//hall//asian//asian_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -255,17 +255,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_city_hall_asiangfx"
-		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//asian_city_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_city_hall_mongolgfx"
-		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//asian_city_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_city_hall_thaigfx"
-		texturefile = "gfx//interface//buildings//government//city_hall//asian//chinese_city_hall.tga"
+		texturefile = "gfx//interface//buildings//government//city_hall//asian//asian_city_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2126,17 +2126,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_foreign_office_asiangfx"
-		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//asian//asian_foreign_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_foreign_office_thaigfx"
-		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//asian//asian_foreign_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_foreign_office_mongolgfx"
-		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//chinese//chinese_foreign_office.tga"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//asian//asian_foreign_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2269,17 +2269,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_library_asiangfx"
-		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		texturefile = "gfx//interface//buildings//education//library//asian//asian_library.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_library_thaigfx"
-		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		texturefile = "gfx//interface//buildings//education//library//asian//asian_library.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_library_mongolgfx"
-		texturefile = "gfx//interface//buildings//education//library//asian//chinese_library.tga"
+		texturefile = "gfx//interface//buildings//education//library//asian//asian_library.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2340,17 +2340,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_school_asiangfx"
-		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		texturefile = "gfx//interface//buildings//education//school//asian//asian_school.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_school_mongolgfx"
-		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		texturefile = "gfx//interface//buildings//education//school//asian//asian_school.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_school_thaigfx"
-		texturefile = "gfx//interface//buildings//education//school//asian//chinese_school.tga"
+		texturefile = "gfx//interface//buildings//education//school//asian//asian_school.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2412,17 +2412,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_apothecary_asiangfx"
-		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//asian_apothecary.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_apothecary_thaigfx"
-		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//asian_apothecary.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_apothecary_mongolgfx"
-		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//chinese_apothecary.tga"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//asian//asian_apothecary.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2483,17 +2483,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_barber_asiangfx"
-		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		texturefile = "gfx//interface//buildings//healthcare//barber//asian//asian_barber.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_barber_thaigfx"
-		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		texturefile = "gfx//interface//buildings//healthcare//barber//asian//asian_barber.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_barber_mongolgfx"
-		texturefile = "gfx//interface//buildings//healthcare//barber//chinese//chinese_barber.tga"
+		texturefile = "gfx//interface//buildings//healthcare//barber//asian//asian_barber.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2554,17 +2554,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hospital_asiangfx"
-		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//asian//asian_hospital.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_hospital_thaigfx"
-		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//asian//asian_hospital.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_hospital_mongolgfx"
-		texturefile = "gfx//interface//buildings//healthcare//hospital//chinese//chinese_hospital.tga"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//asian//asian_hospital.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2626,17 +2626,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_park_asiangfx"
-		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		texturefile = "gfx//interface//buildings//leisure//park//asian//asian_park.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_park_thaigfx"
-		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		texturefile = "gfx//interface//buildings//leisure//park//asian//asian_park.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_park_mongolgfx"
-		texturefile = "gfx//interface//buildings//leisure//park//chinese//chinese_park.tga"
+		texturefile = "gfx//interface//buildings//leisure//park//asian//asian_park.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -3481,17 +3481,17 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_theatrics_asiangfx"
-		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//asian//asian_theatrics.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_theatrics_mongolgfx"
-		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//asian//asian_theatrics.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_theatrics_thaigfx"
-		texturefile = "gfx//interface//buildings//entertainment//theatrics//chinese//chinese_theatrics.tga"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//asian//asian_theatrics.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -3680,67 +3680,67 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_custom_house_latingfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_easterngfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//eastern//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_greekgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_asiangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//asian//asian_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_mongolgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//asian//asian_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_thaigfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//asian//asian_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_africangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_indiangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_muslimgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_turkishgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_persiangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_southamericagfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_northamericagfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//western//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
 		loadType = "INGAME"
 	}
 	#Excise Office

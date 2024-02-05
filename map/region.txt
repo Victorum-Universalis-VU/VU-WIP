@@ -1581,6 +1581,12 @@ canada_region = {
 	}
 }
 
+phillipines_lakes_sea_region = {
+	areas = {
+		phillipines_lakes_sea_area
+	}
+}
+
 great_lakes_region = {
 	areas = {
 		ohio_country_area
@@ -1609,7 +1615,7 @@ northeast_america_region = {
 	}
 }
 
-southeast_america_region =  {
+southeast_america_region = {
 	areas = {
 	    appalachia_area
 		chesapeake_area

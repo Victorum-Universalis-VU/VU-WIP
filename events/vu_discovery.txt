@@ -1137,6 +1137,9 @@ country_event = {
 				south_chinese_coast_superregion = { discover_country = ROOT }
 				mekong_river_superregion = { discover_country = ROOT }
 				ganges_river_superregion = { discover_country = ROOT }
+				chao_praya_river_superregion = { discover_country = ROOT }
+				phillipines_lakes_sea_superregion = { discover_country = ROOT }
+				xijiang_river_superregion = { discover_country = ROOT }
 				persian_gulf_sea_provinces = { discover_country = ROOT }
 				#Land
 				east_indies_superregion = { discover_country = ROOT }
