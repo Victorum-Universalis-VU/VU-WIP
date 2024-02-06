@@ -99,7 +99,9 @@ province_event = {
 		}	
 		if = {
 			limit = { 
-				ai = no 
+				owner = {
+					ai = no 
+				}
 			}
 			owner = { add_dip_power = -100 }
 		}

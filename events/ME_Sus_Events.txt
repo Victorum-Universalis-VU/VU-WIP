@@ -349,7 +349,7 @@ country_event = {
 							is_claim = ROOT
 							NOT = { is_permanent_claim = ROOT }
 						"
-						event_target_name = Sus_Target
+						event_target_name = Sus_Target_1
 					}
 				}
 			}
@@ -377,7 +377,7 @@ country_event = {
 							is_claim = ROOT
 							NOT = { is_permanent_claim = ROOT }
 						"
-						event_target_name = Sus_Target
+						event_target_name = Sus_Target_2
 					}
 				}
 			}
@@ -404,7 +404,7 @@ country_event = {
 							is_claim = ROOT
 							NOT = { is_permanent_claim = ROOT }
 						"
-						event_target_name = Sus_Target
+						event_target_name = Sus_Target_3
 					}
 				}
 			}
@@ -430,7 +430,7 @@ country_event = {
 							is_claim = ROOT
 							NOT = { is_permanent_claim = ROOT }
 						"
-						event_target_name = Sus_Target
+						event_target_name = Sus_Target_4
 					}
 				}
 			}
@@ -454,7 +454,7 @@ country_event = {
 							is_claim = ROOT
 							NOT = { is_permanent_claim = ROOT }
 						"
-						event_target_name = Sus_Target
+						event_target_name = Sus_Target_5
 					}
 				}
 			}

@@ -5565,6 +5565,7 @@ categories =  {
         movement_cost = 1.0
         local_development_cost = -0.30
         allowed_num_of_buildings = 4
+        defence = 2
         nation_designer_cost_multiplier = 1.50
         local_build_time = -0.30
         local_build_cost = -0.25

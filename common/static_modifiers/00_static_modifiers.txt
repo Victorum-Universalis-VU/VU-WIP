@@ -283,7 +283,7 @@ provincial_tax_income = {
 }
 
 provincial_production_size = {
-	trade_goods_size = 0.14
+	trade_goods_size = 0.12
 	ship_recruit_speed = -0.01
 }
 
@@ -308,7 +308,7 @@ development = {
 	allowed_num_of_buildings = 0.1
 	supply_limit_modifier = 0.02
 	local_missionary_strength = -0.001
-	land_forcelimit	= 0.045			# special case, affected by autonomy
+	land_forcelimit	= 0.040	# special case, affected by autonomy
 	naval_forcelimit = 0.055			# special case, affected by autonomy & set to 0 by code if not port
 	local_sailors = 20			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
@@ -1649,9 +1649,9 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = -6
-	land_forcelimit	= -1.5
-	naval_forcelimit = -6
+	global_tax_income = -4
+	land_forcelimit	= -1
+	naval_forcelimit = -4
 }
 
 vassal_nation = {

@@ -317,7 +317,7 @@ country_event = {
 }
 
 #Hidden Event to remove theodosian Wall Cannons
-province_event = {
+country_event = {
 	id = ME_Bulgaria_Events.7
 	title = ME_Bulgaria_Events.7.T
 	desc = ME_Bulgaria_Events.7.D
@@ -355,7 +355,7 @@ province_event = {
 }
 
 #Hidden Event to remove theodosian Wall Cannons
-province_event = {
+country_event = {
 	id = ME_Bulgaria_Events.8
 	title = ME_Bulgaria_Events.8.T
 	desc = ME_Bulgaria_Events.8.D

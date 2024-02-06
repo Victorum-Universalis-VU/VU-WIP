@@ -1797,7 +1797,7 @@ vu_tebessa_basilica = {
 		cost_to_upgrade = {	factor = 3000 }
 		province_modifiers = { local_production_efficiency = 0.1 local_development_cost = -0.2 }
 		area_modifier = { }
-		country_modifiers = { global_missionary_strength = 0.02 warscore_cost_vs_other_religion = -0.10 yearly_patriarch_authority = 0.01 }
+		country_modifiers = { global_missionary_strength = 0.02 warscore_cost_vs_other_religion = -0.10 yearly_patriarch_authority = 0.0075 }
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -1805,7 +1805,7 @@ vu_tebessa_basilica = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = { local_production_efficiency = 0.15  local_development_cost = -0.3}
 		area_modifier = { }
-		country_modifiers = { global_missionary_strength = 0.03 missionaries = 1 yearly_patriarch_authority = 0.02 warscore_cost_vs_other_religion = -0.15 }
+		country_modifiers = { global_missionary_strength = 0.03 missionaries = 1 yearly_patriarch_authority = 0.01 warscore_cost_vs_other_religion = -0.15 }
 		on_upgraded = { }
 	}
 }
@@ -2405,7 +2405,6 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.1
-			global_missionary_strength = 0.01
         }
 
         on_upgraded = {
@@ -2433,8 +2432,7 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.2
-			global_missionary_strength = 0.02
-			monthly_piety = 0.2
+			global_missionary_strength = 0.01
         }
 
         on_upgraded = {
@@ -2463,8 +2461,7 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.3
-			global_missionary_strength = 0.03
-			monthly_piety = 0.3
+			global_missionary_strength = 0.02
         }
 
         on_upgraded = {
@@ -2554,7 +2551,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 3500 }
 		province_modifiers = {  }
 		area_modifier = { local_tax_modifier = 0.05 }
-		country_modifiers = { global_missionary_strength = 0.01 }
+		country_modifiers = { }
 		on_upgraded = {}
 	}
 	tier_2 = {
@@ -2562,7 +2559,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  local_development_cost = -0.05}
-		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
+		country_modifiers = { global_missionary_strength = 0.01 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -2570,7 +2567,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2 local_development_cost = -0.1 }
-		country_modifiers = { global_missionary_strength = 0.03 yearly_patriarch_authority = 0.003}
+		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }
@@ -2982,7 +2979,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 3500 }
 		province_modifiers = {  }
 		area_modifier = { local_tax_modifier = 0.05 }
-		country_modifiers = { global_missionary_strength = 0.01 }
+		country_modifiers = { }
 		on_upgraded = {}
 	}
 	tier_2 = {
@@ -2990,7 +2987,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  local_development_cost = -0.05}
-		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
+		country_modifiers = { global_missionary_strength = 0.01 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -2998,7 +2995,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2 local_development_cost = -0.1 }
-		country_modifiers = { global_missionary_strength = 0.03 yearly_patriarch_authority = 0.003}
+		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }
@@ -3040,7 +3037,7 @@ vu_solovetsky_monastery = {
 		cost_to_upgrade = { factor = 7500 }
 		province_modifiers = { local_defensiveness = 0.1 local_manpower_modifier = 0.10 local_garrison_size = 0.05 local_development_cost = -0.05 local_production_efficiency = 0.05 }
 		area_modifier = { local_hostile_attrition = 1 local_monthly_devastation = -0.05 local_manpower_modifier = 0.05 }
-		country_modifiers = {  defensiveness = 0.075  garrison_size = 0.10 yearly_patriarch_authority = 0.01 global_missionary_strength = 0.02 }
+		country_modifiers = {  defensiveness = 0.075  garrison_size = 0.10 yearly_patriarch_authority = 0.005 global_missionary_strength = 0.02 }
 		on_upgraded = { }
 	}
 	tier_3 = {
@@ -3048,7 +3045,7 @@ vu_solovetsky_monastery = {
 		cost_to_upgrade = { factor = 14000 }
 		province_modifiers = { 	fort_level = 1 	local_defensiveness = 0.15 local_manpower_modifier = 0.2 local_garrison_size = 0.10 local_development_cost = -0.10 local_production_efficiency = 0.1 }
 		area_modifier = { local_hostile_attrition = 2 local_monthly_devastation = -0.1 local_manpower_modifier = 0.10}
-		country_modifiers = {  defensiveness = 0.10 garrison_size = 0.20 yearly_patriarch_authority = 0.02 	tolerance_own = 1 missionaries = 1 global_missionary_strength = 0.03 }
+		country_modifiers = {  defensiveness = 0.10 garrison_size = 0.20 yearly_patriarch_authority = 0.01	tolerance_own = 1 missionaries = 1 global_missionary_strength = 0.03 }
 		on_upgraded = { }
 	}
 }
@@ -3435,7 +3432,7 @@ vu_pazaislis_monastery = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  }
-		country_modifiers = { 	religious_unity = 0.25 tolerance_heretic = 2 yearly_patriarch_authority = 0.01}
+		country_modifiers = { 	religious_unity = 0.25 tolerance_heretic = 2 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -3443,7 +3440,7 @@ vu_pazaislis_monastery = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2  }
-		country_modifiers = { 	religious_unity = 0.5 tolerance_heretic = 3 yearly_patriarch_authority = 0.003}
+		country_modifiers = { 	religious_unity = 0.5 tolerance_heretic = 3 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }

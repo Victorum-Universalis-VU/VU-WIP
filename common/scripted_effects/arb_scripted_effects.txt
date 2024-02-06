@@ -588,19 +588,9 @@ YEM_madrasah_effect = {
 		add_or_upgrade_tax_building = yes
 		add_base_tax = 3
 	}
-	
-	hidden_effect = {
-		complete_mission = YEMR_construct_a_mosque
-		complete_mission = YEMG_constrct_a_madrasah
-		complete_mission = ADE_madrasah
-		complete_mission = RAS_madrasah
-	}
 }
 
 YEM_eliminate_pretenders_effect = {
-	hidden_effect = {
-		YEM_complete_missions_effect = yes
-	}
 	ME_give_claims = { area = ifat_area }
 	ME_give_claims = { area = aussa_area }
 	ME_give_claims = { area = mecca_area }
@@ -619,13 +609,6 @@ YEM_eliminate_pretenders_effect = {
 	custom_tooltip = " "
 	
 	add_stability_or_adm_power = yes
-}
-
-YEM_complete_missions_effect = {
-	complete_mission = ADE_eliminate_pretenders
-	complete_mission = RAS_eliminate_pretenders
-	complete_mission = YEMR_defeat_fakes
-	complete_mission = YEMG_eliminate_pretenders
 }
 
 YEM_event_20_potential = {

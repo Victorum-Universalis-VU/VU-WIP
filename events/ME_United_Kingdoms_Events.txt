@@ -779,7 +779,9 @@ province_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_country_flag = UKS_moving }
+				owner = {
+					NOT = { has_country_flag = UKS_moving }
+				}
 			}
 			change_culture = breton
 		}

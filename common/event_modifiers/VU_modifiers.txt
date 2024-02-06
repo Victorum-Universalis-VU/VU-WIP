@@ -422,6 +422,7 @@ birthplace_of_market_production_modifier = {
 #New
 vu_potential_archaeological_dig = {
 	trade_value = 0.25
+	picture = "vu_possible_archaeological_dig"
 }
 
 vu_book_of_grudges_modifier = {

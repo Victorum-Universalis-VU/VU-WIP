@@ -9,7 +9,6 @@ estate_jews = {
 			    NOT = { religion = jewish }
 			    any_owned_province = { has_province_modifier = jewish_population }
 			}
-			has_country_flag = country_has_jews_yes
 			AND = {
 			    NOT = { religion = jewish }
 			    capital_scope = {
@@ -73,7 +72,6 @@ estate_jews = {
 	influence_modifier = {
 		desc = EST_VAL_JEWISH_MINORITIES
 		trigger = {
-			has_country_flag = country_has_jews_yes
 			any_province = { has_province_modifier = jewish_population }
 		}	
 		influence = 10

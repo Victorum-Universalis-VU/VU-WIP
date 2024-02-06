@@ -1755,7 +1755,7 @@ MSA_Missions_Trade_4 = {
 				}
 			}
 			hidden_effect = {
-				596 = {
+				1361 = {
 					random_trade_node_member_province = {
 						limit = {
 							owned_by = ROOT
@@ -5242,7 +5242,7 @@ MSA_Missions_Independence_5 = {
 				}
 			}
 			hidden_effect = {
-				596 = {
+				1361 = {
 					random_trade_node_member_province = {
 						limit = {
 							owned_by = ROOT

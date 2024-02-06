@@ -62,7 +62,7 @@ technology = {  # Early Banking
 		feudalism = 0.5
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 
 	relay_stations = yes
 }
@@ -92,7 +92,7 @@ technology = {  #Urbanisation
 		medicine = 0.05
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 }
 
 
@@ -105,7 +105,7 @@ technology = { # Guilds
 		medicine = 0.05
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 	fur_workshop = yes
 }
 
@@ -146,7 +146,7 @@ technology = {  #Finance
 		medicine = 0.05
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 }
 
 
@@ -160,7 +160,7 @@ technology = {  #Curency and Banking
 		civil_service = 0.05
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 }
 
 
@@ -175,7 +175,7 @@ technology = {  #City Growth
 		market_production = 0.5
 	}
 
-	trade_efficiency = 0.02
+	trade_efficiency = 0.01
 }
 
 
@@ -219,7 +219,7 @@ technology = { # Hansiatic Trade
 		market_production = 0.25
 	}
 
- 	trade_efficiency = 0.02	
+	trade_efficiency = 0.01
 }
 
 technology = {  # Recovery of Trade
@@ -312,7 +312,7 @@ technology = {  # Winds of Renaissance
 #End of pre-1444 techs
 
 technology = { #The Early Carrack
-	# Tech 3
+	# Tech 20
 	year = 1440
 	expects_institution = {
 		feudalism = 0.5
@@ -325,7 +325,7 @@ technology = { #The Early Carrack
 	naval_morale			=	0.1
 	naval_maintenance		= 	0.1
 	range					= 	100
-	trade_efficiency 		= 	0.02
+	trade_efficiency 		= 	0.01
 	global_colonial_growth	= 	15
 	may_build_flagships = yes
 	
@@ -335,7 +335,7 @@ technology = { #The Early Carrack
 }
 
 technology = { #Marketplace
-	# Tech 4
+	# Tech 21
 	year = 1453
 	expects_institution = {
 		feudalism = 0.5
@@ -354,7 +354,7 @@ technology = { #Marketplace
 }
 
 technology = { #Basic Financial Instruments
-	# Tech 5
+	# Tech 22
 	year = 1466
 	expects_institution = {
 		feudalism = 0.5
@@ -375,7 +375,7 @@ technology = { #Basic Financial Instruments
 }
 
 technology = { #Shipyards
-	# Tech 6
+	# Tech 23
 	year = 1479
 	expects_institution = {
 		feudalism = 0.5
@@ -394,7 +394,7 @@ technology = { #Shipyards
 }
 
 technology = { #Naval Ambitions
-	# Tech 7
+	# Tech 24
 	year = 1492
 	expects_institution = {
 		feudalism = 0.5
@@ -412,7 +412,7 @@ technology = { #Naval Ambitions
 }
 
 technology = { #Docks
-	# Tech 8
+	# Tech 25
 	year = 1505
 	expects_institution = {
 		feudalism = 0.5
@@ -434,7 +434,7 @@ technology = { #Docks
 }
 
 technology = { #Carracks & Caravel
-	# Tech 9
+	# Tech 26
 	year = 1518
 	expects_institution = {
 		feudalism = 0.5
@@ -458,7 +458,7 @@ technology = { #Carracks & Caravel
 }
 
 technology = { #The Flute
-	# Tech 10
+	# Tech 27
 	year = 1531
 	expects_institution = {
 		feudalism = 0.5
@@ -470,7 +470,7 @@ technology = { #The Flute
 		new_world_i = 0.3
 	}
 	
-	trade_efficiency		= 	0.02
+	trade_efficiency		= 	0.03
 	trade_range				=	20
 	global_colonial_growth  = 	10
 	enable = flute
@@ -479,7 +479,7 @@ technology = { #The Flute
 }
 
 technology = { #Wharf
-	# Tech 11
+	# Tech 28
 	year = 1544
 	expects_institution = {
 		feudalism = 0.5
@@ -500,7 +500,7 @@ technology = { #Wharf
 }
 
 technology = { #Man of War
-	# Tech 12
+	# Tech 29
 	year = 1557
 	expects_institution = {
 		feudalism = 0.5
@@ -530,7 +530,7 @@ technology = { #Man of War
 }
 
 technology = { #Chartered Companies
-	# Tech 13
+	# Tech 30
 	year = 1570
 	expects_institution = {
 		feudalism = 0.5
@@ -549,7 +549,7 @@ technology = { #Chartered Companies
 }
 
 technology = { #The Galleass
-	# Tech 14
+	# Tech 31
 	year = 1583
 	expects_institution = {
 		feudalism = 0.5
@@ -571,7 +571,7 @@ technology = { #The Galleass
 }
  
 technology = { #The Galleon
-	# Tech 15
+	# Tech 32
 	year = 1596
 	expects_institution = {
 		feudalism = 0.5
@@ -595,7 +595,7 @@ technology = { #The Galleon
 }
 
 technology = { #Development of Maritime Law
-	# Tech 16
+	# Tech 33
 	year = 1609
 	expects_institution = {
 		feudalism = 0.5
@@ -616,7 +616,7 @@ technology = { #Development of Maritime Law
 }
 
 technology = { #Merchantman
-	# Tech 17
+	# Tech 34
 	year = 1622
 	expects_institution = {
 		feudalism = 0.5
@@ -642,7 +642,7 @@ technology = { #Merchantman
 }
 
 technology = { #Line of Battle
-	# Tech 18
+	# Tech 35
 	year = 1635
 	expects_institution = {
 		feudalism = 0.5
@@ -666,7 +666,7 @@ technology = { #Line of Battle
 }
 
 technology = { #The War Galleon
-	# Tech 19
+	# Tech 36
 	year = 1648
 	expects_institution = {
 		feudalism = 0.5
@@ -693,7 +693,7 @@ technology = { #The War Galleon
 }
 
 technology = { #Naval Professionalization
-	# Tech 20
+	# Tech 37
 	year = 1661
 	expects_institution = {
 		feudalism = 0.5
@@ -707,13 +707,13 @@ technology = { #Naval Professionalization
 		global_trade = 0.5
 	}
 
-	trade_efficiency 		= 	0.02
+	trade_efficiency 		= 	0.03
 	trade_range				=	20
 	num_accepted_cultures = 1
 }
 
 technology = { #The Chebeck
-	# Tech 21
+	# Tech 38
 	year = 1674
 	expects_institution = {
 		feudalism = 0.5
@@ -734,7 +734,7 @@ technology = { #The Chebeck
 }
 
 technology = { #Limes
-	# Tech 22
+	# Tech 39
 	year = 1687
 	expects_institution = {
 		feudalism = 0.5
@@ -767,7 +767,7 @@ technology = { #Limes
 }
 
 technology = { #Heavy Frigates
-	# Tech 23
+	# Tech 40
 	year = 1700
 	expects_institution = {
 		feudalism = 0.5
@@ -790,7 +790,7 @@ technology = { #Heavy Frigates
 }
 
 technology = { #The Archipelago Frigate
-	# Tech 24
+	# Tech 41
 	year = 1713
 	expects_institution = {
 		feudalism = 0.5
@@ -808,7 +808,7 @@ technology = { #The Archipelago Frigate
 
 
 	
-	trade_efficiency 		= 	0.02
+	trade_efficiency 		= 	0.03
 	trade_range				=	20
 	enable = archipelago_frigate
 	may_corrupt_officials = yes
@@ -819,7 +819,7 @@ technology = { #The Archipelago Frigate
 }
 
 technology = { #The Threedeckers
-	# Tech 25
+	# Tech 42
 	year = 1726
 	expects_institution = {
 		feudalism = 0.5
@@ -845,7 +845,7 @@ technology = { #The Threedeckers
 }
 
 technology = { #The Eastindiaman
-	# Tech 26
+	# Tech 43
 	year = 1739
 	expects_institution = {
 		feudalism = 0.5
@@ -870,7 +870,7 @@ technology = { #The Eastindiaman
 }
 
 technology = { #Public Punishments
-	# Tech 27
+	# Tech 44
 	year = 1752
 	expects_institution = {
 		feudalism = 0.5
@@ -894,7 +894,7 @@ technology = { #Public Punishments
 }
 
 technology = { #Joint Stock Companies
-	# Tech 28
+	# Tech 45
 	year = 1765
 	expects_institution = {
 		feudalism = 0.5
@@ -917,7 +917,7 @@ technology = { #Joint Stock Companies
 }
 
 technology = { #Midshipmen Cadets
-	# Tech 29
+	# Tech 46
 	year = 1778
 	expects_institution = {
 		feudalism = 0.5
@@ -942,7 +942,7 @@ technology = { #Midshipmen Cadets
 }
 
 technology = { #Insurance Companies
-	# Tech 30
+	# Tech 47
 	year = 1791
 	expects_institution = {
 		feudalism = 0.5
@@ -966,7 +966,7 @@ technology = { #Insurance Companies
 }
 
 technology = { #Superior Ship Design
-	# Tech 31
+	# Tech 48
 	year = 1804
 	expects_institution = {
 		feudalism = 0.5
@@ -990,7 +990,7 @@ technology = { #Superior Ship Design
 }
 
 technology = { #The Gold Standard
-	# Tech 32
+	# Tech 49
 	year = 1817
 	expects_institution = {
 		feudalism = 0.5
@@ -1017,7 +1017,7 @@ technology = { #The Gold Standard
 }
 
 technology = {
-	# Tech 33
+	# Tech 50
 	year = 1830
 	expects_institution = {
 		feudalism = 0.5
@@ -1042,7 +1042,7 @@ technology = {
 }
 
 technology = {
-	# Tech 34
+	# Tech 51
 	year = 1843
 	expects_institution = {
 		feudalism = 0.5
@@ -1068,7 +1068,7 @@ technology = {
 }
 
 technology = {
-	# Tech 35
+	# Tech 52
 	year = 1856
 	expects_institution = {
 		feudalism = 0.5
@@ -1093,7 +1093,7 @@ technology = {
 }
 
 technology = {
-	# Tech 36
+	# Tech 53
 	year = 1869
 	expects_institution = {
 		feudalism = 0.5
@@ -1125,7 +1125,7 @@ technology = {
 }
 
 technology = {
-	# Tech 37
+	# Tech 54
 	year = 1882
 	expects_institution = {
 		feudalism = 0.5
@@ -1154,7 +1154,7 @@ technology = {
 }
 
 technology = {
-	# Tech 38
+	# Tech 55
 	year = 1895
 	expects_institution = {
 		feudalism = 0.5
@@ -1182,7 +1182,7 @@ technology = {
 }
 
 technology = {
-	# Tech 39
+	# Tech 56
 	year = 1908
 	expects_institution = {
 		feudalism = 0.5
@@ -1208,7 +1208,7 @@ technology = {
 }
 
 technology = {
-	# Tech 40
+	# Tech 57
 	year = 1921
 	expects_institution = {
 		feudalism = 0.5

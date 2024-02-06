@@ -1641,10 +1641,7 @@ nitra_fourth = {
 
 		provinces_to_highlight = {
 			province_id = 4236
-			OR = {
-				NOT = { has_building = university }
-				NOT = { owns_or_non_sovereign_subject_of = ROOT }
-			}
+			NOT = { has_building = university }
 		}
 
 		trigger = {
@@ -2070,5 +2067,4 @@ nitra_fifth = {
 			country_event = { id = me_nitra.9 }
 		}
 	}
-
 }

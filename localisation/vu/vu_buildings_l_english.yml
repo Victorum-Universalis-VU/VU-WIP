@@ -106,7 +106,7 @@
 
  pump_house: "Pump House"
  building_pump_house: "Pump House"
- building_pump_house_desc: "§TCountry Requirements:§!\n-Administrative Technology (37)\n"
+ #building_pump_house_desc: "§TCountry Requirements:§!\n-Administrative Technology (37)\n"
 
  #Healthcare
  apothecary: "Clinic"
@@ -145,11 +145,11 @@
 
  zoo: "Zoo"
  building_zoo: "Zoo"
- #building_zoo_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (29)\n"
+ building_zoo_desc: "Culture Conversion Cost and Time are §YCountry Wide§!"
 
  botanical_gardens: "Botanical Gardens"
  building_botanical_gardens: "Botanical Gardens"
- #building_botanical_gardens_desc: "§TCountry Requirements:§!\n-Diplomatic Technology (12)\n"
+ building_botanical_gardens_desc: "Culture Conversion Cost and Time are §YCountry Wide§!"
 
  #Foreign & Domestic
  #spy_agency already exists so it will go here. By San Felipe
@@ -188,7 +188,7 @@
 
  archaeological_dig: "Archaeological Dig"
  building_archaeological_dig: "Archaeological Dig"
- #building_archaeological_digdesc: "§TCountry Requirements:§!\n-Diplomatic Technology (0)\n"
+ building_archaeological_dig_desc: "This building requires the Province Modifier: §YPotential Archaeological Dig§! in order to be built."
 
  national_museum: "National Museum"
  building_national_museum: "National Museum"

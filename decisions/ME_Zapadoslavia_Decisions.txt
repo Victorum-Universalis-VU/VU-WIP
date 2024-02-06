@@ -39,6 +39,8 @@ country_decisions = {
 			owns_core_province = 264
 			owns_core_province = 257
 			owns_core_province = 262
+			owns_core_province = 1772
+			owns_core_province = 8174
 			is_free_or_tributary_trigger = yes
 		}
 		effect = {
@@ -97,6 +99,10 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				ai = yes
+			}
 		}
 	}
 	ME_check_faction_loyalty = {

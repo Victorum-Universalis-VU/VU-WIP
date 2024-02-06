@@ -224,12 +224,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hall_southamericagfx"
-		texturefile = "gfx//interface//buildings//government//hall//southamerican//southamerican_hall.tga"
+		texturefile = "gfx//interface//buildings//government//hall//south_american//south_american_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_hall_northamericagfx"
-		texturefile = "gfx//interface//buildings//government//hall//northamerican//northamerican_hall.tga"
+		texturefile = "gfx//interface//buildings//government//hall//north_american//north_american_hall.tga"
 		loadType = "INGAME"
 	}
 	#City Hall
@@ -295,12 +295,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_city_hall_southamericagfx"
-		texturefile = "gfx//interface//buildings//government//city_hall//southamerican//southamerican_city_hall.tga"
+		texturefile = "gfx//interface//buildings//government//city_hall//south_american//south_american_city_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_city_hall_northamericagfx"
-		texturefile = "gfx//interface//buildings//government//city_hall//northamerican//northamerican_city_hall.tga"
+		texturefile = "gfx//interface//buildings//government//city_hall//north_american//north_american_city_hall.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -2166,12 +2166,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_foreign_office_southamericagfx"
-		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//south_american//southamerican_foreign_office.tga"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//south_american//south_american_foreign_office.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_foreign_office_northamericagfx"
-		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//northamerican//northamerican_foreign_office.tga"
+		texturefile = "gfx//interface//buildings//foreign_and_domestic//foreign_office//north_american//north_american_foreign_office.tga"
 		loadType = "INGAME"
 	}
 	#Supreme Court
@@ -2309,12 +2309,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_library_southamericagfx"
-		texturefile = "gfx//interface//buildings//education//library//southamerican//southamerican_library.tga"
+		texturefile = "gfx//interface//buildings//education//library//south_american//south_american_library.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_library_northamericagfx"
-		texturefile = "gfx//interface//buildings//education//library//northamerican//northamerican_library.tga"
+		texturefile = "gfx//interface//buildings//education//library//north_american//north_american_library.tga"
 		loadType = "INGAME"
 	}
 	#School
@@ -2380,12 +2380,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_school_southamericagfx"
-		texturefile = "gfx//interface//buildings//education//school//southamerican//southamerican_school.tga"
+		texturefile = "gfx//interface//buildings//education//school//south_american//south_american_school.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_school_northamericagfx"
-		texturefile = "gfx//interface//buildings//education//school//northamerican//northamerican_school.tga"
+		texturefile = "gfx//interface//buildings//education//school//north_american//north_american_school.tga"
 		loadType = "INGAME"
 	}
 	#HEALTHCARE
@@ -2452,12 +2452,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_apothecary_southamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//apothecary//southamerican//southamerican_apothecary.tga"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//south_american//south_american_apothecary.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_apothecary_northamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//apothecary//northamerican//northamerican_apothecary.tga"
+		texturefile = "gfx//interface//buildings//healthcare//apothecary//north_american//north_american_apothecary.tga"
 		loadType = "INGAME"
 	}
 	#Barber
@@ -2523,12 +2523,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_barber_southamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//barber//southamerican//southamerican_barber.tga"
+		texturefile = "gfx//interface//buildings//healthcare//barber//south_american//south_american_barber.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_barber_northamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//barber//northamerican//northamerican_barber.tga"
+		texturefile = "gfx//interface//buildings//healthcare//barber//north_american//north_american_barber.tga"
 		loadType = "INGAME"
 	}
 	#Hospital
@@ -2594,12 +2594,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hospital_southamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//hospital//southamerican//southamerican_hospital.tga"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//south_american//south_american_hospital.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_hospital_northamericagfx"
-		texturefile = "gfx//interface//buildings//healthcare//hospital//northamerican//northamerican_hospital.tga"
+		texturefile = "gfx//interface//buildings//healthcare//hospital//north_american//north_american_hospital.tga"
 		loadType = "INGAME"
 	}
 	#LEISURE
@@ -2666,12 +2666,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_park_southamericagfx"
-		texturefile = "gfx//interface//buildings//leisure//park//southamerican//southamerican_park.tga"
+		texturefile = "gfx//interface//buildings//leisure//park//south_american//south_american_park.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_park_northamericagfx"
-		texturefile = "gfx//interface//buildings//leisure//park//northamerican//northamerican_park.tga"
+		texturefile = "gfx//interface//buildings//leisure//park//north_american//north_american_park.tga"
 		loadType = "INGAME"
 	}
 	#Zoo
@@ -3521,12 +3521,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_theatrics_southamericagfx"
-		texturefile = "gfx//interface//buildings//entertainment//theatrics//southamerican//southamerica_theatrics.tga"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//south_american//south_american_theatrics.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_theatrics_northamericagfx"
-		texturefile = "gfx//interface//buildings//entertainment//theatrics//northamerican//northamerica_theatrics.tga"
+		texturefile = "gfx//interface//buildings//entertainment//theatrics//north_american//north_american_theatrics.tga"
 		loadType = "INGAME"
 	}
 	#Operatics
@@ -3680,7 +3680,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_custom_house_latingfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//muslim_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -3690,7 +3690,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_custom_house_greekgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//eastern//eastern_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -3710,37 +3710,37 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_custom_house_africangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//indian_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_indiangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//indian_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_muslimgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//muslim_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_turkishgfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//muslim_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_persiangfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//muslim//muslim_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_southamericagfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//indian_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_custom_house_northamericagfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//latin_custom_house.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//indian//indian_customs_house.tga"
 		loadType = "INGAME"
 	}
 	#Excise Office

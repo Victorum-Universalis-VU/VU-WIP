@@ -1998,7 +1998,7 @@ dan_sweden_and_great_power_mission_slot = {
 						country_event = { id = flavor_dan.108 }
 					}
 				}
-				1397 = {
+				6081 = {
 					every_trade_node_member_country = {
 						limit = { 1397 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region region = riau_islands_region region = nusa_tenggara_region region = borneo_region region = celebes_region } } }
 						country_event = { id = flavor_dan.108 }
