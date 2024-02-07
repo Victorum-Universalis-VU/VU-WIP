@@ -3685,7 +3685,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_custom_house_easterngfx"
-		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//eastern//eastern_customs_office.tga"
+		texturefile = "gfx//interface//buildings//revenue_and_customs//custom_house//eastern//eastern_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {

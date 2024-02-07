@@ -19,6 +19,11 @@ fort_15th = yes #More than 1 Weisuo
 extra_cost = 16
 center_of_trade = 3
 
+add_permanent_province_modifier = {
+	name = vu_potential_archaeological_dig
+	duration = -1
+}
+
 1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1644.1.1 = {
 	unrest = 0

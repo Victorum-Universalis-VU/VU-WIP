@@ -13,11 +13,10 @@ trade_goods = lumber		#Name of the province mean 'fallow lands', and it was most
 base_manpower = 2 
 add_core = GEL
 
-
-
-
-
-
+add_permanent_province_modifier = {
+	name = vu_potential_archaeological_dig
+	duration = -1
+}
 
 #Darth Modus note - This province was more of a mess than most, but actually had some really good detail from vanilla, as well. Mixing a bit of everything in here.
 1473.2.23 = { owner = BUR controller = BUR add_core = BUR } # Charles the Bold annexes Gelre

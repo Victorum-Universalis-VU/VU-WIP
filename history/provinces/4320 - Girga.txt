@@ -15,18 +15,10 @@ is_city = yes
 add_core = KEM
 add_core = HWW
 
-
-
-
-
-
-
-
-
-
-
-
-
+add_permanent_province_modifier = {
+	name = vu_potential_archaeological_dig
+	duration = -1
+}
 
 1517.1.1 = {
 	owner = TUR
