@@ -697,26 +697,7 @@ mount_olympus = {
 	build_trigger = {}
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = {
-		OR = {
-			AND = {
-				culture_group = byzantine
-				has_owner_culture = yes
-			}
-			AND = {
-				culture_group = dacian
-				has_owner_culture = yes
-			}
-			AND = {
-				culture_group = illyrian
-				has_owner_culture = yes
-			}
-			AND = {
-				culture = french_romanian
-				has_owner_culture = yes
-			}
-		}
-	}
+	can_use_modifiers_trigger = { OR = { AND = { culture_group = byzantine has_owner_culture = yes } AND = { culture_group = dacian has_owner_culture = yes } AND = { culture_group = french has_owner_culture = yes } AND = { culture_group = old_latin has_owner_culture = yes } AND = { culture_group = illyrian has_owner_culture = yes } } }
 	can_upgrade_trigger = { always = no }
 	keep_trigger = { always = yes }
 
