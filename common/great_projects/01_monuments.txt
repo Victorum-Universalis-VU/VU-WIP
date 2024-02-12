@@ -342,7 +342,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -371,7 +371,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -391,7 +391,7 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -574,14 +574,14 @@ tower_of_london = {
 
 	#can we build it?
 	build_trigger = {
-	    is_year = 1444
+	    is_year = 1066
 		OR = {
 			AND = {
 				culture = normand
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -611,7 +611,7 @@ tower_of_london = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -626,14 +626,14 @@ tower_of_london = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1774
+	    is_year = 1377
 		OR = {
 			AND = {
 				culture = normand
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -1329,7 +1329,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}	
@@ -1369,7 +1369,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1390,7 +1390,7 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1966,7 +1966,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -1994,7 +1994,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -2012,7 +2012,7 @@ petra = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -2206,7 +2206,7 @@ cologne_cathedral = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1840
+	    is_year = 1640
 		province_is_or_accepts_religion_group = {
 			religion_group = christian
 		}
@@ -2214,6 +2214,9 @@ cologne_cathedral = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
+		}
 	}
 
 	#tier data
@@ -2396,7 +2399,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -2415,7 +2418,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -2425,7 +2428,7 @@ kremlin = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -2478,6 +2481,7 @@ kremlin = {
 		province_modifiers = {
 		    local_defensiveness = 0.1  
 		    local_manpower_modifier = 0.05 
+	      	local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2491,7 +2495,7 @@ kremlin = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			papal_influence = 0.1
-			global_regiment_cost = -0.01
+			global_regiment_cost = -0.1
 			church_power_modifier = 0.1
 		}
 
@@ -2516,7 +2520,7 @@ kremlin = {
 		    local_defensiveness = 0.2 
   		    local_manpower_modifier = 0.10
   		    local_garrison_size = 0.05
-		    local_development_cost = -0.05
+		    local_development_cost = -0.1
 		    local_production_efficiency = 0.1
 		}
 
@@ -2526,12 +2530,13 @@ kremlin = {
 			local_manpower_modifier = 0.2
 			local_hostile_attrition = 1
 			local_monthly_devastation = -0.05 
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			papal_influence = 0.2
-			global_regiment_cost = -0.02
+			global_regiment_cost = -0.2
 			church_power_modifier = 0.2
 			appoint_cardinal_cost = -0.2
 		}
@@ -2559,7 +2564,7 @@ kremlin = {
 			fort_level = 1
 			local_manpower_modifier = 0.2 
 			local_garrison_size = 0.10 
-			local_development_cost = -0.10 
+			local_development_cost = -0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2568,12 +2573,13 @@ kremlin = {
 			local_manpower_modifier = 0.3
 			local_hostile_attrition = 2 
 			local_monthly_devastation = -0.1
+			local_development_cost = -0.10
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			papal_influence = 0.3
-			global_regiment_cost = -0.03
+			global_regiment_cost = -0.3
 			church_power_modifier = 0.3
 			enforce_religion_cost = -0.3
 			appoint_cardinal_cost = -0.3
@@ -2728,7 +2734,7 @@ himeji_castle = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1618
+	    is_year = 1500
 		culture_group = japanese_g
 	}
 
@@ -3556,7 +3562,7 @@ shwedagon_pagoda = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1775
+	    is_year = 1462
 		province_is_buddhist_or_accepts_buddhism = yes
 	}
 
@@ -3936,7 +3942,7 @@ ambras_castle = {
 
 	#can we build it?
 	build_trigger = {
-	    is_year = 1564
+	    is_year = 1563
 		religion_group = christian
 		has_owner_religion = yes
 	}
@@ -3958,7 +3964,6 @@ ambras_castle = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		is_year = 1855
 		religion_group = christian
 		has_owner_religion = yes
 	}
@@ -4131,10 +4136,14 @@ mesa_verde = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion = {
-			OR = {
+		OR = {
+			AND = {
 				religion = totemism
+				has_owner_religion = yes
+			}
+			AND = {
 				religion = arctolatry
+				has_owner_religion = yes
 			}
 		}
 	}
@@ -4150,20 +4159,28 @@ mesa_verde = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			OR = {
+		OR = {
+			AND = {
 				religion = totemism
+				has_owner_religion = yes
+			}
+			AND = {
 				religion = arctolatry
+				has_owner_religion = yes
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			OR = {
+		OR = {
+			AND = {
 				religion = totemism
+				has_owner_religion = yes
+			}
+			AND = {
 				religion = arctolatry
+				has_owner_religion = yes
 			}
 		}
 	}
@@ -7927,7 +7944,7 @@ kiev_pechersk_lavra = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1745
+	    is_year = 1731
 		province_is_or_accepts_religion = {
 			religion = orthodox
 		}
@@ -7990,7 +8007,7 @@ kiev_pechersk_lavra = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			tolerance_own = 1
-			yearly_patriarch_authority = 0.01
+			yearly_patriarch_authority = 0.005
 			tolerance_heathen = 1
 		}
 
@@ -8023,9 +8040,9 @@ kiev_pechersk_lavra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-            global_missionary_strength = 0.002
+            global_missionary_strength = 0.01
 			tolerance_own = 2
-			yearly_patriarch_authority = 0.02
+			yearly_patriarch_authority = 0.01
 			tolerance_heathen = 2
 		}
 
@@ -8059,11 +8076,10 @@ kiev_pechersk_lavra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-            global_missionary_strength = 0.003
-			tolerance_own = 3
-			yearly_patriarch_authority = 0.03
+            global_missionary_strength = 0.02
+			tolerance_own = 32
+			yearly_patriarch_authority = 0.02
 			tolerance_heathen = 3
-			monthly_piety = 0.003
 		}
 
 		#what effects happen when this tier is achieved
@@ -8319,7 +8335,7 @@ belem_tower = {
 
 	#can we build it?
 	build_trigger = {
-	    is_year = 1519
+	    is_year = 1514
 		#anyone
 	}
 
@@ -9109,11 +9125,10 @@ versailles = {
 	    is_year = 1623
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9133,11 +9148,10 @@ versailles = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9148,11 +9162,10 @@ versailles = {
 		is_year = 1682
 		OR = {
 			AND = {
-				culture = roman
-				province_is_or_accepts_culture = yes
-			}
-			AND = {
-				culture_group = french
+				OR = {
+					culture_group = french
+					culture_group = old_latin
+				} 
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9326,14 +9339,14 @@ el_escorial = {
 
 	#can we build it?
 	build_trigger = {
-	    is_year = 1584
+	    is_year = 1563
 		OR = {
 			AND = {
 				culture_group = iberian
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9357,7 +9370,7 @@ el_escorial = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9365,14 +9378,14 @@ el_escorial = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-	    is_year = 1586
+	    is_year = 1563
 		OR = {
 			AND = {
 				culture_group = iberian
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -9548,7 +9561,10 @@ potosi = {
 	#can we build it?
 	build_trigger = {
 	    is_year = 1545
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -9567,7 +9583,10 @@ potosi = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -9576,7 +9595,10 @@ potosi = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = iberian
+		Or = {
+			culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -11140,11 +11162,15 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = dacian 
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
-        else = {
-			culture_group = dacian
+        	else = {
+			culture_group = germanic
 			province_is_or_accepts_culture = yes
 		}
     }
@@ -11156,17 +11182,21 @@ bran_castle = {
     }
 
     can_use_modifiers_trigger = {
-        if = {
+        	if = {
 			limit = {
 				owner = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = carpathian
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
-        else = {
-			culture_group = dacian
+        	else = {
+			culture_group = germanic
 			province_is_or_accepts_culture = yes
 		}		
     }
@@ -11178,11 +11208,15 @@ bran_castle = {
 					NOT = { has_country_flag = teu_can_utilize_bran_castle }
 				}
 			}
-			culture_group = carpathian
+			OR = { 
+				culture_group = dacian
+				culture_group = french
+				culture_group = old_latin
+			}
 			province_is_or_accepts_culture = yes
 		}
-        else = {
-			culture_group = dacian
+        	else = {
+			culture_group = germanic
 			province_is_or_accepts_culture = yes
 		}	
     }
@@ -11974,9 +12008,11 @@ doges_palace = {
 	}
 
 	can_use_modifiers_trigger = {
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_upgrade_trigger = {
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	keep_trigger = {
@@ -12197,7 +12233,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -12212,7 +12248,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -12221,7 +12257,7 @@ dutch_polders = {
 	    OR = {
 	        culture_group = low_franconian
 	        culture_group = germanic
-			culture = roman
+			culture_group = old_latin
 	    }
 		province_is_or_accepts_culture = yes
 	}
@@ -14445,6 +14481,7 @@ krakow_cloth_hall = {
 			culture_group = west_slavic
 			culture_group = east_slavic
 			culture_group = south_slavic
+			culture_group = slavic
 		}
 	}
 
@@ -14459,6 +14496,7 @@ krakow_cloth_hall = {
 			culture_group = west_slavic
 			culture_group = east_slavic
 			culture_group = south_slavic
+			culture_group = slavic
 		}
 	}
 
@@ -14467,6 +14505,7 @@ krakow_cloth_hall = {
 			culture_group = west_slavic
 			culture_group = east_slavic
 			culture_group = south_slavic
+			culture_group = slavic
 		}
 	}
 
@@ -14683,32 +14722,26 @@ malbork_castle = {
 	}
 
 	can_use_modifiers_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    }
-		    culture_group = west_slavic 
-		    OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
-			}
 		}
 	}
 
 	can_upgrade_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -15406,11 +15439,11 @@ royal_palace_caserta = {
 	move_days_per_unit_distance = 10
 	starting_tier = 0
 	type = monument
-	build_trigger = { culture = neapolitan }
+	build_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { culture = neapolitan }
-	can_upgrade_trigger = { culture = neapolitan }
+	can_use_modifiers_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
+	can_upgrade_trigger = { OR = { culture = neapolitan culture_group = old_latin } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -16328,7 +16361,7 @@ ulm_minster_great_project = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -16341,7 +16374,7 @@ ulm_minster_great_project = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -16560,7 +16593,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -16575,7 +16608,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -16584,7 +16617,7 @@ winter_palace = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-			culture = roman
+			culture_group = old_latin
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -17744,7 +17777,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -17774,7 +17807,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -17806,7 +17839,7 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = roman
+				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -18184,7 +18217,10 @@ st_basil_cathedral = {
 
 	build_trigger = {
 		is_year = 1554
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -18198,7 +18234,10 @@ st_basil_cathedral = {
 	}
 
 	can_use_modifiers_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -18206,7 +18245,10 @@ st_basil_cathedral = {
 	}
 
 	can_upgrade_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -18888,115 +18930,6 @@ imperial_city_kyoto = {
 					amount = 1
 				}
 			}
-		}
-	}
-}
-
-kazan_kremlin = {
-	start = 1082 
-	date = 1214.12.2 #Built: 10th 16th centuries
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 0
-	type = monument
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			
-		}
-		country_modifiers = {
-			great_project_upgrade_time = -0.1
-			global_autonomy = -0.025
-			garrison_damage = 0.5
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_friendly_movement_speed = 0.25
-		}
-		region_modifier = { 
-			
-		}
-		country_modifiers = {
-			great_project_upgrade_time = -0.2
-			global_autonomy = -0.025
-			garrison_damage = 1
-		}	
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			
-		}
-		region_modifier = { 
-			local_friendly_movement_speed = 0.25
-		}
-		country_modifiers = {
-			great_project_upgrade_time = -0.25
-			global_autonomy = -0.05
-			garrison_damage = 1
-		}	
-		on_upgraded = {
 		}
 	}
 }

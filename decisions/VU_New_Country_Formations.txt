@@ -573,6 +573,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			change_tag = GER
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
 			if = {
 				limit = {
 					tag = HAB
@@ -587,9 +590,6 @@ country_decisions = {
 			else = {
 				swap_non_generic_missions = yes
 			}
-			on_change_tag_effect = yes
-			restore_country_name_effect = yes
-			change_tag = GER
 			emperor = {
 				add_opinion = {
 					who = root
@@ -1883,7 +1883,6 @@ country_decisions = {
 		}
 	}
 
-
 ###########################################################################################
 ################################         Assyria		 ##################################
 ###########################################################################################
@@ -1970,6 +1969,190 @@ country_decisions = {
 		effect = {
 			411 = { move_capital_effect = yes }
 			change_tag = ASY
+			
+			add_government_reform = autocracy_reform
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 7300
+			}
+			411 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_province_name = "Nineveh"
+				rename_capital = "Nineveh"
+				add_prosperity = 50
+			}
+			6638 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				change_province_name = "Assur"
+				rename_capital = "Assur"
+				change_religion = ROOT
+				change_culture = assyrian
+			}
+			2310 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				change_province_name = "Kar-Istar"
+				rename_capital = "Kar-Istar"
+				change_religion = ROOT
+				change_culture = assyrian
+			}
+			add_prestige = 50
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_neo_assyria
+			swap_non_generic_missions = yes
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = shahrizor_area
+						area = al_jazira_area
+						area = baghdad_area
+						area = iraq_arabi_area
+						area = kut_area
+					}
+				}
+				add_core = ROOT
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					region = mesopotamia_region
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = assyria_nation_tooltip
+			hidden_effect = {
+				random_owned_province = {
+					limit = { NOT = { religion = ROOT } }
+					change_religion = ROOT
+					change_culture = ROOT
+				}
+				random_owned_province = {
+					limit = { NOT = { religion = ROOT } }
+					change_religion = ROOT
+					change_culture = ROOT
+				}
+				random_owned_province = {
+					limit = { NOT = { religion = ROOT } }
+					change_religion = ROOT
+					change_culture = ROOT
+				}
+				random_owned_province = {
+					limit = { NOT = { religion = ROOT } }
+					change_religion = ROOT
+					change_culture = ROOT
+				}
+				random_owned_province = {
+					limit = { NOT = { religion = ROOT } }
+					change_religion = ROOT
+					change_culture = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#######################################################################################
+################################         Assur		 ##################################
+#######################################################################################
+
+	assur_nation = {
+		major = yes
+		potential = {
+			vu_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_neo_assyria }
+			NOT = { tag = PER }
+			OR = {
+				any_owned_province = { culture = assyrian }
+				culture_group = mesopotamian_group
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 411
+				province_id = 6638
+				province_id = 2310
+				province_id = 6640
+				province_id = 6641
+				province_id = 4293
+				province_id = 6637
+				province_id = 6639
+				province_id = 6670
+				province_id = 2309
+				province_id = 415
+				province_id = 6642
+				province_id = 5296
+				province_id = 6635
+				province_id = 6636
+			}
+		}
+		allow = {
+			government = monarchy
+			OR = {
+				culture_group = mesopotamian_group
+				NOT = { religion_group = muslim }
+			}
+			NOT = { exists = ASR }
+			is_at_war = no
+			is_nomad = no
+			owns_core_province = 411
+			owns_core_province = 6638
+			owns_core_province = 2310
+			owns_core_province = 6640
+			owns_core_province = 6641
+			owns_core_province = 4293
+			owns_core_province = 6670
+			owns_core_province = 415
+			owns_or_non_sovereign_subject_of = 6642
+			owns_or_non_sovereign_subject_of = 6637
+			owns_or_non_sovereign_subject_of = 6639
+			owns_or_non_sovereign_subject_of = 2309
+			OR = {
+				owns_core_province = 5296
+				owns_core_province = 6635
+				owns_core_province = 6636
+			}
+			NOT = { exists = IRQ }
+			num_of_owned_provinces_with = {
+				religion = ROOT
+				region = mesopotamia_region
+				value = 15
+			}
+			OR = {
+				religion = zoroastrian
+				religion = nestorian
+				religion = miaphysite
+				religion = monothelite
+				religion = orthodox
+				religion = coptic
+				religion = druze_new
+			}
+			411 = {
+				OR = {
+					culture = assyrian
+					culture = aramaic
+				}
+				religion = ROOT
+			}
+		}
+		effect = {
+			411 = { move_capital_effect = yes }
+			change_tag = ASR
 			
 			add_government_reform = autocracy_reform
 			if = {

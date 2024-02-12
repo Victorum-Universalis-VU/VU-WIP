@@ -175,4 +175,17 @@
  WELSH_HEIRESS_fem:0 "Arglwydd"
  WELSH_HEIRESS_PRINCESS_fem:0 "Tywysoges"
  #
+ #NEW
+ #Assyrian Empire
+ IMPERIAL_ISSIAKDOM:0 "Issi'ak"
+ ISSIAKDOM:0 "Issi'akdom"
+ ISSIAK:0 "Issi'ak"
+ SEGALLU:0 "Segallu"
+ RUBU_PALIHSU:0 "Rubu Palishu"
+ #Babylonian Empire
+ SARDOM:0 "Sardom"
+ SAR:0 "Sar"
+ ISSU:0 "Issu"
+ SAMAS:0 "Samas"
+
  

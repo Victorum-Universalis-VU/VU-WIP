@@ -1,4 +1,22 @@
 #Tier 1 {
+    phoenician_elective_monarchical_republic_reform_reform = {
+		icon = "ballot_box"
+		allow_normal_conversion = yes
+		valid_for_nation_designer = yes
+		nation_designer_cost = 10
+		election_on_death = yes
+		queen = no
+		potential = {
+			NOT = { tag = POL }
+		}
+		modifiers = {
+			heir_chance = 1.0
+		}
+		custom_attributes = {
+			enables_phoenician_elective_monarchical_republic_reform = yes
+		}
+	}
+
 	elective_monarchy_reform = {
 		icon = "ballot_box"
 		allow_normal_conversion = yes
@@ -6156,6 +6174,7 @@
 				value = 3
 			}
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6196,6 +6215,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6234,6 +6254,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6267,6 +6288,7 @@
 				value = 3
 			}
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			culture_group = germanic
@@ -6297,6 +6319,7 @@
 			}
 			NOT = { culture_group = germanic }
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {
@@ -6321,6 +6344,7 @@
 		allow_normal_conversion = yes
 		potential = {
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 			check_variable = {
 				which = Burgher_Influence
 				value = 3
@@ -6349,6 +6373,7 @@
 		allow_normal_conversion = yes
 		potential = {
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 			check_variable = {
 				which = Clergy_Influence
 				value = 3
@@ -6723,7 +6748,10 @@
 		icon = man_on_podium
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			OR = {
+				has_reform = elective_monarchy_reform
+				has_reform = phoenician_elective_monarchical_republic_reform
+			}
 		}
 		modifiers = {
 			monarch_military_power = 1
@@ -6741,7 +6769,10 @@
 		icon = king
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			OR = {
+				has_reform = elective_monarchy_reform
+				has_reform = phoenician_elective_monarchical_republic_reform
+			}
 		}
 		modifiers = {
 			max_absolutism = 10
@@ -6758,7 +6789,10 @@
 		icon = judge
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			OR = {
+				has_reform = elective_monarchy_reform
+				has_reform = phoenician_elective_monarchical_republic_reform
+			}
 		}
 		modifiers = {
 			legitimacy = 0.5
@@ -6779,7 +6813,10 @@
 		icon = clergyman
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform
+			OR = {
+				has_reform = elective_monarchy_reform
+				has_reform = phoenician_elective_monarchical_republic_reform
+			}
 			religion = catholic
 		}
 		modifiers = {
@@ -6797,7 +6834,10 @@
 		icon = peasants
 		allow_normal_conversion = yes
 		potential = {
-			has_reform = elective_monarchy_reform 
+			OR = {
+				has_reform = elective_monarchy_reform
+				has_reform = phoenician_elective_monarchical_republic_reform
+			}
 		}
 		modifiers = {
 			global_unrest = -1
@@ -9030,6 +9070,7 @@
 				value = 2
 			}
 			NOT = { has_reform = elective_monarchy_reform }
+			NOT = { has_reform = phoenician_elective_monarchical_republic_reform }
 		}
 		trigger = {
 			check_variable = {

@@ -43,10 +43,15 @@
  CB_ALLOWED_po_mainz_restore: "Restore the Bishop to the Throne"
  
  MAI_victor_of_the_war: "Victor of the Diocesan Feud"
+ desc_MAI_victor_of_the_war: ""
  MAI_renegotiated_peace_of_frankfurt: "Renegotiated Peace of Frankfurt"
+ desc_MAI_renegotiated_peace_of_frankfurt: ""
  MAI_second_peace_of_frankfurt: "Second Peace of Frankfurt"
+ desc_MAI_second_peace_of_frankfurt: ""
  MAI_primas_germaniae_modifier: "Primas Germaniae Secured"
+ desc_MAI_primas_germaniae_modifier: ""
  MAI_legatus_natus_modifier: "Perpetual Legatus Natus"
+ desc_MAI_legatus_natus_modifier: ""
  
  MAI_if_they_decline: "If §Y[From.GetName]§! declines, we will declare war."
  MAI_reward_if_alliance: "Reward if the mission has been completed by §MAlliance§!:"

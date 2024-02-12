@@ -1278,10 +1278,7 @@ has_forcelimit_building_trigger = {
 has_courthouse_building_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = has_courthouse_building_trigger_tt
-		OR = {	
-			has_building = courthouse
-			has_building = town_hall
-		}
+		has_building = courthouse
 	}
 }
 
@@ -4272,6 +4269,7 @@ has_not_locked_first_tier_reform = {
 	NOT = { has_reform = celestial_empire }
 	NOT = { has_reform = kalmar_union }
 	NOT = { has_reform = elective_monarchy }
+	NOT = { has_reform = phoenician_elective_monarchical_republic }
 	NOT = { has_reform = english_monarchy }
 	NOT = { has_reform = british_monarchy }
 	NOT = { has_reform = angevin_monarchy }

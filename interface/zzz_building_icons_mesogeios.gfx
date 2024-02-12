@@ -871,37 +871,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_post_office_latingfx"
-		texturefile = "gfx//interface//buildings//latin_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_post_office_greekgfx"
-		texturefile = "gfx//interface//buildings//eastern_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_post_office_turkishgfx"
-		texturefile = "gfx//interface//buildings//muslim_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_post_office_persiangfx"
-		texturefile = "gfx//interface//buildings//muslim_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_post_office_mongolgfx"
-		texturefile = "gfx//interface//buildings//chinese_post_office.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_post_office_thaigfx"
-		texturefile = "gfx//interface//buildings//chinese_post_office.tga"
-		loadType = "INGAME"
-	}
-
-	spriteType = {
 		name = "GFX_customs_house_latingfx"
 		texturefile = "gfx//interface//buildings//latin_customs_house.tga"
 		loadType = "INGAME"

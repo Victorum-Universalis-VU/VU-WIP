@@ -9,8 +9,11 @@
  NSA_weilburg_castle_desc: "Nassau-Weilburg was one of the cadet branches of the House of Nassau. It is no surprise then, that the count ruling Weilburg decided to modernize the local Castle to be more alike to the new architectural visions of the time."
  
  NSA_house_of_nassau: "Single House of Nassau"
+ desc_NSA_house_of_nassau: ""
  NSA_unified_the_province: "Principalities United"
+ desc_NSA_unified_the_province: ""
  NSA_weilburg_castle: "Weilburg Castle"
+ desc_NSA_weilburg_castle: ""
  
  NSA_reward_if_opinion: "Reward if the mission has been completed by §MAlliance§!:"
  NSA_reward_if_conquest: "Reward if the mission has been completed by §MConquest§!:"

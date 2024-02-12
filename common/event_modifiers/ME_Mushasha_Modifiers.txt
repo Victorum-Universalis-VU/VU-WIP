@@ -101,7 +101,7 @@ estate_burghers_marsh_development = {
 }
 
 MSY_delta = {
-	hostile_attrition = 1
+	local_hostile_attrition = 1 #VU - Was changed from hostile_attrition = 1 to local_hostile_attrition = 1. By San Felipe and Yeti
 	local_development_cost = -0.05
 }
 

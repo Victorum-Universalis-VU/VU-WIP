@@ -334,6 +334,13 @@ mount_nemrut = {
 				}
 			}
 			AND = { 
+				culture_group = armenic 
+				OR = { 
+					has_owner_culture = yes 
+					has_owner_accepted_culture = yes 
+				}
+			}
+			AND = { 
 				culture = georgian_new
 				OR = { 
 					has_owner_culture = yes 
@@ -417,7 +424,7 @@ mount_rainier = {
 	move_days_per_unit_distance = 1
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1444 }
+	build_trigger = { }
 	on_built = {}
 	on_destroyed = {}
 	can_use_modifiers_trigger = {

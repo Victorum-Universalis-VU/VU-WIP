@@ -1219,7 +1219,7 @@ palatinate_vassal_non_emperor_modifier = {
 }
 
 palatinate_vassal_emperor_overlord_modifier = {
-	imperial_authority_value = 0.1
+	imperial_authority_value = 0.2
 }
 
 # Subject Type: Defensive March

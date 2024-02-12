@@ -161,7 +161,7 @@ vu_kingston_caribbean = {
     on_built = {}
     on_destroyed = {}
     can_use_modifiers_trigger = { vu_christian_cities_trigger = yes }
-    can_upgrade_trigger = {	development = 30 province_has_center_of_trade_of_level = 3 }
+    can_upgrade_trigger = {	development = 30 }
     keep_trigger = { vu_christian_cities_trigger = yes }
 	
     tier_0 = {

@@ -7,6 +7,7 @@ add_accepted_culture = ruthenian
 religion = catholic
 #technology_group = eastern
 technology_group = polish_tech_group
+unit_type = eastern
 historical_friend = POL
 capital = 272 # Vilnius
 

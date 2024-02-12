@@ -11,6 +11,49 @@ mine_fail = {
 	picture = "Mine_fail"
 }
 
+
+
+tin_mine = {
+	picture = "tin_mine"
+}
+
+tin_mine_small = {
+	picture = "tin_mine"
+}
+copper_mine = {
+	picture = "copper_mine"
+}
+
+copper_mine_small = {
+	picture = "copper_mine"
+}
+iron_mine = {
+	picture = "iron_mine"
+}
+
+iron_mine_small = {
+	picture = "iron_mine"
+}
+zinc_mine = {
+	picture = "zinc_mine"
+}
+
+zinc_mine_small = {
+	picture = "zinc_mine"
+}
+lead_mine = {
+	picture = "lead_mine"
+}
+
+lead_mine_small = {
+	picture = "lead_mine"
+}
+
+lama_tradegood = {
+	picture = "lama_icon_mod"
+}
+
+
 woad_type = {
 	picture = "woad"
 	trade_value = -0.5
@@ -30,9 +73,6 @@ silver_debuff = {
 	local_gold_depletion_chance_modifier = -0.2
 }
 
-metalworking_modifier_leader_new = {
-	trade_goods_size = 0.1
-}
 
 beer_modifier_bonus = {
 	local_production_efficiency = 0.5
@@ -60,6 +100,7 @@ indigo_leader_new = {
 
 llama_leader_new = {
 	local_development_cost = -0.1
+	picture = "lama_mod"
 }
 
 camel_leader_new = {
@@ -74,5 +115,10 @@ import_from_subjects_modifier = {
 	picture = "import_from_subjects_modifier"
 	liberty_desire = 5
 }
+
+metalworking_modifier_leader_new = {
+	trade_goods_size = 0.1
+}
+
 
 

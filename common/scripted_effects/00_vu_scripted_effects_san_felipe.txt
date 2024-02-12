@@ -32,6 +32,40 @@ VU_CLEAR_EFFECTS = {
 # VU Additions by San Felipe 1.35.3 #
 #####################################
 
+#VU additions
+#set_building_state_wide_modifier = {
+#	if = {
+#		limit = {
+#			has_dlc = "Leviathan"
+#		}
+#		if = {
+#			limit = {
+#				
+#				has_building = {
+#					type = $university$
+#					tier = 0
+#				}
+#			}
+#			add_area_modifier = {
+#				type = $type$
+#				tier = 1
+#			}
+#		}
+#		else = {
+#			random_list = {
+#				1 = { add_base_tax = 2 }
+#				1 = { add_base_production = 2 }
+#				1 = { add_base_manpower = 2 }
+#			}
+#		}
+#	}
+#	else = {
+#		add_base_tax = 1
+#		add_base_production = 1
+#		add_base_manpower = 1
+#	}
+#}
+
 #vu_change_tech_group_to_western = {
 #    if = {
 #        limit = {

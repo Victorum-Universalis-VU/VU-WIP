@@ -114,6 +114,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 0
+			modifier = {
+				factor = 1
+				tag = TEU
+			}
 		}
 
 		custom_tooltip = CHOOSE_PARADOX_MISSIONS

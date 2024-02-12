@@ -1581,6 +1581,12 @@ canada_region = {
 	}
 }
 
+phillipines_lakes_sea_region = {
+	areas = {
+		phillipines_lakes_sea_area
+	}
+}
+
 great_lakes_region = {
 	areas = {
 		ohio_country_area
@@ -1609,7 +1615,7 @@ northeast_america_region = {
 	}
 }
 
-southeast_america_region =  {
+southeast_america_region = {
 	areas = {
 	    appalachia_area
 		chesapeake_area
@@ -2437,7 +2443,7 @@ labrador_sea_region = {
 
 #Prevents crashes when testing new alpha drafts
 unused_region = {
-	areas = {
+	#areas = {
 	    #unused_area
 	    #lower_silesia_area
 		#middle_silesia_area
@@ -2611,5 +2617,5 @@ unused_region = {
 		#bighorn_area
 		#chatham_and_auckland_islands_area
 		#upper_rhineland_area
-	}
+	#}
 }

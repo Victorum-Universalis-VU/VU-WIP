@@ -921,7 +921,28 @@
  army_of_flanders_reform_desc: "The Army of Flanders is a mercenary army comprised of Italian condotierre, Spanish criminals, German princely forces and Walloon levies. This army is infamous for its size, plundering and for its loyalty to be completely dependent on whether or not the months pay arrived on time."
  
  common_republic_reform: "Common Republic"
- common_republic_reform_desc: "After a great lot of struggle and effort these courageous peasants have gained a bit of Influence after fighting their oppression, it is now up to our Ruler to decide how to continue. But we must be careful lest they take an entire hand when we offer a finger.."
+ common_republic_reform_desc: "After a great lot of struggle and effort these courageous peasants have gained a bit of Influence after fighting their oppression, it is now up to our Ruler to decide how to continue. But we must be careful lest they take an entire hand when we offer a finger."
+ phoenician_elective_monarchical_republic_reform: "Phoenician Republic"
+ phoenician_elective_monarchical_republic_reform_desc: "Carthaginian government comprised of an elected King beholden to a senate known as 'The 'Council of One Hundred and Four' or the 'Judges' made up of influential citizens known as 'Drm' or the 'Great Ones', who held their positions for life. Nobody knows though how these senatorial members were chosen but it is likely they numbered between two and three hundred."
+ phoenician_elective_monarchical_republic: "Phoenician Republic"
+ phoenician_elective_monarchical_republic_desc: "Carthaginian government comprised of an elected King beholden to a senate known as 'The 'Council of One Hundred and Four' or the 'Judges' made up of influential citizens known as 'Drm' or the 'Great Ones', who held their positions for life. Nobody knows though how these senatorial members were chosen but it is likely they numbered between two and three hundred."
+ phoenician_elective_monarchical_republic_reform_legacy: "Phoenician Republic"
+ phoenician_elective_monarchical_republic_reform_legacy_desc: "Carthaginian government comprised of an elected King beholden to a senate known as 'The 'Council of One Hundred and Four' or the 'Judges' made up of influential citizens known as 'Drm' or the 'Great Ones', who held their positions for life. Nobody knows though how these senatorial members were chosen but it is likely they numbered between two and three hundred."
+ phoenician_elective_monarchical_republic_legacy: "Phoenician Republic"
+ phoenician_elective_monarchical_republic_legacy_desc: "Carthaginian government comprised of an elected King beholden to a senate known as 'The 'Council of One Hundred and Four' or the 'Judges' made up of influential citizens known as 'Drm' or the 'Great Ones', who held their positions for life. Nobody knows though how these senatorial members were chosen but it is likely they numbered between two and three hundred."
+
+ issi_akdom_reform: "Issi'akdom"
+ issi_akdom_reform_desc: "An Issi'akdom is an Assyrian government based on absolute rule which governed all regions that formed the Assyrian Empire and which incorporated into it locally organised provinces administered by governors or 'Pahutu' and or 'Bel Pahete' known as proxies, who were themselves appointed at the king's own discretion. While these men of power no real claim to their office, as the king's chosen representatives they were all-powerful at a local level."
+
+ issi_akdom_reform_legacy: "Issi'akdom"
+ issi_akdom_reform_legacy_desc: "An Issi'akdom is an Assyrian government based on absolute rule which governed all regions that formed the Assyrian Empire and which incorporated into it locally organised provinces administered by governors or 'Pahutu' and or 'Bel Pahete' known as proxies, who were themselves appointed at the king's own discretion. While these men of power no real claim to their office, as the king's chosen representatives they were all-powerful at a local level."
+
+ sardom_reform: "Sardom"
+ sardom_reform_desc: "The Babylonian government being an absolute monarchy saw a lot of personal involvement by the king himself, even in the most trivial affairs of state. Subsequently, it had an ever-expanding bureaucracy, with a powerful priesthood and engaged in constant interaction with distant powers that distinguished the later empire from its earlier days."
+
+ sardom_reform_legacy: "Sardom"
+ sardom_reform_legacy_desc: "The Babylonian government being an absolute monarchy saw a lot of personal involvement by the king himself, even in the most trivial affairs of state. Subsequently, it had an ever-expanding bureaucracy, with a powerful priesthood and engaged in constant interaction with distant powers that distinguished the later empire from its earlier days."
+
  representative_electors_reform: "Representative Electors"
  representative_electors_reform_desc: "He who sits atop the pyramid of power should take care that every one of the blocks is aligned under him, and by giving even the lowest serf the right to vote for his monarch, he is sure to have  confidence in the monarch's leadership."
  emirate_of_andalusia_reform: "Emirate of Andalucia"

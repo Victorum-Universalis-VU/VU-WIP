@@ -279,7 +279,7 @@ gelata_tower = {
 alcazar = {
     start = 219
     
-    date = 0300.01.01
+    date = 1100.01.01
     
     time = {
         months = 0
@@ -482,7 +482,7 @@ schonbrunn = { #Built on site of Katterburg
     type = monument
 
     build_trigger = {
-	    is_year = 1750
+	    is_year = 1548
 	    culture_group = germanic
 		OR = {
 			has_owner_culture = yes
@@ -819,7 +819,7 @@ westminster_palace = {
     type = monument
 
     build_trigger = {
-	    is_year = 1840
+	    is_year = 1016
         culture_group = british
 		OR = {
 			has_owner_culture = yes
@@ -842,6 +842,7 @@ westminster_palace = {
     }
 
     can_upgrade_trigger = {
+	    is_year = 1840
 		culture_group = british
 		OR = {
 			has_owner_culture = yes
@@ -1005,7 +1006,6 @@ venetian_arsenal = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = latin
 		OR = {
 			AND = {
 				has_owner_accepted_culture = yes
@@ -1176,7 +1176,10 @@ peter_and_paul_fortress = {
 
     build_trigger = {
 	    is_year = 1703
-        culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1190,7 +1193,10 @@ peter_and_paul_fortress = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1199,7 +1205,10 @@ peter_and_paul_fortress = {
 
     can_upgrade_trigger = {
         is_year = 1706
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1375,7 +1384,10 @@ holy_sophia = {
 
     can_upgrade_trigger = {
         is_year = 1458
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1455,7 +1467,6 @@ holy_sophia = {
         country_modifiers = {
 		    church_loyalty_modifier = 0.2
 			global_missionary_strength = 0.02
-			monthly_piety = 0.2
 			warscore_cost_vs_other_religion = -0.2
         }
 
@@ -1486,7 +1497,6 @@ holy_sophia = {
 		    church_loyalty_modifier = 0.3
 		    religious_unity = 0.3
 			global_missionary_strength = 0.03
-			monthly_piety = 0.3
 			warscore_cost_vs_other_religion = -0.3
         }
 
@@ -1652,7 +1662,7 @@ globe_theatre = {
 kokyo = { #TÅkei Castle
     start = 1028
     
-    date = 1868.01.01
+    date = 1457.01.01
     
     time = {
         months = 0
@@ -1669,7 +1679,7 @@ kokyo = { #TÅkei Castle
     type = monument
 
     build_trigger = {
-	    is_year = 1868
+	    is_year = 1457
         culture_group = japanese_g
 		OR = {
 			has_owner_culture = yes
@@ -1839,7 +1849,10 @@ arc_de_triomphe = {
 
     build_trigger = {
 	    is_year = 1806
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1853,7 +1866,10 @@ arc_de_triomphe = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1862,7 +1878,10 @@ arc_de_triomphe = {
 
     can_upgrade_trigger = {
         is_year = 1835
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1991,7 +2010,7 @@ arc_de_triomphe = {
 krakow_main_square = {
     start = 262
     
-    date = 1555.01.01
+    date = 1257.01.01
     
     time = {
         months = 0
@@ -2008,8 +2027,11 @@ krakow_main_square = {
     type = monument
 
     build_trigger = {
-	    is_year = 1555
-        culture_group = west_slavic
+	    is_year = 1257
+		OR = {
+        		culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2023,7 +2045,10 @@ krakow_main_square = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = west_slavic
+		OR = {
+        		culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2031,7 +2056,10 @@ krakow_main_square = {
     }
 
     can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = {
+        		culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2148,7 +2176,7 @@ krakow_main_square = {
 buckingham_palace = {
     start = 7437
     
-    date = 1761.01.01
+    date = 1705.01.01
     
     time = {
         months = 0
@@ -2165,7 +2193,7 @@ buckingham_palace = {
     type = monument
 
     build_trigger = {
-	    is_year = 1837 
+	    is_year = 1705
         culture_group = british
 		OR = {
 			has_owner_culture = yes
@@ -2359,7 +2387,7 @@ drottningholm_palace = {
 
     can_upgrade_trigger = {
 		culture_group = scandinavian
-		is_year = 1846
+		is_year = 1661
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2487,7 +2515,7 @@ drottningholm_palace = {
 amalienborg = {
     start = 12
     
-    date = 1750.01.01
+    date = 1417.01.01
     
     time = {
         months = 0
@@ -2504,7 +2532,7 @@ amalienborg = {
     type = monument
 
     build_trigger = {
-	    is_year = 1750
+	    is_year = 1417
         culture_group = scandinavian
 		OR = {
 			has_owner_culture = yes
@@ -2846,7 +2874,6 @@ wormser_dom = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1886
 		culture_group = germanic
 		OR = {
 			has_owner_culture = yes
@@ -2982,7 +3009,10 @@ santiago_de_compostela = {
     type = monument
 
     build_trigger = {
-        culture_group = iberian
+		OR = {
+	    	culture_group = iberian	
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2996,7 +3026,10 @@ santiago_de_compostela = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = iberian
+		OR = {
+	        culture_group = iberian	
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -3004,7 +3037,10 @@ santiago_de_compostela = {
     }
 
     can_upgrade_trigger = {
-		culture_group = iberian
+		OR = {
+	        culture_group = iberian	
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -3139,6 +3175,7 @@ universidad_de_salamanca = {
     build_trigger = {
 		OR = {
       		culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 		}
 		OR = {
@@ -3156,6 +3193,7 @@ universidad_de_salamanca = {
     can_use_modifiers_trigger = {
         OR = {
       		culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 		}
 		OR = {
@@ -3167,6 +3205,7 @@ universidad_de_salamanca = {
     can_upgrade_trigger = {
 		OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 		}
 		OR = {
@@ -3662,7 +3701,6 @@ uffington_white_horse = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1755
 		culture_group = british
 		OR = {
 			has_owner_culture = yes
@@ -3792,7 +3830,10 @@ sorbonne_university = {
     type = monument
 
     build_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -3806,7 +3847,10 @@ sorbonne_university = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -3814,7 +3858,10 @@ sorbonne_university = {
     }
 
     can_upgrade_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -4381,7 +4428,10 @@ palacio_de_madrid = {
 
     build_trigger = {
 	    is_year = 1735
-        culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -4395,7 +4445,10 @@ palacio_de_madrid = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -4403,7 +4456,10 @@ palacio_de_madrid = {
     }
 
     can_upgrade_trigger = {
-		culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -4726,7 +4782,10 @@ havana = {
 
     build_trigger = {
 	    is_year = 1515
-        culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5218,11 +5277,41 @@ plaza_de_armas = {
     move_days_per_unit_distance = 10
     starting_tier = 1
     type = monument
-    build_trigger = { is_year = 1534 culture_group = iberian OR = {	has_owner_culture = yes	has_owner_accepted_culture = yes } }
+    build_trigger = { 
+		is_year = 1534 		
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
+		OR = {	
+			has_owner_culture = yes	
+			has_owner_accepted_culture = yes 
+		} 
+    }
     on_built = { province_event = { id = destroy_great_project_events.2	days = 1 } }
     on_destroyed = {}
-    can_use_modifiers_trigger = { culture_group = iberian OR = { has_owner_culture = yes has_owner_accepted_culture = yes }	}
-    can_upgrade_trigger = { culture_group = iberian	OR = { has_owner_culture = yes has_owner_accepted_culture = yes	} }
+    can_use_modifiers_trigger = { 
+		is_year = 1534 		
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
+		OR = {	
+			has_owner_culture = yes	
+			has_owner_accepted_culture = yes 
+		} 
+    }
+    can_upgrade_trigger = { 
+		is_year = 1534 		
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
+		OR = {	
+			has_owner_culture = yes	
+			has_owner_accepted_culture = yes 
+		} 
+    }
     keep_trigger = {}
 
     tier_0 = {
@@ -5280,7 +5369,10 @@ plaza_del_zocalo = {
 
     build_trigger = {
 	    is_year = 1521
-        culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5294,7 +5386,10 @@ plaza_del_zocalo = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5302,7 +5397,10 @@ plaza_del_zocalo = {
     }
 
     can_upgrade_trigger = {
-		culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5615,7 +5713,10 @@ bastille = {
     type = monument
 
     build_trigger = {
-        culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5629,7 +5730,10 @@ bastille = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -5637,7 +5741,10 @@ bastille = {
     }
 
     can_upgrade_trigger = {
-		culture_group = french
+		OR = {
+			culture_group = french
+			culture_group = old_latin
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -6418,6 +6525,7 @@ het_binnenhof = {
 				culture_group = germanic		 
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}
     }
@@ -6430,6 +6538,7 @@ het_binnenhof = {
 				culture_group = germanic	 
 				primary_culture = wallonian
 				primary_culture = burgundian
+				culture_group = old_latin
 			}
 		}	
     }
@@ -7987,6 +8096,7 @@ alcazar_de_seville = {
 	build_trigger = {
 		OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 			culture = andalucian
 		}
@@ -8005,6 +8115,7 @@ alcazar_de_seville = {
     can_use_modifiers_trigger = {
 	    OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 			culture = andalucian
 		}
@@ -8018,6 +8129,7 @@ alcazar_de_seville = {
 	    is_year = 1509
 		OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			culture = andalusi_arabic
 			culture = andalucian
 		}
@@ -8168,6 +8280,7 @@ casa_de_contratacion = {
 	    is_year = 1503
         OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			#culture = andalusi_culture
 			culture = andalucian
 		}
@@ -8186,6 +8299,7 @@ casa_de_contratacion = {
     can_use_modifiers_trigger = {
 	    OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			#culture = andalusi_culture
 			culture = andalucian
 		}
@@ -8198,6 +8312,7 @@ casa_de_contratacion = {
     can_upgrade_trigger = {
 		OR = {
 			culture_group = iberian
+			culture_group = old_latin
 			#culture = andalusi_culture
 			culture = andalucian
 		}
@@ -8311,7 +8426,7 @@ casa_de_contratacion = {
 basel_town_hall = {
     start = 3055
     
-    date = 1444.01.01
+    date = 1501.01.01
     
     time = {
         months = 0
@@ -8338,6 +8453,7 @@ basel_town_hall = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -8358,11 +8474,12 @@ basel_town_hall = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
     can_upgrade_trigger = {
-	    is_year = 1522
+	    is_year = 1504
 		OR = {
 			AND = {
 				culture_group = germanic
@@ -8373,6 +8490,7 @@ basel_town_hall = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -8538,7 +8656,10 @@ beogradska_tvrdava = {
     type = monument
 
     build_trigger = {
-        culture_group = south_slavic
+		OR = {
+        		culture_group = south_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8552,7 +8673,10 @@ beogradska_tvrdava = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = south_slavic
+		OR = {
+        		culture_group = south_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8560,8 +8684,11 @@ beogradska_tvrdava = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1867
-		culture_group = south_slavic
+	    is_year = 1402
+		OR = {
+        		culture_group = south_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8622,7 +8749,7 @@ beogradska_tvrdava = {
 bratislava_castle = {
     start = 1772
     
-    date = 0800.01.01
+    date = 0932.01.01
    
     time = {
         months = 0
@@ -8639,7 +8766,10 @@ bratislava_castle = {
     type = monument
 
     build_trigger = {
-        culture_group = west_slavic
+		OR = {
+   			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8653,7 +8783,10 @@ bratislava_castle = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = west_slavic
+		OR = {
+   			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8661,8 +8794,11 @@ bratislava_castle = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1767
-		culture_group = west_slavic
+	    is_year = 1552
+		OR = {
+   			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -8877,6 +9013,7 @@ chillon_castle = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -8897,6 +9034,7 @@ chillon_castle = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -8911,6 +9049,7 @@ chillon_castle = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -9151,12 +9290,13 @@ diocletian_palace = {
     build_trigger = {
         OR = {
 		culture_group = south_slavic
+		culture_group = slavic
 		culture_group = old_latin
-		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}		
     }
 
     on_built = {
@@ -9166,25 +9306,27 @@ diocletian_palace = {
     }
 
     can_use_modifiers_trigger = {
-	 OR = {
+        OR = {
 		culture_group = south_slavic
+		culture_group = slavic
 		culture_group = old_latin
-		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}	
     }
 
     can_upgrade_trigger = {
-	OR = {
+        OR = {
 		culture_group = south_slavic
+		culture_group = slavic
 		culture_group = old_latin
-		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}		
     }
 
     keep_trigger = {
@@ -9301,7 +9443,7 @@ matthias_church = {
     }
 
     can_upgrade_trigger = {
-	    is_year = 1780
+	    is_year = 1470
 		culture_group = carpathian
 		OR = {
 			has_owner_culture = yes
@@ -9518,7 +9660,6 @@ kalmar_castle = {
 
     can_upgrade_trigger = {
 		culture_group = scandinavian
-		is_year = 1856
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -9576,7 +9717,7 @@ kalmar_castle = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			improve_relation_modifier = 0.1
-			stability_cost_modifier = -0.01
+			stability_cost_modifier = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -9614,7 +9755,7 @@ kalmar_castle = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			improve_relation_modifier = 0.2
-			stability_cost_modifier = -0.02
+			stability_cost_modifier = -0.2
 			diplomatic_reputation = 1
 			liberty_desire_from_subject_development = -0.10
 		}
@@ -9657,7 +9798,7 @@ kalmar_castle = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			improve_relation_modifier = 0.3
-			stability_cost_modifier = -0.03
+			stability_cost_modifier = -0.3
 			diplomatic_reputation = 2
 			liberty_desire_from_subject_development = -0.20
 		}
@@ -9908,7 +10049,6 @@ borgund_stavkirke = {
 
     can_upgrade_trigger = {
 		culture_group = scandinavian
-		is_year = 1868
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -10063,7 +10203,7 @@ uppsala_domkyrka = {
 
     can_upgrade_trigger = {
 		culture_group = scandinavian
-		is_year = 1885
+		is_year = 1476
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -10167,6 +10307,7 @@ zytglogge = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -10187,6 +10328,7 @@ zytglogge = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 
@@ -10201,6 +10343,7 @@ zytglogge = {
 			}
 			culture = romanch_culture
 			culture = arpitan
+			culture_group = old_latin
 		}
 	}
 

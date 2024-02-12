@@ -5,6 +5,7 @@ primary_culture = vu_komi
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
+unit_type = eastern
 capital = 1963	# Cherdyn
 
 

@@ -376,7 +376,7 @@ country_event = { # Second Peace of Thorn
 			ai = yes
 		}
 		is_at_war = no
-		has_global_flag = poland_supported_prussian_confederation
+		has_country_flag = supported_prussian_confederation_flag
 		OR = {
 			DNZ = { vassal_of = ROOT }
 			AND = {
@@ -434,13 +434,11 @@ country_event = { # Second Peace of Thorn
 	option = { # Don't agree to Peace
 		name = vu_plc.4.a
 		ai_chance = { factor = 25 }
-		clr_global_flag = poland_supported_prussian_confederation
 	}
 	
 	option = { # Sign Peace
 		name = vu_plc.4.b
 		ai_chance = { factor = 75 }
-		clr_global_flag = poland_supported_prussian_confederation
 		custom_tooltip = vu_plc.4.tooltip
 		if = {
 			limit = {
@@ -1131,7 +1129,10 @@ country_event = { # Elective monarchy estates influence
 	is_triggered_only = yes
 	
 	trigger = {
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles
@@ -1206,7 +1207,10 @@ country_event = { # Estate influence from foreign ruler based on his nationality
 	is_triggered_only = yes
 	
 	trigger = {
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles

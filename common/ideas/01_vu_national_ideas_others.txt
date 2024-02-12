@@ -3851,3 +3851,335 @@ VLV_ideas = {
 		placed_merchant_power = 5
 	}
 }
+
+#VU - Additions by Always_Prussia integrated by San Felipe
+vu_danishducal_ideas = {
+	start = {
+		navy_tradition = 0.5
+		global_sailors_modifier = 0.1
+	}
+
+	bonus = {
+		land_morale = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = JUT
+			#tag = Skane
+		}
+	}
+	free = yes		#will be added at load.
+	
+	legacy_of_the_danelaw = {
+		shock_damage = 0.05
+	}
+	the_danevirke = {
+		defensiveness = 0.1
+	}
+	control_the_sound = {
+		global_trade_power = 0.1
+	}
+	sizeable_navy = {
+		ship_durability = 0.025
+		naval_forcelimit_modifier = 0.1
+	}
+	disciplined_army = {
+		discipline = 0.05
+	}		
+	splendid_courts = {
+ 		prestige = 0.05
+	}
+	restore_the_kingdom_of_denmark = {
+		ae_impact = -0.05
+		core_creation = -0.05
+	}
+}
+
+#vu_norwegianducal_ideas = {
+#	start = {
+#		naval_forcelimit_modifier = 0.1
+#		naval_morale = 0.05
+#	}
+#
+#	bonus = {
+#		global_tax_modifier = 0.1
+#	}
+#	
+#	trigger = {
+#		OR = {
+#			tag =
+#			tag =
+#			tag =
+#		}
+#	}
+#	free = yes		#will be added at load.
+#	
+#	homeland_of_the_vikings = {
+#		leader_land_shock = 1
+#	}
+#	natural_barriers = {
+#		defensiveness = 0.1
+#	}
+#	religious_frontier = {
+#		global_missionary_strength = 0.01
+#	}
+#	braving_the_north_sea = {
+#		ship_durability = 0.025
+#		heavy_ship_power = 0.05
+#	}
+#	entrance_to_the_baltic_sea = {
+#		global_trade_power = 0.1
+#	}		
+#	lessons_of_the_northern_wars = {
+# 		army_tradition = 0.5
+#	}
+#	restore_the_kingdom_of_norway = {
+#		ae_impact = -0.05
+#		core_creation = -0.05
+#	}
+#}
+
+vu_swedishducal_ideas = {
+	start = {
+		land_morale = 0.05
+		production_efficiency = 0.1
+	}
+
+	bonus = {
+		global_trade_goods_size = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = VTG
+			tag = OTG
+			#tag = VU - I don't know what Prussia wants here so I've hashed it out. By San Felipe
+		}
+	}
+	free = yes		#will be added at load.
+	
+	lions_of_the_north = {
+		infantry_power = 0.1
+	}
+	swedish_castle_feifs = {
+		defensiveness = 0.1
+	}
+	baltic_ambitions = {
+		galley_power = 0.1
+	}
+	swedish_efficiency = {
+		build_cost = -0.1
+		build_time = -0.1
+	}
+	reform_the_army = {
+		discipline = 0.025
+	}		
+	resistance_to_foreign_domination = {
+ 		enemy_core_creation = 0.1
+	}
+	restore_the_kingdom_of_sweden = {
+		ae_impact = -0.05
+		core_creation = -0.05
+	}
+}
+
+#Baktrian_ideas = {
+#	start = {
+#		legitimacy = 1
+#		discipline = 0.05
+#	}
+#	
+#	bonus = {
+#		land_morale = 0.1
+#	}
+#	
+#	trigger = {
+#		tag = Baktria
+#	}
+#	free = yes
+#	
+#	frontiers_of_the_old_empire = {
+#		defensiveness = 0.2
+#	}
+#	indian_elephants = {
+# 		cavalry_power = 0.15
+#	}	
+#	the_silk_road = {
+#		trade_efficiency = 0.15
+#		trade_steering = 0.1
+#	}
+#	embattled_state = {
+#		army_tradition = 1
+#	}
+#	cultural_hub = {
+#		idea_cost = -0.1
+#	}
+#	splendor_of_the_baktrian_court = {
+#		prestige = 1
+#	}
+#	revival_of_hellenic_culture = {
+#		culture_conversion_cost = -0.25
+#	}
+#}
+
+#Macedonian_ideas = {
+#	start = {
+#		discipline = 0.05
+#		global_tax_modifier = 0.1
+#	}
+#	
+#	bonus = {
+#		global_missionary_strength = 0.02
+#	}
+#	
+#	trigger = {
+#		tag = Macedon
+#	}
+#	free = yes
+#	
+#	heirs_of_alexander = {
+#		prestige = 1
+#	}
+#	new_macedonian_army = {
+# 		land_morale = 0.15
+#	}	
+#	great_haven_of_pella = {
+#		trade_efficiency = 0.1
+#		global_trade_power = 0.1
+#	}
+#	control_the_aegean = {
+#		galley_power = 0.15
+#	}
+#	legitimate_line = {
+#		legitimacy = 1
+#	}
+#	irridentist_claims = {
+#		ae_impact = -0.15
+#	}
+#	hellenic_revival = {
+#		culture_conversion_cost = -0.25
+#		missionaries = 1
+#	}
+#}
+
+#Seleucid_ideas = {
+#	start = {
+#		ae_impact = -0.1
+#		land_morale = 0.1
+#	}
+#	
+#	bonus = {
+#		discipline = 0.05
+#	}
+#	
+#	trigger = {
+#		tag = Seleucids
+#	}
+#	free = yes
+#	
+#	the_diadochi_wars = {
+#		army_tradition = 1
+#	}
+#	legacy_of_the_phalangites = {
+# 		infantry_power = 0.15
+#	}	
+#	rich_heartlands = {
+#		global_trade_goods_size = 0.1
+#	}
+#	satrapy_rule = {
+#		national_unrest = -1
+#		stability_cost_modifier = -0.1
+#	}
+#	hellenic_literature = {
+#		idea_cost = -0.1
+#	}
+#	spread_hellenic_civilization = {
+#		culture_conversion_cost = -0.25
+#	}
+#	restore_alexanders_empire = {
+#		core_creation = -0.1
+#		years_of_nationalism = -5
+#	}
+#}
+
+#Phoenecia_ideas = {
+#	start = {
+#		production_efficiency = 0.1
+#		global_tax_modifier = 0.1
+#	}
+#	
+#	bonus = {
+#		culture_conversion_cost = -0.25
+#	}
+#	
+#	trigger = {
+#		tag = Phoenecia
+#	}
+#	free = yes
+#	
+#	PHO_in_a_hostile_land = {
+#		defensiveness = 0.2
+#	}
+#	PHO_lessons_of_alexander = {
+# 		infantry_power = 0.15
+#	}	
+#	PHO_great_trading_culture = {
+#		trade_efficiency = 0.15
+#	}
+#	PHO_dominate_eastern_mediterranean = {
+#		galley_power = 0.1
+#	}
+#	PHO_crossroads_of_culture = {
+#		idea_cost = -0.1
+#	}
+#	PHO_grand_fleet = {
+#		naval_forcelimit_modifier = 0.1
+#	}
+#	PHO_united_phoenecian_army = {
+#		land_morale = 0.10
+#	}
+#}
+
+#vu_phoeneciancitystate_ideas = {
+#	start = {
+#		merchants = 1
+#		trade_steering = 0.05
+#	}
+#
+#	bonus = {
+#		land_morale = 0.05
+#	}
+#	
+#	trigger = {
+#		OR = {
+#			tag = Sydon
+#			tag = Berut
+#			tag = Tyre
+#		}
+#	}
+#	free = yes		#will be added at load.
+#	
+#	PCS_hoplite_legacy = {
+#		infantry_power = 0.1
+#	}
+#	PCS_productive_people = {
+#		production_efficiency = 0.1
+#	}
+#	PCS_importance_of_trade = {
+#		global_trade_power = 0.1
+#	}
+#	PCS_development_of_local_towns = {
+#		build_cost = -0.1
+#		development_cost = -0.05
+#	}
+#	PCS_capable_army = {
+#		discipline = 0.05
+#	}		
+#	PCS_large_trade_fleets = {
+# 		global_ship_trade_power = 0.1
+#	}
+#	PCS_trapped_between_empires = {
+#		diplomatic_reputation = 1
+#	}
+#}

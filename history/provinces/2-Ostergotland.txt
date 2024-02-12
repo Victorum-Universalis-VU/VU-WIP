@@ -14,7 +14,7 @@ trade_goods = glass
 base_manpower = 1 
 capital = "Linköping"
 is_city = yes # Estimated
-add_core = GTA
+add_core = OTG
 
 
 

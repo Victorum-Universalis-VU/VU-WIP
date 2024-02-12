@@ -195,7 +195,7 @@ QIR_missions_1_sedentary = {
 					change_culture = ROOT
 				} 
 				add_province_modifier = {
-					name = QIR_constantinople
+					name = QIR_constantinople_1
 					duration = -1
 				}
 			}
@@ -807,7 +807,9 @@ QIR_missions_2_sedentary = {
 					trade_node_value = 25
 					if = {
 						limit = {
-							trade_income_percentage = 0.01
+							ROOT = {
+								trade_income_percentage = 0.01
+							}
 						}
 						custom_trigger_tooltip = {
 							tooltip = QIR_at_least_60_trade_income
@@ -979,7 +981,7 @@ QIR_missions_3_sedentary = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = QIR_greater_iran
+				name = QIR_greater_iran_1
 				duration = -1
 			}
 			
@@ -1975,7 +1977,7 @@ QIR_missions_5_sedentary = {
 					has_dlc = "The Cossacks"
 				}
 				add_country_modifier = {
-					name = QIR_cossacks
+					name = QIR_cossacks_1
 					duration = -1
 				}
 			}

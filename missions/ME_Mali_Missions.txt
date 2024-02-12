@@ -122,35 +122,7 @@ MAL_missions_1 = {
 		position = 4
 		trigger = {
 			223 = {
-				OR = {
 					is_strongest_trade_power = ROOT
-					strongest_trade_power = {
-						variable_arithmetic_trigger = {
-							custom_tooltip = HAS_LESS_TRADE_INCOME_THAN_ROOT
-							export_to_variable = {
-								which = trade_income_of_this
-								value = trade_income_percentage
-							}
-							export_to_variable = {
-								which = monthly_income_of_this
-								value = monthly_income
-							}
-							multiply_variable = { which = trade_income_of_this which = monthly_income_of_this }
-							export_to_variable = {
-								which = trade_income_of_root
-								value = trade_income_percentage
-								who = ROOT
-							}
-							export_to_variable = {
-								which = monthly_income_of_root
-								value = monthly_income
-								who = ROOT
-							}
-							multiply_variable = { which = trade_income_of_root which = monthly_income_of_root }
-							NOT = { check_variable = { which = trade_income_of_this which = trade_income_of_root } }
-						}
-					}
-				}
 			}
 		}
 		effect = {
@@ -172,16 +144,7 @@ MAL_missions_1 = {
 		trigger = {
 			religion_group = muslim
 			223 = {
-				OR = {
-					is_strongest_trade_power = ROOT
-					strongest_trade_power = {
-						religion_group = muslim
-						OR = {
-							is_subject_of = ROOT
-							alliance_with = ROOT
-						}
-					}
-				}
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {

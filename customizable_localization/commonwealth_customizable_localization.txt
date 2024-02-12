@@ -196,6 +196,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				has_reform = elective_monarchy
+				has_reform = phoenician_elective_monarchical_republic
 				dynasty = "Jagiellon"
 				senior_union_with = LIT
 			}
@@ -219,6 +220,7 @@ defined_text = {
 			NOT = {
 				OR = {
 					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
 					dynasty = "Jagiellon"
 					senior_union_with = LIT
 				}

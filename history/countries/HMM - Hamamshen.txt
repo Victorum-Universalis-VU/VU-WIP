@@ -3,8 +3,7 @@ add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = armenian
 religion = miaphysite
-#technology_group = eastern
-technology_group = russian_tech_group
+technology_group = eastern
 capital = 3653
 fixed_capital = 3653
 

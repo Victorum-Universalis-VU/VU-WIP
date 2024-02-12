@@ -357,7 +357,7 @@ crown_of_iberia_act = {
 		}
 		custom_tooltip = crown_of_iberia_act_at
 		hidden_effect = {
-			every_owned_province = {
+			random_owned_province = {
 				limit = { region = iberia_region }
 				add_base_production = 1
 				type = random
@@ -414,10 +414,8 @@ crown_of_italy_act = {
 		}
 		custom_tooltip = crown_of_italy_act_at
 		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					region = italy_region
-				}
+			random_owned_province = {
+				limit = { region = italy_region	}
 				add_base_production = 1
 				type = random
 				amount = 10

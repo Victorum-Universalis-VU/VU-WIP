@@ -5,7 +5,7 @@
  NUM_stadtbiblothek_title: "Establish the Stadtbibliothek"
  NUM_stadtbiblothek_desc: "In spite of the invention of Printing Press by Johannes Gutenberg in 1439, books aren't yet widespread enough to be considered affordable for all Imperial citizens and are still considered luxurious by the majority of the population. To make literature more accessible and promote reading, our city should invest in a Library to fulfill the literary needs of the townspeople."
  NUM_german_renaissance_title: "Deutsche Renaissance"
- NUM_german_renaissance_desc: "The Prosperity of Nuremberg is attracting many great men to the city. As such, many humanists of the "Rebirth" era have gathered up in the city and started a community of brilliant minds. There's no other city like ours to be home to so many amazing people."
+ NUM_german_renaissance_desc: "The Prosperity of Nuremberg is attracting many great men to the city. As such, many humanists of the 'Rebirth' era have gathered up in the city and started a community of brilliant minds. There's no other city like ours to be home to so many amazing people."
  NUM_no_more_plagues_title: "Stop the Plagues"
  NUM_no_more_plagues_desc: "The constant plagues centered in Nuremberg have hindered our demographic and economic growth; we cannot allow these acts of God to continue. We shall end these plagues through public spending."
  NUM_expand_the_city_title: "Expand the City"
@@ -18,7 +18,11 @@
  
  # Modifiers:
  NUM_Hauptstadt: "German Capital"
+ desc_NUM_Hauptstadt: ""
  NUM_stadtbibliothek_modifier: "Circulation of Books"
+ desc_NUM_stadtbibliothek_modifier: ""
  NUM_renaissance_modifier: "The German Renaissance Center"
+ desc_NUM_renaissance_modifier: ""
  NUM_expansion_of_the_city: "Expansion of the City"
+ desc_NUM_expansion_of_the_city: ""
  

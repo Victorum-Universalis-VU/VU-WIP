@@ -3,7 +3,6 @@
 owner = HSN
 controller = HSN
 add_core = HSN
-add_core = ASY 
 capital = "Siirt"			#Syriac version is Si'reth
 culture = assyrian		#last remaining areas where Eastern Aramaic communities were still strong and plantiful
 religion = nestorian
@@ -14,15 +13,8 @@ base_production = 4
 base_manpower = 2 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
+add_core = ASR
+add_core = ASY 
 
 1462.1.1 = {
 	owner = AKK

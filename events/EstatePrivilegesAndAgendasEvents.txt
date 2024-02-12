@@ -48,8 +48,14 @@ country_event = {
 		name = estate_privileges_and_agendas_events.1.B
 		
 		if = { 
-			limit = { has_reform = elective_monarchy }
+			limit = { 
+				OR = {
+					has_reform = elective_monarchy
+					has_reform = phoenician_elective_monarchical_republic
+				}
+			}
 			remove_government_reform = elective_monarchy
+			remove_government_reform = phoenician_elective_monarchical_republic
 		}
 		else_if = { 
 			limit = { has_reform = polish_elective_monarchy } 

@@ -75,35 +75,39 @@
  
  # Modifiers:
  zcv_full_army: "A Competent Army"
- zcv_full_army_desc:0 "Full Army"
+ desc_zcv_full_army: ""
  zcv_legacy_of_lech_and_czech: "Legacy of Lech and Czech"
- zcv_legacy_of_lech_and_czech_desc:0 "Legacy of Lech & Czech"
+ desc_zcv_legacy_of_lech_and_czech: ""
  zcv_conquered_rus: "Conquered Kievian Rus"
- zcv_conquered_rus_desc:0 "Russia Conquered"
+ desc_zcv_conquered_rus: ""
  zcv_united_the_slavs: "A Unified Slavic State"
- zcv_united_the_slavs_desc:0 "United the Slavs"
+ desc_zcv_united_the_slavs: ""
  ME_zcv_education_reform: "Education Reforms"
+ desc_ME_zcv_education_reform: ""
  ME_zcv_centralization_reform: "Centralization Reforms"
+ desc_ME_zcv_centralization_reform: ""
  ME_zcv_military_reform: "Military Reforms"
+ desc_ME_zcv_military_reform: ""
  ME_legendary_bloodline: "A Legendary Bloodline"
+ desc_ME_legendary_bloodline: ""
  ME_champion_of_zapadoslavia: "Champion of Zapadoslavia"
+ desc_ME_champion_of_zapadoslavia: ""
  ME_loyal_poles: "A Loyal Polish Nobility"
+ desc_ME_loyal_poles: ""
  zcv_claimed_wendish_land: "Reclaimed Old Wendish Land"
- zcv_claimed_wendish_land_desc:0 "Claimed Wendish Land"
+ desc_zcv_claimed_wendish_land: ""
  zcv_humiliated_emperor: "Humiliated the Emperor"
- zcv_humiliated_emperor_desc:0 "Humiliated Emperor"
+ desc_zcv_humiliated_emperor: ""
  zcv_religious_unity_modifier: "Unity Through Faith"
- zcv_religious_unity_modifier_desc:0 "Religious Unity"
+ desc_zcv_religious_unity_modifier: ""
  zcv_universities_expanded: "Expanded our Universities"
- zcv_universities_expanded_desc:0 "Expanded Universities"
+ desc_zcv_universities_expanded: ""
  zapadoslavia_disloyal_nobles_triggered_modifier: "Disloyal Nobles"
- 
- # Trade Modifiers:
- zcv_baltic_trade: "The Baltic Trade"
- 
- # Triggered modifiers:
  zapadoslavia_disloyal_factions: "Disloyal Nobles"
- zapadoslavia_disloyal_factions_desc: ""
+ desc_zapadoslavia_disloyal_factions: ""
+
+ #KEY
+ zcv_baltic_trade: "The Baltic Trade"
  
  # Decisions:
  form_zapadoslavia_title: "Unite the Western Slavs"
@@ -137,7 +141,11 @@
  ME_Zapadoslavia_Events.4.d: "The nobles of [ME_city_revolt_target.GetName] have decided to protest against us, thinking that our rule has been forged by corruption and lies. In return, they demand more autonomy in their region."
  ME_Zapadoslavia_Events.4.a: "Let Them Revolt."
  ME_Zapadoslavia_Events.4.b: "We Cannot Afford More Enemies."
- 
+
+ ME_Zapadoslavia_Events.3.t: ""
+ ME_Zapadoslavia_Events.3.d: ""
+ ME_Zapadoslavia_Events.3.a: ""
+
  ME_Zapadoslavia_Events.5.t: "Nobles Wish for Cooperation"
  ME_Zapadoslavia_Events.5.d: "Whilst Zapadoslavia is not known for its corruption, many nobles wish to 'cooperate' with [Root.Monarch.GetName]. They offer us money for some support in the nation."
  ME_Zapadoslavia_Events.5.a: "It isn't Corruption. It is Cooperation."
@@ -151,6 +159,18 @@
  ME_Zapadoslavia_Events.7.t: "Recent Reforms Please Nobles"
  ME_Zapadoslavia_Events.7.d: "[Root.Monarch.GetName] has proven quite effective in the administration field. His reforms have pleased both the people and the nobles, securing a safe reign for him and his successors."
  ME_Zapadoslavia_Events.7.a: "Good."
+
+ ME_Zapadoslavia_Events.8.t: ""
+ ME_Zapadoslavia_Events.8.d: ""
+ ME_Zapadoslavia_Events.8.a: ""
+
+ ME_Zapadoslavia_Events.9.t: ""
+ ME_Zapadoslavia_Events.9.d: ""
+ ME_Zapadoslavia_Events.9.a: ""
+
+ ME_Zapadoslavia_Events.10.t: ""
+ ME_Zapadoslavia_Events.10.d: ""
+ ME_Zapadoslavia_Events.10.a: ""
  
  ME_uniting_the_west_slavs.tooltip: "§gBy choosing this option, your realm will be tasked with the objective of uniting the West Slavs. The West Slavic monarchy uses the factions mechanic as a representation of the three major cultures. You must keep all three of them loyal in order to cement the schism between West Slavia.§!"
  ME_will_not_unite_slavs: "§gBy choosing this option, you will not decide to unite the West Slavs.§!"

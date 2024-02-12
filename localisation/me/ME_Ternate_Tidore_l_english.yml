@@ -39,11 +39,17 @@
  TID_TER_orthodoxy_desc: "There is only one true faith, and that faith is [Root.Religion.GetName]. It's high time everybody learnt of that."
  
  TID_TER_no_rival_sultanate: "Monopoly on Melaku Spices"
+ desc_TID_TER_no_rival_sultanate: ""
  TID_TER_naval_tradition_from_battles: "Expansionism on the Seas"
+ desc_TID_TER_naval_tradition_from_battles: ""
  TID_TER_thalassocracy: "Eastern Thalassocracy"
+ desc_TID_TER_thalassocracy: ""
  TID_TER_kept_traditions: "Safeguarding the Traditions"
+ desc_TID_TER_kept_traditions: ""
  TID_TER_raids_into_mindanao: "Raids into Mindanao"
+ desc_TID_TER_raids_into_mindanao: ""
  TID_TER_community_of_faithful: "Joined the Community of the Faithful"
+ desc_TID_TER_community_of_faithful: ""
  
  TID_TER_colonize_decision: "§YSettle the Islands§! Decision will be unlocked."
  TID_TER_colonize_decision_upgrade: "§YSettle the Islands§! Decision will be upgraded by adding the provinces available to §Y[Root.GetRivalName]§!."

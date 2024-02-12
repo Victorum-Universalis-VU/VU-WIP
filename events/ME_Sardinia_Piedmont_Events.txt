@@ -85,11 +85,7 @@ country_event = {
 	}
 	option = {
 		name = ME_Sardinia_Piedmont_Events.2.OPT4
-
-		add_province_modifier = {
-			name = spi_estrassione_mezoradeddha
-			duration = -1
-		}
+		add_treasury = 500
 	}
 }
 

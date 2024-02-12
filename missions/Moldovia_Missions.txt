@@ -110,10 +110,12 @@ moldovia_missions_2 = {
 			if = {
 				limit = {
 				    NOT = {
-				        has_great_project = {
-				        	type = vu_voronet_monastery
-				        	tier = 0
-				        }
+						any_owned_province = {
+							has_great_project = {
+								type = vu_voronet_monastery
+								tier = 0
+							}	
+						}
 					}
 				}
 				custom_tooltip = voronet_monastry

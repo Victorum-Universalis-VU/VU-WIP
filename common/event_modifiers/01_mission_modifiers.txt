@@ -9620,6 +9620,10 @@ fra_improved_court_houses_modifier = {
 	local_unrest = -1
 }
 
+fra_improved_town_hall_modifier = {
+	local_unrest = -1
+}
+
 fra_victory_against_the_english_modifier = {
 	manpower_recovery_speed = 0.1
 	war_exhaustion = -0.03

@@ -1,7 +1,6 @@
 # Horde TL 30 Infantry
 
 type = infantry
-unit_type = persian_tech_group
 unit_type = nomad_group
 
 maneuver = 1

@@ -1837,7 +1837,7 @@ scandinavian = { #Nordic
 	#VULegacy Culture
 	gotlander = {
 		graphical_culture = westerngfx
-		primary = GTA
+		#primary = GTA
 	}
 	#VULegacy Culture
 	faroese = {
@@ -5779,6 +5779,20 @@ byzantine = {
 	greek = {
 		graphical_culture = greekgfx
 		primary = GRE
+	}
+	phoenician = { #EU Rome
+	    primary = CAR
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid Milkiramid Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
+			Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
 	}
 	pontic_greek = {
 		graphical_culture = greekgfx
@@ -15773,20 +15787,6 @@ lost_cultures_group = {
 			Brummelisa Ursa Brumma
 		}
 	}
-	phoenician = { #EU Rome
-		dynasty_names = {
-			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid
-		Milkiramid Philosirid
-		}
-		male_names = {
-			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
-			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram
-			Paltibaal Philosir
-		}
-		female_names = {
-			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
-		}
-	}
 	scanian = {
 		male_names = {
 			Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
@@ -15820,17 +15820,6 @@ lost_cultures_group = {
 			Porse Glysing Banner Thott Ulfstand Grøn Daa
 			Reventlow Juul Ulfeldt Bang 
 			Alfredsson Andersson Assarsson Batra Billgren Broman Ekberg Glans Gjedde Glenmark Hansson Jansson Ibrahimovic Järegård Kulle Larsson Lohmander Lundberg Malmkvist Malmsjö Melander Möller Nordqvist Nordström Ohlmarks Persson Poppe Ranelid Sundström Troell Wester Olsson
-		}
-	}
-	babylonian = {
-		dynasty_names = {
-			Amorite Sealand Larsa Kassite
-		}
-		male_names = {
-			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" Sabum "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
-		}
-		female_names = {
-			Nana Allatu Belit Zirrabanit Tiamat
 		}
 	}
 	etrurian = { #EU Rome
@@ -16088,6 +16077,18 @@ mesopotamian_group = {
 			Alala Allat Allatu Amuhia Anat Anatu Anunit Aralu Aruru Astarte Atheh Belit Dadu Dadu-Ghipa Gula Ishtar Li-Lit
 			Mylitta Nairi Ninharrissi Ninkigal Ninkummu Nukimmut Nuri Pihirim Pirisati Rabbituri Ri Rubati Sammuramat Sar-Rat
 			Seruya Seruya-Edirat Shala Tabuya Tap-Nakhti Tasmit Tihamtu Ukubutu Urmitu Zirratbanit
+		}
+	}
+	babylonian = {
+	    primary = BAB
+		dynasty_names = {
+			Amorite Sealand Larsa Kassite
+		}
+		male_names = {
+			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" Sabum "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
+		}
+		female_names = {
+			Nana Allatu Belit Zirrabanit Tiamat
 		}
 	}
 	aramaic = { #EU Rome

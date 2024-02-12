@@ -1,7 +1,7 @@
 ﻿l_english:
  #Missions
  fra_liberate_norm_title:0 "Liberate Normandy"
- fra_liberate_norm_desc:0 "The Duchy of Normandy is a de jure subject of the Kingdom of France. It should be returned to our rule." #old
+ fra_liberate_norm_desc:0 "The Duchy of Normandy is a de jure subject of the Kingdom of France and it should be returned to our rule." #old
  fra_burg_succession_title:0 "Burgundian Succession"
  fra_burg_succession_desc:0 "The upstart Dukes of Burgundy fancy themselves a great power in their own right, yet in truth they are a mere vassal. We should remind them of this fact." #old 
  fra_border_empire_title:0 "Face the Empire"
@@ -413,6 +413,8 @@
  fra_french_supremacy_modifier:0 "French Supremacy in Europe"
  fra_french_supremacy2_modifier:0 "The New Eastern Borders"
  desc_fra_french_supremacy2_modifier:0 "Our sovereignty over the lands in Germany is now unquestionable. As our troops march to the East, we will strive to incorporate the newly-subjugated people into our enlightened society."
+ fra_gave_up_on_calais:0 ""
+ desc_fra_gave_up_on_calais:0 ""
  fra_church_and_state_harmony_modifier:0 "Church & State in Napoleonic France"
  fra_popularization_of_secular_beliefs_modifier:0 "Popularization of Secular Beliefs"
  fra_riches_of_italy_modifier:0 "Riches of Italy"
@@ -426,6 +428,9 @@
  fra_proper_legal_systems_modifier:0 "Proper Legal System"
  fra_banca_carige_modifier:0 "Banca Carige"
  fra_improved_court_houses_modifier:0 "Efficient Courthouse"
+ desc_fra_improved_court_houses_modifier:0 ""
+ fra_improved_town_hall_modifier:0 ""
+ desc_fra_improved_town_hall_modifier:0 ""
  fra_trade_hegemony_modifier:0 "Trade Hegemony"
  fra_iberian_campaigns_modifier:0 "Iberian Campaigns"
  pro_natural_anchorage_of_the_mediterranean_modifier:0 "Natural Anchorage of the Mediterranean"

@@ -1239,7 +1239,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = ME_Qara_Qoyunlu_Events.29
 	title = ME_Qara_Qoyunlu_Events.29.t #
 	desc = ME_Qara_Qoyunlu_Events.29.d 
@@ -1252,7 +1252,6 @@ province_event = {
 		name = ME_Qara_Qoyunlu_Events.29.a # ok
 		
 		ai_chance = { factor = 90 }
-		
 		add_power_projection = {
 			type = QAR_perma_persia_pp
 			amount = 10 
@@ -1261,11 +1260,9 @@ province_event = {
 		custom_tooltip = MAM_permanent_PP
 		
 		custom_tooltip = " "
-		
 		set_government_rank = 3
 		
 		custom_tooltip = " "
-		
 		add_country_modifier = {
 			name = QAR_conquest_of_persia
 			duration = -1

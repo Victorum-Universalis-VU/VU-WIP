@@ -3,11 +3,11 @@
 #Core Details
 capital = "Beszterce"
 is_city = yes
-owner = SZE
-controller = SZE # Should be Szaszfold but no tag yet
+owner = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
+controller = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
 
 #Demographics
-culture = transylvanian_saxons
+culture = szekely #VU - Changed from transylvanian_saxons by San Felipe on Yani's advice.
 religion = catholic
 
 #Development and Trade
@@ -29,16 +29,6 @@ hre = no
 #Special Modifiers
 
 #Discoveries known by technology groups
-
-
-
-
-
-
-
-
-
-
 
 #Histories by SF
 1506.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Szekely rebellion

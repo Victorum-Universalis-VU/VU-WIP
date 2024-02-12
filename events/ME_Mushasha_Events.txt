@@ -199,8 +199,14 @@ country_event = {
 				limit = {
 					country_or_non_sovereign_subject_holds = ROOT
 					OR = {
-						NOT = { is_subject = yes }
-						ai = no
+						NOT = { 
+							MSY = {
+								is_subject = yes 
+							}
+						}
+						ROOT = {
+							ai = no
+						}
 					}
 				}
 				cede_province = PER

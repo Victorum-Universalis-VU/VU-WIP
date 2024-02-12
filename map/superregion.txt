@@ -321,11 +321,17 @@ ganges_river_superregion = {
 indus_river_superregion = {
     indus_river_region
 }
+
+#S.E. Asia
 mekong_river_superregion = {
     mekong_river_region
 }
 chao_praya_river_superregion = {
     chao_praya_river_region
+}
+
+phillipines_lakes_sea_superregion = {
+    phillipines_lakes_sea_region
 }
 
 #Europe

@@ -548,8 +548,10 @@ PLB_missions_3_non_pirate = {
 			OR = {
 				AND = {
 					has_dlc = "Mandate of Heaven"
-					all_countries_including_self = {
-						is_emperor_of_china = no
+					owner = {
+						all_countries_including_self = {
+							is_emperor_of_china = no
+						}
 					}
 				}
 				AND = {
@@ -613,21 +615,6 @@ PLB_missions_3_non_pirate = {
 		provinces_to_highlight = {
 			is_capital_of = ROOT
 			NOT = { province_trade_power = 50 }
-			OR = {
-				NOT = { has_dlc = "Mandate of Heaven" }
-				is_emperor_of_china = yes
-				all_countries_including_self = {
-					is_emperor_of_china = no
-				}
-				AND = {
-					NOT = { has_country_flag = MSA_insulting_flag }
-					NOT = { has_country_flag = MSA_in_defiance_flag }
-				}
-				AND = {
-					NOT = { has_country_flag = MSA_swayed_flag }
-					NOT = { has_country_flag = MSA_absolutely_loyal_flag }
-				}
-			}
 		}
 		trigger = {
 			custom_trigger_tooltip = {
@@ -1490,13 +1477,6 @@ PLB_missions_5_pirate = {
 		effect = {
 			add_republican_tradition = 5
 			custom_tooltip = PLB_every_province_within_certain_distance
-			hidden_effect = {
-				capital_scope = {
-					region = {
-						remove_province_modifier = slaves_raided
-					}
-				}
-			}
 		}
 	}
 

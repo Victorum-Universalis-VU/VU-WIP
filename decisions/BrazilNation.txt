@@ -112,7 +112,10 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					has_reform = elective_monarchy
+					OR = {
+						has_reform = elective_monarchy
+						has_reform = phoenician_elective_monarchical_republic
+					}
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform

@@ -44,6 +44,7 @@ country_decisions = {
 			NOT = { has_reform = colonial_government }
 			NOT = { has_reform = shogunate }
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			NOT = { has_reform = celestial_empire }
 			NOT = { has_reform = daimyo }
 			NOT = { is_revolutionary_republic_trigger = yes }

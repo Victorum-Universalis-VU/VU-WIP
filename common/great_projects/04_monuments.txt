@@ -68,7 +68,6 @@ stora_kopparberget = {			#Replaces vanilla monument there too
 	}
 
     can_upgrade_trigger = {
-	    is_year = 1523		#Mining expansion subsidised by special taxes starts in early 1500
 		AND = {
 			has_owner_accepted_culture = yes
 			has_owner_religion = yes
@@ -610,11 +609,14 @@ karlstejn_castle = {
     type = monument
 
     build_trigger = {
-        culture_group = west_slavic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+		culture_group = west_slavic
+		culture_group = slavic
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}		
     }
 
     on_built = {
@@ -624,20 +626,26 @@ karlstejn_castle = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = west_slavic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+        OR = {
+		culture_group = west_slavic
+		culture_group = slavic
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}	
     }
 
     can_upgrade_trigger = { #First reconstruction date
 	    is_year = 1480
+        OR = {
 		culture_group = west_slavic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		culture_group = slavic
+	}
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}		
     }
 
     keep_trigger = {
@@ -3919,7 +3927,10 @@ intramuros = {
 	#can we build it?
 	build_trigger = {	
     is_year = 1571
-	culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -3939,7 +3950,10 @@ intramuros = {
 	#can our country use it?
 	can_use_modifiers_trigger = {	
     is_year = 1571
-	culture_group = iberian
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -3948,8 +3962,11 @@ intramuros = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		
-	is_year = 1571
-	culture_group = iberian
+	is_year = 1571		
+		OR = {
+        		culture_group = iberian
+			culture_group = old_latin
+		} 
 		OR = {
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
@@ -5431,7 +5448,7 @@ san_juan_de_ulua = {
 schloss_neuschwanstein = {
     start = 8542
     
-    date = 1444.01.01 #1869.01.01   #First stone
+    date = 1869.01.01 #1869.01.01   #First stone
     
     time = {
         months = 0
@@ -5448,7 +5465,7 @@ schloss_neuschwanstein = {
     type = monument
 
     build_trigger = {
-	    is_year = 1444  
+	    is_year = 1869 
         culture_group = germanic
 		OR = {
 			has_owner_culture = yes
@@ -9225,11 +9242,20 @@ fort_geldria = {
 	type = monument
 
 	#can we build it?
-	build_trigger = {	
-		owner = {
-			capital_scope = {
-		    	continent = europe
-		    }
+	build_trigger = {
+		OR = {	
+			owner = {
+				capital_scope = {
+		    			continent = europe
+		    		}
+			}
+			owner = {
+				overlord = { 
+					capital_scope = {
+		    				continent = europe
+		    			}
+				}
+			}
 		}
 	}
 

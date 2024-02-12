@@ -382,7 +382,7 @@
  urban_siauliai_desc:0 ""  
  urban_vilnius_desc:0 "Vilnius is the capital and the largest city of Lithuania. Historian Romas Batura identifies the city with Voruta, one of the castles of Mindaugas, who was King of Lithuania after coronation in 1253. During the reign of Grand Dukes Butvydas and Vytenis, a city started emerging from a trading settlement and the first Franciscan Catholic church was built. The city was first mentioned in written sources in 1323 as Vilna, when the Letters of Grand Duke Gediminas were sent to German cities inviting Germans (including German Jews) to settle in the capital city, as well as to Pope John XXII. These letters contain the first unambiguous reference to Vilnius as the capital."  
  urban_tartu_desc:0 ""  
- urban_riga_desc:0 "Riga is the largest city in the Baltic states. The city lies on the Gulf of Riga at the mouth of the Daugava river where it meets the Baltic Sea. Riga was founded in 1201 and is a former Hanseatic League member. The river Daugava has been a trade route since antiquity, part of the Vikings' Dvina–Dnieper navigation route to Byzantium. A sheltered natural harbour 15 km (9.3 mi) upriver from the mouth of the Daugava—the site of today's Riga—has been recorded, as Duna Urbs, as early as the 2nd century. The Livonian Chronicle of Henry testifies to Riga having long been a trading centre by the 12th century, referring to it as portus antiquus (ancient port), and describes dwellings and warehouses used to store mostly flax, and hides. German traders began visiting Riga, establishing a nearby outpost in 1158. In 1282, Riga became a member of the Hanseatic League. The Hansa was instrumental in giving Riga economic and political stability, thus providing the city with a strong foundation which endured the political conflagrations that were to come."  
+ urban_riga_desc:0 "Riga is the largest city in the Baltic states. The city lies on the Gulf of Riga at the mouth of the Daugava river where it meets the Baltic Sea. Riga was founded in 1201 and is a former Hanseatic League member. The river Daugava has been a trade route since antiquity, part of the Vikings' Dvina to Dnieper navigation route to Byzantium. A sheltered natural harbour 15 km (9.3 mi) upriver from the mouth of the Daugava—the site of today's Riga—has been recorded, as Duna Urbs, as early as the 2nd century. The Livonian Chronicle of Henry testifies to Riga having long been a trading centre by the 12th century, referring to it as portus antiquus (ancient port), and describes dwellings and warehouses used to store mostly flax, and hides. German traders began visiting Riga, establishing a nearby outpost in 1158. In 1282, Riga became a member of the Hanseatic League. The Hansa was instrumental in giving Riga economic and political stability, thus providing the city with a strong foundation which endured the political conflagrations that were to come."  
  urban_trakai_desc:0 ""  
  urban_plock_desc:0 ""  
  urban_mitau_desc:0 ""  
@@ -390,7 +390,7 @@
  urban_narwa_desc:0 ""  
 
 ###Belarus/Ruthenia###
-
+ urban_lida:0 ""
  urban_lida_desc:0 ""  
  urban_pinsk_desc:0 ""  
  urban_grodno_desc:0 ""  
@@ -625,6 +625,7 @@
  urban_sparti_desc:0 "Sparta was a prominent city-state in Laconia in ancient Greece. In antiquity, the city-state was known as Lacedaemon, while the name Sparta referred to its main settlement on the banks of the Eurotas River in Laconia, in south-eastern Peloponnese. Around 650 BC, it rose to become the dominant military land-power in ancient Greece. Beginning in the 13th century, the political and cultural center of Laconia shifted to Mystras, some 4 km to the west. The settlement at ancient Sparta, named Lacedaemonia, continued to exist, although greatly depopulated."  
  urban_theodosian_walls_desc:0 "The Walls of Constantinople are a series of defensive stone walls that have surrounded and protected the city of Constantinople since its founding as the new capital of the Roman Empire by Constantine the Great. With numerous additions and modifications during their history, they were the last great fortification system of antiquity, and one of the most complex and elaborate systems ever built. The double Theodosian Walls, located about 2 km to the west of the old Constantinian Wall, were erected during the reign of Emperor Theodosius, after whom they were named. The work was carried out in two phases, with the first phase erected during Theodosius' minority under the direction of Anthemius, the praetorian prefect of the East, and was finished in 413 according to a law in the Codex Theodosianus. This initial construction consisted of a single curtain wall with towers, which now forms the inner circuit of the Theodosian Walls. Within the following century the second, outer wall was added, as well as a wide moat which opened in front of the walls."  
  urban_galata_desc:0 ""  
+ urban_george_desc:0 ""
 
 ###Ottobros###
 

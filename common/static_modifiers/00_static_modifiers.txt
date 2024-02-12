@@ -107,7 +107,7 @@ difficulty_very_hard_ai = {
 
 city = {
 	local_tax_modifier = 0.25
-	allowed_num_of_buildings = 2
+	allowed_num_of_buildings = 4
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
 	allowed_num_of_manufactories = 1
@@ -131,6 +131,7 @@ in_capital_state = {
 }
 
 coastal = {
+	allowed_num_of_buildings = 2
 	supply_limit_modifier = 0.5
 	province_trade_power_modifier = 0.25
 }
@@ -282,8 +283,8 @@ provincial_tax_income = {
 }
 
 provincial_production_size = {
-	trade_goods_size = 0.1
-	ship_recruit_speed = -0.005
+	trade_goods_size = 0.12
+	ship_recruit_speed = -0.01
 }
 
 knowledge_sharing = {
@@ -307,7 +308,7 @@ development = {
 	allowed_num_of_buildings = 0.1
 	supply_limit_modifier = 0.02
 	local_missionary_strength = -0.001
-	land_forcelimit	= 0.045			# special case, affected by autonomy
+	land_forcelimit	= 0.040	# special case, affected by autonomy
 	naval_forcelimit = 0.055			# special case, affected by autonomy & set to 0 by code if not port
 	local_sailors = 20			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
@@ -1518,9 +1519,14 @@ land_forcelimit = {
 	num_of_pronoiars = 1
 }
 
-#100 Naval Forcelimit = 1
+###############################################
+# By San Felipe - First Lord of the Admiralty #
+###############################################
+
+#RULE BRITANNIE, Britannia Rules the Waves. Britons NEVER, EVER, Shall be slaves!
 naval_forcelimit = {
-	free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
+	free_navy_leader_pool = 1.25 #VU - Addition by San Felipe in v1.36.2.* giving 80+ Naval Forcelimit and +1 Free Leader pool
+	max_flagships = 1           #So you can have one in all the oceans of the world.
 }
 
 trade_company_strong = {
@@ -1643,9 +1649,9 @@ all_nations = {
 }
 
 subject_nation = {
-	global_tax_income = -6
-	land_forcelimit	= -1.5
-	naval_forcelimit = -6
+	global_tax_income = -4
+	land_forcelimit	= -1
+	naval_forcelimit = -4
 }
 
 vassal_nation = {

@@ -1657,7 +1657,7 @@ vijayanagara_mission_2_expansion = {
 	}
 
 	vijayanagar_northern_border = {
-		icon = mission_southern_frontier
+		icon = mission_southern_frontier_dharma
 		required_missions = { vijayanagar_kalyana }
 		position = 9
 		provinces_to_highlight = {

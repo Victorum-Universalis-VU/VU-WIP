@@ -59,6 +59,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//TGE//buildings//off_8.tga"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+        name = "GFX_great_project_marble_test"	
+        texturefile = "gfx//interface//great_projects//marble_test.dds"
+    }
 	
 	spriteType = {
 		name = "GFX_import_from_subjects"
@@ -95,6 +100,13 @@ spriteTypes = {
 		texturefile = "gfx//interface//TGE//buildings//uniforms_workshop.tga"
 		loadType = "INGAME"
 	}
+	
+	spriteType = {
+		name = "GFX_Instruments_workshop"
+		texturefile = "gfx//interface//TGE//buildings//Instruments_workshop.tga"
+		loadType = "INGAME"
+	}
+
 	
 	spriteType = {
 		name = "GFX_sculpture_workshop"
@@ -191,6 +203,21 @@ spriteTypes = {
 		texturefile = "gfx//interface//ideas_EU4//lama_icon.dds"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_lama_icon_mod"
+		texturefile = "gfx//interface//ideas_EU4//lama_icon_mod.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_lama_mod"
+		texturefile = "gfx//interface//ideas_EU4//lama_mod.dds"
+		loadType = "INGAME"
+	}
+
+
+	
 	spriteType = {
 		name = "GFX_geo"
 		texturefile = "gfx//interface//ideas_EU4//geo.dds"
@@ -308,6 +335,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//TGE//latent_stuff//arrow_lat_dow.dds"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_latent_fur"
+		texturefile = "gfx//interface//TGE//latent_stuff//latent_fur.dds"
+		loadType = "INGAME"
+	}
 	
 	spriteType = {
 		name = "GFX_latent_brass"
@@ -324,6 +357,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_latent_marble"
 		texturefile = "gfx//interface//TGE//latent_stuff//latent_marble.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_latent_Instruments"
+		texturefile = "gfx//interface//TGE//latent_stuff//latent_Instruments.dds"
 		loadType = "INGAME"
 	}
 	
@@ -405,6 +444,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//TGE//latent_stuff//latent_bronze.dds"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_fur_workshop"
+		texturefile = "gfx//interface//TGE//buildings//fur_workshop.tga"
+		loadType = "INGAME"
+	}
 	
 	spriteType = {
 		name = "GFX_good_frame"
@@ -412,6 +457,8 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	
+
+
 }
 	
 

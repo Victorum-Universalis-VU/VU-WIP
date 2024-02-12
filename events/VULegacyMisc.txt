@@ -11,11 +11,10 @@ province_event = {
 	trigger = {
 		province_id = 1979	#Only fires in the northern isles area
 		culture = norwegian	#Only fires for Norwegian culture
-		NOT = { owner = { primary_culture = norwegian } }	#Will not fire if owner culture is Norwegian
 	}
 
 	mean_time_to_happen = {
-		months = 1200 #100 years
+		months = 120 #10 years
 		
 		modifier = { #Fires faster for large countries
 			factor = 0.8

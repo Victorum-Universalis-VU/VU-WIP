@@ -478,8 +478,16 @@ DRZ = "countries/Durdzuketia.txt"
 QRC = "countries/Qaracay.txt"
 ASY = "countries/Assyria.txt"
 
+#New VU 1.36.2.*. By San Felipe
+ASR = "countries/Assur.txt"
+BAB = "countries/Babylonia.txt"
+CAR = "countries/Carthage.txt"
+JUT = "countries/Jutland.txt"
+OTG = "countries/Ostergotland.txt"
+VTG = "countries/Vastergotland.txt"
+
 #VU - Scandinavia & Baltics
-GTA = "countries/Gotaland.txt"
+#GTA = "countries/Gotaland.txt"
 KLL = "countries/Kulm.txt"
 PMS = "countries/Pomesania.txt"
 PNN = "countries/Pinneberg.txt"

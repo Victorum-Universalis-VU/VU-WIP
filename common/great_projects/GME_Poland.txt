@@ -10,24 +10,36 @@ gme_cathedral_poznan = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		religion = catholic
 		has_owner_religion = yes
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		religion = catholic
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -120,23 +132,33 @@ gme_jagielon_university = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = west_slavic
-		religion = catholic
-		has_owner_religion = yes
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -219,21 +241,33 @@ gme_lazienki_park = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -363,23 +397,33 @@ gme_saint_mary_basilica = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = west_slavic
-		religion = catholic
-		has_owner_religion = yes
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -618,21 +662,33 @@ gme_wawel = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			owner = {
-				culture_group = west_slavic
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
 				has_cultural_union = yes
 			}
 		}
@@ -714,31 +770,54 @@ gme_zamosc_city = {
 	can_be_moved = no
 	build_trigger = {
 	    is_year = 1580
-        culture_group = west_slavic
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+			owner = {
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
+				has_cultural_union = yes
+			}
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-	    owner = {
-			culture_group = west_slavic 
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
 		}
 		OR = {
-			ROOT = { has_owner_accepted_culture = yes }
-			ROOT = { has_owner_culture = yes }
+			has_owner_culture = yes
+			owner = {
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
+				has_cultural_union = yes
+			}
 		}
 	}
 	can_upgrade_trigger = {
 	    is_year = 1581
-		owner = {
-			culture_group = west_slavic 
+		OR = { 
+			culture_group = west_slavic
+			culture_group = slavic
 		}
 		OR = {
-			ROOT = { has_owner_accepted_culture = yes }
-			ROOT = { has_owner_culture = yes }
+			has_owner_culture = yes
+			owner = {
+				OR = { 
+					culture_group = west_slavic
+					culture_group = slavic
+				}
+				has_cultural_union = yes
+			}
 		}
 	}
 	keep_trigger = { }

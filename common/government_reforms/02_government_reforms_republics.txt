@@ -287,7 +287,7 @@ german_kaiserreich_republic = {
 		global_unrest = -2
 		global_autonomy = -0.05
 		max_absolutism = 20
-		monarch_military_power = 1
+		country_military_power = 1
 		monthly_militarized_society = 0.5
 		republican_tradition = -0.1
 	}
@@ -301,11 +301,24 @@ german_kaiserreich_republic = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Rights of Man" }
+		allow = { has_dlc = "Domination" }
 		government_abilities = {
-			militarization_mechanic
+			prussian_militarization_mechanic_1
 		}
 	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
@@ -363,11 +376,24 @@ german_kaiserreich_peasant_republic = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Rights of Man" }
+		allow = { has_dlc = "Domination" }
 		government_abilities = {
-			militarization_mechanic
+			prussian_militarization_mechanic_1
 		}
 	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
@@ -3995,6 +4021,10 @@ pirate_representation_reform = {
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
+		}
+		if = {
+			limit = { has_dlc = "Res Publica" }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 		}
 		if = {
 			limit = { has_dlc = "Lions of the North" }

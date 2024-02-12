@@ -354,7 +354,9 @@ country_event = {
 	is_triggered_only = yes
 	major = yes
 	major_trigger = {
-		continent = europe
+		capital_scope = {
+			continent = europe
+		}
 	}
 	
 	option = {
@@ -513,6 +515,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				add_local_autonomy = -10
+				save_event_target_as = Polish_province_target_1
 			}
 		}
 		#add_stability_or_adm_power = yes #playtester feedback
@@ -532,10 +535,10 @@ country_event = {
 	
 	immediate = {
 		pick_best_provinces = {
-			scope = " every_owned_province "
-			global_trigger = " culture = polish "
+			scope = "every_owned_province"
+			global_trigger = "culture = polish"
 			event_target_name = "Polish_province_target"
-			scale = " higher_development_than "
+			scale = "higher_development_than"
 			3 = yes
 		}
 	}
@@ -1074,7 +1077,7 @@ province_event = {
 	is_triggered_only = yes
 	major = yes
 	major_trigger = {
-		is_neighbor_of = ROOT
+		is_neighbor_of = POL
 	}
 	
 	immediate = {
@@ -1393,7 +1396,8 @@ province_event = {
 	
 	major = yes
 	major_trigger = {
-		owns = event_target:POL_ortho_province
+		event_target:POL_ortho_province = {
+		}
 	}
 	
 	immediate = {
@@ -2139,7 +2143,9 @@ country_event = {
 	
 	major = yes
 	major_trigger = {
-		continent = europe
+		capital_scope = {
+			continent = europe
+		}
 	}
 	
 	option = {

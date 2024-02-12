@@ -196,7 +196,7 @@ country_event = {
 	}
 
 	option = {
-		name = ME_Zapadoslavia_Events.3.d
+		name = ME_Zapadoslavia_Events.3.a
 
 		ai_chance = { factor = 100 }
 	}
@@ -211,7 +211,7 @@ country_event = {
 	trigger = {
 		has_reform = west_slavic_monarchy
 		has_country_flag = ME_unite_west_slavs
-		NOT = { has_province_modifier = ME_revolt_happened }
+		NOT = { has_country_modifier = ME_revolt_happened }
 	}
 
 	mean_time_to_happen = {
@@ -324,6 +324,7 @@ country_event = {
 		add_corruption = 1
 		add_years_of_income = 0.3
 		random = {
+			chance = 33
 			33 = {
 				change_variable = { ME_slovak_loyalty = 5 }
 			}
@@ -354,6 +355,7 @@ country_event = {
 		add_corruption = 1.5
 		add_years_of_income = 0.7
 		random = {
+			chance = 33
 			33 = {
 				change_variable = { ME_slovak_loyalty = 10 }
 			}

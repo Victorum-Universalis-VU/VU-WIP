@@ -8,8 +8,7 @@ guiTypes = {
 		orientation="UPPER_LEFT"
 		
 		# Console list of entries
-		listBoxType = 
-		{
+		listBoxType = {
 			name ="console_list"
 			background = "console_background"
 			position = { x=0 y=0 }
@@ -101,8 +100,7 @@ guiTypes = {
 		moveable = 1
 		orientation="CENTER_UP"
 		
-		iconType =
-		{
+		iconType = {
 			name ="pause_bg"
 			spriteType = "GFX_status_message_window_bg"
 			position = { x= 0 y = 0 }
@@ -135,8 +133,7 @@ guiTypes = {
 		}		
 	}			
 	
-	iconType =
-	{
+	iconType = {
 		name ="testbaricon"
 		spriteType = "testbar"
 		position = { x= 300 y = 300 }

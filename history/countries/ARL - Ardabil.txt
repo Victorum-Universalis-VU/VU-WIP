@@ -4,6 +4,7 @@ primary_culture = azerbaijani
 add_accepted_culture = persian
 religion = shiite
 technology_group = persian_tech_group
+unit_type = muslim
 capital = 424 #Ardabil
 government_rank = 1
 add_army_professionalism = 0.05

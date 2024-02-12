@@ -42,6 +42,7 @@ hun_north_group = {
 						OR = { 
 							has_reform = polish_elective_monarchy
 							has_reform = elective_monarchy
+							has_reform = phoenician_elective_monarchical_republic
 						}
 					}
 				}

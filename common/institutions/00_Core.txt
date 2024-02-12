@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU - Updated by San Felipe for 1.36.2.*
 #
 # remember to add graphics for relevant ones when you add to this
 #
@@ -3189,14 +3189,14 @@ market_production = {
 
 	can_start = {
 		is_year = 1250
-		OR = {
-			province_has_center_of_trade_of_level = 4
-			province_has_center_of_trade_of_level = 5
-			AND = {
-				province_has_center_of_trade_of_level = 3
-				is_capital = yes
-			}
-		}
+		#OR = {
+		#	province_has_center_of_trade_of_level = 4
+		#	province_has_center_of_trade_of_level = 5
+		#	AND = {
+		#		province_has_center_of_trade_of_level = 3
+		#		is_capital = yes
+		#	}
+		#}
 		OR = {
 			owner = {
 				estate_loyalty = {
@@ -8620,6 +8620,423 @@ manufactories = {
 		###VU Western Tech Spreads - dev doubled adjusted Vanilla speed roughly x 1.5. More provinces means slower spread, speeding up to compensate.
 		#########################################################################
 		modifier = {
+			factor = 0.5
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
+				any_friendly_coast_border_province = {
+					manufactories = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.15
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						manufactories = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_manufactories
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					manufactories = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = salt
+					trade_goods = fish
+					trade_goods = naval_supplies
+					trade_goods = tropical_wood
+					trade_goods = seafood
+					trade_goods = tar
+				}
+					
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_wharf_on_institution_continent
+				has_building = wharf
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = lead
+					trade_goods = mercury
+					trade_goods = tin
+					trade_goods = metalworking
+					trade_goods = munitions
+					trade_goods = zinc
+					trade_goods = cannon
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_weapons_on_institution_continent
+				has_building = weapons
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = wool
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = indigo
+					trade_goods = uniforms 
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_textile_on_institution_continent
+				has_building = textile
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = coffee
+					trade_goods = cotton
+					trade_goods = sugar
+					trade_goods = tobacco
+					trade_goods = tea
+					trade_goods = cocoa
+					trade_goods = palm_oil
+					trade_goods = saffron
+					trade_goods = cinnamon
+					trade_goods = cloves
+					trade_goods = opium
+					trade_goods = dates
+					trade_goods = vanilla
+					trade_goods = nutmeg
+					trade_goods = chocolate
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_plantations_on_institution_continent
+				has_building = plantations
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = ivory
+					trade_goods = slaves
+					trade_goods = spices
+					trade_goods = fur
+					trade_goods = incense
+					trade_goods = whaling
+					trade_goods = beer
+					trade_goods = rum
+					trade_goods = jade
+					trade_goods = marble
+					trade_goods = gunpowder
+					trade_goods = cheese
+					trade_goods = carpet
+					trade_goods = exotic_animals
+					trade_goods = sulfur
+					trade_goods = leather
+					trade_goods = woodworking
+					trade_goods = jewellery
+					trade_goods = maple_syrup
+					trade_goods = sea_turtle
+					trade_goods = cigars
+					trade_goods = marble_sculpture
+					trade_goods = jade_sculptures
+					trade_goods = exotic_fur
+					trade_goods = fur_clothing
+					trade_goods = String_Instruments
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_tradecompany_on_institution_continent
+				has_building = tradecompany
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = grain
+		            trade_goods = livestock
+		            trade_goods = wine
+		            trade_goods = apiculture
+		            trade_goods = rice
+		            trade_goods = horses
+		            trade_goods = olive_oil
+		            trade_goods = camel
+		            trade_goods = elephants
+		            trade_goods = citrus
+		            trade_goods = potato
+		            trade_goods = maize
+		            trade_goods = tomato
+		            trade_goods = champagne
+		            trade_goods = llama
+		            trade_goods = millet
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_farm_estate_on_institution_continent
+				has_building = farm_estate
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = paper
+					trade_goods = gems
+					trade_goods = pearls
+					trade_goods = tropical_wood
+					trade_goods = glass
+					trade_goods = chinaware
+					trade_goods = lumber
+					trade_goods = ebony
+					trade_goods = amber
+					trade_goods = steam_engine
+					trade_goods = optics
+				}
+				manufactories_origin = {
+					same_continent = PREV
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mills_on_institution_continent
+				has_building = mills
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = salt
+					trade_goods = fish
+					trade_goods = naval_supplies
+					trade_goods = tropical_wood
+					trade_goods = seafood
+					trade_goods = tar
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_wharf_not_institution_continent
+				has_building = wharf
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = lead
+					trade_goods = mercury
+					trade_goods = tin
+					trade_goods = metalworking
+					trade_goods = munitions
+					trade_goods = zinc
+					trade_goods = cannon
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_weapons_not_institution_continent
+				has_building = weapons
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = wool
+					trade_goods = cloth
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = indigo
+					trade_goods = uniforms 
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_textile_not_institution_continent
+				has_building = textile
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = coffee
+					trade_goods = cotton
+					trade_goods = sugar
+					trade_goods = tobacco
+					trade_goods = tea
+					trade_goods = cocoa
+					trade_goods = palm_oil
+					trade_goods = saffron
+					trade_goods = cinnamon
+					trade_goods = cloves
+					trade_goods = opium
+					trade_goods = dates
+					trade_goods = vanilla
+					trade_goods = nutmeg
+					trade_goods = chocolate
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_plantations_not_institution_continent
+				has_building = plantations
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = ivory
+					trade_goods = slaves
+					trade_goods = spices
+					trade_goods = fur
+					trade_goods = incense
+					trade_goods = whaling
+					trade_goods = beer
+					trade_goods = rum
+					trade_goods = jade
+					trade_goods = marble
+					trade_goods = gunpowder
+					trade_goods = cheese
+					trade_goods = carpet
+					trade_goods = exotic_animals
+					trade_goods = sulfur
+					trade_goods = leather
+					trade_goods = woodworking
+					trade_goods = jewellery
+					trade_goods = maple_syrup
+					trade_goods = sea_turtle
+					trade_goods = cigars
+					trade_goods = marble_sculpture
+					trade_goods = jade_sculptures
+					trade_goods = exotic_fur
+					trade_goods = fur_clothing
+					trade_goods = String_Instruments
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_tradecompany_not_institution_continent
+				has_building = tradecompany
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = grain
+		            trade_goods = livestock
+		            trade_goods = wine
+		            trade_goods = apiculture
+		            trade_goods = rice
+		            trade_goods = horses
+		            trade_goods = olive_oil
+		            trade_goods = camel
+		            trade_goods = elephants
+		            trade_goods = citrus
+		            trade_goods = potato
+		            trade_goods = maize
+		            trade_goods = tomato
+		            trade_goods = champagne
+		            trade_goods = llama
+		            trade_goods = millet
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_farm_estate_not_institution_continent
+				has_building = farm_estate
+			}
+		}
+		modifier = {
+			factor = 0.2
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = paper
+					trade_goods = gems
+					trade_goods = pearls
+					trade_goods = tropical_wood
+					trade_goods = glass
+					trade_goods = chinaware
+					trade_goods = lumber
+					trade_goods = ebony
+					trade_goods = amber
+					trade_goods = steam_engine
+					trade_goods = optics
+				}
+				manufactories_origin = {
+					NOT = { same_continent = PREV }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mills_not_institution_continent
+				has_building = mills
+			}
+		}
+		modifier = {
 			factor = 0.3
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
@@ -10605,12 +11022,18 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { has_institution = enlightenment }
+				owner = { 
+					has_institution = enlightenment 
+				}
 				is_in_capital_area = yes			#New, this will prevent institutions from spreading like mad to any country a coloniser gets a border with. Also has the side effect of slowing institution growth on islands... oh well, that isn't actually so bad.
 			}
+
 			custom_trigger_tooltip = {
 				tooltip = tooltip_enlightenment_embraced
-				owner = { has_institution = enlightenment }
+				is_owned_by_trade_company = no
+				owner = { 
+					has_institution = enlightenment 
+				}
 				is_in_capital_area = yes			#New, this will prevent institutions from spreading like mad to any country a coloniser gets a border with. Also has the side effect of slowing institution growth on islands... oh well, that isn't actually so bad.
 			}
 		}
@@ -10620,12 +11043,17 @@ enlightenment = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = { has_institution = enlightenment }
+				owner = { 
+					has_institution = enlightenment 
+				}
 				is_in_capital_area = no			#This version hits islands and overseas colonies
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_enlightenment_embraced
-				owner = { has_institution = enlightenment }
+				tooltip = tooltip_enlightenment_embraced_other_continent
+				is_owned_by_trade_company = no
+				owner = { 
+					has_institution = enlightenment 
+				}
 				is_in_capital_area = no			#This version hits islands and overseas colonies
 			}
 		}
@@ -10885,7 +11313,7 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 		}
 		#Rule Britannia specific
 		modifier = {
-			factor = 2
+			factor = 1
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -10900,7 +11328,7 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -10915,7 +11343,7 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			force_potential = yes
 			potential = {
 				has_dlc = "Rule Britannia"
@@ -10975,9 +11403,12 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 			scale = yes
 			potential = {
 				OR = {
-					trade_goods = naval_supplies
-					trade_goods = fish
 					trade_goods = salt
+					trade_goods = fish
+					trade_goods = naval_supplies
+					trade_goods = tropical_wood
+					trade_goods = seafood
+					trade_goods = tar
 				}
 				industrialization_origin = {
 					same_continent = PREV
@@ -10995,6 +11426,13 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				OR = {
 					trade_goods = copper
 					trade_goods = iron
+					trade_goods = lead
+					trade_goods = mercury
+					trade_goods = tin
+					trade_goods = metalworking
+					trade_goods = munitions
+					trade_goods = zinc
+					trade_goods = cannon
 				}
 				industrialization_origin = {
 					same_continent = PREV
@@ -11014,6 +11452,8 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = cloth
 					trade_goods = silk
 					trade_goods = dyes
+					trade_goods = indigo
+					trade_goods = uniforms
 				}
 				industrialization_origin = {
 					same_continent = PREV
@@ -11035,6 +11475,15 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = tobacco
 					trade_goods = tea
 					trade_goods = cocoa
+					trade_goods = palm_oil
+					trade_goods = saffron
+					trade_goods = cinnamon
+					trade_goods = cloves
+					trade_goods = opium
+					trade_goods = dates
+					trade_goods = vanilla
+					trade_goods = nutmeg
+					trade_goods = chocolate
 				}
 				industrialization_origin = {
 					same_continent = PREV
@@ -11053,9 +11502,29 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
+					trade_goods = whaling
+					trade_goods = beer
+					trade_goods = rum
+					trade_goods = jade
+					trade_goods = marble
+					trade_goods = gunpowder
+					trade_goods = cheese
+					trade_goods = carpet
+					trade_goods = exotic_animals
+					trade_goods = sulfur
+					trade_goods = leather
+					trade_goods = woodworking
+					trade_goods = jewellery
+					trade_goods = maple_syrup
+					trade_goods = sea_turtle
+					trade_goods = cigars
+					trade_goods = marble_sculpture
+					trade_goods = jade_sculptures
+					trade_goods = exotic_fur
+					trade_goods = fur_clothing
+					trade_goods = String_Instruments
 				}
 				industrialization_origin = {
 					same_continent = PREV
@@ -11074,6 +11543,19 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = grain
 					trade_goods = livestock
 					trade_goods = wine
+		            trade_goods = apiculture
+		            trade_goods = rice
+		            trade_goods = horses
+		            trade_goods = olive_oil
+		            trade_goods = camel
+		            trade_goods = elephants
+		            trade_goods = citrus
+		            trade_goods = potato
+		            trade_goods = maize
+		            trade_goods = tomato
+		            trade_goods = champagne
+		            trade_goods = llama
+		            trade_goods = millet
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11091,10 +11573,16 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				OR = {
 					trade_goods = paper
 					trade_goods = gems
+					trade_goods = pearls
 					trade_goods = diamonds
 					trade_goods = tropical_wood
 					trade_goods = glass
 					trade_goods = chinaware
+					trade_goods = lumber
+					trade_goods = ebony
+					trade_goods = amber
+					trade_goods = steam_engine
+					trade_goods = optics
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11110,9 +11598,12 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 			scale = yes
 			potential = {
 				OR = {
-					trade_goods = naval_supplies
-					trade_goods = fish
 					trade_goods = salt
+					trade_goods = fish
+					trade_goods = naval_supplies
+					trade_goods = tropical_wood
+					trade_goods = seafood
+					trade_goods = tar
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11130,6 +11621,13 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				OR = {
 					trade_goods = copper
 					trade_goods = iron
+					trade_goods = lead
+					trade_goods = mercury
+					trade_goods = tin
+					trade_goods = metalworking
+					trade_goods = munitions
+					trade_goods = zinc
+					trade_goods = cannon
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11149,6 +11647,8 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = cloth
 					trade_goods = silk
 					trade_goods = dyes
+					trade_goods = indigo
+					trade_goods = uniforms
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11170,6 +11670,15 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = tobacco
 					trade_goods = tea
 					trade_goods = cocoa
+					trade_goods = palm_oil
+					trade_goods = saffron
+					trade_goods = cinnamon
+					trade_goods = cloves
+					trade_goods = opium
+					trade_goods = dates
+					trade_goods = vanilla
+					trade_goods = nutmeg
+					trade_goods = chocolate
 				}
 			}
 			custom_trigger_tooltip = {
@@ -11188,9 +11697,29 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
+					trade_goods = whaling
+					trade_goods = beer
+					trade_goods = rum
+					trade_goods = jade
+					trade_goods = marble
+					trade_goods = gunpowder
+					trade_goods = cheese
+					trade_goods = carpet
+					trade_goods = exotic_animals
+					trade_goods = sulfur
+					trade_goods = leather
+					trade_goods = woodworking
+					trade_goods = jewellery
+					trade_goods = maple_syrup
+					trade_goods = sea_turtle
+					trade_goods = cigars
+					trade_goods = marble_sculpture
+					trade_goods = jade_sculptures
+					trade_goods = exotic_fur
+					trade_goods = fur_clothing
+					trade_goods = String_Instruments
 				}
 				industrialization_origin = {
 					NOT = { same_continent = PREV }
@@ -11209,6 +11738,19 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 					trade_goods = grain
 					trade_goods = livestock
 					trade_goods = wine
+		            trade_goods = apiculture
+		            trade_goods = rice
+		            trade_goods = horses
+		            trade_goods = olive_oil
+		            trade_goods = camel
+		            trade_goods = elephants
+		            trade_goods = citrus
+		            trade_goods = potato
+		            trade_goods = maize
+		            trade_goods = tomato
+		            trade_goods = champagne
+		            trade_goods = llama
+		            trade_goods = millet
 				}
 				industrialization_origin = {
 					NOT = { same_continent = PREV }
@@ -11226,10 +11768,16 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 				OR = {
 					trade_goods = paper
 					trade_goods = gems
+					trade_goods = pearls
 					trade_goods = diamonds
 					trade_goods = tropical_wood
 					trade_goods = glass
 					trade_goods = chinaware
+					trade_goods = lumber
+					trade_goods = ebony
+					trade_goods = amber
+					trade_goods = steam_engine
+					trade_goods = optics
 				}
 				industrialization_origin = {
 					NOT = { same_continent = PREV }

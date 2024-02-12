@@ -801,21 +801,6 @@ MLC_missions_4 = {
 		provinces_to_highlight = {
 			is_capital_of = ROOT
 			NOT = { province_trade_power = 50 }
-			OR = {
-				NOT = { has_dlc = "Mandate of Heaven" }
-				is_emperor_of_china = yes
-				all_countries_including_self = {
-					is_emperor_of_china = no
-				}
-				AND = {
-					NOT = { has_country_flag = MSA_insulting_flag }
-					NOT = { has_country_flag = MSA_in_defiance_flag }
-				}
-				AND = {
-					NOT = { has_country_flag = MSA_swayed_flag }
-					NOT = { has_country_flag = MSA_absolutely_loyal_flag }
-				}
-			}
 		}
 		trigger = {
 			custom_trigger_tooltip = {

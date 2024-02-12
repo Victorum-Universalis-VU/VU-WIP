@@ -60,11 +60,33 @@ vu_voronet_monastery = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { culture_group = dacian has_owner_culture = yes owner = {has_country_flag = voronet_monastry} }
+	build_trigger = { 
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+		owner = { has_country_flag = voronet_monastry } 
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = {culture_group = dacian has_owner_culture = yes}
-	can_upgrade_trigger = { culture_group = dacian has_owner_culture = yes}
+	can_use_modifiers_trigger = {
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+	}
+	can_upgrade_trigger = {
+		OR = {
+			culture_group = dacian
+			culture_group = french
+			culture_group = old_latin
+		} 
+		has_owner_culture = yes 
+	}
 	keep_trigger = {}
 
 	tier_0 = {
@@ -1775,7 +1797,7 @@ vu_tebessa_basilica = {
 		cost_to_upgrade = {	factor = 3000 }
 		province_modifiers = { local_production_efficiency = 0.1 local_development_cost = -0.2 }
 		area_modifier = { }
-		country_modifiers = { global_missionary_strength = 0.02 warscore_cost_vs_other_religion = -0.10 yearly_patriarch_authority = 0.01 }
+		country_modifiers = { global_missionary_strength = 0.02 warscore_cost_vs_other_religion = -0.10 yearly_patriarch_authority = 0.0075 }
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -1783,7 +1805,7 @@ vu_tebessa_basilica = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = { local_production_efficiency = 0.15  local_development_cost = -0.3}
 		area_modifier = { }
-		country_modifiers = { global_missionary_strength = 0.03 missionaries = 1 yearly_patriarch_authority = 0.02 warscore_cost_vs_other_religion = -0.15 }
+		country_modifiers = { global_missionary_strength = 0.03 missionaries = 1 yearly_patriarch_authority = 0.01 warscore_cost_vs_other_religion = -0.15 }
 		on_upgraded = { }
 	}
 }
@@ -1988,7 +2010,6 @@ vu_st_stephens_cathedral = {
 		on_upgraded = { }
 	}
 }
-
 #Ukraine 
 vu_lubarts_castle = {
 	start = 279
@@ -1999,13 +2020,13 @@ vu_lubarts_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
 	keep_trigger = {}
 
@@ -2052,10 +2073,10 @@ vu_khortysia = {
 	move_days_per_unit_distance = 1
 	starting_tier = 0
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = ruthenian primary_culture = cossack } } }
+	build_trigger = { owner = { OR = { primary_culture = ruthenian primary_culture = cossack culture_group = slavic } } }
 	on_built = {}
 	on_destroyed = {}
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = ruthenian primary_culture = cossack } } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = ruthenian primary_culture = cossack culture_group = slavic } } }
 	can_upgrade_trigger = { always = no }
 	keep_trigger = { always = yes }
 
@@ -2102,11 +2123,11 @@ vu_pochaiv_lavra = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { is_year = 1527  owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } } owner = { religion_group = christian  } }
+	build_trigger = { is_year = 1527  owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } } owner = { religion_group = christian  } }
-	can_upgrade_trigger = { is_year = 1527 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } } owner = { religion_group = christian  } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
+	can_upgrade_trigger = { is_year = 1527 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2152,11 +2173,11 @@ vu_pidhirtsi_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1635  owner = { OR = { primary_culture = polish primary_culture = lithuanian } } }
+	build_trigger = { is_year = 1635  owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } }}
-	can_upgrade_trigger = { is_year = 1635 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } }}
+	can_upgrade_trigger = { is_year = 1635 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2202,11 +2223,11 @@ vu_university_of_lviv = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1660  owner = { OR = { primary_culture = polish primary_culture = lithuanian } } }
+	build_trigger = { is_year = 1660  owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } }}
-	can_upgrade_trigger = { is_year = 1660 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian } } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } }}
+	can_upgrade_trigger = { is_year = 1660 owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2252,11 +2273,11 @@ vu_sofiyivka_park = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1780 owner = { primary_culture = ruthenian } }
+	build_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { primary_culture = ruthenian } }
-	can_upgrade_trigger = { is_year = 1780 owner = { primary_culture = ruthenian } }
+	can_use_modifiers_trigger = { owner = { primary_culture = ruthenian culture_group = slavic } }
+	can_upgrade_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2330,7 +2351,10 @@ vu_saint_sophia_cathedral = {
 
     can_upgrade_trigger = {
         is_year = 1458
-		culture_group = east_slavic
+		OR = { 
+			culture_group = east_slavic 
+			culture_group = slavic  
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -2381,7 +2405,6 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.1
-			global_missionary_strength = 0.01
         }
 
         on_upgraded = {
@@ -2409,8 +2432,7 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.2
-			global_missionary_strength = 0.02
-			monthly_piety = 0.2
+			global_missionary_strength = 0.01
         }
 
         on_upgraded = {
@@ -2439,8 +2461,7 @@ vu_saint_sophia_cathedral = {
 
         country_modifiers = {
 		    church_loyalty_modifier = 0.3
-			global_missionary_strength = 0.03
-			monthly_piety = 0.3
+			global_missionary_strength = 0.02
         }
 
         on_upgraded = {
@@ -2457,13 +2478,13 @@ vu_kamianets_podilskyi_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 2
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian
+	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian primary_culture = ruthenian culture_group = slavic
 	} } }
 	keep_trigger = {}
 
@@ -2510,11 +2531,11 @@ vu_piatnytska_church = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { owner = {  primary_culture = ruthenian } owner = { religion_group = christian  } }
+	build_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {  primary_culture = ruthenian } owner = { religion_group = christian  } }
-	can_upgrade_trigger = { owner = {  primary_culture = ruthenian } owner = { religion_group = christian  } }
+	can_use_modifiers_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
+	can_upgrade_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2530,7 +2551,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 3500 }
 		province_modifiers = {  }
 		area_modifier = { local_tax_modifier = 0.05 }
-		country_modifiers = { global_missionary_strength = 0.01 }
+		country_modifiers = { }
 		on_upgraded = {}
 	}
 	tier_2 = {
@@ -2538,7 +2559,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  local_development_cost = -0.05}
-		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
+		country_modifiers = { global_missionary_strength = 0.01 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -2546,7 +2567,7 @@ vu_piatnytska_church = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2 local_development_cost = -0.1 }
-		country_modifiers = { global_missionary_strength = 0.03 yearly_patriarch_authority = 0.003}
+		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }
@@ -2564,34 +2585,20 @@ vu_bilhorod_dnistrovskyi = {
 		owner = {
 			OR = {
 				primary_culture = polish
-				primary_culture = romanian
+				primary_culture = romanian 
+				culture_group = old_latin
 				primary_culture = ruthenian
+				culture_group = slavic
 				primary_culture = french_romanian
 			} 
 		}
 	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = {
-		owner = {
-			OR = {
-				primary_culture = polish
-				primary_culture = romanian
-				primary_culture = ruthenian
-				primary_culture = french_romanian
-			}
-		}
-	}
-	can_upgrade_trigger = {
-		owner = {
-			OR = {
-				primary_culture = polish
-				primary_culture = romanian
-				primary_culture = ruthenian
-				primary_culture = french_romanian
-			}
-		}
-	}
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian
+	} } }
+	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = romanian primary_culture = ruthenian
+	} } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2765,8 +2772,8 @@ vu_smolensk_kremlin = {
 	build_trigger = { is_year = 1600 owner = { OR = { culture_group = east_slavic culture_group = slavic } } } 
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { culture_group = slavic culture_group = east_slavic } } } 
-	can_upgrade_trigger = { is_year = 1600  owner = { OR = { culture_group = slavic culture_group = east_slavic } } } 
+	can_use_modifiers_trigger = { owner = { OR = { culture_group = east_slavic culture_group = slavic } } } 
+	can_upgrade_trigger = { is_year = 1600  owner = { OR = { culture_group = east_slavic culture_group = slavic } } } 
 	keep_trigger = {culture_group = east_slavic}
 
 	tier_0 = {
@@ -2912,11 +2919,11 @@ vu_chersonesus = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { OR = { culture_group = byzantine culture_group = east_slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
+	build_trigger = { OR = { culture_group = byzantine culture_group = east_slavic culture_group = slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { OR = { culture_group = byzantine culture_group = east_slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }  }
-	can_upgrade_trigger = { OR = { culture_group = byzantine culture_group = east_slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }    }
+	can_use_modifiers_trigger = { OR = { culture_group = byzantine culture_group = east_slavic culture_group = slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }  }
+	can_upgrade_trigger = { OR = { culture_group = byzantine culture_group = east_slavic culture_group = slavic } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }    }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2982,7 +2989,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 3500 }
 		province_modifiers = {  }
 		area_modifier = { local_tax_modifier = 0.05 }
-		country_modifiers = { global_missionary_strength = 0.01 }
+		country_modifiers = { }
 		on_upgraded = {}
 	}
 	tier_2 = {
@@ -2990,7 +2997,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  local_development_cost = -0.05}
-		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
+		country_modifiers = { global_missionary_strength = 0.01 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -2998,7 +3005,7 @@ vu_ferapontov_monastery = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2 local_development_cost = -0.1 }
-		country_modifiers = { global_missionary_strength = 0.03 yearly_patriarch_authority = 0.003}
+		country_modifiers = { global_missionary_strength = 0.02 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }
@@ -3040,7 +3047,7 @@ vu_solovetsky_monastery = {
 		cost_to_upgrade = { factor = 7500 }
 		province_modifiers = { local_defensiveness = 0.1 local_manpower_modifier = 0.10 local_garrison_size = 0.05 local_development_cost = -0.05 local_production_efficiency = 0.05 }
 		area_modifier = { local_hostile_attrition = 1 local_monthly_devastation = -0.05 local_manpower_modifier = 0.05 }
-		country_modifiers = {  defensiveness = 0.075  garrison_size = 0.10 yearly_patriarch_authority = 0.01 global_missionary_strength = 0.02 }
+		country_modifiers = {  defensiveness = 0.075  garrison_size = 0.10 yearly_patriarch_authority = 0.005 global_missionary_strength = 0.02 }
 		on_upgraded = { }
 	}
 	tier_3 = {
@@ -3048,7 +3055,7 @@ vu_solovetsky_monastery = {
 		cost_to_upgrade = { factor = 14000 }
 		province_modifiers = { 	fort_level = 1 	local_defensiveness = 0.15 local_manpower_modifier = 0.2 local_garrison_size = 0.10 local_development_cost = -0.10 local_production_efficiency = 0.1 }
 		area_modifier = { local_hostile_attrition = 2 local_monthly_devastation = -0.1 local_manpower_modifier = 0.10}
-		country_modifiers = {  defensiveness = 0.10 garrison_size = 0.20 yearly_patriarch_authority = 0.02 	tolerance_own = 1 missionaries = 1 global_missionary_strength = 0.03 }
+		country_modifiers = {  defensiveness = 0.10 garrison_size = 0.20 yearly_patriarch_authority = 0.01	tolerance_own = 1 missionaries = 1 global_missionary_strength = 0.03 }
 		on_upgraded = { }
 	}
 }
@@ -3407,11 +3414,11 @@ vu_pazaislis_monastery = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1660 owner = {  OR = { primary_culture = polish primary_culture = lithuanian } religion_group = christian  } }
+	build_trigger = { is_year = 1660 owner = {  OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic } religion_group = christian  } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian } religion_group = christian  } }
-	can_upgrade_trigger = { is_year = 1660 owner = {  OR = { primary_culture = polish primary_culture = lithuanian } religion_group = christian  } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic} religion_group = christian  } }
+	can_upgrade_trigger = { is_year = 1660 owner = {  OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic} religion_group = christian  } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -3435,7 +3442,7 @@ vu_pazaislis_monastery = {
 		cost_to_upgrade = {	factor = 4000 }
 		province_modifiers = { local_development_cost = -0.05 }
 		area_modifier = {  local_tax_modifier = 0.1  }
-		country_modifiers = { 	religious_unity = 0.25 tolerance_heretic = 2 yearly_patriarch_authority = 0.01}
+		country_modifiers = { 	religious_unity = 0.25 tolerance_heretic = 2 yearly_patriarch_authority = 0.005}
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -3443,7 +3450,7 @@ vu_pazaislis_monastery = {
 		cost_to_upgrade = {	factor = 9000 }
 		province_modifiers = {  local_development_cost = -0.1 }
 		area_modifier = { local_tax_modifier = 0.2  }
-		country_modifiers = { 	religious_unity = 0.5 tolerance_heretic = 3 yearly_patriarch_authority = 0.003}
+		country_modifiers = { 	religious_unity = 0.5 tolerance_heretic = 3 yearly_patriarch_authority = 0.01}
 		on_upgraded = { }
 	}
 }
@@ -3457,11 +3464,11 @@ vu_kaunas_castle = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian } } }
+	build_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian } } }
-	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian } } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic } } }
+	can_upgrade_trigger = { owner = { OR = { primary_culture = polish primary_culture = lithuanian culture_group = slavic } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -3701,7 +3708,7 @@ vu_po_i_kalyan = {
 }
 
 vu_shahrisabz = {
-	start = 4344
+	start = 454 #VU - Ak-saray palace should be in Samarkand
 	date = 1336.01.01 
 	time = { months = 0 }
 	build_cost = 0
@@ -4381,8 +4388,9 @@ vu_otanahaortress = {
    	is_year = 1522
 	    OR = {
 	        culture_group = low_franconian
-	        culture_group = iberian	
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes
@@ -4404,9 +4412,10 @@ vu_otanahaortress = {
 	can_use_modifiers_trigger = {	
     	is_year = 1522
 	    OR = {
-	    culture_group = low_franconian
-	        culture_group = iberian	
+	        culture_group = low_franconian
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes
@@ -4418,9 +4427,10 @@ vu_otanahaortress = {
 	can_upgrade_trigger = {		
 	is_year = 1522
 	    OR = {
-	    culture_group = low_franconian
-	        culture_group = iberian	
+	        culture_group = low_franconian
 	        culture_group = germanic
+	        culture_group = iberian	
+		    culture_group = old_latin
 	    }
 		OR = {
 			has_owner_culture = yes

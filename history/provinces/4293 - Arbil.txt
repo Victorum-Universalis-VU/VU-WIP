@@ -13,29 +13,8 @@ base_manpower = 4
 is_city = yes
 add_core = QAR
 add_core = BHT
+add_core = ASR
 add_core = ASY 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 center_of_trade = 1
 

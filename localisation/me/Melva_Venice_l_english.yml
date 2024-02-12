@@ -26,11 +26,11 @@
  Melva_Venice_Events.6.OPT1: "Marble, Honour and Virtue"
 
  Melva_Venice_Events.7.T: "Espansione dell'Arsenale del 1535"
- Melva_Venice_Events.7.D: "through the appropriation of an area owned by the convent of Celestia, at the north-western end of the Arsenale Nuovissimo, placing the activities related to the gunpowder processing and storage; the area was connected to the Arsenale Vecchio, after having acquired other land from the same convent, which brought the already large area dedicated to dust from 5000 to 7800 m² overall. A new facade was erected for the Volto del Bucintoro, expanding the squero to accommodate the ceremonial boat of the same name, rebuilt between 1525 and 1526. Later on was built, close to the walls overlooking the Rio of San Daniele, the artillery workshop - a building about 180 m long, still existing - and the fifteenth-century arms rooms renovated. The close collaboration between artillerymen, smelters and manufacturers of powders, inside and outside the arsenal, contributed to the affirmation of the Venetian war industry, at the forefront in Europe for almost two centuries, with the invention of lethal weapons such as shooting mortars curved, huge siege bombards, culverins, falcons and battle falconets. A decree of the Commission of Ten and the Superintendent of Artillery of 1565 explicitly refers to the presence of "artillery factories" distributed in various warehouses in the arsenal."
+ Melva_Venice_Events.7.D: "through the appropriation of an area owned by the convent of Celestia, at the north-western end of the Arsenale Nuovissimo, placing the activities related to the gunpowder processing and storage; the area was connected to the Arsenale Vecchio, after having acquired other land from the same convent, which brought the already large area dedicated to dust from 5000 to 7800 m² overall. A new facade was erected for the Volto del Bucintoro, expanding the squero to accommodate the ceremonial boat of the same name, rebuilt between 1525 and 1526. Later on was built, close to the walls overlooking the Rio of San Daniele, the artillery workshop - a building about 180 m long, still existing - and the fifteenth-century arms rooms renovated. The close collaboration between artillerymen, smelters and manufacturers of powders, inside and outside the arsenal, contributed to the affirmation of the Venetian war industry, at the forefront in Europe for almost two centuries, with the invention of lethal weapons such as shooting mortars curved, huge siege bombards, culverins, falcons and battle falconets. A decree of the Commission of Ten and the Superintendent of Artillery of 1565 explicitly refers to the presence of 'artillery factories' distributed in various warehouses in the arsenal."
  Melva_Venice_Events.7.OPT1: "Marble, Honour and Virtue"
 
  Melva_Venice_Events.8.T: "Espansione Finale dell'Arsenale"
- Melva_Venice_Events.8.D: "Between 1566 and 1573 the last phase of resumption of the works was carried out in the Arsenale Nuovissimo, with new covered yards in the Isolotto and two large aquatic yards ("water faces") at the reeds or Gaggiandre; between 1566 and 1568 the tezon of sieghe and timber was built facing west, towards the Galeazze canal and next to the Novissimetta, where the Squadratori building is located, overlooking a small basin for the conservation of oak wood. In 1569 there was a powerful explosion of dust in the Celestia area, causing extensive damage to the walls, to some building sites and to the Celestia convent. A fifth extension dates back to the same period, with the excavation of the dock of the galeazze, covered yards for the construction of this new type of battleship, which proved to be decisive for obtaining the victory during the numerous naval battle.\nThe construction of the small temple of the Madonna of the Arsenale leaning against the eastern tower of the Arsenale water gate; later on the architect Antonio da Ponte rebuilt the building of the Corderie; the monumental access portal to the arms rooms and to the artillery workshop that closes the Stradal de Campagna was built."
+ Melva_Venice_Events.8.D: "Between 1566 and 1573 the last phase of resumption of the works was carried out in the Arsenale Nuovissimo, with new covered yards in the Isolotto and two large aquatic yards 'water faces' at the reeds or Gaggiandre; between 1566 and 1568 the tezon of sieghe and timber was built facing west, towards the Galeazze canal and next to the Novissimetta, where the Squadratori building is located, overlooking a small basin for the conservation of oak wood. In 1569 there was a powerful explosion of dust in the Celestia area, causing extensive damage to the walls, to some building sites and to the Celestia convent. A fifth extension dates back to the same period, with the excavation of the dock of the galeazze, covered yards for the construction of this new type of battleship, which proved to be decisive for obtaining the victory during the numerous naval battle.\nThe construction of the small temple of the Madonna of the Arsenale leaning against the eastern tower of the Arsenale water gate; later on the architect Antonio da Ponte rebuilt the building of the Corderie; the monumental access portal to the arms rooms and to the artillery workshop that closes the Stradal de Campagna was built."
  Melva_Venice_Events.8.OPT1: "Our fleet will never be defeated"
 
  Melva_Venice_Events.9.T: "Fanti di Mar"
@@ -66,33 +66,35 @@
  Melva_Venice_Events.15.D: "In 1541 the Serenissima granted the Ghetto Vecchio (a neighborhood adjacent to the Ghetto Novo) to the Levantini, a group made up of merchants from the Ottoman Empire. The Venetian economy certainly took advantage of this event, troubled by the wars against the Turks and by the increased competition from the port of Ancona. The Levantines had different obligations than the Germans: they did not deal with loans, but were traders. This nation had decidedly particular habits: they exhibited sumptuous and oriental robes, with turbans and ornaments, decidedly contrasting with the modest German Jews."
  Melva_Venice_Events.15.OPT1: "You are welcome!"
 
- #Estate Modifeirs
- ven_nobles_restrained: "Restrained the Barones"
- ven_nobles_happy: "Nobles are Happy"
-
- #Event Modifiers
+ #Modifiers
  ven_mercantile_fleet: "Mercantile Fleet"
+ desc_ven_mercantile_fleet: ""
  ven_galley_fleet: "Galley Fleet"
-
+ desc_ven_galley_fleet: ""
  ven_magistrato_milizia_mar: "Magistratura della Milizia Marina"
-
+ desc_ven_magistrato_milizia_mar: ""
  ven_naval_reforms: "Naval Reforms"
-
+ desc_ven_naval_reforms: ""
  ven_commander_convicts: "Commander of Convicts"
-
+ desc_ven_commander_convicts: ""
  ven_porta_magna: "Porta Magna"
-
+ desc_ven_porta_magna: ""
  ven_arsenal_expansion: "Espansione dell'Arsenale"
+ desc_ven_arsenal_expansion: ""
  ven_arsenal_expansion_1535: "Espansione dell'Arsenale del 1535"
+ desc_ven_arsenal_expansion_1535: ""
  ven_arsenal_expansion_final: "Espansione Finale"
-
+ desc_ven_arsenal_expansion_final: ""
  ven_fanti_mar: "Fanti di Mar"
-
+ desc_ven_fanti_mar: ""
  ven_jew_ghetto: "Jew Ghetto of Venice"
+ desc_ven_jew_ghetto: ""
  ven_jew_ghetto_novo: "Ghetto Novo of Venice"
+ desc_ven_jew_ghetto_novo: ""
 
- #Trade Modifeirs
+ #KEY
  ven_trade_deal_costantinople: "Venetian Trade Deal"
+ ven_the_delta_price_modifier: ""
 
  #Tooltips
  VEN_FANTI_MAR_TT: "Every owned §Ycoastal provinces§! will gain:"

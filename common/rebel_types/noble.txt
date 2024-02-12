@@ -279,6 +279,7 @@ noble_rebels = {
 					    has_reform = siberian_tribe
 					    government = native
 					    has_reform = elective_monarchy
+						has_reform = phoenician_elective_monarchical_republic
 					    has_reform = english_monarchy
 					    has_reform = scottish_monarchy
 					    has_reform = ottoman_government

@@ -297,6 +297,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}
 		FROM = {
@@ -304,6 +305,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}
 	}
@@ -328,6 +330,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}
 		FROM = {
@@ -335,6 +338,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}
 	}
@@ -353,6 +357,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}
 		FROM = {
@@ -360,6 +365,7 @@ warsaw_castle = {
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 			}
 		}	
 	}
@@ -424,7 +430,7 @@ warsaw_castle = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			improve_relation_modifier = 0.1
-			governing_capacity = 25
+			governing_capacity = 200
 		}
 
 		#what effects happen when this tier is achieved
@@ -461,8 +467,8 @@ warsaw_castle = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			improve_relation_modifier = 0.2
-			governing_capacity = 25
-			stability_cost_modifier = -0.02
+			governing_capacity = 250
+			stability_cost_modifier = -0.1
 			diplomatic_reputation = 1
 		}
 
@@ -491,7 +497,7 @@ warsaw_castle = {
 			trade_value_modifier = 0.3
 			local_defensiveness = 0.1
 			local_unrest = -1
-			local_development_cost = -0.05
+			local_development_cost = -0.1
 			statewide_governing_cost = -0.15
 			local_state_maintenance_modifier = -0.1
 		}
@@ -506,8 +512,8 @@ warsaw_castle = {
 		country_modifiers = {
 			improve_relation_modifier = 0.3
 			prestige_decay = -0.03
-			governing_capacity = 25
-			stability_cost_modifier = -0.03
+			governing_capacity = 300
+			stability_cost_modifier = -0.2
 			diplomatic_reputation = 2
 		}
 
@@ -1009,21 +1015,30 @@ kiev_golden_gate = {
 	starting_tier = 1
 	type = monument
 	build_trigger = {
-		culture = ruthenian
+		OR = { 
+			culture = ruthenian
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
 		}
 	}
 	can_use_modifiers_trigger = {
-		culture = ruthenian
+		OR = { 
+			culture = ruthenian
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
 		}
 	}
 	can_upgrade_trigger = {
-		culture = ruthenian
+		OR = { 
+			culture = ruthenian
+       			culture_group = slavic
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -1062,7 +1077,7 @@ kiev_golden_gate = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.01
-			governing_capacity = 10
+			governing_capacity = 100
 		}
 		on_upgraded = {
 		}
@@ -1081,7 +1096,7 @@ kiev_golden_gate = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.02
-			governing_capacity = 20
+			governing_capacity = 200
 		}
 		on_upgraded = {
 		}
@@ -1101,7 +1116,7 @@ kiev_golden_gate = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.03
-			governing_capacity = 30
+			governing_capacity = 300
 		}
 		on_upgraded = {
 		}
@@ -1266,7 +1281,6 @@ arkona_temple = {		#Unique monument avaliable only for the secret slavic religio
 	#can we build it?
 	build_trigger = {
 		AND = {
-			has_owner_culture = yes
 			has_owner_religion = yes
 			religion = slavic_pagan_reformed
 		}
@@ -1276,6 +1290,7 @@ arkona_temple = {		#Unique monument avaliable only for the secret slavic religio
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 				culture = pommeranian
 			}
 		}
@@ -1299,7 +1314,6 @@ arkona_temple = {		#Unique monument avaliable only for the secret slavic religio
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		AND = {
-			has_owner_culture = yes
 			has_owner_religion = yes
 			religion = slavic_pagan_reformed
 		}
@@ -1309,6 +1323,7 @@ arkona_temple = {		#Unique monument avaliable only for the secret slavic religio
 				culture_group = west_slavic
 				culture_group = south_slavic
 				culture_group = east_slavic
+				culture_group = slavic
 				culture = pommeranian
 			}
 		}	
@@ -1552,7 +1567,6 @@ colossus_of_rhodes = {
 			has_owner_culture = yes
 			OR = {
 				culture_group = byzantine
-				culture_group = south_slavic
 				culture_group = latin
 				culture = albanian
 			}
@@ -1565,7 +1579,6 @@ colossus_of_rhodes = {
 			has_owner_culture = yes
 			OR = {
 				culture_group = byzantine
-				culture_group = south_slavic
 				culture_group = latin
 				culture = albanian
 			}
@@ -1753,6 +1766,8 @@ hanging_gardens = {
 				religion = miaphysite
 				religion = orthodox
 				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
 			}
 			OR = {
 				culture_group = byzantine
@@ -1783,6 +1798,8 @@ hanging_gardens = {
 				religion = miaphysite
 				religion = orthodox
 				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
 			}
 			OR = {
 				culture_group = byzantine
@@ -1805,6 +1822,8 @@ hanging_gardens = {
 				religion = miaphysite
 				religion = orthodox
 				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
 			}
 			OR = {
 				culture_group = byzantine
@@ -2430,6 +2449,30 @@ city_jerusalem = {		#This monument labeled as city represents all the other impo
 	type = monument
 
 	build_trigger = {
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+				religion_group = christian
+			}
+			OR = {
+				culture_group = byzantine
+				culture_group = iranian
+				culture_group = egyptian_group
+				culture_group = mesopotamian_group
+				culture = al_iraqiya_arabic
+				culture_group = british
+				culture_group = french
+				culture_group = germanic
+				culture_group = iberian
+				culture_group = latin
+				culture_group = turkish_g
+				culture_group = old_latin
+			}
+		}
 	}
 
 	on_built = {
@@ -2441,9 +2484,57 @@ city_jerusalem = {		#This monument labeled as city represents all the other impo
 	}
 
 	can_use_modifiers_trigger = {
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+				religion_group = christian
+			}
+			OR = {
+				culture_group = byzantine
+				culture_group = iranian
+				culture_group = egyptian_group
+				culture_group = mesopotamian_group
+				culture = al_iraqiya_arabic
+				culture_group = british
+				culture_group = french
+				culture_group = germanic
+				culture_group = iberian
+				culture_group = latin
+				culture_group = turkish_g
+				culture_group = old_latin
+			}
+		}
 	}
 
 	can_upgrade_trigger = {
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+				religion_group = christian
+			}
+			OR = {
+				culture_group = byzantine
+				culture_group = iranian
+				culture_group = egyptian_group
+				culture_group = mesopotamian_group
+				culture = al_iraqiya_arabic
+				culture_group = british
+				culture_group = french
+				culture_group = germanic
+				culture_group = iberian
+				culture_group = latin
+				culture_group = turkish_g
+				culture_group = old_latin
+			}
+		}
 	}
 
 	keep_trigger = {
@@ -2596,11 +2687,9 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 			OR = {
 				culture_group = byzantine
 				culture_group = egyptian_group
-				culture_group = old_latin
 				culture_group = latin
-				culture = roman
+				culture_group = old_latin
 				culture = phoenician
-				culture = afro_roman
 				culture = tunisian
 			}
 		}
@@ -2624,12 +2713,9 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 			OR = {
 				culture_group = byzantine
 				culture_group = egyptian_group
-				culture_group = old_latin
 				culture_group = latin
-				culture = roman
+				culture_group = old_latin
 				culture = phoenician
-				culture = afro_roman
-				culture = tunisian
 			}
 		}
 		NOT = { religion_group = muslim }
@@ -2644,15 +2730,16 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 			OR = {
 				culture_group = byzantine
 				culture_group = egyptian_group
-				culture_group = old_latin
 				culture_group = latin
-				culture = roman
+				culture_group = old_latin
 				culture = phoenician
-				culture = afro_roman
-				culture = tunisian
 			}
 		}
-		NOT = { religion_group = muslim }
+		has_owner_religion = yes
+		OR = {
+			religion_group = christian 
+			religion = punic
+		}
 	}
 
 	keep_trigger = {
@@ -2706,7 +2793,7 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 		}
 
 		country_modifiers = {
-			
+			galley_power = 0.05
 		}
 
 		on_upgraded = {
@@ -2795,7 +2882,8 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 		}
 
 		country_modifiers = {
-			global_own_trade_power = 0.05
+			global_own_trade_power = 0.1
+			galley_power = 0.1
 		}
 
 		on_upgraded = {
@@ -2855,9 +2943,10 @@ city_of_carthage = {		#Specifically the Cothon of Carthage and the great port
 		}
 
 		country_modifiers = {
-			global_own_trade_power = 0.05
+			global_own_trade_power = 0.2
 			merchants = 1
 			navy_tradition_decay = -0.015
+			galley_power = 0.2
 		}
 
 		on_upgraded = {

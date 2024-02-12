@@ -1912,9 +1912,11 @@ USA_missions_4 = {
 		icon = promote_urbanization
 		required_missions = { USA_missions_rock_island }
 		position = 21
-		provinces_to_highlight = { 
-			any_owned_province = {
-				NOT = { has_building = university }
+		provinces_to_highlight = {
+			USA = {
+				any_owned_province = {
+			    	NOT = { has_building = university }
+			    }
 			}
 		}
 		trigger = { 

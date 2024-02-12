@@ -5,6 +5,7 @@ primary_culture = talysh
 religion = sunni
 #technology_group = muslim
 technology_group = persian_tech_group
+unit_type = muslim
 capital = 3692
 religious_school = shafii_school
 

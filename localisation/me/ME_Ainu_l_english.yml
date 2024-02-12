@@ -20,11 +20,16 @@
  ANU_take_over_kamchatka_title: "Subdue the Kamchadals"
  ANU_take_over_kamchatka_desc: "There is a minority of Ainu clans in the south of the Kamchatkan Peninsula. We shall convince our kin and set out to conquer Kamchatka together."
  
- 
- 
+ #Modifier
  ANU_The_ainu_resistance: "The Ainu Resistance"
+ desc_ANU_The_ainu_resistance: "The Ainu renaissance"
  ANU_clan_unity: "Clan Unity"
+ desc_ANU_clan_unity: "Ainuan clan unity"
  ANU_conversion_buff: "Spreading the Ainu Gods"
+ desc_ANU_conversion_buff: "Ainuan conversion buffs"
  ANU_the_empire_of_the_rising_sun: "Throne of the Rising Sun"
+ desc_ANU_the_empire_of_the_rising_sun: "The Empire of the Rising Sun"
  ANU_spreading_the_culture: "Colonization of the Japanese Islands"
+ desc_ANU_spreading_the_culture: "Spreading the culture"
  ANU_manchurian_war_techniques: "Manchurian War Tactics"
+ desc_ANU_manchurian_war_techniques: "Manchurian War Techniques"

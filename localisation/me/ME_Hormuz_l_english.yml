@@ -66,6 +66,7 @@
  ORM_theologians_from_SEA: "Theologians from the Land of Gold"
  ORM_ties: "Hormuzi Outpost Open"
  ME_hormuz_sound_toll: "Sound Toll"
+ desc_ME_hormuz_sound_toll: ""
  ORM_opinion_priv: "Hormuzi Outpost Holder"
  ORM_extra_relations: "Extra Improved Relations"
  

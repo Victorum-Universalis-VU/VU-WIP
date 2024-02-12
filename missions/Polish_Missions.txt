@@ -880,6 +880,7 @@ polish_missions_slot_5 = {
 		trigger = {
 			NOT = {
 				has_reform = elective_monarchy
+				has_reform = phoenician_elective_monarchical_republic
 			}
 			if = {
 				limit = {

@@ -184,7 +184,6 @@
  marcin_events.45.t: "Steam Engine"
  marcin_events.46.t: "Zinc"
  marcin_events.47.t: "Optics"
- marcin_events.48.t: "Brass"
  marcin_events.49.t: "Mining Building"
  marcin_events.50.t: "Cannons"
  marcin_events.51.t: "Tomatos"
@@ -196,9 +195,10 @@
  marcin_events.57.t: "Marble Sculptures"
  marcin_events.58.t: "Cigars"
  marcin_events.59.t: "Chocolate"
- marcin_events.60.t: "Cider"
- marcin_events.61.t: "Canned Goods"
-marcin_events.62.t: "Sweet Confectioneries"
+ marcin_events.64.t: "Brass"
+ marcin_events.65.t: "Sweet Confectioneries"
+ marcin_events.66.t: "Canned Goods"
+ marcin_events.67.t: "Cider"
  
  
  marcin_events.1.a: "Beer = §GYES§!"

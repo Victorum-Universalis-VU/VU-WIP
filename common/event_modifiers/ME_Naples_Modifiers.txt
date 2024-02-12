@@ -16,7 +16,7 @@ nap_hunyady_legacy = {
 	fire_damage = 0.10
 	cavalry_power = 0.20
 }
-nap_italian_chestnut = {
+nap_italian_chestnuts = {
 	trade_steering = 0.2
 }
 nap_spice_trade = {

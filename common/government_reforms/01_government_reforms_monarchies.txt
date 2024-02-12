@@ -72,6 +72,27 @@ elective_monarchy_reform = {
 	}
 }
 
+phoenician_elective_monarchical_republic_reform = {
+	icon = "ballot_box"
+	potential = {
+		has_dlc = "Domination"
+		tag = CAR
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		max_absolutism = -40
+		all_estate_influence_modifier = 0.1
+	}
+	custom_attributes = {
+		has_ruler_election = yes
+	}
+	ai = {
+		factor = 0.5
+	}
+}
+
 plutocratic_reform = {
 	icon = "asian_scripture"
 	allow_normal_conversion = yes
@@ -745,6 +766,49 @@ elective_monarchy = {
 		}
 	}
 	legacy_equivalent = elective_monarchy_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+	modifiers = {
+		vassal_income = 0.25
+	    global_unrest = -1
+		max_absolutism = -30
+		governing_capacity = 100
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+		custom_attributes = {
+			has_polish_election = yes
+			locked_government_type = yes
+		}
+	}
+
+	conditional = {
+		allow = { NOT = { has_dlc = "Res Publica" } }
+		custom_attributes = {
+			locked_government_type = yes
+		}
+	}
+}
+
+phoenician_elective_monarchical_republic = {
+	icon = "phoenician_elective_monarchical_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = phoenician_elective_monarchical_republic
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = phoenician_elective_monarchical_republic
+			}
+		}
+	}
+	legacy_equivalent = phoenician_elective_monarchical_republic_legacy
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
@@ -2580,6 +2644,114 @@ tsardom = {
 		government_abilities = {
 			russian_mechanic
 			russian_modernization_mechanic
+		}
+	}
+}
+
+issi_akdom_reform = { 
+	icon = "issi_akdom_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion = ashurist
+		TAG = ASR
+		NOT = { TAG = ASY }
+		OR = {
+			AND = {
+				tag = ASR
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = issi_akdom_reform
+			}
+		}
+	}
+	fixed_rank = 3
+	legacy_equivalent = issi_akdom_reform_legacy #tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		primary_culture = assyrian
+		religion = ashurist
+	}
+
+	modifiers = {
+		governing_capacity = 150
+        technology_cost = 0.1
+        global_institution_spread = -0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		claim_states = yes
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Third Rome" 
+			NOT = { has_dlc = "Domination" }
+		}
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+}
+
+sardom_reform = { 
+	icon = "sardom_reform"
+	allow_normal_conversion = yes
+	potential = {
+		religion = cult_of_marduk
+		TAG = BAB
+		OR = {
+			AND = {
+				tag = BAB
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = sardom_reform
+			}
+		}
+	}
+	fixed_rank = 3
+	legacy_equivalent = sardom_reform_legacy #tsardom_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+	nation_designer_trigger = {
+		primary_culture = babylonian
+		religion = cult_of_marduk
+	}
+
+	modifiers = {
+		global_trade_power = 0.1
+		monarch_diplomatic_power = 2
+		years_of_nationalism = 5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Third Rome" 
+			NOT = { has_dlc = "Domination" }
+		}
+		government_abilities = {
+			bureaucracy_vs_military_mechanic
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			bureaucracy_vs_military_mechanic
 		}
 	}
 }

@@ -596,7 +596,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "muslimgfx_fort_15th"
 		file = "gfx/models/Buildings/Muslim/cose_muslim_fort.mesh"
-		scale = 0.23			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 
@@ -725,7 +725,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "indiangfx_fort_15th"
 		file = "gfx/models/Buildings/Indian/cose_indian_fort.mesh"
-		scale = 0.23			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 
@@ -854,7 +854,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "africangfx_fort_15th"
 		file = "gfx/models/Buildings/African/cose_african_fort.mesh"
-		scale = 0.23			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	
@@ -983,7 +983,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "asiangfx_fort_15th"
 		file = "gfx/models/Buildings/Asian/cose_asian_fort.mesh"
-		scale = 0.23			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	
@@ -1111,7 +1111,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "northamericagfx_fort_15th"
 		file = "gfx/models/Buildings/NorthAmerica/cose_n_american_fort.mesh"
-		scale = 0.17			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 
@@ -1241,7 +1241,7 @@ objectTypes = {
 	pdxmesh = {
 		name = "southamericagfx_fort_15th"
 		file = "gfx/models/Buildings/SouthAmerica/cose_s_american_fort.mesh"
-		scale = 0.20			#VUAddOn changed from scale 0.3
+		scale = 0.15			#VUAddOn changed from scale 0.3
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 
@@ -1251,19 +1251,19 @@ objectTypes = {
 	pdxmesh = {
 		name = "desert_starfort_16th"
 		file = "gfx/models/Buildings/cose_desert_starfort.mesh"
-		scale = 0.20			#VUAddOn changed from scale 0.25
+		scale = 0.125			#VUAddOn changed from scale 0.25
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	pdxmesh = {
 		name = "desert_bastion_17th"
 		file = "gfx/models/Buildings/cose_desert_bastion.mesh"
-		scale = 0.17			#VUAddOn changed from scale 0.20
+		scale = 0.10			#VUAddOn changed from scale 0.20
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	pdxmesh = {
 		name = "desert_fortress_18th"
 		file = "gfx/models/Buildings/cose_desert_fortress.mesh"
-		scale = 0.16			#VUAddOn changed from scale 0.18
+		scale = 0.09			#VUAddOn changed from scale 0.18
 		cull_distance = 400.0f			#VUAddOn changed from 700
 	}
 	

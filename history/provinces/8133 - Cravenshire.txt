@@ -16,7 +16,7 @@ religion = catholic
 base_tax = 2
 base_production = 2
 base_manpower = 1
-trade_goods = wool
+trade_goods = salt #VU - Was wool but changed to salt. By San Felipe
 latent_trade_goods = { coal }
 
 #Cores and Occupation (Alphabetical after current)
@@ -31,11 +31,6 @@ hre = no
 #Special Modifiers
 
 #Discoveries
-
-
-
-
-
 
 #Histories
 

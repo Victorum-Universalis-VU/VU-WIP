@@ -6,4 +6,4 @@ technology_group = hungarian_tech_group
 primary_culture = szekely
 add_accepted_culture = transylvanian_saxons # Temporarily since they also represent Szaszfold
 religion = catholic
-capital = 158 #Maros
+capital = 8213 ##VU - Changed from Maros by San Felipe on Yani's advice.

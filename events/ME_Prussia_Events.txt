@@ -1160,7 +1160,9 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		continent = europe
+		capital_scope = {
+			continent = europe	
+		}
 	}
 	option = {
 		name = ME_Prussia_Events.24.a #Ok

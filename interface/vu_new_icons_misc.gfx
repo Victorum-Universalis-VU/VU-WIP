@@ -35,6 +35,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "vu_possible_archaeological_dig"
+		texturefile = "gfx//interface//ideas_EU4//vu_possible_archaeological_dig.dds"
+	}
+
+	spriteType = {
 		name = "vu_arctic_bad"
 		texturefile = "gfx//interface//ideas_EU4//vu_arctic_bad.dds"
 	}

@@ -926,6 +926,20 @@ province_event = {
 					tobacco = 1
 					cocoa = 1
 					grain = 1
+				    any_owned_province = { 
+						OR = {
+							has_province_modifier = tin_mine
+							has_province_modifier = tin_mine_small
+							has_province_modifier = copper_mine
+							has_province_modifier = copper_mine_small
+							has_province_modifier = iron_mine
+							has_province_modifier = iron_mine_small
+							has_province_modifier = zinc_mine
+							has_province_modifier = lead_mine
+							has_province_modifier = zinc_mine_small
+							has_province_modifier = lead_mine_small
+						}
+					}
 				}
 			}
 			if = {
@@ -937,8 +951,7 @@ province_event = {
 			else = {
 				country_event = { id = New_TradeGood_Events.2 days = 360 }
 			}
-		}
-		
+		}		
 
 	}
 }
@@ -1170,6 +1183,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = New_TradeGood_Events.11
 	title = New_TradeGood_Events.11.t
@@ -1233,5 +1247,7 @@ country_event = {
 		}
 	}
 }
+
+
 
 

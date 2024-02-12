@@ -37,6 +37,7 @@ ME_zcv_military_reform = {
 }
 
 ME_revolt_happened = {
+	local_autonomy = -0.01
 }
 
 ME_legendary_bloodline = {

@@ -115,6 +115,7 @@
 1856 = "Abházia"
 1863 = "Grác"
 1874 = "Bréma"
+1951 = { "Hunedoara" "Gyulafehérvár" }
 1952 = "Máramaros"
 1986 = "Új-Kaledónia"
 1987 = "Társaság-szigetek"

@@ -15,5 +15,8 @@
  
  # Modifiers:
  WBG_diplomacy: "Christian Diplomacy"
+ desc_WBG_diplomacy: ""
  WBG_wurzburg_residenz_modifier: "Würzburger Residenz"
+ desc_WBG_wurzburg_residenz_modifier: ""
  WBG_annual_kilianimesse: "Annual Kiliani-messe"
+ desc_WBG_annual_kilianimesse: ""

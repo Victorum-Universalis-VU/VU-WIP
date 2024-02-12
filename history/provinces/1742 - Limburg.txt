@@ -18,12 +18,10 @@ trade_goods = pottery #Known for producing pottery and ceramics (by San Felipe).
 base_manpower = 3
 fort_15th = yes
 
-
-
-
-
-
-
+add_permanent_province_modifier = {
+	name = vu_potential_archaeological_dig
+	duration = -1
+}
 
 #Wiki quote follows
 #Though it shared the fate of Brabant, Limburg remained a separate Imperial State, which in 1404 passed from Joanna of Brabant to Anthony of Valois, 
@@ -32,7 +30,6 @@ fort_15th = yes
 #and Maastricht, the duchy became one of the Seventeen Provinces held by the Habsburgs within the Burgundian Circle established in 1512. Significant 
 #towns in Limburg proper were Herve, Montzen, Lontzen, Eupen, Baelen and Esneux.
 #Darth Modus conclusion, we probably need a new tag here, but doing without for now. Eventually, it sounds like a lesser in PU under Burgundy, or perhaps a vassal like Cambrai, might be ideal
-
 
 #Province history completed by - Darth Modus
 #1291.5.21 = { #VictorumUniversalis batch edit shortcut the first shattering begins

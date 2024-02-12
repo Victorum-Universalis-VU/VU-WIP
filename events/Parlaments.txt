@@ -1581,6 +1581,7 @@ country_event = {
 		NOT = { has_reform = tribal_federation }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { has_reform = free_city }
 		NOT = { has_reform = dutch_republic }
 		NOT = { is_revolutionary_republic_trigger = yes }
@@ -1656,6 +1657,7 @@ country_event = {
 		NOT = { government = tribal }
 		NOT = { government = native }
 		NOT = { has_reform = elective_monarchy }
+		NOT = { has_reform = phoenician_elective_monarchical_republic }
 		NOT = { government = republic }
 		NOT = { has_reform = celestial_empire }
 		NOT = { has_reform = peasants_republic }
@@ -1787,6 +1789,7 @@ province_event = {
 			NOT = { government = tribal }
 			NOT = { government = native }
 			NOT = { has_reform = elective_monarchy }
+			NOT = { has_reform = phoenician_elective_monarchical_republic }
 			NOT = { government = republic }
 			NOT = { has_reform = celestial_empire }
 			NOT = { has_reform = iqta }

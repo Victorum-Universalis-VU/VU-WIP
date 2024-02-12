@@ -26,7 +26,7 @@ QIR_elite_cossacks_modifier = {
 	is_cossack_modifier = yes
 }
 
-QIR_cossacks = {
+QIR_cossacks_1 = {
 	cavalry_shock = 1
 	is_cossack_modifier = yes
 }
@@ -86,7 +86,7 @@ QIR_tribes_of_anatolia = {
 	manpower_recovery_speed = 0.1
 }
 
-QIR_constantinople = {
+QIR_constantinople_1 = {
 	local_development_cost = -0.2
 	local_tax_modifier = 0.25
 }
@@ -136,7 +136,7 @@ QIR_gems_and_dates = {
 	trade_goods_size_modifier = 0.1
 }
 
-QIR_greater_iran = {
+QIR_greater_iran_1 = {
 	governing_capacity = 150
 }
 

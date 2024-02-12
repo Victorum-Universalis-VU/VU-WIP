@@ -239,7 +239,7 @@ NDiplomacy = {
 	AE_PRIMITIVES = -0.75, 					-- less AE from primitives
 
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
-	PO_DEMAND_PROVINCES_AE = 0.15, 					-- Decreased this to 0.3 from 0.4 _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
+	PO_DEMAND_PROVINCES_AE = 0.2, 					-- Decreased this to 0.3 from 0.4 _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
 	PO_RETURN_CORES_AE = 0.1, 						-- Decreased this to 0.1 from 0.25 (Per core, only applied if returning cores to vassals of winner)
 	PO_FORM_PU_AE = 0.05, 							-- Decreased this to 0..3 from 0.05 _DDEF_PO_FORM_PU_AE = 10, (Per development)
 	PO_CONCEDE_COLONIAL_AE = 0.1,
@@ -1221,7 +1221,7 @@ NEconomy = {
 	CARAVAN_FACTOR = 25.0,							-- Development is divided by this factor, do not set to zero!
 	CARAVAN_POWER_MAX = 30,
 	CARAVAN_POWER_MIN = 2,
-	MAX_BUILDING_SLOTS = 16,						-- Maximum number of buildings slots, i.e. max buildings possible.
+	MAX_BUILDING_SLOTS = 32,						-- Maximum number of buildings slots, i.e. max buildings possible.
 	COT_BUILDING_SLOTS = 2,							-- Number of slots used by a Center of Trade.
 	COT_DOWNGRADE_PRESTIGE_COST = -10,				-- Cost in prestige to downgrade a Center of Trade.
 	MAX_LD_FOR_CONSTRUCT_IN_SUBJECT = 50,			-- Maximum liberty desire at which an overlord can recruit regiments and build ships in a subject's glorious lands.

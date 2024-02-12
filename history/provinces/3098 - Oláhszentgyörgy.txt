@@ -3,8 +3,8 @@
 #Core Details
 capital = "Sankt Georgen"
 is_city = yes
-owner = SZE
-controller = SZE # Should be Szaszfold but no tag yet
+owner = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
+controller = TRA #VU - Changed from SZE by San Felipe on Yani's advice.
 
 #Demographics
 culture = transylvanian_saxons
@@ -29,16 +29,6 @@ hre = no
 #Special Modifiers
 
 #Discoveries known by technology groups
-
-
-
-
-
-
-
-
-
-
 
 #Histories by SF
 1506.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Szekely rebellion

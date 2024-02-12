@@ -2,7 +2,6 @@
 
 type = cavalry
 unit_type = muslim
-unit_type = persian_tech_group
 
 maneuver = 2
 offensive_morale = 2

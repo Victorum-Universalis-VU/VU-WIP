@@ -376,12 +376,13 @@ christian = {
 		flag_emblem_index_range = { 1 4 }
 		country = {
 			shock_damage_received = -0.05
-			global_heretic_missionary_strength = 0.1
+			global_heretic_missionary_strength = 0.01
 			tolerance_own = 1								   
 			legitimacy = 0.5
 			republican_tradition = 0.25
 			horde_unity = 0.25
 			devotion = 1
+		 	ae_impact = 0.05
 			land_morale = 0.05
 			manpower_in_true_faith_provinces = 0.1
 			manpower_recovery_speed = 0.05
@@ -939,6 +940,7 @@ christian = {
 			#taoism
 			miaphysite
 			coptic
+			ashurist
 		}
 
 		country = {
@@ -1916,6 +1918,10 @@ muslim = {
 	sunni = {
 		color = { 0 144 0 }
 		icon = 5
+		allowed_conversion = {
+			ashurist
+			cult_of_marduk
+		}
 		allowed_center_conversion = {
 			#iconoclast
 			ibadi
@@ -2358,38 +2364,39 @@ eastern = {
 		harmonized_modifier = harmonized_taoism
 	}
 	
-	wuism = {
-		color = { 139 15 255 }
-		icon = 63
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-	}
-		
-	bimoism = { 
-		color = { 35 101 255 }
-		icon = 62
-		country = {
-			
-		}
-		province = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-
-		fetishist_cult = yes
-		heretic = { GOAT_SKULL }
-	}
+	#Sphinx additions
+	#wuism = {
+	#	color = { 139 15 255 }
+	#	icon = 63
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#}
+	#Sphinx additions
+	#bimoism = { 
+	#	color = { 35 101 255 }
+	#	icon = 62
+	#	country = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+#
+	#	fetishist_cult = yes
+	#	heretic = { GOAT_SKULL }
+	#}
 	
 	#bon moved to asian_pagan_group
 	
@@ -3491,6 +3498,98 @@ pagan = {
 		fetishist_cult = yes
 		heretic = { WAGYLKOOP MOORAMOORA GINGARRURNDE }
 	}
+
+	cult_of_marduk = {
+		icon = 65
+		color = { 38 97 156 }
+		allowed_conversion = {
+			nestorian
+			yazidi
+			buddhism
+			vajrayana
+			sikhism
+			sunni
+		}
+		province = {
+			local_institution_spread = 0.2
+			local_missionary_strength = 0.02
+		}
+		country = {
+			great_project_upgrade_cost = -0.25
+			great_project_upgrade_time = -0.33
+			culture_conversion_time = -0.2
+			culture_conversion_cost = -0.2
+			devotion = 1 
+		}
+		country_as_secondary = {
+			build_time = -0.2
+			tolerance_heathen = 1
+		}
+		allowed_center_conversion = {
+			sunni
+			shiite
+			orthodox
+			coptic
+			hinduism
+		}
+
+		holy_sites = { 377 379 382 411 6625 }
+
+		blessings = {
+			#VU - Keep this for now in v1.36.2.* but change later. By San Felipe
+			blessing_marduk
+			blessing_enlil
+			blessing_enki
+			blessing_inanna
+			blessing_nabu
+			blessing_nanna_suen
+			blessing_ninhursag
+			blessing_utu
+		}
+		
+		heretic = { MARDUK CULTISTS }	
+	}
+
+	punic = {
+		icon = 66
+		color = { 21 37 88 }
+		allowed_conversion = {
+			sunni
+		}
+		province = {
+			local_institution_spread = 0.2
+			local_missionary_strength = 0.02
+		}
+		country = {
+			trade_efficiency = 0.1
+			naval_morale = 0.1
+		}
+		country_as_secondary = {
+			trade_efficiency = 0.1
+		}
+		allowed_center_conversion = {
+			sunni
+		}
+
+		holy_sites = { 341 8067 225 5205 5322 7095 }
+
+		blessings = {
+			#VU - Keep this for now in v1.36.2.* but change later. By San Felipe
+			blessing_baal_hammon
+			blessing_tanit
+			blessing_reshef
+			blessing_ashtarte
+			blessing_melqart
+			blessing_eshmun
+			blessing_baalshamin
+			blessing_kushor
+			blessing_baal_saphon
+		}
+		
+		personal_deity = yes
+		
+		heretic = { TANIT FOLLOWERS }	
+	}
 	
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
@@ -3688,6 +3787,57 @@ zoroastrian_group = {
 		}
 		
 		heretic = { MAZDAKI MANICHEAN }	
+	}
+
+	ashurist = {
+		icon = 64
+		color = { 141 23 11 }
+		allowed_conversion = {
+			nestorian
+			yazidi
+			buddhism
+			vajrayana
+			sikhism
+			sunni
+		}
+		province = {
+			cb_on_religious_enemies = yes
+			local_missionary_strength = 0.02
+		}
+		country = {
+			global_trade_goods_size = 0.1
+			land_morale = 0.10
+			culture_conversion_time = -0.2
+			culture_conversion_cost = -0.2
+			devotion = 1 
+		}
+		country_as_secondary = {
+			siege_ability = 0.2
+			tolerance_heretic = 1
+		}
+		allowed_center_conversion = {
+			sunni
+			shiite
+			orthodox
+			coptic
+			hinduism
+		}
+
+		holy_sites = { 379 411 2310 6625 6641 }
+
+		blessings = {
+			#VU - Keep this for now in v1.36.2.* but change later. By San Felipe
+			blessing_ashur
+			blessing_nil_lil
+			blessing_sin
+			blessing_anu
+			blessing_rammon
+			blessing_ishtar
+			blessing_nebo
+			blessing_nergal
+		}
+		
+		heretic = { ASHURIST ADHERENT }	
 	}
 	
 	# Mazdaki Religion
@@ -4038,95 +4188,96 @@ asian_pagan_group = {
 		harmonized_modifier = harmonized_bon
 	}
 	
-	kirat_mundhum = {
-		color = { 255 158 79 }
-		icon = 61
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-		
-		harmonized_modifier = harmonized_kirat_mundhum
-	}
-	
-	donyi_polo = {
-		color = { 242 226 255 }
-		icon = 58
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-		
-		harmonized_modifier = harmonized_donyi_polo
-	}
-	
-	bathouism = {
-		color = { 116 158 67 }
-		icon = 60
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-		
-		harmonized_modifier = harmonized_bathou
-	}
-	
-	sanamahism = {
-		color = { 255 204 38 }
-		icon = 59
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-		
-		harmonized_modifier = harmonized_sanamahism
-	}
-	
-	sarnaism = {
-		color = { 124 18 84 }
-		icon = 57
-		country = {
-			
-		}
-		country_as_secondary = {
-			
-		}
-		province = {
-			
-		}
-		
-		heretic = { SNAKE_CLAN }
-		
-		harmonized_modifier = harmonized_bathou
-	}
+	#Sphinx additions
+	#kirat_mundhum = {
+	#	color = { 255 158 79 }
+	#	icon = 61
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#	
+	#	harmonized_modifier = harmonized_kirat_mundhum
+	#}
+	#Sphinx additions
+	#donyi_polo = {
+	#	color = { 242 226 255 }
+	#	icon = 58
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#	
+	#	harmonized_modifier = harmonized_donyi_polo
+	#}
+	#Sphinx additions
+	#bathouism = {
+	#	color = { 116 158 67 }
+	#	icon = 60
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#	
+	#	harmonized_modifier = harmonized_bathou
+	#}
+	#Sphinx additions
+	#sanamahism = {
+	#	color = { 255 204 38 }
+	#	icon = 59
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#	
+	#	harmonized_modifier = harmonized_sanamahism
+	#}
+	#Sphinx additions
+	#sarnaism = {
+	#	color = { 124 18 84 }
+	#	icon = 57
+	#	country = {
+	#		
+	#	}
+	#	country_as_secondary = {
+	#		
+	#	}
+	#	province = {
+	#		
+	#	}
+	#	
+	#	heretic = { SNAKE_CLAN }
+	#	
+	#	harmonized_modifier = harmonized_bathou
+	#}
 	
 	harmonized_modifier = harmonized_asian_pagan_group
 	

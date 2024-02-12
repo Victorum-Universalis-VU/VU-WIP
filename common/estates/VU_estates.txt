@@ -9,7 +9,6 @@ estate_jews = {
 			    NOT = { religion = jewish }
 			    any_owned_province = { has_province_modifier = jewish_population }
 			}
-			has_country_flag = country_has_jews_yes
 			AND = {
 			    NOT = { religion = jewish }
 			    capital_scope = {
@@ -73,7 +72,6 @@ estate_jews = {
 	influence_modifier = {
 		desc = EST_VAL_JEWISH_MINORITIES
 		trigger = {
-			has_country_flag = country_has_jews_yes
 			any_province = { has_province_modifier = jewish_population }
 		}	
 		influence = 10
@@ -2103,7 +2101,7 @@ estate_industrial = {
 					# who = ROOT
 					# duration = 5475
 					# power = 15
-					# key = UKS_trade_support
+					# key = UKS_trade_support1
 				# }
 			# }
 			# 174 = {
@@ -2111,7 +2109,7 @@ estate_industrial = {
 					# who = ROOT
 					# duration = 5475
 					# power = 15
-					# key = UKS_trade_support
+					# key = UKS_trade_support1
 				# }
 			# }
 			# if = {
@@ -2412,7 +2410,10 @@ estate_magnates = {
 			tag = PLC
 			tag = POL
 		}
-		has_reform = elective_monarchy
+		OR = {
+			has_reform = elective_monarchy
+			has_reform = phoenician_elective_monarchical_republic
+		}
 		NOT = {
 			has_estate = estate_vaisyas
 		}

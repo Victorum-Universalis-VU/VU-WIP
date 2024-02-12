@@ -15,7 +15,10 @@ kalwaria_zebrzydowska = {
 		province_is_or_accepts_religion = {
 			religion = catholic
 		}
-		culture_group = west_slavic 
+		OR = { 
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -32,7 +35,10 @@ kalwaria_zebrzydowska = {
 		province_is_or_accepts_religion = {
 			religion = catholic
 		}
-		culture_group = west_slavic 
+		OR = { 
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -43,7 +49,10 @@ kalwaria_zebrzydowska = {
 		province_is_or_accepts_religion = {
 			religion = catholic
 		}
-		culture_group = west_slavic 
+		OR = { 
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -478,8 +487,11 @@ cesky_krumlov = {
 	starting_tier = 1
 	type = monument
 
-	build_trigger = {
-		culture = czech
+	build_trigger = {	
+		OR = { 
+			culture = czech
+			culture_group = slavic
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -490,12 +502,18 @@ cesky_krumlov = {
 	}
 
 	can_use_modifiers_trigger = {
-		culture = czech
+		OR = { 
+			culture = czech
+			culture_group = slavic
+		}
 		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		culture = czech
+		OR = { 
+			culture = czech
+			culture_group = slavic
+		}
 		province_is_or_accepts_culture = yes
 	}
 
@@ -628,7 +646,10 @@ praca_do_comercio = {
 	type = monument
 
 	build_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
@@ -639,12 +660,18 @@ praca_do_comercio = {
 	}
 
 	can_use_modifiers_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
@@ -1133,7 +1160,10 @@ universidade_de_coimbra = {
 	type = monument
 
 	build_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
@@ -1144,12 +1174,18 @@ universidade_de_coimbra = {
 	}
 
 	can_use_modifiers_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		culture = portugese
+		OR = { 
+			culture = portugese
+			culture_group = old_latin
+		}
 		has_owner_culture = yes
 	}
 
@@ -6173,17 +6209,14 @@ market_square = {
 
 	#can we build it?
 	build_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -6197,33 +6230,27 @@ market_square = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -6382,17 +6409,14 @@ long_market = {
 
 	#can we build it?
 	build_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -6406,33 +6430,27 @@ long_market = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		culture_group = west_slavic 
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -8284,14 +8302,40 @@ york_minster = {
 	starting_tier = 2
 	type = monument
 
-	build_trigger = { religion = catholic
+	build_trigger = { 
+		religion_group = christian
+		NOT = { 
+			religion = orthodox
+			religion = coptic
+			religion = miaphysite
+			religion = nestorian
+			religion = mormon
+			religion = monothelite
+		}
 	}
 
 	can_use_modifiers_trigger = {
-		religion = catholic
+		religion_group = christian
+		NOT = { 
+			religion = orthodox
+			religion = coptic
+			religion = miaphysite
+			religion = nestorian
+			religion = mormon
+			religion = monothelite
+		}
 	}
 
-	can_upgrade_trigger = { religion = catholic
+	can_upgrade_trigger = { 
+		religion_group = christian
+		NOT = { 
+			religion = orthodox
+			religion = coptic
+			religion = miaphysite
+			religion = nestorian
+			religion = mormon
+			religion = monothelite
+		}
 	}
 
 	keep_trigger = {
@@ -8527,7 +8571,7 @@ pontcysyllte_aqueduct = {
 
 	# province it starts in
 	start = 8140
-	date = 1795.01.01
+	date = 1790.01.01
 
 	time = {
 		months = 0
@@ -8540,14 +8584,14 @@ pontcysyllte_aqueduct = {
 	type = monument
 
 	build_trigger = {
-	    is_year = 1795
+	    is_year = 1790
 	}
 
 	can_use_modifiers_trigger = {
 	}
 
 	can_upgrade_trigger = {
-	    is_year = 1796
+	    is_year = 1790
 	}
 
 	keep_trigger = {
@@ -9867,24 +9911,15 @@ rialto_bridge = {
 	type = monument
 
 	build_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_use_modifiers_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_upgrade_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	keep_trigger = {
@@ -10344,7 +10379,7 @@ castello_scaligero_di_sirmione = {
 		}
 
 		area_modifier = {
-			hostile_attrition = 0.25
+			local_hostile_attrition = 0.25
 		}
 
 		country_modifiers = {
@@ -10369,7 +10404,7 @@ castello_scaligero_di_sirmione = {
 		}
 
 		area_modifier = {
-			hostile_attrition = 0.5
+			local_hostile_attrition = 0.5
 		}
 
 		country_modifiers = {
@@ -10396,7 +10431,7 @@ castello_scaligero_di_sirmione = {
 		}
 
 		area_modifier = {
-			hostile_attrition = 1
+			local_hostile_attrition = 1
 		}
 
 		country_modifiers = {
@@ -10560,24 +10595,15 @@ civita_di_bagnoregio = {
 	type = monument
 
 	build_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_use_modifiers_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	can_upgrade_trigger = {
-		OR = {
-		 culture_group = old_latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		 culture_group = latin OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
-		}
+		OR = { culture_group = latin culture_group = old_latin } OR = { has_owner_culture = yes has_owner_accepted_culture = yes }
 	}
 
 	keep_trigger = {
@@ -11291,7 +11317,7 @@ san_carlone = {
 	}
 
 	can_upgrade_trigger = {
-	    is_year = 1698
+		is_year = 1614
 		religion = catholic
 	}
 
@@ -12718,17 +12744,14 @@ krantor = {
 
 	#can we build it?
 	build_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -12742,33 +12765,27 @@ krantor = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    	}
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    	}
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -12934,17 +12951,14 @@ artushof = {
 
 	#can we build it?
 	build_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    }
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -12958,33 +12972,27 @@ artushof = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    }
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		OR = { 
+			culture_group = germanic
+			culture_group = west_slavic 
+			culture_group = slavic  
+		}
 		OR = {
-		    culture_group = germanic
-		    OR = {
-		    	has_owner_culture = yes
-		    	has_owner_accepted_culture = yes
-		    }
-		    culture_group = west_slavic 
-		    OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
 		}
 	}
 
@@ -14611,6 +14619,490 @@ lund_cathedral = {
 					loyalty = 15
 				}
 			}
+		}
+	}
+}
+
+#VU - NEW monuments for v1.36.2.*. By San Felipe
+city_of_nineveh = {
+
+	# province it starts in
+	start = 411
+	date = 1444.01.01
+
+	time = {
+		months = 0
+	}
+
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	can_use_modifiers_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+	can_upgrade_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		cost_to_upgrade = {
+			factor = 0
+		}
+		upgrade_time = {
+			months = 0
+		}
+
+	    province_modifiers = {
+		}
+
+	    area_modifier = {
+		}
+
+	    country_modifiers = {
+		}
+
+	    on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			advisor_cost = -0.1
+		}
+
+		area_modifier = {
+			local_unrest = -1
+		}
+
+		country_modifiers = {
+			governing_capacity = 25
+			core_creation = -0.1
+			administrative_efficiency = 0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			advisor_cost = -0.15
+		}
+
+		area_modifier = {
+			local_unrest = -2
+		}
+
+		country_modifiers = {
+			governing_capacity = 50
+			core_creation = -0.15
+			administrative_efficiency = 0.075
+		}	
+
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			advisor_cost = -0.2
+		}
+
+		area_modifier = {
+			local_unrest = -3
+		}
+
+		country_modifiers = {
+			governing_capacity = 75
+			core_creation = -0.2
+			administrative_efficiency = 0.1
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+temple_city_of_assur = {
+
+	# province it starts in
+	start = 6638
+	date = 1444.01.01
+
+	time = {
+		months = 0
+	}
+
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	can_use_modifiers_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+	can_upgrade_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		cost_to_upgrade = {
+			factor = 0
+		}
+		upgrade_time = {
+			months = 0
+		}
+
+	    province_modifiers = {
+		}
+
+	    area_modifier = {
+		}
+
+	    country_modifiers = {
+		}
+
+	    on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			missionaries = 1
+		}
+
+		area_modifier = {
+			local_religious_unity_contribution = 0.1
+		}
+
+		country_modifiers = {
+			global_missionary_strength = 0.01
+			warscore_cost_vs_other_religion = -0.05
+			relation_with_heretics = -10
+			relation_with_heathens = -10
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			missionaries = 1
+		}
+
+		area_modifier = {
+			local_religious_unity_contribution = 0.15
+		}
+
+		country_modifiers = {
+			global_missionary_strength = 0.02
+			warscore_cost_vs_other_religion = -0.1
+			relation_with_heretics = -20
+			relation_with_heathens = -20
+		}
+
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			missionaries = 2
+		}
+
+		area_modifier = {
+			local_religious_unity_contribution = 0.2
+		}
+
+		country_modifiers = {
+			global_missionary_strength = 0.03
+			warscore_cost_vs_other_religion = -0.15
+			relation_with_heretics = -30
+			relation_with_heathens = -30
+		}
+
+		on_upgraded = {
+		}
+	}
+}
+
+fortress_city_of_nimrud = {
+
+	# province it starts in
+	start = 6641
+	date = 1444.01.01
+
+	time = {
+		months = 0
+	}
+
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+
+	build_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	can_use_modifiers_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+	can_upgrade_trigger = { 
+		AND = {
+			has_owner_culture = yes
+			has_owner_religion = yes
+			OR = {
+				religion = zoroastrian
+				religion = ashurist
+				religion = cult_of_marduk
+			}
+			culture_group = mesopotamian_group
+		}
+	}
+
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		cost_to_upgrade = {
+			factor = 0
+		}
+		upgrade_time = {
+			months = 0
+		}
+
+	    province_modifiers = {
+		}
+
+	    area_modifier = {
+		}
+
+	    country_modifiers = {
+		}
+
+	    on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_manpower_modifier = 0.1
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.1
+		}
+
+		country_modifiers = {
+			discipline = 0.025
+			siege_ability = 0.1
+			land_morale = 0.05
+		}
+
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_manpower_modifier = 0.2
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+
+		country_modifiers = {
+			discipline = 0.05
+			siege_ability = 0.15
+			land_morale = 0.075
+		}
+
+		on_upgraded = {
+		}
+	}
+	
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		province_modifiers = {
+			local_manpower_modifier = 0.3
+		}
+
+		area_modifier = {
+			local_defensiveness = 0.2
+		}
+
+		country_modifiers = {
+			discipline = 0.075
+			siege_ability = 0.2
+			land_morale = 0.1
+		}
+
+		on_upgraded = {
 		}
 	}
 }

@@ -5,7 +5,7 @@ controller = HTK
 culture = togoku
 religion = shinto
 capital = "Kanazawa"
-trade_goods = rice
+trade_goods = lacquerware #VU - Was rice but changed by San Felipe in v1.36.2.* because Kanazawa has long been a long been a center of lacquerware production of Japan's Wajima's producers, Taya Shikkiten.
 hre = no
 base_tax = 4
 base_manpower = 4
@@ -13,10 +13,6 @@ base_production = 4
 is_city = yes
 add_core = SBA
 fort_15th = yes #Nanao Castle
-
-
-  
-
 
 1380.1.1 = { owner = HTK controller = HTK add_core = HTK remove_core = SBA }
 
