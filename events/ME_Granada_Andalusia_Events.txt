@@ -531,7 +531,7 @@ country_event = {
 			war_with = CAS
 			NOT = { war_with = TLC }
 		}
-		has_country_flag = GRA_in_case_of_war_with_castile
+	#	has_country_flag = GRA_in_case_of_war_with_castile
 	}
 	
 	major = yes
@@ -893,6 +893,7 @@ country_event = {
 				save_event_target_as = Granada_jewish_province_3
 				set_province_flag = GRA_chosen_for_event
 			}
+			set_country_flag = GRA_recent_jewish_event
 		}
 	}
 
