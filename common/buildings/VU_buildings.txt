@@ -132,8 +132,25 @@ bath_house = {
 		local_unrest = -0.75
 		local_development_cost = -0.075
 	}
+	make_obsolete = cesspit
 	build_trigger = {
 		is_state = yes	
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = bath_house
+			obsolete_building = cesspit
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = bath_house
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -149,8 +166,25 @@ sewer_system = {
 		local_unrest = -1
 		local_development_cost = -0.1
 	}
+	make_obsolete = bath_house
 	build_trigger = {
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = sewer_system
+			obsolete_building = bath_house
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = sewer_system
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -162,12 +196,29 @@ latrines = {
 	cost = 600 #VU - Increased from 400 to 450 in v1.36.2.* by San Felipe
 	time = 48
 	#one_per_country = yes
+	make_obsolete = sewer_system
 	modifier = { 
 		local_unrest = -2
 		local_development_cost = -0.2
 	}
 	build_trigger = { 
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = latrines
+			obsolete_building = sewer_system
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = latrines
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -187,6 +238,7 @@ well = {
 		local_build_time = -0.05
 		local_build_cost = -0.05
 	}
+
 	build_trigger = { 
 	}
 	ai_will_do = {
@@ -205,8 +257,25 @@ aqueduct = {
 		local_build_time = -0.075
 		local_build_cost = -0.075
 	}
+	make_obsolete = well
 	build_trigger = {
 		is_state = yes	
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = aqueduct
+			obsolete_building = well
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = aqueduct
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -224,8 +293,25 @@ distillery = {
 		local_build_time = -0.1
 		local_build_cost = -0.1
 	}
+	make_obsolete = aqueduct
 	build_trigger = { 
 		is_state = yes	
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = distillery
+			obsolete_building = aqueduct
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = distillery
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -243,8 +329,25 @@ pump_house = {
 		local_build_time = -0.2
 		local_build_cost = -0.2
 	}
+	make_obsolete = distillery
 	build_trigger = {
 		is_state = yes	
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = pump_house
+			obsolete_building = distillery
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = pump_house
+			type = manpower
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -258,7 +361,7 @@ wrestling = {
 	time = 12
 	#one_per_country = yes
 	modifier = { 
-		local_hostile_movement_speed = 0.1
+		local_hostile_movement_speed = -0.1
 		local_manpower_modifier = 0.1 
 		regiment_recruit_speed = -0.1
 		local_regiment_cost = -0.1
@@ -298,9 +401,26 @@ operatics = {
 		local_autonomy = -0.3
 		local_unrest = -0.75
 	}
+	make_obsolete = theatrics
 	build_trigger = {
 		#is_year = 1637 #Venice's Teatro San Cassiano
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = operatics
+			obsolete_building = theatrics
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = operatics
+			type = tax
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -317,8 +437,25 @@ cinema = {
 		local_autonomy = -0.4
 		local_unrest = -1
 	}
+	make_obsolete = operatics
 	build_trigger = {
 		is_state = yes	
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = cinema
+			obsolete_building = operatics
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = cinema
+			type = tax
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -466,8 +603,25 @@ relay_stations = {
 		local_institution_spread = 0.25 
 		local_governing_cost = -0.2
 	}
+	make_obsolete = pigeon_shed
 	build_trigger = { 
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = relay_stations
+			obsolete_building = pigeon_shed
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = relay_stations
+			type = production
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -483,8 +637,25 @@ telephone_exchange = {
 		local_institution_spread = 0.5
 		local_governing_cost = -0.3
 	}
+	make_obsolete = relay_stations
 	build_trigger = {
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = telephone_exchange
+			obsolete_building = relay_stations
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = telephone_exchange
+			type = production
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -499,8 +670,25 @@ radio_station = {
 		local_institution_spread = 1
 		local_governing_cost = -0.5
 	}
+	make_obsolete = telephone_exchange
 	build_trigger = {
 		is_state = yes
+	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = radio_station
+			obsolete_building = telephone_exchange
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = radio_station
+			type = production
+			value = 2
+		}
 	}
 	ai_will_do = {
 		factor = 1

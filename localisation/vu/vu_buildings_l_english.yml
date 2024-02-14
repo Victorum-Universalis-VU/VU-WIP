@@ -48,9 +48,56 @@
  corporative_headquarters: "Corporative Headquarters" 
  building_corporative_headquarters: "Corporative Headquarters"
  
- #Religion
- grand_cathedral: "Basillica"
- building_grand_cathedral: "Basillica"
+ #Religion - Christianity
+ grand_cathedral: "Grand Cathedral"
+ building_grand_cathedral: "Grand Cathedral"
+
+ grand_cathedral_orthodox: "Grand Basilica"
+ building_grand_cathedral_orthodox: "Grand Basilica"
+
+ #Religion - Islam
+ grand_cathedral_muslim: "Grand Mosque"
+ building_grand_cathedral_muslim: "Grand Mosque"
+
+ #Religion - Eastern (China, Japan & S.E. Asia)
+ grand_cathedral_eastern: "Grand Temple"
+ building_grand_cathedral_eastern: "Grand Temple"
+
+ #Religion - Hinduism
+ grand_cathedral_dharmic: "Grand Temple"
+ building_grand_cathedral_dharmic: "Grand Temple"
+
+ #Religion - Pagan
+ grand_cathedral_pagan: "Grand Temple"
+ building_grand_cathedral_pagan: "Grand Temple"
+
+ #Religion - Jewish
+ grand_cathedral_jewish_group: "Grand Temple"
+ building_grand_cathedral_jewish_group: "Grand Temple"
+
+ #Religion - Zoroastrian
+ grand_cathedral_zoroastrian_group: "Grand Temple"
+ building_grand_cathedral_zoroastrian_group: "Grand Temple"
+
+ #Religion - Balto_Slavic
+ grand_cathedral_balto_slavic_group: "Grand Temple"
+ building_grand_cathedral_balto_slavic_group: "Grand Temple"
+
+ #Religion - Finnic
+ grand_cathedral_balto_finnic_group: "Grand Temple"
+ building_grand_cathedral_balto_finnic_group: "Grand Temple"
+
+ #Religion - Slavic
+ grand_cathedral_slavic_group: "Grand Temple"
+ building_grand_cathedral_slavic_group: "Grand Temple"
+
+ #Religion - Asian Pagan
+ grand_cathedral_balto_asian_pagan_group: "Grand Temple"
+ building_grand_cathedral_balto_asian_pagan_group: "Grand Temple"
+
+ #Religion - Buddhist
+ grand_cathedral_balto_buddhist_group: "Grand Temple"
+ building_grand_cathedral_balto_buddhist_group: "Grand Temple"
 
  #Revenue & Customs
  custom_house: "Customs House" #Customs
