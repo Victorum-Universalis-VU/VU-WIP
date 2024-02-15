@@ -3568,6 +3568,533 @@ cannery_workshop = {
 	}
 }
 
+#LATEST ADDITIONS
+# Please change things in localisation/vu/vu_building_l_english.yml if you change the name or description / requirements / output
+# Please change things in localisation/vu/vu_trade_goods_l_english.yml if you change technology (LATENT_TRADEGOOD_TECH) 
+# currently ALL use dip_tech 9, MAKE SURE to move write name_of_building = yes in the appropriate tech
+
+regular_cloth_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = regular_clothes 
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				regular_clothes = 3
+			}
+		}
+	}
+}
+
+luxury_cloth_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = luxury_clothes
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				luxury_clothes = 3
+			}
+		}
+	}
+}
+
+luxury_furniture_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = ebony
+				trade_goods = lumber
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes	
+				if = {
+					limit = { trade_goods = ebony }
+					change_trade_goods = lacquerware
+				}
+				else_if = {
+					limit = { trade_goods = lumber }
+					change_trade_goods = woodworking
+				}	
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				OR= {
+					lacquerware = 3
+					woodworking = 3
+				}
+			}
+		}
+	}
+}
+
+utensil_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = accoutrements
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				accoutrements = 3
+			}
+		}
+	}
+}
+
+glassmaker = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = sand
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = glass 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				glass = 3
+			}
+		}
+
+	}
+}
+
+
+potters = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = clay
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = pottery 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				pottery = 3
+			}
+		}
+	}
+}
+
+steel_foundry = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = iron
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = steel 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				steel = 3
+			}
+		}
+	}
+}
+
+papermill = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = lumber
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = paper 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				paper = 3
+			}
+		}
+	}
+}
+
+brewery = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = grain
+				trade_goods = tea
+				trade_goods = coffee
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 	
+			ROOT = {
+				goods_save = yes	
+				if = {
+					limit = { trade_goods = grain }
+					change_trade_goods = beer
+				}
+				else_if = {
+					limit = { trade_goods = tea }
+					change_trade_goods = english_tea
+				}
+				else_if = {
+					limit = { trade_goods = coffee }
+					change_trade_goods = expresso
+				}
+
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+	}
+}
+
+medical_facility = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = apiculture
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = medicaments 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				medicaments = 3
+			}
+		}
+	}
+}
+
 Ai_def_push_dip = {
 	cost = 0
 	time = 1

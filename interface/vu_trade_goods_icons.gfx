@@ -1,0 +1,62 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_steel_icon"
+		texturefile = "gfx//interface//trade_goods//steel_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_regular_clothes_icon"
+		texturefile = "gfx//interface//trade_goods//regular_clothes_icon.png"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_luxury_clothes_icon"
+		texturefile = "gfx//interface//trade_goods//luxury_clothes_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_medicaments_icon"
+		texturefile = "gfx//interface//trade_goods//medicine_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_accoutrements_icon"
+		texturefile = "gfx//interface//trade_goods//accoutrements_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_expresso_icon"
+		texturefile = "gfx//interface//trade_goods//expresso_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_english_tea_icon"
+		texturefile = "gfx//interface//trade_goods//english_tea_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_glass_icon"
+		texturefile = "gfx//interface//trade_goods//glass_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_paper_icon"
+		texturefile = "gfx//interface//trade_goods//paper_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_pottery_icon"
+		texturefile = "gfx//interface//trade_goods//pottery_icon.png"
+		loadType = "INGAME"
+	}
+}

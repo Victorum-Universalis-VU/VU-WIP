@@ -455,6 +455,17 @@ technology = { #Carracks & Caravel
 	
 	#Spectacle Factory TGE Manufactory
 	spectacle_factory = yes
+	
+	regular_cloth_workshop = yes
+	luxury_cloth_workshop = yes
+	luxury_furniture_workshop = true
+	utensil_workshop = yes
+	glassmaker = yes
+	potters = yes
+	steel_foundry = yes
+	papermill = yes
+	medical_facility = yes
+	brewery = yes
 }
 
 technology = { #The Flute

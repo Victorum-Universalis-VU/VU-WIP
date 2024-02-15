@@ -43,53 +43,19 @@ GER_missions_1 = {
 		icon = mission_into_africa
 		position = 3
 		provinces_to_highlight = {
-			OR = {
-			    area = south_atlantic_islands_area
-				area = bengo_area
-				area = wambu_area
-				area = skeleton_coast_land_area
-			}
+			region = namibia_region
 			has_discovered = ROOT
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			south_atlantic_islands_area = {
-				type = all
+			num_of_owned_provinces_with = {
+				region = namibia_region
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			bengo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			wambu_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			skeleton_coast_land_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				value = 20
 			}
 		}
 		effect = {
-			south_atlantic_islands_area = {
-				add_province_modifier = {
-					name = germany_deutsch_suedwestafrika_province_modifier
-					duration = 7300
-				}
-			}
-			bengo_area = {
-				add_province_modifier = {
-					name = germany_deutsch_suedwestafrika_province_modifier
-					duration = 7300
-				}
-			}
-			wambu_area = {
-				add_province_modifier = {
-					name = germany_deutsch_suedwestafrika_province_modifier
-					duration = 7300
-				}
-			}
-			skeleton_coast_land_area = {
+			namibia_region = {
 				add_province_modifier = {
 					name = germany_deutsch_suedwestafrika_province_modifier
 					duration = 7300

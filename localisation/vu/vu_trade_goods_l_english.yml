@@ -171,3 +171,51 @@
 
  vu_olive_oil_production: "Olive Oil Production"
  desc_vu_olive_oil_production: ""
+ #
+ #VU additions by San Felipe & Jay
+ sand: "Sand"
+ sandDESC: "Sand has multiple uses that ranges from art to more practical uses being a primary component to create glass"
+ 
+ clay: "Clay"
+ clayDESC: "Clay was used by all civilisation thanks to its ease to use to mold container, structures or arts"
+ 
+ steel: "Steel"
+ steelDESC: "An alloy of iron and carbon with improved strength and fracture resistance compared to other forms of iron"
+ LATENT_STEEL_EFFECT: "§WSteel   5.00¤\nDevelopment Cost:§! §G-10%§!"
+ LATENT_STEEL_TECH: "£Diplomatic_technology_TGE£9"
+
+ regular_clothes: "Regular Clothes"
+ regular_clothesDESC: "Cloths uses by the populace on a daily basis in order to protect the user from the adverse weather and protect their modesty"
+ LATENT_REGULAR_CLOTHES_EFFECT: "§WRegular Clothes   5.00¤\nDevelopment Cost:§! §G-10%§!"
+ LATENT_REGULAR_CLOTHES_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ luxury_clothes: "Luxirious Clothes"
+ luxury_clothesDESC: "Clothes that are worn by the ruling elite"
+ LATENT_LUXURY_CLOTHES_EFFECT: "§WLuxury Clothes   8.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LUXURY_CLOTHES_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ accoutrements: "Accoutrements"
+ accoutrementsDESC: "Cooking ware, utensils, kettles, pots, pans"
+ LATENT_ACCOUTREMENTS_EFFECT: "§WAccoutrements   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_ACCOUTREMENTS_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ LATENT_GLASS_EFFECT: "§WGlass   5.00¤\nLocal production Efficiency:§! §G+10%§!"
+ LATENT_GLASS_TECH: "£Diplomatic_technology_TGE£9"
+
+ LATENT_PAPER_EFFECT: "§WPaper   5.00¤\nLocal State Maintenance:§! §G-10%§!"
+ LATENT_PAPER_TECH: "£Diplomatic_technology_TGE£9"
+
+ LATENT_POTTERY_EFFECT: "§WPottery   2.50¤\nLocal prosperity growth:§! §G+0.10§!"
+ LATENT_POTTERY_TECH: "£Diplomatic_technology_TGE£9"
+
+ english_tea: "English Tea"
+ english_teaDESC: "Tea that would calmly cause multiple wars"
+ LATENT_ENGLISH_TEA_EXPRESSO_EFFECT: "§WProcessed Drinks \nDevelopment Cost:§! §G-15%§!"
+ LATENT_ENGLISH_TEA_EXPRESSO_TECH: "£Diplomatic_technology_TGE£9"
+ expresso: "Expresso"
+ expressoDESC: "Brews from coffee beans, nothing gets you started like an expresso"
+
+ medicaments: "Medicaments"
+ medicamentsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_MEDICAMENTS_EFFECT: "§WMedicaments   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_MEDICAMENTS_TECH: "£Diplomatic_technology_TGE£9"

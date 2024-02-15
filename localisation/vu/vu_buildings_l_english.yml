@@ -299,6 +299,26 @@
  building_oil_well: "Oil Well"
  
  #LATENT
+ building_potters: "Potters"
+ building_potters_desc: "§TProvince Requirements:§!\n-Trade Good: §YClay§!\n\n§TEffects:§!\n-Trade good change to: §YPottery§!\n"
+ building_papermill: "Papermill"
+ building_papermill_desc: "§TProvince Requirements:§!\n-Trade Good: §YLumber§!\n\n§TEffects:§!\n-Trade good change to: §YPaper§!\n"
+ building_regular_cloth_workshop: "Cloth Merchants"
+ building_regular_cloth_workshop_desc: "§TProvince Requirements:§!\n-Trade Good: §YCloth§!\n\n§TEffects:§!\n-Trade good change to: §YRegular Clothes§!\n"
+ building_luxury_cloth_workshop: "Luxury Cloth Establishment"
+ building_luxury_cloth_workshop_desc: "§TProvince Requirements:§!\n-Trade Good: §YCloth§!\n\n§TEffects:§!\n-Trade good change to: §YLuxury Clothes§!\n"
+ building_luxury_furniture_workshop: "Luxury Furniture"
+ building_luxury_furniture_workshop_desc: "§TProvince Requirements:§!\n-Trade Good: §YLumber§! §OOR§! §YEbony§!\n\n§TEffects:§!\n-Trade good change to: §YWoodworkings§! §OOR§! §YEbony§!\n"
+ building_utensil_workshop: "Accoutrements factory"
+ building_utensil_workshop_desc: "§TProvince Requirements:§!\n-Trade Good: §YIron§! §OOR§! §YCopper§!\n\n§TEffects:§!\n-Trade good change to: §YAccoutrements§!\n"
+ building_glassmaker: "Glassmakers"
+ building_glassmaker_desc: "§TProvince Requirements:§!\n-Trade Good: §YSand§!\n\n§TEffects:§!\n-Trade good change to: §YGlass§!\n"
+ building_steel_foundry: "Steel Foundry"
+ building_steel_foundry_desc: "§TProvince Requirements:§!\n-Trade Good: §YIron§!\n\n§TEffects:§!\n-Trade good change to: §YSteel§!\n"
+ building_brewery: "Brewery"
+ building_brewery_desc: "§TProvince Requirements:§!\n-Trade Good: §YCoffe Beans§! §OOR§! §YTea Leaves§! §OOR§! §YGrain§!\n\n§TEffects:§!\n-Trade good change to: §YExpresso§! §OOR§! §YEnglish Tea§! §OOR§! §YBeer§!\n"
+ building_medical_facility: "Apothecary"
+ building_medical_facility_desc: "§TProvince Requirements:§!\n-Trade Good: §YApiculture§!\n\n§TEffects:§!\n-Trade good change to: §YMedicament§!\n"
  #Potters
  #Dairy farm
  #Butchers
