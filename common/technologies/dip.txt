@@ -458,7 +458,7 @@ technology = { #Carracks & Caravel
 	
 	regular_cloth_workshop = yes
 	luxury_cloth_workshop = yes
-	luxury_furniture_workshop = true
+	luxury_furniture_workshop = yes
 	utensil_workshop = yes
 	glassmaker = yes
 	potters = yes

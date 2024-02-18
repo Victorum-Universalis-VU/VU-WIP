@@ -59,4 +59,51 @@ spriteTypes = {
 		texturefile = "gfx//interface//trade_goods//pottery_icon.png"
 		loadType = "INGAME"
 	}
+
+	#NEW by SF
+	spriteType = {
+		name = "GFX_locomotives_icon"
+		texturefile = "gfx//interface//trade_goods//locomotives_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_tractors_icon"
+		texturefile = "gfx//interface//trade_goods//tractors_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bicycles_icon"
+		texturefile = "gfx//interface//trade_goods//bicycles_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_motorcycles_icon"
+		texturefile = "gfx//interface//trade_goods//motorcycles_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_automobiles_icon"
+		texturefile = "gfx//interface//trade_goods//automobiles_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_airships_icon"
+		texturefile = "gfx//interface//trade_goods//airships_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_bricks_icon"
+		texturefile = "gfx//interface//trade_goods//bricks_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_cement_icon"
+		texturefile = "gfx//interface//trade_goods//cement_icon.png"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_limestone_icon"
+		texturefile = "gfx//interface//trade_goods//limestone_icon.png"
+		loadType = "INGAME"
+	}
 }

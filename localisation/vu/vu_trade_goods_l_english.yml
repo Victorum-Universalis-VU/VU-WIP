@@ -219,3 +219,59 @@
  medicamentsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
  LATENT_MEDICAMENTS_EFFECT: "§WMedicaments   5.00¤\nDevelopment Cost:§! §G-15%§!"
  LATENT_MEDICAMENTS_TECH: "£Diplomatic_technology_TGE£9"
+
+ #Prices of items below need to be amended. By San Felipe
+ locomotives: "Locomotives"
+ locomotivesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_LOCOMOTIVES_EFFECT: "§WLocomotives   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LOCOMOTIVES_TECH: "£Diplomatic_technology_TGE£9"
+
+ tractors: "Tractors"
+ tractorsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_TRACTORS_EFFECT: "§WTractors   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_TRACTORS_TECH: "£Diplomatic_technology_TGE£9"
+
+ bicycles: "Bicycles"
+ bicyclesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_BICYCLES_EFFECT: "§WBicycles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_BICYCLES_TECH: "£Diplomatic_technology_TGE£9"
+
+ motorcycles: "Motorcycles"
+ motorcyclesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_MOTORCYCLES_EFFECT: "§WMotorcycles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_MOTORCYCLES_TECH: "£Diplomatic_technology_TGE£9"
+
+ automobiles: "Automobiles"
+ automobilesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_AUTOMOBILES_EFFECT: "§WAutomobiles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_AUTOMOBILES_TECH: "£Diplomatic_technology_TGE£9"
+
+ airships: "Airships"
+ airshipsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_AIRSHIPS_EFFECT: "§WAirships   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_AIRSHIPS_TECH: "£Diplomatic_technology_TGE£9"
+
+ bricks: "Bricks"
+ bricksDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_BRICKS_EFFECT: "§WBricks   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_BRICKS_TECH: "£Diplomatic_technology_TGE£9"
+
+ cement: "Cement"
+ cementDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_CEMENT_EFFECT: "§WCement   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_CEMENT_TECH: "£Diplomatic_technology_TGE£9"
+
+ limestone: "Limestone"
+ limestoneDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_LIMESTONE_EFFECT: "§WLimestone   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LIMESTONE_TECH: "£Diplomatic_technology_TGE£9"
+
+
+
+
+
+
+
+
+
+

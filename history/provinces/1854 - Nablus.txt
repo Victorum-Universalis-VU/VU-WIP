@@ -12,7 +12,7 @@ base_production = 4			#According to the traveller Cotwyk, Jaffa was a heap of ru
 base_manpower = 2 			#Still giving 5 dev, because it became important later and was important before
 is_city = yes
 add_core = MAM
-add_core = HMA
+add_core = PLE
 
 center_of_trade = 2
 extra_cost = 30

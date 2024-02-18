@@ -8748,3 +8748,138 @@ medicaments = {
 		factor = 0
 	}
 }
+
+locomotives = {
+	is_valuable = yes
+	color = { 0.86 0.17 0.06 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+tractors = {
+	is_valuable = yes
+	color = { 0.87 0.18 0.07 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+bicycles = {
+	is_valuable = yes
+	color = { 0.88 0.19 0.08 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+motorcycles = {
+	is_valuable = yes
+	color = { 0.89 0.20 0.09 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+automobiles = {
+	is_valuable = yes
+	color = { 0.90 0.21 0.10 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+airships = {
+	is_valuable = yes
+	color = { 0.91 0.22 0.11 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+bricks = {
+	is_valuable = yes
+	color = { 0.92 0.23 0.12 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+cement = {
+	is_valuable = yes
+	color = { 0.93 0.24 0.13 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+limestone = {
+	is_valuable = yes
+	color = { 0.94 0.25 0.14 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
