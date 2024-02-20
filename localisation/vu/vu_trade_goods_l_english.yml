@@ -271,15 +271,20 @@
  LATENT_HERBS_EFFECT: "§WHerbs   5.00¤\nDevelopment Cost:§! §G-15%§!"
  LATENT_HERBS_TECH: "£Diplomatic_technology_TGE£9"
 
- shoes_hats_gloves: "Shoes, Hats & Gloves"
- shoes_hats_glovesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
- LATENT_SHOES_HATS_GLOVES_EFFECT: "§WShoes, Hats & Gloves   5.00¤\nDevelopment Cost:§! §G-15%§!"
- LATENT_SHOES_HATS_GLOVES_TECH: "£Diplomatic_technology_TGE£9"
+ hats_and_gloves: "Hats & Gloves"
+ hats_and_glovesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_HATS_AND_GLOVES_EFFECT: "§WHats & Gloves   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_HATS_AND_GLOVES_TECH: "£Diplomatic_technology_TGE£9"
 
  military_equipment: "Military Equipment"
  military_equipmentDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
  LATENT_MILITARY_EQUIPMENT_EFFECT: "§WMilitary Equipment   5.00¤\nDevelopment Cost:§! §G-15%§!"
  LATENT_MILITARY_EQUIPMENT_TECH: "£Military_technology_TGE£9"
+
+ shoes: "Shoes"
+ shoesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_SHOES_EFFECT: "§WShoes   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_SHOES_TECH: "£Diplomatic_technology_TGE£9"
 
 
 

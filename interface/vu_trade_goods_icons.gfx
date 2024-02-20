@@ -108,14 +108,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_shoes_hats_gloves_icon"
-		texturefile = "gfx//interface//trade_goods//shoes_hats_gloves_icon.png"
+		name = "GFX_hats_and_gloves_icon"
+		texturefile = "gfx//interface//trade_goods//hats_and_gloves_icon.png"
 		loadType = "INGAME"
 	}
 
 	spriteType = {
 		name = "GFX_military_equipment_icon"
 		texturefile = "gfx//interface//trade_goods//military_equipment_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_shoes_icon"
+		texturefile = "gfx//interface//trade_goods//shoes_icon.png"
 		loadType = "INGAME"
 	}
 }

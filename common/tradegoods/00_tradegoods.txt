@@ -8899,7 +8899,7 @@ herbs = {
 	}
 }
 
-shoes_hats_gloves = {
+hats_and_gloves = {
 	is_valuable = yes
 	color = { 0.96 0.27 0.16 }
 	is_latent = yes
@@ -8917,6 +8917,21 @@ shoes_hats_gloves = {
 military_equipment = {
 	is_valuable = yes
 	color = { 0.97 0.28 0.17 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+shoes = {
+	is_valuable = yes
+	color = { 0.98 0.29 0.18 }
 	is_latent = yes
 	modifier = {
 		#TBD

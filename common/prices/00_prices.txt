@@ -194,5 +194,6 @@ bricks = { base_price = 6}           #TBD
 cement = { base_price = 6}           #TBD
 limestone = { base_price = 6}        #TBD
 herbs = { base_price = 6}        #TBD
-shoes_hats_gloves = { base_price = 6}        #TBD
+hats_and_gloves = { base_price = 6}        #TBD
 military_equipment = { base_price = 6}        #TBD
+shoes = { base_price = 6}        #TBD
