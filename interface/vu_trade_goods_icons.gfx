@@ -106,4 +106,16 @@ spriteTypes = {
 		texturefile = "gfx//interface//trade_goods//limestone_icon.png"
 		loadType = "INGAME"
 	}
+
+	spriteType = {
+		name = "GFX_shoes_hats_gloves_icon"
+		texturefile = "gfx//interface//trade_goods//shoes_hats_gloves_icon.png"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_military_equipment_icon"
+		texturefile = "gfx//interface//trade_goods//military_equipment_icon.png"
+		loadType = "INGAME"
+	}
 }

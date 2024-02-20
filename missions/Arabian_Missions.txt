@@ -30,6 +30,7 @@ ara_conquest = {
 			}
 			NOT = { tag = EGY }
 		}
+		has_country_flag = use_paradox_missions
 	}
 	
 	has_country_shield = no

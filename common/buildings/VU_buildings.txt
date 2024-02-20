@@ -5384,3 +5384,235 @@ Ai_def_push_tax = {
 		factor = 1000
 	}
 }
+
+fabric_workshop = { #This is the template for the fabric workshop. Basically, if we can get this to work, then it will enable an actual manufacturing system in-game and it can be used for other buildings that don't necessarily use all resources assigned to it at once but use them in the context of an OR.
+	cost = 1000
+	time = 12	
+
+	build_trigger = { #Basically what is needed in order for the manufactory to be built.
+		AND = {
+			#development = 10	
+			NOT = {	trade_goods = bricks }
+			NOT = {	trade_goods = cement }
+			NOT = {	trade_goods = glass }
+			NOT = {	has_province_flag = has_latent_good	}
+		}
+		FROM = { #Checking the country if it has these resources in order to build this workshop.
+			mil_tech = 24
+			#OR = {
+			#	innovativeness = 10
+			#	NOT = { has_dlc = "Rule Britannia" }
+			#}
+			#The resources below here are all needed at once in order to build manufacturing buildings.
+			check_variable = {
+				which = bricks
+				value = 0.2
+			}
+			check_variable = {
+				which = cement
+				value = 0.1
+			}
+			check_variable = {
+				which = glass
+				value = 0.1
+			}
+		}
+		ROOT = { #Checking the province if it has these resources in order to build this workshop.
+			AND = { #Again, I'm not 100% sure whether these work or not. The template itself was after all inspired by the cannon_foundry latent building.
+				development = 10	
+				NOT = {	
+					trade_goods = bricks
+					trade_goods = cement
+					trade_goods = glass
+					has_province_flag = has_latent_good
+				}
+			}
+		}
+		NOT = { has_global_flag = No_Fabrics }
+	}
+	on_built = { #Basically what happens when the manufactory is built.
+		hidden_effect = {
+			FROM = { #Check the country's resources
+				OR = { #I added in the OR here because I want to say that if the country has access to wool then use it or if it has cotton or silkworms. Please feel free to remove if it is wrong.
+			    	subtract_variable = {            
+			    		which = wool
+			    		value = 0.4
+			    	}
+			    	
+			    	subtract_variable = {            
+			    		which = cotton
+			    		value = 0.3
+			    	}
+    
+			    	subtract_variable = {            
+			    		which = silkworm
+			    		value = 0.3
+			    	}
+			    	
+			    	change_variable = {            
+			    		which = wool_used
+			    		value = 0.4
+			    	}
+			    	
+			    	change_variable = {            
+			    		which = cotton_used
+			    		value = 0.3
+			    	}
+    
+			    	change_variable = {            
+			    		which = silkworm_used
+			    		value = 0.3
+			    	}
+    
+			    }
+				
+				change_variable = {            
+					which = fabric_workshop_amount
+					value = 1
+				}
+				
+				country_event = { 
+					id = New_TradeGood_Events.4
+					days = 2
+				}
+			}
+
+			ROOT = { #Checking the province's resources
+				goods_save = yes
+				if = {
+					limit = {
+						check_variable = {
+							which = wool
+							value = 0.1
+						}
+					}
+					subtract_variable = {            
+				    	which = wool
+				    	value = 0.1
+				    }
+					change_variable = {            
+				    	which = wool_used
+				    	value = 0.1
+				    }
+					change_trade_goods = cloth
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							which = cotton
+							value = 0.1
+						}
+					}
+					subtract_variable = {            
+				    	which = cotton
+				    	value = 0.1
+				    }
+    
+				    change_variable = {            
+				    	which = cotton_used
+				    	value = 0.1
+				    }
+					change_trade_goods = cloth
+				}	
+				else_if = {
+					limit = {
+						check_variable = {
+							which = silkworm
+							value = 0.1
+						}
+					}
+					subtract_variable = {            
+				    	which = silkworm
+				    	value = 0.1
+				    }
+    
+				    change_variable = {            
+				    	which = silkworm_used
+				    	value = 0.1
+				    }
+					change_trade_goods = silk
+				}	
+				set_province_flag = has_latent_good
+				set_province_flag = No_fabrics
+			}
+		}
+	}
+	#Everything below here hasn't been done yet.
+	on_destroyed = { #Basically what happens when the building is destroyed.
+		hidden_effect = {
+			clr_province_flag = has_fabrics
+			clr_province_flag = has_latent_good
+			if = {	
+				limit = {
+					ROOT = {
+						NOT = { has_building = off } #This pertains to the off buildings above and this number can be anything after 9. So, off_10 for example.
+					}
+				}
+				FROM = {
+					change_variable = {            
+						which = copper
+						value = 0.4
+					}
+				
+					subtract_variable = {            
+						which = copper_used
+						value = 0.4
+					}
+					
+					change_variable = {            
+						which = tin
+						value = 0.3
+					}
+				
+					subtract_variable = {            
+						which = tin_used
+						value = 0.3
+					}
+				}
+			}
+			ROOT = { 
+				remove_building = off #Has to match whatever the top off is.
+				clr_province_flag = back_to_off
+			
+			}
+			
+			FROM = {
+				subtract_variable = {            
+					which = fabric_workshop_amount
+					value = 1
+				}
+				
+				country_event = { 
+					id = New_TradeGood_Events.4
+					days = 2
+				}
+			}
+			
+			ROOT = {
+				goods_back = yes	
+			}
+		}
+	}
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	ai_will_do = {
+		factor = 2000
+
+		modifier = {	
+			factor = 0
+			FROM = {
+				num_of_owned_provinces_with = {
+					value = 3
+					OR = {
+						trade_goods = cloth
+						trade_goods = silk
+					}
+				}
+			}
+			
+		}
+		
+	}
+}

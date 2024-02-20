@@ -8883,3 +8883,48 @@ limestone = {
 		factor = 0
 	}
 }
+
+herbs = {
+	is_valuable = yes
+	color = { 0.95 0.26 0.15 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+shoes_hats_gloves = {
+	is_valuable = yes
+	color = { 0.96 0.27 0.16 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+military_equipment = {
+	is_valuable = yes
+	color = { 0.97 0.28 0.17 }
+	is_latent = yes
+	modifier = {
+		#TBD
+	}
+	province = {
+		#TBD
+	}
+	chance = {
+		factor = 0
+	}
+}
