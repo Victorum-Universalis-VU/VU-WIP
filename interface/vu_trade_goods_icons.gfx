@@ -120,8 +120,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_shoes_icon"
-		texturefile = "gfx//interface//trade_goods//shoes_icon.png"
+		name = "GFX_shoes_and_boots_icon"
+		texturefile = "gfx//interface//trade_goods//shoes_and_boots_icon.png"
 		loadType = "INGAME"
 	}
 }
