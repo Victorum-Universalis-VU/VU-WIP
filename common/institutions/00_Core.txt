@@ -2362,6 +2362,7 @@ civil_service = {
 						has_reform = austrian_archduchy_reform
 						has_reform = appanage_reform
 						has_reform = byzantine_autocracy_reform
+						has_reform = macedonian_monarchy_reform
 						#has_reform = byzantine_transitional_gov_reform
 						has_reform = margraviate_reform
 						has_reform = roman_empire_reform

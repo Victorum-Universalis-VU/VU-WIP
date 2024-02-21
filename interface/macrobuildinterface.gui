@@ -3532,13 +3532,6 @@ guiTypes = {
 			maxHeight = 18
 			text = "LATENT_CANNED_GOODS_TECH"
 		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
-		}
 
 		###################################################################################################################################
 		#Regular cloth
@@ -3596,13 +3589,6 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_REGULAR_CLOTHES_TECH"
-		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
 		}
 
 		###################################################################################################################################
@@ -3662,13 +3648,6 @@ guiTypes = {
 			maxHeight = 18
 			text = "LATENT_LUXURY_CLOTHES_TECH"
 		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
-		}
 
 		###################################################################################################################################
 		#Luxury Furniture
@@ -3726,13 +3705,6 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_WOOD_TECH"
-		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
 		}
 
 		###################################################################################################################################
@@ -3792,13 +3764,6 @@ guiTypes = {
 			maxHeight = 18
 			text = "LATENT_ACCOUTREMENTS_TECH"
 		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
-		}
 
 		###################################################################################################################################
 		#Glassmaker workshop
@@ -3856,13 +3821,6 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_GLASS_TECH"
-		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
 		}
 
 		###################################################################################################################################
@@ -3930,13 +3888,6 @@ guiTypes = {
 			text = "LATENT_ENGLISH_TEA_EXPRESSO_TECH"
 		}
 		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
-		}
-		
 		###################################################################################################################################
 		#Paper Mill
 
@@ -3993,13 +3944,6 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_PAPER_TECH"
-		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
 		}
 		
 		###################################################################################################################################
@@ -4059,13 +4003,6 @@ guiTypes = {
 			maxHeight = 18
 			text = "LATENT_POTTERY_TECH"
 		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
-		}
 
 		###################################################################################################################################
 		#Medical Institue
@@ -4123,13 +4060,6 @@ guiTypes = {
 			maxWidth = 180
 			maxHeight = 18
 			text = "LATENT_MEDICAMENTS_TECH"
-		}
-		
-		iconType = {
-			name = "current_building"
-			#Moves around to be on top of current building
-			spriteType = "GFX_unitpanel_button_large_glow"
-			alwaystransparent = yes
 		}
 		
 		###################################################################################################################################

@@ -1,5 +1,5 @@
 government = monarchy #absolutist
-add_government_reform = feudalism_reform #alexandrian_monarchy
+add_government_reform = macedonian_monarchy_reform #alexandrian_monarchy
 #technology_group = eastern
 technology_group = byzantine_tech_group
 unit_type = eastern
