@@ -282,17 +282,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PIE }
-			if = {
-				limit = {
-					exists = SAV
-				}
-				NOT = {
-					any_province = {
-						region = italy_region
-						owned_by = SAV
-					}
-				}
-			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no

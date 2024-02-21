@@ -80,8 +80,6 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			ms_calculate_yearly_manpower = yes
-			set_variable = { which = integrated_tribe_subject_yearly_manpower_var which = autonomous_dominion_global_manpower_var }
 			if = {
 				limit = {
 					overlord = {

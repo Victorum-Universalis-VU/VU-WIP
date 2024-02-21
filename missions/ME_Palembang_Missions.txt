@@ -564,6 +564,7 @@ PLB_missions_3_non_pirate = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
+					has_saved_event_target = EmperorOfChina
 				}
 				OR = {
 					is_emperor_of_china = yes
@@ -625,6 +626,7 @@ PLB_missions_3_non_pirate = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					is_emperor_of_china = no
+					has_saved_event_target = EmperorOfChina
 					any_country = {
 						is_emperor_of_china = yes
 					}
@@ -639,6 +641,7 @@ PLB_missions_3_non_pirate = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					is_emperor_of_china = no
+					has_saved_event_target = EmperorOfChina
 					any_country = {
 						is_emperor_of_china = yes
 					}

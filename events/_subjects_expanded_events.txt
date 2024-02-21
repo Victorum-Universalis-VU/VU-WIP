@@ -49,8 +49,6 @@ country_event = {
 		hidden_effect = {
 			count_num_of_subjects_of_type = { type = protectorate }
 			count_num_of_subjects_of_type = { type = puppet_state }
-			count_num_of_subjects_of_type = { type = dominion }
-			count_num_of_subjects_of_type = { type = autonomous_dominion }
 			count_num_of_subjects_of_type = { type = roman_client_kingdom }
 			count_num_of_subjects_of_type = { type = voivodeship }
 			count_num_of_subjects_of_type = { type = fief_subject }
@@ -103,22 +101,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		display_subjects_of_type = { type = puppet_state }
-	}
-
-	option = {
-		name = subjects_expanded_events2.EVTOPT3
-
-		ai_chance = { factor = 100 }
-
-		display_subjects_of_type = { type = dominion }
-	}
-
-	option = {
-		name = subjects_expanded_events2.EVTOPT4
-
-		ai_chance = { factor = 100 }
-
-		display_subjects_of_type = { type = autonomous_dominion }
 	}
 
 	option = {
@@ -406,8 +388,6 @@ country_event = {
 			clr_country_flag = used_subjects_expanded_info_decision
 			clear_display_variable_for_subjects_of_type = { type = protectorate }
 			clear_display_variable_for_subjects_of_type = { type = puppet_state }
-			clear_display_variable_for_subjects_of_type = { type = dominion }
-			clear_display_variable_for_subjects_of_type = { type = autonomous_dominion }
 			clear_display_variable_for_subjects_of_type = { type = roman_client_kingdom }
 			clear_display_variable_for_subjects_of_type = { type = voivodeship }
 			clear_display_variable_for_subjects_of_type = { type = fief_subject }
@@ -458,7 +438,6 @@ country_event = {
 	trigger = {
 		ai = no
 		NOT = { has_global_flag = idea_changing_mod_active }
-		NOT = { has_global_flag = se_dominions_disabled }
 	#	NOT = { has_global_flag = idea_variation_voting_started }
 	#	NOT = { is_expanded_mod_active = { mod = idea_groups } }
 	}
@@ -472,7 +451,6 @@ country_event = {
 
 		custom_tooltip = SE_IDEA_CHANGING_MOD_ACTIVE_TT
 		set_global_flag = idea_changing_mod_active
-		clr_global_flag = se_dominions_disabled
 	}
 
 	option = {
@@ -482,16 +460,6 @@ country_event = {
 
 		custom_tooltip = SE_NO_IDEA_CHANGING_MOD_ACTIVE_TT
 		clr_global_flag = idea_changing_mod_active
-		clr_global_flag = se_dominions_disabled
-	}
-
-	option = {
-		name = subjects_expanded_events3.EVTOPT3
-
-		ai_chance = { factor = 100 }
-
-		custom_tooltip = SE_FULLY_DISABLE_DOMINION_DECISIONS_TT
-		set_global_flag = se_dominions_disabled
 	}
 }
 
@@ -546,22 +514,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		display_info_for_subject_type = { type = puppet_state }
-	}
-
-	option = {
-		name = subjects_expanded_events5.EVTOPT3
-
-		ai_chance = { factor = 100 }
-
-		display_info_for_subject_type = { type = dominion }
-	}
-
-	option = {
-		name = subjects_expanded_events5.EVTOPT4
-
-		ai_chance = { factor = 100 }
-
-		display_info_for_subject_type = { type = autonomous_dominion }
 	}
 
 	option = {

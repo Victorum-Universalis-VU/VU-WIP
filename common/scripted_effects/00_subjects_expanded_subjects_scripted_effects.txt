@@ -7,17 +7,7 @@ transfer_subjects_of_type_to = {
 		}
 		every_subject_country = {
 			limit = {
-				OR = {
-					is_subject_of_type = $type$
-					AND = {
-						PREV = { has_country_flag = transfer_subjects_of_type_dominion }
-						is_subject_of_type = dominion_tc
-					}
-					AND = {
-						PREV = { has_country_flag = transfer_subjects_of_type_autonomous_dominion }
-						is_subject_of_type = autonomous_dominion_tc
-					}
-				}
+				is_subject_of_type = $type$
 			}
 			grant_independence = yes
 			$who$ = {
@@ -37,17 +27,7 @@ count_num_of_subjects_of_type = {
 		set_variable = { which = num_of_subjects_of_type_$type$ value = 0 }
 		every_country = {
 			limit = {
-				OR = {
-					is_subject_of_type = $type$
-					AND = {
-						has_global_flag = count_num_of_subjects_of_type_dominion
-						is_subject_of_type = dominion_tc
-					}
-					AND = {
-						has_global_flag = count_num_of_subjects_of_type_autonomous_dominion
-						is_subject_of_type = autonomous_dominion_tc
-					}
-				}
+				is_subject_of_type = $type$
 			}
 			PREV = {
 				change_variable = { which = num_of_subjects_of_type_$type$ value = 1 }
@@ -77,29 +57,7 @@ display_subjects_of_type = {
 			limit = {
 				is_capital = yes
 				owner = {
-					OR = {
-						is_subject_of_type = $type$
-						AND = {
-							variable_arithmetic_trigger = {
-								export_to_variable = {
-									which = $type$_var
-									value = 1
-								}
-								check_variable = { which = dominion_var value = 1 }
-							}
-							is_subject_of_type = dominion_tc
-						}
-						AND = {
-							variable_arithmetic_trigger = {
-								export_to_variable = {
-									which = $type$_var
-									value = 1
-								}
-								check_variable = { which = autonomous_dominion_var value = 1 }
-							}
-							is_subject_of_type = autonomous_dominion_tc
-						}
-					}
+					is_subject_of_type = $type$
 				}
 			}
 			custom_tooltip = DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE
@@ -147,10 +105,6 @@ display_info_for_subject_type = {
 							OR = {
 								check_variable = { which = subject_protectorate_selected value = 1 }
 								check_variable = { which = subject_puppet_state_selected value = 1 }
-								check_variable = { which = subject_puppet_dominion_selected value = 1 }
-								check_variable = { which = subject_puppet_dominion_tc_selected value = 1 }
-								check_variable = { which = subject_puppet_autonomous_dominion_selected value = 1 }
-								check_variable = { which = subject_puppet_autonomous_dominion_tc_selected value = 1 }
 								check_variable = { which = subject_puppet_pirate_brotherhood_vassal_selected value = 1 }
 								check_variable = { which = subject_puppet_imperial_tributary_state_selected value = 1 }
 								check_variable = { which = subject_puppet_trade_outpost_selected value = 1 }
@@ -200,8 +154,6 @@ display_info_for_subject_type = {
 					which = subject_$type$_selected
 					value = 1
 				}
-				NOT = { check_variable = { which = subject_dominion_selected value = 1 } }
-				NOT = { check_variable = { which = subject_autonomous_dominion_selected value = 1 } }
 				#NOT = { check_variable = { which = subject_salic_personal_union_selected value = 1 } }
 				NOT = { check_variable = { which = subject_nahuatl_vassal_selected value = 1 } }
 				NOT = { check_variable = { which = subject_puppet_state_selected value = 1 } }
@@ -372,8 +324,6 @@ display_info_for_subject_type = {
 					value = 1
 				}
 				NOT = { check_variable = { which = subject_protectorate_selected value = 1 } }
-				NOT = { check_variable = { which = subject_dominion_selected value = 1 } }
-				NOT = { check_variable = { which = subject_autonomous_dominion_selected value = 1 } }
 				NOT = { check_variable = { which = subject_naval_march_selected value = 1 } }
 				NOT = { check_variable = { which = subject_integrated_personal_union_selected value = 1 } }
 				NOT = { check_variable = { which = subject_voivodeship_selected value = 1 } }

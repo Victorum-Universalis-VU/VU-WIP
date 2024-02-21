@@ -65,26 +65,6 @@ can_colonize_province = {
 			FROM = { capital_scope = { continent = ROOT } }
 		}
 	}
-
-	### Dominions cant colonize 
-	condition = {
-		tooltip = "VU_Subject_Colonization"
-		
-		potential = {
-			FROM = { 
-				OR = {
-					is_subject_of_type = dominion
-					is_subject_of_type = dominion_tc
-					is_subject_of_type = autonomous_dominion
-					is_subject_of_type = autonomous_dominion_tc
-				}
-			}
-		}
-		
-		allow = {
-			FROM = { capital_scope = { area = ROOT } }
-		}
-	}
 	
 	
 	### Hard to Colonize

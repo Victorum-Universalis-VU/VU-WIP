@@ -811,6 +811,7 @@ MLC_missions_4 = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					is_emperor_of_china = no
+					has_saved_event_target = EmperorOfChina
 					any_country = {
 						is_emperor_of_china = yes
 					}
@@ -825,6 +826,7 @@ MLC_missions_4 = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					is_emperor_of_china = no
+					has_saved_event_target = EmperorOfChina
 					any_country = {
 						is_emperor_of_china = yes
 					}

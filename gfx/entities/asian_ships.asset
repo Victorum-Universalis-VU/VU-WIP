@@ -261,10 +261,6 @@ entity = {
 	state = { name = "walk" 		animation = "walk" }
 	state = { name = "retreat" 		animation = "walk" }
 	state = { name = "attack"		animation = "attack"
-		event = { time = 0.8	node = "gun_01"	particle = "asian_ship_cannon" }
-		event = { time = 1.1	node = "gun_02"	particle = "asian_ship_cannon" }
-		event = { time = 1.6	node = "gun_03"	particle = "asian_ship_cannon" }
-		event = { time = 2.2	node = "gun_04"	particle = "asian_ship_cannon" }
 	}
 }
 
@@ -278,10 +274,6 @@ entity = {
 	state = { name = "walk" 		animation = "walk" }
 	state = { name = "retreat" 		animation = "walk" }
 	state = { name = "attack"		animation = "attack"
-		event = { time = 0.8	node = "gun_01"	particle = "asian_ship_cannon" }
-		event = { time = 1.1	node = "gun_02"	particle = "asian_ship_cannon" }
-		event = { time = 1.6	node = "gun_03"	particle = "asian_ship_cannon" }
-		event = { time = 2.2	node = "gun_04"	particle = "asian_ship_cannon" }
 	}
 }
 
@@ -295,10 +287,6 @@ entity = {
 	state = { name = "walk" 		animation = "walk" }
 	state = { name = "retreat" 		animation = "walk" }
 	state = { name = "attack"		animation = "attack"
-		event = { time = 0.8	node = "gun_01"	particle = "asian_ship_cannon" }
-		event = { time = 1.1	node = "gun_02"	particle = "asian_ship_cannon" }
-		event = { time = 1.6	node = "gun_03"	particle = "asian_ship_cannon" }
-		event = { time = 2.2	node = "gun_04"	particle = "asian_ship_cannon" }
 	}
 }
 

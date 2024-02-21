@@ -1207,11 +1207,10 @@ republic = {
 		    	national_assembly_republic_reform
 		    	french_second_republic_reform
 		    	french_third_republic_reform
-		    	#self_governing_dominion_vu_government
-		    	#self_governing_super_dominion_vu_government
+		    	self_governing_dominion_vu_government
 		    	#GE
 				florentine_republic
-				american_government
+				#american_government
 				genoese_republic
 				italian_republic_reform
 				signoria_baglioni_reform
