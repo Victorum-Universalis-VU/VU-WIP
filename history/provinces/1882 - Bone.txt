@@ -15,7 +15,7 @@ base_manpower = 2
 is_city = yes
 
 #Claimants
-add_core = CAR
+add_core = QTH
 
 #Buildings
 

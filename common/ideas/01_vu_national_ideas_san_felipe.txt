@@ -155,7 +155,7 @@ GTA_ideas = {
 	}
 }
 
-CAR_ideas = {
+QTH_ideas = {
 	free = yes
 	start = {
 		merc_maintenance_modifier = -0.25
@@ -167,7 +167,7 @@ CAR_ideas = {
 	}
 
 	trigger = {
-		tag = CAR
+		tag = QTH
 	}
 
 	a_navigators_legacy = {
