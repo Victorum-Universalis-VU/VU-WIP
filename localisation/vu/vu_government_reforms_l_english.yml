@@ -226,12 +226,54 @@
  #byzantine_transitional_gov_reform: "Transitional Byzantine Government"
  #byzantine_transitional_gov_reform_desc: "Byzantine empire has survived the era of greatest turmoil and is slowly reforming itself into functioning state once again. The empire is undergoing a period of reforms and experimentation as the ruling class tries to reestablish its authority."
  #
- #VU New San Marino Reforms from Shattered Europa by San Felipe
+ #VU New Roman Diarchy reforms from Shattered Europa by San Felipe
  roman_diarchy_reform: "Roman Diarchy"
  roman_diarchy_reform_desc: "A form of government in which two individuals are joint heads of state. Most diarchs hold their position for life, passing the position to their children or other family members."
  roman_diarchy: "Roman Diarchy"
- roman_diarchy_desc: "Following the overthrow of the Roman monarchy, the Romans established an oligarchic Roman Republic which divided supreme executive power between two consuls, both elected each year and each holding a veto over the other's actions. The historical duumviri were not rulers but magistrates, performing various judicial, religious, or public functions. "
+ roman_diarchy_desc: "Following the overthrow of the Roman monarchy, the Romans established an oligarchic Roman Republic which divided supreme executive power between two consuls, both elected each year and each holding a veto over the other's actions. The historical duumviri were not rulers but magistrates, performing various judicial, religious, or public functions."
  roman_diarchy_reform_ruler: "Consul"
+ #
+ #VU New Theban League reform by Don Brom
+ theban_league_reform: "Theban Hegemony"
+ theban_league_reform_desc: "A form of government in which two people ruled and were fully committed to an aggressive foreign policy, who were also relied on at times of war to win any battle through feats of innovation."
+ theban_league_legacy: "Theban Hegemony"
+ theban_league_legacy_desc: "."
+ theban_league_reform_ruler: "Boeotarch"
+ #
+ #VU New Spartan Diarchy reform by Don Brom
+ spartan_diarchy_reform: "Spartan Diarchy"
+ spartan_diarchy_reform_desc: "A form of government in which two individuals are joint heads of state. Most diarchs hold their position for life, passing the position to their children or other family members."
+ spartan_diarchy_legacy: "Spartan Diarchy"
+ spartan_diarchy_legacy_desc: "Sparta was a diarchy, meaning it had two kings instead of the usual one within a monarchy. This is in great contrast to other ancient Greek city-states that usually only had one king until the Archaic period when most became republics or democracies. The kings were of two royal houses, the Agiadai and the Eurypontidai."
+ spartan_diarchy_reform_ruler: "King"
+ #
+ #VU New Athenian Democracy reform by Don Brom
+ athenian_democracy_reform: "Athenian Democracy"
+ athenian_democracy_reform_desc: "A form of direct democratic government in which Athens was the seat of power and which involved adult male citizens over the age of 20 taking part in a system called 'Sortition' which involved the process of an assembly of people chosing their rulers by means of lottery."
+ athenian_democracy_legacy: "Athenian Democracy"
+ athenian_democracy_legacy_desc: "Athenian democracy created at Athens was direct, rather than representative meaning that any adult male citizen over the age of 20 could take part and it was also a required duty to do so. The officials of the democracy were in part elected by the an assembly and in large part chosen by lottery in a process called 'Sortition'."
+ athenian_democracy_reform_ruler: "Strategos"
+ #
+ #VU New Corinthian Oligarchy reform by Don Brom
+ corinthian_oligarchy_reform: "Corinthian Oligarchy"
+ corinthian_oligarchy_reform_desc: "Corinthian Oligarchy is a form of government associated with Corinth since the end of the Cypselid tyranny. The presence of a well- disposed allied army which could be used to overawe the ruling classes offered a golden oppor- tunity for the democrates to gain control."
+ corinthian_oligarchy_legacy: "Corinthian Oligarchy"
+ corinthian_oligarchy_legacy_desc: "Corinthian Oligarchy is a form of government associated with Corinth since the end of the Cypselid tyranny. The presence of a well- disposed allied army which could be used to overawe the ruling classes offered a golden oppor- tunity for the democrates to gain control."
+ corinthian_oligarchy_reform_ruler: "Tyrant"
+ #
+ #VU New Selucian Kingdom reform by Don Brom
+ selucian_kingdom_reform: "Selucian Monarchy"
+ selucian_kingdom_reform_desc: "Selucian monarchy, whether large or small, whether Greek or indigenous, was a form of government that placed the military uniquely above anything else and on par with personal monarchy, having its origins in a system called the 'Balot'."
+ selucian_kingdom_legacy: "Selucian Monarchy"
+ selucian_kingdom_legacy_desc: "Selucian Monarchy, whether large or small, whether Greek or indigenous, was a form of government that placed the military uniquely above anything else and on par with personal monarchy, having its origins in a system called the 'Balot'."
+ selucian_kingdom_reform_ruler: "Nicator"
+ #
+ #VU New Selucian Satrapy reform by Don Brom
+ selucian_satrapy_reform: "Selucian Satrapy"
+ selucian_satrapy_reform_desc: "The Selucid Empire, like its predecessors, continued the satrapy system and the other traditional forms of governance developed by the old Achaemenid Empire. The Seleucid monarchs appointed the satraps, who often appointed Greek men to rule over non-Greek lands."
+ selucian_satrapy_legacy: "Selucian Satrapy"
+ selucian_satrapy_legacy_desc: "The Selucid Empire, like its predecessors, continued the satrapy system and the other traditional forms of governance developed by the old Achaemenid Empire. The Seleucid monarchs appointed the satraps, who often appointed Greek men to rule over non-Greek lands."
+ selucian_satrapy_reform_ruler: "Satrapis"
  #
  #VU New Icelandic Reforms by San Felipe
  althing_elite_reform: "Alþingi"

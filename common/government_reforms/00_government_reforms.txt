@@ -1652,7 +1652,7 @@ phoenician_elective_monarchical_republic_legacy = {
 	# government mechanics flags go here
 	allow_normal_conversion = no
 	legacy_government = yes
-	icon = "crown"
+	icon = "phoenician_republic"
 
 	valid_for_new_country = no
 	allow_convert = no
@@ -1679,7 +1679,7 @@ phoenician_elective_monarchical_republic_legacy = {
 	}
 }
 
-phoenician_elective_monarchical_republic_reform_legacy = {
+carthaginian_elective_monarchical_republic_reform_legacy = {
 	# government mechanics flags go here
 	allow_normal_conversion = no
 	legacy_government = yes
@@ -4061,3 +4061,219 @@ scottish_monarchy_legacy = {
 }
 
 #End of VU addition by San Felipe
+
+#VU additions by DonBrom
+
+#Theban gov reform
+theban_league_legacy = {
+	icon = "theban_league_republic_reform"
+	allow_normal_conversion = no
+	legacy_government = yes
+	duration = 2
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	republican_name = yes
+	royal_marriage = no
+
+	potential = {
+	    OR = {
+		   tag = THB
+		   was_tag = THB
+		   has_reform = theban_league_reform
+		}
+	}
+
+	republic = yes
+
+	modifiers = {
+		global_trade_power = 0.10
+		merchants = 1
+		trade_efficiency = 0.10
+		max_absolutism = -50
+	}
+
+	factions = {
+		mr_aristocrats
+		mr_traders
+		mr_guilds
+	}
+}
+
+spartan_diarchy_legacy = {
+    icon = "spartan_diarchy_republic_reform"
+	allow_normal_conversion = no
+	legacy_government = yes
+    valid_for_new_country = no
+    valid_for_nation_designer = yes
+
+	nation_designer_cost = 30
+    republican_name = yes
+    royal_marriage = yes
+
+	potential = {
+	    OR = {
+		   tag = SPT
+		   was_tag = SPT
+		   has_reform = spartan_diarchy_reform
+		}
+	}
+	
+	republic = yes
+
+	modifiers = {
+   		governing_capacity_modifier = -0.20
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = 10
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+athenian_democracy_legacy = {
+	icon = "athenian_democracy_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = no
+	duration = 1
+
+	republican_name = yes
+	royal_marriage = no
+
+	potential = {
+	    OR = {
+		   tag = AAT
+		   was_tag = AAT
+		   has_reform = athenian_democracy_reform
+		}
+	}
+
+	republic = yes
+
+	modifiers = {
+		heavy_ship_power = 0.1
+		ship_durability = 0.05
+    	global_ship_trade_power = 0.15
+		max_absolutism = -50
+	}
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+
+}
+
+corinthian_oligarchy_legacy = {
+	icon = "corinthian_oligarchy_republic_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	duration = 4
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	potential = {
+	    OR = {
+		   tag = CTH
+		   was_tag = CTH
+		   has_reform = corinthian_oligarchy_reform
+		}
+	}
+
+	republican_name = yes
+	royal_marriage = no
+	
+
+
+	republic = yes
+
+	modifiers = {
+		production_efficiency = 0.10
+		mercantilism_cost = -0.1
+		global_trade_goods_size = 0.05
+	}
+}
+
+selucian_kingdom_legacy = {
+	icon = "selucian_monarchy_reform"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	allow_vassal_war = no
+	allow_vassal_alliance = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+
+	potential = {
+	    OR = {
+		   tag = SEL
+		   was_tag = SEL
+		   has_reform = selucian_kingdom_reform
+		}
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		government_abilities = {
+			shogunate_mechanic
+		}
+	}
+	
+    fixed_rank = 3
+	monarchy = yes
+
+	modifiers = {
+		governing_capacity_modifier = -0.2
+		max_absolutism = 5
+		reduced_liberty_desire = 15
+		vassal_forcelimit_bonus = 0.1
+	}
+
+	can_change_primary_culture = no
+}
+
+selucian_satrapy_legacy = {
+	icon = "selucian_satrapy_monarchy_reform"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	potential = {
+		OR = {
+			is_subject_of = SEL
+			has_reform = selucian_satrapy_reform
+		}
+	}
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+    fixed_rank = 1
+
+	monarchy = yes
+
+	modifiers = {
+		global_manpower_modifier = 0.10
+		infantry_power = 0.10
+	}
+}
+

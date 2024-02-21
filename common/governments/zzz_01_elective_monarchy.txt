@@ -15,7 +15,7 @@ elective_monarchy = {
 			reforms = {
 				feudalism_reform
 				elective_monarchy_reform
-				phoenician_elective_monarchical_republic_reform
+				carthaginian_elective_monarchical_republic_reform
 			}
 		}
 		candidates_for_election = {
@@ -520,6 +520,8 @@ elective_monarchy = {
 		iqta_legacy
 		daimyo_legacy
 		shogunate_legacy
+		selucian_kingdom_legacy
+		selucian_satrapy_legacy
 		indep_daimyo_legacy
 		principality_legacy
 		#greek_aparchate_legacy
@@ -577,7 +579,7 @@ elective_monarchy = {
 		celestial_empire
 		crown_of_saint_wenceslaus
 		elective_monarchy_reform
-		phoenician_elective_monarchical_republic_reform
+		carthaginian_elective_monarchical_republic_reform
 		polish_constitutionalism_reform
 		empire_of_japan_reform
 	}
@@ -586,6 +588,8 @@ elective_monarchy = {
 	exclusive_reforms = {
 		daimyo
 		shogunate
+		selucian_kingdom_reform
+		selucian_satrapy_reform
 		indep_daimyo
 		states_general_reform
 		parliamentary_reform

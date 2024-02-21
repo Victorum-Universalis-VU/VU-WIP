@@ -5775,13 +5775,115 @@ baltic	= {
 
 byzantine = {
 	graphical_culture = greekgfx
-
-	greek = {
+	greek = { #Athens, Sparta etc
 		graphical_culture = greekgfx
 		primary = GRE
 	}
-	phoenician = { #EU Rome
-	    primary = CAR
+	spartan = {
+	    graphical_culture = greekgfx
+		primary = SPT
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid Zagreid Zosimid 
+			Zoticid
+		}
+		male_names = {
+		    Alcibiades Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos 
+			Archelaus Argaeus Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus 
+			Echemos	Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
+			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
+			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos Phidias 
+			Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos Posidaeios Proctus 
+			Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles Theocritus Theodoros Therapon 
+			Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros	Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria 
+			Diantha Dionysia Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa 
+			Olympia Phila Phile	Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	athenian = {
+	    graphical_culture = greekgfx
+		primary = AAT
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid Zagreid Zosimid 
+			Zoticid
+		}
+		male_names = {
+			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
+			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos Ehnon Ephron 
+			Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonippus Lycurgus Lydiadas Lysander 
+			Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates	Nicodemus Nikandros Nikomedes Nikon Olympos 
+			Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos Phidias Philocrates Philon Philotheos Philip Phocas Phyleus 
+			Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius 
+			Sthenelaus Teleclus Telesphoros Themistocles Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon 
+			Xenotimos Zagreus Zenodoros	Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria 
+			Diantha Dionysia Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa 
+			Olympia Phila Phile	Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	theban = {
+	    graphical_culture = greekgfx
+		primary = THB
+	}
+	corinthian = {
+	    graphical_culture = greekgfx
+		primary = CTH
+	}
+	greco_bactrian = { #Afghanistani Greeks
+	    primary = BAK
+		graphical_culture = greekgfx
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid Milkiramid 
+			Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes Eshbaal Eugoras 
+			Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	greco_selucid = { #Selucid Greeks
+	    primary = SEL
+		graphical_culture = persiangfx
+		dynasty_names = {
+			Selucid
+		}
+		male_names = {
+			Antigonus Antiochis Antiochus Alexander Selucius Adrianos Adrian Akakios Alexandros Alexios Alexis Anastasios Anastasius Anatolios Andreas Andrew 
+			Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios Arsenios Artemios Athanasios Athanasius Bardas Bartholomaios Bartolomeus 
+			Basileios Basil Belisarios Belisarius Boethios Bosporios Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
+			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel 
+			Gennadios Georgios George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias Herakleios Heracles Hierotheos Himerios Georgios 
+			Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios	Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios 
+			Hektor Herakles Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos Skantarios Stefanos Theodoros Thomas Basileios 
+			Prokopios Ioannes Iason Bartholomaios Konstas Basiliskos 
+		}
+	}
+	greco_macedonian = { #Macedonian Greeks
+	    primary = MAC
+		graphical_culture = greekgfx
+		dynasty_names = {
+			Antigonid
+		}
+		male_names = {
+			Antigonus Alexander Adrianos Adrian Akakios Alexandros Alexios Alexis Anastasios Anastasius Anatolios Andreas Andrew Andronikos Andronicus Anthemios Anthimos 
+			Antiochos Antonios Antonius Apollonios Arsenios Artemios Athanasios Athanasius Bardas Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios 
+			Bosporios Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios Demetrius Diogenes Dionysios Dionysus Dorotheos 
+			Eirenaios Eudoxios Eustratios Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios George Gerasimos Germanos Germanus 
+			Gregoras Gregory Gregorios Gregory Hektorios Helias Herakleios Heracles Hierotheos Himerios Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias 
+			Alexeios Ambrosios	Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles Kastor Manuel Matthaios Nestor Nikomedes 
+			Orestes Palaemon Pelagios Petros Philemon Philippos Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios Konstas Basiliskos 
+		}
+	}
+	phoenician = { #Levantine Greeks
+	    primary = QTH
+		graphical_culture = greekgfx
 		dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid Milkiramid Philosirid
 		}
@@ -5794,7 +5896,7 @@ byzantine = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	pontic_greek = {
+	pontic_greek = { #Northern Anatolia
 		graphical_culture = greekgfx
 		primary = TRE
 	}
@@ -5805,7 +5907,7 @@ byzantine = {
 			"of Gothia"
 		}
 	}
-	griko = {
+	griko = { #Italian Greeks
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
@@ -5979,7 +6081,7 @@ byzantine = {
 		primary = ROC
 	}
 	male_names = {
-		Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
+		Antigonus Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 		Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
 		Arsenios Artemios Athanasios Athanasius Bardas
 		Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
@@ -6013,7 +6115,7 @@ byzantine = {
 		Phlakkilla Pulcheria Plakidia Onoria Zenonis Augoustina Ariadni Theodote Theophano 
 	}
 	dynasty_names = {
-		Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+		Antigonid Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
 		# CKII
 		Kameniatis Chameas Demetrianos Laloudios Stamopatas Peloponnesites Klados Avastaktos 
 		Lardotyros Kyritzios Kolovos Podopagouros Touvakes Peteinakes Ooryphas Myxares Toxias 
@@ -15700,50 +15802,6 @@ tartar	= {
 #Cultures for use with the nation designer:
 lost_cultures_group = {
 	atlantean = { #EU Rome
-		dynasty_names = {
-			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
-			Zagreid Zosimid Zoticid
-		}
-		male_names = {
-			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
-			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos
-			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
-			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
-			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos
-			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos
-			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles
-			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros
-			Zosimus Zoticus
-		}
-		female_names = {
-			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia
-			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile
-			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
-		}
-	}
-	spartan = { #EU Rome
-		dynasty_names = {
-			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
-			Zagreid Zosimid Zoticid
-		}
-		male_names = {
-			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
-			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos
-			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
-			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
-			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos
-			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos
-			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles
-			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros
-			Zosimus Zoticus
-		}
-		female_names = {
-			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia
-			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile
-			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
-		}
-	}
-	athenian = { #EU Rome
 		dynasty_names = {
 			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
 			Zagreid Zosimid Zoticid

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = phoenician_elective_monarchical_republic_reform
+add_government_reform = carthaginian_elective_monarchical_republic_reform
 government_rank = 3
 primary_culture = phoenician
 religion = punic
