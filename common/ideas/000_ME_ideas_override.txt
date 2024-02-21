@@ -26,6 +26,8 @@ Goguryeo_ideas = {
 	}
 	geobukseon_Goguryeo = {
 		ship_durability = 0.15
+		naval_morale = 0.05
+		has_geobukseon = yes
 	}
 	hopae_system = {
 		global_manpower_modifier = 0.10
