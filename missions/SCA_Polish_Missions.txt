@@ -5461,7 +5461,7 @@ poland_sca_slot_5_d = {
 					DNZ = {
 						is_subject = no
 						is_at_war = no
-						NOT = { total_development = 100 }
+						NOT = { total_development = 400 }
 					}
 				}
 				country_event = { id = flavor_teu.3 }

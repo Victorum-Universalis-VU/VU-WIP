@@ -4732,57 +4732,31 @@ roman_diarchy_reform = {
 ############################
 # NEW Colonial Governments #
 ############################
-#self_governing_dominion_vu_government = {
-#	icon = "peasants"
-#	valid_for_nation_designer = no
-#	lock_level_when_selected = yes
-#	allow_normal_conversion = no
-#	fixed_rank = 1
-#	potential = {
-#		is_colonial_nation = yes
-#		has_reform = self_governing_dominion_vu_government 
-#	}
-#	legacy_equivalent = colonial_government_legacy
-#	modifiers = {
-#		build_cost = -0.1
-#		development_cost = -0.1
-#		embracement_cost = -0.1
-#		state_maintenance_modifier = -0.25
-#	}
-#
-#	custom_attributes = {
-#		locked_government_type = yes
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	duration = 4
-#}
+self_governing_dominion_vu_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 2
+	potential = {
+		is_colonial_nation = yes
+		has_reform = self_governing_dominion_vu_government 
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		build_cost = -0.1
+		development_cost = -0.1
+		embracement_cost = -0.1
+		state_maintenance_modifier = -0.25
+	}
 
-#self_governing_super_dominion_vu_government = {
-#	icon = "peasants"
-#	valid_for_nation_designer = no
-#	lock_level_when_selected = yes
-#	allow_normal_conversion = no
-#	fixed_rank = 1
-#	potential = {
-#		is_colonial_nation = yes
-#		has_reform = self_governing_super_dominion_vu_government 
-#	}
-#	legacy_equivalent = colonial_government_legacy
-#	modifiers = {
-#		build_cost = -0.1
-#		development_cost = -0.1
-#		embracement_cost = -0.1
-#		state_maintenance_modifier = -0.25
-#	}
-#
-#	custom_attributes = {
-#		locked_government_type = yes
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	duration = 4
-#}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
 
 #VU additions by San Felipe
 althing_elite_reform = {

@@ -7073,6 +7073,105 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetPreviewColorPOL
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = POL } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = POL } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorPOL_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = POL } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = POL } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+#Domination
+defined_text = {
+	name = GetPreviewColorTUR
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = TUR } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = TUR } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorTUR_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = TUR } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = TUR } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorMNG
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = MNG } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = MNG } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorMNG_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = MNG } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = MNG } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorQNG
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = QNG } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = QNG } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorQNG_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = QNG } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = QNG } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorJAP
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = JAP } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = JAP } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorJAP_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = JAP } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = JAP } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorJAP_RELI
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = JAP_RELI } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = JAP_RELI } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorJAP_RELI_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = JAP_RELI } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = JAP_RELI } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorFRA
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = FRA } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = FRA } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorFRA_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = FRA } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = FRA } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorFRA_HRE
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = FRA_HRE } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = FRA_HRE } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorFRA_HRE_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = FRA_HRE } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = FRA_HRE } } NOT = { has_preview_mission_flag = yes } } } }
+}
+
+defined_text = {
+	name = GetPreviewColorGBR
+	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = GBR } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = GBR } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
+	name = GetPreviewColorGBR_end
+	text = { localisation_key = COLOR_END trigger = { can_preview_mission_of_key = { key = GBR } has_preview_mission_flag = yes } }
+	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = GBR } } NOT = { has_preview_mission_flag = yes } } } }
+}
+defined_text = {
 	name = GetPreviewColorPER
 	text = { localisation_key = PREVIEW_COLOR trigger = { can_preview_mission_of_key = { key = PER } has_preview_mission_flag = yes } }
 	text = { localisation_key = empty_text trigger = { OR = { NOT = { can_preview_mission_of_key = { key = PER } } NOT = { has_preview_mission_flag = yes } } } }

@@ -64,14 +64,6 @@ declined_establish_puppet_state_opinion = {
 	min = -100
 }
 
-is_dominion = {
-	opinion = 60
-}
-
-is_autonomous_dominion = {
-	opinion = 70
-}
-
 is_roman_client_kingdom = {
 	opinion = 50
 }

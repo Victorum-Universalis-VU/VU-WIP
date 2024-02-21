@@ -945,9 +945,17 @@ country_event = {
 	
 	trigger = {
 		tag = RUS
-		event_target:EmperorOfChina = {
-			exists = yes
-			is_neighbor_of = ROOT
+		if = { 
+			limit = { 
+ 				has_saved_event_target = EmperorOfChina
+			}
+			event_target:EmperorOfChina = {
+				exists = yes
+				is_neighbor_of = ROOT
+			}
+		}
+		else = { 
+			always = no 
 		}
 	}
 	

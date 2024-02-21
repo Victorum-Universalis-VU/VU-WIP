@@ -22,8 +22,8 @@
  puppet_state_overlord_modifier: "Has Puppet States"
  puppet_state_overlord_has_parliament_modifier: "We have a parliament"
 
- dominion_trade_company_modifier: "Dominion in a trade company region"
- dominion_overlord_trade_company_modifier_1: "Has Dominions in trade company regions"
+ self_governing_dominion_vu_subject: "Dominion in a trade company region"
+ self_governing_dominion_vu_overlord: "Has Dominions in trade company regions"
  dominion_overlord_trade_company_modifier_2: "Has Dominions in trade company regions"
  dominion_overlord_trade_company_modifier_3: "Has Dominions in trade company regions"
  dominion_overlord_trade_company_modifier_4: "Has Dominions in trade company regions"

@@ -222,6 +222,7 @@ ajuuran_asian_trade_slot = {
 		effect = {
 			if = {
 				limit = {
+					has_saved_event_target = EmperorOfChina
 					any_country = { is_emperor_of_china = yes }
 				}
 				event_target:EmperorOfChina = {

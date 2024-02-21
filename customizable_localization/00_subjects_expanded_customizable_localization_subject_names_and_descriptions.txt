@@ -82,18 +82,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_dominion_or_similar_subject = yes
-		}
-		localisation_key = "[dominion]"
-	}
-	text = {
-		trigger = {
-			is_autonomous_dominion_or_similar_subject = yes
-		}
-		localisation_key = "[autonomous_dominion]"
-	}
-	text = {
-		trigger = {
 			is_subject_of_type = roman_client_kingdom
 		}
 		localisation_key = "[roman_client_kingdom]"
@@ -584,50 +572,6 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = puppet_state_long_desc
-	}
-}
-
-defined_text = {
-	name = dominion
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = dominion_title
-	}
-}
-
-defined_text = {
-	name = dominion_desc
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = dominion_long_desc
-	}
-}
-
-defined_text = {
-	name = autonomous_dominion
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = autonomous_dominion_title
-	}
-}
-
-defined_text = {
-	name = autonomous_dominion_desc
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localisation_key = autonomous_dominion_long_desc
 	}
 }
 

@@ -107,7 +107,6 @@
 1769 = "Gorycja"
 1771 = "Rudawy"
 1772 = "Bratyslawa"
-1772 = "Pozon"
 1775 = "Holsztyn"
 1778 = "Kasimow"
 1837 = "Dorpat"

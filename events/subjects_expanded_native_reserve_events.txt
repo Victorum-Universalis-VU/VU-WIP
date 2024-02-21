@@ -12,10 +12,7 @@ country_event = {
 				NOT = {
 					calc_true_if = {
 						all_subject_country = {
-							OR = {
-								is_colonial_subject_type = yes
-								is_any_dominion_subject = yes
-							}
+							is_colonial_subject_type = yes
 						}
 						amount = 1
 					}

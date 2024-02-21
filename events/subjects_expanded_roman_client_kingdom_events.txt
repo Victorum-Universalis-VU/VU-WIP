@@ -173,9 +173,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			# Yearly Manpower
-			ms_calculate_yearly_manpower = yes
-			set_variable = { which = roman_client_kingdom_yearly_manpower_var which = autonomous_dominion_global_manpower_var }
 			# Ruler's ADM
 			export_to_variable = {
 				which = roman_client_kingdom_yearly_adm_from_ruler_var

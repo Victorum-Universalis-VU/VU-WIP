@@ -314,180 +314,90 @@ allow_autonomous_navy = {
 }
 
 #Self-Governing Dominion VU Upgrades
-#allow_autonomous_trade = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#	
-#	modifier_subject = {
-#		global_own_trade_power = 0.05
-#		liberty_desire = -5
-#	}
-#}
+allow_autonomous_trade = {
+	can_upgrade_trigger = {
+		is_subject_of_type = self_governing_dominion_vu
+		colonial_parent = {
+			adm_power_cost = 25
+		}
+	}
+	
+	cost = 100
 
-#allow_autonomous_taxing = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#	
-#	modifier_subject = {
-#		global_tax_modifier = 0.05
-#		liberty_desire = -5
-#	}
-#}
+	effect = {
+		colonial_parent = {
+			adm_power_cost = -25
+		}
+	}
+	
+	modifier_subject = {
+		global_own_trade_power = 0.05
+		liberty_desire = -5
+	}
+}
 
-#allow_autonomous_militias = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#	
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#
-#	modifier_subject = {
-#		global_manpower_modifier = 0.05
-#		liberty_desire = -5
-#	}
-#}
+allow_autonomous_taxing = {
+	can_upgrade_trigger = {
+		is_subject_of_type = self_governing_dominion_vu
+		colonial_parent = {
+			adm_power_cost = 25
+		}
+	}
+	
+	cost = 100
 
-#allow_autonomous_navy = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#	
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#
-#	modifier_subject = {
-#		global_sailors_modifier = 0.1
-#		liberty_desire = -5
-#	}
-#}
+	effect = {
+		colonial_parent = {
+			adm_power_cost = -25
+		}
+	}
+	
+	modifier_subject = {
+		global_tax_modifier = 0.05
+		liberty_desire = -5
+	}
+}
 
-#Self-Governing Super Dominion VU Upgrades
-#allow_autonomous_trade = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_super_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#	
-#	modifier_subject = {
-#		global_own_trade_power = 0.05
-#		liberty_desire = -5
-#	}
-#}
+allow_autonomous_militias = {
+	can_upgrade_trigger = {
+		is_subject_of_type = self_governing_dominion_vu
+		colonial_parent = {
+			adm_power_cost = 25
+		}
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			adm_power_cost = -25
+		}
+	}
 
-#allow_autonomous_taxing = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_super_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#	
-#	modifier_subject = {
-#		global_tax_modifier = 0.05
-#		liberty_desire = -5
-#	}
-#}
+	modifier_subject = {
+		global_manpower_modifier = 0.05
+		liberty_desire = -5
+	}
+}
 
-#allow_autonomous_militias = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_super_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#	
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#
-#	modifier_subject = {
-#		global_manpower_modifier = 0.05
-#		liberty_desire = -5
-#	}
-#}
+allow_autonomous_navy = {
+	can_upgrade_trigger = {
+		is_subject_of_type = self_governing_dominion_vu
+		colonial_parent = {
+			adm_power_cost = 25
+		}
+	}
+	
+	cost = 100
+	
+	effect = {
+		colonial_parent = {
+			adm_power_cost = -25
+		}
+	}
 
-#allow_autonomous_navy = {
-#	can_upgrade_trigger = {
-#		is_subject_of_type = self_governing_super_dominion_vu
-#		colonial_parent = {
-#			adm_power_cost = 25
-#		}
-#	}
-#	
-#	cost = 100
-#	
-#	effect = {
-#		colonial_parent = {
-#			adm_power_cost = -25
-#		}
-#	}
-#
-#	modifier_subject = {
-#		global_sailors_modifier = 0.1
-#		liberty_desire = -5
-#	}
-#}
- 
+	modifier_subject = {
+		global_sailors_modifier = 0.1
+		liberty_desire = -5
+	}
+}

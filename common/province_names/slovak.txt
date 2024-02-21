@@ -8,7 +8,7 @@
 264 = "Vratislav"
 1318 = "Spis"
 1770 = "Kremža"
-1772 = "Nitra"
+1772 = "Bratislava"
 1953 = "Debrecín"
 2327 = { "Magna" "Magna" }
 3965 = "Spiské Starostovo"
