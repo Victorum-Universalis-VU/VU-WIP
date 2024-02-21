@@ -216,11 +216,6 @@
  ME_Prussia_Events.44.t: "Growth of Trade"
  ME_Prussia_Events.44.d: "Our nation's income has historically been dominated from taxes levied from the nobles, either in the form of grain or men. We lack any grand trade cities to facilitate the purchase and sale of goods on any large scale, thus we have sidelined such concepts. Despite this, Prussian trade expansion has seen recent upticks. We would do well to continue this trend."
  ME_Prussia_Events.44.a: "Wunderbar!"
-
- ME_Prussia_Events.46.t: "A Militarized Society"
- ME_Prussia_Events.46.d: "As time passes by, armies have seen their character changed. From small, professional forces, to an increase in recruitment, at the point where the quantity character has dominated instead of quality. We as well must change our ways that we militarize. Should we keep our small professional corps, or should we make the soldier but a rank every citizen must have?"
- ME_Prussia_Events.46.a: "We cannot win only with better men. We need more of them."
- ME_Prussia_Events.46.b: "Our soldiers will be the most trained in the world!"
  #Modifiers:
  BRA_geheimer_rat: "Geheimer Rat fur die Kurmark"
  BRA_tamed_the_nobility: "Tamed the Nobility"

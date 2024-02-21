@@ -359,7 +359,7 @@ christian = {
 		color = { 250 55 10 }
 		icon = 22
 		allowed_conversion = {
-			#protestant
+			protestant
 			#reformed
 			#lollardy
 			#bogomilist_new
@@ -377,12 +377,12 @@ christian = {
 		country = {
 			shock_damage_received = -0.05
 			global_heretic_missionary_strength = 0.02 #VU - Was 0.01 but doubled by Don
-			#tolerance_own = 1								   
+			tolerance_own = 1								   
 			#legitimacy = 0.5
 			#republican_tradition = 0.25
 			#horde_unity = 0.25
 			#devotion = 1
-		 	#ae_impact = 0.05
+		 	ae_impact = 0.05
 			land_morale = 0.05
 			manpower_in_true_faith_provinces = 0.05 #VU - Was 0.1 but halfed by Don
 			#manpower_recovery_speed = 0.05
@@ -532,23 +532,15 @@ christian = {
 		}
 		country = {
 			production_efficiency = 0.05 #Don's addition
-			#global_tax_modifier = 0.1
+			global_tax_modifier = 0.1
 			improve_relation_modifier = 0.15
 			church_loyalty_modifier = 0.1
-			discipline = 0.02 #Don's addition
 		}
 		
 		country_as_secondary = {
-			#idea_cost = -0.1
-			#Don's addition below
+			idea_cost = -0.05
 			improve_relation_modifier = 0.1
 			church_loyalty_modifier = -0.05
-			discipline = 0.02
-		}
-		
-		province = {
-			local_tax_modifier = 0.15
-			local_unrest = -0.5
 		}
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
