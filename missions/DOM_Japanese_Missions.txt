@@ -766,9 +766,14 @@ DOM_japanse_missions_2_b = {
 		}
 		trigger = {
 			OR = { 
-				war_score_against = {
-					who = event_target:EmperorOfChina
-					value = 85 
+				if = {
+					limit = { 
+						has_saved_event_target = EmperorOfChina
+					}
+					war_score_against = {
+						who = event_target:EmperorOfChina
+						value = 85 
+					}
 				}
 				AND = { 
 					1816 = { country_or_non_sovereign_subject_holds = ROOT } 
@@ -794,9 +799,17 @@ DOM_japanse_missions_2_b = {
 			hidden_effect = {
 				if = {	
 					limit = { 
-						war_score_against = {
-							who = event_target:EmperorOfChina
-							value = 85 
+						if = { 
+							limit = { 
+								has_saved_event_target = EmperorOfChina
+							}
+							war_score_against = {
+								who = event_target:EmperorOfChina
+								value = 85 
+							}
+						}
+						else = { 
+							always = no
 						}
 					}
 					country_event = { id = flavor_jap.64 }

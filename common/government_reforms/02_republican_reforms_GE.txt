@@ -1,35 +1,35 @@
-#american_government = {
-#	icon = "parliament"
-#	allow_normal_conversion = yes
-#	potential = { 
-#		OR = {
-#			have_had_reform = american_government
-#			tag = USA
-#		}
-#	}
-#	valid_for_nation_designer = yes
-#	nation_designer_cost = 400
-#	modifiers = {
-#		yearly_corruption = -0.05
-#		global_unrest = -1
-#	}
-#
-#	custom_attributes = {
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	conditional = {
-#		allow = {
-#			has_dlc = "Common Sense"
-#		}
-#		has_parliament = yes
-#	}
-#	factions = {
-#		GE_federalists
-#		GE_republicans
-#	}
-#	duration = 4
-#}
+american_government = {
+	icon = "parliament"
+	allow_normal_conversion = yes
+	potential = { 
+		OR = {
+			have_had_reform = american_government
+			tag = USA
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 400
+	modifiers = {
+		yearly_corruption = -0.05
+		global_unrest = -1
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	factions = {
+		GE_federalists
+		GE_republicans
+	}
+	duration = 4
+}
 
 
 russian_republic_republic = {

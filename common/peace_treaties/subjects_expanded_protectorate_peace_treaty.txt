@@ -62,14 +62,12 @@ make_protectorate = {
 				any_country = {
 					is_subject_of = FROM
 					is_colonial_nation = no
-					NOT = { is_any_dominion_subject = yes }
 				}
 			}
 			every_country = {
 				limit = {
 					is_subject_of = FROM
 					is_colonial_nation = no
-					NOT = { is_any_dominion_subject = yes }
 				}
 				FROM = {
 					PREV = { grant_independence = yes }

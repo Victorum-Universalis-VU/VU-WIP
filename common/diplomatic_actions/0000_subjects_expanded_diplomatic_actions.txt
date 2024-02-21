@@ -619,24 +619,6 @@ annexationaction = {
 			}
 		}
 	}
-	condition = {
-		tooltip = CANNOT_ANNEX_DOMINION_BEFORE_30_YEARS
-		potential = {
-			FROM = {
-				is_subject_of = ROOT
-				is_subject_of_type = dominion_tc
-			}
-		}
-		allow = {
-			FROM = {
-				years_in_vassalage_under = {
-					who = ROOT
-					years = 30
-					all_subject_country = yes
-				}
-			}
-		}
-	}
 	effect = {
 		FROM = {
 			if = {

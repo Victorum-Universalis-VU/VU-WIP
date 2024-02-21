@@ -1,0 +1,11 @@
+#British West Africa
+government = republic
+add_government_reform = presidential_despot_reform
+#technology_group = western
+technology_group = english_tech_group
+primary_culture = british_west_african
+religion = protestant
+unit_type = western
+government_rank = 1
+mercantilism = 25
+capital = 1139 #Accra

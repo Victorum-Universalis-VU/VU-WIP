@@ -611,7 +611,7 @@ colony = {
 		other_overlord = crown_colony
 		other_overlord = private_enterprise
 		other_overlord = self_governing_colony
-		#other_overlord = self_governing_dominion_vu
+		other_overlord = self_governing_dominion_vu
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -620,7 +620,7 @@ colony = {
 		other_overlord = crown_colony
 		other_overlord = private_enterprise
 		other_overlord = self_governing_colony
-		#other_overlord = self_governing_dominion_vu
+		other_overlord = self_governing_dominion_vu
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -1467,101 +1467,72 @@ dummy =
 
 #VU addition by San Felipe with input from Letole & Piano
 #Reworked by OnlyKarlos as part of the colonial rework
-#self_governing_dominion_vu = {
-#
-#	copy_from = self_governing_colony
-#
-#	sprite = GFX_dominion_icon
-#
-#	change_colonial_type = yes
-#	upgrade_subject_type = yes
-#	is_colony_subtype = yes
-#	count = colony
-#	
-#	# Properties:
-#	forcelimit_to_overlord = 0.0 			#Changed from 0.05 to reflect a dominion's much greater autonomy
-#	manpower_to_overlord = 0.0 				#Changed from 0.05
-#	naval_forcelimit_to_overlord = 0.0 		#Changed from 0.05
-#	sailors_to_overlord = 0.0 				#Changed from 0.05
-#
-#	# Subject Interactions:
-#	customize_subject = yes
-#	replace_governor = no
-#	block_settlement_growth = no
-#	allow_settlement_growth = no
-#	press_sailors = no
-#	enforce_culture = yes #Although it doesn't make much sense, it functions as a workaround to colonial nations switching to native cultures
-#	transfer_trade_power = no
-#	
-#	is_potential_overlord = {
-#        is_subject = no
-#        OR = {
-#            is_year = 1750
-#        }
-#    }
-#	
-#	can_fight = {
-#        independent_nations = yes
-#        same_overlord = tributary_state
-#        other_overlord = all
-#    }
-#	
-#	# Modifiers:			
-#	modifier_overlord = {
-#		modifier = self_governing_dominion_vu_overlord
-#	}
-#	
-#	modifier_subject = {
-#		modifier = self_governing_dominion_vu_subject
-#	}
-#}
+self_governing_dominion_vu = {
 
-#VU addition by San Felipe with input from Letole & Piano
-#Temporarily removed by OnlyKarlos as part of the colonial rework
-#self_governing_super_dominion_vu = {
-#
-#	copy_from = self_governing_dominion_vu
-#
-#	sprite = GFX_super_dominion_icon
-#
-#	change_colonial_type = yes
-#	upgrade_subject_type = yes
-#	is_colony_subtype = yes
-#	count = colony
-#	
-#	# Properties:
-#	forcelimit_to_overlord = 0.075
-#	manpower_to_overlord = 0.075
-#	naval_forcelimit_to_overlord = 0.075
-#	sailors_to_overlord = 0.075
-#	transfer_trade_power = no
-#
-#	# Subject Interactions:
-#	customize_subject = yes
-#	replace_governor = yes
-#	block_settlement_growth = no
-#	allow_settlement_growth = no
-#	press_sailors = no
-#	
-#	is_potential_overlord = {
-#        is_subject = no
-#        OR = {
-#            is_year = 1600
-#        }
-#    }
-#	
-#	can_fight = {
-#        independent_nations = yes
-#        same_overlord = tributary_state
-#        other_overlord = all
-#    }
-#	
-#	# Modifiers:		
-#	modifier_overlord = {
-#		modifier = self_governing_super_dominion_vu_overlord
-#	}
-#	
-#	modifier_subject = {
-#		modifier = self_governing_super_dominion_vu_subject
-#	}
-#}
+	copy_from = self_governing_colony
+
+	sprite = GFX_dominion_icon
+
+	change_colonial_type = no
+	upgrade_subject_type = yes
+	is_colony_subtype = no
+	count = colony
+	
+	# Properties:
+	base_liberty_desire = -10.0
+	liberty_desire_development_ratio = 0.05
+	pays_overlord = 1.5
+	max_government_rank = 2
+	forcelimit_to_overlord = 0.0 			#Changed from 0.05 to reflect a dominion's much greater autonomy
+	manpower_to_overlord = 0.0 				#Changed from 0.05
+	naval_forcelimit_to_overlord = 0.1		#Changed from 0.05
+	sailors_to_overlord = 0.0 				#Changed from 0.05
+
+	# Subject Interactions:
+	uses_tariffs = no
+	increase_tariffs = no
+	decrease_tariffs = no
+	divert_trade = yes
+	customize_subject = no
+	replace_governor = no
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	press_sailors = no
+	start_colonial_war = no
+	enforce_culture = yes #Although it doesn't make much sense, it functions as a workaround to colonial nations switching to native cultures
+	transfer_trade_power = no
+	
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			is_year = 1600
+			current_age = age_of_absolutism
+		}
+	}
+
+	can_fight = {
+	        independent_nations = yes
+        	same_overlord = tributary_state
+        	other_overlord = all
+	}
+
+	can_rival = {
+	        independent_nations = yes
+        	same_overlord = tributary_state
+        	other_overlord = all
+	}
+	can_ally = {
+		neighboring_primitives = yes
+	}
+	
+	# Modifiers:		
+	modifier_overlord = clear	
+	modifier_overlord = {
+		modifier = self_governing_dominion_vu_overlord
+	}
+	
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = self_governing_dominion_vu_subject
+	}
+}

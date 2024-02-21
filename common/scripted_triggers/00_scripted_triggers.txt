@@ -1120,12 +1120,12 @@ has_any_holy_order = {
 can_create_holy_orders = {
 	OR = {
 		AND = {
-			OR = { 
-				AND = { 
+			OR = {
+				AND = {
 					culture_group = iberian
 					religion = catholic
 				}
-				has_country_flag = enable_holy_orders_flag 
+				has_country_flag = enable_holy_orders_flag
 			}
 			religion_group = christian
 		}
@@ -1140,7 +1140,7 @@ can_create_holy_orders = {
 		custom_trigger_tooltip = {
 			tooltip = mng_has_enabled_grand_coordinator_offices_tt
 			has_country_flag = mng_enable_3_grand_coordinators_offices_flag
-		} 
+		}
 		AND = {
 			OR = {
 				has_government_attribute = unlock_persia_holy_orders
@@ -2076,6 +2076,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = administrative_ideas
 				full_idea_group = humanist_ideas
 				full_idea_group = infrastructure_ideas
+				full_idea_group = industry_ideas
 			}
 		}
 	]
@@ -2090,6 +2091,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = maritime_ideas
 				full_idea_group = influence_ideas
 				full_idea_group = court_ideas
+				full_idea_group = nationalism_ideas
 			}
 		}
 	]
@@ -2108,6 +2110,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = horde_gov_ideas
 				full_idea_group = plutocracy_ideas
 				full_idea_group = mercenary_ideas
+				full_idea_group = gunpowder_ideas
 			}
 		}
 	]
@@ -2123,6 +2126,7 @@ num_of_completed_idea_groups_adm = {
 		full_idea_group = administrative_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = infrastructure_ideas
+		full_idea_group = industry_ideas
 		amount = $amount$
 	}
 }
@@ -2137,6 +2141,7 @@ num_of_completed_idea_groups_dip = {
 		full_idea_group = maritime_ideas
 		full_idea_group = influence_ideas
 		full_idea_group = court_ideas
+		full_idea_group = nationalism_ideas
 		amount = $amount$
 	}
 }
@@ -2155,6 +2160,7 @@ num_of_completed_idea_groups_mil = {
 		full_idea_group = horde_gov_ideas
 		full_idea_group = plutocracy_ideas
 		full_idea_group = mercenary_ideas
+		full_idea_group = gunpowder_ideas
 		amount = $amount$
 	}
 }
@@ -2884,7 +2890,7 @@ has_trade_company_trade_goods = {
 
 #For Farm manufactories
 has_farm_trade_goods = {
-	OR = {						
+	OR = {
 		trade_goods = grain
 		trade_goods = livestock
 		trade_goods = wine
@@ -3122,7 +3128,7 @@ num_of_ruler_traits = {
 		ruler_has_personality = fertile_personality
 		ruler_has_personality = well_advised_personality
 		ruler_has_personality = benevolent_personality
-		ruler_has_personality = zealot_personality 
+		ruler_has_personality = zealot_personality
 		ruler_has_personality = pious_personality
 		ruler_has_personality = lawgiver_personality
 		ruler_has_personality = midas_touched_personality
@@ -3313,8 +3319,8 @@ is_flatland = {
 is_yellow_river_province_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = is_yellow_river_province_trigger_tt
-		OR = { 
-			province_id = 4196 
+		OR = {
+			province_id = 4196
 			province_id = 2142
 			province_id = 2141
 			province_id = 2176
@@ -3329,7 +3335,7 @@ is_yellow_river_province_trigger = {
 is_yangtze_river_province_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = is_yangtze_river_province_trigger_tt
-		OR = { 
+		OR = {
 			province_id = 2145
 			province_id = 1821
 			province_id = 1838
@@ -3356,10 +3362,10 @@ is_eyalet_trigger = {
 has_strong_mil_national_ideas = {
 	custom_trigger_tooltip = {
 		tooltip = has_strong_mil_national_ideas_tt
-		OR = { 
+		OR = {
 			tag = FRA
 			tag = PRU
-			tag = SPA 
+			tag = SPA
 			tag = TUR
 			tag = JAP
 			tag = RUS
@@ -3396,7 +3402,6 @@ has_strong_mil_national_ideas = {
 		}
 	}
 }
-
 has_any_active_incomplete_idea_group_of_category = {
     [[adm_ideas]
         custom_trigger_tooltip = {
@@ -3409,7 +3414,8 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = administrative_ideas NOT = { full_idea_group = administrative_ideas } }
                 AND = { has_idea_group = humanist_ideas       NOT = { full_idea_group = humanist_ideas } }
                 AND = { has_idea_group = infrastructure_ideas NOT = { full_idea_group = infrastructure_ideas } }
-            }
+  							AND = { has_idea_group = industry_ideas NOT = { full_idea_group = industry_ideas } }
+					  }
         }
     ]
     [[dip_ideas]
@@ -3423,6 +3429,7 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = maritime_ideas    	NOT = { full_idea_group = maritime_ideas } }
                 AND = { has_idea_group = influence_ideas   	NOT = { full_idea_group = influence_ideas } }
                 AND = { has_idea_group = court_ideas       	NOT = { full_idea_group = court_ideas } }
+								AND = { has_idea_group = nationalism_ideas NOT = { full_idea_group = nationalism_ideas } }
             }
         }
     ]
@@ -3441,7 +3448,8 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = plutocracy_ideas        	NOT = { full_idea_group = plutocracy_ideas } }
                 AND = { has_idea_group = mercenary_ideas        	NOT = { full_idea_group = mercenary_ideas } }
                 AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
-            }
+						    AND = { has_idea_group = gunpowder_ideas NOT = { full_idea_group = gunpowder_ideas } }
+						}
         }
     ]
 }
@@ -4277,7 +4285,7 @@ has_not_locked_first_tier_reform = {
 	NOT = { has_reform = ottoman_government }
 	NOT = { has_reform = byzantine_autocracy_reform }
 	NOT = { has_reform = reformed_byzantine_monarchy_reform }
-	NOT = { has_reform = caliphate_reform } #VU - ET entry used by PDX that they've not given any credit to ET for. 
+	NOT = { has_reform = caliphate_reform } #VU - ET entry used by PDX that they've not given any credit to ET for.
 	NOT = { has_reform = modernized_ottoman_government }
 	NOT = { has_reform = reorganized_ottoman_government }
 	NOT = { has_reform = eyalet_government }
@@ -4306,7 +4314,7 @@ has_not_locked_first_tier_reform = {
 	NOT = { has_reform = papacy_reform }
 	NOT = { has_reform = caliphate_theocracy_reform }
 	NOT = { has_reform = fifth_monarchists_reform }
-	NOT = { has_reform = great_mongol_state_reform }	
+	NOT = { has_reform = great_mongol_state_reform }
 }
 
 ARB_hedjaz_najd_bedouin_potential = {
@@ -4314,10 +4322,10 @@ ARB_hedjaz_najd_bedouin_potential = {
 		tag = ARB
 		tag = NAJ
 		tag = DAW
-		tag = SHM 
+		tag = SHM
 		tag = HED
 		tag = MDA
-		tag = MFL 
+		tag = MFL
 		tag = ANZ
 		tag = FAD
 	}
@@ -4325,7 +4333,7 @@ ARB_hedjaz_najd_bedouin_potential = {
 }
 
 YEM_is_yemeni_nation ={
-	OR = { 
+	OR = {
 		tag = YEM
 		tag = ADE
 		tag = HDR
@@ -4587,8 +4595,8 @@ has_domination_eoc_missions_available = {
 	has_dlc = "Domination"
 	OR = {
 		tag = MNG
-		tag = QNG 
-		tag = MCH 
+		tag = QNG
+		tag = MCH
 		tag = YAN
 		tag = JIN
 		tag = QIN
@@ -4607,7 +4615,7 @@ has_domination_eoc_missions_available = {
 		tag = CYI
 		tag = CDL
 		tag = CGS
-		tag = SHU 
+		tag = SHU
 		tag = FRM
 		tag = MJZ
 		tag = MYR

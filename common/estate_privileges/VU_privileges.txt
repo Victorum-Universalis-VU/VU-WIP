@@ -51,18 +51,16 @@ estate_jews_foster_jews = {
 			num_of_territories = 15
 		}
 		modifier = {
-			factor = 0
-			OR = {
-				NOT = { crown_land_share = 25 }
-				estate_influence = {
-					estate = estate_jews
-					influence = 60
-				}
-			}
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 2
+			jewish = 2
 		}
 		modifier = {
 			factor = 0
-			NOT = { governing_capacity_percentage = 0.5 }
+			jewish = -2
 		}
 		modifier = {
 			factor = 0
@@ -321,6 +319,14 @@ estate_jews_suck_privileges = {
 		modifier = {
 			factor = 2.5
 			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = -2
+			jewish = 2
+		}
+		modifier = {
+			factor = 2
+			jewish = -2
 		}
 	}
 }

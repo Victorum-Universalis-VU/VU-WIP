@@ -573,12 +573,17 @@ chinese_kingdoms_1 = {
 		required_missions = { mandate_cities } 
 		position = 3 
 		trigger = {
-			OR = { 
-				war_score_against = {
-					who = event_target:EmperorOfChina 
-					value = 90
+			if = { 
+				limit = { 
+					has_saved_event_target = EmperorOfChina
 				}
-				is_emperor_of_china = yes
+				OR = { 
+					war_score_against = {
+						who = event_target:EmperorOfChina 
+						value = 90
+					}
+					is_emperor_of_china = yes
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = chi_strongest_warlord_tt
@@ -3710,12 +3715,17 @@ DOM_Qing_Missions_3 = {
 			OR = { 
 				AND = { 
 					726 = { controlled_by = ROOT } 
-					event_target:EmperorOfChina = {  
-						NOT = { 
-							war_score_against = {
-								who = ROOT 
-								value = -50 
-							}	 
+					if = {
+						limit = { 
+							has_saved_event_target = EmperorOfChina
+						}
+						event_target:EmperorOfChina = {  
+							NOT = { 
+								war_score_against = {
+									who = ROOT 
+									value = -50 
+								}	 
+							}
 						}
 					}
 				}
@@ -3746,26 +3756,39 @@ DOM_Qing_Missions_3 = {
 					limit = { 
 						AND = { 
 							726 = { controlled_by = ROOT } 
-							event_target:EmperorOfChina = {  
-								war_with = ROOT 
-								NOT = { 
-									war_score_against = {
-										who = ROOT 
-										value = -50 
+							if = {
+								limit = { 
+									has_saved_event_target = EmperorOfChina
+								}
+								event_target:EmperorOfChina = {  
+									war_with = ROOT 
+									NOT = { 
+										war_score_against = {
+											who = ROOT 
+											value = -50 
+										}
 									}	 
 								}
+							}
+							else = { 
+								always = yes
 							}
 						}
 					}
 					add_yearly_manpower = 2 
 					add_war_exhaustion = -2
-					event_target:EmperorOfChina = { 
-						every_owned_province = {
-							limit = { 
-								controlled_by = PREV 
-								has_fort_building_trigger = yes 
+					if = {
+						limit = { 
+							has_saved_event_target = EmperorOfChina
+						}
+						event_target:EmperorOfChina = { 
+							every_owned_province = {
+								limit = { 
+									controlled_by = PREV 
+									has_fort_building_trigger = yes 
+								}
+								add_devastation = 10 
 							}
-							add_devastation = 10 
 						}
 					}
 				}
