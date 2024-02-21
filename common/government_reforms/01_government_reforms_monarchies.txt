@@ -8193,17 +8193,17 @@ romanian_united_principality = {
 }
 
 selucian_kingdom_reform = {
-	icon = "shogunate"
+	icon = "government_reform_selucian_kingdom_reform"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
+		NOT = { has_country_flag = formed_selucian_kingdom_flag }
 		OR = {
 			AND = {
 				capital_scope = {
-					province_id = 1020
+					province_id = 2313
 				}
-				culture_group = japanese_g
-				NOT = { exists = JAP }
+				culture_group = byzantine
+				NOT = { exists = SEL }
 			}
 			AND = {
 				is_playing_custom_nation = yes
@@ -8214,10 +8214,10 @@ selucian_kingdom_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
-		owns = 1020
+		culture_group = byzantine
+		technology_group = byzantine_tech_group
+		capital_scope = { region = mashriq_region }
+		owns = 2313
 	}
 	legacy_equivalent = selucian_kingdom_legacy
 	fixed_rank = 2
@@ -8249,10 +8249,10 @@ selucian_kingdom_reform = {
 }
 
 selucian_satrapy_reform = {
-	icon = "daimyo"
+	icon = "government_reform_selucian_satrapy_reform"
 	allow_normal_conversion = no
 	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
+		NOT = { has_country_flag = formed_satrapy_flag }
 		overlord = { has_reform = shogunate }
 	}
 	replacement_on_independence_war = indep_daimyo
@@ -8263,16 +8263,48 @@ selucian_satrapy_reform = {
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
-		capital_scope = { region = japan_region }
+		culture_group = byzantine
+		technology_group = byzantine_tech_group
+		capital_scope = { region = mashriq_region }
 	}
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
-		amount_of_samurai = 4
+		#amount_of_samurai = 4
 	}
 	custom_attributes = {
 		locked_government_type = yes
+	}
+}
+
+macedonian_monarchy_reform = {
+	icon = "government_reform_macedonian_monarchy_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = macedonian_monarchy_reform
+			have_had_reform = macedonian_monarchy_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = -20
+		prestige = 0.5
+		advisor_pool = 1
+		governing_capacity = 250
+		diplomatic_reputation = 1
+		yearly_corruption = 0.1
+		min_autonomy = 10
+		global_institution_spread = 0.1
+		merc_maintenance_modifier = -0.15
+		land_maintenance_modifier = 0.10
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			civil_war_on_every_new_ruler = yes
+			enables_pronoias = yes 
+		}
 	}
 }

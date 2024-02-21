@@ -596,6 +596,45 @@ spriteTypes = {
 		name = "government_reform_roman_diarchy_reform"
 		texturefile = "gfx/interface/government_reform_icons/roman_diarchy_reform.dds"
 	}
+
+	#VU - Don's additions v1.36.2.*
+	spriteType = {
+		name = "government_reform_theban_league_reform"
+		texturefile = "gfx/interface/government_reform_icons/theban_league_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_spartan_diarchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/spartan_diarchy_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_athenian_democracy_reform"
+		texturefile = "gfx/interface/government_reform_icons/athenian_democracy_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_corinthian_oligarchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/corinthian_oligarchy_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_selucian_kingdom_reform"
+		texturefile = "gfx/interface/government_reform_icons/selucian_kingdom_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_selucian_satrapy_reform"
+		texturefile = "gfx/interface/government_reform_icons/selucian_satrapy_reform.dds"
+	}
+
+	#End of Don's additions
+	#New addition by San Felipe
+	spriteType = {
+		name = "government_reform_macedonian_monarchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/macedonian_monarchy_reform.dds"
+	}
+	#End of New Additions by San Felipe 
 	
 	spriteType = {
 		name = "government_reform_althing_elite_reform"
@@ -1673,8 +1712,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//phoenician_republic_reform.dds"
 	}
 	spriteType = {
-		name = "government_reform_phoenician_republic_reform"
-		texturefile = "gfx//interface//government_reform_icons//phoenician_republic_reform.dds"
+		name = "government_reform_carthaginian_elective_monarchical_republic_reform"
+		texturefile = "gfx//interface//government_reform_icons//carthaginian_republic_reform.dds"
 	}
 	spriteType = {
 		name = "government_reform_mixed_republic_reform"

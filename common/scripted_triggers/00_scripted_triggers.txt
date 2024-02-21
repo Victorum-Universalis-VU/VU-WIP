@@ -4284,6 +4284,7 @@ has_not_locked_first_tier_reform = {
 	NOT = { has_reform = absolute_british_monarchy }
 	NOT = { has_reform = ottoman_government }
 	NOT = { has_reform = byzantine_autocracy_reform }
+	NOT = { has_reform = macedonian_monarchy_reform }
 	NOT = { has_reform = reformed_byzantine_monarchy_reform }
 	NOT = { has_reform = caliphate_reform } #VU - ET entry used by PDX that they've not given any credit to ET for.
 	NOT = { has_reform = modernized_ottoman_government }

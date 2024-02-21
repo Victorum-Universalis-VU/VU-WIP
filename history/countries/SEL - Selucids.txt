@@ -1,5 +1,5 @@
 government = monarchy #federative-monarchy
-add_government_reform = feudalism_reform #selucian_monarchy
+add_government_reform = selucian_kingdom_reform #selucian_monarchy
 #technology_group = eastern
 technology_group = byzantine_tech_group
 unit_type = eastern
