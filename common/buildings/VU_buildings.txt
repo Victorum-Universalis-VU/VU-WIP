@@ -238,7 +238,6 @@ well = {
 		local_build_time = -0.05
 		local_build_cost = -0.05
 	}
-
 	build_trigger = { 
 	}
 	ai_will_do = {
@@ -1722,98 +1721,6 @@ off_8 = {
 	}
 }
 
-off_9 = {
-	cost = 0
-	time = 0
-		
-	on_destroyed = {
-		hidden_effect = {
-			if = {
-				limit = {
-					FROM = {
-						AND = {
-							check_variable = {
-								which = bricks
-								value = 0.4
-							}
-							
-							check_variable = {
-								which = cement
-								value = 0.3
-							}
-
-							check_variable = {
-								which = glass
-								value = 0.3
-							}
-						
-						}
-					}
-				}
-				FROM = {
-					subtract_variable = {            
-						which = bricks
-						value = 0.4
-					}
-					
-					change_variable = {            
-						which = bricks_used
-						value = 0.4
-					}
-					
-					subtract_variable = {            
-						which = cement
-						value = 0.3
-					}
-					
-					change_variable = {            
-						which = cement_used
-						value = 0.3
-					}
-
-					subtract_variable = {            
-						which = glass
-						value = 0.3
-					}
-					
-					change_variable = {            
-						which = glass_used
-						value = 0.3
-					}
-				}
-				ROOT = {
-					clr_province_flag = back_to_off_9
-				}
-			}
-			else = {
-				ROOT = {
-					set_province_flag = back_to_off_9
-				}
-			}
-			FROM = {
-				country_event = { 
-					id = New_TradeGood_Events.12
-					days = 2
-				}
-			}
-		}
-	}
-	build_trigger = {
-		always = no
-	}
-	
-	
-	modifier = { 
-		allowed_num_of_buildings = 1 
-	    trade_goods_size = -100
-		local_hostile_attrition = -1
-	}
-
-	ai_will_do = {
-		factor = 0
-	}
-}
-
 import_from_subjects = {
 	cost = 0
 	time = 0
@@ -2416,143 +2323,56 @@ munition_factory = {
 	}
 }
 
+
+
+
 wood_workshop = {
 	cost = 400
-	time = 12	
-    
-	#Start of what resource is needed to build the manufactory
-	build_trigger = { 
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
+	time = 12
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = lumber
+			#development = 10
+			NOT = { has_province_flag = has_latent_good }
 		}
+		
 		FROM = {
 			adm_tech = 27
 			#OR = {
-			#	innovativeness = 10
+			#	innovativeness = 5
 			#	NOT = { has_dlc = "Rule Britannia" }
 			#}
-			check_variable = {
-				which = bricks
-				value = 0.3
-			}
-			check_variable = {
-				which = cement
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
-			}
-		}
-		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
 		}
 		NOT = { has_global_flag = No_Woodworking }
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
+	
 	on_built = {
-		hidden_effect = {
-			FROM = {
-				subtract_variable = {            
-					which = lumber
-					value = 0.1
-				}
-
-				change_variable = {            
-					which = lumber_used
-					value = 0.1
-				}
-				
-				change_variable = {            
-					which = wood_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.14
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_Woodworking
-				set_province_flag = has_latent_good
-				change_trade_goods = woodworking
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_Woodworking
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_11 }
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = lumber
-						value = 0.1
-					}
-				
-					subtract_variable = {            
-						which = lumber_used
-						value = 0.1
-					}
-				}
-			}
+		hidden_effect = { 			
 			ROOT = { 
-				remove_building = off_11
-				clr_province_flag = back_to_off_11
-			
+				goods_save = yes
+				change_trade_goods = woodworking 
+				set_province_flag = has_latent_good
 			}
 			
-			FROM = {
-				subtract_variable = {            
-					which = wood_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.14
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
-			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
@@ -2561,148 +2381,60 @@ wood_workshop = {
 					trade_goods = woodworking
 				}
 			}
+			
 		}
+
 	}
-	#End of ai
 }
 
 leather_workshop = {
 	cost = 400
-	time = 12	
-    
-	#Start of what resource is needed to build the manufactory
-	build_trigger = { 
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
+	time = 12
+	
+	build_trigger = {
+		ROOT = {
+			trade_goods = livestock
+			#development = 10
+			NOT = { has_province_flag = has_latent_good }
 		}
+		
 		FROM = {
 			adm_tech = 31
 			#OR = {
-			#	innovativeness = 10
+			#	innovativeness = 7
 			#	NOT = { has_dlc = "Rule Britannia" }
 			#}
-			check_variable = {
-				which = bricks
-				value = 0.3
-			}
-			check_variable = {
-				which = cement
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
-			}
-		}
-		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
 		}
 		NOT = { has_global_flag = No_Leather }
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
-	on_built = {
-		hidden_effect = {
-			FROM = {
-				subtract_variable = {            
-					which = livestock
-					value = 0.1
-				}
+	
+	
 
-				change_variable = {            
-					which = livestock_used
-					value = 0.1
-				}
-				
-				change_variable = {            
-					which = leather_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.15
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_Leather
-				set_province_flag = has_latent_good
-				change_trade_goods = leather
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_Woodworking
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_12 }
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = livestock
-						value = 0.1
-					}
-				
-					subtract_variable = {            
-						which = livestock_used
-						value = 0.1
-					}
-				}
-			}
+	on_built = {
+		hidden_effect = { 
 			ROOT = { 
-				remove_building = off_12
-				clr_province_flag = back_to_off_12
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = leather_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.15
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
+				goods_save = yes
+				change_trade_goods = leather 
+				set_province_flag = has_latent_good
 			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
@@ -2711,336 +2443,131 @@ leather_workshop = {
 					trade_goods = leather
 				}
 			}
+
 		}
+
 	}
-	#End of ai
 }
+
+
+
 
 fur_workshop = {
 	cost = 400
-	time = 12	
-    
-	#Start of what resource is needed to build the manufactory
-	build_trigger = { 
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = lumber }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
+	time = 12
+	
+	build_trigger = {
+		ROOT = {
+			trade_goods = fur
+			#development = 10
+			NOT = { has_province_flag = has_latent_good }
 		}
+		
 		FROM = {
 			dip_tech = 5
-			#OR = {
-			#	innovativeness = 10
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			check_variable = {
-				which = lumber
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
+			OR = {
+				innovativeness = 5
+				NOT = { has_dlc = "Rule Britannia" }
 			}
 		}
-		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = lumber
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
-		}
-		NOT = { has_global_flag = No_Furry }
+		NOT = { has_global_flag = No_Leather }
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
-	on_built = {
-		hidden_effect = {
-			FROM = {
-				subtract_variable = {            
-					which = fur
-					value = 0.1
-				}
+	
+	
 
-				change_variable = {            
-					which = fur_used
-					value = 0.1
-				}
-				
-				change_variable = {            
-					which = fur_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.16
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_Furry
-				set_province_flag = has_latent_good
-				change_trade_goods = fur_clothing
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_Furry
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_13 }
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = fur
-						value = 0.1
-					}
-				
-					subtract_variable = {            
-						which = fur_used
-						value = 0.1
-					}
-				}
-			}
+	on_built = {
+		hidden_effect = { 
 			ROOT = { 
-				remove_building = off_13
-				clr_province_flag = back_to_off_13
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = fur_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.16
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
+				goods_save = yes
+				change_trade_goods = fur_clothing 
+				set_province_flag = has_latent_good
 			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
-				num_of_owned_provinces_with = {
-					value = 3
-					trade_goods = fur_clothing
-				}
+				fur_clothing = 3
 			}
 		}
+
 	}
-	#End of ai
 }
 
 Instruments_workshop = {
 	cost = 1500
-	time = 12	
-    
-	#Start of what resource is needed to build the manufactory
-	build_trigger = { 
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
+	time = 12
+	
+	build_trigger = {
+		ROOT = {
+			#development = 25
+			NOT = { has_province_flag = has_latent_good }
 		}
+		
 		FROM = {
 			dip_tech = 12
-			#OR = {
-			#	innovativeness = 10
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			check_variable = {
-				which = bricks
-				value = 0.3
-			}
-			check_variable = {
-				which = cement
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
+			OR = {
+				innovativeness = 15
+				NOT = { has_dlc = "Rule Britannia" }
 			}
 		}
-		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
+		
+		FROM = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = jungle
 				}
 			}
 		}
 		NOT = { has_global_flag = No_String_Instruments }
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
+	
+	
+
 	on_built = {
-		hidden_effect = {
-			FROM = {
-				OR = {
-					subtract_variable = {            
-				    	which = lumber
-				    	value = 0.1
-				    }
-
-				    change_variable = {            
-				    	which = lumber_used
-				    	value = 0.1
-				    }
-
-					subtract_variable = {            
-				    	which = ebony
-				    	value = 0.1
-				    }
-
-				    change_variable = {            
-				    	which = ebony_used
-				    	value = 0.1
-				    }
-
-					subtract_variable = {            
-				    	which = tropical_wood
-				    	value = 0.1
-				    }
-
-				    change_variable = {            
-				    	which = tropical_wood_used
-				    	value = 0.1
-				    }
-				}
-				
-				change_variable = {            
-					which = Instruments_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.17
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_String_Instruments
-				set_province_flag = has_latent_good
-				change_trade_goods = String_Instruments
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_String_Instruments
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_14 }
-					}
-				}
-				FROM = {
-					OR = {
-				        change_variable = {            
-				        	which = lumber
-				        	value = 0.1
-				        }
-
-						subtract_variable = {            
-				        	which = lumber_used
-				        	value = 0.1
-				        }
-
-						change_variable = {            
-				        	which = ebony
-				        	value = 0.1
-				        }
-    
-				    	subtract_variable = {            
-				        	which = ebony_used
-				        	value = 0.1
-				        }
-						
-						change_variable = {            
-				        	which = tropical_wood
-				        	value = 0.1
-				        }
-    
-				    	subtract_variable = {            
-				        	which = tropical_wood_used
-				        	value = 0.1
-				        }
-				    }
-				}
-			}
+		hidden_effect = { 
 			ROOT = { 
-				remove_building = off_14
-				clr_province_flag = back_to_off_14
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = Instruments_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.17
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
+				goods_save = yes
+				change_trade_goods = String_Instruments 
+				set_province_flag = has_latent_good
 			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
@@ -3049,10 +2576,13 @@ Instruments_workshop = {
 					trade_goods = String_Instruments
 				}
 			}
+			
 		}
+
 	}
-	#End of ai
 }
+
+
 
 sculpture_workshop = {
 	cost = 600
@@ -3120,6 +2650,10 @@ sculpture_workshop = {
 		factor = 700
 	}
 }
+
+
+
+
 
 jewellery_workshop = {
 	cost = 2000
@@ -3189,6 +2723,7 @@ jewellery_workshop = {
 
 	}
 }
+
 
 uniforms_workshop = {
 	cost = 650
@@ -3292,16 +2827,6 @@ steam_engine_manu = {
 	time = 12
 	
 	build_trigger = {
-		ROOT = {
-			OR = {
-				trade_goods = steel
-				trade_goods = bricks
-				trade_goods = cement
-				trade_goods = lumber
-				trade_goods = glass
-			}
-			NOT = { has_province_flag = has_latent_good }
-		}
 		FROM = {
 			adm_tech = 41
 			has_institution = enlightenment
@@ -3309,150 +2834,124 @@ steam_engine_manu = {
 			#	innovativeness = 30
 			#	NOT = { has_dlc = "Rule Britannia" }
 			#}
-			#check_variable = {
-			#	which = zinc
-			#	value = 0.3
-			#}
-			#check_variable = {
-			#	which = copper
-			#	value = 0.4
-			#}
+			check_variable = {
+				which = zinc
+				value = 0.3
+			}
+			check_variable = {
+				which = copper
+				value = 0.4
+			}
 		}
-	#	AND = {	
-	#		NOT = {	
-	#			trade_goods = zinc
-	#			trade_goods = copper
-	#			has_province_flag = has_latent_good
-	#		}
-	#		
-	#	}
-	#	NOT = { has_global_flag = No_Steam_engine }
+		AND = {	
+			NOT = {	
+				trade_goods = zinc
+				trade_goods = copper
+				has_province_flag = has_latent_good
+			}
+			
+		}
+		NOT = { has_global_flag = No_Steam_engine }
 	}
-	#
+	
 	on_built = {
 		hidden_effect = {
-			ROOT = { 
-				goods_save = yes	
-				if = {
-					limit = {
-						OR = { 
-							trade_goods = bronze
-							trade_goods = copper
-						}
-					}
-					change_trade_goods = steam_engine
+			FROM = {
+				subtract_variable = {            
+					which = zinc
+					value = 0.3
 				}
-				else_if = {
-					limit = { 
-						OR = { 
-							trade_goods = steel
-							trade_goods = glass
-							trade_goods = steam_engine
-						}
-					}
-					change_trade_goods = locomotives
-				}	
-				set_province_flag = has_latent_good
+						
+				change_variable = {            
+					which = zinc_used
+					value = 0.3
+				}
+				
+				subtract_variable = {            
+					which = copper
+					value = 0.4
+				}
+				
+				change_variable = {            
+					which = copper_used
+					value = 0.4
+				}
+		
+				change_variable = {            
+					which = steam_engine_manu_amount
+					value = 1
+				}
+				
+				country_event = { 
+					id = New_TradeGood_Events.7
+					days = 2
+				}
 			}
-	#		FROM = {
-	#			subtract_variable = {            
-	#				which = zinc
-	#				value = 0.3
-	#			}
-	#					
-	#			change_variable = {            
-	#				which = zinc_used
-	#				value = 0.3
-	#			}
-	#			
-	#			subtract_variable = {            
-	#				which = copper
-	#				value = 0.4
-	#			}
-	#			
-	#			change_variable = {            
-	#				which = copper_used
-	#				value = 0.4
-	#			}
-	#	
-	#			change_variable = {            
-	#				which = steam_engine_manu_amount
-	#				value = 1
-	#			}
-	#			
-	#			country_event = { 
-	#				id = New_TradeGood_Events.7
-	#				days = 2
-	#			}
-	#		}
-	#		
-	#		ROOT = {
-	#			goods_save = yes
-	#			set_province_flag = has_steam_engine
-	#			set_province_flag = has_latent_good
-	#			change_trade_goods = steam_engine			
-	#		}
+			
+			ROOT = {
+				goods_save = yes
+				set_province_flag = has_steam_engine
+				set_province_flag = has_latent_good
+				change_trade_goods = steam_engine			
+			}
 		}
+
 	}
 	
 	on_destroyed = {
-		ROOT = {
+		hidden_effect = { 
+			clr_province_flag = has_steam_engine
 			clr_province_flag = has_latent_good
-			goods_back = yes	
+			if = {	
+				limit = {
+					ROOT = {
+						NOT = { has_building = off_4 }
+					}
+				}
+				FROM = {
+					change_variable = {            
+						which = zinc
+						value = 0.3
+					}
+				
+					subtract_variable = {            
+						which = zinc_used
+						value = 0.3
+					}
+					
+					change_variable = {            
+						which = copper
+						value = 0.4
+					}
+				
+					subtract_variable = {            
+						which = copper_used
+						value = 0.4
+					}
+				}
+			}
+			ROOT = { 
+				remove_building = off_4 
+				clr_province_flag = back_to_off_4
+			
+			}
+			
+			FROM = {
+				subtract_variable = {            
+					which = steam_engine_manu_amount
+					value = 1
+				}
+				
+				country_event = { 
+					id = New_TradeGood_Events.7
+					days = 2
+				}
+			}
+			
+			ROOT = {
+				goods_back = yes	
+			}
 		}
-	#	hidden_effect = { 
-	#		clr_province_flag = has_steam_engine
-	#		clr_province_flag = has_latent_good
-	#		if = {	
-	#			limit = {
-	#				ROOT = {
-	#					NOT = { has_building = off_4 }
-	#				}
-	#			}
-	#			FROM = {
-	#				change_variable = {            
-	#					which = zinc
-	#					value = 0.3
-	#				}
-	#			
-	#				subtract_variable = {            
-	#					which = zinc_used
-	#					value = 0.3
-	#				}
-	#				
-	#				change_variable = {            
-	#					which = copper
-	#					value = 0.4
-	#				}
-	#			
-	#				subtract_variable = {            
-	#					which = copper_used
-	#					value = 0.4
-	#				}
-	#			}
-	#		}
-	#		ROOT = { 
-	#			remove_building = off_4 
-	#			clr_province_flag = back_to_off_4
-	#		
-	#		}
-	#		
-	#		FROM = {
-	#			subtract_variable = {            
-	#				which = steam_engine_manu_amount
-	#				value = 1
-	#			}
-	#			
-	#			country_event = { 
-	#				id = New_TradeGood_Events.7
-	#				days = 2
-	#			}
-	#		}
-	#		
-	#		ROOT = {
-	#			goods_back = yes	
-	#		}
-	#	}
 	}
 	
 	modifier = {
@@ -3462,17 +2961,18 @@ steam_engine_manu = {
 	
 	ai_will_do = {
 		factor = 6000
+
 		modifier = {	
 			factor = 0
 			FROM = {
-				OR= {
-					steam_engine = 3
-					locomotives = 3
-				}
+				steam_engine = 3
 			}
 		}	
 	}
 }
+
+
+
 
 mine = {
 	cost = 500
@@ -3597,6 +3097,7 @@ spectacle_factory = {
 				change_trade_goods = optics
 			}
 		}
+
 	}
 	
 	on_destroyed = {
@@ -3659,6 +3160,7 @@ spectacle_factory = {
 				optics = 3
 			}
 		}
+
 	}
 }
 
@@ -3719,6 +3221,7 @@ cigars_factory = {
 				change_trade_goods = cigars
 			}
 		}
+
 	}
 	
 	on_destroyed = {
@@ -3781,6 +3284,7 @@ cigars_factory = {
 				cigars = 3
 			}
 		}
+
 	}
 }
 
@@ -3840,6 +3344,7 @@ chocolate_factory = {
 				change_trade_goods = chocolate
 			}
 		}
+
 	}
 	
 	on_destroyed = {
@@ -3902,6 +3407,7 @@ chocolate_factory = {
 				chocolate = 3
 			}
 		}
+
 	}
 }
 
@@ -4069,342 +3575,100 @@ cannery_workshop = {
 
 regular_cloth_workshop = {
 	cost = 1000
-	time = 12	
+	time = 1
 
-	#Start of what resource is needed to build the manufactory
 	build_trigger = {
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
-		}
-		FROM = {
-			dip_tech = 26
-			#OR = {
-			#	innovativeness = 10
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			check_variable = {
-				which = bricks
-				value = 0.3
-			}
-			check_variable = {
-				which = cement
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
-			}
-		}
 		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
 		}
-		NOT = { has_global_flag = No_Regular_Clothes }
+		
+		FROM = {
+			dip_tech = 9
+		}
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
+	
 	on_built = {
-		hidden_effect = {
-			FROM = {
-				subtract_variable = {            
-					which = cloth
-					value = 0.1
-				}
-
-				change_variable = {            
-					which = cloth_used
-					value = 0.1
-				}
-						
-				change_variable = {            
-					which = regular_cloth_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.12
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_regular_clothes
-				set_province_flag = has_latent_good
-				change_trade_goods = regular_clothes
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_regular_clothes
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_9 }
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = cloth
-						value = 0.1
-					}
-				
-					subtract_variable = {            
-						which = cloth_used
-						value = 0.1
-					}
-				}
-			}
+		hidden_effect = { 			
 			ROOT = { 
-				remove_building = off_9 
-				clr_province_flag = back_to_off_9
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = regular_cloth_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.12
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
+				goods_save = yes
+				change_trade_goods = regular_clothes 
+				set_province_flag = has_latent_good
 			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
-				num_of_owned_provinces_with = {
-					value = 3
-					trade_goods = regular_clothes
-				}
+				regular_clothes = 3
 			}
 		}
 	}
-	#End of ai
 }
 
 luxury_cloth_workshop = {
 	cost = 1000
-	time = 12	
-    
-	#Start of what resource is needed to build the manufactory
-	build_trigger = { 
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
-		}
-		FROM = {
-			dip_tech = 26
-			#OR = {
-			#	innovativeness = 10
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			check_variable = {
-				which = bricks
-				value = 0.3
-			}
-			check_variable = {
-				which = cement
-				value = 0.2
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
-			}
-		}
+	time = 1
+
+	build_trigger = {
 		ROOT = {
-			AND = {
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
 		}
-		NOT = { has_global_flag = No_Luxury_Clothes }
+		
+		FROM = {
+			dip_tech = 9
+		}
 	}
-	#End of what resource is needed to build the manufactory
-	#Start of what resource is produced by the manufactory
+	
 	on_built = {
-		hidden_effect = {
-			FROM = {
-				subtract_variable = {            
-					which = regular_clothes
-					value = 0.3
-				}
-
-				change_variable = {            
-					which = regular_clothes_used
-					value = 0.3
-				}
-				
-				subtract_variable = {            
-					which = silk
-					value = 0.2
-				}
-
-				change_variable = {            
-					which = silk_used
-					value = 0.2
-				}
-
-				subtract_variable = {            
-					which = fur
-					value = 0.1
-				}
-				
-				change_variable = {            
-					which = fur_used
-					value = 0.1
-				}
-				
-				change_variable = {            
-					which = luxury_cloth_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.13
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_save = yes
-				set_province_flag = has_luxury_clothes
-				set_province_flag = has_latent_good
-				change_trade_goods = luxury_clothes
-			}
-		}
-	}
-	#End of what resource is produced by the manufactory
-	#Start of what resource is given back to the country by the manufactory
-	on_destroyed = {
-		hidden_effect = {
-			clr_province_flag = has_luxury_clothes
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off_10 }
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = regular_clothes
-						value = 0.3
-					}
-				
-					subtract_variable = {            
-						which = regular_clothes_used
-						value = 0.3
-					}
-					
-					change_variable = {            
-						which = silk
-						value = 0.2
-					}
-				
-					subtract_variable = {            
-						which = silk_used
-						value = 0.2
-					}
-
-					change_variable = {            
-						which = fur
-						value = 0.1
-					}
-				
-					subtract_variable = {            
-						which = fur_used
-						value = 0.1
-					}
-				}
-			}
+		hidden_effect = { 			
 			ROOT = { 
-				remove_building = off_10 
-				clr_province_flag = back_to_off_10
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = luxury_cloth_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.13
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
+				goods_save = yes
+				change_trade_goods = luxury_clothes
+				set_province_flag = has_latent_good
 			}
 		}
 	}
-	#End of what resource is given back to the country by the manufactory
-	#Start of modifier by the manufactory
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
 	modifier = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
-	}
-	#End of modifier by the manufactory
-	#Start of ai
+	}	
+	
 	ai_will_do = {
 		factor = 700
-
+		
 		modifier = {	
 			factor = 0
 			FROM = {
-				num_of_owned_provinces_with = {
-					value = 3
-					trade_goods = luxury_clothes
-				}
+				luxury_clothes = 3
 			}
 		}
 	}
-	#End of ai
 }
 
 luxury_furniture_workshop = {
@@ -4413,9 +3677,10 @@ luxury_furniture_workshop = {
 
 	build_trigger = {
 		ROOT = {
-			trade_goods = bricks
-			trade_goods = cement
-			trade_goods = glass
+			OR = {
+				trade_goods = ebony
+				trade_goods = lumber
+			}
 			NOT = { has_province_flag = has_latent_good }
 		}
 		
@@ -4474,9 +3739,10 @@ utensil_workshop = {
 
 	build_trigger = {
 		ROOT = {
-			trade_goods = bricks
-			trade_goods = cement
-			trade_goods = glass
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
 			NOT = { has_province_flag = has_latent_good }
 		}
 		
@@ -4489,16 +3755,7 @@ utensil_workshop = {
 		hidden_effect = { 			
 			ROOT = { 
 				goods_save = yes
-				if = {
-					limit = {
-						OR = {
-							trade_goods = copper #tradegood used
-							trade_goods = gold #tradegood used
-							trade_goods = silver #tradegood used
-						}
-					}
-					change_trade_goods = accoutrements #tradegood that comes out
-				}
+				change_trade_goods = accoutrements
 				set_province_flag = has_latent_good
 			}
 		}
@@ -4528,15 +3785,13 @@ utensil_workshop = {
 	}
 }
 
-automobile_plant = { #Was glassmaker
+glassmaker = {
 	cost = 1000
 	time = 1
 
 	build_trigger = {
 		ROOT = {
-			trade_goods = bricks #tradegood needed to build it
-			trade_goods = cement #tradegood needed to build it
-			trade_goods = glass #tradegood needed to build it
+			trade_goods = sand
 			NOT = { has_province_flag = has_latent_good }
 		}
 		
@@ -4549,25 +3804,7 @@ automobile_plant = { #Was glassmaker
 		hidden_effect = { 			
 			ROOT = { 
 				goods_save = yes
-				if = {
-					limit = { 
-						trade_goods = ebony #tradegood used
-						trade_goods = glass #tradegood used
-						trade_goods = oil #tradegood used
-						trade_goods = rubber #tradegood used
-						trade_goods = steel #tradegood used
-					}
-					change_trade_goods = automobiles #tradegood that comes out
-				}
-				else_if = {
-					limit = { 
-						trade_goods = glass #tradegood used
-						trade_goods = oil #tradegood used
-						trade_goods = rubber #tradegood used
-						trade_goods = steel #tradegood used
-					}
-					change_trade_goods = tractors #tradegood that comes out
-				}	
+				change_trade_goods = glass 
 				set_province_flag = has_latent_good
 			}
 			
@@ -4592,93 +3829,164 @@ automobile_plant = { #Was glassmaker
 		modifier = {	
 			factor = 0
 			FROM = {
-				OR= {
-					automobiles = 3 #tradegood produced
-					tractors = 3 #tradegood produced
-				}
+				glass = 3
 			}
 		}
 
 	}
 }
 
-bicycle_factory = {
-	cost = 1000
-	time = 1
+#automobile_plant = { #Was glassmaker
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		ROOT = {
+#			trade_goods = bricks #tradegood needed to build it
+#			trade_goods = cement #tradegood needed to build it
+#			trade_goods = glass #tradegood needed to build it
+#			NOT = { has_province_flag = has_latent_good }
+#		}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes
+#				if = {
+#					limit = { 
+#						trade_goods = ebony #tradegood used
+#						trade_goods = glass #tradegood used
+#						trade_goods = oil #tradegood used
+#						trade_goods = rubber #tradegood used
+#						trade_goods = steel #tradegood used
+#					}
+#					change_trade_goods = automobiles #tradegood that comes out
+#				}
+#				else_if = {
+#					limit = { 
+#						trade_goods = glass #tradegood used
+#						trade_goods = oil #tradegood used
+#						trade_goods = rubber #tradegood used
+#						trade_goods = steel #tradegood used
+#					}
+#					change_trade_goods = tractors #tradegood that comes out
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				OR= {
+#					automobiles = 3 #tradegood produced
+#					tractors = 3 #tradegood produced
+#				}
+#			}
+#		}
+#
+#	}
+#}
+#
+#bicycle_factory = {
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		ROOT = {
+#			trade_goods = bricks #tradegood needed to build it
+#			trade_goods = cement #tradegood needed to build it
+#			trade_goods = glass #tradegood needed to build it
+#			NOT = { has_province_flag = has_latent_good }
+#		}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes
+#				if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = rubber #tradegood used
+#							trade_goods = steel #tradegood used
+#						}
+#					}
+#					change_trade_goods = bicycles #tradegood that comes out
+#				}
+#				else_if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = glass #tradegood used
+#							trade_goods = oil #tradegood used
+#							trade_goods = rubber #tradegood used
+#							trade_goods = steel #tradegood used
+#						}
+#					}
+#					change_trade_goods = motorcycles #tradegood that comes out
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				OR= {
+#					automobiles = 3 #tradegood produced
+#					tractors = 3 #tradegood produced
+#				}
+#			}
+#		}
+#
+#	}
+#}
 
-	build_trigger = {
-		ROOT = {
-			trade_goods = bricks #tradegood needed to build it
-			trade_goods = cement #tradegood needed to build it
-			trade_goods = glass #tradegood needed to build it
-			NOT = { has_province_flag = has_latent_good }
-		}
-		
-		FROM = {
-			dip_tech = 9
-		}
-	}
-	
-	on_built = {
-		hidden_effect = { 			
-			ROOT = { 
-				goods_save = yes
-				if = {
-					limit = { 
-						OR = {
-							trade_goods = rubber #tradegood used
-							trade_goods = steel #tradegood used
-						}
-					}
-					change_trade_goods = bicycles #tradegood that comes out
-				}
-				else_if = {
-					limit = { 
-						OR = {
-							trade_goods = glass #tradegood used
-							trade_goods = oil #tradegood used
-							trade_goods = rubber #tradegood used
-							trade_goods = steel #tradegood used
-						}
-					}
-					change_trade_goods = motorcycles #tradegood that comes out
-				}	
-				set_province_flag = has_latent_good
-			}
-			
-		}
-	}
-	
-	on_destroyed = {
-		ROOT = {
-			clr_province_flag = has_latent_good
-			goods_back = yes	
-		}
-	}
 
-	modifier = {
-		allowed_num_of_buildings = 1
-		local_governing_cost = 0.15
-	}	
-	
-	ai_will_do = {
-		factor = 700
-		
-		modifier = {	
-			factor = 0
-			FROM = {
-				OR= {
-					automobiles = 3 #tradegood produced
-					tractors = 3 #tradegood produced
-				}
-			}
-		}
-
-	}
-}
-
-
-potters = { #Was potters
+potters = {
 	cost = 1000
 	time = 1
 
@@ -4697,92 +4005,7 @@ potters = { #Was potters
 		hidden_effect = { 			
 			ROOT = { 
 				goods_save = yes
-				if = {
-					limit = { 
-						trade_goods = clay 
-					}
-					change_trade_goods = pottery 
-				}
-				else_if = {
-					limit = {
-						OR = {
-							trade_goods = gems
-							trade_goods = clay
-						}
-					}
-					change_trade_goods = chinaware
-				}	
-				set_province_flag = has_latent_good
-			}
-			
-		}
-	}
-	
-	on_destroyed = {
-		ROOT = {
-			clr_province_flag = has_latent_good
-			goods_back = yes	
-		}
-	}
-
-	modifier = {
-		allowed_num_of_buildings = 1
-		local_governing_cost = 0.15
-	}	
-	
-	ai_will_do = {
-		factor = 700
-		
-		modifier = {	
-			factor = 0
-			FROM = {
-				OR = {
-					chinaware = 3
-					pottery = 3
-				}
-			}
-		}
-	}
-}
-
-brick_and_cement_factory = { #Was potters
-	cost = 1000
-	time = 1
-
-	build_trigger = {
-		#ROOT = {
-		#	trade_goods = clay
-		#	trade_goods = sand
-		#	NOT = { has_province_flag = has_latent_good }
-		#}
-		
-		FROM = {
-			dip_tech = 9
-		}
-	}
-	
-	on_built = {
-		hidden_effect = { 			
-			ROOT = { 
-				goods_save = yes	
-				if = {
-					limit = { 
-						OR = {
-							trade_goods = sand
-							trade_goods = clay 
-						}
-					}
-					change_trade_goods = bricks
-				}
-				else_if = {
-					limit = {
-						OR = {
-							trade_goods = sand
-							trade_goods = limestone
-						}
-					}
-					change_trade_goods = cement
-				}	
+				change_trade_goods = pottery 
 				set_province_flag = has_latent_good
 			}
 			
@@ -4812,6 +4035,74 @@ brick_and_cement_factory = { #Was potters
 		}
 	}
 }
+
+#brick_and_cement_factory = { #Was potters
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		#ROOT = {
+#		#	trade_goods = clay
+#		#	trade_goods = sand
+#		#	NOT = { has_province_flag = has_latent_good }
+#		#}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes	
+#				if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = sand
+#							trade_goods = clay 
+#						}
+#					}
+#					change_trade_goods = bricks
+#				}
+#				else_if = {
+#					limit = {
+#						OR = {
+#							trade_goods = sand
+#							trade_goods = limestone
+#						}
+#					}
+#					change_trade_goods = cement
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				pottery = 3
+#			}
+#		}
+#	}
+#}
 
 steel_foundry = {
 	cost = 1000
@@ -5385,234 +4676,234 @@ Ai_def_push_tax = {
 	}
 }
 
-fabric_workshop = { #This is the template for the fabric workshop. Basically, if we can get this to work, then it will enable an actual manufacturing system in-game and it can be used for other buildings that don't necessarily use all resources assigned to it at once but use them in the context of an OR.
-	cost = 1000
-	time = 12	
-
-	build_trigger = { #Basically what is needed in order for the manufactory to be built.
-		AND = {
-			#development = 10	
-			NOT = {	trade_goods = bricks }
-			NOT = {	trade_goods = cement }
-			NOT = {	trade_goods = glass }
-			NOT = {	has_province_flag = has_latent_good	}
-		}
-		FROM = { #Checking the country if it has these resources in order to build this workshop.
-			mil_tech = 24
-			#OR = {
-			#	innovativeness = 10
-			#	NOT = { has_dlc = "Rule Britannia" }
-			#}
-			#The resources below here are all needed at once in order to build manufacturing buildings.
-			check_variable = {
-				which = bricks
-				value = 0.2
-			}
-			check_variable = {
-				which = cement
-				value = 0.1
-			}
-			check_variable = {
-				which = glass
-				value = 0.1
-			}
-		}
-		ROOT = { #Checking the province if it has these resources in order to build this workshop.
-			AND = { #Again, I'm not 100% sure whether these work or not. The template itself was after all inspired by the cannon_foundry latent building.
-				development = 10	
-				NOT = {	
-					trade_goods = bricks
-					trade_goods = cement
-					trade_goods = glass
-					has_province_flag = has_latent_good
-				}
-			}
-		}
-		NOT = { has_global_flag = No_Fabrics }
-	}
-	on_built = { #Basically what happens when the manufactory is built.
-		hidden_effect = {
-			FROM = { #Check the country's resources
-				OR = { #I added in the OR here because I want to say that if the country has access to wool then use it or if it has cotton or silkworms. Please feel free to remove if it is wrong.
-			    	subtract_variable = {            
-			    		which = wool
-			    		value = 0.4
-			    	}
-			    	
-			    	subtract_variable = {            
-			    		which = cotton
-			    		value = 0.3
-			    	}
-    
-			    	subtract_variable = {            
-			    		which = silkworm
-			    		value = 0.3
-			    	}
-			    	
-			    	change_variable = {            
-			    		which = wool_used
-			    		value = 0.4
-			    	}
-			    	
-			    	change_variable = {            
-			    		which = cotton_used
-			    		value = 0.3
-			    	}
-    
-			    	change_variable = {            
-			    		which = silkworm_used
-			    		value = 0.3
-			    	}
-    
-			    }
-				
-				change_variable = {            
-					which = fabric_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.4
-					days = 2
-				}
-			}
-
-			ROOT = { #Checking the province's resources
-				goods_save = yes
-				if = {
-					limit = {
-						check_variable = {
-							which = wool
-							value = 0.1
-						}
-					}
-					subtract_variable = {            
-				    	which = wool
-				    	value = 0.1
-				    }
-					change_variable = {            
-				    	which = wool_used
-				    	value = 0.1
-				    }
-					change_trade_goods = cloth
-				}
-				else_if = {
-					limit = {
-						check_variable = {
-							which = cotton
-							value = 0.1
-						}
-					}
-					subtract_variable = {            
-				    	which = cotton
-				    	value = 0.1
-				    }
-    
-				    change_variable = {            
-				    	which = cotton_used
-				    	value = 0.1
-				    }
-					change_trade_goods = cloth
-				}	
-				else_if = {
-					limit = {
-						check_variable = {
-							which = silkworm
-							value = 0.1
-						}
-					}
-					subtract_variable = {            
-				    	which = silkworm
-				    	value = 0.1
-				    }
-    
-				    change_variable = {            
-				    	which = silkworm_used
-				    	value = 0.1
-				    }
-					change_trade_goods = silk
-				}	
-				set_province_flag = has_latent_good
-				set_province_flag = No_fabrics
-			}
-		}
-	}
-	#Everything below here hasn't been done yet.
-	on_destroyed = { #Basically what happens when the building is destroyed.
-		hidden_effect = {
-			clr_province_flag = has_fabrics
-			clr_province_flag = has_latent_good
-			if = {	
-				limit = {
-					ROOT = {
-						NOT = { has_building = off } #This pertains to the off buildings above and this number can be anything after 9. So, off_10 for example.
-					}
-				}
-				FROM = {
-					change_variable = {            
-						which = copper
-						value = 0.4
-					}
-				
-					subtract_variable = {            
-						which = copper_used
-						value = 0.4
-					}
-					
-					change_variable = {            
-						which = tin
-						value = 0.3
-					}
-				
-					subtract_variable = {            
-						which = tin_used
-						value = 0.3
-					}
-				}
-			}
-			ROOT = { 
-				remove_building = off #Has to match whatever the top off is.
-				clr_province_flag = back_to_off
-			
-			}
-			
-			FROM = {
-				subtract_variable = {            
-					which = fabric_workshop_amount
-					value = 1
-				}
-				
-				country_event = { 
-					id = New_TradeGood_Events.4
-					days = 2
-				}
-			}
-			
-			ROOT = {
-				goods_back = yes	
-			}
-		}
-	}
-	modifier = {
-		allowed_num_of_buildings = 1
-		local_governing_cost = 0.15
-	}	
-	ai_will_do = {
-		factor = 2000
-
-		modifier = {	
-			factor = 0
-			FROM = {
-				num_of_owned_provinces_with = {
-					value = 3
-					OR = {
-						trade_goods = cloth
-						trade_goods = silk
-					}
-				}
-			}
-			
-		}
-		
-	}
-}
+#fabric_workshop = { #This is the template for the fabric workshop. Basically, if we can get this to work, then it will enable an actual manufacturing system in-game and it can be used for other buildings that don't necessarily use all resources assigned to it at once but use them in the context of an OR.
+#	cost = 1000
+#	time = 12	
+#
+#	build_trigger = { #Basically what is needed in order for the manufactory to be built.
+#		AND = {
+#			#development = 10	
+#			NOT = {	trade_goods = bricks }
+#			NOT = {	trade_goods = cement }
+#			NOT = {	trade_goods = glass }
+#			NOT = {	has_province_flag = has_latent_good	}
+#		}
+#		FROM = { #Checking the country if it has these resources in order to build this workshop.
+#			mil_tech = 24
+#			#OR = {
+#			#	innovativeness = 10
+#			#	NOT = { has_dlc = "Rule Britannia" }
+#			#}
+#			#The resources below here are all needed at once in order to build manufacturing buildings.
+#			check_variable = {
+#				which = bricks
+#				value = 0.2
+#			}
+#			check_variable = {
+#				which = cement
+#				value = 0.1
+#			}
+#			check_variable = {
+#				which = glass
+#				value = 0.1
+#			}
+#		}
+#		ROOT = { #Checking the province if it has these resources in order to build this workshop.
+#			AND = { #Again, I'm not 100% sure whether these work or not. The template itself was after all inspired by the cannon_foundry latent building.
+#				development = 10	
+#				NOT = {	
+#					trade_goods = bricks
+#					trade_goods = cement
+#					trade_goods = glass
+#					has_province_flag = has_latent_good
+#				}
+#			}
+#		}
+#		NOT = { has_global_flag = No_Fabrics }
+#	}
+#	on_built = { #Basically what happens when the manufactory is built.
+#		hidden_effect = {
+#			FROM = { #Check the country's resources
+#				OR = { #I added in the OR here because I want to say that if the country has access to wool then use it or if it has cotton or silkworms. Please feel free to remove if it is wrong.
+#			    	subtract_variable = {            
+#			    		which = wool
+#			    		value = 0.4
+#			    	}
+#			    	
+#			    	subtract_variable = {            
+#			    		which = cotton
+#			    		value = 0.3
+#			    	}
+#    
+#			    	subtract_variable = {            
+#			    		which = silkworm
+#			    		value = 0.3
+#			    	}
+#			    	
+#			    	change_variable = {            
+#			    		which = wool_used
+#			    		value = 0.4
+#			    	}
+#			    	
+#			    	change_variable = {            
+#			    		which = cotton_used
+#			    		value = 0.3
+#			    	}
+#    
+#			    	change_variable = {            
+#			    		which = silkworm_used
+#			    		value = 0.3
+#			    	}
+#    
+#			    }
+#				
+#				change_variable = {            
+#					which = fabric_workshop_amount
+#					value = 1
+#				}
+#				
+#				country_event = { 
+#					id = New_TradeGood_Events.4
+#					days = 2
+#				}
+#			}
+#
+#			ROOT = { #Checking the province's resources
+#				goods_save = yes
+#				if = {
+#					limit = {
+#						check_variable = {
+#							which = wool
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = wool
+#				    	value = 0.1
+#				    }
+#					change_variable = {            
+#				    	which = wool_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = cloth
+#				}
+#				else_if = {
+#					limit = {
+#						check_variable = {
+#							which = cotton
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = cotton
+#				    	value = 0.1
+#				    }
+#    
+#				    change_variable = {            
+#				    	which = cotton_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = cloth
+#				}	
+#				else_if = {
+#					limit = {
+#						check_variable = {
+#							which = silkworm
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = silkworm
+#				    	value = 0.1
+#				    }
+#    
+#				    change_variable = {            
+#				    	which = silkworm_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = silk
+#				}	
+#				set_province_flag = has_latent_good
+#				set_province_flag = No_fabrics
+#			}
+#		}
+#	}
+#	#Everything below here hasn't been done yet.
+#	on_destroyed = { #Basically what happens when the building is destroyed.
+#		hidden_effect = {
+#			clr_province_flag = has_fabrics
+#			clr_province_flag = has_latent_good
+#			if = {	
+#				limit = {
+#					ROOT = {
+#						NOT = { has_building = off } #This pertains to the off buildings above and this number can be anything after 9. So, off_10 for example.
+#					}
+#				}
+#				FROM = {
+#					change_variable = {            
+#						which = copper
+#						value = 0.4
+#					}
+#				
+#					subtract_variable = {            
+#						which = copper_used
+#						value = 0.4
+#					}
+#					
+#					change_variable = {            
+#						which = tin
+#						value = 0.3
+#					}
+#				
+#					subtract_variable = {            
+#						which = tin_used
+#						value = 0.3
+#					}
+#				}
+#			}
+#			ROOT = { 
+#				remove_building = off #Has to match whatever the top off is.
+#				clr_province_flag = back_to_off
+#			
+#			}
+#			
+#			FROM = {
+#				subtract_variable = {            
+#					which = fabric_workshop_amount
+#					value = 1
+#				}
+#				
+#				country_event = { 
+#					id = New_TradeGood_Events.4
+#					days = 2
+#				}
+#			}
+#			
+#			ROOT = {
+#				goods_back = yes	
+#			}
+#		}
+#	}
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	ai_will_do = {
+#		factor = 2000
+#
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				num_of_owned_provinces_with = {
+#					value = 3
+#					OR = {
+#						trade_goods = cloth
+#						trade_goods = silk
+#					}
+#				}
+#			}
+#			
+#		}
+#		
+#	}
+#}

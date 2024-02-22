@@ -56,11 +56,11 @@
  SF_Edumacation_Events.3.desc:0 "A new sovereign has donned the crown and ascended to leadership in our land. He has much to learn."
  SF_Edumacation_Events.3.a:0 "All Hail $MONARCHTITLE$ $MONARCH$."
  #
- SF_Edumacation_Events.4.name:0 "A New Hair"
+ SF_Edumacation_Events.4.name:0 "A New Heir"
  SF_Edumacation_Events.4.desc:0 "Our nation has been blessed with a new heir. The young heir will come to rule this land one day, and must learn all $HEIR_S_PRONOUN$ can."
  SF_Edumacation_Events.4.a:0 "May the young $HEIR$ prove his worth."
  #
- SF_Edumacation_Events.5.name:0 "A New Hair"
+ SF_Edumacation_Events.5.name:0 "A New Heir"
  SF_Edumacation_Events.5.desc:0 "With our new ruler comes the heir. The young heir will come to rule this land one day, and must learn all $HEIR_S_PRONOUN$ can."
  SF_Edumacation_Events.5.a:0 "May the young $HEIR$ prove his worth."
  #
