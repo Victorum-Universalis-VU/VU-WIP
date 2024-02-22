@@ -7,36 +7,12 @@ religion = orthodox
 capital = "Veda-Suvar"
 trade_goods = grain
 hre = no
-base_tax = 4 
-base_production = 6
+base_tax = 2 
+base_production = 3
 base_manpower = 4 
 is_city = yes
 add_core = KAZ
 add_core = CUV
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1552.10.2 = {
 	owner = RUS 

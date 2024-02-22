@@ -8,16 +8,16 @@ culture = siberian
 religion = sunni
 trade_goods = fur
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 8
+base_tax = 2
+base_production = 3
+base_manpower = 3
 is_city = yes
 add_core = SIB
 
 unrest = 15
 
 
-
+add_province_triggered_modifier = vu_uzbek_eco
 
 1468.1.1 = {
 	owner = SIB

@@ -1,5 +1,20 @@
 ﻿l_english:
  ##VU Quonton additions
+ vu_great_horde_eco: "The Great Orde"
+ desc_vu_great_horde_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_kazan_eco: "The Kazan Orde"
+ desc_vu_kazan_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_nogai_eco: "The Nogai Orde"
+ desc_vu_nogai_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_uzbek_eco: "The Uzbek Orde"
+ desc_vu_uzbek_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_crimea_eco: "The Crimean Orde"
+ desc_vu_crimea_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_astrakan_eco: "The Astrakan Orde"
+ desc_vu_astrakan_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+ vu_kazakh_eco: "The Kazakh Orde"
+ desc_vu_kazakh_eco: "Our Orde contains most of our soldiers, people, and economic output. We must protect it at all costs."
+
  vu_ger_kaiserreich_pupets_puppet: "Mitteleuropa"
  desc_vu_ger_kaiserreich_pupets_puppet: ""
  vu_ger_kaiserreich_pupets: "Mitteleuropa"
