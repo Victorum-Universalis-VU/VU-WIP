@@ -1853,6 +1853,39 @@ scandinavian = { #Nordic
 			Hårfagreætta Bielke Bildt Galte Paus Smør Benkestok Kane Bonde Drake "av Hafrsfjord" Ytra "av Askø" Koss "av Røra" "av Nordland" Hylling Alfr Herja Vansö Flod "af Vendel" "av Alfheim" "af Åland" Vidfamne Bille Iuel Kaas Rosenkrantz Urne Adeler Blixenskiold Gyldenpalm Holberg Rosenheim Schouboe Tordenskiold Wessel Westervick Falsen Knagenhjelm Galtung Heubsch Kløcker Løvenskiold Rosenvinge Werenskiold Kruckow Mowat Rømer Handingmann Skaktavl Tordenstierne Roos Skanke Bolt Giske Brockenhuus Adelswärd Kane Blixen Løvendal Balke Vedel Bjelke Galle Griis
 		}
 	}
+	jan_mayenese = {
+		dynasty_names = {
+			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
+		}
+		male_names = {
+			Björn Bamse Brum Grawr Nanuk Ursus Isbjorn Grrrowr Grrgrrr Rawr
+		}
+		female_names = {
+			Brummelisa Ursa Brumma
+		}
+	}
+	norse = {
+	    country = {  }
+		province = { local_has_carolean = yes }
+		male_names = {
+			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 
+			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Fridhthjófr Fródhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 
+			Gudhleifr Gudhmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjorn Halli Hallr Hallsteinn Hallthórr Hallvardhr Haraldr Hávardhr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreidharr Hróaldr 
+			Hróarr Hródhgeirr Hródhólfr Hródhvaldr Hrólfr Hrœrekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjorn Oddr Oddvarr Olvir Rádhúlfr Ragnarr Ragnvaldr 
+			Randúlfr Rúni Sigfrødhr Sigmundr Sigsteinn Sigurdhr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarlidhi Sundri Suni Svantepolk Sveinn Sverrir Thórarinn Thórbjorn Thórfastr Thórfredhr Thórgeirr 
+			Thórgísl Thórgnýr Thórir Thórketill Thórleifr Thórleikr Thórmódhr Thórsteinn Thórvaldr Thróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végardhr Vetrlidhi Vígi Víkingr Vragi Yngvarr
+		}
+		female_names = {
+			Alfhildr Álof Arnbjorg Ása Ásdís Áshildr Áslaug Ásta Ástrídhr Audhr Audhrhildr Bergljót Bjorg Borghildr Bóthildr Brynhildr Brynja Dagmær Dagný Dagrún Edda Eydís Frídha Grímhildr Gudhlaug Gudhleif Gudhrídhr Gudhrún Gulla 
+			Gunna Gunnbjorg Gunnhildr Gunnvor Gydha Hallthóra Helga Hildr Hjordís Hlíf Hrafnhildr Hreidhunn Idhunn Inga Ingibjorg Ingigerdhr Ingrídhr Ingunn Ingvildr Jórunnr Katla Ketilridhr Magnhildr Myrgjol Ólaug Ragna Ragnbjorg 
+			Ragnfrídhr Ragnheidhr Ragnhildr Rúna Saldís Signý Sigrídhr Sigrún Sólveig Steinunn Svanhildr Thone Thóra Thórbjorg Thórdís Thórfrídhr Thórhildr Thórný Thórunn Thórveig Thórví Thrud Thrúdhr Thýri Tófa Unnr Valdís Vígdís 
+			Yngvildr
+		}
+		dynasty_names = {
+			Áslaugsson Ástridharson Ásvaldsson Eindridhesson Eiríksson Gormsson Hákonarson Haraldsson Lothbrok Munsö Ragnarsson Sigurdharson Skjöldung Snorrason Thórgilsson Thórsteinsson Thórvaldsson Tryggvason Völsung 
+			Waegmunding Ylfing Yngling
+		}
+	}
 	#Nordic Greenland CR
 	greenlandic = {
 		graphical_culture = westerngfx
@@ -15834,17 +15867,6 @@ lost_cultures_group = {
 			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti
 		}
 	}
-	jan_mayenese = {
-		dynasty_names = {
-			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
-		}
-		male_names = {
-			Björn Bamse Brum Grawr Nanuk Ursus Isbjorn Grrrowr Grrgrrr Rawr
-		}
-		female_names = {
-			Brummelisa Ursa Brumma
-		}
-	}
 	scanian = {
 		male_names = {
 			Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
@@ -15934,23 +15956,6 @@ lost_cultures_group = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	hebrew = { #EU Rome
-		dynasty_names = {
-			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid
-			Oferid Omrid Pinchasid Raananid Shemidid Yairid
-		}
-		male_names = {
-			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori
-			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum
-			Nathan Nehemiah Nikanor Nir Obadiah Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai
-			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
-		}
-		female_names = {
-			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther
-			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa
-			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
-		}
-	}
 	scythian = { #EU Rome
 		dynasty_names = {
 			Abeacid Galatid Madyid Palacid Partatid
@@ -15960,28 +15965,6 @@ lost_cultures_group = {
 		}
 		female_names = {
 			Amage Ghadani Opoin Polemakratia
-		}
-	}
-	norse = {
-	    country = {  }
-		province = { local_has_carolean = yes }
-		male_names = {
-			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 
-			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Fridhthjófr Fródhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 
-			Gudhleifr Gudhmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjorn Halli Hallr Hallsteinn Hallthórr Hallvardhr Haraldr Hávardhr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreidharr Hróaldr 
-			Hróarr Hródhgeirr Hródhólfr Hródhvaldr Hrólfr Hrœrekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjorn Oddr Oddvarr Olvir Rádhúlfr Ragnarr Ragnvaldr 
-			Randúlfr Rúni Sigfrødhr Sigmundr Sigsteinn Sigurdhr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarlidhi Sundri Suni Svantepolk Sveinn Sverrir Thórarinn Thórbjorn Thórfastr Thórfredhr Thórgeirr 
-			Thórgísl Thórgnýr Thórir Thórketill Thórleifr Thórleikr Thórmódhr Thórsteinn Thórvaldr Thróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végardhr Vetrlidhi Vígi Víkingr Vragi Yngvarr
-		}
-		female_names = {
-			Alfhildr Álof Arnbjorg Ása Ásdís Áshildr Áslaug Ásta Ástrídhr Audhr Audhrhildr Bergljót Bjorg Borghildr Bóthildr Brynhildr Brynja Dagmær Dagný Dagrún Edda Eydís Frídha Grímhildr Gudhlaug Gudhleif Gudhrídhr Gudhrún Gulla 
-			Gunna Gunnbjorg Gunnhildr Gunnvor Gydha Hallthóra Helga Hildr Hjordís Hlíf Hrafnhildr Hreidhunn Idhunn Inga Ingibjorg Ingigerdhr Ingrídhr Ingunn Ingvildr Jórunnr Katla Ketilridhr Magnhildr Myrgjol Ólaug Ragna Ragnbjorg 
-			Ragnfrídhr Ragnheidhr Ragnhildr Rúna Saldís Signý Sigrídhr Sigrún Sólveig Steinunn Svanhildr Thone Thóra Thórbjorg Thórdís Thórfrídhr Thórhildr Thórný Thórunn Thórveig Thórví Thrud Thrúdhr Thýri Tófa Unnr Valdís Vígdís 
-			Yngvildr
-		}
-		dynasty_names = {
-			Áslaugsson Ástridharson Ásvaldsson Eindridhesson Eiríksson Gormsson Hákonarson Haraldsson Lothbrok Munsö Ragnarsson Sigurdharson Skjöldung Snorrason Thórgilsson Thórsteinsson Thórvaldsson Tryggvason Völsung 
-			Waegmunding Ylfing Yngling
 		}
 	}
 }
@@ -17238,6 +17221,23 @@ khoisan_group = {			#Disproven group, but ah well. It is a grand mess, and this 
 
 jewish_culture_group = {
 	graphical_culture = easterngfx
+	hebrew = { #EU Rome
+		dynasty_names = {
+			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid
+			Oferid Omrid Pinchasid Raananid Shemidid Yairid
+		}
+		male_names = {
+			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori
+			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum
+			Nathan Nehemiah Nikanor Nir Obadiah Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai
+			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
+		}
+		female_names = {
+			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther
+			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa
+			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
+		}
+	}
 	ashkenazi = {
 		dynasty_names = {
 			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid

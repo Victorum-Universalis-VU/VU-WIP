@@ -3,10 +3,10 @@
 culture = vu_komi
 religion = tengri_pagan_reformed #Sami Shamanism
 hre = no
-base_tax = 4  
-base_production = 4
+base_tax = 1
+base_production = 1
 trade_goods = fur 
-base_manpower = 2 
+base_manpower = 1
 capital = "Yarensk"
 native_size = 10
 native_ferocity = 1
