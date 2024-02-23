@@ -40,13 +40,15 @@ byzantine_late_autocracy = {
 	potential = {
 		OR = {
 			has_reform = byzantine_autocracy
-			has_reform = byzantine_late_autocracy 
+			has_reform = byzantine_late_autocracy
+			has_reform = byzantine_autocracy_reform
 		}
 	}
 	trigger = {
 		OR = {
 			has_reform = byzantine_autocracy
-			has_reform = byzantine_late_autocracy 
+			has_reform = byzantine_late_autocracy
+			has_reform = byzantine_autocracy_reform
 		}
 	}
 	fixed_rank = 3
