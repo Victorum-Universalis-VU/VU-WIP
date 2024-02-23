@@ -3467,7 +3467,7 @@ pagan = {
 	#slavic_pagan = moved to its new group
 	
 	hellenic = { #Not added yet
-		icon = 1
+		icon = 40
 		color = { 255 255 153 }
 		country = {
 			tolerance_own = -1
