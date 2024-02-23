@@ -31,7 +31,7 @@ hre = yes
 #Histories by docRobert & SF
 1444.1.1 = {
 	remove_core = POL
-	add_core = KLU
+	add_core = KUZ
 }
 1526.8.30 = { add_core = HAB } # Never really annexed to Habsburgs, remained their fief
 1536.1.1 = {

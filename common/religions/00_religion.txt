@@ -1049,7 +1049,6 @@ christian = {
 			#taoism
 			miaphysite
 			coptic
-			ashurist
 		}
 
 		country = {
@@ -2032,8 +2031,6 @@ muslim = {
 		color = { 0 144 0 }
 		icon = 5
 		allowed_conversion = {
-			ashurist
-			cult_of_marduk
 		}
 		allowed_center_conversion = {
 			#iconoclast
