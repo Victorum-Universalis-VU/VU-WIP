@@ -1274,6 +1274,7 @@ republican_tradition = {
 	stability_cost_modifier = -0.1
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
+	monthly_liberalism = 0.4
 }
 
 inverse_republican_tradition = {
