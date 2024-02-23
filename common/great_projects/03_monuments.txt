@@ -366,15 +366,14 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
 
     build_trigger = {
         religion_group = christian
-		OR = {
-			culture_group = french
-			culture_group = old_latin
-		} 
-		OR = {
-			
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		owner = {
+			OR = { 
+				culture_group = brythonic
+				culture_group = unified_celtic_group
+				culture_group = french
+				culture_group = old_latin
+			}
+		}
     }
 
     on_built = {
@@ -386,26 +385,32 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
     can_use_modifiers_trigger = {
        	religion_group = christian
 		OR = {
-			culture_group = french
-			culture_group = old_latin
-		} 
-		OR = {
 			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+			owner = {
+				OR = { 
+					culture_group = brythonic
+					culture_group = unified_celtic_group
+					culture_group = french
+					culture_group = old_latin
+				}
+			}
+		}	
     }
 
     can_upgrade_trigger = {
         is_year = 1523
 		religion_group = christian
 		OR = {
-			culture_group = french
-			culture_group = old_latin
-		} 
-		OR = {
 			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			owner = {
+				OR = { 
+					culture_group = brythonic
+					culture_group = unified_celtic_group
+					culture_group = french
+					culture_group = old_latin
+				}
+			}
+		}
     }
 
     keep_trigger = {

@@ -22,9 +22,10 @@ vu_great_horde_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 10
+ 	land_forcelimit = 10
  	global_tax_income = 38
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -49,9 +50,10 @@ vu_kazan_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 8
+ 	land_forcelimit = 8
  	global_tax_income = 84
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -76,9 +78,10 @@ vu_nogai_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 7
+ 	land_forcelimit = 7
  	global_tax_income = 50
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -103,9 +106,10 @@ vu_uzbek_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 7
+ 	land_forcelimit = 7
  	global_tax_income = 64
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -130,9 +134,10 @@ vu_crimea_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 5
+ 	land_forcelimit = 5
  	global_tax_income = 38
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -157,9 +162,10 @@ vu_astrakan_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 4
+ 	land_forcelimit = 4
  	global_tax_income = 38
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5
@@ -185,9 +191,10 @@ vu_kazakh_eco = {
 			}
 		} 
 	}
- 	army_tradition_decay = -0.01
+ 	army_tradition_decay = -0.005
  	cavalry_cost = -0.10
 	global_manpower = 6
+ 	land_forcelimit = 6
  	global_tax_income = 50
  	enemy_core_creation = 0.2
 	local_warscore_cost_modifier = 2.5

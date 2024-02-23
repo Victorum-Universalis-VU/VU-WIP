@@ -799,11 +799,13 @@ liverpool_docks = {
     type = monument
 
     build_trigger = {
-        culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
+		}	
     }
 
     on_built = {
@@ -813,20 +815,24 @@ liverpool_docks = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
+		}		
     }
 
     can_upgrade_trigger = {
         is_year = 1700
-		culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
+		}		
     }
 
     keep_trigger = {
@@ -6806,20 +6812,10 @@ victoria_harbour = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
     }
 
     can_upgrade_trigger = {
-        is_year = 1800
-		culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+        is_year = 1800		
     }
 
     keep_trigger = {
