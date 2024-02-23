@@ -1256,7 +1256,7 @@ liberal_principle_reform = {
 		liberalism_mechanic
 	}
 	custom_attributes = {
-		enables_capitalism = yes #+25% goods produced and -100% tax income if you have over 75% liberalism
+		enables_capitalism = yes #+25% goods produced if you have over 75% liberalism
 	}
 	ai = {
 		factor = 1
