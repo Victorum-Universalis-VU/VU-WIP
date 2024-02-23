@@ -8,7 +8,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "government_interaction_button"
 			position = { x = 22 y = 4 }
-			quadTextureSprite = "GFX_stato_da_mar_button"
+			quadTextureSprite = "GFX_russian_ability_ADM"
 			buttonFont = "vic_18"
 			clicksound = back_click
 		}
