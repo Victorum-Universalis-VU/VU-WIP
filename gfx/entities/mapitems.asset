@@ -12,7 +12,7 @@ entity = {
 
 entity = {
 	name = "flag"
-	pdxmesh = "empty" #VU - Was flag but removed in v1.35. By San Felipe
+	pdxmesh = "empty_mesh" #VU - Was flag but removed in v1.35. By San Felipe
 	state = { name = "idle" 		animation = "idle" }
 }
 

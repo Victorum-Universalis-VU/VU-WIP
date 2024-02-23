@@ -10,8 +10,6 @@ park = { #Gardens were actually pretty expensive to set up and occupied a lot of
 		local_culture_conversion_cost = -0.25
 		local_culture_conversion_time = -0.25
 	}
-	build_trigger = { 
-	}
 	ai_will_do = {
 		factor = 1
 	}
@@ -66,8 +64,6 @@ apothecary = { #Apothecaries are precursors of the modern day pharmacy, acting a
 		land_attrition = -0.002
 		monarch_lifespan = 0.002 
 	}
-	build_trigger = { 	
-	}
 	ai_will_do = {
 		factor = 1
 	}
@@ -81,8 +77,6 @@ barber = { #Barbers were the precursors to modern day surgeries wherin their pro
 	modifier = { 
 		manpower_recovery_speed = 0.002 
 		monarch_lifespan = 0.002 
-	}
-	build_trigger = { 
 	}
 	ai_will_do = {
 		factor = 1
@@ -115,8 +109,6 @@ cesspit = {
 	modifier = { 
 		local_unrest = -0.5
 		local_development_cost = -0.05
-	}
-	build_trigger = { 
 	}
 	ai_will_do = {
 		factor = 1
@@ -237,8 +229,6 @@ well = {
 		local_development_cost = -0.05
 		local_build_time = -0.05
 		local_build_cost = -0.05
-	}
-	build_trigger = { 
 	}
 	ai_will_do = {
 		factor = 1
@@ -364,8 +354,6 @@ wrestling = {
 		local_manpower_modifier = 0.1 
 		regiment_recruit_speed = -0.1
 		local_regiment_cost = -0.1
-	}
-	build_trigger = { 	
 	}
 	ai_will_do = {
 		factor = 1
@@ -586,8 +574,6 @@ pigeon_shed = {
 	modifier = { 
 		local_institution_spread = 0.1
 		local_governing_cost = -0.1
-	}
-	build_trigger = { 	
 	}
 	ai_will_do = {
 		factor = 1
