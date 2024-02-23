@@ -1412,11 +1412,11 @@ country_event = {
 		religion = catholic
 		ruler_religion = catholic
 		NOT = { religious_unity = 0.50 }
-		has_country_flag = tolerance_fra_flag
+	#	has_country_flag = tolerance_fra_flag
 	}
 
 	immediate = {
-		clr_country_flag = tolerance_fra_flag
+	#	clr_country_flag = tolerance_fra_flag
 	}
 
 	option = {
