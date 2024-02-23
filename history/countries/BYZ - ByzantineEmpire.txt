@@ -69,8 +69,7 @@ capital = 151
 }
 
 1444.1.1 = {
-	add_dip_tech = 2
-	add_mil_tech = 1
+	add_dip_tech = 1
 }
 
 1448.10.31 = {

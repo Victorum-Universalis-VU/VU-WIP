@@ -342,6 +342,10 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
+				culture_group = unified_celtic_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
 				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
@@ -371,6 +375,10 @@ stonehenge = {
 				religion_group = pagan
 			}
 			AND = {
+				culture_group = unified_celtic_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
 				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
@@ -389,6 +397,10 @@ stonehenge = {
 		OR = {
 			province_is_or_accepts_religion_group = {
 				religion_group = pagan
+			}
+			AND = {
+				culture_group = unified_celtic_group
+				province_is_or_accepts_culture = yes
 			}
 			AND = {
 				culture_group = old_latin
@@ -17773,6 +17785,10 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
+				culture_group = unified_celtic_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
 				culture = highland_scottish
 				province_is_or_accepts_culture = yes
 			}
@@ -17807,6 +17823,10 @@ edinburgh_castle = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
+				culture_group = unified_celtic_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
 				culture_group = old_latin
 				province_is_or_accepts_culture = yes
 			}
@@ -17832,6 +17852,10 @@ edinburgh_castle = {
 		OR = {
 			AND = {
 				culture = scottish
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture_group = unified_celtic_group
 				province_is_or_accepts_culture = yes
 			}
 			AND = {

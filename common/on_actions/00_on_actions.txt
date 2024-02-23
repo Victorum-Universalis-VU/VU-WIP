@@ -480,6 +480,64 @@ on_startup = {
             }
             set_variable = { which = num_of_heavy_ship value = 0 }
 		}
+        GOL = {
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+        KAZ = {
+		    infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+        NOG = {
+		    infantry = capital
+			infantry = capital
+			cavalry = capital
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+        SHY = {
+		    infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+        CRI = {
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		    infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+		}
         FRA = {
             export_to_variable = { which = num_of_heavy_ship value = trigger_value:num_of_heavy_ship }
             while = {
