@@ -3,7 +3,7 @@
 owner = PLB
 controller = PLB
 culture = musi
-religion = sunni #Islam was already dominant in Palembang in the 1440's
+religion = hinduism
 capital = "Palembang"
 trade_goods = spices
 hre = no

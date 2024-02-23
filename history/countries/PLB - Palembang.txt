@@ -18,6 +18,7 @@ religious_school = shafii_school
 		dip = 2
 		mil = 2
 		culture = wu
+		religion = sunni
 	}
 }
 

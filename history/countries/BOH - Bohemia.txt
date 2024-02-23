@@ -10,6 +10,7 @@ unit_type = western
 add_accepted_culture = sorbian
 add_accepted_culture = franconian
 add_accepted_culture = slovak
+add_accepted_culture = silesian_german
 add_army_professionalism = 0.1
 
 change_estate_land_share = {
