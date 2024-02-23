@@ -4,7 +4,8 @@ government_rank = 1
 #technology_group = eastern
 technology_group = polish_tech_group
 unit_type = western
-primary_culture = schlesian
+primary_culture = silesian_german
+add_accepted_culture = schlesian
 religion = catholic
 capital = 2966
 
