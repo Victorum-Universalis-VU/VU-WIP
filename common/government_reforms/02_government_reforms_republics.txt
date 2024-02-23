@@ -290,6 +290,11 @@ german_kaiserreich_republic = {
 		country_military_power = 1
 		monthly_militarized_society = 0.5
 		republican_tradition = -0.1
+		monthly_liberalism = 0.1
+	}
+
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -349,7 +354,13 @@ german_kaiserreich_peasant_republic = {
 		monthly_militarized_society = 0.25
 		production_efficiency = 0.1
 		land_morale = 0.05
+		monthly_liberalism = 0.2
 	}
+
+	government_abilities = {
+		liberalism_mechanic
+	}
+
 	effect = {
 		hidden_effect = {
 			if = {
