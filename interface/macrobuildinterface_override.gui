@@ -1234,7 +1234,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "close_button"
-				position = { x = 40 y = 472 }
+				position = { x = 40 y = 815 }
 				quadTextureSprite ="button_type_1"
 				buttonFont = "vic_18"
 				buttonText = "CLOSE"
@@ -1243,13 +1243,13 @@ guiTypes = {
 
 			checkboxType = {
 				name = "show_subjects"
-				position = { x=220 y=472 }
+				position = { x=220 y=815 }
 				quadTextureSprite ="GFX_checkbox_gold_32"
 			}
 
 			instantTextBoxType={
 				name = "show_subjects_title"
-				position = {x = 254 y = 475 }
+				position = {x = 254 y = 821 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 148
