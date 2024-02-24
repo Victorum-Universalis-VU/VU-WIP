@@ -1275,7 +1275,7 @@ country_event = {
 				indo_china_region = { discover_country = ROOT }
 				central_burma_area = { discover_country = ROOT }
 				1830 = { discover_country = ROOT }
-				5697 = { discover_country = ROOT }v
+				5697 = { discover_country = ROOT }
 				#Uniscovered provinces*
 				205 = { undiscover_country = ROOT }
 				361 = { undiscover_country = ROOT }
@@ -1294,7 +1294,6 @@ country_event = {
 				1075 = { undiscover_country = ROOT }
 				1193 = { undiscover_country = ROOT }
 				1211 = { undiscover_country = ROOT }
-				1830 = { undiscover_country = ROOT }
 				2213 = { undiscover_country = ROOT }
 				2218 = { undiscover_country = ROOT }
 				2687 = { undiscover_country = ROOT }
