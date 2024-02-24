@@ -297,9 +297,6 @@ province_event = {
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
-
-	trigger = {
-	}
 	
 	
 	option = {
