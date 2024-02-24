@@ -95,7 +95,7 @@ monarch_names = {
 }
 
 leader_names = {
-	Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin Borjigin # Ghengisid supremacy among the Mongols
+	Borjigin # Ghengisid supremacy among the Mongols
 	Khalkha Chakhar Uriankhai Ordos Tümed Yungshiyebu
 	Yingchang Karakorum Hohhot Chagaan
 	Noyan Darqan Wang Khorchin Onriut Abaga Abaganar Ast Kharachin

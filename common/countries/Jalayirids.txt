@@ -57,7 +57,7 @@ monarch_names = {
 }
 
 leader_names = {
-	Genghisid Genghisid Genghisid Genghisid Genghisid Borjigin Borjigin Borjigin Borjigin Borjigin # Ghengisid supremacy among the Mongols
+	Genghisid Genghisid Genghisid Genghisid Genghisid Borjigin # Ghengisid supremacy among the Mongols
 	Abbâs
 	Abû Bakr
 	Akbar
