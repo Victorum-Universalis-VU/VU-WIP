@@ -2430,37 +2430,6 @@ guiTypes = {
 		}
 
 		###Invisable Buildings
-		checkboxType = {
-			name = "build_Ai_def_push_tax"
-			position = { x = 348 y = 10320 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-
-		instantTextBoxType={
-			name = "Ai_def_push_tax_cost"
-			position = { x = 348 y = 10320 }
-			font = "vic_18"
-			borderSize = { x = 0 y = 0 }
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
-
-		checkboxType = {
-			name = "build_Ai_def_push_dip"
-			position = { x = 348 y = 10320 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-
-		instantTextBoxType={
-			name = "Ai_def_push_dip_cost"
-			position = { x = 348 y = 10320 }
-			font = "vic_18"
-			borderSize = { x = 0 y = 0 }
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
 
 		checkboxType = {
 			name = "build_off_8"
