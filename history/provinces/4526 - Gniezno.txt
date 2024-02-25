@@ -1,9 +1,9 @@
 #4526 - Gniezno
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 culture = polish
 religion = catholic
 capital = "Gniezno"

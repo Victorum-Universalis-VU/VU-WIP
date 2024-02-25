@@ -16,13 +16,8 @@ base_manpower = 2
 capital = "Manchester"
 is_city = yes
 add_core = ENG
+add_core = LCA
 center_of_trade = 1
-
-
-
-
-
-
 
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV

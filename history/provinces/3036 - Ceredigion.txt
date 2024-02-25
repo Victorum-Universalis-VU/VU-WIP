@@ -13,14 +13,8 @@ trade_goods = copper
 base_manpower = 1
 capital = "Aberteifi" #"Aberystwyth"
 is_city = yes
-add_core = WLS 
-
-
-
-
-
-
-
+add_core = DEH 
+add_core = WLS
 
 #1399.1.1 = { unrest = 20 } # Buildup to the Welsh Revolt
 #1400.9.16 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # The Welsh Revolt

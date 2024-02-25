@@ -1,9 +1,9 @@
 #2963 - Notec
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 capital = "Zlotów"
 culture = polish
 religion = catholic

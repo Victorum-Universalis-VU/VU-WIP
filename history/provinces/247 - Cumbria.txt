@@ -12,14 +12,9 @@ base_manpower = 1
 capital = "Carlisle"
 is_city = yes
 add_core = ENG
-add_core = NOL
+add_core = LCA
 
 fort_15th = yes #Carlisle Castle
-
-
-
-
-
 
 add_permanent_province_modifier = {
 	name = eden_estuary_modifier

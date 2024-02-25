@@ -17,6 +17,7 @@ capital = "Creu" #Later Crew
 is_city = yes
 add_core = ENG
 add_core = CST
+add_core = LCA
 
 #Special Modifiers
 

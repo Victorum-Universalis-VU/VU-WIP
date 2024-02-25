@@ -245,7 +245,7 @@ HAB_balkanize_poland_into_hre_effect = {
 		limit = {
 			owned_by = $Poland$
 		}
-		add_core = GRP
+		add_core = PZN
 	}
 	
 	2997 = {
@@ -253,12 +253,12 @@ HAB_balkanize_poland_into_hre_effect = {
 			limit = {
 				owned_by = $Poland$
 			}
-			add_core = GRP
+			add_core = PZN
 		}
 	}
 	
 	$Poland$ = {
-		release = GRP
+		release = PZN
 	}
 	
 	if = {
@@ -380,7 +380,7 @@ HAB_balkanize_poland_into_hre_effect = {
 		change_religion =  event_target:HAB_target_pol
 		change_primary_culture =  event_target:HAB_target_pol
 	}
-	GRP = {
+	PZN = {
 		change_religion = event_target:HAB_target_pol
 		change_primary_culture = event_target:HAB_target_pol
 	}

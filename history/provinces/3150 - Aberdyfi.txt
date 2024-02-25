@@ -11,14 +11,10 @@ base_production = 1
 base_manpower = 1
 trade_goods = vegetables
 add_core = WLS
+add_core = GND
 hre = no
 
 #Discoveries
-
-
-
-
-
 
 #Histories
 

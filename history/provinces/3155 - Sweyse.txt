@@ -19,7 +19,7 @@ capital = "Sweyse" #Later Swansea
 is_city = yes
 
 #Claimants
-add_core = GLA
+add_core = MRG
 
 #Buildings
 
@@ -28,14 +28,9 @@ add_local_autonomy = 75
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 
-1215.6.15 = { owner = YST controller = YST add_core = YST } # Welsh territory - By San Felipe
+1215.6.15 = { owner = MRG controller = MRG add_core = MRG } # Welsh territory - By San Felipe
 
 1444.11.11 = { owner = WMC controller = WMC add_core = WMC } # Welsh Marches territory - By San Felipe
 
