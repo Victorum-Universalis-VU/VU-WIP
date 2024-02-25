@@ -290,6 +290,11 @@ german_kaiserreich_republic = {
 		country_military_power = 1
 		monthly_militarized_society = 0.5
 		republican_tradition = -0.1
+		monthly_liberalism = 0.1
+	}
+
+	government_abilities = {
+		liberalism_mechanic
 	}
 
 	custom_attributes = {
@@ -349,7 +354,13 @@ german_kaiserreich_peasant_republic = {
 		monthly_militarized_society = 0.25
 		production_efficiency = 0.1
 		land_morale = 0.05
+		monthly_liberalism = 0.2
 	}
+
+	government_abilities = {
+		liberalism_mechanic
+	}
+
 	effect = {
 		hidden_effect = {
 			if = {
@@ -4729,60 +4740,167 @@ roman_diarchy_reform = {
 	}
 }
 
+#VU - Don's additions
+theban_league_reform = {
+	icon = "theban_league_republic_reform"
+	allow_normal_conversion = yes
+	duration = 1
+	legacy_equivalent = theban_league_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	royal_marriage = yes
+	potential = {
+		has_reform = theban_league_reform
+	}
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	modifiers = {
+		governing_capacity = 100
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = -30
+		global_autonomy = -0.075
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_nepotism = yes
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+spartan_diarchy_reform = {
+	icon = "spartan_diarchy_republic_reform"
+	allow_normal_conversion = yes
+	duration = 1
+	legacy_equivalent = spartan_diarchy_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	royal_marriage = yes
+	potential = {
+		has_reform = spartan_diarchy_reform
+	}
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	modifiers = {
+		governing_capacity = 100
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = -30
+		global_autonomy = -0.075
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_nepotism = yes
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+athenian_democracy_reform = {
+	icon = "athenian_democracy_reform"
+	allow_normal_conversion = yes
+	duration = 1
+	legacy_equivalent = athenian_democracy_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	royal_marriage = yes
+	potential = {
+		has_reform = athenian_democracy_reform
+	}
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	modifiers = {
+		governing_capacity = 100
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = -30
+		global_autonomy = -0.075
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_nepotism = yes
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+corinthian_oligarchy_reform = {
+	icon = "corinthian_oligarchy_republic_reform"
+	allow_normal_conversion = yes
+	duration = 1
+	legacy_equivalent = corinthian_oligarchy_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	royal_marriage = yes
+	potential = {
+		has_reform = corinthian_oligarchy_reform
+	}
+	nation_designer_trigger = {
+		culture_group = latin
+	}
+	modifiers = {
+		governing_capacity = 100
+		years_of_nationalism = -5
+		land_morale = 0.1
+		max_absolutism = -30
+		global_autonomy = -0.075
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_nepotism = yes
+		cannot_become_dictatorship = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 ############################
 # NEW Colonial Governments #
 ############################
-#self_governing_dominion_vu_government = {
-#	icon = "peasants"
-#	valid_for_nation_designer = no
-#	lock_level_when_selected = yes
-#	allow_normal_conversion = no
-#	fixed_rank = 1
-#	potential = {
-#		is_colonial_nation = yes
-#		has_reform = self_governing_dominion_vu_government 
-#	}
-#	legacy_equivalent = colonial_government_legacy
-#	modifiers = {
-#		build_cost = -0.1
-#		development_cost = -0.1
-#		embracement_cost = -0.1
-#		state_maintenance_modifier = -0.25
-#	}
-#
-#	custom_attributes = {
-#		locked_government_type = yes
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	duration = 4
-#}
+self_governing_dominion_vu_government = {
+	icon = "peasants"
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	fixed_rank = 2
+	potential = {
+		is_colonial_nation = yes
+		has_reform = self_governing_dominion_vu_government 
+	}
+	legacy_equivalent = colonial_government_legacy
+	modifiers = {
+		build_cost = -0.1
+		development_cost = -0.1
+		embracement_cost = -0.1
+		state_maintenance_modifier = -0.25
+	}
 
-#self_governing_super_dominion_vu_government = {
-#	icon = "peasants"
-#	valid_for_nation_designer = no
-#	lock_level_when_selected = yes
-#	allow_normal_conversion = no
-#	fixed_rank = 1
-#	potential = {
-#		is_colonial_nation = yes
-#		has_reform = self_governing_super_dominion_vu_government 
-#	}
-#	legacy_equivalent = colonial_government_legacy
-#	modifiers = {
-#		build_cost = -0.1
-#		development_cost = -0.1
-#		embracement_cost = -0.1
-#		state_maintenance_modifier = -0.25
-#	}
-#
-#	custom_attributes = {
-#		locked_government_type = yes
-#		enables_plutocratic_idea_group = yes
-#		enables_aristocratic_idea_group = no
-#	}
-#	duration = 4
-#}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
 
 #VU additions by San Felipe
 althing_elite_reform = {

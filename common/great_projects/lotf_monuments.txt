@@ -10,33 +10,14 @@ west_point = {
 	starting_tier = 0	
 	type = monument
 	build_trigger = {
-		is_year = 1802
-        culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+		is_year = 1802	
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = british 
-		}
-		OR = {
-			ROOT = { has_owner_accepted_culture = yes }
-			ROOT = { has_owner_culture = yes }
-		}
 	}
 	can_upgrade_trigger = {
 	    is_year = 1803
-		owner = {
-			culture_group = british 
-		}
-		OR = {
-			ROOT = { has_owner_accepted_culture = yes }
-			ROOT = { has_owner_culture = yes }
-		}
 		custom_trigger_tooltip = { 
 			tooltip = can_build_west_point_tt
 			has_global_flag = can_upgrade_west_point 

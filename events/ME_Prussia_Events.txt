@@ -1899,38 +1899,3 @@ country_event = {
 		}
 	}
 }
-
-#If(Stiopa.SpareTime&&Stiopa->pLeadDev->Mod()->isFinished())
-#	Stiopa->pLeadDev->Mod()->AddMoreEventsfor("PRU");
-# seriously tho if I have more time, then I might add content about Otto von schiewrin, danzig gymnasium, library of the elector, krupp, royal porcelain factory, otto von schwierin.
-
-#Ok but Stiopa consider this, we got 1.35 so I might as well make an adjustment to timurid_militarization
-
-country_event = {
-	id = ME_Prussia_Events.46
-	title = ME_Prussia_Events.46.t
-	desc = ME_Prussia_Events.46.d
-	picture = COURT_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = ME_Prussia_Events.46.a
-
-		ai_chance = { factor = 0 }
-
-		set_country_flag = me_pru_quantity_militarization
-		custom_tooltip = me_pru_change_militarization_to_quantity
-	}
-
-	option = {
-		name = ME_Prussia_Events.46.b
-
-		ai_chance = { factor = 100 }
-
-		custom_tooltip = me_pru_militarization_stays_the_same
-		custom_tooltip = " "
-		clr_country_flag = me_pru_quantity_militarization
-		create_general = { tradition = 60 }
-	}
-}

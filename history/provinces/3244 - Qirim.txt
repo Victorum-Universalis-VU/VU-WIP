@@ -5,23 +5,15 @@ controller = CRI
 culture = crimean
 religion = sunni
 hre = no
-base_tax = 6
-base_production = 6
+base_tax = 4
+base_production = 5
 trade_goods = seafood
 base_manpower = 6
 capital = "Eski Qirim"
 is_city = yes
 add_core = CRI
 
-
-
-
-
-
-
-
-
-
+add_province_triggered_modifier = vu_crimea_eco
 
 #History completed by docRobert
 1466.1.1 = {

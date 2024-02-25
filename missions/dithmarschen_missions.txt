@@ -208,7 +208,7 @@ vu_dithmarschen_missions_1 = {
 						share = 0.25
 					}
 				}
-				1926 = {	
+				1 = {	
 					has_privateer_share_in_trade_node = {
 						who = ROOT
 						share = 0.25

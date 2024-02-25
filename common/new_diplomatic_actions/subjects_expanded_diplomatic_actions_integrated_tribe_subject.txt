@@ -108,8 +108,6 @@ integrated_tribe_subject_give_additional_tribute_to_overlord = {
 				FROM = { is_at_war = no }
 				NOT = { has_country_modifier = cooldown_integrated_tribe_subject_give_additional_tribute_to_overlord }
 			}
-			ms_calculate_yearly_manpower = yes
-			set_variable = { which = integrated_tribe_subject_yearly_manpower_var which = autonomous_dominion_global_manpower_var }
 			divide_variable = { which = integrated_tribe_subject_yearly_manpower_var value = 10 }
 			add_yearly_manpower = -0.1
 			FROM = {

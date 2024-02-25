@@ -7885,148 +7885,6 @@ ruhr_valley = {
 
 #British
 
-#buckingham_palace = {
-#
-#	# province it starts in
-#	start = 7437
-#	date = 1703.01.01
-#
-#	time = {
-#		months = 0
-#	}
-#
-#	build_cost = 0
-#	can_be_moved = no
-#	move_days_per_unit_distance = 1
-#	starting_tier = 0
-#	type = monument
-#
-#	build_trigger = {
-#	is_year = 1690
-#        culture_group = british
-#		OR = {
-#			has_owner_culture = yes
-#			has_owner_accepted_culture = yes
-#		}
-#	}
-#
-#	can_use_modifiers_trigger = {
-#	is_year = 1690
-#        culture_group = british
-#		OR = {
-#			has_owner_culture = yes
-#			has_owner_accepted_culture = yes
-#		}
-#	}
-#
-#	can_upgrade_trigger = {
-#	is_year = 1690
-#        culture_group = british
-#		OR = {
-#			has_owner_culture = yes
-#			has_owner_accepted_culture = yes
-#		}
-#	}
-#
-#	keep_trigger = {
-#	}
-#
-#	#tier data
-#	tier_0 = {
-#		upgrade_time = {
-#			months = 0
-#		}
-#
-#	province_modifiers = {
-#		}
-#
-#	area_modifier = {
-#		}
-#
-#	country_modifiers = {
-#		}
-#
-#	on_upgraded = {
-#		}
-#
-#	}
-#
-#	tier_1 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#
-#		province_modifiers = {
-#		}
-#
-#		area_modifier = {
-#			local_autonomy = -0.025
-#		}
-#
-#		country_modifiers = {
-#			legitimacy = 0.5
-#		}
-#
-#		on_upgraded = {
-#		}
-#
-#	}
-#
-#	tier_2 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#
-#		province_modifiers = {
-#		}
-#
-#		area_modifier = {
-#			local_autonomy = -0.05
-#		}
-#
-#		country_modifiers = {
-#			legitimacy = 0.75
-#			nobles_loyalty_modifier = 0.05
-#		}
-#
-#		on_upgraded = {
-#		}
-#
-#	}
-#	
-#	tier_3 = {
-#		upgrade_time = {
-#			months = 120
-#		}
-#
-#		cost_to_upgrade = {
-#			factor = 1000
-#		}
-#
-#		province_modifiers = {
-#		}
-#
-#		area_modifier = {
-#			local_autonomy = -0.075
-#		}
-#
-#		country_modifiers = {
-#			legitimacy = 1
-#			nobles_loyalty_modifier = 0.1
-#		}
-#
-#		on_upgraded = {
-#		}
-#	}
-#}
-
 lincoln_cathedral = {
 
 	# province it starts in
@@ -8704,18 +8562,24 @@ cerne_abbas_giant = {
 	type = monument
 
 	build_trigger = {
-		religion_group = pagan
+		owner = {
+			culture_group = unified_celtic_group
+		}
 	}
 
 	can_use_modifiers_trigger = {
-		religion_group = pagan
+		owner = {
+			culture_group = unified_celtic_group
+		}
 	}
 
 	can_upgrade_trigger = {
 	}
 
 	keep_trigger = {
-		religion_group = pagan
+		owner = {
+			culture_group = unified_celtic_group
+		}
 	}
 
 	#tier data
@@ -8968,26 +8832,32 @@ windsor_castle = {
 	}
 
 	can_use_modifiers_trigger = {
-        culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
 		}
 	}
 
 	can_upgrade_trigger = {
-        culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
 		}
 	}
 
 	keep_trigger = {
-        culture_group = british
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		AND = {
+			OR = {
+				culture_group = british
+				culture = anglois
+			}
+			province_is_or_accepts_culture = yes
 		}
 	}
 

@@ -359,7 +359,7 @@ christian = {
 		color = { 250 55 10 }
 		icon = 22
 		allowed_conversion = {
-			#protestant
+			protestant
 			#reformed
 			#lollardy
 			#bogomilist_new
@@ -376,16 +376,16 @@ christian = {
 		flag_emblem_index_range = { 1 4 }
 		country = {
 			shock_damage_received = -0.05
-			global_heretic_missionary_strength = 0.01
+			global_heretic_missionary_strength = 0.02 #VU - Was 0.01 but doubled by Don
 			tolerance_own = 1								   
-			legitimacy = 0.5
-			republican_tradition = 0.25
-			horde_unity = 0.25
-			devotion = 1
+			#legitimacy = 0.5
+			#republican_tradition = 0.25
+			#horde_unity = 0.25
+			#devotion = 1
 		 	ae_impact = 0.05
 			land_morale = 0.05
-			manpower_in_true_faith_provinces = 0.1
-			manpower_recovery_speed = 0.05
+			manpower_in_true_faith_provinces = 0.05 #VU - Was 0.1 but halfed by Don
+			#manpower_recovery_speed = 0.05
 		}
 		
 		country_as_secondary = {
@@ -411,10 +411,101 @@ christian = {
 			taborite_resurgence_aspect
 			orphan_hetmans_aspect
 			freedom_to_preach_aspect
+			#eucharistie_aspect
 		}
+
 		aspects_name = PROTESTANT_ASPECTS
 		
+		hre_heretic_religion = yes
+
+		on_convert = {
+			change_religion = hussite
+			add_prestige = -100
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = revocation_of_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+	
+			if = {
+				limit = {
+					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = hussite
+								is_reformation_center = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = hussite
+							}
+						}
+						change_religion = hussite
+						add_reform_center = hussite
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = hussite
+								is_reformation_center = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				add_years_of_income = 2.0
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = hussite
+							}
+						}
+						change_religion = hussite
+						add_reform_center = hussite
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}	
+
+			set_country_flag = reformation_money
+			every_known_country = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_demote_pope
+					}
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = opinion_demote_pope
+				}
+			}
+		}
+		
 		heretic = { TABORITE UTRAQUIST ORPHAN }
+
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
@@ -422,6 +513,7 @@ christian = {
 				}
 			}
 		}
+
 	}
 	
 	protestant = {
@@ -429,7 +521,7 @@ christian = {
 		icon = 2
 
 		allowed_conversion = {
-			reformed
+			#reformed
 			catholic
 			hussite
 			lollardy
@@ -439,16 +531,20 @@ christian = {
 			lollardy
 		}
 		country = {
+			production_efficiency = 0.05 #Don's addition
 			global_tax_modifier = 0.1
 			improve_relation_modifier = 0.15
 			church_loyalty_modifier = 0.1
 		}
 		
 		country_as_secondary = {
-			idea_cost = -0.1
+			idea_cost = -0.05
+			improve_relation_modifier = 0.1
+			church_loyalty_modifier = -0.05
 		}
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
+		
 		aspects = {
 			organised_through_bishops_aspect
 			priests_may_marry_aspect
@@ -467,6 +563,7 @@ christian = {
 			head_of_the_church_aspect
 			anglican_aspect
 		}
+
 		aspects_name = PROTESTANT_ASPECTS
 		
 		hre_heretic_religion = yes
@@ -570,28 +667,40 @@ christian = {
 	}
 
 	reformed = {
+
 		color = { 76 76 229 }
+
 		icon = 3
+
 		allowed_conversion = {
-			protestant
+			#protestant
 			catholic
 			hussite
 			lollardy
 		}
 		allowed_center_conversion = {
 			catholic
-			lollardy
-			hussite
+			#lollardy #Hashed out by Don to fix border gore 
+			#hussite
 		}
 		country = {
 			tolerance_heretic = 2
 			advisor_pool = 1
-			global_unrest = -1
+			#global_unrest = -1
+			#Don's additions below
+			advisor_cost = -0.15
+			idea_cost = -0.1
 		}
 		
 		country_as_secondary = {
-			global_unrest = -1
+			#global_unrest = -1
+			idea_cost = -0.1 #Don's addition
 			advisor_cost = -0.1
+		}
+
+		province = {
+			development_cost = -0.05
+			local_unrest = -1
 		}
 
 		will_get_center = { #Refered to even for initial CoR Spawn
@@ -940,7 +1049,6 @@ christian = {
 			#taoism
 			miaphysite
 			coptic
-			ashurist
 		}
 
 		country = {
@@ -1129,16 +1237,18 @@ christian = {
 		icon = 36
 		allowed_conversion = {
 			catholic
-			hussite
 			anglican
-			reformed
+			#hussite #Hashed out by Don to prevent border gore
+			#reformed
 		}
+		
 		allowed_center_conversion = {
 			catholic
-			protestant 
-			reformed 
 			anglican 
+			#protestant  #Hashed out by Don to prevent border gore
+			#reformed 
 		}
+
 		country = {
 			improve_relation_modifier = 0.2
 			development_cost = -0.1
@@ -1150,6 +1260,7 @@ christian = {
 			horde_unity = 0.25
 			devotion = 1
 		}
+
 		country_as_secondary = {
 			land_forcelimit_modifier = 0.1
 			idea_cost = -0.05
@@ -1157,8 +1268,9 @@ christian = {
 			global_missionary_strength = -0.005
 			development_cost = -0.1
 		}
+
 		province = {
-			local_missionary_strength = -0.005
+			local_missionary_strength = -0.01 #Was -0.005
 		}
 		
 		on_convert = {
@@ -1919,8 +2031,6 @@ muslim = {
 		color = { 0 144 0 }
 		icon = 5
 		allowed_conversion = {
-			ashurist
-			cult_of_marduk
 		}
 		allowed_center_conversion = {
 			#iconoclast
@@ -2276,6 +2386,7 @@ eastern = {
 		
 		heretic = { TAOIST }
 		uses_harmony = yes
+		#personal_deity = yes #VU - This is a later Sphinx addition for v1.36.3*. By San Felipe
 		harmonized_modifier = harmonized_confucianism
 	}
 
@@ -3355,49 +3466,68 @@ pagan = {
 	
 	#slavic_pagan = moved to its new group
 	
-	#hellenic_pagan_reformed = {	#Not added yet
-	#	icon = 1
-	#	color = { 255 255 153 }
-	#	country = {
-	#		tolerance_own = -1
-	#		build_cost = -0.1
-	#		development_cost = -0.10
-	#		idea_cost = -0.10
-	#		republican_tradition = 0.2 #Sophism, emphasis on debate and democracy
-	#		tolerance_heretic = 2 #Saw other polytheistic gods as reflections
-	#		adm_tech_cost_modifier = -0.10 #Ionic rationalism
-	#		prestige = 0.5
-	#	}
-	#	country_as_secondary = {
-	#		tolerance_own = -1
-	#		build_cost = -0.1
-	#		development_cost = -0.10
-	#		idea_cost = -0.10
-	#		adm_tech_cost_modifier = -0.10
-	#		republican_tradition = 0.2 #Sophism, emphasis on debate and democracy
-	#		tolerance_heretic = 2 #Saw other polytheistic gods as reflections
-	#		adm_tech_cost_modifier = -0.10 #Ionic rationalism
-	#		prestige = 0.5
-	#	}
-	#	province = {
-	#		local_missionary_strength = -0.005
-	#	}
-	#
-	#	on_convert = {
-	#		change_religion = hellenic_pagan_reformed
-	#		add_prestige = -100
-	#		add_country_modifier = {
-	#			name = "conversion_zeal"
-	#			duration = 3650
-	#		}
-	#	}
-	#	
-	#	personal_deity = yes
-	#	can_have_secondary_religion = yes
-	#	misguided_heretic = yes
-	#	
-	#	heretic = { HELLENIC_HERETIC }	
-	#}
+	hellenic = { #Not added yet
+		icon = 40
+		color = { 255 255 153 }
+		country = {
+			tolerance_own = -1
+			build_cost = -0.1
+			development_cost = -0.10
+			idea_cost = -0.10
+			republican_tradition = 0.2 #Sophism, emphasis on debate and democracy
+			tolerance_heretic = 2 #Saw other polytheistic gods as reflections
+			adm_tech_cost_modifier = -0.10 #Ionic rationalism
+			prestige = 0.5
+		}
+		country_as_secondary = {
+			tolerance_own = -1
+			build_cost = -0.1
+			development_cost = -0.10
+			idea_cost = -0.10
+			adm_tech_cost_modifier = -0.10
+			republican_tradition = 0.2 #Sophism, emphasis on debate and democracy
+			tolerance_heretic = 2 #Saw other polytheistic gods as reflections
+			adm_tech_cost_modifier = -0.10 #Ionic rationalism
+			prestige = 0.5
+		}
+		province = {
+			local_missionary_strength = -0.005
+		}
+	
+		on_convert = {
+			change_religion = hellenic
+			add_prestige = -100
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		holy_sites = { 144 146 147 318 1773 7114 }
+
+		blessings = {
+			#VU - Keep this for now in v1.36.2.* but change later. By San Felipe
+			blessing_zeus
+			blessing_hera
+			blessing_poseidon
+			blessing_demeter
+			blessing_apollo
+			blessing_artemis
+			blessing_ares
+			blessing_athena
+			blessing_hephaestus
+			blessing_aphrodite
+			blessing_hermes
+			blessing_hestia
+			blessing_dionysus
+		}
+		
+		personal_deity = yes
+		can_have_secondary_religion = yes
+		misguided_heretic = yes
+		
+		heretic = { CHRONOS_DISCIPLES }
+	}
 	
 	tengri_pagan_reformed = {
 		icon = 27
@@ -3735,6 +3865,7 @@ jewish_group = {
 	crusade_name = HOLY_WAR
 	
 }
+
 
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }

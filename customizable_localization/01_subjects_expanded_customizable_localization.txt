@@ -17,42 +17,6 @@ defined_text = {
 }
 
 defined_text = {
-    name = GetIncreaseColonialAutonomyDesc
-	random = no
-
-	text = {
-        localisation_key = string_increase_colonial_autonomy_colony
-        trigger = {
-			is_colonial_subject_type = yes
-        }
-    }
-	text = {
-        localisation_key = string_increase_colonial_autonomy_dominion
-        trigger = {
-			always = yes
-        }
-    }
-}
-
-defined_text = {
-    name = GetDecreaseColonialAutonomyDesc
-	random = no
-
-	text = {
-        localisation_key = string_decrease_colonial_autonomy_dominion
-        trigger = {
-			is_dominion_or_similar_subject = yes
-        }
-    }
-	text = {
-        localisation_key = string_decrease_colonial_autonomy_autonomous_dominion
-        trigger = {
-			always = yes
-        }
-    }
-}
-
-defined_text = {
     name = GetIfEstablishCrusaderStateCostsPapalInfluence
 	random = no
 

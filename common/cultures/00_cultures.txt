@@ -1853,6 +1853,39 @@ scandinavian = { #Nordic
 			Hårfagreætta Bielke Bildt Galte Paus Smør Benkestok Kane Bonde Drake "av Hafrsfjord" Ytra "av Askø" Koss "av Røra" "av Nordland" Hylling Alfr Herja Vansö Flod "af Vendel" "av Alfheim" "af Åland" Vidfamne Bille Iuel Kaas Rosenkrantz Urne Adeler Blixenskiold Gyldenpalm Holberg Rosenheim Schouboe Tordenskiold Wessel Westervick Falsen Knagenhjelm Galtung Heubsch Kløcker Løvenskiold Rosenvinge Werenskiold Kruckow Mowat Rømer Handingmann Skaktavl Tordenstierne Roos Skanke Bolt Giske Brockenhuus Adelswärd Kane Blixen Løvendal Balke Vedel Bjelke Galle Griis
 		}
 	}
+	jan_mayenese = {
+		dynasty_names = {
+			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
+		}
+		male_names = {
+			Björn Bamse Brum Grawr Nanuk Ursus Isbjorn Grrrowr Grrgrrr Rawr
+		}
+		female_names = {
+			Brummelisa Ursa Brumma
+		}
+	}
+	norse = {
+	    country = {  }
+		province = { local_has_carolean = yes }
+		male_names = {
+			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 
+			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Fridhthjófr Fródhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 
+			Gudhleifr Gudhmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjorn Halli Hallr Hallsteinn Hallthórr Hallvardhr Haraldr Hávardhr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreidharr Hróaldr 
+			Hróarr Hródhgeirr Hródhólfr Hródhvaldr Hrólfr Hrœrekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjorn Oddr Oddvarr Olvir Rádhúlfr Ragnarr Ragnvaldr 
+			Randúlfr Rúni Sigfrødhr Sigmundr Sigsteinn Sigurdhr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarlidhi Sundri Suni Svantepolk Sveinn Sverrir Thórarinn Thórbjorn Thórfastr Thórfredhr Thórgeirr 
+			Thórgísl Thórgnýr Thórir Thórketill Thórleifr Thórleikr Thórmódhr Thórsteinn Thórvaldr Thróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végardhr Vetrlidhi Vígi Víkingr Vragi Yngvarr
+		}
+		female_names = {
+			Alfhildr Álof Arnbjorg Ása Ásdís Áshildr Áslaug Ásta Ástrídhr Audhr Audhrhildr Bergljót Bjorg Borghildr Bóthildr Brynhildr Brynja Dagmær Dagný Dagrún Edda Eydís Frídha Grímhildr Gudhlaug Gudhleif Gudhrídhr Gudhrún Gulla 
+			Gunna Gunnbjorg Gunnhildr Gunnvor Gydha Hallthóra Helga Hildr Hjordís Hlíf Hrafnhildr Hreidhunn Idhunn Inga Ingibjorg Ingigerdhr Ingrídhr Ingunn Ingvildr Jórunnr Katla Ketilridhr Magnhildr Myrgjol Ólaug Ragna Ragnbjorg 
+			Ragnfrídhr Ragnheidhr Ragnhildr Rúna Saldís Signý Sigrídhr Sigrún Sólveig Steinunn Svanhildr Thone Thóra Thórbjorg Thórdís Thórfrídhr Thórhildr Thórný Thórunn Thórveig Thórví Thrud Thrúdhr Thýri Tófa Unnr Valdís Vígdís 
+			Yngvildr
+		}
+		dynasty_names = {
+			Áslaugsson Ástridharson Ásvaldsson Eindridhesson Eiríksson Gormsson Hákonarson Haraldsson Lothbrok Munsö Ragnarsson Sigurdharson Skjöldung Snorrason Thórgilsson Thórsteinsson Thórvaldsson Tryggvason Völsung 
+			Waegmunding Ylfing Yngling
+		}
+	}
 	#Nordic Greenland CR
 	greenlandic = {
 		graphical_culture = westerngfx
@@ -5775,13 +5808,115 @@ baltic	= {
 
 byzantine = {
 	graphical_culture = greekgfx
-
-	greek = {
+	greek = { #Athens, Sparta etc
 		graphical_culture = greekgfx
 		primary = GRE
 	}
-	phoenician = { #EU Rome
-	    primary = CAR
+	spartan = {
+	    graphical_culture = greekgfx
+		primary = SPT
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid Zagreid Zosimid 
+			Zoticid
+		}
+		male_names = {
+		    Alcibiades Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos 
+			Archelaus Argaeus Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus 
+			Echemos	Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
+			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
+			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos Phidias 
+			Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos Posidaeios Proctus 
+			Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles Theocritus Theodoros Therapon 
+			Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros	Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria 
+			Diantha Dionysia Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa 
+			Olympia Phila Phile	Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	athenian = {
+	    graphical_culture = greekgfx
+		primary = AAT
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid Zagreid Zosimid 
+			Zoticid
+		}
+		male_names = {
+			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
+			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos Ehnon Ephron 
+			Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonippus Lycurgus Lydiadas Lysander 
+			Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates	Nicodemus Nikandros Nikomedes Nikon Olympos 
+			Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos Phidias Philocrates Philon Philotheos Philip Phocas Phyleus 
+			Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius 
+			Sthenelaus Teleclus Telesphoros Themistocles Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon 
+			Xenotimos Zagreus Zenodoros	Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria 
+			Diantha Dionysia Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa 
+			Olympia Phila Phile	Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	theban = {
+	    graphical_culture = greekgfx
+		primary = THB
+	}
+	corinthian = {
+	    graphical_culture = greekgfx
+		primary = CTH
+	}
+	greco_bactrian = { #Afghanistani Greeks
+	    primary = BAK
+		graphical_culture = greekgfx
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid Milkiramid 
+			Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes Eshbaal Eugoras 
+			Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	greco_selucid = { #Selucid Greeks
+	    primary = SEL
+		graphical_culture = persiangfx
+		dynasty_names = {
+			Selucid
+		}
+		male_names = {
+			Antigonus Antiochis Antiochus Alexander Selucius Adrianos Adrian Akakios Alexandros Alexios Alexis Anastasios Anastasius Anatolios Andreas Andrew 
+			Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios Arsenios Artemios Athanasios Athanasius Bardas Bartholomaios Bartolomeus 
+			Basileios Basil Belisarios Belisarius Boethios Bosporios Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios 
+			Demetrius Diogenes Dionysios Dionysus Dorotheos Eirenaios Eudoxios Eustratios Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel 
+			Gennadios Georgios George Gerasimos Germanos Germanus Gregoras Gregory Gregorios Gregory Hektorios Helias Herakleios Heracles Hierotheos Himerios Georgios 
+			Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias Alexeios Ambrosios	Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios 
+			Hektor Herakles Kastor Manuel Matthaios Nestor Nikomedes Orestes Palaemon Pelagios Petros Philemon Philippos Skantarios Stefanos Theodoros Thomas Basileios 
+			Prokopios Ioannes Iason Bartholomaios Konstas Basiliskos 
+		}
+	}
+	greco_macedonian = { #Macedonian Greeks
+	    primary = MAC
+		graphical_culture = greekgfx
+		dynasty_names = {
+			Antigonid
+		}
+		male_names = {
+			Antigonus Alexander Adrianos Adrian Akakios Alexandros Alexios Alexis Anastasios Anastasius Anatolios Andreas Andrew Andronikos Andronicus Anthemios Anthimos 
+			Antiochos Antonios Antonius Apollonios Arsenios Artemios Athanasios Athanasius Bardas Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios 
+			Bosporios Christophoros Christopher Chrysanthos Chrysogonos Damianos Daniel Daniel David David Demetrios Demetrius Diogenes Dionysios Dionysus Dorotheos 
+			Eirenaios Eudoxios Eustratios Eugenios Euphemios Eusebios Eustathios Eustace Evangelos Gabriel Gabriel Gennadios Georgios George Gerasimos Germanos Germanus 
+			Gregoras Gregory Gregorios Gregory Hektorios Helias Herakleios Heracles Hierotheos Himerios Georgios Alexandros Konstantinos Pavlos Andreas Nikolaos Aineias 
+			Alexeios Ambrosios	Chrysanthos David Demetrios Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor Herakles Kastor Manuel Matthaios Nestor Nikomedes 
+			Orestes Palaemon Pelagios Petros Philemon Philippos Skantarios Stefanos Theodoros Thomas Basileios Prokopios Ioannes Iason Bartholomaios Konstas Basiliskos 
+		}
+	}
+	phoenician = { #Levantine Greeks
+	    primary = QTH
+		graphical_culture = greekgfx
 		dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid Milkiramid Philosirid
 		}
@@ -5794,7 +5929,7 @@ byzantine = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	pontic_greek = {
+	pontic_greek = { #Northern Anatolia
 		graphical_culture = greekgfx
 		primary = TRE
 	}
@@ -5805,7 +5940,7 @@ byzantine = {
 			"of Gothia"
 		}
 	}
-	griko = {
+	griko = { #Italian Greeks
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
@@ -5979,7 +6114,7 @@ byzantine = {
 		primary = ROC
 	}
 	male_names = {
-		Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
+		Antigonus Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 		Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
 		Arsenios Artemios Athanasios Athanasius Bardas
 		Bartholomaios Bartolomeus Basileios Basil Belisarios Belisarius Boethios Bosporios 
@@ -6013,7 +6148,7 @@ byzantine = {
 		Phlakkilla Pulcheria Plakidia Onoria Zenonis Augoustina Ariadni Theodote Theophano 
 	}
 	dynasty_names = {
-		Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+		Antigonid Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
 		# CKII
 		Kameniatis Chameas Demetrianos Laloudios Stamopatas Peloponnesites Klados Avastaktos 
 		Lardotyros Kyritzios Kolovos Podopagouros Touvakes Peteinakes Ooryphas Myxares Toxias 
@@ -6741,7 +6876,7 @@ turko_semitic = { #Levantine -Darth Modus changed to Arabic
 	}
 	palastinian_arabic = { #Palastinian Arab
         graphical_culture = muslimgfx
-		primary = HMA
+		primary = PLE
 		dynasty_names = {
 			Mirdasid Maanid "al-Shihab" Yakubid Hassanid
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli 
@@ -15721,50 +15856,6 @@ lost_cultures_group = {
 			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
 		}
 	}
-	spartan = { #EU Rome
-		dynasty_names = {
-			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
-			Zagreid Zosimid Zoticid
-		}
-		male_names = {
-			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
-			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos
-			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
-			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
-			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos
-			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos
-			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles
-			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros
-			Zosimus Zoticus
-		}
-		female_names = {
-			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia
-			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile
-			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
-		}
-	}
-	athenian = { #EU Rome
-		dynasty_names = {
-			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
-			Zagreid Zosimid Zoticid
-		}
-		male_names = {
-			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus
-			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos
-			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
-			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates
-			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos
-			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos
-			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles
-			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros
-			Zosimus Zoticus
-		}
-		female_names = {
-			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia
-			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile
-			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
-		}
-	}
 	old_egyptian = {
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
@@ -15774,17 +15865,6 @@ lost_cultures_group = {
 		}
 		female_names = {
 			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti
-		}
-	}
-	jan_mayenese = {
-		dynasty_names = {
-			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
-		}
-		male_names = {
-			Björn Bamse Brum Grawr Nanuk Ursus Isbjorn Grrrowr Grrgrrr Rawr
-		}
-		female_names = {
-			Brummelisa Ursa Brumma
 		}
 	}
 	scanian = {
@@ -15876,23 +15956,6 @@ lost_cultures_group = {
 			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
 		}
 	}
-	hebrew = { #EU Rome
-		dynasty_names = {
-			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid
-			Oferid Omrid Pinchasid Raananid Shemidid Yairid
-		}
-		male_names = {
-			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori
-			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum
-			Nathan Nehemiah Nikanor Nir Obadiah Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai
-			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
-		}
-		female_names = {
-			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther
-			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa
-			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
-		}
-	}
 	scythian = { #EU Rome
 		dynasty_names = {
 			Abeacid Galatid Madyid Palacid Partatid
@@ -15902,28 +15965,6 @@ lost_cultures_group = {
 		}
 		female_names = {
 			Amage Ghadani Opoin Polemakratia
-		}
-	}
-	norse = {
-	    country = {  }
-		province = { local_has_carolean = yes }
-		male_names = {
-			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 
-			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Fridhthjófr Fródhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 
-			Gudhleifr Gudhmundr Gulbrandr Gunnarr Gunni Gunnvaldr Hákon Hálfdan Hallbjorn Halli Hallr Hallsteinn Hallthórr Hallvardhr Haraldr Hávardhr Helgi Hemingr Herleifr Hildingr Hjálmarr Hólmgeirr Hrafn Hreidharr Hróaldr 
-			Hróarr Hródhgeirr Hródhólfr Hródhvaldr Hrólfr Hrœrekr Hugleikr Ingi Ingimárr Ingólfr Ívarr Jarl Jósteinn Kálfr Kári Ketill Knútr Kóri Leifr Magni Mundi Njáll Oddbjorn Oddr Oddvarr Olvir Rádhúlfr Ragnarr Ragnvaldr 
-			Randúlfr Rúni Sigfrødhr Sigmundr Sigsteinn Sigurdhr Sindri Snorri Stáli Steinarr Steingrímr Steinn Stígandr Stigr Sumarlidhi Sundri Suni Svantepolk Sveinn Sverrir Thórarinn Thórbjorn Thórfastr Thórfredhr Thórgeirr 
-			Thórgísl Thórgnýr Thórir Thórketill Thórleifr Thórleikr Thórmódhr Thórsteinn Thórvaldr Thróndr Tófi Tóki Tryggvi Úlfr Uni Valdimárr Végardhr Vetrlidhi Vígi Víkingr Vragi Yngvarr
-		}
-		female_names = {
-			Alfhildr Álof Arnbjorg Ása Ásdís Áshildr Áslaug Ásta Ástrídhr Audhr Audhrhildr Bergljót Bjorg Borghildr Bóthildr Brynhildr Brynja Dagmær Dagný Dagrún Edda Eydís Frídha Grímhildr Gudhlaug Gudhleif Gudhrídhr Gudhrún Gulla 
-			Gunna Gunnbjorg Gunnhildr Gunnvor Gydha Hallthóra Helga Hildr Hjordís Hlíf Hrafnhildr Hreidhunn Idhunn Inga Ingibjorg Ingigerdhr Ingrídhr Ingunn Ingvildr Jórunnr Katla Ketilridhr Magnhildr Myrgjol Ólaug Ragna Ragnbjorg 
-			Ragnfrídhr Ragnheidhr Ragnhildr Rúna Saldís Signý Sigrídhr Sigrún Sólveig Steinunn Svanhildr Thone Thóra Thórbjorg Thórdís Thórfrídhr Thórhildr Thórný Thórunn Thórveig Thórví Thrud Thrúdhr Thýri Tófa Unnr Valdís Vígdís 
-			Yngvildr
-		}
-		dynasty_names = {
-			Áslaugsson Ástridharson Ásvaldsson Eindridhesson Eiríksson Gormsson Hákonarson Haraldsson Lothbrok Munsö Ragnarsson Sigurdharson Skjöldung Snorrason Thórgilsson Thórsteinsson Thórvaldsson Tryggvason Völsung 
-			Waegmunding Ylfing Yngling
 		}
 	}
 }
@@ -17180,6 +17221,23 @@ khoisan_group = {			#Disproven group, but ah well. It is a grand mess, and this 
 
 jewish_culture_group = {
 	graphical_culture = easterngfx
+	hebrew = { #EU Rome
+		dynasty_names = {
+			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid
+			Oferid Omrid Pinchasid Raananid Shemidid Yairid
+		}
+		male_names = {
+			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori
+			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hodaviah Honio Meir Nahum
+			Nathan Nehemiah Nikanor Nir Obadiah Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nogah Shamgar Shammai
+			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
+		}
+		female_names = {
+			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther
+			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa
+			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
+		}
+	}
 	ashkenazi = {
 		dynasty_names = {
 			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid

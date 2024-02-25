@@ -108,6 +108,7 @@
 1765 = "Szeredoc"
 1766 = "Rigómez"
 1767 = "Szlavónia"
+1772 = "Pozsony"
 1768 = "Lienz"
 1816 = "Peking"
 1828 = "Olfeld"

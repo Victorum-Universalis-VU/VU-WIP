@@ -2376,6 +2376,10 @@
  mechanic_english_parliament_yes:0 "Has the §YEnglish Parliament§!"
  byzantine_autocracy_reform:0 "Byzantine Autocracy"
  byzantine_autocracy_reform_desc:0 "The Byzantine government is a relic of the classical antiquity. Outdated governmental structures and lack of codified laws on the imperial succession are the great threat to the stability of the empire."
+
+ macedonian_monarchy_reform:0 "Macedonian Monarchy"
+ macedonian_monarchy_reform_desc:0 "The Macedonian government is a relic of the classical antiquity. Outdated governmental structures and lack of codified laws on the imperial succession are the great threat to the stability of the empire." 
+
  mechanic_civil_war_on_every_new_ruler_yes:0 "Has §RPretender Rebels§! when a new ruler ascends the throne"
  reformed_byzantine_monarchy_reform:0 "Reformed Byzantine Monarchy"
  reformed_byzantine_monarchy_reform_desc:0 "Through effort, blood and tears the Imperial Government of the Empire has been reformed! The brutal civil wars are no more; the power of the Senate has been restored while the Imperial Army's influence in the government is greatly curtailed."

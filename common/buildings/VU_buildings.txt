@@ -10,10 +10,14 @@ park = { #Gardens were actually pretty expensive to set up and occupied a lot of
 		local_culture_conversion_cost = -0.25
 		local_culture_conversion_time = -0.25
 	}
-	build_trigger = { 
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -34,6 +38,12 @@ botanical_gardens = { #Botanical gardens are also very expensive like Zoos to se
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -53,6 +63,12 @@ zoo = { #Zoos were also very expensive to set up due to the acquisition of wild 
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -66,10 +82,14 @@ apothecary = { #Apothecaries are precursors of the modern day pharmacy, acting a
 		land_attrition = -0.002
 		monarch_lifespan = 0.002 
 	}
-	build_trigger = { 	
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -82,10 +102,14 @@ barber = { #Barbers were the precursors to modern day surgeries wherin their pro
 		manpower_recovery_speed = 0.002 
 		monarch_lifespan = 0.002 
 	}
-	build_trigger = { 
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -103,6 +127,12 @@ hospital = { #Contrary to popular belief, Hospitals were actually fairly common 
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -116,10 +146,14 @@ cesspit = {
 		local_unrest = -0.5
 		local_development_cost = -0.05
 	}
-	build_trigger = { 
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -132,11 +166,34 @@ bath_house = {
 		local_unrest = -0.75
 		local_development_cost = -0.075
 	}
+	make_obsolete = cesspit
 	build_trigger = {
 		is_state = yes	
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = bath_house
+			obsolete_building = cesspit
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = bath_house
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -149,11 +206,34 @@ sewer_system = {
 		local_unrest = -1
 		local_development_cost = -0.1
 	}
+	make_obsolete = bath_house
 	build_trigger = {
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = sewer_system
+			obsolete_building = bath_house
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = sewer_system
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -162,6 +242,7 @@ latrines = {
 	cost = 600 #VU - Increased from 400 to 450 in v1.36.2.* by San Felipe
 	time = 48
 	#one_per_country = yes
+	make_obsolete = sewer_system
 	modifier = { 
 		local_unrest = -2
 		local_development_cost = -0.2
@@ -169,8 +250,30 @@ latrines = {
 	build_trigger = { 
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = latrines
+			obsolete_building = sewer_system
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = latrines
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -187,10 +290,14 @@ well = {
 		local_build_time = -0.05
 		local_build_cost = -0.05
 	}
-	build_trigger = { 
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -205,11 +312,34 @@ aqueduct = {
 		local_build_time = -0.075
 		local_build_cost = -0.075
 	}
+	make_obsolete = well
 	build_trigger = {
 		is_state = yes	
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = aqueduct
+			obsolete_building = well
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = aqueduct
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -224,11 +354,34 @@ distillery = {
 		local_build_time = -0.1
 		local_build_cost = -0.1
 	}
+	make_obsolete = aqueduct
 	build_trigger = { 
 		is_state = yes	
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = distillery
+			obsolete_building = aqueduct
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = distillery
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -243,11 +396,34 @@ pump_house = {
 		local_build_time = -0.2
 		local_build_cost = -0.2
 	}
+	make_obsolete = distillery
 	build_trigger = {
 		is_state = yes	
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = pump_house
+			obsolete_building = distillery
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = pump_house
+			type = manpower
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -258,15 +434,19 @@ wrestling = {
 	time = 12
 	#one_per_country = yes
 	modifier = { 
-		local_hostile_movement_speed = 0.1
+		local_hostile_movement_speed = -0.1
 		local_manpower_modifier = 0.1 
 		regiment_recruit_speed = -0.1
 		local_regiment_cost = -0.1
 	}
-	build_trigger = { 	
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -285,6 +465,12 @@ theatrics = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -298,12 +484,35 @@ operatics = {
 		local_autonomy = -0.3
 		local_unrest = -0.75
 	}
+	make_obsolete = theatrics
 	build_trigger = {
 		#is_year = 1637 #Venice's Teatro San Cassiano
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = operatics
+			obsolete_building = theatrics
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = operatics
+			type = tax
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -317,11 +526,34 @@ cinema = {
 		local_autonomy = -0.4
 		local_unrest = -1
 	}
+	make_obsolete = operatics
 	build_trigger = {
 		is_state = yes	
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = cinema
+			obsolete_building = operatics
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = cinema
+			type = tax
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -346,6 +578,12 @@ spy_agency = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -368,6 +606,12 @@ foreign_office = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -389,6 +633,12 @@ supreme_court = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -406,6 +656,12 @@ custom_house = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -423,6 +679,12 @@ stamp_office = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -439,6 +701,12 @@ excise_office = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -451,10 +719,14 @@ pigeon_shed = {
 		local_institution_spread = 0.1
 		local_governing_cost = -0.1
 	}
-	build_trigger = { 	
-	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -466,11 +738,34 @@ relay_stations = {
 		local_institution_spread = 0.25 
 		local_governing_cost = -0.2
 	}
+	make_obsolete = pigeon_shed
 	build_trigger = { 
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = relay_stations
+			obsolete_building = pigeon_shed
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = relay_stations
+			type = production
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -483,11 +778,34 @@ telephone_exchange = {
 		local_institution_spread = 0.5
 		local_governing_cost = -0.3
 	}
+	make_obsolete = relay_stations
 	build_trigger = {
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = telephone_exchange
+			obsolete_building = relay_stations
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = telephone_exchange
+			type = production
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -499,11 +817,34 @@ radio_station = {
 		local_institution_spread = 1
 		local_governing_cost = -0.5
 	}
+	make_obsolete = telephone_exchange
 	build_trigger = {
 		is_state = yes
 	}
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = radio_station
+			obsolete_building = telephone_exchange
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = radio_station
+			type = production
+			value = 2
+		}
+	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -521,6 +862,12 @@ fire_office = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -537,6 +884,12 @@ guard_house = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -556,6 +909,12 @@ penitentiary = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -576,6 +935,12 @@ observatory = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 archaeological_dig = {
@@ -593,6 +958,12 @@ archaeological_dig = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -613,6 +984,12 @@ national_museum = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -633,6 +1010,12 @@ natural_history_museum = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -654,6 +1037,12 @@ armory = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -674,6 +1063,12 @@ war_office = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -694,6 +1089,12 @@ admiralty = {
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -707,7 +1108,7 @@ el_escorial = {
 
 	build_trigger = {
 		is_capital = yes
-		FROM = {
+		owner = {
 			tag = SPA
 			government = monarchy
 		}
@@ -724,6 +1125,12 @@ el_escorial = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -748,6 +1155,12 @@ blast_furnace = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -781,6 +1194,12 @@ UKS_Palace = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -814,6 +1233,12 @@ UKS_Palace_2 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -826,7 +1251,7 @@ white_house_building = {
 
 	build_trigger = {
 		province_id = 953
-		FROM = {
+		owner = {
 			tag = USA
 		}
 	}
@@ -838,6 +1263,12 @@ white_house_building = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -858,6 +1289,12 @@ KOR_wall = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -901,6 +1338,15 @@ rhineland_building_upgrade_bell = {
 		}
 		remove_building = rhineland_building_upgrade_bell
 	}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
+	}
 }
 
 rhineland_building_upgrade_landtag = {
@@ -943,6 +1389,15 @@ rhineland_building_upgrade_landtag = {
 		}
 		remove_building = rhineland_building_upgrade_landtag
 	}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
+	}
 }
 
 rhineland_building_upgrade_palace = {
@@ -984,6 +1439,15 @@ rhineland_building_upgrade_palace = {
 			}
 		}
 		remove_building = rhineland_building_upgrade_palace
+	}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1087,6 +1551,12 @@ off = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1147,6 +1617,12 @@ off_2 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1209,6 +1685,12 @@ off_3 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1285,6 +1767,12 @@ off_4 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1347,6 +1835,12 @@ off_5 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1409,6 +1903,12 @@ off_6 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1470,6 +1970,12 @@ off_7 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1531,6 +2037,12 @@ off_8 = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1539,12 +2051,10 @@ import_from_subjects = {
 	time = 0
 	
 	potential = {
-		owner = {
-			AND = {
-		    	is_subject = no
-		    	is_colonial_nation = no
-		    	is_client_nation = no
-		    }
+		AND = {
+			is_subject = no
+			is_colonial_nation = no
+			is_client_nation = no
 		}
 	}
 	build_trigger = {
@@ -1562,6 +2072,7 @@ import_from_subjects = {
 				trade_goods = glass
 				trade_goods = tobacco
 				trade_goods = cocoa
+				trade_goods = grain
 			}
 		}
 	}
@@ -1608,6 +2119,10 @@ import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
+			else = {
+				limit = { ROOT = { trade_goods = grain } }
+				update_goods_subjects = { GOODS = grain }
+			}
 			
 			ROOT = {
 				remove_building = import_from_subjects
@@ -1627,6 +2142,12 @@ import_from_subjects = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -1636,12 +2157,10 @@ stop_import_from_subjects = {
 	time = 0
 	
 	potential = {
-		owner = {
-			AND = {
+		AND = {
 		    	is_subject = no
 		    	is_colonial_nation = no
 		    	is_client_nation = no
-		    }
 		}
 	}
 	
@@ -1660,6 +2179,7 @@ stop_import_from_subjects = {
 				trade_goods = glass
 				trade_goods = tobacco
 				trade_goods = cocoa
+				trade_goods = grain
 			}
 		}
 	}
@@ -1701,6 +2221,10 @@ stop_import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
+			else = {
+				limit = { ROOT = { trade_goods = grain } }
+				update_goods_subjects = { GOODS = grain }
+			}
 			ROOT = {
 				remove_building = stop_import_from_subjects
 			}
@@ -1717,6 +2241,12 @@ stop_import_from_subjects = {
 
 	ai_will_do = {
 		factor = 0
+		modifier = {
+			factor = 0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -2634,6 +3164,7 @@ uniforms_workshop = {
 #	}
 #}
 
+#Produces both Steam Engine and Locomotive
 steam_engine_manu = {
 	cost = 3000
 	time = 12
@@ -2770,7 +3301,7 @@ steam_engine_manu = {
 		allowed_num_of_buildings = 1
 		local_governing_cost = 0.15
 	}
-
+	
 	ai_will_do = {
 		factor = 6000
 
@@ -3380,366 +3911,978 @@ cannery_workshop = {
 	}
 }
 
-Ai_def_push_dip = {
-	cost = 0
+#LATEST ADDITIONS
+# Please change things in localisation/vu/vu_building_l_english.yml if you change the name or description / requirements / output
+# Please change things in localisation/vu/vu_trade_goods_l_english.yml if you change technology (LATENT_TRADEGOOD_TECH) 
+# currently ALL use dip_tech 9, MAKE SURE to move write name_of_building = yes in the appropriate tech
+
+regular_cloth_workshop = {
+	cost = 1000
 	time = 1
 
-	one_per_country = yes
-	
 	build_trigger = {
-		FROM = {
-			dip_power = 650
-			is_subject = no
-			ai = yes
+		ROOT = {
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
 		}
 		
-		OR = {
-			AND = {
-				FROM = {
-					copper = 1	
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-				}
-				ROOT = { trade_goods = tin }
-				ROOT = { 
-					NOT = { base_production = 10 }
-				}
-			}
-			
-			AND = {
-				FROM = {
-					tin = 1	
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-				}
-				ROOT = { trade_goods = copper }
-				ROOT = { 
-					NOT = { base_production = 10 }
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = livestock 
-					#NOT = { development = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 31
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = marble 
-					#NOT = { development = 15 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 24
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = lumber 
-					#NOT = { development = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 5
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 27
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = lead
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 17
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					mil_tech = 32
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = iron
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 15
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					mil_tech = 35
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = glass
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 15
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					dip_tech = 26
-				}
-			}
-			
-		}
-
-		variable_arithmetic_trigger = {				
-			export_to_variable = {
-				variable_name = Base_tax 
-				value = trigger_value:base_tax
-				who = owner
-			}
-			
-			export_to_variable = {
-				variable_name = Base_pro 
-				value = trigger_value:base_production 
-				who = owner
-			}
-			
-			export_to_variable = {
-				variable_name = Base_man
-				value = trigger_value:base_manpower
-				who = owner
-			}
-			
-			change_variable = { 
-				which = Base_pro
-				which = Base_man
-			}
-					
-			check_variable = {
-				which = Base_pro
-				which = Base_tax
-			}
+		FROM = {
+			dip_tech = 9
 		}
 	}
-
+	
 	on_built = {
-		ROOT = {
-			add_base_production = 1
-			remove_building = Ai_def_push_dip
-			province_event = { 
-				id = prices_marcin.8
-				days = 1
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = regular_clothes 
+				set_province_flag = has_latent_good
 			}
 		}
 	}
 	
 	on_destroyed = {
-		
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
 	}
-	
-	modifier = {
 
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
 	}	
 	
 	ai_will_do = {
-		factor = 1000
+		factor = 700
 		
+		modifier = {	
+			factor = 0
+			FROM = {
+				regular_clothes = 3
+			}
+		}
 	}
 }
 
-Ai_def_push_tax = {
-	cost = 0
+luxury_cloth_workshop = {
+	cost = 1000
 	time = 1
 
 	build_trigger = {
-		FROM = {
-			adm_power = 650
-			is_subject = no
-			ai = yes
-		}
-		OR = {
-			AND = {
-				FROM = {
-					copper = 1	
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-				}
-				ROOT = { trade_goods = tin }
-				ROOT = { 
-					NOT = { base_production = 10 }
-				}
-			}
-			
-			AND = {
-				FROM = {
-					tin = 1	
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-				}
-				ROOT = { trade_goods = copper }
-				ROOT = { 
-					NOT = { base_production = 10 }
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = livestock 
-					#NOT = { development = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 34
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = marble 
-					#NOT = { development = 15 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 7
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 24
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = lumber 
-					#NOT = { development = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 5
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					adm_tech = 27
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = lead
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 17
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					mil_tech = 32
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = iron
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 15
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					mil_tech = 35
-				}
-			}
-			
-			AND = {
-				ROOT = { 
-					trade_goods = glass
-					NOT = { base_production = 10 }
-				}	
-				FROM = {
-					#OR = {
-					#	innovativeness = 15
-					#	NOT = { has_dlc = "Rule Britannia" }
-					#}
-					dip_tech = 26
-				}
-			}
-			
+		ROOT = {
+			trade_goods = cloth
+			NOT = { has_province_flag = has_latent_good }
 		}
 		
-		variable_arithmetic_trigger = {				
-			export_to_variable = {
-				variable_name = Base_tax 
-				value = trigger_value:base_tax
-				who = owner
-			}
-			
-			export_to_variable = {
-				variable_name = Base_pro 
-				value = trigger_value:base_production 
-				who = owner
-			}
-			
-			export_to_variable = {
-				variable_name = Base_man
-				value = trigger_value:base_manpower
-				who = owner
-			}
-			
-			change_variable = { 
-				which = Base_pro 
-				which = Base_man
-			}
-					
-			check_variable = {
-				which = Base_pro 
-				which = Base_tax
-			}
+		FROM = {
+			dip_tech = 9
 		}
 	}
-
+	
 	on_built = {
-		ROOT = {
-			add_base_tax = 1
-			remove_building = Ai_def_push_tax
-			province_event = { 
-				id = prices_marcin.9
-				days = 1
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = luxury_clothes
+				set_province_flag = has_latent_good
 			}
 		}
 	}
 	
 	on_destroyed = {
-		
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
 	}
-	
-	modifier = {
 
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
 	}	
 	
 	ai_will_do = {
-		factor = 1000
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				luxury_clothes = 3
+			}
+		}
 	}
 }
+
+luxury_furniture_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = ebony
+				trade_goods = lumber
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes	
+				if = {
+					limit = { trade_goods = ebony }
+					change_trade_goods = lacquerware
+				}
+				else_if = {
+					limit = { trade_goods = tropical_wood }
+					change_trade_goods = woodworking
+				}	
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				OR= {
+					lacquerware = 3
+					woodworking = 3
+				}
+			}
+		}
+	}
+}
+
+utensil_workshop = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = accoutrements
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				accoutrements = 3
+			}
+		}
+	}
+}
+
+glassmaker = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = sand
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = glass 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				glass = 3
+			}
+		}
+
+	}
+}
+
+#automobile_plant = { #Was glassmaker
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		ROOT = {
+#			trade_goods = bricks #tradegood needed to build it
+#			trade_goods = cement #tradegood needed to build it
+#			trade_goods = glass #tradegood needed to build it
+#			NOT = { has_province_flag = has_latent_good }
+#		}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes
+#				if = {
+#					limit = { 
+#						trade_goods = ebony #tradegood used
+#						trade_goods = glass #tradegood used
+#						trade_goods = oil #tradegood used
+#						trade_goods = rubber #tradegood used
+#						trade_goods = steel #tradegood used
+#					}
+#					change_trade_goods = automobiles #tradegood that comes out
+#				}
+#				else_if = {
+#					limit = { 
+#						trade_goods = glass #tradegood used
+#						trade_goods = oil #tradegood used
+#						trade_goods = rubber #tradegood used
+#						trade_goods = steel #tradegood used
+#					}
+#					change_trade_goods = tractors #tradegood that comes out
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				OR= {
+#					automobiles = 3 #tradegood produced
+#					tractors = 3 #tradegood produced
+#				}
+#			}
+#		}
+#
+#	}
+#}
+#
+#bicycle_factory = {
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		ROOT = {
+#			trade_goods = bricks #tradegood needed to build it
+#			trade_goods = cement #tradegood needed to build it
+#			trade_goods = glass #tradegood needed to build it
+#			NOT = { has_province_flag = has_latent_good }
+#		}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes
+#				if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = rubber #tradegood used
+#							trade_goods = steel #tradegood used
+#						}
+#					}
+#					change_trade_goods = bicycles #tradegood that comes out
+#				}
+#				else_if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = glass #tradegood used
+#							trade_goods = oil #tradegood used
+#							trade_goods = rubber #tradegood used
+#							trade_goods = steel #tradegood used
+#						}
+#					}
+#					change_trade_goods = motorcycles #tradegood that comes out
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				OR= {
+#					automobiles = 3 #tradegood produced
+#					tractors = 3 #tradegood produced
+#				}
+#			}
+#		}
+#
+#	}
+#}
+
+
+potters = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = clay
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = pottery 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				pottery = 3
+			}
+		}
+	}
+}
+
+#brick_and_cement_factory = { #Was potters
+#	cost = 1000
+#	time = 1
+#
+#	build_trigger = {
+#		#ROOT = {
+#		#	trade_goods = clay
+#		#	trade_goods = sand
+#		#	NOT = { has_province_flag = has_latent_good }
+#		#}
+#		
+#		FROM = {
+#			dip_tech = 9
+#		}
+#	}
+#	
+#	on_built = {
+#		hidden_effect = { 			
+#			ROOT = { 
+#				goods_save = yes	
+#				if = {
+#					limit = { 
+#						OR = {
+#							trade_goods = sand
+#							trade_goods = clay 
+#						}
+#					}
+#					change_trade_goods = bricks
+#				}
+#				else_if = {
+#					limit = {
+#						OR = {
+#							trade_goods = sand
+#							trade_goods = limestone
+#						}
+#					}
+#					change_trade_goods = cement
+#				}	
+#				set_province_flag = has_latent_good
+#			}
+#			
+#		}
+#	}
+#	
+#	on_destroyed = {
+#		ROOT = {
+#			clr_province_flag = has_latent_good
+#			goods_back = yes	
+#		}
+#	}
+#
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 700
+#		
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				pottery = 3
+#			}
+#		}
+#	}
+#}
+
+steel_foundry = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = iron
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = steel 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				steel = 3
+			}
+		}
+	}
+}
+
+papermill = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = lumber
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = paper 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				paper = 3
+			}
+		}
+	}
+}
+
+brewery = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			OR = {
+				trade_goods = grain
+				trade_goods = tea
+				trade_goods = coffee
+			}
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 	
+			ROOT = {
+				goods_save = yes	
+				if = {
+					limit = { trade_goods = grain }
+					change_trade_goods = beer
+				}
+				else_if = {
+					limit = { trade_goods = tea }
+					change_trade_goods = english_tea
+				}
+				else_if = {
+					limit = { trade_goods = coffee }
+					change_trade_goods = expresso
+				}
+
+				set_province_flag = has_latent_good
+			}
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+	}
+}
+
+medical_facility = {
+	cost = 1000
+	time = 1
+
+	build_trigger = {
+		ROOT = {
+			trade_goods = apiculture
+			NOT = { has_province_flag = has_latent_good }
+		}
+		
+		FROM = {
+			dip_tech = 9
+		}
+	}
+	
+	on_built = {
+		hidden_effect = { 			
+			ROOT = { 
+				goods_save = yes
+				change_trade_goods = medicaments 
+				set_province_flag = has_latent_good
+			}
+			
+		}
+	}
+	
+	on_destroyed = {
+		ROOT = {
+			clr_province_flag = has_latent_good
+			goods_back = yes	
+		}
+	}
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		local_governing_cost = 0.15
+	}	
+	
+	ai_will_do = {
+		factor = 700
+		
+		modifier = {	
+			factor = 0
+			FROM = {
+				medicaments = 3
+			}
+		}
+	}
+}
+
+#fabric_workshop = { #This is the template for the fabric workshop. Basically, if we can get this to work, then it will enable an actual manufacturing system in-game and it can be used for other buildings that don't necessarily use all resources assigned to it at once but use them in the context of an OR.
+#	cost = 1000
+#	time = 12	
+#
+#	build_trigger = { #Basically what is needed in order for the manufactory to be built.
+#		AND = {
+#			#development = 10	
+#			NOT = {	trade_goods = bricks }
+#			NOT = {	trade_goods = cement }
+#			NOT = {	trade_goods = glass }
+#			NOT = {	has_province_flag = has_latent_good	}
+#		}
+#		FROM = { #Checking the country if it has these resources in order to build this workshop.
+#			mil_tech = 24
+#			#OR = {
+#			#	innovativeness = 10
+#			#	NOT = { has_dlc = "Rule Britannia" }
+#			#}
+#			#The resources below here are all needed at once in order to build manufacturing buildings.
+#			check_variable = {
+#				which = bricks
+#				value = 0.2
+#			}
+#			check_variable = {
+#				which = cement
+#				value = 0.1
+#			}
+#			check_variable = {
+#				which = glass
+#				value = 0.1
+#			}
+#		}
+#		ROOT = { #Checking the province if it has these resources in order to build this workshop.
+#			AND = { #Again, I'm not 100% sure whether these work or not. The template itself was after all inspired by the cannon_foundry latent building.
+#				development = 10	
+#				NOT = {	
+#					trade_goods = bricks
+#					trade_goods = cement
+#					trade_goods = glass
+#					has_province_flag = has_latent_good
+#				}
+#			}
+#		}
+#		NOT = { has_global_flag = No_Fabrics }
+#	}
+#	on_built = { #Basically what happens when the manufactory is built.
+#		hidden_effect = {
+#			FROM = { #Check the country's resources
+#				OR = { #I added in the OR here because I want to say that if the country has access to wool then use it or if it has cotton or silkworms. Please feel free to remove if it is wrong.
+#			    	subtract_variable = {            
+#			    		which = wool
+#			    		value = 0.4
+#			    	}
+#			    	
+#			    	subtract_variable = {            
+#			    		which = cotton
+#			    		value = 0.3
+#			    	}
+#    
+#			    	subtract_variable = {            
+#			    		which = silkworm
+#			    		value = 0.3
+#			    	}
+#			    	
+#			    	change_variable = {            
+#			    		which = wool_used
+#			    		value = 0.4
+#			    	}
+#			    	
+#			    	change_variable = {            
+#			    		which = cotton_used
+#			    		value = 0.3
+#			    	}
+#    
+#			    	change_variable = {            
+#			    		which = silkworm_used
+#			    		value = 0.3
+#			    	}
+#    
+#			    }
+#				
+#				change_variable = {            
+#					which = fabric_workshop_amount
+#					value = 1
+#				}
+#				
+#				country_event = { 
+#					id = New_TradeGood_Events.4
+#					days = 2
+#				}
+#			}
+#
+#			ROOT = { #Checking the province's resources
+#				goods_save = yes
+#				if = {
+#					limit = {
+#						check_variable = {
+#							which = wool
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = wool
+#				    	value = 0.1
+#				    }
+#					change_variable = {            
+#				    	which = wool_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = cloth
+#				}
+#				else_if = {
+#					limit = {
+#						check_variable = {
+#							which = cotton
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = cotton
+#				    	value = 0.1
+#				    }
+#    
+#				    change_variable = {            
+#				    	which = cotton_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = cloth
+#				}	
+#				else_if = {
+#					limit = {
+#						check_variable = {
+#							which = silkworm
+#							value = 0.1
+#						}
+#					}
+#					subtract_variable = {            
+#				    	which = silkworm
+#				    	value = 0.1
+#				    }
+#    
+#				    change_variable = {            
+#				    	which = silkworm_used
+#				    	value = 0.1
+#				    }
+#					change_trade_goods = silk
+#				}	
+#				set_province_flag = has_latent_good
+#				set_province_flag = No_fabrics
+#			}
+#		}
+#	}
+#	#Everything below here hasn't been done yet.
+#	on_destroyed = { #Basically what happens when the building is destroyed.
+#		hidden_effect = {
+#			clr_province_flag = has_fabrics
+#			clr_province_flag = has_latent_good
+#			if = {	
+#				limit = {
+#					ROOT = {
+#						NOT = { has_building = off } #This pertains to the off buildings above and this number can be anything after 9. So, off_10 for example.
+#					}
+#				}
+#				FROM = {
+#					change_variable = {            
+#						which = copper
+#						value = 0.4
+#					}
+#				
+#					subtract_variable = {            
+#						which = copper_used
+#						value = 0.4
+#					}
+#					
+#					change_variable = {            
+#						which = tin
+#						value = 0.3
+#					}
+#				
+#					subtract_variable = {            
+#						which = tin_used
+#						value = 0.3
+#					}
+#				}
+#			}
+#			ROOT = { 
+#				remove_building = off #Has to match whatever the top off is.
+#				clr_province_flag = back_to_off
+#			
+#			}
+#			
+#			FROM = {
+#				subtract_variable = {            
+#					which = fabric_workshop_amount
+#					value = 1
+#				}
+#				
+#				country_event = { 
+#					id = New_TradeGood_Events.4
+#					days = 2
+#				}
+#			}
+#			
+#			ROOT = {
+#				goods_back = yes	
+#			}
+#		}
+#	}
+#	modifier = {
+#		allowed_num_of_buildings = 1
+#		local_governing_cost = 0.15
+#	}	
+#	ai_will_do = {
+#		factor = 2000
+#
+#		modifier = {	
+#			factor = 0
+#			FROM = {
+#				num_of_owned_provinces_with = {
+#					value = 3
+#					OR = {
+#						trade_goods = cloth
+#						trade_goods = silk
+#					}
+#				}
+#			}
+#			
+#		}
+#		
+#	}
+#}

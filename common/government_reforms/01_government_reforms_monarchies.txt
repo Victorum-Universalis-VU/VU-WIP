@@ -72,11 +72,11 @@ elective_monarchy_reform = {
 	}
 }
 
-phoenician_elective_monarchical_republic_reform = {
-	icon = "ballot_box"
+carthaginian_elective_monarchical_republic_reform = {
+	icon = "carthaginian_elective_monarchical_republic_reform"
 	potential = {
 		has_dlc = "Domination"
-		tag = CAR
+		tag = QTH
 	}
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
@@ -797,7 +797,7 @@ elective_monarchy = {
 }
 
 phoenician_elective_monarchical_republic = {
-	icon = "phoenician_elective_monarchical_republic"
+	icon = "phoenician_republic"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -8189,5 +8189,122 @@ romanian_united_principality = {
 		liberty_desire_from_subject_development = -0.50
 		manpower_in_culture_group_provinces = 0.20
 		governing_cost = 0.66
+	}
+}
+
+selucian_kingdom_reform = {
+	icon = "government_reform_selucian_kingdom_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_country_flag = formed_selucian_kingdom_flag }
+		OR = {
+			AND = {
+				capital_scope = {
+					province_id = 2313
+				}
+				culture_group = byzantine
+				NOT = { exists = SEL }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = selucian_kingdom_reform
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = byzantine
+		technology_group = byzantine_tech_group
+		capital_scope = { region = mashriq_region }
+		owns = 2313
+	}
+	legacy_equivalent = selucian_kingdom_legacy
+	fixed_rank = 2
+	maintain_dynasty = yes
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	lock_level_when_selected = yes
+	#Start of VU addition by San Felipe
+    #can_change_primary_culture = no #Turned off in VU but Turned on in EU4 vanilla; not on in GE by San Felipe
+    #End of VU addition by San Felipe
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		government_abilities = {
+			shogunate_mechanic
+		}
+	}
+
+	modifiers = {
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+		amount_of_samurai = 10
+		has_samurai = yes
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+selucian_satrapy_reform = {
+	icon = "government_reform_selucian_satrapy_reform"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_satrapy_flag }
+		overlord = { has_reform = shogunate }
+	}
+	replacement_on_independence_war = indep_daimyo
+	legacy_equivalent = selucian_satrapy_legacy
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = byzantine
+		technology_group = byzantine_tech_group
+		capital_scope = { region = mashriq_region }
+	}
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+		#amount_of_samurai = 4
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+macedonian_monarchy_reform = {
+	icon = "government_reform_macedonian_monarchy_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = macedonian_monarchy_reform
+			have_had_reform = macedonian_monarchy_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = -20
+		prestige = 0.5
+		advisor_pool = 1
+		governing_capacity = 250
+		diplomatic_reputation = 1
+		yearly_corruption = 0.1
+		min_autonomy = 10
+		global_institution_spread = 0.1
+		merc_maintenance_modifier = -0.15
+		land_maintenance_modifier = 0.10
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			civil_war_on_every_new_ruler = yes
+			enables_pronoias = yes 
+		}
 	}
 }

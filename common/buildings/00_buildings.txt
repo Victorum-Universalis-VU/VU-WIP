@@ -44,13 +44,6 @@ workshop = {
 	modifier = {
 		local_production_efficiency = 0.5 #VU - Lowered to 0.05 in v1.36.2.* by San Felipe
 	}
-	
-	build_trigger = {
-		if = {
-			limit = { FROM = { ai = yes } }
-			FROM = { NOT = { num_of_loans = 4 } }
-		}
-	}
 
 	on_built = {
 		add_development_from_building = {
@@ -290,6 +283,12 @@ counting_house = {
 			factor = 6.5
 			base_production = 7
 		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 		
 		#GENERAL		
 		#AI is strongly discouraged to build this where climate renders development difficult.
@@ -493,6 +492,12 @@ treasury = {
 			factor = 2.0
 			is_part_of_hre = yes
 		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -622,6 +627,12 @@ factory = {
 				has_terrain = woods
 			}
 		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 		
 		#Removed for now. Massive gov changes in 1.26 make this not an easy 1 to 1 update
 		#modifier = {
@@ -660,16 +671,6 @@ marketplace = {
 		#While we still want CoTs strong, we don't want them x15 stronger than any other province this early
 		#VU's 
 		#lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
-	}
-
-	build_trigger = {
-		FROM = {
-			adm_tech = 3
-		}
-		if = {
-			limit = { FROM = { ai = yes } }
-			FROM = { NOT = { num_of_loans = 4 } }
-		}
 	}
 
 	on_built = {
@@ -777,6 +778,12 @@ marketplace = {
 		modifier = {
 			factor = 2.0
 			FROM = { primary_culture = dutch }
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -1192,12 +1199,6 @@ barracks = {
 		local_manpower_modifier = 0.25
 		#VU AddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the VU map (with all its new provinces).
 	}
-	build_trigger = {
-		if = {
-			limit = { FROM = { ai = yes } }
-			FROM = { NOT = { num_of_loans = 4 } }
-		}
-	}
 	on_built = {
 		if = {
 			limit = {
@@ -1267,7 +1268,7 @@ barracks = {
 		factor = 4.5
         #ECONOMY 101
         #AI avoids building with loans
-        modifier = {
+   		modifier = {
 			factor = 0
 			FROM = { num_of_loans = 1 }
 		}
@@ -1377,6 +1378,12 @@ barracks = {
 		modifier = {
 			factor = 0.65
 			is_state = no
+		}
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
 		}
 	}
 }
@@ -1488,6 +1495,12 @@ training_fields = {
             factor = 0.75
             owner = { NOT = { treasury = 400 } }
         }
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
+		}
 		#SPECIFIC
 		#AI more likely to build in provinces with high development
 		modifier = {
@@ -1741,6 +1754,12 @@ regimental_camp = {
 			factor = 1.1
 			local_autonomy = 50
 		}
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
+		}
 	}
 }
 
@@ -1919,6 +1938,12 @@ conscription_center = {
 		modifier = {
 			factor = 0.0
 			owner = { land_forcelimit = 750 }
+		}
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
 		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
@@ -2470,6 +2495,12 @@ dock = {
 			factor = 0.65
 			is_state = no
 		}
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
+		}
 	}
 }
 
@@ -2603,6 +2634,12 @@ drydock = {
 			factor = 0.65
 			is_state = no
 		}
+		modifier = {
+			factor = 10.0
+			FROM = {
+				treasury = 17500
+			}
+		}
 	}
 }
 
@@ -2668,7 +2705,7 @@ courthouse = {
 			factor = 100.0
 			FROM = { treasury = 10000 }
 		}
-        modifier = {
+        	modifier = {
 			factor = 0
 			area_for_scope_province = {
 				is_capital_of = FROM
@@ -2967,6 +3004,12 @@ hall = {
 			factor = 1.25
 			FROM = { treasury = 400 }
 		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
+		}
 		#Provinces in the Capital Area don't need a courthouse
 		modifier = {
 			factor = 0
@@ -3079,7 +3122,7 @@ town_hall = {
 			NOT = { development = 6	}			
 		}
         #AI more likely to build in provinces with high development
-        modifier = {
+        	modifier = {
 			factor = 1.25
 			development = 10
 		}
@@ -3174,6 +3217,12 @@ town_hall = {
 		modifier = {
 			factor = 1.25
 			FROM = { treasury = 400 }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
 		}
 		#Provinces in the Capital Area don't need a courthouse
 		modifier = {
@@ -3376,6 +3425,12 @@ city_hall = {
 		modifier = {
 			factor = 1.25
 			FROM = { treasury = 400 }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
 		}
 		#Provinces in the Capital Area don't need a courthouse
 		modifier = {
@@ -3599,19 +3654,6 @@ library = {
 		}
 		modifier = {
 			factor = 0.2
-			FROM = {
-				num_of_owned_provinces_with = {
-					value = 5
-					OR = {
-						has_building = library
-						has_construction = library
-					}
-					is_core = PREV			#I'm useless with coding =p. Do I need PREV or ROOT here, or will either work?
-				}
-			}
-		}	#If the owner has 5 cores with unis already, make it less likely to build more
-		modifier = {
-			factor = 0.2
 			any_neighbor_province = {
 				has_building = library
 			}
@@ -3782,6 +3824,12 @@ library = {
 		modifier = {
 			factor = 1.5
 			owner = { treasury = 1400 }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -3998,19 +4046,6 @@ school = {
 		}
 		modifier = {
 			factor = 0.2
-			FROM = {
-				num_of_owned_provinces_with = {
-					value = 5
-					OR = {
-						has_building = school
-						has_construction = school
-					}
-					is_core = PREV			#I'm useless with coding =p. Do I need PREV or ROOT here, or will either work?
-				}
-			}
-		}	#If the owner has 5 cores with unis already, make it less likely to build more
-		modifier = {
-			factor = 0.2
 			any_neighbor_province = {
 				has_building = school
 			}
@@ -4181,6 +4216,12 @@ school = {
 		modifier = {
 			factor = 1.5
 			owner = { treasury = 1400 }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 47500
+			}
 		}
 	}
 }
@@ -4403,7 +4444,7 @@ university = {
 		}
 		modifier = {
 			factor = 0.2
-			FROM = {
+			owner = {
 				num_of_owned_provinces_with = {
 					value = 5
 					OR = {
@@ -4605,12 +4646,6 @@ temple = {
 		local_tax_modifier = 0.5
 		#Changed this from 0.3 to 0.5 since temples were really not worth it from an economic POV. Higher taxation should make it worthwhile in high dev provinces.
 	}
-	build_trigger = {
-		if = {
-			limit = { FROM = { ai = yes } }
-			FROM = { NOT = { num_of_loans = 4 } }
-		}
-	}
 	on_built = {
 		on_built_tax_building_effect = yes
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -4713,8 +4748,6 @@ temple = {
 
 	onmap = yes
 
-	influencing_fort = yes
-
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 
@@ -4722,9 +4755,7 @@ temple = {
 		#AI avoids building with loans
 		modifier = {
 			factor = 0
-			OR = {
-				FROM = { num_of_loans = 1 }
-			}
+			owner = { num_of_loans = 2 }
 		}
 		#FROM AUTONOMY
 		#AI avoids building when in deficit
@@ -4994,6 +5025,12 @@ cathedral = {
 			factor = 2.0
 			FROM = { government = theocracy }			
 		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 27500
+			}
+		}
 	}
 }
 
@@ -5130,6 +5167,12 @@ grand_cathedral = {
 			factor = 2.0
 			FROM = { government = theocracy }			
 		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 47500
+			}
+		}
 	}
 }
 
@@ -5161,16 +5204,6 @@ road_system = {
 		allowed_num_of_buildings = 1
 		#This allows for improved transportation between urban and rural areas, so buildings can be made when otherwise they would be too far to get to.
 		#Also serves the gameplay function of tecnically not costing a building slot.
-	}
-
-	build_trigger = {
-		FROM = {
-			adm_tech = 3
-		}
-		if = {
-			limit = { FROM = { ai = yes } }
-			FROM = { NOT = { num_of_loans = 4 } }
-		}
 	}
 	
 	on_built = {
@@ -5336,6 +5369,12 @@ road_system = {
 			factor = 8
 			any_neighbor_province = {
 				has_building = fort_18th
+			}
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
 			}
 		}
 		#modifier = {
@@ -5547,6 +5586,12 @@ canal_system = {
 			factor = 8
 			any_neighbor_province = {
 				has_building = fort_18th
+			}
+		}
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 47500
 			}
 		}
 		### UPGRADE
@@ -5768,7 +5813,12 @@ railway_system = {
 			factor = 2
 			has_port = yes
 		}
-		
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 97500
+			}
+		}
 		#AI is encouraged to upgrade infrastructure buildings.
 		modifier = {
 			factor = 2
@@ -5830,8 +5880,8 @@ naval_base = {
         
         #AI will try to stockpile some amount of money
         modifier = {
-            factor = 0.75
-            owner = { NOT = { treasury = 200 } }
+            factor = 0.25
+            owner = { NOT = { treasury = 10000 } }
         }
 		modifier = {
 			factor = 1000.0
@@ -5880,7 +5930,7 @@ naval_arsenal = {
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
-            owner = { NOT = { treasury = 400 } }
+            owner = { NOT = { treasury = 15000 } }
         }
 	}
 }
@@ -5932,7 +5982,7 @@ coastal_artillery = {
         #AI will try to stockpile some amount of money
         modifier = {
             factor = 0.75
-            owner = { NOT = { treasury = 800 } }
+            owner = { NOT = { treasury = 18000 } }
         }
 		modifier = {
 			factor = 1000.0
@@ -7065,7 +7115,7 @@ wharf = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.5
@@ -7090,6 +7140,12 @@ wharf = {
 		modifier = {
 			NOT = { num_free_building_slots = 3 }
 			factor = 1.5
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -7270,7 +7326,7 @@ weapons = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.5
@@ -7291,6 +7347,12 @@ weapons = {
 		modifier = {
 			factor = 1.4
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -7469,7 +7531,7 @@ textile = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.1
@@ -7494,6 +7556,12 @@ textile = {
 		modifier = {
 			factor = 1.4
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -7683,7 +7751,7 @@ plantations = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.15
@@ -7696,6 +7764,12 @@ plantations = {
 		modifier = {
 			factor = 1.6
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -7916,7 +7990,7 @@ tradecompany = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.3
@@ -7945,6 +8019,12 @@ tradecompany = {
 		modifier = {
 			factor = 1.4
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -8164,7 +8244,7 @@ farm_estate = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.15
@@ -8177,6 +8257,12 @@ farm_estate = {
 		modifier = {
 			factor = 1.6
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -8365,7 +8451,7 @@ mills = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.1
@@ -8390,6 +8476,12 @@ mills = {
 		modifier = {
 			factor = 1.4
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -8543,7 +8635,7 @@ furnace = {
 		}
 		modifier = {
 			factor = 1.3
-			owner = { full_idea_group = economic_ideas }
+			FROM = { full_idea_group = economic_ideas }
 		}
 		modifier = {
 			factor = 1.15
@@ -8556,6 +8648,12 @@ furnace = {
 		modifier = {
 			factor = 1.6
 			base_production = 12
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }
@@ -8641,7 +8739,7 @@ ramparts = {
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 14000 } }
 		}
 	}
 }
@@ -8750,7 +8848,7 @@ soldier_households = {
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 1400 } }
 		}
 	}
 }
@@ -8842,7 +8940,7 @@ impressment_offices = {
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 1400 } }
 		}
 	}
 }
@@ -8956,7 +9054,7 @@ state_house = {
 		#AI will try to stockpile some amount of money
 		modifier = {
 			factor = 0.75
-			owner = { NOT = { treasury = 400 } }
+			owner = { NOT = { treasury = 1400 } }
 		}
 	}
 }
@@ -9002,6 +9100,12 @@ oil_well = {
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
+		}
+		modifier = {
+			factor = 1.0
+			FROM = {
+				treasury = 27500
+			}
 		}
 	}
 }

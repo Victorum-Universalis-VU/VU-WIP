@@ -268,6 +268,7 @@ country_decisions = {
 			OR = {
 				tag = TNA
 				tag = YYK
+				tag = BRI
 				num_of_owned_provinces_with = {
 					is_core = ROOT
 					OR = {
@@ -475,13 +476,17 @@ country_decisions = {
 			#Merging of the Celtic cultures code
 			#############################
 			custom_tooltip = merges_celtic_cultures_tooltip
+			hidden_effect = {
 			set_global_flag = gaels_and_britons_reunited_into_one_group
 			change_culture_group_effect = { old_culture = irish 				new_culture = celtic_irish_culture }
 			change_culture_group_effect = { old_culture = highland_scottish 	new_culture = celtic_highland_scottish_culture }
 			change_culture_group_effect = { old_culture = gallgaidheil 			new_culture = celtic_highland_scottish_culture }
+			change_culture_group_effect = { old_culture = manx 			new_culture = celtic_highland_scottish_culture }
 			change_culture_group_effect = { old_culture = welsh 				new_culture = celtic_welsh_culture }
 			change_culture_group_effect = { old_culture = breton 				new_culture = celtic_breton_culture }
+			change_culture_group_effect = { old_culture = cornish_br 				new_culture = celtic_cornish_culture }
 			change_culture_group_effect = { old_culture = cornish 				new_culture = celtic_cornish_culture }
+			}
 			#############################
 			#End Merging of the Celtic cultures
 			#############################

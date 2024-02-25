@@ -171,3 +171,127 @@
 
  vu_olive_oil_production: "Olive Oil Production"
  desc_vu_olive_oil_production: ""
+ #
+ #VU additions by San Felipe & Jay
+ sand: "Sand"
+ sandDESC: "Sand has multiple uses that ranges from art to more practical uses being a primary component to create glass"
+ 
+ clay: "Clay"
+ clayDESC: "Clay was used by all civilisation thanks to its ease to use to mold container, structures or arts"
+ 
+ steel: "Steel"
+ steelDESC: "An alloy of iron and carbon with improved strength and fracture resistance compared to other forms of iron"
+ LATENT_STEEL_EFFECT: "§WSteel   5.00¤\nDevelopment Cost:§! §G-10%§!"
+ LATENT_STEEL_TECH: "£Diplomatic_technology_TGE£9"
+
+ regular_clothes: "Regular Clothes"
+ regular_clothesDESC: "Cloths uses by the populace on a daily basis in order to protect the user from the adverse weather and protect their modesty"
+ LATENT_REGULAR_CLOTHES_EFFECT: "§WRegular Clothes   5.00¤\nDevelopment Cost:§! §G-10%§!"
+ LATENT_REGULAR_CLOTHES_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ luxury_clothes: "Luxirious Clothes"
+ luxury_clothesDESC: "Clothes that are worn by the ruling elite"
+ LATENT_LUXURY_CLOTHES_EFFECT: "§WLuxury Clothes   8.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LUXURY_CLOTHES_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ accoutrements: "Accoutrements"
+ accoutrementsDESC: "Cooking ware, utensils, kettles, pots, pans"
+ LATENT_ACCOUTREMENTS_EFFECT: "§WAccoutrements   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_ACCOUTREMENTS_TECH: "£Diplomatic_technology_TGE£9"
+ 
+ LATENT_GLASS_EFFECT: "§WGlass   5.00¤\nLocal production Efficiency:§! §G+10%§!"
+ LATENT_GLASS_TECH: "£Diplomatic_technology_TGE£9"
+
+ LATENT_PAPER_EFFECT: "§WPaper   5.00¤\nLocal State Maintenance:§! §G-10%§!"
+ LATENT_PAPER_TECH: "£Diplomatic_technology_TGE£9"
+
+ LATENT_POTTERY_EFFECT: "§WPottery   2.50¤\nLocal prosperity growth:§! §G+0.10§!"
+ LATENT_POTTERY_TECH: "£Diplomatic_technology_TGE£9"
+
+ english_tea: "English Tea"
+ english_teaDESC: "Tea that would calmly cause multiple wars"
+ LATENT_ENGLISH_TEA_EXPRESSO_EFFECT: "§WProcessed Drinks \nDevelopment Cost:§! §G-15%§!"
+ LATENT_ENGLISH_TEA_EXPRESSO_TECH: "£Diplomatic_technology_TGE£9"
+ expresso: "Expresso"
+ expressoDESC: "Brews from coffee beans, nothing gets you started like an expresso"
+
+ medicaments: "Medicaments"
+ medicamentsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_MEDICAMENTS_EFFECT: "§WMedicaments   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_MEDICAMENTS_TECH: "£Diplomatic_technology_TGE£9"
+
+ #Prices of items below need to be amended. By San Felipe
+ locomotives: "Locomotives"
+ locomotivesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_LOCOMOTIVES_EFFECT: "§WLocomotives   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LOCOMOTIVES_TECH: "£Diplomatic_technology_TGE£9"
+
+ tractors: "Tractors"
+ tractorsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_TRACTORS_EFFECT: "§WTractors   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_TRACTORS_TECH: "£Diplomatic_technology_TGE£9"
+
+ bicycles: "Bicycles"
+ bicyclesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_BICYCLES_EFFECT: "§WBicycles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_BICYCLES_TECH: "£Diplomatic_technology_TGE£9"
+
+ motorcycles: "Motorcycles"
+ motorcyclesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_MOTORCYCLES_EFFECT: "§WMotorcycles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_MOTORCYCLES_TECH: "£Diplomatic_technology_TGE£9"
+
+ automobiles: "Automobiles"
+ automobilesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_AUTOMOBILES_EFFECT: "§WAutomobiles   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_AUTOMOBILES_TECH: "£Diplomatic_technology_TGE£9"
+
+ airships: "Airships"
+ airshipsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_AIRSHIPS_EFFECT: "§WAirships   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_AIRSHIPS_TECH: "£Diplomatic_technology_TGE£9"
+
+ bricks: "Bricks"
+ bricksDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_BRICKS_EFFECT: "§WBricks   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_BRICKS_TECH: "£Diplomatic_technology_TGE£9"
+
+ cement: "Cement"
+ cementDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_CEMENT_EFFECT: "§WCement   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_CEMENT_TECH: "£Diplomatic_technology_TGE£9"
+
+ limestone: "Limestone"
+ limestoneDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_LIMESTONE_EFFECT: "§WLimestone   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_LIMESTONE_TECH: "£Diplomatic_technology_TGE£9"
+
+ herbs: "Herbs"
+ herbsDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_HERBS_EFFECT: "§WHerbs   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_HERBS_TECH: "£Diplomatic_technology_TGE£9"
+
+ hats_and_gloves: "Hats & Gloves"
+ hats_and_glovesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_HATS_AND_GLOVES_EFFECT: "§WHats & Gloves   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_HATS_AND_GLOVES_TECH: "£Diplomatic_technology_TGE£9"
+
+ military_equipment: "Military Equipment"
+ military_equipmentDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_MILITARY_EQUIPMENT_EFFECT: "§WMilitary Equipment   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_MILITARY_EQUIPMENT_TECH: "£Military_technology_TGE£9"
+
+ shoes: "Shoes"
+ shoesDESC: "Since the down of time, humanity has developed recipies, remedies  and medicine to keep humans alive"
+ LATENT_SHOES_EFFECT: "§WShoes   5.00¤\nDevelopment Cost:§! §G-15%§!"
+ LATENT_SHOES_TECH: "£Diplomatic_technology_TGE£9"
+
+
+
+
+
+
+
+
+
+

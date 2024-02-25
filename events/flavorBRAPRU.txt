@@ -616,7 +616,7 @@ country_event = {
 
 	trigger = {
 		tag = BRA
-		NOT = { num_of_loans = 4 }
+		NOT = { num_of_loans = 8 }
 		OR = {
 			49 = {
 				owned_by = TEU
@@ -650,7 +650,7 @@ country_event = {
 	option = {
 		name = "flavor_brapru.15.a" #Offer the Teutons to pawn back Neumark for 40 000 Guilders
 		ai_chance = {
-			factor = 75
+			factor = 95
 		}
 		custom_tooltip = flavor_brapru.15.a.tt
 		TEU = {
@@ -660,7 +660,7 @@ country_event = {
 	option = { #We could not afford that.
 		name = "flavor_brapru.15.b"
 		ai_chance = {
-			factor = 25
+			factor = 5
 		}
 		custom_tooltip = flavor_brapru.15.b.tt
 		add_prestige = -5

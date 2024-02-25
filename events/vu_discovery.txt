@@ -1188,6 +1188,9 @@ country_event = {
 				5207 = { discover_country = ROOT }
 				7397 = { discover_country = ROOT }
 				7888 = { discover_country = ROOT }
+				1390 = { discover_country = ROOT }
+				1391 = { discover_country = ROOT }
+				1388 = { discover_country = ROOT }
 				andaman_sea_area = { discover_country = ROOT }
 				arabian_sea_region = { discover_country = ROOT }
 				bay_of_bengal_area = { discover_country = ROOT }
@@ -1206,6 +1209,7 @@ country_event = {
 				sea_of_japan_sea_provinces = { discover_country = ROOT }
 				#Land
 				332 = { discover_country = ROOT }
+				2123 = { discover_country = ROOT }
 				388 = { discover_country = ROOT }
 				389 = { discover_country = ROOT }
 				402 = { discover_country = ROOT }
@@ -1258,6 +1262,20 @@ country_event = {
 				iranian_coast_area_provinces = { discover_country = ROOT }
 				west_coast_of_india_provinces = { discover_country = ROOT }
 				yemen_area = { discover_country = ROOT }
+				central_kyushu_area = { discover_country = ROOT }
+				kyushu_area = { discover_country = ROOT }
+				northern_kyushu = { discover_country = ROOT }
+				vu_south_kyushu_area = { discover_country = ROOT }
+				kinai_area = { discover_country = ROOT }
+				east_sanyodo_area = { discover_country = ROOT }
+				sanindo_area = { discover_country = ROOT }
+				saigoku_area = { discover_country = ROOT }
+				shikoku_area = { discover_country = ROOT }
+				south_kinai_area = { discover_country = ROOT }
+				indo_china_region = { discover_country = ROOT }
+				central_burma_area = { discover_country = ROOT }
+				1830 = { discover_country = ROOT }
+				5697 = { discover_country = ROOT }
 				#Uniscovered provinces*
 				205 = { undiscover_country = ROOT }
 				361 = { undiscover_country = ROOT }
@@ -1276,7 +1294,6 @@ country_event = {
 				1075 = { undiscover_country = ROOT }
 				1193 = { undiscover_country = ROOT }
 				1211 = { undiscover_country = ROOT }
-				1830 = { undiscover_country = ROOT }
 				2213 = { undiscover_country = ROOT }
 				2218 = { undiscover_country = ROOT }
 				2687 = { undiscover_country = ROOT }

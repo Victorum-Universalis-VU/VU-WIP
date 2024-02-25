@@ -6134,42 +6134,6 @@ default_puppet_state = {
 	}
 }
 
-default_autonomous_dominion = {
-	rank = {
-		1 = AUTONOMOUS_DOMINION
-		2 = AUTONOMOUS_DOMINION
-		3 = AUTONOMOUS_DOMINION
-	}
-
-	ruler_male = {
-		1 = AUTONOMOUS_DOMINION_LEADER_MALE
-		2 = AUTONOMOUS_DOMINION_LEADER_MALE
-		3 = AUTONOMOUS_DOMINION_LEADER_MALE
-	}
-
-	ruler_female = {
-		1 = AUTONOMOUS_DOMINION_LEADER_FEMALE
-		2 = AUTONOMOUS_DOMINION_LEADER_FEMALE
-		3 = AUTONOMOUS_DOMINION_LEADER_FEMALE
-	}
-
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-
-	trigger = {
-		is_any_dominion_subject = yes
-	}
-}
-
 default_roman_client_kingdom = {
 	rank = {
 		1 = ROMAN_CLIENT_PRINCIPATUS

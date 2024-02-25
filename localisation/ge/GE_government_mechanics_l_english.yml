@@ -143,7 +143,7 @@
  ## Tooltips:
  corruption_mechanic_encourage_corruption_tt: "Our §YCorruption§! is higher than our §YCorruption Acceptance§! (measured in steps of §Y10§!)"
  corruption_mechanic_punish_corruption_tt: "Our §YCorruption Acceptance§! is higher than our §YCorruption§! (measured in steps of §Y10§!)"
- corruption_mechanic_grant_political_favor_tt: "\nCan choose one of the following modifiers for §Y10 years§!: \n§YAdministrative Political Favor§!: \n    [country_admin_power]: §G+1§! \n    [advisor_cost]: §G-15.0%§! \n    [build_cost]: §G-10.0%§! \n\n§YDiplomatic Political Favor§!: \n    [country_diplomatic_power]: §G+1§! \n    [diplomatic_reputation]: §G+1.00§! \n    [improve_relation_modifier]: §G+15.0%§! \n\n§YMilitary Political Favor§!: \n    [country_military_power]: §G+1§! \n    [land_morale]: §G+10.0%§! \n    [land_maintenance_modifier]: §G-10.0%§!"
+ corruption_mechanic_grant_political_favor_tt: "\nCan choose one of the following modifiers for §Y10 years§!: \n§YAdministrative Political Favor§!: \n    [country_admin_power]: §G+1§! \n    [advisor_cost]: §G-15.0%§! \n    [build_cost]: §G-10.0%§! \n\n§YDiplomatic Political Favor§!: \n    [country_diplomatic_power]: §G+1§! \n    §YDiplomatic Reputation§!: §G+1.00§! \n    [improve_relation_modifier]: §G+15.0%§! \n\n§YMilitary Political Favor§!: \n    [country_military_power]: §G+1§! \n    [land_morale]: §G+10.0%§! \n    [land_maintenance_modifier]: §G-10.0%§!"
 
  ## Events:
  corruption_mechanic_events.EVTNAME1: "Grant Political Favor"
@@ -378,7 +378,7 @@
  italian_dinasties_condotte_militari_modifier: "Condotte Military"
  desc_italian_dinasties_condotte_militari_modifier: ""
 
- italian_dinasties_at_100_tt: "[diplomatic_reputation]: §G+2.00§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."
+ italian_dinasties_at_100_tt: "§YDiplomatic Reputation§!: §G+2.00§! \nThe monthly decay is negated until your §YDinastic Power§! falls under §Y100.00§!."
 
 # Sicilian Kingdom Mechanic
  ## Mechanic 

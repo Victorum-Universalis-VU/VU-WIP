@@ -10,25 +10,28 @@ gme_kilkenny_castle = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	can_upgrade_trigger = {
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	keep_trigger = {
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -89,34 +92,31 @@ gme_newgrange_tomb = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		OR = { 
-			has_owner_culture = yes
-			has_owner_religion = yes
-		}
+		has_owner_religion = yes
 	}
 	can_upgrade_trigger = {
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		OR = { 
-			has_owner_culture = yes
-			has_owner_religion = yes
-		}
+		has_owner_religion = yes
 	}
 	keep_trigger = { 
-		OR = {
-			culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		OR = { 
-			has_owner_culture = yes
-			has_owner_religion = yes
-		}
+		has_owner_religion = yes
 	}
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -173,36 +173,42 @@ gme_patrick_cathedral = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
-		    religion = catholic
+			has_owner_culture = yes
+			owner = {
+				OR = { 
+					culture = irish
+					culture_group = unified_celtic_group
+				}
+			}
 		}
-		OR = {
-		    has_owner_culture = yes
-		    has_owner_religion = yes
-		}
+		has_owner_religion = yes
+		religion = catholic
 	}
 	can_upgrade_trigger = {
 		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
-		    religion = catholic
+			has_owner_culture = yes
+			owner = {
+				OR = { 
+					culture = irish
+					culture_group = unified_celtic_group
+				}
+			}
 		}
-		OR = {
-		    has_owner_culture = yes
-		    has_owner_religion = yes
-		}
+		has_owner_religion = yes
+		religion = catholic
 	}
 	keep_trigger = { 
 		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
-		    religion = catholic
+			has_owner_culture = yes
+			owner = {
+				OR = { 
+					culture = irish
+					culture_group = unified_celtic_group
+				}
+			}
 		}
-		OR = {
-		    has_owner_culture = yes
-		    has_owner_religion = yes
-		}
+		has_owner_religion = yes
+		religion = catholic
 	}
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -261,25 +267,28 @@ gme_rock_chasel = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	can_upgrade_trigger = {
-		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	keep_trigger = { 
-		OR = {
-		    culture = irish
-			culture = celtic_irish_culture
+		owner = {
+			OR = { 
+				culture = irish
+				culture_group = unified_celtic_group
+			}
 		}
-		has_owner_culture = yes
 	}
 	tier_0 = {
 		upgrade_time = { months = 0 }

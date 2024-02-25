@@ -250,11 +250,9 @@ gme_mogao_grottoes = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		religion = buddhism
 		province_is_buddhist_or_accepts_buddhism = yes
 	}
 	can_upgrade_trigger = {
-		religion = buddhism
 		province_is_buddhist_or_accepts_buddhism = yes
 	}
 	keep_trigger = { }

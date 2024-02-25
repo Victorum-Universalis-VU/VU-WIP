@@ -48,36 +48,6 @@ has_5_pirate_brotherhood_vassals_triggered_modifier = {
 	ship_durability = 0.1
 }
 
-has_3_dominions_in_trade_company_region_triggered_modifier = {
-	potential = {
-		has_dlc = "Mandate of Heaven"
-		current_age = age_of_absolutism
-		OR = {
-			ai = no
-			AND = {
-				NOT = { has_dlc = "Wealth of Nations" }
-				NOT = { has_dlc = "Dharma" }
-			}
-		}
-	}
-
-	trigger = {
-		NOT = { num_of_trade_companies = 3 }
-		custom_trigger_tooltip = {
-			tooltip = HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS
-			calc_true_if = {
-				all_subject_country = {
-					is_any_dominion_subject = yes
-					is_dominion_tag = yes
-				}
-				amount = 3
-			}
-		}
-	}
-
-	monthly_splendor = 2
-}
-
 dutch_provinces_reform_1_overlord = {
 	potential = {
 		OR = {

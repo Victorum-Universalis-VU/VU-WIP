@@ -77,7 +77,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 0.5
+			factor = 0
 		}
 
 		custom_tooltip = CHOOSE_ME_MISSIONS
@@ -113,11 +113,7 @@ country_event = {
 		name = paradox_or_mod_missions_events2.EVTOPT3
 
 		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 1
-				tag = TEU
-			}
+			factor = 1
 		}
 
 		custom_tooltip = CHOOSE_PARADOX_MISSIONS

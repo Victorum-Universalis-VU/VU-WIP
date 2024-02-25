@@ -8,8 +8,8 @@ religion = orthodox
 capital = "Kirilov"
 trade_goods = glass
 hre = no
-base_tax = 6
-base_production = 4 
+base_tax = 3
+base_production = 3 
 base_manpower = 2 
 is_city = yes
 

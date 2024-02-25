@@ -10,28 +10,22 @@ gme_bretagne_castles = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			has_owner_culture = yes
-			owner = {
-				OR = { 
-					culture_group = brythonic
-					culture_group = french
-					culture_group = old_latin
-				}
-				has_cultural_union = yes
+		owner = {
+			OR = { 
+				culture_group = brythonic
+				culture_group = unified_celtic_group
+				culture_group = french
+				culture_group = old_latin
 			}
 		}
 	}
 	can_upgrade_trigger = {
-		OR = {
-			has_owner_culture = yes
-			owner = {
-				OR = { 
-					culture_group = brythonic
-					culture_group = french
-					culture_group = old_latin
-				}
-				has_cultural_union = yes
+		owner = {
+			OR = { 
+				culture_group = brythonic
+				culture_group = unified_celtic_group
+				culture_group = french
+				culture_group = old_latin
 			}
 		}
 	}
