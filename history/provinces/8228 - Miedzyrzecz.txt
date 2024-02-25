@@ -1,9 +1,9 @@
 #8228 - Międzyrzecz
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 capital = "Miedzyrzecz"
 is_city = yes
 culture = polish

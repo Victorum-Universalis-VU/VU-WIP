@@ -1,8 +1,9 @@
-#copied from Wales.txt
+#Powys_Wenwynwyn
 
 graphical_culture = westerngfx
 
-color = { 10  169  58 }
+color = { 51  112  187 }
+revolutionary_colors = { 0 5 10 }
 
 historical_idea_groups = {
 	maritime_ideas

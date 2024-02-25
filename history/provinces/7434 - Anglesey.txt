@@ -11,6 +11,7 @@ base_production = 1
 base_manpower = 1
 trade_goods = fish
 add_core = WLS
+add_core = GND
 hre = no
 
 1444.11.16 = { #VictorumUniversalis batch edit shortcut no vassal start date begin

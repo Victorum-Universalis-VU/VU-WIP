@@ -9,7 +9,6 @@ WLS_CYR_BRL_missions_1 = {
 	potential = {
 		OR = {
 			tag = WLS
-			tag = CYR
 			tag = BRL
 		}
 	}
@@ -216,7 +215,6 @@ WLS_CYR_BRL_missions_2 = {
 	potential = {
 		OR = {
 			tag = WLS
-			tag = CYR
 			tag = BRL
 		}
 	}
@@ -412,7 +410,6 @@ WLS_CYR_BRL_missions_3 = {
 	potential = {
 		OR = {
 			tag = WLS
-			tag = CYR
 			tag = BRL
 		}
 	}
@@ -529,7 +526,6 @@ WLS_CYR_BRL_missions_4 = {
 	potential = {
 		OR = {
 			tag = WLS
-			tag = CYR
 			tag = BRL
 		}
 	}
@@ -676,7 +672,6 @@ WLS_CYR_BRL_missions_5 = {
 	potential = {
 		OR = {
 			tag = WLS
-			tag = CYR
 			tag = BRL
 		}
 	}
@@ -755,7 +750,7 @@ CYR_BRL_missions_2 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CYR
+			tag = WLS
 			tag = BRL
 		}
 	}
@@ -853,7 +848,7 @@ CYR_BRL_missions_3 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CYR
+			tag = WLS
 			tag = BRL
 		}
 	}
@@ -946,7 +941,7 @@ CYR_BRL_missions_4 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CYR
+			tag = WLS
 			tag = BRL
 		}
 	}
@@ -1031,7 +1026,7 @@ CYR_BRL_missions_5 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CYR
+			tag = WLS
 			tag = BRL
 		}
 	}

@@ -20,7 +20,7 @@ trade_goods = cheese
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ENG
-add_core = LCA
+add_core = GWN
 add_core = WLS
 
 #Other Political

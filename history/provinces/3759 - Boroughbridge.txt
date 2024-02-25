@@ -11,14 +11,8 @@ base_manpower = 1
 trade_goods = lumber
 capital = "Boroughbridge"
 is_city = yes
-add_core = NOL
+add_core = YRK
 hre = no
-
-
-
-
-
-
 
 453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1459.9.23 = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of York" } controller = REB } # The Battle of Blore Heath

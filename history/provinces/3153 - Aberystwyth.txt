@@ -10,15 +10,11 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 trade_goods = zinc
+add_core = GND
 add_core = WLS
 hre = no
 
 #Discoveries
-
-
-
-
-
 
 #Histories
 

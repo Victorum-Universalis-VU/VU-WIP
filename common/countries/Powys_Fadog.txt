@@ -1,8 +1,8 @@
-#Country Name: Please see filename.
+#Powys_Fadog
 
 graphical_culture = westerngfx
 
-color = { 188  46  46 }
+color = { 26  26  26 }
 revolutionary_colors = { 0 5 10 }
 
 historical_idea_groups = {

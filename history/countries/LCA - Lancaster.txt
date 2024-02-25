@@ -1,3 +1,4 @@
+#LCA - Lancaster
 government = monarchy
 add_government_reform = feudalism_reform
 #technology_group = western
@@ -6,3 +7,4 @@ unit_type = western
 religion = catholic
 primary_culture = northumbrian
 capital = 244 #Lancashire, Lancaster
+historical_rival = YRK

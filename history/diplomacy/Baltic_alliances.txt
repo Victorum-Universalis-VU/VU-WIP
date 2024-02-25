@@ -288,7 +288,7 @@ vassal = {
 # Polish vassal
 vassal = {
 	first = POL
-	second = GRP
+	second = PZN
 	start_date = 1215.1.15
 	end_date = 1444.3.9
 }

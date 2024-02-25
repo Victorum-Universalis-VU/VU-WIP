@@ -21,7 +21,7 @@ latent_trade_goods = { coal }
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ENG
-add_core = NOL
+add_core = YRK
 
 #Other Political
 hre = no

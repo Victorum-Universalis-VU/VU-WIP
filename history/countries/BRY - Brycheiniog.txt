@@ -1,3 +1,4 @@
+#BRY - Brycheiniog
 government = monarchy
 add_government_reform = welsh_lordship_reform
 government_rank = 1
@@ -8,8 +9,9 @@ primary_culture = welsh
 add_accepted_culture = english	
 religion = catholic
 capital = 3743	#Garth Madryn
-#historical_rival = GWN #
-#historical_friend = BRI
+historical_rival = WMC # Welsh Marches
+historical_rival = GWN # Gwent
+historical_rival = MRG # Morgannwg
 
 1215.1.1 = {
 	monarch = {
