@@ -4329,6 +4329,7 @@ ARB_hedjaz_najd_bedouin_potential = {
 		tag = MFL
 		tag = ANZ
 		tag = FAD
+		tag = MCC
 	}
 	NOT = { map_setup = map_setup_random }
 }
