@@ -28,7 +28,7 @@ TIM_crisis_missions_1 = {
 					num_of_generals = 2
 					mil_power = 400
 				}
-				mil_tech = 4
+				mil_tech = 21
 			}
 		}
 		effect = {
@@ -55,7 +55,7 @@ TIM_crisis_missions_1 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						mil_tech = 4
+						mil_tech = 21
 					}
 					add_country_modifier = {
 						name = me_tim_new_generation

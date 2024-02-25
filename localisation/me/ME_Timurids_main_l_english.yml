@@ -329,7 +329,7 @@
  me_tim_distribute_manpower_development: "Distribute §Y10§! £mil£ development in our §YBarracks§! provinces"
  me_tim_modify_armies_of_emperor: "Modify §YArmies of the Emperor§! for our §YTimurid Governors§! by:\n   Land Force Limit Modifier: §G+15.0%§!\n   National Manpower Modifier: §G+10.0%§!"
  me_tim_replace_centralized_army_with_professional: "Replace §YCentralized Army§! with §YProfessional Army§!\nEffective change:\n   Morale of Armies: §G+5.00%§!\n   Regiment Drill Loss: §G20.0%§!"
- me_tim_if_tech_16: "If we completed the mission with §YMilitary Technology 16§! we will not lose §Y400§! military power"
+ me_tim_if_tech_16: "If we completed the mission with §YMilitary Technology 33§! we will not lose §Y400§! military power"
  me_tim_restored_yuan: "Has restored the @YUA §YYuan§! Dynasty in §YNorthern China§!"
  me_tim_unlocks_restoration_of_yuan: "Unlocks the §YYuan Restoration§! decision"
  me_tim_easier_yuan_formation: "The §YReform Great Yuan§! decision becomes easier to enact"

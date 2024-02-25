@@ -10,6 +10,10 @@ HED_missions_1 = {
 			tag = MDA
 			tag = MCC
 		}
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -137,6 +141,10 @@ HED_missions_2 = {
 			tag = HED
 			tag = MDA
 			tag = MCC
+		}
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -348,6 +356,10 @@ HED_missions_3 = {
 			tag = HED
 			tag = MDA
 			tag = MCC
+		}
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes
@@ -729,6 +741,10 @@ HED_missions_4 = {
 			tag = MDA
 			tag = MCC
 		}
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -834,6 +850,10 @@ HED_missions_5 = {
 			tag = HED
 			tag = MDA
 			tag = MCC
+		}
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		}
 	}
 	has_country_shield = yes

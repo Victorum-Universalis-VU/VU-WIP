@@ -86,8 +86,8 @@
  me_tim_mughals: "§YOur preparations for the Indian expedition has began§!"
  me_tim_stratocracy: "§YWe need no ruler, only a military§!"
  
- me_tim_if_tech_3: "[TimuridsTech3] If we are at §MMilitary Technology 3§!:"
- me_tim_else_tech: "[TimuridsTech4] If we are at §MMilitary Technology 4§! and on:"
+ me_tim_if_tech_3: "[TimuridsTech3] If we are at §MMilitary Technology 20§! or lower:"
+ me_tim_else_tech: "[TimuridsTech4] If we are at §MMilitary Technology 21§! and on:"
  
  me_tim_gain_mil_per_nobles_privilege: "We will gain §G100§! military power. Each §YNobility Privilege§! will remove §G25§!"
  
