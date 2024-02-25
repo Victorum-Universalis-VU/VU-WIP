@@ -112,33 +112,50 @@ VBZ = "countries/Velbazhd.txt"
 YLT = "countries/Yelets.txt"
 RML = "countries/Rumelia.txt"
 
-#VU - Britannia
-BIF = "countries/Breifne.txt"
-BRC = "countries/Brecon.txt"
-CLN = "countries/Clandeboye.txt"
+#VU Britannia - Updated on Actually Prussia's advice. By San Felipe
+#England
+ARC	= "countries/ArchbishopricofCanterbury.txt"
+AFU = "countries/Anglo-French Union.txt"
 CST = "countries/Chester.txt"
 DUR = "countries/Durham.txt"
-DBT = "countries/Debatable_Lands.txt"
-ECO = "countries/EastConnacht.txt"
-FGH = "countries/Fermanagh.txt"
-GLA = "countries/Glamorgan.txt"
-IVE = "countries/Iveagh.txt"
 JER = "countries/JerseyandGuernsey.txt"
 LCA = "countries/Lancaster.txt"
-#LNC = "countries/Lancaster.txt"
-MGH = "countries/Monaghan.txt"
-PEM = "countries/Pembroke.txt"
-TNA = "countries/TirnanGael.txt"
+PEM	= "countries/Pembroke.txt"
 UNK = "countries/UnitedKingdomVU.txt"
+WMC = "countries/WelshMarches.txt"
+WRK	= "countries/Warwick.txt"
+YRK = "countries/York.txt"
+
+#Ireland
+BIF = "countries/Breifne.txt"
+CLN = "countries/Clandeboye.txt"
+ECO = "countries/EastConnacht.txt"
+FGH = "countries/Fermanagh.txt"
+IVE = "countries/Iveagh.txt"
+MGH = "countries/Monaghan.txt"
+TNA = "countries/TirnanGael.txt"
 WCO = "countries/WestConnacht.txt"
 WEX = "countries/Wexford.txt"
-WMC = "countries/WelshMarches.txt"
 WTF = "countries/Waterford.txt"
 YYK = "countries/YnystKedyrn.txt"
 
-#VU - Britannia
-ARC	= "countries/ArchbishopricofCanterbury.txt"
-AFU = "countries/Anglo-French Union.txt"
+#Scotland
+DBT = "countries/Debatable_Lands.txt"
+DLT = "countries/Dal_Riata.txt"
+GWY = "countries/Galloway.txt"
+STC = "countries/Strathclyde.txt"
+
+#Wales
+BRY = "countries/Brycheiniog.txt"
+DEH = "countries/Deheubarth.txt"
+GWN = "countries/Gwent.txt"
+GND = "countries/Gwynedd.txt"
+MRG = "countries/Morgannwg.txt"
+PWF = "countries/Powys_Fadog.txt"
+PWY = "countries/Powys_Wenwynwyn.txt"
+
+#Poland - Updated on Actually Prussia's advice. By San Felipe
+PZN = "countries/Poznan.txt"
 
 #VU - Eastern Mediterranean
 ROC = "countries/RepublicofCyprus.txt"
@@ -509,7 +526,6 @@ TRD = "countries/Trondelag.txt"
 TYE = "countries/Tyre.txt"
 UPP = "countries/Uppland.txt"
 VTG = "countries/Vastergotland.txt"
-YRK = "countries/York.txt"
 
 #VU - Scandinavia & Baltics
 #GTA = "countries/Gotaland.txt"
@@ -985,16 +1001,6 @@ TVA = "countries/Tavastia.txt"
 VNJ = "countries/Vanaja.txt"
 WRD = "countries/Wermlandia.txt"
 
-#Wales
-BRY = "countries/Brycheiniog.txt"
-BUE = "countries/Buellt.txt"
-CER = "countries/Ceredigion.txt"
-DFD = "countries/Dyfed.txt"
-GWN = "countries/Gwent.txt"
-GLY = "countries/Glywyssing.txt"
-PWY = "countries/Powys.txt"
-YST = "countries/Ystrad.txt"
-
 #Tags Changed by San Felipe
 #INI changed to IDA
 
@@ -1008,7 +1014,6 @@ JAL = "countries/Jalayirids.txt"
 QIZ = "countries/Qizil_Qoyunlu.txt"
 RST = "countries/Rustamids.txt"
 BKT = "countries/Bektashi.txt"
-GRP = "countries/GreaterPoland.txt"
 LRP = "countries/LesserPoland.txt"
 GNE = "countries/Gniezno.txt"
 KUY = "countries/Kuyavia.txt"
@@ -1016,7 +1021,6 @@ AYY = "countries/AyyubidsME.txt" #Yes there is already a tag for Ayyubids but th
 AZE = "countries/Azerbaijan.txt"
 BRL = "countries/Braelyc.txt"
 CAU = "countries/Caucasia.txt"
-CYR = "countries/Cymru.txt"
 DAG = "countries/Dagestan.txt"
 FRX = "countries/Francia.txt"
 GRC = "countries/GranColombia.txt"

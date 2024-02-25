@@ -1,8 +1,8 @@
-#Country Name: Please see filename.
+#Gwynedd
 
 graphical_culture = westerngfx
 
-color = { 2  2  114 }
+color = { 0  170  0 }
 revolutionary_colors = { 0 5 10 }
 
 historical_idea_groups = {

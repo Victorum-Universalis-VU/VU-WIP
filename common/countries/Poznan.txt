@@ -1,4 +1,4 @@
-#Poland
+#Poznan
 
 graphical_culture = westerngfx #easterngfx
 

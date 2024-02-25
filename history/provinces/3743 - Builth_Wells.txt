@@ -18,6 +18,7 @@ hre = no
 
 #Claimants
 add_core = WLS
+add_core = PWY
 
 #Buildings
 
@@ -25,13 +26,8 @@ add_core = WLS
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
-1215.6.15 = { owner = BUE controller = BUE add_core = BUE } # Welsh territory - By San Felipe
+1215.6.15 = { owner = PWY controller = PWY add_core = PWY } # Welsh territory - By San Felipe
 
 1444.11.11 = { owner = WMC controller = WMC add_core = WMC } # Welsh Marches territory - By San Felipe
 

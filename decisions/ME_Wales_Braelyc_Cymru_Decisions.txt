@@ -2,7 +2,7 @@ country_decisions = {
 	wls_braelyc = {
 		major = yes
 		potential = {
-			tag = CYR
+			tag = WLS
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_brl_flag }
@@ -95,7 +95,7 @@ country_decisions = {
 			if = {
 				limit = {
 					british_isles_region = {
-						NOT = { owned_by = CYR }
+						NOT = { owned_by = WLS }
 						NOT = { owned_by = IRE }
 						NOT = { owned_by = SCO }
 						NOT = { owned_by = CRN }

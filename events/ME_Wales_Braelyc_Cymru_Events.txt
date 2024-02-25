@@ -161,7 +161,7 @@ country_event = { #The welsh identity
 				}
 				set_heir_culture = celtic_welsh_culture
 			}
-			change_tag = CYR
+			change_tag = WLS
 		}
 		swap_non_generic_missions = yes
 	}

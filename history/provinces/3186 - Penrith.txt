@@ -12,13 +12,7 @@ base_manpower = 1
 capital = "Penrith"
 is_city = yes
 add_core = ENG
-add_core = NOL
-
-
-
-
-
-
+add_core = LCA
 
 1291.1.1 = {
 	culture = welsh

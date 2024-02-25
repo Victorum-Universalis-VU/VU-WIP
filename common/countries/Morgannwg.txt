@@ -1,8 +1,8 @@
-#Country Name: Please see filename.
+#Morgannwg
 
 graphical_culture = westerngfx
 
-color = { 242  222  222 }
+color = { 236  13  13 }
 revolutionary_colors = { 0 5 10 }
 
 historical_idea_groups = {

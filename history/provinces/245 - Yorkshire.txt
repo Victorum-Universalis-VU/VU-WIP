@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "York"
 is_city = yes
 add_core = ENG
-add_core = NOL
+add_core = YRK
 fort_15th = yes #York castle built by William the Conqueror in 1098 AD
 
 center_of_trade = 2
