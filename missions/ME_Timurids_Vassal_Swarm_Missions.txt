@@ -45,7 +45,7 @@ Timurid_main_1_branching = {
 				}
 			}
 			OR = {
-				mil_tech = 16
+				mil_tech = 33
 				AND = {
 					mil_power = 400
 					mil = 5
@@ -151,7 +151,7 @@ Timurid_main_1_centralized_army = {
 				}
 			}
 			OR = {
-				mil_tech = 16
+				mil_tech = 33
 				AND = {
 					mil_power = 400
 					mil = 5
@@ -186,7 +186,7 @@ Timurid_main_1_centralized_army = {
 				}
 				if = {
 					limit = {
-						NOT = { mil_tech = 16 }
+						NOT = { mil_tech = 33 }
 					}
 					add_mil_power = -400
 				}
@@ -400,7 +400,7 @@ Timurid_main_2_branching = {
 				tooltip = me_tim_if_centralized_army
 				always = no
 			}
-			mil_tech = 13
+			mil_tech = 30
 			num_of_artillery = 20
 			OR = {
 				has_global_modifier_value = {
@@ -703,7 +703,7 @@ Timurid_main_2_centralized_army = {
 		required_missions = { TIM_emperors_army }
 		position = 15
 		trigger = {
-			mil_tech = 13
+			mil_tech = 30
 			num_of_artillery = 20
 			OR = {
 				has_global_modifier_value = {

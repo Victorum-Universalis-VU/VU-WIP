@@ -608,6 +608,7 @@
  me_mug_trade_fleet: "Trade Fleet"
  me_mug_mixed_fleet: "Mixed Fleet"
  me_mug_technology_share: "Technology Share"
+ desc_me_mug_technology_share: " "
  me_mug_fall_of_delhi: "Fall of Delhi"
  me_mug_gujarat_investments: "Gujarati Investments"
  me_mug_increased_in_power: "Increased in Royal Power"
