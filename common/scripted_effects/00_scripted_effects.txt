@@ -9546,6 +9546,10 @@ add_or_upgrade_trade_building = {
 		}
 		else_if = {
 			limit = { has_building = stock_exchange }
+			add_building = corporative_headquarters
+		}
+		else_if = {
+			limit = { has_building = corporative_headquarters }
 			add_base_tax = 1
 			add_base_production = 1
 		}
@@ -9562,6 +9566,10 @@ add_or_upgrade_tax_building = {
 		}
 		else_if = {
 			limit = { has_building = cathedral }
+			add_building = grand_cathedral
+		}
+		else_if = {
+			limit = { has_building = grand_cathedral }
 			add_base_tax = 2
 		}
 		else = { add_building = temple }
@@ -9577,6 +9585,14 @@ add_or_upgrade_production_building = {
 		}
 		else_if = {
 			limit = { has_building = counting_house }
+			add_building = treasury
+		}
+		else_if = {
+			limit = { has_building = treasury }
+			add_building = factory
+		}
+		else_if = {
+			limit = { has_building = factory }
 			add_base_production = 2
 		}
 		else = { add_building = workshop }
@@ -9648,12 +9664,20 @@ add_or_upgrade_university_building = {
 	custom_tooltip = add_or_upgrade_university_building_tt
 	hidden_effect = {
 		if = {
+			limit = { has_building = library }
+			add_building = school
+		}
+		else_if = {
+			limit = { has_building = school }
+			add_building = univerty
+		}
+		else_if = {
 			limit = { has_building = university }
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 		}
-		else = { add_building = university }
+		else = { add_building = library }
 	}
 }
 
@@ -9666,6 +9690,10 @@ add_or_upgrade_courthouse_building = {
 		}
 		else_if = {
 			limit = { has_building = town_hall }
+			add_building = city_hall
+		}
+		else_if = {
+			limit = { has_building = city_hall }
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
@@ -9845,6 +9873,10 @@ upgrade_courthouse_building = {
 		}
 		else_if = {
 			limit = { has_building = town_hall }
+			add_building = city_hall
+		}
+		else_if = {
+			limit = { has_building = city_hall }
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
