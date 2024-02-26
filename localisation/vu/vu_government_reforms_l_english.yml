@@ -279,6 +279,12 @@
  althing_elite_reform: "Alþingi"
  althing_elite_reform_desc: "Founded in 930AD at Þingvellir 'Thing fields' or 'Assembly fields', the Alþingi or Althing is the supreme national parliament of the Icelandic peoples and it is one of the oldest surviving parliaments in the world."
  #
+ #VU New Scottish Clans Reforms by San Felipe
+ lowland_clan_reform: "Lowland Clan"
+ lowland_clan_reform_desc: "A realm which is ruled by an off-branch candidate of its overlord's dynasty."
+ highland_clan_reform: "Highland Clan"
+ highland_clan_reform_desc: "A realm which is ruled by an off-branch candidate of its overlord's dynasty."
+ #
  #lotf
  fund_municipalities: "Fund Municipalities"
  fund_municipalities_desc: ""

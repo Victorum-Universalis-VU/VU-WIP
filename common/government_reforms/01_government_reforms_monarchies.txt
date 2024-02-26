@@ -384,6 +384,49 @@ appanage_reform = {
 	}
 }
 
+#VU NEW additions by SF
+lowland_clan_reform = {
+	icon = "lowland_clan_reform"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = scottish_clan #Was appanage
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		global_manpower_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+highland_clan_reform = {
+	icon = "lowland_clan_reform"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = scottish_clan #Was appanage
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		global_manpower_modifier = 0.1
+		nobles_loyalty_modifier = 0.1
+		nobles_influence_modifier = 0.05
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 absolutist_france_reform = {
 	icon = "absolutist_france_reform"
 	allow_normal_conversion = no
@@ -8193,7 +8236,7 @@ romanian_united_principality = {
 }
 
 selucian_kingdom_reform = {
-	icon = "government_reform_selucian_kingdom_reform"
+	icon = "selucian_kingdom_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_country_flag = formed_selucian_kingdom_flag }
@@ -8249,7 +8292,7 @@ selucian_kingdom_reform = {
 }
 
 selucian_satrapy_reform = {
-	icon = "government_reform_selucian_satrapy_reform"
+	icon = "selucian_satrapy_reform"
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_country_flag = formed_satrapy_flag }
@@ -8278,7 +8321,7 @@ selucian_satrapy_reform = {
 }
 
 macedonian_monarchy_reform = {
-	icon = "government_reform_macedonian_monarchy_reform"
+	icon = "macedonian_monarchy_reform"
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no

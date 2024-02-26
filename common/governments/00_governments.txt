@@ -78,6 +78,8 @@ monarchy = {
 				feudal_france_reform
 				absolutist_france_reform
 				appanage_reform
+				lowland_clan_reform
+				highland_clan_reform
 				ruthenian_tsardom
 				russian_empire_reform
 				korean_monarchy
@@ -1067,6 +1069,8 @@ monarchy = {
 		shogunate
 		indep_daimyo
 		appanage_reform
+		lowland_clan_reform
+		highland_clan_reform
 		states_general_reform
 		parliamentary_reform
 		courts_of_navarra

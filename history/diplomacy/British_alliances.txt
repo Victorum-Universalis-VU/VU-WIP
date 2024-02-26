@@ -566,3 +566,50 @@ vassal = {
 	end_date = 1493.1.1
 }
 
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = CBE
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = CM1
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = DUG
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = GOR
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = RLL
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}
+
+dependency = {
+	subject_type = scottish_clan
+	first = SCO
+	second = SNC
+	start_date = 1444.1.1
+	end_date = 1493.1.1
+}

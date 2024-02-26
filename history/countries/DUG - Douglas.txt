@@ -1,0 +1,15 @@
+#DUG - Douglas
+government = monarchy
+add_government_reform = lowland_clan_reform #Was scottish_monarchy
+government_rank = 1
+primary_culture = scottish
+add_accepted_culture = highland_scottish
+add_accepted_culture = gallgaidheil
+religion = catholic
+#technology_group = western
+technology_group = english_tech_group
+unit_type = western
+#historical_rival = GOR
+#historical_rival = SNC
+#historical_friend = DUG
+capital = 3240 #Lanarkshire

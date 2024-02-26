@@ -140,10 +140,16 @@ WTF = "countries/Waterford.txt"
 YYK = "countries/YnystKedyrn.txt"
 
 #Scotland
+CBE = "countries/Campbell.txt"             #4363
+CM1 = "countries/Cameron.txt"             #8155
 DBT = "countries/Debatable_Lands.txt"
 DLT = "countries/Dal_Riata.txt"
+DUG = "countries/Douglas.txt"             #3240
+GOR = "countries/Gordon.txt"              #8152
 GWY = "countries/Galloway.txt"
+RLL = "countries/Russell.txt"             #251
 STC = "countries/Strathclyde.txt"
+SNC = "countries/Sinclair.txt"            #4110
 
 #Wales
 BRY = "countries/Brycheiniog.txt"
