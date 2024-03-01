@@ -78,6 +78,8 @@ monarchy = {
 				feudal_france_reform
 				absolutist_france_reform
 				appanage_reform
+				lowland_clan_reform
+				highland_clan_reform
 				ruthenian_tsardom
 				russian_empire_reform
 				korean_monarchy
@@ -149,6 +151,8 @@ monarchy = {
 				provincial_kingdom_reform
 				norman_lordship_reform
 				norman_duchy_reform
+				english_lordship_reform
+				english_duchy_reform
 				anglo_irish_monarchy_reform
 		        american_monarchy
 		        #parliamentary_monarchy
@@ -1067,6 +1071,8 @@ monarchy = {
 		shogunate
 		indep_daimyo
 		appanage_reform
+		lowland_clan_reform
+		highland_clan_reform
 		states_general_reform
 		parliamentary_reform
 		courts_of_navarra
@@ -2694,6 +2700,14 @@ pre_dharma_mapping = {
 		legacy_government = provincial_kingdom_legacy
 	}
 	norman_duchy_reform = {
+		government = monarchy
+		legacy_government = norman_duchy_legacy
+	}
+	english_lordship_reform = {
+		government = monarchy
+		legacy_government = norman_lordship_legacy
+	}
+	english_duchy_reform = {
 		government = monarchy
 		legacy_government = norman_duchy_legacy
 	}

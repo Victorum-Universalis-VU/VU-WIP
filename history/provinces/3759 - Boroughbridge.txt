@@ -11,16 +11,12 @@ base_manpower = 1
 trade_goods = lumber
 capital = "Boroughbridge"
 is_city = yes
-add_core = NOL
+
 hre = no
 
-
-
-
-
-
-
+#Histories
 453.1.1 = { unrest = 5 } # Start of the War of the Roses
+1444.11.11 = { owner = RCH controller = RCH add_core = RCH } # The Earldom of Richmond territory - By San Felipe
 1459.9.23 = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of York" } controller = REB } # The Battle of Blore Heath
 1459.10.12 = { revolt = {} unrest = 5 } # The Lancastrians are back in control after the battle of Ludford Bridge
 1461.4.1 = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of York" } controller = REB } # Capture of York after Battle of Towton

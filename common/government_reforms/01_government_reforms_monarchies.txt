@@ -384,6 +384,53 @@ appanage_reform = {
 	}
 }
 
+#VU NEW additions by SF
+lowland_clan_reform = {
+	icon = "lowland_clan_reform"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = scottish_clan #Was appanage
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		core_creation = -0.05
+		global_trade_power = 0.05
+		global_colonial_growth = 5
+		range = 0.33
+		land_morale = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+highland_clan_reform = {
+	icon = "lowland_clan_reform"
+	allow_normal_conversion = no
+	potential = {
+		is_subject_of_type = scottish_clan #Was appanage
+	}
+	replacement_on_independence_war = feudalism_reform
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		core_creation = -0.05
+		infantry_power = 0.1
+		global_manpower_modifier = 0.1
+		diplomatic_reputation = 1
+		land_morale = 0.15
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
 absolutist_france_reform = {
 	icon = "absolutist_france_reform"
 	allow_normal_conversion = no
@@ -7304,6 +7351,54 @@ norman_duchy_reform = { #T2
 	}
 }
 
+#NEW VU Always Prussia's new government reforms integrated by San Felipe
+english_lordship_reform = { #T1
+	icon = "english_lordship_reform"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+		NOT = { has_reform = english_duchy_reform }
+		is_subject_of_type = english_peerage #Was appanage
+	}
+	lock_level_when_selected = yes
+	legacy_equivalent = english_lordship_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	maintain_dynasty = yes
+	nation_designer_trigger = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+	}
+	fixed_rank = 1
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		infantry_power = 0.1
+		land_morale = 0.05
+		liberty_desire = 0.1
+	}
+}
+
+english_duchy_reform = { #T2
+	icon = "english_duchy_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = english_duchy_legacy
+	valid_for_nation_designer = no
+	fixed_rank = 1
+	maintain_dynasty = yes
+	potential = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+		is_subject_of_type = english_peerage #Was appanage
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.2
+		infantry_power = 0.2
+		land_morale = 0.1
+		liberty_desire = 0.15
+	}
+}
+
 anglo_irish_monarchy_reform = { #T3
 	icon = "english_monarchy"
 	allow_normal_conversion = no
@@ -8193,7 +8288,7 @@ romanian_united_principality = {
 }
 
 selucian_kingdom_reform = {
-	icon = "government_reform_selucian_kingdom_reform"
+	icon = "selucian_kingdom_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_country_flag = formed_selucian_kingdom_flag }
@@ -8249,7 +8344,7 @@ selucian_kingdom_reform = {
 }
 
 selucian_satrapy_reform = {
-	icon = "government_reform_selucian_satrapy_reform"
+	icon = "selucian_satrapy_reform"
 	allow_normal_conversion = no
 	potential = {
 		NOT = { has_country_flag = formed_satrapy_flag }
@@ -8278,7 +8373,7 @@ selucian_satrapy_reform = {
 }
 
 macedonian_monarchy_reform = {
-	icon = "government_reform_macedonian_monarchy_reform"
+	icon = "macedonian_monarchy_reform"
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no

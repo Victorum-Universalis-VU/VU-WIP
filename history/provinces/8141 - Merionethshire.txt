@@ -11,14 +11,10 @@ base_production = 2
 base_manpower = 2
 trade_goods = gold
 add_core = WLS
+add_core = GND
 hre = no
 
 #Discoveries
-
-
-
-
-
 
 #Histories
 

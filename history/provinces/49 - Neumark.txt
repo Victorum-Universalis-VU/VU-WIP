@@ -1,9 +1,9 @@
 #49 - Neumark
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 culture = saxon
 religion = catholic
 hre = yes
@@ -29,7 +29,7 @@ is_city = yes
 
 #Histories by docRobert & SF
 1402.1.1 = { owner = TEU controller = TEU add_core = TEU }
-1444.1.11 = { remove_core = GRP }
+1444.1.11 = { remove_core = PZN }
 1454.2.22 = {
 	owner = BRA
 	controller = BRA

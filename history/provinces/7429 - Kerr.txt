@@ -1,5 +1,4 @@
-#Merseyside
-
+#7429 - Wirral
 owner = ENG
 controller = ENG
 add_core = ENG
@@ -12,15 +11,10 @@ trade_goods = fish
 base_manpower = 1
 capital = "Ellesmere Port"
 is_city = yes
+add_core = CST
 
-
-
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = CST controller = CST add_core = CST } # The Earldom of Chester territory - By San Felipe
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

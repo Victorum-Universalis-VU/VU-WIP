@@ -1,3 +1,4 @@
+#ENG - England
 government = monarchy
 add_government_reform = english_monarchy
 #technology_group = western
@@ -10,6 +11,7 @@ add_accepted_culture = northumbrian
 religion = catholic
 capital = 7437 # Westminster
 national_focus = DIP
+historical_rival = GND
 
 change_estate_land_share = {
 	estate = estate_church

@@ -1,9 +1,9 @@
 #7819 - Arnswalde
 
 #Default
-owner = GRP
-controller = GRP
-add_core = GRP
+owner = PZN
+controller = PZN
+add_core = PZN
 add_core = POL
 culture = polish
 religion = catholic

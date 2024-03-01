@@ -1,7 +1,7 @@
 #4364 - Inner Hebrides
 
-owner = LOI
-controller = LOI
+owner = MCD
+controller = MCD
 culture = gallgaidheil			#The distinction between Gallgael and Gael was minimal by the 15th century, if not much sooner, but Ive already recieved multiple requests for this subculture, so give the people that for which they clamour...
 religion = catholic
 hre = no
@@ -11,16 +11,11 @@ trade_goods = whiskey #Islay Whiskey
 base_manpower = 3
 capital = "Sléibhte"
 is_city = yes
-add_core = LOI
+add_core = MCD
 fort_15th = yes
 
-
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = MCD controller = MCD add_core = MCD } # The MacLeod territory - By San Felipe
 1475.1.1 = {
 	culture = highland_scottish
 }

@@ -40,26 +40,26 @@ num_of_battles_won = {
 	]
 }
 
-#num_of_provinces_developed = { Doesn't seem to actually do anything so commenting out
-#	[[value]
-#		custom_trigger_tooltip = {
-#			tooltip = ME_has_developed_at_least_$value$_provinces
-#			check_variable = {
-#				which = num_of_times_developed
-#				value = $value$
-#			}
-#		}
-#	]
-#	[[amount]
-#		custom_trigger_tooltip = {
-#			tooltip = ME_has_developed_at_least_$amount$_provinces
-#			check_variable = {
-#				which = num_of_times_developed
-#				value = $amount$
-#			}
-#		}
-#	]
-#}
+num_of_provinces_developed = { #Turned back on by San Felipe
+	[[value]
+		custom_trigger_tooltip = {
+			tooltip = ME_has_developed_at_least_$value$_provinces
+			check_variable = {
+				which = num_of_times_developed
+				value = $value$
+			}
+		}
+	]
+	[[amount]
+		custom_trigger_tooltip = {
+			tooltip = ME_has_developed_at_least_$amount$_provinces
+			check_variable = {
+				which = num_of_times_developed
+				value = $amount$
+			}
+		}
+	]
+}
 
 num_of_provinces_converted = {
 	[[value]

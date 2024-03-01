@@ -24,6 +24,7 @@ trade_goods = wool
 #Cores and Occupation (Alphabetical after current)
 add_core = WMC
 add_core = WLS
+add_core = PWF
 
 #Other Political
 hre = no
@@ -33,11 +34,6 @@ hre = no
 #Special Modifiers
 
 #Discoveries
-
-
-
-
-
 
 #Histories
 

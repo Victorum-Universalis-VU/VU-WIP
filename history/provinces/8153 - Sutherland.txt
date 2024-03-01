@@ -17,6 +17,7 @@ base_manpower = 1
 trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
+
 add_core = SCO
 
 #Other Political
@@ -29,12 +30,8 @@ add_local_autonomy = 25
 
 #Discoveries
 
-
-
-
-
-
 #Histories
+1444.11.11 = { owner = SNC controller = SNC add_core = SNC } # The Isles clan territory - By San Felipe
 1560.8.1 = { religion = reformed }
 1644.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB }
 1647.1.1 = { revolt = {} controller = SCO }

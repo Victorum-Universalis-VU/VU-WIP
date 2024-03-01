@@ -11,16 +11,13 @@ base_production = 2
 base_manpower = 1
 trade_goods = lumber
 add_core = ENG
-add_core = NOL
+add_core = RCH
+
 hre = no
 fort_15th = yes #Richmond Castle, Richard III's main residence and a key site in the War of the Roses
 
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = RCH controller = RCH add_core = RCH } # The Earldom of Richmond territory - By San Felipe
 453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1459.9.23 = { unrest = 0 revolt = { type = pretender_rebels size = 3 leader = "Edward of York" } controller = REB } # The Battle of Blore Heath
 1459.10.12 = { revolt = {} unrest = 5 } # The Lancastrians are back in control after the battle of Ludford Bridge

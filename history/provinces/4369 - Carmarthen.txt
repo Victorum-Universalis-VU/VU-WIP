@@ -1,4 +1,4 @@
-#4369 - Carmarthen
+#4369 - Camarthen/Pembroke
 
 #Default
 owner = ENG
@@ -30,17 +30,9 @@ add_permanent_province_modifier = {
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
-
-1215.6.15 = { owner = DFD controller = DFD add_core = DFD } # Welsh territory - By San Felipe
-
-1444.11.11 = { owner = ENG controller = ENG add_core = ENG } # Welsh Marches territory - By San Felipe
-
+1215.6.15 = { owner = DEH controller = DEH add_core = DEH } # Welsh territory - By San Felipe
+1444.11.11 = { owner = GLR controller = GLR add_core = GLR } # The Dukedom of Gloucester territory - By San Felipe
 #1399.1.1 = { unrest = 20 } # Buildup to the Welsh Revolt
 #1400.9.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Welsh Revolt
 #1415.1.1 = { unrest = 0 revolt = {} controller = ENG } # English rule is restored

@@ -1,8 +1,8 @@
 #3272 - Eilean Arainn
 
-owner = LOI
-controller = LOI
-add_core = LOI
+owner = CBE
+controller = CBE
+add_core = CBE
 culture = highland_scottish
 religion = catholic
 hre = no
@@ -15,16 +15,13 @@ is_city = yes
 
 add_core = SCO
 
-
-
-
-
-
-
 add_permanent_province_modifier = {
 	name = fyne_estuary_modifier
 	duration = -1
 }
+
+#Histories
+1444.11.11 = { owner = CBE controller = CBE add_core = CBE } # The Isles clan territory - By San Felipe
 
 1475.1.1 = {
 	culture = scottish

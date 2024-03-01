@@ -177,60 +177,42 @@ principality_of_wales = {
     }
 }
 
-scottish_vassal_monarchy = {
-	rank = {
-		1 = EARLDOM
-		2 = KINGDOM
-		3 = EMPIRE
-	}	
-	
-	ruler_male = {
-		1 = LORD
-		2 = KING
-		3 = EMPEROR
-	}
-	
-	ruler_female = {
-		1 = LADY
-		2 = QUEEN	
-		3 = EMPRESS
-	}
-	
-	consort_male = {
-		1 = EARLDOM
-		2 = KING
-		3 = EMPEROR
-	}
-
-	consort_female = {
-		1 = LADY
-		2 = QUEEN	
-		3 = EMPRESS
-	}
-	
-	heir_male = {
-		1 = HEIR
-		2 = PRINCE
-		3 = PRINCE
-	}
-
-	heir_female = {
-		1 = HEIRESS_VU
-		2 = PRINCESS
-		3 = PRINCESS
-	}
-	
-	trigger = {
-		government = monarchy
-		overlord = {
-		    OR = {
-			    primary_culture = highland_scottish
-				primary_culture = scottish
-			}
-		}
-		NOT = { has_reform = revolutionary_empire_reform }
-	}
-}
+#gov_scottish_clan_reform = {
+#	rank = {
+#		1 = SCOTTISH_CLAN
+#	}
+#	
+#	ruler_male = {
+#		1 = SCOTTISH_CHIEFTAIN
+#	}
+#	
+#	ruler_female = {
+#		1 = SCOTTISH_CHIEFTESS_fem
+#	}
+#	
+#	consort_male = {
+#		1 = SCOTTISH_CONSORT
+#	}
+#
+#	consort_female = {
+#		1 = SCOTTISH_CONSORT_fem
+#	}
+#
+#	heir_male = {
+#		1 = SCOTTISH_HEIR
+#	}
+#
+#	heir_female = {
+#		1 = SCOTTISH_HEIRESS_fem
+#	}
+#	
+#	trigger = {
+#		OR = {
+#			has_reform = lowland_clan_reform
+#			has_reform = highland_clan_reform
+#		}
+#	}
+#}
 
 english_kingdom = {
 	rank = {
@@ -270,7 +252,9 @@ english_kingdom = {
           tag = GBR
           tag = UNK
         }
-		NOT = { has_reform = revolutionary_empire_reform 
+		NOT = { tag = CST }
+		NOT = { 
+			has_reform = revolutionary_empire_reform 
 		}
 	}
 }
@@ -485,6 +469,7 @@ gov_transitional_government_ireland = { #Something to do with viceroyalty anglo-
 	
 	trigger = {
 		has_reform = transitional_government_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 
@@ -635,6 +620,61 @@ gov_welsh_monarchy = { #Welsh minor kingdoms.
 	
 	trigger = {
 		has_reform = welsh_monarchy_reform
+	}
+}
+
+scottish_vassal_monarchy = {
+	rank = {
+		1 = SCOTTISH_CLAN_1
+		2 = SCOTTISH_EARLDOM
+		3 = SCOTTISH_PETTY_KINGDOM
+	}	
+	
+	ruler_male = {
+		1 = SCOTTISH_CHIEFTAIN
+		2 = SCOTTISH_EARL
+		3 = SCOTTISH_PETTY_KING
+	}
+	
+	ruler_female = {
+		1 = SCOTTISH_CHIEFTESS_fem
+		2 = SCOTTISH_COUNTESS_fem	
+		3 = SCOTTISH_PETTY_QUEEN_fem
+	}
+	
+	consort_male = {
+		1 = SCOTTISH_CONSORT
+		2 = SCOTTISH_CONSORT
+		3 = SCOTTISH_CONSORT
+	}
+
+	consort_female = {
+		1 = SCOTTISH_CONSORT_fem
+		2 = SCOTTISH_CONSORT_fem	
+		3 = SCOTTISH_CONSORT_fem
+	}
+	
+	heir_male = {
+		1 = SCOTTISH_HEIR
+		2 = SCOTTISH_HEIR
+		3 = SCOTTISH_HEIR
+	}
+
+	heir_female = {
+		1 = SCOTTISH_HEIRESS_fem
+		2 = SCOTTISH_HEIRESS_fem
+		3 = SCOTTISH_HEIRESS_fem
+	}
+	
+	trigger = {
+		government = monarchy
+		overlord = {
+		    OR = {
+			    primary_culture = highland_scottish
+				primary_culture = scottish
+			}
+		}
+		NOT = { has_reform = revolutionary_empire_reform }
 	}
 }
 
@@ -933,6 +973,7 @@ gov_norman_duchy = { #Norma Duchy formables Munser, Leinster, Ulster & Connacht,
 	
 	trigger = {
 		has_reform = norman_duchy_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 
@@ -981,6 +1022,7 @@ gov_anglo_irish_monarchy = { #Anglo-Ireland, pretty much.
 	
 	trigger = {
 		has_reform = anglo_irish_monarchy_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 

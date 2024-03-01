@@ -79,6 +79,16 @@
  norman_lordship_legacy_ruler_female: "Lady"
  norman_lordship_legacy_desc: "Norman Lordships are positions created by Anglo-Norman powers following the Norman conquest of Ireland in 1172, into which they installed loyal Anglo-Norman lords as a reward for miltary service as well as to ensure continued control over Ireland. Nominally vassals of the English monarch, these lordships were de facto independent by the 15th century, and shared far more with their Gaelic neighbors than their distant English cousins."
  #
+ english_lordship_legacy: "English Lordship"
+ english_lordship_legacy_ruler: "Earl"
+ english_lordship_legacy_ruler_female: "Lady"
+ english_lordship_legacy_desc: "English Lordships are positions created by the monarch as a reward for miltary service as well as to ensure continued control over parts of Britain. Nominally vassals of the English monarch, these lordships were de facto independent by the 15th century and shared very close relations with the crown, often leading them to warring with each other for power and influence."
+ #
+ english_duchy_legacy: "English Lordship"
+ english_duchy_legacy_ruler: "Earl"
+ english_duchy_legacy_ruler_female: "Lady"
+ english_duchy_legacy_desc: "English Duchies are positions created by the monarch as a reward for miltary service as well as to ensure continued control over parts of Britain. Nominally vassals of the English monarch, these duchies were de facto independent by the 15th century and shared very close relations with the crown, often leading them to warring with each other for power and influence."
+ #
  welsh_lordship_reform: "Cymwd"
  welsh_lordship_reform_desc: "A Commote or Cymwd in older documents is a secular division of land in Medieval Wales. The word derives from the prefix 'cym' or 'together with' and the noun bod 'home' or 'abode'. It is similar in administration to a Principality and or Provincial Kingdom but not at the same equal level."
  #
@@ -105,6 +115,12 @@
  norman_duchy_legacy_ruler: "Duke"
  norman_duchy_legacy_ruler_female: "Duchess"
  norman_duchy_legacy_desc: "A title granted by the English monarchy empowering the holder to rule one of the ancient provinces of Ireland in their name. Historically a replacement for the native provincial kingdoms, this title came to represent pervasive and aggressive English influence in Ireland, but they were also highly effective at squeezing out every last ducat from their subjects."
+ #
+ english_lordship_reform: "English Earldom"
+ english_lordship_reform_desc:: "A title granted by the English monarchy empowering the holder to rule one of the ancient provinces of England in their name. Historically a replacement for the native provincial kingdoms, this title came to represent English rule throughout parts of mainland Britain and also as a means of effectively squeezing out every last ducat from their peasant subjects."
+ #
+ english_duchy_reform: "English Duchy"
+ english_duchy_reform_desc:: "A title granted by the English monarchy empowering the holder to rule one of the ancient provinces of England in their name. Historically a replacement for the native provincial kingdoms, this title came to represent English rule throughout parts of mainland Britain and also as a means of effectively squeezing out every last ducat from their peasant subjects."
  #
  welsh_duchy_reform: "Dugiaeth"
  welsh_duchy_reform_desc: "A 'Dugiaeth' is the Welsh equivalent of Duchy or area of land within a Kingdom or Empire that is ruled and presided over by a 'Dugiaeth' or Duke who rules the territory in the sovereign's stead, acting as both governor, judicial arbiter and representative of the monarch."
@@ -278,6 +294,12 @@
  #VU New Icelandic Reforms by San Felipe
  althing_elite_reform: "Alþingi"
  althing_elite_reform_desc: "Founded in 930AD at Þingvellir 'Thing fields' or 'Assembly fields', the Alþingi or Althing is the supreme national parliament of the Icelandic peoples and it is one of the oldest surviving parliaments in the world."
+ #
+ #VU New Scottish Clans Reforms by San Felipe
+ lowland_clan_reform: "Lowland Clan"
+ lowland_clan_reform_desc: "A realm which is ruled by an off-branch candidate of its overlord's dynasty."
+ highland_clan_reform: "Highland Clan"
+ highland_clan_reform_desc: "A realm which is ruled by an off-branch candidate of its overlord's dynasty."
  #
  #lotf
  fund_municipalities: "Fund Municipalities"

@@ -9,7 +9,7 @@ add_accepted_culture = irish
 religion = catholic
 capital = 4121	# Ulaidh
 fixed_capital = 4121	# Ulaidh
-historical_friend = LOI
+historical_friend = MDD #Was LOI
 historical_rival = ENG			#Trying to prevent England from suiciding by alliance with 4 Irish OPMs
 
 1410.1.1 = {

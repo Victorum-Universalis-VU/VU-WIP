@@ -4273,6 +4273,8 @@ has_not_locked_first_tier_reform = {
 	NOT = { has_reform = daimyo }
 	NOT = { has_reform = feudal_france_reform }
 	NOT = { has_reform = appanage_reform }
+	NOT = { has_reform = lowland_clan_reform }
+	NOT = { has_reform = highland_clan_reform }
 	NOT = { has_reform = absolutist_france_reform }
 	NOT = { has_reform = celestial_empire }
 	NOT = { has_reform = kalmar_union }
@@ -4329,6 +4331,7 @@ ARB_hedjaz_najd_bedouin_potential = {
 		tag = MFL
 		tag = ANZ
 		tag = FAD
+		tag = MCC
 	}
 	NOT = { map_setup = map_setup_random }
 }

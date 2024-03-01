@@ -634,6 +634,27 @@ spriteTypes = {
 		name = "government_reform_macedonian_monarchy_reform"
 		texturefile = "gfx/interface/government_reform_icons/macedonian_monarchy_reform.dds"
 	}
+
+	spriteType = {
+		name = "government_reform_lowland_clan_reform"
+		texturefile = "gfx/interface/government_reform_icons/lowland_clan_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_highland_clan_reform"
+		texturefile = "gfx/interface/government_reform_icons/highland_clan_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_lordship_reform"
+		texturefile = "gfx/interface/government_reform_icons/english_lordship_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_duchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/english_duchy_reform.dds"
+	}
+
 	#End of New Additions by San Felipe 
 	
 	spriteType = {

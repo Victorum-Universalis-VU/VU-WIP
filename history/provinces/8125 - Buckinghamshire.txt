@@ -31,12 +31,8 @@ seat_in_parliament = yes
 
 #Discoveries
 
-
-
-
-
-
 #Histories
+1444.11.11 = { owner = BCK controller = BCK add_core = BCK } # The Dukedom of Buckingham territory - By San Felipe
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick

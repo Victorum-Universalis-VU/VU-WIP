@@ -7,6 +7,10 @@ ARB_generic_missions_1 = {
 	potential = {
 		has_generic_arabian_missions = yes
 		NOT = { has_country_flag = SYR_subject_missions }
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -86,6 +90,10 @@ ARB_generic_missions_2 = {
 	potential = {
 		has_generic_arabian_missions = yes
 		NOT = { has_country_flag = SYR_subject_missions }
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -173,6 +181,10 @@ ARB_generic_missions_3 = {
 	potential = {
 		has_generic_arabian_missions = yes
 		NOT = { has_country_flag = SYR_subject_missions }
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -298,6 +310,10 @@ ARB_generic_missions_4 = {
 	ai = yes
 	potential = {
 		has_generic_arabian_missions = yes
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	
@@ -370,6 +386,10 @@ ARB_generic_missions_5 = {
 	ai = yes
 	potential = {
 		has_generic_arabian_missions = yes
+		if = {
+			limit = { has_dlc = "King of Kings" }
+			has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		}
 	}
 	has_country_shield = yes
 	

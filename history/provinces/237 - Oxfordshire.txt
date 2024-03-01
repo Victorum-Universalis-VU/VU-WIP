@@ -16,13 +16,8 @@ is_city = yes
 add_core = ENG
 seat_in_parliament = yes
 
-
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = OXF controller = OXF add_core = OXF } # The Earldom of Oxford territory - By San Felipe
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick
