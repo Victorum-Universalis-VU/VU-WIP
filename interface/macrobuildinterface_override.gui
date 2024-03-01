@@ -2479,7 +2479,7 @@ guiTypes = {
 				name ="listbox"
 				position = { x = -35 y = 34 }
 				backGround=""
-				size = { x= 393 y = 880 }
+				size = { x= 393 y = 774 }
 				horizontal = 0
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
@@ -2525,7 +2525,7 @@ guiTypes = {
 				name ="listbox"
 				position = { x = -35 y = 30 }
 				backGround=""
-				size = { x= 393 y = 880 }
+				size = { x= 393 y = 774 }
 				horizontal = 0
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"

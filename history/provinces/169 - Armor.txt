@@ -17,7 +17,6 @@ trade_goods = tin		#Tin mines in Brittany were major source of tin for Europe si
 base_manpower = 2 
 
 #Claimants
-add_core = FRA
 
 #Buildings
 

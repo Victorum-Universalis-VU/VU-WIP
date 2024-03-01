@@ -770,7 +770,7 @@ mount_sinai = {
 		country_modifiers = { 
 			prestige = 0.5 
 			tolerance_own = 1 
-			global_missionary_strength = 0.03 
+			global_missionary_strength = 0.01
 		}
 		on_upgraded = {}
 	}
