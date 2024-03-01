@@ -15,7 +15,6 @@ trade_goods = lumber
 base_manpower = 2
 
 #Claimants
-add_core = FRA
 
 #Buildings
 

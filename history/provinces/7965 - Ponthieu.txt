@@ -33,4 +33,4 @@ add_core = FRA
 #Histories
 1215.6.15 = { owner = PTH controller = PTH add_core = PTH } # Countship of Ponthieu - By San Felipe
 
-1444.11.11 = { owner = PIC controller = PIC add_core = PIC } # Duchy of Picardy - By San Felipe
+1444.11.11 = { owner = PIC controller = PIC add_core = PIC remove_core = FRA } # Duchy of Picardy - By San Felipe
