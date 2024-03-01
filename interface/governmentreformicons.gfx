@@ -645,6 +645,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/government_reform_icons/highland_clan_reform.dds"
 	}
 
+	spriteType = {
+		name = "government_reform_english_lordship_reform"
+		texturefile = "gfx/interface/government_reform_icons/english_lordship_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_duchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/english_duchy_reform.dds"
+	}
+
 	#End of New Additions by San Felipe 
 	
 	spriteType = {

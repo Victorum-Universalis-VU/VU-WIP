@@ -3104,6 +3104,57 @@ norman_lordship_legacy = {
 	ai = { factor = 1 }
 }
 
+english_lordship_legacy = {
+	icon = "english_lordship_reform"
+	legacy_government = yes
+	allow_normal_conversion = no
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+	nation_designer_trigger = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+		is_subject_of_type = english_peerage #Was appanage
+	}
+	monarchy = yes
+	fixed_rank = 1
+	maintain_dynasty = yes
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		infantry_power = 0.1
+		land_morale = 0.05
+		liberty_desire = 0.1
+	}
+	ai = { factor = 1 }
+}
+
+english_duchy_legacy = {
+	icon = "english_duchy_reform"
+	legacy_government = yes
+	allow_normal_conversion = no
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		culture_group = british
+		capital_scope = { region = british_isles_region }
+		is_subject_of_type = english_peerage #Was appanage
+		num_of_cities = 5
+	}
+	monarchy = yes
+	fixed_rank = 1
+	maintain_dynasty = yes
+	modifiers = {
+		production_efficiency = -0.05
+		global_institution_spread = -0.05
+		unjustified_demands = -0.2
+		max_absolutism = -10
+	}
+	ai = { factor = 1 }
+}
+
 provincial_kingdom_legacy = {
 	icon = "crown"
 	legacy_government = yes
@@ -3120,10 +3171,10 @@ provincial_kingdom_legacy = {
 	monarchy = yes
 	fixed_rank = 1
 	modifiers = {
-		production_efficiency = -0.05
-		global_institution_spread = -0.05
-		unjustified_demands = -0.2
-		max_absolutism = -10
+		manpower_recovery_speed = 0.2
+		infantry_power = 0.2
+		land_morale = 0.1
+		liberty_desire = 0.15
 	}
 	ai = { factor = 1 }
 }

@@ -252,7 +252,9 @@ english_kingdom = {
           tag = GBR
           tag = UNK
         }
-		NOT = { has_reform = revolutionary_empire_reform 
+		NOT = { tag = CST }
+		NOT = { 
+			has_reform = revolutionary_empire_reform 
 		}
 	}
 }
@@ -467,6 +469,7 @@ gov_transitional_government_ireland = { #Something to do with viceroyalty anglo-
 	
 	trigger = {
 		has_reform = transitional_government_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 
@@ -970,6 +973,7 @@ gov_norman_duchy = { #Norma Duchy formables Munser, Leinster, Ulster & Connacht,
 	
 	trigger = {
 		has_reform = norman_duchy_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 
@@ -1018,6 +1022,7 @@ gov_anglo_irish_monarchy = { #Anglo-Ireland, pretty much.
 	
 	trigger = {
 		has_reform = anglo_irish_monarchy_reform
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 

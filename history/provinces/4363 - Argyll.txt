@@ -1,7 +1,7 @@
 #4363 - Argyll
 
-owner = LOI
-controller = LOI
+owner = CBE
+controller = CBE
 culture = highland_scottish
 religion = catholic
 hre = no
@@ -13,7 +13,6 @@ capital = "Tarbert"
 is_city = yes
 add_core = CBE
 add_core = DLT
-add_core = LOI
 add_core = SCO
 
 add_permanent_province_modifier = {

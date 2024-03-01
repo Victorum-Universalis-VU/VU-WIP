@@ -205,11 +205,33 @@
  #
  #NEW VU Scottish Clans
  scottish_clan:0 "Clan"
- scottish_clan_long_desc:0 "A Scottish Clan subject must follow their overlord to war, cannot make certain diplomatic actions and will pay a fraction of his income to his overlord. Scottish Clan subjects can also fight each other."
+ scottish_clan_long_desc:0 "An Scottish Clan subject must follow their overlord to war, cannot make certain diplomatic actions and will pay a fraction of their income to their overlord. Scottish Clan subjects can also fight each other."
  scottish_clan_title:0 "Clan"
  scottish_clan_title_plural:0 "Clans"
  scottish_clan_overlord:0 "Clan Overlord"
  scottish_clan_subject:0 "Clan Subject"
  scottish_clan_is_our:0 "§Y$NAME$§! is our Clan."
+ #
+ #English Lordships
+ ENG_EARLDOM_1:0 "Earldom"
+ ENG_EARL:0 "Earl"
+ ENG_COUNTESS:0 "Countess"
+ ENG_LORD:0 "Lord"
+ ENG_LADY_fem:0 "Lady"
+ #
+ ENG_DUKEDOM:0 "Dukedom"
+ ENG_DUKE:0 "Duke"
+ ENG_DUCHESS:0 "Duchess"
+ ENG_PRINCE:0 "Prince"
+ ENG_PRINCESS_fem:0 "Princess"
+ #
+ #NEW VU English Peerage
+ english_peerage:0 "English Peerage"
+ english_peerage_long_desc:0 "An English Peerage subject must follow their overlord to war, cannot make certain diplomatic actions and will pay a fraction of their income to their overlord. English peerage subjects can also fight each other."
+ english_peerage_title:0 "Peerage"
+ english_peerage_title_plural:0 "Peerage"
+ english_peerage_overlord:0 "Peerage Overlord"
+ english_peerage_subject:0 "Peerage Subject"
+ english_peerage_is_our:0 "§Y$NAME$§! is our Peerage."
 
  

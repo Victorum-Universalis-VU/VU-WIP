@@ -17,13 +17,8 @@ is_city = yes
 add_core = ENG
 seat_in_parliament = yes
 
-
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = WRK controller = WRK add_core = WRK } # The Duchy of York territory - By San Felipe
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.3.1 = { unrest = 0 revolt = { type = pretender_rebels size = 1 } controller = REB } # Coventry's Switch to the Yorkists
 1461.6.28 = { revolt = {} unrest = 2 controller = ENG } # Coronation of Edward IV

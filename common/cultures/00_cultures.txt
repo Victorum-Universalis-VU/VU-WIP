@@ -1949,17 +1949,18 @@ british	= {
         graphical_culture = westerngfx
 		primary = SCO
 		dynasty_names = { 
-			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
-			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
+			Stuart Stewart Lennox Murray Graham Gordon Erskine Leslie
+			Scott Douglas Hamilton Lindsay Ker Hay Dunbar Kennedy
 			Fraser "Aois-dàna" Dishington Burnett "Bowes-Lyon" Lockhart Corbet
 			Mackintosh Dingwall Melville Corrie Aberach Cunningham Donald
 			Buchanan Menzies Moffat Malcolm 
 			#CK2
-			Cameron Forbes Arbuthnot Cockburn Adam Wallace Abernethy
+			Forbes Arbuthnot Cockburn Adam Wallace Abernethy
+			Russell
 		}
 		male_names = {
 			James Robert Henry Alexander Arthur Walter John Charles Malcolm Donald David Duncan Andrea 
-			Alan Ailpein Archibald Barclay Beathan Bruce Cameron Cináed Conall Douglas Duff Edan Evander 
+			Alan Ailpein Archibald Barclay Beathan Bruce Cináed Conall Douglas Duff Edan Evander 
 			Fraser Garry Glen Ian Keir Kennedy Lennox Logan Micheil Mungo Munroe Scott Wallace Adam 
 			Alpin Alwin Alastair Andrew Angus Arran Aulay Olaf Brian Brice Cailean Calum Carbrey Colban 
 			Kolbein Colin Nicholas Conan Constantine Dermid Dugald Edgar Edward Edwin Eric Ivar Ewan 
@@ -2705,15 +2706,15 @@ gaelic	= {
 		dynasty_names = {
 			Arasgain
 			Bochanan Beitean Brus
-			Caimbeul Cinneide Caimbeulach Comyn Cochran
+			Campbell Cameron Caimbeul Cinneide Caimbeulach Comyn Cochran
 			Donohoe Dernly
 			Gordan Grannd Guinne
 			Haig
 			Lamont
-			MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
+			MacCongáil MacDonald MacDhiarmaid Moireach MacPharlain MacLeod MacNeil MacDhomhnaill MacDhonnachaidh Munro MacNab
 			Ncill
 			Rothach Ros
-			Stiubhart Singlear Sutherlarach
+			Stiubhart Singlear Sutherlarach Sinclair
 		}
 	}
 	#ME additions
@@ -2853,7 +2854,7 @@ gaelic	= {
 	#VULegacy Culture
 	gallgaidheil = {
 		graphical_culture = westerngfx
-		primary = LOI
+		primary = MDD
 		male_names = {
 			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
 			Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair

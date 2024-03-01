@@ -10,16 +10,13 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 trade_goods = paper #From the nearby woodland (by San Felipe).
-add_core = SCO
 hre = no
 
-
-
-
-
-
+add_core = SCO
 
 #Histories
+1444.11.11 = { owner = RLL controller = RLL add_core = RLL } # The Isles clan territory - By San Felipe
+
 1425.1.1 = {
 	culture = scottish
 }

@@ -397,9 +397,11 @@ lowland_clan_reform = {
 	valid_for_nation_designer = no
 	lock_level_when_selected = yes
 	modifiers = {
-		global_manpower_modifier = 0.1
-		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.05
+		core_creation = -0.05
+		global_trade_power = 0.05
+		global_colonial_growth = 5
+		range = 0.33
+		land_morale = 0.1
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -418,9 +420,11 @@ highland_clan_reform = {
 	valid_for_nation_designer = no
 	lock_level_when_selected = yes
 	modifiers = {
+		core_creation = -0.05
+		infantry_power = 0.1
 		global_manpower_modifier = 0.1
-		nobles_loyalty_modifier = 0.1
-		nobles_influence_modifier = 0.05
+		diplomatic_reputation = 1
+		land_morale = 0.15
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -7344,6 +7348,54 @@ norman_duchy_reform = { #T2
 		global_tax_modifier = 0.15
 		diplomatic_reputation = -1
 		max_absolutism = 10
+	}
+}
+
+#NEW VU Always Prussia's new government reforms integrated by San Felipe
+english_lordship_reform = { #T1
+	icon = "english_lordship_reform"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+		NOT = { has_reform = english_duchy_reform }
+		is_subject_of_type = english_peerage #Was appanage
+	}
+	lock_level_when_selected = yes
+	legacy_equivalent = english_lordship_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	maintain_dynasty = yes
+	nation_designer_trigger = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+	}
+	fixed_rank = 1
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		infantry_power = 0.1
+		land_morale = 0.05
+		liberty_desire = 0.1
+	}
+}
+
+english_duchy_reform = { #T2
+	icon = "english_duchy_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = english_duchy_legacy
+	valid_for_nation_designer = no
+	fixed_rank = 1
+	maintain_dynasty = yes
+	potential = {
+		NOT = { culture_group = british }
+		capital_scope = { region = british_isles_region }
+		is_subject_of_type = english_peerage #Was appanage
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.2
+		infantry_power = 0.2
+		land_morale = 0.1
+		liberty_desire = 0.15
 	}
 }
 
