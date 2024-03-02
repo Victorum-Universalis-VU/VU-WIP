@@ -19,6 +19,8 @@ capital = 3158 #Gloucester
 		birth_date = 1390.10.3
 		death_date = 1447.2.23
 	}
+}
+1424.1.1 = {
 	heir = {
 		name = "Arthur"
 		monarch_name = "Arthur"

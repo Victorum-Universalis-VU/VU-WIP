@@ -19,6 +19,8 @@ capital = 243 #Lincoln
 		birth_date = 1396.10.16
 		death_date = 1450.5.2
 	}
+}
+1442.9.27 = {
 	heir = {
 		name = "John"
 		monarch_name = "John"

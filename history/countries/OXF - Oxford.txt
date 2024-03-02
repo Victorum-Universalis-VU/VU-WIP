@@ -19,6 +19,8 @@ capital = 237 #Oxford
 		birth_date = 1408.4.23
 		death_date = 1462.2.26
 	}
+}
+1442.9.8 = {
 	heir = {
 		name = "John"
 		monarch_name = "John XIII" #They're all John's! xD

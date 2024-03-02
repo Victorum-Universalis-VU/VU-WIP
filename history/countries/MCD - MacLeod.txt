@@ -23,6 +23,8 @@ capital = 3286 #Isle of Skye
 		birth_date = 1415.1.1
 		death_date = 1480.1.1
 	}
+}
+1450.1.1 = {
 	heir = {
 		name = "Alasdair"
 		monarch_name = "Alasdair Crotach"

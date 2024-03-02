@@ -22,6 +22,8 @@ historical_friend = NOL
 		birth_date = 1411.09.21
 		death_date = 1460.12.30
 	}
+}
+1442.4.28 = {
 	heir = {
 		name = "Edward"
 		monarch_name = "Edward IV"
