@@ -17,7 +17,6 @@ trade_goods = beer
 base_manpower = 4
 
 #Claimants
-add_core = FRA
 
 #Buildings
 

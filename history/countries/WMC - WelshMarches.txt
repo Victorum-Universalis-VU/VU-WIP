@@ -1,5 +1,6 @@
+#WMC - WelshMarches
 government = monarchy
-add_government_reform = feudalism_reform			#Actually ruled by several to dozens of minor marcher lords, loyal to the English crown but effectively independent of it and each other. This is a compromise/approximation at best
+add_government_reform = english_lordship_reform #Should be Marcher lordship as they were a collection of English lordships. By SF
 government_rank = 1
 #technology_group = western
 technology_group = english_tech_group
@@ -10,33 +11,33 @@ religion = catholic
 capital = 240	#Shrewsbury
 fixed_capital = 240
 
-
 1425.1.1 = {
 	monarch = {
-		name = "Richard"
-		dynasty = "York"
+		name = "John"
+		dynasty = "Talbot"
 		adm = 2
 		dip = 4
 		mil = 5
 		birth_date = 1411.12.30
+		death_date = 1460.1.1
 	}
-}
-1442.5.28 = {
 	heir = {
-		name = "Edward"
-		dynasty = "York"
+		name = "John"
+		monarch_name = "John III"
+		dynasty = "Talbot"
 		adm = 1
 		dip = 5
 		mil = 4
 		claim = 100
 		birth_date = 1442.5.28
+		death_date = 1482.1.1
 	}
 }
 
 1460.12.30 = {
 	monarch = {
-		name = "Edward"
-		dynasty = "York"
+		name = "John"
+		dynasty = "Talbot"
 		adm = 1
 		dip = 5
 		mil = 4
@@ -51,6 +52,19 @@ fixed_capital = 240
 		dip = 1
 		mil = 1
 		regent = yes
+	}
+}
+
+1468.1.1 = {
+	heir = {
+		name = "George"
+		monarch_name = "George"
+		dynasty = "Talbot"
+		adm = 1
+		dip = 5
+		mil = 4
+		claim = 100
+		birth_date = 1468.1.1
 	}
 }
 

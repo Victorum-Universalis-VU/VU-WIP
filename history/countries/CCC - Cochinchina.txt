@@ -13,8 +13,8 @@ government_rank = 1
 		adm = 4
 		dip = 5
 		mil = 3
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -29,8 +29,8 @@ government_rank = 1
 		adm = 3
 		dip = 4
 		mil = 4
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -41,8 +41,8 @@ government_rank = 1
 		adm = 3
 		dip = 4
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -53,7 +53,7 @@ government_rank = 1
 		adm = 2
 		dip = 2
 		mil = 4
-                culture = central_thai
+        culture = central_thai
 	}
 }
 
@@ -65,8 +65,8 @@ government_rank = 1
 		adm = 3
 		dip = 4
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -81,8 +81,8 @@ government_rank = 1
 		adm = 2
 		dip = 1
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -93,8 +93,8 @@ government_rank = 1
 		adm = 2
 		dip = 1
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -109,8 +109,8 @@ government_rank = 1
 		adm = 2
 		dip = 2
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -121,8 +121,8 @@ government_rank = 1
 		adm = 2
 		dip = 2
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -137,8 +137,8 @@ government_rank = 1
 		adm = 1
 		dip = 2
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -149,8 +149,8 @@ government_rank = 1
 		adm = 1
 		dip = 2
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -165,8 +165,8 @@ government_rank = 1
 		adm = 3
 		dip = 3
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -177,9 +177,9 @@ government_rank = 1
 		adm = 2
 		dip = 1
 		mil = 1
-                culture = vietnamese
-                religion = mahayana
-                regent = yes
+        culture = vietnamese
+        religion = mahayana
+        regent = yes
 	}
 }
 
@@ -194,8 +194,8 @@ government_rank = 1
 		adm = 3
 		dip = 3
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -206,8 +206,8 @@ government_rank = 1
 		adm = 3
 		dip = 3
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }
 
@@ -222,7 +222,7 @@ government_rank = 1
 		adm = 2
 		dip = 3
 		mil = 2
-                culture = vietnamese
-                religion = mahayana
+        culture = vietnamese
+        religion = mahayana
 	}
 }

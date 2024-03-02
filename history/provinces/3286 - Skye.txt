@@ -1,7 +1,7 @@
 #3286 - Skye
 
-owner = LOI
-controller = LOI
+owner = MCD
+controller = MCD
 culture = gallgaidheil
 religion = catholic
 hre = no
@@ -11,19 +11,11 @@ trade_goods = grain
 base_manpower = 1
 capital = "Port Rìgh"
 is_city = yes
-add_core = LOI
-
-
-
-
-
-
+add_core = MCD
 
 #Histories
-
 1215.6.15 = { owner = KOI controller = KOI add_core = KOI } # Kingdom of Mann territory - By San Felipe
-
-1444.11.11 = { owner = LOI controller = LOI add_core = LOI } # The Isles territory - By San Felipe
+1444.11.11 = { owner = MCD controller = MCD add_core = MCD } # The MacLeod territory - By San Felipe
 
 1475.1.1 = {
 	culture = highland_scottish

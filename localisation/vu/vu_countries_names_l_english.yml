@@ -102,7 +102,8 @@
  WRD:0 "Wermlandia"
  WRD_ADJ:0 "Wermlandian"
  WRD_ADJ2:0 "Wermlandian"
-#Quonton Countries
+
+ #Quonton Countries
  LOD:0 "Lodi"
  LOD_ADJ:0 "Lodi"
  LOD_ADJ2:0 "Lodi"
@@ -154,6 +155,48 @@
  VOG:0 "Wolgaberg"
  VOG_ADJ:0 "Wolgisch"
  VOG_ADJ2:0 "Wolgisch"
+
+ #VU New additions by AlwaysPrussia & San Felipe
+ #England
+ BCK:0 "Buckingham"
+ BCK_ADJ:0 "Buckingham"
+ 
+ BED:0 "Bedford"
+ BED_ADJ:0 "Bedford"
+
+ EXE:0 "Exeter"
+ EXE_ADJ:0 "Exeter"
+
+ GLR:0 "Gloucester"
+ GLR_ADJ:0 "Gloucester"
+
+ LNN:0 "Lincoln"
+ LNN_ADJ:0 "Lincoln"
+
+ NFL:0 "Norfolk"
+ NFL_ADJ:0 "Norfolk"
+
+ OXF:0 "Oxford"
+ OXF_ADJ:0 "Oxford"
+
+ RCH:0 "Richmond"
+ RCH_ADJ:0 "Richmond"
+
+ RT1:0 "Rutland"
+ RT1_ADJ:0 "Rutland"
+ 
+ SM1:0 "Somerset"
+ SM1_ADJ:0 "Somerset"
+
+ #Scotland
+ MCD:0 "MacLeod"
+ MCD_ADJ:0 "MacLeod"
+
+ MDD:0 "MacDonald"
+ MDD_ADJ:0 "MacDonald"
+
+ MCN:0 "MacNeil"
+ MCN_ADJ:0 "MacNeil"
 
  ###########################
  kadipaten: "Kadipaten"

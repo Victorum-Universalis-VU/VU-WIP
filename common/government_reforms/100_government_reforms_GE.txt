@@ -1,21 +1,4 @@
 #Tier 1 {
-    carthaginian_elective_monarchical_republic_reform = {
-		icon = "government_reform_carthaginian_elective_monarchical_republic_reform"
-		allow_normal_conversion = yes
-		valid_for_nation_designer = yes
-		nation_designer_cost = 10
-		election_on_death = yes
-		queen = no
-		potential = {
-			NOT = { tag = POL }
-		}
-		modifiers = {
-			heir_chance = 1.0
-		}
-		custom_attributes = {
-			enables_carthaginian_elective_monarchical_republic_reform = yes
-		}
-	}
 
 	elective_monarchy_reform = {
 		icon = "ballot_box"

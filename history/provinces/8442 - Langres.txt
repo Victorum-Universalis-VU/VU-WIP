@@ -17,7 +17,6 @@ trade_goods = grain
 base_manpower = 2
 
 #Claimants
-add_core = FRA
 
 #Buildings
 

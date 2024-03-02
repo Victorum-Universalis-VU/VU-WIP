@@ -49,6 +49,7 @@ default_monarchy = {
 
 	trigger = {
 		has_reform = monarchy_mechanic
+		NOT = { has_reform = english_lordship_reform }
 	}
 }
 

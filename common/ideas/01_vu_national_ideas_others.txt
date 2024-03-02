@@ -4339,3 +4339,478 @@ theban_ideas = {
 		global_missionary_strength = 0.02
 	}
 }
+
+#ActuallyPrussia's ideas
+deheubarth_ideas = {
+	start = {
+		legitimacy = 1
+		heir_chance = 0.5
+	}
+	
+	bonus = {
+		prestige = 0.5
+	}
+	
+	trigger = {
+		tag = DEH
+	}
+	free = yes
+	
+	dinefwr_branch_families = {
+		diplomatic_reputation = 1
+	}
+	welsh_longbowmen = {
+ 		fire_damage = 0.10
+	}	
+	defense_against_the_marcher_lords = {
+		army_tradition = 1
+	}
+	centralization_of_the_dinefwr_princes = {
+		global_autonomy = -0.05
+	}
+	church_of_st_david = {
+		missionaries = 1
+	}
+	stablize_south_wales = {
+		stability_cost_modifier = -0.1
+		global_unrest = -1
+	}
+	unify_principality_of_wales_dinefwr = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}
+
+gwynedd_ideas = {
+	start = {
+		legitimacy = 1
+		galley_cost = -0.1
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	trigger = {
+		tag = GWY
+	}
+	free = yes
+	
+	house_of_aberffraw = {
+		prestige = 1
+	}
+	fierce_resistance_to_england = {
+ 		land_morale = 0.10
+	}	
+	land_of_castles = {
+		defensiveness = 0.15
+	}
+	rally_the_princes = {
+		diplomatic_upkeep = 1
+	}
+	develop_north_wales = {
+		development_cost = -0.1
+	}
+	mythical_army_leaders = {
+		army_tradition = 1
+	}
+	unify_principality_of_wales_gwynedd = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}
+
+powys_ideas = {
+	start = {
+		legitimacy = 1
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		global_unrest = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = PWY
+			tag = PWF
+		}
+	}
+	free = yes
+	
+	home_of_the_mathrafals = {
+		prestige = 1
+	}
+	a_house_divided = {
+ 		land_morale = 0.10
+	}	
+	trapped_between_kingdoms = {
+		diplomatic_reputation = 1
+	}
+	the_spine_of_wales = {
+		development_cost = -0.1
+	}
+	welsh_mountain_forts = {
+		defensiveness = 0.15
+	}
+	welsh_coal_belts = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	unify_principality_of_wales_powys = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}
+
+clancameron_ideas = {
+	start = {
+		infantry_power = 0.1
+		manpower_recovery_speed = 0.1
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = CM1
+	}
+	free = yes
+	
+	lochiel = {
+		diplomatic_reputation = 1
+	}
+	the_ladies_from_hell = {
+ 		fire_damage = 0.10
+	}	
+	dominant_highland_power = {
+		global_manpower_modifier = 0.15
+	}
+	the_highlanders_of_lochaber = {
+		land_morale = 0.1
+	}
+	cameron_mountain_defensive_strongholds = {
+		defensiveness = 0.15
+	}
+	the_highland_charge = {
+		leader_land_shock = 1
+		free_leader_pool = 1
+	}
+	cameron_highland_confederation = {
+		diplomatic_upkeep = 1
+	}
+}
+
+clancampbell_ideas = {
+	start = {
+		legitimacy = 1
+		prestige = 0.5
+	}
+	
+	bonus = {
+		monarch_lifespan = 0.1
+	}
+	
+	trigger = {
+		tag = CBE
+	}
+	free = yes
+	
+	expansion_of_campbell_lands = {
+		core_creation = -0.1
+		ae_impact = -0.05
+	}
+	argyll_highlanders = {
+ 		fire_damage = 0.10
+	}	
+	warrior_chiefs_of_inveraray = {
+		army_tradition = 1
+	}
+	lower_hebrides_ports = {
+		galley_cost = -0.1
+	}
+	bitter_highland_feuds = {
+		manpower_recovery_speed = 0.1
+	}
+	expansion_of_inveraray = {
+		development_cost = -0.1
+		global_trade_power = 0.05
+	}
+	campbell_cadet_branches = {
+		vassal_forcelimit_bonus = 0.1
+	}
+}
+
+clandouglas_ideas = {
+	start = {
+		legitimacy = 1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	
+	trigger = {
+		tag = DUG
+	}
+	free = yes
+	
+	feud_with_the_stewarts = {
+		infantry_power = 0.15
+	}
+	dominant_lowland_clan = {
+ 		manpower_recovery_speed = 0.15
+	}	
+	trapped_between_two_crowns = {
+		army_tradition = 1
+	}
+	fertile_lowland_plains = {
+		development_cost = -0.15
+	}
+	red_douglasses_of_angus = {
+		global_trade_power = 0.1
+	}
+	industrialization_of_scotland = {
+		global_trade_goods_size_modifier = 0.1
+		trade_efficiency = 0.1
+	}
+	new_world_clan_lands = {
+		colonists = 1
+	}
+}
+
+clangordon_ideas = {
+	start = {
+		manpower_recovery_speed = 0.1
+		global_manpower_modifier = 0.1
+	}
+	
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = GOR
+	}
+	free = yes
+	
+	earls_of_huntly = {
+		prestige = 0.5
+	}
+	cock_o_the_north = {
+ 		diplomatic_reputation = 1
+	}	
+	gordon_highlanders = {
+		infantry_power = 0.1
+	}
+	gordon_expansionism = {
+		ae_impact = -0.1
+	}
+	securing_the_clans_position = {
+		diplomats = 1
+	}
+	develop_the_clan_lands = {
+		development_cost = -0.1
+	}
+	unifiers_of_the_north = {
+		global_unrest = -1
+		years_of_nationalism = -5
+	}
+}
+
+clanmacdonald_ideas = {
+	start = {
+		galley_power = 0.1
+		naval_forcelimit_modifier = 0.1
+	}
+	
+	bonus = {
+		naval_morale = 0.1
+	}
+	
+	trigger = {
+		tag = MDD
+	}
+	free = yes
+	
+	island_federation = {
+		galley_cost = -0.1
+	}
+	lord_of_the_isles = {
+ 		prestige = 0.5
+	}	
+	legacy_of_great_raiders = {
+		navy_tradition = 1
+	}
+	warriors_of_clan_donald = {
+		infantry_power = 0.1
+	}
+	confederation_of_the_island_clans = {
+		diplomatic_upkeep = 1
+	}
+	embracing_trade = {
+		global_trade_power = -0.1
+	}
+	invade_the_mainland = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}
+
+clanmacleod_ideas = {
+	start = {
+		land_morale = 0.1
+		prestige = 0.5
+	}
+	
+	bonus = {
+		diplomats = 1
+	}
+	
+	trigger = {
+		tag = MCD
+	}
+	free = yes
+	
+	rightful_kings_of_man = {
+		legitimacy = 1
+	}
+	expand_macleod_fleet = {
+ 		naval_forcelimit_modifier = 0.1
+	}	
+	defy_the_macdonalds = {
+		manpower_recovery_speed = 0.1
+	}
+	trade_lanes_of_the_northern_seas = {
+		global_trade_power = 0.1
+	}
+	macleod_raiders = {
+		galley_power = 0.1
+	}
+	consolodation_of_the_isles = {
+		years_of_nationalism = -5
+		global_unrest = -1
+	}
+	seek_lands_to_the_west = {
+		colonists = 1
+	}
+}
+
+clanmacneil_ideas = {
+	start = {
+		prestige = 0.5
+		merchants = 1
+	}
+	
+	bonus = {
+		navy_tradition = 1
+	}
+	
+	trigger = {
+		tag = MCN
+	}
+	free = yes
+	
+	great_sailors_of_the_northern_isles = {
+		global_sailors_modifier = 0.1
+	}
+	consolodate_the_northern_isles = {
+ 		global_autonomy = -0.05
+	}	
+	northern_trade_lanes_macneil = {
+		global_trade_power = 0.1
+	}
+	macneil_raiders = {
+		galley_power = 0.1
+	}
+	macneil_ventures_to_the_west = {
+		colonists = 1
+	}
+	macneil_highland_warriors = {
+		land_morale = 0.1
+	}
+	macneil_dominate_the_north = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}
+
+clanrussell_ideas = {
+	start = {
+		legitimacy = 1
+		merchants = 1
+	}
+	
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = RLL
+	}
+	free = yes
+	
+	fertile_clan = {
+		heir_chance = 0.5
+	}
+	eccentric_thinkers = {
+ 		idea_cost = -0.1
+	}	
+	the_city_of_aberdeen = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	urbanization_of_russell_lands = {
+		development_cost = -0.1
+	}
+	architectural_expansion = {
+		build_cost = -0.1
+		build_time = -0.2
+	}
+	russell_open_to_new_ideas = {
+		possible_policy = 1
+	}
+	edge_of_the_highlands = {
+		infantry_power = 0.1
+	}
+}
+
+clansinclair_ideas = {
+	start = {
+		legitimacy = 1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		prestige = 0.5
+	}
+	
+	trigger = {
+		tag = SNC
+	}
+	free = yes
+	
+	earls_of_orkney = {
+		naval_forcelimit_modifier = 0.1
+	}
+	fierce_sinclair_raiders = {
+ 		shock_damage = 0.1
+	}	
+	defense_against_the_scandinavians = {
+		army_tradition = 1
+	}
+	bitter_feuds_sinclair = {
+		manpower_recovery_speed = 0.1
+	}
+	sinclair_follow_legacy_of_northern_explorers = {
+		colonists = 1
+	}
+	sieze_the_hebrides = {
+		galley_cost = -0.1
+		galley_power = 0.1
+	}
+	dominate_the_north_sinclair = {
+		years_of_nationalism = -5
+		core_creation = -0.1
+	}
+}

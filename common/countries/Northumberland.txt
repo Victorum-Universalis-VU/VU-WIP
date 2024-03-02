@@ -1,8 +1,8 @@
-# Country name see file name.
+#Northumberland
 
 graphical_culture = westerngfx
 
-color = { 83  149  105 }
+color = { 254  229  110 }
 revolutionary_colors = { 8 5 8 }
 
 historical_idea_groups = {

@@ -71,7 +71,7 @@ TRY = "countries/Tyrconnell.txt"
 FLY = "countries/Faly.txt"
 MCM = "countries/MacCarthy.txt" #Kingdom of Desmond
 KOI = "countries/Mann.txt"
-LOI = "countries/TheIsles.txt"
+LOI = "countries/TheIsles.txt"                #VU - Still in the game but turned off at the start of 1444 on Actually Prussia's suggestion. By San Felipe
 EIC	= "countries/EastIndiaCompany.txt"
 
 #Colonies
