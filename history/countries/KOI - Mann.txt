@@ -1,7 +1,9 @@
 #KOI - Isle of Mann
 government = monarchy
-add_government_reform = feudalism_reform
-primary_culture = manx
+add_government_reform = english_duchy_reform #Dukedom
+government_rank = 1
+primary_culture = english
+add_accepted_culture = manx
 religion = catholic
 #technology_group = western
 technology_group = english_tech_group
@@ -19,9 +21,6 @@ capital = 4365 # Mann
 		mil = 4
 		#regent = yes
 	}
-}
-
-1435.1.1 = {
 	heir = {
 		name = "Thomas"
 		monarch_name = "Thomas Stanley"

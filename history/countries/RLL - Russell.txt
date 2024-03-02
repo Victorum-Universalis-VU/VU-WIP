@@ -9,7 +9,28 @@ religion = catholic
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western
-#historical_rival = GOR
-#historical_rival = SNC
-#historical_friend = DUG
 capital = 251 #Aberdeen
+
+#Not 100% accurate but based on near accuracy.
+1444.11.11 = {
+	monarch = {
+		name = "Robert"
+		dynasty = "Russell"
+		adm = 2
+		dip = 4
+		mil = 5
+		birth_date = 1396.1.1
+	}
+}
+1420.1.1 = {
+	heir = {
+		name = "Patrick"
+		monarch_name = "Patrick"
+		dynasty = "Russell"
+		adm = 1
+		dip = 5
+		mil = 4
+		claim = 100
+		birth_date = 1420.1.1
+	}
+}

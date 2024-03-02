@@ -213,6 +213,7 @@ on_startup = {
 			limit = {
 				tag = TEU
 			}
+			add_reform_desire = 6.72
 			change_estate_land_share = {
     				estate = estate_church
    				share = 15

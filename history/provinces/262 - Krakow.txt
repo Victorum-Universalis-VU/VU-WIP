@@ -10,10 +10,10 @@ culture = polish
 religion = catholic
 capital = "Kraków"
 hre = no
-base_tax = 8
-base_production = 12
+base_tax = 10
+base_production = 15
 trade_goods = salt
-base_manpower = 7
+base_manpower = 8
 is_city = yes
 fort_15th = yes
  #Jagiellonian University established in 1364 by Casimir III the Great

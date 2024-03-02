@@ -1123,7 +1123,7 @@ gov_papal_government_elector = {
 	
 	trigger = {
 		has_reform = papacy_reform
-			is_elector = yes
+		is_elector = yes
 	}
 }
 
@@ -4749,6 +4749,75 @@ irish_peerage_monarchy = {
 	}
 }
 
+english_lordship = { #English Lordship.
+	rank = {
+		1 = ENG_EARLDOM_1
+	}
+	
+	ruler_male = {
+		1 = ENG_EARL
+	}
+	
+	ruler_female = {
+		1 = ENG_COUNTESS
+	}
+	
+	consort_male = {
+		1 = ENG_EARL
+	}
+
+	consort_female = {
+		1 = ENG_COUNTESS
+	}
+	
+	heir_male = {
+		1 = ENG_LORD
+	}
+
+	heir_female = {
+		1 = ENG_LADY_fem
+	}
+	
+	trigger = {
+		has_reform = english_lordship_reform
+	}
+}
+
+english_duchy = { #English Duchies
+	rank = {
+		1 = ENG_DUKEDOM
+	}
+	
+	ruler_male = {
+		1 = ENG_DUKE
+	}
+	
+	ruler_female = {
+		1 = ENG_DUCHESS
+	}
+	
+	consort_male = {
+		1 = ENG_DUKE
+	}
+
+	consort_female = {
+		1 = ENG_DUCHESS
+	}
+	
+	heir_male = {
+		1 = ENG_PRINCE
+	}
+
+	heir_female = {
+		1 = ENG_PRINCESS_fem
+	}
+	
+	trigger = {
+		has_reform = english_duchy_reform
+		NOT = { tag = CST }
+	}
+}
+
 irish_clan_monarchy = {
 	rank = {
 		1 = KINGDOM
@@ -4798,54 +4867,54 @@ irish_clan_monarchy = {
 	}
 }
 
-hebridean_monarchy = {
-	rank = {
-		1 = LORDSHIP
-		2 = KINGDOM
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = LORD
-		2 = KING
-		3 = EMPEROR
-	}
-
-	ruler_female = {
-		1 = LADY
-		2 = QUEEN
-		3 = EMPRESS
-	}
-
-	consort_male = {
-		1 = LORD
-		2 = KING
-		3 = EMPEROR
-	}
-
-	consort_female = {
-		1 = LADY
-		2 = QUEEN
-		3 = EMPRESS
-	}
-
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-
-	trigger = {
-		primary_culture = highland_scottish
-		government = monarchy
-	}
-}
+#hebridean_monarchy = {
+#	rank = {
+#		1 = LORDSHIP
+#		2 = KINGDOM
+#		3 = EMPIRE
+#	}
+#
+#	ruler_male = {
+#		1 = LORD
+#		2 = KING
+#		3 = EMPEROR
+#	}
+#
+#	ruler_female = {
+#		1 = LADY
+#		2 = QUEEN
+#		3 = EMPRESS
+#	}
+#
+#	consort_male = {
+#		1 = LORD
+#		2 = KING
+#		3 = EMPEROR
+#	}
+#
+#	consort_female = {
+#		1 = LADY
+#		2 = QUEEN
+#		3 = EMPRESS
+#	}
+#
+#	heir_male = {
+#		1 = HEIR
+#		2 = HEIR
+#		3 = HEIR
+#	}
+#
+#	heir_female = {
+#		1 = HEIR_fem
+#		2 = HEIR_fem
+#		3 = HEIR_fem
+#	}
+#
+#	trigger = {
+#		primary_culture = highland_scottish
+#		government = monarchy
+#	}
+#}
 
 muscovite_monarchy = {
 	rank = {

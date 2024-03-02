@@ -17,7 +17,6 @@ trade_goods = naval_supplies
 base_manpower = 2
 
 #Claimants
-add_core = FRA
 
 #Buildings
 fort_15th = yes

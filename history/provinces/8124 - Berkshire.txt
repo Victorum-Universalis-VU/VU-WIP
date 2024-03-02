@@ -17,12 +17,8 @@ fort_15th = yes #Windsor Castle
 
 #Discoveries
 
-
-
-
-
-
 #Histories
+1444.11.11 = { owner = OXF controller = OXF add_core = OXF } # The Earldom of Oxford territory - By San Felipe
 1450.5.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Jack Cade's rebellion
 1450.7.12 = { revolt = {} controller = ENG }
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses

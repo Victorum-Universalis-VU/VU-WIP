@@ -14,14 +14,11 @@ trade_goods = livestock			#Angus cattle.
 base_manpower = 2 
 capital = "Forfar" #"Dundee"
 is_city = yes
+
 add_core = SCO
 
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = DUG controller = DUG add_core = DUG } # The Isles clan territory - By San Felipe
 
 1425.1.1 = {
 	culture = scottish

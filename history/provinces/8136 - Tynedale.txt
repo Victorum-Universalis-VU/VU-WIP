@@ -31,7 +31,6 @@ trade_goods = vegetables
 add_core = SCO
 add_core = DUR
 add_core = ENG
-add_core = NOL
 
 #Other Political
 hre = no
@@ -42,13 +41,8 @@ hre = no
 
 #Discoveries
 
-
-
-
-
-
 #Histories
-
+1444.11.11 = { owner = NOL controller = NOL add_core = NOL } # The Dukedom of Northumberland territory - By San Felipe
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick
