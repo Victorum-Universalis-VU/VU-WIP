@@ -429,7 +429,7 @@ impassable = {
 	8665 8666
 
 	1913	#Northern Rockies, still a wasteland for now - maybe always
-	2400 4400 4401 4402 4403 4522 2129			#Indian Wastelands in 1.26. Leaving them all intacted for now.
+	4400 4401 4402 4403 4522 2129			#Indian Wastelands in 1.26. Leaving them all intacted for now.
 
 	5522 5521 #Cut some provinces in 11.5, so I'm adding them here just as a contingency to prevent any related oddities.
 
