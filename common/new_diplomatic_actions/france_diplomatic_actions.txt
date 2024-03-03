@@ -118,9 +118,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_ATTITUDE_TOWARDS_ROOT
@@ -130,9 +140,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 20
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 20
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_ATTITUDE_TOWARDS_ROOT
@@ -142,9 +162,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -159,9 +189,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -225,9 +265,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 40
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 40
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -338,9 +388,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 30
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 30
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_HAS_SUBJECTS
@@ -350,9 +410,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 100
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 100
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -380,9 +450,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -401,9 +481,19 @@ make_french_hre_subject_action = {
 				alliance_with = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_ROOT_ARE_RIVALS
@@ -414,9 +504,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			divide_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -450,9 +550,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = army_size
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 30
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 30
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_HAS_STRONG_NEIGHBOR_OUTSIDE_FRANCE
@@ -485,9 +595,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = army_size
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 15
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 15
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_HAS_MARRIAGE_WITH_ROOT
@@ -495,9 +615,19 @@ make_french_hre_subject_action = {
 				marriage_with = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = ME_ROOT_FROM_NOT_SAME_RELIGION
@@ -505,9 +635,17 @@ make_french_hre_subject_action = {
 				NOT = { religion = FROM }
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -519,9 +657,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -532,9 +680,17 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -545,9 +701,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -568,9 +734,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = ME_FROM_AI_PERSONALITY
@@ -580,9 +756,19 @@ make_french_hre_subject_action = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -592,9 +778,19 @@ make_french_hre_subject_action = {
 				religion = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 15
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 15
+		#	}
 		}
 	}
 
