@@ -179,10 +179,14 @@ ask_to_become_defensive_march = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -194,10 +198,14 @@ ask_to_become_defensive_march = {
 					all_subject_country = yes
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -212,10 +220,14 @@ ask_to_become_defensive_march = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -237,10 +249,14 @@ ask_to_become_defensive_march = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -248,10 +264,14 @@ ask_to_become_defensive_march = {
 			limit = {
 				development_of_overlord_fraction = 0.25
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -262,10 +282,14 @@ ask_to_become_defensive_march = {
 					total_development = 500
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
