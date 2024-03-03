@@ -107,9 +107,19 @@ establish_banking_family_subject = {
 				overlord_of = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 25
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 25
+		#	}
 		}
 		add_entry = {
 			name = FROM_LIBERTY_DESIRE_TOO_HIGH
@@ -120,9 +130,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -138,9 +158,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -151,9 +181,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 20
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 20
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -168,9 +208,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -187,9 +237,19 @@ establish_banking_family_subject = {
 				NOT = { religion = FROM }
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -201,9 +261,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 25
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 25
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -214,9 +284,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -227,9 +307,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -241,9 +331,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -254,9 +354,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -275,9 +385,19 @@ establish_banking_family_subject = {
 				alliance_with = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = OPINION
@@ -298,9 +418,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			divide_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -311,9 +441,19 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -331,7 +471,7 @@ establish_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -352,8 +492,10 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
-				which = ai_value
-				value = 60
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+				with = ROOT
 			}
 			export_to_variable = {
 				which = our_total_development
@@ -375,7 +517,7 @@ establish_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -395,6 +537,12 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -406,7 +554,7 @@ establish_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -426,6 +574,12 @@ establish_banking_family_subject = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = total_development #50
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
@@ -437,10 +591,14 @@ establish_banking_family_subject = {
 					has_reform = free_city
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -456,10 +614,14 @@ establish_banking_family_subject = {
 				NOT = { government = republic }
 				NOT = { has_government_attribute = can_create_banking_family_subject_rule }
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -469,20 +631,28 @@ establish_banking_family_subject = {
 					has_reform = merchants_reform
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 5
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 5
+		#	}
 		}
 		add_entry = {
 			name = ROOT_IS_MERCHANT_REPUBLIC
 			limit = {
 				has_reform = merchants_reform
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 5
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 5
+		#	}
 		}
 	}
 
@@ -619,10 +789,14 @@ ask_to_become_banking_family_subject = {
 			limit = {
 				is_subject_of = FROM
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 15
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 15
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -631,10 +805,14 @@ ask_to_become_banking_family_subject = {
 				is_subject_of = FROM
 				liberty_desire = 50
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -649,10 +827,14 @@ ask_to_become_banking_family_subject = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -662,10 +844,14 @@ ask_to_become_banking_family_subject = {
 					ai_attitude = { who = ROOT attitude = attitude_neutral }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 20
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 20
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -679,10 +865,14 @@ ask_to_become_banking_family_subject = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -698,10 +888,14 @@ ask_to_become_banking_family_subject = {
 			limit = {
 				NOT = { religion = FROM }
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -732,10 +926,14 @@ ask_to_become_banking_family_subject = {
 			limit = {
 				alliance_with = FROM
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = OPINION
@@ -755,10 +953,14 @@ ask_to_become_banking_family_subject = {
 					is_enemy = FROM
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			divide_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -767,7 +969,7 @@ ask_to_become_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #Was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -787,10 +989,14 @@ ask_to_become_banking_family_subject = {
 					NOT = { check_variable = { which = eco_power value = 50 } }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 60
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 60
+		#	}
 			export_to_variable = {
 				which = our_total_development
 				value = trigger_value:total_development
@@ -811,7 +1017,7 @@ ask_to_become_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #Was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -830,10 +1036,14 @@ ask_to_become_banking_family_subject = {
 					NOT = { check_variable = { which = eco_power value = -49 } }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -842,7 +1052,7 @@ ask_to_become_banking_family_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 60
+						value = 0 #Was 60
 					}
 					export_to_variable = {
 						which = our_total_development
@@ -861,10 +1071,14 @@ ask_to_become_banking_family_subject = {
 					check_variable = { which = eco_power value = 50 }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 		}
 		add_entry = {
 			name = STRATEGIC_VALUE
@@ -905,17 +1119,21 @@ ask_to_become_banking_family_subject = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = FROM_NUM_OF_LOANS
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:num_of_loans
+				value = num_of_loans
 				who = FROM
 			}
 			multiply_variable = { which = ai_value value = 10 }
@@ -928,10 +1146,14 @@ ask_to_become_banking_family_subject = {
 					NOT = { has_government_attribute = can_create_banking_family_subject_rule }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -941,10 +1163,14 @@ ask_to_become_banking_family_subject = {
 					has_reform = merchants_reform
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 5
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 5
+		#	}
 		}
 	}
 

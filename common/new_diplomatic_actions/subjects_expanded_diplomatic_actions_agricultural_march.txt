@@ -168,10 +168,14 @@ ask_to_become_agricultural_march = {
 					all_subject_country = yes
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -186,7 +190,7 @@ ask_to_become_agricultural_march = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -197,7 +201,7 @@ ask_to_become_agricultural_march = {
 			limit = {
 				development_of_overlord_fraction = 0.25
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -211,7 +215,7 @@ ask_to_become_agricultural_march = {
 					NOT = { production_income_percentage = 0.35 }
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
@@ -222,7 +226,7 @@ ask_to_become_agricultural_march = {
 			limit = {
 				NOT = { max_manpower = 20 }
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 1000
 			}
