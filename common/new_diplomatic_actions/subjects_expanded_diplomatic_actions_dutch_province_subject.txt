@@ -221,10 +221,14 @@ establish_dutch_province_subject = {
 			limit = {
 				marriage_with = FROM
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = TRUST
@@ -282,10 +286,14 @@ establish_dutch_province_subject = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 2000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 2000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2260,10 +2268,14 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			export_to_variable = {
+			change_variable = {
 				which = ai_value
 				value = 25
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 25
+		#	}
 		}
 		add_entry = {
 			name = FROM_ENEMY_ARMIES_ON_CORE_TERRITORY
