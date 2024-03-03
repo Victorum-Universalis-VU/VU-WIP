@@ -16,7 +16,7 @@ historical_friend = DUG
 historical_friend = MCD
 capital = 4363 #Argyll
 
-1444.7.23 = {
+1428.1.1 = {
 	monarch = {
 		name = "Colin"
 		dynasty = "Campbell"
@@ -26,6 +26,8 @@ capital = 4363 #Argyll
 		birth_date = 1428.1.1
 		death_date = 1475.1.1
 	}
+}
+1465.1.1 = {
 	heir = {
 		name = "Archibald"
 		monarch_name = "Archibald"

@@ -356,7 +356,7 @@
  me_hab_tirol_gold_desc: "The mountains of Tirol are host to some of the most valuable minerals in Europe. By expanding the silver mine there, we will be able to further our income."
  
  #tooltips:
- me_hab_beaten_3_swabian_nations: "Beat §Yat least 2 nations§! with their capital in §YSwabia§!"
+ me_hab_beaten_3_swabian_nations: "Beat §Yat least 2 nations§! with their capital in §YSwabia§! or in §YWurttemberg§!."
  me_UNTIL_WE_FORM_GERMANY: "until we form @GER §YGermany§!"
  me_they_must_accept: "§RThey must accept our demands in order for it to happen§!"
  me_every_swabian_country: "Every country with their capital in §YSwabia§! that has been beaten by @HAB §Y[Root.GetName]§!."

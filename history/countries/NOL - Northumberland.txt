@@ -20,6 +20,8 @@ historical_rival = WRK #Percy - Neville feud
 		birth_date = 1393.02.3
 		death_date = 1455.5.22
 	}
+}
+1421.7.25 = {
 	heir = {
 		name = "Henry"
 		monarch_name = "Henry"

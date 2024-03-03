@@ -19,6 +19,8 @@ capital = 8134 #Richmond
 		birth_date = 1428.1.1
 		death_date = 1456.11.3
 	}
+}
+1457.1.1 = {
 	heir = {
 		name = "Henry"
 		monarch_name = "Henry VII" #His birth destroyed his mother because his father was a fucking nonce! Fun facts with Prussia. :)		dynasty = "Tudor"

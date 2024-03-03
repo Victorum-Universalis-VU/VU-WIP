@@ -2051,10 +2051,12 @@ import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
-			is_subject = no
-			is_colonial_nation = no
-			is_client_nation = no
+		owner = { 
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
 		}
 	}
 	build_trigger = {
@@ -2119,7 +2121,7 @@ import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
-			else = {
+			else_if = {
 				limit = { ROOT = { trade_goods = grain } }
 				update_goods_subjects = { GOODS = grain }
 			}
@@ -2157,10 +2159,12 @@ stop_import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
+		owner = {
+			AND = {
 		    	is_subject = no
 		    	is_colonial_nation = no
 		    	is_client_nation = no
+			}
 		}
 	}
 	
@@ -2221,7 +2225,7 @@ stop_import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
-			else = {
+			else_if = {
 				limit = { ROOT = { trade_goods = grain } }
 				update_goods_subjects = { GOODS = grain }
 			}

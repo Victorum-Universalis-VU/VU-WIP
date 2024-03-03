@@ -21,6 +21,8 @@ capital = 4365 # Mann
 		mil = 4
 		#regent = yes
 	}
+}
+1435.1.1 = {
 	heir = {
 		name = "Thomas"
 		monarch_name = "Thomas Stanley"
