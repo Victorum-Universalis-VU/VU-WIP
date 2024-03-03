@@ -178,7 +178,7 @@ austria_put_relative_as_heir = {
 		}
 	}
 
-	ai_acceptance = {
+	ai_acceptance = { #I think I figured the issue here: look for ai_acceptance in 00_diplomatic_actions for reference - Altan
 		add_entry = {
 			name = HAB_FROM_ATTITUDE_TOWARDS_ROOT
 			limit = {
@@ -190,9 +190,20 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion #Using Opinion as value, trust should be fine too, numbers will need testing
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 50
 			}
+
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
 		}
 		add_entry = {
 			name = HAB_FROM_ATTITUDE_TOWARDS_ROOT
@@ -202,9 +213,19 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 60
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 60
+		#	}
 		}
 		add_entry = {
 			name = HAB_FROM_ATTITUDE_TOWARDS_ROOT
@@ -218,9 +239,19 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
 				which = ai_value
 				value = 1000
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -232,10 +263,20 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
 				which = ai_value
 				value = 1000
 			}
-			divide_variable = { which = ai_value value = -1 }
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 1000
+		#	}
+		#	divide_variable = { which = ai_value value = -1 } 
 		}
 		add_entry = {
 			name = HAB_FROM_HAS_MARRIAGE_WITH_ROOT
@@ -243,9 +284,19 @@ austria_put_relative_as_heir = {
 				marriage_with = FROM
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = HAB_ROOT_FROM_NOT_SAME_RELIGION
@@ -253,15 +304,25 @@ austria_put_relative_as_heir = {
 				NOT = { religion = FROM }
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
 				which = ai_value
 				value = 50
 			}
-			multiply_variable = { which = ai_value value = -1 }
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 50
+		#	}
+		#	multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = OPINION
 			export_to_variable = {
-				which = ai_value
+				variable_name = ai_value
 				value = opinion
 				who = FROM
 				with = ROOT
@@ -275,9 +336,19 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			change_variable = {
 				which = ai_value
 				value = 10
 			}
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 10
+		#	}
 		}
 		add_entry = {
 			name = HAB_ROOT_FROM_ARE_HISTORICAL_RIVALS
@@ -287,10 +358,20 @@ austria_put_relative_as_heir = {
 				}
 			}
 			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = {
 				which = ai_value
 				value = 100
 			}
-			multiply_variable = { which = ai_value value = -1 }
+		#	export_to_variable = {
+		#		which = ai_value
+		#		value = 100
+		#	}
+		#	multiply_variable = { which = ai_value value = -1 }
 		}
 	}
 
@@ -330,7 +411,10 @@ austria_establish_imperial_treasurer = {
 	require_acceptance = no
 
 	is_visible = {
-		has_country_flag = me_hab_new_diplo_actions
+		OR = {
+			has_country_flag = me_hab_new_diplo_actions
+			hre_reform_passed = emperor_reichskrieg
+		}
 		FROM = {
 			capital_scope = {
 				is_part_of_hre = yes
@@ -340,7 +424,10 @@ austria_establish_imperial_treasurer = {
 
 	is_allowed = {
 		hidden_trigger = {
-			has_country_flag = me_hab_new_diplo_actions
+			OR = {
+				has_country_flag = me_hab_new_diplo_actions
+				hre_reform_passed = emperor_reichskrieg
+			}
 		}
 		NOT = { has_global_flag = imperial_treasurer_established }
 		NOT = { has_country_modifier = me_hab_imperial_court_chaplain }
@@ -375,7 +462,10 @@ austria_establish_imperial_marshall = {
 	require_acceptance = no
 
 	is_visible = {
-		has_country_flag = me_hab_new_diplo_actions
+		OR = {
+			has_country_flag = me_hab_new_diplo_actions
+			hre_reform_passed = emperor_reichskrieg
+		}
 		FROM = {
 			capital_scope = {
 				is_part_of_hre = yes
