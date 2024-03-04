@@ -5001,27 +5001,27 @@ issiakdom_monarchy = {
 
 sardom_monarchy = {
 	rank = {
-		1 = SARDOM
-		2 = SARDOM
-		3 = SARDOM
+		1 = SARDOM_BAB
+		2 = SARDOM_BAB
+		3 = SARDOM_BAB
 	}
 
 	ruler_male = {
-		1 = SAR
-		2 = SAR
-		3 = SAR
+		1 = SAR_BAB
+		2 = SAR_BAB
+		3 = SAR_BAB
 	}
 
 	consort_female = {
-		1 = ISSU
-		2 = ISSU
-		3 = ISSU
+		1 = ISSU_BAB
+		2 = ISSU_BAB
+		3 = ISSU_BAB
 	}
 
 	heir_male = {
-		1 = SAMAS
-		2 = SAMAS
-		3 = SAMAS
+		1 = SAMAS_BAB
+		2 = SAMAS_BAB
+		3 = SAMAS_BAB
 	}
 
 	trigger = {
