@@ -76,7 +76,6 @@ establish_dutch_province_subject = {
 			create_subject = {
 				subject = FROM
 				subject_type = dutch_province_subject
-				keep_liberty_desire = yes
 			}
 			add_truce_with = FROM
 		}
@@ -129,17 +128,9 @@ establish_dutch_province_subject = {
 				overlord_of = FROM
 			}
 			export_to_variable = {
-				variable_name = ai_value
-				value = 0
-			}
-			change_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 		}
 		add_entry = {
 			name = FROM_LIBERTY_DESIRE_TOO_HIGH
@@ -149,14 +140,10 @@ establish_dutch_province_subject = {
 					liberty_desire = 50
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -170,14 +157,10 @@ establish_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -186,14 +169,10 @@ establish_dutch_province_subject = {
 					ai_attitude = { who = ROOT attitude = attitude_neutral }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -206,14 +185,10 @@ establish_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -221,14 +196,10 @@ establish_dutch_province_subject = {
 			limit = {
 				marriage_with = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = TRUST
@@ -286,14 +257,10 @@ establish_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 2000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 2000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -304,33 +271,29 @@ establish_dutch_province_subject = {
 			}
 			multiply_variable = { which = ai_value value = 3 }
 		}
-	#	add_entry = { #Don't think we can use government_rank that way - Altan
-	#		name = ROOT_FROM_DIFF_OF_GOV_RANKS
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:government_rank
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value_2
-	#			value = trigger_value:government_rank
-	#			who = FROM
-	#		}
-	#		subtract_variable = { which = ai_value which = ai_value_2 }
-	#		multiply_variable = { which = ai_value value = 10 }
-	#	}
+		add_entry = {
+			name = ROOT_FROM_DIFF_OF_GOV_RANKS
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:government_rank
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:government_rank
+				who = FROM
+			}
+			subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value value = 10 }
+		}
 		add_entry = {
 			name = ROOT_FROM_NOT_SAME_RELIGION_GROUP
 			limit = {
 				NOT = { religion_group = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -339,14 +302,10 @@ establish_dutch_province_subject = {
 				religion_group = FROM
 				NOT = { religion = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -356,14 +315,10 @@ establish_dutch_province_subject = {
 					has_reform = merchants_reform
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -371,35 +326,25 @@ establish_dutch_province_subject = {
 			limit = {
 				has_reform = merchants_reform
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
-		add_entry = { #Needs testing can't guarantee it'll work as intended. Still better than what was set before. - Altan
+		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
 			export_to_variable = {
-				variable_name = ai_value
+				which = ai_value
+				value = army_size
+			}
+			export_to_variable = {
+				which = ai_value_2
 				value = army_size
 				who = FROM
-				with = ROOT
 			}
-			multiply_variable = {
-				which = ai_value
-				value = 1.5
-			}
-		#	export_to_variable = {
-		#		which = ai_value_2
-		#		value = army_size
-		#		who = FROM
-		#	}
-		#	multiply_variable = { which = ai_value_2 value = 1.5 }
-		#	subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value_2 value = 1.5 }
+			subtract_variable = { which = ai_value which = ai_value_2 }
 		}
 		add_entry = {
 			name = FROM_IS_HRE_MEMBER
@@ -409,14 +354,10 @@ establish_dutch_province_subject = {
 					is_part_of_hre = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 75
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 75
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -427,33 +368,23 @@ establish_dutch_province_subject = {
 					is_part_of_hre = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = FROM_IS_HRE_ELECTOR
 			limit = {
-				NOT = { hre_reform_passed = erbkaisertum }
-				NOT = { hre_reform_passed = emperor_erbkaisertum }
 				FROM = {
 					is_elector = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -464,14 +395,10 @@ establish_dutch_province_subject = {
 					num_of_subjects = 1
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -481,14 +408,10 @@ establish_dutch_province_subject = {
 					tag = PAP
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -499,14 +422,10 @@ establish_dutch_province_subject = {
 					is_core = FROM
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -524,14 +443,10 @@ establish_dutch_province_subject = {
 			limit = {
 				primary_culture = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_IS_IMPERIAL_CITY
@@ -540,14 +455,10 @@ establish_dutch_province_subject = {
 					has_reform = free_city
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -557,14 +468,10 @@ establish_dutch_province_subject = {
 					is_emperor = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -587,15 +494,15 @@ establish_dutch_province_subject = {
 			}
 			divide_variable = { which = ai_value value = 5 }
 		}
-	#	add_entry = { #num_of_cities doesn't isn't a value but a variable. Disabling until we find something better
-	#		name = FROM_NUM_OF_PROVINCES
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = num_of_cities
-	#			who = FROM
-	#		}
-	#		multiply_variable = { which = ai_value value = -5 }
-	#	}
+		add_entry = {
+			name = FROM_NUM_OF_PROVINCES
+			export_to_variable = {
+				which = ai_value
+				value = num_of_cities
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -5 }
+		}
 		add_entry = {
 			name = FROM_IS_FRISIAN
 			limit = {
@@ -603,14 +510,10 @@ establish_dutch_province_subject = {
 					primary_culture = frisian
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -620,14 +523,10 @@ establish_dutch_province_subject = {
 					primary_culture = wallonian
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 15
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 15
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -635,14 +534,10 @@ establish_dutch_province_subject = {
 			limit = {
 				primary_culture = frisian
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -650,14 +545,10 @@ establish_dutch_province_subject = {
 			limit = {
 				primary_culture = wallonian
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
@@ -794,7 +685,6 @@ ask_for_dutch_province_subject = {
 				create_subject = {
 					subject = ROOT
 					subject_type = dutch_province_subject
-					keep_liberty_desire = yes
 				}
 				add_truce_with = ROOT
 			}
@@ -848,19 +738,9 @@ ask_for_dutch_province_subject = {
 				is_subject_of = FROM
 			}
 			export_to_variable = {
-				variable_name = ai_value
-				value = 0
-				who = FROM
-				with = ROOT
-			}
-			change_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 		}
 		add_entry = {
 			name = ROOT_LIBERTY_DESIRE_TOO_HIGH
@@ -868,14 +748,10 @@ ask_for_dutch_province_subject = {
 				is_subject_of = FROM
 				liberty_desire = 50
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -889,14 +765,10 @@ ask_for_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -905,14 +777,10 @@ ask_for_dutch_province_subject = {
 					ai_attitude = { who = ROOT attitude = attitude_neutral }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -925,14 +793,10 @@ ask_for_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -940,14 +804,10 @@ ask_for_dutch_province_subject = {
 			limit = {
 				marriage_with = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = TRUST
@@ -1005,14 +865,10 @@ ask_for_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 2000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 2000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1023,33 +879,29 @@ ask_for_dutch_province_subject = {
 			}
 			multiply_variable = { which = ai_value value = 3 }
 		}
-	#	add_entry = { #Doesn't work that way...
-	#		name = ROOT_FROM_DIFF_OF_GOV_RANKS
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:government_rank
-	#			who = FROM
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value_2
-	#			value = trigger_value:government_rank
-	#		}
-	#		subtract_variable = { which = ai_value which = ai_value_2 }
-	#		multiply_variable = { which = ai_value value = 10 }
-	#	}
+		add_entry = {
+			name = ROOT_FROM_DIFF_OF_GOV_RANKS
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:government_rank
+				who = FROM
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:government_rank
+			}
+			subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value value = 10 }
+		}
 		add_entry = {
 			name = ROOT_FROM_NOT_SAME_RELIGION_GROUP
 			limit = {
 				NOT = { religion_group = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1058,14 +910,10 @@ ask_for_dutch_province_subject = {
 				religion_group = FROM
 				NOT = { religion = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1075,14 +923,10 @@ ask_for_dutch_province_subject = {
 					has_reform = merchants_reform
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1090,34 +934,25 @@ ask_for_dutch_province_subject = {
 			limit = {
 				has_reform = merchants_reform
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
-		add_entry = { #Again not sure about that, will need further testing. -Altan
+		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
 			export_to_variable = {
 				which = ai_value
 				value = army_size
 				who = FROM
-				with = ROOT
 			}
-			multiply_variable = {
-				which = ai_value
-				value = 1.5
+			export_to_variable = {
+				which = ai_value_2
+				value = army_size
 			}
-		#	export_to_variable = {
-		#		which = ai_value_2
-		#		value = army_size
-		#	}
-		#	multiply_variable = { which = ai_value_2 value = 1.5 }
-		#	subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value_2 value = 1.5 }
+			subtract_variable = { which = ai_value which = ai_value_2 }
 		}
 		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
@@ -1127,14 +962,10 @@ ask_for_dutch_province_subject = {
 					is_core = FROM
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1152,14 +983,10 @@ ask_for_dutch_province_subject = {
 			limit = {
 				primary_culture = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = ROOT_DEVELOPMENT
@@ -1181,14 +1008,14 @@ ask_for_dutch_province_subject = {
 			}
 			divide_variable = { which = ai_value value = 5 }
 		}
-	#	add_entry = { #Again num_of_cities isn't a value
-	#		name = ROOT_NUM_OF_PROVINCES
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = num_of_cities
-	#		}
-	#		multiply_variable = { which = ai_value value = -4 }
-	#	}
+		add_entry = {
+			name = ROOT_NUM_OF_PROVINCES
+			export_to_variable = {
+				which = ai_value
+				value = num_of_cities
+			}
+			multiply_variable = { which = ai_value value = -4 }
+		}
 		add_entry = {
 			name = STRATEGIC_VALUE
 			limit = {
@@ -1240,14 +1067,10 @@ ask_for_dutch_province_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1257,14 +1080,10 @@ ask_for_dutch_province_subject = {
 					primary_culture = frisian
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1274,14 +1093,10 @@ ask_for_dutch_province_subject = {
 					primary_culture = wallonian
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1289,14 +1104,10 @@ ask_for_dutch_province_subject = {
 			limit = {
 				primary_culture = frisian
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1304,14 +1115,10 @@ ask_for_dutch_province_subject = {
 			limit = {
 				primary_culture = wallonian
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 15
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 15
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
@@ -1446,14 +1253,10 @@ dutch_province_subject_ask_for_independence = {
 			limit = {
 				NOT = { liberty_desire = 50 }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1468,64 +1271,55 @@ dutch_province_subject_ask_for_independence = {
 			subtract_variable = { which = ai_value value = 51 }
 			divide_variable = { which = ai_value value = 2 }
 		}
-		add_entry = { #Also not sure about that, will need testing
+		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
 			export_to_variable = {
 				which = ai_value
 				value = army_size
 				who = FROM
-				with = ROOT
 			}
-			divide_variable = {
-				which = ai_value
-				value = 2
+			export_to_variable = {
+				which = ai_value_2
+				value = army_size
 			}
-		#	export_to_variable = {
-		#		which = ai_value_2
-		#		value = army_size
-		#	}
-		#	divide_variable = { which = ai_value value = 2 }
-		#	subtract_variable = { which = ai_value which = ai_value_2 }
+			divide_variable = { which = ai_value value = 2 }
+			subtract_variable = { which = ai_value which = ai_value_2 }
 		}
-	#	add_entry = { #num_of_allies isn't a value...
-	#		name = ROOT_AMOUNT_OF_ALLIANCES
-	#		limit = {
-	#			num_of_allies = 1
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:num_of_allies
-	#			who = FROM
-	#		}
-	#		#subtract_variable = { which = ai_value value = 1 }
-	#		multiply_variable = { which = ai_value value = 10 }
-	#	}
-	#	add_entry = {
-	#		name = FROM_AMOUNT_OF_ALLIANCES
-	#		limit = {
-	#			num_of_allies = 1
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:num_of_allies
-	#			who = FROM
-	#		}
-	#		#subtract_variable = { which = ai_value value = 1 }
-	#		multiply_variable = { which = ai_value value = -3 }
-	#	}
+		add_entry = {
+			name = ROOT_AMOUNT_OF_ALLIANCES
+			limit = {
+				num_of_allies = 1
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:num_of_allies
+				who = FROM
+			}
+			#subtract_variable = { which = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = FROM_AMOUNT_OF_ALLIANCES
+			limit = {
+				num_of_allies = 1
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:num_of_allies
+				who = FROM
+			}
+			#subtract_variable = { which = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -3 }
+		}
 		add_entry = {
 			name = ROOT_HAS_NO_ALLIANCES
 			limit = {
 				NOT = { num_of_allies = 1 }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1542,14 +1336,10 @@ dutch_province_subject_ask_for_independence = {
 			limit = {
 				historical_friend_with = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 		}
 		add_entry = {
 			name = MODIFIER_DIPLO_SKILL
@@ -1593,14 +1383,10 @@ dutch_province_subject_ask_for_independence = {
 					all_subject_country = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 50
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 50
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1609,14 +1395,10 @@ dutch_province_subject_ask_for_independence = {
 				has_global_flag = dutch_province_subject_no_internal_war
 				NOT = { has_global_flag = dutch_province_subject_no_external_war }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -1624,14 +1406,10 @@ dutch_province_subject_ask_for_independence = {
 			limit = {
 				has_global_flag = dutch_province_subject_no_external_war
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 50
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 50
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
@@ -1900,9 +1678,7 @@ dutch_province_subject_force_white_peace = {
 			name = base_values
 			export_to_variable = {
 				which = ai_value
-				value = opinion
-				who = FROM
-				with = ROOT
+				value = 10
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -1925,14 +1701,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
@@ -1956,14 +1728,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 		}
 		add_entry = {
 			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
@@ -1987,14 +1755,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 		}
 		add_entry = {
 			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
@@ -2018,14 +1782,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 40
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 40
-		#	}
 		}
 		add_entry = {
 			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
@@ -2049,14 +1809,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 50
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 50
-		#	}
 		}
 		add_entry = {
 			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
@@ -2071,25 +1827,21 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 75
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 75
-		#	}
 		}
-	#	add_entry = { #Yeah still no worky
-	#		name = FROM_NUM_OF_PROVINCES
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:num_of_cities
-	#			who = FROM
-	#		}
-	#		#subtract_variable = { which = ai_value value = 1 }
-	#		divide_variable = { which = ai_value value = -3 }
-	#	}
+		add_entry = {
+			name = FROM_NUM_OF_PROVINCES
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:num_of_cities
+				who = FROM
+			}
+			#subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -3 }
+		}
 		add_entry = {
 			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
 			limit = {
@@ -2107,14 +1859,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2137,14 +1885,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2167,14 +1911,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2197,14 +1937,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 40
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 40
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2227,14 +1963,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 50
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 50
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2248,14 +1980,10 @@ dutch_province_subject_force_white_peace = {
 					amount = 10
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -2268,14 +1996,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 		}
 		add_entry = {
 			name = FROM_ENEMY_ARMIES_ON_CORE_TERRITORY
@@ -2309,14 +2033,10 @@ dutch_province_subject_force_white_peace = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_ARMY_SIZE

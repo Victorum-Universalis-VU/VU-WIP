@@ -140,10 +140,6 @@ establish_fief_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 0
-			}
-			change_variable = {
-				which = ai_value
 				value = 100
 			}
 		}
@@ -155,14 +151,10 @@ establish_fief_subject = {
 					liberty_desire = 50
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -177,14 +169,10 @@ establish_fief_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -194,14 +182,10 @@ establish_fief_subject = {
 					ai_attitude = { who = ROOT attitude = attitude_neutral }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -215,14 +199,10 @@ establish_fief_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 100
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 100
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -231,14 +211,10 @@ establish_fief_subject = {
 				NOT = { overlord_of = FROM }
 				marriage_with = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 		}
 		add_entry = {
 			name = TRUST
@@ -299,14 +275,10 @@ establish_fief_subject = {
 					}
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 2000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 2000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -320,37 +292,33 @@ establish_fief_subject = {
 			}
 			multiply_variable = { which = ai_value value = 3 }
 		}
-	#	add_entry = { # Again, government_rank is not a value
-	#		name = ROOT_FROM_DIFF_OF_GOV_RANKS
-	#		limit = {
-	#			NOT = { overlord_of = FROM }
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value
-	#			value = trigger_value:government_rank
-	#		}
-	#		export_to_variable = {
-	#			which = ai_value_2
-	#			value = trigger_value:government_rank
-	#			who = FROM
-	#		}
-	#		subtract_variable = { which = ai_value which = ai_value_2 }
-	#		multiply_variable = { which = ai_value value = 10 }
-	#	}
+		add_entry = {
+			name = ROOT_FROM_DIFF_OF_GOV_RANKS
+			limit = {
+				NOT = { overlord_of = FROM }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:government_rank
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:government_rank
+				who = FROM
+			}
+			subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value value = 10 }
+		}
 		add_entry = {
 			name = ROOT_FROM_NOT_SAME_RELIGION_GROUP
 			limit = {
 				NOT = { overlord_of = FROM }
 				NOT = { religion_group = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 20
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -360,14 +328,10 @@ establish_fief_subject = {
 				religion_group = FROM
 				NOT = { religion = FROM }
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -378,14 +342,10 @@ establish_fief_subject = {
 					has_reform = merchants_reform
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -394,14 +354,10 @@ establish_fief_subject = {
 				NOT = { overlord_of = FROM }
 				has_reform = merchants_reform
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 10
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 10
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -443,14 +399,10 @@ establish_fief_subject = {
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 40
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 40
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -562,14 +514,10 @@ establish_fief_subject = {
 					check_variable = { which = military_power value = 30 }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 		}
 		add_entry = {
 			name = FROM_IS_HRE_MEMBER
@@ -580,14 +528,10 @@ establish_fief_subject = {
 					is_part_of_hre = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 75
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 75
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -599,14 +543,10 @@ establish_fief_subject = {
 					is_part_of_hre = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -617,14 +557,10 @@ establish_fief_subject = {
 					is_elector = yes
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -635,14 +571,10 @@ establish_fief_subject = {
 					num_of_subjects = 1
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -653,14 +585,10 @@ establish_fief_subject = {
 					tag = PAP
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -671,14 +599,10 @@ establish_fief_subject = {
 					total_development = 100
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -689,14 +613,10 @@ establish_fief_subject = {
 					is_core = FROM
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -719,10 +639,6 @@ establish_fief_subject = {
 				variable_arithmetic_trigger = {
 					export_to_variable = {
 						which = eco_power
-						value = 0
-					}
-					change_variable = {
-						which = eco_power
 						value = 60
 					}
 					export_to_variable = {
@@ -743,18 +659,13 @@ establish_fief_subject = {
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 60
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 60
-		#	}
 			export_to_variable = {
 				which = our_total_development
 				value = trigger_value:total_development
-				who = ROOT
 			}
 			export_to_variable = {
 				which = their_total_development
@@ -772,10 +683,6 @@ establish_fief_subject = {
 				NOT = { overlord_of = FROM }
 				variable_arithmetic_trigger = {
 					export_to_variable = {
-						which = eco_power
-						value = 0
-					}
-					change_variable = {
 						which = eco_power
 						value = 60
 					}
@@ -796,14 +703,10 @@ establish_fief_subject = {
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 90
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 90
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -812,10 +715,6 @@ establish_fief_subject = {
 				NOT = { overlord_of = FROM }
 				variable_arithmetic_trigger = {
 					export_to_variable = {
-						which = eco_power
-						value = 0
-					}
-					change_variable = {
 						which = eco_power
 						value = 60
 					}
@@ -836,14 +735,10 @@ establish_fief_subject = {
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 30
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 30
-		#	}
 		}
 		add_entry = {
 			name = ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE
@@ -851,14 +746,10 @@ establish_fief_subject = {
 				NOT = { overlord_of = FROM }
 				primary_culture = FROM
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 		}
 		add_entry = {
 			name = FROM_IS_IMPERIAL_CITY
@@ -868,14 +759,10 @@ establish_fief_subject = {
 					has_reform = free_city
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 1000
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 1000
-		#	}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
@@ -888,14 +775,10 @@ establish_fief_subject = {
 					culture_group = variable:Root:pte_culture_group_hegemony_var
 				}
 			}
-			change_variable = {
+			export_to_variable = {
 				which = ai_value
 				value = 25
 			}
-		#	export_to_variable = {
-		#		which = ai_value
-		#		value = 25
-		#	}
 		}
 	}
 
