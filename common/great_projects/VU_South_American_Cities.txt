@@ -561,7 +561,7 @@ vu_nazca_pe = {
     on_built = {}
     on_destroyed = {}
     can_use_modifiers_trigger = { vu_andean_cities_trigger = yes }
-    can_upgrade_trigger = {	development = 10 province_has_center_of_trade_of_level = 1 }
+    can_upgrade_trigger = {	development = 10 }
     keep_trigger = { vu_andean_cities_trigger = yes }
 
 	tier_0 = {
