@@ -751,8 +751,8 @@ was_italian_minor = {
 	}
 }
 
-ME_pt_feedback_requested = { #a program will look for instances of those
-	custom_trigger_tooltip = {
-		tooltip = ME_playtester_feedback_requested
-	}
-}
+#ME_pt_feedback_requested = { #a program will look for instances of those
+#	custom_trigger_tooltip = {
+#		tooltip = ME_playtester_feedback_requested
+#	}
+#}
