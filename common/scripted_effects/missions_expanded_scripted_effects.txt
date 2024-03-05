@@ -2327,9 +2327,9 @@ ME_technology_split_120_power = { #placeholder, I will put the implementation he
 	}
 }
 
-ME_pt_feedback_requested = { #a program will look for instances of those
-	custom_tooltip = ME_playtester_feedback_requested
-}
+#ME_pt_feedback_requested = { #a program will look for instances of those
+#	custom_tooltip = ME_playtester_feedback_requested
+#}
 
 #tag = { ME_add_to_empire = yes }
 ME_add_to_empire = {
