@@ -962,3 +962,215 @@ defined_text = {
 		localisation_key = english_channel
 	}
 }
+
+##ME variables
+
+#Customized localisations for some ME variables - by Altan
+
+defined_text = {
+    name = Getnum_of_provinces_razed
+
+    text = {
+        localisation_key = ZERO
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = num_of_provinces_razed_var
+                    value = 1
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = ME_HAS_RAZED_AT_LEAST_TT_PROVINCES
+        trigger = {
+            check_variable = {
+                which = num_of_provinces_razed_var
+                value = 1
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = Getnum_of_battles_won
+
+    text = {
+        localisation_key = ZERO
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = num_of_battles_won_var
+                    value = 1
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = ME_HAS_WON_AT_LEAST_TT_BATTLES
+        trigger = {
+            check_variable = {
+                which = num_of_battles_won_var
+                value = 1
+            }
+        }
+    }
+}
+
+defined_text = {
+	name = GetNumDevelopedProvinces
+
+	text = {
+		localisation_key = ZERO
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_times_developed
+					value = 1
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = ME_has_developed_at_least_TT_provinces
+		trigger = {
+			check_variable = {
+				which = num_of_times_developed
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+    name = Getnum_of_adm_clicks
+
+    text = {
+        localisation_key = ZERO
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = num_of_adm_clicks
+                    value = 1
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = ME_DEVELOPED_TAX_AT_LEAST_TT_PROVINCES
+        trigger = {
+            check_variable = {
+                which = num_of_adm_clicks
+                value = 1
+            }
+        }
+    }
+}
+
+defined_text = {
+    name = Getnum_of_provinces_converted
+
+    text = {
+        localisation_key = ZERO
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = num_of_times_converted
+                    value = 1
+                }
+            }
+        }
+    }
+
+    text = {
+        localisation_key = ME_HAS_CONVERTED_AT_LEAST_TT_PROVINCES
+        trigger = {
+            check_variable = {
+                which = num_of_times_converted
+                value = 1
+            }
+        }
+    }
+}
+
+defined_text = {
+	name = Getme_tim_europe_victory
+
+	text = {
+		localisation_key = ZERO
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = me_tim_europe_victory
+					value = 1
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = me_tim_defeated_tt_european_nations
+		trigger = {
+			check_variable = {
+				which = me_tim_europe_victory
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetMETimConquestHorde
+
+	text = {
+		localisation_key = ZERO
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = METimConquestHorde
+					value = 1
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = ME_tim_conquered_tt_provinces
+		trigger = {
+			check_variable = {
+				which = METimConquestHorde
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetMETimArabianProvincesRazed
+
+	text = {
+		localisation_key = ZERO
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = METimArabianProvincesRazed
+					value = 1
+				}
+			}
+		}
+	}
+
+	text = {
+		localisation_key = ME_tim_razed_tt_arabian_provinces
+		trigger = {
+			check_variable = {
+				which = METimArabianProvincesRazed
+				value = 1
+			}
+		}
+	}
+}
