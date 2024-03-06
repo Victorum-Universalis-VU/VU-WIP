@@ -650,7 +650,7 @@ NAJ_missions_5 = {
 				value = 10
 				num_of_times_improved_by_owner = 10
 			}
-			#num_of_provinces_developed = { amount = 10 }
+			#num_of_provinces_developed = { value = 10 }
 		}
 		effect = {
 			set_country_flag = NAJ_may_move_capital_to_riyadh

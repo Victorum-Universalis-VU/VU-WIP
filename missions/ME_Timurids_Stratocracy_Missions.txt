@@ -71,7 +71,7 @@ Timurid_stratocracy_path_1 = {
             
         }
         trigger = {
-    		num_of_provinces_developed = { amount = 15 }
+    		num_of_provinces_developed = { value = 15 }
             num_of_owned_provinces_with = {
                 OR = {
                     base_manpower = 9

@@ -407,10 +407,11 @@ rig_empire_mission_slot = {
 						}
 						amount = 5
 					}
-					custom_trigger_tooltip = {
-						tooltip = nor_spread_the_reformation_tt
-						check_variable = { which = num_converted_religion value = 15 }
-					}
+					num_of_provinces_converted = { value = 15}
+				#	custom_trigger_tooltip = {
+				#		tooltip = nor_spread_the_reformation_tt
+				#		check_variable = { which = num_converted_religion value = 15 }
+				#	}
 				}
 			}
 		}

@@ -653,10 +653,11 @@ TID_TER_missions_5 = {
 						religion = sunni
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = MAJ_has_converted_5_provinces
-					check_variable = { which = num_converted_religion value = 5 }
-				}
+				num_of_provinces_converted = { value = 5 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = MAJ_has_converted_5_provinces
+			#		check_variable = { which = num_converted_religion value = 5 }
+			#	}
 			}
 		}
 		effect = {
@@ -702,10 +703,11 @@ TID_TER_missions_5 = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
-			}
+			num_of_provinces_converted = { value = 10 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = obj_convert_10_provinces_tooltip
+		#		check_variable = { which = num_converted_religion value = 10 }
+		#	}
 			religious_unity = 0.9
 		}
 		effect = {

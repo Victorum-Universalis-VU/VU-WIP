@@ -2583,10 +2583,11 @@ MSA_Missions_Muslim_2 = {
 		required_missions = { }
 		position = 25
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = MSA_convert_25_provinces
-				check_variable = { which = num_converted_religion value = 25 }
-			}
+			num_of_provinces_converted = { value = 25}
+		#	custom_trigger_tooltip = {
+		#		tooltip = MSA_convert_25_provinces
+		#		check_variable = { which = num_converted_religion value = 25 }
+		#	}
 			#has_global_modifier_value = {
 			#	which = global_missionary_strength
 			#	value = 0.015
@@ -2785,10 +2786,11 @@ MSA_Missions_Muslim_3 = {
 							}
 						}
 					}
-					custom_trigger_tooltip = {
-						tooltip = MSA_converted_3_provinces
-						check_variable = { which = num_converted_religion value = 3 }
-					}
+					num_of_provinces_converted = { value = 3 }
+				#	custom_trigger_tooltip = {
+				#		tooltip = MSA_converted_3_provinces
+				#		check_variable = { which = num_converted_religion value = 3 }
+				#	}
 				}
 			}
 		}
@@ -2831,7 +2833,8 @@ MSA_Missions_Muslim_3 = {
 								}
 							}
 						}
-						check_variable = { which = num_converted_religion value = 3 }
+						num_of_provinces_converted = { value = 3 }
+					#	check_variable = { which = num_converted_religion value = 3 }
 					}
 					add_dip_power = 25
 					add_adm_power = 25
@@ -3462,10 +3465,11 @@ MSA_Missions_Hindu_2 = {
 		required_missions = { }
 		position = 24
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = obj_convert_10_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 10 }
-			}
+			num_of_provinces_converted = { value = 10 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = obj_convert_10_provinces_tooltip
+		#		check_variable = { which = num_converted_religion value = 10 }
+		#	}
 		}
 		effect = {
 			#https://en.wikipedia.org/wiki/Vijaya_(bow)

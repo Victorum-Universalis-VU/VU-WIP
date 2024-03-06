@@ -6474,13 +6474,14 @@ me_persia_missions_2_new = {
 		position = 31
 		required_missions = { }
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = ME_CONVERTED_25_PROVINCES_TT
-				check_variable = {
-					which = num_converted_religion
-					value = 25
-				}
-			}
+			num_of_provinces_converted = { value = 25 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = ME_CONVERTED_25_PROVINCES_TT
+		#		check_variable = {
+		#			which = num_converted_religion
+		#			value = 25
+		#		}
+		#	}
 		}
 		effect = {
 			if = {

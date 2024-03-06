@@ -609,7 +609,7 @@ MOR_missions_2 = {
 					value = 10
             	    num_of_times_improved = 10
 				}
-				#num_of_provinces_developed = { amount = 10 }
+				#num_of_provinces_developed = { value = 10 }
 			} #cant make ai dev or else they will be blocked
 
 			has_adm_advisor_2 = yes
@@ -866,13 +866,11 @@ MOR_missions_3 = {
 		position = 6
 		provinces_to_highlight = {
 			is_capital = yes
-			owner = {
-				religion_group = muslim
-				OR = {
-					NOT = { continent = africa }
-					region = egypt_region
-				}
+			OR = {
+				NOT = { continent = africa }
+				region = egypt_region
 			}
+			owner = { religion_group = muslim }
 		}
 		trigger = {
 			OR = {

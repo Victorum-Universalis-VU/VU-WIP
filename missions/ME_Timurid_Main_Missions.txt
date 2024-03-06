@@ -1412,13 +1412,15 @@ Timurid_main_3 = {
 		required_missions = { TIM_great_horde }
 		position = 6
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = me_tim_defeated_european_nations
-				check_variable = {
-					which = me_tim_europe_victory
-					value = 10
-				}
-			}
+
+			me_tim_europe_victory = { value = 10 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = me_tim_defeated_european_nations
+		#		check_variable = {
+		#			which = me_tim_europe_victory
+		#			value = 10
+		#		}
+		#	}
 		}
 		
 		effect = {
@@ -1437,6 +1439,9 @@ Timurid_main_3 = {
 				set_country_flag = me_tim_conquest_of_europe
 				custom_tooltip = " "
 				custom_tooltip = me_tim_when_we_occupy_provinces_in_europe
+			}
+			hidden_effect = {
+				set_country_flag = me_tim_defeated_european_nations_flag
 			}
 		}
 	}
@@ -1818,17 +1823,17 @@ Timurid_main_4 = {
 		required_missions = { TIM_china TIM_oirat }
 		position = 6
 		provinces_to_highlight = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = me_tim_peaceful_china }
-				}
+		#	if = {
+		#		limit = {
+		#			NOT = { has_country_flag = me_tim_peaceful_china }
+		#		}
 				OR = {
 					region = north_china_region
 					region = south_china_region
 					region = xinan_region
 				}
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			}
+		#	}
 		}
 		trigger = {
 			if = {
@@ -2040,7 +2045,7 @@ Timurid_main_5 = {
 						vassalize = YUA
 						YUA = {
 							define_ruler = {
-								dynasty = "Borjigin"
+								dynasty = \"Borjigin\"
 								adm = 3
 								dip = 3
 								mil = 3
