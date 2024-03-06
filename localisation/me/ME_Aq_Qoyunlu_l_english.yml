@@ -100,7 +100,7 @@
  AKK_if_syria_is_our_vassal: "If @SYR §Y[SYR.GetName]§! is our subject, they will gain the following modifier."
  AKK_upgrade_AKK_seizing_qara_qoyunlu_north: "Modify '§YTribal Lands of Qara Qoyunlu§!' by:\n  Monthly Autonomy Change: §G-0.05§!"
  AKK_upgrade_AKK_seizing_qara_qoyunlu_lands: "Modify '§YEmirs of Iraq§!' by:\n  Production Efficiency: §G+10.0%§!"
- AKK_developed_tax_at_least_3_times: "Developed §YBase Tax§!¤ at least §G3§! Times. (Currently: [Root.num_of_adm_clicks.GetValue].)"
+ ME_developed_tax_at_least_10_times: "Developed §YBase Tax§!¤ at least §G10§! Times. (Currently: [Root.Getnum_of_adm_clicks].)"
  AKK_patronage_of_arts_buff: "The '§YPatronage of the Arts§!' Estate Privilege will additionally give §G+0.1§! Yearly Prestige for every culture of §YIranian§! Culture Group accepted, up to a maximum of §G+0.5§! Yearly Prestige."
  AKK_reduced_pwsc_of_syria: "Every province owned by our §YWar Enemies§! that is within the §YSyria§!, §YSyrian Desert§! and §YAleppo§! Areas."
  AKK_distribute_10_base_tax_5_manpower: "Distribute §G10§! Base §YTax§! and §G5§! Base §YManpower§! among our owned core provinces."

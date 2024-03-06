@@ -164,8 +164,8 @@
   persia_paradise_gardens_title: "Paradise Gardens"
   persia_paradise_gardens_desc: "Classical Iranians were seen by the Greeks as the 'great gardeners' of antiquity; Cyrus II (known also as Cyrus the Younger) is alleged to have told the Spartan commander Lysander that he gardened daily when not campaigning, and had himself laid out the park at Sardis, which he called his 'paradise' (a Greek corruption of the Old Persian word for garden)."
  # 3
-  #persia_persian_renaissance_title: "Persian Renaissance"
-  #persia_persian_renaissance_desc: "Beginning in ancient times Persia has been a center of scientific achievement and was often the conduit of knowledge from China and India in the East to Greece and Rome in the West. Persian-speaking scholars have been active in furthering knowledge in fields of science and technology, such as astronomy, chemistry, anatomy, biology, botany, cosmology, mathematics, engineering, and architecture."
+  persia_persian_renaissance_title: "Persian Renaissance"
+  persia_persian_renaissance_desc: "Beginning in ancient times Persia has been a center of scientific achievement and was often the conduit of knowledge from China and India in the East to Greece and Rome in the West. Persian-speaking scholars have been active in furthering knowledge in fields of science and technology, such as astronomy, chemistry, anatomy, biology, botany, cosmology, mathematics, engineering, and architecture."
   persia_persian_court_title: "Persian Court"
   persia_persian_court_desc: "Ancient Sassanid Persia was home to some of the earliest universities and libraries of the ancient world. After the Islamization of Persia (651), middle Persian Pahlavi texts as well as Indian, Chinese, Greek, Aramaic, and Latin scientific texts were translated into Arabic. Although Arabic remains the primary language used for scientific writing in the Islamic world, many scholars have also produced a range of scientific manuscripts and works in the Persian language."
   persia_public_education_title: "Public Education"
