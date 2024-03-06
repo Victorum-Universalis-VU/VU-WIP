@@ -563,7 +563,7 @@ kilwa_trade_conquest_missions_slot = {
 			province_id = 4346
 		}
 		trigger = {
-			4346 = {
+			1331 = {
 				OR = {
 					is_strongest_trade_power = ROOT
 					trade_share = {
@@ -574,7 +574,7 @@ kilwa_trade_conquest_missions_slot = {
 			}
 		}
 		effect = {
-			4346 = {
+			1331 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 9125
