@@ -2051,7 +2051,7 @@ import_from_subjects = {
 	time = 0
 	
 	potential = {
-		owner = { 
+		FROM = { 
 			AND = {
 				is_subject = no
 				is_colonial_nation = no
@@ -2159,7 +2159,7 @@ stop_import_from_subjects = {
 	time = 0
 	
 	potential = {
-		owner = {
+		FROM = {
 			AND = {
 		    	is_subject = no
 		    	is_colonial_nation = no

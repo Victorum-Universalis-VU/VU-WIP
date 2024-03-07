@@ -508,7 +508,7 @@
 2658 = { "Azua" "Azua" } 
 2659 = { "Port d'argent" "Port d'argent" } 
 4618 = { "Artibonite" "Gonaïves" } 
-4619 = { "Nord" "Cap-Haïtien" } 
+4619 = { "Duarte" "Cap-Haïtien" }
 4620 = { "Nord" "Sainte Barbe" } 
 4621 = { "Saint-Domingue" "Saint-Domingue" } 
 4622 = { "Île de la Jeunesse" "Nouvelle Gérone" } 
