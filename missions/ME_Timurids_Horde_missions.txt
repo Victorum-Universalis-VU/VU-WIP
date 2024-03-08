@@ -17,13 +17,14 @@ Timurid_horde_path_1 = {
 			
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = ME_tim_conquered_50_provinces
-				check_variable = {
-					which = METimConquestHorde
-					value = 50
-				}
-			}
+			METimConquestHorde = { value = 50 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = ME_tim_conquered_50_provinces
+		#		check_variable = {
+		#			which = METimConquestHorde
+		#			value = 50
+		#		}
+		#	}
 		}
 		effect = {
 			custom_tooltip = ME_tim_unlock_tribes
@@ -45,6 +46,13 @@ Timurid_horde_path_1 = {
 			}
 			army_size = 200
 			num_of_battles_won = { value = 100 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = ME_has_won_at_least_100_battles
+		#		check_variable = {
+		#			which = num_of_battles_won_var
+		#			value = 100
+		#		}
+		#	}
 		}
 		effect = {
 			custom_tooltip = ME_tim_winning_battles_gives_double_sow
@@ -102,11 +110,21 @@ Timurid_horde_path_2 = {
 				value = 80
 			}
 			num_of_provinces_razed = { value = 25 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = ME_has_razed_at_least_25_provinces
+		#		check_variable = {
+		#			which = num_of_provinces_razed_var
+		#			value = 25
+		#		}
+		#	}
 		}
 		effect = {
 			add_years_of_income = 1
 			custom_tooltip = me_tim_razing_provinces_gives_double_the_sow
 			set_country_flag = me_tim_double_sow_razing
+			hidden_effect = {
+				set_country_flag = ME_has_razed_at_least_25_provinces_flag
+			}
 		}
 	}
 
@@ -151,7 +169,14 @@ Timurid_horde_path_2 = {
 		trigger = {
 			OR = {
 				ME_amount_of_mil_ideas = { amount = 1 }
-				num_of_battles_won = { amount = 150 }
+				num_of_battles_won = { value = 150 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = ME_has_won_at_least_150_battles
+			#		check_variable = {
+			#			which = num_of_battles_won_var
+			#			value = 150
+			#		}
+			#	}
 			}
 			OR = {
 				446 = {
@@ -205,13 +230,13 @@ Timurid_horde_path_2 = {
 			
 		}
 		trigger = {
-			OR = {
+			#OR = {
 				has_estate_privilege = ME_estate_nomadic_tribes_destruction_of_the_lands
-				has_global_modifier_value = {
-					which = raze_power_gain
-					value = 0.75
-				}
-			}
+			#	has_global_modifier_value = { #cwtools doesn't like this so disabling for now
+			#		which = raze_power_gain
+			#		value = 0.75
+			#	}
+			#}
 			custom_trigger_tooltip = { 
 				tooltip = ME_tim_razed_at_least_15_high_dev_provinces
 				check_variable = { 
@@ -383,13 +408,14 @@ Timurid_horde_path_3 = {
 					value = 200
 					religion = tengri_pagan_reformed
 				}
-				custom_trigger_tooltip = { 
-					tooltip = ME_tim_converted_50_provinces
-					check_variable = { 
-						which = METimConvertedProvincesOldWays
-						value = 50
-					}
-				}
+				num_of_provinces_converted = { value = 50 }
+			#	custom_trigger_tooltip = { 
+			#		tooltip = ME_tim_converted_50_provinces
+			#		check_variable = { 
+			#			which = METimConvertedProvincesOldWays
+			#			value = 50
+			#		}
+			#	}
 			}
 		}
 		effect = {
@@ -406,10 +432,7 @@ Timurid_horde_path_3 = {
 				"
 				second_custom_tooltip = ME_tim_if_completed_with_conversion
 				second_limit = "
-					check_variable = { 
-						which = METimConvertedProvincesOldWays
-						value = 50
-					}
+					num_of_provinces_converted = { value = 50 }
 				"
 				second_effect = "
 					add_age_modifier = {
@@ -418,6 +441,9 @@ Timurid_horde_path_3 = {
 						age = age_of_absolutism
 					}
 				"
+			}
+			hidden_effect = {
+				set_country_flag = METimConvertedProvincesOldWays_flag
 			}
 		}
 	}
@@ -665,7 +691,14 @@ Timurid_horde_path_4 = {
 		}
 		trigger = {
 			treasury = 5000
-			num_of_battles_won = { amount = 75 }
+			num_of_battles_won = { value = 75 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = ME_has_won_at_least_75_battles
+		#		check_variable = {
+		#			which = num_of_battles_won_var
+		#			value = 75
+		#		}
+		#	}
 		}
 		effect = {
 			custom_tooltip = me_tim_razing_provinces_gives_20_gold
@@ -750,13 +783,14 @@ Timurid_horde_path_5 = {
 		}
 		trigger = {
 			OR = {
-				#custom_trigger_tooltip = { #This is better than the non existant custom trigger tooltip that exists right now
-					#tooltip = ME_tim_razed_10_arabian_provinces 
-					check_variable = { 
-						which = METimArabianPorvincesRazed
-						value = 10
-					}
-				#}
+				METimArabianProvincesRazed = { value = 10 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = ME_tim_razed_10_arabian_provinces 
+			#		check_variable = { 
+			#			which = METimArabianPorvincesRazed
+			#			value = 10
+			#		}
+			#	}
 				mercantilism = 20
 			}
 		}
@@ -767,6 +801,9 @@ Timurid_horde_path_5 = {
 			ME_add_years_of_trade_income = { years = 5 }
 			custom_tooltip = " "
 			custom_tooltip = me_tim_unlocks_mercantilism_decision
+			hidden_effect = {
+				set_country_flag = has_razed_at_least_10_arabian_provinces
+			}
 		}
 	}
 
@@ -840,7 +877,7 @@ Timurid_horde_path_5 = {
 					}
 					add_or_upgrade_fort_building = yes
 				}
-				4457 = {
+				1331 = {
 					every_trade_node_member_province = {
 						limit = {
 							province_has_center_of_trade_of_level = 1

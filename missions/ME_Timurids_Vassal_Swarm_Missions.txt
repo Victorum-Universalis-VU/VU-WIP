@@ -353,10 +353,11 @@ Timurid_main_2_branching = {
 			}
 			num_of_infantry = 60
 			ME_amount_of_mil_ideas = { amount = 2 }
-			custom_trigger_tooltip = {
-				tooltip = me_tim_won_50_battles
-				always = no
-			}
+			num_of_battles_won = { value = 50 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = me_tim_won_50_battles
+		#		always = no
+		#	}
 			OR = {
 				army_professionalism = 0.4
 				army_tradition = 40
@@ -595,7 +596,7 @@ Timurid_main_2_vassal_swarm = {
 					name = me_tim_emperors_guard_2
 					duration = -1
 				}
-				 ME_distribute_development = {
+				ME_distribute_development = {
 					type = manpower
 					amount = 10
 					limit = " NOT = { has_manpower_building_trigger = yes } "
@@ -655,13 +656,14 @@ Timurid_main_2_centralized_army = {
 		trigger = {
 			num_of_infantry = 60
 			ME_amount_of_mil_ideas = { amount = 2 }
-			custom_trigger_tooltip = {
-				tooltip = me_tim_won_50_battles
-				check_variable = {
-					which = ME_tim_emperors_guard_counter
-					value = 50
-				}
-			}
+			num_of_battles_won = { value = 50 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = me_tim_won_50_battles
+		#		check_variable = {
+		#			which = ME_tim_emperors_guard_counter
+		#			value = 50
+		#		}
+		#	}
 			OR = {
 				army_professionalism = 0.4
 				army_tradition = 40
@@ -1836,7 +1838,7 @@ Timurid_vassal_swarm_4 = {
 		position = 20
 		trigger = {
 			OR = {
-				custom_trigger_tooltip = {
+				custom_trigger_tooltip = { 
 					tooltip = me_tim_culture_converted_30_provinces
 					check_variable = {
 						which = METimCultureConversion

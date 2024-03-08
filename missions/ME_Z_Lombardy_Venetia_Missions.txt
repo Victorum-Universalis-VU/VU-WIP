@@ -28,7 +28,7 @@ LombardyVenetia_missions_1 = {
 	}
 	has_country_shield = yes
 
-	lvn_unification_northern_italy = {
+	lvn_unification_northern_italy = { #vsc seems to think it isn't localised but it is afaik.
 		icon = up_the_adige
 		required_missions = {
 			lvn_united_crowns

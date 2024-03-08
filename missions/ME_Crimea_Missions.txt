@@ -777,7 +777,8 @@ crimean_missions_column_5 = {
 		required_missions = { crimean_mission_11 }
 		position = 5
 		trigger = {
-			check_variable = { which = num_converted_religion value = 15 }
+			num_of_provinces_converted = { value = 15 }
+		#	check_variable = { which = num_converted_religion value = 15 }
 		}
 		effect = {
 			add_prestige = 25

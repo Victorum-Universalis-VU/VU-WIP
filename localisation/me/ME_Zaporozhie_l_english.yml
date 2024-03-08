@@ -160,9 +160,9 @@ l_english:
  ZAZ_rus_war_8_desc: "We have clawed our way from the bottom and now it is time to reap the rewardss."
  ZAZ_rus_war_9_title: "Invade the Steppes"
  ZAZ_rus_war_9_desc: "Our neighbors to the East simply more tribes in need to order."
- ZAZ_rus_tur: ""
+ #ZAZ_rus_tur: ""
  ZAZ_rus_tur_title: "Rival [TUR.GetName]"
- ZAZ_rus_tur_dec: "The Turks have long been a thorn in our side for too long!"
+ ZAZ_rus_tur_desc: "The Turks have long been a thorn in our side for too long!"
  ZAZ_rus_ortho_title: "The Patriarch"
  ZAZ_rus_ortho_desc: "The centralization of the our faith is weak and subject to outside influence. We should bring it under control."
   

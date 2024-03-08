@@ -35,7 +35,7 @@ TIM_crisis_missions_1 = {
 			custom_tooltip = me_tim_5_fall_timurid
 			hidden_effect = {
 				add_disaster_progress = {
-					disaster = fall_of_the_timurid_empire
+					disaster = fall_of_the_timurid_empire #disaster missing ?
 					value = -5
 				}
 			}
@@ -89,7 +89,7 @@ TIM_crisis_missions_1 = {
 			custom_tooltip = me_tim_5_fall_timurid
 			hidden_effect = {
 				add_disaster_progress = {
-					disaster = fall_of_the_timurid_empire
+					disaster = fall_of_the_timurid_empire #Disaster missing ?
 					value = -5
 				}
 			}
@@ -276,11 +276,12 @@ TIM_crisis_missions_2 = {
 					limit = {
 						has_commanding_three_star = yes
 					}
+					add_ruler_modifier = {
+						name = me_tim_returning_of_timurs_advisors
+						duration = -1
+					}
 				}
-				add_ruler_modifier = {
-					name = me_tim_returning_of_timurs_advisors
-					duration = -1
-				}
+				
 			}
 		}
 	}
@@ -318,7 +319,7 @@ TIM_crisis_missions_2 = {
 			custom_tooltip = me_tim_10_fall_timurid
 			hidden_effect = {
 				add_disaster_progress = {
-					disaster = fall_of_the_timurid_empire
+					disaster = fall_of_the_timurid_empire #Disaster missing ?
 					value = -10
 				}
 			}
@@ -479,7 +480,7 @@ TIM_crisis_missions_3 = {
 				custom_tooltip = me_tim_15_fall_timurid
 				hidden_effect = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -15
 					}
 				}
@@ -501,7 +502,7 @@ TIM_crisis_missions_3 = {
 				}
 				else = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -15
 					}
 				}
@@ -537,7 +538,7 @@ TIM_crisis_missions_3 = {
 				custom_tooltip = me_tim_5_fall_timurid
 				hidden_effect = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -5
 					}
 				}
@@ -547,13 +548,13 @@ TIM_crisis_missions_3 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_country_flag = me_tim_succession_crisis
+						has_country_flag = me_tim_succession_crisis #Flag not set ?
 					}
 					add_stability = 1
 				}
 				else = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -5
 					}
 				}
@@ -578,7 +579,7 @@ TIM_crisis_missions_3 = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = me_tim_not_in_disaster
-				NOT = { has_country_flag = me_tim_succession_crisis }
+				NOT = { has_country_flag = me_tim_succession_crisis } #Flag not set ?
 			}
 			
 			custom_trigger_tooltip = {
@@ -650,7 +651,7 @@ TIM_crisis_missions_4 = {
 			custom_tooltip = me_tim_15_fall_timurid
 			hidden_effect = {
 				add_disaster_progress = {
-					disaster = fall_of_the_timurid_empire
+					disaster = fall_of_the_timurid_empire #Disaster missing ?
 					value = -15
 				}
 			}
@@ -794,7 +795,7 @@ TIM_crisis_missions_4 = {
 				custom_tooltip = me_tim_20_fall_timurid
 				hidden_effect = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -20
 					}
 				}
@@ -812,7 +813,7 @@ TIM_crisis_missions_4 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_country_flag = me_tim_succession_crisis
+						has_country_flag = me_tim_succession_crisis #flag missing ?
 					}
 					change_adm = 1
 					change_dip = 1
@@ -820,7 +821,7 @@ TIM_crisis_missions_4 = {
 				}
 				else = {
 					add_disaster_progress = {
-						disaster = fall_of_the_timurid_empire
+						disaster = fall_of_the_timurid_empire #Disaster missing ?
 						value = -20
 					}
 				}
@@ -939,13 +940,11 @@ TIM_crisis_missions_5 = {
 	}
 }
 
-TIM_crisis_missions_ai = {
+TIM_crisis_missions_ai = { #Do we really need that ?
 	slot = 15
 	generic = no
-	ai = yes
 	potential = {
 		tag = TIM
-		#always = no
 		ai = yes
 		NOT = { has_country_flag = me_tim_vassal_path }
 		NOT = { has_country_flag = me_tim_mughal_path }
@@ -975,5 +974,4 @@ TIM_crisis_missions_ai = {
 			
 		}
 	}
-
 }
