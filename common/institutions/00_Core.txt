@@ -137,7 +137,7 @@ feudalism = {
 			}
 			AND = {
 				culture = al_misr_arabic
-				#NOT = { area = libyan_desert_area }  # VU; al_wahat_area
+				#NOT = { area = libyan_desert_area }  # VU - Was al_wahat_area
 				NOT = { area = cyrenaica_area }
 			}
 			AND = {

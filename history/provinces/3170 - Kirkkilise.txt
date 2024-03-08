@@ -32,7 +32,7 @@ add_local_autonomy = 10
 
 
 #Histories by docRobert & SF
-1215.6.15 = { owner = LTE controller = LTE add_core = LTE } # Latin territorial lands - By San Felipe
+1215.6.15 = { owner = LAE controller = LAE add_core = LAE } # Latin territorial lands - By San Felipe
 1444.11.11 = { owner = TUR controller = TUR add_core = TUR add_core = BYZ } # Turkish territorial lands - By San Felipe
 1499.1.1 = { culture = turkish religion = sunni }
 1502.1.1 = { remove_core = BYZ }

@@ -31,7 +31,7 @@ is_city = yes
 
 
 #Histories by SF
-1215.6.15 = { owner = LTE controller = LTE add_core = LTE capital = "Tinos" } # Latin territorial lands - By San Felipe
+1215.6.15 = { owner = LAE controller = LAE add_core = LAE capital = "Tinos" } # Latin territorial lands - By San Felipe
 1444.11.11 = { owner = NAX controller = NAX add_core = NAX } # Naxos territorial lands - By San Felipe
 1468.1.1 = { 
 	unrest = 5 

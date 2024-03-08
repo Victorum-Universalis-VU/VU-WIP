@@ -4168,9 +4168,9 @@ vu_generic_can_form_potential_check = {
 	#Special tags we don't want forming anything else. These are top-level empire tags and should not try to switch unless a decision specifically is design to allow it.
 	NOT = { has_reform = celestial_empire }
 	NOT = { tag = CEL }
-	NOT = { tag = LTE }			#Latin Empire, on Dub's request.
+	NOT = { tag = LAE }			#Latin Empire, on Dub's request.
 	NOT = { was_tag = CEL }
-	NOT = { was_tag = LTE }			#Latin Empire, on Dub's request.
+	NOT = { was_tag = LAE }			#Latin Empire, on Dub's request.
 	#Vanilla's list of exlusions from 1.26, when they copied my idea =D
 	NOT = { was_tag = MUG }
 	NOT = { was_tag = TUR }
