@@ -318,7 +318,6 @@ LES = "countries/Lesbos.txt"
 
 #VU - Holy Orders
 KNT = "countries/KnightsTemplar.txt"
-LTE = "countries/LatinEmpire.txt"
 
 #VU - Iberian Peninsula
 AOR = "countries/Andorra.txt"
@@ -1336,6 +1335,11 @@ KYG = "countries/Kyrgyz.txt"                     #Currently in VU
 #TUH = "countries/Tiruchi.txt"
 #RCR = "countries/Recherla.txt"
 #KVE = "countries/Kondaveedu.txt"
+
+###################
+# Recyclable Tags #
+###################
+#LTE = "countries/LatinEmpire.txt"
 
 ###################
 # VU Merged Notes #

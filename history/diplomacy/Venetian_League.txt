@@ -2,7 +2,7 @@
 
 vassal = {
 	first = VEN
-	second = LTE
+	second = LAE
 	start_date = 1204.10.1
 	end_date = 1261.1.1
 }
