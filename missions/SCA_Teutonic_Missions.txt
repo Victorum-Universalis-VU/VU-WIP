@@ -5617,13 +5617,14 @@ teu_crusader_development_mission_slot = {
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU }
 			religion = catholic
-			custom_trigger_tooltip = {
-				tooltip = teu_crusader_convert_provinces_tt
-				check_variable = {
-					which = num_converted_religion
-					value = 75
-				}
-			}
+			num_of_provinces_converted = { value = 75 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = teu_crusader_convert_provinces_tt
+		#		check_variable = {
+		#			which = num_converted_religion
+		#			value = 75
+		#		}
+		#	}
 		}
 		effect = {
 			add_country_modifier = {
@@ -7517,13 +7518,14 @@ teu_dummy_mission_slot_5 = {
 				always = no
 			}
 			religion = catholic
-			custom_trigger_tooltip = {
-				tooltip = teu_crusader_convert_provinces_tt
-				check_variable = {
-					which = num_converted_religion
-					value = 75
-				}
-			}
+			num_of_provinces_converted = { value = 75 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = teu_crusader_convert_provinces_tt
+		#		check_variable = {
+		#			which = num_converted_religion
+		#			value = 75
+		#		}
+		#	}
 		}
 		effect = {
 			custom_tooltip = teu_crsuader_path_effects_tt

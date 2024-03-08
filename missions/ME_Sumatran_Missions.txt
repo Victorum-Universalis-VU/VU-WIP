@@ -651,10 +651,11 @@ SUM_generic_missions_5 = {
 					has_country_flag = force_converted
 				}
 				
-				custom_trigger_tooltip = {
-					tooltip = MSA_converted_3_provinces
-					check_variable = { which = num_converted_religion value = 3 }
-				}
+				num_of_provinces_converted = { value = 3 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = MSA_converted_3_provinces
+			#		check_variable = { which = num_converted_religion value = 3 }
+			#	}
 			}
 		}
 		effect = {

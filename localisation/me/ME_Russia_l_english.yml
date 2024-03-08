@@ -317,7 +317,7 @@
  modify_westernization2.tooltip: "Replace §YPeter's Russia§! with §YWestern Russia§!\nEffective change: \nTechnology Cost: §G-5%§!\nInstitution Spread: §R-20%§!\nInfantry Combat Ability: §G+5%§!"
  modify_westernization3.tooltip: "Replace §YPeter's Russia§! with §YWestern Russia§!\nEffective change: \nTechnology Cost: §G-7.5%§!\nInstitution Spread: §R-20%§!\nInfantry Combat Ability: §G+10%§!"
  MEisolationvswesternization.tooltip: "Have completed either the §GIsolation Path§! or the §RWesternization Path§!"
- RUS_THIS_GAINS_ONE_YEAR_OF_OUR_MANPOWER: "Gain §G[Prev.this_global_manpower_var.GetValue]§! Manpower."
+ #RUS_THIS_GAINS_ONE_YEAR_OF_OUR_MANPOWER: "Gain §G[Prev.this_global_manpower_var.GetValue]§! Manpower."
  allow_polish_estate.tooltip: "Unlocks the §YPolish Estate§!"
  ME_winter_palace.tooltip: "Allows for construction of §YThe Winter Palace§!"
  ME_sabaton_stuff_rus.tooltip: "Kinsmen, brothers, our great power has come to an end\nOur kingdom lies bleeding, the flag is ablaze\nNever, never, never to come back"

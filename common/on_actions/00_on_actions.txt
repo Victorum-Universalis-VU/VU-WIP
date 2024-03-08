@@ -1774,6 +1774,26 @@ on_war_won = {
 			id = flavor_swe.121
 		}
 	}
+
+	#ME stuff
+	if = {
+		limit = {
+			ROOT = {
+				tag = TIM
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+				NOT = { has_country_flag = me_tim_defeated_european_nations_flag }
+			}
+			FROM = {
+				capital_scope = {
+					continent = europe
+				}
+			}
+		}
+		change_variable = {
+			which = me_tim_europe_victory
+			value = 1
+		}
+	}
 }
 
 # country
@@ -6748,6 +6768,14 @@ on_province_religion_converted = {
 	#	}
 	#	change_culture = andalucian
 	#}
+
+	#ME Stuff
+	owner = {
+		change_variable = {
+			which = num_of_times_converted
+			value = 1
+		}
+	}
 }
 
 on_province_religion_changed = {
@@ -8887,6 +8915,21 @@ on_conquest = {
 			add_imperial_influence = 1
 		}
 	}
+
+	#ME Stuff
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = me_tim_horde_path
+			}
+		}
+		owner = {
+			change_variable = {
+				which = METimConquestHorde
+				value = 1
+			}
+		}
+	}
 }
 
 on_country_creation = {
@@ -9343,6 +9386,66 @@ on_raze = {
 	add_permanent_province_modifier = {
 		name = province_razed
 		duration = 7300
+	}
+	if = {
+		limit = {
+			owner = {
+				AND = {
+					tag = TIM
+					has_country_flag = use_missions_expanded_missions_instead_of_paradox
+					NOT = { has_country_flag = has_razed_at_least_10_arabian_provinces }
+				}
+			}
+			region = arabia_region
+		}
+		owner = {
+			change_variable = {
+				which = METimArabianProvincesRazed
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					AND = {
+						OR = {
+							tag = AKK
+							tag = QAR
+							tag = QIZ
+							tag = TRK
+						}
+						NOT = { has_country_flag= ME_has_razed_at_least_300_provinces_flag }
+					}
+					AND = {
+						tag = TIM
+						NOT = { has_country_flag = ME_has_razed_at_least_25_provinces_flag }
+					}
+				}
+				has_country_flag = use_missions_expanded_missions_instead_of_paradox
+			}
+		}
+		owner = {
+			change_variable = {
+				which = num_of_provinces_razed_var
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = me_tim_scourge_of_god_counter
+			}
+			development = 15
+		}
+		owner = {
+			change_variable = {
+				which = METimRazedHighDevProvinces
+				value = 1
+			}
+		}
 	}
 }
 on_concentrate_development = {

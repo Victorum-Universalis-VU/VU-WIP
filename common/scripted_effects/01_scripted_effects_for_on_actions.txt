@@ -2003,6 +2003,12 @@ on_battle_won_country_effect = {
 			}
 		}
 	}
+	#ME Stuff
+	change_variable = {
+		which = num_of_battles_won_var
+		value = 1
+	}
+
 }
 
 on_battle_ended_effect = {
@@ -3295,6 +3301,14 @@ on_adm_development_effect = {
 	#		6 = {}
 	#	}
 	#}
+	#ME_stuff
+	owner = { #We can also use it for our own things. There's probably another way to do that but I was playing around with those stuffs
+		change_variable = {
+			which = num_of_adm_clicks
+			value = 1
+		}
+	}
+
 }
 on_dip_development_effect = {
 	if = {

@@ -44,7 +44,7 @@
 		position = 3
 		trigger = {
 			grown_by_development = 30
-			num_of_battles_won = { amount = 15 }
+			num_of_battles_won = { value = 15 }
 		}
 		effect = {
 			add_prestige_or_monarch_power = { amount = 10 }

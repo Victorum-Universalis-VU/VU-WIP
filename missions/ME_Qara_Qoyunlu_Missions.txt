@@ -1154,13 +1154,14 @@ QAR_missions_4 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = QAR_has_won_at_least_100_battles
-				check_variable = {
-					which = num_of_battles_won_var
-					value = 100
-				}
-			}
+			num_of_battles_won = { value = 100 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = QAR_has_won_at_least_100_battles
+		#		check_variable = {
+		#			which = num_of_battles_won_var
+		#			value = 100
+		#		}
+		#	}
 			#ME_pt_feedback_requested = yes
 			army_tradition = 85
 			if = {

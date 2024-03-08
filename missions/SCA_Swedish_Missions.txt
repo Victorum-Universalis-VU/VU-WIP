@@ -3700,10 +3700,11 @@ swe_religion_mission_slot = {
 							}
 							amount = 10
 						}
-						custom_trigger_tooltip = {
-							tooltip = swe_catholic_defender_of_faith_tt
-							check_variable = { which = num_converted_religion value = 30 }
-						}
+						num_of_provinces_converted = { value = 30 }
+					#	custom_trigger_tooltip = {
+					#		tooltip = swe_catholic_defender_of_faith_tt
+					#		check_variable = { which = num_converted_religion value = 30 }
+					#	}
 					}
 				}
 				AND = {
@@ -3733,10 +3734,11 @@ swe_religion_mission_slot = {
 							}
 							amount = 10
 						}
-						custom_trigger_tooltip = {
-							tooltip = swe_catholic_defender_of_faith_tt
-							check_variable = { which = num_converted_religion value = 30 }
-						}
+						num_of_provinces_converted = { value = 30 }
+					#	custom_trigger_tooltip = {
+					#		tooltip = swe_catholic_defender_of_faith_tt
+					#		check_variable = { which = num_converted_religion value = 30 }
+					#	}
 					}
 				}
 				AND = {
@@ -4047,10 +4049,11 @@ swe_catholic_mission_slot = {
 					}
 					amount = 10
 				}
-				custom_trigger_tooltip = {
-					tooltip = swe_catholic_defender_of_faith_tt
-					check_variable = { which = num_converted_religion value = 30 }
-				}
+				num_of_provinces_converted = { value = 30 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = swe_catholic_defender_of_faith_tt
+			#		check_variable = { which = num_converted_religion value = 30 }
+			#	}
 			}
 		}
 		effect = {

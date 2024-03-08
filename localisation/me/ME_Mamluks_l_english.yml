@@ -390,7 +390,7 @@
  MAM_pharos_of_alexandria_level_3: "The Monument '§YPharos of Alexandria§!' will now also grant the following modifiers at §YMagnificent§! Level:\n    Admiral Cost: §G-50.0%§!\n    Yearly Naval Tradition: §G+1.00§!"
  MAM_distribute_10_10_10_dev_amongst_our_trade_centers: "Distribute §G10§! §YBase Tax§!, §G10§! §YBase Production§! and §G10§! §YBase Manpower§! among our provinces with §YCenters of Trade§!."
  MAM_repaying_loans_gives_lower_inflation: "Repaying §YLoans§! now reduces §YInflation§! by §G-0.10%§!"
- MAM_developed_tax_at_least_25_times: "Developed §YBase Tax§!¤ at least §G25§! Times. (Currently: [Root.num_of_adm_clicks.GetValue].)"
+ ME_developed_tax_at_least_25_times: "Developed §YBase Tax§!¤ at least §G25§! Times. (Currently: [Root.Getnum_of_adm_clicks].)"
  MAM_furthermore_10_recovery_speed: "During the §YMamluks Reforms§! Disaster we will receive:\n    Manpower Recovery Speed: §G+10.0%§!"
  MAM_upgrade: "Append Local Goods Produced: §G+1.00§! onto the '§YGranary of the Mediterranean§!' Modifier."
  MAM_trade_modifier_upgrade_1: "Modify '§YBazaar of the East§!' by:\n    Provincial Trade Power Modifier: §G+5.0%§!\n    Trade Efficiency: §G+5.0%§!"
