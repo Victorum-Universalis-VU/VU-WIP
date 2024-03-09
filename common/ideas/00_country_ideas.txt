@@ -1537,7 +1537,8 @@ DAL_ideas = {
 		core_creation = -0.15
 	}
 }
-#DonBrom
+
+#Originally modified by Don Brom but updated by San Felipe on advice by Actually Prussia. 6/03/2024
 PRU_ideas = {
     start = {
         army_tradition = 0.5
@@ -1545,7 +1546,7 @@ PRU_ideas = {
     }
 
     bonus = {
-        discipline = 0.10
+        discipline = 0.05
     }
 
     trigger = {
@@ -1554,30 +1555,27 @@ PRU_ideas = {
     free = yes        #will be added at load.
 
     teutonic_legacy = {
-        tolerance_own = 3
+        tolerance_own = 1
         stability_cost_modifier = -0.1
     }
     soldier_king = {
-        army_tradition_decay = -0.01
-        monthly_militarized_society = 0.2
+		max_absolutism_effect = 0.5
+        monthly_militarized_society = 0.1
 		monthly_prussian_militarized_society_1 = 0.02
 		monthly_prussian_militarized_society_2 = 0.04
 		monthly_prussian_militarized_society_3 = 0.06
     }
     army_professionalism = {
         land_morale = 0.20
-        morale_damage = 0.15
     }
     noble_cadets = {
-        nobles_loyalty_modifier = 0.10
-        max_absolutism_effect = 0.5
+        army_tradition_decay = -0.01
     }
     goose_step = {
         infantry_power = 0.20
-		global_manpower_modifier = 0.25
     }
     regimental_cantons = {
-        land_forcelimit_modifier = 0.20
+		global_manpower_modifier = 0.25
         global_regiment_recruit_speed = -0.10
     }
     religious_toleration = {

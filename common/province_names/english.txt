@@ -130,7 +130,7 @@
 487 = { "Port Royal" "Port Royal" }
 488 = { "Prince's Bay" "Port of the Prince" }
 489 = { "North West" "Port of Peace" }
-490 = { "The Seibo" "HigÃ¼ey" }
+490 = { "The Seibo" "Higüey" }
 491 = { "Curacao" "Charles Town" }
 492 = { "Rich Port" "St. John" }
 493 = { "Virgin Islands" "Road Town" }
@@ -569,7 +569,7 @@
 657 = { "Agoo" "Saint John" }
 658 = { "Cagayan" "New Segovia" }
 2700 = { "Panay" "Iloilo City" }
-2701 = { "New GuipÃºzcoa" "New Vergara" }
+2701 = { "New Guipúzcoa" "New Vergara" }
 4349 = { "Laguna" "Calamba" }
 4350 = { "Western Mindoro" "Caminawit" }
 4351 = { "Western Negros" "Bacolod City" }
@@ -577,7 +577,7 @@
 4353 = { "Leyte" "Carigara" }
 4354 = { "Zamboanga" "Zamboanga City" }
 7166 = { "Northern Agusan" "Butuan" }
-7167 = { "Eastern Misamis" "CagayÃ¡n" }
+7167 = { "Eastern Misamis" "Cagayán" }
 7175 = { "Buayan" "Alagao" }
 7184 = { "Guimaras Island" "Buenavista" }
 8270 = { "Abra" "Bangued" }
