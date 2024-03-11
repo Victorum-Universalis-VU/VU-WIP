@@ -497,6 +497,8 @@ on_startup = {
 			infantry = capital
 			infantry = capital
 			infantry = capital
+			infantry = capital
+			infantry = capital
 			cavalry = capital
 			cavalry = capital
 		}
