@@ -28,7 +28,7 @@ estate_nobles_land_rights = {
 	}
 
 	benefits = {
-		governing_capacity = 100
+		governing_capacity = 200
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
