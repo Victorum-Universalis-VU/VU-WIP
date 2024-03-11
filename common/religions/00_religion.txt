@@ -336,6 +336,73 @@ christian = {
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		
+		on_convert = {
+			change_religion = anglican
+			add_prestige = -100
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = revocation_of_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+	
+			if = {
+				limit = {
+					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = anglican
+								is_reformation_center = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = anglican
+							}
+						}
+						change_religion = anglican
+						add_reform_center = anglican
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = anglican
+								is_reformation_center = yes
+							}
+							amount = 5
+						}
+					}
+				}
+				add_years_of_income = 5.0
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							can_have_center_of_reformation_trigger = {
+								RELIGION = anglican
+							}
+						}
+						change_religion = anglican
+						add_reform_center = anglican
+					}
+				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
+			}
+		}
+		
 		aspects = {
 			divorce_consort_aspect
 			gain_consort_aspect
@@ -348,6 +415,7 @@ christian = {
 			icons_of_the_church_aspect
 			spread_the_book_of_common_prayer
 		}
+		
 		aspects_name = ANGLICAN_ASPECTS
 		
 		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
@@ -415,8 +483,6 @@ christian = {
 		}
 
 		aspects_name = PROTESTANT_ASPECTS
-		
-		hre_heretic_religion = yes
 
 		on_convert = {
 			change_religion = hussite
