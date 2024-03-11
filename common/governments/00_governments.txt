@@ -448,7 +448,7 @@ monarchy = {
 				farba_system_reform
 				inca_mountain_farms
 				renaissance_forts_reform
-				#EE Reform
+				#ME Reform
 				ME_caliphate_reform_sunni
 				ME_caliphate_reform_sunni_andalusia
 				ME_caliphate_reform_sunni_arabian
@@ -1512,7 +1512,7 @@ republic = {
 				#1.36
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
-				#EE Reforms
+				#ME Reforms
 				citizen_soldiers_reform
 				institutionalized_repbulican_army_reform
 				#VU Reforms
@@ -1595,7 +1595,7 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
-				#EE REFORMS
+				#ME REFORMS
 				federal_governorship_reform
 				#VU Reforms
 				mil_secret_council
@@ -1635,7 +1635,7 @@ republic = {
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
 				pirate_representation_reform
-				#EE reforms
+				#ME reforms
 				electoral_college_reform
 				direct_majority_rule_reform
 				#VU Reforms 
@@ -1662,7 +1662,7 @@ republic = {
 				#1.35
 				peters_government_reform
 				#End of 1.35
-				#EE Reforms
+				#ME Reforms
 				become_rev_empire_reform
 				vice_presidential_system_reform
 				legislative_office_selection_reform

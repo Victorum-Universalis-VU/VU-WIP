@@ -550,7 +550,7 @@ estate_nobles = {
 		estate_noble_baron_titles
 		estate_noble_absolute_taxation
 		#ZZZ_new_privs
-		#EE Privileges:
+		#ME Privileges:
 		ME_estate_nobles_TIM_influencial_military
 		ME_estate_nobles_TIM_disloyal_princes
 		ME_estate_nobles_TIM_eternal_regency

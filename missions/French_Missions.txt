@@ -1,4 +1,4 @@
-#VU updated for 1.35 by San Felipe #Amended by Altan for EE-VU
+#VU updated for 1.35 by San Felipe #Amended by Altan for MEVU
 french_missions_north = {
 	slot = 1
 	generic = no

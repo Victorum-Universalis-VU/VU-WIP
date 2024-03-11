@@ -193,7 +193,7 @@ technology = {  # Civil Service
 		market_production = 0.2
 	}
 
-		production_efficiency = 0.01
+	production_efficiency = 0.01
 }
 
 technology = { # Constable
@@ -342,7 +342,7 @@ technology = { #National Ideas
 	}
 
 	allowed_idea_groups = 3
-	production_efficiency	 =	0.03
+	production_efficiency =	0.03
 }
 
 technology = { #Workshop
@@ -413,7 +413,7 @@ technology = { #The Scythe
 	}
 	
 	#The Scythe
-	production_efficiency 	=	0.02
+	production_efficiency =	0.02
 
 
 }
@@ -494,7 +494,7 @@ technology = { #Improved Drainage
 	}
 	
 	#Improved Drainage
-	production_efficiency 	=	0.03
+	production_efficiency = 0.03
 }
 
 technology = { #Scientific Experimentation
@@ -551,7 +551,7 @@ technology = { #Metallurgy
 	}
 	
 	mills = yes
-	production_efficiency 	=	0.035
+	production_efficiency =	0.035
 
 
 }
@@ -653,7 +653,7 @@ technology = { #Land Clearance
 	}
 	
 	#Land Clearance
-	production_efficiency 	=	0.04
+	production_efficiency =	0.04
 }
 
 technology = { #The Constitution
@@ -744,7 +744,7 @@ technology = { #Improved Production
 	}
 	
 	#Improved Farm Animals
-	production_efficiency 	=	0.045
+	production_efficiency =	0.045
     furnace = yes
 }
 
@@ -767,7 +767,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	9
+	allowed_idea_groups = 9
 }
 
 technology = { #Modern Bureaucracy
@@ -787,7 +787,7 @@ technology = { #Modern Bureaucracy
 		enlightenment = 0.5
 	}
 	governing_capacity = 1000
-	production_efficiency 	= 0.01
+	production_efficiency = 0.01
 	city_hall = yes
 }
 
@@ -811,7 +811,7 @@ technology = { #Rotherham Plough
 	}
 	
 	#Rotherham Plough
-	production_efficiency 	=	0.050
+	production_efficiency =	0.050
 	administrative_efficiency = 0.15
 	development_cost_modifier = -0.20
 	governing_capacity = 500	#Dev doubled but cap gains not?
@@ -837,7 +837,7 @@ technology = { #Rights of Man
 	}
 
 	#Watt Steam Engine
-	production_efficiency 	=	0.055
+	production_efficiency =	0.055
 	
 	#Grand Cathedral Building
 	grand_cathedral = yes
@@ -851,7 +851,7 @@ technology = { #Advanced Production
 	#Improved Draft Animals
     #Advanced Production
     #Interchangeable Parts
-	production_efficiency 	=	0.060
+	production_efficiency =	0.060
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.5
@@ -965,7 +965,7 @@ technology = {
 		industrialization = 1
 		imperialism = 1
 	}
-	production_efficiency  = 0.07
+	production_efficiency = 0.07
 	
 	#Railway System Building
 	railway_system = yes
@@ -1047,7 +1047,7 @@ technology = {
 	}
 
 	#Repleceable Parts
-	production_efficiency 	=	0.075
+	production_efficiency =	0.075
 
 	pump_house = yes
 }
@@ -1073,7 +1073,7 @@ technology = {
 	}
 
 	#Assembly Line
-	production_efficiency 	=	0.08
+	production_efficiency =	0.08
 
 }
 
@@ -1123,6 +1123,6 @@ technology = {
 	}
 
 	#Electrification
-	production_efficiency 	=	0.085
+	production_efficiency =	0.085
 	development_cost_modifier = -0.25
 }

@@ -181,7 +181,7 @@ guiTypes = {
 		    		quadTextureSprite = "GFX_unit_types_strip_nontransp"
 		    		scale= 0.7
 		    		shortcut = "v"
-		    		frame = 7
+		    		frame = 8
 		    	}		
 		    	instantTextBoxType = {
 		    		name = "unit4_count"
