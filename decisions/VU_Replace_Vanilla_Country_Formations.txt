@@ -1,4 +1,4 @@
-#VU updated to 1.35 by San Felipe # Amended by Altan for EE-VU
+#VU updated to 1.35 by San Felipe # Amended by Altan for MEVU
 country_decisions = {
 
 #Moving the 1001 different files into this one, mostly for my sanity, easier ctrl-f, and because I'm slowly overhauling them all anyway to a hopefully more dynamic system with fewer assumptions, limitations, and more dynamic possibilities. Playing checkers to get that one required province to form a country

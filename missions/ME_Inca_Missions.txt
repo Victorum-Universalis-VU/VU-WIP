@@ -2139,7 +2139,7 @@ inca_missions_3 = {
 		required_missions = { inca_an_eastern_coast inca_colonize_guayra_and_minas_gerais inca_a_northern_coast }
 		position = 16
 		provinces_to_highlight = {
-			region = brazil_region
+			colonial_region = colonial_brazil
 			has_discovered = ROOT
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -2148,7 +2148,7 @@ inca_missions_3 = {
 			ROOT = {
 				num_of_owned_provinces_with = {
 					value = 70
-					region = brazil_region
+					colonial_region = colonial_brazil
 					is_city = yes
 				}
 			}
@@ -2159,7 +2159,7 @@ inca_missions_3 = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 70
-				region = brazil_region
+				colonial_region = colonial_brazil
 				is_city = yes
 			}
 		}
@@ -2898,7 +2898,7 @@ inca_missions_5_2 = {
 					limit = {
 						trade_goods = livestock
 					}
-					change_trade_goods = wool
+					change_trade_goods = alpaca_wool
 				}
 			}
 			every_owned_province = {
@@ -2919,7 +2919,7 @@ inca_missions_5_2 = {
 		position = 10
 		provinces_to_highlight = {
 			owned_by = ROOT
-			trade_goods = wool
+			trade_goods = alpaca_wool
 			OR = {
 				NOT = { base_production = 5 }
 				NOT = { num_of_times_improved = 2 }
@@ -2928,9 +2928,9 @@ inca_missions_5_2 = {
 		trigger = {
 			all_owned_province = {
 				OR = {
-					NOT = { trade_goods = wool }
+					NOT = { trade_goods = alpaca_wool }
 					AND = {
-						trade_goods = wool
+						trade_goods = alpaca_wool
 						base_production = 5
 						num_of_times_improved = 2
 					}
@@ -2939,7 +2939,7 @@ inca_missions_5_2 = {
 		}
 		effect = {
 			change_price = {
-				trade_goods = wool
+				trade_goods = alpaca_wool
 				key = inca_improved_wool_farming_price
 				value = 0.1
 				duration = 10950

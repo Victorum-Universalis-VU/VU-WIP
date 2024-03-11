@@ -468,9 +468,6 @@ technology = {
 	infantry_shock = 0.30
 	infantry_fire = 0.20
 
-
-
-
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry	
 	enable = central_american_horsemen
@@ -644,8 +641,8 @@ technology = {
 	}
 	
 	#Matchlock Musket
-	infantry_shock		= 	0.20
-	cavalry_fire		= 	0.5
+	infantry_shock = 0.20
+	cavalry_fire = 0.5
 
 
 	weapons = yes
@@ -809,8 +806,6 @@ technology = {
 	land_morale = 1.0
 	military_tactics = 0.25
 
-
-
 	enable = dutch_maurician
 	enable = english_maurician
 	enable = french_close_shot
@@ -842,7 +837,6 @@ technology = {
 	artillery_shock = 0.1
 	artillery_fire = 1.0	
 
-	
 	enable = french_charge
 	enable = irish_charge
 	enable = irish_charge_regiment
@@ -898,7 +892,6 @@ technology = {
 	cavalry_shock = 0.5
 	maneuver_value = 0.25
 
-
 	enable = asian_musketeer
 	enable = french_gallop
 	enable = ha_xoloti
@@ -936,8 +929,6 @@ technology = {
 	#Gustavian Infantry
 	military_tactics = 0.25
 	supply_limit = 0.5
-
-
 
 	enable = austrian_tercio
 	enable = british_snapshot
@@ -1053,8 +1044,6 @@ technology = {
 	artillery_shock = 0.1
 	artillery_fire = 2.0
 	
-
-
 	enable = polish_winged_hussar	
 	enable = muscovite_cossack
 	
@@ -1298,7 +1287,6 @@ technology = {
 	maneuver_value = 0.25
 	
 	enable = licorne_gun_howitzer
-
 	enable = durrani_dragoon
 	enable = eastern_skirmisher
 	enable = eastern_uhlan 
@@ -1489,9 +1477,9 @@ technology = {
 	}
 	
 	#Field Howitzer
-	military_tactics	=	0.25
-	artillery_shock		=	0.2
-	artillery_fire		=	1.0
+	military_tactics = 0.25
+	artillery_shock	= 0.2
+	artillery_fire = 1.0
 
 	enable = field_howitzer	
 }
