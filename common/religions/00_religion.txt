@@ -699,7 +699,7 @@ christian = {
 		}
 
 		province = {
-			development_cost = -0.05
+			local_development_cost = -0.05
 			local_unrest = -1
 		}
 
