@@ -788,7 +788,7 @@ mam_missions_2 = {
 							}
 						}
 					}
-					NOT = { adm_tech = 22 }
+					NOT = { adm_tech = 39 }
 				}
 				country_event = { id = flavor_mam.115 }
 				custom_tooltip = flavor_mam.115_tt
@@ -1354,7 +1354,7 @@ mam_missions_3 = {
 					NOT = { has_dlc = "Rule Britannia" }
 					has_estate = estate_church
 				}
-				adm_tech = 7
+				adm_tech = 24
 				AND = {
 					estate_loyalty = {
 						estate = estate_church 
@@ -1857,7 +1857,7 @@ mam_missions_4 = {
 				}
 			}
 			OR = {
-				adm_tech = 12
+				adm_tech = 29
 				NOT = { average_autonomy_above_min = 5 }
 			}
 			if = {

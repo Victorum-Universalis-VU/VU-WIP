@@ -38,8 +38,12 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		kill_ruler = yes
-		
+		if ={ #Uzun Hasan shouldn't die if he already is the ruler.
+			limit = {
+				NOT = { has_ruler = "Uzun Hasan" }
+			}
+			kill_ruler = yes
+		}	
 		if = {
 			limit = {
 				ai = no

@@ -305,7 +305,7 @@ innovativeness_ideas = {
 	bonus = {
 		advisor_cost = -0.25
 	}
-	patron_of_art  = {
+	patron_of_art = {
 		prestige_decay = -0.01
 	}
 	empiricism = {
@@ -495,7 +495,11 @@ spy_ideas = {
 	ai_will_do = {
 		factor = 0.75
 		modifier = {
-			factor = 1.1
+			factor = 2
+			personality = ai_diplomat 
+		}
+		modifier = {
+			factor = 1
 			personality = ai_militarist 
 		}
 		modifier = {
@@ -529,7 +533,7 @@ diplomatic_ideas = {
 		improve_relation_modifier = 0.25
 		diplomats = 1
 	}
-	experienced_diplomats  = {
+	experienced_diplomats = {
 		diplomatic_reputation = 2
 	}
 	flexible_negotiation = {
@@ -1394,7 +1398,7 @@ expansion_ideas = {
 	faster_colonists = {
 		global_colonial_growth = 20
 	}
-	vice_roys  = {
+	vice_roys = {
 		global_tariffs = 0.10
  		envoy_travel_time = -0.20
  	}
@@ -1402,11 +1406,11 @@ expansion_ideas = {
 		diplomats = 1
 		reduced_liberty_desire_on_other_continent = 5
 	}
-	general_colonization_law  = {
+	general_colonization_law = {
 		colonists = 1
 		colonist_placement_chance = 0.05
 	}
-	competetive_merchants  = {
+	competetive_merchants = {
 		global_trade_power = 0.2
 	}
 

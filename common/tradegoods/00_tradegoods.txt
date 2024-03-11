@@ -6450,7 +6450,7 @@ jewellery = {
 	}
 }
 
-maple_syrup = {
+maple_syrup = { #73
 	is_valuable = yes
 	color = { 0.91 0.45 0.32 }
 	modifier = {
@@ -6537,7 +6537,7 @@ maple_syrup = {
 }
 
 
-potato = { 
+potato = { #74
 	is_valuable = yes
 	color = { 0.60 0.40 0.40 }
 	modifier = {
@@ -6668,7 +6668,7 @@ potato = {
 	}
 }
 
-steam_engine = {
+steam_engine = { #75
 	is_valuable = yes
 	color = { 0.62 0.99 0.22 }
 	is_latent = yes
@@ -6684,7 +6684,7 @@ steam_engine = {
 }
 
 
-zinc = {
+zinc = { #76
 	is_valuable = yes
 	color = { 0.74 0.72 0.42 }
 	modifier = {
@@ -6789,7 +6789,7 @@ zinc = {
 }
 
 
-optics = {
+optics = { #77
 	is_valuable = yes
 	color = { 0.13 0.26 0.71 }
 	is_latent = yes
@@ -6804,8 +6804,20 @@ optics = {
 	}
 }
 
+brass = { #78
+	color = { 0.67 0.88 0.69 }
+	modifier = {
+		advisor_cost = -0.10
+	}
+	province = {
+		local_monthly_devastation = -0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
 
-fur_clothing = {
+fur_clothing = { #79
 	is_valuable = yes
 	color = { 0.33 0.68 0.44 }
 	is_latent = yes
@@ -6820,20 +6832,7 @@ fur_clothing = {
 	}
 }
 
-brass = {
-	color = { 0.67 0.88 0.69 }
-	modifier = {
-		advisor_cost = -0.10
-	}
-	province = {
-		local_monthly_devastation = -0.1
-	}
-	chance = {
-		factor = 0
-	}
-}
-
-cannon = {
+cannon = { #80
 	is_valuable = yes
 	color = { 0.1 0.1 0.28 }
 	is_latent = yes
@@ -6848,7 +6847,7 @@ cannon = {
 	}
 }
 
-tomato = { 
+tomato = { #81
 	is_valuable = yes
 	color = { 1.0 0.4 0.1 }
 	modifier = {
@@ -6952,7 +6951,7 @@ tomato = {
 	}
 }
 
-champagne = {
+champagne = { #82
 	is_valuable = yes
 	color = { 0.66 0.12 0.29 }
 	modifier = { 
@@ -6971,7 +6970,7 @@ champagne = {
 }
 
 #VU addition by San Felipe & Jay (this was copied by TGE)
-alpaca_wool = {
+alpaca_wool = { #83
 	color = { 0.85 0.82 0.85  }
 	modifier = {
 		infantry_cost = -0.15
@@ -7051,7 +7050,7 @@ alpaca_wool = {
 }
 
 
-indigo = {
+indigo = { #84
 	is_valuable = yes
 	color = { 0.18 0.11 0.71}
 	modifier = {
@@ -7116,7 +7115,7 @@ indigo = {
 	}
 }
 
-sea_turtle = {
+sea_turtle = { #85
 	is_valuable = yes
 	color = { 0.55 0.85 0.97 }
 	modifier = {
@@ -7235,7 +7234,7 @@ sea_turtle = {
 	}
 }
 
-uniforms = {
+uniforms = { #86
 	is_valuable = yes
 	color = { 0.58 0.45 0.31 }
 	is_latent = yes
@@ -7250,7 +7249,7 @@ uniforms = {
 	}
 }
 
-marble_sculpture = {
+marble_sculpture = { #87
 	is_valuable = yes
 	color = { 0.100 0.149 0.237 }
 	is_latent = yes
@@ -7266,7 +7265,7 @@ marble_sculpture = {
 }
 
 
-cigars = {
+cigars = { #88
 	is_valuable = yes
 	color = { 0.92 0.70 0.54 }
 	is_latent = yes
@@ -7282,7 +7281,7 @@ cigars = {
 }
 
 
-chocolate = {
+chocolate = { #89
 	is_valuable = yes
 	color = { 0.21 0.1 0.0 }
 	is_latent = yes
@@ -7297,7 +7296,7 @@ chocolate = {
 	}
 }
 
-jade_sculptures = {
+jade_sculptures = { #90
 	is_valuable = yes
 	color = { 0.138 0.224 0.198 }
 	is_latent = yes
@@ -7313,7 +7312,7 @@ jade_sculptures = {
 }
 
 
-millet = {
+millet = { #91
 	is_valuable = yes
 	color = { 0.200 0.140 0.110 }
 	modifier = {
@@ -7328,7 +7327,7 @@ millet = {
 }
 
 
-exotic_fur = {
+exotic_fur = { #92
 	is_valuable = yes
 	color = { 0.200 0.150 0.80 }
 	modifier = {
@@ -7355,7 +7354,7 @@ exotic_fur = {
 	}
 }
 
-String_Instruments = {
+String_Instruments = { #93
 	is_valuable = yes
 	color = { 0.250 0.200 0.160 }
 	is_latent = yes
@@ -7371,7 +7370,7 @@ String_Instruments = {
 }
 
 #VU addition by San Felipe
-sweet_confectioneries = {
+sweet_confectioneries = { #94
 	color = { 1.0 0.73 0.95 }
 	modifier = {
 		culture_conversion_cost = -0.15 #changed because of unrest reduction modifier bloat - Q
@@ -7389,7 +7388,7 @@ sweet_confectioneries = {
 }
 
 #VU addition by San Felipe
-bison_hides = {
+bison_hides = { #95
 #Modified distribution to better reflect the distribution of large bison herds before the 19th century -NK. 
 	color = { 0.39 0.18 0 }
 	modifier = {
@@ -7497,7 +7496,7 @@ bison_hides = {
 }
 
 #VU addition by San Felipe (this was copied by TGE)
-llama = {
+llama = { #96
 	is_valuable = yes
 	color = { 0.85 0.82 0.85 }
 	modifier = {
@@ -7587,7 +7586,7 @@ llama = {
 }
 
 #VU addition by San Felipe
-agave = {
+agave = { #97
 #Modified the distribution of agave to have it grown in the warm climates it grows in bulk today -NK.
 	color = { 0.37 0.54 0.44 }
 	modifier = {
@@ -7696,7 +7695,7 @@ agave = {
 	}
 }
 
-canned_goods = {
+canned_goods = { #98
 	color = { 0.144 0.107 0.53 }
 	modifier = {
 		development_cost = -0.1 # Changed to be in line with in game tooltip
@@ -7709,7 +7708,7 @@ canned_goods = {
 	}
 }
 
-copra = {
+copra = { #99
 	color = { 0.161 0.137 0.101 }
 	modifier = {
 		development_cost = -0.05
@@ -7807,7 +7806,7 @@ copra = {
 	}
 }
 
-vegetables = {
+vegetables = { #100
 #Added terrains to various sections to make some more prevelant than others -NK.
 	color = { 0.57 0.85 0.28 }
 	modifier = {
@@ -7932,7 +7931,7 @@ vegetables = {
 }
 
 #Added in Eastern Europe expansion By RobertK
-vodka = { #Limited to Russia and Eastern Europe
+vodka = { #101 - Limited to Russia and Eastern Europe
 	color = { 0.50 0.87 0.95 }
 	
 	modifier = {
@@ -8007,7 +8006,7 @@ vodka = { #Limited to Russia and Eastern Europe
 	}
 }
 
-diamonds = {
+diamonds = { #102
 #Did a big overhaul on diamonds. Whoever coded before seems to have been trying to code diamonds, gold, pearls, and 
 #gems, all in one entry. I've modified it try to capture the locations of diamond deposits in the real world -NK.
 	color = { 0.96 0.78 0.78 }
@@ -8116,7 +8115,7 @@ diamonds = {
 	}
 }
 
-pottery = {
+pottery = { #103
 	color = { 0.148 0.98 0.89 }
 	modifier = {
 		monthly_splendor = 1
@@ -8129,7 +8128,7 @@ pottery = {
 	}
 }
 
-lace = {
+lace = { #104
 	color = { 0.143 0.224 0.190 }
 	modifier = {
 		caravan_power = 0.05
@@ -8142,7 +8141,7 @@ lace = {
 	}
 }
 
-sake = {
+sake = { #105
 	color = { 0.222 0.211 0.1 }
 	modifier = {
 		harsh_treatment_cost = -0.1
@@ -8190,7 +8189,7 @@ sake = {
 	}
 }
 
-bamboo = {
+bamboo = { #106
 	color = { 0.147 0.169 0.18 }
 	modifier = {
 		build_cost = -0.05
@@ -8226,7 +8225,7 @@ bamboo = {
 	}
 }
 
-whiskey = {
+whiskey = { #107
 	color = { 0.191 0.135 0.4 }
 	modifier = {
 		promote_culture_cost = -0.15
@@ -8248,7 +8247,7 @@ whiskey = {
 	}
 }
 
-silkworm = {
+silkworm = { #108
 	color = { 0.231 0.240 0.220 }
 	modifier = {
 		infantry_cost = -0.025
@@ -8262,7 +8261,7 @@ silkworm = {
 	}
 }
 
-bronze = {
+bronze = { #109
 	color = { 0.82 0.41 0.06 }
 	modifier = {
 		artillery_power = 0.10
@@ -8273,7 +8272,7 @@ bronze = {
 	chance = { factor = 0 }
 }
 
-oil = {
+oil = { #110
 	color = { 0.71 0.08 0.98 }
 	is_latent = yes
 	is_valuable = yes
@@ -8305,7 +8304,7 @@ oil = {
 	}
 }
 
-rubber = {
+rubber = { #111
 	color = { 0.63 0.98 0.1 }
 	is_latent = yes
 	is_valuable = yes
@@ -8337,7 +8336,7 @@ rubber = {
 	}
 }
 
-cider = {
+cider = { #112
 	color = { 0.159 0.48 0.25 }
 	modifier = {
 		land_morale = 0.05
@@ -8408,7 +8407,7 @@ cider = {
 	}
 }
 
-books = {
+books = { #113
 	color = { 0.9 0.86 0.71 }
 	modifier = {
 		adm_tech_cost_modifier = -0.05
@@ -8433,7 +8432,7 @@ books = {
 	}
 }
 
-lacquerware = {
+lacquerware = { #114
 	color = { 0.69 0.7 0.7 }
 	modifier = {
 		 all_estate_possible_privileges = 1
@@ -8471,7 +8470,7 @@ lacquerware = {
 	}
 }
 
-fruit = {
+fruit = { #115
 #Added more terrain to make some more prevalent, with the banana production in Central America in mind -NK.
 	color = { 0.13 0.63 0.09 }
 	modifier = {
@@ -8602,7 +8601,7 @@ fruit = {
 # Please change things in common/prices/00_prices.txt and localisation/vu/vu_trade_goods_l_english.yml if you change the price
 # Set is_latent = yes or is_valuable = yes
 
-sand = {
+sand = { #116
 	color = { 0.8 0.8 0.71 }
 	modifier = {
 		#naval_attrition = -0.1
@@ -8620,7 +8619,7 @@ sand = {
 	}
 }
 
-clay = {
+clay = { #117
 	color = { 0.8 0.75 0.75 }
 	modifier = {
 		#naval_attrition = -0.1
@@ -8638,7 +8637,7 @@ clay = {
 	}
 }
 
-steel = {
+steel = { #118
 	is_valuable = yes
 	color = { 0.8 0.55 0.75 }
 	is_latent = yes
@@ -8655,7 +8654,7 @@ steel = {
 	}
 }
 
-regular_clothes = {
+regular_clothes = { #119
 	is_valuable = yes
 	color = { 0.8 0.65 0.75 }
 	is_latent = yes
@@ -8671,7 +8670,7 @@ regular_clothes = {
 	}
 }
 
-luxury_clothes = {
+luxury_clothes = { #120
 	is_valuable = yes
 	color = { 0.8 0.60 0.75 }
 	is_latent = yes
@@ -8687,7 +8686,7 @@ luxury_clothes = {
 	}
 }
 
-accoutrements = {
+accoutrements = { #121
 	is_valuable = yes
 	color = { 0.5 0.65 0.75 }
 	is_latent = yes
@@ -8703,7 +8702,7 @@ accoutrements = {
 	}
 }
 
-english_tea = {
+english_tea = { #122
 	is_valuable = yes
 	color = { 0.2 0.85 0.25 }
 	is_latent = yes
@@ -8719,7 +8718,7 @@ english_tea = {
 	}
 }
 
-expresso = {
+expresso = { #123
 	is_valuable = yes
 	color = { 0.8 0.25 0.85 }
 	is_latent = yes
@@ -8734,7 +8733,7 @@ expresso = {
 	}
 }
 
-medicaments = {
+medicaments = { #124
 	is_valuable = yes
 	color = { 0.85 0.16 0.05 }
 	is_latent = yes
@@ -8749,7 +8748,7 @@ medicaments = {
 	}
 }
 
-locomotives = {
+locomotives = { #125
 	is_valuable = yes
 	color = { 0.86 0.17 0.06 }
 	is_latent = yes
@@ -8764,7 +8763,7 @@ locomotives = {
 	}
 }
 
-tractors = {
+tractors = { #126
 	is_valuable = yes
 	color = { 0.87 0.18 0.07 }
 	is_latent = yes
@@ -8779,7 +8778,7 @@ tractors = {
 	}
 }
 
-bicycles = {
+bicycles = { #127
 	is_valuable = yes
 	color = { 0.88 0.19 0.08 }
 	is_latent = yes
@@ -8794,7 +8793,7 @@ bicycles = {
 	}
 }
 
-motorcycles = {
+motorcycles = { #128
 	is_valuable = yes
 	color = { 0.89 0.20 0.09 }
 	is_latent = yes
@@ -8809,7 +8808,7 @@ motorcycles = {
 	}
 }
 
-automobiles = {
+automobiles = { #129
 	is_valuable = yes
 	color = { 0.90 0.21 0.10 }
 	is_latent = yes
@@ -8824,7 +8823,7 @@ automobiles = {
 	}
 }
 
-airships = {
+airships = { #130
 	is_valuable = yes
 	color = { 0.91 0.22 0.11 }
 	is_latent = yes
@@ -8839,7 +8838,7 @@ airships = {
 	}
 }
 
-bricks = {
+bricks = { #131
 	is_valuable = yes
 	color = { 0.92 0.23 0.12 }
 	is_latent = yes
@@ -8854,7 +8853,7 @@ bricks = {
 	}
 }
 
-cement = {
+cement = { #132
 	is_valuable = yes
 	color = { 0.93 0.24 0.13 }
 	is_latent = yes
@@ -8869,7 +8868,7 @@ cement = {
 	}
 }
 
-limestone = {
+limestone = { #133
 	is_valuable = yes
 	color = { 0.94 0.25 0.14 }
 	is_latent = yes
@@ -8884,7 +8883,7 @@ limestone = {
 	}
 }
 
-herbs = {
+herbs = { #134
 	is_valuable = yes
 	color = { 0.95 0.26 0.15 }
 	is_latent = yes
@@ -8899,7 +8898,7 @@ herbs = {
 	}
 }
 
-hats_and_gloves = {
+hats_and_gloves = { #135
 	is_valuable = yes
 	color = { 0.96 0.27 0.16 }
 	is_latent = yes
@@ -8914,7 +8913,7 @@ hats_and_gloves = {
 	}
 }
 
-military_equipment = {
+military_equipment = { #136
 	is_valuable = yes
 	color = { 0.97 0.28 0.17 }
 	is_latent = yes
@@ -8929,7 +8928,7 @@ military_equipment = {
 	}
 }
 
-shoes = {
+shoes = { #137
 	is_valuable = yes
 	color = { 0.98 0.29 0.18 }
 	is_latent = yes

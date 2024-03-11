@@ -643,6 +643,7 @@ supreme_court = {
 }
 
 #VU - Addition by San Felipe
+#Revenue & Customs - Department added to VU by San Felipe
 custom_house = {
 	cost = 250 #VU - Lowered from 270 to 250 in v1.36.2.* by San Felipe
 	time = 12
@@ -666,7 +667,6 @@ custom_house = {
 }
 
 #TGE Buiding
-#Revenue & Customs - Department added to VU by San Felipe
 stamp_office = {
 	cost = 250 #VU - Increased from 150 to 250 in v1.36.2.* by San Felipe
 	time = 12
@@ -2051,10 +2051,12 @@ import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
-			is_subject = no
-			is_colonial_nation = no
-			is_client_nation = no
+		FROM = { 
+			AND = {
+				is_subject = no
+				is_colonial_nation = no
+				is_client_nation = no
+			}
 		}
 	}
 	build_trigger = {
@@ -2119,7 +2121,7 @@ import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
-			else = {
+			else_if = {
 				limit = { ROOT = { trade_goods = grain } }
 				update_goods_subjects = { GOODS = grain }
 			}
@@ -2157,10 +2159,12 @@ stop_import_from_subjects = {
 	time = 0
 	
 	potential = {
-		AND = {
+		FROM = {
+			AND = {
 		    	is_subject = no
 		    	is_colonial_nation = no
 		    	is_client_nation = no
+			}
 		}
 	}
 	
@@ -2221,7 +2225,7 @@ stop_import_from_subjects = {
 				limit = { ROOT = { trade_goods = cocoa } }
 				update_goods_subjects = { GOODS = cocoa }
 			}
-			else = {
+			else_if = {
 				limit = { ROOT = { trade_goods = grain } }
 				update_goods_subjects = { GOODS = grain }
 			}

@@ -142,3 +142,13 @@ l_english:
  
  estate_privileges_and_agendas_events.3.vv: "Proposal of the Turkic Tribes"
  estate_privileges_and_agendas_events.3.berbers: "Proposal of the Berber Tribes"
+ 
+ ME_HAS_RAZED_AT_LEAST_TT_PROVINCES: "[Root.num_of_provinces_razed_var.GetValue]"
+ ME_HAS_WON_AT_LEAST_TT_BATTLES: "[Root.num_of_battles_won_var.GetValue]"
+ ME_HAS_DEVELOPED_AT_LEAST_TT_PROVINCES: "[Root.num_of_times_developed.GetValue]"
+ ME_DEVELOPED_TAX_AT_LEAST_TT_PROVINCES: "[Root.num_of_adm_clicks.GetValue]"
+ ME_HAS_CONVERTED_AT_LEAST_TT_PROVINCES: "[Root.num_of_times_converted.GetValue]"
+ me_tim_defeated_tt_european_nations: "[Root.me_tim_europe_victory.GetValue]"
+ ME_tim_conquered_tt_provinces: "[Root.METimConquestHorde.GetValue]"
+ ME_tim_razed_tt_arabian_provinces: "[Root.METimArabianProvincesRazed.GetValue]"
+ ME_has_developed_at_least_TT_provinces: "[Root.num_of_times_developed.GetValue]"

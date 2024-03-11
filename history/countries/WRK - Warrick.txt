@@ -20,6 +20,8 @@ historical_rival = NOL
 		birth_date = 1428.11.22
 		death_date = 1471.4.14
 	}
+}
+1451.9.5 = {
 	heir = {
 		name = "Isabel"
 		monarch_name = "Isabel"

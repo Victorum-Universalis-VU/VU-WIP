@@ -2,21 +2,21 @@
 #crusader_alliances
 
 vassal = {
-	first = LTE
+	first = LAE
 	second = ACH
 	start_date = 1205.1.1
 	end_date = 1430.1.1
 }
 
 vassal = {
-	first = LTE
+	first = LAE
 	second = THE
 	start_date = 1204.1.1
 	end_date = 1387.1.1
 }
 
 vassal = {
-	first = LTE
+	first = LAE
 	second = PLS
 	start_date = 1204.1.1
 	end_date = 1237.1.1

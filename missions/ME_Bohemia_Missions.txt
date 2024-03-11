@@ -1319,8 +1319,17 @@ bohemian_missions_3 = {
 				province_has_center_of_trade_of_level = 1
 				num_of_times_improved = 5
 			}
-			if = {
-				limit = { has_global_flag = idea_groups_expanded_mod_active }
+		#	if = {
+		#		limit = { has_global_flag = idea_groups_expanded_mod_active }
+		#		OR = {
+		#			full_idea_group = economic_ideas
+		#			full_idea_group = trade_ideas
+		#			full_idea_group = administrative_ideas
+		#			monthly_adm = 10
+		#			ruler_has_personality = architectural_visionary_personality
+		#		}
+		#	}
+		#	else = {
 				OR = {
 					full_idea_group = economic_ideas
 					full_idea_group = trade_ideas
@@ -1328,16 +1337,7 @@ bohemian_missions_3 = {
 					monthly_adm = 10
 					ruler_has_personality = architectural_visionary_personality
 				}
-			}
-			else = {
-				OR = {
-					full_idea_group = economic_ideas
-					full_idea_group = trade_ideas
-					full_idea_group = administrative_ideas
-					monthly_adm = 10
-					ruler_has_personality = architectural_visionary_personality
-				}
-			}
+		#	}
 		}
 		effect = {
 			custom_tooltip = BOH_every_center_of_trade

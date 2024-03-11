@@ -17,13 +17,14 @@ QIR_missions_2_pick = {
 			owned_by = ROOT
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = QIR_50_times_developed
-				check_variable = {
-					which = num_of_times_developed
-					value = 50
-				}
-			}
+			num_of_provinces_developed = { value = 50 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = QIR_50_times_developed
+		#		check_variable = {
+		#			which = num_of_times_developed
+		#			value = 50
+		#		}
+		#	}
 			#ME_pt_feedback_requested = yes 
 		}
 		effect = {
@@ -1453,7 +1454,7 @@ QIR_missions_4_sedentary = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
+			custom_trigger_tooltip = { #We disabled the scripted effect, need to check
 				tooltip = QIR_10_culture_converted_provinces
 				check_variable = {
 					which = num_of_culture_converted_provinces
@@ -2076,13 +2077,20 @@ QIR_missions_1_tribal = {
 		trigger = {
 			QIR_preview = yes
 			
-			num_of_battles_won = { amount = 100 }
+			num_of_battles_won = { value = 100 }
 			
 			if = {
 				limit = {
 					has_dlc = "The Cossacks"
 				}
-				num_of_provinces_razed = { amount = 20 }
+				num_of_provinces_razed = { value = 20 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = ME_has_razed_at_least_20_provinces
+			#		check_variable = {
+			#			which = num_of_provinces_razed_var
+			#			value = 20
+			#		}
+			#	}
 			}
 		}
 		effect = {
@@ -2112,13 +2120,20 @@ QIR_missions_1_tribal = {
 		trigger = {
 			QIR_preview = yes
 			
-			num_of_battles_won = { amount = 300 }
+			num_of_battles_won = { value = 300 }
 			
 			if = {
 				limit = {
 					has_dlc = "The Cossacks"
 				}
-				num_of_provinces_razed = { amount = 100 }
+				num_of_provinces_razed = { value = 100 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = ME_has_razed_at_least_100_provinces
+			#		check_variable = {
+			#			which = num_of_provinces_razed_var
+			#			value = 100
+			#		}
+			#	}
 			}
 		}
 		effect = {
@@ -2457,13 +2472,20 @@ QIR_missions_2_tribal = {
 		trigger = {
 			QIR_preview = yes
 			
-			num_of_battles_won = { amount = 500 }
+			num_of_battles_won = { value = 500 }
 			
 			if = {
 				limit = {
 					has_dlc = "The Cossacks"
 				}
-				num_of_provinces_razed = { amount = 300 }
+				num_of_provinces_razed = { value = 300 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = ME_has_razed_at_least_300_provinces
+			#		check_variable = {
+			#			which = num_of_provinces_razed_var
+			#			value = 300
+			#		}
+			#	}
 			}
 		}
 		effect = {
@@ -2502,6 +2524,9 @@ QIR_missions_2_tribal = {
 			custom_tooltip = " "
 			
 			add_army_tradition_or_mil_power = { amount = 20 }
+			hidden_effect = {
+				set_country_flag = ME_has_razed_at_least_300_provinces_flag
+			}
 		}
 	}
 }

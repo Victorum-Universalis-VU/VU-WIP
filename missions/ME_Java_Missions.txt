@@ -3,44 +3,52 @@ Javan_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			AND = {
-				OR = {
-					tag = BLM #Blambangan
-				#	tag = BLI #Bali
-					tag = MTR #Mataram
-					AND = {
-						tag = MSA
-						OR = {
-						#	was_tag = SUN
-						#	was_tag = CRB
-						#	was_tag = BLI
-							was_tag = MTR 
-						#	was_tag = BAN
-							was_tag = BLM
-						}
-					}
-				}
-			}
+	#	OR = {
+	#		AND = {
+	#			OR = {
+	#				tag = BLM #Blambangan
+	#			#	tag = BLI #Bali
+	#				AND = {
+	#					tag = MSA
+	#					OR = {
+	#					#	was_tag = SUN
+	#					#	was_tag = CRB
+	#				#		was_tag = BLI
+	#					#	was_tag = BAN
+	#						was_tag = BLM
+	#					}
+	#				}
+	#			}
+	#		}
 			AND = {
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-				OR = {
-					tag = SUN #Sunda
-					tag = CRB #Cirebon
+				OR = {									
 					tag = BAN #Banten
-					tag = BLI
+					tag = BLI 
+					tag = BLM #Blambangan
+					tag = BTN #Buton
+					tag = CRB #Cirebon
+					tag = DMK #Demak
+					tag = LUW #Luwu					
+					tag = MTR #Mataram
+					tag = SUN #Sunda
 					AND = {
 						tag = MSA
 						OR = {
-							was_tag = SUN
-							was_tag = CRB
 							was_tag = BAN
 							was_tag = BLI
+							was_tag = BLM
+							was_tag = BTN
+							was_tag = CRB
+							was_tag = DMK
+							was_tag = LUW
+							was_tag = MTR
+							was_tag = SUN
 						}
 					}
 				}
 			}
-		}
+	#	}
 	}
 	has_country_shield = yes
 	
@@ -115,10 +123,11 @@ Javan_missions_1 = {
 			OR = {
 				theologian = 1
 				inquisitor = 1
-				custom_trigger_tooltip = {
-					tooltip = JAV_converted_a_province
-					check_variable = { which = num_converted_religion value = 1 }
-				}
+				num_of_provinces_converted = { value = 5 }
+			#	custom_trigger_tooltip = {
+			#		tooltip = JAV_converted_a_province
+			#		check_variable = { which = num_converted_religion value = 1 }
+			#	}
 			}
 		}
 		effect = {
@@ -183,44 +192,52 @@ Javan_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			AND = {
-				OR = {
-					tag = BLM #Blambangan
-				#	tag = BLI #Bali
-					tag = MTR #Mataram
-					AND = {
-						tag = MSA
-						OR = {
-						#	was_tag = SUN
-						#	was_tag = CRB
-					#		was_tag = BLI
-							was_tag = MTR 
-						#	was_tag = BAN
-							was_tag = BLM
-						}
-					}
-				}
-			}
+	#	OR = {
+	#		AND = {
+	#			OR = {
+	#				tag = BLM #Blambangan
+	#			#	tag = BLI #Bali
+	#				AND = {
+	#					tag = MSA
+	#					OR = {
+	#					#	was_tag = SUN
+	#					#	was_tag = CRB
+	#				#		was_tag = BLI
+	#					#	was_tag = BAN
+	#						was_tag = BLM
+	#					}
+	#				}
+	#			}
+	#		}
 			AND = {
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-				OR = {
-					tag = SUN #Sunda
-					tag = CRB #Cirebon
+				OR = {									
 					tag = BAN #Banten
-					tag = BLI
+					tag = BLI 
+					tag = BLM #Blambangan
+					tag = BTN #Buton
+					tag = CRB #Cirebon
+					tag = DMK #Demak
+					tag = LUW #Luwu					
+					tag = MTR #Mataram
+					tag = SUN #Sunda
 					AND = {
 						tag = MSA
 						OR = {
-							was_tag = SUN
-							was_tag = CRB
 							was_tag = BAN
 							was_tag = BLI
+							was_tag = BLM
+							was_tag = BTN
+							was_tag = CRB
+							was_tag = DMK
+							was_tag = LUW
+							was_tag = MTR
+							was_tag = SUN
 						}
 					}
 				}
 			}
-		}
+	#	}
 	}
 	has_country_shield = yes
 	
@@ -296,10 +313,11 @@ Javan_missions_2 = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = MAJ_has_converted_5_provinces
-				check_variable = { which = num_converted_religion value = 5 }
-			}
+			num_of_provinces_converted = { value = 20 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = MAJ_has_converted_5_provinces
+		#		check_variable = { which = num_converted_religion value = 5 }
+		#	}
 			OR = {
 				has_adm_advisor_2 = yes
 				inquisitor = 1
@@ -336,44 +354,52 @@ Javan_missions_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			AND = {
-				OR = {
-					tag = BLM #Blambangan
-				#	tag = BLI #Bali
-					tag = MTR #Mataram
-					AND = {
-						tag = MSA
-						OR = {
-						#	was_tag = SUN
-						#	was_tag = CRB
-						#	was_tag = BLI
-							was_tag = MTR 
-						#	was_tag = BAN
-							was_tag = BLM
-						}
-					}
-				}
-			}
+	#		OR = {
+	#		AND = {
+	#			OR = {
+	#				tag = BLM #Blambangan
+	#			#	tag = BLI #Bali
+	#				AND = {
+	#					tag = MSA
+	#					OR = {
+	#					#	was_tag = SUN
+	#					#	was_tag = CRB
+	#				#		was_tag = BLI
+	#					#	was_tag = BAN
+	#						was_tag = BLM
+	#					}
+	#				}
+	#			}
+	#		}
 			AND = {
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-				OR = {
-					tag = SUN #Sunda
-					tag = CRB #Cirebon
+				OR = {									
 					tag = BAN #Banten
-					tag = BLI
+					tag = BLI 
+					tag = BLM #Blambangan
+					tag = BTN #Buton
+					tag = CRB #Cirebon
+					tag = DMK #Demak
+					tag = LUW #Luwu					
+					tag = MTR #Mataram
+					tag = SUN #Sunda
 					AND = {
 						tag = MSA
 						OR = {
-							was_tag = SUN
-							was_tag = CRB
 							was_tag = BAN
 							was_tag = BLI
+							was_tag = BLM
+							was_tag = BTN
+							was_tag = CRB
+							was_tag = DMK
+							was_tag = LUW
+							was_tag = MTR
+							was_tag = SUN
 						}
 					}
 				}
 			}
-		}
+	#	}
 	}
 	has_country_shield = yes
 	
@@ -554,44 +580,52 @@ Javan_missions_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			AND = {
-				OR = {
-					tag = BLM #Blambangan
-				#	tag = BLI #Bali
-					tag = MTR #Mataram
-					AND = {
-						tag = MSA
-						OR = {
-						#	was_tag = SUN
-						#	was_tag = CRB
-						#	was_tag = BLI
-							was_tag = MTR 
-						#	was_tag = BAN
-							was_tag = BLM
-						}
-					}
-				}
-			}
+	#		OR = {
+	#		AND = {
+	#			OR = {
+	#				tag = BLM #Blambangan
+	#			#	tag = BLI #Bali
+	#				AND = {
+	#					tag = MSA
+	#					OR = {
+	#					#	was_tag = SUN
+	#					#	was_tag = CRB
+	#				#		was_tag = BLI
+	#					#	was_tag = BAN
+	#						was_tag = BLM
+	#					}
+	#				}
+	#			}
+	#		}
 			AND = {
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-				OR = {
-					tag = SUN #Sunda
-					tag = CRB #Cirebon
+				OR = {									
 					tag = BAN #Banten
-					tag = BLI
+					tag = BLI 
+					tag = BLM #Blambangan
+					tag = BTN #Buton
+					tag = CRB #Cirebon
+					tag = DMK #Demak
+					tag = LUW #Luwu					
+					tag = MTR #Mataram
+					tag = SUN #Sunda
 					AND = {
 						tag = MSA
 						OR = {
-							was_tag = SUN
-							was_tag = CRB
 							was_tag = BAN
 							was_tag = BLI
+							was_tag = BLM
+							was_tag = BTN
+							was_tag = CRB
+							was_tag = DMK
+							was_tag = LUW
+							was_tag = MTR
+							was_tag = SUN
 						}
 					}
 				}
 			}
-		}
+	#	}
 	}
 	has_country_shield = yes
 	
@@ -720,44 +754,52 @@ Javan_missions_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			AND = {
-				OR = {
-					tag = BLM #Blambangan
-				#	tag = BLI #Bali
-					tag = MTR #Mataram
-					AND = {
-						tag = MSA
-						OR = {
-						#	was_tag = SUN
-						#	was_tag = CRB
-						#	was_tag = BLI
-							was_tag = MTR 
-						#	was_tag = BAN
-							was_tag = BLM
-						}
-					}
-				}
-			}
+	#		OR = {
+	#		AND = {
+	#			OR = {
+	#				tag = BLM #Blambangan
+	#			#	tag = BLI #Bali
+	#				AND = {
+	#					tag = MSA
+	#					OR = {
+	#					#	was_tag = SUN
+	#					#	was_tag = CRB
+	#				#		was_tag = BLI
+	#					#	was_tag = BAN
+	#						was_tag = BLM
+	#					}
+	#				}
+	#			}
+	#		}
 			AND = {
 				has_country_flag = use_missions_expanded_missions_instead_of_paradox
-				OR = {
-					tag = SUN #Sunda
-					tag = CRB #Cirebon
+				OR = {									
 					tag = BAN #Banten
-					tag = BLI
+					tag = BLI 
+					tag = BLM #Blambangan
+					tag = BTN #Buton
+					tag = CRB #Cirebon
+					tag = DMK #Demak
+					tag = LUW #Luwu					
+					tag = MTR #Mataram
+					tag = SUN #Sunda
 					AND = {
 						tag = MSA
 						OR = {
-							was_tag = SUN
-							was_tag = CRB
 							was_tag = BAN
 							was_tag = BLI
+							was_tag = BLM
+							was_tag = BTN
+							was_tag = CRB
+							was_tag = DMK
+							was_tag = LUW
+							was_tag = MTR
+							was_tag = SUN
 						}
 					}
 				}
 			}
-		}
+	#	}
 	}
 	has_country_shield = yes
 	

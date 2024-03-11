@@ -16,8 +16,7 @@ guiTypes = {
 
 
 
-		guiButtonType =
-		{
+		guiButtonType =	{
 			name ="great_powers_bg"
 			spriteType = "GFX_great_powers_bg"
 			position = { x= 0 y = 0 }
@@ -39,15 +38,13 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="great_power_rank_sort"
 			spriteType = "GFX_great_power_rank_sort"
 			position = { x= 51 y = 91 }
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="great_power_name_sort"
 			spriteType = "GFX_great_power_name_sort"
 			position = { x= 105 y = 91 }
@@ -65,22 +62,19 @@ guiTypes = {
 				text = "GREATPOWERWIN_NAME"
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="great_power_rating_sort"
 			spriteType = "GFX_great_power_rating_sort"
 			position = { x= 322 y = 91 }	
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="great_power_development_sort"
 			spriteType = "GFX_great_power_development_sort"
 			position = { x= 395 y = 91 }
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="great_power_tech_cost_sort"
 			spriteType = "GFX_great_power_tech_cost_sort"
 			position = { x= 467 y = 91 }

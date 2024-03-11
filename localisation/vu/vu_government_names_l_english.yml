@@ -183,10 +183,10 @@
  SEGALLU:0 "Segallu"
  RUBU_PALIHSU:0 "Rubu Palishu"
  #Babylonian Empire
- SARDOM:0 "Sardom"
- SAR:0 "Sar"
- ISSU:0 "Issu"
- SAMAS:0 "Samas"
+ SARDOM_BAB:0 "Sardom"
+ SAR_BAB:0 "Sar"
+ ISSU_BAB:0 "Issu"
+ SAMAS_BAB:0 "Samas"
  #
  #Scottish Clans
  SCOTTISH_CLAN_1:0 "Clan"

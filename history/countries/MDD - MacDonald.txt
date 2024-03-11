@@ -25,6 +25,8 @@ capital = 3283 #Islay
 		birth_date = 1390.1.1
 		death_date = 1484.1.1
 	}
+}
+1434.1.1 = {
 	heir = {
 		name = "John"
 		monarch_name = "John"

@@ -990,10 +990,11 @@ MAJ_missions_5 = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = MAJ_has_converted_5_provinces
-				check_variable = { which = num_converted_religion value = 5 }
-			}
+			num_of_provinces_converted = { value = 5 }
+		#	custom_trigger_tooltip = {
+		#		tooltip = MAJ_has_converted_5_provinces
+		#		check_variable = { which = num_converted_religion value = 5 }
+		#	}
 			OR = {
 				has_adm_advisor_2 = yes
 				inquisitor = 1

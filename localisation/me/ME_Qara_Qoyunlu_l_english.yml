@@ -226,107 +226,119 @@
  ME_Qara_Qoyunlu_Events.6.d: "Alvand Mirza, war veteran of wars against the Qara Qoyunlu has decided to seek custody and employment in the court of [Root.Monarch.GetName]. With the experience he has gathered, he is bound to be of use in our future campaigns, be it against Qara Qoyunlu or not."
  ME_Qara_Qoyunlu_Events.6.a: "Fantastic!" 
  
- ME_Qara_Qoyunlu_Events.7.t: "Alvand Mirza's Regency"
- ME_Qara_Qoyunlu_Events.7.d: "Etiam suscipit nunc quis ante vulputate auctor. Nunc posuere justo ut mi auctor gravida. Praesent id mollis odio, nec dapibus mauris. Ut quis facilisis libero, nec pharetra arcu. In mi metus, malesuada vel viverra sed, condimentum non purus. Proin vel eros dictum, rutrum quam eu, placerat erat. Duis nibh metus, tincidunt sed ligula non, vestibulum viverra orci. Aenean non tortor ac elit dignissim cursus vitae vel turpis. Praesent eget mauris sapien. Suspendisse vestibulum vel mauris vitae porta. In sed sapien nibh. Sed sem ipsum, fermentum quis dignissim eu, vestibulum eu neque."
- ME_Qara_Qoyunlu_Events.7.a: "We don't fear nobody. The realm of Ispend shall remain!"
+ ME_Qara_Qoyunlu_Events.7.t: "Alvand Mirza's Regency" 
+ ME_Qara_Qoyunlu_Events.7.d: "With the death of Ispend Qara Qoyunlu, brother of Jahan Shah, the country is now nominally ruled by Fulad Mirza, his young son. However, due to Fulad's inexperience and rather childish behavior, in his stead a different ruler emerges - Alvand Mirza, the new regent. All would be a smooth succession, if not for ambitions of Jahan Shah himself, who is looking to integrate Baghdad back to his realm, the rule of a young [Root.Monarch.GetTitle] being his perfect opportunity to fulfill his wishes." 
+ ME_Qara_Qoyunlu_Events.7.a: "We don't fear nobody. The realm of Ispend shall remain!" 
  ME_Qara_Qoyunlu_Events.7.b: "Let us appease [QAR.Monarch.GetName]."
+
+ ME_Qara_Qoyunlu_Events.8.t: "Death of Shah Rukh" 
+ ME_Qara_Qoyunlu_Events.8.d: "With Shah Rukh, the Emperor of the Timurid Empire and our nominal overlord, lying dead in his grave, a striking opportunity has presented itself. Feeling the decadence of the crumbling Timurid princes, Jahan Shah declared his independence and is fully prepared to claim the title of King of Kings for himself. The splinters of the empire may still be powerful, but alone they are no match for his prowess. The splendor of Persia will be his!" 
+ ME_Qara_Qoyunlu_Events.8.a: "Defy the [TIM.GetName], they are but a crumbling empire." 
+ ME_Qara_Qoyunlu_Events.8.b: "Our National Interest lies in the [TIM.GetName]." 
+  
+ ME_Qara_Qoyunlu_Events.9.t: "Submission of [From.Monarch.GetName]" # Removed
+  
+ ME_Qara_Qoyunlu_Events.10.t: "Situation in Mesopotamia" 
+ ME_Qara_Qoyunlu_Events.10.d: "Qara Qoyunlu in 1444 is rather decentralized and is ruled by many powerful tribal and de jure leaders. Nowhere is that more pronounced than in Mesopotamia,  where the rule is held by Jahan Shah's brother, Ispend Mirza. But his rule too, will not last long, for his age is really showing and his death may be imminent. With Jahan Shah's centralization ambitions, the weak son of Ispend, Fulad, will be of no match for him. All that Jahan Shah needs is the pivotal moment where he can ride into Baghdad, unopposed." 
+ ME_Qara_Qoyunlu_Events.10.a: "[Root.Monarch.GetName] will destroy them all!" 
+  
+ ME_Qara_Qoyunlu_Events.11.t: "Threat of [QAR.Monarch.GetName]" 
+ ME_Qara_Qoyunlu_Events.11.d: "Qara Qoyunlu in 1444 is rather decentralized and is ruled by many powerful tribal and de jure leaders. Nowhere is that more pronounced than in Mesopotamia,  where the rule is held by Jahan Shah's brother, Ispend Mirza. But his rule too, will not last long, for his age is really showing and his death may be imminent. With Jahan Shah's centralization ambitions, the weak son of Ispend, Fulad, will be of no match for him. All that Jahan Shah needs is the pivotal moment where he can ride into Baghdad, unopposed. But we will not stand for that! Whatever the future may be, we will prevail!" 
+ ME_Qara_Qoyunlu_Events.11.a: "[From.Monarch.GetName] will meet his demise in the waters of Euphrates!" 
+  
+ ME_Qara_Qoyunlu_Events.12.t: "Ispend's Death" 
+ ME_Qara_Qoyunlu_Events.12.d: "Ispend Mirza of [BAG.GetName] has finally succumbed to the icy grips of death. The local Nobility is already prepared to swear fealty to his young heir, Fulad Mirza, and his regent, Alvand. We must move quick and take immediate action if those scoundrels are to be defeated without much opposition. The sooner, the better!" 
+ ME_Qara_Qoyunlu_Events.12.a: "Time to retake what's ours." 
+  
+ ME_Qara_Qoyunlu_Events.13.t: "The Fate of Armenia" 
+ ME_Qara_Qoyunlu_Events.13.d: "Armenia by now has seen decades of rule by the Qara Qoyunlu. Never a single policy, the Qara Qoyunlu would commit anything from regular raids to plunder, while also giving privileges to local Catholicoi. A unified policy must be decided for the future!" 
+ ME_Qara_Qoyunlu_Events.13.a: "They are at our mercy! Raze the land!" 
+ ME_Qara_Qoyunlu_Events.13.b: "Settle our tribes into the northern plains." 
+ ME_Qara_Qoyunlu_Events.13.c: "We must learn to live in peace." 
+  
+ ME_Qara_Qoyunlu_Events.14.t: "Defeat of Alvand Mirza" 
+ ME_Qara_Qoyunlu_Events.14.d: "With thw defeat of Alvand Mirza, the regent of the Baghdadi Sheikhdom to the south, the Qara Qoyunlu is now whole again. The nobles of Mesopotamia were 'convinced' to swear fealty and all lands have by now submitted. Fulad has been dethroned, while the treasonous Alvand has fled the country to rival Aq Qoyunlu." 
+ ME_Qara_Qoyunlu_Events.14.a: "The flock is whole again." 
+  
+ ME_Qara_Qoyunlu_Events.15.t: "Fall of Muhammad ibn Falah's Sheikhdom" 
+ ME_Qara_Qoyunlu_Events.15.d: "We have finally managed to deal the striking blow to the zealous armies of Muhammad ibn Falah, a false idol naming himself as the Mahdi who would free the world of evil. Blasphemous! Though shedding the blood of fellow Shi'ite Muslims is most unfortunate, this apostasy could not be tolerated, and Ibn Falah's past campaigns against us really showed that. He shall agitate no more!" 
+ ME_Qara_Qoyunlu_Events.15.a: "By the Shi'ite and the not, history shall only remember him for his blasphemy." 
+  
+ ME_Qara_Qoyunlu_Events.16.t: "Qara Qoyunlu Meddles in Ardalan" 
+ ME_Qara_Qoyunlu_Events.16.d: "The Qara Qoyunlu have begun meddling in the Ardalani affairs. They must be stopped at once, or else we will face our territories slip away." 
+ ME_Qara_Qoyunlu_Events.16.a: "Curse them!" 
  
- ME_Qara_Qoyunlu_Events.8.t: "Death of Shah Rukh"
- ME_Qara_Qoyunlu_Events.8.d: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis nibh ac lacinia tempor. Vivamus justo eros, molestie et urna a, condimentum fringilla leo. Integer commodo sed turpis in gravida. Mauris aliquam sagittis magna ac dictum. Vivamus ipsum felis, consectetur vitae laoreet et, euismod quis felis. Nulla scelerisque ultrices quam, eu accumsan massa dignissim ultricies. Curabitur id felis sit amet leo faucibus pulvinar ac nec quam. Curabitur ex purus, tempor at condimentum et, fermentum sit amet nulla. Fusce erat sem, accumsan maximus ultrices in, pellentesque ac est. Morbi eget turpis enim. Nullam eu ornare nulla, sed efficitur metus. Ut vitae malesuada justo, pulvinar gravida nulla. Nunc felis nulla, tincidunt quis facilisis et, iaculis ut quam. Nullam semper fringilla feugiat."
- ME_Qara_Qoyunlu_Events.8.a: "Defy the [TIM.GetName], they are but a crumbling empire."
- ME_Qara_Qoyunlu_Events.8.b: "Our National Interest lies in the [TIM.GetName]."
+ ME_Qara_Qoyunlu_Events.17.t: "Qara Qoyunlu Meddles in Ardalan" 
+ ME_Qara_Qoyunlu_Events.17.d: "Our actions were enough. The attempts at having Ardalan nobles switch allegiances have been a resounding success. We grow ever more powerful." 
+ ME_Qara_Qoyunlu_Events.17.a: "Let us hope for more successes like this!" 
+
+ ME_Qara_Qoyunlu_Events.18.t: "Qara Qoyunlu Meddles in Ardalan" 
+ ME_Qara_Qoyunlu_Events.18.d: "Our actions were not enough. The attempts at having Ardalan nobles switch allegiances have been a resounding failure. We will need to work harder.." 
+ ME_Qara_Qoyunlu_Events.18.a: "Curse their names!" 
+
+ ME_Qara_Qoyunlu_Events.19.t: "Matters of Religious Adherence"  
+ ME_Qara_Qoyunlu_Events.19.d: "The exact religious beliefs of Qara Qoyunlu cannot be exactly pinpointed to a single flavor of Islam. It is believed the tribes near Tabriz and in rule sympathised the Shi'ites, but in practice many were also Sunni muslims and religion wasn't as important as in other muslim states."
+ ME_Qara_Qoyunlu_Events.19.a: "We shall acknowledge our Shi'a sympathy." 
+ ME_Qara_Qoyunlu_Events.19.b: "We are so close to the light, yet so far." 
+ ME_Qara_Qoyunlu_Events.19.c: "Spare the sympathy, everyone wants to be my enemy." 
+  
+ ME_Qara_Qoyunlu_Events.20.t: "A Different Outlook on Shi'ism" 
+ ME_Qara_Qoyunlu_Events.20.d: "Lately,  an increasing amount of foreign Shi'ite scholars have begun serving in our court, trying to sway our beliefs in their favor, perhaps their ideas are to be considered." 
+ ME_Qara_Qoyunlu_Events.20.a: "The scholars from Gilan have a good idea..." 
+ ME_Qara_Qoyunlu_Events.20.b: "The Ardabili are right." 
+  
+ ME_Qara_Qoyunlu_Events.21.t: "Rise of Jahan Shah" 
+ ME_Qara_Qoyunlu_Events.21.d: "Jahan Shah is the most celebrated of all Qara Qoyunlu Sultans. Under his military command and prowess, the tribal confederation would take over much of Western Iran, claiming the mantle of Persian Monarchs. His military skill seemed unparalleled. But his age was not devoid of other inspiring leaders, as he would suffer losses from Uzun Hasan, a leader that would defeat him and second him as ruler of Persia." 
+ ME_Qara_Qoyunlu_Events.21.a: "Onwards, to Persia, and Beyond!" 
+ ME_Qara_Qoyunlu_Events.21.b: "The wisest can't risk their lives on the battlefield." 
+  
+ ME_Qara_Qoyunlu_Events.22.t: "Endowment for Blue Mosque" 
+ ME_Qara_Qoyunlu_Events.22.d: "With the construction of Blue Mosque complete, we have a right to collect an endowment tax from our citizens, as a sign of their collective commitment to the construction of this great Mosque. Whoever pays is sure to be rewarded in heaven." 
+ ME_Qara_Qoyunlu_Events.22.a: "It's a collective effort!" 
+ ME_Qara_Qoyunlu_Events.22.b: "We will pay for it ourselves." 
+
+ ME_Qara_Qoyunlu_Events.23.t: "Fate of the Aq Qoyunlu Tribes" 
+ ME_Qara_Qoyunlu_Events.23.d: "The Aq Qoyunlu confederation is much like ours. Also a Turkic Oghuz state claiming descent from tribes of old, we have much more in common than not. While this might instill a sense of confraternity, it has lead to nothing but bitter rivalry. And today, those tribes lie defeated and at our mercy. We either let them integrate into our realm or let them become hosts for our more loyal tribes.
+ ME_Qara_Qoyunlu_Events.23.a: "Let them join our federation." 
+ ME_Qara_Qoyunlu_Events.23.b: "Settle in the tribes at home." 
+  
+ ME_Qara_Qoyunlu_Events.24.t: "Free from Taqiyya" 
+ ME_Qara_Qoyunlu_Events.24.d: "The residents of [Root.GetName], faking their adherence to Sunni Islam,, a state called Taqiyya, have finally felt the chance to cease and to practice their religion freely under our rule." 
+ ME_Qara_Qoyunlu_Events.24.a: "Be free!" 
+  
+ ME_Qara_Qoyunlu_Events.25.t: "Pontic Marriage" 
+ ME_Qara_Qoyunlu_Events.25.d: "The Pontic Emperors have long professed a policy of strategic marriage with the Aq and Qara Qoyunlu monarchs. Having continued and accepted this policy on our side today we sit as the Seniors in that relationship. Much more powerful, we may now request them to finally become our vassals." 
+ ME_Qara_Qoyunlu_Events.25.a: "Send the Marriage Offer" 
+ ME_Qara_Qoyunlu_Events.25.b: "The tradition is just that." 
+  
+ ME_Qara_Qoyunlu_Events.26.t: "The Pontic Marriage" 
+ ME_Qara_Qoyunlu_Events.26.d: "In order to ensure our continuous survival and safety, we have made many strategic marriages with the Qoyunlu confederation. Today, [From.GetName] is sending us yet another marriage proposal, one that would make us their vassals." 
+ ME_Qara_Qoyunlu_Events.26.a: "Accept!" 
+ ME_Qara_Qoyunlu_Events.26.b: "We don't care about our past." 
+  
+ ME_Qara_Qoyunlu_Events.27.t: "Pir Budaq - Governor of Fars" 
+ ME_Qara_Qoyunlu_Events.27.d: "Pir Budaq was a governor of Fars and Baghdad under Jahan Shah's rule. Part of the Qara Qoyunlu line, he proved to be an able commander and he would bs rewarded with governorship. He would also become a patron of arts in his domain." 
+ ME_Qara_Qoyunlu_Events.27.a: "Nice." 
  
- ME_Qara_Qoyunlu_Events.9.t: "Submission of [From.Monarch.GetName]"
+ #28 hidden
+
+ ME_Qara_Qoyunlu_Events.29.t: "[Root.Monarch.GetName] - The King Above All Kings" 
+ ME_Qara_Qoyunlu_Events.29.d: "The ambition of the Qara Qoyunlu has finally been achieved. The gates of Persia lie wide open and the crown is there for the taking. Indeed, [Root.Monarch.GetName] has crossed this gate and has taken up his scepter and crown. [Root.Monarch.GetSheHe] may now reign as the King of Kings, rightful ruler of all of Iran and the heir of Khosrau, Cyrus and other great monarchs." 
+ ME_Qara_Qoyunlu_Events.29.a: "Long may [Root.Monarch.GetSheHe] reign!" 
  
- ME_Qara_Qoyunlu_Events.10.t: "Situation in Mesopotamia"
- ME_Qara_Qoyunlu_Events.10.d: "Aliquam volutpat neque in magna pretium, eget molestie odio pulvinar. Morbi a ante nunc. Phasellus ornare nisl quis urna cursus, ut consequat libero venenatis. Cras non nisi lorem. Sed laoreet et nibh sit amet bibendum. Maecenas non nibh id lorem dictum ultrices eget eget sapien. Maecenas pulvinar turpis nibh, sed tincidunt libero mattis et. Proin congue fermentum convallis. Vestibulum mattis tempus malesuada. Nunc elementum rhoncus arcu eu tincidunt. Donec volutpat ac purus at scelerisque. Praesent in lacus eu ligula facilisis convallis non quis mi. Mauris tincidunt turpis a sollicitudin vestibulum. Nulla facilisi. Etiam sed dapibus nunc, ac pretium dolor. In porttitor, lectus ut posuere accumsan, elit libero sodales augue, fermentum mattis lectus tortor sed augue."
- ME_Qara_Qoyunlu_Events.10.a: "[Root.Monarch.GetName] will destroy them all!"
+ #30 localized
  
- ME_Qara_Qoyunlu_Events.11.t: "Threat of [QAR.Monarch.GetName]"
- ME_Qara_Qoyunlu_Events.11.d: "Maecenas vehicula tempus lacus a tempus. Suspendisse in varius libero. Phasellus sodales dolor at dolor pretium pretium. Vivamus pretium rutrum sem, in convallis augue convallis sit amet. Praesent finibus, nulla eget pellentesque volutpat, libero leo placerat odio, pretium vulputate orci tellus et nisl. In vestibulum, ligula in tempus eleifend, eros purus pharetra massa, in sollicitudin ligula magna sed purus. In accumsan ornare est. Nam et dictum nunc. Aenean odio augue, vehicula eget enim sit amet, efficitur euismod metus. Donec ut molestie sapien, faucibus aliquet ligula."
- ME_Qara_Qoyunlu_Events.11.a: "[From.Monarch.GetName] will meet his demise in the waters of Euphrates!"
- 
- ME_Qara_Qoyunlu_Events.12.t: "Ispend's Death"
- ME_Qara_Qoyunlu_Events.12.d: ""
- ME_Qara_Qoyunlu_Events.12.a: "Time to retake what's ours."
- 
- ME_Qara_Qoyunlu_Events.13.t: "The Fate of Armenia"
- ME_Qara_Qoyunlu_Events.13.d: "Nunc at lectus ac ipsum tincidunt maximus quis eget augue. Maecenas vitae malesuada dui. Morbi at massa at neque lacinia ultricies. Quisque ut feugiat lacus, pretium ornare eros. Nulla mattis ac enim vel faucibus. Aliquam convallis metus vel odio scelerisque pretium. Maecenas at nibh tincidunt massa laoreet consectetur at et nunc. Sed fermentum tellus porttitor scelerisque bibendum. Phasellus fringilla sagittis hendrerit. Proin placerat mi et est rutrum, a venenatis arcu lacinia. Nulla porta diam metus, ut hendrerit lectus luctus a. Duis a arcu sit amet elit facilisis pulvinar eu a nunc. Nullam pulvinar metus et metus egestas blandit. Aliquam erat volutpat. Nullam ligula libero, scelerisque tempor facilisis non, luctus non eros."
- ME_Qara_Qoyunlu_Events.13.a: "They are at our mercy! Raze the land!"
- ME_Qara_Qoyunlu_Events.13.b: "Settle our tribes into the northern plains."
- ME_Qara_Qoyunlu_Events.13.c: "We must learn to live in peace."
- 
- ME_Qara_Qoyunlu_Events.14.t: "Defeat of Alvand Mirza"
- ME_Qara_Qoyunlu_Events.14.d: "Etiam id elementum eros. Suspendisse a ullamcorper nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin auctor, justo convallis fringilla porta, eros mi dignissim odio, sit amet accumsan urna nibh placerat dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eu nibh neque. Nulla facilisi. In hendrerit ornare tincidunt. Integer eget diam non eros bibendum imperdiet nec nec odio. Integer nec nunc eu sapien ultrices iaculis id et massa."
- ME_Qara_Qoyunlu_Events.14.a: "The flock is whole again."
- 
- ME_Qara_Qoyunlu_Events.15.t: "Fall of Muhammad ibn Falah's Sheikhdom"
- ME_Qara_Qoyunlu_Events.15.d: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam ut eros est. Vivamus elit felis, cursus nec est id, fringilla varius lorem. Nulla laoreet bibendum erat, at cursus lacus efficitur sit amet. Proin rhoncus maximus vehicula. Vestibulum condimentum scelerisque eros, at vulputate enim tincidunt sodales. Donec ullamcorper, quam ut congue ultricies, nibh ante auctor ante, id rhoncus nisi dolor ac justo. Morbi interdum nisl id ligula posuere dapibus."
- ME_Qara_Qoyunlu_Events.15.a: "By the Shi'ite and the not, history shall only remember him for his blasphemy."
- 
- ME_Qara_Qoyunlu_Events.16.t: "Qara Qoyunlu Meddles in Ardalan"
- ME_Qara_Qoyunlu_Events.16.d: "Nunc vel gravida lectus, ut commodo nisl. Sed eget fringilla mauris. Sed volutpat purus eget auctor pellentesque. Aenean rutrum, orci a condimentum commodo, urna ex laoreet erat, et feugiat nibh eros vel magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ultricies sapien, in mattis tellus. Phasellus varius posuere mauris pulvinar iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
- ME_Qara_Qoyunlu_Events.16.a: "Curse them!"
- 
- ME_Qara_Qoyunlu_Events.19.t: "Matters of Religious Adherence" 
- ME_Qara_Qoyunlu_Events.19.d: "Maecenas non tempor nunc, quis consectetur sem. Integer vestibulum pretium massa, pellentesque pharetra elit hendrerit eget. Duis consequat at eros tempus tincidunt. Nunc in enim sed felis finibus congue at non velit. Vestibulum sollicitudin nulla molestie, ultricies eros quis, luctus ligula. Mauris aliquam justo ac enim sodales egestas. Suspendisse maximus dapibus diam, eget fermentum odio malesuada non. Etiam lacus elit, ultricies id lacus non, convallis viverra dui. Nulla sagittis feugiat turpis nec porttitor."
- ME_Qara_Qoyunlu_Events.19.a: "We shall acknowledge our Shi'a sympathy."
- ME_Qara_Qoyunlu_Events.19.b: "We are so close to the light, yet so far."
- ME_Qara_Qoyunlu_Events.19.c: "Spare the sympathy, everyone wants to be my enemy."
- 
- ME_Qara_Qoyunlu_Events.20.t: "A Different Outlook on Shi'ism"
- ME_Qara_Qoyunlu_Events.20.d: "Quisque accumsan sem vitae nulla placerat euismod. Nam velit enim, hendrerit vitae fermentum non, interdum ac felis. Cras laoreet ipsum dui, vitae varius quam aliquam id. Aenean sagittis at lectus lacinia mattis. Praesent convallis, eros vitae feugiat sodales, purus purus molestie lorem, in bibendum lectus urna ut lorem. Donec dapibus justo et sagittis interdum. Morbi a lectus mauris. Integer gravida diam imperdiet placerat convallis. Sed ut tincidunt risus, vel bibendum tortor. In enim mauris, dictum sit amet tempor at, eleifend blandit arcu. Duis ut cursus eros. Nunc lectus odio, convallis vitae iaculis vel, egestas quis tortor."
- ME_Qara_Qoyunlu_Events.20.a: "The scholars from Gilan have a good idea..."
- ME_Qara_Qoyunlu_Events.20.b: "The Ardabili are right."
- 
- ME_Qara_Qoyunlu_Events.21.t: "Rise of Jahan Shah"
- ME_Qara_Qoyunlu_Events.21.d: "Quisque accumsan sem vitae nulla placerat euismod. Nam velit enim, hendrerit vitae fermentum non, interdum ac felis. Cras laoreet ipsum dui, vitae varius quam aliquam id. Aenean sagittis at lectus lacinia mattis. Praesent convallis, eros vitae feugiat sodales, purus purus molestie lorem, in bibendum lectus urna ut lorem. Donec dapibus justo et sagittis interdum. Morbi a lectus mauris. Integer gravida diam imperdiet placerat convallis. Sed ut tincidunt risus, vel bibendum tortor. In enim mauris, dictum sit amet tempor at, eleifend blandit arcu. Duis ut cursus eros. Nunc lectus odio, convallis vitae iaculis vel, egestas quis tortor."
- ME_Qara_Qoyunlu_Events.21.a: "Onwards, to Persia, and Beyond!"
- ME_Qara_Qoyunlu_Events.21.b: "The wisest can't risk their lives on the battlefield."
- 
- ME_Qara_Qoyunlu_Events.22.t: "Endowment for Blue Mosque"
- ME_Qara_Qoyunlu_Events.22.d: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed malesuada mi orci, sit amet rhoncus dui ornare vitae. Ut ultricies cursus est, nec auctor est dignissim eget. Vestibulum non ipsum nec lacus lacinia semper. In faucibus lorem purus, a vehicula sapien mattis eget. Nulla in sollicitudin orci. Morbi mollis ultrices est, at volutpat nunc commodo quis."
- ME_Qara_Qoyunlu_Events.22.a: "It's a collective effort!"
- ME_Qara_Qoyunlu_Events.22.b: "We will pay for it ourselves."
- 
- ME_Qara_Qoyunlu_Events.23.t: "Fate of the Aq Qoyunlu Tribes"
- ME_Qara_Qoyunlu_Events.23.d: "Quisque a purus in lorem rutrum tristique. Nunc interdum neque vitae feugiat ultrices. Cras tellus nulla, porttitor vitae consequat eu, ullamcorper at arcu. Suspendisse ut nisl orci. Suspendisse in porttitor mauris. Phasellus quis fringilla augue. Vivamus eget dolor at ligula consectetur commodo id nec elit. Integer ut imperdiet felis, eget interdum felis. In nisi mauris, fringilla eu consectetur vel, ultrices eu urna. In facilisis lorem ut lorem mattis pharetra. Proin nec nisi eu dui tempus cursus. Cras elit massa, molestie a vulputate consectetur, suscipit et ipsum. Nam condimentum elit ac velit mattis, faucibus ultricies elit suscipit. Nunc dapibus tristique dolor, et varius ligula hendrerit ac. Sed feugiat ut nisi quis ornare."
- ME_Qara_Qoyunlu_Events.23.a: "Let them join our federation."
- ME_Qara_Qoyunlu_Events.23.b: "Settle in the tribes at home."
- 
- ME_Qara_Qoyunlu_Events.24.t: "Free from Taqiyya"
- ME_Qara_Qoyunlu_Events.24.d: "Sed facilisis, quam a feugiat lobortis, lorem turpis placerat justo, sit amet malesuada nulla massa ut risus. Duis non varius arcu. Cras eleifend ligula pretium, eleifend tellus ut, dictum erat. Nullam id ex condimentum, pulvinar eros a, ultrices ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed malesuada neque quis consequat elementum. Maecenas porttitor, nisl non vestibulum vulputate, neque justo condimentum lectus, sed malesuada nunc dolor eget dui. In vehicula ligula nec semper tristique. Nulla accumsan rutrum neque vitae molestie. Aliquam dui urna, tincidunt et arcu id, dapibus porttitor mauris. Curabitur ultrices tellus eget libero auctor vulputate. Integer eget tellus in augue mattis volutpat. Nullam a eros augue. Etiam in malesuada diam. Nam eget mi a leo laoreet finibus a quis sem. Aliquam vel mi in urna euismod sodales at at tortor."
- ME_Qara_Qoyunlu_Events.24.a: "Be free!"
- 
- ME_Qara_Qoyunlu_Events.25.t: "Pontic Marriage"
- ME_Qara_Qoyunlu_Events.25.d: "Integer tristique scelerisque tortor, hendrerit cursus orci efficitur sed. Nam ligula lacus, tempor efficitur vestibulum commodo, hendrerit vitae sem. Sed ac magna in nisl sodales congue. Etiam varius hendrerit libero ut blandit. Etiam aliquam erat sed condimentum hendrerit. Pellentesque consequat leo ligula. Praesent molestie in neque sit amet pretium. Sed augue purus, lacinia nec sagittis nec, viverra quis turpis. Sed ultricies faucibus dolor, eget dignissim metus ultricies a. Nullam in magna in justo mollis venenatis. Duis vulputate tortor non risus pharetra finibus. Duis nibh nulla, laoreet ut pretium vitae, laoreet ut nibh. Aenean molestie pharetra ullamcorper. Vivamus at justo lectus. Nunc vel efficitur lectus. Vivamus quis nunc felis."
- ME_Qara_Qoyunlu_Events.25.a: "Send the Marriage Offer"
- ME_Qara_Qoyunlu_Events.25.b: "The tradition is just that."
- 
- ME_Qara_Qoyunlu_Events.26.t: "The Pontic Marriage"
- ME_Qara_Qoyunlu_Events.26.d: "Integer tristique scelerisque tortor, hendrerit cursus orci efficitur sed. Nam ligula lacus, tempor efficitur vestibulum commodo, hendrerit vitae sem. Sed ac magna in nisl sodales congue. Etiam varius hendrerit libero ut blandit. Etiam aliquam erat sed condimentum hendrerit. Pellentesque consequat leo ligula. Praesent molestie in neque sit amet pretium. Sed augue purus, lacinia nec sagittis nec, viverra quis turpis. Sed ultricies faucibus dolor, eget dignissim metus ultricies a. Nullam in magna in justo mollis venenatis. Duis vulputate tortor non risus pharetra finibus. Duis nibh nulla, laoreet ut pretium vitae, laoreet ut nibh. Aenean molestie pharetra ullamcorper. Vivamus at justo lectus. Nunc vel efficitur lectus. Vivamus quis nunc felis."
- ME_Qara_Qoyunlu_Events.26.a: "Accept!"
- ME_Qara_Qoyunlu_Events.26.b: "We don't care about our past."
- 
- ME_Qara_Qoyunlu_Events.27.t: "Pir Budaq - Governor of Fars"
- ME_Qara_Qoyunlu_Events.27.d: "Integer tristique scelerisque tortor, hendrerit cursus orci efficitur sed. Nam ligula lacus, tempor efficitur vestibulum commodo, hendrerit vitae sem. Sed ac magna in nisl sodales congue. Etiam varius hendrerit libero ut blandit. Etiam aliquam erat sed condimentum hendrerit. Pellentesque consequat leo ligula. Praesent molestie in neque sit amet pretium. Sed augue purus, lacinia nec sagittis nec, viverra quis turpis. Sed ultricies faucibus dolor, eget dignissim metus ultricies a. Nullam in magna in justo mollis venenatis. Duis vulputate tortor non risus pharetra finibus. Duis nibh nulla, laoreet ut pretium vitae, laoreet ut nibh. Aenean molestie pharetra ullamcorper. Vivamus at justo lectus. Nunc vel efficitur lectus. Vivamus quis nunc felis."
- ME_Qara_Qoyunlu_Events.27.a: "Nice."
- 
- ME_Qara_Qoyunlu_Events.29.t: "[Root.Monarch.GetName] - The King Above All Kings"
- ME_Qara_Qoyunlu_Events.29.d: "Maecenas id vulputate eros. Nulla nec orci eget nisi interdum accumsan. Nulla tincidunt ullamcorper tempor. Sed consectetur et arcu eget ultrices. Aliquam consectetur justo et risus egestas bibendum. Proin et efficitur ligula. Nunc blandit magna eget sapien aliquet porttitor. Etiam aliquet nulla sit amet velit blandit interdum. Nam semper rutrum commodo. Suspendisse a aliquam lectus. In a aliquam neque. Sed quam mauris, dignissim at massa quis, pellentesque volutpat justo. Nulla in rhoncus magna. Aliquam sollicitudin nibh leo, nec pretium nisi volutpat ac. Fusce et velit rutrum, bibendum nisl in, suscipit erat."
- ME_Qara_Qoyunlu_Events.29.a: "Long may [Root.Monarch.GetSheHe] reign!"
- 
- ME_Qara_Qoyunlu_Events.31.t: "The Death of {Root.Monarch.GetName]"
- ME_Qara_Qoyunlu_Events.31.d: "Maecenas id vulputate eros. Nulla nec orci eget nisi interdum accumsan. Nulla tincidunt ullamcorper tempor. Sed consectetur et arcu eget ultrices. Aliquam consectetur justo et risus egestas bibendum. Proin et efficitur ligula. Nunc blandit magna eget sapien aliquet porttitor. Etiam aliquet nulla sit amet velit blandit interdum. Nam semper rutrum commodo. Suspendisse a aliquam lectus. In a aliquam neque. Sed quam mauris, dignissim at massa quis, pellentesque volutpat justo. Nulla in rhoncus magna. Aliquam sollicitudin nibh leo, nec pretium nisi volutpat ac. Fusce et velit rutrum, bibendum nisl in, suscipit erat."
- ME_Qara_Qoyunlu_Events.31.a: "A grave tragedy indeed."
- 
- ME_Qara_Qoyunlu_Events.32.t: "Rage Against the Lamb"
- ME_Qara_Qoyunlu_Events.32.d: "Maecenas id vulputate eros. Nulla nec orci eget nisi interdum accumsan. Nulla tincidunt ullamcorper tempor. Sed consectetur et arcu eget ultrices. Aliquam consectetur justo et risus egestas bibendum. Proin et efficitur ligula. Nunc blandit magna eget sapien aliquet porttitor. Etiam aliquet nulla sit amet velit blandit interdum. Nam semper rutrum commodo. Suspendisse a aliquam lectus. In a aliquam neque. Sed quam mauris, dignissim at massa quis, pellentesque volutpat justo. Nulla in rhoncus magna. Aliquam sollicitudin nibh leo, nec pretium nisi volutpat ac. Fusce et velit rutrum, bibendum nisl in, suscipit erat."
- ME_Qara_Qoyunlu_Events.32.a: "Jahan Shah will fall!"
- 
- ME_Qara_Qoyunlu_Events.33.t: "Fate of the Southern Sheep"
- ME_Qara_Qoyunlu_Events.33.d: "Maecenas id vulputate eros. Nulla nec orci eget nisi interdum accumsan. Nulla tincidunt ullamcorper tempor. Sed consectetur et arcu eget ultrices. Aliquam consectetur justo et risus egestas bibendum. Proin et efficitur ligula. Nunc blandit magna eget sapien aliquet porttitor. Etiam aliquet nulla sit amet velit blandit interdum. Nam semper rutrum commodo. Suspendisse a aliquam lectus. In a aliquam neque. Sed quam mauris, dignissim at massa quis, pellentesque volutpat justo. Nulla in rhoncus magna. Aliquam sollicitudin nibh leo, nec pretium nisi volutpat ac. Fusce et velit rutrum, bibendum nisl in, suscipit erat."
- ME_Qara_Qoyunlu_Events.33.a: "The vile Qara Qoyunlu must be ousted."
+ ME_Qara_Qoyunlu_Events.31.t: "The Death of [Root.Monarch.GetName]" 
+ ME_Qara_Qoyunlu_Events.31.d: "Tragedy has struck! While fulfilling his obligations to Jahan Shah, Ispend has fallen victim to a horrible sickness to which he succumbed. Our future and loyalty to Jahan Shah is far from certain." 
+ ME_Qara_Qoyunlu_Events.31.a: "A grave tragedy indeed." 
+  
+ ME_Qara_Qoyunlu_Events.32.t: "Rage Against the Lamb" 
+ ME_Qara_Qoyunlu_Events.32.d: "A desperate war against the Qara Qoyunlu has invited many of their foes to join our cause. We stand united in the effort against the tyranny of Jahan Shah!" 
+ ME_Qara_Qoyunlu_Events.32.a: "Jahan Shah will fall!" 
+  
+ ME_Qara_Qoyunlu_Events.33.t: "Fate of the Southern Sheep" 
+ ME_Qara_Qoyunlu_Events.33.d: "Having asserted our independence,  we lie at the crossroads. We may now try to forge a new identity in the south, or return to the state before us and succeed the Ilkhanids. Our future remains to be chosen."
+ ME_Qara_Qoyunlu_Events.33.a: "The vile Qara Qoyunlu must be ousted." 
  ME_Qara_Qoyunlu_Events.33.b: "We have grown too reliant on old Jalayirid Nobility."
  
  cb_punish_qara_qoyunlu: "Punish Qara Qoyunlu"
