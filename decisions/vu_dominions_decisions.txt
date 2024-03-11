@@ -71,7 +71,6 @@ country_decisions = {
 						culture = ROOT
 						religion = ROOT
 					}
-					set_overlord_idea_groups = yes
 					adopt_reform_progress = ROOT
 					every_province = {
 						limit = {
@@ -178,7 +177,6 @@ country_decisions = {
 						culture = ROOT
 						religion = ROOT
 					}
-					set_overlord_idea_groups = yes
 					adopt_reform_progress = ROOT
 					every_province = {
 						limit = {
@@ -506,7 +504,7 @@ country_decisions = {
 						culture = ROOT
 						religion = ROOT
 					}
-					set_overlord_idea_groups = yes
+					
 					adopt_reform_progress = ROOT
 					every_province = {
 						limit = {
@@ -800,7 +798,7 @@ country_decisions = {
 						culture = ROOT
 						religion = ROOT
 					}
-					set_overlord_idea_groups = yes
+					
 					adopt_reform_progress = ROOT
 					every_province = {
 						limit = {

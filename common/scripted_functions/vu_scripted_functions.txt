@@ -88,6 +88,7 @@ can_colonize_province = {
 					technology_group = sub_saharan
 					technology_group = aboriginal_tech
 					technology_group = polynesian_tech
+					is_subject_of_type = self_governing_dominion_vu
 					dip_tech = 35 #After 1856 the restrictions are lifted
 				}
 			}
@@ -2199,6 +2200,7 @@ can_colonize_province_siberian_frontier = {
 		
 		potential = {
 			FROM = { is_colonial_nation = yes }
+			NOT = { FROM = { is_subject_of_type = self_governing_dominion_vu } }
 		}
 		
 		allow = {
@@ -2252,6 +2254,7 @@ can_colonize_province_siberian_frontier = {
 						technology_group = sub_saharan
 						technology_group = aboriginal_tech
 						technology_group = polynesian_tech
+						NOT = { FROM = { is_subject_of_type = self_governing_dominion_vu } }
 					}
 				}
 			}
