@@ -2072,3 +2072,110 @@ country_event = {
         name = "EVTOPTA16464b"
     }
 }
+
+#Ukrainian Grain
+country_event = {
+    id = 16467
+    title = "EVTNAME164640"
+    desc = "EVTDESC164640"
+    picture = FARMING_eventPicture
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        adm_tech = 33
+	owns_core_province = 2411
+    }
+
+    mean_time_to_happen = {
+        months = 380
+    }
+
+    #Gain New Good
+    option = {
+        name = "EVTOPTA164640a"
+        7251 = {
+		change_trade_goods = grain
+	}
+        7196 = {
+		change_trade_goods = grain
+	}
+        3243 = {
+		change_trade_goods = grain
+	}
+        2406 = {
+		change_trade_goods = grain
+	}
+        4140 = {
+		change_trade_goods = grain
+	}
+        7194 = {
+		change_trade_goods = grain
+	}
+        283 = {
+		change_trade_goods = grain
+	}
+        2411 = {
+		change_trade_goods = grain
+	}
+        7257 = {
+		change_trade_goods = grain
+	}
+        7193 = {
+		change_trade_goods = grain
+	}
+        7199 = {
+		change_trade_goods = grain
+	}
+        7277 = {
+		change_trade_goods = grain
+	}
+        7201 = {
+		change_trade_goods = grain
+	}
+        7203 = {
+		change_trade_goods = grain
+	}
+        3247 = {
+		change_trade_goods = grain
+	}
+        7202 = {
+		change_trade_goods = grain
+	}
+        3302 = {
+		change_trade_goods = grain
+	}
+	ai_chance = { factor = 68 }
+    }
+    #Partially New Goods
+    option = {
+        name = "EVTOPTA164640b"
+        7251 = {
+		change_trade_goods = grain
+	}
+        7196 = {
+		change_trade_goods = grain
+	}
+        3243 = {
+		change_trade_goods = grain
+	}
+        2406 = {
+		change_trade_goods = grain
+	}
+        4140 = {
+		change_trade_goods = grain
+	}
+        7194 = {
+		change_trade_goods = grain
+	}
+        283 = {
+		change_trade_goods = grain
+	}
+	ai_chance = { factor = 32 }
+    }
+    #Keep Old Goods
+    option = {
+        name = "EVTOPTA164640c"
+	ai_chance = { factor = 0 }
+    }
+}
