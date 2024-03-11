@@ -21,7 +21,10 @@ province_event = {
 			# Colonial nations should still be affected - at least before their independence.
 			OR = {
 				NOT = { same_continent = ROOT }
-				is_colonial_nation = yes
+				AND = { 
+					is_colonial_nation = yes
+					NOT = { is_subject_of_type = self_governing_dominion_vu }
+				}
 			}
 		}
 	}

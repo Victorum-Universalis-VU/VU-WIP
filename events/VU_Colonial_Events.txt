@@ -11,6 +11,7 @@ country_event = {
 		FROM = { is_colonial_nation = yes }
 		any_owned_province = {
 			NOT = { colonial_region = capital }
+	
 		}
 	}
 
@@ -2209,7 +2210,10 @@ country_event = {
 			is_claim = ROOT
 			OR = {
 				NOT = { same_continent = ROOT }
-				FROM = { is_colonial_nation = yes }
+				AND = { 
+					FROM = { is_colonial_nation = yes }
+					FROM = { NOT = { is_subject_of_type = self_governing_dominion_vu } }
+				}
 			}
 		}
 	}
