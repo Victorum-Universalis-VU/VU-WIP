@@ -38,6 +38,23 @@ estate_jews = {
 }
 
 #GE
+estate_junkers = {
+	modifier_definition = {
+		type = loyalty
+		key = estate_junkers_loyalty_modifier
+		trigger = {
+			has_estate = estate_junkers
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = estate_junkers_influence_modifier
+		trigger = {
+			has_estate = estate_junkers
+		}
+	}
+}
 estate_peasants = {
 	modifier_definition = {
 		type = loyalty

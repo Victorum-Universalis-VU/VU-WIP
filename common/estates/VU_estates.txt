@@ -256,16 +256,18 @@ estate_junkers = {
 	country_modifier_happy = {
 		army_tradition_decay = -0.005
 		manpower_recovery_speed = 0.20
+		land_maintenance_modifier = -0.1
 	}
 	country_modifier_neutral = {
 		army_tradition_decay = -0.005
+		manpower_recovery_speed = 0.20 
 	}	
 	country_modifier_angry = {
 		army_tradition_decay = 0.005
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		nobles_loyalty_modifier = 0.2
+		nobles_loyalty_modifier = 0.20
 	}
 
 	province_independence_weight = {
@@ -330,6 +332,99 @@ estate_junkers = {
 		estate_nobles_monopoly_of_livestock
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
+		estate_noble_hajduk
+		estate_nobles_command_of_the_military
+		estate_nobles_better_integration
+		estate_nobles_cawa_peace_keepers
+		estate_nobles_cawa_offensive_fighters
+		estate_nobles_neighbor_raids
+		estate_nobles_decentralized_tribe
+		estate_nobles_tribe_unification
+		estate_nobles_tribe_centralization
+		estate_nobles_grant_power_to_the_bashorun
+		estate_nobles_danish_nobility
+		estate_nobles_nobles_instead_of_royal_court
+		estate_nobles_leidang_conscription
+		estate_nobles_carolean_march
+		estate_nobles_carolean_charge
+		estate_nobles_religious_conscription
+		estate_nobles_leidang_mass_conscription
+		estate_nobles_leidang_elite_conscription
+		estate_nobles_sponsor_hussars
+		estate_nobles_mansabdari_cav_maintenance
+		estate_nobles_mansabdari_military_service
+		estate_nobles_mansabdari_royal_rule
+		estate_nobles_mestnichestvo
+		estate_nobles_early_serfdom
+		estate_nobles_legalized_serfdom
+		estate_nobles_total_serfdom
+		estate_nobles_restricted_serfdom
+		estate_nobles_devastating_serfdom
+		estate_nobles_increased_peasant_freedom
+		estate_nobles_peasant_liberation
+		estate_nobles_rynda
+		estate_nobles_landed_army
+		estate_nobles_factionalist_nobility
+		estate_nobles_consolidated_noble_contracts
+		estate_nobles_english_villeinage
+		estate_nobles_english_copyhold_tenure
+		estate_nobles_development_of_castles
+		estate_nobles_statesman_servitude
+		estate_nobles_royal_court_tasks
+		estate_nobles_diet_right
+		estate_nobles_force_conscription
+		estate_nobles_noble_officer_right
+		estate_nobles_expedition_rights
+		estate_nobles_highland_fortifications
+		estate_nobles_emirs_of_baghdad
+		estate_nobles_deteriorating_army
+		estate_nobles_defensive_policy
+		estate_nobles_tofangchi_regiment
+		estate_nobles_tupchi_artillery_corps
+		estate_nobles_qurchi_service
+		estate_nobles_mamlukian_administration
+		estate_nobles_enlist_the_mamluks
+		estate_nobles_order_of_dragon 
+		#VU-specific privileges
+		estate_nobles_very_strong_duchies
+		estate_nobles_extremely_strong_duchies
+		estate_nobles_british_strong_marches
+		#End of VU-specific privileges
+		#GE
+		estate_nobles_diplomatic_privilege
+		estate_nobles_magnate_law_privilege
+		estate_nobles_timariot_privilege
+		estate_nobles_noble_officer_privilege
+		estate_nobles_grand_captain_privilege
+		estate_nobles_call_cortez
+		estate_nobles_call_privy_council
+		estate_nobles_white_knights
+		estate_noble_land_privileges
+		estate_nobles_kreditwerk_appointment
+		estate_nobles_blood_tax
+		estate_nobles_establish_serfdom
+		estate_nobles_berber_guides
+		estate_nobles_elite_guards
+		#ME
+		estate_nobles_anatolian_theme
+		#HRE
+		estate_nobles_imperial_court
+		estate_nobles_imperial_marshall
+		#PE
+		estate_noble_baron_pensions
+		estate_noble_baron_courts
+		estate_noble_baron_courtier
+		estate_noble_baron_squires
+		estate_noble_baron_titles
+		estate_noble_absolute_taxation
+		#ZZZ_new_privs
+		#ME Privileges:
+		estate_nobles_recruit_grenzens
+		estate_nobles_conscription_law
+		ME_estate_nobles_bedouin_recruitment
+		ME_estate_maratha_special_privilege
+		ME_estate_nobles_loyal_military
+		ME_estate_nobles_theme_system
 	}
 
 	agendas = {
