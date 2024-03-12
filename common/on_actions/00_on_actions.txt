@@ -218,6 +218,36 @@ on_startup = {
     				estate = estate_church
    				share = 15
 			}
+			change_estate_land_share = {
+    				estate = estate_burghers
+   				share = -10
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			change_estate_land_share = {
+    				estate = estate_jews
+    				share = -10
+			}
+			change_estate_land_share = {
+    				estate = estate_nobles
+   				share = 10
+			}
+		}
+		if = {
+			limit = {
+				tag = SCO
+			}
+			change_estate_land_share = {
+    				estate = estate_jews
+    				share = -10
+			}
+			change_estate_land_share = {
+    				estate = estate_nobles
+   				share = 10
+			}
 		}
 		set_country_flag = teu_setup_complete
 	}
@@ -230,8 +260,20 @@ on_startup = {
 				has_estate = estate_jews
 			}
 			change_estate_land_share = {
-    			estate = estate_jews
-    			share = -10
+    				estate = estate_jews
+    				share = -10
+			}
+			change_estate_land_share = {
+    				estate = estate_church
+   				share = 2
+			}
+			change_estate_land_share = {
+    				estate = estate_nobles
+   				share = 6
+			}
+			change_estate_land_share = {
+    				estate = estate_burghers
+   				share = 2
 			}
 		}
 		set_country_flag = setup_complete_on_startup
@@ -494,6 +536,8 @@ on_startup = {
 			cavalry = capital
 			cavalry = capital
 		    infantry = capital
+			infantry = capital
+			infantry = capital
 			infantry = capital
 			infantry = capital
 			infantry = capital

@@ -649,14 +649,14 @@ me_nordmark = {
 	}
 }
 
-EE_synthetic_monarchy = {
+ME_synthetic_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = EE_synthetic_monarchy
+		has_reform = ME_synthetic_monarchy
 	}
 	trigger = {
-		has_reform = EE_synthetic_monarchy
+		has_reform = ME_synthetic_monarchy
 	}
 	valid_for_nation_designer = no
 
@@ -666,14 +666,14 @@ EE_synthetic_monarchy = {
 	}
 }
 
-EE_synthetic_monarchy_militarized = {
+ME_synthetic_monarchy_militarized = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = EE_synthetic_monarchy_militarized
+		has_reform = ME_synthetic_monarchy_militarized
 	}
 	trigger = {
-		has_reform = EE_synthetic_monarchy_militarized
+		has_reform = ME_synthetic_monarchy_militarized
 	}
 	valid_for_nation_designer = no
 

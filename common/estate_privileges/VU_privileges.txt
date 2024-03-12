@@ -90,7 +90,7 @@ estate_jews_jewish_quarters = {
 	on_granted_province = {
 		if = {
 		    limit = {
-				OR = {
+			OR = {
 		    	   	development = 20
 		    	   	is_capital = yes
 		    	}
@@ -293,6 +293,9 @@ estate_jews_suck_privileges = {
 		}
 	}
 	on_granted_province = {
+	}
+	can_revoke = { 
+		NOT = { has_estate_privilege = estate_jews_suck_2 }
 	}
 	on_revoked = {
 		custom_tooltip = estate_jews_suck_revoke_tooltip

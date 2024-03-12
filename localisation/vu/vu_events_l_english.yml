@@ -1,6 +1,12 @@
 ﻿l_english:
  #VU EVENTS
  #VU Quonton additions
+ #Ukrainian Grain
+ EVTNAME164640:"Expansion of Ruthenian Grain"
+ EVTDESC164640:"In recent years Southern Ruthenia has seen a massive shift in economic output, with much of the region switching from primarily cattle and horsemanship to grain."
+ EVTOPTA164640a:"We will support this change"
+ EVTOPTA164640b:"We will attempt to save some of the previous Economic Output"
+ EVTOPTA164640c:"Stop this change at once!"
  #Finish Flavor
  vu_flavor_fin.1.t:"The Future of Finland"
  vu_flavor_fin.1.desc:"Now stands before us a crossroads. Finland has long been within the cultural sphere of Scandinavia, and we have quickly became a nation close to Sweden and Scandinavia as a whole. But, the east, and our Uralic brothers and sisters under the thumb of the Rus becons to us. Should we Focus on the West and Scandinavia, or the East and Uralia?"

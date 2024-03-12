@@ -1434,6 +1434,9 @@
  REGISTER_PEASANTS: "Increase Recruitment"
  estate_junkers: "Junkers"
  estate_junkers_desc: "The Junker Estate represents the German lower nobility."
+ estate_junkers_ownership: "Junker Land Ownership"
+ estate_junkers_loyalty_modifier: "Junker Loyalty Equilibrium"
+ estate_junkers_influence_modifier: "Junker Influence"
  
  RECRUIT_JUNKERS: "Recruit Junkers"
  PLACATE_JUNKERS: "Placate the Junkers"

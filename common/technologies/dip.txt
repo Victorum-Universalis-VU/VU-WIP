@@ -13,8 +13,8 @@ technology = { #Early Ships
 	# Tech 0
 	year = 1150
 	
-	naval_morale			=	2.0
-	range					=	60
+	naval_morale = 2.0
+	range = 60
 	may_fabricate_claims = yes
 
 	enable = war_canoe
@@ -33,9 +33,6 @@ technology = { #Early Ships
 	off_7 = yes
 	off_8 = yes
     
-	admiralty = yes
-	archaeological_dig = yes
-	observatory = yes
 	park = yes
 	pigeon_shed = yes
 	fire_office = yes
@@ -49,8 +46,10 @@ technology = { #Merchants & Trade
 	}
 	
 	merchants = yes
-	trade_range				=	50
-	global_colonial_growth	= 	10
+	trade_range	= 50
+	global_colonial_growth = 10
+
+
 }
 
 technology = {  # Early Banking
@@ -73,12 +72,12 @@ technology = { #The Knarr
 	}
 	
 	enable = knarr
-	trade_range				=	100
+	trade_range	= 100
 	enable = cog
 	enable = galley
 	
 	naval_engagement_width = 20
-
+	potters = yes
 }
 
 technology = {  #Urbanisation
@@ -91,6 +90,8 @@ technology = {  #Urbanisation
 	}
 
 	trade_efficiency = 0.01
+	brewery = yes
+	observatory = yes
 }
 
 
@@ -119,6 +120,7 @@ technology = {  #Ports
 	}
 
 	naval_maintenance = 0.05
+	regular_cloth_workshop = yes
 }
 
 
@@ -145,6 +147,7 @@ technology = {  #Finance
 	}
 
 	trade_efficiency = 0.01
+	medical_facility = yes
 }
 
 
@@ -320,11 +323,11 @@ technology = { #The Early Carrack
 		market_production = 0.4
 	}
 
-	naval_morale			=	0.1
-	naval_maintenance		= 	0.1
-	range					= 	100
-	trade_efficiency 		= 	0.01
-	global_colonial_growth	= 	15
+	naval_morale = 0.1
+	naval_maintenance = 0.1
+	range = 100
+	trade_efficiency = 0.01
+	global_colonial_growth = 15
 	may_build_flagships = yes
 	
 	enable = early_carrack
@@ -363,9 +366,9 @@ technology = { #Basic Financial Instruments
 		market_production = 0.5
 	}
 	
-	naval_maintenance		=	0.1	
-	trade_efficiency 		= 	0.02
-	trade_range				=	20
+	naval_maintenance = 0.1	
+	trade_efficiency = 0.02
+	trade_range	= 20
 	
 	#Naval Base Building
 	naval_base = yes
@@ -403,8 +406,8 @@ technology = { #Naval Ambitions
 		renaissance = 0.5
 	}
 	
-	naval_morale			= 0.3
-	range					= 115
+	naval_morale = 0.3
+	range = 115
 	impressment_offices = yes
 	naval_engagement_width = 10
 }
@@ -424,8 +427,8 @@ technology = { #Docks
 
 	num_accepted_cultures = 1
 
-	trade_range				=	10
-	naval_morale			=	0.2
+	trade_range	= 10
+	naval_morale = 0.2
 	
 	#Shipyard Building
 	shipyard = yes
@@ -444,26 +447,17 @@ technology = { #Carracks & Caravel
 		new_world_i = 0.15
 	}
 	
-	naval_maintenance		= 	0.1
-	range					=	50
+	naval_maintenance = 0.1
+	range =	50
 	
 	enable = carrack
 	enable = caravel
 	may_study_technology = yes
 	
 	#Spectacle Factory TGE Manufactory
-	spectacle_factory = yes
-	
-	regular_cloth_workshop = yes
 	luxury_cloth_workshop = yes
 	luxury_furniture_workshop = yes
-	utensil_workshop = yes
 	#glassmaker = yes                  #Jay's entry
-	potters = yes
-	steel_foundry = yes
-	papermill = yes
-	medical_facility = yes
-	brewery = yes
 }
 
 technology = { #The Flute
@@ -479,12 +473,12 @@ technology = { #The Flute
 		new_world_i = 0.3
 	}
 	
-	trade_efficiency		= 	0.03
-	trade_range				=	20
-	global_colonial_growth  = 	10
+	trade_efficiency = 0.03
+	trade_range	= 20
+	global_colonial_growth = 10
 	enable = flute
 	enable = war_galley
-
+	papermill = yes
 }
 
 technology = { #Wharf
@@ -500,7 +494,7 @@ technology = { #Wharf
 		new_world_i = 0.5
 	}
 	
-	range					= 	100
+	range = 100
 
 	wharf = yes
 	
@@ -521,7 +515,7 @@ technology = { #Man of War
 		new_world_i = 0.5
 	}
 
-	naval_morale			=	0.4
+	naval_morale = 0.4
 	may_slander_merchants = yes
 
 	naval_engagement_width = 15
@@ -552,9 +546,10 @@ technology = { #Chartered Companies
 		printing_press = 0.15
 	}
 	
-	trade_efficiency 		= 	0.02
+	trade_efficiency = 0.02
 	enable = brig
 
+	steel_foundry = yes
 }
 
 technology = { #The Galleass
@@ -593,9 +588,9 @@ technology = { #The Galleon
 		printing_press = 0.5
 	}
 	
-	naval_maintenance		= 	0.1
-	range					=	50
-	global_colonial_growth  = 	15
+	naval_maintenance = 0.1
+	range =	50
+	global_colonial_growth = 15
 	
 	enable = galleon
 	enable = early_frigate
@@ -617,8 +612,8 @@ technology = { #Development of Maritime Law
 		printing_press = 0.5
 	}
 	
-	trade_efficiency 		= 	0.02
-	trade_range				=	20
+	trade_efficiency = 0.02
+	trade_range	= 20
 	
 	#Canal System Building
 	canal_system = yes
@@ -639,8 +634,8 @@ technology = { #Merchantman
 		global_trade = 0.15
 	}
 	
-	trade_range				=	20
-	range					=	50
+	trade_range	= 20
+	range =	50
 	
 
 	#Trade Depot Building
@@ -666,11 +661,11 @@ technology = { #Line of Battle
 	}
 	
 	enable = galiot
-	naval_morale			=	0.5
+	naval_morale = 0.5
 	may_sow_discontent = yes
 	
 	naval_engagement_width = 10
-
+	utensil_workshop = yes
 	operatics = yes
 }
 
@@ -689,16 +684,15 @@ technology = { #The War Galleon
 		global_trade = 0.5
 	}
 	
-	naval_maintenance		= 	0.1	
-	range					=	50
+	naval_maintenance = 0.1	
+	range =	50
 
-
-	
 	enable = wargalleon
 	enable = frigate
 	
 	#Drydock Building
-	drydock = yes 
+	drydock = yes
+	admiralty = yes
 }
 
 technology = { #Naval Professionalization
@@ -716,8 +710,8 @@ technology = { #Naval Professionalization
 		global_trade = 0.5
 	}
 
-	trade_efficiency 		= 	0.03
-	trade_range				=	20
+	trade_efficiency = 0.03
+	trade_range	= 20
 	num_accepted_cultures = 1
 }
 
@@ -758,8 +752,8 @@ technology = { #Limes
 		manufactories = 0.3
 	}
 	
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
+	naval_morale = 0.5
+	naval_maintenance = 0.1
 
 
 
@@ -791,11 +785,11 @@ technology = { #Heavy Frigates
 		manufactories = 0.5
 	}
 	
-	global_colonial_growth  = 	25	
-	range					=	150
+	global_colonial_growth = 25	
+	range = 150
 	allow_client_states = yes	
-
 	enable = heavy_frigate
+	spectacle_factory = yes
 }
 
 technology = { #The Archipelago Frigate
@@ -817,8 +811,8 @@ technology = { #The Archipelago Frigate
 
 
 	
-	trade_efficiency 		= 	0.03
-	trade_range				=	20
+	trade_efficiency = 0.03
+	trade_range	= 20
 	enable = archipelago_frigate
 	may_corrupt_officials = yes
 	naval_engagement_width = 10
@@ -844,8 +838,8 @@ technology = { #The Threedeckers
 		enlightenment = 0.3
 	}
 	
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
+	naval_morale = 0.5
+	naval_maintenance = 0.1
 	
 	enable = threedecker
 	
@@ -870,8 +864,8 @@ technology = { #The Eastindiaman
 		enlightenment = 0.5
 	}
 	
-	range					=	200
-	global_colonial_growth  = 	25
+	range =	200
+	global_colonial_growth = 25
 	num_accepted_cultures = 1
 	
 	enable = eastindiaman
@@ -896,8 +890,8 @@ technology = { #Public Punishments
 	}
 	
 	#Public Punishment
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
+	naval_morale = 0.5
+	naval_maintenance = 0.1
 	may_agitate_for_liberty = yes
 	national_museum = yes
 }
@@ -921,8 +915,10 @@ technology = { #Joint Stock Companies
 	}
 	
 	#Superior Ship Design
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
+	naval_morale = 0.5
+	naval_maintenance = 0.1
+
+	archaeological_dig = yes
 }
 
 technology = { #Midshipmen Cadets
@@ -944,8 +940,8 @@ technology = { #Midshipmen Cadets
 	}
 	
 	#Joint Stock Companies
-	trade_efficiency 		= 	0.02
-	trade_range				=	20
+	trade_efficiency = 0.02
+	trade_range	= 20
 
 	zoo = yes
 }
@@ -969,8 +965,8 @@ technology = { #Insurance Companies
 	}
 	
 	#Midshipmen Cadets
-	naval_morale			=	0.5
-	naval_maintenance		= 	0.1
+	naval_morale = 0.5
+	naval_maintenance = 0.1
 	num_accepted_cultures = 1
 }
 
@@ -993,8 +989,8 @@ technology = { #Superior Ship Design
 	}
 	
 	#Insurance Companies
-	trade_efficiency 		= 	0.02
-	trade_range				=	20
+	trade_efficiency = 0.02
+	trade_range	= 20
 	may_infiltrate_administration = yes
 }
 
@@ -1018,7 +1014,7 @@ technology = { #The Gold Standard
 	}
 	
 	#The Gold Standard
-	trade_efficiency 		= 	0.02
+	trade_efficiency = 0.02
 	num_accepted_cultures = 1
 	
 	#Corporative Headquarters Building
@@ -1045,9 +1041,9 @@ technology = {
 	}
 
 	#Tin Can
-	trade_range				=	20
-	global_colonial_growth  = 	25
-	range 					=  100
+	trade_range	= 20
+	global_colonial_growth = 25
+	range = 100
 }
 
 technology = {
@@ -1121,8 +1117,8 @@ technology = {
 	}
 
 	#Ironclad
-	naval_maintenance	= 0.1
-	naval_morale		= 0.5
+	naval_maintenance = 0.1
+	naval_morale = 0.5
 
 	enable = ironclad
 	#enable = SPA_HEAVY_SHIP_7
@@ -1155,8 +1151,8 @@ technology = {
 
 	#Telephone
 	
-	trade_efficiency 		= 0.02
-	global_colonial_growth  = 25
+	trade_efficiency = 0.02
+	global_colonial_growth = 25
 	
 	#enable = destroyer
 	#enable = torpedo_boat
@@ -1183,8 +1179,8 @@ technology = {
 	}
 
 	#Refrigerated Shipping
-	trade_range 			= 20
-	range					= 100
+	trade_range = 20
+	range = 100
 
 	cinema = yes
 	radio_station = yes
@@ -1211,9 +1207,9 @@ technology = {
 	}
 
 	#Radio
-	trade_efficiency 		= 0.02
-	num_accepted_cultures	= 1
-	global_colonial_growth 	= 25
+	trade_efficiency = 0.02
+	num_accepted_cultures = 1
+	global_colonial_growth = 25
 }
 
 technology = {
@@ -1236,5 +1232,5 @@ technology = {
 		nationalism_institution = 1
 	}
 	naval_maintenance = 0.1
-	naval_morale 	  = 0.5
+	naval_morale = 0.5
 }

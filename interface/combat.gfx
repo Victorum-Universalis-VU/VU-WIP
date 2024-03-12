@@ -509,7 +509,7 @@ spriteTypes = {
         texturefile = "gfx/interface/east_midlands.dds"
     }
     spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_douglas"
+        name = "GFX_combat_terrain_urban_the_douglas"
         texturefile = "gfx/interface/douglas.dds"
     }
     spriteType = {                                                        

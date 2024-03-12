@@ -310,7 +310,7 @@ estate_burghers = {
 		estate_burghers_saharan_outposts
 		estate_burghers_office_of_chancellor
 		#zzz_new_privs
-		#EE Privileges:
+		#ME Privileges:
 		ME_estate_burghers_ORM_heretic
 		ME_estate_burghers_MSY_marsh_development
 		ME_estate_burghers_YEM_coffee
