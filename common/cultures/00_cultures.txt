@@ -4991,7 +4991,7 @@ east_slavic = {
 	}
 	byelorussian = {
         graphical_culture = easterngfx
-		primary = PLT
+		primary = WRH
 		male_names = {
 			Andrei Lubko Olgierd Bryachislav Vasiliy Svyatoslav Vladimir Izyaslav Vseslav Boris Aleksandr Adrian
 			Afanasiy Daniil Dmitriy Dorofey Faddey Feodosiy Feofil Foma Fyodor Gavriil Grigoriy Igor Ivan
@@ -5031,7 +5031,7 @@ east_slavic = {
 	}
 	ruthenian = {
         graphical_culture = easterngfx
-		primary = KIE
+		primary = UKR
 		male_names = {
 			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy

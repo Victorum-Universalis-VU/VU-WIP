@@ -37,4 +37,5 @@ fort_15th = yes
 	controller = POL
 	add_core = POL
 	remove_core = KIR
+	add_core = VOL
 }

@@ -4,6 +4,7 @@
 owner = MOL
 controller = MOL
 add_core = MOL
+add_core = VOL
 culture = ruthenian
 religion = orthodox
 capital = "Khotyn"
