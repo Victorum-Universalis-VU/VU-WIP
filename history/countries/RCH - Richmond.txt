@@ -6,7 +6,8 @@ government_rank = 1
 technology_group = english_tech_group
 unit_type = western
 religion = catholic
-primary_culture = english
+primary_culture = northumbrian
+add_accepted_culture = english
 capital = 8134 #Richmond
 
 1444.11.11 = { #Suffered a mental breakdown

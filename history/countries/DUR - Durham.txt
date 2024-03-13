@@ -5,6 +5,7 @@ government_rank = 1
 technology_group = english_tech_group
 unit_type = western
 primary_culture = northumbrian
+add_accepted_culture = english
 religion = catholic
 capital = 4368	# Durham
 fixed_capital = 4368
