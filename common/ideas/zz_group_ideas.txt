@@ -1801,30 +1801,40 @@ ruthenian_ideas = {
 			primary_culture = ruthenian_new
 			primary_culture = byelorussian_new
 		}
+		NOT = { tag = UKR }
 	}
 	free = yes
-    #For the modifiers see UKR_ideas
 	mother_of_russian_cities = { #Mother of Russian States
 		legitimacy = 0.5
 		prestige = 0.5
+		devotion = 0.5
+		republican_tradition = 0.1
+		meritocracy = 0.5
+		horde_unity = 0.5
+		prestige = 0.5
 	}
 	international_influences = {
-		tolerance_heretic = 2
+		diplomatic_reputation = 1
+		tolerance_heretic = 1
 	}
 	zaporizhian_cossacs = {
 		cavalry_power = 0.15
+		shock_damage = 0.10
 	}
 	east_and_west = {
 		global_trade_power = 0.1
+		production_efficiency = 0.1
 	}
 	legacy_of_ancient_rus = {
-		stability_cost_modifier = -0.1
+		land_morale = 0.15
 	}
 	reuniting_rus = {
+		core_creation = -0.1
 		years_of_nationalism = -5
 	}
 	birth_of_russian_orthodoxy = {
 		tolerance_own = 1
+		yearly_patriarch_authority = 0.005
 	}
 }
 

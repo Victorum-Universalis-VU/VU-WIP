@@ -4,10 +4,6 @@ ZAZ_missions_1 = {
 	ai = yes
 	potential = {
 		tag = ZAZ
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -132,10 +128,6 @@ ZAZ_missions_2 = {
 	ai = yes
 	potential = {
 		tag = ZAZ
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -229,10 +221,6 @@ ZAZ_missions_3 = {
 	ai = yes
 	potential = {
 		tag = ZAZ
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -407,10 +395,6 @@ ZAZ_missions_4 = {
 	ai = yes
 	potential = {
 		tag = ZAZ
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -523,10 +507,6 @@ ZAZ_missions_5 = {
 	ai = yes
 	potential = {
 		tag = ZAZ
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -630,10 +610,6 @@ ZAZ_TUR_missions_1 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_tur
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -810,10 +786,6 @@ ZAZ_TUR_missions_2 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_tur
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1060,10 +1032,6 @@ ZAZ_TUR_missions_3 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_tur
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1147,10 +1115,6 @@ ZAZ_TUR_missions_4 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_tur
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1223,10 +1187,6 @@ ZAZ_TUR_missions_5 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_tur
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1317,10 +1277,6 @@ ZAZ_RUS_missions_1 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_rus
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1376,10 +1332,6 @@ ZAZ_RUS_missions_2 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_rus
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1505,10 +1457,6 @@ ZAZ_RUS_missions_3 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_rus
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1678,10 +1626,6 @@ ZAZ_RUS_missions_4 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_rus
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -1875,10 +1819,6 @@ ZAZ_RUS_missions_5 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_rus
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -2059,10 +1999,6 @@ ZAZ_GOL_missions_1 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_gol
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -2292,10 +2228,6 @@ ZAZ_GOL_missions_2 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_gol
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -2597,10 +2529,6 @@ ZAZ_GOL_missions_3 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_gol
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -2890,10 +2818,6 @@ ZAZ_GOL_missions_4 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_gol
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	
@@ -3256,10 +3180,6 @@ ZAZ_GOL_missions_5 = {
 	potential = {
 		tag = ZAZ
 		has_country_flag = zaz_allied_gol
-		OR = {
-			has_country_flag = use_missions_expanded_missions_instead_of_paradox
-			NOT = { has_dlc = "Third Rome" }
-		}
 	}
 	has_country_shield = yes
 	

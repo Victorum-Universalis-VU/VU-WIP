@@ -1,6 +1,11 @@
 ﻿l_english:
  #Custom tooltips
  #VU Quonton additions
+ vu_ukr_every_prov_tooltip:0 "Every owned province gains §G1§! Tax and Production §YDevelopment§!"
+ vu_tr_two_russian_subjects:0 "Have at least §Y2 russian subjects§!"
+ vu_WRH_now_can_form_ukr:0 "Unlocks a decision to form Ruthenia"
+ vu_WRH_now_can_form_rus:0 "Unlocks a decision to form Russia"
+ add_core_belarus:0 "Country gains core on all §YByelorussian§! provinces"
  bra_shittynotpru_tt:0 "Once we achieve our §YPrussian Aspirations§!, a greater §MDestiny§! will be revealed "
  vu_change_iberian_to_german:0 "Thirty provinces within §YIberia§! will be §RGermanized§!"
  vu_change_scandinavian_to_german:0 "Thirty provinces within §YScandinavia§! will be §RGermanized§!"

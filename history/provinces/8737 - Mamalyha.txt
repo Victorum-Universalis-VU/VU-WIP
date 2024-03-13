@@ -7,6 +7,7 @@ capital = "Mamalyha"
 is_city = yes
 owner = MOL
 controller = MOL
+add_core = VOL
 
 #Demographics
 culture = ruthenian

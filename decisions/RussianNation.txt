@@ -21,6 +21,7 @@ country_decisions = {
 				primary_culture = russian_new
 				primary_culture = novgorodian_new
 				primary_culture = ryazanian_new
+				has_country_flag = vu_WRH_can_form_russia
 			}
 			OR = {
 				ai = no
