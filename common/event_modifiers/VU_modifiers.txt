@@ -5,6 +5,91 @@ fra_improved_halls_modifier = {
 }
 
 #Quonton
+vu_got_mit_uns = {
+	local_tax_modifier = 0.5
+	tax_income = 6
+}
+vu_develop_ruthenia = {
+	build_cost = -0.1
+	development_cost = -0.1
+}
+vu_increased_production = {
+	production_efficiency = 0.15
+}
+vu_defeat_poland = {
+	land_morale = 0.1
+}
+vu_defeat_russia = {
+	global_manpower_modifier = 0.25
+}
+vu_defeat_tatars = {
+	cavalry_flanking = 1
+	cavalry_power = 0.2
+}
+vu_ruthenian_industralization = {
+	global_trade_goods_size_modifier = 0.1
+}
+vu_ukraine_yaroslav_legacy_modifier = {
+	technology_cost = -0.1
+}
+vu_ukraine_olga_legacy_modifier = {
+	ae_impact = -0.1
+}
+vu_ukraine_sviatoslav_legacy_modifier = {
+	army_tradition_from_battle = 0.5
+	prestige_from_land = 0.5
+}
+vu_ukraine_vladimir_legacy_modifier = {
+	global_missionary_strength = 0.01
+	yearly_patriarch_authority = 0.005
+}
+vu_ukraine_vsevolod_legacy_modifier = {
+	prestige = 1
+}
+vu_tr_effective_diplomacy = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.25
+}
+vu_tr_tsar_of_all_tsars = {
+	prestige = 1
+	legitimacy = 1
+}
+vu_tr_true_ruler = {
+	land_morale = 0.05
+	global_unrest = -2
+}
+vu_tr_hortyca_fort = {
+	local_manpower_modifier = 0.5
+	local_defensiveness = 0.3
+}
+vu_tr_rapid_growth = {
+	development_cost = -0.1
+	global_unrest = -1
+}
+vu_tr_polish_serfs = {
+	global_tax_modifier = 0.15
+	num_accepted_cultures = 1
+}
+vu_tr_grodno_modifier = {
+	local_development_cost = -0.15
+	local_tax_modifier = 0.1
+}
+vu_tr_brest_modifier = {
+	local_defensiveness = 0.15
+	local_hostile_attrition = 1
+}
+vu_tr_statues_of_lithuania = {
+	stability_cost_modifier = -0.15
+	reform_progress_growth = 0.25
+}
+vu_tr_smolensk_trade = {
+	trade_efficiency = 0.15
+	global_trade_goods_size_modifier = 0.15
+}
+vu_tr_offense = {
+	land_morale = 0.05
+	infantry_power = 0.1
+}
 vu_ger_kaiserreich_pupets = {
 	picture = "mitteleuropa_icon"
 	liberty_desire = -20

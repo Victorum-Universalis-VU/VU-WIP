@@ -1313,7 +1313,109 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
+##############################################################################
+######################		White Ruthenian		######################
+##############################################################################
+	white_ruthenian_nation = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_flag = formed_belarus_flag
+			}
+			primary_culture = byelorussian
+			NOT = { 
+				has_country_flag = vu_WRH_can_form_russia
+				has_country_flag = vu_WRH_can_form_ruthenia
+			}
+			NOT = {
+				exists = WRH
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 20
+				}
+			}
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = pripyat_area
+				area = minsk_area
+				area = white_ruthenia_area
+				area = polesie_area
+				area = vitebsk_area
+				area = polotsk_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		allow = {
+			adm_tech = 27
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			minsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			white_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			polesie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vitebsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			polotsk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			276 = {
+				move_capital_effect = yes
+			}
+			custom_tooltip = add_core_belarus
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture = byelorussian
+					}
+					add_core = WRH
+				}
+			}
+			add_prestige = 25
+			change_tag = WRH
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = {
+					id = ideagroups.1
+				}
+				#Swap Ideas
+			}
+			set_country_flag = formed_belarus_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
 ##################################################################################################################
 ######################	    Imperial Russia (Diplomatically) Russian flag (1693–1700)	    ######################
 ##################################################################################################################

@@ -3,6 +3,7 @@
 owner = POL
 controller = POL
 add_core = POL
+add_core = VOL
 culture = polish
 religion = catholic
 capital = "Szczebrzeszyn"

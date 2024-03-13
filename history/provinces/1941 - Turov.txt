@@ -15,6 +15,7 @@ capital = "Turov"
 is_city = yes
 
 #Claimants
+add_core = SLT
 
 #Buildings
 

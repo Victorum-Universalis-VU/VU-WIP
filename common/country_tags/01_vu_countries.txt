@@ -7,7 +7,7 @@
 #Recently merged by DonBrom 20 July 2023
 #New 1.17 - few conflicts, resolved. (All European tags except HSC replacing a VU tag, and cutting HSC. Also note RFR's usage being moved around from rev France to an African tag
 #Europe
-#ICE SLO ULS DMS SLN KID HSC OKA GUY RFR
+#ICE SLO ULS DMS SLN KID HSC OKA GUY RFR WRH
 #Africa
 #TYO SYO LUB KIK KZB YAK KLD KUB RWA BUU BUG NKO
 #KRW NBY BSG UBH MRA LDU TBK MKU RZW MIR SKA BTA MFY ANT
@@ -485,6 +485,7 @@ TRO = "countries/Troppau.txt"
 BSV = "countries/Bratslav.txt"
 
 #VU - Russia & Siberia
+WRH = "countries/WhiteRuthenia.txt"
 BLV = "countries/Belyov.txt"
 DRP = "countries/Dorpat.txt"
 DTK = "countries/Drutsk.txt"

@@ -15,6 +15,7 @@ capital = "Babruysk"
 is_city = yes
 
 #Claimants
+add_core = DTK
 
 #Buildings
 
