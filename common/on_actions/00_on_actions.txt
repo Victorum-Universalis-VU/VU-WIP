@@ -152,6 +152,21 @@ on_startup = {
 			desc = until_end_of_age_desc
 		}
 	}
+	#Put subject types for colored vassals here
+	if = { 
+		limit = { 
+			OR = { 
+				is_subject_of_type = scottish_clan
+				is_subject_of_type = english_peerage
+			}
+		}
+		restore_country_color = yes
+		set_country_flag = vu_cv_done
+		set_country_flag = has_overriden_color_flag
+		change_country_color = {
+			country = overlord
+		}
+	}
 	if = {
 		limit = {
 			has_government_mechanic = ottoman_decadence_mechanic

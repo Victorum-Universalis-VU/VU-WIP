@@ -17871,6 +17871,7 @@ UKR_ideas = {
  
 	trigger = {
 		tag = UKR
+		tag = WRH
 	}
 	free = yes
  
