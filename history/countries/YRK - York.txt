@@ -8,6 +8,7 @@ religion = catholic
 technology_group = english_tech_group
 unit_type = western
 primary_culture = northumbrian
+add_accepted_culture = english
 historical_rival = LCA
 historical_rival = SM1
 historical_friend = NOL
