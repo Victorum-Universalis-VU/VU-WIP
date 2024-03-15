@@ -1,0 +1,33 @@
+namespace = vu_cv
+
+#Put Subject Types in 00_on_actions
+
+country_event = {
+	id = vu_cv.1
+	title = "vu_cv_title"
+	picture = "RELIGIOUS_WARS_eventPicture"
+	desc = "vu_cv_desc"
+
+	hidden = yes
+
+	#Put Subject Types Here
+	trigger = { 
+		NOT = { has_country_flag = vu_cv_done }
+		OR = { 
+			is_subject_of_type = scottish_clan
+			is_subject_of_type = english_peerage
+		}
+	}
+
+	immediate = {
+		restore_country_color = yes
+		set_country_flag = vu_cv_done
+		set_country_flag = has_overriden_color_flag
+		change_country_color = {
+			country = overlord
+		}
+	}
+	option = {
+		name = vu_cv.1a
+	}
+}
