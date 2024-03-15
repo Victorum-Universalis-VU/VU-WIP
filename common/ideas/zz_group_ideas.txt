@@ -1802,6 +1802,7 @@ ruthenian_ideas = {
 			primary_culture = byelorussian_new
 		}
 		NOT = { tag = UKR }
+		NOT = { tag = WRH }
 	}
 	free = yes
 	mother_of_russian_cities = { #Mother of Russian States

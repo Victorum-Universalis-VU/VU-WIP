@@ -33,10 +33,7 @@ stora_kopparberget = {			#Replaces vanilla monument there too
 					accepted_culture = swedish
 					capital = 1
 				}
-				tag = SWE
-				tag = SCA
-				tag = NOR
-				tag = DAN
+				owner = { culture_group = scandinavian }
 			}
 		}
 	}
