@@ -85,7 +85,7 @@ sola_scriptura_aspect = {
 adamite_services_aspect = {
 	cost = 100
 	modifier = {
-		culture_conversion_cost = -0.15
+		culture_conversion_cost = -0.10
 		global_tax_modifier = 0.10
 	}
 	
