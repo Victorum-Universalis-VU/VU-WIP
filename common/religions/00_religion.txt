@@ -337,7 +337,7 @@ christian = {
 			trade_company_governing_cost = -0.1
 			#debuffs
 			church_power_modifier = -0.15 #might have to decrease, it might be too bit hard to activate any powers
-			church_influence = 0.1
+			church_influence_modifier = 0.1
 		}
 		
 		country_as_secondary = {
