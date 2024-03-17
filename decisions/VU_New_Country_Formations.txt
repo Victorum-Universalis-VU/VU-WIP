@@ -1619,7 +1619,10 @@ country_decisions = {
 			is_year = 1500
 			adm_tech = 27
 			NOT = {
-				SWE = { is_subject_of = ROOT }
+				OR = { 
+					SWE = { is_subject_of = ROOT }
+					owns = 1 
+				}
 			}
 			OR = {
 				NOR = { is_subject_of = ROOT }

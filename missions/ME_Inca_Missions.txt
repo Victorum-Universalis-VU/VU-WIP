@@ -577,9 +577,13 @@ inca_missions_1 = {
 					}
 				}
 				AND = {
-					continent = south_america
-					is_sea = no
-					is_wasteland = no
+					superregion = south_america_superregion
+					NOT = { 
+						OR = { 
+							is_sea = yes
+							is_wasteland = yes
+						}
+					}
 					OR = {
 						NOT = { owned_by = ROOT }
 						NOT = { num_of_times_improved = 1 }
@@ -595,7 +599,7 @@ inca_missions_1 = {
 				development = 30
 				continent = south_america
 			}
-			south_america = {
+			south_america_superregion = {
 				type = all
 				OR = {
 					AND = {
@@ -604,17 +608,25 @@ inca_missions_1 = {
 						development = 5
 						NOT = { unrest = 1 }
 					}
-					is_sea = yes
-					is_wasteland = yes
+					NOT = { 
+						OR = { 
+							is_sea = yes
+							is_wasteland = yes
+						}
+					}
 				}
 			}
 		}
 		effect = {
 			add_prestige = 20
-			south_america = {
+			south_america_superregion = {
 				limit = {
-					is_sea = no
-					is_wasteland = no
+					NOT = { 
+						OR = { 
+							is_sea = yes
+							is_wasteland = yes
+						}
+					}
 					NOT = { has_province_modifier = inca_roads_province_modifier }
 				}
 				add_province_modifier = {

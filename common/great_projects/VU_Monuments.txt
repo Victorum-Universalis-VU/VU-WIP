@@ -2308,11 +2308,11 @@ vu_sofiyivka_park = {
 	move_days_per_unit_distance = 7
 	starting_tier = 0
 	type = monument
-	build_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
+	build_trigger = { is_year = 1780 owner = { OR = { primary_culture = ruthenian culture_group = slavic } } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = { primary_culture = ruthenian culture_group = slavic } }
-	can_upgrade_trigger = { is_year = 1780 owner = { primary_culture = ruthenian culture_group = slavic } }
+	can_use_modifiers_trigger = { owner = { OR = { primary_culture = ruthenian culture_group = slavic } } }
+	can_upgrade_trigger = { is_year = 1780 owner = { OR = {  primary_culture = ruthenian culture_group = slavic } } }
 	keep_trigger = {}
 
 	tier_0 = {
@@ -2566,11 +2566,11 @@ vu_piatnytska_church = {
 	move_days_per_unit_distance = 7
 	starting_tier = 1
 	type = monument
-	build_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
+	build_trigger = { owner = { OR = { primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
-	can_upgrade_trigger = { owner = {  primary_culture = ruthenian culture_group = slavic } owner = { religion_group = christian  } }
+	can_use_modifiers_trigger = { OR = { owner = {  primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
+	can_upgrade_trigger = { owner = {  OR = { primary_culture = ruthenian culture_group = slavic } } owner = { religion_group = christian  } }
 	keep_trigger = {}
 
 	tier_0 = {
