@@ -290,7 +290,7 @@ NDiplomacy = {
 	PEACE_COST_RELEASE_ANNEXED = 0.3,				-- Release annexed nation (scales by province wealth)
 	PEACE_COST_RELEASE_VASSAL = 0.15,				-- Release vassal (scales by province wealth)
 	PEACE_COST_REVOKE_ELECTOR = 30,					-- Revoke an elector title
-	PEACE_COST_UNION = 100, 					    -- _DDEF_PEACE_COST_UNION_ Peace cost for forming a personal union
+	PEACE_COST_UNION = 60, 					    	-- _DDEF_PEACE_COST_UNION_ Peace cost for forming a personal union
 	PEACE_COST_SUBJUGATE = 60, 						-- Peace cost for subjugating an enemy using the subjugation CB
 	PEACE_COST_JOIN_HRE = 60, 						-- Max Peace cost for forcing country to join the empire
 	PEACE_COST_CONVERSION = 0.25,					-- scaled with countrysize for forced conversion in peace.
@@ -589,7 +589,7 @@ NCountry = {
 	ESTATE_CROWNLAND_FROM_DEV = 0.1,			-- How much crownland you gain from developing a province.
 
 	ESTATE_PRIVILEGE_ADMIN_COST = 1,			-- Was 0 before the GE merge.
-	ESTATE_PRIVILEGES_MAX_CONCURRENT = 8,		-- Was 4 before the GE merge. Also means the max number of privileges active at the same time.
+	ESTATE_PRIVILEGES_MAX_CONCURRENT = 10,		-- Was 4 before the GE merge. Also means the max number of privileges active at the same time.
 
 	ESTATE_AGENDA_DEFAULT_MAX_ACTIVE_DAYS = 7300, -- Default max amount of days an agenda can stay active
 	ESTATE_AGENDA_ABOUT_TO_EXPIRE_WARNING = 1095, -- How many days it should start warning for agenda about to expire

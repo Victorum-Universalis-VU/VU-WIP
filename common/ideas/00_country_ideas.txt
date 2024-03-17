@@ -17870,7 +17870,10 @@ UKR_ideas = {
 	}
  
 	trigger = {
-		tag = UKR
+		OR = {
+			tag = UKR
+			tag = WRH
+		}
 	}
 	free = yes
  

@@ -869,7 +869,7 @@ vu_tr_ukrainian_minors_missions_1 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300
-					power = 10
+					power = 100
 					key = vu_trade_regulations
 				}
 			}
@@ -1453,6 +1453,12 @@ vu_tr_ukrainian_minors_missions_5 = {
 			add_prestige = 20
 			country_event = {
 				id = flavor_rus.2002
+			}
+			280 = { 
+				add_province_modifier = {
+					name = "re_establishment_of_kiev"
+					duration = -1
+				}
 			}
 			ruthenia_region = {
 				limit = {
