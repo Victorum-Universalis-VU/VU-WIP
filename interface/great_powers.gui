@@ -16,7 +16,7 @@ guiTypes = {
 
 
 
-		guiButtonType =	{
+		guiButtonType = {
 			name ="great_powers_bg"
 			spriteType = "GFX_great_powers_bg"
 			position = { x= 0 y = 0 }
