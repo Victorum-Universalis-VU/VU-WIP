@@ -589,7 +589,7 @@ NCountry = {
 	ESTATE_CROWNLAND_FROM_DEV = 0.1,			-- How much crownland you gain from developing a province.
 
 	ESTATE_PRIVILEGE_ADMIN_COST = 1,			-- Was 0 before the GE merge.
-	ESTATE_PRIVILEGES_MAX_CONCURRENT = 8,		-- Was 4 before the GE merge. Also means the max number of privileges active at the same time.
+	ESTATE_PRIVILEGES_MAX_CONCURRENT = 10,		-- Was 4 before the GE merge. Also means the max number of privileges active at the same time.
 
 	ESTATE_AGENDA_DEFAULT_MAX_ACTIVE_DAYS = 7300, -- Default max amount of days an agenda can stay active
 	ESTATE_AGENDA_ABOUT_TO_EXPIRE_WARNING = 1095, -- How many days it should start warning for agenda about to expire
