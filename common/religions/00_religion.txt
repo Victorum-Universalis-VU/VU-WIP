@@ -3155,7 +3155,7 @@ eastern = {
 			global_heretic_missionary_strength = 0.02
 			legitimacy = 0.5
 			prestige = 1
-			global_tax_income = -0.05
+			global_tax_modifier = -0.05
 			mil_tech_cost_modifier = -0.2
 		}
 		
@@ -3169,7 +3169,7 @@ eastern = {
 			global_heretic_missionary_strength = 0.01
 			legitimacy = 0.25
 			prestige = 0.5
-			global_tax_income = -0.05
+			global_tax_modifier = -0.05
 		}
 		
 		heretic = { SHUGENDO }
