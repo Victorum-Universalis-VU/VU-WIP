@@ -4,6 +4,82 @@
 
 # This one is the first for the case that some country manages to become fully Norse.
 
+STY_ideas = {
+    start = {
+		land_morale = 0.1
+		improve_relation_modifier = 0.1
+    }
+    bonus = {
+        diplomatic_reputation = 2
+    }
+
+    trigger = {
+        tag = STY
+    }
+    free = yes
+    STY_idea_1 = {
+		legitimacy = 1
+		republican_tradition = 0.3
+    }
+    STY_idea_2 = {
+        fort_maintenance_modifier = -0.1
+        global_garrison_growth = 0.2
+    }
+    STY_idea_3 = {
+        global_tax_modifier = 0.1
+    }
+    STY_idea_4 = {
+        fire_damage_received = -0.1
+        reinforce_speed = 0.1
+    }
+    STY_idea_5 = {
+		production_efficiency = 0.1
+    }
+    STY_idea_6 = {
+        land_maintenance_modifier = -0.1
+    }
+    STY_idea_7 = {
+        technology_cost = -0.05
+    }
+}
+
+
+TIR_ideas = {
+    start = {
+        diplomatic_upkeep = 1
+        defensiveness = 0.2
+    }
+    bonus = {
+        heir_chance = 0.5
+    }
+    
+    trigger = {
+        tag = TIR
+    }
+    free = yes
+
+    TIR_idea_1 = {
+        prestige = 0.5
+    }
+    TIR_idea_2 = {
+        production_efficiency = 0.1
+    }
+    TIR_idea_3 = {
+        shock_damage = 0.1
+    }
+    TIR_idea_4 = {
+        improve_relation_modifier = 0.1
+    }
+    TIR_idea_5 = {
+        num_accepted_cultures = 1
+    }
+    TIR_idea_6 = {
+        mercenary_manpower = 0.5
+    }
+    TIR_idea_7 = {
+        hostile_attrition = 1
+    }
+}
 norse_ideas = {
 	start = {
 		land_morale = 0.15	
@@ -187,7 +263,10 @@ GBR_ideas = {
 	}
 	
 	trigger = {
-	    OR = { tag = GBR tag = UNK }
+	    OR = {
+			tag = GBR
+			tag = UNK
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -1974,6 +2053,7 @@ PER_ideas = {
 		tag = PER
 	}
 	free = yes
+	
 	the_qizilbash = {
 		global_manpower_modifier = 0.15
 		qizilbash_privilege_slots = 1

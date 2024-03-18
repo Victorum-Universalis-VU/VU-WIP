@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = feudalism_reform #swabian_circle (is a copy of the austrian circle with their oen added twist)
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western

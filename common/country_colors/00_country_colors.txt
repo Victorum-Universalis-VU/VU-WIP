@@ -378,6 +378,14 @@ NOL = {
 }
 
 
+# Great Britain
+GBR = {
+    color1= { 193 26 14  }
+    color2= { 99 137 153  }
+    color3= { 83 149 105  }
+}
+
+
 # Brazil
 BRZ = {
     color1= { 129 177 125  }
@@ -1435,6 +1443,13 @@ SRU = {
 #    color2= { 161 126 128  }
 #    color3= { 80 79 88  }
 #}
+
+# Russia
+TZR = {
+    color1= { 96 131 80  }
+    color2= { 144 52 53  }
+    color3= { 107 170 77  }
+}
 
 
 # Algiers

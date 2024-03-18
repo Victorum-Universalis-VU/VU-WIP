@@ -24,7 +24,7 @@
  #lotf
  mormon: "Mormon"
  mormon_center_of_reformation: "Center of Reformation"
- mormon_desc: ""
+ mormon_religion_desc: "Mormonism, or the Church of Jesus Christ of Latter-Day Saints, is a sect of Christianity started by Joseph Smith in the 1820s and 1830s. Joseph Smith claimed to see God the father and Jesus in a vision, where they told him that every church was misguided. They instructed him to reestablish the Christian Church as it was intended to be. Facing persecution from fellow protestants, Smith and his followers fled their home in upstate New York and founded a settlement near the Great Salt Lake in what is now Utah, establishing a new bastion for their new Church. In 1444 the religion does not yet exist, but it will arise once Christians colonize the American West."
  mormon_rebels_demand: "Convert $COUNTRYNAME$"
  mormon_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  mormon_rebels_title: "Religious"
@@ -125,7 +125,7 @@
 
  #Hellenic
  hellenic: "Hellenic"
- hellenic_religion_desc: "Worship of Olympian Pantheon."
+ hellenic_religion_desc: "An ancient religion originating from Greece, Hellenism was the state religion of the Roman Empire prior to Emperor Constantine's conversion. It follows a pantheon of Gods and Goddesses that each control a different aspect of nature, with Zeus, Poseidon, and Hades as the most important figures. It also prioritizes reverence of one's parents and the family, moral virtue, friendship, and hospitality. In 1444, the religion is all but extinct, and isn't a majority in any province."
  CHRONOS_DISCIPLES: "Chronos Disciples"
  blessing_zeus: "Blessing of Zeus"
  blessing_hera: "Blessing of Hera"
@@ -140,3 +140,16 @@
  blessing_hermes: "Blessing of Hermes"
  blessing_dionysus: "Blessing of Dionysus"
  blessing_hestia: "Blessing of Hestia"
+
+ prende: "Prende"
+ prende_desc: "Prende is the Goddess of dawn, love, beauty, and health. It is said that swallows use rainbows to pull her chariot across the sky; she can also use her magic to change the sex of anyone who can jump over the rainbow."
+ perendi: "Perendi"
+ perendi_desc: "Perendi is the God of the sky and thunder. His name is preserved in the modern Albanian language as the generic term for a god."
+ en: "En"
+ en_desc: "En is the God of fire. He is the offspring of the sun."
+ talas: "Talas"
+ talas_desc: "Talas is the god of the sea and storms. Legend tells that one day, as Prende was flying over the creation of her husband Perendi, Talas noticed her immense beauty and raped her. As punishment, Perendi struck him with his thunderbolts, tearing Talas into pieces, turning his spirit into furious storm clouds and great waves, his anguish to forever haunt the seas."
+ dheu: "Dheu"
+ dheu_desc: "Dheu is a great mother-deity and the Goddess of the Earth. She serves to protect nature and bless those who respect it."
+ zana: "The Zana"
+ zana_desc: "Zana are Goddesses of the mountains, as well as rivers, animals, and destiny. They are known for their immense courage and their protection of warriors loyal to them."

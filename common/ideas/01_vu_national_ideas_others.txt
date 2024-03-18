@@ -3852,6 +3852,132 @@ VLV_ideas = {
 	}
 }
 
+##################################################################################################
+##################################################################################################
+##################################################################################################
+# Olivier's work
+##################################################################################################
+##################################################################################################
+##################################################################################################
+SUQ_ideas = {
+	start = {
+		tolerance_heathen = 3
+		merchants = 1
+	}
+
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = SUQ
+	}
+	free = yes
+
+	dragon_blood = {
+		manpower_recovery_speed = 0.2
+	}
+	pirate_refuge = {
+		light_ship_power = 0.15
+		privateer_efficiency = 0.25
+	}
+	suq_poetry = {
+		prestige = 1
+	}
+	thomas_apostle = {
+		tolerance_own = 3
+	}
+	suq_foreign_contacts = {
+		diplomatic_reputation = 1
+		envoy_travel_time = -0.25
+	}
+	natives_in_a_hostile_land = {
+		hostile_attrition = 1
+	}
+	frankinsence_myrrh = {
+		production_efficiency = 0.2
+	}
+}
+RAP_ideas = {
+	start = {
+		merchants = 1
+		naval_maintenance_modifier = -0.15
+	}
+	bonus = {
+		global_colonial_growth = 30
+	}
+	trigger = {
+		tag = RAP
+	}
+	free = yes
+	hau_maka = {
+		light_ship_power = 0.15
+		legitimacy = 1
+	}
+	walking_statues = {
+		production_efficiency = 0.1
+	}
+	ancient_people = {
+		trade_efficiency = 0.1
+		prestige = 1
+	}
+	moai = {
+		global_unrest = -1
+	}
+	voyage_again = {
+		naval_attrition = -0.15
+		colonists = 1
+	}
+	unite_the_hanau = {
+		global_autonomy = -0.1
+	}
+	establish_navy = {
+		leader_naval_shock = 2
+		leader_naval_fire = 2
+		global_sailors_modifier = 0.33
+	}
+}
+
+THT_ideas = {
+	start = {
+		light_ship_power = 0.1
+		range = 0.15
+	}
+
+	bonus = {
+		naval_morale = 0.2
+	}
+	
+	trigger = {
+		tag = THT
+	}
+	free = yes		#will be added at load.
+	
+	hawaiian_relations = {
+			diplomats = 1
+	}
+	rata_legend = {
+			prestige_from_naval = 0.1
+			global_sailors_modifier = 0.25
+	}
+	tahitian_dance = {
+			global_unrest = -2
+	}
+	tahitian_natural = {
+		global_autonomy = -0.01
+	}
+	tahitian_royal_gods = {
+		dip_advisor_cost = -0.5
+		legitimacy = 1
+	}
+	marae = {
+		global_tax_modifier = 0.15
+	}
+	consolidate_tahiti = {
+		province_warscore_cost = -0.2
+	}
+}
+
 #VU - Additions by Always_Prussia integrated by San Felipe
 vu_danishducal_ideas = {
 	start = {
