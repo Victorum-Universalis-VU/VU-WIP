@@ -957,6 +957,20 @@ YZZ = "countries/Kalaallisut.txt"
 #VU - Pacific by San Felipe
 RAP = "countries/Rapanui.txt"
 
+#VU - Pacific by Olivier
+THT = "countries/Tahiti.txt"
+MK2 = "countries/Molokai.txt"     #Changed from MOK to MK2. By SF
+KTM = "countries/Kati Mamoe.txt"
+MRR = "countries/Moriori.txt"
+TAO = "countries/Tao.txt"
+AMS = "countries/Amis.txt"
+BUN = "countries/Bunun.txt"
+PAI = "countries/Paiwan.txt"
+TYL = "countries/Tayal.txt"
+
+#VU - Europe by Olivier
+AUT = "countries/DuchyOfAustria.txt"
+
 #Template 
 #XXX = "countries/xxxx.txt"
 

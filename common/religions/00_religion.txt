@@ -531,6 +531,7 @@ christian = {
 				}
 			}
 		}
+		heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
 	}
 
 	anglican = {
@@ -1324,10 +1325,6 @@ christian = {
 		}
 	}
 	
-	harmonized_modifier = harmonized_christian
-	
-	crusade_name = CRUSADE
-	
 	##########################################
 	### NEW RELIGIONS IN CATHOLIC GROUP    ###
 	##########################################
@@ -1419,14 +1416,14 @@ christian = {
 	 
 	 	hre_heretic_religion = yes
 	 	
-	 	heretic = { }
+	 	heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
 	 	
 	 	will_get_center = {
-	 		 any_owned_province = {
-	 			 can_have_center_of_reformation_trigger = {
-	 				 RELIGION = waldensian
-	 			 }
-	 		 }
+	 		any_owned_province = {
+	 			can_have_center_of_reformation_trigger = {
+	 				RELIGION = waldensian
+	 			}
+	 		}
 	 		always = yes
 	 	}
 	 
@@ -1751,10 +1748,7 @@ christian = {
 			vu_nestorian_monasteries
 			vu_nestorian_king_glory
 			vu_isolated_nestorian_christianity
-		}
-		
-		harmonized_modifier = harmonized_christian
-		
+		}		
 	}
 	
 	#Bogomilist NEW
@@ -1864,7 +1858,6 @@ christian = {
 	mormon = {
 		color = { 223 148 255 }
 		icon = 38
-		center_of_religion = 2490
 		allowed_conversion = {
 		}
 		country = {
@@ -2058,6 +2051,8 @@ christian = {
 				duration = 3650
 			}
 		}
+
+		heretic = { ANABAPTIST PENTECOSTAL PURITAN CONGREGATIONALIST }
 	}
 	
 	#Monothelite religion
@@ -4276,8 +4271,6 @@ pagan = {
 		}
 		province = {
 			production_efficiency = 0.1
-		}
-		province = {
 			development_cost = -0.10
 		}
 		heretic = { SNAKE_CLAN }
@@ -6146,6 +6139,8 @@ buddhist_group = {
 		}
 		personal_deity = yes
 		can_have_secondary_religion = yes
+
+		heretic = { ZEN }
 	}
 	
 	vajrayana = {
