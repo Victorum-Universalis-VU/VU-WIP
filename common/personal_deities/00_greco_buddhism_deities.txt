@@ -1,21 +1,3 @@
-buddha = {
-	global_unrest = -2
-	global_autonomy = -0.05
-	potential = { religion = greco_buddhism }
-	sprite = 35
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality =  ai_capitalist
-		}	
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}		
-	}
-}
-
 buddhist_zeus = {
 	shock_damage = 0.05
 	core_creation = -0.1
