@@ -5,11 +5,16 @@
 buddha = {
 	sprite = 6
 	potential = { 
-		religion = hinduism
-		OR = {
-			mission_completed = mnd_maj_candi_shrines
-			mission_completed = sun_candi_temples
-			mission_completed = mnd_khm_religion
+		OR = { 
+			religion = greco_buddhism
+			AND = { 
+				religion = hinduism
+				OR = {
+					mission_completed = mnd_maj_candi_shrines
+					mission_completed = sun_candi_temples
+					mission_completed = mnd_khm_religion
+				}
+			}
 		}
 	}
 	trigger = {}
@@ -24,6 +29,7 @@ buddha = {
 			any_owned_province = {
 				OR = {
 					religion = buddhism
+					religion = greco_buddhism
 					religion = mahayana
 					religion = vajrayana
 				}
