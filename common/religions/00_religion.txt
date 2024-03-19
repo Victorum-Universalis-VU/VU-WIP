@@ -313,7 +313,7 @@ christian = {
 
 	marcionite = {
 		color = { 99 235 232 }
-		icon = 62
+		icon = 71
 		allowed_conversion = {
 			arian
 			catholic
@@ -1383,7 +1383,7 @@ christian = {
 
 	waldensian = {
 	 	color = { 42 125 188 }
-	 	icon = 43
+	 	icon = 67
 	 
 	 	allowed_center_conversion = {
 	 		catholic
@@ -1979,7 +1979,7 @@ christian = {
 	#Arian sect
 	arian = {
 		color = { 255 253 208 }
-		icon = 57
+		icon = 73
 		allowed_conversion = {
 			orthodox
 			miaphysite
@@ -2020,7 +2020,7 @@ christian = {
 
 	montanist = {
 		color = { 170 170 170 }
-		icon = 59
+		icon = 75
 		allowed_conversion = {			
 			catholic
 			hussite	
@@ -4227,7 +4227,7 @@ pagan = {
 	
 	kemetic = {
 		color = { 246 215 176 }
-		icon = 65
+		icon = 80
 		country = {
 			stability_cost_modifier = -0.1
 			land_morale = 0.1
@@ -4242,7 +4242,7 @@ pagan = {
 
 	illyrian = {
 		color = { 255 99 71 }
-		icon = 66
+		icon = 81
 		country = {
 			harsh_treatment_cost = -0.1
 			spy_offence = 0.1
@@ -4260,7 +4260,7 @@ pagan = {
 	
 	gallo_anatolian = {
 		color = { 30 53 4 }
-		icon = 63
+		icon = 78
 		country = {
 			tolerance_own = 2
 			loot_amount = 0.5
@@ -4279,7 +4279,7 @@ pagan = {
 
 	nasamonian = {
 		color = { 220 77 1 }
-		icon = 64
+		icon = 79
 		country = {
 			tolerance_heathen = 1
 			culture_conversion_cost = -0.05
@@ -4798,7 +4798,7 @@ pagan = {
 	}
 
 	sol_invictus = {
-		icon = 58
+		icon = 74
 		color = { 255 162 44 }
 		country = {
 			tolerance_own = 1
@@ -4875,7 +4875,7 @@ pagan = {
 	}
 
 	luwian = {
-		icon = 61
+		icon = 77
 		color = { 0 0 0 }
 		allowed_conversion = {
 			hellenic
@@ -4909,7 +4909,7 @@ pagan = {
 	}
 	
 	imunu = {
-		icon = 56
+		icon = 72
 		color = { 60 0 8 }
 
 		allowed_conversion = {
@@ -6093,7 +6093,7 @@ buddhist_group = {
 	
 	greco_buddhism = {
 		color = { 68 142 228 }
-		icon = 60
+		icon = 76
 		allowed_conversion = {
 			buddhism #Theravada
 			vajrayana
