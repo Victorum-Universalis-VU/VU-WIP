@@ -3,7 +3,7 @@
 owner = SUQ
 controller = SUQ
 add_core = SUQ
-culture = mahri_culture
+culture = soqotri 
 religion = coptic
 capital = "Suq"
 trade_goods = fish
