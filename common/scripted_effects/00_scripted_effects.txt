@@ -9661,7 +9661,7 @@ add_or_upgrade_forcelimit_building = {
 }
 
 add_or_upgrade_university_building = {
-	custom_tooltip = add_or_upgrade_university_building_tt
+	custom_tooltip = add_or_upgrade_education_building_tt
 	hidden_effect = {
 		if = {
 			limit = { has_building = library }
