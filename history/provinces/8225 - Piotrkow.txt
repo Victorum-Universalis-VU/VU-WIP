@@ -14,7 +14,7 @@ religion = catholic
 
 #Development and Trade
 base_tax = 3
-base_production = 1
+base_production = 2
 base_manpower = 2
 trade_goods = lace	#region of central Poland is famous for its regional culture and hand-made ornaments. At least one lace province there
 
