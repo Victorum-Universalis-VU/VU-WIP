@@ -1837,7 +1837,6 @@ scandinavian = { #Nordic
 	#VULegacy Culture
 	gotlander = {
 		graphical_culture = westerngfx
-		#primary = GTA
 	}
 	#VULegacy Culture
 	faroese = {
@@ -8683,7 +8682,6 @@ carribean = {			#All vanilla cultures from this group moved to more appropriate 
 	graphical_culture = northamericagfx
 	#Victorum Universalis Culture
 	guanahatabey = {
-		#primary = YZY
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -8736,7 +8734,6 @@ carribean = {			#All vanilla cultures from this group moved to more appropriate 
 	}
 	#Victorum Universalis Culture
 	waikeri = {			#'According to Alexander von Humboldt, the Waiker said that their language and that of the Warao were related.' - per wiki... well... I can't say I've done things with less evidence, but sure, why not.
-		#primary = YZV
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -9236,7 +9233,7 @@ eastern_algonquian = {
 	}
 	#Victorum Universalis Culture
 	beothuk = {
-		#primary = BTK
+		primary = BTK
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik
 			Segepenegatig Taqmkuk Tagamgoog Wunamakik Onamagig Aboushagan Antigonishe Bhicuctouche Chignecto Ekoupahag Jedaick
