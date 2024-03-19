@@ -25,8 +25,8 @@
  create_dominion_in_philippines_desc: "We own provinces in the Philippines, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create a dominion under our control there that is administered by a General Gouverner. \nA dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YPhilippine Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our dominion."
 
 
- autonomous_dominion_ghana_nation_title: "Found Ghana"
- autonomous_dominion_ghana_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[GHA.GetName]§!."
+ #autonomous_dominion_ghana_nation_title: "Found Ghana"
+ #autonomous_dominion_ghana_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[GHA.GetName]§!."
 
  autonomous_dominion_zimbabwe_nation_title: "Found Zimbabwe"
  autonomous_dominion_zimbabwe_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[ZIB.GetName]§!."

@@ -243,6 +243,9 @@
  woad_type: "Woad Origin\n§WIndigo dye is extracted for the woad plant which gives less dye than the true indigo extracted in India§!"
  woad_type_bad: "Woad Origin\n§WIndigo dye is extracted for the woad plant which gives less dye than the true indigo extracted in India§!"
  indigo_india: "European Demand"
+ desc_woad_type:0 ""
+ woad_type_tooltip:0 ""
+ desc_woad_type_bad:0 ""
  
  marble_test: "Black Marble Mine"
 

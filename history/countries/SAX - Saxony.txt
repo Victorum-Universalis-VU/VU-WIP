@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = feudalism_reform #saxon_circle (is a copy of the austrian circle with their oen added twist)
 government_rank = 1
 primary_culture = saxon
 add_accepted_culture = franconian

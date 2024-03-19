@@ -4,7 +4,7 @@
 
 
 #Food
-grain = { base_price = 2.75 #Quonton - raised it because it feels a little to small }			        #VU - Changed from - Now goes 2.5 - 1 - 2.5 - 1.75 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
+grain = { base_price = 2.75 } #Quonton - raised it because it feels a little to small VU - Changed from - Now goes 2.5 - 1 - 2.5 - 1.75 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
 rice = { base_price = 2.5 }                     #VU - Changed from 2 to 2.5
 wine = { base_price = 2.5 }		                #VU - Changed from - Now goes 2.5 - 0.5 - 2.5 - 1 - 2.5 - 3.5 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 3.125)
 champagne = { base_price = 4 }                  #VU - Changed from 3 to 4

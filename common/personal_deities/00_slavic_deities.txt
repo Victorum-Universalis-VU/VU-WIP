@@ -1,4 +1,4 @@
-slavic_rod  = {
+slavic_rod = {
 	legitimacy = 0.1
 	horde_unity = 0.1
 	core_creation = -0.10

@@ -24,6 +24,7 @@ buddha = {
 			any_owned_province = {
 				OR = {
 					religion = buddhism
+					religion = greco_buddhism
 					religion = mahayana
 					religion = vajrayana
 				}

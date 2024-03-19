@@ -136,7 +136,7 @@ harvard_university = {
 		cost_to_upgrade = { factor = 7000 }
 		province_modifiers = { allowed_num_of_buildings = 1 local_development_cost = -0.05 }
 		area_modifier = { institution_growth = 5 }
-		country_modifiers = { embracement_cost = -0.15 innovativeness_gain = 0.15 global_institution_spread = 0.1 idea_cost = -0.1 }
+		country_modifiers = { embracement_cost = -0.15 innovativeness_gain = 0.15 global_institution_spread = 0.1 idea_cost = -0.05 }
 		on_upgraded = {}
 	}
 	tier_3 = {
@@ -144,7 +144,7 @@ harvard_university = {
 		cost_to_upgrade = { factor = 14000 }
 		province_modifiers = { allowed_num_of_buildings = 2 local_development_cost = -0.1 }
 		area_modifier = { institution_growth = 10 local_friendly_movement_speed = 0.15 }
-		country_modifiers = { embracement_cost = -0.25 innovativeness_gain = 0.25 global_institution_spread = 0.2 idea_cost = -0.15 technology_cost = -0.1 }
+		country_modifiers = { embracement_cost = -0.25 innovativeness_gain = 0.25 global_institution_spread = 0.2 idea_cost = -0.10 technology_cost = -0.1 }
 		on_upgraded = {}
 	}
 }

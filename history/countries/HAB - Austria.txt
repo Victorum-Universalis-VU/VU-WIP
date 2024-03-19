@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = austrian_archduchy_reform
+add_government_reform = austrian_archduchy_reform #austrian_circle (is a slightly weaker copy of the latter)
 government_rank = 1
 primary_culture = austrian
 add_accepted_culture = alsatian

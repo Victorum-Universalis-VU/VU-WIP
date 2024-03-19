@@ -2945,7 +2945,7 @@ grand_canyon = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 		republican_tradition = 0.5
 		monthly_federation_favor_growth = 0.1
 		prestige = 0.5
