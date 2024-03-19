@@ -5,16 +5,11 @@
 buddha = {
 	sprite = 6
 	potential = { 
-		OR = { 
-			religion = greco_buddhism
-			AND = { 
-				religion = hinduism
-				OR = {
-					mission_completed = mnd_maj_candi_shrines
-					mission_completed = sun_candi_temples
-					mission_completed = mnd_khm_religion
-				}
-			}
+		religion = hinduism
+		OR = {
+			mission_completed = mnd_maj_candi_shrines
+			mission_completed = sun_candi_temples
+			mission_completed = mnd_khm_religion
 		}
 	}
 	trigger = {}
