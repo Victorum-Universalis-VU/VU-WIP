@@ -8,7 +8,6 @@ capital = 134 # Wien
 
 national_focus = ADM
 
-
 1395.8.29 = {
 	monarch = {
 		name = "Albrecht IV"

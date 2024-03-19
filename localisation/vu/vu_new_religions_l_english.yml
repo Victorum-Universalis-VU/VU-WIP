@@ -311,8 +311,8 @@
 
  greco_buddhism: "Greco-Buddhism"
  greco_buddhism_religion_desc: "Greco-Buddhism is the in-game representation for the syncretism that took place after Alexander the Great's conquest of the Persian Empire. It includes the simultaneous worship of numerous Hellenic deities along with the practice of Buddhist teachings. Elements of this syncretism exist today, with the worship of Zeus in some hindu temples."
- buddha: "The Buddha"
- buddha_desc: "Siddhartha Gautama (also called the Buddha) is the enlightened one; through meditation, he discovered the secret to escape the cycle of reincarnation. He put forth the four noble truths and founded the buddhist religion."
+ g_buddha: "The Buddha"
+ g_buddha_desc: "Siddhartha Gautama (also called the Buddha) is the enlightened one; through meditation, he discovered the secret to escape the cycle of reincarnation. He put forth the four noble truths and founded the buddhist religion."
  buddhist_zeus: "Zeus"
  buddhist_zeus_desc: "Zeus is the chief deity in the hellenic pantheon. He's the God of the sky and can throw thunderbolts to smite whoever he chooses."
  apollo: "Apollo"
