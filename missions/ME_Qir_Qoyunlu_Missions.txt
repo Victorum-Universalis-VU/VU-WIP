@@ -696,7 +696,7 @@ QIR_missions_2_sedentary = {
 			
 			trading_part = {
 				trade_goods = grain 
-				value = 0.5
+				value = 0.20
 			}
 			
 			production_leader = {
@@ -743,7 +743,7 @@ QIR_missions_2_sedentary = {
 			QIR_preview = yes
 			trading_part = {
 				trade_goods = wool 
-				value = 0.35
+				value = 0.20
 			}
 			
 			production_leader = {
