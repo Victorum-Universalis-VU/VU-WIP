@@ -23,6 +23,8 @@ ABN = "countries/Arbanon.txt"
 
 #VU - Austria
 AUT = "countries/DuchyOfAustria.txt"
+BSN = "countries/St_Polten.txt"         #St.Pölten
+SH1 = "countries/Schaunberg.txt"
 
 #VU - Bulgaria
 BDN = "countries/Vidin.txt"

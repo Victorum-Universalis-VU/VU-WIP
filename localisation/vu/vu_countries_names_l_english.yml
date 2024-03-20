@@ -73,6 +73,15 @@
  #VNA_ADJ2:0 "Vironian"
  
 #San Felipe Countries
+#Austria
+ SH1:0 "Schaunberg"
+ SH1_ADJ:0 "Schaunberger"
+ SH1_ADJ2:0 "Schaunberger"
+
+ BSN:0 "St. Pölten"
+ BSN_ADJ:0 "Sankt Pöltener"
+ BSN_ADJ2:0 "Sankt Pöltener"
+
 #Scandinavia
  BGR:0 "Bagler"
  BGR_ADJ:0 "Bagler"
