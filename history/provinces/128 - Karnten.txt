@@ -1,9 +1,9 @@
-#128 - Kärnten
+#128 - Karnten
 #Region - Germany
 #Area - Inner Austria
 
-owner = HAB
-controller = HAB
+owner = STY
+controller = STY
 add_core = STY
 add_core = HAB
 culture = slovene #Was austrian but changed by San Felipe on the advice of Morsmessor
@@ -15,16 +15,6 @@ trade_goods = copper
 capital = "Klagenfurt" 
 is_city = yes
 hre = yes
-
-
-
-
-
-
-
-
-
-
 
 1452.1.1 = {
 	owner = STY

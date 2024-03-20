@@ -2,8 +2,9 @@
 #Region - Carpathia
 #Area - Transdanubia
 
-owner = HAB
-controller = HAB
+owner = AUT
+controller = AUT
+add_core = AUT
 add_core = HAB
 add_core = HUN
 culture = austrian
@@ -22,16 +23,6 @@ add_permanent_province_modifier = {
     name = rich_black_soil
     duration = -1
 }
-
-
-
-
-
-
-
-
-
-
 
 1482.1.1 = {
 	owner = HUN

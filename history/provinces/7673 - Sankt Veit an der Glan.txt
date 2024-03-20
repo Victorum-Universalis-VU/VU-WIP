@@ -1,8 +1,8 @@
-#6383 - Sankt Veit an der Glan
+#7673 - Sankt Veit an der Glan
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = AUT
+controller = AUT
+add_core = AUT
 culture = austrian
 religion = catholic
 base_tax = 3
@@ -16,6 +16,7 @@ hre = yes
 
 #Other claims of ownership
 add_core = FRG
+add_core = HAB
 add_core = STY
 
 #Special Modifiers

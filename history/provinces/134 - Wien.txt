@@ -1,7 +1,8 @@
 #134 - Wien
 
-owner = HAB
-controller = HAB
+owner = AUT
+controller = AUT
+add_core = AUT
 add_core = HAB
 culture = austrian
 religion = catholic

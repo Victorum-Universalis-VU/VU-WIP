@@ -1,9 +1,9 @@
-#4759 - Oberkärnten
+#4759 - Oberkaernten
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = STY
+controller = STY
 add_core = STY
+add_core = HAB
 add_core = CLI
 culture	= austrian
 religion = catholic
@@ -14,15 +14,6 @@ trade_goods = lead
 capital = "Villach" 
 is_city = yes
 hre = yes
-
-
-
-
-
-
-
-
-
 
 1452.1.1 = {
 	owner = STY
