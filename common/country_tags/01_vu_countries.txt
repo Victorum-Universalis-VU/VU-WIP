@@ -24,6 +24,7 @@ ABN = "countries/Arbanon.txt"
 #VU - Austria
 AUT = "countries/DuchyOfAustria.txt"
 BSN = "countries/St_Polten.txt"         #St.Pölten
+CR1 = "countries/DuchyOfCarinthia.txt"  #Under PU with Styria
 SH1 = "countries/Schaunberg.txt"
 
 #VU - Bulgaria

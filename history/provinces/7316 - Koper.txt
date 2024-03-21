@@ -1,9 +1,8 @@
 #7316 - Koper
 
-owner = HAB
-controller = HAB
-add_core = HAB
-add_core = AQU	# owned by Aquilea before 1283
+owner = CNL
+controller = CNL
+add_core = CNL
 culture = friulian_culture
 religion = catholic
 capital = "Koper"
@@ -14,11 +13,8 @@ trade_goods = fish # many small fishing towns, Istria is famous for fish delicac
 is_city = yes
 hre = no
 
-
-
-
-
-
+add_core = HAB
+add_core = AQU	# owned by Aquilea before 1283
 
 #Documented 8th century AD
 #Province history completed by - Nikicaga & Darth Modus

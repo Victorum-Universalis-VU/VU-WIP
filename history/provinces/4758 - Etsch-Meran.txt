@@ -15,12 +15,6 @@ is_city = yes
 hre = yes
 center_of_trade = 1
 
-
-
-
-
-
-
 #Province history completed by - Nikicaga & Darth Modus
 1291.5.21 = { #VictorumUniversalis batch edit shortcut the first shattering begins
 	owner = TIR
@@ -40,6 +34,12 @@ center_of_trade = 1
 	base_production = 5
 	base_manpower = 3
 }	#court moved to Innsbruck, Meran loses importance
+
+1444.11.11 = { #VictorumUniversalis batch edit shortcut the second shattering begins
+	owner = TIR
+	controller = TIR
+	add_core = TIR
+}
 
 1444.11.13 = { #VictorumUniversalis batch edit shortcut the second shattering begins
 	owner = TIR

@@ -1,10 +1,8 @@
 #4759 - Oberkaernten
 
-owner = STY
-controller = STY
-add_core = STY
-add_core = HAB
-add_core = CLI
+owner = CR1
+controller = CR1
+add_core = CR1
 culture	= austrian
 religion = catholic
 base_tax = 3
@@ -14,6 +12,10 @@ trade_goods = lead
 capital = "Villach" 
 is_city = yes
 hre = yes
+
+add_core = STY
+add_core = HAB
+add_core = CLI
 
 1452.1.1 = {
 	owner = STY

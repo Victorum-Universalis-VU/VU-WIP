@@ -15,10 +15,6 @@ base_production = 15
 trade_goods = cloth			#Major cloth center. synonymous with cloth production. Possible province modifier
 base_manpower = 7
 
-
-
-
-
 center_of_trade = 4
 extra_cost = 20
 

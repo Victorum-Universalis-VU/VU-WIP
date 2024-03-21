@@ -2,10 +2,9 @@
 #Region - Germany
 #Area - Inner Austria
 
-owner = STY
-controller = STY
-add_core = STY
-add_core = HAB
+owner = CR1
+controller = CR1
+add_core = CR1
 culture = slovene #Was austrian but changed by San Felipe on the advice of Morsmessor
 religion = catholic
 base_tax = 2
@@ -15,6 +14,9 @@ trade_goods = copper
 capital = "Klagenfurt" 
 is_city = yes
 hre = yes
+
+add_core = HAB
+add_core = STY
 
 1452.1.1 = {
 	owner = STY
