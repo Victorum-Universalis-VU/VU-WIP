@@ -1,10 +1,10 @@
-#6374 - Bad Ischl
+#7670 - Schaunberg
 #Region - Germany
 #Area - Austria Proper
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = SH1
+controller = SH1
+add_core = SH1
 culture = austrian
 religion = catholic
 base_tax = 2
@@ -14,25 +14,9 @@ base_manpower = 1
 capital = "Bad Ischl" 
 is_city = yes
 hre = yes
+add_core = HAB
 
 extra_cost = 8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #Documented 1347 AD
 1650.1.1 = { base_manpower = 4  }

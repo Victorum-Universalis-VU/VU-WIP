@@ -1259,6 +1259,12 @@
  MBB_ADJ: "Mbalundan"
  VYE: "Vye"
  VYE_ADJ: "Vyean"
+
+ #Austria
+ AUT:0 "Österreich"
+ AUT_ADJ:0 "Österreichisch"
+ CR1:0 "Carinthia"
+ CR1_ADJ:0 "Carinthian"
  
  #VU Cameroon/Chad additions by San Felipe
  SAO: "Sao"

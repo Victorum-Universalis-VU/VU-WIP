@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Inner Austria
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = STY
+controller = STY
+add_core = STY
 culture = austrian
 religion = catholic
 base_tax = 3
@@ -16,15 +16,7 @@ capital = "Judenburg"
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
-
-
-
+add_core = HAB
 
 1515.4.1 = { unrest = 4 } # Bund - Farmer insurrections
 1515.10.1 = { unrest = 0 }

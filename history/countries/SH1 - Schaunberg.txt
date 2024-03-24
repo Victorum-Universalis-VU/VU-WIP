@@ -1,0 +1,22 @@
+#SH1 - Schaunberg
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = austrian
+add_accepted_culture = bavarian
+religion = catholic
+#technology_group = western
+technology_group = german_tech_group
+unit_type = western
+capital = 7670 #Schaunberg
+
+national_focus = ADM
+
+1424.1.1 = {
+	monarch = {
+		name = "Johann" #Count of Schaunberg
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

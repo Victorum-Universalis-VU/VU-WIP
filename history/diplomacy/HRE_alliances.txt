@@ -233,6 +233,20 @@ march = {
 ##########
 
 union = {
+	first = STY
+	second = CR1
+	start_date = 1424.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+union = {
+	first = STY
+	second = CNL
+	start_date = 1424.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+union = {
 	first = MUN
 	second = OSN
 	start_date = 1442.1.1

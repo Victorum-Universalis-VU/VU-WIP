@@ -1,8 +1,8 @@
 #7764 - Prekmurje
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = CNL
+controller = CNL
+add_core = CNL
 culture = slovene
 religion = catholic
 capital = "Novo Mesto"
@@ -12,16 +12,8 @@ base_manpower = 2
 trade_goods = grain
 is_city = yes
 hre = yes
-add_core = CNL
 
-
-
-
-
-
-
-
-
+add_core = HAB
 
 1420.1.1 = {
 	add_core = STY

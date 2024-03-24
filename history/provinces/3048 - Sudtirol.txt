@@ -2,10 +2,10 @@
 #Region - Germany
 #Area - Tirol
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = TIR
+controller = TIR
 add_core = TIR
+add_core = HAB
 culture = austrian
 religion = catholic
 hre = yes

@@ -1,9 +1,8 @@
 #7082 - Pazin
 
-owner = GRZ
-controller = GRZ
-add_core = GRZ
-add_core = AQU			#part of the province was Aquileian
+owner = CNL
+controller = CNL
+add_core = CNL
 culture = croatian			#the Croat part of the penninsula
 religion = catholic
 capital = "Mitterburg"	#Slavic Pazin, Italian Pisino
@@ -14,11 +13,8 @@ trade_goods = wine			#istrian wine
 is_city = yes
 hre = yes
 
-
-
-
-
-
+add_core = GRZ
+add_core = AQU			#part of the province was Aquileian
 
 1374.1.1 = {
 	owner = HAB
@@ -30,6 +26,8 @@ hre = yes
 1420.1.1 = {
 	add_core = STY
 } # To the Habsburgs
+
+1444.11.11 = { owner = CNL controller = CNL add_core = CNL } # Carniolan territorial lands - By San Felipe
 
 1452.1.1 = {
 	owner = STY

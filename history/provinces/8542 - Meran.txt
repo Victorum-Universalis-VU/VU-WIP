@@ -1,8 +1,8 @@
-#Freising
+#8542 - Meran
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = TIR
+controller = TIR
+add_core = TIR
 culture = austrian
 religion = catholic
 capital = "Meran"
@@ -15,5 +15,6 @@ hre = yes
 
 #Other claims of ownership
 add_core = FRG
+add_core = HAB
 
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
