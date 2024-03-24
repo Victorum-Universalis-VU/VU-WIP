@@ -881,6 +881,9 @@ byzantine_missions_1 = {
 			else = { 
 				#country_event = { id = FU_Byzantium_Events.4 } #make this into an estate privilege
 				custom_tooltip = EE_BYZ_UNLOCK_THEME_SYSTEM_PRIVILEGE
+				hidden_effect = {
+					set_estate_privilege = ME_estate_nobles_theme_system
+				}
 			}
 		}
 	}
