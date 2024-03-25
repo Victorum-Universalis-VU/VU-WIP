@@ -1364,7 +1364,7 @@
 			tolerance_own = 0.5
 			monthly_fervor_increase = 0.5
 			church_power_modifier = 0.25
-			church_privilege_slots = 0.01
+			church_privilege_slots = 1
 			church_influence_modifier = 0.05
 		}
 		ai = {

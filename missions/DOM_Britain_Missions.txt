@@ -499,7 +499,7 @@ eng_row_slot_1 = {
 							duration = 9125
 						}
 						"
-						second_custom_tooltip = eng_handle_the_reformation_vu
+						second_custom_tooltip = eng_handle_the_reformation_bt
 						second_limit = "religion = protestant"
 						second_effect = "
 						if = {
