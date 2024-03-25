@@ -46,12 +46,27 @@ national_focus = ADM
 
 1439.10.27 = {
 	monarch = {
-		name = "Friedrich III"
+		name = "Friedrich III" #Was regent. By SF
 		dynasty = "von Habsburg"
-		birth_date = 1415.9.21
 		adm = 2
 		dip = 5
 		mil = 1
+		regent = yes
+		birth_date = 1415.9.21
+		death_date = 1493.8.19
+	}
+}
+1440.2.22 = {
+	heir = {
+		name = "Ladislaus Postumus"
+		monarch_name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
+		adm = 3
+		dip = 3
+		mil = 2
+		claim = 100
+		birth_date = 1440.2.22
+		death_date = 1457.11.23
 	}
 }
 

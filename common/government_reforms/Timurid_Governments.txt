@@ -27,6 +27,10 @@ timurid_empire = {
 		}
 	}
 
+	custom_attributes = {
+		enables_spoils_of_war = yes
+	}
+
 	ai = {
 		factor = 1
 	}
@@ -182,7 +186,7 @@ timurid_empire_upgraded = {
 		iqta_abilities_effectiveness = 0.5
 	}
 
-	custom_attributes  = {
+	custom_attributes = {
 		enables_heir_of_timur = yes
 	}
 	
@@ -219,7 +223,7 @@ timurid_prince = {
 		land_forcelimit_modifier = 0.2
 	}
 	
-	custom_attributes  = {
+	custom_attributes = {
 		brotherly_rivalry = yes
 	}
 	

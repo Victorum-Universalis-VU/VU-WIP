@@ -101,9 +101,9 @@
  ME_Timurid_Princes_Event.18.d: "[From.GetName] has declined our offer. They see us as not a threat, and wish to keep their sovereinty. We are ready for war."
  ME_Timurid_Princes_Event.18.a: "Very well."
  #
- ME_Timurid_Princes_Event.19.t: "[me_tim_successor.GetName] Claims the Empire"
- ME_Timurid_Princes_Event.19.d: "[me_tim_successor.GetName] has been declared as the true successor of the Timurid Empire, and has claimed the throne for himself. He wishes to bring prosperity to his new Empire."
- ME_Timurid_Princes_Event.19.a: "Your new Empire?"
+ #ME_Timurid_Princes_Event.19.t: "[me_tim_successor.GetName] Claims the Empire"
+ #ME_Timurid_Princes_Event.19.d: "[me_tim_successor.GetName] has been declared as the true successor of the Timurid Empire, and has claimed the throne for himself. He wishes to bring prosperity to his new Empire."
+ #ME_Timurid_Princes_Event.19.a: "Your new Empire?"
  
  ME_Timurid_Princes_Event.20.t: "[Root.Monarch.GetName] Crowned Emperor"
  ME_Timurid_Princes_Event.20.d: " [Root.Monarch.GetName] has inherited the lands of Shah Rukh, and with that, his problems. Many of the princes are not happy with the decision and are already planning on deposing him."
@@ -223,7 +223,7 @@
  timurid_or_beijing_owner_cancel_pact_desc: " "
  
  timurid_princes_open_legitimacy_shop_title: "§YTimurid Legitimacy§!"
- #timurid_princes_open_legitimacy_shop_desc: "Legitimacy of each prince:\n\n [ME_succession_crisis_HRT.HeratOrTimurids] [ME_succession_crisis_HRT.GetName]: §Y[ME_succession_crisis_HRT.IsAlive]§!\n [ME_succession_crisis_TRS.TRSOrTimurids] [ME_succession_crisis_TRS.GetName]: §Y[ME_succession_crisis_TRS.IsAlive]§!\n [ME_succession_crisis_KHO.KHOOrTimurids] [ME_succession_crisis_KHO.GetName]: §Y[ME_succession_crisis_KHO.IsAlive]§!\n [ME_succession_crisis_QOM.QOMOrTimurids] [ME_succession_crisis_QOM.GetName]: §Y[ME_succession_crisis_QOM.IsAlive]§!\n [ME_succession_crisis_AFG.AFGOrTimurids] [ME_succession_crisis_AFG.GetName]: §Y[ME_succession_crisis_AFG.IsAlive]§!\n [ME_succession_crisis_FRS.FRSOrTimurids] [ME_succession_crisis_FRS.GetName]: §Y[ME_succession_crisis_FRS.IsAlive]§!\n\nWe gain §YTimurid Legitimacy§! by:\n   -Winning §YBattles§! §G+1§!\n   -Various §YMissions§! and §YEvents§!\n   -Gaining §YSupport§! from other §YPrinces§! §G+10§!"
+ timurid_princes_open_legitimacy_shop_desc: "Legitimacy of each prince:\n\n [ME_succession_crisis_TRS.TRSOrTimurids] [ME_succession_crisis_TRS.GetName]: §Y[ME_succession_crisis_TRS.IsAlive]§!\n [ME_succession_crisis_KHO.KHOOrTimurids] [ME_succession_crisis_KHO.GetName]: §Y[ME_succession_crisis_KHO.IsAlive]§!\n [ME_succession_crisis_AFG.AFGOrTimurids] [ME_succession_crisis_AFG.GetName]: §Y[ME_succession_crisis_AFG.IsAlive]§!\n [ME_succession_crisis_FRS.FRSOrTimurids] [ME_succession_crisis_FRS.GetName]: §Y[ME_succession_crisis_FRS.IsAlive]§!\n\nWe gain §YTimurid Legitimacy§! by:\n   -Winning §YBattles§! §G+1§!\n   -Various §YMissions§! and §YEvents§!\n -Gaining §YSupport§! from other §YPrinces§! §G+10§!"
  # Other stuff:
  #ME_alive: "[This.timurid_legitimacy_value.GetValue]"
  ME_not_alive: "§RDefeated§!"

@@ -103,7 +103,9 @@ country_decisions = {
 		
 		effect = {
 			698 = {
-				remove_fow = 32
+				owner = {
+					remove_fow = 32
+				}
 			}
 		}
 	}
@@ -281,11 +283,11 @@ country_decisions = {
 			hidden_effect = {
 				every_subject_country = {
 					every_owned_province = {
-						decolonize = THIS
+						decolonize = yes
 					}
 				}
 				every_owned_province = {
-					decolonize = THIS
+					decolonize = yes
 				}
 			}
 		}
