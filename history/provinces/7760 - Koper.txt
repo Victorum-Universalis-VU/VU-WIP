@@ -1,9 +1,8 @@
 #7760 - Koper
 
-owner = HAB
-controller = HAB
-add_core = HAB
-add_core = CLI
+owner = CNL
+controller = CNL
+add_core = CNL
 culture = slovene
 religion = catholic
 capital = "Skofja Loka"
@@ -14,11 +13,6 @@ trade_goods = mercury		#was grain
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
-
-
+add_core = CNL
+add_core = CLI
+add_core = HAB

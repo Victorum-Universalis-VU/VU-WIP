@@ -2,9 +2,9 @@
 #Region - Germany
 #Area - Carniola
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = CNL
+controller = CNL
+add_core = CNL
 culture = slovene
 religion = catholic
 base_tax = 4
@@ -15,15 +15,7 @@ capital = "Marburg"
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
-
-
-
+add_core = HAB
 
 1420.1.1 = {
 	add_core = STY

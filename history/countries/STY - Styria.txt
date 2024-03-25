@@ -6,6 +6,7 @@ technology_group = german_tech_group
 unit_type = western
 religion = catholic
 primary_culture = austrian
+add_accepted_culture = slovene
 capital = 1863	# Graz
 
 

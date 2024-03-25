@@ -1,9 +1,10 @@
-#Lipno and Vltavou
+#7667 - Lipno and Vltavou
 #Region - Germany
 #Area - Bohemia
 
-owner = HAB
-controller = HAB
+owner = AUT
+controller = AUT
+add_core = AUT
 add_core = HAB
 add_core = LEU
 capital = "Lipno"

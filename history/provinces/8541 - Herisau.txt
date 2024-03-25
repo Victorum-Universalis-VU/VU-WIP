@@ -1,10 +1,11 @@
-#6466 - Herisau
+#8541 - Herisau
 #Region - Germany
 #Area - Switzerland
 
+owner = TIR
+controller = TIR
+add_core = TIR
 add_core = HAB
-owner = HAB
-controller = HAB
 culture = austrian
 religion = catholic
 capital = "Herisau"
@@ -14,15 +15,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 1
 is_city = yes
-
-
-
-
-
-
-
-
-
 
 #First mentioned in 837 AD as "Herinisauva"
 1513.7.3 = { unrest = 7 } # Luzern Peasant War
