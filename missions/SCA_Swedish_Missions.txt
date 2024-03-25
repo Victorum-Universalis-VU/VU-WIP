@@ -1333,7 +1333,7 @@ swe_diplomacy_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -1344,7 +1344,7 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = {
 				trade_share = {
 					country = ROOT
 					share = 50

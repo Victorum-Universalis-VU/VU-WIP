@@ -1098,6 +1098,54 @@ country_event = {
 			}
 		}
 	}
+
+	#ME agendas
+	option = { #We're missing agendas for the Turkic tribes thing, adding it in options
+		name = estate_privileges_and_agendas_events.3.vv
+		trigger = { has_country_flag = estate_turkic_tribes_present_agenda }
+		start_estate_agenda = estate_turkic_tribes 
+		goto = estate_turkic_tribes 
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_turkic_tribes 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_turkic_tribes 
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_turkic_tribes
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_turkic_tribes 
+					higher_than_influence = no
+				}
+			}
+		}
+	}
 }
 
 country_event = {
